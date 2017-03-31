@@ -1,0 +1,113 @@
+---
+layout: post
+title: "Plan for 2012"
+date: 2012-01-10 11:07
+comments: true
+categories: 
+- plan
+- thinking
+---
+
+![2012 Great View](/downloads/images/2012_great_view.jpg "Don't touch me...")
+
+在读过《<a href="http://book.douban.com/subject/3609132/" target="_blank">把时间当作朋友</a>》和<a href="http://matt.might.usesthis.com/" target="_blank">Matt Might</a>的文章之后，回首2011就让人觉得莫名慌张起来。按《<a href="http://book.douban.com/subject/3609132/" target="_blank">把时间当作朋友</a>》这本书里所说，定计划要以周为单位，通过培养自己对时间的控制力，逐步把计划做到月甚至年这样的跨度。本座自觉还算比较能控制自己，所以打算制作一个基本单位为月的计划，下面的十项活动将穿插在这个计划之中：
+
+1. 一点新知识   
+2. 一砣好身体
+3. 一个新玩具   
+4. 一批新兴趣   
+5. 一门新语言   
+6. 一款新软件   
+7. 一马新项目   
+8. 一把新文艺 
+
+
+#### **一点新知识**
+
+用进废退，数理化史地生音体美忘记了就算了吧。但半路出家的本座，还有很多基础知识也非常单薄。准备了6本不那么理论的书，争取能用2个月一本的龟速精读：
+
+*   <a href="http://www.amazon.com/Code-Language-Computer-Hardware-Software/dp/0735611319/ref=sr_1_1?ie=UTF8&qid=1326115601&sr=8-1" target="_blank">Code: The Hidden Language of Computer Hardware and Software</a> 
+*   <a href="http://book.douban.com/subject/4327796/" target="_blank">Continuous Delivery</a> 
+*   <a href="http://www.amazon.com/dp/0201752840/?tag=stackoverfl08-20" target="_blank">Database Design for Mere Mortals</a> 
+*   <a href="http://www.amazon.com/Event-Processing-Action-Opher-Etzion/dp/1935182218/ref=sr_1_1?s=books&ie=UTF8&qid=1326115894&sr=1-1" target="_blank">Event Processing in Action</a> 
+*   <a href="http://www.amazon.com/Art-Concurrency-Monkeys-Parallel-Applications/dp/0596521537/ref=sr_1_1?ie=UTF8&qid=1326115671&sr=8-1" target="_blank">The Art of Concurrency</a> 
+*   <a href="Designing the Obvious" target="_blank" class="broken_link">Designing the Obvious</a> 
+
+#### **一砣好身体**
+
+关注自己的健康状况，保持适当的体育锻炼，既是对自己负责，也是对家人负责。2012年体育锻炼方面的发展目标是除开足球之外，要开拓可以和偶像派互动的项目。下面的四个项目，12个月都可以开展，但是可以根据气候的不同，在四个季度各有偏重：
+
+*   跳绳 
+*   自行车 
+*   跑步 
+*   羽毛球 
+
+另外，程序员这个职业带来的伤害常常是<a href="http://en.wikipedia.org/wiki/Repetitive_strain_injury" target="_blank">RSI</a>。本座一直有比较严重的脖子疼和曾经越来越严重的肩膀和手腕疼。通过了解RSI，保持良好的姿势以及定时起来活动，比较好的缓解了疼痛。但是用电脑有时候是一屁股下去就不好起来的。让人欣喜的，传说中的<a href="http://www.hermanmiller.com/Products/Aeron-Chairs" target="_blank">Aeron</a>在中国<a href="http://www.hermanmiller.cn/" target="_blank">也能</a>买到了。所以明年还有一个目标：
+
+*   <a href="http://www.hermanmiller.com/Products/Aeron-Chairs" target="_blank">Aeron</a> 
+
+
+#### **一个新玩具**
+
+在回成都之后第一年在E公司主要的玩具是那套收星的玩意儿。原来只要大概800块钱左右的成本(DM500和所有的分路器合路器F头都是在这家淘宝店<a href="http://boattv.taobao.com/?spm=1101_lrm.4-Q8vp.2-91JMq" target="_blank">买的</a>），就可以用60CM的锅收<a href="http://www.cnsat.net/134.0.htm" target="_blank">134</a>/<a href="http://www.cnsat.net/138.0.htm" target="_blank">138</a>/146三颗ku星。
+
+接下来移籍M公司，主要的玩具似乎变成了Android。但是后来机缘巧合开始接触了各式各样的监控设备。说实在的从前端的IP化的云台枪机，到DVR，到最后的矩阵上墙，里面还是有很多挺有趣的技术。而且像中国这么大一个工地，到处都要装监控，这里面商机也不小。
+
+明年如果能说动偶像派买个LEGO的<a href="http://mindstorms.lego.com/en-us/Default.aspx" target="_blank">MindStorm</a>当然是最好，如果失败，就入手最近红到爆的<a href="http://www.arduino.cc/" target="_blank">Arduino</a>，话说本座已经堆了很多这方面的书了都没有真正花时间去看过。可是作为控制系的学生，每次看到它们，都有难以抑制的原始冲动。这种东西，一年玩一个就足够了：
+
+*   <a href="http://mindstorms.lego.com/en-us/Default.aspx" target="_blank">MindStorm</a>&#160; or 
+*   <a href="http://www.arduino.cc/" target="_blank">Arduino</a> 
+
+
+#### **一批新兴趣**
+
+编程的很多道理你不一定只能在编程中学到，因为人类最先进的学习方法是类比。
+
+而且，每天坐在电脑前面的老公在老婆和其他亲属心中的仇恨值是很高的。下面是一批本座觉得有可能进化为兴趣爱好并能够得到偶像派的广泛赞许和普遍接受的备选项目。仍然是均分到各个月份，但每个季度有倾斜的加大某项的比重：
+
+*   摄影 
+*   画画 
+*   写毛笔字 
+*   厨艺 
+
+
+#### **一门新语言**
+
+程序员之所以被认为是个苦逼的职业，很重要的原因就是技术更新换代很快。去年看完《<a href="http://book.douban.com/subject/4768035/" target="_blank">Seven Languages in Seven Weeks</a>》之后本座就有计划学一下Haskell和Scala，但是去了一趟杭州拿到冰河翻译的<a href="http://book.douban.com/subject/6859720/" target="_blank">新书</a>之后本座把明年的目标换成了下面两个，每个半年：
+
+*   <a href="http://www.apl.jhu.edu/~hall/lisp.html" target="_blank">Lisp</a> 
+*   <a href="http://www.haskell.org/" target="_blank">Haskell</a> 
+
+
+#### **一款新软件**
+
+人的创造力需要反复而大量的的基础知识和实作经验垫底，而基础知识和实作经验往往蕴藏在那些已经被时间验证过的作品里。所以要想拍好电影得看很多好电影，要想写好书得看很多好书，要想写出好软件得用很多好软件。在使用别人的软件时，可以想想如果是自己来写，什么地方做得比它好，什么地方还需要像别人学习。暂定的目标有：
+
+*   <a href="http://www.ispyconnect.com" target="_blank">iSpy</a> 
+*   <a href="http://c9.io/" target="_blank">Cloud9</a> 
+*   <a href="http://www.rapidftr.com/" target="_blank">RAPIDFTR</a> 
+*   <a href="http://www.openstack.org/" target="_blank">OpenStack</a> 
+
+
+#### **一马新项目**
+
+写软件谋生的好处是不言而喻的，坏处是如果你老是只为了工资奖金写软件，慢慢的你就会感觉到“无趣”。无趣的根源很多，最主要的无非“人家想用xyz，但是只能用zyx”。其实有<a href="https://github.com/" target="_blank">Github</a>和<a href="https://bitbucket.org/" target="_blank">Bitbucket</a>之后，这些都是借口啊，亲。项目内容暂时保密。
+
+
+#### **一把新文艺**
+
+还在读研究生的时候(也是J2EE最红火的时候？)，本座发现一件“奇闻“：<a href="http://www.springsource.org/" target="_blank">Spring</a>的作者Rod Johnson说之所以自己能写出拨乱反正的《<a href="http://book.douban.com/subject/1426848/" target="_blank">Expert One-on-one</a>》和<a href="http://www.springsource.org/" target="_blank">Spring</a>，和他学习过的音乐知识是分不开的。Google了一下，原来他除开有计算机学位还是个音乐学博士。
+
+之后稍微留心就发现，这是一个普遍的现象。比如那个写微积分教材赚的钱就可以建2400w刀豪宅的音乐家<a href="http://www.thestar.com/news/article/933017--the-house-that-math-built" target="_blank">James Stewart</a>，再比如2011年最被关注的去世者<a href="http://en.wikipedia.org/wiki/Steve_Jobs" target="_blank">Steve Jobs</a>。有点儿文艺细胞，能从人性的角度思考，做出的产品往往比纯粹的工程产品要打动人心。
+
+本座挺佩服自己能找出这么一个伟大的理由，得以在新的一年里继续毫无节制的：
+
+*   看电影 
+*   读小说 
+*   听音乐 
+
+
+要顺利贯彻执行计划，总得有个考核标准。打算今后多写一点儿blog记录在案，不然也对不起本座A给酋长的银子啊：
+
+
+![Vhost threshold](/downloads/images/vhost_threshold.png "Don't touch me...")

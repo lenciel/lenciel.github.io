@@ -1,0 +1,56 @@
+---
+layout: post
+title: "T-shirt Testing"
+date: 2014-09-03 01:04:48 +0800
+comments: true
+categories:
+
+- rants
+
+---
+
+其实写点儿代码来画件T-Shirt并不难：
+
+``` python
+colors = ximport( "colors" )
+
+font( "Courier", 100 )
+align( CENTER )
+text_path_line_1 = textpath( "PALM", 0, 200, width = WIDTH)
+text_path_line_2 = textpath( "4FUN", 0, 350, width = WIDTH)
+
+resx = 300
+resy = 80
+rx = 1.0
+ry = 1.5
+dotsize = 4.5
+dx = WIDTH  / float( resx )
+dy = HEIGHT / float( resy )
+
+def draw_text() :
+  nofill()
+  strokewidth( random( 0.2, 2.8 ) )
+  clr = choice( [
+      colors.hex( "#FFBCA4" ),
+      colors.hex( "#FFBCA4" ),
+      colors.hex( "#FF4500" ),
+      colors.hex( "#D93B00" ),
+      colors.hex( "#A72D00" ) ]
+      )
+  clr.a = random( 0.6, 1 )
+  stroke( clr )
+  oval( pointx + random( -rx, rx ), pointy + random( -ry, ry ), size, size )
+
+for x, y in grid( resx, resy ) :
+  size = choice( [ 1, 2, 2, 2, 3, 3, 3, dotsize ] )
+  pointx = x * dx - size
+  pointy = y * dy - size
+  if text_path_line_1.contains( pointx, pointy ) or text_path_line_2.contains( pointx, pointy ) :
+    draw_text()
+```
+
+感受一下，哪个印出来比较好看呢...
+
+![Vhost threshold](/downloads/images/2014_09/logo1.png "Don't touch me...")
+![Vhost threshold](/downloads/images/2014_09/logo2.png "Don't touch me...")
+![Vhost threshold](/downloads/images/2014_09/logo3.png "Don't touch me...")

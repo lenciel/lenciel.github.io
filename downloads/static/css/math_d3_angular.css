@@ -1,0 +1,184 @@
+.main-content{
+  width: 100%;
+  min-height:750px;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  overflow: hidden;
+}
+stage{
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-anchor: middle;
+}
+
+stage .point text{
+  fill: black;
+  pointer-events: none;
+}
+stage path{
+  stroke: #999;
+}
+stage text{
+  fill: #999;
+}
+stage .point{
+  font-size: 10px;
+  /*opacity: 0.7;*/
+}
+
+stage .point .handle, stage .point.active .handle{
+  fill: rgba(0,0,0,0);
+  stroke: none;
+}
+
+stage .point.active{
+  opacity: 1;
+}
+stage .point circle{
+  fill: rgba(236, 240, 241, 1.0);
+  cursor: pointer;
+}
+stage .point.active circle{
+  stroke: rgba(52, 152, 219,0.5);
+  stroke-width: 10;
+  fill: rgba(236, 240, 241, 0.8);
+}
+stage .point text{
+  cursor: none;
+  pointer-events: none;
+}
+stage .point .drag-hint{
+  fill: rgba(236, 240, 241, 0.8);
+  stroke: none;
+  opacity: 1;
+}
+stage .square{
+  stroke-dasharray: 5, 5;
+  fill: none;
+}
+stage .triangle{
+  /*fill: rgba(255, 0, 0, 0.3);*/
+  fill: rgba(231, 76, 60, 1);
+}
+stage .highlight {
+  fill: none;
+  stroke:rgba(52, 152, 219,1.0);
+  /*stroke-dasharray: 5, 5;*/
+  stroke-width: 10;
+}
+stage .highlight.closed{
+  fill: rgba(52, 152, 219,0.5);
+}
+stage .lines{
+  stroke-dasharray: 5, 5;
+}
+.details{
+  width: 100%;
+  height: 100%;
+  overflow-y: auto; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
+}
+.details h1{
+  margin: 0;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  font-size: 5rem;
+}
+.sm .details h1{
+  font-size: 2rem;
+}
+.details p{
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+co{
+  color: #3398db;
+  border-radius: 5px;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+co.active{
+  background-color: rgba(52, 152, 219, 0.7);
+}
+
+.details .by-line{
+  text-decoration: none;
+  cursor: inherit;
+}
+.by-line a{
+  color: black;
+}
+
+.panel{
+  position: absolute;
+}
+
+.panel .detail{
+  overflow: scroll;
+}
+
+.details a{
+  /*text-decoration: none;*/
+  color: black;
+}
+
+.share{
+  float:right;
+  margin: 10px;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+  #panel2 {
+    padding-top:400px;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
