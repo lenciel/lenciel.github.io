@@ -21,7 +21,7 @@ GEM
       safe_yaml (~> 1.0)
     jekyll-gist (1.4.0)
       octokit (~> 4.2)
-    jekyll-lenciel-theme (0.2.3)
+    jekyll-lenciel-theme (0.2.4)
       jekyll (~> 3.4)
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.5.0)
@@ -63,7 +63,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (= 3.4.3)
   jekyll-gist
-  jekyll-lenciel-theme (~> 0.2.3)
+  jekyll-lenciel-theme (~> 0.2.4)
   jekyll-paginate
   jekyll-sitemap
   pygments.rb
