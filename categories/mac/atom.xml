@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: mac | @Lenciel]]></title>
+  <link href="http://lenciel.com/categories/mac/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-03-31T23:38:06+08:00</updated>
+  <id>http://lenciel.com/</id>
+  <author>
+    <name><![CDATA[Lenciel]]></name>
+    <email><![CDATA[lenciel@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Better Dictionary on Mac]]></title>
+    <link href="http://lenciel.com/2014/05/better-dictionary-on-mac/"/>
+    <updated>2014-05-23T14:02:14+08:00</updated>
+    <id>http://lenciel.com/2014/05/better-dictionary-on-mac</id>
+    <content type="html"><![CDATA[<p>Mac上很贴心的提供了词典，并且还绑定了快捷键：在任何页面按下"Ctrl+Cmd+D"，就会有词义解释的界面弹出。不过内置的<code>New Oxford American Dictionary</code>比较的弱，给人的感觉词条的水准就像《新华字典》一样单薄，所以换成了编了好几十年又修订了好几十年的<a href="http://zh.wikipedia.org/wiki/%E9%9F%A6%E6%B0%8F%E8%AF%8D%E5%85%B8">韦氏词典</a>，两者的差距还是明显的。</p>
+
+<p>这是自带词典对pathos的解释：</p>
+
+<p><blockquote><p>pathos /ˈpāˌTHäs/, a quality that evokes pity or sadness</p></blockquote></p>
+
+<p>这是《韦氏词典》的：</p>
+
+<p><blockquote><p>pathos /ˈpāˌTHäs/, n.</p></p><p><ol><br/><li><p>The quality or character of those emotions, traits, or experiences which are personal, and therefore restricted and evanescent; transitory and idiosyncratic dispositions or feelings as distinguished from those which are universal and deep-seated in character; — opposed to ethos.</p></li><br/><li><p>That quality or property of anything which touches the feelings or excites emotions and passions, esp., that which awakens tender emotions, such as pity, sorrow, and the like; contagious warmth of feeling, action, or expression; pathetic quality; as, the pathos of a picture, of a poem, or of a cry.</p></blockquote></p></li>
+</ol>
+
+
+<p>安装的方法也挺简单：</p>
+
+<ul>
+<li>如果下载的是<a href="http://pan.baidu.com/s/1o6z67dK#dir/path=%2Fdictionary">这样</a>的<code>dictionary</code>文件，直接拷贝到<code>~/Library/Dictionaries</code></li>
+<li>如果是<a href="http://pan.baidu.com/s/1i35ik7N">这样</a>的raw文件，需要运行DictUnifier应用编译</li>
+</ul>
+
+
+<p>安装完毕运行<code>Dictionary</code>应用，勾选你期望出现的字典和顺序即可，我启用了《朗道英汉词典》、《韦氏词典》和《维基百科》:</p>
+
+<p><img src="/downloads/images/2014_05/apple_dict_effect.png" title="Apple Dict" alt="Don't touch me" width="60%"></p>
+
+
+<p>另外，词典的样式其实是用css定义的，就在每个字典文件的Contetns目录，比如：<code>~/Library/Dictionaries/dictd_www.dict.org_web1913.dictionary/Contents/DefaultStyle.css</code>。如果你不满意字典出来的样子，可以自定义格式。</p>
+
+<p>最后，这些词典其实都是linux上著名的国产软件<a href="http://en.wikipedia.org/wiki/StarDict">stardict</a>的文件格式（写到这里，又想起stardict的作者<a href="http://www.huzheng.org/aboutme.php">胡正</a>），所以要在<a href="https://itunes.apple.com/us/app/dictionary-universal/id312088272?mt=8">手机上使用</a>也是很容易的事情。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Quick Look on Mac]]></title>
+    <link href="http://lenciel.com/2013/12/quick-look-on-mac/"/>
+    <updated>2013-12-14T15:34:00+08:00</updated>
+    <id>http://lenciel.com/2013/12/quick-look-on-mac</id>
+    <content type="html"><![CDATA[<p>Mac平台上，如果我们在Finder里面查看文件，有一个不太容易被察觉的方式是使用<a href="http://en.wikipedia.org/wiki/Quick_Look">Quick Look</a>：选中文件的情况下按<code>空格键</code>或者是<code>Cmd+Y</code>。速度快，疗效好，唯一的缺点就是有很多文件格式支持不佳，比如没有扩展名的config文件，比如各种markdown，比如图片等等。</p>
+
+<p>最近在Github上看到一个<a href="https://github.com/sindresorhus/quick-look-plugins">Quick Look插件集中营</a>，非常不错的精选集，推荐也在用Quick Look的小伙伴们试试。</p>
+]]></content>
+  </entry>
+  
+</feed>

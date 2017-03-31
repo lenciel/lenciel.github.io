@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: python | @Lenciel]]></title>
+  <link href="http://lenciel.com/categories/python/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-03-31T23:38:06+08:00</updated>
+  <id>http://lenciel.com/</id>
+  <author>
+    <name><![CDATA[Lenciel]]></name>
+    <email><![CDATA[lenciel@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[简单验证码的快速识别]]></title>
+    <link href="http://lenciel.com/2016/06/python-captcha-solution/"/>
+    <updated>2016-06-16T18:48:14+08:00</updated>
+    <id>http://lenciel.com/2016/06/python-captcha-solution</id>
+    <content type="html"><![CDATA[<p>昨天饭局上聊起来自动化测试或者是别的奇怪事业里经常需要面对的一个问题：验证码识别。</p>
+
+<p>其实验证码的识别，技术上来说可以作为古老的OCR（Optical Character Recognition）问题的一个子集：因为OCR其实就是从图片上把文字认出来嘛。</p>
+
+<p>但它的有趣之处在于，验证码，也就是CAPTCHA，本身就是'Completely Automated Public Turing test to tell Computers and Humans Apart'的缩写，也就是说在设计上它的目的就是要：</p>
+
+<ol>
+<li>让人很容易认识出来</li>
+<li>让机器很难认识出来</li>
+</ol>
+
+
+<p>所以如果你电脑识别出来了验证码，要么就是它特别容易不符合#2的要求，要么就是你实现了很不错的人工智能算法，这篇文章是讲第一种情况。</p>
+
+<p>传统的做法来识别OCR，主要需要处理的是下面三个环节：</p>
+
+<ol>
+<li>图片二值化</li>
+<li>字符的分割</li>
+<li>字符的识别</li>
+</ol>
+
+
+<a name="L.................."></a>
+<h3>二值化怎么做</h3>
+
+<p>所谓的“二值化”，就是图片上的像素要么灰度是255（白），要么是0（黑）。大致的思路就是把灰度大于或等于阈值的像素判为属于你关注的文字，置成0；其他的像素点灰度置为255。</p>
+
+<p>具体的操作，我一般使用下面几种方式：</p>
+
+<ol>
+<li>如果是特别简单地处理，用PIL库</li>
+<li>如果是比较复杂的但是不需要很细致的控制，用<a href="http://imagemagick.sourceforge.net/">ImageMagick</a>的<code>convert</code>命令</li>
+<li>如果是特别复杂，需要反复试验各种算法的，用OpenCV</li>
+</ol>
+
+
+<p>所以下面这两个验证码，哪个的难度大一些？</p>
+
+<p style="font-size: 0.8em;
+"><img src="/downloads/images/2016_06/orig_code.png" title="Don't touch me..." alt="Vhost threshold" data-pin-nopin="true"><br/>
+图1. 微林的验证码</p>
+
+
+
+
+<p style="font-size: 0.8em;
+"><img src="/downloads/images/2016_06/orig_code_2.jpg" title="Don't touch me..." alt="Vhost threshold" data-pin-nopin="true"><br/>
+图2. 饭局后J.Snow提供的验证码</p>
+
+
+<p>如果你脑子里面没有二值化的概念大概会觉得第一个难度大一些，因为以人眼的视线去考虑，好像第一张要“难分辨”一些。</p>
+
+<p>但其实第一张图所有的噪声都是花花绿绿的颜色，而验证码本身是纯粹的黑色，这种图片处理起来是相对容易的。只需要找到验证码像素点的颜色，用这种颜色选取这些像素点，拷贝到一张全白的图片上面即可。</p>
+
+<p>要获取验证码的像素颜色可以<a href="http://www.boyter.org/decoding-captchas/">参考这里</a>的思路，把图片转成256色的，然后对所有的像素做一个统计然后标出它们在整个图片里面出现的频率。因为觉得原文里面的代码写得比较啰嗦（要学会写lamda啊）就做了一些修改：</p>
+
+<pre><code class="python">import sys
+from PIL import Image
+
+
+def get_top_pixels(file_path, min_pt_num):
+    im = Image.open(file_path)
+    im = im.convert("P")
+    top_pixels = []
+
+    for index in enumerate(im.histogram()):
+        if index[1] &gt; int(min_pt_num):
+            top_pixels.append(index)
+
+    return sorted(top_pixels, key=lambda x: x[1], reverse=True)
+
+
+if __name__ == '__main__':
+    print(get_top_pixels(sys.argv[1], sys.argv[2]))
+</code></pre>
+
+<p>这个程序运行的结果如下：</p>
+
+<p><blockquote><p>$ python get_histdata.py regcode.png 30</p></p><p><p>[(0, 1471), (1, 214), (10, 110), (11, 97), (2, 85), (9, 83), (6, 66), (8, 58), (7, 49), (5, 37)]</p></blockquote></p>
+
+<p>拿到了颜色，就可以写一个简单的程序从图片里面拷贝这些像素到一张干净的图：</p>
+
+<pre><code class="python">import sys
+from PIL import Image
+
+
+def clean_image(file_path, key_pix):
+    im = Image.open(file_path)
+    im = im.convert("P")
+    im2 = Image.new("P", im.size, 255)
+
+    for x in range(im.size[1]):
+        for y in range(im.size[0]):
+            pix = im.getpixel((y, x))
+            # color of pixel to get
+            if pix == key_pix:
+                im2.putpixel((y, x), 0)
+
+    im2.save("convert_%s.png" % key_pix)
+
+
+if __name__ == '__main__':
+    clean_image(sys.argv[1], sys.argv[2])
+</code></pre>
+
+<p>出现的最多的<code>0</code>显然是背景色，所以对<code>1</code>和<code>10</code>运行脚本：</p>
+
+<p><blockquote><p>$ python convert_grayscale.py regcode.png 1<br/>$ python convert_grayscale.py regcode.png 10</p></blockquote></p>
+
+<p>结果如下：</p>
+
+<p><img src="/downloads/images/2016_06/convert_1.png" title="Don't touch me..." alt="Vhost threshold" data-pin-nopin="true">&nbsp;&nbsp;&nbsp;&nbsp;<img src="/downloads/images/2016_06/convert_10.png" title="Don't touch me..." alt="Vhost threshold" data-pin-nopin="true"></p>
+
+
+<p>很明显目标像素是1而不是10。</p>
+
+<p>而J. Snow的这张图，首先验证码本身就是幻彩的而不是均匀一致的颜色，然后噪声又都是用这些幻彩颜色来生成的，所以如果只是简单的对颜色排序，会得到下面的结果：</p>
+
+<p><blockquote><p>[(225, 349), (139, 170), (182, 161), (219, 95), (224, 64), (189, 54), (175, 47), (218, 40), (90, 36), (96, 33)]</p></blockquote></p>
+
+<p>然后我们对排名靠前的像素进行提取会得到下面的结果：</p>
+
+<p><img src="/downloads/images/2016_06/convert_225.png" title="Don't touch me..." alt="Vhost threshold" data-pin-nopin="true"><img src="/downloads/images/2016_06/convert_139.png" title="Don't touch me..." alt="Vhost threshold" data-pin-nopin="true"><img src="/downloads/images/2016_06/convert_182.png" title="Don't touch me..." alt="Vhost threshold" data-pin-nopin="true"><img src="/downloads/images/2016_06/convert_219.png" title="Don't touch me..." alt="Vhost threshold" data-pin-nopin="true"></p>
+
+
+<p>这种情况下怎么办？直观观察一下验证码，会发现背景噪声点相比验证码像素点来说很少（这也正常，都是一个颜色如果太多就没法看了）， 很适合先做一些切割，然后进行模糊匹配（因为验证码的像素是幻彩的不是单一的，需要匹配相近像素点），然后再做二值化。</p>
+
+<p>直接用IM的convert来处理比写代码简单：</p>
+
+<pre><code class="bash">$ convert 1.pic.jpg -gravity Center -crop 48x16+0+0  +repage -fuzz 50% -fill white -opaque white -fill black +opaque white resultimage.jpg
+</code></pre>
+
+<p>效果如下：</p>
+
+<p><img src="/downloads/images/2016_06/orig_code_2.jpg" title="Don't touch me..." alt="Vhost threshold" data-pin-nopin="true">&nbsp;&nbsp;&nbsp;&nbsp;<img src="/downloads/images/2016_06/convert_im.jpg" title="Don't touch me..." alt="Vhost threshold" data-pin-nopin="true"></p>
+
+
+<a name="L.................."></a>
+<h3>字符怎么分割</h3>
+
+<p>其实整个验证码的识别里面，最难的是分割。特别是很多严肃的验证码，字体不是标准字体或者会变形，互相还可能粘连或者重叠，分割起来是非常难的。</p>
+
+<p>但这里拿到的验证码相对简单，这部分不是问题就不展开了。</p>
+
+<a name="L..............."></a>
+<h3>字符的识别</h3>
+
+<p>对于这里拿到的验证码而言，因为都是标准字体，可以直接使用OCR的开源工具读取，比如<a href="https://github.com/tesseract-ocr/tesseract/wiki">tesseract</a>：</p>
+
+<pre><code class="bash">$ tesseract resultimage.jpg -psm 7 output &amp;&amp; cat output.txt
+
+Tesseract Open Source OCR Engine v3.04.01 with Leptonica
+Warning in pixReadMemJpeg: work-around: writing to a temp file
+
+YLNU
+</code></pre>
+
+<p>如果不是标准字体的，因为分割完毕了就拿到了独立的字符，要识别就可以建一个模型，不断的训练它，来识别每个字符。</p>
+
+<a name="L..........................."></a>
+<h3>如果是更困难的呢？</h3>
+
+<p>可能你会觉得围棋电脑都会下了，那么认识验证码为什么还是比较难？</p>
+
+<p>其实<a href="https://www.google.com.hk/search?safe=off&amp;q=CNN+captcha&amp;oq=CNN+captcha&amp;gs_l=serp.3...1563.1932.0.2169.3.3.0.0.0.0.0.0..0.0....0...1c.1.64.serp..3.0.0.q4EdDQLrqyk">随便搜一下</a>就会发现有很多人在做这方面的实验，主要的思路就是把n个字符组成的验证码当成有n个标签的图片来用CNN来解决。加上最近很多大公司开放了自己的人工智能平台，比如Google的Tensorflow，我们这些没有大量计算资源的普通人也可以用它们实现自己的想法了。</p>
+
+<p>推荐参考链接：</p>
+
+<ol>
+<li><a href="https://matthewearl.github.io/2016/05/06/cnn-anpr/">CNN辨认车牌</a></li>
+<li><a href="http://www.cs.sjsu.edu/faculty/pollett/masters/Semesters/Spring15/geetika/CS298%20Slides%20-%20PDF">CNN验证码识别</a></li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How complex your python project is?]]></title>
+    <link href="http://lenciel.com/2014/08/how-complex-your-python-project-is/"/>
+    <updated>2014-08-31T21:04:47+08:00</updated>
+    <id>http://lenciel.com/2014/08/how-complex-your-python-project-is</id>
+    <content type="html"><![CDATA[<p>最近诸事不顺，却也理所应当。</p>
+
+<p>晚间时段迷上写字和画画，大概是因为之前看<a href="http://www.imdb.com/title/tt0460740/">《Cashback》</a>印象太深刻，觉得这些是美好遗失前力挽狂澜的技艺。</p>
+
+<p>除开纸上涂鸦，还用机器画了不少鸡零狗碎的东西：我想用python画点儿T恤图案，印出来送给大家，给大伙儿同时也给自己打打气。</p>
+
+<p>一开始看中了基于<a href="http://www.graphviz.org/">Graphviz</a>的<a href="http://furius.ca/snakefood/">Snakefood</a>。</p>
+
+<p>最开始接触Graphviz是因为<a href="https://github.com/django-extensions/django-extensions">django-extensions</a>项目用它来画django model的<a href="https://code.djangoproject.com/wiki/DjangoGraphviz">关系图</a>。我们用它冒充ER图，拿去跟那些喜欢看文档但其实又不专业的官僚客户们交差。</p>
+
+<p>Snakefood更进一步，通过分析你的代码依赖，从而得出你代码的“复杂度”。</p>
+
+<p>“复杂度”其实是用“代码行数”衡量码农工作效力被普遍吐槽之后，大公司发明出来折腾工程师的诸多metrics里面还算有点儿用的一个：至少你可以让要接手的人看看这项目大概是个什么规模，以及，大概要挠破几寸头皮才能看懂。</p>
+
+<p>当然，Snakefood这种基于文件依赖的复杂度分析其实不算特别靠谱，这可不是什么<a href="https://en.wikipedia.org/wiki/Cyclomatic_complexity">Cyclomatic complexity</a>，更像是开飞机的时候边排查“事故征兆”边驾驶的辅助工具。作者自己是这么说的：</p>
+
+<p><blockquote><p>Producing pretty graphs is fun, but I found the most leverage of it when I try to make my code simpler, I generate the graph and inspect unexpected dependencies and try to refactor my code to simply the dependency graph as much as possible.</p><footer><strong>Martin Blais</strong></footer></blockquote></p>
+
+<p>下面是本座心目中永远的"优雅Python代码第一名"<a href="http://docs.python-requests.org/en/latest/">Requests</a>的分析结果：</p>
+
+<p><img src="/downloads/images/2014_08/requests.png" title="requests dependencies" alt="requests" /></p>
+
+<p>再来看看<a href="https://github.com/django/django">Django</a>的最新版分析结果：</p>
+
+<p><img src="/downloads/images/2014_08/django.png" title="django dependencies" alt="django" /></p>
+
+<p>下面是本座最近撸完的一个项目，印到衣服上感觉还好吧：
+<img src="/downloads/images/2014_08/yawp.png" title="yawp dependencies" alt="yawp" /></p>
+
+<a name="L......"></a>
+<h2>结论</h2>
+
+<p>首先，本座挺喜欢Snakefood那种Unix范儿的：所有的命令都可以给其他命令来一管，比如：</p>
+
+<pre><code class="bash">    sfood ./src | sfood-graph -p | dot -Tps | pstopdf -i -o ./1.pdf
+</code></pre>
+
+<p>其次，本座开始计划是给每个人生成一个他们自己写的模块的依赖图，印到衣服上让大家自己穿。但试了之前几个项目之后，Hmmmm&hellip;有的同学大概是不会愿意的吧&hellip;</p>
+
+<p>最后，T恤计划也没这么就打住：后来又发现了<a href="http://nodebox.net/">nodebox</a>这种真正是拿来搞艺术的玩意儿，于是要生成一点儿敢往自己胸口放的东西变得方便多了，过两天如果公司没有倒闭，就把东西放出来让大家看看。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Fix Python after upgrade to Maverick]]></title>
+    <link href="http://lenciel.com/2013/10/maverick-and-python/"/>
+    <updated>2013-10-24T22:02:00+08:00</updated>
+    <id>http://lenciel.com/2013/10/maverick-and-python</id>
+    <content type="html"><![CDATA[<p>升级到最新的osx版本Maverick之后，打开iTerm2就报错：</p>
+
+<pre><code class="bash">Traceback (most recent call last):
+  File "&lt;string&gt;", line 1, in &lt;module&gt;
+ImportError: No module named virtualenvwrapper.hook_loader
+virtualenvwrapper.sh: There was a problem running the initialization hooks.
+If Python could not import the module virtualenvwrapper.hook_loader,
+check that virtualenv has been installed for
+VIRTUALENVWRAPPER_PYTHON=/usr/bin/python and that PATH is
+set properly.
+</code></pre>
+
+<p>敲pip之后也报错：</p>
+
+<pre><code class="bash">Traceback (most recent call last):
+  File "/usr/local/bin/pip", line 5, in &lt;module&gt;
+    from pkg_resources import load_entry_point
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/pkg_resources.py", line 2603, in &lt;module&gt;
+    working_set.require(__requires__)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/pkg_resources.py", line 666, in require
+    needed = self.resolve(parse_requirements(requirements))
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/pkg_resources.py", line 565, in resolve
+    raise DistributionNotFound(req)  # XXX put more info here
+pkg_resources.DistributionNotFound: pip==1.3.1
+</code></pre>
+
+<p>这坨<code>pkg_resources.DistributionNotFound</code>的错正好前两天装CentOS的机器<a href="http://stackoverflow.com/questions/7446187/no-module-named-pkg-resources">看到过</a>。</p>
+
+<p>运行下面的命令更新了<code>setuptools</code>之后重装了<code>pip</code>和<code>virtualenv</code>、<code>virtualenvwrapper</code>就好了：</p>
+
+<pre><code class="bash">wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py
+sudo python ez_setup.py
+sudo easy_install -U pip
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[打开pip的download cache]]></title>
+    <link href="http://lenciel.com/2013/10/pip-download-cache/"/>
+    <updated>2013-10-17T13:25:00+08:00</updated>
+    <id>http://lenciel.com/2013/10/pip-download-cache</id>
+    <content type="html"><![CDATA[<p>Python的标准库实在是<a href="http://lenciel.com/2013/10/recharging-the-python-standard-library/">不够用</a>，所以一个很常见的情况是我们需要在每个项目使用的<code>virtualenv</code>里面都安装一些常用的库。</p>
+
+<p>为了加速安装的过程，有两个小窍门。</p>
+
+<p>一个是使用国内的源，比如<a href="http://www.v2ex.com/">v2ex</a>提供的。只需要新建或者编辑<code>~/.pip/pip.conf</code>，加入一行：</p>
+
+<pre><code>[global]
+index-url = http://pypi.v2ex.com/simple
+</code></pre>
+
+<p>另一个就是打开pip的<code>download cache</code>，这样可以避免pip每次都去下载相同的东西。只需要在<code>.bashrc</code>或者是<code>.zshrc</code>里面加入一行：</p>
+
+<pre><code>export PIP_DOWNLOAD_CACHE=$HOME/.pip-download-cache
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[给Python标准库充电]]></title>
+    <link href="http://lenciel.com/2013/10/recharging-the-python-standard-library/"/>
+    <updated>2013-10-17T12:27:00+08:00</updated>
+    <id>http://lenciel.com/2013/10/recharging-the-python-standard-library</id>
+    <content type="html"><![CDATA[<p>Python的自荐页面<a href="http://www.python.org/about/">About Python</a>上号称自家的标准库是"batteries included"的，但实际情况却不是这样。对Python标准库的批评几乎从来没有中断过。著名的Python包<a href="http://docs.python-requests.org/en/latest/">Requests</a>的作者甚至决定永久把Requests保持为第三方库而拒绝加入标准库，他的理由是：<a href="http://www.leancrew.com/all-this/2012/04/where-modules-go-to-die/">加入标准库就会死翘翘</a>。</p>
+
+<p>再举个例子，我们最近的项目里面都用到了<a href="https://pypi.python.org/pypi/pytz/">pytz</a>。标准库里面的datetime是支持时区的（tzinfo类），但是并没有包含时区信息（tzinfo是抽象类需要自己实现）。遵照前人的经验使用pytz是最好的办法<a href="" title="[如何在datetime转换中保存时区信息](http://stackoverflow.com/questions/14762518/python-datetime-strptime-and-strftime-how-to-preserve-the-timezone-informat).    ">^1</a>。</p>
+
+<p>所以不奇怪的是，几乎所有的Python项目都会引用一堆优秀的第三方库。为了管理这些依赖一般都会用上pip:</p>
+
+<ul>
+<li>在项目里面用pip freeze生成一个<code>requirement.txt</code>文件</li>
+<li>在创建<code>virtualenv</code>的时候使用之前生成的文件安装所有的依赖</li>
+</ul>
+
+
+<p>为了不在每次运行<code>pip install -r requirements.txt</code>的时候都下载一堆依赖，你还可以打开pip的<a href="http://lenciel.cn/2013/10/pip-download-cache/">download cache</a>。如果整个公司在做项目的时候都需要经常使用一些包，甚至可以考虑<a href="https://github.com/wolever/pip2pi">做一个Pypi</a>的库来共享，类似于Maven的Repo。</p>
+]]></content>
+  </entry>
+  
+</feed>

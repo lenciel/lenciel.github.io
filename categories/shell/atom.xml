@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: shell | @Lenciel]]></title>
+  <link href="http://lenciel.com/categories/shell/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-03-31T23:38:06+08:00</updated>
+  <id>http://lenciel.com/</id>
+  <author>
+    <name><![CDATA[Lenciel]]></name>
+    <email><![CDATA[lenciel@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[关掉Zsh对指定命令的自动纠错]]></title>
+    <link href="http://lenciel.com/2013/07/stop-specific-zsh-shell-auto-correct/"/>
+    <updated>2013-07-23T14:47:00+08:00</updated>
+    <id>http://lenciel.com/2013/07/stop-specific-zsh-shell-auto-correct</id>
+    <content type="html"><![CDATA[<p>工作机器切换到Mac之后我一直在自用并在团队中推广 <a href="https://github.com/lenciel/oh-my-zsh"><code>oh-my-zsh</code></a>。99%的时间本座对它是如此满意，除开有的时候它的服务太主动了一些。</p>
+
+<p>比如今天在用<code>curl</code>试用一个接口的时候，我测试用的payload放在一个<code>payload.json</code>文件里面，所以命令是：</p>
+
+<pre><code>curl -H "Content-Type: application/json" -X POST -d @payload.json  http://xxx.xxx.xxx/xxx/StartServiceServlet
+</code></pre>
+
+<p>然后它就一直提示：</p>
+
+<pre><code>zsh: correct '@payload.json' to 'payload.json' [nyae]?
+</code></pre>
+
+<p>一，直，提，示。</p>
+
+<p>跑到代码里面去看了一下，要关掉这种自动纠错的提示可以配置 <code>~/.oh-my-zsh/lib/correction.zsh</code>：</p>
+
+<pre><code>alias curl='nocorrect curl'
+</code></pre>
+
+<p>整个世界清静了&hellip;</p>
+]]></content>
+  </entry>
+  
+</feed>

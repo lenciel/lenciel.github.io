@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: gfw | @Lenciel]]></title>
+  <link href="http://lenciel.com/categories/gfw/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-03-31T23:38:06+08:00</updated>
+  <id>http://lenciel.com/</id>
+  <author>
+    <name><![CDATA[Lenciel]]></name>
+    <email><![CDATA[lenciel@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[update android sdk with shadowsocks proxy]]></title>
+    <link href="http://lenciel.com/2014/09/update-android-sdk-with-proxy/"/>
+    <updated>2014-09-02T02:30:35+08:00</updated>
+    <id>http://lenciel.com/2014/09/update-android-sdk-with-proxy</id>
+    <content type="html"><![CDATA[<p>博格坎普说，我们android项目的build挂了。</p>
+
+<p>去Jenkins看了一下，日志里面的错误是：</p>
+
+<pre><code>[android] $ /usr/local/share/gradle-1.11/bin/gradle clean build
+Creating properties on demand (a.k.a. dynamic properties) has been deprecated and is scheduled to be removed in Gradle 2.0. Please read http://gradle.org/docs/current/dsl/org.gradle.api.plugins.ExtraPropertiesExtension.html for information on the replacement for dynamic properties.
+Deprecated dynamic property: "buildName" on "ProductFlavorDsl_Decorated{name=main, minSdkVersion=null, targetSdkVersion=null, renderscriptTargetApi=-1, renderscriptSupportMode=null, renderscriptNdkMode=null, versionCode=-1, versionName=null, applicationId=null, testApplicationId=null, testInstrumentationRunner=null, testHandleProfiling=null, testFunctionalTest=null, signingConfig=null, resConfig=null}", value: "1.0.97".
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+A problem occurred configuring project ':app'.
+&gt; Could not resolve all dependencies for configuration ':app:_debugCompile'.
+   &gt; Could not find com.android.support:appcompat-v7:20.0.0.
+     Required by:
+         android:app:unspecified
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.s
+</code></pre>
+
+<p>这其实在天朝是蛮常见的现象，因为<code>dl-ssl.google.com</code>被封了，所以你总是会因为下面的错误无法更新Android的SDK：</p>
+
+<pre><code class="bash">Failed connect to dl-ssl.google.com:443;
+</code></pre>
+
+<a name="Jenkins....................."></a>
+<h2>Jenkins服务器配置代理</h2>
+
+<p>这里之所以选择<a href="http://shadowsocks.org/">shadowsocks</a>，是因为可以用自己在<a href="https://developers.google.com/appengine/">Google的VM</a>上配置的shadowsocks代理服务器（顺便广告一下，Google的VM在做活动，几乎是最高配的机器都不要钱，而且第一跳就在美帝，用来做代理非常爽）。</p>
+
+<p>安装shadowsocks的pythohn client:</p>
+
+<pre><code class="bash">$ pip install shadowsocks
+
+Downloading/unpacking shadowsocks
+  Running setup.py egg_info for package shadowsocks
+
+    warning: manifest_maker: MANIFEST.in, line 1: 'recursive-include' expects &lt;dir&gt; &lt;pattern1&gt; &lt;pattern2&gt; ...
+
+Installing collected packages: shadowsocks
+  Running setup.py install for shadowsocks
+
+    warning: manifest_maker: MANIFEST.in, line 1: 'recursive-include' expects &lt;dir&gt; &lt;pattern1&gt; &lt;pattern2&gt; ...
+
+    Installing sslocal script to /usr/local/bin
+    Installing ssserver script to /usr/local/bin
+Successfully installed shadowsocks
+Cleaning up...
+</code></pre>
+
+<p>可以看到安装完之后有两个可执行文件，运行其中的<code>sslocal</code>就可以启动shadowsocks的客户端了：</p>
+
+<pre><code class="bash">root@palm4fun-core-1:~/install# sslocal -h
+usage: sslocal [-h] -s SERVER_ADDR [-p SERVER_PORT]
+               [-b LOCAL_ADDR] [-l LOCAL_PORT] -k PASSWORD [-m METHOD]
+               [-t TIMEOUT] [-c CONFIG] [--fast-open] [-v] [-q]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -s SERVER_ADDR        server address
+  -p SERVER_PORT        server port, default: 8388
+  -b LOCAL_ADDR         local binding address, default: 127.0.0.1
+  -l LOCAL_PORT         local port, default: 1080
+  -k PASSWORD           password
+  -m METHOD             encryption method, default: aes-256-cfb
+  -t TIMEOUT            timeout in seconds, default: 300
+  -c CONFIG             path to config file
+  --fast-open           use TCP_FASTOPEN, requires Linux 3.7+
+  -v, -vv               verbose mode
+  -q, -qq               quiet mode, only show warnings/errors
+
+Online help: &lt;https://github.com/clowwindy/shadowsocks&gt;
+</code></pre>
+
+<p>最简单的办法就是新建一个配置文件：</p>
+
+<p><code>javascript ~/.shadowconfig
+{
+    "server":"my_server_ip",
+    "server_port":8388,
+    "local_port":1080,
+    "password":"barfoo!",
+    "timeout":600,
+    "method":"table"
+}
+</code></p>
+
+<p>记得在防火墙打开你配置的本地端口，然后运行下面的命令：</p>
+
+<pre><code class="bash">root@palm4fun-core-1:~/install# sslocal -c ~/.shadowconfig
+INFO: loading config from /root/.shadowconfig
+shadowsocks 2.1.0
+2014-09-02 00:27:53 INFO     starting local at 127.0.0.1:1080
+</code></pre>
+
+<a name="L...............android.sdk"></a>
+<h2>命令行更新android sdk</h2>
+
+<p>先配置java命令使用的代理，然后
+从命令行更新android sdk。只需要到tools目录下面去跑(<code>-u</code>是不显示GUI，<code>-s</code>是指定不使用ssl链接)：</p>
+
+<pre><code class="bash">$ export _JAVA_OPTIONS="-DsocksProxyHost=127.0.0.1"
+$ android update sdk -u -s --all
+</code></pre>
+
+<p>注意<code>socksProxyHost</code>的默认端口就是1080，如果你使用了其他端口不能只配ip。</p>
+
+<p>另外，<code>--all</code>是比较猛烈的选项（人家的硬盘就是大，人家的代理就是快嘛），你可以在命令行里面通过filter来安装你需要的东西。</p>
+
+<a name="When.shit.happens"></a>
+<h2>When shit happens</h2>
+
+<p>运行起来之后更新非常慢，可以<code>android</code>命令报timeout，而代理那边打出日志：</p>
+
+<pre><code class="bash">2014-09-02 00:27:53 INFO     starting local at 127.0.0.1:1080
+2014-09-02 00:28:04 INFO     connecting 74.125.237.1:80
+2014-09-02 00:28:04 INFO     connecting 74.125.237.1:80
+2014-09-02 00:28:04 INFO     connecting 74.125.237.1:80
+</code></pre>
+
+<p>因为本座平时上网也是在用Google VM上的这个代理，没理由这么慢。所以就怀疑那个74.125.237.1的地址是被谁在<code>/etc/hosts</code>里面给配了固定ip。打开一看果然有：</p>
+
+<pre><code class="bash">dl-ssl.google.com 74.125.237.1
+</code></pre>
+
+<p>估计是之前配置的基友搜索到了类似<a href="http://www.programering.com/a/MjM4YTMwATA.html">这样的文章</a>。这也是为什么我从来不用也不推荐别人用修改hosts文件的方法来翻墙的原因：它们总是在过期。</p>
+
+<p>Last but not the least, Fuck you, GFW.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Mac上自启动autossh]]></title>
+    <link href="http://lenciel.com/2014/07/fuck-the-gfw-with-ssh-tunnel/"/>
+    <updated>2014-07-11T20:14:20+08:00</updated>
+    <id>http://lenciel.com/2014/07/fuck-the-gfw-with-ssh-tunnel</id>
+    <content type="html"><![CDATA[<p>If you know what it is then you know what <a href="https://gist.github.com/lenciel/d353a04a3a7bc0278ec6">it is</a>. Let&rsquo;s fuck the GFW.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Mac下后台运行goagent]]></title>
+    <link href="http://lenciel.com/2013/11/replace-goagentx-with-lines-of-scripts/"/>
+    <updated>2013-11-14T13:22:00+08:00</updated>
+    <id>http://lenciel.com/2013/11/replace-goagentx-with-lines-of-scripts</id>
+    <content type="html"><![CDATA[<p>几年过去了，<a href="https://code.google.com/p/goagent/">Goagent</a>是本座翻墙唯一的选择。在Mac上使用它最开始我用了<a href="https://github.com/ohdarling/GoAgentX">GoAgentX</a>，但使用了一段时间之后发现几个不太满意的地方：</p>
+
+<ul>
+<li>不是简单给GoAgent做了个界面，而是集成了多个翻墙工具，选项挺多挺乱的（可能对其他用户是一个好事）</li>
+<li>每次GoAgent更新之后，GoAgentX更新的时间都比较滞后</li>
+<li>GoAgentX更新之后，经常无法工作，需要做这样那样的调整</li>
+</ul>
+
+
+<p>但其实用GoAgent我们需要的无非是<code>python proxy.py</code>，有很多办法让它运行起来。本座比较喜欢的是用tmux把这个任务跑在一个detach了的session，如果连接有问题再attach上去看看是什么问题。具体流程如下：</p>
+
+<p>先装<a href="https://github.com/aziz/tmuxinator">tmuxinator</a>，看名字不知道是不是受了ubuntu下面terminator的启发。然后新建一个项目用来跑goagent:</p>
+
+<pre><code class="bash">$ mux new goagent
+</code></pre>
+
+<p>项目配置文件（假设你的goagent放在<code>~/bin/goagent/local</code>）：</p>
+
+<pre><code class="ruby">name: goagent
+root: ~/bin/goagent/local
+
+
+windows:
+  - shell: python proxy.py
+</code></pre>
+
+<p>这样就只需要你在需要翻墙的时候<code>mux goagent</code>一下即可，detach或者attach到这个session也非常方便。当然不使用tmuxinator而是直接用shell脚本写一堆tmux命令也可以达到一样的效果，用tmuxinator是因为本座自己还有一堆别的Django项目的tmuxinator项目。</p>
+]]></content>
+  </entry>
+  
+</feed>

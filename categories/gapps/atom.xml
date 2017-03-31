@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: gapps | @Lenciel]]></title>
+  <link href="http://lenciel.com/categories/gapps/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-03-31T23:38:06+08:00</updated>
+  <id>http://lenciel.com/</id>
+  <author>
+    <name><![CDATA[Lenciel]]></name>
+    <email><![CDATA[lenciel@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[定制机上恢复google原厂应用]]></title>
+    <link href="http://lenciel.com/2013/12/restore-google-apps/"/>
+    <updated>2013-12-18T22:33:00+08:00</updated>
+    <id>http://lenciel.com/2013/12/restore-google-apps</id>
+    <content type="html"><![CDATA[<p>最近因为移动的手机丢了，正好宽带升级到100M送了两个电信的卡没地方用，入了一个Rick推荐的电信移动双卡双待的机器：<a href="http://item.jd.com/824702.html">中兴N986</a>。</p>
+
+<p>机器用来当小三机已经是非常不错了，唯一让本座纠结的就是电信的合约机老是喜欢把google账号干掉，而小弟的所有联系人又都在google（虽然现在看起来这么做可能也未必妥当）。</p>
+
+<p>据Rick大大说，之前是可以用小米的<a href="http://app.xiaomi.com/detail/36925">谷歌应用下载器</a>来直接把Google的一干应用装回来。但是好像因为<a href="http://www.zhihu.com/question/21103129">Google不太愿意</a>自己的应用被未授权的雷总装来装去，这个应用已经没有更新了：青漾系统是4.2.1，下载回来的apk直接<code>adb install</code>会因为android版本不match报错。</p>
+
+<p>于是只好去搜了<a href="http://www.teamandroid.com/gapps/">4.2.1的stock gapps包</a>回来自己撸 - <a href="http://pan.baidu.com/s/1iPXn">百度盘分享了一份</a>。</p>
+
+<p>首先要root机器，然后把<code>/system/app</code>路径mount成rw的。</p>
+
+<p>root就是刷recovery然后替换一些文件，当然大天朝有不少神器做得非常不错，比如<a href="http://www.mgyun.com/">刷机大师</a>这种软件，感觉会摧毁电脑城刷机青年的就业机会。而修改目录权限这种事情，如果你对命令行不熟，好像有很多流行的文件夹管理应用可以用来更改目录的权限。</p>
+
+<p>然后，直接把下载回来的gapps.zip解压，进入<code>system/app</code>路径，将自己需要的apk往<code>/system/app</code>路径push就行了。</p>
+
+<p>以Google联系人同步为例，就是：</p>
+
+<pre><code class="bash">adb push GoogleContactsSyncAdapter.apk /system/app/.
+</code></pre>
+
+<p>这里要注意的就是所有Google的应用有些基础的依赖，要记得check一下/system/app下面是不是都有，比如<code>GoogleServicesFramework.apk</code>等等。</p>
+]]></content>
+  </entry>
+  
+</feed>

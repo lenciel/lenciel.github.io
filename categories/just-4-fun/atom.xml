@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: just-4-fun | @Lenciel]]></title>
+  <link href="http://lenciel.com/categories/just-4-fun/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-03-31T23:38:06+08:00</updated>
+  <id>http://lenciel.com/</id>
+  <author>
+    <name><![CDATA[Lenciel]]></name>
+    <email><![CDATA[lenciel@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[如何不正确的殴打企鹅]]></title>
+    <link href="http://lenciel.com/2014/08/how-to-beat-the-penguin/"/>
+    <updated>2014-08-09T20:32:58+08:00</updated>
+    <id>http://lenciel.com/2014/08/how-to-beat-the-penguin</id>
+    <content type="html"><![CDATA[<p>今天在微信朋友圈里面看了20来条这游戏的成绩分享，还有的群开始讨论心得。打开链接一看，原来是当年那个小范围流行了一下的<a href="https://www.google.com/search?q=Penguin+Ball&amp;oq=Penguin+Ball&amp;aqs=chrome..69i57j69i60.972j0j4&amp;sourceid=chrome&amp;es_sm=91&amp;ie=UTF-8">Penguin Ball</a>嘛（我记得后来有些人开始玩那个<a href="http://www.bloody-penguin.com/">血腥版</a>，正常人就慢慢不玩这游戏了）。</p>
+
+<p>不过，链接指向的那山寨游戏虽然没有再用flash，但是对手势事件的处理有问题（他们还是挺<a href="http://game.2sky.cn/js/52/index.js">大方的</a>），所以确实还蛮难的：我打了五六次，最好成绩6000多一点。</p>
+
+<p>然后，那个页面除开嵌入了一个“教你如何调情”的广告之外，一直在不停的要你分享，分享，分享&hellip;&hellip;</p>
+
+<p>那我就分享嘛~~~</p>
+
+<p>去看了一下微信的分享是怎么弄出去的，原来有个非官方的叫<code>WeixinJSBridge</code>的东西：只要是通过微信应用内置的Webview打开的网页就可以调用到一组特别的接口，比如分享链接到朋友圈或者发送链接给朋友。这两个接口的参数非常类似：</p>
+
+<ul>
+<li>分享链接消息里面的title image的url</li>
+<li>title image的宽度和高度</li>
+<li>标题</li>
+<li>描述</li>
+<li>链接指向的url</li>
+<li>微信APPID</li>
+</ul>
+
+
+<p>分享出来的链接，以这个“打企鹅”的游戏为例，是长成下面这样子的一条链接消息：</p>
+
+<p><img src="/downloads/images/2014_08/wechat_share_msg.jpg" title="Don't touch me..." alt="Wechat Message" /></p>
+
+<p>所以，要伪装一个“打企鹅”的高分数链接就只需要找到title image的url和链接指向的url（因为标题和描述照着编就是了）。</p>
+
+<p>本座觉得，那么山寨的游戏作者，肯定是把所有的东西都放在页面上的吧，于是用Chrome打开了那个页面，果然没有被拒绝（一般来说，给微信浏览的页面至少应该根据访问上报的user-agent等参数判断它是不是移动设备浏览的，如果不是应该reject），并且源码里面我想要的都在（所以比较敏感的js什么的minify一下会好一些）：</p>
+
+<pre><code class="javascript">        var mebtnopenurl = 'http://game.2sky.cn/game/';
+        var rankurl = mebtnopenurl;
+        dataForWeixin = {
+            "appId": "wx60c8c12f639f3ef4",
+            "imgUrl": "http://game.2sky.cn/vapp/52/3.jpg",
+            "url": "http://bingkafei.hnsdcpa.com/game/52/",
+            "tTitle": "打企鹅-6e游戏",
+            "tContent": "打企鹅-6e游戏"
+        };  
+
+        dataForWeixin.appId = "wx8820cdf5db680ffa";
+        dataForWeixin.url = "http://weiapp.552200.com/game/"+_con["num"]+"/";
+
+        function dp_share(){
+            document.title ="你简直霸气侧漏，把企鹅击飞出"+myData.scoreName+"，谁还能超越我？";
+            document.getElementById("share").style.display="";
+            dataForWeixin.tTitle = document.title;
+        }
+</code></pre>
+
+<p>当然，拿到这些了之后，也不是马上一句：</p>
+
+<pre><code class="javascript">WeixinJSBridge.invoke('shareTimeline',data,callback)
+</code></pre>
+
+<p>就能把你装神弄鬼消息分享出去的。前面说了，微信那边还是会检查整个事情是不是发生在微信内置的webview里面。但是，要绕开也不是那么麻烦，你懂的&hellip;</p>
+
+<p>总体感觉微信的这api还是挺扯的，本来可以作为身份校验的appid其实填不填也无所谓，所以朋友圈里面的链接点起来还是谨慎一点儿吧，骚年们。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[骗子]]></title>
+    <link href="http://lenciel.com/2008/10/the-cheator/"/>
+    <updated>2008-10-26T23:36:00+08:00</updated>
+    <id>http://lenciel.com/2008/10/the-cheator</id>
+    <content type="html"><![CDATA[<p><img height="184" alt="71" src="/downloads/images/dark_forest.jpg" width="198" align="left" /> 夏天还是到了尾声，天气变得阴冷。阳光像老人们的睡眠一样变得不知所踪。和往常一样，我被他们晨练的声音吵醒后，就在床上躺十来分钟，听他们在我的窗台下讨论股票和房价、政府和人民、过去和未来。</p>
+
+<p>然后我骑车去上班。我是个怕热不怕冷的人，所以整个夏天都没有骑车。到龙阳路的时候，我看到汽车、摩托车、电瓶车、自行车、行人、协管和警察，混合着漫天的灰尘，像污水一样沿着面目全非的道路争先恐后的缓缓流淌，就好像我是在摩西为以色列人划开的红海一样。</p>
+
+<p>“这里什么时候变成这样了？”我问旁边的人。</p>
+
+<p>他白了我一眼，说：“这里早就这样了。”</p>
+
+<p>这个时候，我的肩膀被人轻轻的拍了一下，一个女孩子从我背后走到面前，说：</p>
+
+<p>“你要不要古董？”</p>
+
+<p>“什么古董？”</p>
+
+<p>“很多。”</p>
+
+<p>她说她是在建筑队打工的。一个星期以前，在挖龙阳路的某个部分时，她找到了不少的铜器和玉器。</p>
+
+<p>“不想要。”</p>
+
+<p>她观察着我的脸色，还观察着从我们身边的路人。她汗津津的鼻尖在并不炎热的天气里显得有些唐突。</p>
+
+<p>“真不想要？你看看这个。”</p>
+
+<p>她又从怀里掏出一个东西，在阳光下泛起闪闪的蓝光。原来是一个鼻烟壶。我接到手里，看到它的色调好像广告牌上的女人一样艳丽而庸俗，有色处和无色处截然分开，还带着数量不少的猪鬃毛眼，一看就是玻璃料做的。</p>
+
+<p>“这是一个翡翠的鼻烟壶。”她把东西从我手里面拿回去，“如果不是因为修路，我们就不可能发现它，你也就没有这么好的机会了。”</p>
+
+<p>“你有多少这样的东西。”</p>
+
+<p>“可多了。”她显然并不善于骗人。在我逼视她的时候，她的眼睛总是不安的转向一边。她搓手的动作也过于频繁，脚还不停的踢着路沿。</p>
+
+<p>“这个鼻烟壶应该有几百年历史了，你应该带回家当传家宝。”</p>
+
+<p>“我没有家里人，我需要钱，我想买一套新衣服。”</p>
+
+<p>“卖了它就为买衣服？要知道这可以卖好几千块钱。”</p>
+
+<p>“我只想卖几百块钱，我只想买一套衣服。这本来也不是我的，我不贪心。”</p>
+
+<p>“可是我只有四十块钱”，我想，我应该帮她一下。</p>
+
+<p>“这怎么可能，你开玩笑吧。”她露出很不老到的夸张的表情，也许是在港产片里面学来的。然后她训练有素的转身就走，脚步却很慢。走了没多远就停下来了。</p>
+
+<p>我饶有兴致的看着她再次转过身来。她的眉头轻轻的皱着，嘴唇随着起伏的胸脯微微的上翘。她的表情和她的处境一样尴尬，这一切都让我着迷。我骑车追上她：</p>
+
+<p>“还是卖给我吧，我身上就这么四十块钱。”</p>
+
+<p>“你真的没带多余的钱？”</p>
+
+<p>她的眉头舒展了，但她却希望自己表现得更加出色。所以她并没有立刻答应，而是装 模作样的抚弄了一下手里的鼻烟壶，才用豁达的江湖语气说：</p>
+
+<p>“好吧，看在你这么诚心的份上，这也是一种缘分。”</p>
+
+<p>缘分果然是所有骗子都要仰仗的东西，我边给她钱边想。我抬手看了看表，离主任开会的时间已经不多了，于是我愉快的揣起鼻烟壶，往科苑路拐去。拐角的地方竖起了施工的围墙，上面大号的隶书显得触目惊心：</p>
+
+<p>“上海欢迎您，世博欢迎您！”</p>
+]]></content>
+  </entry>
+  
+</feed>

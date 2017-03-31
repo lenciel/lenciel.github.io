@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: pip | @Lenciel]]></title>
+  <link href="http://lenciel.com/categories/pip/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-03-31T23:38:06+08:00</updated>
+  <id>http://lenciel.com/</id>
+  <author>
+    <name><![CDATA[Lenciel]]></name>
+    <email><![CDATA[lenciel@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[打开pip的download cache]]></title>
+    <link href="http://lenciel.com/2013/10/pip-download-cache/"/>
+    <updated>2013-10-17T13:25:00+08:00</updated>
+    <id>http://lenciel.com/2013/10/pip-download-cache</id>
+    <content type="html"><![CDATA[<p>Python的标准库实在是<a href="http://lenciel.com/2013/10/recharging-the-python-standard-library/">不够用</a>，所以一个很常见的情况是我们需要在每个项目使用的<code>virtualenv</code>里面都安装一些常用的库。</p>
+
+<p>为了加速安装的过程，有两个小窍门。</p>
+
+<p>一个是使用国内的源，比如<a href="http://www.v2ex.com/">v2ex</a>提供的。只需要新建或者编辑<code>~/.pip/pip.conf</code>，加入一行：</p>
+
+<pre><code>[global]
+index-url = http://pypi.v2ex.com/simple
+</code></pre>
+
+<p>另一个就是打开pip的<code>download cache</code>，这样可以避免pip每次都去下载相同的东西。只需要在<code>.bashrc</code>或者是<code>.zshrc</code>里面加入一行：</p>
+
+<pre><code>export PIP_DOWNLOAD_CACHE=$HOME/.pip-download-cache
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>

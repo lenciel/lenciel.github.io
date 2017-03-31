@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: javascript | @Lenciel]]></title>
+  <link href="http://lenciel.com/categories/javascript/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-03-31T23:38:06+08:00</updated>
+  <id>http://lenciel.com/</id>
+  <author>
+    <name><![CDATA[Lenciel]]></name>
+    <email><![CDATA[lenciel@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Boolean Objects和Boolean Primitives]]></title>
+    <link href="http://lenciel.com/2013/08/boolean-objects-and-boolean-primitives/"/>
+    <updated>2013-08-21T11:31:00+08:00</updated>
+    <id>http://lenciel.com/2013/08/boolean-objects-and-boolean-primitives</id>
+    <content type="html"><![CDATA[<p>Javascript有一个小陷阱：每个primitive都有自己的constructor，但是这些constructor构造出来的却不是primitive。</p>
+
+<p>以boolean为例，大多数的代码里面用的是primitive值，比如：</p>
+
+<pre><code class="javascript">var primitiveTrue = true;
+var primitiveFalse = false;
+</code></pre>
+
+<p>但实际上javascript里面还有Boolean函数，可以返回一个boolean的primitive：</p>
+
+<pre><code class="javascript">var functionTrue = Boolean(true);
+var functionFalse = Boolean(false);
+</code></pre>
+
+<p>不过，上面这个Boolean函数前面如果有<code>new</code>就是一个constructor了：</p>
+
+<pre><code class="javascript">var constructorTrue = new Boolean(true);
+var constructorFalse = new Boolean(false);
+</code></pre>
+
+<p>比较tricky的地方在于，上面这种constructor返回的不是primitive，而是对象：</p>
+
+<pre><code class="javascript">// Outputs: true
+console.log(primitiveTrue);
+
+// Outputs: true
+console.log(functionTrue);
+
+// Outputs: Boolean {}
+console.log(constructorTrue);
+</code></pre>
+
+<p>由于javascript的类型转换比较aggressive，比如你把一个int和string相加，这个int会自动转成string：</p>
+
+<pre><code class="javascript">// Outputs: "22"
+console.log("2" + 2);
+</code></pre>
+
+<p>所以使用constructor构造对象来作为条件判断的输入其实是比较危险的。因为一个对象被用来做条件判断时，它经常会被转成true：</p>
+
+<pre><code class="javascript">// Outputs: "Objects coerce to true."
+if ({}) { console.log("Objects coerce to true."); }
+</code></pre>
+
+<p>特别的，一个Boolean对象即使内部值是false，也会被强制转换成true：</p>
+
+<pre><code class="javascript">// Outputs: "My false Boolean object is truthy!"
+if (constructorFalse) {
+    console.log("My false Boolean object is truthy!");
+} else {
+    console.log("My false Boolean object is falsy!");
+}
+</code></pre>
+
+<p>如果你实在是要取一个Boolean对象的值需要用<code>valueOf</code>方法：</p>
+
+<pre><code class="javascript">// Outputs: "The value of my false Boolean object is falsy!"
+if (constructorFalse.valueOf()) {
+    console.log("The value of my false Boolean object is truthy!");
+} else {
+    console.log("The value of my false Boolean object is falsy!");
+}
+</code></pre>
+
+<p>但是由于Boolean对象这么tricky，这种代码是非常不受欢迎的：事实上JSHint和JSLint这些工具发现你使用了Boolean的constructor就会报一个<code>potential error</code>。</p>
+
+<p>如果你要把一个其他类型的值转成boolean值，也不要用constructor，尽量直接用Boolean函数或者是用两个<code>!</code>操作符：</p>
+
+<pre><code class="javascript">// Two approaches to coercing 0 into false
+var byFunction = Boolean(0);
+var byNotNot = !!0;
+</code></pre>
+
+<p>两种做法都不错，但是如果你看javascript代码比较多会发现后面这种使用更普遍：可能是因为能少打点儿字。</p>
+]]></content>
+  </entry>
+  
+</feed>

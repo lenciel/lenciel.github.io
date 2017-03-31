@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: thoughts | @Lenciel]]></title>
+  <link href="http://lenciel.com/categories/thoughts/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-03-31T23:38:06+08:00</updated>
+  <id>http://lenciel.com/</id>
+  <author>
+    <name><![CDATA[Lenciel]]></name>
+    <email><![CDATA[lenciel@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[编程语言里的类型系统]]></title>
+    <link href="http://lenciel.com/2016/09/types-in-programming-languages/"/>
+    <updated>2016-09-21T19:53:18+08:00</updated>
+    <id>http://lenciel.com/2016/09/types-in-programming-languages</id>
+    <content type="html"><![CDATA[<p>这两天看了“<a href="http://www.amazon.com/Functional-Programming-Scala-Paul-Chiusano/dp/1617290653">FP in Scala</a>”的作者Paul Chiusano关于静态类型语言的优点的一篇<a href="https://pchiusano.github.io/2016-09-15/static-vs-dynamic.html">blog</a>。刚好最近在看很多Scala写的代码，仔细一想，好像大多数语言都在尝试把类型系统加强（不仅仅是Scala、Swift、Rust这些当红的，连<a href="https://ceylon-lang.org/">Ceylon</a> 这样的语言也越来越火了）。</p>
+
+<p>所以也结合之前看过的一些文章(<a href="https://github.com/tel/old-blog/blob/master/_posts/2014-07-08-all_you_wanted_to_know_about_types_but_were_afraid_to_ask.md">1</a>, <a href="https://github.com/tel/old-blog/blob/master/_posts/2014-08-08-six_points_about_type_safety.md">2</a>, <a href="https://danluu.com/empirical-pl/">3</a>, <a href="https://gist.github.com/garybernhardt/122909856b570c5c457a6cd674795a9c">4</a>)，对类型系统打个总结。</p>
+
+<a name="L......"></a>
+<h3>类型</h3>
+
+<p>“类型”，顾名思义就是一组可能的值的集合。比如整型，那么它可能的值是整数的集合；布尔型，它可能的值是true或者false。我们可以定义任何的“type”，比如一个叫“ISO9001”的type，它可能的值如果不是ISO就是9001：这不是个整型，也不是个字符串型，它就是一个专门的特殊的类型。</p>
+
+<p>静态类型语言里，变量的类型是确定好的：如果x是整型，那么如果你写了<code>x=true</code>这样的赋值，编译器在编译时就会报错。不同的静态类型语言有不同程度的表达能力，但是它们支持的类型是确定的。</p>
+
+<p>动态类型语言里，对值进行了类型的划分：它知道1就是整型，true就是布尔型。但是变量是什么类型却是不确定（动态）的。</p>
+
+<a name="L.................."></a>
+<h4>静态类型语言</h4>
+
+<p>大多数静态类型语言需要做类型声明。比如java里面<code>public int add(int x, int y)</code>这样，对参数和返回值都需要声明类型。</p>
+
+<p>也有一些静态类型语言不这么做，比如Haskell里面同样的函数写法是<code>add x y = x + y</code>。虽然没有显式地声明它类型，但是因为在这门语言里面，<code>+</code>操作符只能用在数值类型上面，所以x和y就都是数值类型的。需要理解的是，这种省略并不意味着静态特质的降低，相反，Haskell的类型比Java要严格和强大得多。</p>
+
+<p>声明了类型，在编译期就进行类型检查，如果不满足就报错，是静态类型语言一个很大的优点。比如大多数静态类型语言都不允许<code>"a"+2</code>这样的写法（C语言很特立独行地支持了），每个静态类型语言里面的表达式，都在执行前就有一个确定的返回类型。</p>
+
+<a name="L.................."></a>
+<h4>动态类型语言</h4>
+
+<p>像前面说的动态类型不需要声明类型，编译器也不会做推测，只在运行时才知道变量确切的值（这也是动态的意思所在）。</p>
+
+<p>比如一个python函数：</p>
+
+<pre><code class="python">def f(x, y):
+    return x + y
+</code></pre>
+
+<p>它可以被用来做两个数相加，可以是字符串连接，甚至可以是list的合并。在运行时程序会检查x和y是什么类型的值。如果都是整型，就把数值加起来，如果是字符串，就把字符串粘起来，如果是一个整型一个字符串，那么很可能就要报错。</p>
+
+<p>大多数动态语言，都会像Python一样，在运行时报出类型错误（JS是个例外，它对任何表达式都会返回一个值，而不是报错），因此，使用动态语言，<code>"a"+1</code>这样的错误也需要在实际运行时才会被检查出来。</p>
+
+<a name="L....................."></a>
+<h4>强类型和弱类型</h4>
+
+<p>术语“强类型(strong typing)”和“弱类型(weak typing)”是用得非常模糊的：</p>
+
+<ul>
+<li>有些时候，“强”表示静态类型。如果你在讨论或者是写东西的时候，要说的是静态类型语言，那就直接说，不要用<code>强类型语言</code>这样的术语</li>
+<li>有些时候，“强”表示不会做隐式的类型转换。比如JS里面允许<code>"a"+1</code>，其实内部是做了隐式的类型转换，这个时候人们说它是<code>weak typing</code>的，而不是强的。但是几乎所有的语言都会允许整型和浮点型相加，允许这个的语言是强还是弱呢？没有标准。人们这样说的时候，一般的意思是，如果这样的转换是不可接受的（会造成自己觉得很低级的类型错误在生产环境上运行时才被发现），就认为它是“弱类型”，相反，就觉得是“强类型”</li>
+<li>有些时候，“强”表示我们不能做这个语言规则不允许的类型转换</li>
+<li>有些时候，“强”表示是memory-safe的。C就是典型的虽然是静态类型，但是不是memory-safe的语言。</li>
+</ul>
+
+
+<p>下面这个表可以说明常见的一些语言是如何被带入一团迷雾的：</p>
+
+<table>
+<thead>
+<tr>
+<th> 语言  </th>
+<th> 类型? </th>
+<th>隐式转换? </th>
+<th> 有类型转换规则? </th>
+<th> 内存安全? </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> C          </td>
+<td> Strong  </td>
+<td> Depends               </td>
+<td> Weak            </td>
+<td> Weak         </td>
+</tr>
+<tr>
+<td> Java       </td>
+<td> Strong  </td>
+<td> Depends               </td>
+<td> Strong          </td>
+<td> Strong       </td>
+</tr>
+<tr>
+<td> Haskell    </td>
+<td> Strong  </td>
+<td> Strong                </td>
+<td> Strong          </td>
+<td> Strong       </td>
+</tr>
+<tr>
+<td> Python     </td>
+<td> Weak    </td>
+<td> Depends               </td>
+<td> Strong          </td>
+<td> Strong       </td>
+</tr>
+<tr>
+<td> JavaScript </td>
+<td> Weak    </td>
+<td> Weak                  </td>
+<td> Weak            </td>
+<td> Strong       </td>
+</tr>
+</tbody>
+</table>
+
+
+<p>由于“强”和“弱”的使用是如此的上下文相关又如此的混乱，所以最好不要使用这些术语，而是描述具体的问题：“JS在我们把字符串和整型相加的时候会正常返回，而Python会报错”比“JS是弱类型的，而Python是强类型的”有意义得多。这样我们在讨论中就不会花时间去纠缠在本来就不是很清晰的术语上了。</p>
+
+<p>就像Chris Smith<a href="https://cdsmith.wordpress.com/2011/01/09/an-old-article-i-wrote/">写过的那样</a>:</p>
+
+<p><blockquote><p>Strong typing: A type system that I like and feel comfortable with<br/>Weak typing: A type system that worries me, or makes me feel uncomfortable</p></blockquote></p>
+
+<a name="L.....................Gradual.Typing..."></a>
+<h4>渐进的类型化（Gradual Typing）</h4>
+
+<p>我们能不能给动态语言添加静态类型呢？在有些情况下，我们可以；在其他情况下，这非常难，甚至是不可能的。</p>
+
+<p>最明显的问题就是<code>eval</code>或者别的动态语言里面的类似的功能。<code>1+eval("2")</code>在Python里面会返回3，但是<code>1+eval(read_from_network())</code>会返回什么？这要看read_from_network()返回的是什么了。这种只有在运行时才知道结果的语句，是没有办法添加静态类型的支持的。</p>
+
+<p>为了使<code>eval()</code>被合法使用，有个不太让人满意的做法就是把返回值设成Any这个type，就好像很多OO语言里面返回Object，或者是Go语言里面返回<code>interface{}</code>。之所以这不太让人满意是因为，这样一来，类型系统的功能也就被去掉了。所以如果一个语言有<code>eval</code>语法，同时又有类型系统，那么当你使用<code>eval</code>语句的时候，类型安全就不能被保证了。</p>
+
+<p>有些语言允许所谓的optional或者是gradual typing：在默认情况下，类型是动态的，但是你可以声明静态的annotation。Python最近添加了这个功能；Typescript作为Javascript的superscript也有optional types；Flow会对普通的javascript代码做静态类型分析。这些语言之所以提供这些，是希望拥有一些静态类型语言的优势，但是和静态语言提供的类型保证相比，其实是很弱的：因为有些方法是动态类型的，有些方法又是静态类型的，程序员还需要自己来管理其中的差异化的东西。</p>
+
+<a name="L................................."></a>
+<h4>静态类型语言代码的编译</h4>
+
+<p>静态类型的语言写的代码在编译的时候，编译器会先检查语法，然后检查类型。因此，有时候你修复了一个语法的错误，可能会看到一堆的类型的错误。这些错误并不是修复语法错误带来的，而是之前就有的，只是编译器没法在语法正确之前，去找出类型的错误。</p>
+
+<p>一旦语法和类型都正确了之后，编译器就可以生成可执行的代码。静态类型的语言生成的代码执行起来通常比动态类型快：当你知道被加的是整数，你就可以使用CPU内置的ADD命令。如果需要动态的评估操作的是什么类型，要怎么返回或者是报错，都会花掉额外的时间。虽然有很多技术，比如JIT（Just-In-Time）编译器可以在运行时收集到需要的信息后recompile一次生成比完全动态更快的代码，但是和静态语言比如Rust写出来的程序比，运行起来还是要慢一些的。</p>
+
+<a name="L.........................................."></a>
+<h4>关于静态类型和动态类型的争论</h4>
+
+<p>静态类型语言的推崇者指出，如果没有一个严格的类型系统，那么一个微小的类型错误就可能导致生产环境崩掉。这当然是真的，所有使用过动态类型语言的同学肯定都遇见过。</p>
+
+<p>动态语言的推崇者认为，动态语言写起来要容易一些。视你写的代码究竟用来干嘛而言，这可能是对的，也可能是错的。Rich Hickey关于“easy”有个<a href="https://www.infoq.com/presentations/Simple-Made-Easy">很经典的讲座</a>，特别清楚的阐明了“easy”和“simple”的关系，以及你为什么要小心“easy”。不同的动态语言的设计者，对类型系统的考虑也就视他们想开放多少控制权给开发者自己控制，实现得非常不同。</p>
+
+<p>比如，Javascript的策略是尽量继续执行，即使<code>"a"+1</code>这样的语句明显不是很合理了，它也会返回<code>a1</code>。Python则倾向于尽可能的报错。所以虽然都是动态语言，设计上的思路是非常不同的。</p>
+
+<p>比如，C允许你从内存的任意地址读取，也允许你把一个类型的值当成任意别的类型来操作，即便这样会造成crash。Haskell，则要求哪怕是整型和浮点型相加，也需要显式的做一次类型转换。所以虽然都是静态语言，设计上的思路也是非常不同的。</p>
+
+<p>因此，任何类似于“静态语言比动态语言在某个方面好”的论断都是没有意义的。只有具体到语言，才可以进行这样的讨论，比如：“Haskell在某个方面比Python做得好”。</p>
+
+<a name="L.............................."></a>
+<h4>静态类型系统的多样性</h4>
+
+<p>我们再来仔细看看两个著名的静态类型语言：Go和Haskell。</p>
+
+<p>Go的类型里面没有generic类型：就是由其他类型来构成的类型。比如我们可能想自己构建一个MyList类型，可以保存任何类型的数据列表，可以是整数的列表，也可以是字符串的列表等等。编译器自己需要来处理对类型的限制：如果我们往一个用来放整数的MyList里面放了字符串，编译器需要拒绝程序。</p>
+
+<p>Go在设计上就故意没有支持MyList这种generic的类型。要实现类似的功能，你只能定义一个“empty interface”：这样MyList可以用来放任何类型，但是compiler没有办法知道究竟是什么类型。当我们从MyList里面获取对象的时候，我们需要自己来告诉compiler对象的类型。如果你说你获取的是个字符串，但是拿到的是个整型值，就会发生运行时的错误：这很像动态语言。</p>
+
+<p>Go还缺乏很多现代静态语言的功能，甚至连很多70年代的静态语言就支持的功能也没有。它的设计者做这样的决定自然有自己的考虑，但是使用者里面对这些功能的呼声是很高的。</p>
+
+<p>再来看看拥有强大的类型系统的Haskell。如果我们要定义一个整型的MyList，只需要这么写“MyList Integer”。在声明之后，Haskell就会让这个列表里面只能放整数而不是字符串了。</p>
+
+<p>Haskell还能表达更复杂的语义。比如<code>Num a =&gt; MyList a</code>表示，一个数值类型的列表：可以是整数，或者浮点数等，但不会是一个字符串。</p>
+
+<p>用Haskell你很容易编写适合于多个类型的函数。比如<code>Num a =&gt; (a -&gt; a -&gt; a)</code>表示：</p>
+
+<p>这是个数值类型的函数（Num a =>)
+这是函数有两个类型为a的输入参数，然后返回一个类型为a的值（a -> a -> a）</p>
+
+<p>再看一个可能更夸张的例子：<code>String -&gt; String</code>表示函数的参数是字符串，返回也是字符串；而 <code>String -&gt; IO String</code>表示，函数参数是字符串，然后要做一些IO操作（可能是磁盘的IO，也可能是网络的IO等等），然后返回字符串。</p>
+
+<p>这样精细的类型定义有什么好处呢？</p>
+
+<p>比如，在写一个Web应用的时候，我们就可以一眼看出这个函数会不会动数据库。这是大多数语言没有办法提供的便利，即使大多数静态类型语言也没有办法提供：绝大多数语言需要我们一行行去检查它有没有IO的操作，这个过程既麻烦又容易出错。</p>
+
+<p>和Go比一下，前者连MyList那样简单的概念都没有办法很好的表示，更不用提“一个有两个数值型参数的，会做一些IO操作后，返回一个数值类型参数”这样复杂的语义了。</p>
+
+<p>Go的设计思路毫无疑问可以让使用它编写适合用它编写的程序变得容易（首先，设计Go的compiler就要容易很多），同时也使得学习Go变得容易。这些优势，与Go的显而易见的限制，究竟会给你的开发工作带来正面还是负面的影响，很多时候是跟问题域相关的，非常主观的事情。</p>
+
+<p>Go和Haskell如此的不同，也使得把它们统称为“静态类型语言”表达的意思非常模糊：虽然这样说确实是没有错的。所以再次提醒，把动态类型语言和静态类型语言分成两组来比较一些东西的时候，一定要记得语言的多样性。比如我们说运行起来的安全系数（不发生类型错误导致runtime erro的系数），那么Go和C，甚至比Python这样的动态语言问题还大。</p>
+
+<a name="L.........................................."></a>
+<h4>不同的类型系统表达能力的实例</h4>
+
+<p>编程语言的类型系统越强大，我们表达的粒度就可以越精细。</p>
+
+<p>比如写一个求和的函数，在Go里面，我们只能表达“函数有两个整数类型参数，并且返回一个整数类型”：</p>
+
+<pre><code>fuc add(x int, y int) int {
+     return x + y
+}
+</code></pre>
+
+<p>对浮点类型，我们可能就需要再写一个。</p>
+
+<p>在Haskell里面，我们可以定义“函数有两个数值类型的参数，并且返回一个和输入参数类型相同的类型”：</p>
+
+<pre><code>add :: Num a =&gt; a -&gt; a -&gt; a
+add x y = x+y
+</code></pre>
+
+<p>而在Idris里面，我们可以定义“函数有两个整数类型参数，但是第一个必须比第二个小”</p>
+
+<pre><code>add : (x : Nat) -&gt; (y : Nat) -&gt; {auto smaller : LT x y} -&gt; Nat
+add x y = x + y
+</code></pre>
+
+<p>我们如果在调用的时候写了<code>add 2 1</code>，那么编译器就会直接报错。非常少语言有这样的表达能力，大多数时候我们要做类似的check只能在runtime，所以我们只能写类似于<code>if x&gt;=y : raise SomeError()</code>的语句。</p>
+
+<p>所以，越强的类型系统，表达能力就越强，但是也要注意的是这样语言的复杂度也上去了。</p>
+
+<p>我们可以看看按类型系统由弱到强排列的一些常见的编程语言：</p>
+
+<ul>
+<li>C (1972), Go (2009): 类型系统很弱，甚至连generic的类型都不支持</li>
+<li>Java (1995), C# (2000): 支持generic的类型</li>
+<li>Haskell (1990), Rust (2010), Swift (2014): 提供了更强大的类型系统</li>
+<li>Agda (2007), Idris (2011): 类型系统更加强大，但是学习的人还很少（虽然学了的人都表示亢奋）</li>
+</ul>
+
+
+<p>随着时间推移，具备更强大的类型系统的语言有着越来越流行的趋势（这个趋势从很多动态语言里面被加入了gradual typing的功能也能感受到）。而火爆的Go应该是一个蛮特别的反例，它也被很多推崇更强大类型系统的静态语言用户者批判它的设计者在开倒车。第二组里面的Java和C#是目前被广泛使用的，有成熟生态系统的语言。第三组是目前有了进入主流趋势的，有着大公司在背后支持的（比如Mozilla的Rust或者是Apple的Swift）。第四组看起来还离主流很远，但是究竟后面会不会有凶猛的发展势头也很难说清：就像第三组里面的这些语言十年前也没人知晓一样。</p>
+
+<p>下面，让我来一段魔性的代码：</p>
+
+<pre><code class="c">#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;string.h&gt;
+
+int addi(int a, int b) {
+    return a + b;
+}
+
+char *adds(char *a, char *b) {
+    char *res = malloc(strlen(a) + strlen(b) + 1);
+    strcpy(res, a);
+    strcat(res, b);
+    return res;
+}
+
+#define add(a, b) _Generic(a, int: addi, char*: adds)(a, b)
+
+int main(void) {
+    int a = 1, b = 2;
+    printf("%d\n", add(a, b)); // 3
+
+    char *c = "hello ", *d = "world";
+    printf("%s\n", add(c, d)); // hello world
+
+    return 0;
+}
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Django其实不是MVC]]></title>
+    <link href="http://lenciel.com/2015/03/django-is-not-that-much-mvc/"/>
+    <updated>2015-03-30T11:36:24+08:00</updated>
+    <id>http://lenciel.com/2015/03/django-is-not-that-much-mvc</id>
+    <content type="html"><![CDATA[<p><img src="/downloads/images/2015_03/mvc.jpg" title="Don't touch me..." alt="Vhost threshold" /></p>
+
+<p>很多时候<a href="https://www.djangoproject.com/">Django</a>都被称为是一个MVC框架 — <code>Model-View-Controller</code>。这样说的人要么就是已经熟悉过其他的MVC框架，所以看到Django有自己的Template系统和<code>views.py</code>来放各种逻辑代码，就想当然的认为Django也是；要么就是其实没有真正实践过Django，从各种其他的错误文档里面看到或者是听说的。</p>
+
+<p>MVC框架，是针对<code>状态</code>的。为了明白这个，我们假设你是在编辑一个图片：</p>
+
+<ul>
+<li>你得在内存里面保存这张图片 (Model)</li>
+<li>你得在屏幕上显示这张图片 (View)</li>
+<li>你得有办法让用户改变图片 (Controller)</li>
+<li>当用户改变图片后，你得更新显示：<code>Controller</code>通知<code>Model</code>更新状态，然后<code>Model</code>通知<code>View</code>刷新显示（最好是通过某种pub/sub机制，让View和Model之间是没有耦合的)</li>
+</ul>
+
+
+<p>MVC框架主要是管理状态，让MVC三者是同步的：这三部分同时在内存（可能跑在不同的线程甚至进程）里，有各自的状态，相互之间进行交互，让变动同步到各方。</p>
+
+<p>Django的<code>Model-View-Template</code>有很大的不同。</p>
+
+<p>首先是没有状态。大多数的HTTP GET请求，拿到的数据库里面的数据，都被当成是immutable的不可重入的输入，而没有状态。而在一般的Web应用开发中，HTTP上有状态的交互可以通过：</p>
+
+<ol>
+<li>修改保存在服务器端数据库里的数据</li>
+<li>修改保存在客户端的数据（比如cookies）</li>
+</ol>
+
+
+<p>共同来完成。因此一次状态的变化并不是在一个page的view里面保持的：状态一半放在当前的page和cookies里面，一半放在session数据库里面。</p>
+
+<p>但是处理HTTP请求的时候，Django的MVT是完全无状态的。这里首先要说明的是，<code>views.py</code>这个名字本身是有一点儿误导的，因为给人的感觉是它只做"读"操作而不去"写"数据库（也就是说只是处理GET请求而不是POST请求）。但实际上<code>GET/POST</code>请求都会被放在<code>views.py</code>里面处理，所以更好的名字其实应该是<code>handler.py</code>：大多数Django的REST框架都是这样命名的。</p>
+
+<p>处理GET请求的时候，如前面分析，本身就没有状态，而只是对输入的请求和服务器返回的数据进行展示。其次，当涉及数据修改的POST请求时，Django的处理其实是非常类似于老式的Web应用的。</p>
+
+<p>所谓的老式的Web应用是指，过去的网站上当后台的数据发生变化的时候，其实是需要用户在前端自己点击刷新按钮来刷新的（最典型的刷新按钮就是浏览器里面那个刷新按钮）。这个动作背后发生的事情其实是：</p>
+
+<ol>
+<li>除开标识当前是哪个用户在浏览哪部分数据的信息（当前的url，用户的identity等等cookies里面的数据），把浏览器里面其他的状态都丢弃</li>
+<li>发起一个全新的请求，获取所有的数据，再次重建页面</li>
+</ol>
+
+
+<p>说Django和老派的Web应用类似，是指一旦数据变更（比如一次SQL的INSERT或者是UPDATE），你需要返回一个redirect再做一次GET："有数据的状态变化了，让我们重头再来一次"。</p>
+
+<p>这也是为什么<a href="https://code.djangoproject.com/ticket/17">Django的ORM里面是没有一个"identity mapper"的</a>。<code>Model</code>处理状态变化的办法就是完全的无视它：当你觉得数据改变了时，直接重新获取一次数据重建页面。</p>
+
+<p>这和大多数经典的MVC框架（比如AngularJS）是和这完全相反的套路：在设计上做了很多事情来避免"从头再来"，而是通过建立MVC之间的消息机制，来通知各方的状态变化，做到同步。</p>
+
+<p>MVC还有一部分是关于如何分隔代码。如果你把MVC当成："把存储数据，显示数据和处理数据的代码分离"，那Django的设计的确是符合这个模式的。</p>
+
+<p>但是实际上这是一个粒度非常粗的描述，因此就把Django说成是MVC的其实会带来很多误会。</p>
+
+<p>比如，Django是基于HTTP的，所以理解它的MVT，最好的办法就是实践它：看它的<code>view</code>里面是如何处理一个HTTP的请求并返回一个HTTP的response。如果你脑子里面有其他的不是基于HTTP这层次的MVC框架，用来类比学习Django，你大概会哭&hellip;</p>
+
+<p>其次，Django的框架，它的app里面文件的组织和使用，和很多别的MVC框架也是不同的。</p>
+
+<p>最近有个特别火的日志是Hynek Schlawack的<a href="https://hynek.me/articles/know-your-models/">Know Your Models</a>。它是基于经典的MVC框架来假设，实际上Django并不是适用于这套假设的。</p>
+
+<p>比如他觉得应该有<code>pure</code>的models，从而把M、V、C分离开做到可以独立进行处理。</p>
+
+<p>但其实Django里面很多app都仅仅是数据库的简单wrapper。这种情况下其实没必要有<code>pure</code>的M，然后再加上一堆V和C。其实这是Django的美好之处：以<code>admin</code>这个app为例，它的设计初衷就是要在数据库上面封装一个足够简单的编辑层，以致于95%的代码都是可以自动生成的。</p>
+
+<p>把<code>Model</code>通过API暴露出来给<code>View</code>用，当然也是正确的思路。但我自己写代码的时候，就很喜欢把所有的直接调用<code>.filter()</code>的代码都放到<code>models.py</code>里面，这样一来<code>models.py</code>就是独立可测的。</p>
+
+<p>并且，如果你写了一个<code>pure</code>的Model，而把逻辑代码从Model里面抽取出来放到别的地方去，那你在<code>admin</code>和其他<code>ModelForms</code>里面就没法重用了。</p>
+
+<p>总的来说，在Django里面，model在创建的时候，就是有业务逻辑贯穿在里面的。如果你每个<code>customer</code>只能有一个<code>email</code>，那么你的model就得包含这个限制。如果你要改变这个规则，那么就不仅仅是MVT的某一方要改，而是从上到下都得修改。</p>
+
+<p>甚至我个人认为MVC里面说的"逻辑和数据分离"这种思路本来就挺奇怪的。除非你把数据存储当成<code>key-value</code>这样的东西，那么你怎么可能在一个不是为了某个业务逻辑设计的数据库上开发出一个应用呢？</p>
+
+<p>数据就是数据，是<code>gloabl data</code>而不是<code>gloabal state</code>。在整个HTTP请求被处理的过程中，它被认为是没有变化的：如果有，就应该再发一条请求来取最新的数据再去重画。</p>
+
+<p>当我们开发Django的应用时，为了满足实际上的业务逻辑的需要，数据库的schema一般一直在变。这样Django的model就可以作为API的一个良好的基石，把往上走的事情做得尽量简单。</p>
+
+<p>这涉及到软件开发里最基本的一个设计要点：你把数据库仅仅当成应用里面的持久化层，还是当成应用的一部分，甚至是最重要的一部分。</p>
+
+<p>我其实一直偏向于后者：喂，把像Postgres这样RDMS当成一个持久层未免也太不尊重了吧！所以在使用Django设计app的时候，不但要思考"model layer"，还要综合考虑其他数据库可以做的事情：比如contraint checking, transactions, triggers等等。同样，在测试的时候也不仅仅是测试那些字段和model之间的关系，而是要考虑对业务逻辑的测试。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[应用开发能火多久?]]></title>
+    <link href="http://lenciel.com/2014/04/why-made-apps/"/>
+    <updated>2014-04-09T15:07:57+08:00</updated>
+    <id>http://lenciel.com/2014/04/why-made-apps</id>
+    <content type="html"><![CDATA[<p>不管是从日常生活里面的观察和感受，还是查看统计数据，都很容易发现人们在移动设备上停留的时间已经逐渐超过了在PC上停留的时间。当然拐点是不是如下图所示就在今年业界有些争议，但是拐点已经要来了是没有人再怀疑了。</p>
+
+<p><img src="/downloads/images/2014_04/comscore_mobile_users_desktop_users_2014.jpg" title="Don't touch me..." alt="mobile vs desktop" /></p>
+
+<p>而移动设备取代PC机成为最主要的入口之后，就意味着谁占领了移动设备，谁就拥有未来。同样不管是从切身体会还是数据都不难知道，和PC上各种网站（包括各种浏览器+插件提供的服务）占据统治地位不同，在移动平台上，应用程序获得了全面的胜利。</p>
+
+<p><img src="/downloads/images/2014_04/apps_dominate_hires.png" title="Don't touch me..." alt="mobile apps vs website" /></p>
+
+<p>移动客户端上网站和App相比所处的劣势会越来越严重。无论是我们自己公司还是行业内其他人，都知道做移动互联网就是要做应用才行。所以你看手机网页上和游戏里，各种弹窗、各种广告、各种骚扰短信，都是指向某个应用的下载链接。</p>
+
+<p>这也是为什么那么多财大气粗的实体官方的网站在移动客户端上看起来就跟狗屎一样：他们的老板们的逻辑和开发者一样，那些网站没什么人在手机上看，只要我的应用、我的微信公众号看起来好就行了。</p>
+
+<p>这么一来，最好的开发和设计人员都去做应用了，大量的钱也都烧在应用推广上去了。</p>
+
+<p>最终我们手机上的浏览器几乎被闲置了，打开它主要是为了：</p>
+
+<ul>
+<li>搜索</li>
+<li>下载一个应用</li>
+<li>从一些sns程序里面点开某个链接</li>
+</ul>
+
+
+<p>而且，就第三项用处来看，越来越多的sns程序，比如微信，微博等，都是直接在自己内嵌的webview里面打开链接，根本不会使用系统安装的浏览器。</p>
+
+<p>从长远看这种应用一骑绝尘网站无人问津的状况还是对整个生态有很大的风险：</p>
+
+<ul>
+<li>看看有线电视发展到后面是什么样：大寡头们有更好的设备，更强大的制作班底，更多的明星，控制了整个行业。这种状况下，用户打开电视能看到什么样的节目几乎没得选，小团队要靠创新来出头也变得非常困难</li>
+<li>应用主要在少数几个主流应用商店发行，比如Google和Apple的。意味着Google和Apple不仅仅要抽水，还要对应用内容，应用怎么推广，甚至应用用什么语言开发进行控制。</li>
+</ul>
+
+
+<p>比如Apple。在PhoneGap最开始出来的时候，所有用这个hybrid framework开发的应用都被Apple强制封杀，理由居然是“不使用native library开发的应用不像一个应用”。再比如最近，它直接发了一个policy就让所有跟BT币有关的应用下架了。</p>
+
+<p>感觉在移动平台上会上演类似PC上的历史，首先会有Apple和Google这样提供OS的企业通过应用这个渠道来做成大山头。然后生态系统对其他参与者越来越艰辛，于是会有很多企业尝试破冰，比如通过开发功能强大的浏览器形成新的渠道，来脱离寡头们的控制。最终，移动平台上的浏览器肯定也会像现在PC上的浏览器一样强大，成为各种服务的入口。</p>
+
+<p>而且，这个过程肯定会比PC上要快很多。首先，大家都已经被教育过一次了，大腾讯大百度们做自己的浏览器不是做着玩的；更重要的是，Web发展到今天这个地步，开放性已经有些脱离技术，变成了社会生活中的一种意识形态。一旦移动网络资费和速度真正给力，肯定会有揭竿而起的。即使大如Google和Apple，也很难再像当年MS那样hold住全场了。那个时候，很多Myriad这样的做中间件的公司，又会春风得意了吧。</p>
+
+<p>当然，最近这些年肯定还是应用开发热火的时候，小伙伴们，过时不候，放手干吧。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Use Done List Instead Of To Do List]]></title>
+    <link href="http://lenciel.com/2013/03/use-done-list-rather-than-todo-list/"/>
+    <updated>2013-03-15T21:25:00+08:00</updated>
+    <id>http://lenciel.com/2013/03/use-done-list-rather-than-todo-list</id>
+    <content type="html"><![CDATA[<p><img src="/downloads/images/nerd_sniping.png" title="Don't touch me..." alt="nerd sniping" /></p>
+
+<a name="L.strong......strong."></a>
+<h2><strong>起</strong></h2>
+
+<p><a href="http://xkcd.com/730/" target="_blank">xkcd</a>一直是本座最喜欢的网站（嗯哼）。上面这幅图说了一个很有趣的现象，正好最近深有体会，就来这边吐槽一下。整个经过是：</p>
+
+<p>大前天回到家感觉不算太忙，本座就开始家姐布置的家庭作业：做一个用于心理学测试的游戏。需求简单来说就是：</p>
+
+<ul>
+<li>游戏开始后轮转播放图片、视频或者音频 （媒体库要容易换，播放的切换间隙也要能配置）</li>
+<li>被试通过操控手中的手柄表达心理的反应，由程序转成可统计的数据（比如看到美女图按同时按下AB）</li>
+<li>程序得到的数据能够很容易的被统计，统计结果能够很优雅的呈现出来</li>
+</ul>
+
+
+<p>为了让这个事情变得更有趣，本座在需求确定之后决定：</p>
+
+<ol>
+<li>用帅气的<a href="http://www.nintendo.co.uk/NOE/en_GB/systems/accessories_1243.html" target="_blank" class="broken_link">Wii Remote</a>来让被试表达自己（想想美女图片一出就甩或者是撸一下WiiRemote有多实在）</li>
+<li>用<a href="http://www.pygame.org/news.html" target="_blank">pyGame</a>来写这个游戏（早就想学习pyGame了）</li>
+<li>把统计数据的输出作为一个用<a href="http://www.r-project.org/" target="_blank">R语言</a>实现的统计绘图的界面的输入</li>
+</ol>
+
+
+<p>接着就开始第一项。当程序把 <code>Wii Remote</code> 的蓝牙信号正确的转换成标准的手柄信号的时候，一看已经挺晚了，本座就只好把后面两个放在了 <code>todo list</code> 上。接着这两天都很忙这些东西就继续的呆在 <code>todo list</code> 。</p>
+
+<p>然后今天又找到时间，本座就开始用 <code>pyGame</code> 写游戏本身部分，但突然觉得vim下面自动补全很烂，就开始google合适的插件。花了10分钟左右发觉不少人说 <code>pydict</code> 好，本座就又花了15分钟左右去配置。然后看着chrome里面为了搜索插件弹出的一堆tab突然本座发现：</p>
+
+<p>经过了4天，本座把Wii Remote用蓝牙连到PC输出手柄信号，本座有了一个不错的vim下开发python的环境，本座还学习了一点儿R。唯一没有开始的就是，嗯，还没有开始写那个游戏。</p>
+
+<a name="L.strong......strong."></a>
+<h2><strong>承</strong></h2>
+
+<p>你的情况可能具体细节和我不一样，但是结果估计都是南辕北辙：你是网页设计师，在需要画 <code>wireframe</code> 的时候花了一大把时间去看搜索出来的新鲜的、华丽的 <code>CSS3</code> 效果；你上淘宝买手机结果研究移动电源用了4个小时；你想学怎么养花结果因为选盆子下面水漏的形状耽误了。</p>
+
+<p>这种情况之所以对你的效率有很大的伤害是因为：</p>
+
+<ol>
+<li>你认为你是在完成自己 <code>todo list</code> 上的东西，所以你觉得自己是在“进展中”而不是“瞎逛”。</li>
+<li>你认为的进展给你带来了更多 <code>todo list</code> 上的东西，而且有些确实对原来的目标是无益的。</li>
+</ol>
+
+
+<p>人的精力是有限的，如果你长期处于这种状况（太正常了，如果你是玩电脑的话），可就要小心了。</p>
+
+<a name="L.strong......strong."></a>
+<h2><strong>转</strong></h2>
+
+<p>其实这种发散的工作方式并不是完全错误的。其实在我们这个行业，这种“总想追求更好”的想法，是整个Agile的基础。Facebook在自己的员工的邮件<a href="http://blogs.wsj.com/deals/2012/02/01/mark-zuckerbergs-letter-from-the-facebook-filing/" target="_blank">里面</a>写到：</p>
+
+<blockquote><p>The Hacker Way is an approach to building that involves continuous improvement and iteration. Hackers believe that something can always be better, and that nothing is ever complete. They just have to go fix it — often in the face of people who say it’s impossible or are content with the status quo.</p></blockquote>
+
+<p>从本座自己的感觉而言，做事循规蹈矩的同事，完成一般难度的任务时，效率确实很高。但是那种真正非常困难的问题，常常是被喜欢“瞎逛”的人解决的。这当然也没什么奇怪的，所谓闭门造的车，出门就只能合辙。Richard Hamming也<a href="http://www.cs.virginia.edu/~robins/YouAndYourResearch.html" target="_blank">说</a>：</p>
+
+<blockquote><p>I notice that if you have the door to your office closed, you get more work done today and tomorrow, and you are more productive than most. But 10 years later somehow you don&#8217;t know quite about what problems are worth working on … He who works with the door open gets all kinds of interruptions, but he also occasionally gets clues as to what the world is and what might be important. ….</p></blockquote>
+
+<a name="L.strong......strong."></a>
+<h2><strong>合</strong></h2>
+
+<p>不能闭门造车，又需要有固定的输出值，怎么办？今天本座是这么办的：</p>
+
+<ol>
+<li>早上起来把今天最重要的事情从<a href="https://astrid.com/home" target="_blank">todo list</a>里面选出来。</li>
+<li>完成这些事情的过程中遇到任何有趣的东西或者想法，存到<a href="http://delicious.com/" target="_blank">delicious</a>或者<a href="http://www.evernote.com/" target="_blank">evernote</a>里面。</li>
+<li>使用<a href="https://idonethis.com" target="_blank">Done list</a>而不是todo list来标记自己今天的活动。</li>
+</ol>
+
+
+<p>结果是今天3点钟就完成了所有重要的事情，能够来安心的写一篇blog，看起来是个不错的办法。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[洛带，洛带]]></title>
+    <link href="http://lenciel.com/2010/05/luo-dai-tour/"/>
+    <updated>2010-05-24T12:23:00+08:00</updated>
+    <id>http://lenciel.com/2010/05/luo-dai-tour</id>
+    <content type="html"><![CDATA[<p><img src="/downloads/images/beautiful_loser.png" title="Don't touch me..." alt="" /></p>
+
+<p>周末开车去了趟洛带古镇。倒不是专为了枇杷，更多是解闷。和偶像派坐在一条有大树遮盖的巷子，就着一口有水藻覆盖的池塘，点两杯冰糖过量的柠檬水，大眼瞪小眼的回忆童年、青春、挨揍、被追。太阳下去，微风上来，买两斤鲜枇杷，剥出天下、百姓、出世、入球。灯光亮起来的时候，吃伤心凉粉，砍公社烧鹅，再探讨为什么我们一个美又白，一个丑又黑，但千百人中，我们好了。</p>
+
+<p>夜幕洒下来的时候，街面上的工商、公安、城管、街道、环卫和小贩、地痞、流氓、小偷并肩走了，银器、木器、兵器和珠光宝气收了，会馆、饭馆、照相馆和殡仪馆歇了。我以为属于古镇最好的时候要来了。这里没记事本没打印机、没CFR没DPD，到处是眼神迟缓而放空的老年人，像文学女青年一般忧郁得让人动心。</p>
+
+<p>可惜这个时候古镇的年轻人就出现了，在白天只能步行的石板路上，飙着他们的电动车。他们大概是不愿加入引车卖浆者流的，因为他们可是非主流。所以白天不露面，晚上才出来展示他们的机车、音乐和纹身。那些纹身，就好像古镇墙壁上的那些壁画一般，既有些年久失修的粗糙，却又带着些五彩缤纷的固执。</p>
+
+<p>没了，好不容易找到的看一个时辰风月，写两个时辰雅俗，颂三个时辰歌赋的那份缓慢劲儿又不见了。什么时候医生已经不去挨个辨认百草，武士也不再琢磨打通任督二脉了，于是，真正的医生和武士也都随风飘散。什么时候地球平了，东土不再意淫西域，西域也不再崇拜东土了，于是，再没有人会在陌生的地方去修馆，去建镇，收拾心情，思考人生。</p>
+
+<p>我们现在的一切都太赶，其实就是因为太丰盛。《诗经》、《道德经》、《四十二章经》收起来了，《股经》、《彩经》、《致富经》流行了。“言语巧偷鹦鹉舌，文章分得凤凰毛”的苏小小薛涛柳如们才能当名妓的时候过了，洗干净自己的泥腿子就能去给客人洗身子的日子来了。没鸡鸡的司马迁唱古人不见我的时候过了，有鸡鸡的小男人唱着歌选超级女生的日子来了。</p>
+
+<p>九球落袋，打完收工……Let&rsquo;s go home.</p>
+]]></content>
+  </entry>
+  
+</feed>

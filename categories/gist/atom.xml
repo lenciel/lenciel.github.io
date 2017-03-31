@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: gist | @Lenciel]]></title>
+  <link href="http://lenciel.com/categories/gist/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-03-31T23:38:06+08:00</updated>
+  <id>http://lenciel.com/</id>
+  <author>
+    <name><![CDATA[Lenciel]]></name>
+    <email><![CDATA[lenciel@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Mac上自启动autossh]]></title>
+    <link href="http://lenciel.com/2014/07/fuck-the-gfw-with-ssh-tunnel/"/>
+    <updated>2014-07-11T20:14:20+08:00</updated>
+    <id>http://lenciel.com/2014/07/fuck-the-gfw-with-ssh-tunnel</id>
+    <content type="html"><![CDATA[<p>If you know what it is then you know what <a href="https://gist.github.com/lenciel/d353a04a3a7bc0278ec6">it is</a>. Let&rsquo;s fuck the GFW.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress里插入带中文Gist的问题和解决]]></title>
+    <link href="http://lenciel.com/2014/05/fix-gist-style-in-octopress/"/>
+    <updated>2014-05-17T13:00:38+08:00</updated>
+    <id>http://lenciel.com/2014/05/fix-gist-style-in-octopress</id>
+    <content type="html"><![CDATA[<p><a href="https://gist.github.com/">Gist</a>是Github提供用来管理和分享<a href="https://gist.github.com/lenciel/4105165">代码片断</a>或者<a href="https://gist.github.com/lenciel/3462897">文档片断</a>的服务。和传统的<a href="http://en.wikipedia.org/wiki/Snippet_(programming">snippet</a>)管理系统相比，Gist因为实际上依托了Github的实现技术，所以具有存储在云端、自动的版本化、语法高亮支持的语言种类齐全、分享的便利性高等等优势。</p>
+
+<p><a href="http://octopress.org">Octopress</a>里面引用你创建的gist的好处是显而易见的：你需要分享的<strong>内容</strong>在Gist那边被更好的管理了，而在日志里面用下面这样的语句就可以很容易的插入gist里面的内容:
+</p>
+
+<div class="highlight"><pre><code class="text">{% gist gist_id [filename] %}
+</code></pre></div>
+
+
+<p></p>
+
+<p>比如<a href="http://lenciel.com/2014/05/web-development-skill-set-and-reading-list/">上篇文章</a>，理论上源代码就是这么一句：</p>
+
+<p></p>
+
+<div class="highlight"><pre><code class="text">{% gist lenciel/637812a7dcbe8341b07b web_skill_list.md %}
+</code></pre></div>
+
+
+<p></p>
+
+<p>当然之所以说理论上，是因为首先Octopress的markdown插件对unicode的支持<a href="http://tokkonopapa.github.io/blog/2013/02/23/octopress-toc/">是有bug</a>的。所以直接插入带中文的gist在build的时候会看到<code>Liquid Exception</code>:</p>
+
+<pre><code class="bash">&gt;&gt;&gt; Compass is watching for changes. Press Ctrl-C to Stop.
+Liquid Exception: incompatible character encodings: UTF-8 and ASCII-8BIT in 2014-05-16-web-development-skill-set-and-reading-list.markdown
+</code></pre>
+
+<p>解决起来也很简单，只需要在<code>lib/jekyll/converters/markdown.rb</code>里面强制设定encoding就可以了：</p>
+
+<pre><code class="diff lib/jekyll/converters/markdown.rb">@@ -120,7 +120,7 @@ def convert(content)
+           rd = RDiscount.new(content, *@rdiscount_extensions)
+           html = rd.to_html
+           if rd.generate_toc and html.include?(@config['rdiscount']['toc_token'])
+-            html.gsub!(@config['rdiscount']['toc_token'], rd.toc_content)
++            html.gsub!(@config['rdiscount']['toc_token'], rd.toc_content.force_encoding('utf-8'))
+           end
+</code></pre>
+
+<p>接下来就是render出来的效果，样子丑到让人无法直视：</p>
+
+<p><img src="/downloads/images/2014_05/gist_render_output_orig.jpg" title="Don't touch me..." alt="original gist render output" /></p>
+
+<p>大概看了一下Octopress的文档，原来代码片断的样式（包括gist的渲染样式）都在<a href="https://github.com/imathis/octopress/blob/master/.themes/classic/sass/partials/_syntax.scss">_syntax.scss</a>里面。这个文件2012年就没有更新过了，但是github的gist输出在2013年有过变化，所以就有些不匹配了。</p>
+
+<p>打开自己的模板，大概调了一下这个sass，主要是和其他的代码高亮一致：</p>
+
+<p><img src="/downloads/images/2014_05/gist_render_output.jpg" title="Don't touch me..." alt="current gist render output" /></p>
+
+<p>调整的地方见<a href="https://gist.github.com/lenciel/ecc8b3805ed346727abe">这里</a>:</p>
+
+<pre><code class="diff _sass/partials/_syntax.scss">diff --git a/46501e4:sass/partials/_syntax.scss b/02b0441:sass/partials/_syntax.scss
+index 137d475..5465286 100644
+--- a/46501e4:sass/partials/_syntax.scss
++++ b/02b0441:sass/partials/_syntax.scss
+@@ -22,10 +22,6 @@
+   @include border-radius(0);
+ }
+
+-.line-data {
+-   font-size: 13px;
+-}
+-
+ figure.code, .gist-file, pre {
+   @include box-shadow(rgba(#000, .06) 0 0 10px);
+   .highlight pre { @include box-shadow(none); }
+@@ -43,10 +39,8 @@ html .gist .gist-file {
+     margin-bottom: 0;
+   }
+   .gist-syntax {
+-    background: #01222d !important;
+-    color: #d5dee2 !important;
+-    padding: 0 2em;
+     border-bottom: 0 !important;
++    background: none !important;
+     .gist-highlight {
+       background: $base03 !important;
+     }
+@@ -57,17 +51,15 @@ html .gist .gist-file {
+   }
+   .gist-meta {
+    padding: .6em 0.8em;
++   border: 1px solid lighten($base02, 2) !important;
++   color: $base01;
+    font-size: .7em !important;
+    @if $solarized == light {
+-     color: $base01;
+-     border: 1px solid lighten($base02, 2) !important;
+      background: lighten($base03, 2) $noise-bg;
+      border: 1px solid $pre-border !important;
+      border-top: 1px solid lighten($base03, 2) !important;
+    } @else {
+-     background: #01222d $noise-bg;
+-     text-shadow: none !important;
+-     color: #d5dee2;
++     background: $base02 $noise-bg;
+    }
+    @extend .sans;
+    line-height: 1.5em;
+@@ -77,7 +69,7 @@ html .gist .gist-file {
+       &amp;:hover { color: $base1 !important; }
+     }
+     a[href*='#file'] {
+-      position: absolute; top: 0; left:0; right:0px;
++      position: absolute; top: 0; left:0; right:-10px;
+       color: #474747 !important;
+       @extend .code-title;
+       &amp;:hover { color: $link-color !important; }
+@@ -221,7 +213,7 @@ pre, .highlight, .gist-highlight {
+   &amp;::-webkit-scrollbar-thumb:horizontal { background: $solar-scroll-thumb;  -webkit-border-radius: 4px; border-radius: 4px }
+ }
+
+-.highlight code {
++.highlight code { 
+   @extend .pre-code; background: #000;
+ }
+ figure.code {
+@@ -267,11 +259,3 @@ figure.code {
+   text-shadow: #cbcccc 0 1px 0;
+   padding-left: 3em;
+ }
+-
+-.gist-file {
+-  font-size:.8em !important;
+-}
+-
+-table.lines{
+-  width: 100%;
+-}
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Web开发知识结构]]></title>
+    <link href="http://lenciel.com/2014/05/web-development-skill-set-and-reading-list/"/>
+    <updated>2014-05-16T14:28:04+08:00</updated>
+    <id>http://lenciel.com/2014/05/web-development-skill-set-and-reading-list</id>
+    <content type="html"><![CDATA[<p>这个list保存在了一个专门的<a href="https://gist.github.com/lenciel/637812a7dcbe8341b07b">Gist里面</a>，方便更新。</p>
+
+<p><noscript><pre>### 基础知识
+- 计算机软硬件基础
+- 计算机网络
+- 操作系统
+- 数据结构和算法
+- 设计模式
+- 以及其他各种你应该懂的东西
+
+### 前端开发
+- 前端标准/规范
+    - [HTTP1.1](http://www.w3.org/Protocols/rfc2616/rfc2616.html)
+    - [ECMAScript3/5](http://www.ecma-international.org/publications/standards/Ecma-262.htm)
+    - [W3C/DOM/BOM/XHTML/XML/JSON/JSONP](http://www.w3.org/TR/)
+    - [CommonJS Modules](http://wiki.commonjs.org/wiki/Modules/1.0)/[AMD](https://github.com/amdjs/amdjs-api/wiki/AMD)
+    - [HTML5](http://www.w3.org/html/wg/drafts/html/master/)/[CSS3](http://www.w3.org/Style/CSS/specs.en.html)
+- 前端库/框架
+    - [jQuery](http://jquery.com/)/[Underscore](http://underscorejs.org/)/[Mootools](http://mootools.net/)/[Prototype.js](http://www.prototypejs.org/)
+    - [YUI3](http://yuilibrary.com/projects/yui3/)/[Dojo](http://dojotoolkit.org/)/[ExtJS](http://www.sencha.com/products/extjs)/[KISSY](http://docs.kissyui.com/)
+    - [Backbone](http://backbonejs.org/)/[KnockoutJS](http://knockoutjs.com/)/[Emberjs](http://emberjs.com/)
+    - [AngularJS](http://angularjs.org/)
+        - [Batarang](https://chrome.google.com/webstore/detail/angularjs-batarang/ighdmehidhipcmcojjgiloacoafjmpfk)
+    - [Bootstrap](http://getbootstrap.com/)
+    - [Semantic UI](http://www.semantic-ui.com/)
+    - [Juice UI](http://juiceui.com/)
+    - [Web Atoms](http://webatomsjs.neurospeech.com/)
+- 模板引擎(TBA)
+- 静态站点生成器(TBA)
+- 编程语言
+    - [JavaScript](https://developer.mozilla.org/en-US/docs/JavaScript)/[Node.js](http://nodejs.org/)
+    - [CoffeeScript](http://coffeescript.org/)
+    - [TypeScript](http://www.typescriptlang.org/)        
+    - [HTML](http://www.w3.org/html/)/[HTML5](http://www.w3.org/TR/html5/)
+    - [CSS/CSS3](http://www.w3.org/Style/CSS/)
+- 做图切图
+    - [PhotoShop](http://www.photoshop.com/products/photoshop)/[Paint.net](http://www.getpaint.net/)/[Fireworks](http://www.adobe.com/cn/products/fireworks.html)/[GIMP](http://www.gimp.org/)
+- 代码质量
+    - Coding style
+        - [JSLint](http://www.jslint.com/)/[JSHint](http://www.jshint.com/)/[jscs](https://github.com/mdevils/node-jscs)
+        - [CSSLint](http://csslint.net/)
+        - [Markup Validation Service](http://validator.w3.org/)
+    - 单元测试
+        - [QUnit](http://qunitjs.com/)/[Jasmine](http://pivotal.github.com/jasmine/)/[Jest](http://facebook.github.io/jest/index.html)
+        - [Mocha](http://visionmedia.github.com/mocha/)/[Should](https://github.com/visionmedia/should.js/)/[Chai](http://chaijs.com/)/[Expect](https://github.com/LearnBoost/expect.js/)
+        - [Unit JS](http://unitjs.com/)
+    - 自动化测试
+        - [Selenium WebDriver](http://docs.seleniumhq.org/docs/03_webdriver.jsp)/[Karma Runner](https://github.com/karma-runner/karma)/[Sahi](http://sahi.co.in/)
+        - [phantomjs](http://phantomjs.org/)
+- 性能
+    - [JSPerf](http://jsperf.com/)
+    - [YSlow 35 rules](http://developer.yahoo.com/performance/rules.html)
+    - [PageSpeed](https://developers.google.com/speed/pagespeed/)
+    - [HTTPWatch](http://www.httpwatch.com/)
+    - [DynaTrace&#39;s Ajax](http://www.compuware.com/application-performance-management/dynatrace-ajax-download.html)
+    - [高性能JavaScript](http://book.douban.com/subject/5362856/)
+- 部署流程
+    - 压缩合并
+        - [YUI Compressor](http://developer.yahoo.com/yui/compressor/)
+        - [Google Clousure Complier](https://developers.google.com/closure/compiler/)
+        - [UglifyJS](https://github.com/mishoo/UglifyJS)
+        - [CleanCSS](https://github.com/GoalSmashers/clean-css)
+    - 文档输出
+        - [JSDoc](http://code.google.com/p/jsdoc-toolkit/)
+        - [Dox](https://github.com/visionmedia/dox)/[Doxmate](https://github.com/JacksonTian/doxmate)/[Grunt-Doxmate](https://github.com/luozhihua/grunt-doxmate)
+    - 项目构建工具
+        - [make](http://www.gnu.org/software/make/)/[Ant](http://ant.apache.org/)
+        - [GYP](http://code.google.com/p/gyp/)
+        - [Gulp](http://gulpjs.com)
+        - [Grunt](http://gruntjs.com/)
+        - [Yeoman](http://yeoman.io/)
+        - [FIS](http://fis.baidu.com/)
+        - [Mod](https://github.com/modulejs/modjs)
+- 代码组织
+    - 类库模块化
+        - [CommonJS](http://www.commonjs.org/)/AMD
+        - [YUI3模块](http://yuilibrary.com/projects/yui3/)
+    - 业务逻辑模块化
+        - [bower](https://github.com/twitter/bower)/[component](https://github.com/component/component)
+    - 文件加载
+        - [LABjs](http://labjs.com/)
+        - [SeaJS](http://seajs.org/)/[Require.js](http://requirejs.org/)
+    - 模块化预处理器
+        - [Browserify](https://github.com/substack/node-browserify)
+- 安全
+    - [CSRF](http://en.wikipedia.org/wiki/Cross-site_request_forgery)/[XSS](http://en.wikipedia.org/wiki/Cross-site_scripting)
+    - ADsafe/Caja/Sandbox
+- 移动Web
+    - HTML5/CSS3
+    - [响应式网页设计](http://zh.wikipedia.org/wiki/%E5%93%8D%E5%BA%94%E5%BC%8F%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1)
+    - [Zeptojs](http://zeptojs.com/)/[iScroll](http://cubiq.org/iscroll)
+    - V5/[Sencha Touch](http://www.sencha.com/products/touch)
+    - [PhoneGap](http://phonegap.com/)
+    - [jQuery Mobile](http://jquerymobile.com/)
+- 可视化
+    - SVG/Canvas/VML
+    - SVG: [D3](http://d3js.org/)/[Raphaël](http://raphaeljs.com/)/[Snap.svg](http://snapsvg.io/)/[DataV](http://datavlab.org/datavjs/)
+    - Canvas: [CreateJS](http://www.createjs.com/)/[KineticJS](http://kineticjs.com/)
+
+### 后端开发(TBA)
+- 编程语言
+- 网页服务器
+    - [Nginx](http://nginx.org/en/)
+    - [Apache](http://httpd.apache.org/)
+    - [Lighttpd](http://www.lighttpd.net/)
+- 数据库
+    - SQL
+    - [MySQL](http://www.mysql.com/)/[PostgreSQL](http://www.postgresql.org/)/[Oracle](http://www.oracle.com/us/products/database/overview/index.html)
+    - [MongoDB](http://www.mongodb.org/)/[CouchDB](http://couchdb.apache.org/)
+
+### 开发工具
+- 浏览器
+    - IE6/[7](http://www.microsoft.com/en-US/download/details.aspx?id=2)/[8](http://windows.microsoft.com/en-US/internet-explorer/downloads/ie-8)/[9](http://windows.microsoft.com/en-US/internet-explorer/downloads/ie-9/worldwide-languages)/[10](http://windows.microsoft.com/en-US/internet-explorer/ie-10-worldwide-languages)/[11](http://windows.microsoft.com/en-US/internet-explorer/ie-11-worldwide-languages) (Trident)
+    - [Firefox](http://www.mozilla.org/en-US/) (Gecko)
+    - [Chrome](http://www.google.com/chrome)/[Chromium](http://www.chromium.org/) (Blink)
+    - [Safari](http://www.apple.com/safari/) (WebKit)
+    - [Opera](http://www.opera.com/) (Blink)
+- 编辑器和IDE
+    - [VIM](http://www.vim.org/)/[Sublime Text2](http://www.sublimetext.com/)
+    - [Notepad++](http://notepad-plus-plus.org/)/[EditPlus](http://www.editplus.com/)
+    - [WebStorm](http://www.jetbrains.com/webstorm/)
+    - [Emacs](http://www.gnu.org/software/emacs/)  [EmacsWiki](http://emacswiki.org)
+    - [Brackets](http://brackets.io)
+    - [Komodo IDE / Edit](http://www.activestate.com/komodo-edit)
+    - [Eclipse](http://www.eclipse.org/)
+    - [Visual Studio](http://www.visualstudio.com/)
+    - [NetBeans](https://netbeans.org/)
+    - [Cloud9 IDE](http://c9.io/)
+- 调试工具
+    - [Firebug](http://getfirebug.com/)/[Firecookie](https://addons.mozilla.org/en-US/firefox/addon/firecookie/)
+    - [YSlow](http://developer.yahoo.com/yslow/)
+    - [IEDeveloperToolbar](http://www.microsoft.com/en-us/download/details.aspx?id=18359)/[IETester](http://www.my-debugbar.com/wiki/IETester/HomePage)
+    - [Fiddler](http://www.fiddler2.com/fiddler2/)
+    - [Chrome Dev Tools](https://developers.google.com/chrome-developer-tools/)
+    - [Dragonfly](http://www.opera.com/dragonfly/)
+    - [DebugBar](http://www.debugbar.com/)
+    - [Venkman](https://developer.mozilla.org/en-US/docs/Venkman)
+- 版本管理
+    - [Git](git-scm.com/)/[SVN](http://subversion.apache.org/)/[Mercurial](http://mercurial.selenic.com/)
+    - [Github](https://github.com/)/[Bitbucket](https://bitbucket.org/)/[Google Code](http://code.google.com/hosting/)/[Gitorious](https://gitorious.org/)/[GNU Savannah](http://savannah.gnu.org/)/[Launchpad](https://launchpad.net/)/[SourceForge](http://sourceforge.net/)/[Gitlab](http://gitlab.org/)
+    
+### 部署运维(TBA)
+- 代码编译与发布
+- 服务器部署
+- 服务器监控
+- 服务器日志分析
+
+### Softskill(TBA)
+- 知识管理/总结分享
+- 沟通技巧/团队协作
+- 需求管理/PM
+- 交互设计/可用性/可访问性知识
+
+### 书籍推荐(TBA)
+</pre></noscript><script src="https://gist.github.com/lenciel/637812a7dcbe8341b07b.js?file=web_skill_list.md"> </script></p>
+]]></content>
+  </entry>
+  
+</feed>

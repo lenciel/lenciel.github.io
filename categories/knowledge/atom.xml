@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: knowledge | @Lenciel]]></title>
+  <link href="http://lenciel.com/categories/knowledge/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-03-31T23:38:06+08:00</updated>
+  <id>http://lenciel.com/</id>
+  <author>
+    <name><![CDATA[Lenciel]]></name>
+    <email><![CDATA[lenciel@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Web开发知识结构]]></title>
+    <link href="http://lenciel.com/2014/05/web-development-skill-set-and-reading-list/"/>
+    <updated>2014-05-16T14:28:04+08:00</updated>
+    <id>http://lenciel.com/2014/05/web-development-skill-set-and-reading-list</id>
+    <content type="html"><![CDATA[<p>这个list保存在了一个专门的<a href="https://gist.github.com/lenciel/637812a7dcbe8341b07b">Gist里面</a>，方便更新。</p>
+
+<p><noscript><pre>### 基础知识
+- 计算机软硬件基础
+- 计算机网络
+- 操作系统
+- 数据结构和算法
+- 设计模式
+- 以及其他各种你应该懂的东西
+
+### 前端开发
+- 前端标准/规范
+    - [HTTP1.1](http://www.w3.org/Protocols/rfc2616/rfc2616.html)
+    - [ECMAScript3/5](http://www.ecma-international.org/publications/standards/Ecma-262.htm)
+    - [W3C/DOM/BOM/XHTML/XML/JSON/JSONP](http://www.w3.org/TR/)
+    - [CommonJS Modules](http://wiki.commonjs.org/wiki/Modules/1.0)/[AMD](https://github.com/amdjs/amdjs-api/wiki/AMD)
+    - [HTML5](http://www.w3.org/html/wg/drafts/html/master/)/[CSS3](http://www.w3.org/Style/CSS/specs.en.html)
+- 前端库/框架
+    - [jQuery](http://jquery.com/)/[Underscore](http://underscorejs.org/)/[Mootools](http://mootools.net/)/[Prototype.js](http://www.prototypejs.org/)
+    - [YUI3](http://yuilibrary.com/projects/yui3/)/[Dojo](http://dojotoolkit.org/)/[ExtJS](http://www.sencha.com/products/extjs)/[KISSY](http://docs.kissyui.com/)
+    - [Backbone](http://backbonejs.org/)/[KnockoutJS](http://knockoutjs.com/)/[Emberjs](http://emberjs.com/)
+    - [AngularJS](http://angularjs.org/)
+        - [Batarang](https://chrome.google.com/webstore/detail/angularjs-batarang/ighdmehidhipcmcojjgiloacoafjmpfk)
+    - [Bootstrap](http://getbootstrap.com/)
+    - [Semantic UI](http://www.semantic-ui.com/)
+    - [Juice UI](http://juiceui.com/)
+    - [Web Atoms](http://webatomsjs.neurospeech.com/)
+- 模板引擎(TBA)
+- 静态站点生成器(TBA)
+- 编程语言
+    - [JavaScript](https://developer.mozilla.org/en-US/docs/JavaScript)/[Node.js](http://nodejs.org/)
+    - [CoffeeScript](http://coffeescript.org/)
+    - [TypeScript](http://www.typescriptlang.org/)        
+    - [HTML](http://www.w3.org/html/)/[HTML5](http://www.w3.org/TR/html5/)
+    - [CSS/CSS3](http://www.w3.org/Style/CSS/)
+- 做图切图
+    - [PhotoShop](http://www.photoshop.com/products/photoshop)/[Paint.net](http://www.getpaint.net/)/[Fireworks](http://www.adobe.com/cn/products/fireworks.html)/[GIMP](http://www.gimp.org/)
+- 代码质量
+    - Coding style
+        - [JSLint](http://www.jslint.com/)/[JSHint](http://www.jshint.com/)/[jscs](https://github.com/mdevils/node-jscs)
+        - [CSSLint](http://csslint.net/)
+        - [Markup Validation Service](http://validator.w3.org/)
+    - 单元测试
+        - [QUnit](http://qunitjs.com/)/[Jasmine](http://pivotal.github.com/jasmine/)/[Jest](http://facebook.github.io/jest/index.html)
+        - [Mocha](http://visionmedia.github.com/mocha/)/[Should](https://github.com/visionmedia/should.js/)/[Chai](http://chaijs.com/)/[Expect](https://github.com/LearnBoost/expect.js/)
+        - [Unit JS](http://unitjs.com/)
+    - 自动化测试
+        - [Selenium WebDriver](http://docs.seleniumhq.org/docs/03_webdriver.jsp)/[Karma Runner](https://github.com/karma-runner/karma)/[Sahi](http://sahi.co.in/)
+        - [phantomjs](http://phantomjs.org/)
+- 性能
+    - [JSPerf](http://jsperf.com/)
+    - [YSlow 35 rules](http://developer.yahoo.com/performance/rules.html)
+    - [PageSpeed](https://developers.google.com/speed/pagespeed/)
+    - [HTTPWatch](http://www.httpwatch.com/)
+    - [DynaTrace&#39;s Ajax](http://www.compuware.com/application-performance-management/dynatrace-ajax-download.html)
+    - [高性能JavaScript](http://book.douban.com/subject/5362856/)
+- 部署流程
+    - 压缩合并
+        - [YUI Compressor](http://developer.yahoo.com/yui/compressor/)
+        - [Google Clousure Complier](https://developers.google.com/closure/compiler/)
+        - [UglifyJS](https://github.com/mishoo/UglifyJS)
+        - [CleanCSS](https://github.com/GoalSmashers/clean-css)
+    - 文档输出
+        - [JSDoc](http://code.google.com/p/jsdoc-toolkit/)
+        - [Dox](https://github.com/visionmedia/dox)/[Doxmate](https://github.com/JacksonTian/doxmate)/[Grunt-Doxmate](https://github.com/luozhihua/grunt-doxmate)
+    - 项目构建工具
+        - [make](http://www.gnu.org/software/make/)/[Ant](http://ant.apache.org/)
+        - [GYP](http://code.google.com/p/gyp/)
+        - [Gulp](http://gulpjs.com)
+        - [Grunt](http://gruntjs.com/)
+        - [Yeoman](http://yeoman.io/)
+        - [FIS](http://fis.baidu.com/)
+        - [Mod](https://github.com/modulejs/modjs)
+- 代码组织
+    - 类库模块化
+        - [CommonJS](http://www.commonjs.org/)/AMD
+        - [YUI3模块](http://yuilibrary.com/projects/yui3/)
+    - 业务逻辑模块化
+        - [bower](https://github.com/twitter/bower)/[component](https://github.com/component/component)
+    - 文件加载
+        - [LABjs](http://labjs.com/)
+        - [SeaJS](http://seajs.org/)/[Require.js](http://requirejs.org/)
+    - 模块化预处理器
+        - [Browserify](https://github.com/substack/node-browserify)
+- 安全
+    - [CSRF](http://en.wikipedia.org/wiki/Cross-site_request_forgery)/[XSS](http://en.wikipedia.org/wiki/Cross-site_scripting)
+    - ADsafe/Caja/Sandbox
+- 移动Web
+    - HTML5/CSS3
+    - [响应式网页设计](http://zh.wikipedia.org/wiki/%E5%93%8D%E5%BA%94%E5%BC%8F%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1)
+    - [Zeptojs](http://zeptojs.com/)/[iScroll](http://cubiq.org/iscroll)
+    - V5/[Sencha Touch](http://www.sencha.com/products/touch)
+    - [PhoneGap](http://phonegap.com/)
+    - [jQuery Mobile](http://jquerymobile.com/)
+- 可视化
+    - SVG/Canvas/VML
+    - SVG: [D3](http://d3js.org/)/[Raphaël](http://raphaeljs.com/)/[Snap.svg](http://snapsvg.io/)/[DataV](http://datavlab.org/datavjs/)
+    - Canvas: [CreateJS](http://www.createjs.com/)/[KineticJS](http://kineticjs.com/)
+
+### 后端开发(TBA)
+- 编程语言
+- 网页服务器
+    - [Nginx](http://nginx.org/en/)
+    - [Apache](http://httpd.apache.org/)
+    - [Lighttpd](http://www.lighttpd.net/)
+- 数据库
+    - SQL
+    - [MySQL](http://www.mysql.com/)/[PostgreSQL](http://www.postgresql.org/)/[Oracle](http://www.oracle.com/us/products/database/overview/index.html)
+    - [MongoDB](http://www.mongodb.org/)/[CouchDB](http://couchdb.apache.org/)
+
+### 开发工具
+- 浏览器
+    - IE6/[7](http://www.microsoft.com/en-US/download/details.aspx?id=2)/[8](http://windows.microsoft.com/en-US/internet-explorer/downloads/ie-8)/[9](http://windows.microsoft.com/en-US/internet-explorer/downloads/ie-9/worldwide-languages)/[10](http://windows.microsoft.com/en-US/internet-explorer/ie-10-worldwide-languages)/[11](http://windows.microsoft.com/en-US/internet-explorer/ie-11-worldwide-languages) (Trident)
+    - [Firefox](http://www.mozilla.org/en-US/) (Gecko)
+    - [Chrome](http://www.google.com/chrome)/[Chromium](http://www.chromium.org/) (Blink)
+    - [Safari](http://www.apple.com/safari/) (WebKit)
+    - [Opera](http://www.opera.com/) (Blink)
+- 编辑器和IDE
+    - [VIM](http://www.vim.org/)/[Sublime Text2](http://www.sublimetext.com/)
+    - [Notepad++](http://notepad-plus-plus.org/)/[EditPlus](http://www.editplus.com/)
+    - [WebStorm](http://www.jetbrains.com/webstorm/)
+    - [Emacs](http://www.gnu.org/software/emacs/)  [EmacsWiki](http://emacswiki.org)
+    - [Brackets](http://brackets.io)
+    - [Komodo IDE / Edit](http://www.activestate.com/komodo-edit)
+    - [Eclipse](http://www.eclipse.org/)
+    - [Visual Studio](http://www.visualstudio.com/)
+    - [NetBeans](https://netbeans.org/)
+    - [Cloud9 IDE](http://c9.io/)
+- 调试工具
+    - [Firebug](http://getfirebug.com/)/[Firecookie](https://addons.mozilla.org/en-US/firefox/addon/firecookie/)
+    - [YSlow](http://developer.yahoo.com/yslow/)
+    - [IEDeveloperToolbar](http://www.microsoft.com/en-us/download/details.aspx?id=18359)/[IETester](http://www.my-debugbar.com/wiki/IETester/HomePage)
+    - [Fiddler](http://www.fiddler2.com/fiddler2/)
+    - [Chrome Dev Tools](https://developers.google.com/chrome-developer-tools/)
+    - [Dragonfly](http://www.opera.com/dragonfly/)
+    - [DebugBar](http://www.debugbar.com/)
+    - [Venkman](https://developer.mozilla.org/en-US/docs/Venkman)
+- 版本管理
+    - [Git](git-scm.com/)/[SVN](http://subversion.apache.org/)/[Mercurial](http://mercurial.selenic.com/)
+    - [Github](https://github.com/)/[Bitbucket](https://bitbucket.org/)/[Google Code](http://code.google.com/hosting/)/[Gitorious](https://gitorious.org/)/[GNU Savannah](http://savannah.gnu.org/)/[Launchpad](https://launchpad.net/)/[SourceForge](http://sourceforge.net/)/[Gitlab](http://gitlab.org/)
+    
+### 部署运维(TBA)
+- 代码编译与发布
+- 服务器部署
+- 服务器监控
+- 服务器日志分析
+
+### Softskill(TBA)
+- 知识管理/总结分享
+- 沟通技巧/团队协作
+- 需求管理/PM
+- 交互设计/可用性/可访问性知识
+
+### 书籍推荐(TBA)
+</pre></noscript><script src="https://gist.github.com/lenciel/637812a7dcbe8341b07b.js?file=web_skill_list.md"> </script></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Is Wine Bullshit]]></title>
+    <link href="http://lenciel.com/2013/07/is-wine-bullshit/"/>
+    <updated>2013-07-01T15:05:00+08:00</updated>
+    <id>http://lenciel.com/2013/07/is-wine-bullshit</id>
+    <content type="html"><![CDATA[<p><img src="/downloads/images/wine.jpeg" title="Don't touch me..." alt="Raw git log output" /></p>
+
+<p>一瓶Lafite Rothschild Bordeaux最少要几千块，一瓶Charles Shaw或者Franzia卖十几块。我们经常可以看到那些红酒的广告宣扬着高档红酒的品质和口感是多么美妙。但其实很多人不知道，按照"酒类经济学家"的说法，葡萄酒的价格和口感之间的关系可能不是那么紧密。他们中不少人甚至声称，葡萄酒的价格根本就是乱来的，而那些号称能被品出来的万千滋味不过是付钱过后脑袋里面的自我安慰。</p>
+
+<p>比如，一份2008年发表在《The Journal of Wine Economics》上的<a href="http://www.wine-economics.org/aawe/wp-content/uploads/2012/10/Vol.3-No.1-2008-Evidence-from-a-Large-Sample-of-Blind-Tastings.pdf">文章</a>说，当消费者不知道自己的酒的价格时，他们对实际上更便宜的酒的口感评价甚至稍稍好过那些更贵的酒。而且不光是一般消费者，即使是那些专家也不会对更贵的酒评价更高：</p>
+
+<p><blockquote><p>“In sum, we ﬁnd a non-negative relationship between price and overall rating for experts. Due to the poor statistical signiﬁcance of the price coefﬁcient for experts, it remains an open question whether this coefﬁcient is in fact positive.”</p></blockquote></p>
+
+<p>在<a href="http://www.newyorker.com/online/blogs/frontal-cortex/2012/06/wine-taste.html">另一项实验</a>中，被试者喝过red wine和white wine之后，对两种酒的评价就分别是一些典型的red wine和white wine的评价。而实际上用于测试的酒都是white wine，所谓的red wine只是加了一些对口感没有影响的食用色素。</p>
+
+<p>另一类的研究着眼于品酒师Robert M. Parker Jr.发明的风靡全球的100制评分标准的准确度。退休的统计学家Robert Hodgson也是一位业余的酿酒爱好者。他发现同样的酒多次让品酒师打分，分数非常不稳定：</p>
+
+<p><blockquote><p>“The judges’ wine ratings typically varied by ±4 points on a standard ratings scale running from 80 to 100. A wine rated 91 on one tasting would often be rated an 87 or 95 on the next. Some of the judges did much worse, and only about one in 10 regularly rated the same wine within a range of ±2 points.”</p></blockquote></p>
+
+<p>随着类似的研究结果不断被刷新，越来越多的主流媒体开始质疑酒究竟是如何定价的。</p>
+
+<p>酿酒工业的巨头们也出来承认：酒定价的主要影响因素不是宣传中的那些有关酒的口感等品质相关的要点，而是产量、品牌、大量中间环节的成本以及人们对浪漫或华贵生活的期许。但酒商们仍然坚持，即便是这些因素造成了有的酒很昂贵，但是卖得贵的酒通常也确实是口感上佳的酒。问题是和批评者相比，他们拿不出任何有效的数据说明这点。</p>
+
+<p>于是有些媒体就出现了“<a href="http://io9.com/wine-tasting-is-bullshit-heres-why-496098276">品红酒就是扯淡</a>”这样的文章。</p>
+
+<p>但这么说公平吗？</p>
+
+<a name="L......................................."></a>
+<h1>口感其实并不是仅仅来自味蕾</h1>
+
+<p>要明白这是为什么你首先要知道味蕾只是舌头上让你感知食物的酸甜苦辣的部分，这些是味觉但不是口感。口感的形成是视觉、嗅觉、味觉等五官都有参与的。</p>
+
+<p>要试验这点儿你可以试试捏着鼻子吃饭，或者你想想为什么自己上次感冒的时候吃东西不香。和味蕾一样，人的感觉器官特别是嗅觉和视觉会在你对酒的口感做出评价时起到非常巨大的作用，这点对于其他食物和饮料也一样适用。</p>
+
+<p>以颜色为例，类似前面说的在white wine里面加色素可以让品酒师都犯错认为它是red wine一样，New York Times报道过：</p>
+
+<p><blockquote><p>When tasteless yellow coloring is added to vanilla pudding, consumers say it tastes like banana or lemon pudding. And when mango or lemon flavoring is added to white pudding, most consumers say that it tastes like vanilla pudding. Color creates a psychological expectation for a certain flavor that is often impossible to dislodge, [food chemist] Dr. Shelke said.</p></blockquote></p>
+
+<p>味蕾之外的其他感觉影响口感的例子还有很多。比如环境，<a href="http://www.amsciepub.com/doi/abs/10.2466/01.PR0.111.4.228-232">研究表明</a>人们在柔光的环境下就餐觉得更舒服。比如预期，我们过往的<a href="http://www.huffingtonpost.com/Menuism/does-the-way-we-see-food-affect-taste_b_1872204.html">经验</a>，食物的<a href="http://www.jstor.org/discover/10.2307/3152198?uid=3739560&amp;uid=2&amp;uid=4&amp;uid=3739256&amp;sid=21102447342477">品牌</a>，<a href="http://www.griffithhack.com.au/mediacentre-Canafoodsbrandaffectyourperceptionsoftaste">包装</a>和<a href="http://www.psychologytoday.com/blog/evolved-primate/201002/does-price-tag-have-taste">价格</a>都会影响我们对它的口感。</p>
+
+<a name="L..........................."></a>
+<h1>并非所有的酒都一样</h1>
+
+<p>公认的最好的品酒师，被称为 <code>Master Sommeliers</code> ，在全世界只有不到200名。这些人要获得 <code>Master Sommeliers</code> 的称号，必须蒙上眼睛鉴别出6种不同葡萄酒的葡萄品种、产地和年份。如果这些人不是酒行业养的神棍，而是真有这样的本领，那么是否意味着不同的酒确实口感是不一样的呢？</p>
+
+<p>《今日心理学》上面<a href="http://www.psychologytoday.com/blog/sensory-superpowers/200908/you-drink-what-you-think">有篇文章</a>对此做了解答，认为专业品酒师主要靠的是良好的分析能力和大量的练习积累的知识：</p>
+
+<p><blockquote><p>Research shows that contrary to common thought, wine experts do not have more sensitive palates, per se. They don’t, for example, have lower thresholds for detecting a wine’s tannin and alcohol content. Experts are also no better than novices at tasting whether two wines are the same or different.</p></p><p><p>What makes [Master Sommelier] Steven Poe an expert is how he brings his formal knowledge of wine production to what he tastes. For example, Poe would be familiar with the flavor outcomes of malolactic fermentation —a process of secondary wine fermentation. In a blind tasting, he might notice one of the flavors associated with the process—a buttery texture, for example—and then attend to the other likely flavor results of malolactic fermentation including hints of yogurt and sauerkraut. This could help Poe narrow down a wine’s region and vintage.</p></blockquote></p>
+
+<p>换句话说即使是Master Sommelier也有可能把染色的white wine搞成red wine，或者是在盲测的时候觉得一种便宜的酒比贵的酒还好喝。他们像福尔摩斯一样，是根据线索和知识解开口中的酒是什么样的酒的谜题，而不可能像广告里面一口入喉，就击掌高呼：“哇，这酒太好喝了，这一定是xxx年份的xxx。”</p>
+
+<a name="So."></a>
+<h1>So?</h1>
+
+<p>人们知道十几块一瓶的红酒和几万块的味道没太大的区别后，反应是非常激烈的。特别是因为众所知周的原因，品红酒这种本来没啥大不了的活动在天朝更容易因为和“小资”甚至“奢侈”挂钩而备受非议。</p>
+
+<p>而看完本文我们应该要明白，实际上我们的口感本来就是由各种各样因素影响的假象。不仅是品红酒，任何食物的口感都可以被人为因素改变：特别是食品添加剂和食品加工如此“发达”的天朝，如果你说昂贵的红酒是扯淡，那深究起来，有哪样吃的东西不扯淡呢？</p>
+
+<p>因此，我觉得首先你应该鼓励自己和身边的人都试试没那么贵的酒，可能喝起来也相当不错。然后，如果别人花了大价钱买来一支，你也不要觉得这就是装逼：喝起来痛不痛快，本来就是别人自己的事情。</p>
+]]></content>
+  </entry>
+  
+</feed>

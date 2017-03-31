@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: note | @Lenciel]]></title>
+  <link href="http://lenciel.com/categories/note/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-03-31T23:38:06+08:00</updated>
+  <id>http://lenciel.com/</id>
+  <author>
+    <name><![CDATA[Lenciel]]></name>
+    <email><![CDATA[lenciel@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Openssl Heartbleed Bug]]></title>
+    <link href="http://lenciel.com/2014/04/openssl-heartbleed-bug/"/>
+    <updated>2014-04-10T11:29:15+08:00</updated>
+    <id>http://lenciel.com/2014/04/openssl-heartbleed-bug</id>
+    <content type="html"><![CDATA[<p>连某宝都中招的<a href="http://heartbleed.com/">Heartbleed bug</a>究竟是个什么东西？简单地说就是攻击者可以读最多64KB内存的内容。</p>
+
+<p>读了这64KB能干嘛？用报这个bug的人的话来说：</p>
+
+<p><blockquote><p>Without using any privileged information or credentials we were able steal from ourselves the secret keys used for our X.509 certificates, user names and passwords, instant messages, emails and business critical documents and communication.</p></blockquote></p>
+
+<p>那么读取64KB内存和获取这么多关键信息究竟有什么关系呢？</p>
+
+<a name="The.bug"></a>
+<h2>The bug</h2>
+
+<p>先来看看<a href="http://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=96db9023b881d7cd9f379b0c154650d6c108e9a3">patch</a>里面的<code>ssl/d1_both.c</code>:</p>
+
+<pre><code class="c">int            
+dtls1_process_heartbeat(SSL *s)
+    {          
+    unsigned char *p = &amp;s-&gt;s3-&gt;rrec.data[0], *pl;
+    unsigned short hbtype;
+    unsigned int payload;
+    unsigned int padding = 16; /* Use minimum padding */
+</code></pre>
+
+<p>可以看到，heartbeat里有一个 <a href="http://en.wikipedia.org/wiki/Transport_Layer_Security">SSLv3</a>  record的指针，这个<code>record</code>的代码如下:</p>
+
+<pre><code class="c">typedef struct ssl3_record_st
+    {
+        int type;               /* type of record */
+        unsigned int length;    /* How many bytes available */
+        unsigned int off;       /* read/write offset into 'buf' */
+        unsigned char *data;    /* pointer to the record data */
+        unsigned char *input;   /* where the decode bytes are */
+        unsigned char *comp;    /* only used with decompression - malloc()ed */
+        unsigned long epoch;    /* epoch number, needed by DTLS1 */
+        unsigned char seq_num[8]; /* sequence number, needed by DTLS1 */
+    } SSL3_RECORD;
+</code></pre>
+
+<p>可以看到，每个<code>record</code>有它的<code>type</code>、<code>length</code>和<code>data</code>，规规矩矩。</p>
+
+<p>回到<code>dtls1_process_heartbeat</code>：</p>
+
+<pre><code class="c">/* Read type and payload length first */
+hbtype = *p++;
+n2s(p, payload);
+pl = p;
+</code></pre>
+
+<p>可以看到<code>SSLv3 record</code>的第一个byte就是放这个<code>heartbeat</code>的<code>type</code>。 宏<code>n2s</code> 则是从<code>p</code>里面取两个byte放到payload里面，被用来作为payload的长度。 <strong>注意这里并没有检查<code>SSLv3 record</code> 实际的长度。</strong></p>
+
+<p>接下来在这个函数里面干了下面这些事情：</p>
+
+<pre><code class="c">unsigned char *buffer, *bp;
+int r;
+
+/* Allocate memory for the response, size is 1 byte
+ * message type, plus 2 bytes payload length, plus
+ * payload, plus padding
+ */
+buffer = OPENSSL_malloc(1 + 2 + payload + padding);
+bp = buffer;
+</code></pre>
+
+<p>可以看到，用户要多少程序就分配多少，最多可以分配到<code>65535+1+2+16</code>，指针bp被用来操作这块内存。然后：</p>
+
+<pre><code class="c">/* Enter response type, length and copy payload */
+*bp++ = TLS1_HB_RESPONSE;
+s2n(payload, bp);
+memcpy(bp, pl, payload);
+</code></pre>
+
+<p>宏<code>s2n</code>把<code>n2s</code>做的操作恢复出来：先拿16个bit的值放到2个byte里面，也就是原来请求的payload的长度。然后把<code>pl</code>里面放的payload(请求者提交的data)拷贝到新分配的<code>bp</code>里面。</p>
+
+<p>看起来是很平常的操作，只不过没有认真的检查用户输入而已，但问题也就在这里了。</p>
+
+<a name="Where.is.the.bug"></a>
+<h2>Where is the bug</h2>
+
+<p>如果用户并没有正在提交声称的那么多个bytes的payload，那么memcpy就会读到同一个process里面SSLv3 record附近的内存内容。</p>
+
+<p>这附近有哪些内容呢？</p>
+
+<p>首先要明白在linux上，内存的动态分配主要是通过<a href="http://linux.die.net/man/2/sbrk">sbrk</a> 或者是 <a href="http://man7.org/linux/man-pages/man2/mmap.2.html">mmap</a>。如果内存是通过sbrk分配的，它会使用<code>heap-grows-up</code>规则，泄露出来的东西不会那么多（但是如果是同时并发请求<a href="http://blog.existentialize.com/diagnosis-of-the-openssl-heartbleed-bug.html#fn:update">还是有东西会漏</a>）。</p>
+
+<p>在这里，<code>pl</code>因为malloc里面的mmap_threshhold多半是sbrk分配的，但是，那些关键的用户数据，则多半是通过mmap分配内存。于是这些数据就会被攻击者用<code>pl</code>拿到。如果再考虑并发请求，就&hellip;</p>
+
+<a name="The.fix"></a>
+<h2>The fix</h2>
+
+<p>所以，整个patch里面最主要的fix就是：
+* 检查是否有长度为0的虚假heartbeat
+* 检查record的真实长度</p>
+
+<p>代码如下：</p>
+
+<pre><code class="c    ">    /* Read type and payload length first */
+    if (1 + 2 + 16 &gt; s-&gt;s3-&gt;rrec.length)
+        return 0; /* silently discard */
+    hbtype = *p++;
+    n2s(p, payload);
+    if (1 + 2 + payload + 16 &gt; s-&gt;s3-&gt;rrec.length)
+        return 0; /* silently discard per RFC 6520 sec. 4 */
+    pl = p;
+</code></pre>
+
+<a name="So."></a>
+<h2>So?</h2>
+
+<p>这个bug大概算是影响这么剧烈的bug里面最好明白的一个，所以居然我也看明白了。感受：</p>
+
+<ul>
+<li>为了可扩展性引入了复杂度，经常都会带来恶梦</li>
+<li>用户的输入，无论如何都不能相信，一定要check</li>
+<li>C语言的确是大牛小牛都会踩到坑啊</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: funny | @Lenciel]]></title>
+  <link href="http://lenciel.com/categories/funny/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-03-31T23:38:06+08:00</updated>
+  <id>http://lenciel.com/</id>
+  <author>
+    <name><![CDATA[Lenciel]]></name>
+    <email><![CDATA[lenciel@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Starry Starry Night]]></title>
+    <link href="http://lenciel.com/2016/05/starry-starry-night/"/>
+    <updated>2016-05-19T13:57:30+08:00</updated>
+    <id>http://lenciel.com/2016/05/starry-starry-night</id>
+    <content type="html"><![CDATA[<p><img src="/downloads/images/2016_05/essay_harry_potter.png" title="Don't touch me..." alt="Vhost threshold" /></p>
+
+<p>看paper是不是比较无聊的事情？</p>
+
+<p>我试着在自己看的每篇论文标题前面加上“Harry Potter and The”，要不你也试试？</p>
+
+<p>当然，更好的状态是，其实你不是因为要做某个事情在看paper，而是出于好玩。</p>
+
+<p>比如最近我看了一篇<a href="/downloads/code/2016JAHH_19_18C.pdf">paper</a>，名字叫“Seasonal Dating of Sappho’s ‘Midnight Poem’ Revisited”。</p>
+
+<p><a href="https://zh.wikipedia.org/wiki/%E8%8E%8E%E5%AD%9A">Sappho</a>作为古希腊"第十繆斯"，在国内没有多显赫的名声，能找到的只有豆瓣上一篇和她相关艺术品的<a href="https://site.douban.com/109824/widget/notes/245567/note/208098917/">介绍文章</a>。其实她的腕儿相当大，女同的称呼“lesbian”就取自她的居住地“Lesbos”。</p>
+
+<p>而这篇论文是说，如何根据Sappho下面这首诗里面的描述，来判断这首诗写作于一年里面的什么时节。</p>
+
+<p><blockquote><p>The Moon hath left the sky;<br/>Lost is the Pleiads' light;<br/>It is midnight<br/>And time slips by;<br/>But on my couch alone I lie.</p></blockquote></p>
+
+<p>其中<a href="http://earthsky.org/favorite-star-patterns/pleiades-star-cluster-enjoys-worldwide-renown">Pleiasds</a>，如果你喜欢科幻的话肯定不会陌生，就是著名的金牛座七姐妹星团：昴宿星团（阿根廷一直有一帮人号称自己是来自这个星球，但其实这个星团有数不清的恒星组成）。</p>
+
+<p>所以，Sappho她：</p>
+
+<ol>
+<li>住在Lesbos</li>
+<li>在午夜之前看到昴宿星团消失在地平线</li>
+</ol>
+
+
+<p>在这些信息的帮助下，天文学家通过<a href="http://astronomy.starrynight.com/">软件</a>重建当时的星图，来得出了以下的结论：</p>
+
+<p><blockquote><p>Assuming that Sappho observed from Mytilene on the island of Lesbos, we determined that in 570 BC the Pleiades set before midnight from 25 January on, and were lost to the evening twilight completely by 6 April.</p></blockquote></p>
+
+<p>发了paper之后，作者还<a href="http://www.eurekalert.org/pub_releases/2016-05/uota-usu051316.php">嘚瑟</a>了一下，大概是说“这种准确描述星象和时间的作品实在是少，被我们抓到（发了篇有趣的paper）哇哈哈哈”。</p>
+
+<p>的确，要比较明确地描述，你首先得认识，能做到这点的诗人可不多。比如我<a href="https://movie.douban.com/subject/2373195/">Walt H. White</a>枕边放的Walt Whitman是搞清楚了的：</p>
+
+<p><blockquote><p>Up through the darkness,<br/>While ravening clouds, the burial clouds, in black masses spreading,<br/>Lower sullen and fast athwart and down the sky,<br/>Amid a transparent clear belt of ether yet left in the east,<br/>Ascends large and calm the lord-star Jupiter,<br/>And nigh at hand, only a very little above,<br/>Swim the delicate sisters the Pleiades.</p></blockquote></p>
+
+<p>再比如我大杜甫是搞清楚了的：</p>
+
+<p><blockquote><p>人生不相见，动如参与商。<br/>今夕复何夕，共此灯烛光。</p></blockquote></p>
+
+<p>参和商两个星，没法同时出现，用来形容人生不相见算是恰如其分。</p>
+
+<p>还有流行歌选集《诗经》那些写词的是搞清楚了的：</p>
+
+<p><blockquote><p>七月流火，九月授衣。</p></blockquote></p>
+
+<p>“火”是指<a href="http://www.bud.org.tw/chen/chen0008.htm">心宿二</a>，所以“七月流火”是说这颗星逐渐<a href="http://iask.sina.com.cn/b/10608508.html">从天空中消失</a>。</p>
+
+<p>至于什么“七月流火，酷暑难耐”的用法，倒是现代人自己没有搞清楚了。</p>
+
+<div id="player1" class="aplayer"></div>
+
+
+<p><link rel="stylesheet" href="/downloads/static/css/APlayer.min.css"></p>
+
+<script src="/downloads/static/js/APlayer.min.js"></script>
+
+
+<script>
+var ap1 = new APlayer ({
+element: document.getElementById ('player1'),
+narrow: false,
+autoplay: true,
+showlrc: 1,
+mutex: true,
+theme: '#615754',
+music: {
+   title: 'Vincent',
+   author: 'Don Mclean',
+   url: 'http://7rflrq.com1.z0.glb.clouddn.com/vincent.mp3',
+   pic: 'http://7rflrq.com1.z0.glb.clouddn.com/vincent.jpeg',
+   lrc: "[ar:Declan Galbraith]\n [al:Thank You]\n [00:00.00]Declan Galbraith - Vincent (Starry, Starry Night)\n [00:00.25]Starry, starry night.\n [00:05.03]Paint your palette blue and grey,\n [00:09.75]Look out on a summer's day,\n [00:13.04]With eyes that know the darkness in my soul.\n [00:17.45]Shadows on the hills,\n [00:21.92]Sketch the trees and the daffodils,\n [00:27.02]Catch the breeze and the winter chills,\n [00:30.48]In colors on the snowy linen land.\n [00:37.20]Now I understand what you tried to say to me,\n [00:46.42]How you suffered for your sanity,\n [00:51.51]How you tried to set them free.\n [00:54.58]They would not listen, they did not know how.\n [01:00.45]Perhaps they'll listen now.\n [01:05.80]Starry, starry night.\n [01:10.64]Flaming flowers that brightly blaze,\n [01:15.33]Swirling clouds in violet haze,\n [01:19.24]Reflect in Vincent's eyes of china blue.\n [01:23.71]Colors changing hue,\n [01:28.59]morning field of amber grain,\n [01:33.52]Weathered faces lined in pain,\n [01:37.15]Are soothed beneath the artist's loving hand.\n [01:42.27]Now I understand what you tried to say to me,\n [01:51.70]How you suffered for your sanity,\n [01:56.30]How you tried to set them free.\n [01:59.49]They would not listen, they did not know how.\n [02:05.17]Perhaps they'll listen now.\n [02:07.62]For they could not love you,\n [02:12.65]But still your love was true.\n [02:17.37]And when no hope was left in sight\n [02:20.99]On that starry, starry night,\n [02:24.18]You took your life, as lovers often do.\n [02:29.65]But I could have told you, Vincent,\n [02:33.61]This world was never meant for one\n [02:36.20]As beautiful as you.\n [02:42.70]Starry, starry night.\n [02:47.85]Portraits hung in empty halls,\n\n [02:52.28]Frameless head on nameless walls,\n [02:56.35]With eyes that watch the world and can't forget.\n [03:00.72]Like the strangers that you've met,\n [03:04.42]All the ragged men in the ragged clothes,\n [03:09.85]The silver thorn of bloody rose,\n [03:13.78]Lie crushed and broken on the virgin snow.\n [03:18.97]Now I think I know what you tried to say to me,\n [03:29.16]How you suffered for your sanity,\n [03:34.07]How you tried to set them free.\n [03:37.88]They would not listen, they're not listening still.\n [03:43.51]Perhaps they never will...\n"
+    }
+});
+ap1.init();
+</script>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[3D动态Gif]]></title>
+    <link href="http://lenciel.com/2014/02/3d-gifs/"/>
+    <updated>2014-02-18T12:40:00+08:00</updated>
+    <id>http://lenciel.com/2014/02/3d-gifs</id>
+    <content type="html"><![CDATA[<p><img src="/downloads/images/2014_02/3dgifs4.gif" title="Don't touch me..." alt="3d gifs" /></p>
+
+<p>托各种SNS的福，有趣的动态gif在网络上漫山遍野。作为电影爱好者的本座，也是<a href="http://lenciel.com/blog/categories/fu-guang-lue-ying/">重度的gif爱好者</a>。</p>
+
+<p>如上图所示，最近动态gif玩法又有创新了：通过“打白条”的方式实现3D效果。主要的思路就是在动态物体处于背景的时候，白条遮挡动态物体。而当动态物体从背景进入前景的时候，动态物体遮挡白条，造成动态物体溢出图片边界范围的错觉。</p>
+
+<p><img src="/downloads/images/2014_02/3dgifs1.gif" title="Don't touch me..." alt="3d gifs" />
+<img src="/downloads/images/2014_02/3dgifs2.gif" title="Don't touch me..." alt="3d gifs" />
+<img src="/downloads/images/2014_02/3dgifs3.gif" title="Don't touch me..." alt="3d gifs" />
+<img src="/downloads/images/2014_02/3dgifs5.gif" title="Don't touch me..." alt="3d gifs" />
+<img src="/downloads/images/2014_02/3dgifs6.gif" title="Don't touch me..." alt="3d gifs" />
+<img src="/downloads/images/2014_02/3dgifs6a.gif" title="Don't touch me..." alt="3d gifs" />
+<img src="/downloads/images/2014_02/3dgifs8.gif" title="Don't touch me..." alt="3d gifs" />
+<img src="/downloads/images/2014_02/3dgifs12.gif" title="Don't touch me..." alt="3d gifs" />
+<img src="/downloads/images/2014_02/3dgifs13.gif" title="Don't touch me..." alt="3d gifs" />
+<img src="/downloads/images/2014_02/3dgifs14.gif" title="Don't touch me..." alt="3d gifs" /></p>
+
+<p>最喜欢的一副：</p>
+
+<p><img src="/downloads/images/2014_02/3dgifs7.gif" title="Don't touch me..." alt="3d gifs" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[听起来很假]]></title>
+    <link href="http://lenciel.com/2014/02/true-facts-that-sound-false/"/>
+    <updated>2014-02-12T10:46:00+08:00</updated>
+    <id>http://lenciel.com/2014/02/true-facts-that-sound-false</id>
+    <content type="html"><![CDATA[<p>Reddit上有一篇关于 <a href="http://www.reddit.com/r/AskReddit/comments/1sdw81/what_is_a_true_fact_that_sound_completely/">听起来很假的事实</a> 的讨论贴<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>，不知道是不是真的:</p>
+
+<p><blockquote><p></p></p><p><ul><br/><li><p>做肾脏移植的时候，一般原来的肾都会留着不动，这第三个新来的肾会被放在骨盆里面</p></li><br/><li><p>IPv6可以给地球表面的所有原子分配一个ip（其实比地球面积大100倍的也能搞定）</p></li><br/><li><p>俄罗斯比冥王星还大 (冥王星表面积: 16.7x10<sup>6</sup> km<sup>2</sup>; 俄罗斯表面积: 17.1x10<sup>6</sup> km<sup>2</sup>)</p></li><br/><li><p>如果你把埃菲尔铁塔熔了，铁水放到和铁塔基座面积相同的坑里面，厚度不会超过8厘米</p></li><br/><li><p>1790年出生并且在1841年成为美国的第10任总统的John Tyler，他有两个孙子还活着</p></li><br/><li><p>如果原子有银河系那么大，那么中微子就是高尔夫球那么大</p></li><br/><li><p>人类和香蕉有50%的DNA是相同的</p></li><br/></ul></p><p><br/><p></p></blockquote></p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>还有一个<a href="http://www.reddit.com/r/AskReddit/comments/1x34t4/whats_the_most_bullshitsoundingbuttrue_fact_you/?limit=500">更老的帖子</a>。 <a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+</feed>

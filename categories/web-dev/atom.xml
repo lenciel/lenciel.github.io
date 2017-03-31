@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: web-dev | @Lenciel]]></title>
+  <link href="http://lenciel.com/categories/web-dev/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-03-31T23:38:06+08:00</updated>
+  <id>http://lenciel.com/</id>
+  <author>
+    <name><![CDATA[Lenciel]]></name>
+    <email><![CDATA[lenciel@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[CSS里的width:100%和width:auto]]></title>
+    <link href="http://lenciel.com/2011/09/width_with_percentage_in_css/"/>
+    <updated>2011-09-22T09:53:00+08:00</updated>
+    <id>http://lenciel.com/2011/09/width_with_percentage_in_css</id>
+    <content type="html"><![CDATA[<p><img height="200" alt="block" src="/downloads/images/2011_09/width100css.jpg" width="178" align="left" style="margin:5px"/> 这似乎是CSS里面最简单的一个概念：如果你希望一个block-level的元素填满整个父容器的所有空白，只需要为这个元素声明<font color="#0080ff">width:100%</font>这个属性就可以了。</p>
+
+<p>但从个人经验和搜索结果看，大概很多CSS使用者都有过加上这个属性后挠头不已的惨痛回忆。最后很多人不得不经过反复试验后重新转回使用绝对值的长和宽。</p>
+
+<p>的确，百分比在CSS里的真实作用，就像偶像派的苦瓜炒蛋，是属于“看起来简单，弄起来挺难”的东西。</p>
+
+<a name="L......Blocks...............100."></a>
+<h2>其实Blocks不需要指定100%</h2>
+
+<p>大多数专业的Web开发者都清楚，block-level的元素(如div, p, ul等)和inline的元素两者的区别就在于默认情况下，block元素的宽度就会取填满父容器的宽度(减去自己的margin或者父容器的padding)。</p>
+
+<p><img src="/downloads/images/2011_09/blockelementnoneed.jpg" title="Don't touch me..." alt="block element is not needed" /></p>
+
+<p>这知识虽然初级，理解这点对我们明白百分比的实际作用很有帮助。</p>
+
+<a name="L..............."></a>
+<h2>真实的含义</h2>
+
+<p>如果你在CSS中给一个元素x%的宽度，其实就是定义：“把这个元素所占的区域扩成它父容器的绝对宽度的x%，当然，必须它父容器有一个绝对宽度啊，亲。”比如你的元素放在一个400px宽度的容器里面，然后它的宽度定成了100%，那么它在保证自己被渲染成400px宽度之后，还是会遵守自己被定义margin/padding/border的设置，所以最好出来的效果很可能就是下图那悲催样：</p>
+
+<p><img src="/downloads/images/2011_09/childequal.jpg" title="Don't touch me..." alt="just pull" /></p>
+
+<a name="Height................................"></a>
+<h2>Height(在所有的浏览器)也一样</h2>
+
+<p>是的，这是CSS比较坑人的地方：如果你的父容器没有一个显示声明的绝对值高度，那么你用百分比来定义它的高度希望它充满父容器是不行的。Height和Width的唯一区别是对于block-level的element而言，不会自动去填满父容器，也就是说height:100%是不能省略的。</p>
+
+<p>当然，百分号的行为也是CSS里面难得不坑人的地方：所有的浏览器对百分比的渲染都是一致的。</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: goagent | @Lenciel]]></title>
+  <link href="http://lenciel.com/categories/goagent/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-03-31T23:38:06+08:00</updated>
+  <id>http://lenciel.com/</id>
+  <author>
+    <name><![CDATA[Lenciel]]></name>
+    <email><![CDATA[lenciel@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Mac下后台运行goagent]]></title>
+    <link href="http://lenciel.com/2013/11/replace-goagentx-with-lines-of-scripts/"/>
+    <updated>2013-11-14T13:22:00+08:00</updated>
+    <id>http://lenciel.com/2013/11/replace-goagentx-with-lines-of-scripts</id>
+    <content type="html"><![CDATA[<p>几年过去了，<a href="https://code.google.com/p/goagent/">Goagent</a>是本座翻墙唯一的选择。在Mac上使用它最开始我用了<a href="https://github.com/ohdarling/GoAgentX">GoAgentX</a>，但使用了一段时间之后发现几个不太满意的地方：</p>
+
+<ul>
+<li>不是简单给GoAgent做了个界面，而是集成了多个翻墙工具，选项挺多挺乱的（可能对其他用户是一个好事）</li>
+<li>每次GoAgent更新之后，GoAgentX更新的时间都比较滞后</li>
+<li>GoAgentX更新之后，经常无法工作，需要做这样那样的调整</li>
+</ul>
+
+
+<p>但其实用GoAgent我们需要的无非是<code>python proxy.py</code>，有很多办法让它运行起来。本座比较喜欢的是用tmux把这个任务跑在一个detach了的session，如果连接有问题再attach上去看看是什么问题。具体流程如下：</p>
+
+<p>先装<a href="https://github.com/aziz/tmuxinator">tmuxinator</a>，看名字不知道是不是受了ubuntu下面terminator的启发。然后新建一个项目用来跑goagent:</p>
+
+<pre><code class="bash">$ mux new goagent
+</code></pre>
+
+<p>项目配置文件（假设你的goagent放在<code>~/bin/goagent/local</code>）：</p>
+
+<pre><code class="ruby">name: goagent
+root: ~/bin/goagent/local
+
+
+windows:
+  - shell: python proxy.py
+</code></pre>
+
+<p>这样就只需要你在需要翻墙的时候<code>mux goagent</code>一下即可，detach或者attach到这个session也非常方便。当然不使用tmuxinator而是直接用shell脚本写一堆tmux命令也可以达到一样的效果，用tmuxinator是因为本座自己还有一堆别的Django项目的tmuxinator项目。</p>
+]]></content>
+  </entry>
+  
+</feed>

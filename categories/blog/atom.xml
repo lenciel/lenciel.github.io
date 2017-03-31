@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: blog | @Lenciel]]></title>
+  <link href="http://lenciel.com/categories/blog/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-03-31T23:38:06+08:00</updated>
+  <id>http://lenciel.com/</id>
+  <author>
+    <name><![CDATA[Lenciel]]></name>
+    <email><![CDATA[lenciel@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Blog with Octopress and Github pages]]></title>
+    <link href="http://lenciel.com/2013/03/blog-with-octopress-and-github-pages/"/>
+    <updated>2013-03-10T22:15:00+08:00</updated>
+    <id>http://lenciel.com/2013/03/blog-with-octopress-and-github-pages</id>
+    <content type="html"><![CDATA[<p>不知不觉，写blog好像从有电脑的人都要干的事情变成很小众的活动了。除了人到了一定年纪都会不愿意开口讲话之外，本座觉得还有个很大的原因就是：要找一个靠谱的blog服务商是非常麻烦的。岂止是是blog服务商，在天朝使用大多数web服务都很吊诡地只有两个选择：</p>
+
+<ul>
+<li>没有被墙但很糟的；</li>
+<li>很不错但被墙了的；</li>
+</ul>
+
+
+<p>所以虽然知道<a href="http://github.com">Github</a>可以免费host任何静态页面很久了，眼看着<a href="http://octopress.org/">Octopress</a>也日益成熟，但一直都下定决心去试：谁知道哪天Github又被墙了呢？</p>
+
+<p>不过，在最近自己的职业生涯发生了不小的变化，在可预见的未来，肯定要做很多跟code有关的笔记。<a href="http://lenciel.com">现在的blog</a>系统是wordpress，虽然非常好用，但是比起markdown来说，写起code来速度就差太多了。所以今天下定决心试了一把Octopress+Github Pages，效果非常满意，特别记录一下过程，像大家做个推荐。</p>
+
+<a name="Jekyll.amp.Octopress"></a>
+<h2>Jekyll&amp;Octopress</h2>
+
+<p><a href="http://octopress.org/">Octopress</a>是在<a href="https://github.com/mojombo/jekyll">Jekyll</a>基础上进行的开发。<a href="https://github.com/mojombo/jekyll">Jekyll</a>作为Ruby开发的静态页面blog系统，吸引本座的地方在于：</p>
+
+<ul>
+<li><strong>静态页面</strong>：由于Jekyll生成的都是静态页面，意味着这些页面可以在任何地方被host，比如Github Pages，Google Drive甚至是Dropbox都可以作为选择（当然它们也基本是被墙的）。</li>
+<li><strong>Markdown</strong>：Jekyll的日志因为是用Markdown写的，相比传统的Blog系统如Wordpress而言，一方面在写的时候可以用你顺手的编辑器，另一方面储存和版本管理也方便得多。</li>
+<li><strong>代码插入方便美观</strong>：Octopress对日志中嵌入代码提供了<a href="http://octopress.org/docs/blogging/code/">各种方便</a>。</li>
+</ul>
+
+
+<a name="Mac........................"></a>
+<h2>Mac下的安装设置过程</h2>
+
+<a name="Xcode"></a>
+<h3>Xcode</h3>
+
+<ul>
+<li>升级Xcode</li>
+<li>启动Xcode，在Preferences里面选择下载</li>
+<li>安装"Command Line Tools"</li>
+</ul>
+
+
+<a name="Homebrew"></a>
+<h3>Homebrew</h3>
+
+<pre><code class="bash">brew update
+brew outdated|xargs brew install
+brew tap homebrew/dupes
+brew install apple-gcc42 git
+brew upgrade
+</code></pre>
+
+<a name="rbenv"></a>
+<h3>rbenv</h3>
+
+<p>首先如果你本来是用rvm，需要删除：</p>
+
+<pre><code class="ruby">rvm implode
+</code></pre>
+
+<p>然后安装rbenv以及Ruby1.9.3-p194:</p>
+
+<pre><code class="bash">brew install rbenv
+brew install ruby-build
+eval "$(rbenv init -)"
+rbenv install 1.9.3-p194
+rbenv global 1.9.3-p194
+</code></pre>
+
+<p>安装完毕之后需要在你的环境变量中做一些设置，比如本座用的是oh-my-zsh，就需要在<code>~/.zshrc</code>里面加上：</p>
+
+<pre><code class="bash">export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+# required for https://github.com/imathis/octopress/issues/144
+export LC_CTYPE=en_US.UTF-8
+export LANG=en_US.UTF-8
+</code></pre>
+
+<p>注意在环境变量设置完毕之后，最好把<code>$PATH</code>打出来看看，确保没有其他版本的Ruby被启用了，特别要注意<code>/Users/***/.gem/ruby/***/bin</code>这样的路径。</p>
+
+<a name="L......Octopress"></a>
+<h2>安装Octopress</h2>
+
+<p>首选在Github上创建一个repo来放blog，命名规则是username.github.com（比如本座的就是lenciel.github.com）。</p>
+
+<p>然后在本地建立一个repo把octopress弄下来：</p>
+
+<pre><code class="bash">git clone git://github.com/imathis/octopress.git lenciel.github.com
+cd lenciel.github.com
+ruby --version # should read ruby 1.9.3p194 (2012-04-20 revision 35410) [x86_64-darwin12.2.0]
+gem install bundler
+rbenv rehash
+</code></pre>
+
+<p>然后部署到刚才申请的repo上面去。虽然<a href="http://pages.github.com/">Github Pages</a>自己有个废柴说明页面，但是看完之后一般你是不知道如何算是部署成功的。好在Octopress已经内建了交互式的配置和部署的命令：</p>
+
+<pre><code class="ruby">rake setup_github_pages
+# Example repo url: git@github.com:lenciel/lenciel.github.com
+rake install
+rake generate &amp;&amp; rake deploy
+</code></pre>
+
+<p>然后你需要调整一下<code>.git/config</code>文件把自己的项目设置成新的origin：</p>
+
+<pre><code>[core]
+  repositoryformatversion = 0
+  filemode = true
+  bare = false
+  logallrefupdates = true
+  ignorecase = true
+[remote "origin"]
+  fetch = +refs/heads/*:refs/remotes/origin/*
+  url = git@github.com:lenciel/lenciel.github.com
+[remote "octopress"]
+  url = git://github.com/imathis/octopress.git
+  fetch = +refs/heads/*:refs/remotes/octopress/*
+[branch "master"]
+  remote = origin
+  merge = refs/heads/master
+</code></pre>
+
+<p>这样一来，你就即可以从<code>octopress/master</code>取到更新，又可以往<code>origin/master</code>去push自己最新的日志了。</p>
+
+<a name="L......Octopress"></a>
+<h2>使用Octopress</h2>
+
+<a name="L............"></a>
+<h3>新建文章</h3>
+
+<pre><code class="">rake new_post\["Blog with Octopress and Github Pages"\]
+</code></pre>
+
+<p>这里要注意使用zsh的时候，对<code>[]</code>要转义成<code>\[\]</code>不然会报错。</p>
+
+<a name="L............"></a>
+<h3>编辑文章</h3>
+
+<pre><code>subl source/_posts/2013-03-10-blog-with-octopress-and-github-pages.markdown
+</code></pre>
+
+<p>subl是本座在mac上使用的编辑器<code>Sublime Text 2</code>的命令行命令，它的markdown插件<code>Markdown Editing</code>和<code>OmniMarkupPreview</code>非常好用。</p>
+
+<a name="Markdown.Editing"></a>
+<h4>Markdown Editing</h4>
+
+<p><a href="http://ttscoff.github.com/MarkdownEditing/">Markdown Editing</a>对语法高亮，粘贴超链接，样式化，加footnote等都做了很好的支持：</p>
+
+<p><img src="/downloads/images/sublime_with_markdown_editing.png" title="Don't touch me..." alt="Sublime with Markdown Editing" /></p>
+
+<a name="OmniMarkupPreview"></a>
+<h4>OmniMarkupPreview</h4>
+
+<p>OmniMarkupPreview支持<code>Cmd+Alt+O</code>在你指定的浏览器里面预览并且动态刷新你正在编辑的Markup文档。这样你就可以不用不停的<code>rake preview</code>了。</p>
+
+<a name="L......"></a>
+<h3>更多</h3>
+
+<ul>
+<li><a href="http://octopress.org/docs/">Octopress官方文档</a></li>
+<li><a href="http://daringfireball.net/projects/markdown/">Markdown语法ref</a></li>
+<li><a href="https://github.com/imathis/octopress/issues/701#issuecomment-7664070">如何使用repo里面的图片</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

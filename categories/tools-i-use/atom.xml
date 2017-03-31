@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: tools-i-use | @Lenciel]]></title>
+  <link href="http://lenciel.com/categories/tools-i-use/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-03-31T23:38:06+08:00</updated>
+  <id>http://lenciel.com/</id>
+  <author>
+    <name><![CDATA[Lenciel]]></name>
+    <email><![CDATA[lenciel@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[简单验证码的快速识别]]></title>
+    <link href="http://lenciel.com/2016/06/python-captcha-solution/"/>
+    <updated>2016-06-16T18:48:14+08:00</updated>
+    <id>http://lenciel.com/2016/06/python-captcha-solution</id>
+    <content type="html"><![CDATA[<p>昨天饭局上聊起来自动化测试或者是别的奇怪事业里经常需要面对的一个问题：验证码识别。</p>
+
+<p>其实验证码的识别，技术上来说可以作为古老的OCR（Optical Character Recognition）问题的一个子集：因为OCR其实就是从图片上把文字认出来嘛。</p>
+
+<p>但它的有趣之处在于，验证码，也就是CAPTCHA，本身就是'Completely Automated Public Turing test to tell Computers and Humans Apart'的缩写，也就是说在设计上它的目的就是要：</p>
+
+<ol>
+<li>让人很容易认识出来</li>
+<li>让机器很难认识出来</li>
+</ol>
+
+
+<p>所以如果你电脑识别出来了验证码，要么就是它特别容易不符合#2的要求，要么就是你实现了很不错的人工智能算法，这篇文章是讲第一种情况。</p>
+
+<p>传统的做法来识别OCR，主要需要处理的是下面三个环节：</p>
+
+<ol>
+<li>图片二值化</li>
+<li>字符的分割</li>
+<li>字符的识别</li>
+</ol>
+
+
+<a name="L.................."></a>
+<h3>二值化怎么做</h3>
+
+<p>所谓的“二值化”，就是图片上的像素要么灰度是255（白），要么是0（黑）。大致的思路就是把灰度大于或等于阈值的像素判为属于你关注的文字，置成0；其他的像素点灰度置为255。</p>
+
+<p>具体的操作，我一般使用下面几种方式：</p>
+
+<ol>
+<li>如果是特别简单地处理，用PIL库</li>
+<li>如果是比较复杂的但是不需要很细致的控制，用<a href="http://imagemagick.sourceforge.net/">ImageMagick</a>的<code>convert</code>命令</li>
+<li>如果是特别复杂，需要反复试验各种算法的，用OpenCV</li>
+</ol>
+
+
+<p>所以下面这两个验证码，哪个的难度大一些？</p>
+
+<p style="font-size: 0.8em;
+"><img src="/downloads/images/2016_06/orig_code.png" title="Don't touch me..." alt="Vhost threshold" data-pin-nopin="true"><br/>
+图1. 微林的验证码</p>
+
+
+
+
+<p style="font-size: 0.8em;
+"><img src="/downloads/images/2016_06/orig_code_2.jpg" title="Don't touch me..." alt="Vhost threshold" data-pin-nopin="true"><br/>
+图2. 饭局后J.Snow提供的验证码</p>
+
+
+<p>如果你脑子里面没有二值化的概念大概会觉得第一个难度大一些，因为以人眼的视线去考虑，好像第一张要“难分辨”一些。</p>
+
+<p>但其实第一张图所有的噪声都是花花绿绿的颜色，而验证码本身是纯粹的黑色，这种图片处理起来是相对容易的。只需要找到验证码像素点的颜色，用这种颜色选取这些像素点，拷贝到一张全白的图片上面即可。</p>
+
+<p>要获取验证码的像素颜色可以<a href="http://www.boyter.org/decoding-captchas/">参考这里</a>的思路，把图片转成256色的，然后对所有的像素做一个统计然后标出它们在整个图片里面出现的频率。因为觉得原文里面的代码写得比较啰嗦（要学会写lamda啊）就做了一些修改：</p>
+
+<pre><code class="python">import sys
+from PIL import Image
+
+
+def get_top_pixels(file_path, min_pt_num):
+    im = Image.open(file_path)
+    im = im.convert("P")
+    top_pixels = []
+
+    for index in enumerate(im.histogram()):
+        if index[1] &gt; int(min_pt_num):
+            top_pixels.append(index)
+
+    return sorted(top_pixels, key=lambda x: x[1], reverse=True)
+
+
+if __name__ == '__main__':
+    print(get_top_pixels(sys.argv[1], sys.argv[2]))
+</code></pre>
+
+<p>这个程序运行的结果如下：</p>
+
+<p><blockquote><p>$ python get_histdata.py regcode.png 30</p></p><p><p>[(0, 1471), (1, 214), (10, 110), (11, 97), (2, 85), (9, 83), (6, 66), (8, 58), (7, 49), (5, 37)]</p></blockquote></p>
+
+<p>拿到了颜色，就可以写一个简单的程序从图片里面拷贝这些像素到一张干净的图：</p>
+
+<pre><code class="python">import sys
+from PIL import Image
+
+
+def clean_image(file_path, key_pix):
+    im = Image.open(file_path)
+    im = im.convert("P")
+    im2 = Image.new("P", im.size, 255)
+
+    for x in range(im.size[1]):
+        for y in range(im.size[0]):
+            pix = im.getpixel((y, x))
+            # color of pixel to get
+            if pix == key_pix:
+                im2.putpixel((y, x), 0)
+
+    im2.save("convert_%s.png" % key_pix)
+
+
+if __name__ == '__main__':
+    clean_image(sys.argv[1], sys.argv[2])
+</code></pre>
+
+<p>出现的最多的<code>0</code>显然是背景色，所以对<code>1</code>和<code>10</code>运行脚本：</p>
+
+<p><blockquote><p>$ python convert_grayscale.py regcode.png 1<br/>$ python convert_grayscale.py regcode.png 10</p></blockquote></p>
+
+<p>结果如下：</p>
+
+<p><img src="/downloads/images/2016_06/convert_1.png" title="Don't touch me..." alt="Vhost threshold" data-pin-nopin="true">&nbsp;&nbsp;&nbsp;&nbsp;<img src="/downloads/images/2016_06/convert_10.png" title="Don't touch me..." alt="Vhost threshold" data-pin-nopin="true"></p>
+
+
+<p>很明显目标像素是1而不是10。</p>
+
+<p>而J. Snow的这张图，首先验证码本身就是幻彩的而不是均匀一致的颜色，然后噪声又都是用这些幻彩颜色来生成的，所以如果只是简单的对颜色排序，会得到下面的结果：</p>
+
+<p><blockquote><p>[(225, 349), (139, 170), (182, 161), (219, 95), (224, 64), (189, 54), (175, 47), (218, 40), (90, 36), (96, 33)]</p></blockquote></p>
+
+<p>然后我们对排名靠前的像素进行提取会得到下面的结果：</p>
+
+<p><img src="/downloads/images/2016_06/convert_225.png" title="Don't touch me..." alt="Vhost threshold" data-pin-nopin="true"><img src="/downloads/images/2016_06/convert_139.png" title="Don't touch me..." alt="Vhost threshold" data-pin-nopin="true"><img src="/downloads/images/2016_06/convert_182.png" title="Don't touch me..." alt="Vhost threshold" data-pin-nopin="true"><img src="/downloads/images/2016_06/convert_219.png" title="Don't touch me..." alt="Vhost threshold" data-pin-nopin="true"></p>
+
+
+<p>这种情况下怎么办？直观观察一下验证码，会发现背景噪声点相比验证码像素点来说很少（这也正常，都是一个颜色如果太多就没法看了）， 很适合先做一些切割，然后进行模糊匹配（因为验证码的像素是幻彩的不是单一的，需要匹配相近像素点），然后再做二值化。</p>
+
+<p>直接用IM的convert来处理比写代码简单：</p>
+
+<pre><code class="bash">$ convert 1.pic.jpg -gravity Center -crop 48x16+0+0  +repage -fuzz 50% -fill white -opaque white -fill black +opaque white resultimage.jpg
+</code></pre>
+
+<p>效果如下：</p>
+
+<p><img src="/downloads/images/2016_06/orig_code_2.jpg" title="Don't touch me..." alt="Vhost threshold" data-pin-nopin="true">&nbsp;&nbsp;&nbsp;&nbsp;<img src="/downloads/images/2016_06/convert_im.jpg" title="Don't touch me..." alt="Vhost threshold" data-pin-nopin="true"></p>
+
+
+<a name="L.................."></a>
+<h3>字符怎么分割</h3>
+
+<p>其实整个验证码的识别里面，最难的是分割。特别是很多严肃的验证码，字体不是标准字体或者会变形，互相还可能粘连或者重叠，分割起来是非常难的。</p>
+
+<p>但这里拿到的验证码相对简单，这部分不是问题就不展开了。</p>
+
+<a name="L..............."></a>
+<h3>字符的识别</h3>
+
+<p>对于这里拿到的验证码而言，因为都是标准字体，可以直接使用OCR的开源工具读取，比如<a href="https://github.com/tesseract-ocr/tesseract/wiki">tesseract</a>：</p>
+
+<pre><code class="bash">$ tesseract resultimage.jpg -psm 7 output &amp;&amp; cat output.txt
+
+Tesseract Open Source OCR Engine v3.04.01 with Leptonica
+Warning in pixReadMemJpeg: work-around: writing to a temp file
+
+YLNU
+</code></pre>
+
+<p>如果不是标准字体的，因为分割完毕了就拿到了独立的字符，要识别就可以建一个模型，不断的训练它，来识别每个字符。</p>
+
+<a name="L..........................."></a>
+<h3>如果是更困难的呢？</h3>
+
+<p>可能你会觉得围棋电脑都会下了，那么认识验证码为什么还是比较难？</p>
+
+<p>其实<a href="https://www.google.com.hk/search?safe=off&amp;q=CNN+captcha&amp;oq=CNN+captcha&amp;gs_l=serp.3...1563.1932.0.2169.3.3.0.0.0.0.0.0..0.0....0...1c.1.64.serp..3.0.0.q4EdDQLrqyk">随便搜一下</a>就会发现有很多人在做这方面的实验，主要的思路就是把n个字符组成的验证码当成有n个标签的图片来用CNN来解决。加上最近很多大公司开放了自己的人工智能平台，比如Google的Tensorflow，我们这些没有大量计算资源的普通人也可以用它们实现自己的想法了。</p>
+
+<p>推荐参考链接：</p>
+
+<ol>
+<li><a href="https://matthewearl.github.io/2016/05/06/cnn-anpr/">CNN辨认车牌</a></li>
+<li><a href="http://www.cs.sjsu.edu/faculty/pollett/masters/Semesters/Spring15/geetika/CS298%20Slides%20-%20PDF">CNN验证码识别</a></li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[从Markdown列表转换成脑图]]></title>
+    <link href="http://lenciel.com/2016/02/markdown-to-mindmap/"/>
+    <updated>2016-02-25T21:19:33+08:00</updated>
+    <id>http://lenciel.com/2016/02/markdown-to-mindmap</id>
+    <content type="html"><![CDATA[<p>去年过年整理了一次<a href="http://lenciel.com/2015/01/p4f-tech-stack-part-1-devops/">p4f的技术栈</a>，最近受<a href="http://www.stuq.org/subject/skill-map/">StuQ</a>和<a href="https://leohxj.gitbooks.io/front-end-database/content/interview/skill-path.html">leohxj</a>的启发又开始整理适合我司的各个研发职位的技能图谱：这类树状的图片其实就是脑图(Mindmap)。</p>
+
+<p>图片形式的文档都有一个麻烦的地方，就是不太好做版本控制和review。比如如果本座来整理Web前端技能图谱，总希望：</p>
+
+<ul>
+<li>能够发给前端组的人review</li>
+<li>能够放到代码库，让前端组维护起来，根据业界动态不断更新</li>
+</ul>
+
+
+<p>如果是张图片，弄起来就比较麻烦，这个时候就需要Markdown出场了。其实最近这几年，用Markdown写文档大概也算Best Practice的一个了。好处确实很多，最重要的两个：</p>
+
+<ul>
+<li>集成到现有的开发流程里面把文档也交叉review、版本化、自动部署</li>
+<li>有个三长两短的时候，迁移成本非常低</li>
+</ul>
+
+
+<p>只不过从Markdown生成脑图还是比较偏门，所以分享一下。</p>
+
+<p>其实大多数的脑图软件（ 比如MindNode或者Mindjet MindManager）都支持把缩进好的文本直接导入生成图片。以我在用的MindNode为例，你可以把下面的格式：</p>
+
+<pre><code>- 研发团队
+    - 前端组
+    - 后端组
+    - 运维组
+    - 测试组
+    - 平台组
+        - 数据组
+        - RIO组
+</code></pre>
+
+<p>这样贴到MindNode里面，就会生成下面的脑图：</p>
+
+<p><img src="/downloads/images/2016_02/mindmap_1.png" title="Don't touch me..." alt="Vhost threshold" /></p>
+
+<p>但是上面的格式，如果是以Markdown的格式放到代码库里面，有略显难看。所以更进一步，你可以先用Markdown的<code>#</code>来标不同层级，使得文档本身可以在网页上显示成规则的列表，<a href="http://lenciel.com/2014/05/web-development-skill-set-and-reading-list/">类似这样</a>，它的原始Markdown文件在<a href="https://gist.github.com/lenciel/637812a7dcbe8341b07b">这里</a>。</p>
+
+<p>然后，通过脚本把文档里面的<code>#</code>转换成<code>\t</code>，就可以得到能够直接粘贴到MindNode里面生成脑图的文本了。如果你是使用Mac，还可以直接把转换脚本创建成一个<code>service</code>通过<code>Automator</code>安装，这样你在任何一个Markdown文档上选中需要生成脑图的部分，右键就可以了：</p>
+
+<p><img src="/downloads/images/2016_02/mindmap_2.png" title="Don't touch me..." alt="Vhost threshold" /></p>
+
+<p>还有个未尽事宜就是在转换脚本里面加一个步骤：Markdown里面的链接，生成图片的时候把方括号、圆括号以及圆括号里面的链接去掉，不然就太难看了：</p>
+
+<p><img src="/downloads/images/2016_02/mindmap_3.png" title="Don't touch me..." alt="Vhost threshold" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[使用Chrome自定义搜索引擎快速查找资源]]></title>
+    <link href="http://lenciel.com/2016/02/how-can-everybody-use-chrome/"/>
+    <updated>2016-02-20T11:53:34+08:00</updated>
+    <id>http://lenciel.com/2016/02/how-can-everybody-use-chrome</id>
+    <content type="html"><![CDATA[<p>这篇文章讨论的办法，主要是结合使用<code>带参数Google搜索</code>+<code>Chrome快捷搜索入口</code>，鉴于众所周知的原因，如果你不会翻墙可能不能直接使用。</p>
+
+<p>但是鉴于国内搜索引擎功能上多少都有借鉴Google，浏览器多少都有借鉴Chrome，所以这里讨论的办法也许用其他"搜索"+&ldquo;浏览器"组合也可以使用。只是我们都知道国内搜索引擎索引出来的结果有多离奇，所以效果上可能会打一些折扣。</p>
+
+<a name="L.........Google......"></a>
+<h3>带参数Google搜索</h3>
+
+<p>Google可以带参数搜索一般用户可能不太用到，但其实对找东西很有用。完整的说明可以自己找来看，对普通用户也非常有用的有：</p>
+
+<a name="L........."></a>
+<h4>双引号</h4>
+
+<p>把搜索词放在双引号中，代表完全匹配搜索，也就是说搜索结果返回的页面包含双引号中出现的所有的词，连顺序也必须完全匹配。</p>
+
+<p>比如搜索代码里面的抛出的错误，你直接把错误行扔进去，往往不如加上引号来完全匹配准确。</p>
+
+<a name="filetype"></a>
+<h4>filetype</h4>
+
+<p>用于搜索特定文件格式，比如搜索<code>filetype:pdf</code>，那么就只返回所有包含关键词的pdf文件。</p>
+
+<a name="site"></a>
+<h4>site</h4>
+
+<p>用来搜索某个域名下的所有文件，比如在百度网盘里面搜索名字包含Hadoop的文件，就可以搜索<code>Hadoop site:pan.baidu.com</code>。</p>
+
+<a name="L......"></a>
+<h4>减号</h4>
+
+<p>代表搜索不包含减号后面的词的页面。使用这个指令时减号前面必须是空格，减号后面紧跟着需要排除的词。</p>
+
+<p>熟练掌握并且综合使用上面这些语法，你就可以非常快速地找到你需要的东西了。</p>
+
+<a name="Chrome.................."></a>
+<h3>Chrome快捷搜索入口</h3>
+
+<p>Chrome为你提供了快捷方式来使用搜索。<code>Cmd+L</code>（Windows平台大概是<code>Ctrl+L</code>）进入地址栏，然后输入要搜索的内容，回车，就会使用你的默认搜索引擎进行搜索。</p>
+
+<p>假如你要切换一个搜索引擎，比如你的默认引擎是Google，偶尔你需要用百度来搜索，只需要在地址栏里面先敲<code>baidu</code>，然后按<code>Tab</code>键，然后输入你需要搜索的关键字并回车，就可以了。</p>
+
+<p>Chrome里面你可以这样使用的搜索引擎数量其实是远超你想象的。</p>
+
+<p>在地址栏里面敲入<code>chrome://settings/</code>，然后进入搜索引擎的配置你就可以看到它们：</p>
+
+<p><img src="/downloads/images/2016_02/manage_search_engine.png" title="Don't touch me..." alt="Vhost threshold" /></p>
+
+<a name="L................................."></a>
+<h3>创建使用自定义搜索引擎</h3>
+
+<p>一旦开始使用自定义搜索，你就会发现有些搜索使用频率相当高。</p>
+
+<p>比如在百度盘里面搜索某个文件。</p>
+
+<p>再比如在<a href="http://quora.com/">Quora</a>或者<a href="http://zhihu.com">知乎</a>里面搜索包含某个关键字的问答。</p>
+
+<p>这个时候你只需要在搜索引擎列表的末尾添加一个自定义项：</p>
+
+<p><img src="/downloads/images/2016_02/custom_search_engine.png" title="Don't touch me..." alt="Vhost threshold" /></p>
+
+<p>比如我们添加一个<code>Keyword</code>是<code>panb</code>的搜索引擎，它的URL是：</p>
+
+<pre><code>https://www.google.com.hk/search?q=%s+site%3Apan.baidu.com
+</code></pre>
+
+<p>注意URL这个参数需要做<a href="https://docs.oracle.com/javase/7/docs/api/java/net/URLEncoder.html">urlencode</a>，所以空格变成了<code>+</code>，<code>site:pan.baidu.com</code>变成了<code>site%3Apan.baidu.com</code>。</p>
+
+<p>如果你不知道<code>urlencode</code>怎么做，可以先到Google上完成一次目标搜索，然后从地址栏上面复制下来。</p>
+
+<p>定义好了自定义搜索引擎以后，你只需要在地址栏里面输入Keyword（panb），然后按<code>Tab</code>键，再输入你需要查找的资源，回车，就可以看到结果了。</p>
+
+<p>具体使用过程请参考下面这个视频（略需要几秒加载）：</p>
+
+<p><video width='640' height='320' preload='none' controls poster=''><source src='href="http://lenciel.com/downloads/video/chrome_custom_search.mp4">http://lenciel.com/downloads/video/chrome_custom_search.mp4</a>' ></video></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[提取微信语音消息]]></title>
+    <link href="http://lenciel.com/2015/12/extract-audio-message-from-wechat/"/>
+    <updated>2015-12-24T13:05:21+08:00</updated>
+    <id>http://lenciel.com/2015/12/extract-audio-message-from-wechat</id>
+    <content type="html"><![CDATA[<a name="Why."></a>
+<h3>Why?</h3>
+
+<p>Why not?</p>
+
+<a name="How."></a>
+<h3>How?</h3>
+
+<a name="L................................."></a>
+<h4>导出原始微信的音频消息</h4>
+
+<ul>
+<li>使用iTunes创建一个不加密备份</li>
+<li>导出备份中的微信应用文件夹（可以使用iExplorer试用版）</li>
+<li>找到你需要转换的音频文件所在文件夹</li>
+</ul>
+
+
+<a name="L......silk3...............mp3"></a>
+<h4>转换silk3编码音频为mp3</h4>
+
+<p>如果你是mac机器，只需要安装ffmpeg（推荐使用homebrew）然后运行脚本：</p>
+
+<pre><code class="python">    python wechat2mp3.py 待转换音频所在文件夹
+</code></pre>
+
+<p>如果你是其他系统，确认你装好了ffmpeg之后，需要<a href="https://github.com/gaozehua/SILKCodec">自己编译SILK解码库</a>。</p>
+
+<a name="Seriously.Why."></a>
+<h3>Seriously Why?</h3>
+
+<p>常温常压下我并不需要导出微信的语音，之所以有这个需求是因为蒙爷在三亚经常用微信跟我们唠嗑：</p>
+
+<p><audio controls loop preload><source src="/downloads/audio/mm_voice.mp3"></audio></p>
+
+<p>听到这样销魂的声音你就算不想保存，也想要转发，对不对？</p>
+
+<p>毕竟作为一名中国人，你已经有8个亲戚群了，对不对？</p>
+
+<p>然后微信奇怪的生态圈构建方式就是，各种封闭。</p>
+
+<p>微信公众号是世间少有的不允许外链的媒体，微信客户端是世间少有的不允许导出聊天记录的聊天工具。</p>
+
+<p>它的想法大概是，你珍贵的瞬间都在我这里（微信专门做了“收藏”这个功能让你把这些片段上传到微信的服务器，打着不让它们丢失的旗号），那你就逃不出我的手掌心了。</p>
+
+<a name="Seriously.How."></a>
+<h3>Seriously How?</h3>
+
+<p>使用iTunes创建一个不加密的备份，然后连接iExplorer，会看到打开iTunes备份的选项：</p>
+
+<p><img src="/downloads/images/2015_12/extract_wechat_1.png" title="Don't touch me..." alt="Vhost threshold" /></p>
+
+<p>打开后在<code>App</code>文件夹下面导出微信文件夹：</p>
+
+<p><img src="/downloads/images/2015_12/extract_wechat_2.png" title="Don't touch me..." alt="Vhost threshold" /></p>
+
+<p>在导出的文件夹下面有个Audio目录，你可以根据语音消息的数量大概确认需要导出的目录（目录是个hash），然后到<code>DB/MM.sqlite</code>下面去打开<code>Chat_[hash]</code>这个表里面，看看消息来确认：</p>
+
+<p><img src="/downloads/images/2015_12/extract_wechat_3.png" title="Don't touch me..." alt="Vhost threshold" /></p>
+
+<p>二进制查看其中的任意一个文件，可以看到是<a href="https://en.wikipedia.org/wiki/SILK">SILK</a>编码的（skype早期版本包括lync都是使用的这种编码方式）：</p>
+
+<p><img src="/downloads/images/2015_12/extract_wechat_4.png" title="Don't touch me..." alt="Vhost threshold" /></p>
+
+<p>接下来你只需要按照<a href="https://github.com/lenciel/wechat2mp3">repo</a>里面的指导(愿主保佑你是用Mac因为那最简单)来进行文件转换就可以了。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Palm4fun Tech Stack Review Part II]]></title>
+    <link href="http://lenciel.com/2015/02/p4f-tech-stack-part-2-others/"/>
+    <updated>2015-02-20T14:11:19+08:00</updated>
+    <id>http://lenciel.com/2015/02/p4f-tech-stack-part-2-others</id>
+    <content type="html"><![CDATA[<p>距离<a href="http://lenciel.com/2015/01/p4f-tech-stack-part-1-devops/">上篇</a>略久，主要最近很忙。</p>
+
+<a name="Application..amp..Data"></a>
+<h2>Application &amp; Data</h2>
+
+<p>和其他几个提供辅助的部分不同，App/Data这部分基本上就是产品本身了。</p>
+
+<a name="Application.Hosting"></a>
+<h3>Application Hosting</h3>
+
+<p><img src="/downloads/images/2015_01/p4f_stack_app_data_1.png" title="Don't touch me..." alt="stack_devops_1" /></p>
+
+<p>我们在选择云的时候，也有试用过“久负盛名”的几家大的。</p>
+
+<ul>
+<li>阿里因为性价比的原因直接被我忽略了</li>
+<li>AWS显然是成熟度最高的，但是在国内用起来确实比较憋屈，希望他们正式入华后有好转</li>
+<li>Google的Compute Engine和Windows Azure都属于开张不久，前者因为有打折劵最终被我用来做了很久的翻墙代理（但是也因为忘记关VPS收到了巨额账单，好在Google还比较厚道免单了）。后者因为在国内有部署，速度非常不错，但是整体比UCloud还是贵了不少。</li>
+</ul>
+
+
+<p>最终我们选择了UCloud，他们的价钱比较公道，服务也做得非常棒。虽然我们机器并不是很多，但是仍然有24小时随叫随到的服务团队在跟，并且服务团队的技术实力在国内的服务提供商里面也非常突出。</p>
+
+<p>平时还有一些抛弃型的原型我会放到Heroku或者Google App Engine上，因为它们用来部署Django应用非常便捷。</p>
+
+<p>我们大多数项目都只是简单的管理后台，用Apache还是Nginx并没有明显区别。因为Apache在大多数OS自带，所以基本上都是以Apache+uwsgi+supervisor来进行部署。</p>
+
+<a name="Languages..amp..Frameworks"></a>
+<h3>Languages &amp; Frameworks</h3>
+
+<p><img src="/downloads/images/2015_01/p4f_stack_app_data_2.png" title="Don't touch me..." alt="stack_devops_1" /></p>
+
+<p>这张图再画长一倍也不一定能画完，因为这部分特别是Web前端技术的变动实在是太大了。感觉JavaScript社区换框架、方法论、编译工具甚至是VM就像足球运动员换袜子一样勤。</p>
+
+<p>所以我们的策略一直是不绑定到某个具体框架：那样很容易被绑架。从目前来看：</p>
+
+<ul>
+<li>React/Flux最近特别火，由Facebook内部使用并开源（特别是最近推出了React Native）。</li>
+<li>AngularJS，火了很长时间，由Google内部使用并开源。目前两个主要版本变动太大嘴炮很多，可以观望到尘埃落定再考虑深入学习。</li>
+<li>Backbone是非常不错的客户端MVC框架。</li>
+<li>node.js和io.js。目前它们是一样的东西，io.js只是node.js的一个fork（类似于Hudson和Jenkins的关系）。目前可以只学node.js但是得盯着io.js的发展，因为很多原来node.js的主力都在io.js这边。</li>
+<li>npm是Javascript目前最主要的package管理工具。目前你还会听说bower但几乎大家都已经确认这是个愚蠢的idea。另外你还会听说jspm，一个很新的系统，非常不错，值得留意。</li>
+<li>Browserify使得你可以在browser里面直接使用npm的module，而不仅仅是在server端。完全是一次革命，非常好用。</li>
+<li>Gulp和Grunt是build工具（类比Ant/Maven），Gulp更新而且设计上非常成熟，推荐学习和使用Gulp。</li>
+<li>express.js是服务器端JS应用开发需要学习的东西。</li>
+<li>Meteor是设计非常领先的一个全栈的框架（想想Django），整体上非常酷，目前也很流行。如果你想试试自己的学习能力和承受能力，值得一试。</li>
+<li>jQuery之于JavaScript就好比少林寺之于中华武术。每个人都在学，都以为它就可以搞定整个武林，但那是错的。JQuery是用来对DOM做操作的，如果你用它在干别的，你多半错了。</li>
+</ul>
+
+
+<a name="Assets..amp..Media"></a>
+<h3>Assets &amp; Media</h3>
+
+<p><img src="/downloads/images/2015_01/p4f_stack_app_data_3.png" title="Don't touch me..." alt="stack_devops_1" /></p>
+
+<p>这方面没什么好说的，一开始我们用的就是UCloud自带的服务。后面为Testbird开发项目的时候接触到了七牛云。不得不吐槽一下七牛云还处于快速增长期，不论是提供的服务的稳定性，还是文档更新的及时性，都还有很多值得提高的地方。</p>
+
+<a name="Data.Storage"></a>
+<h3>Data Storage</h3>
+
+<p><img src="/downloads/images/2015_01/p4f_stack_app_data_4.png" title="Don't touch me..." alt="stack_app_data_4" /></p>
+
+<p>数据库我们一般本地开发用SQLite，stage和prod服务器用MySQL。之所以没有选择Postgresql是因为它那些很不错的功能我们在项目里面还没有需要，所以就偷懒选择了自己更熟悉的系统。</p>
+
+<a name="Libraries"></a>
+<h3>Libraries</h3>
+
+<p><img src="/downloads/images/2015_01/p4f_stack_app_data_5.png" title="Don't touch me..." alt="stack_app_data_5" /></p>
+
+<p>这张图也是很难画完整的，因为它一直在变。不过我们基本上用ACE封装了一套自己的UI框架，对提高开发效率还是非常有用的。</p>
+
+<a name="Utilities"></a>
+<h2>Utilities</h2>
+
+<p><img src="/downloads/images/2015_01/p4f_stack_utilities.png" title="Don't touch me..." alt="stack_utilities" /></p>
+
+<p>都是些中规中矩的选择，因为好的服务都在国内被封堵得比较彻底，不是吗？</p>
+
+<p>比如统计，百度做得和Google还差几个数量级（你见过实时统计有百度那么不实时的么？），但是在国内因为墙的关系常常还是只能用。</p>
+
+<p>再比如SMS网关，国外有大量的类似<a href="https://www.twilio.com/sms/toll-free">Twilio</a>的优质服务，价格便宜，接口良好，但是&hellip;我们都用亿美。</p>
+
+<p>值得一提的是推送消息服务，因为被百度坑过，我们一开始用了我浙大著名创业公司“个推”，结果质量低得还比较离谱。最后好死不死又换到了百度Push：原因还是因为Google原生的Push被墙。</p>
+
+<a name="Business.Tools"></a>
+<h2>Business Tools</h2>
+
+<p><img src="/downloads/images/2015_01/p4f_stack_business_tools.png" title="Don't touch me..." alt="stack_devops_1" /></p>
+
+<p>其实Trello和Slack这样的工具用好一个就足以撑起一家中等规模的公司了。可惜因为经常被墙，很多不能自己翻墙的同事或者客户用起来倍感艰辛。</p>
+
+<p>整个公司的任务驱动主要还是靠Jira，知识分享和管理主要是靠Confluence。</p>
+
+<p>阿勒！</p>
+]]></content>
+  </entry>
+  
+</feed>

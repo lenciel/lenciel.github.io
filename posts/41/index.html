@@ -1,0 +1,444 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>@Lenciel</title>
+  <meta name="author" content="Lenciel">
+
+  
+  <meta name="description" content="
+  
+  
+  
+    
+      
+  
+    
+      Understanding
+    
+    
+      
+        
+
+
+
+
+
+        
+      
+    
+  
+
+
+  
+
+"As long as we were in love, we unde...">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://lenciel.com/posts/41/">
+  <link href="/favicon.png" rel="icon">
+  <script src="/assets/javascripts/libs/modernizr.custom.55630.js"></script>
+  <script src="/assets/javascripts/ender.js"></script>
+  <script src="/assets/javascripts/libs/jquery.min.js"></script>
+  <script src="/assets/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml">
+  
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://lenciel.com/posts/41/" />
+<meta property="og:description" content="
+  
+  
+  
+    
+      
+  
+    
+      Understanding
+    
+    
+      
+        
+
+
+
+
+
+        
+      
+    
+  
+
+
+  
+
+"As long as we were in love, we unde..." />
+
+<meta property="og:site_name" content="http://lenciel.com" />
+<meta property="article:author" content="http://lenciel.com">
+
+
+
+<meta itemprop="description" content="
+  
+  
+  
+    
+      
+  
+    
+      Understanding
+    
+    
+      
+        
+
+
+
+
+
+        
+      
+    
+  
+
+
+  
+
+"As long as we were in love, we unde..." />
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?42345b94bf173b38bef61f873677adfa";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://lenciel.qiniudn.com/analytics.js','ga');
+
+  ga('create', 'UA-175991-6', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</head>
+
+<body    class="collapse-sidebar sidebar-footer" >
+  <header role="banner"><hgroup>
+  <h1><a href="/">@Lenciel</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<ul class="main-navigation">
+  <li><a href="/"><i class="icon-home"></i>Home</a></li>
+  <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li>
+  <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2014/03/understanding/">Understanding</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img src="/downloads/images/iwdrm/understanding.gif" title="Don't touch me..." alt="Understanding" /></p>
+
+<blockquote><p>"As long as we were in love, we understood each other. There was nothing more to understand."</p><footer><strong>Alain Delon</strong> <cite><a href='http://www.imdb.com/title/tt0056736/'>L'Eclisse (1962)</a></cite></footer></blockquote>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2014/02/hunting-the-iowait-problem-maker/">解决iowait过高的告警</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img src="/downloads/images/2014_02/warning_letter.png" title="Don't touch me..." alt="warning letter" /></p>
+
+<p>从Nagios切到<a href="https://www.zabbix.com">Zabbix</a>之后，经常大清早被iowait过高的告警邮件叫醒。因为这套Zabbix监控是本座搭的，所以解决这个问题就只有本座来了&hellip;..哎，不知道是不是把首席运营官给宠坏了。</p>
+
+<a name="iowait........................"></a>
+<h2>iowait的定义和计算方式</h2>
+
+<p>iowait的定义为：</p>
+
+<blockquote><p>iowait is time that the processor/processors are waiting (i.e. is in an idle state and does nothing), during which there in fact was outstanding disk I/O requests.</p></blockquote>
+
+
+<p>也就是至少有一个I/O在进行时CPU处于<code>idle</code>状态的比例。</p>
+
+<p>我们都知道用<code>vmstat</code>, <code>iostat</code>, <code>sar</code>等命令查看系统状况的时候，CPU有四种比较主要的状态：user, sys, idle和iowait。它们都是表示CPU处于此状态的一个平均比例（其中sar命令是可以用<code>-P</code>具体指定哪个CPU的，其他的命令一般是所有CPU的平均），通常相加应该就是1.</p>
+
+<p>这个比例的统计其实是通过kernel不断的更新计数器然后计算出来的。当时钟中断发生的时候，kernel检查当前CPU是不是idle的。如果不是，就检查正在执行的指令是user space还是kernel space的。如果是user space就给<code>user</code>的计数器加1，kernel space就给<code>sys</code>计数器加1.</p>
+
+<p>类似的，如果CPU是处于idle状态，kernel就检查是不是有I/O操作正在发生（可以是local disk也可以是<code>mount</code>的NFS），如果有就给<code>iowait</code>计数器加1，没有就给<code>idle</code>计数器加1.</p>
+
+<p>当我们运行<code>vmstat</code>或者<code>sar</code>等命令查看时，它们会先读取当前这几个计数器的计数，然后在用户指定的时间里面等待，然后再次读取。因为用户指定的时间里面过去了多少个<code>tick</code>是可以计算的，然后前后计数器的增值也可以计算，就可以算出一个比值。比如如果用户运行的命令是<code>vmstat 2</code>，表示每两秒取样一次，那么：</p>
+
+<ol>
+<li>tick是10ms一个，所以总共是200个ticks</li>
+<li>计数器的增量/200*100就是每个状态的百分比</li>
+</ol>
+
+
+<a name="iowait........."></a>
+<h2>iowait的意义</h2>
+
+<p>这其实比它怎么计算要难理解一些。比如本座之前心里就有一个疑问：既然只是某个process在block，那么系统会schedule其他的事情，这对性能有什么大不了的影响呢？</p>
+
+<p>来看几个例子。</p>
+
+<a name="L........."></a>
+<h3>例子一</h3>
+
+<p>假设一个程序进行批量的事务，每个事务都有一个10ms的计算任务，计算出的结果通过同步的方式写到磁盘。由于它写结果的文件是阻塞方式打开的，所以I/O完成之前写操作是不会<code>return</code>的。如果我们假设磁盘系统没有cache，每个物理的I/O需要20ms，那么一个事务需要30ms。也就是每秒33个事务（33 tps）。如果把系统算成只有一个CPU的话，很显然<code>iowait</code>就是66%。</p>
+
+<p>这种情况下，如果我们能改进I/O子系统，比如启用磁盘的缓存，让每次物理的I/O只需要1ms的话，那么<code>iowait</code>就会迅速下降到8%左右。可见这种情况下，<code>iowait</code>直接影响着程序的performance。</p>
+
+<a name="L........."></a>
+<h3>例子二</h3>
+
+<p>假设一个磁盘检查的程序运行在系统上，每秒钟读4k的数据。我们假设这个程序的入口是main()，然后读磁盘的函数是read()，main()和read()都是用户态的。read()属于libc.a，会调用kread()这个系统调用来进行物理的I/O，这个时候就进入了kernel态。整个main(),read()和kread执行的时间加起来不长，我们假设是50微秒。而物理的I/O需要多久要看seek的数据有多远，假设需要2-20ms。这样就完全有可能当时钟中断的时候，cpu是idle的，而且I/O正在发生，于是<code>iowait</code>值就达到97-98% (如果每个I/O需要20ms就是99-100%)。</p>
+
+<p>这种情况下，虽然<code>iowait</code>数值非常高，其实这个系统的性能是正常的。</p>
+
+<a name="L........."></a>
+<h3>例子三</h3>
+
+<p>假设有两个程序跑在同一个CPU上。一个程序写得有点儿问题，I/O会阻塞10秒左右。另一个则100%的时间都在做计算。由于当前一个程序阻塞起来的时候，后面这个程序被运行了，因此无论什么时候都没有CPU处于idle的状态等I/O，于是<code>iowait</code>一直是0，这时候其实系统的performance是有很大的问题的。</p>
+
+<a name="L........."></a>
+<h3>例子四</h3>
+
+<p>假设系统是4核的CPU，运行了6个程序。其中4个程序有70%时间在进行物理的I/O，30%的时间在进行计算任务（假设其中25%在用户态，5%在kernel态）。另外2个程序假设100%时间都在用户态进行计算任务，没有任何I/O操作。</p>
+
+<p>如果我们查看系统的CPU状态，大概可能看到下面的状况:</p>
+
+<pre><code>     cpu    %usr    %sys    %iowait   %idle
+      0       50      10      40       0
+      1       50      10      40       0
+      2      100       0       0       0
+      3      100       0       0       0
+      -       75       5      20       0
+</code></pre>
+
+<p>如果我们把相同的6个程序跑到一个6核的机器（相同的CPU和磁盘配置），那么可以简单的认为会有下面的结果：</p>
+
+<pre><code>     cpu    %usr    %sys    %iowait   %idle
+      0       25       5      70       0
+      1       25       5      70       0
+      2       25       5      70       0
+      3       25       5      70       0
+      4      100       0       0       0
+      5      100       0       0       0
+      -       50       3      47       0
+</code></pre>
+
+<p>也就是说，同样的程序跑在不同的系统上，iowait增加了一倍多，而这个时候其实没有什么performance问题，只不过是系统还能做更多的计算工作。</p>
+
+<a name="L......"></a>
+<h3>结论</h3>
+
+<ul>
+<li>CPU处于<code>iowait</code>状态，并不说明CPU不能运行其他的程序</li>
+<li><code>iowait</code>偏高只能说明系统这个时刻还能进行更多的计算任务，至于是不是出现了performance问题，需要进一步分析才知道</li>
+</ul>
+
+
+<a name="L..........................."></a>
+<h2>找出造成问题的进程</h2>
+
+<p>虽然每次都是6点半多少说明应该是某个cron任务（因为机器上没有其他自定义的定时任务）但没法具体知道究竟是哪个。</p>
+
+<p>最简单的办法当然是出问题的时候用<code>iotop</code>命令来看了 。</p>
+
+<pre><code> # iotop
+ Total DISK READ: 8.00 M/s | Total DISK WRITE: 20.36 M/s
+  TID PRIO USER DISK READ DISK WRITE SWAPIN IO&gt; COMMAND
+ 15758 be/4 root 7.99 M/s 8.01 M/s 0.00 % 61.97 % bonnie++ -n 0 -u 0 -r 239 -s 478 -f -b -d /tmp
+</code></pre>
+
+<p>但是谁又会在6点多起来干这种事情。除开修改系统时间重现问题，还可以通过ps命令查看记录处于<code>D</code>状态的进程来找到。</p>
+
+<p><code>ps</code>命令输出里面对<code>PROCESS STATE CODES</code>的定义是：</p>
+
+<pre><code> D uninterruptible sleep (usually IO)
+ R running or runnable (on run queue)
+ S interruptible sleep (waiting for an event to complete)
+ T stopped, either by a job control signal or because it is being traced.
+ W paging (not valid since the 2.6.xx kernel)
+ X dead (should never be seen)
+ Z defunct ("zombie") process, terminated but not reaped by its parent.
+</code></pre>
+
+<p>处于等待I/O完成状态的进程一般就是<code>D</code>，所以可以通过tmux起一个sessio来跑下面的命令：</p>
+
+<pre><code>    while true; do date; ps auxf | awk '{if($8=="D") print $0;}'; sleep 1; done &gt; /var/log/ps.log
+</code></pre>
+
+<p>然后在又一个这样的6点半：</p>
+
+<p><img src="/downloads/images/2014_02/zabbix_cpu_util.png" title="Don't touch me..." alt="warning letter" /></p>
+
+<p>去日志里面查看：</p>
+
+<pre><code>$ cat /var/log/ps.log | grep D
+
+root      7585  7.9  0.0   5904   812 ?        D    06:34   0:02                  \_ /usr/bin/updatedb.mlocate
+root      7585  7.8  0.0   5904   812 ?        D    06:34   0:02                  \_ /usr/bin/updatedb.mlocate
+root      7585  7.8  0.0   5904   812 ?        D    06:34   0:02                  \_ /usr/bin/updatedb.mlocate
+root      7585  7.8  0.0   5944   944 ?        D    06:34   0:02                  \_ /usr/bin/updatedb.mlocate
+root      7585  7.7  0.0   5944   944 ?        D    06:34   0:02                  \_ /usr/bin/updatedb.mlocate
+root      7585  7.5  0.0   5944   944 ?        D    06:34   0:02                  \_ /usr/bin/updatedb.mlocate
+root      7585  7.5  0.0   5944   944 ?        D    06:34   0:02                  \_ /usr/bin/updatedb.mlocate
+root      7585  7.6  0.0   5944   944 ?        D    06:34   0:03                  \_ /usr/bin/updatedb.mlocate
+root      7585  7.7  0.0   5944   944 ?        D    06:34   0:03                  \_ /usr/bin/updatedb.mlocate
+root      7585  7.7  0.0   5944   944 ?        D    06:34   0:03                  \_ /usr/bin/updatedb.mlocate
+root      7585  7.8  0.0   5944   944 ?        D    06:34   0:03                  \_ /usr/bin/updatedb.mlocate
+root      7585  7.7  0.0   5944   944 ?        D    06:34   0:03                  \_ /usr/bin/updatedb.mlocate
+root      7585  7.8  0.0   5944   944 ?        D    06:34   0:03                  \_ /usr/bin/updatedb.mlocate
+root      7585  7.7  0.0   5944   944 ?        D    06:34   0:03                  \_ /usr/bin/updatedb.mlocate
+root      7585  7.7  0.0   5944   944 ?        D    06:34   0:03                  \_ /usr/bin/updatedb.mlocate
+root      7585  7.7  0.0   5944   944 ?        D    06:34   0:03                  \_ /usr/bin/updatedb.mlocate
+root      7585  7.7  0.0   5944   944 ?        D    06:34   0:03                  \_ /usr/bin/updatedb.mlocate
+root      7585  7.8  0.0   5944   944 ?        D    06:34   0:03                  \_ /usr/bin/updatedb.mlocate
+root      7585  7.8  0.0   5944   944 ?        D    06:34   0:03                  \_ /usr/bin/updatedb.mlocate
+root      7585  7.8  0.0   5944   944 ?        D    06:34   0:04                  \_ /usr/bin/updatedb.mlocate
+root      7585  7.6  0.0   5944   944 ?        D    06:34   0:04                  \_ /usr/bin/updatedb.mlocate
+root      7585  7.6  0.0   5944   944 ?        D    06:34   0:04                  \_ /usr/bin/updatedb.mlocate
+root      7585  7.6  0.0   5944   944 ?        D    06:34   0:04                  \_ /usr/bin/updatedb.mlocate
+root      7585  7.6  0.0   5944   944 ?        D    06:34   0:04                  \_ /usr/bin/updatedb.mlocate
+root      7585  7.7  0.0   5944   944 ?        D    06:34   0:04                  \_ /usr/bin/updatedb.mlocate
+root      7585  7.6  0.0   5944   944 ?        D    06:34   0:04                  \_ /usr/bin/updatedb.mlocate
+root      7585  7.6  0.0   6000   968 ?        D    06:34   0:04                  \_ /usr/bin/updatedb.mlocate
+root      7585  7.6  0.0   6000   968 ?        D    06:34   0:04                  \_ /usr/bin/updatedb.mlocate
+</code></pre>
+
+<p>嗯，原来是<code>/usr/bin/updatedb.mlocate</code>。Google了一下<a href="" title="http://ubuntuforums.org/showthread.php?t=1243951&amp;page=2&amp;p=7844783#post7844783">^1</a>发现其实关掉也没什么：</p>
+
+<pre><code>sudo killall updatedb.mlocate
+sudo chmod -x /etc/cron.daily/mlocate
+</code></pre>
+
+<p>整个世界清静了。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/posts/42">&larr; Older</a>
+    
+    <a href="/archives">Archives</a>
+    
+    <a class="next" href="/posts/40">Newer &rarr;</a>
+    
+  </div>
+</div>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a>
+<span class="theme-version">Copyright &copy; 2004-2017 by Lenciel</span>
+  <section class="contruction-wrap">
+    <div class="contruction"></div>
+  </section>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  var stylesheet = document.createElement('link');
+  stylesheet.href = '/assets/stylesheets/screen.css';
+  stylesheet.rel = 'stylesheet';
+  stylesheet.type = 'text/css';
+  document.getElementsByTagName('head')[0].appendChild(stylesheet);
+</script>
+<script type="text/javascript">
+  var stylesheet = document.createElement('link');
+  stylesheet.href = '/assets/stylesheets/data-table.css';
+  stylesheet.rel = 'stylesheet';
+  stylesheet.type = 'text/css';
+  document.getElementsByTagName('head')[0].appendChild(stylesheet);
+</script>
+
+</body>
+</html>

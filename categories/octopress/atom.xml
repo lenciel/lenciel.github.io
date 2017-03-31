@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: octopress | @Lenciel]]></title>
+  <link href="http://lenciel.com/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-03-31T23:38:06+08:00</updated>
+  <id>http://lenciel.com/</id>
+  <author>
+    <name><![CDATA[Lenciel]]></name>
+    <email><![CDATA[lenciel@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress里插入带中文Gist的问题和解决]]></title>
+    <link href="http://lenciel.com/2014/05/fix-gist-style-in-octopress/"/>
+    <updated>2014-05-17T13:00:38+08:00</updated>
+    <id>http://lenciel.com/2014/05/fix-gist-style-in-octopress</id>
+    <content type="html"><![CDATA[<p><a href="https://gist.github.com/">Gist</a>是Github提供用来管理和分享<a href="https://gist.github.com/lenciel/4105165">代码片断</a>或者<a href="https://gist.github.com/lenciel/3462897">文档片断</a>的服务。和传统的<a href="http://en.wikipedia.org/wiki/Snippet_(programming">snippet</a>)管理系统相比，Gist因为实际上依托了Github的实现技术，所以具有存储在云端、自动的版本化、语法高亮支持的语言种类齐全、分享的便利性高等等优势。</p>
+
+<p><a href="http://octopress.org">Octopress</a>里面引用你创建的gist的好处是显而易见的：你需要分享的<strong>内容</strong>在Gist那边被更好的管理了，而在日志里面用下面这样的语句就可以很容易的插入gist里面的内容:
+</p>
+
+<div class="highlight"><pre><code class="text">{% gist gist_id [filename] %}
+</code></pre></div>
+
+
+<p></p>
+
+<p>比如<a href="http://lenciel.com/2014/05/web-development-skill-set-and-reading-list/">上篇文章</a>，理论上源代码就是这么一句：</p>
+
+<p></p>
+
+<div class="highlight"><pre><code class="text">{% gist lenciel/637812a7dcbe8341b07b web_skill_list.md %}
+</code></pre></div>
+
+
+<p></p>
+
+<p>当然之所以说理论上，是因为首先Octopress的markdown插件对unicode的支持<a href="http://tokkonopapa.github.io/blog/2013/02/23/octopress-toc/">是有bug</a>的。所以直接插入带中文的gist在build的时候会看到<code>Liquid Exception</code>:</p>
+
+<pre><code class="bash">&gt;&gt;&gt; Compass is watching for changes. Press Ctrl-C to Stop.
+Liquid Exception: incompatible character encodings: UTF-8 and ASCII-8BIT in 2014-05-16-web-development-skill-set-and-reading-list.markdown
+</code></pre>
+
+<p>解决起来也很简单，只需要在<code>lib/jekyll/converters/markdown.rb</code>里面强制设定encoding就可以了：</p>
+
+<pre><code class="diff lib/jekyll/converters/markdown.rb">@@ -120,7 +120,7 @@ def convert(content)
+           rd = RDiscount.new(content, *@rdiscount_extensions)
+           html = rd.to_html
+           if rd.generate_toc and html.include?(@config['rdiscount']['toc_token'])
+-            html.gsub!(@config['rdiscount']['toc_token'], rd.toc_content)
++            html.gsub!(@config['rdiscount']['toc_token'], rd.toc_content.force_encoding('utf-8'))
+           end
+</code></pre>
+
+<p>接下来就是render出来的效果，样子丑到让人无法直视：</p>
+
+<p><img src="/downloads/images/2014_05/gist_render_output_orig.jpg" title="Don't touch me..." alt="original gist render output" /></p>
+
+<p>大概看了一下Octopress的文档，原来代码片断的样式（包括gist的渲染样式）都在<a href="https://github.com/imathis/octopress/blob/master/.themes/classic/sass/partials/_syntax.scss">_syntax.scss</a>里面。这个文件2012年就没有更新过了，但是github的gist输出在2013年有过变化，所以就有些不匹配了。</p>
+
+<p>打开自己的模板，大概调了一下这个sass，主要是和其他的代码高亮一致：</p>
+
+<p><img src="/downloads/images/2014_05/gist_render_output.jpg" title="Don't touch me..." alt="current gist render output" /></p>
+
+<p>调整的地方见<a href="https://gist.github.com/lenciel/ecc8b3805ed346727abe">这里</a>:</p>
+
+<pre><code class="diff _sass/partials/_syntax.scss">diff --git a/46501e4:sass/partials/_syntax.scss b/02b0441:sass/partials/_syntax.scss
+index 137d475..5465286 100644
+--- a/46501e4:sass/partials/_syntax.scss
++++ b/02b0441:sass/partials/_syntax.scss
+@@ -22,10 +22,6 @@
+   @include border-radius(0);
+ }
+
+-.line-data {
+-   font-size: 13px;
+-}
+-
+ figure.code, .gist-file, pre {
+   @include box-shadow(rgba(#000, .06) 0 0 10px);
+   .highlight pre { @include box-shadow(none); }
+@@ -43,10 +39,8 @@ html .gist .gist-file {
+     margin-bottom: 0;
+   }
+   .gist-syntax {
+-    background: #01222d !important;
+-    color: #d5dee2 !important;
+-    padding: 0 2em;
+     border-bottom: 0 !important;
++    background: none !important;
+     .gist-highlight {
+       background: $base03 !important;
+     }
+@@ -57,17 +51,15 @@ html .gist .gist-file {
+   }
+   .gist-meta {
+    padding: .6em 0.8em;
++   border: 1px solid lighten($base02, 2) !important;
++   color: $base01;
+    font-size: .7em !important;
+    @if $solarized == light {
+-     color: $base01;
+-     border: 1px solid lighten($base02, 2) !important;
+      background: lighten($base03, 2) $noise-bg;
+      border: 1px solid $pre-border !important;
+      border-top: 1px solid lighten($base03, 2) !important;
+    } @else {
+-     background: #01222d $noise-bg;
+-     text-shadow: none !important;
+-     color: #d5dee2;
++     background: $base02 $noise-bg;
+    }
+    @extend .sans;
+    line-height: 1.5em;
+@@ -77,7 +69,7 @@ html .gist .gist-file {
+       &amp;:hover { color: $base1 !important; }
+     }
+     a[href*='#file'] {
+-      position: absolute; top: 0; left:0; right:0px;
++      position: absolute; top: 0; left:0; right:-10px;
+       color: #474747 !important;
+       @extend .code-title;
+       &amp;:hover { color: $link-color !important; }
+@@ -221,7 +213,7 @@ pre, .highlight, .gist-highlight {
+   &amp;::-webkit-scrollbar-thumb:horizontal { background: $solar-scroll-thumb;  -webkit-border-radius: 4px; border-radius: 4px }
+ }
+
+-.highlight code {
++.highlight code { 
+   @extend .pre-code; background: #000;
+ }
+ figure.code {
+@@ -267,11 +259,3 @@ figure.code {
+   text-shadow: #cbcccc 0 1px 0;
+   padding-left: 3em;
+ }
+-
+-.gist-file {
+-  font-size:.8em !important;
+-}
+-
+-table.lines{
+-  width: 100%;
+-}
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[勾股定理]]></title>
+    <link href="http://lenciel.com/2014/04/time-to-talk-about-math/"/>
+    <updated>2014-04-02T14:30:00+08:00</updated>
+    <id>http://lenciel.com/2014/04/time-to-talk-about-math</id>
+    <content type="html"><![CDATA[<p>这篇日志主要是想试试:</p>
+
+<ul>
+<li>怎么把<code>d3.js</code>和<code>AngularJS</code>集成到<a href="http://lenciel.com/2013/03/blog-with-octopress-and-github-pages/">octopress</a>，因为<a href="http://vudlab.com/bart/">setosa</a>很酷</li>
+<li>怎么在某篇日志里面支持specific的js和css</li>
+</ul>
+
+
+<p>玩了一下并不是很麻烦，于是这个静态站点可以干的事情就"动态"多了。比如把课本里面的<a href="http://aleph0.clarku.edu/~djoyce/java/elements/bookI/propI47.html">勾股定理</a>通过画图证明一下(点击黑色背景字母有彩蛋)：</p>
+
+<p><link rel="stylesheet" type="text/css" href="/downloads/static/css/math_d3_angular.css"></p>
+
+<script src="/downloads/static/js/d3.min.js" charset="utf-8"></script>
+
+
+<script src="/downloads/static/js/angular.min.js" charset="utf-8"></script>
+
+
+<script src="/downloads/static/js/math_d3_angular.js" charset="utf-8"></script>
+
+
+
+
+<div class="main-content" ng-app="app" ng-controller="MainCtrl" ng-style="styles.content" ng-class="{ sm : w < 650 }" ng-init="init()">
+    <div id="panel1" class="panel" ng-style="styles.panel1">
+      <stage selected-shape="selectedShape" ng-mouseover="selectedShape = null" />
+    </div>
+    <div id="panel2" class="panel" ng-style="styles.panel2">
+      <div class="details">
+        <p>
+          如图所示的三角形<co points="abc" shape="triangle">ABC</co>角<co points="bac" shape="angle">BAC</co>为直角。
+        </p>
+        <p>
+          勾股定理是说<co points="bdec" shape="square">BC</co>的平方等于<co points="abfg" shape="square">BA</co>的平方加上<co points="ackh" shape="square">AC</co>的平方。证明如下:
+        </p>
+        <p>
+          把<co points="bc" shape="line">BC</co>的平方对应的正方形简称为<co points="bdec" shape="square">CD</co>，同理<co points="ba" shape="line">BA</co>和
+          <co points="ac" shape="line">AC</co>的平方分别对应
+<co points="abfg" shape="square">GB</co>和<co points="ackh" shape="square">HC</co>
+画与<co points="bd" shape="line">BD</co>和<co points="ce" shape="line">CE</co>平行的直线<co points="al" shape="line">AL</co>，然后连接<co points="ad" shape="line">AD</co>和<co points="fc" shape="line">FC</co>。
+        </p>
+        <p>因为角<co points="bac" shape="angle">BAC</co>
+          和角<co points="bag" shape="angle">BAG</co>
+          都是直角，所以<co points="ca" shape="line">CA</co>
+          和<co points="ag" shape="line">AG</co>在同一条直线上。
+        </p>
+        <p>
+          同理，<co points="ba" shape="line">BA</co>
+          和<co points="ah" shape="line">AH</co>也在一条直线上。
+        </p>
+        <p>
+          又由角<co points="dbc" shape="angle">DBC</co>
+          和角<co points="fba" shape="angle">FBA</co>
+          都是直角，因此它们加上<co points="abc" shape="angle">ABC</co>
+          得到的角<co points="dba" shape="angle">DBA</co>
+          和<co points="fbc" shape="angle">FBC</co>相等。
+        </p>
+        <p>
+          再由<co points="db" shape="line">DB</co>
+          等于<co points="bc" shape="line">BC</co>,
+          且<co points="fb" shape="line">FB</co>
+          等于<co points="ba" shape="line">BA</co>,
+          可得三角形<co points="abd" shape="triangle">ABD</co>面积等于三角形
+          <co points="fbc" shape="triangle">FBC</co>。
+        </p>
+
+        <p>又由
+          <co points="bd" shape="line">BD</co>和
+          <co points="al" shape="line">AL</co>平行，所以同底的矩形<co points="bvld" shape="square">BL</co>的面积是三角形
+          <co points="abd" shape="triangle">ABD</co>的面积的2倍。同理正方形<co points="gfba" shape="square">GB</co>的面积是三角形<co points="fbc" shape="triangle">FBC</co>面积的两倍。
+        </p>
+
+        <p>于是可得矩形<co points="bvld" shape="square">BL</co>面积等于<co points="gfba" shape="square">GB</co>。
+        </p>
+
+        <p>同理将
+          <co points="ae" shape="line">AE</co>
+和<co points="bk" shape="line">BK</co>
+连接起来,可证矩形<co points="cvle" shape="square">CL</co>面积等于正方形<co points="hack" shape="square">HC</co>。于是可得正方形<co points="bdec" shape="square">CD</co>
+面积等于正方形<co points="gfba" shape="square">GB</co>与<co points="hack" shape="square">HC</co>的和。
+        </p>
+
+        <p>这也就证明了
+          <co points="bc" shape="line">BC</co>
+          的平方等于<co points="ba" shape="line">BA</co>
+          的平方加上
+          <co points="ac" shape="line">AC</co>的平方。
+        </p>
+      </div> <!-- end details -->
+    </div> <!-- end panel -->
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Blog with Octopress and Github pages]]></title>
+    <link href="http://lenciel.com/2013/03/blog-with-octopress-and-github-pages/"/>
+    <updated>2013-03-10T22:15:00+08:00</updated>
+    <id>http://lenciel.com/2013/03/blog-with-octopress-and-github-pages</id>
+    <content type="html"><![CDATA[<p>不知不觉，写blog好像从有电脑的人都要干的事情变成很小众的活动了。除了人到了一定年纪都会不愿意开口讲话之外，本座觉得还有个很大的原因就是：要找一个靠谱的blog服务商是非常麻烦的。岂止是是blog服务商，在天朝使用大多数web服务都很吊诡地只有两个选择：</p>
+
+<ul>
+<li>没有被墙但很糟的；</li>
+<li>很不错但被墙了的；</li>
+</ul>
+
+
+<p>所以虽然知道<a href="http://github.com">Github</a>可以免费host任何静态页面很久了，眼看着<a href="http://octopress.org/">Octopress</a>也日益成熟，但一直都下定决心去试：谁知道哪天Github又被墙了呢？</p>
+
+<p>不过，在最近自己的职业生涯发生了不小的变化，在可预见的未来，肯定要做很多跟code有关的笔记。<a href="http://lenciel.com">现在的blog</a>系统是wordpress，虽然非常好用，但是比起markdown来说，写起code来速度就差太多了。所以今天下定决心试了一把Octopress+Github Pages，效果非常满意，特别记录一下过程，像大家做个推荐。</p>
+
+<a name="Jekyll.amp.Octopress"></a>
+<h2>Jekyll&amp;Octopress</h2>
+
+<p><a href="http://octopress.org/">Octopress</a>是在<a href="https://github.com/mojombo/jekyll">Jekyll</a>基础上进行的开发。<a href="https://github.com/mojombo/jekyll">Jekyll</a>作为Ruby开发的静态页面blog系统，吸引本座的地方在于：</p>
+
+<ul>
+<li><strong>静态页面</strong>：由于Jekyll生成的都是静态页面，意味着这些页面可以在任何地方被host，比如Github Pages，Google Drive甚至是Dropbox都可以作为选择（当然它们也基本是被墙的）。</li>
+<li><strong>Markdown</strong>：Jekyll的日志因为是用Markdown写的，相比传统的Blog系统如Wordpress而言，一方面在写的时候可以用你顺手的编辑器，另一方面储存和版本管理也方便得多。</li>
+<li><strong>代码插入方便美观</strong>：Octopress对日志中嵌入代码提供了<a href="http://octopress.org/docs/blogging/code/">各种方便</a>。</li>
+</ul>
+
+
+<a name="Mac........................"></a>
+<h2>Mac下的安装设置过程</h2>
+
+<a name="Xcode"></a>
+<h3>Xcode</h3>
+
+<ul>
+<li>升级Xcode</li>
+<li>启动Xcode，在Preferences里面选择下载</li>
+<li>安装"Command Line Tools"</li>
+</ul>
+
+
+<a name="Homebrew"></a>
+<h3>Homebrew</h3>
+
+<pre><code class="bash">brew update
+brew outdated|xargs brew install
+brew tap homebrew/dupes
+brew install apple-gcc42 git
+brew upgrade
+</code></pre>
+
+<a name="rbenv"></a>
+<h3>rbenv</h3>
+
+<p>首先如果你本来是用rvm，需要删除：</p>
+
+<pre><code class="ruby">rvm implode
+</code></pre>
+
+<p>然后安装rbenv以及Ruby1.9.3-p194:</p>
+
+<pre><code class="bash">brew install rbenv
+brew install ruby-build
+eval "$(rbenv init -)"
+rbenv install 1.9.3-p194
+rbenv global 1.9.3-p194
+</code></pre>
+
+<p>安装完毕之后需要在你的环境变量中做一些设置，比如本座用的是oh-my-zsh，就需要在<code>~/.zshrc</code>里面加上：</p>
+
+<pre><code class="bash">export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+# required for https://github.com/imathis/octopress/issues/144
+export LC_CTYPE=en_US.UTF-8
+export LANG=en_US.UTF-8
+</code></pre>
+
+<p>注意在环境变量设置完毕之后，最好把<code>$PATH</code>打出来看看，确保没有其他版本的Ruby被启用了，特别要注意<code>/Users/***/.gem/ruby/***/bin</code>这样的路径。</p>
+
+<a name="L......Octopress"></a>
+<h2>安装Octopress</h2>
+
+<p>首选在Github上创建一个repo来放blog，命名规则是username.github.com（比如本座的就是lenciel.github.com）。</p>
+
+<p>然后在本地建立一个repo把octopress弄下来：</p>
+
+<pre><code class="bash">git clone git://github.com/imathis/octopress.git lenciel.github.com
+cd lenciel.github.com
+ruby --version # should read ruby 1.9.3p194 (2012-04-20 revision 35410) [x86_64-darwin12.2.0]
+gem install bundler
+rbenv rehash
+</code></pre>
+
+<p>然后部署到刚才申请的repo上面去。虽然<a href="http://pages.github.com/">Github Pages</a>自己有个废柴说明页面，但是看完之后一般你是不知道如何算是部署成功的。好在Octopress已经内建了交互式的配置和部署的命令：</p>
+
+<pre><code class="ruby">rake setup_github_pages
+# Example repo url: git@github.com:lenciel/lenciel.github.com
+rake install
+rake generate &amp;&amp; rake deploy
+</code></pre>
+
+<p>然后你需要调整一下<code>.git/config</code>文件把自己的项目设置成新的origin：</p>
+
+<pre><code>[core]
+  repositoryformatversion = 0
+  filemode = true
+  bare = false
+  logallrefupdates = true
+  ignorecase = true
+[remote "origin"]
+  fetch = +refs/heads/*:refs/remotes/origin/*
+  url = git@github.com:lenciel/lenciel.github.com
+[remote "octopress"]
+  url = git://github.com/imathis/octopress.git
+  fetch = +refs/heads/*:refs/remotes/octopress/*
+[branch "master"]
+  remote = origin
+  merge = refs/heads/master
+</code></pre>
+
+<p>这样一来，你就即可以从<code>octopress/master</code>取到更新，又可以往<code>origin/master</code>去push自己最新的日志了。</p>
+
+<a name="L......Octopress"></a>
+<h2>使用Octopress</h2>
+
+<a name="L............"></a>
+<h3>新建文章</h3>
+
+<pre><code class="">rake new_post\["Blog with Octopress and Github Pages"\]
+</code></pre>
+
+<p>这里要注意使用zsh的时候，对<code>[]</code>要转义成<code>\[\]</code>不然会报错。</p>
+
+<a name="L............"></a>
+<h3>编辑文章</h3>
+
+<pre><code>subl source/_posts/2013-03-10-blog-with-octopress-and-github-pages.markdown
+</code></pre>
+
+<p>subl是本座在mac上使用的编辑器<code>Sublime Text 2</code>的命令行命令，它的markdown插件<code>Markdown Editing</code>和<code>OmniMarkupPreview</code>非常好用。</p>
+
+<a name="Markdown.Editing"></a>
+<h4>Markdown Editing</h4>
+
+<p><a href="http://ttscoff.github.com/MarkdownEditing/">Markdown Editing</a>对语法高亮，粘贴超链接，样式化，加footnote等都做了很好的支持：</p>
+
+<p><img src="/downloads/images/sublime_with_markdown_editing.png" title="Don't touch me..." alt="Sublime with Markdown Editing" /></p>
+
+<a name="OmniMarkupPreview"></a>
+<h4>OmniMarkupPreview</h4>
+
+<p>OmniMarkupPreview支持<code>Cmd+Alt+O</code>在你指定的浏览器里面预览并且动态刷新你正在编辑的Markup文档。这样你就可以不用不停的<code>rake preview</code>了。</p>
+
+<a name="L......"></a>
+<h3>更多</h3>
+
+<ul>
+<li><a href="http://octopress.org/docs/">Octopress官方文档</a></li>
+<li><a href="http://daringfireball.net/projects/markdown/">Markdown语法ref</a></li>
+<li><a href="https://github.com/imathis/octopress/issues/701#issuecomment-7664070">如何使用repo里面的图片</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>
