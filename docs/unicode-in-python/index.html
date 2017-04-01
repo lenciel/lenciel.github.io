@@ -1,0 +1,399 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Python2里面使用Unicode - @Lenciel</title>
+  <meta name="author" content="Lenciel">
+
+  
+  <meta name="description" content="
+
+  
+  
+    Python2里面使用Unicode
+    
+
+
+
+
+
+  
+  
+  用Python的时候，为下面这样的报错苦恼？
+
+&gt; UnicodeDecodeError: ‘ascii’ codec can’t decode in position 10: ordina...">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://lenciel.com/docs/unicode-in-python/">
+  <link href="/favicon.png" rel="icon">
+  <script src="/assets/javascripts/libs/modernizr.custom.55630.js"></script>
+  <script src="/assets/javascripts/ender.js"></script>
+  <script src="/assets/javascripts/libs/jquery.min.js"></script>
+  <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml">
+  <meta property="og:title" content="Python2里面使用Unicode" /><meta itemprop="name" content="Python2里面使用Unicode" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://lenciel.com/docs/unicode-in-python/" />
+<meta property="og:description" content="
+
+  
+  
+    Python2里面使用Unicode
+    
+
+
+
+
+
+  
+  
+  用Python的时候，为下面这样的报错苦恼？
+
+&gt; UnicodeDecodeError: ‘ascii’ codec can’t decode in position 10: ordina..." />
+
+<meta property="og:site_name" content="http://lenciel.com" />
+<meta property="article:author" content="http://lenciel.com">
+<meta property="article:published_time" content="2014-02-17 13:24" />
+
+
+<meta itemprop="description" content="
+
+  
+  
+    Python2里面使用Unicode
+    
+
+
+
+
+
+  
+  
+  用Python的时候，为下面这样的报错苦恼？
+
+&gt; UnicodeDecodeError: ‘ascii’ codec can’t decode in position 10: ordina..." />
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?42345b94bf173b38bef61f873677adfa";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://lenciel.qiniudn.com/analytics.js','ga');
+
+  ga('create', 'UA-175991-6', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</head>
+
+<body    class="collapse-sidebar sidebar-footer" >
+  <header role="banner"><hgroup>
+  <h1><a href="/">@Lenciel</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<ul class="main-navigation">
+  <li><a href="/"><i class="icon-home"></i>Home</a></li>
+  <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li>
+  <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">Python2里面使用Unicode</h1>
+    <p class="meta">
+
+
+
+
+</p>
+  </header>
+  
+  <p>用Python的时候，为下面这样的报错苦恼？</p>
+
+<pre><code>&gt; UnicodeDecodeError: ‘ascii’ codec can’t decode in position 10: ordinal not in range(128)...
+</code></pre>
+
+<p>嗯哼，本座在用lxml抓网页回来进行解析的时候，也遇到了类似的错误。从解决问题的过程来看，其实Python 2对unicode的支持已经很好了。你首先需要知道Unicode只是一种概念而不是一种实现（把字符表示到内存或者文件里面）。如果你还不清楚基本概念，可以<a href="http://lenciel.com/docs/unicode-complete/">先学习一下</a>。然后，我们只需要了解python具体实现的一些细节：</p>
+
+<a name="encode.decode"></a>
+<h2>encode/decode</h2>
+
+<ul>
+<li>在Python2中，有两种字符对象，<code>str</code>和<code>unicode</code>(可以用<code>type</code>函数查看字符串对象)</li>
+<li><code>str</code>和<code>unicode</code>通过encode和decode方法可以互相转换(要确保encoding的正确)</li>
+</ul>
+
+
+<a name="Debug.Part.I......................"></a>
+<h2>Debug Part I 单纯字符串操作</h2>
+
+<p>本座的开发工具是Eclipse3.3.1+pydev+python2.5，操作系统windows xp sp4。首先为了排除是开发环境的问题，写了一个utf8test.py：</p>
+
+<pre><code class="python"># -*- coding: utf-8 -*-
+
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
+ss ="全部"
+uu = u'全部'
+CODEC = 'utf-8'
+FILE = 'unicodetest.html'
+
+f = open('archive.html', "r")
+bytes_out = f.read().decode(CODEC)
+bytes_in = bytes_out.encode(CODEC)
+f = open(FILE, "w")
+f.write(bytes_in)
+f.close()
+
+print repr(ss)
+print repr(uu)
+
+print("-------------------------------")
+print ss.decode(CODEC )
+print uu.encode(CODEC )
+
+print("-------------------------------")
+print repr(ss.decode(CODEC).encode('gbk'))
+print uu
+</code></pre>
+
+<p>这段程序里面，有三个地方是跟编解码有关的。</p>
+
+<a name="L1.................utf-8......................................................"></a>
+<h3>1. 声明代码用utf-8编码保存：因为我们的代码里面有中文。</h3>
+
+<pre><code>\# -\*- coding: utf-8 -\*-
+</code></pre>
+
+<p>这个声明必须在最开始的两行，在后面就没有用了。</p>
+
+<a name="L2...........console.........sys........."></a>
+<h3>2. 指明在console显示中sys的编码</h3>
+
+<pre><code class="python">import sys  
+reload(sys)  
+sys.setdefaultencoding(utf8) 
+</code></pre>
+
+<p>如果你的程序不需要在console打印中用utf-8编码，这个声明不必要（比如上面程序里没有那些print，只是写内容到文件的话）。</p>
+
+<p>如果你指定了sys的encoding，但是在所用的console（如这里的Eclipse）里面没有设置成一致的选项，还是会报错。</p>
+
+<p><img src="/downloads/images/python_unicode_output0.png" title="Don't touch me..." alt="unicode" /></p>
+
+<a name="L3..................................."></a>
+<h3>3. 对字符串进行的编码解码</h3>
+
+<p>这里我们分别打印了str对象和unicode对象，并对它们进行了一些转换操作。程序的输出是这样的：</p>
+
+<p><img src="/downloads/images/python_unicode_output1.png" title="Don't touch me..." alt="unicode" /></p>
+
+<p>可以看到，一切正常。python没有问题，本座的环境也是正常的。</p>
+
+<p>很多的人在网上发帖的时候常说我在源文件加了<code>coding: utf-8</code>声明了，我的sys设置了<code>defaultencoding</code>了，我的console配置成xxx了，甚至还用了codec模块，还是乱码了。其实，是没有搞清楚这些步骤究竟是干啥用的表现。比如在很多地方本座都看到高手指导别人设置sys的编码。其实绝大多数的应用程序是不需要打印什么东西到console的，这样的声明反而会让你的程序在一些python安装包下面变得不可用。</p>
+
+<a name="Debug.Part.II.lxml......HTML"></a>
+<h2>Debug Part II lxml解析HTML</h2>
+
+<p>能够正常的打开和保存utf-8文件，那么错误可能就是出在lxml解析网页的过程中。本座一开始直接用了lxml.html里面那个parse方法，因为这个方法看起来很简洁：</p>
+
+<pre><code class="python">
+import urllib2
+import lxml.html as H
+from lxml.html.clean import Cleaner
+
+if __name__ == '__main__':
+    FILE = 'htmltest.html'
+    stringUrl = 'http://lenciel.ycool.com/archive.html'
+    req = urllib2.Request(stringUrl)
+    req.add_header('User-agent', 'Ugrah/0.1')
+    site = urllib2.urlopen(req)
+    doc = H.parse(site)
+    bytes_in = H.tostring(doc, pretty_print=True,encoding='utf-8')
+    print(repr(bytes_in))
+    f = open(FILE, "w")
+    f.write(bytes_in)
+    f.close()
+</code></pre>
+
+<p>但是这样在保存在本地的中文页面就会是乱码：</p>
+
+<p><img src="/downloads/images/python_unicode_output2.png" title="Don't touch me..." alt="unicode" /></p>
+
+<p>代码打印了bytes_in的保存方式，我们可以看到“全部”这两个汉字的编码是：</p>
+
+<p><img src="/downloads/images/python_unicode_output3.png" title="Don't touch me..." alt="unicode" /></p>
+
+<p>原来在序列化的时候，虽然指定了encoding是utf-8，但是两个汉字不知道为什么居然编出来了12个byte。本座也懒得去下序列化的源代码看里面究竟做了什么操作。反正lxml提供了一个从字符串里面解析出html对象树的方法，叫做<code>document_fromstring</code>。所以把自己知道格式的字符串传进去让它解析就对了：</p>
+
+<pre><code class="python">
+import urllib2
+import lxml.html as H
+from lxml.html.clean import Cleaner
+
+if __name__ == '__main__':
+
+    FILE = 'htmltest.html'
+    stringUrl = 'http://lenciel.ycool.com/archive.html'
+    req = urllib2.Request(stringUrl)
+    req.add_header('User-agent', 'Ugrah/0.1')
+    site = urllib2.urlopen(req).read()
+
+    doc = H.document_fromstring(site.decode('utf-8'))
+
+    for child in doc:
+        print(child.tag)
+    bytes_in = H.tostring(doc, pretty_print=True,encoding=unicode)
+    print cleaner.clean_html(bytes_in).encode('utf-8')
+    f = open(FILE, "w")
+    f.write(bytes_in.encode('utf-8'))
+    f.close()
+</code></pre>
+
+<a name="L......"></a>
+<h2>总结</h2>
+
+<ul>
+<li><p>处理任何编解码问题时我们都要牢记，unicode是为世界上所有的字符分配了一个码位（code point）的概念，而不是实现（字符在内存或者文件中的存在方式）。unicode占16位是绝对错误的（世界上语言如此多，码位早就超过百万个了）。</p></li>
+<li><p>要对unicode对象进行保存或者打印前，你要对它进行编码（encode）才行。</p></li>
+<li><p>在python里面把str转化成unicode的操作时，如果你知道str的编码方式，显式的指定它。如果你不知道，python会试着去自动完成。这是很多第三方moudle出现编解码问题的根本原因。</p></li>
+<li><p>不要因为解决这样的问题随便使用<code>sys.setdefaultencoding(utf-8)</code>设定系统的编码方式。这样有可能造成你的软件在别的平台上不能使用。</p></li>
+<li><p>正确的做法是，尽量早正确的decode一个str为unicode对象（如读入一个文件的内容，返回一个网页的内容等），并在你的程序里面全部使用unicode相关操作，直到你需要打印或者是写入文件时，再去encode它。</p></li>
+<li><p>python提供了codec来减少我们的代码行数，它不是你乱码的救星：</p></li>
+</ul>
+
+
+<pre><code class="python">f = open(&amp;#8216;small.html&amp;#8217;, "r")  
+bytes_in=f.read()  
+unicode\_in=bytes\_in.encode(utf-8)
+
+===&gt;fileObj = codecs.open( "small.html", "r", "utf-8" )
+</code></pre>
+
+<ul>
+<li>BOM这东西对UTF-16和UTF-32（python不支持）是很关键的，但是对UTF-8而言可有可无，因为后者不需要大小端对齐（详情请看<a href="http://lenciel.com/docs/unicode-complete/">这里</a>）。BOM在windows平台上见到得较多，长度2个bytes到4个bytes不等，codec提供了方法检验BOM：</li>
+</ul>
+
+
+<pre><code class="python">sample.startswith(codecs.BOM\_UTF16\_LE)  
+sample.startswith(codecs.BOM\_UTF16\_BE)  
+sample.startswith(codecs.BOM_UTF8) 
+</code></pre>
+
+<p>有时候我们是从文件读入内容进行解码，需要去除BOM部分。UTF-16的格式，python会自动去除BOM，UTF-8格式的需要显式调用：</p>
+
+<pre><code class="python">s.decode(utf-8-sig) 
+</code></pre>
+
+<ul>
+<li><p>文件或者网页使用的编码方式还没有很完美的方法进行检测。文件的话从BOM判断算是一个不错的选择。网页的话先查看header里面的<code>Content-Type</code>内容。</p></li>
+<li><p>有些第三方库如果没有支持unicode功能的话，你要自己重写一部分wrapper。自己写的代码，在ut的时候一定要用unicode进行测试。</p></li>
+</ul>
+
+
+  
+    <footer>
+      <p class="meta">
+        
+        
+
+
+
+
+
+        
+      </p>
+      
+        <div class="sharing">
+  
+  
+  
+  <!-- JiaThis Button BEGIN -->
+  <!--<div class="jiathis_style_24x24">
+    <a class="jiathis_button_qzone"></a>
+    <a class="jiathis_button_tsina"></a>
+    <a class="jiathis_button_tqq"></a>
+    <a class="jiathis_button_weixin"></a>
+    <a class="jiathis_button_renren"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+    <a class="jiathis_counter_style"></a>
+    </div>
+    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>-->
+  <!-- JiaThis Button END -->
+</div>
+
+      
+    </footer>
+  
+</article>
+
+</div>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a>
+<span class="theme-version">Copyright &copy; 2004-2017 by Lenciel</span>
+  <section class="contruction-wrap">
+    <div class="contruction"></div>
+  </section>
+</p>
+
+</footer>
+  
+
+
+
+
+<script type="text/javascript">
+  var stylesheet = document.createElement('link');
+  stylesheet.href = '/assets/stylesheets/screen.css';
+  stylesheet.rel = 'stylesheet';
+  stylesheet.type = 'text/css';
+  document.getElementsByTagName('head')[0].appendChild(stylesheet);
+</script>
+<script type="text/javascript">
+  var stylesheet = document.createElement('link');
+  stylesheet.href = '/assets/stylesheets/data-table.css';
+  stylesheet.rel = 'stylesheet';
+  stylesheet.type = 'text/css';
+  document.getElementsByTagName('head')[0].appendChild(stylesheet);
+</script>
+
+</body>
+</html>
