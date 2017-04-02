@@ -167,14 +167,16 @@ end
 ##############
 
 desc "Default deploy task"
-task :deploy do
+task :prepare_deploy do
+  Rake::Task[:integrate].execute
+  Rake::Task[:generate].execute
   Rake::Task[:minify_html].execute
   # Rake::Task[:copydot].invoke(source_dir, deploy_dir)
-  Rake::Task["#{deploy_default}"].execute
 end
 
 desc "Generate website and deploy"
-task :gen_deploy => [:integrate, :generate, :deploy] do
+task :deploy do
+  Rake::Task["#{deploy_default}"].execute
 end
 
 desc "copy dot files for deployment"
