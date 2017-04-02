@@ -1,8 +1,7 @@
 all: update
 
-gen:
-	rake generate
-	rake minify_html
+prepare:
+	rake prepare_deploy
 
 preview:
 	rake preview
@@ -17,10 +16,9 @@ update_source:
 update_blog:
 	git checkout source \
 	git pull \
-	rake gen_deploy \
+	rake prepare_deploy \
 	git checkout master \
-	mv _site ../lenciel.github.io.new && rm -rf ../lenciel.github.io
-	mv ../lenciel.github.io.new ../lenciel.github.io
+	mv _site .site && rm -rf * && mv .site/* .
 	git add .; \
-	git commit -am "blog content update $$(date +%Y-%m-%d)"; \
+	git commit -am "Update blog content update $$(date +%Y-%m-%d)"; \
 	git push origin master
