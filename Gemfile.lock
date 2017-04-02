@@ -28,7 +28,7 @@ GEM
       safe_yaml (~> 1.0)
     jekyll-gist (1.4.0)
       octokit (~> 4.2)
-    jekyll-lenciel-theme (0.2.5)
+    jekyll-lenciel-theme (0.2.7)
       jekyll (~> 3.4)
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.5.0)
@@ -75,7 +75,7 @@ DEPENDENCIES
   html_compressor
   jekyll (= 3.4.3)
   jekyll-gist
-  jekyll-lenciel-theme (~> 0.2.5)
+  jekyll-lenciel-theme (~> 0.2.7)
   jekyll-paginate
   jekyll-sitemap
   parallel

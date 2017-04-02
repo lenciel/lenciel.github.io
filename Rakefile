@@ -168,7 +168,6 @@ end
 
 desc "Default deploy task"
 task :deploy do
-  Rake::Task[:minify_js].execute
   Rake::Task[:minify_html].execute
   # Rake::Task[:copydot].invoke(source_dir, deploy_dir)
   Rake::Task["#{deploy_default}"].execute
@@ -252,7 +251,7 @@ end
 
 desc "Combine and minify js"
 task :minify_js do
-  scripts_dir = "assets/javascripts"
+  scripts_dir = "#{deploy_dir}/assets/javascripts"
   js_for_combine.each do |k, v|
     if File.exist?("#{scripts_dir}/#{k}")
       newer = false
@@ -280,7 +279,7 @@ end
 
 desc "Minify HTML"
 task :minify_html, :dir do |t, args|
-  args.with_defaults(:dir => "#{public_dir}")
+  args.with_defaults(:dir => "#{deploy_dir}")
   htmls = Dir.glob("#{args.dir}/**/*.html")
   progressbar = ProgressBar.create(:title => "Minify HTML",
                                    :starting_at => 0,

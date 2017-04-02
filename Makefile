@@ -1,5 +1,9 @@
 all: update
 
+gen:
+	rake generate
+	rake minify_html
+
 preview:
 	rake preview
 
