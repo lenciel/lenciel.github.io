@@ -76,6 +76,7 @@ task :preview do
   [jekyllPid].each { |pid| Process.wait(pid) }
 end
 
+# maybe try jekyll-compose later rather than homebrew commands
 # usage rake new_post[my-new-post] or rake new_post['my new post'] or rake new_post (defaults to "new-post")
 desc "Begin a new post in #{posts_dir}"
 task :new_post, :title do |t, args|
