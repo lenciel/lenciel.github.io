@@ -1,115 +1,4 @@
-
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>@Lenciel</title>
-  <meta name="author" content="Lenciel">
-
-  
-  <meta name="description" content="
-  
-  
-  
-    
-      
-  
-    
-      Boolean Objects和Boolean Primitives
-    
-    
-      
-        
-
-
-
-
-
-        
-      
-    
-  
-
-
-  Javascript有一个小陷阱：...">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://lenciel.com/posts/52/">
-  <link href="/favicon.png" rel="icon">
-  <script src="/assets/javascripts/libs/modernizr.custom.55630.js"></script>
-  <script src="/assets/javascripts/ender.js"></script>
-  <script src="/assets/javascripts/libs/jquery.min.js"></script>
-  <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml">
-  
-<meta property="og:type" content="article" />
-<meta property="og:url" content="http://lenciel.com/posts/52/" />
-<meta property="og:description" content="
-  
-  
-  
-    
-      
-  
-    
-      Boolean Objects和Boolean Primitives
-    
-    
-      
-        
-
-
-
-
-
-        
-      
-    
-  
-
-
-  Javascript有一个小陷阱：..." />
-
-<meta property="og:site_name" content="http://lenciel.com" />
-<meta property="article:author" content="http://lenciel.com">
-
-
-
-<meta itemprop="description" content="
-  
-  
-  
-    
-      
-  
-    
-      Boolean Objects和Boolean Primitives
-    
-    
-      
-        
-
-
-
-
-
-        
-      
-    
-  
-
-
-  Javascript有一个小陷阱：..." />
-
-
-  <script>
+<!DOCTYPE html> <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]--> <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]--> <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]--> <head> <meta charset="utf-8"> <title>@Lenciel</title> <meta name="author" content="Lenciel"> <meta name="description" content=" Boolean Objects和Boolean Primitives Javascript有一个小陷阱：..."> <meta name="HandheldFriendly" content="True"> <meta name="MobileOptimized" content="320"> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="canonical" href="http://lenciel.com/posts/52/"> <link href="/favicon.png" rel="icon"> <script src="/assets/javascripts/app.js"></script> <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml"> <meta property="og:type" content="article"/> <meta property="og:url" content="http://lenciel.com/posts/52/"/> <meta property="og:description" content=" Boolean Objects和Boolean Primitives Javascript有一个小陷阱：..."/> <meta property="og:site_name" content="http://lenciel.com"/> <meta property="article:author" content="http://lenciel.com"> <meta itemprop="description" content=" Boolean Objects和Boolean Primitives Javascript有一个小陷阱：..."/> <script>
     var _hmt = _hmt || [];
     (function() {
         var hm = document.createElement("script");
@@ -117,11 +6,7 @@
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
     })();
-</script>
-
-
-  
-<script>
+</script> <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -130,79 +15,13 @@
   ga('create', 'UA-175991-6', 'auto');
   ga('send', 'pageview');
 
-</script>
-
-
-</head>
-
-<body    class="collapse-sidebar sidebar-footer" >
-  <header role="banner"><hgroup>
-  <h1><a href="/">@Lenciel</a></h1>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<ul class="main-navigation">
-  <li><a href="/"><i class="icon-home"></i>Home</a></li>
-  <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li>
-  <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div class="blog-index">
-  
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2013/08/boolean-objects-and-boolean-primitives/">Boolean Objects和Boolean Primitives</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Javascript有一个小陷阱：每个primitive都有自己的constructor，但是这些constructor构造出来的却不是primitive。</p>
-
-<p>以boolean为例，大多数的代码里面用的是primitive值，比如：</p>
-
-<pre><code class="javascript">var primitiveTrue = true;
+</script> </head> <body class="collapse-sidebar sidebar-footer"> <header role="banner"><hgroup> <h1><a href="/">@Lenciel</a></h1> </hgroup> </header> <nav role="navigation"><ul class="subscription" data-subscription="rss"> <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li> </ul> <ul class="main-navigation"> <li><a href="/"><i class="icon-home"></i>Home</a></li> <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li> <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li> </ul> </nav> <div id="main"> <div id="content"> <div class="blog-index"> <article> <header> <h1 class="entry-title"><a href="/2013/08/boolean-objects-and-boolean-primitives/">Boolean Objects和Boolean Primitives</a></h1> <p class="meta"> </p> </header> <div class="entry-content"><p>Javascript有一个小陷阱：每个primitive都有自己的constructor，但是这些constructor构造出来的却不是primitive。</p> <p>以boolean为例，大多数的代码里面用的是primitive值，比如：</p> <pre><code class="javascript">var primitiveTrue = true;
 var primitiveFalse = false;
-</code></pre>
-
-<p>但实际上javascript里面还有Boolean函数，可以返回一个boolean的primitive：</p>
-
-<pre><code class="javascript">var functionTrue = Boolean(true);
+</code></pre> <p>但实际上javascript里面还有Boolean函数，可以返回一个boolean的primitive：</p> <pre><code class="javascript">var functionTrue = Boolean(true);
 var functionFalse = Boolean(false);
-</code></pre>
-
-<p>不过，上面这个Boolean函数前面如果有<code>new</code>就是一个constructor了：</p>
-
-<pre><code class="javascript">var constructorTrue = new Boolean(true);
+</code></pre> <p>不过，上面这个Boolean函数前面如果有<code>new</code>就是一个constructor了：</p> <pre><code class="javascript">var constructorTrue = new Boolean(true);
 var constructorFalse = new Boolean(false);
-</code></pre>
-
-<p>比较tricky的地方在于，上面这种constructor返回的不是primitive，而是对象：</p>
-
-<pre><code class="javascript">// Outputs: true
+</code></pre> <p>比较tricky的地方在于，上面这种constructor返回的不是primitive，而是对象：</p> <pre><code class="javascript">// Outputs: true
 console.log(primitiveTrue);
 
 // Outputs: true
@@ -210,139 +29,33 @@ console.log(functionTrue);
 
 // Outputs: Boolean {}
 console.log(constructorTrue);
-</code></pre>
-
-<p>由于javascript的类型转换比较aggressive，比如你把一个int和string相加，这个int会自动转成string：</p>
-
-<pre><code class="javascript">// Outputs: "22"
+</code></pre> <p>由于javascript的类型转换比较aggressive，比如你把一个int和string相加，这个int会自动转成string：</p> <pre><code class="javascript">// Outputs: "22"
 console.log("2" + 2);
-</code></pre>
-
-<p>所以使用constructor构造对象来作为条件判断的输入其实是比较危险的。因为一个对象被用来做条件判断时，它经常会被转成true：</p>
-
-<pre><code class="javascript">// Outputs: "Objects coerce to true."
+</code></pre> <p>所以使用constructor构造对象来作为条件判断的输入其实是比较危险的。因为一个对象被用来做条件判断时，它经常会被转成true：</p> <pre><code class="javascript">// Outputs: "Objects coerce to true."
 if ({}) { console.log("Objects coerce to true."); }
-</code></pre>
-
-<p>特别的，一个Boolean对象即使内部值是false，也会被强制转换成true：</p>
-
-<pre><code class="javascript">// Outputs: "My false Boolean object is truthy!"
+</code></pre> <p>特别的，一个Boolean对象即使内部值是false，也会被强制转换成true：</p> <pre><code class="javascript">// Outputs: "My false Boolean object is truthy!"
 if (constructorFalse) {
     console.log("My false Boolean object is truthy!");
 } else {
     console.log("My false Boolean object is falsy!");
 }
-</code></pre>
-
-<p>如果你实在是要取一个Boolean对象的值需要用<code>valueOf</code>方法：</p>
-
-<pre><code class="javascript">// Outputs: "The value of my false Boolean object is falsy!"
+</code></pre> <p>如果你实在是要取一个Boolean对象的值需要用<code>valueOf</code>方法：</p> <pre><code class="javascript">// Outputs: "The value of my false Boolean object is falsy!"
 if (constructorFalse.valueOf()) {
     console.log("The value of my false Boolean object is truthy!");
 } else {
     console.log("The value of my false Boolean object is falsy!");
 }
-</code></pre>
-
-<p>但是由于Boolean对象这么tricky，这种代码是非常不受欢迎的：事实上JSHint和JSLint这些工具发现你使用了Boolean的constructor就会报一个<code>potential error</code>。</p>
-
-<p>如果你要把一个其他类型的值转成boolean值，也不要用constructor，尽量直接用Boolean函数或者是用两个<code>!</code>操作符：</p>
-
-<pre><code class="javascript">// Two approaches to coercing 0 into false
+</code></pre> <p>但是由于Boolean对象这么tricky，这种代码是非常不受欢迎的：事实上JSHint和JSLint这些工具发现你使用了Boolean的constructor就会报一个<code>potential error</code>。</p> <p>如果你要把一个其他类型的值转成boolean值，也不要用constructor，尽量直接用Boolean函数或者是用两个<code>!</code>操作符：</p> <pre><code class="javascript">// Two approaches to coercing 0 into false
 var byFunction = Boolean(0);
 var byNotNot = !!0;
-</code></pre>
-
-<p>两种做法都不错，但是如果你看javascript代码比较多会发现后面这种使用更普遍：可能是因为能少打点儿字。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2013/08/using-raspberry-pi-with-hdmi-to-vga-adapter/">Raspberry Pi上使用HDMI转接VGA线</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="http://www.raspberrypi.org/%E2%80%8E">Raspberry Pi</a>的默认提供了HDMI接口，遇到手边显示器比较老并且电视机也比较老就不好办。</p>
-
-<p>如果直接买一根<a href="http://item.jd.com/674899.html">HDMI转VGA的线</a>，直接连上去很可能是黑屏，这是因为默认的配置文件不支持这种连接方式，需要修改配置文件。</p>
-
-<p>需要修改的是 <code>/boot/config.txt</code>里面的几个配置值，具体的讨论<a href="http://www.raspberrypi.org/phpBB3/viewtopic.php?f=76&amp;t=33477">在这里</a>：</p>
-
-<pre><code>disable_overscan=1
+</code></pre> <p>两种做法都不错，但是如果你看javascript代码比较多会发现后面这种使用更普遍：可能是因为能少打点儿字。</p> </div> </article> <article> <header> <h1 class="entry-title"><a href="/2013/08/using-raspberry-pi-with-hdmi-to-vga-adapter/">Raspberry Pi上使用HDMI转接VGA线</a></h1> <p class="meta"> </p> </header> <div class="entry-content"><p><a href="http://www.raspberrypi.org/%E2%80%8E">Raspberry Pi</a>的默认提供了HDMI接口，遇到手边显示器比较老并且电视机也比较老就不好办。</p> <p>如果直接买一根<a href="http://item.jd.com/674899.html">HDMI转VGA的线</a>，直接连上去很可能是黑屏，这是因为默认的配置文件不支持这种连接方式，需要修改配置文件。</p> <p>需要修改的是 <code>/boot/config.txt</code>里面的几个配置值，具体的讨论<a href="http://www.raspberrypi.org/phpBB3/viewtopic.php?f=76&amp;t=33477">在这里</a>：</p> <pre><code>disable_overscan=1
 hdmi_group=2
 hdmi_mode=35
 hdmi_drive=2
-</code></pre>
-
-<p>修改完毕之后重新启动就可以看到画面了。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  <div class="pagination">
-    
-      <a class="prev" href="/posts/53">&larr; Older</a>
-    
-    <a href="/archives">Archives</a>
-    
-    <a class="next" href="/posts/51">Newer &rarr;</a>
-    
-  </div>
-</div>
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a>
-<span class="theme-version">Copyright &copy; 2004-2017 by Lenciel</span>
-  <section class="contruction-wrap">
-    <div class="contruction"></div>
-  </section>
-</p>
-
-</footer>
-  
-
-
-
-
-<script type="text/javascript">
+</code></pre> <p>修改完毕之后重新启动就可以看到画面了。</p> </div> </article> <div class="pagination"> <a class="prev" href="/posts/53">&larr; Older</a> <a href="/archives">Archives</a> <a class="next" href="/posts/51">Newer &rarr;</a> </div> </div> </div> </div> <footer role="contentinfo"><p> Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a> <span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span> <section class="contruction-wrap"> <div class="contruction"></div> </section> </p> </footer> <script type="text/javascript">
   var stylesheet = document.createElement('link');
-  stylesheet.href = '/assets/stylesheets/screen.css';
+  stylesheet.href = '/assets/stylesheets/app.css';
   stylesheet.rel = 'stylesheet';
   stylesheet.type = 'text/css';
   document.getElementsByTagName('head')[0].appendChild(stylesheet);
-</script>
-<script type="text/javascript">
-  var stylesheet = document.createElement('link');
-  stylesheet.href = '/assets/stylesheets/data-table.css';
-  stylesheet.rel = 'stylesheet';
-  stylesheet.type = 'text/css';
-  document.getElementsByTagName('head')[0].appendChild(stylesheet);
-</script>
-
-</body>
-</html>
+</script> </body> </html>

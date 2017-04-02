@@ -1,115 +1,4 @@
-
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>@Lenciel</title>
-  <meta name="author" content="Lenciel">
-
-  
-  <meta name="description" content="
-  
-  
-  
-    
-      
-  
-    
-      Making fixture with factory boy and faker
-    
-    
-      
-        
-
-
-
-
-
-        
-      
-    
-  
-
-
-  我们在Django项...">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://lenciel.com/posts/16/">
-  <link href="/favicon.png" rel="icon">
-  <script src="/assets/javascripts/libs/modernizr.custom.55630.js"></script>
-  <script src="/assets/javascripts/ender.js"></script>
-  <script src="/assets/javascripts/libs/jquery.min.js"></script>
-  <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml">
-  
-<meta property="og:type" content="article" />
-<meta property="og:url" content="http://lenciel.com/posts/16/" />
-<meta property="og:description" content="
-  
-  
-  
-    
-      
-  
-    
-      Making fixture with factory boy and faker
-    
-    
-      
-        
-
-
-
-
-
-        
-      
-    
-  
-
-
-  我们在Django项..." />
-
-<meta property="og:site_name" content="http://lenciel.com" />
-<meta property="article:author" content="http://lenciel.com">
-
-
-
-<meta itemprop="description" content="
-  
-  
-  
-    
-      
-  
-    
-      Making fixture with factory boy and faker
-    
-    
-      
-        
-
-
-
-
-
-        
-      
-    
-  
-
-
-  我们在Django项..." />
-
-
-  <script>
+<!DOCTYPE html> <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]--> <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]--> <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]--> <head> <meta charset="utf-8"> <title>@Lenciel</title> <meta name="author" content="Lenciel"> <meta name="description" content=" Making fixture with factory boy and faker 我们在Django项..."> <meta name="HandheldFriendly" content="True"> <meta name="MobileOptimized" content="320"> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="canonical" href="http://lenciel.com/posts/16/"> <link href="/favicon.png" rel="icon"> <script src="/assets/javascripts/app.js"></script> <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml"> <meta property="og:type" content="article"/> <meta property="og:url" content="http://lenciel.com/posts/16/"/> <meta property="og:description" content=" Making fixture with factory boy and faker 我们在Django项..."/> <meta property="og:site_name" content="http://lenciel.com"/> <meta property="article:author" content="http://lenciel.com"> <meta itemprop="description" content=" Making fixture with factory boy and faker 我们在Django项..."/> <script>
     var _hmt = _hmt || [];
     (function() {
         var hm = document.createElement("script");
@@ -117,11 +6,7 @@
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
     })();
-</script>
-
-
-  
-<script>
+</script> <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -130,95 +15,10 @@
   ga('create', 'UA-175991-6', 'auto');
   ga('send', 'pageview');
 
-</script>
-
-
-</head>
-
-<body    class="collapse-sidebar sidebar-footer" >
-  <header role="banner"><hgroup>
-  <h1><a href="/">@Lenciel</a></h1>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<ul class="main-navigation">
-  <li><a href="/"><i class="icon-home"></i>Home</a></li>
-  <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li>
-  <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div class="blog-index">
-  
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2014/12/making-fixture-with-factory-boy-and-faker/">Making fixture with factory boy and faker</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>我们在Django项目的开发和测试过程中经常需要mock一些数据作为<a href="https://docs.djangoproject.com/en/1.7/howto/initial-data/">fixture</a>，比较常见的做法是：</p>
-
-<ol>
-<li>进行一些操作创建测试数据</li>
-<li>使用<code>dumpdata</code>命令导出json格式的数据</li>
-<li>以导出的json为模板构造测试数据用<code>loaddata</code>命令导入到数据库</li>
-</ol>
-
-
-<p>这样对于大多数场景也算够用了，但是你总会遇到某一天客户走来说：“我想看看那个报表生成出来啥样，能不能创建两千条记录？”</p>
-
-<p>这种时候你大概你第一反应是把之前那个json搞来copy-paste出两千份数据。但很快你就会意识到那是不行的：要构建一个对象，你常常需要先构建它外键的对象，而实际上线的项目它的数据库结构是非常复杂的（数据库结构图的生成见<a href="http://lenciel.com/2014/12/integrate-schemaspy-with-sphinx-build-for-django-database-design-visualization/">这里</a>），所以构建两千条记录的工作量会远远超过你的想象：</p>
-
-<p><img src="/downloads/images/2014_12/database_design_visualization.png" title="schemaSpy..." alt="schemaSpy" /></p>
-
-<p>最近本座试用了<a href="https://github.com/rbarrois/factory_boy/">factory boy</a>和<a href="https://github.com/joke2k/faker">faker</a>的组合，感觉还比较好用。</p>
-
-<a name="Factory.Boy"></a>
-<h2>Factory Boy</h2>
-
-<p>最开始找这类批量生成测试数据的库，主要考察的是<a href="https://github.com/vandersonmota/model_mommy">Model Mommy</a>和<a href="https://github.com/rbarrois/factory_boy/">Factory Boy</a>。看了一下文档感觉两者的差别并不算很大，但是<a href="http://movie.douban.com/subject/1898357/">Factory Girl</a>里面的<a href="http://movie.douban.com/celebrity/1003485/">Sienna Miller</a>实在是让人过目不忘所以有什么好犹豫的呢？</p>
-
-<p>Factories的文档上说明了基本的用法，需要注意的主要是如何生成有一定依赖关系的一组测试对象。</p>
-
-<a name="L............"></a>
-<h3>数据构造</h3>
-
-<p>Factory Boy下的数据构造主要是通过<code>Sequence</code>和<code>Fuzz</code>两个包来完成。</p>
-
-<p><code>Sequence</code>故名思议是顺序生成的，比如你要让生成的数据有规律的用户名和电话号码，这样你看到电话<code>13000000001</code>就是是对应<code>user0001</code>：</p>
-
-<pre><code class="python">
+</script> </head> <body class="collapse-sidebar sidebar-footer"> <header role="banner"><hgroup> <h1><a href="/">@Lenciel</a></h1> </hgroup> </header> <nav role="navigation"><ul class="subscription" data-subscription="rss"> <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li> </ul> <ul class="main-navigation"> <li><a href="/"><i class="icon-home"></i>Home</a></li> <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li> <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li> </ul> </nav> <div id="main"> <div id="content"> <div class="blog-index"> <article> <header> <h1 class="entry-title"><a href="/2014/12/making-fixture-with-factory-boy-and-faker/">Making fixture with factory boy and faker</a></h1> <p class="meta"> </p> </header> <div class="entry-content"><p>我们在Django项目的开发和测试过程中经常需要mock一些数据作为<a href="https://docs.djangoproject.com/en/1.7/howto/initial-data/">fixture</a>，比较常见的做法是：</p> <ol> <li>进行一些操作创建测试数据</li> <li>使用<code>dumpdata</code>命令导出json格式的数据</li> <li>以导出的json为模板构造测试数据用<code>loaddata</code>命令导入到数据库</li> </ol> <p>这样对于大多数场景也算够用了，但是你总会遇到某一天客户走来说：“我想看看那个报表生成出来啥样，能不能创建两千条记录？”</p> <p>这种时候你大概你第一反应是把之前那个json搞来copy-paste出两千份数据。但很快你就会意识到那是不行的：要构建一个对象，你常常需要先构建它外键的对象，而实际上线的项目它的数据库结构是非常复杂的（数据库结构图的生成见<a href="http://lenciel.com/2014/12/integrate-schemaspy-with-sphinx-build-for-django-database-design-visualization/">这里</a>），所以构建两千条记录的工作量会远远超过你的想象：</p> <p><img src="/downloads/images/2014_12/database_design_visualization.png" title="schemaSpy..." alt="schemaSpy"/></p> <p>最近本座试用了<a href="https://github.com/rbarrois/factory_boy/">factory boy</a>和<a href="https://github.com/joke2k/faker">faker</a>的组合，感觉还比较好用。</p> <a name="Factory.Boy"></a> <h2>Factory Boy</h2> <p>最开始找这类批量生成测试数据的库，主要考察的是<a href="https://github.com/vandersonmota/model_mommy">Model Mommy</a>和<a href="https://github.com/rbarrois/factory_boy/">Factory Boy</a>。看了一下文档感觉两者的差别并不算很大，但是<a href="http://movie.douban.com/subject/1898357/">Factory Girl</a>里面的<a href="http://movie.douban.com/celebrity/1003485/">Sienna Miller</a>实在是让人过目不忘所以有什么好犹豫的呢？</p> <p>Factories的文档上说明了基本的用法，需要注意的主要是如何生成有一定依赖关系的一组测试对象。</p> <a name="L............"></a> <h3>数据构造</h3> <p>Factory Boy下的数据构造主要是通过<code>Sequence</code>和<code>Fuzz</code>两个包来完成。</p> <p><code>Sequence</code>故名思议是顺序生成的，比如你要让生成的数据有规律的用户名和电话号码，这样你看到电话<code>13000000001</code>就是是对应<code>user0001</code>：</p> <pre><code class="python">
 user = Sequence(lambda n: u'user%04d' % n)
 phone = Sequence(lambda n: u'1300000%04d' % n)
-</code></pre>
-
-<p>而<code>Fuzz</code>则是随机的，主要用来构造像学校、专业或者生日这样的数据：</p>
-
-<pre><code class="python">
+</code></pre> <p>而<code>Fuzz</code>则是随机的，主要用来构造像学校、专业或者生日这样的数据：</p> <pre><code class="python">
 card_bank = FuzzyChoice([u'中国银行', u'中国招商银行', u'中国工商银行',
                       u'中国建设银行', u'成都银行'])
 major = FuzzyChoice([u'地球物理学', u'大气科学', u'海洋科学', u'力学',
@@ -230,47 +30,24 @@ major = FuzzyChoice([u'地球物理学', u'大气科学', u'海洋科学', u'力
                   u'公安技术', u'材料科学', u'材料', u'水利',
                   u'林业工程', u'轻工纺织食品', u'电子信息科学', u'其他'])
 birthday = FuzzyNaiveDateTime(dt.datetime(1992, 1, 1), dt.datetime(1996, 1, 1))
-</code></pre>
-
-<p>当然，有的字段，比如姓名、地址这类通过顺序或者是随机的从某个设定的集合抽取效果都不够理想，后面会看到怎么用<a href="https://github.com/joke2k/faker">faker</a>来构造它们。</p>
-
-<a name="L.................."></a>
-<h3>关联对象生成</h3>
-
-<p>关联对象的关系有很多种(1:1, 1:n, n:1, n:n)，主要都是通过组合运用<code>SubFactory</code>和<code>RelatedFactory</code>两者来生成，但具体的构造方式和先构造谁都要以实际情况而定。比如我们有User和Tester这样的1:1的关系：</p>
-
-<pre><code class="python">
+</code></pre> <p>当然，有的字段，比如姓名、地址这类通过顺序或者是随机的从某个设定的集合抽取效果都不够理想，后面会看到怎么用<a href="https://github.com/joke2k/faker">faker</a>来构造它们。</p> <a name="L.................."></a> <h3>关联对象生成</h3> <p>关联对象的关系有很多种(1:1, 1:n, n:1, n:n)，主要都是通过组合运用<code>SubFactory</code>和<code>RelatedFactory</code>两者来生成，但具体的构造方式和先构造谁都要以实际情况而定。比如我们有User和Tester这样的1:1的关系：</p> <pre><code class="python">
 class Tester(TimeBaseModel):
 
     user = models.OneToOneField(User,
                                 verbose_name=u'账号',
                                 related_name='tester')
     ...
-</code></pre>
-
-<p>这里在考虑是在<code>TesterFactory</code>里面把<code>User</code>作为<code>SubFactory</code>来生成，还是在<code>UserFactory</code>里面把<code>Tester</code>作为<code>RelatedFactory</code>来生成，主要就是看先后关系。很显然，在这里我们应该先构造系统里的User：</p>
-
-<pre><code class="python">
+</code></pre> <p>这里在考虑是在<code>TesterFactory</code>里面把<code>User</code>作为<code>SubFactory</code>来生成，还是在<code>UserFactory</code>里面把<code>Tester</code>作为<code>RelatedFactory</code>来生成，主要就是看先后关系。很显然，在这里我们应该先构造系统里的User：</p> <pre><code class="python">
 class TestUserFactory(UserFactory):
     ...
     tester = RelatedFactory('apps.tester.factories.TesterFactory', 'user')
-</code></pre>
-
-<p>这段代码告诉系统，在每个<code>TestUser</code>被构造的时候，用构造出来的<code>user</code>来创建一个1:1的<code>Tester</code>。这个<code>Tester</code>的构造会在<code>user</code>的<code>save</code>之前完成。</p>
-
-<p>然后在<code>Tester</code>的构造过程中你可以直接通过<code>SelfAttribute</code>使用传入的<code>user</code>:</p>
-
-<pre><code class="python">
+</code></pre> <p>这段代码告诉系统，在每个<code>TestUser</code>被构造的时候，用构造出来的<code>user</code>来创建一个1:1的<code>Tester</code>。这个<code>Tester</code>的构造会在<code>user</code>的<code>save</code>之前完成。</p> <p>然后在<code>Tester</code>的构造过程中你可以直接通过<code>SelfAttribute</code>使用传入的<code>user</code>:</p> <pre><code class="python">
 class TesterFactory(DjangoModelFactory):
     ...
     phone = SelfAttribute('user.phone')
     nick_name = SelfAttribute('user.nick_name')
     creator = SelfAttribute('user')
-</code></pre>
-
-<p>再比如，我们的<code>Tester</code>和<code>PlatformTask</code>都会关联到测试任务<code>TesterTask</code>，它们俩看起来都是<code>ForeinKey</code>。</p>
-
-<pre><code class="python">
+</code></pre> <p>再比如，我们的<code>Tester</code>和<code>PlatformTask</code>都会关联到测试任务<code>TesterTask</code>，它们俩看起来都是<code>ForeinKey</code>。</p> <pre><code class="python">
 class TesterTask(TestingDeviceMixin, TimeBaseModel):
     owner = models.ForeignKey(Tester,
                               verbose_name=u'测试人', )
@@ -278,36 +55,19 @@ class TesterTask(TestingDeviceMixin, TimeBaseModel):
     platform_task = models.ForeignKey(PlatformTask,
                                       verbose_name=u'任务',
                                       related_name=u'tester_tasks')
-</code></pre>
-
-<p>但对生成数据而言，我们的目标会是每个<code>Tester</code>在被创建的时候，都给它创建一个以这个<code>Tester</code>为<code>owner</code>的<code>TesterTask</code>，并且给这个<code>TesterTask</code>创建一个关联的<code>PlatformTask</code>。</p>
-
-<p>于是我们的写法就会是，首先在<code>TesterFactory</code>里面使用<code>RelatedFactory</code>来创建<code>TesterTask</code>:</p>
-
-<pre><code class="python">
+</code></pre> <p>但对生成数据而言，我们的目标会是每个<code>Tester</code>在被创建的时候，都给它创建一个以这个<code>Tester</code>为<code>owner</code>的<code>TesterTask</code>，并且给这个<code>TesterTask</code>创建一个关联的<code>PlatformTask</code>。</p> <p>于是我们的写法就会是，首先在<code>TesterFactory</code>里面使用<code>RelatedFactory</code>来创建<code>TesterTask</code>:</p> <pre><code class="python">
 class TesterFactory(DjangoModelFactory):
     ...
     tester_task = RelatedFactory('apps.tester.factories.TesterTaskFactory', 'owner')
     ...
-</code></pre>
-
-<p>然后在<code>TesterTaskFactory</code>里面创建<code>PlatformTask</code>，并且在构造的时候使用传入的<code>owner</code>的参数：</p>
-
-<pre><code class="python">
+</code></pre> <p>然后在<code>TesterTaskFactory</code>里面创建<code>PlatformTask</code>，并且在构造的时候使用传入的<code>owner</code>的参数：</p> <pre><code class="python">
 class TesterTaskFactory(DjangoModelFactory):
     ...
     platform_task = SubFactory('apps.platformtask.factories.PlatformTaskFactory',
                                company=SelfAttribute('..owner.user.company'),
                                owner=SelfAttribute('..owner.user'))
     ...
-</code></pre>
-
-<a name="faker"></a>
-<h2>faker</h2>
-
-<p>有很多字段，比如姓名、地址这些，纯粹用Fuzz的办法很难做到“贴近真实”。<a href="https://github.com/joke2k/faker">faker</a>就是用来解决这类字段的。</p>
-
-<pre><code class="python">
+</code></pre> <a name="faker"></a> <h2>faker</h2> <p>有很多字段，比如姓名、地址这些，纯粹用Fuzz的办法很难做到“贴近真实”。<a href="https://github.com/joke2k/faker">faker</a>就是用来解决这类字段的。</p> <pre><code class="python">
 from faker import Factory
 fake = Factory.create()
 
@@ -328,23 +88,10 @@ fake.text()
 # Aut molestias et maxime. Fugit autem facilis quos vero. Eius quibusdam possimus est.
 # Ea quaerat et quisquam. Deleniti sunt quam. Adipisci consequatur id in occaecati.
 # Et sint et. Ut ducimus quod nemo ab voluptatum.
-</code></pre>
-
-<p>这个包最可爱的地方就是支持本地化，比如一个随机的中文姓名可以这么去构造：</p>
-
-<pre><code class="python">
+</code></pre> <p>这个包最可爱的地方就是支持本地化，比如一个随机的中文姓名可以这么去构造：</p> <pre><code class="python">
 faker = FakerFactory.create('zh_CN')
 name = lazy_attribute(lambda x: faker.name())
-</code></pre>
-
-<a name="L......fixture"></a>
-<h2>生成fixture</h2>
-
-<p>因为<a href="https://github.com/rbarrois/factory_boy/">factory boy</a>和<a href="https://github.com/joke2k/faker">faker</a>主要的作用是在测试里面去mock数据，所以要用它们生成fixture不是那么容易。这是因为Django的整个设计上就很注意避免你把测试的数据写到生产的数据库，所以测试都会在一个在<code>Setup</code>阶段被创建，在<code>TearDown</code>阶段被删除的临时数据库里面进行（我看了一下，在开发版本的Django上已经加了一个<code>--keepdb</code>的参数使得你可以<a href="https://docs.djangoproject.com/en/dev/ref/django-admin/#django-admin-option---keepdb">保留你用来运行测试的数据库了</a>）。</p>
-
-<p>所以我们可以在一个测试的<code>Setup</code>阶段把数据生成后，直接调用<code>dumpdata</code>命令来把数据<code>dump</code>出去：</p>
-
-<pre><code class="python">
+</code></pre> <a name="L......fixture"></a> <h2>生成fixture</h2> <p>因为<a href="https://github.com/rbarrois/factory_boy/">factory boy</a>和<a href="https://github.com/joke2k/faker">faker</a>主要的作用是在测试里面去mock数据，所以要用它们生成fixture不是那么容易。这是因为Django的整个设计上就很注意避免你把测试的数据写到生产的数据库，所以测试都会在一个在<code>Setup</code>阶段被创建，在<code>TearDown</code>阶段被删除的临时数据库里面进行（我看了一下，在开发版本的Django上已经加了一个<code>--keepdb</code>的参数使得你可以<a href="https://docs.djangoproject.com/en/dev/ref/django-admin/#django-admin-option---keepdb">保留你用来运行测试的数据库了</a>）。</p> <p>所以我们可以在一个测试的<code>Setup</code>阶段把数据生成后，直接调用<code>dumpdata</code>命令来把数据<code>dump</code>出去：</p> <pre><code class="python">
 def setUp(self):
     company = CompanyFactory.create(id=3)
     TestUserFactory.create(company=company, id=3000)
@@ -354,90 +101,15 @@ def setUp(self):
 
     create_fixture('tester', 'tester.json')
     create_fixture('account', 'account.json')
-</code></pre>
-
-<p>注意，这里在创建的时候指定id主要是为了让初始的id比较大，避免和系统里面已经有的id撞车导致你构造的测试数据在<code>loaddata</code>的时候报错或者覆盖现有数据。</p>
-
-<p>其中，<code>create_fixture</code>函数内容如下：</p>
-
-<pre><code class="python">def create_fixture(app_name, filename):
+</code></pre> <p>注意，这里在创建的时候指定id主要是为了让初始的id比较大，避免和系统里面已经有的id撞车导致你构造的测试数据在<code>loaddata</code>的时候报错或者覆盖现有数据。</p> <p>其中，<code>create_fixture</code>函数内容如下：</p> <pre><code class="python">def create_fixture(app_name, filename):
     buf = StringIO()
     management.call_command('dumpdata', app_name, indent=4, stdout=buf)
     buf.seek(0)
     with open(filename, 'w') as f:
         f.write(buf.read().encode('utf-8'))
-</code></pre>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2014/12/integrate-schemaspy-with-sphinx-build-for-django-database-design-visualization/">Integrate schemaSpy with Sphinx build</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img src="/downloads/images/2014_12/schemaSpy.png" title="schemaSpy..." alt="schemaSpy" /></p>
-
-<p>在做项目的时候，客户或者合作的部门常常问研发要“数据库设计”。在古代，瀑布式开发的第一个阶段是做架构设计和写文档，所以这样的需求一般都能被“充分满足”。而在我们现在的项目节奏和迭代速度都很快，数据库的设计在项目初期经常也在变化，如何能够比较方便的文档化这些变更？</p>
-
-<p>对开发团队内部来说，我个人觉得Django的South或者是1.7之后加入的<a href="http://lenciel.com/2014/08/django-1-dot-7-migrations/">Migration</a>里面每次变更生成的migration文件就已经足够开发人员了解底层的设计发生了什么变化。</p>
-
-<p>而对外提供的文档，主要是在更高层级进行设计的沟通，所以之前我们一般是通过<a href="https://github.com/django-extensions/django-extensions">django-extension</a>里面的<code>graph_models</code>命令来生成简单的关系图：</p>
-
-<pre><code class="bash"># Create a PNG image file called my_project_visualized.png with application grouping
+</code></pre> </div> </article> <article> <header> <h1 class="entry-title"><a href="/2014/12/integrate-schemaspy-with-sphinx-build-for-django-database-design-visualization/">Integrate schemaSpy with Sphinx build</a></h1> <p class="meta"> </p> </header> <div class="entry-content"><p><img src="/downloads/images/2014_12/schemaSpy.png" title="schemaSpy..." alt="schemaSpy"/></p> <p>在做项目的时候，客户或者合作的部门常常问研发要“数据库设计”。在古代，瀑布式开发的第一个阶段是做架构设计和写文档，所以这样的需求一般都能被“充分满足”。而在我们现在的项目节奏和迭代速度都很快，数据库的设计在项目初期经常也在变化，如何能够比较方便的文档化这些变更？</p> <p>对开发团队内部来说，我个人觉得Django的South或者是1.7之后加入的<a href="http://lenciel.com/2014/08/django-1-dot-7-migrations/">Migration</a>里面每次变更生成的migration文件就已经足够开发人员了解底层的设计发生了什么变化。</p> <p>而对外提供的文档，主要是在更高层级进行设计的沟通，所以之前我们一般是通过<a href="https://github.com/django-extensions/django-extensions">django-extension</a>里面的<code>graph_models</code>命令来生成简单的关系图：</p> <pre><code class="bash"># Create a PNG image file called my_project_visualized.png with application grouping
 $ ./manage.py graph_models -a -g -o my_project_visualized.png
-</code></pre>
-
-<p>效果如下：</p>
-
-<p><img src="/downloads/images/2014_12/django_extension.svg" title="django-extension-sample..." alt="django-extension-sample" /></p>
-
-<p>这里的图是通过<a href="http://www.graphviz.org/">graphviz</a>来完成的，可以看到一般的了解也足够了，但是缺点主要是：</p>
-
-<ol>
-<li>生成的关系图比较简陋</li>
-<li>由于是图片，一旦表比较多浏览起来并不是那么灵活</li>
-</ol>
-
-
-<a name="L......schemaSpy"></a>
-<h2>使用schemaSpy</h2>
-
-<p>于是在新的项目里面本座选用了看起来更美好的<a href="http://schemaspy.sourceforge.net/">schemaSpy</a>，因为：</p>
-
-<ol>
-<li>轻量但支持多种数据库（jdbc），针对Django的test/stage/prod环境都可以使用</li>
-<li><a href="http://schemaspy.sourceforge.net/sample/">功能非常强大</a>，并且有命令行支持，可以集成到CI</li>
-</ol>
-
-
-<p>不过和大多数开源工具一样，它的文档也是乱糟糟的。以开发环境为例，我们一般使用sqlite作为数据库，要在Mac下面成功运行schemaSpy连接sqlite，你需要：</p>
-
-<ol>
-<li>下载最新的<a href="http://sourceforge.net/projects/schemaspy/files/">SchemaSpy jar包</a></li>
-<li>下载最新的<a href="https://bitbucket.org/xerial/sqlite-jdbc">Xerial Sqlite JDBC jar</a>包<code>sqlite-xerial.jar</code></li>
-<li><p>创建一个<code>sqlite-xerial.properties</code>文件，内容如下：</p>
-
-<pre><code class="`"> # Use -dp to override.
+</code></pre> <p>效果如下：</p> <p><img src="/downloads/images/2014_12/django_extension.svg" title="django-extension-sample..." alt="django-extension-sample"/></p> <p>这里的图是通过<a href="http://www.graphviz.org/">graphviz</a>来完成的，可以看到一般的了解也足够了，但是缺点主要是：</p> <ol> <li>生成的关系图比较简陋</li> <li>由于是图片，一旦表比较多浏览起来并不是那么灵活</li> </ol> <a name="L......schemaSpy"></a> <h2>使用schemaSpy</h2> <p>于是在新的项目里面本座选用了看起来更美好的<a href="http://schemaspy.sourceforge.net/">schemaSpy</a>，因为：</p> <ol> <li>轻量但支持多种数据库（jdbc），针对Django的test/stage/prod环境都可以使用</li> <li><a href="http://schemaspy.sourceforge.net/sample/">功能非常强大</a>，并且有命令行支持，可以集成到CI</li> </ol> <p>不过和大多数开源工具一样，它的文档也是乱糟糟的。以开发环境为例，我们一般使用sqlite作为数据库，要在Mac下面成功运行schemaSpy连接sqlite，你需要：</p> <ol> <li>下载最新的<a href="http://sourceforge.net/projects/schemaspy/files/">SchemaSpy jar包</a></li> <li>下载最新的<a href="https://bitbucket.org/xerial/sqlite-jdbc">Xerial Sqlite JDBC jar</a>包<code>sqlite-xerial.jar</code></li> <li><p>创建一个<code>sqlite-xerial.properties</code>文件，内容如下：</p> <pre><code class="`"> # Use -dp to override.
  description=SQLite
  connectionSpec=jdbc:sqlite:&lt;db&gt;
  db=database name
@@ -445,85 +117,13 @@ $ ./manage.py graph_models -a -g -o my_project_visualized.png
  #you may need to put the full path to the driver depending on your setup
  driverPath=sqlite-jdbc-3.8.7.jar
  selectTablesSql=.tables
-</code></pre></li>
-<li><p>运行命令：</p>
-
-<pre><code class="`"> java -jar schemaSpy_5.0.0.jar -t  sqlite-xerial.properties -db ../src/default.db  -o django-testbird -sso
-</code></pre></li>
-</ol>
-
-
-<p>会看到有<code>warning</code>，但是无需惊慌，我看了一下是schemaSpy的作者没有正确的处理<code>[]</code>。</p>
-
-<a name="L.........Sphinx"></a>
-<h2>集成到Sphinx</h2>
-
-<p>因为我们的项目都使用了Jenkins自动启动Sphinx来生成文档，所以理想的情况当然是：</p>
-
-<ol>
-<li>修改Django下某个app的<code>models.py</code></li>
-<li><code>make migration</code>生成migrations文件</li>
-<li>代码提交并push到gitlab</li>
-<li>Jenkins调用<code>django management command</code>完成表结构的变更</li>
-<li>Jenkins自动更新包括数据库设计在内的文档</li>
-</ol>
-
-
-<p>要实现#5，最简单的办法是在Sphinx文档目录下的<code>Makefile</code>里面加一个<code>target</code>：</p>
-
-<pre><code class="java">dbv:
+</code></pre></li> <li><p>运行命令：</p> <pre><code class="`"> java -jar schemaSpy_5.0.0.jar -t  sqlite-xerial.properties -db ../src/default.db  -o django-testbird -sso
+</code></pre></li> </ol> <p>会看到有<code>warning</code>，但是无需惊慌，我看了一下是schemaSpy的作者没有正确的处理<code>[]</code>。</p> <a name="L.........Sphinx"></a> <h2>集成到Sphinx</h2> <p>因为我们的项目都使用了Jenkins自动启动Sphinx来生成文档，所以理想的情况当然是：</p> <ol> <li>修改Django下某个app的<code>models.py</code></li> <li><code>make migration</code>生成migrations文件</li> <li>代码提交并push到gitlab</li> <li>Jenkins调用<code>django management command</code>完成表结构的变更</li> <li>Jenkins自动更新包括数据库设计在内的文档</li> </ol> <p>要实现#5，最简单的办法是在Sphinx文档目录下的<code>Makefile</code>里面加一个<code>target</code>：</p> <pre><code class="java">dbv:
     java -jar schemaSpy_5.0.0.jar -t sqlite-xerial.properties -db ../src/default.db  -o _db_virtualization/django-testproject -sso
-</code></pre>
-
-<p>然后在Jenkins调用的脚本里面加上<code>make dbv</code>就可以了。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  <div class="pagination">
-    
-      <a class="prev" href="/posts/17">&larr; Older</a>
-    
-    <a href="/archives">Archives</a>
-    
-    <a class="next" href="/posts/15">Newer &rarr;</a>
-    
-  </div>
-</div>
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a>
-<span class="theme-version">Copyright &copy; 2004-2017 by Lenciel</span>
-  <section class="contruction-wrap">
-    <div class="contruction"></div>
-  </section>
-</p>
-
-</footer>
-  
-
-
-
-
-<script type="text/javascript">
+</code></pre> <p>然后在Jenkins调用的脚本里面加上<code>make dbv</code>就可以了。</p> </div> </article> <div class="pagination"> <a class="prev" href="/posts/17">&larr; Older</a> <a href="/archives">Archives</a> <a class="next" href="/posts/15">Newer &rarr;</a> </div> </div> </div> </div> <footer role="contentinfo"><p> Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a> <span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span> <section class="contruction-wrap"> <div class="contruction"></div> </section> </p> </footer> <script type="text/javascript">
   var stylesheet = document.createElement('link');
-  stylesheet.href = '/assets/stylesheets/screen.css';
+  stylesheet.href = '/assets/stylesheets/app.css';
   stylesheet.rel = 'stylesheet';
   stylesheet.type = 'text/css';
   document.getElementsByTagName('head')[0].appendChild(stylesheet);
-</script>
-<script type="text/javascript">
-  var stylesheet = document.createElement('link');
-  stylesheet.href = '/assets/stylesheets/data-table.css';
-  stylesheet.rel = 'stylesheet';
-  stylesheet.type = 'text/css';
-  document.getElementsByTagName('head')[0].appendChild(stylesheet);
-</script>
-
-</body>
-</html>
+</script> </body> </html>

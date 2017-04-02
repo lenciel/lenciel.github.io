@@ -76,7 +76,6 @@ task :preview do
   [jekyllPid].each { |pid| Process.wait(pid) }
 end
 
-# maybe try jekyll-compose later rather than homebrew commands
 # usage rake new_post[my-new-post] or rake new_post['my new post'] or rake new_post (defaults to "new-post")
 desc "Begin a new post in #{posts_dir}"
 task :new_post, :title do |t, args|
@@ -169,7 +168,6 @@ end
 
 desc "Default deploy task"
 task :deploy do
-  Rake::Task[:minify_js].execute
   Rake::Task[:minify_html].execute
   # Rake::Task[:copydot].invoke(source_dir, deploy_dir)
   Rake::Task["#{deploy_default}"].execute
@@ -253,7 +251,7 @@ end
 
 desc "Combine and minify js"
 task :minify_js do
-  scripts_dir = "assets/javascripts"
+  scripts_dir = "#{deploy_dir}/assets/javascripts"
   js_for_combine.each do |k, v|
     if File.exist?("#{scripts_dir}/#{k}")
       newer = false
@@ -281,7 +279,7 @@ end
 
 desc "Minify HTML"
 task :minify_html, :dir do |t, args|
-  args.with_defaults(:dir => "#{public_dir}")
+  args.with_defaults(:dir => "#{deploy_dir}")
   htmls = Dir.glob("#{args.dir}/**/*.html")
   progressbar = ProgressBar.create(:title => "Minify HTML",
                                    :starting_at => 0,

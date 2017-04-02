@@ -1,112 +1,4 @@
-
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>Integrate schemaSpy with Sphinx build - @Lenciel</title>
-  <meta name="author" content="Lenciel">
-
-  
-  <meta name="description" content="
-
-  
-  
-    
-      Integrate schemaSpy with Sphinx build
-    
-    
-      
-        
-
-
-
-
-
-        
-      
-    
-  
-
-
-
-
-在做项目的时候，客户或者合作的部门常常问研发要“数据库设计”。...">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://lenciel.com/2014/12/integrate-schemaspy-with-sphinx-build-for-django-database-design-visualization/">
-  <link href="/favicon.png" rel="icon">
-  <script src="/assets/javascripts/libs/modernizr.custom.55630.js"></script>
-  <script src="/assets/javascripts/ender.js"></script>
-  <script src="/assets/javascripts/libs/jquery.min.js"></script>
-  <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml">
-  <meta property="og:title" content="Integrate schemaSpy with Sphinx build" /><meta itemprop="name" content="Integrate schemaSpy with Sphinx build" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="http://lenciel.com/2014/12/integrate-schemaspy-with-sphinx-build-for-django-database-design-visualization/" />
-<meta property="og:description" content="
-
-  
-  
-    
-      Integrate schemaSpy with Sphinx build
-    
-    
-      
-        
-
-
-
-
-
-        
-      
-    
-  
-
-
-
-
-在做项目的时候，客户或者合作的部门常常问研发要“数据库设计”。..." />
-
-<meta property="og:site_name" content="http://lenciel.com" />
-<meta property="article:author" content="http://lenciel.com">
-<meta property="article:published_time" content="2014-12-18 00:26:32 +0800" />
-
-<meta property="article:section" content="tipstools-i-use" />
-<meta itemprop="description" content="
-
-  
-  
-    
-      Integrate schemaSpy with Sphinx build
-    
-    
-      
-        
-
-
-
-
-
-        
-      
-    
-  
-
-
-
-
-在做项目的时候，客户或者合作的部门常常问研发要“数据库设计”。..." />
-
-
-  <script>
+<!DOCTYPE html> <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]--> <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]--> <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]--> <head> <meta charset="utf-8"> <title>Integrate schemaSpy with Sphinx build - @Lenciel</title> <meta name="author" content="Lenciel"> <meta name="description" content=" Integrate schemaSpy with Sphinx build 在做项目的时候，客户或者合作的部门常常问研发要“数据库设计”。..."> <meta name="HandheldFriendly" content="True"> <meta name="MobileOptimized" content="320"> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="canonical" href="http://lenciel.com/2014/12/integrate-schemaspy-with-sphinx-build-for-django-database-design-visualization/"> <link href="/favicon.png" rel="icon"> <script src="/assets/javascripts/app.js"></script> <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml"> <meta property="og:title" content="Integrate schemaSpy with Sphinx build"/><meta itemprop="name" content="Integrate schemaSpy with Sphinx build"/> <meta property="og:type" content="article"/> <meta property="og:url" content="http://lenciel.com/2014/12/integrate-schemaspy-with-sphinx-build-for-django-database-design-visualization/"/> <meta property="og:description" content=" Integrate schemaSpy with Sphinx build 在做项目的时候，客户或者合作的部门常常问研发要“数据库设计”。..."/> <meta property="og:site_name" content="http://lenciel.com"/> <meta property="article:author" content="http://lenciel.com"> <meta property="article:published_time" content="2014-12-18 00:26:32 +0800"/> <meta property="article:section" content="tipstools-i-use"/> <meta itemprop="description" content=" Integrate schemaSpy with Sphinx build 在做项目的时候，客户或者合作的部门常常问研发要“数据库设计”。..."/> <script>
     var _hmt = _hmt || [];
     (function() {
         var hm = document.createElement("script");
@@ -114,11 +6,7 @@
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
     })();
-</script>
-
-
-  
-<script>
+</script> <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -127,96 +15,9 @@
   ga('create', 'UA-175991-6', 'auto');
   ga('send', 'pageview');
 
-</script>
-
-
-</head>
-
-<body    class="collapse-sidebar sidebar-footer" >
-  <header role="banner"><hgroup>
-  <h1><a href="/">@Lenciel</a></h1>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<ul class="main-navigation">
-  <li><a href="/"><i class="icon-home"></i>Home</a></li>
-  <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li>
-  <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div>
-<article class="hentry" role="article">
-  
-  <header>
-    
-      <h1 class="entry-title">Integrate schemaSpy with Sphinx build</h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-        
-      </p>
-    
-  </header>
-
-
-<div class="entry-content"><p><img src="/downloads/images/2014_12/schemaSpy.png" title="schemaSpy..." alt="schemaSpy" /></p>
-
-<p>在做项目的时候，客户或者合作的部门常常问研发要“数据库设计”。在古代，瀑布式开发的第一个阶段是做架构设计和写文档，所以这样的需求一般都能被“充分满足”。而在我们现在的项目节奏和迭代速度都很快，数据库的设计在项目初期经常也在变化，如何能够比较方便的文档化这些变更？</p>
-
-<p>对开发团队内部来说，我个人觉得Django的South或者是1.7之后加入的<a href="http://lenciel.com/2014/08/django-1-dot-7-migrations/">Migration</a>里面每次变更生成的migration文件就已经足够开发人员了解底层的设计发生了什么变化。</p>
-
-<p>而对外提供的文档，主要是在更高层级进行设计的沟通，所以之前我们一般是通过<a href="https://github.com/django-extensions/django-extensions">django-extension</a>里面的<code>graph_models</code>命令来生成简单的关系图：</p>
-
-<pre><code class="bash"># Create a PNG image file called my_project_visualized.png with application grouping
+</script> </head> <body class="collapse-sidebar sidebar-footer"> <header role="banner"><hgroup> <h1><a href="/">@Lenciel</a></h1> </hgroup> </header> <nav role="navigation"><ul class="subscription" data-subscription="rss"> <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li> </ul> <ul class="main-navigation"> <li><a href="/"><i class="icon-home"></i>Home</a></li> <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li> <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li> </ul> </nav> <div id="main"> <div id="content"> <div> <article class="hentry" role="article"> <header> <h1 class="entry-title">Integrate schemaSpy with Sphinx build</h1> <p class="meta"> </p> </header> <div class="entry-content"><p><img src="/downloads/images/2014_12/schemaSpy.png" title="schemaSpy..." alt="schemaSpy"/></p> <p>在做项目的时候，客户或者合作的部门常常问研发要“数据库设计”。在古代，瀑布式开发的第一个阶段是做架构设计和写文档，所以这样的需求一般都能被“充分满足”。而在我们现在的项目节奏和迭代速度都很快，数据库的设计在项目初期经常也在变化，如何能够比较方便的文档化这些变更？</p> <p>对开发团队内部来说，我个人觉得Django的South或者是1.7之后加入的<a href="http://lenciel.com/2014/08/django-1-dot-7-migrations/">Migration</a>里面每次变更生成的migration文件就已经足够开发人员了解底层的设计发生了什么变化。</p> <p>而对外提供的文档，主要是在更高层级进行设计的沟通，所以之前我们一般是通过<a href="https://github.com/django-extensions/django-extensions">django-extension</a>里面的<code>graph_models</code>命令来生成简单的关系图：</p> <pre><code class="bash"># Create a PNG image file called my_project_visualized.png with application grouping
 $ ./manage.py graph_models -a -g -o my_project_visualized.png
-</code></pre>
-
-<p>效果如下：</p>
-
-<p><img src="/downloads/images/2014_12/django_extension.svg" title="django-extension-sample..." alt="django-extension-sample" /></p>
-
-<p>这里的图是通过<a href="http://www.graphviz.org/">graphviz</a>来完成的，可以看到一般的了解也足够了，但是缺点主要是：</p>
-
-<ol>
-<li>生成的关系图比较简陋</li>
-<li>由于是图片，一旦表比较多浏览起来并不是那么灵活</li>
-</ol>
-
-
-<a name="L......schemaSpy"></a>
-<h2>使用schemaSpy</h2>
-
-<p>于是在新的项目里面本座选用了看起来更美好的<a href="http://schemaspy.sourceforge.net/">schemaSpy</a>，因为：</p>
-
-<ol>
-<li>轻量但支持多种数据库（jdbc），针对Django的test/stage/prod环境都可以使用</li>
-<li><a href="http://schemaspy.sourceforge.net/sample/">功能非常强大</a>，并且有命令行支持，可以集成到CI</li>
-</ol>
-
-
-<p>不过和大多数开源工具一样，它的文档也是乱糟糟的。以开发环境为例，我们一般使用sqlite作为数据库，要在Mac下面成功运行schemaSpy连接sqlite，你需要：</p>
-
-<ol>
-<li>下载最新的<a href="http://sourceforge.net/projects/schemaspy/files/">SchemaSpy jar包</a></li>
-<li>下载最新的<a href="https://bitbucket.org/xerial/sqlite-jdbc">Xerial Sqlite JDBC jar</a>包<code>sqlite-xerial.jar</code></li>
-<li><p>创建一个<code>sqlite-xerial.properties</code>文件，内容如下：</p>
-
-<pre><code class="`"> # Use -dp to override.
+</code></pre> <p>效果如下：</p> <p><img src="/downloads/images/2014_12/django_extension.svg" title="django-extension-sample..." alt="django-extension-sample"/></p> <p>这里的图是通过<a href="http://www.graphviz.org/">graphviz</a>来完成的，可以看到一般的了解也足够了，但是缺点主要是：</p> <ol> <li>生成的关系图比较简陋</li> <li>由于是图片，一旦表比较多浏览起来并不是那么灵活</li> </ol> <a name="L......schemaSpy"></a> <h2>使用schemaSpy</h2> <p>于是在新的项目里面本座选用了看起来更美好的<a href="http://schemaspy.sourceforge.net/">schemaSpy</a>，因为：</p> <ol> <li>轻量但支持多种数据库（jdbc），针对Django的test/stage/prod环境都可以使用</li> <li><a href="http://schemaspy.sourceforge.net/sample/">功能非常强大</a>，并且有命令行支持，可以集成到CI</li> </ol> <p>不过和大多数开源工具一样，它的文档也是乱糟糟的。以开发环境为例，我们一般使用sqlite作为数据库，要在Mac下面成功运行schemaSpy连接sqlite，你需要：</p> <ol> <li>下载最新的<a href="http://sourceforge.net/projects/schemaspy/files/">SchemaSpy jar包</a></li> <li>下载最新的<a href="https://bitbucket.org/xerial/sqlite-jdbc">Xerial Sqlite JDBC jar</a>包<code>sqlite-xerial.jar</code></li> <li><p>创建一个<code>sqlite-xerial.properties</code>文件，内容如下：</p> <pre><code class="`"> # Use -dp to override.
  description=SQLite
  connectionSpec=jdbc:sqlite:&lt;db&gt;
  db=database name
@@ -224,123 +25,13 @@ $ ./manage.py graph_models -a -g -o my_project_visualized.png
  #you may need to put the full path to the driver depending on your setup
  driverPath=sqlite-jdbc-3.8.7.jar
  selectTablesSql=.tables
-</code></pre></li>
-<li><p>运行命令：</p>
-
-<pre><code class="`"> java -jar schemaSpy_5.0.0.jar -t  sqlite-xerial.properties -db ../src/default.db  -o django-testbird -sso
-</code></pre></li>
-</ol>
-
-
-<p>会看到有<code>warning</code>，但是无需惊慌，我看了一下是schemaSpy的作者没有正确的处理<code>[]</code>。</p>
-
-<a name="L.........Sphinx"></a>
-<h2>集成到Sphinx</h2>
-
-<p>因为我们的项目都使用了Jenkins自动启动Sphinx来生成文档，所以理想的情况当然是：</p>
-
-<ol>
-<li>修改Django下某个app的<code>models.py</code></li>
-<li><code>make migration</code>生成migrations文件</li>
-<li>代码提交并push到gitlab</li>
-<li>Jenkins调用<code>django management command</code>完成表结构的变更</li>
-<li>Jenkins自动更新包括数据库设计在内的文档</li>
-</ol>
-
-
-<p>要实现#5，最简单的办法是在Sphinx文档目录下的<code>Makefile</code>里面加一个<code>target</code>：</p>
-
-<pre><code class="java">dbv:
+</code></pre></li> <li><p>运行命令：</p> <pre><code class="`"> java -jar schemaSpy_5.0.0.jar -t  sqlite-xerial.properties -db ../src/default.db  -o django-testbird -sso
+</code></pre></li> </ol> <p>会看到有<code>warning</code>，但是无需惊慌，我看了一下是schemaSpy的作者没有正确的处理<code>[]</code>。</p> <a name="L.........Sphinx"></a> <h2>集成到Sphinx</h2> <p>因为我们的项目都使用了Jenkins自动启动Sphinx来生成文档，所以理想的情况当然是：</p> <ol> <li>修改Django下某个app的<code>models.py</code></li> <li><code>make migration</code>生成migrations文件</li> <li>代码提交并push到gitlab</li> <li>Jenkins调用<code>django management command</code>完成表结构的变更</li> <li>Jenkins自动更新包括数据库设计在内的文档</li> </ol> <p>要实现#5，最简单的办法是在Sphinx文档目录下的<code>Makefile</code>里面加一个<code>target</code>：</p> <pre><code class="java">dbv:
     java -jar schemaSpy_5.0.0.jar -t sqlite-xerial.properties -db ../src/default.db  -o _db_virtualization/django-testproject -sso
-</code></pre>
-
-<p>然后在Jenkins调用的脚本里面加上<code>make dbv</code>就可以了。</p>
-</div>
-
-
-  <footer>
-    <p class="meta">
-      
-<span class="byline author vcard">Posted by <span class="fn">Lenciel</span></span>
-
-      
-
-
-
-
-
-      
-
-<span class="categories">
-  
-    <a class='category' href='/categories/tips/'>tips</a>, <a class='category' href='/categories/tools-i-use/'>tools-i-use</a>
-  
-</span>
-
-
-    </p>
-    
-      <div class="sharing">
-  
-  
-  
-  <!-- JiaThis Button BEGIN -->
-  <!--<div class="jiathis_style_24x24">
-    <a class="jiathis_button_qzone"></a>
-    <a class="jiathis_button_tsina"></a>
-    <a class="jiathis_button_tqq"></a>
-    <a class="jiathis_button_weixin"></a>
-    <a class="jiathis_button_renren"></a>
-    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
-    <a class="jiathis_counter_style"></a>
-    </div>
-    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>-->
-  <!-- JiaThis Button END -->
-</div>
-
-    
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/2014/12/how-i-use-evernote/" title="Previous Post: How I use Evernote">&laquo; How I use Evernote</a>
-      
-      
-        <a class="basic-alignment right" href="/2014/12/making-fixture-with-factory-boy-and-faker/" title="Next Post: Making fixture with factory boy and faker">Making fixture with factory boy and faker &raquo;</a>
-      
-    </p>
-  </footer>
-</article>
-
-</div>
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a>
-<span class="theme-version">Copyright &copy; 2004-2017 by Lenciel</span>
-  <section class="contruction-wrap">
-    <div class="contruction"></div>
-  </section>
-</p>
-
-</footer>
-  
-
-
-
-
-<script type="text/javascript">
+</code></pre> <p>然后在Jenkins调用的脚本里面加上<code>make dbv</code>就可以了。</p> </div> <footer> <p class="meta"> <span class="byline author vcard">Posted by <span class="fn">Lenciel</span></span> <span class="categories"> <a class='category' href='/categories/tips/'>tips</a>, <a class='category' href='/categories/tools-i-use/'>tools-i-use</a> </span> </p> <div class="sharing"> </div> <p class="meta"> <a class="basic-alignment left" href="/2014/12/how-i-use-evernote/" title="Previous Post: How I use Evernote">&laquo; How I use Evernote</a> <a class="basic-alignment right" href="/2014/12/making-fixture-with-factory-boy-and-faker/" title="Next Post: Making fixture with factory boy and faker">Making fixture with factory boy and faker &raquo;</a> </p> </footer> </article> </div> </div> </div> <footer role="contentinfo"><p> Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a> <span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span> <section class="contruction-wrap"> <div class="contruction"></div> </section> </p> </footer> <script type="text/javascript">
   var stylesheet = document.createElement('link');
-  stylesheet.href = '/assets/stylesheets/screen.css';
+  stylesheet.href = '/assets/stylesheets/app.css';
   stylesheet.rel = 'stylesheet';
   stylesheet.type = 'text/css';
   document.getElementsByTagName('head')[0].appendChild(stylesheet);
-</script>
-<script type="text/javascript">
-  var stylesheet = document.createElement('link');
-  stylesheet.href = '/assets/stylesheets/data-table.css';
-  stylesheet.rel = 'stylesheet';
-  stylesheet.type = 'text/css';
-  document.getElementsByTagName('head')[0].appendChild(stylesheet);
-</script>
-
-</body>
-</html>
+</script> </body> </html>

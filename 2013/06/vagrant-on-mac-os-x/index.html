@@ -1,106 +1,4 @@
-
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>Vagrant for Django I: Basic - @Lenciel</title>
-  <meta name="author" content="Lenciel">
-
-  
-  <meta name="description" content="
-
-  
-  
-    
-      Vagrant for Django I: Basic
-    
-    
-      
-        
-
-
-
-
-
-        
-      
-    
-  
-
-
-Vagrant最近支持了VMWare，但是要钱的东西我们玩不起。本系列主要分享一下Va...">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://lenciel.com/2013/06/vagrant-on-mac-os-x/">
-  <link href="/favicon.png" rel="icon">
-  <script src="/assets/javascripts/libs/modernizr.custom.55630.js"></script>
-  <script src="/assets/javascripts/ender.js"></script>
-  <script src="/assets/javascripts/libs/jquery.min.js"></script>
-  <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml">
-  <meta property="og:title" content="Vagrant for Django I: Basic" /><meta itemprop="name" content="Vagrant for Django I: Basic" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="http://lenciel.com/2013/06/vagrant-on-mac-os-x/" />
-<meta property="og:description" content="
-
-  
-  
-    
-      Vagrant for Django I: Basic
-    
-    
-      
-        
-
-
-
-
-
-        
-      
-    
-  
-
-
-Vagrant最近支持了VMWare，但是要钱的东西我们玩不起。本系列主要分享一下Va..." />
-
-<meta property="og:site_name" content="http://lenciel.com" />
-<meta property="article:author" content="http://lenciel.com">
-<meta property="article:published_time" content="2013-06-19 15:19:00 +0800" />
-
-<meta property="article:section" content="djangotipstoolstutorialsvagrant" />
-<meta itemprop="description" content="
-
-  
-  
-    
-      Vagrant for Django I: Basic
-    
-    
-      
-        
-
-
-
-
-
-        
-      
-    
-  
-
-
-Vagrant最近支持了VMWare，但是要钱的东西我们玩不起。本系列主要分享一下Va..." />
-
-
-  <script>
+<!DOCTYPE html> <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]--> <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]--> <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]--> <head> <meta charset="utf-8"> <title>Vagrant for Django I: Basic - @Lenciel</title> <meta name="author" content="Lenciel"> <meta name="description" content=" Vagrant for Django I: Basic Vagrant最近支持了VMWare，但是要钱的东西我们玩不起。本系列主要分享一下Va..."> <meta name="HandheldFriendly" content="True"> <meta name="MobileOptimized" content="320"> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="canonical" href="http://lenciel.com/2013/06/vagrant-on-mac-os-x/"> <link href="/favicon.png" rel="icon"> <script src="/assets/javascripts/app.js"></script> <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml"> <meta property="og:title" content="Vagrant for Django I: Basic"/><meta itemprop="name" content="Vagrant for Django I: Basic"/> <meta property="og:type" content="article"/> <meta property="og:url" content="http://lenciel.com/2013/06/vagrant-on-mac-os-x/"/> <meta property="og:description" content=" Vagrant for Django I: Basic Vagrant最近支持了VMWare，但是要钱的东西我们玩不起。本系列主要分享一下Va..."/> <meta property="og:site_name" content="http://lenciel.com"/> <meta property="article:author" content="http://lenciel.com"> <meta property="article:published_time" content="2013-06-19 15:19:00 +0800"/> <meta property="article:section" content="djangotipstoolstutorialsvagrant"/> <meta itemprop="description" content=" Vagrant for Django I: Basic Vagrant最近支持了VMWare，但是要钱的东西我们玩不起。本系列主要分享一下Va..."/> <script>
     var _hmt = _hmt || [];
     (function() {
         var hm = document.createElement("script");
@@ -108,11 +6,7 @@ Vagrant最近支持了VMWare，但是要钱的东西我们玩不起。本系列�
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
     })();
-</script>
-
-
-  
-<script>
+</script> <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -121,211 +15,22 @@ Vagrant最近支持了VMWare，但是要钱的东西我们玩不起。本系列�
   ga('create', 'UA-175991-6', 'auto');
   ga('send', 'pageview');
 
-</script>
-
-
-</head>
-
-<body    class="collapse-sidebar sidebar-footer" >
-  <header role="banner"><hgroup>
-  <h1><a href="/">@Lenciel</a></h1>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<ul class="main-navigation">
-  <li><a href="/"><i class="icon-home"></i>Home</a></li>
-  <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li>
-  <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div>
-<article class="hentry" role="article">
-  
-  <header>
-    
-      <h1 class="entry-title">Vagrant for Django I: Basic</h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-        
-      </p>
-    
-  </header>
-
-
-<div class="entry-content"><p>Vagrant<a href="http://www.vagrantup.com/vmware">最近支持了VMWare</a>，但是要钱的东西我们玩不起。本系列主要分享一下Vagrant+VirtualBox搭配起来如何使用。</p>
-
-<a name="L......VirtualBox"></a>
-<h2>安装VirtualBox</h2>
-
-<p>VirtualBox是Oracle的动态创建、可配置、可移植的轻量虚拟机系统。在Windows、MacOSX、Linux和Solaris上都发行了相应版本。</p>
-
-<p>目前Vagrant支持的是VirtualBox4.0.x、4.1.x和4.2.x版本</p>
-
-<pre><code class="bash">http://www.virtualbox.org/wiki/Downloads
-</code></pre>
-
-<a name="L......Vagrant"></a>
-<h2>安装Vagrant</h2>
-
-<pre><code class="bash">http://downloads.vagrantup.com/
-</code></pre>
-
-<p>Windows和Mac OS X下面安装完毕后要把 <code>vagrant</code> 命令放到 <code>PATH</code> 下面，而其他系统下面需要把整个 <code>/opt/vagrant/bin</code> 放到PATH下面。
-完成后可以先安装一个32位的ubuntu10.04版本来测试一下：</p>
-
-<pre><code class="bash">vagrant box add lucid32 http://files.vagrantup.com/lucid32.box
+</script> </head> <body class="collapse-sidebar sidebar-footer"> <header role="banner"><hgroup> <h1><a href="/">@Lenciel</a></h1> </hgroup> </header> <nav role="navigation"><ul class="subscription" data-subscription="rss"> <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li> </ul> <ul class="main-navigation"> <li><a href="/"><i class="icon-home"></i>Home</a></li> <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li> <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li> </ul> </nav> <div id="main"> <div id="content"> <div> <article class="hentry" role="article"> <header> <h1 class="entry-title">Vagrant for Django I: Basic</h1> <p class="meta"> </p> </header> <div class="entry-content"><p>Vagrant<a href="http://www.vagrantup.com/vmware">最近支持了VMWare</a>，但是要钱的东西我们玩不起。本系列主要分享一下Vagrant+VirtualBox搭配起来如何使用。</p> <a name="L......VirtualBox"></a> <h2>安装VirtualBox</h2> <p>VirtualBox是Oracle的动态创建、可配置、可移植的轻量虚拟机系统。在Windows、MacOSX、Linux和Solaris上都发行了相应版本。</p> <p>目前Vagrant支持的是VirtualBox4.0.x、4.1.x和4.2.x版本</p> <pre><code class="bash">http://www.virtualbox.org/wiki/Downloads
+</code></pre> <a name="L......Vagrant"></a> <h2>安装Vagrant</h2> <pre><code class="bash">http://downloads.vagrantup.com/
+</code></pre> <p>Windows和Mac OS X下面安装完毕后要把 <code>vagrant</code> 命令放到 <code>PATH</code> 下面，而其他系统下面需要把整个 <code>/opt/vagrant/bin</code> 放到PATH下面。 完成后可以先安装一个32位的ubuntu10.04版本来测试一下：</p> <pre><code class="bash">vagrant box add lucid32 http://files.vagrantup.com/lucid32.box
 vagrant init lucid32
 vagrant up
-</code></pre>
-
-<a name="Vagrant........."></a>
-<h2>Vagrant的好处</h2>
-
-<p>软件开发，特别是Web应用的开发正处于环境异常复杂的年代。为了在开发和实际部署的环境直接做到无缝切换，虚拟化技术被大规模的使用。与此同时，自动的配置管理，如 <code>Chef</code> 或者 <code>Puppet</code> 也在发挥着巨大的作用。Vagrant就是在这些技术的基础上进行了集成，从而完成（虚拟化+自动配置管理）的效果。</p>
-
-<p><em>对个人开发者</em></p>
-
-<p>对于开发者来说要想使用一个开发环境应付所有的开发任务变得非常困难了。每个项目都有自己独特的依赖，如类库，消息队列，数据库，框架等等。每个依赖也常常有版本上的差异。Vagrant提供了方便，可以为每个项目创建独立的开发环境，并且只在项目需要的时候把这些环境运行起来。</p>
-
-<p><em>对项目组</em></p>
-
-<p>同一个项目组的组员理论上都是有相同的开发环境的：同样的依赖，每个依赖都是同样的版本，采用同样的配置等等。但是现实往往不是这样。比如采用了ORM框架的Django，同一个项目组可能有人用着 <code>sqlite3</code> ，有人用 <code>mysql</code> 。而且每个人自己开发环境中服务器的配置也常常是不同的。这种异构的环境往往最终会带来大大小小的麻烦。Vagrant提供了一个方便，让大家都被强制的使用统一的开发环境。</p>
-
-<p><em>对公司</em></p>
-
-<p>如果管理过大型项目，你就知道新人和新设计的引入往往是非常大的考验。大量的环境搭建工作，都可以由Vagrant来代替。并且Vagrant的配置只需要写一次，然后分发给大家用就行了，省掉了大量的时间。</p>
-
-<a name="Vagrant..............."></a>
-<h2>Vagrant可执行文件</h2>
-
-<p>Vagrant安装好之后，主要是通过命令行使用。 <code>vagrant</code> 命令带很多子命令，如 <code>vagrant up</code> ， <code>vagrant ssh</code> ， <code>vagrant package</code> 等等。敲 <code>vagrant</code> 就可以看到有哪些可用的命令。</p>
-
-<a name="Vagrantfile............"></a>
-<h2>Vagrantfile配置文件</h2>
-
-<p><code>Vagrantfile</code> 对于Vagrant就像 <code>Makefile</code> 对Make的作用一样：它被放置在每个Vagrant项目的根目录，用来配置Vagrant以及它创建的虚拟机的行为。一个最简单的配置文件如下：</p>
-
-<pre><code class="ruby">Vagrant:Config.run do |config|
+</code></pre> <a name="Vagrant........."></a> <h2>Vagrant的好处</h2> <p>软件开发，特别是Web应用的开发正处于环境异常复杂的年代。为了在开发和实际部署的环境直接做到无缝切换，虚拟化技术被大规模的使用。与此同时，自动的配置管理，如 <code>Chef</code> 或者 <code>Puppet</code> 也在发挥着巨大的作用。Vagrant就是在这些技术的基础上进行了集成，从而完成（虚拟化+自动配置管理）的效果。</p> <p><em>对个人开发者</em></p> <p>对于开发者来说要想使用一个开发环境应付所有的开发任务变得非常困难了。每个项目都有自己独特的依赖，如类库，消息队列，数据库，框架等等。每个依赖也常常有版本上的差异。Vagrant提供了方便，可以为每个项目创建独立的开发环境，并且只在项目需要的时候把这些环境运行起来。</p> <p><em>对项目组</em></p> <p>同一个项目组的组员理论上都是有相同的开发环境的：同样的依赖，每个依赖都是同样的版本，采用同样的配置等等。但是现实往往不是这样。比如采用了ORM框架的Django，同一个项目组可能有人用着 <code>sqlite3</code> ，有人用 <code>mysql</code> 。而且每个人自己开发环境中服务器的配置也常常是不同的。这种异构的环境往往最终会带来大大小小的麻烦。Vagrant提供了一个方便，让大家都被强制的使用统一的开发环境。</p> <p><em>对公司</em></p> <p>如果管理过大型项目，你就知道新人和新设计的引入往往是非常大的考验。大量的环境搭建工作，都可以由Vagrant来代替。并且Vagrant的配置只需要写一次，然后分发给大家用就行了，省掉了大量的时间。</p> <a name="Vagrant..............."></a> <h2>Vagrant可执行文件</h2> <p>Vagrant安装好之后，主要是通过命令行使用。 <code>vagrant</code> 命令带很多子命令，如 <code>vagrant up</code> ， <code>vagrant ssh</code> ， <code>vagrant package</code> 等等。敲 <code>vagrant</code> 就可以看到有哪些可用的命令。</p> <a name="Vagrantfile............"></a> <h2>Vagrantfile配置文件</h2> <p><code>Vagrantfile</code> 对于Vagrant就像 <code>Makefile</code> 对Make的作用一样：它被放置在每个Vagrant项目的根目录，用来配置Vagrant以及它创建的虚拟机的行为。一个最简单的配置文件如下：</p> <pre><code class="ruby">Vagrant:Config.run do |config|
      # setup the box
      config.vim.box="my_box"
 end
-</code></pre>
-
-<p>可以看到，<code>Vagrantfile</code> 是用标准的Ruby代码写成的。需要注意的是在大版本之间<code>Vagrantfile</code> 是不兼容的。</p>
-
-<a name="L......setup"></a>
-<h2>基本setup</h2>
-
-<p>首选创建项目目录，然后在项目目录中初始化：</p>
-
-<pre><code class="bash">mkdir vagrant_guide
+</code></pre> <p>可以看到，<code>Vagrantfile</code> 是用标准的Ruby代码写成的。需要注意的是在大版本之间<code>Vagrantfile</code> 是不兼容的。</p> <a name="L......setup"></a> <h2>基本setup</h2> <p>首选创建项目目录，然后在项目目录中初始化：</p> <pre><code class="bash">mkdir vagrant_guide
 cd vagrant_guide
 vagrant init
-</code></pre>
-
-<p>init命令会创建一个基本的Vagrantfile，暂时先不修改它。下一篇我们来看如何添加Django开发需要的配置以及如果build一个 <code>base box</code> 来给其他人使用。</p>
-</div>
-
-
-  <footer>
-    <p class="meta">
-      
-<span class="byline author vcard">Posted by <span class="fn">Lenciel</span></span>
-
-      
-
-
-
-
-
-      
-
-<span class="categories">
-  
-    <a class='category' href='/categories/django/'>django</a>, <a class='category' href='/categories/tips/'>tips</a>, <a class='category' href='/categories/tools/'>tools</a>, <a class='category' href='/categories/tutorials/'>tutorials</a>, <a class='category' href='/categories/vagrant/'>vagrant</a>
-  
-</span>
-
-
-    </p>
-    
-      <div class="sharing">
-  
-  
-  
-  <!-- JiaThis Button BEGIN -->
-  <!--<div class="jiathis_style_24x24">
-    <a class="jiathis_button_qzone"></a>
-    <a class="jiathis_button_tsina"></a>
-    <a class="jiathis_button_tqq"></a>
-    <a class="jiathis_button_weixin"></a>
-    <a class="jiathis_button_renren"></a>
-    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
-    <a class="jiathis_counter_style"></a>
-    </div>
-    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>-->
-  <!-- JiaThis Button END -->
-</div>
-
-    
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/2013/06/better-git-log/" title="Previous Post: Better Git Log">&laquo; Better Git Log</a>
-      
-      
-        <a class="basic-alignment right" href="/2013/07/is-wine-bullshit/" title="Next Post: Is Wine Bullshit">Is Wine Bullshit &raquo;</a>
-      
-    </p>
-  </footer>
-</article>
-
-</div>
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a>
-<span class="theme-version">Copyright &copy; 2004-2017 by Lenciel</span>
-  <section class="contruction-wrap">
-    <div class="contruction"></div>
-  </section>
-</p>
-
-</footer>
-  
-
-
-
-
-<script type="text/javascript">
+</code></pre> <p>init命令会创建一个基本的Vagrantfile，暂时先不修改它。下一篇我们来看如何添加Django开发需要的配置以及如果build一个 <code>base box</code> 来给其他人使用。</p> </div> <footer> <p class="meta"> <span class="byline author vcard">Posted by <span class="fn">Lenciel</span></span> <span class="categories"> <a class='category' href='/categories/django/'>django</a>, <a class='category' href='/categories/tips/'>tips</a>, <a class='category' href='/categories/tools/'>tools</a>, <a class='category' href='/categories/tutorials/'>tutorials</a>, <a class='category' href='/categories/vagrant/'>vagrant</a> </span> </p> <div class="sharing"> </div> <p class="meta"> <a class="basic-alignment left" href="/2013/06/better-git-log/" title="Previous Post: Better Git Log">&laquo; Better Git Log</a> <a class="basic-alignment right" href="/2013/07/is-wine-bullshit/" title="Next Post: Is Wine Bullshit">Is Wine Bullshit &raquo;</a> </p> </footer> </article> </div> </div> </div> <footer role="contentinfo"><p> Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a> <span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span> <section class="contruction-wrap"> <div class="contruction"></div> </section> </p> </footer> <script type="text/javascript">
   var stylesheet = document.createElement('link');
-  stylesheet.href = '/assets/stylesheets/screen.css';
+  stylesheet.href = '/assets/stylesheets/app.css';
   stylesheet.rel = 'stylesheet';
   stylesheet.type = 'text/css';
   document.getElementsByTagName('head')[0].appendChild(stylesheet);
-</script>
-<script type="text/javascript">
-  var stylesheet = document.createElement('link');
-  stylesheet.href = '/assets/stylesheets/data-table.css';
-  stylesheet.rel = 'stylesheet';
-  stylesheet.type = 'text/css';
-  document.getElementsByTagName('head')[0].appendChild(stylesheet);
-</script>
-
-</body>
-</html>
+</script> </body> </html>
