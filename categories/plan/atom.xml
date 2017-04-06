@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: plan | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/plan/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-04-02T23:44:01+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/plan/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-04-06T19:01:30+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[Plan for 2012]]></title>
-    <link href="http://lenciel.com/2012/01/plan-for-2012/"/>
+    <link href="http://172.16.121.110:4000/2012/01/plan-for-2012/"/>
     <updated>2012-01-10T11:07:00+08:00</updated>
-    <id>http://lenciel.com/2012/01/plan-for-2012</id>
+    <id>http://172.16.121.110:4000/2012/01/plan-for-2012</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/2012_great_view.jpg" title="Don't touch me..." alt="2012 Great View" /></p>
 
 <p>在读过《<a href="http://book.douban.com/subject/3609132/" target="_blank">把时间当作朋友</a>》和<a href="http://matt.might.usesthis.com/" target="_blank">Matt Might</a>的文章之后，回首2011就让人觉得莫名慌张起来。按《<a href="http://book.douban.com/subject/3609132/" target="_blank">把时间当作朋友</a>》这本书里所说，定计划要以周为单位，通过培养自己对时间的控制力，逐步把计划做到月甚至年这样的跨度。本座自觉还算比较能控制自己，所以打算制作一个基本单位为月的计划，下面的十项活动将穿插在这个计划之中：</p>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: funny | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/funny/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-04-02T23:44:01+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/funny/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-04-06T19:01:30+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[Starry Starry Night]]></title>
-    <link href="http://lenciel.com/2016/05/starry-starry-night/"/>
+    <link href="http://172.16.121.110:4000/2016/05/starry-starry-night/"/>
     <updated>2016-05-19T13:57:30+08:00</updated>
-    <id>http://lenciel.com/2016/05/starry-starry-night</id>
+    <id>http://172.16.121.110:4000/2016/05/starry-starry-night</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/2016_05/essay_harry_potter.png" title="Don't touch me..." alt="Vhost threshold" /></p>
 
 <p>看paper是不是比较无聊的事情？</p>
@@ -101,9 +101,9 @@ ap1.init();
   
   <entry>
     <title type="html"><![CDATA[3D动态Gif]]></title>
-    <link href="http://lenciel.com/2014/02/3d-gifs/"/>
+    <link href="http://172.16.121.110:4000/2014/02/3d-gifs/"/>
     <updated>2014-02-18T12:40:00+08:00</updated>
-    <id>http://lenciel.com/2014/02/3d-gifs</id>
+    <id>http://172.16.121.110:4000/2014/02/3d-gifs</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/2014_02/3dgifs4.gif" title="Don't touch me..." alt="3d gifs" /></p>
 
 <p>托各种SNS的福，有趣的动态gif在网络上漫山遍野。作为电影爱好者的本座，也是<a href="http://lenciel.com/blog/categories/fu-guang-lue-ying/">重度的gif爱好者</a>。</p>
@@ -129,9 +129,9 @@ ap1.init();
   
   <entry>
     <title type="html"><![CDATA[听起来很假]]></title>
-    <link href="http://lenciel.com/2014/02/true-facts-that-sound-false/"/>
+    <link href="http://172.16.121.110:4000/2014/02/true-facts-that-sound-false/"/>
     <updated>2014-02-12T10:46:00+08:00</updated>
-    <id>http://lenciel.com/2014/02/true-facts-that-sound-false</id>
+    <id>http://172.16.121.110:4000/2014/02/true-facts-that-sound-false</id>
     <content type="html"><![CDATA[<p>Reddit上有一篇关于 <a href="http://www.reddit.com/r/AskReddit/comments/1sdw81/what_is_a_true_fact_that_sound_completely/">听起来很假的事实</a> 的讨论贴<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>，不知道是不是真的:</p>
 
 <p><blockquote><p></p></p><p><ul><br/><li><p>做肾脏移植的时候，一般原来的肾都会留着不动，这第三个新来的肾会被放在骨盆里面</p></li><br/><li><p>IPv6可以给地球表面的所有原子分配一个ip（其实比地球面积大100倍的也能搞定）</p></li><br/><li><p>俄罗斯比冥王星还大 (冥王星表面积: 16.7x10<sup>6</sup> km<sup>2</sup>; 俄罗斯表面积: 17.1x10<sup>6</sup> km<sup>2</sup>)</p></li><br/><li><p>如果你把埃菲尔铁塔熔了，铁水放到和铁塔基座面积相同的坑里面，厚度不会超过8厘米</p></li><br/><li><p>1790年出生并且在1841年成为美国的第10任总统的John Tyler，他有两个孙子还活着</p></li><br/><li><p>如果原子有银河系那么大，那么中微子就是高尔夫球那么大</p></li><br/><li><p>人类和香蕉有50%的DNA是相同的</p></li><br/></ul></p><p><br/><p></p></blockquote></p>

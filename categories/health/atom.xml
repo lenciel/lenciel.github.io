@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: health | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/health/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-04-02T23:44:01+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/health/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-04-06T19:01:30+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[电脑视觉综合症]]></title>
-    <link href="http://lenciel.com/2016/09/computer-vision-syndrome/"/>
+    <link href="http://172.16.121.110:4000/2016/09/computer-vision-syndrome/"/>
     <updated>2016-09-30T13:49:17+08:00</updated>
-    <id>http://lenciel.com/2016/09/computer-vision-syndrome</id>
+    <id>http://172.16.121.110:4000/2016/09/computer-vision-syndrome</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/2016_09/computer.png" title="Don't touch me..." alt="Vhost threshold" /></p>
 
 <p>虽然叫做“<a href="https://zh.wikipedia.org/wiki/%E7%94%B5%E8%84%91%E8%A7%86%E8%A7%89%E7%BB%BC%E5%90%88%E7%97%87">电脑视觉综合症(Computer Vision Syndrome)</a>”，但真正成为祸害，却是在智能手机一统天下之后：据美帝医生的统计，已经有八千万左右的患者。</p>

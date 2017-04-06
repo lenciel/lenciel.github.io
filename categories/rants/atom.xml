@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: rants | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/rants/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-04-02T23:44:01+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/rants/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-04-06T19:01:30+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[编程语言里的类型系统]]></title>
-    <link href="http://lenciel.com/2016/09/types-in-programming-languages/"/>
+    <link href="http://172.16.121.110:4000/2016/09/types-in-programming-languages/"/>
     <updated>2016-09-21T19:53:18+08:00</updated>
-    <id>http://lenciel.com/2016/09/types-in-programming-languages</id>
+    <id>http://172.16.121.110:4000/2016/09/types-in-programming-languages</id>
     <content type="html"><![CDATA[<p>这两天看了“<a href="http://www.amazon.com/Functional-Programming-Scala-Paul-Chiusano/dp/1617290653">FP in Scala</a>”的作者Paul Chiusano关于静态类型语言的优点的一篇<a href="https://pchiusano.github.io/2016-09-15/static-vs-dynamic.html">blog</a>。刚好最近在看很多Scala写的代码，仔细一想，好像大多数语言都在尝试把类型系统加强（不仅仅是Scala、Swift、Rust这些当红的，连<a href="https://ceylon-lang.org/">Ceylon</a> 这样的语言也越来越火了）。</p>
 
 <p>所以也结合之前看过的一些文章(<a href="https://github.com/tel/old-blog/blob/master/_posts/2014-07-08-all_you_wanted_to_know_about_types_but_were_afraid_to_ask.md">1</a>, <a href="https://github.com/tel/old-blog/blob/master/_posts/2014-08-08-six_points_about_type_safety.md">2</a>, <a href="https://danluu.com/empirical-pl/">3</a>, <a href="https://gist.github.com/garybernhardt/122909856b570c5c457a6cd674795a9c">4</a>)，对类型系统打个总结。</p>
@@ -264,9 +264,9 @@ int main(void) {
   
   <entry>
     <title type="html"><![CDATA[记一碗滚烫的鸡汤]]></title>
-    <link href="http://lenciel.com/2016/09/what-you-want/"/>
+    <link href="http://172.16.121.110:4000/2016/09/what-you-want/"/>
     <updated>2016-09-08T20:03:03+08:00</updated>
-    <id>http://lenciel.com/2016/09/what-you-want</id>
+    <id>http://172.16.121.110:4000/2016/09/what-you-want</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/2016_09/the_player_choose_to_die.jpg" title="Don't touch me..." alt="Vhost threshold" /></p>
 
 <p>费福尔特，37岁的比利时名将，上届伦敦残奥会T52级女子轮椅短跑100米冠军和200米的亚军，一边积极备战即将到来的奥运会，一边在准备葬礼：她宣布在比赛后会安乐死结束自己的生命。</p>
@@ -323,9 +323,9 @@ int main(void) {
   
   <entry>
     <title type="html"><![CDATA[一颗赛艇]]></title>
-    <link href="http://lenciel.com/2016/05/the-exciting-writings/"/>
+    <link href="http://172.16.121.110:4000/2016/05/the-exciting-writings/"/>
     <updated>2016-05-06T04:26:09+08:00</updated>
-    <id>http://lenciel.com/2016/05/the-exciting-writings</id>
+    <id>http://172.16.121.110:4000/2016/05/the-exciting-writings</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/2016_05/jpm.jpg" title="Don't touch me..." alt="Vhost threshold" /></p>
 
 <p>昨天立夏，闷热异常，晚上终于来了几声雷，却是雷声大雨点小。</p>
@@ -380,9 +380,9 @@ int main(void) {
   
   <entry>
     <title type="html"><![CDATA[关于工作与生活]]></title>
-    <link href="http://lenciel.com/2015/10/the-solution-of-work-life-balance/"/>
+    <link href="http://172.16.121.110:4000/2015/10/the-solution-of-work-life-balance/"/>
     <updated>2015-10-04T00:06:16+08:00</updated>
-    <id>http://lenciel.com/2015/10/the-solution-of-work-life-balance</id>
+    <id>http://172.16.121.110:4000/2015/10/the-solution-of-work-life-balance</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/2015_10/dilbert_work_life_balance.png" title="Don't touch me..." alt="work life balance" /></p>
 
 <p>前面说了，<a href="http://lenciel.cn/2015/10/the-myth-of-work-life-balance/">Work Life Balance的神话其实并不靠谱</a>。</p>
@@ -504,9 +504,9 @@ int main(void) {
   
   <entry>
     <title type="html"><![CDATA[Work Life Balance的神话]]></title>
-    <link href="http://lenciel.com/2015/10/the-myth-of-work-life-balance/"/>
+    <link href="http://172.16.121.110:4000/2015/10/the-myth-of-work-life-balance/"/>
     <updated>2015-10-02T22:35:05+08:00</updated>
-    <id>http://lenciel.com/2015/10/the-myth-of-work-life-balance</id>
+    <id>http://172.16.121.110:4000/2015/10/the-myth-of-work-life-balance</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/2015_10/work_life_balance.jpg" title="Don't touch me..." alt="work life balance" /></p>
 
 <p>最近有几个事情让我在这方面想了很多。</p>

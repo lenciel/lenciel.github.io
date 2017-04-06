@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: prototyping | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/prototyping/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-04-02T23:44:01+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/prototyping/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-04-06T19:01:30+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[Quartz Composer和Origami试玩]]></title>
-    <link href="http://lenciel.com/2014/06/quartz-composer-and-origami/"/>
+    <link href="http://172.16.121.110:4000/2014/06/quartz-composer-and-origami/"/>
     <updated>2014-06-26T22:57:05+08:00</updated>
-    <id>http://lenciel.com/2014/06/quartz-composer-and-origami</id>
+    <id>http://172.16.121.110:4000/2014/06/quartz-composer-and-origami</id>
     <content type="html"><![CDATA[<p>这篇不是教程，不会讲述怎么安装需要的软件，怎么用它们来做软件原型。只是记录分享一下我对这套东西的感受和评价。</p>
 
 <p>动态设计，也就是<a href="http://v.youku.com/v_show/id_XMzIyNTk1NTMy.html">Motion Design</a>或者是<a href="http://en.wikipedia.org/wiki/Motion_graphic_design">Motion Graphic Design</a>其实已经火了很长一段时间了：你只要经常去Dribble上逛就可以看到很多非常优秀的作品。国内的团队经过一段时间的学习和追赶，目前这方面的水平也很不错：从去年开始，BAT的大多数App的splash或者tutorial都已经不再是静态的图片而是动态图了。</p>

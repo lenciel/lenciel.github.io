@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: memo | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/memo/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-04-02T23:44:01+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/memo/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-04-06T19:01:30+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -13,10 +13,67 @@
 
   
   <entry>
+    <title type="html"><![CDATA[What I know, in 2016, 😳]]></title>
+    <link href="http://172.16.121.110:4000/2016/12/what-i-konw-in-2016/"/>
+    <updated>2016-12-31T22:28:40+08:00</updated>
+    <id>http://172.16.121.110:4000/2016/12/what-i-konw-in-2016</id>
+    <content type="html"><![CDATA[<ul>
+<li>物流占中国GDP总量的18%，而发达国家都在6%-8%左右。成都造的一双女鞋运到上海的成本甚至超过了运到纽约的成本。[<a href="http://www.bookschina.com/7066710.htm">中国采购发展报告</a>]</li>
+<li>中国手游和直播行业开始被两个监管部门交叉管控，手游不许随便使用英文，直播不许吃香蕉。[<a href="http://a16z.com/2016/09/27/livestreaming-trend-china/">Connie Chan</a>]</li>
+<li>2012-2015年中国电影变成了普通市民可承担的主要娱乐方式之一，票房基本上只受排期和降雨的影响：“只要给你排了档期，那天不下雨，票房就是满座。”有这种思维定势的从业者没有发现这一现象在2016年出现了变化，大量的质量低劣的国产电影在今年惨败，结果引起了少数媒体对豆瓣、猫眼等打分机构的恶语相向。[<a href="http://www.thepaper.cn/newsDetail_forward_1588637">澎拜</a>]</li>
+<li>从iPhone6投产算起，富士康大概一半的工人已经被机器人取代。[<a href="https://9to5mac.com/2016/05/25/foxconn-robots-replace-workers/">Ben Lovejoy</a>]</li>
+<li>在70年代苏联的歌唱大赛中，电气开关被用来作为过计分器：“每天播放一首，在家看电视的人如果觉得他们喜欢这首歌，就把灯亮着，如果不喜欢，就把灯关上。电力局对这些信号进行统计后上报。” [<a href="https://blog.insureandgo.com/cultures-and-traditions/2014/05/intervision-song-contest-the-soviet-unions-answer-to-eurovision">Nick Heady</a>]</li>
+<li>仅仅把要求用户输入并确认密码改成输入一次密码，可以提高新增用户注册率56%。 [<a href="http://www.formisimo.com/blog/case-study-small-changes-lead-to-a-55-increase-in-conversions/">Tom New</a>]</li>
+<li>Google的广告系统会跟踪线下的到店访问。如果你在手机或者电脑上点击了某个广告，并且在数天内去了相关的商店，这次线下的活动会出现在Adwords的数据里。据说，跟踪是通过Google Maps的数据完成的，而Google从2014年开始就一直在这么做。[<a href="http://searchengineland.com/hood-google-adwords-measures-store-visits-222905">Matt Lawson</a>]</li>
+<li>Call Me Baby是一个专门为网络诈骗中的电话环节提供服务的呼叫中心。每个英语电话收费10美金，德语、法语、意大利语、西班牙语、葡萄牙语和波兰语则收费12美金。[<a href="http://krebsonsecurity.com/2016/01/a-look-inside-cybercriminal-call-centers/">Brian Krebs</a>]</li>
+<li>在一个不同性别的人组成的工作团队或者是兴趣小组里面，如果女性成员发表意见的时间是25%以下，整个组织就会“处于比较调和的状态”。只要她们发言的时间超过25%，她们就会“主宰所有的对话”。 [<a href="http://www.esquire.co.uk/culture/advice/a9641/things-men-dont-know-about-women-caitlin-moran/">Caitlin Moran</a>]</li>
+<li>2016年7月份，大约80万名志愿者在印度的Uttar Pradesh（东北与北方邦）种下了4900万棵树。 [<a href="http://news.nationalgeographic.com/2016/07/india-plants-50-million-trees-uttar-pradesh-reforestation/">Brian Clark Howard</a>]</li>
+<li>OECD（经合发展组织）成员国仍有40%的成年人（16岁到60岁）不知道如何删除收到的电子邮件。 [<a href="https://www.nngroup.com/articles/computer-skill-levels/">Jakob Nielsen</a>]</li>
+<li>一家日本保险公司推出了“社交网络上被口诛笔伐险”的险种。[<a href="http://marginalrevolution.com/marginalrevolution/2016/11/japan-insurance-markets-everything-moral-hazard-edition.html">Tyler Cowen</a>]</li>
+<li>迪拜车牌号“1”在11月份以6100万人民币的价格被拍一名买家拍下。但是后来这名买家因为支票跳票被捕。[<a href="http://m.gulfnews.com/news/uae/general/emirati-businessman-pays-dh31million-for-abu-dhabi-number-1-car-plate-1.1932234">Asma Samir</a> 和 <a href="http://m.thenational.ae/uae/man-arrested-after-dh31-million-cheque-for-no-1-licence-plate-bounces">Tom Crampton</a>]</li>
+<li>澳大利亚的一群音乐家和一个人造神经元控制的节拍器一起进行了演出：“由于在演出前被喂了太多多巴胺，当天整个节拍显得有些太激烈太狂躁。” [<a href="https://www.muffwiggler.com/forum/viewtopic.php?p=2014789#2014789">Andrew Finch</a> 和 <a href="http://guybenary.com/work/cellf/">Guy Ben-Ary</a>]</li>
+<li>腾讯只有不到两成的收入来自于广告（大部分还是来自于游戏），而Facebook有超过95%的收入来自于广告：腾讯的股票大家还可以再多买一些。 [<a href="http://a16z.com/2016/02/16/mindsets-for-thinking-about-innovation-in-and-competition-from-china/">Connie Chan</a>]</li>
+<li>伊朗有600万部iPhone处于激活状态。尽管一方面伊朗政府禁止使用和贩售iPhone，一方面作为国际组织制裁的一部分，联合国也禁止苹果卖iPhone给伊朗。[<a href="http://a16z.com/2015/06/30/this-is-a-tale-of-two-irans/">Christopher Schroeder</a>]</li>
+<li>2000年智能手机普及后，美国统计的老年痴呆人数下降了25%。虽然，还没有办法证明其中的必然联系。[<a href="https://www.statnews.com/2016/11/21/dementia-rate-decline/">Sharon Begley</a>]</li>
+<li>加州一家叫Skinny Mirror的公司的数据显示，他们家可以让顾客显得更瘦的镜子安装到每个服装店，大概可以带来平均18%的销售额增长。 [<a href="http://www.bloomberg.com/news/articles/2016-01-19/fixing-the-fitting-room">Kim Bhasin</a>]</li>
+<li>今年5月，孟加拉再次被飓风袭击。大约50万人被疏散，但只有23人死亡。和1991年造成了14万人死亡的飓风相比，死亡率下降了99%。这都得感谢众多科学家一起参与后，一套完备的预警机制和预警场所的建立：目前孟加拉有大概2500个平时被用来当做学校使用的混凝土结构的飓风避难所。 [<a href="http://www.theatlantic.com/international/archive/2016/11/thanksgiving-global/508646/">Charles Kenny</a> ]</li>
+<li>在香港，你可以花10万人民币买到一种叫做IMSI Catcher的设备，以大约每分钟1200个的速度，搜集所有处于这个设备附近的人的电话号码。 [<a href="https://news.vice.com/article/vice-news-investigation-finds-signs-of-secret-phone-surveillance-across-london">Ben Bryant</a>]</li>
+<li>Uber为了搞定支付环节，需要给大量没有银行账号的司机开辟银行账号：这使得它变成了全美甚至全球最大的中小商业银行的收购商。[<a href="https://medium.com/@brettking/the-death-of-bank-products-has-been-greatly-under-exaggerated-153cdb21a5d4#.1zkzcvmz7">Brett King</a>]</li>
+<li>高档餐饮行业里有一条行规，通过对某些菜肴标出几乎是荒谬的价格，让其他的菜的价格显得非常合理：“当有1000美金一份的菜肉馅煎蛋饼在菜单上时，法国吐司卖26美金一份突然就很公道了。”[<a href="http://www.wsj.com/articles/breaking-the-bank-for-a-burger-1452884225">Anne Kadet</a>]</li>
+<li>从2013年起，迪拜政府为了鼓励健康生活方式，制定了每个公民每减重一公斤，就奖励相应重量的黄金的政策。[<a href="http://www.npr.org/sections/health-shots/2013/07/17/202941301/weight-loss-is-worth-gold-in-dubai">Nancy Shute</a>]</li>
+<li>英国网络广告投放标王今年是“Play Live Blackjack”的广告，每次点击花费广告主148.51英镑。[<a href="https://searchenginewatch.com/2016/04/14/the-top-100-most-expensive-keywords-in-the-uk/">Chris Lake</a>]</li>
+<li>全球最成功的黄色网站PornHub使用了1892PB的带宽：把2015年售出的所有iPhone都塞满porn都还绰绰有余。[<a href="http://mashable.com/2016/03/02/male-masturbation-technology/?utm_cid=mash-com-fb-tech-link#DrOqDfAVfmq2">Yana Tallon-Hicks</a>]</li>
+<li>Lyft几乎完全使用Twilio的VOIP来招募，训练和管理司机。[<a href="http://ridesharedashboard.com/2014/09/09/inside-lyft-driver-recruiting-program/">The Driver</a>]</li>
+<li>没有互联网的古巴，有一个叫做El Paquete的地下网络：通过一个大约1TB容量，拷满了各种美国音乐、电影、手机程序和杂志的硬盘在地下流转。每个月8美金的使用费，你就可以拷到上面的各种东西：“对于我和我的朋友们来说，El Paquete爽得让人好像起了一身鸡皮疙瘩。” [<a href="https://www.thrillist.com/tech/nation/cubas-internet-is-fcking-insane-and-the-ways-cubans-use-it-are-genius">Wil Fulton</a>]</li>
+<li>Twitter屡次遭遇负面新闻之后宣布，按照现在的成本，在考虑汇率损失等情况下，公司仍有足够的现金可以继续运行大约412年。 [<a href="http://www.usatoday.com/story/money/markets/2016/01/25/twitter-has-412-years-fix-itself/79301680/">Matt Krantz</a>]</li>
+<li>滴滴在上海大街小巷安装了很多触屏设备，让没有智能机的老年人仍然可以叫车。[<a href="http://a16z.com/2016/02/16/mindsets-for-thinking-about-innovation-in-and-competition-from-china/">Connie Chan</a>]</li>
+<li>研究发现，单向的自动扶梯载客效率要比双向的高出很多，因为用户花在思考走哪边扶梯的时间少了很多，因此越来越多的新商业体把两个方向的扶梯打散安装。[<a href="http://www.citymetric.com/horizons/if-we-want-increase-escalator-capacity-why-don-t-we-just-run-things-faster-1844">Jack May</a>]</li>
+<li>伊朗电子商务企业家Nazanin Daneshvar发现，因为穿着和女性身份，商业合作伙伴不把她当回事。于是她雇佣自己的父亲扮演公司的CEO，自己装成陪他出门进行谈判和签商务合同的秘书。18个月后，她的公司Takhfifan有了超过两百万用户，生意遍及伊朗各个城市后，她爸爸在公司“卸任CEO并退休”。 [<a href="http://a16z.com/2015/06/30/this-is-a-tale-of-two-irans/">Christopher Schroeder</a>]</li>
+<li>Facebook在缅甸，给没有电子邮箱等资料的农民批量开通账号来提高覆盖率。一个叫做“Farmer Fourteen”的农民说，“这名字很好，我很喜欢”。 [<a href="http://www.theatlantic.com/technology/archive/2016/01/the-facebook-loving-farmers-of-myanmar/424812/">Craig Mod</a>]</li>
+<li>iPhone保护壳厂家在整个链条里面比较弱势，几乎从不能在苹果方提前得到关于新一代iPhone的设计。为了抢占市场时机，他们只好依赖市场上传播的谣言去赌：今年一家名叫Hard Candy的保护壳厂商提前备货了5万个保护壳，结果完全无法被iPhone7使用。 [<a href="https://www.flexport.com/blog/iphone-case-supply-chain/">Tim Fitzsimmons</a>]</li>
+<li>Master和Visa卡一开始都是非盈利组织推出的会员卡 [<a href="https://hbr.org/2016/03/some-of-the-most-successful-platforms-are-ones-youve-never-heard-of">David S Evans</a>]</li>
+<li>The Edit公司通过一个短信机器人，在8个月卖出了5万张黑胶唱片，利润达到了上百万美金。[<a href="http://www.adweek.com/news/technology/how-chatbot-helped-vinyl-records-startup-make-1-million-8-months-170900">Christopher Heine</a>]</li>
+<li>在Facebook上有个拥有2150名成员的群组叫做 “WE WANT TESCO IN PORTREE, ISLE OF SKYE” [<a href="https://medium.com/fluxx-studio-notes/why-8-year-olds-cant-be-trusted-to-design-products-for-grown-ups-e0a34886106#.bsezwu9m1">Dean Wilson</a>]</li>
+<li>为了减少无人轰炸机的飞行员创伤后应激障碍，军事心理学家们倡导开发用于飞行员的像Siri一样的应用程序：“让飞行员把发射等指令通过Siri这样的程序发出，他们就不会把那些人的死亡归咎于自己。”[<a href="http://io9.gizmodo.com/psychologists-propose-horrifying-solution-to-ptsd-in-dr-1453349900">Robbie Gonzalez</a>]</li>
+<li>中国新创互联网公司中，CEO女性占比为一半左右。[<a href="http://www.bloomberg.com/news/features/2016-09-19/how-women-won-a-leading-role-in-china-s-venture-capital-industry">Shai Oster</a>]</li>
+<li>瑞士一家香水公司与盖茨基金会合作，努力寻找和调配一种闻起来和蹲坑厕所味道一样的气味。 [<a href="https://www.gatesnotes.com/development/smells-of-success">Bill Gates</a>]</li>
+<li>美国发现中国产智能手机每72小时就发送短信到中国，担心这是中国政府在收集情报，结果是制造商在刷广告。 [<a href="http://www.nytimes.com/2016/11/16/us/politics/china-phones-software-security.html">Matt Apuzzo</a>]</li>
+<li>日本航空在圣诞节期间经济舱配餐改成了肯德基。肯德基专门为这批航空餐在配方基础上增加了15%的盐，以应对压力和湿度的不同。 [<a href="http://www.avclub.com/article/whats-deal-airline-food-flight-dining-critic-expla-243305">Alison Fensterstock</a>]</li>
+<li>硅谷已经有公司开始雇佣在新德里生活的前台接待员：它们办公室入口的大屏幕上，以可以看到并和你聊天的机器人的形式存在。[<a href="https://twitter.com/bradloncar/status/783800997789388800">Brad Loncar</a>]</li>
+<li>在1601年，坏血病及其治疗方法就被James Lancaster船长发现。但这项发现直到264年后的1865年，很多人的生命继续被夺走后，才被英国海军和其他商船队正式接纳和采用。[<a href="https://books.google.co.uk/books?id=v1ii4QsB7jIC&amp;lpg=PA7&amp;dq=Controlling%20scurvy%20in%20the%20British%20Navy&amp;pg=PA7#v=onepage&amp;q&amp;f=false">Everett Rogers</a>]</li>
+<li>荷兰一家自行车制造公司把外包装改成“液晶电视请轻拿轻放”后，运输过程中的损耗降低了80%。 [<a href="http://www.independent.co.uk/news/world/europe/vanmoof-bikes-flatscreen-tv-huge-reduction-delivery-damages-printing-giant-tv-side-of-box-a7328916.html?cmpid=facebook-post">May Bulman</a>]</li>
+<li>在中国农村，农民用巨大的塑料袋偷走天然气，回家作为大约一个星期的燃料。[<a href="http://sinopix.photoshelter.com/image/I0000k5SqsSii5.8">Hi She</a>]</li>
+<li>全球已经总计为7.3亿人开户了7.6亿个手机账号。[<a href="http://communities-dominate.blogs.com/brands/2016/05/time-for-2016-total-mobile-numbers-the-update-to-my-most-popular-blog-article-in-any-year.html">Tomi Ahonen</a>]</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[一天很长，十年很短]]></title>
-    <link href="http://lenciel.com/2016/05/but-does-it-float/"/>
+    <link href="http://172.16.121.110:4000/2016/05/but-does-it-float/"/>
     <updated>2016-05-18T20:50:55+08:00</updated>
-    <id>http://lenciel.com/2016/05/but-does-it-float</id>
+    <id>http://172.16.121.110:4000/2016/05/but-does-it-float</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/2016_05/ppl_5.jpg" title="Don't touch me..." alt="Vhost threshold" /></p>
 
 <p>夏天来了。</p>
@@ -65,9 +122,9 @@
   
   <entry>
     <title type="html"><![CDATA[记一次成功的过年]]></title>
-    <link href="http://lenciel.com/2016/02/happy-new-year/"/>
+    <link href="http://172.16.121.110:4000/2016/02/happy-new-year/"/>
     <updated>2016-02-13T22:41:48+08:00</updated>
-    <id>http://lenciel.com/2016/02/happy-new-year</id>
+    <id>http://172.16.121.110:4000/2016/02/happy-new-year</id>
     <content type="html"><![CDATA[<p>过年在三亚呆了一周。</p>
 
 <p>虽然中学毕业就已经习惯了在外面跑，像今年这样一大家子人到外地过年，却还是头次。</p>
@@ -126,9 +183,9 @@
   
   <entry>
     <title type="html"><![CDATA[马尔克斯的孤独与爱]]></title>
-    <link href="http://lenciel.com/2014/04/rip-marquez/"/>
+    <link href="http://172.16.121.110:4000/2014/04/rip-marquez/"/>
     <updated>2014-04-18T20:58:42+08:00</updated>
-    <id>http://lenciel.com/2014/04/rip-marquez</id>
+    <id>http://172.16.121.110:4000/2014/04/rip-marquez</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/2014_04/rip_marquez.jpg" title="Don't touch me..." alt="Vhost threshold" /></p>
 
 <p>度过了忙乱的一周，又回到了广汉。吃完饭洗个澡，继续在书房干活，外面的天不知不觉就黯淡下来。偶像派走过来说，《舌尖上的中国》第二季开播了，快来看吧。</p>
@@ -165,9 +222,9 @@
   
   <entry>
     <title type="html"><![CDATA[An Accident of My Dog]]></title>
-    <link href="http://lenciel.com/2013/07/my-dog/"/>
+    <link href="http://172.16.121.110:4000/2013/07/my-dog/"/>
     <updated>2013-07-06T22:57:00+08:00</updated>
-    <id>http://lenciel.com/2013/07/my-dog</id>
+    <id>http://172.16.121.110:4000/2013/07/my-dog</id>
     <content type="html"><![CDATA[<p>今年2月4号，花卷被偶像派接到了我们家，处于眼睛基本刚刚能睁开的状态。</p>
 
 <p><img src="/downloads/images/huajuan_in_hands.jpg" title="Don't touch me..." alt="花卷来我家" /></p>
@@ -234,41 +291,6 @@
 <p>事后我们制造了“死罪可免，活罪难逃”的气氛希望这位同学吸取教训。当然，虽然认罪伏法的时候花卷看起来态度尚好，但劫后余生的它最终还是在我们的纵容下过起了更加飞扬跋扈的生活。</p>
 
 <p><img src="/downloads/images/huanjuan_after_accident.jpg" title="Don't touch me..." alt="花卷认罪伏法图" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[老无所依]]></title>
-    <link href="http://lenciel.com/2011/11/long-live-old-times/"/>
-    <updated>2011-11-20T12:50:00+08:00</updated>
-    <id>http://lenciel.com/2011/11/long-live-old-times</id>
-    <content type="html"><![CDATA[<p><img src="/downloads/images/2011_11/IMG_0313.jpg" title="Don't touch me..." alt="long live old times" /></p>
-
-<p>国庆回了一趟银厂沟白水河。出发的那天天气并不好，可是对爸妈而言，去看看那个安放了自己青春的地方，已经计划过太多次而不能成行。所以犹豫了一下，就决定还是要去。</p>
-
-<p>车一开进山区，因为属于汶川大地震里山崩地裂的龙门山山脉，那场灾难留下的痕迹依然随处可见。然而地貌上的变化却并不是爸妈最关注：一路上他们不断提起的是故人的名字，以及自己和他们之间的种种旧事。有的时候我爸会往路边一指说，“那不是黄村吗？以前你妈下乡在那里的时候，我骑车来看过她。”有的时候我妈又会指着另一个地方说，“那个谁谁谁，就是在这里被掉下来的房梁打死了，太可惜了。”</p>
-
-<p>而白水河对于我，因为是十岁之前生活的地方，本来就没有多少刻骨铭心的记忆。加上我和Konthiga读过的小学和学校后面那条曾经清澈而壮阔的白水河，在上次回去的时候就已经面目全非了，于是唯一怀着兴趣的就只剩据说在地震里面一栋都没有倒的蛇纹矿家属区，也就是我们当年长大的地方。坐在我旁边的偶像派，在我们一家人兴致勃勃的指着窗外大呼小叫时，则多少显得有些百无聊赖。</p>
-
-<p>后来事情的发展让人觉得略感尴尬。走到“鬼招手”（银厂沟一个以险峻著称的地段）的时候，前面的山路突然淹没在浓雾之中，我们只好调头，放弃了继续进沟的打算。接下来在大宝镇上兜了两圈，我们才凭借着整条街上几乎是唯一没有被拆除的新华书店，定位到了我们原来的住处：居然已经是一片平地。</p>
-
-<p>回到家里，我突然有些不死心的想把记忆里的白水河挖出来，就去翻家里的老照片。</p>
-
-<p>首先让我觉得特别温暖的是装老照片的这个信封。这是外公写给我妈的，不知道当年那封信具体写得是啥。在这根本不用写信甚至不用写字的时代生活久了，这样的物件总给人一种特别的质感。</p>
-
-<p><img src="/downloads/images/2011_11/IMG_0366_1.png" title="Don't touch me..." alt="long live old times" /></p>
-
-<p>我还找到了几张Konthiga和我都还挺萌的时候的照片。这个阶段我们的衣服全是老爸用缝纫机做的，看着都是一段段特别的回忆。另外从红领巾出现的频率来看，除了伟大的六一儿童节，我们一直对照相这事情兴趣不大。</p>
-
-<p><span style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; border-collapse: separate; font: medium tahoma; white-space: normal; orphans: 2; color: rgb(0,0,0); word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px"><a href="/downloads/images/2011_11/IMG_0172.jpg"><img style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="IMG_0172" border="0" alt="IMG_0172" src="/downloads/images/2011_11/IMG_0172.jpg" width="204" height="275" /></a> <a href="/downloads/images/2011_11/IMG_0168.jpg"><img style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="IMG_0168" border="0" alt="IMG_0168" src="/downloads/images/2011_11/IMG_0168.jpg" width="204" height="285" /></a> <a href="/downloads/images/2011_11/IMG_0200.jpg"><img style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="IMG_0200" border="0" alt="IMG_0200" src="/downloads/images/2011_11/IMG_0200.jpg" width="204" height="288" /></a> </span></p>
-
-<p>看这些照片的时候，最大的怀念是以前生活在青山绿水的白水河时，我们一家人那轻松自在的身段。在我们匆忙长大的这二十来年，中国也一直在匆忙的变化着。我们的文艺工作者在世纪之交做过很多牛逼哄哄的选题，什么《激荡三十年》，什么《大国崛起》，妄图把这个剧变的时代描绘成一代人怀着同样的目标，努力奋斗让中国崛起的时代。</p>
-
-<p>而实际上，绝大多数家庭就和我们家一样，我们并没有主动的参与到那些变化里面去。很多人虽然听组织安排上山下乡或者援建支边，但和全国志士要行动起来抛头颅洒热血的革命年代不同，大多数人的生活目标与生存焦虑既无关这个社会，也无关这个国家，都是些极度自我的事情。但这个国家变化得如此剧烈，昨天还有效的经验，明天就可能完全完蛋。所以更多的时候，毫无信仰的中国人无力的忍受着生活剧烈的摇摆，随波逐流的同时，常常感到心灵上莫大的空虚和痛苦。</p>
-
-<p>所以，在过去我曾经为父母和我们生活在不同的世界，或者是他们的婚姻变得危机四伏而苦恼不已。可是等我到了一定年纪就发现原来他们那代人中并没有多少真正快乐的夫妻：他们大多数人，在生活中不断的否定着自己信仰过的东西。要人们在这种奇特的生活环境中保持感情的稳定，也许的确是要求高了一些。</p>
-
-<p>相比之下，我们这代人当然要幸运一些。虽然如果统计一下，应该没有几个人自己长大的老房子还没有被拆。但至少我们留下了不少照片，从感觉上，已经不是那么老无所依。</p>
 ]]></content>
   </entry>
   

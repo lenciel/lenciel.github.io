@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: management | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/management/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-04-02T23:44:01+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/management/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-04-06T19:01:30+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[在TestBird学到的——关于管理]]></title>
-    <link href="http://lenciel.com/2016/10/management-things-i-learned-at-testbird/"/>
+    <link href="http://172.16.121.110:4000/2016/10/management-things-i-learned-at-testbird/"/>
     <updated>2016-10-26T17:03:21+08:00</updated>
-    <id>http://lenciel.com/2016/10/management-things-i-learned-at-testbird</id>
+    <id>http://172.16.121.110:4000/2016/10/management-things-i-learned-at-testbird</id>
     <content type="html"><![CDATA[<ol>
 <li>沟通是所有工作内容里最困难的部分，学习一些技巧，花足够多的时间，做好自己和内外部的沟通，并且让团队内部小伙伴之间的沟通顺畅。 </li>
 <li>多听，少说，学会换位思考。 </li>

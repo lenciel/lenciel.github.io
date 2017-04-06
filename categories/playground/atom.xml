@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: playground | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/playground/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-04-02T23:44:01+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/playground/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-04-06T19:01:30+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[Let Me Show You The World]]></title>
-    <link href="http://lenciel.com/2015/02/let-me-show-you-the-world/"/>
+    <link href="http://172.16.121.110:4000/2015/02/let-me-show-you-the-world/"/>
     <updated>2015-02-23T21:08:02+08:00</updated>
-    <id>http://lenciel.com/2015/02/let-me-show-you-the-world</id>
+    <id>http://172.16.121.110:4000/2015/02/let-me-show-you-the-world</id>
     <content type="html"><![CDATA[<p>之前提过有一些机构<a href="http://www.ppgis.net/imagery.htm">开放</a>了卫星云图，可以用GIS信息通过接口去获取。从天上看，地球还是挺美的，很多都可以用来做手机的桌面，如果你需要下载无损的版本：<a href="http://pan.baidu.com/s/1sjuiOqx">click</a>，分享码:<code>gdyv</code>：</p>
 
 <p><link rel="stylesheet" type="text/css" href="/downloads/static/css/elasticstack_slider.css" /></p>
@@ -78,9 +78,9 @@
   
   <entry>
     <title type="html"><![CDATA[请输入密码]]></title>
-    <link href="http://lenciel.com/2014/05/better-password-form-field/"/>
+    <link href="http://172.16.121.110:4000/2014/05/better-password-form-field/"/>
     <updated>2014-05-04T09:33:43+08:00</updated>
-    <id>http://lenciel.com/2014/05/better-password-form-field</id>
+    <id>http://172.16.121.110:4000/2014/05/better-password-form-field</id>
     <content type="html"><![CDATA[<p>午饭之前的这点儿垃圾时间闲着也是闲着，大多数网站让用户输入密码都做得不够温柔。什么样是温柔呢？不打扰就是温柔&hellip;</p>
 
 <p>  <link rel="stylesheet" href="/downloads/static/css/flip_animations.css">
@@ -134,9 +134,9 @@
   
   <entry>
     <title type="html"><![CDATA[Edward Gorey]]></title>
-    <link href="http://lenciel.com/2014/04/edward-gorey/"/>
+    <link href="http://172.16.121.110:4000/2014/04/edward-gorey/"/>
     <updated>2014-04-29T13:48:21+08:00</updated>
-    <id>http://lenciel.com/2014/04/edward-gorey</id>
+    <id>http://172.16.121.110:4000/2014/04/edward-gorey</id>
     <content type="html"><![CDATA[<p>最近偶像派在说要买一些给蒙爷看的绘本。</p>
 
 <p>这让我想起来《读库》有几期专门在梳理国内外那些有名的插画家。的确，纸质书最让人怀念的就是里面那些精致的插画。</p>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: iBeacons | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/ibeacons/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-04-02T23:44:01+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/ibeacons/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-04-06T19:01:30+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[How Does iBeacons Work]]></title>
-    <link href="http://lenciel.com/2014/05/how-does-ibeacons-work/"/>
+    <link href="http://172.16.121.110:4000/2014/05/how-does-ibeacons-work/"/>
     <updated>2014-05-14T15:19:59+08:00</updated>
-    <id>http://lenciel.com/2014/05/how-does-ibeacons-work</id>
+    <id>http://172.16.121.110:4000/2014/05/how-does-ibeacons-work</id>
     <content type="html"><![CDATA[<p>iBeacons这个怪怪的单词<a href="https://www.google.com/search?q=%E6%9C%80%E8%BF%91%E5%87%BA%E9%95%9C%E7%8E%87%E5%BE%88%E9%AB%98+site%3A36kr.com&amp;oq=%E6%9C%80%E8%BF%91%E5%87%BA%E9%95%9C%E7%8E%87%E5%BE%88%E9%AB%98+site%3A36kr.com&amp;aqs=chrome..69i57.5408j0j7&amp;sourceid=chrome&amp;es_sm=91&amp;ie=UTF-8#newwindow=1&amp;q=ibeacons+site:36kr.com&amp;safe=off">最近出镜率很高</a>。它可以用的场景很多，考勤打卡，室内导航，各种关联位置的推送以及我们现在还想不到诡异的应用。但虽然满坑满谷的文章介绍如何应用iBeacons，但它工作的原理究竟是什么样的呢？</p>
 
 <a name="Bluetooth.LE"></a>

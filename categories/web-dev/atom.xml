@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: web-dev | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/web-dev/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-04-02T23:44:01+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/web-dev/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-04-06T19:01:30+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[CSS里的width:100%和width:auto]]></title>
-    <link href="http://lenciel.com/2011/09/width_with_percentage_in_css/"/>
+    <link href="http://172.16.121.110:4000/2011/09/width_with_percentage_in_css/"/>
     <updated>2011-09-22T09:53:00+08:00</updated>
-    <id>http://lenciel.com/2011/09/width_with_percentage_in_css</id>
+    <id>http://172.16.121.110:4000/2011/09/width_with_percentage_in_css</id>
     <content type="html"><![CDATA[<p><img height="200" alt="block" src="/downloads/images/2011_09/width100css.jpg" width="178" align="left" style="margin:5px"/> 这似乎是CSS里面最简单的一个概念：如果你希望一个block-level的元素填满整个父容器的所有空白，只需要为这个元素声明<font color="#0080ff">width:100%</font>这个属性就可以了。</p>
 
 <p>但从个人经验和搜索结果看，大概很多CSS使用者都有过加上这个属性后挠头不已的惨痛回忆。最后很多人不得不经过反复试验后重新转回使用绝对值的长和宽。</p>

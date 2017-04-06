@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: design | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/design/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-04-02T23:44:01+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/design/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-04-06T19:01:30+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[Quartz Composer和Origami试玩]]></title>
-    <link href="http://lenciel.com/2014/06/quartz-composer-and-origami/"/>
+    <link href="http://172.16.121.110:4000/2014/06/quartz-composer-and-origami/"/>
     <updated>2014-06-26T22:57:05+08:00</updated>
-    <id>http://lenciel.com/2014/06/quartz-composer-and-origami</id>
+    <id>http://172.16.121.110:4000/2014/06/quartz-composer-and-origami</id>
     <content type="html"><![CDATA[<p>这篇不是教程，不会讲述怎么安装需要的软件，怎么用它们来做软件原型。只是记录分享一下我对这套东西的感受和评价。</p>
 
 <p>动态设计，也就是<a href="http://v.youku.com/v_show/id_XMzIyNTk1NTMy.html">Motion Design</a>或者是<a href="http://en.wikipedia.org/wiki/Motion_graphic_design">Motion Graphic Design</a>其实已经火了很长一段时间了：你只要经常去Dribble上逛就可以看到很多非常优秀的作品。国内的团队经过一段时间的学习和追赶，目前这方面的水平也很不错：从去年开始，BAT的大多数App的splash或者tutorial都已经不再是静态的图片而是动态图了。</p>
@@ -50,9 +50,9 @@
   
   <entry>
     <title type="html"><![CDATA[如何review产品的UX设计]]></title>
-    <link href="http://lenciel.com/2014/05/what-to-ask-about-design/"/>
+    <link href="http://172.16.121.110:4000/2014/05/what-to-ask-about-design/"/>
     <updated>2014-05-12T22:45:33+08:00</updated>
-    <id>http://lenciel.com/2014/05/what-to-ask-about-design</id>
+    <id>http://172.16.121.110:4000/2014/05/what-to-ask-about-design</id>
     <content type="html"><![CDATA[<p>产品设计中UX设计是很重要的一方面，毕竟是拿来见人的嘛。像我这样的工程师怎么去构思自己产品的UX设计或者是review别人的设计呢？当然还是工程师的思维方式了：</p>
 
 <ul>
@@ -72,9 +72,9 @@
   
   <entry>
     <title type="html"><![CDATA[Butterick的实用字体设计]]></title>
-    <link href="http://lenciel.com/2013/08/buttericks-practical-typography/"/>
+    <link href="http://172.16.121.110:4000/2013/08/buttericks-practical-typography/"/>
     <updated>2013-08-26T11:11:00+08:00</updated>
-    <id>http://lenciel.com/2013/08/buttericks-practical-typography</id>
+    <id>http://172.16.121.110:4000/2013/08/buttericks-practical-typography</id>
     <content type="html"><![CDATA[<p>最近和一个朋友聊天，他说最近几年大概是Flat流行网页上除开字就没别的了，字体设计被各种强调。</p>
 
 <p>这位老大在上海经营自己的网页设计公司，但是大家够熟，本座就冒着班门弄斧的危险纠正了他一嘴：很多年前，<a href="http://www.theverge.com/2012/7/24/3177332/ia-oliver-reichenstein-writer-interview-good-design-is-invisible">Oliver Reichenstein</a>就说过"<a href="http://ia.net/blog/the-web-is-all-about-typography-period/">Web设计95%是字体设计</a>&ldquo;了。而且这种观点还一直被<a href="http://www.smashingmagazine.com/2012/07/24/one-more-time-typography-is-the-foundation-of-web-design/">反复强调</a>。</p>

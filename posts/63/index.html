@@ -1,4 +1,113 @@
-<!DOCTYPE html> <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]--> <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]--> <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]--> <head> <meta charset="utf-8"> <title>@Lenciel</title> <meta name="author" content="Lenciel"> <meta name="description" content=" Boxen introduction 如果列举开发人员在工作中最讨厌的部分，估计搭建开发环境得票率肯定可..."> <meta name="HandheldFriendly" content="True"> <meta name="MobileOptimized" content="320"> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="canonical" href="http://lenciel.com/posts/63/"> <link href="/favicon.png" rel="icon"> <script src="/assets/javascripts/app.js"></script> <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml"> <meta property="og:type" content="article"/> <meta property="og:url" content="http://lenciel.com/posts/63/"/> <meta property="og:description" content=" Boxen introduction 如果列举开发人员在工作中最讨厌的部分，估计搭建开发环境得票率肯定可..."/> <meta property="og:site_name" content="http://lenciel.com"/> <meta property="article:author" content="http://lenciel.com"> <meta itemprop="description" content=" Boxen introduction 如果列举开发人员在工作中最讨厌的部分，估计搭建开发环境得票率肯定可..."/> <script>
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>@Lenciel</title>
+  <meta name="author" content="Lenciel">
+
+  
+  <meta name="description" content="
+  
+  
+  
+    
+      
+  
+    
+      The Importance of Deploy As Will
+    
+    
+      
+        
+
+
+
+
+
+        
+      
+    
+  
+
+
+  最近公司里面两个比较资深的开发兄弟在我...">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://172.16.121.110:4000/posts/63/">
+  <link href="/favicon.png" rel="icon">
+  <script src="/assets/javascripts/app.js"></script>
+  <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml">
+  
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://172.16.121.110:4000/posts/63/" />
+<meta property="og:description" content="
+  
+  
+  
+    
+      
+  
+    
+      The Importance of Deploy As Will
+    
+    
+      
+        
+
+
+
+
+
+        
+      
+    
+  
+
+
+  最近公司里面两个比较资深的开发兄弟在我..." />
+
+<meta property="og:site_name" content="http://172.16.121.110:4000" />
+<meta property="article:author" content="http://lenciel.com">
+
+
+
+<meta itemprop="description" content="
+  
+  
+  
+    
+      
+  
+    
+      The Importance of Deploy As Will
+    
+    
+      
+        
+
+
+
+
+
+        
+      
+    
+  
+
+
+  最近公司里面两个比较资深的开发兄弟在我..." />
+
+
+  <script>
     var _hmt = _hmt || [];
     (function() {
         var hm = document.createElement("script");
@@ -6,7 +115,11 @@
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
     })();
-</script> <script>
+</script>
+
+
+  
+<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -15,60 +128,250 @@
   ga('create', 'UA-175991-6', 'auto');
   ga('send', 'pageview');
 
-</script> </head> <body class="collapse-sidebar sidebar-footer"> <header role="banner"><hgroup> <h1><a href="/">@Lenciel</a></h1> </hgroup> </header> <nav role="navigation"><ul class="subscription" data-subscription="rss"> <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li> </ul> <ul class="main-navigation"> <li><a href="/"><i class="icon-home"></i>Home</a></li> <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li> <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li> </ul> </nav> <div id="main"> <div id="content"> <div class="blog-index"> <article> <header> <h1 class="entry-title"><a href="/2013/03/boxen-introduction/">Boxen introduction</a></h1> <p class="meta"> </p> </header> <div class="entry-content"><p>如果列举开发人员在工作中最讨厌的部分，估计搭建开发环境得票率肯定可以排进前三。年初Github开源了自己内部的Privision框架<a href="http://boxen.github.com/">Boxen</a>，趁着新笔记本需要起轿，尝试了一把。</p> <a name="Boxen............"></a> <h2>Boxen框架简介</h2> <p>Boxen基于大红大紫的<a href="https://puppetlabs.com/">Puppet</a>，但和后者目前主要侧重于服务器的Privision不同，Boxen更主要是用于组织内工作人员使用的机器的配置和管理流程标准化。</p> <p>配置流程标准化比较好理解：拿到一台机器，敲一个命令就把所有需要的软件装上并且把环境配置好。按Boxen主页上的说法，Github新员工入职后领到电脑后，用Boxen配置环境到开始写代码只需要30分钟。</p> <p>管理流程标准化听起来比较抽象，你可以想象这么一个场景：如果公司里面所有的机器都是是用Boxen来配置的。当发现Chrome浏览器的Java插件会导致安全问题的时候，IT部门可以push一个禁用Chrome里Java插件的change到boxen repo。所有的员工只需要和repo做一次sync，自己的Chrome里的Java插件就被禁用了。这显然比传统的发邮件要求大家去禁用Chrome浏览器Java插件简单有效。</p> <p>简单地概括Boxen的思路，就是像对待产品一样对待开发环境。使用包括版本控制，持续集成这些手段，在团队中维护一个开发环境的仓库。如果你想更深入地了解Boxen的设计哲学，可以看看这个slide：<a href="https://speakerdeck.com/wfarr/boxen">BOXEN by Will Farrington</a>。</p> <a name="L......Boxen"></a> <h2>使用Boxen</h2> <p>首先确保你的初始环境是干净的：</p> <ul> <li>如果你手上是台新机器，它是干净的</li> <li><p>如果不是一台新机器，请先备份，然后：</p> <ul> <li>卸载Homebrew</li> <li>删除所有的 <code>dotfiles</code> 和 <code>vimfiles</code> ，比如<a href="https://github.com/robbyrussell/oh-my-zsh">Oh my zsh</a>或者<a href="https://github.com/spf13/spf13-vim">spf13 vim</a>等</li> <li>删除 <code>.rbenv</code> 或者 <code>.rvm</code> 文件夹</li> <li><code>chsh -s /bin/bash</code> 把SHELL改回 <code>bash</code></li> </ul> </li> </ul> <p>接下来就是安装一些必须的软件，比如Git和Xcode的 <code>Command Line Tools</code>。</p> <a name="Xcode.CLT"></a> <h3>Xcode CLT</h3> <ul> <li>升级Xcode</li> <li>启动Xcode，在Preferences里面选择下载</li> <li>安装"Command Line Tools"</li> </ul> <p><img src="/downloads/images/xcode_clt.png" title="Don't touch me..." alt="Xcode Command Line Tools"/></p> <a name="L......FireVault2"></a> <h3>打开FireVault2</h3> <p>Boxen默认会希望硬盘信息是被加密的：</p> <p><img src="/downloads/images/turn_on_fire_vault.png" title="Don't touch me..." alt="Turn on FireVault2"/></p> <a name="Fork.our-boxen"></a> <h3>Fork our-boxen</h3> <p><a href="https://github.com/boxen/our-boxen">our-boxen</a>是Boxen提供的基线repo，也是整个Boxen框架里面文档最全的一个repo。</p> <p>首先按照repo说明中的方式来clone和配置本地repo：</p> <pre><code class="bash">sudo mkdir -p /opt/boxen    
-sudo chown ${USER}:admin /opt/boxen    
-git clone https://github.com/boxen/our-boxen /opt/boxen/repo    
-cd /opt/boxen/repo    
-git remote rm origin    
-git remote add origin     
-git push -u origin master
-</code></pre> <p>这种clone下来再配置origin的方式类似于fork，区别是fork下来的repo一定是public的，而这样得到的repo可以是private的。可以想象如果你使用boxen来完成对公司电脑的配置，多少都会有一些敏感信息在repo里面，所以private的repo是非常必要的。</p> <p>接下来在 <code>/opt/boxen/repo</code> 路径下运行 <code>script/boxen</code> 即可完成boxen默认的模块的安装。默认的模块定义在 <code>/opt/boxen/repo/Puppetfile</code> 中：</p> <pre><code class="ruby">github "dnsmasq",  "1.0.0"
-github "gcc",      "1.0.0"
-github "git",      "1.0.0"
-github "homebrew", "1.0.0"
-github "hub",      "1.0.0"
-github "inifile",  "0.9.0", :repo =&gt; "cprice-puppet/puppetlabs-inifile"
-github "nginx",    "1.0.0"
-github "nodejs",   "1.0.0"
-github "nvm",      "1.0.0"
-github "ruby",     "1.0.0"
-github "stdlib",   "3.0.0", :repo =&gt; "puppetlabs/puppetlabs-stdlib"
-github "sudo",     "1.0.0"
-</code></pre> <p>可以看到Github大量用到 <code>ruby</code> 和 <code>nodejs</code> 。在运行boxen的时候，可能会看到大量的警告信息：</p> <pre><code>Warning: Could not retrieve fact fqdn
-Warning: Host is missing hostname and/or domain: suttlemac
-</code></pre> <p>然后伴随着 <code>https://rubygems.org</code> 失败。这些主要是因为GFW，你可以使用镜像，比如淘宝的。具体方式可以<a href="http://ruby.taobao.org/">查看这里</a>。</p> <p>注意你还应该把下面的脚本加到 <code>~/.bashrc</code> 或者 <code>~/.zshrc</code> :</p> <pre><code class="bash">[ -f /opt/boxen/env.sh ] &amp;&amp; source /opt/boxen/env.sh
-</code></pre> <p>然后新开一个shell运行 <code>boxen --env</code>，结果一切正常你的box就配置完毕了。</p> <a name="L...............box"></a> <h2>自定义你的box</h2> <p>默认安装的内容当然不一定对你的口味，如果你用过Puppet那么自定义Boxen的box是非常简单的。不过埋头开干之前还是可以check一下是不是已经<a href="https://github.com/boxen">有人做好了</a>。这些做好的repo可以直接通过修改配置文件是用，因为Boxen对librarian-puppet做了wrapper，对fetch各种module也做了wrapper。</p> <p>比如我们要安装Chrome和Skype，打开 <code>/opt/boxen/repo/Puppetfile</code> 并添加两行：</p> <pre><code class="ruby">...
-github "sudo",     "1.0.0"
+</script>
 
-# Add new modules
-github "skype",    "1.0.2"
-github "chrome",   "1.1.0"
-</code></pre> <p>这里安装的module的声明规则是 <code>github "{name}", "{version}"</code>。 其中 <code>name</code> 的取法是在 <code>Puppetfile</code> 里面定义的：</p> <pre><code class="ruby">def github(name, version, options = nil)
-  options ||= {}
-  options[:repo] ||= "boxen/puppet-#{name}"
-  mod name, version, :github_tarball =&gt; options[:repo]
-end
-</code></pre> <p>因此<a href="https://github.com/boxen/puppet-skype">puppet-skype</a>对应的就是 <code>skype</code> 。</p> <p>而 <code>version</code> 则是对应具体repo的tag，比如<a href="https://github.com/boxen/puppet-skype">puppet-skype</a>对应的<a href="https://github.com/boxen/puppet-skype/tags">tag</a>有：</p> <p><img src="/downloads/images/version_tag.png" title="Don't touch me..." alt="Version and tags"/></p> <p>如果你的repo不是在github也很简单，只需要指定repo的位置即可。比如如果你自己的Skype是放在Bitbucket上的:</p> <pre><code class="ruby">   mod "skype", :git =&gt; "git@bitbucket.org:yourusername/puppet-skype.git" 
-</code></pre> <p>在 <code>Puppetfile</code> 里面完成的声明主要是让Boxen（实际上是Puppet）知道去哪里找安装和配置文件。要告诉Boxen安装Skype还需要在 <code>manifests/site.pp</code> 里面 <code>include</code> 需要安装的module：</p> <pre><code class="ruby">...    
-    node default {      
-        include dnsmasq      
-        include ruby      
-        include git      
-        include hub      
-        include homebrew      
-        include skype    
-    }
-...
-</code></pre> <p>接下来只需要运行 <code>boxen</code> (如果你运行了 <code>boxen --env</code> 命令会在可执行路径里)或者是 <code>boxen --debug</code> (如果你需要更多的verbose信息)，指定的软件就安装上了。</p> <a name="What.s.Next"></a> <h2>What&rsquo;s Next</h2> <p>目前为止主要是解释了如何使用Boxen来安装一些基本软件。目前本座机器上使用Boxen安装的软件包括：</p> <pre><code class="ruby">github "ccleaner", "1.0.1"
-github "iterm2",   "1.0.2"
-github "skype",    "1.0.2"
-github "chrome",   "1.1.0"
-github "sublime_text_2",   "1.1.0"
-github "jumpcut",   "1.0.0"
-</code></pre> <p>接下来的计划就是建立项目组自己的repo，把诸如输入法、dotfiles、Java开发环境和Django开发环境这些东西的安装和配置都自动化了。</p> </div> </article> <article> <header> <h1 class="entry-title"><a href="/2013/03/the-gone-of-google-reader/">The Gone of Google Reader</a></h1> <p class="meta"> </p> </header> <div class="entry-content"><p><img src="/downloads/images/google_reader.png" title="Don't touch me..." alt="Google reader is gone"/></p> <p>Google Reader关掉的消息出来做之后网上的反应其实是很耐人寻味的。</p> <p>用户们的抱怨声是<a href="http://www.theverge.com/2013/3/14/4105432/google-reader-shuts-down">满坑满谷</a>：的确，它是很多人(包括本座在内)每天都用的工具。相比之下，所有RSS行业的人(如果这个行业还在的话)几乎都在叫好。</p> <p>跟一个朋友聊起来的时候，他说这就像当年王菲说姐不唱了，歌迷们是一片哀号，而很多唱歌的姑娘却长舒了一口气一样。</p> <p>不过其实这里面的原因并没有这么简单。一个RSS阅读器虽然算不上多么复杂的软件，但是服务器端做到Google Reader的稳定性和及时性就不容易了。由于Google Reader在这方面的质量一骑绝尘又有开放接口，使得很多其他的RSS阅读器都不再自己同步各个feed来源，而是直接使用Google Reader作为来源，在外面加壳。</p> <p>这样发展的结果是，实际上市面上就只有一款RSS阅读器和若干皮肤而已。只要看看<a href="http://feedburner.google.com/">feedburner</a>好像出土文物一样的页面就知道这样的发展对这个行业来说是什么样灾难的后果了。</p> <p>所以说Google Reader这种服务的倒掉，在短期内当然是巨大的损失。不过这样一来，似乎又唤醒了一个行业沉睡多年的创造力。看看<a href="http://inside.flipboard.com/2013/03/14/weve-got-your-rss-covered-save-your-google-reader-feeds-now/">Flipboard</a>、<a href="http://feedly.com/">Feedly</a>、<a href="http://feedafever.com/">Fever</a>、<a href="http://www.newsblur.com/">Newsblur</a>的反应你就会觉得，说不定会有比Google Reader更好的服务被孵化出来。</p> <p>因为，我实在是不觉得那些乱七八糟的SNS能代替一个干干净净的阅读器。</p> </div> </article> <div class="pagination"> <a class="prev" href="/posts/64">&larr; Older</a> <a href="/archives">Archives</a> <a class="next" href="/posts/62">Newer &rarr;</a> </div> </div> </div> </div> <footer role="contentinfo"><p> Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a> <span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span> <section class="contruction-wrap"> <div class="contruction"></div> </section> </p> </footer> <script type="text/javascript">
+
+</head>
+
+<body    class="collapse-sidebar sidebar-footer" >
+  <header role="banner"><hgroup>
+  <h1><a href="/">@Lenciel</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<ul class="main-navigation">
+  <li><a href="/"><i class="icon-home"></i>Home</a></li>
+  <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li>
+  <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2013/05/the-importance-of-deploy-as-will/">The Importance of Deploy As Will</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>最近公司里面两个比较资深的开发兄弟在我座位旁边进行了一场关于“代码优化到什么程度才算好”的争论。</p>
+
+<p>他们一起工作的项目是一个比较小的python模块（几百行的规模吧），用来在嵌入式设备对接入的手机进行一些操作。其中一个人希望把这部分代码重构到“如果需求有这样那样的改变能够承受。并且即便不是我们两个来继续这个模块，任何一个人拿到都能很容易的扩展和维护”；而另一个人则认为“这个模块的规模很小不需要那么大精力做重构，并且在需求出现的时候再开始在现有代码基础上重构比先设想可能的需求来重构有意义”。</p>
+
+<p>他们争的时候都有眼神投射到小弟这边，但是我没有加入：因为其实两个人的说法都还挺有道理的，他们的分歧我感觉是因为背景不同：一个是在我大M出道的（慢工出细活的平台中间件公司），一个是在互联网公司出道的。</p>
+
+<a name="L...........................dev..............."></a>
+<h2>追求品质是成为优秀dev的不二法门</h2>
+
+<p>首先，作为一个dev，最优秀的品质大概就是一直想要优化自己的产出(扎克伯格的致员工信里面特别强调了这个很多次）。程序员的产出可以优化的东西是很多的：大到设计、算法、接口、自动化测试和部署，小到变量名、函数名、注释等等。自觉地重构和优化可以给你在技能和思考方式上带来很大的提升。而在自己入行的早期有幸遇到一个严格要求品质的mentor逼着被动的追求重构和优化，并且挺过来（挺过来很重要，要有学习能力并且有胸怀），更是能在工作方式和思考方式上得到很多非常正面的影响。我大M在我呆过的公司里面，这方面绝对是做得最好的。</p>
+
+<a name="L..............................deploy......"></a>
+<h2>什么时候够好要看你的deploy成本</h2>
+
+<p>但是，就这个项目而言，我个人是比较同意后面这位弟兄的看法的。软件项目可以做的重构和优化几乎是没有止境的，如何来衡量什么时候就“够好了”，业界其实有很多标准。但是我自己最喜欢的是Martin Fowler在一个演讲的时候提到的例子。他说：</p>
+
+<blockquote><p>假设你被要求设计一个电脑控制的手枪，要求在50米内自动瞄准并击中目标。需求只有这么一个。一种做法是设计一个复杂的系统，采集并计算各种可能的变量(风速、海拔、温度等等)，以这些变量为基础瞄准并最后击发。还有一种是设计一个简单的系统，可以快速的击发，并且能够统计每一击距离目标多远。然后它根据收集回来的距离数据校正并迅速击中目标。</p></blockquote>
+
+<p>你可能会因为上下文觉得第二种方式当然是最好的，但其实上面两种方式是没有绝对的最优的：决定性的因素在于子弹的价钱。如果一个测量风速的模块都贵得可以买一车的子弹了，那么谁更好是显而易见的。</p>
+
+<p>对于软件项目而言，Martin Fowler的例子中的目标就是你的用户，子弹的价钱就是你软件的deploy成本(当然，不要忘记了健全的用户反馈机制也很重要)。如果我们在造一个高可靠性的系统，比如发射火箭，显然是没法承受射出去一颗不行再来一颗的；如果我们在做一个小模块或者是小项目，那么一开始就很完美地设计并不断重构它，可能性价比确实不高。</p>
+
+<p>对于Web开发者，理解Martin Fowler的例子显得特别重要。一般来说网站上线的初期(一年左右)，是属于deploy成本比较低的时候。这时候在线的用户一般是抱着试玩的心态，对新功能的渴望远远超过对稳定性的要求，并且能够给出很多反馈意见。这个阶段迅速的deploy新功能，迅速的处理反馈并设计下一个新功能非常重要，而有一定时间的宕机或者回退用户并不那么在乎。所以那位互联网公司出道的兄弟有他那样的想法，也就不足为奇了。</p>
+
+<p>到了用户量上去，或者重要的用户进场之后，deploy的成本就变得很高了。这个时候如果没有一整套严格的测试和运维流程，可能系统就玩不转。</p>
+
+<a name="L......"></a>
+<h2>结论</h2>
+
+<p>对于我司而言，目前和很长一段时间内的大多数产品都处于子弹不那么贵的阶段。个人感觉目前我们的CI和收集处理反馈这两方面是需要加强的，只有做到了"deploy as will"，我们才有底气来以做互联网的方式来开发我们自己的产品。</p>
+
+<p>而从长期来看，全面的提高项目品质，不仅需要dev自己有重构的自觉性，还需要我们有健全的融入到CI的测试以及成熟的运维团队。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2013/05/the-myth-of-productivity/">The myth of productivity</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>在从公司辞职出来的之前，我们对创业的期望是不降低大家的生活质量。我们对自己这么说，对我们拉入伙的兄弟们也这么说。这里的生活质量当然除开收入之外，很大的一方面就是不加班。</p>
+
+<p>但是实际上的情况是：五一之前整个公司度过了一个非常特别的时期：产品团队不停地根据用户的输入，修改产品需求；服务器端和客户端两个开发组都疯狂加班，彻夜不眠；测试每天没有东西可以测试。</p>
+
+<p>假期我回忆了一下自己参与过的所有的软件项目，大到IBM的存储或者Ericsson的基站，小到自己做着玩的一些prototype，有跨时区的几个团队合作的，也有每天都可以互相抛媚眼的死党一起撸的，它们有一个共同的特点：居然没有一个是能够按照预估的时间交付的。</p>
+
+<p>假期我和一个老一辈无产阶级革命家聊起了这个问题：每次一个项目出现这样那样的情况，不能按时交付，我们都反思、开会、总结，希望下一个项目能吸取所有的经验，不再犯同样的错误。为什么最后的结果还是一样？</p>
+
+<p>他推荐了Daniel Kahneman的<a href="http://vdisk.weibo.com/s/8nUJx">Thinking, Fast and Slow</a>。这是一本心理学著作，探讨了人类认知的很多方面，其中有不少观点挺值得软件开发从业人员思考的，特别是想不明白为什么我们做的estimation永远不准的软件从业人员。</p>
+
+<a name="L................................................................................."></a>
+<h2>原因一：开发软件面向的问题域在你深入之前是不完全可知的</h2>
+
+<p>可以通过编写软件完美解决一个问题的前提是，我们对问题域了解得“足够深入”，以至于我们可以细致而精确地告诉计算机“如何”解决一个问题。</p>
+
+<p>但是矛盾的地方在于，一般我们了解到这个程度的问题，都已经有现成的软件或者是库了。需要我们进行开发的总是来自一些新需求：引入不确定性的那些新需求。</p>
+
+<p>新需求引入的不确定性是多方面的：第三方接口提供者不能按时提供可靠的接口，所以你要自己做适配；选定的数据库服务器之间不能互联互通需要VPS提供商开通3306端口互访。当然，不那么具体但是绝对会遇到的不确定性一般来自客户：产品release了，但是他们发现自己需要的并不他们最开始描述的这个东西，他们要这里那里做一些“小改动”&hellip;</p>
+
+<p>这其实也是历史上钻出来那么多specification文档的原因：有一些管理层希望能通过在文档阶段对需求足够细化来避免不确定性对项目的影响。但结果大家都知道了，细化的文档被整个软件行业唾弃的原因是越来越多的证据说明，如果你掌握的细节足够多，你就该直接去写软件。如果你掌握的细节不够多，那么写文档也没足够细的可能。</p>
+
+<p>有趣的地方在于，无论做工程师的时候大家对估开发时间多么的不屑，一旦到了管理层，你工作的核心就是估开发时间。而且有不少前一个月还在为没有按时delivery睡不着的苦逼工程师，一升到管理层就无比相信自己估的开发时间了。无论项目的实际情况如何，他们都会push整个团队苦干蛮干，这就是另外一个问题了。</p>
+
+<a name="L......................................."></a>
+<h2>原因二：过度自信和效率神话</h2>
+
+<p>这次雅安地震那位预测四川多少多少年不会有大地震的专家又成了笑柄。这当然不是专家第一次或者最后一次因为错误的预测成为笑柄。Kahneman在书里面专门花了一些篇幅写“专家”的预测为什么在大多数情况下是毫无用处的，最核心的三点在于：</p>
+
+<ul>
+<li>事实证明专家的预测常常会出错</li>
+<li>但作出预测的专家会对自己有绝对的自信</li>
+<li>即便后来发现自己的预测是错误的，专家对自己的自信不会减少</li>
+</ul>
+
+
+<p>最后这一点特别有趣。即便事实证明预测是错误的，即便明白只是人类认知中必然可能出现的问题，专家仍然会对自己的预测继续充满自信。原因何在？</p>
+
+<a name="L......I.......II................................."></a>
+<h2>系统I/系统II以及我们是如何做预估的</h2>
+
+<p>在<a href="http://vdisk.weibo.com/s/8nUJx">Thinking, Fast and Slow</a>里面Kahneman的解释了人类其实有两套决策系统：系统II负责谨慎、理性、分析性的思考；系统I复杂快速、基于模式、基于直觉的思考。</p>
+
+<p>重要的是，在进化的过程中，一个主要变化就是系统II慢慢少被使用了：耗时长的系统，仅仅在极其少的必须的情况下被唤醒。但是这里有个显而易见的矛盾是，如果没有经过思考，你怎么知道应该使用系统I还是系统II呢？</p>
+
+<p>这就是做预估的时候总是估不准的根本原因。做预估的时候，因为你是要在没有仔细分析（甚至一般也没用仔细分析的输入）的情况下使用系统I来做出判断。所以你的预估“一个任务需要花多少时间”的时候，其实多半是在根据“这个任务你有多少自信”。</p>
+
+<p>所以，一般来说我们报这个任务我需要3天的时候，其实是因为“这个东西看起来非常简单，而且我十分清楚如何做”。如果报这个任务我需要3个月，则是因为“这个东西看起来很难，我也不知道怎么做，但是我相信我能搞懂是怎么做”。</p>
+
+<a name="L...................................................."></a>
+<h2>避免凭直觉做预估就能得到准确预估吗?</h2>
+
+<p>你看到这里肯定会觉得，为了避免这些虚幻的估计，我们应该通过各种手段使用系统II来通过仔细地分析得到准确的数据。</p>
+
+<p>Bravo！恭喜你发明了“瀑布开发流程”。基本上来说"在开始编码之前我们先编写文档"就是为了让你切换到系统II。但是为什么使用瀑布的项目也会失败？</p>
+
+<p>说白了，还是软件开发在初始阶段即使使用系统II也不能做出精确的判断：知道的太少，变化的太多。那么究竟该怎么办？</p>
+
+<a name="L......................................."></a>
+<h2>什么样的预测是比较有效的？</h2>
+
+<p>Kahneman和其他一些专家通过研究，得出了什么时候做预测是比较保险的：</p>
+
+<blockquote><p>“To know whether you can trust a particular intuitive judgment, there are two questions you should ask: Is the environment in which the judgment is made sufficiently regular to enable predictions from the available evidence? The answer is yes for diagnosticians, no for stock pickers. Do the professionals have an adequate opportunity to learn the cues and the regularities?”</p></blockquote>
+
+<p>这里的"adequate opportunity"意味着大量的实践经验用于可控的周期内的稳定环境中，并且具备了反馈机制可以随时修正准确度。以此为根据，0-12个小时的task，如果这些task一被建立就能立刻得到执行，那么：</p>
+
+<ul>
+<li>在这么短的时间内，虽然仍然有可能会出现变化，基本环境应该是稳定的</li>
+<li>你可以很快的得到结果并且知道自己估计的准确度</li>
+</ul>
+
+
+<p>在这种情况下，你是尽可能的先利用系统I开始工作，并且通过迅速得到的反馈来修正自己的结果，达到目标。</p>
+
+<a name="L.................."></a>
+<h2>打破效率神话</h2>
+
+<p>创业团队出现过于乐观的估计除开过度自信之外，还有很重要的一个原因是因为相信效率神话。Evernote，AnyDo，OmniFocus等等GTD工具和各种关于同时做n件事情还每件都做好的江湖传说很容易把焦头烂额的创业团队坑进去。接受你不可能做出一个准确的预估然后向客户承诺的事实，转而思考如何在规定时间内最大化的输出对客户有用的价值时，关于效率需要牢记下面的事实：</p>
+
+<ul>
+<li>一天只有24个小时，即使团队的沟通成本很低，仍然需要在使用你们选用的agile工具，开会，互相之间同步信息，迭代和对外汇报等等上花时间；</li>
+<li>人的生活还有各种不确定性，如生病、怀孕、过劳、休假、结婚、家长会、禽流感等等；</li>
+<li>你的系统会有一些非常难以找到root cause的bug需要花你估计的十倍以上的时间才能根除</li>
+<li>你的客户会给你各种乱七八糟的输入并且提出各种来时已晚的需求</li>
+<li><a href="https://medium.com/r/?url=http%3A%2F%2Fwww.inc.com%2Fjessica-stillman%2Fwhy-working-more-than-40-hours-a-week-is-useless.html">一周工作的超过40个小时之后的部分已经被认为是无效的</a></li>
+<li><a href="https://medium.com/r/?url=http%3A%2F%2Flifehacker.com%2F246988%2Fmultitasking-makes-you-less-productive-%2B-take-ten">工作被打断后需要15到20分钟才能恢复</a></li>
+<li><a href="https://medium.com/r/?url=http%3A%2F%2Fwww.kens5.com%2Fnews%2FStudy-Average-worker-spends-60-percent-of-time-cyberloafing-190195401.html">人们上班的时候花了非常多的时间干和工作无关的事情</a></li>
+</ul>
+
+
+<p>接受现实，摒弃对效率神话的膜拜，用心思考在有限的时间内如何最大化的输出对用户有价值的东西，比任何流程、方法论、工具都要重要。这一方面在团队内部倡导了一种科学并且诚实的做事方式，一方面会让你更能分清工作任务和资源的优先级。它最大的好处是让你专心地根据实际的优先级做出判断，把精力放到最关键的事情上去。</p>
+
+<p>这，是对整个团队最重要的事情。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/posts/64">&larr; Older</a>
+    
+    <a href="/archives">Archives</a>
+    
+    <a class="next" href="/posts/62">Newer &rarr;</a>
+    
+  </div>
+</div>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a>
+<span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span>
+  <section class="contruction-wrap">
+    <div class="contruction"></div>
+  </section>
+</p>
+
+</footer>
+  
+
+
+
+
+<script type="text/javascript">
   var stylesheet = document.createElement('link');
   stylesheet.href = '/assets/stylesheets/app.css';
   stylesheet.rel = 'stylesheet';
   stylesheet.type = 'text/css';
   document.getElementsByTagName('head')[0].appendChild(stylesheet);
-</script> </body> </html>
+</script>
+
+</body>
+</html>

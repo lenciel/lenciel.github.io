@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: education | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/education/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-04-02T23:44:01+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/education/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-04-06T19:01:30+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[英文的形容词排序]]></title>
-    <link href="http://lenciel.com/2016/09/adjective-word-order/"/>
+    <link href="http://172.16.121.110:4000/2016/09/adjective-word-order/"/>
     <updated>2016-09-09T10:13:32+08:00</updated>
-    <id>http://lenciel.com/2016/09/adjective-word-order</id>
+    <id>http://172.16.121.110:4000/2016/09/adjective-word-order</id>
     <content type="html"><![CDATA[<p>其实也是中学的时候很困扰我的事情。当时是背老师说的口诀：“限描大形新，色地材用名”，也就是“限制性形容词>描述性形容词->大小->形状->新旧->颜色->地域->材料->用途”。</p>
 
 <p>后来在大学里面听其他省的同学说，他们老师讲的是“限数描大形，新色国材名”或者是“总限观，大形令，色国才”什么的。</p>

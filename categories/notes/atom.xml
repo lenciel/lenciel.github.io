@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: notes | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/notes/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-04-02T23:44:01+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/notes/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-04-06T19:01:30+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[Sam Altman给创业者的建议]]></title>
-    <link href="http://lenciel.com/2015/02/startup-advices-from-sam-altman/"/>
+    <link href="http://172.16.121.110:4000/2015/02/startup-advices-from-sam-altman/"/>
     <updated>2015-02-22T22:22:00+08:00</updated>
-    <id>http://lenciel.com/2015/02/startup-advices-from-sam-altman</id>
+    <id>http://172.16.121.110:4000/2015/02/startup-advices-from-sam-altman</id>
     <content type="html"><![CDATA[<p>去年创业界的一大盛事就是YC的CEO，斯坦福的退学生<a href="http://blog.samaltman.com/">Sam Altman</a>联手斯坦福大学，开设了课程CS183B：<a href="http://startupclass.samaltman.com/">How To Start A Startup</a>。十周共20节课程请来了各路顶尖人才，从创意、产品、团队和执行这四个YC认为创业最关键的维度分享了如何进行创业。</p>
 
 <p>如果你自己是创业者，个人建议是整个课程可以好好看一遍，反正就算你不会翻墙，因为YC巨大的号召力，国内也有人为这个课程专门做了<a href="http://startupclass.club/">镜像网站</a>并配了字幕。</p>
@@ -63,9 +63,9 @@
   
   <entry>
     <title type="html"><![CDATA[uWSGI, Gunincorn, 啥玩意儿?]]></title>
-    <link href="http://lenciel.com/2013/08/why-you-need-something-like-gunicorn/"/>
+    <link href="http://172.16.121.110:4000/2013/08/why-you-need-something-like-gunicorn/"/>
     <updated>2013-08-01T14:36:00+08:00</updated>
-    <id>http://lenciel.com/2013/08/why-you-need-something-like-gunicorn</id>
+    <id>http://172.16.121.110:4000/2013/08/why-you-need-something-like-gunicorn</id>
     <content type="html"><![CDATA[<p>因为nginx等优秀的开源项目，有不少本来不是做服务器的同学也可以写很多服务器端的程序了。但是在聊天中会发现，大家虽然写了不少代码，但是对wsgi是什么，gunicorn是什么，反向代理又是什么并不了解，也就是说对基本概念并没有一个全局的了解。</p>
 
 <a name="L........."></a>
@@ -229,9 +229,9 @@
   
   <entry>
     <title type="html"><![CDATA[Cryptography and Python]]></title>
-    <link href="http://lenciel.com/2013/07/cryptography-and-python/"/>
+    <link href="http://172.16.121.110:4000/2013/07/cryptography-and-python/"/>
     <updated>2013-07-25T15:13:00+08:00</updated>
-    <id>http://lenciel.com/2013/07/cryptography-and-python</id>
+    <id>http://172.16.121.110:4000/2013/07/cryptography-and-python</id>
     <content type="html"><![CDATA[<p>这周我们的一个项目里面需要调用第三方接口。对方的安全机制是调用时要进行加密和校验，但它们的文档没有描述具体是怎么加密的，而是给了一段代码：</p>
 
 <pre><code class="java">    private static BASE64Encoder base64 = new BASE64Encoder();
@@ -616,9 +616,9 @@ True
   
   <entry>
     <title type="html"><![CDATA[Ideas Are Easy]]></title>
-    <link href="http://lenciel.com/2013/01/ideas-are-easy/"/>
+    <link href="http://172.16.121.110:4000/2013/01/ideas-are-easy/"/>
     <updated>2013-01-24T23:50:00+08:00</updated>
-    <id>http://lenciel.com/2013/01/ideas-are-easy</id>
+    <id>http://172.16.121.110:4000/2013/01/ideas-are-easy</id>
     <content type="html"><![CDATA[<p>最近做的一些事情，让本座有一些感触。昨天恰好看到Daniel Tenner的一篇文章，共鸣了3个来小时。</p>
 
 <p>Daniel的文章主要介绍了<a href="https://twitter.com/pr1001" target="_blank">Peter Robinett</a>关于创业的一些经验分享。其中特别有趣的一点是，为什么有创业想法的人，在遇到那些很愿意创业也很有实力的开发者的时候，常常没法说服他们和自己一起创业。</p>

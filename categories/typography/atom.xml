@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: typography | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/typography/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-04-02T23:44:01+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/typography/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-04-06T19:01:30+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[Butterick的实用字体设计]]></title>
-    <link href="http://lenciel.com/2013/08/buttericks-practical-typography/"/>
+    <link href="http://172.16.121.110:4000/2013/08/buttericks-practical-typography/"/>
     <updated>2013-08-26T11:11:00+08:00</updated>
-    <id>http://lenciel.com/2013/08/buttericks-practical-typography</id>
+    <id>http://172.16.121.110:4000/2013/08/buttericks-practical-typography</id>
     <content type="html"><![CDATA[<p>最近和一个朋友聊天，他说最近几年大概是Flat流行网页上除开字就没别的了，字体设计被各种强调。</p>
 
 <p>这位老大在上海经营自己的网页设计公司，但是大家够熟，本座就冒着班门弄斧的危险纠正了他一嘴：很多年前，<a href="http://www.theverge.com/2012/7/24/3177332/ia-oliver-reichenstein-writer-interview-good-design-is-invisible">Oliver Reichenstein</a>就说过"<a href="http://ia.net/blog/the-web-is-all-about-typography-period/">Web设计95%是字体设计</a>&ldquo;了。而且这种观点还一直被<a href="http://www.smashingmagazine.com/2012/07/24/one-more-time-typography-is-the-foundation-of-web-design/">反复强调</a>。</p>

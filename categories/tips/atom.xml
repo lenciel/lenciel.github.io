@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: tips | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/tips/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-04-02T23:44:01+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/tips/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-04-06T19:01:30+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -13,10 +13,58 @@
 
   
   <entry>
+    <title type="html"><![CDATA[如何解决苹果的邮件Spam]]></title>
+    <link href="http://172.16.121.110:4000/2016/11/how-to-resolve-apple-calendar-spam/"/>
+    <updated>2016-11-30T22:28:40+08:00</updated>
+    <id>http://172.16.121.110:4000/2016/11/how-to-resolve-apple-calendar-spam</id>
+    <content type="html"><![CDATA[<p>从10月的某一天开始，我发现我的日历每天都充满了外部邀请：</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/20292-5d2a6a90f697fcab.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Oh Shoot" /></p>
+
+<p>很显然，天朝的某些人拿到了一个超大的邮件地址列表，然后在发送事件邀请：Mac会把这种邀请显示在日历上面，然后显示一个通知。</p>
+
+<p>按说大数据时代了，Apple是可以想办法来解决一下这么猖狂的Spam的，但是一个多月过去了，什么都没有发生，我收到的邀请也越来越多了，只能自己解决一下。</p>
+
+<a name="L....................."></a>
+<h3>拒绝是没有用的</h3>
+
+<p>和别的日历上收到事件邀请（类似于工作中收到会议邀请之类）一样，按直觉你的处理方式就是点开这个事件，然后点击“拒绝参加”或者“拒绝参加这个系列”。</p>
+
+<p>但这样其实是没有用的，甚至是有害的。因为对方是要Spam你而不是真要问你要不要参加什么事情。你一旦“拒绝”，对方就知道你在他拿到的邮件列表里面是个“有效对象”，奇奇怪怪的邀请很快就会源源不断地发过来塞满你的日历。</p>
+
+<a name="L............"></a>
+<h3>处理方法</h3>
+
+<p>在stackexchange上有个关于如何处理的<a href="http://apple.stackexchange.com/questions/258424/spam-icloud-calendar-invitation/">讨论</a>，因为这个网站会闪断并且进去看的里面是怎么说中国人的也很刺激，所以我就稍微演示一下：</p>
+
+<p>首先登录<a href="https://www.icloud.com">icloud网站</a>，然后进入calendar，点击<code>Edit</code>然后新建一个日历，比如<code>Spam</code>：</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/20292-9d6643b09baec11f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="新建日历" /></p>
+
+<p>然后点击某个你想删除的邀请，把它归档到这个新建的日历里面，要点右上角进入这个操作的入口：</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/20292-addf2b77d0760b4c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="归档邀请" /></p>
+
+<p>最后，删除这个新建的日历，这个系列的邀请就被清理干净了。</p>
+
+<a name="L............"></a>
+<h3>连根拔起</h3>
+
+<p>但是这样能清静多久完全取决于你在攻击者心中的权重，如果来一串邀请就这么操作一遍，心情也是很差的，所以你可以直接把所有的邀请都设置成通过邮件来通知：</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/20292-a2a0d0c09520b3e8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="第一步：进入设置" /></p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/20292-702275e3ee3966cf.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="第二步：进入高级选项" /></p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/20292-72790afa08ac2789.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="第三步：勾选通过邮件通知" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[电脑视觉综合症]]></title>
-    <link href="http://lenciel.com/2016/09/computer-vision-syndrome/"/>
+    <link href="http://172.16.121.110:4000/2016/09/computer-vision-syndrome/"/>
     <updated>2016-09-30T13:49:17+08:00</updated>
-    <id>http://lenciel.com/2016/09/computer-vision-syndrome</id>
+    <id>http://172.16.121.110:4000/2016/09/computer-vision-syndrome</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/2016_09/computer.png" title="Don't touch me..." alt="Vhost threshold" /></p>
 
 <p>虽然叫做“<a href="https://zh.wikipedia.org/wiki/%E7%94%B5%E8%84%91%E8%A7%86%E8%A7%89%E7%BB%BC%E5%90%88%E7%97%87">电脑视觉综合症(Computer Vision Syndrome)</a>”，但真正成为祸害，却是在智能手机一统天下之后：据美帝医生的统计，已经有八千万左右的患者。</p>
@@ -75,9 +123,9 @@
   
   <entry>
     <title type="html"><![CDATA[使用Chrome自定义搜索引擎快速查找资源]]></title>
-    <link href="http://lenciel.com/2016/02/how-can-everybody-use-chrome/"/>
+    <link href="http://172.16.121.110:4000/2016/02/how-can-everybody-use-chrome/"/>
     <updated>2016-02-20T11:53:34+08:00</updated>
-    <id>http://lenciel.com/2016/02/how-can-everybody-use-chrome</id>
+    <id>http://172.16.121.110:4000/2016/02/how-can-everybody-use-chrome</id>
     <content type="html"><![CDATA[<p>这篇文章讨论的办法，主要是结合使用<code>带参数Google搜索</code>+<code>Chrome快捷搜索入口</code>，鉴于众所周知的原因，如果你不会翻墙可能不能直接使用。</p>
 
 <p>但是鉴于国内搜索引擎功能上多少都有借鉴Google，浏览器多少都有借鉴Chrome，所以这里讨论的办法也许用其他"搜索"+&ldquo;浏览器"组合也可以使用。只是我们都知道国内搜索引擎索引出来的结果有多离奇，所以效果上可能会打一些折扣。</p>
@@ -156,9 +204,9 @@
   
   <entry>
     <title type="html"><![CDATA[Integrate schemaSpy with Sphinx build]]></title>
-    <link href="http://lenciel.com/2014/12/integrate-schemaspy-with-sphinx-build-for-django-database-design-visualization/"/>
+    <link href="http://172.16.121.110:4000/2014/12/integrate-schemaspy-with-sphinx-build-for-django-database-design-visualization/"/>
     <updated>2014-12-18T00:26:32+08:00</updated>
-    <id>http://lenciel.com/2014/12/integrate-schemaspy-with-sphinx-build-for-django-database-design-visualization</id>
+    <id>http://172.16.121.110:4000/2014/12/integrate-schemaspy-with-sphinx-build-for-django-database-design-visualization</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/2014_12/schemaSpy.png" title="schemaSpy..." alt="schemaSpy" /></p>
 
 <p>在做项目的时候，客户或者合作的部门常常问研发要“数据库设计”。在古代，瀑布式开发的第一个阶段是做架构设计和写文档，所以这样的需求一般都能被“充分满足”。而在我们现在的项目节奏和迭代速度都很快，数据库的设计在项目初期经常也在变化，如何能够比较方便的文档化这些变更？</p>
@@ -245,9 +293,9 @@ $ ./manage.py graph_models -a -g -o my_project_visualized.png
   
   <entry>
     <title type="html"><![CDATA[Web应用开发的七项原则]]></title>
-    <link href="http://lenciel.com/2014/11/7-principles-of-rich-web-applications/"/>
+    <link href="http://172.16.121.110:4000/2014/11/7-principles-of-rich-web-applications/"/>
     <updated>2014-11-17T22:30:42+08:00</updated>
-    <id>http://lenciel.com/2014/11/7-principles-of-rich-web-applications</id>
+    <id>http://172.16.121.110:4000/2014/11/7-principles-of-rich-web-applications</id>
     <content type="html"><![CDATA[<p>本文源自Guillermo Rauch的<a href="http://rauchg.com/2014/7-principles-of-rich-web-applications/">7 Principles of Rich Web Application</a>，经过他本人授权，我翻译了放在这里。</p>
 
 <p>这篇文章主要介绍构建使用Javascript来控制UI的网站在设计时的7个原则。它们是我作为一名开发人员的经验所得，也是我作为一名互联网资深用户的体会和总结。</p>
@@ -542,143 +590,6 @@ $ ./manage.py graph_models -a -g -o my_project_visualized.png
 <p>互相用超链接集结在一起的页面是各种类型的应用的组成单位。当用户浏览页面时，渐进地加载代码、样式表和标记，可以在保证性能的基础上不牺牲太多的交互性。</p>
 
 <p>Javascript带来了新的契机，一旦被全面采用，将可以在保证最佳的用户体验基础上，构建前所未有的最广阔最开放的应用平台。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[update android sdk with shadowsocks proxy]]></title>
-    <link href="http://lenciel.com/2014/09/update-android-sdk-with-proxy/"/>
-    <updated>2014-09-02T02:30:35+08:00</updated>
-    <id>http://lenciel.com/2014/09/update-android-sdk-with-proxy</id>
-    <content type="html"><![CDATA[<p>博格坎普说，我们android项目的build挂了。</p>
-
-<p>去Jenkins看了一下，日志里面的错误是：</p>
-
-<pre><code>[android] $ /usr/local/share/gradle-1.11/bin/gradle clean build
-Creating properties on demand (a.k.a. dynamic properties) has been deprecated and is scheduled to be removed in Gradle 2.0. Please read http://gradle.org/docs/current/dsl/org.gradle.api.plugins.ExtraPropertiesExtension.html for information on the replacement for dynamic properties.
-Deprecated dynamic property: "buildName" on "ProductFlavorDsl_Decorated{name=main, minSdkVersion=null, targetSdkVersion=null, renderscriptTargetApi=-1, renderscriptSupportMode=null, renderscriptNdkMode=null, versionCode=-1, versionName=null, applicationId=null, testApplicationId=null, testInstrumentationRunner=null, testHandleProfiling=null, testFunctionalTest=null, signingConfig=null, resConfig=null}", value: "1.0.97".
-
-FAILURE: Build failed with an exception.
-
-* What went wrong:
-A problem occurred configuring project ':app'.
-&gt; Could not resolve all dependencies for configuration ':app:_debugCompile'.
-   &gt; Could not find com.android.support:appcompat-v7:20.0.0.
-     Required by:
-         android:app:unspecified
-
-* Try:
-Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.s
-</code></pre>
-
-<p>这其实在天朝是蛮常见的现象，因为<code>dl-ssl.google.com</code>被封了，所以你总是会因为下面的错误无法更新Android的SDK：</p>
-
-<pre><code class="bash">Failed connect to dl-ssl.google.com:443;
-</code></pre>
-
-<a name="Jenkins....................."></a>
-<h2>Jenkins服务器配置代理</h2>
-
-<p>这里之所以选择<a href="http://shadowsocks.org/">shadowsocks</a>，是因为可以用自己在<a href="https://developers.google.com/appengine/">Google的VM</a>上配置的shadowsocks代理服务器（顺便广告一下，Google的VM在做活动，几乎是最高配的机器都不要钱，而且第一跳就在美帝，用来做代理非常爽）。</p>
-
-<p>安装shadowsocks的pythohn client:</p>
-
-<pre><code class="bash">$ pip install shadowsocks
-
-Downloading/unpacking shadowsocks
-  Running setup.py egg_info for package shadowsocks
-
-    warning: manifest_maker: MANIFEST.in, line 1: 'recursive-include' expects &lt;dir&gt; &lt;pattern1&gt; &lt;pattern2&gt; ...
-
-Installing collected packages: shadowsocks
-  Running setup.py install for shadowsocks
-
-    warning: manifest_maker: MANIFEST.in, line 1: 'recursive-include' expects &lt;dir&gt; &lt;pattern1&gt; &lt;pattern2&gt; ...
-
-    Installing sslocal script to /usr/local/bin
-    Installing ssserver script to /usr/local/bin
-Successfully installed shadowsocks
-Cleaning up...
-</code></pre>
-
-<p>可以看到安装完之后有两个可执行文件，运行其中的<code>sslocal</code>就可以启动shadowsocks的客户端了：</p>
-
-<pre><code class="bash">root@palm4fun-core-1:~/install# sslocal -h
-usage: sslocal [-h] -s SERVER_ADDR [-p SERVER_PORT]
-               [-b LOCAL_ADDR] [-l LOCAL_PORT] -k PASSWORD [-m METHOD]
-               [-t TIMEOUT] [-c CONFIG] [--fast-open] [-v] [-q]
-
-optional arguments:
-  -h, --help            show this help message and exit
-  -s SERVER_ADDR        server address
-  -p SERVER_PORT        server port, default: 8388
-  -b LOCAL_ADDR         local binding address, default: 127.0.0.1
-  -l LOCAL_PORT         local port, default: 1080
-  -k PASSWORD           password
-  -m METHOD             encryption method, default: aes-256-cfb
-  -t TIMEOUT            timeout in seconds, default: 300
-  -c CONFIG             path to config file
-  --fast-open           use TCP_FASTOPEN, requires Linux 3.7+
-  -v, -vv               verbose mode
-  -q, -qq               quiet mode, only show warnings/errors
-
-Online help: &lt;https://github.com/clowwindy/shadowsocks&gt;
-</code></pre>
-
-<p>最简单的办法就是新建一个配置文件：</p>
-
-<p><code>javascript ~/.shadowconfig
-{
-    "server":"my_server_ip",
-    "server_port":8388,
-    "local_port":1080,
-    "password":"barfoo!",
-    "timeout":600,
-    "method":"table"
-}
-</code></p>
-
-<p>记得在防火墙打开你配置的本地端口，然后运行下面的命令：</p>
-
-<pre><code class="bash">root@palm4fun-core-1:~/install# sslocal -c ~/.shadowconfig
-INFO: loading config from /root/.shadowconfig
-shadowsocks 2.1.0
-2014-09-02 00:27:53 INFO     starting local at 127.0.0.1:1080
-</code></pre>
-
-<a name="L...............android.sdk"></a>
-<h2>命令行更新android sdk</h2>
-
-<p>先配置java命令使用的代理，然后
-从命令行更新android sdk。只需要到tools目录下面去跑(<code>-u</code>是不显示GUI，<code>-s</code>是指定不使用ssl链接)：</p>
-
-<pre><code class="bash">$ export _JAVA_OPTIONS="-DsocksProxyHost=127.0.0.1"
-$ android update sdk -u -s --all
-</code></pre>
-
-<p>注意<code>socksProxyHost</code>的默认端口就是1080，如果你使用了其他端口不能只配ip。</p>
-
-<p>另外，<code>--all</code>是比较猛烈的选项（人家的硬盘就是大，人家的代理就是快嘛），你可以在命令行里面通过filter来安装你需要的东西。</p>
-
-<a name="When.shit.happens"></a>
-<h2>When shit happens</h2>
-
-<p>运行起来之后更新非常慢，可以<code>android</code>命令报timeout，而代理那边打出日志：</p>
-
-<pre><code class="bash">2014-09-02 00:27:53 INFO     starting local at 127.0.0.1:1080
-2014-09-02 00:28:04 INFO     connecting 74.125.237.1:80
-2014-09-02 00:28:04 INFO     connecting 74.125.237.1:80
-2014-09-02 00:28:04 INFO     connecting 74.125.237.1:80
-</code></pre>
-
-<p>因为本座平时上网也是在用Google VM上的这个代理，没理由这么慢。所以就怀疑那个74.125.237.1的地址是被谁在<code>/etc/hosts</code>里面给配了固定ip。打开一看果然有：</p>
-
-<pre><code class="bash">dl-ssl.google.com 74.125.237.1
-</code></pre>
-
-<p>估计是之前配置的基友搜索到了类似<a href="http://www.programering.com/a/MjM4YTMwATA.html">这样的文章</a>。这也是为什么我从来不用也不推荐别人用修改hosts文件的方法来翻墙的原因：它们总是在过期。</p>
-
-<p>Last but not the least, Fuck you, GFW.</p>
 ]]></content>
   </entry>
   

@@ -1,4 +1,104 @@
-<!DOCTYPE html> <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]--> <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]--> <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]--> <head> <meta charset="utf-8"> <title>Fix Python after upgrade to Maverick - @Lenciel</title> <meta name="author" content="Lenciel"> <meta name="description" content=" Fix Python after upgrade to Maverick 升级到最新的osx版本Maverick之后，打开iTerm2就报错：..."> <meta name="HandheldFriendly" content="True"> <meta name="MobileOptimized" content="320"> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="canonical" href="http://lenciel.com/2013/10/maverick-and-python/"> <link href="/favicon.png" rel="icon"> <script src="/assets/javascripts/app.js"></script> <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml"> <meta property="og:title" content="Fix Python after upgrade to Maverick"/><meta itemprop="name" content="Fix Python after upgrade to Maverick"/> <meta property="og:type" content="article"/> <meta property="og:url" content="http://lenciel.com/2013/10/maverick-and-python/"/> <meta property="og:description" content=" Fix Python after upgrade to Maverick 升级到最新的osx版本Maverick之后，打开iTerm2就报错：..."/> <meta property="og:site_name" content="http://lenciel.com"/> <meta property="article:author" content="http://lenciel.com"> <meta property="article:published_time" content="2013-10-24 22:02:00 +0800"/> <meta property="article:section" content="pythontips"/> <meta itemprop="description" content=" Fix Python after upgrade to Maverick 升级到最新的osx版本Maverick之后，打开iTerm2就报错：..."/> <script>
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Fix Python after upgrade to Maverick - @Lenciel</title>
+  <meta name="author" content="Lenciel">
+
+  
+  <meta name="description" content="
+
+  
+  
+    
+      Fix Python after upgrade to Maverick
+    
+    
+      
+        
+
+
+
+
+
+        
+      
+    
+  
+
+
+升级到最新的osx版本Maverick之后，打开iTerm2就报错：...">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://172.16.121.110:4000/2013/10/maverick-and-python/">
+  <link href="/favicon.png" rel="icon">
+  <script src="/assets/javascripts/app.js"></script>
+  <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml">
+  <meta property="og:title" content="Fix Python after upgrade to Maverick" /><meta itemprop="name" content="Fix Python after upgrade to Maverick" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://172.16.121.110:4000/2013/10/maverick-and-python/" />
+<meta property="og:description" content="
+
+  
+  
+    
+      Fix Python after upgrade to Maverick
+    
+    
+      
+        
+
+
+
+
+
+        
+      
+    
+  
+
+
+升级到最新的osx版本Maverick之后，打开iTerm2就报错：..." />
+
+<meta property="og:site_name" content="http://172.16.121.110:4000" />
+<meta property="article:author" content="http://lenciel.com">
+<meta property="article:published_time" content="2013-10-24 22:02:00 +0800" />
+
+<meta property="article:section" content="pythontips" />
+<meta itemprop="description" content="
+
+  
+  
+    
+      Fix Python after upgrade to Maverick
+    
+    
+      
+        
+
+
+
+
+
+        
+      
+    
+  
+
+
+升级到最新的osx版本Maverick之后，打开iTerm2就报错：..." />
+
+
+  <script>
     var _hmt = _hmt || [];
     (function() {
         var hm = document.createElement("script");
@@ -6,7 +106,11 @@
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
     })();
-</script> <script>
+</script>
+
+
+  
+<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -15,7 +119,56 @@
   ga('create', 'UA-175991-6', 'auto');
   ga('send', 'pageview');
 
-</script> </head> <body class="collapse-sidebar sidebar-footer"> <header role="banner"><hgroup> <h1><a href="/">@Lenciel</a></h1> </hgroup> </header> <nav role="navigation"><ul class="subscription" data-subscription="rss"> <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li> </ul> <ul class="main-navigation"> <li><a href="/"><i class="icon-home"></i>Home</a></li> <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li> <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li> </ul> </nav> <div id="main"> <div id="content"> <div> <article class="hentry" role="article"> <header> <h1 class="entry-title">Fix Python after upgrade to Maverick</h1> <p class="meta"> </p> </header> <div class="entry-content"><p>升级到最新的osx版本Maverick之后，打开iTerm2就报错：</p> <pre><code class="bash">Traceback (most recent call last):
+</script>
+
+
+</head>
+
+<body    class="collapse-sidebar sidebar-footer" >
+  <header role="banner"><hgroup>
+  <h1><a href="/">@Lenciel</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<ul class="main-navigation">
+  <li><a href="/"><i class="icon-home"></i>Home</a></li>
+  <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li>
+  <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Fix Python after upgrade to Maverick</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>升级到最新的osx版本Maverick之后，打开iTerm2就报错：</p>
+
+<pre><code class="bash">Traceback (most recent call last):
   File "&lt;string&gt;", line 1, in &lt;module&gt;
 ImportError: No module named virtualenvwrapper.hook_loader
 virtualenvwrapper.sh: There was a problem running the initialization hooks.
@@ -23,7 +176,11 @@ If Python could not import the module virtualenvwrapper.hook_loader,
 check that virtualenv has been installed for
 VIRTUALENVWRAPPER_PYTHON=/usr/bin/python and that PATH is
 set properly.
-</code></pre> <p>敲pip之后也报错：</p> <pre><code class="bash">Traceback (most recent call last):
+</code></pre>
+
+<p>敲pip之后也报错：</p>
+
+<pre><code class="bash">Traceback (most recent call last):
   File "/usr/local/bin/pip", line 5, in &lt;module&gt;
     from pkg_resources import load_entry_point
   File "/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/pkg_resources.py", line 2603, in &lt;module&gt;
@@ -33,13 +190,95 @@ set properly.
   File "/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/pkg_resources.py", line 565, in resolve
     raise DistributionNotFound(req)  # XXX put more info here
 pkg_resources.DistributionNotFound: pip==1.3.1
-</code></pre> <p>这坨<code>pkg_resources.DistributionNotFound</code>的错正好前两天装CentOS的机器<a href="http://stackoverflow.com/questions/7446187/no-module-named-pkg-resources">看到过</a>。</p> <p>运行下面的命令更新了<code>setuptools</code>之后重装了<code>pip</code>和<code>virtualenv</code>、<code>virtualenvwrapper</code>就好了：</p> <pre><code class="bash">wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py
+</code></pre>
+
+<p>这坨<code>pkg_resources.DistributionNotFound</code>的错正好前两天装CentOS的机器<a href="http://stackoverflow.com/questions/7446187/no-module-named-pkg-resources">看到过</a>。</p>
+
+<p>运行下面的命令更新了<code>setuptools</code>之后重装了<code>pip</code>和<code>virtualenv</code>、<code>virtualenvwrapper</code>就好了：</p>
+
+<pre><code class="bash">wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py
 sudo python ez_setup.py
 sudo easy_install -U pip
-</code></pre> </div> <footer> <p class="meta"> <span class="byline author vcard">Posted by <span class="fn">Lenciel</span></span> <span class="categories"> <a class='category' href='/categories/python/'>python</a>, <a class='category' href='/categories/tips/'>tips</a> </span> </p> <div class="sharing"> </div> <p class="meta"> <a class="basic-alignment left" href="/2013/10/sinned-too-much/" title="Previous Post: Sinned Too Much">&laquo; Sinned Too Much</a> <a class="basic-alignment right" href="/2013/11/replace-goagentx-with-lines-of-scripts/" title="Next Post: Mac下后台运行goagent">Mac下后台运行goagent &raquo;</a> </p> </footer> </article> </div> </div> </div> <footer role="contentinfo"><p> Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a> <span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span> <section class="contruction-wrap"> <div class="contruction"></div> </section> </p> </footer> <script type="text/javascript">
+</code></pre>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+<span class="byline author vcard">Posted by <span class="fn">Lenciel</span></span>
+
+      
+
+
+
+
+
+      
+
+<span class="categories">
+  
+    <a class='category' href='/categories/python/'>python</a>, <a class='category' href='/categories/tips/'>tips</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+  <!-- JiaThis Button BEGIN -->
+  <!--<div class="jiathis_style_24x24">
+    <a class="jiathis_button_qzone"></a>
+    <a class="jiathis_button_tsina"></a>
+    <a class="jiathis_button_tqq"></a>
+    <a class="jiathis_button_weixin"></a>
+    <a class="jiathis_button_renren"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+    <a class="jiathis_counter_style"></a>
+    </div>
+    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>-->
+  <!-- JiaThis Button END -->
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2013/10/sinned-too-much/" title="Previous Post: Sinned Too Much">&laquo; Sinned Too Much</a>
+      
+      
+        <a class="basic-alignment right" href="/2013/11/replace-goagentx-with-lines-of-scripts/" title="Next Post: Mac下后台运行goagent">Mac下后台运行goagent &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a>
+<span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span>
+  <section class="contruction-wrap">
+    <div class="contruction"></div>
+  </section>
+</p>
+
+</footer>
+  
+
+
+
+
+<script type="text/javascript">
   var stylesheet = document.createElement('link');
   stylesheet.href = '/assets/stylesheets/app.css';
   stylesheet.rel = 'stylesheet';
   stylesheet.type = 'text/css';
   document.getElementsByTagName('head')[0].appendChild(stylesheet);
-</script> </body> </html>
+</script>
+
+</body>
+</html>

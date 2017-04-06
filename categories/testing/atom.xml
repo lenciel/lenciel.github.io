@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: testing | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/testing/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-04-02T23:44:01+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/testing/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-04-06T19:01:30+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[Making fixture with factory boy and faker]]></title>
-    <link href="http://lenciel.com/2014/12/making-fixture-with-factory-boy-and-faker/"/>
+    <link href="http://172.16.121.110:4000/2014/12/making-fixture-with-factory-boy-and-faker/"/>
     <updated>2014-12-20T03:14:59+08:00</updated>
-    <id>http://lenciel.com/2014/12/making-fixture-with-factory-boy-and-faker</id>
+    <id>http://172.16.121.110:4000/2014/12/making-fixture-with-factory-boy-and-faker</id>
     <content type="html"><![CDATA[<p>我们在Django项目的开发和测试过程中经常需要mock一些数据作为<a href="https://docs.djangoproject.com/en/1.7/howto/initial-data/">fixture</a>，比较常见的做法是：</p>
 
 <ol>

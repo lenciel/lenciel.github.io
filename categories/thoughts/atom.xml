@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: thoughts | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/thoughts/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-04-02T23:44:01+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/thoughts/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-04-06T19:01:30+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[编程语言里的类型系统]]></title>
-    <link href="http://lenciel.com/2016/09/types-in-programming-languages/"/>
+    <link href="http://172.16.121.110:4000/2016/09/types-in-programming-languages/"/>
     <updated>2016-09-21T19:53:18+08:00</updated>
-    <id>http://lenciel.com/2016/09/types-in-programming-languages</id>
+    <id>http://172.16.121.110:4000/2016/09/types-in-programming-languages</id>
     <content type="html"><![CDATA[<p>这两天看了“<a href="http://www.amazon.com/Functional-Programming-Scala-Paul-Chiusano/dp/1617290653">FP in Scala</a>”的作者Paul Chiusano关于静态类型语言的优点的一篇<a href="https://pchiusano.github.io/2016-09-15/static-vs-dynamic.html">blog</a>。刚好最近在看很多Scala写的代码，仔细一想，好像大多数语言都在尝试把类型系统加强（不仅仅是Scala、Swift、Rust这些当红的，连<a href="https://ceylon-lang.org/">Ceylon</a> 这样的语言也越来越火了）。</p>
 
 <p>所以也结合之前看过的一些文章(<a href="https://github.com/tel/old-blog/blob/master/_posts/2014-07-08-all_you_wanted_to_know_about_types_but_were_afraid_to_ask.md">1</a>, <a href="https://github.com/tel/old-blog/blob/master/_posts/2014-08-08-six_points_about_type_safety.md">2</a>, <a href="https://danluu.com/empirical-pl/">3</a>, <a href="https://gist.github.com/garybernhardt/122909856b570c5c457a6cd674795a9c">4</a>)，对类型系统打个总结。</p>
@@ -264,9 +264,9 @@ int main(void) {
   
   <entry>
     <title type="html"><![CDATA[Django其实不是MVC]]></title>
-    <link href="http://lenciel.com/2015/03/django-is-not-that-much-mvc/"/>
+    <link href="http://172.16.121.110:4000/2015/03/django-is-not-that-much-mvc/"/>
     <updated>2015-03-30T11:36:24+08:00</updated>
-    <id>http://lenciel.com/2015/03/django-is-not-that-much-mvc</id>
+    <id>http://172.16.121.110:4000/2015/03/django-is-not-that-much-mvc</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/2015_03/mvc.jpg" title="Don't touch me..." alt="Vhost threshold" /></p>
 
 <p>很多时候<a href="https://www.djangoproject.com/">Django</a>都被称为是一个MVC框架 — <code>Model-View-Controller</code>。这样说的人要么就是已经熟悉过其他的MVC框架，所以看到Django有自己的Template系统和<code>views.py</code>来放各种逻辑代码，就想当然的认为Django也是；要么就是其实没有真正实践过Django，从各种其他的错误文档里面看到或者是听说的。</p>
@@ -347,9 +347,9 @@ int main(void) {
   
   <entry>
     <title type="html"><![CDATA[应用开发能火多久?]]></title>
-    <link href="http://lenciel.com/2014/04/why-made-apps/"/>
+    <link href="http://172.16.121.110:4000/2014/04/why-made-apps/"/>
     <updated>2014-04-09T15:07:57+08:00</updated>
-    <id>http://lenciel.com/2014/04/why-made-apps</id>
+    <id>http://172.16.121.110:4000/2014/04/why-made-apps</id>
     <content type="html"><![CDATA[<p>不管是从日常生活里面的观察和感受，还是查看统计数据，都很容易发现人们在移动设备上停留的时间已经逐渐超过了在PC上停留的时间。当然拐点是不是如下图所示就在今年业界有些争议，但是拐点已经要来了是没有人再怀疑了。</p>
 
 <p><img src="/downloads/images/2014_04/comscore_mobile_users_desktop_users_2014.jpg" title="Don't touch me..." alt="mobile vs desktop" /></p>
@@ -395,9 +395,9 @@ int main(void) {
   
   <entry>
     <title type="html"><![CDATA[Use Done List Instead Of To Do List]]></title>
-    <link href="http://lenciel.com/2013/03/use-done-list-rather-than-todo-list/"/>
+    <link href="http://172.16.121.110:4000/2013/03/use-done-list-rather-than-todo-list/"/>
     <updated>2013-03-15T21:25:00+08:00</updated>
-    <id>http://lenciel.com/2013/03/use-done-list-rather-than-todo-list</id>
+    <id>http://172.16.121.110:4000/2013/03/use-done-list-rather-than-todo-list</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/nerd_sniping.png" title="Don't touch me..." alt="nerd sniping" /></p>
 
 <a name="L.strong......strong."></a>
@@ -473,9 +473,9 @@ int main(void) {
   
   <entry>
     <title type="html"><![CDATA[洛带，洛带]]></title>
-    <link href="http://lenciel.com/2010/05/luo-dai-tour/"/>
+    <link href="http://172.16.121.110:4000/2010/05/luo-dai-tour/"/>
     <updated>2010-05-24T12:23:00+08:00</updated>
-    <id>http://lenciel.com/2010/05/luo-dai-tour</id>
+    <id>http://172.16.121.110:4000/2010/05/luo-dai-tour</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/beautiful_loser.png" title="Don't touch me..." alt="" /></p>
 
 <p>周末开车去了趟洛带古镇。倒不是专为了枇杷，更多是解闷。和偶像派坐在一条有大树遮盖的巷子，就着一口有水藻覆盖的池塘，点两杯冰糖过量的柠檬水，大眼瞪小眼的回忆童年、青春、挨揍、被追。太阳下去，微风上来，买两斤鲜枇杷，剥出天下、百姓、出世、入球。灯光亮起来的时候，吃伤心凉粉，砍公社烧鹅，再探讨为什么我们一个美又白，一个丑又黑，但千百人中，我们好了。</p>

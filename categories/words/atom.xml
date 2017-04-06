@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: words | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/words/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-04-02T23:44:01+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/words/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-04-06T19:01:30+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[关于工作与生活]]></title>
-    <link href="http://lenciel.com/2015/10/the-solution-of-work-life-balance/"/>
+    <link href="http://172.16.121.110:4000/2015/10/the-solution-of-work-life-balance/"/>
     <updated>2015-10-04T00:06:16+08:00</updated>
-    <id>http://lenciel.com/2015/10/the-solution-of-work-life-balance</id>
+    <id>http://172.16.121.110:4000/2015/10/the-solution-of-work-life-balance</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/2015_10/dilbert_work_life_balance.png" title="Don't touch me..." alt="work life balance" /></p>
 
 <p>前面说了，<a href="http://lenciel.cn/2015/10/the-myth-of-work-life-balance/">Work Life Balance的神话其实并不靠谱</a>。</p>

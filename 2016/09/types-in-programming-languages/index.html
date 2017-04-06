@@ -1,4 +1,104 @@
-<!DOCTYPE html> <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]--> <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]--> <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]--> <head> <meta charset="utf-8"> <title>编程语言里的类型系统 - @Lenciel</title> <meta name="author" content="Lenciel"> <meta name="description" content=" 编程语言里的类型系统 这两天看了“FP in Scala”的作者Paul Chiusano关于静态类型语言的优点的一篇blog。刚好最近在看很..."> <meta name="HandheldFriendly" content="True"> <meta name="MobileOptimized" content="320"> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="canonical" href="http://lenciel.com/2016/09/types-in-programming-languages/"> <link href="/favicon.png" rel="icon"> <script src="/assets/javascripts/app.js"></script> <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml"> <meta property="og:title" content="编程语言里的类型系统"/><meta itemprop="name" content="编程语言里的类型系统"/> <meta property="og:type" content="article"/> <meta property="og:url" content="http://lenciel.com/2016/09/types-in-programming-languages/"/> <meta property="og:description" content=" 编程语言里的类型系统 这两天看了“FP in Scala”的作者Paul Chiusano关于静态类型语言的优点的一篇blog。刚好最近在看很..."/> <meta property="og:site_name" content="http://lenciel.com"/> <meta property="article:author" content="http://lenciel.com"> <meta property="article:published_time" content="2016-09-21 19:53:18 +0800"/> <meta property="article:section" content="programmingrantsthoughts"/> <meta itemprop="description" content=" 编程语言里的类型系统 这两天看了“FP in Scala”的作者Paul Chiusano关于静态类型语言的优点的一篇blog。刚好最近在看很..."/> <script>
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>编程语言里的类型系统 - @Lenciel</title>
+  <meta name="author" content="Lenciel">
+
+  
+  <meta name="description" content="
+
+  
+  
+    
+      编程语言里的类型系统
+    
+    
+      
+        
+
+
+
+
+
+        
+      
+    
+  
+
+
+这两天看了“FP in Scala”的作者Paul Chiusano关于静态类型语言的优点的一篇blog。刚好最近在看很...">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://172.16.121.110:4000/2016/09/types-in-programming-languages/">
+  <link href="/favicon.png" rel="icon">
+  <script src="/assets/javascripts/app.js"></script>
+  <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml">
+  <meta property="og:title" content="编程语言里的类型系统" /><meta itemprop="name" content="编程语言里的类型系统" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://172.16.121.110:4000/2016/09/types-in-programming-languages/" />
+<meta property="og:description" content="
+
+  
+  
+    
+      编程语言里的类型系统
+    
+    
+      
+        
+
+
+
+
+
+        
+      
+    
+  
+
+
+这两天看了“FP in Scala”的作者Paul Chiusano关于静态类型语言的优点的一篇blog。刚好最近在看很..." />
+
+<meta property="og:site_name" content="http://172.16.121.110:4000" />
+<meta property="article:author" content="http://lenciel.com">
+<meta property="article:published_time" content="2016-09-21 19:53:18 +0800" />
+
+<meta property="article:section" content="programmingrantsthoughts" />
+<meta itemprop="description" content="
+
+  
+  
+    
+      编程语言里的类型系统
+    
+    
+      
+        
+
+
+
+
+
+        
+      
+    
+  
+
+
+这两天看了“FP in Scala”的作者Paul Chiusano关于静态类型语言的优点的一篇blog。刚好最近在看很..." />
+
+
+  <script>
     var _hmt = _hmt || [];
     (function() {
         var hm = document.createElement("script");
@@ -6,7 +106,11 @@
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
     })();
-</script> <script>
+</script>
+
+
+  
+<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -15,16 +119,270 @@
   ga('create', 'UA-175991-6', 'auto');
   ga('send', 'pageview');
 
-</script> </head> <body class="collapse-sidebar sidebar-footer"> <header role="banner"><hgroup> <h1><a href="/">@Lenciel</a></h1> </hgroup> </header> <nav role="navigation"><ul class="subscription" data-subscription="rss"> <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li> </ul> <ul class="main-navigation"> <li><a href="/"><i class="icon-home"></i>Home</a></li> <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li> <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li> </ul> </nav> <div id="main"> <div id="content"> <div> <article class="hentry" role="article"> <header> <h1 class="entry-title">编程语言里的类型系统</h1> <p class="meta"> </p> </header> <div class="entry-content"><p>这两天看了“<a href="http://www.amazon.com/Functional-Programming-Scala-Paul-Chiusano/dp/1617290653">FP in Scala</a>”的作者Paul Chiusano关于静态类型语言的优点的一篇<a href="https://pchiusano.github.io/2016-09-15/static-vs-dynamic.html">blog</a>。刚好最近在看很多Scala写的代码，仔细一想，好像大多数语言都在尝试把类型系统加强（不仅仅是Scala、Swift、Rust这些当红的，连<a href="https://ceylon-lang.org/">Ceylon</a> 这样的语言也越来越火了）。</p> <p>所以也结合之前看过的一些文章(<a href="https://github.com/tel/old-blog/blob/master/_posts/2014-07-08-all_you_wanted_to_know_about_types_but_were_afraid_to_ask.md">1</a>, <a href="https://github.com/tel/old-blog/blob/master/_posts/2014-08-08-six_points_about_type_safety.md">2</a>, <a href="https://danluu.com/empirical-pl/">3</a>, <a href="https://gist.github.com/garybernhardt/122909856b570c5c457a6cd674795a9c">4</a>)，对类型系统打个总结。</p> <a name="L......"></a> <h3>类型</h3> <p>“类型”，顾名思义就是一组可能的值的集合。比如整型，那么它可能的值是整数的集合；布尔型，它可能的值是true或者false。我们可以定义任何的“type”，比如一个叫“ISO9001”的type，它可能的值如果不是ISO就是9001：这不是个整型，也不是个字符串型，它就是一个专门的特殊的类型。</p> <p>静态类型语言里，变量的类型是确定好的：如果x是整型，那么如果你写了<code>x=true</code>这样的赋值，编译器在编译时就会报错。不同的静态类型语言有不同程度的表达能力，但是它们支持的类型是确定的。</p> <p>动态类型语言里，对值进行了类型的划分：它知道1就是整型，true就是布尔型。但是变量是什么类型却是不确定（动态）的。</p> <a name="L.................."></a> <h4>静态类型语言</h4> <p>大多数静态类型语言需要做类型声明。比如java里面<code>public int add(int x, int y)</code>这样，对参数和返回值都需要声明类型。</p> <p>也有一些静态类型语言不这么做，比如Haskell里面同样的函数写法是<code>add x y = x + y</code>。虽然没有显式地声明它类型，但是因为在这门语言里面，<code>+</code>操作符只能用在数值类型上面，所以x和y就都是数值类型的。需要理解的是，这种省略并不意味着静态特质的降低，相反，Haskell的类型比Java要严格和强大得多。</p> <p>声明了类型，在编译期就进行类型检查，如果不满足就报错，是静态类型语言一个很大的优点。比如大多数静态类型语言都不允许<code>"a"+2</code>这样的写法（C语言很特立独行地支持了），每个静态类型语言里面的表达式，都在执行前就有一个确定的返回类型。</p> <a name="L.................."></a> <h4>动态类型语言</h4> <p>像前面说的动态类型不需要声明类型，编译器也不会做推测，只在运行时才知道变量确切的值（这也是动态的意思所在）。</p> <p>比如一个python函数：</p> <pre><code class="python">def f(x, y):
+</script>
+
+
+</head>
+
+<body    class="collapse-sidebar sidebar-footer" >
+  <header role="banner"><hgroup>
+  <h1><a href="/">@Lenciel</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<ul class="main-navigation">
+  <li><a href="/"><i class="icon-home"></i>Home</a></li>
+  <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li>
+  <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">编程语言里的类型系统</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>这两天看了“<a href="http://www.amazon.com/Functional-Programming-Scala-Paul-Chiusano/dp/1617290653">FP in Scala</a>”的作者Paul Chiusano关于静态类型语言的优点的一篇<a href="https://pchiusano.github.io/2016-09-15/static-vs-dynamic.html">blog</a>。刚好最近在看很多Scala写的代码，仔细一想，好像大多数语言都在尝试把类型系统加强（不仅仅是Scala、Swift、Rust这些当红的，连<a href="https://ceylon-lang.org/">Ceylon</a> 这样的语言也越来越火了）。</p>
+
+<p>所以也结合之前看过的一些文章(<a href="https://github.com/tel/old-blog/blob/master/_posts/2014-07-08-all_you_wanted_to_know_about_types_but_were_afraid_to_ask.md">1</a>, <a href="https://github.com/tel/old-blog/blob/master/_posts/2014-08-08-six_points_about_type_safety.md">2</a>, <a href="https://danluu.com/empirical-pl/">3</a>, <a href="https://gist.github.com/garybernhardt/122909856b570c5c457a6cd674795a9c">4</a>)，对类型系统打个总结。</p>
+
+<a name="L......"></a>
+<h3>类型</h3>
+
+<p>“类型”，顾名思义就是一组可能的值的集合。比如整型，那么它可能的值是整数的集合；布尔型，它可能的值是true或者false。我们可以定义任何的“type”，比如一个叫“ISO9001”的type，它可能的值如果不是ISO就是9001：这不是个整型，也不是个字符串型，它就是一个专门的特殊的类型。</p>
+
+<p>静态类型语言里，变量的类型是确定好的：如果x是整型，那么如果你写了<code>x=true</code>这样的赋值，编译器在编译时就会报错。不同的静态类型语言有不同程度的表达能力，但是它们支持的类型是确定的。</p>
+
+<p>动态类型语言里，对值进行了类型的划分：它知道1就是整型，true就是布尔型。但是变量是什么类型却是不确定（动态）的。</p>
+
+<a name="L.................."></a>
+<h4>静态类型语言</h4>
+
+<p>大多数静态类型语言需要做类型声明。比如java里面<code>public int add(int x, int y)</code>这样，对参数和返回值都需要声明类型。</p>
+
+<p>也有一些静态类型语言不这么做，比如Haskell里面同样的函数写法是<code>add x y = x + y</code>。虽然没有显式地声明它类型，但是因为在这门语言里面，<code>+</code>操作符只能用在数值类型上面，所以x和y就都是数值类型的。需要理解的是，这种省略并不意味着静态特质的降低，相反，Haskell的类型比Java要严格和强大得多。</p>
+
+<p>声明了类型，在编译期就进行类型检查，如果不满足就报错，是静态类型语言一个很大的优点。比如大多数静态类型语言都不允许<code>"a"+2</code>这样的写法（C语言很特立独行地支持了），每个静态类型语言里面的表达式，都在执行前就有一个确定的返回类型。</p>
+
+<a name="L.................."></a>
+<h4>动态类型语言</h4>
+
+<p>像前面说的动态类型不需要声明类型，编译器也不会做推测，只在运行时才知道变量确切的值（这也是动态的意思所在）。</p>
+
+<p>比如一个python函数：</p>
+
+<pre><code class="python">def f(x, y):
     return x + y
-</code></pre> <p>它可以被用来做两个数相加，可以是字符串连接，甚至可以是list的合并。在运行时程序会检查x和y是什么类型的值。如果都是整型，就把数值加起来，如果是字符串，就把字符串粘起来，如果是一个整型一个字符串，那么很可能就要报错。</p> <p>大多数动态语言，都会像Python一样，在运行时报出类型错误（JS是个例外，它对任何表达式都会返回一个值，而不是报错），因此，使用动态语言，<code>"a"+1</code>这样的错误也需要在实际运行时才会被检查出来。</p> <a name="L....................."></a> <h4>强类型和弱类型</h4> <p>术语“强类型(strong typing)”和“弱类型(weak typing)”是用得非常模糊的：</p> <ul> <li>有些时候，“强”表示静态类型。如果你在讨论或者是写东西的时候，要说的是静态类型语言，那就直接说，不要用<code>强类型语言</code>这样的术语</li> <li>有些时候，“强”表示不会做隐式的类型转换。比如JS里面允许<code>"a"+1</code>，其实内部是做了隐式的类型转换，这个时候人们说它是<code>weak typing</code>的，而不是强的。但是几乎所有的语言都会允许整型和浮点型相加，允许这个的语言是强还是弱呢？没有标准。人们这样说的时候，一般的意思是，如果这样的转换是不可接受的（会造成自己觉得很低级的类型错误在生产环境上运行时才被发现），就认为它是“弱类型”，相反，就觉得是“强类型”</li> <li>有些时候，“强”表示我们不能做这个语言规则不允许的类型转换</li> <li>有些时候，“强”表示是memory-safe的。C就是典型的虽然是静态类型，但是不是memory-safe的语言。</li> </ul> <p>下面这个表可以说明常见的一些语言是如何被带入一团迷雾的：</p> <table> <thead> <tr> <th> 语言 </th> <th> 类型? </th> <th>隐式转换? </th> <th> 有类型转换规则? </th> <th> 内存安全? </th> </tr> </thead> <tbody> <tr> <td> C </td> <td> Strong </td> <td> Depends </td> <td> Weak </td> <td> Weak </td> </tr> <tr> <td> Java </td> <td> Strong </td> <td> Depends </td> <td> Strong </td> <td> Strong </td> </tr> <tr> <td> Haskell </td> <td> Strong </td> <td> Strong </td> <td> Strong </td> <td> Strong </td> </tr> <tr> <td> Python </td> <td> Weak </td> <td> Depends </td> <td> Strong </td> <td> Strong </td> </tr> <tr> <td> JavaScript </td> <td> Weak </td> <td> Weak </td> <td> Weak </td> <td> Strong </td> </tr> </tbody> </table> <p>由于“强”和“弱”的使用是如此的上下文相关又如此的混乱，所以最好不要使用这些术语，而是描述具体的问题：“JS在我们把字符串和整型相加的时候会正常返回，而Python会报错”比“JS是弱类型的，而Python是强类型的”有意义得多。这样我们在讨论中就不会花时间去纠缠在本来就不是很清晰的术语上了。</p> <p>就像Chris Smith<a href="https://cdsmith.wordpress.com/2011/01/09/an-old-article-i-wrote/">写过的那样</a>:</p> <blockquote><p>Strong typing: A type system that I like and feel comfortable with<br/>Weak typing: A type system that worries me, or makes me feel uncomfortable</p></blockquote> <a name="L.....................Gradual.Typing..."></a> <h4>渐进的类型化（Gradual Typing）</h4> <p>我们能不能给动态语言添加静态类型呢？在有些情况下，我们可以；在其他情况下，这非常难，甚至是不可能的。</p> <p>最明显的问题就是<code>eval</code>或者别的动态语言里面的类似的功能。<code>1+eval("2")</code>在Python里面会返回3，但是<code>1+eval(read_from_network())</code>会返回什么？这要看read_from_network()返回的是什么了。这种只有在运行时才知道结果的语句，是没有办法添加静态类型的支持的。</p> <p>为了使<code>eval()</code>被合法使用，有个不太让人满意的做法就是把返回值设成Any这个type，就好像很多OO语言里面返回Object，或者是Go语言里面返回<code>interface{}</code>。之所以这不太让人满意是因为，这样一来，类型系统的功能也就被去掉了。所以如果一个语言有<code>eval</code>语法，同时又有类型系统，那么当你使用<code>eval</code>语句的时候，类型安全就不能被保证了。</p> <p>有些语言允许所谓的optional或者是gradual typing：在默认情况下，类型是动态的，但是你可以声明静态的annotation。Python最近添加了这个功能；Typescript作为Javascript的superscript也有optional types；Flow会对普通的javascript代码做静态类型分析。这些语言之所以提供这些，是希望拥有一些静态类型语言的优势，但是和静态语言提供的类型保证相比，其实是很弱的：因为有些方法是动态类型的，有些方法又是静态类型的，程序员还需要自己来管理其中的差异化的东西。</p> <a name="L................................."></a> <h4>静态类型语言代码的编译</h4> <p>静态类型的语言写的代码在编译的时候，编译器会先检查语法，然后检查类型。因此，有时候你修复了一个语法的错误，可能会看到一堆的类型的错误。这些错误并不是修复语法错误带来的，而是之前就有的，只是编译器没法在语法正确之前，去找出类型的错误。</p> <p>一旦语法和类型都正确了之后，编译器就可以生成可执行的代码。静态类型的语言生成的代码执行起来通常比动态类型快：当你知道被加的是整数，你就可以使用CPU内置的ADD命令。如果需要动态的评估操作的是什么类型，要怎么返回或者是报错，都会花掉额外的时间。虽然有很多技术，比如JIT（Just-In-Time）编译器可以在运行时收集到需要的信息后recompile一次生成比完全动态更快的代码，但是和静态语言比如Rust写出来的程序比，运行起来还是要慢一些的。</p> <a name="L.........................................."></a> <h4>关于静态类型和动态类型的争论</h4> <p>静态类型语言的推崇者指出，如果没有一个严格的类型系统，那么一个微小的类型错误就可能导致生产环境崩掉。这当然是真的，所有使用过动态类型语言的同学肯定都遇见过。</p> <p>动态语言的推崇者认为，动态语言写起来要容易一些。视你写的代码究竟用来干嘛而言，这可能是对的，也可能是错的。Rich Hickey关于“easy”有个<a href="https://www.infoq.com/presentations/Simple-Made-Easy">很经典的讲座</a>，特别清楚的阐明了“easy”和“simple”的关系，以及你为什么要小心“easy”。不同的动态语言的设计者，对类型系统的考虑也就视他们想开放多少控制权给开发者自己控制，实现得非常不同。</p> <p>比如，Javascript的策略是尽量继续执行，即使<code>"a"+1</code>这样的语句明显不是很合理了，它也会返回<code>a1</code>。Python则倾向于尽可能的报错。所以虽然都是动态语言，设计上的思路是非常不同的。</p> <p>比如，C允许你从内存的任意地址读取，也允许你把一个类型的值当成任意别的类型来操作，即便这样会造成crash。Haskell，则要求哪怕是整型和浮点型相加，也需要显式的做一次类型转换。所以虽然都是静态语言，设计上的思路也是非常不同的。</p> <p>因此，任何类似于“静态语言比动态语言在某个方面好”的论断都是没有意义的。只有具体到语言，才可以进行这样的讨论，比如：“Haskell在某个方面比Python做得好”。</p> <a name="L.............................."></a> <h4>静态类型系统的多样性</h4> <p>我们再来仔细看看两个著名的静态类型语言：Go和Haskell。</p> <p>Go的类型里面没有generic类型：就是由其他类型来构成的类型。比如我们可能想自己构建一个MyList类型，可以保存任何类型的数据列表，可以是整数的列表，也可以是字符串的列表等等。编译器自己需要来处理对类型的限制：如果我们往一个用来放整数的MyList里面放了字符串，编译器需要拒绝程序。</p> <p>Go在设计上就故意没有支持MyList这种generic的类型。要实现类似的功能，你只能定义一个“empty interface”：这样MyList可以用来放任何类型，但是compiler没有办法知道究竟是什么类型。当我们从MyList里面获取对象的时候，我们需要自己来告诉compiler对象的类型。如果你说你获取的是个字符串，但是拿到的是个整型值，就会发生运行时的错误：这很像动态语言。</p> <p>Go还缺乏很多现代静态语言的功能，甚至连很多70年代的静态语言就支持的功能也没有。它的设计者做这样的决定自然有自己的考虑，但是使用者里面对这些功能的呼声是很高的。</p> <p>再来看看拥有强大的类型系统的Haskell。如果我们要定义一个整型的MyList，只需要这么写“MyList Integer”。在声明之后，Haskell就会让这个列表里面只能放整数而不是字符串了。</p> <p>Haskell还能表达更复杂的语义。比如<code>Num a =&gt; MyList a</code>表示，一个数值类型的列表：可以是整数，或者浮点数等，但不会是一个字符串。</p> <p>用Haskell你很容易编写适合于多个类型的函数。比如<code>Num a =&gt; (a -&gt; a -&gt; a)</code>表示：</p> <p>这是个数值类型的函数（Num a=>) 这是函数有两个类型为a的输入参数，然后返回一个类型为a的值（a -> a -> a）</p> <p>再看一个可能更夸张的例子：<code>String -&gt; String</code>表示函数的参数是字符串，返回也是字符串；而 <code>String -&gt; IO String</code>表示，函数参数是字符串，然后要做一些IO操作（可能是磁盘的IO，也可能是网络的IO等等），然后返回字符串。</p> <p>这样精细的类型定义有什么好处呢？</p> <p>比如，在写一个Web应用的时候，我们就可以一眼看出这个函数会不会动数据库。这是大多数语言没有办法提供的便利，即使大多数静态类型语言也没有办法提供：绝大多数语言需要我们一行行去检查它有没有IO的操作，这个过程既麻烦又容易出错。</p> <p>和Go比一下，前者连MyList那样简单的概念都没有办法很好的表示，更不用提“一个有两个数值型参数的，会做一些IO操作后，返回一个数值类型参数”这样复杂的语义了。</p> <p>Go的设计思路毫无疑问可以让使用它编写适合用它编写的程序变得容易（首先，设计Go的compiler就要容易很多），同时也使得学习Go变得容易。这些优势，与Go的显而易见的限制，究竟会给你的开发工作带来正面还是负面的影响，很多时候是跟问题域相关的，非常主观的事情。</p> <p>Go和Haskell如此的不同，也使得把它们统称为“静态类型语言”表达的意思非常模糊：虽然这样说确实是没有错的。所以再次提醒，把动态类型语言和静态类型语言分成两组来比较一些东西的时候，一定要记得语言的多样性。比如我们说运行起来的安全系数（不发生类型错误导致runtime erro的系数），那么Go和C，甚至比Python这样的动态语言问题还大。</p> <a name="L.........................................."></a> <h4>不同的类型系统表达能力的实例</h4> <p>编程语言的类型系统越强大，我们表达的粒度就可以越精细。</p> <p>比如写一个求和的函数，在Go里面，我们只能表达“函数有两个整数类型参数，并且返回一个整数类型”：</p> <pre><code>fuc add(x int, y int) int {
+</code></pre>
+
+<p>它可以被用来做两个数相加，可以是字符串连接，甚至可以是list的合并。在运行时程序会检查x和y是什么类型的值。如果都是整型，就把数值加起来，如果是字符串，就把字符串粘起来，如果是一个整型一个字符串，那么很可能就要报错。</p>
+
+<p>大多数动态语言，都会像Python一样，在运行时报出类型错误（JS是个例外，它对任何表达式都会返回一个值，而不是报错），因此，使用动态语言，<code>"a"+1</code>这样的错误也需要在实际运行时才会被检查出来。</p>
+
+<a name="L....................."></a>
+<h4>强类型和弱类型</h4>
+
+<p>术语“强类型(strong typing)”和“弱类型(weak typing)”是用得非常模糊的：</p>
+
+<ul>
+<li>有些时候，“强”表示静态类型。如果你在讨论或者是写东西的时候，要说的是静态类型语言，那就直接说，不要用<code>强类型语言</code>这样的术语</li>
+<li>有些时候，“强”表示不会做隐式的类型转换。比如JS里面允许<code>"a"+1</code>，其实内部是做了隐式的类型转换，这个时候人们说它是<code>weak typing</code>的，而不是强的。但是几乎所有的语言都会允许整型和浮点型相加，允许这个的语言是强还是弱呢？没有标准。人们这样说的时候，一般的意思是，如果这样的转换是不可接受的（会造成自己觉得很低级的类型错误在生产环境上运行时才被发现），就认为它是“弱类型”，相反，就觉得是“强类型”</li>
+<li>有些时候，“强”表示我们不能做这个语言规则不允许的类型转换</li>
+<li>有些时候，“强”表示是memory-safe的。C就是典型的虽然是静态类型，但是不是memory-safe的语言。</li>
+</ul>
+
+
+<p>下面这个表可以说明常见的一些语言是如何被带入一团迷雾的：</p>
+
+<table>
+<thead>
+<tr>
+<th> 语言  </th>
+<th> 类型? </th>
+<th>隐式转换? </th>
+<th> 有类型转换规则? </th>
+<th> 内存安全? </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> C          </td>
+<td> Strong  </td>
+<td> Depends               </td>
+<td> Weak            </td>
+<td> Weak         </td>
+</tr>
+<tr>
+<td> Java       </td>
+<td> Strong  </td>
+<td> Depends               </td>
+<td> Strong          </td>
+<td> Strong       </td>
+</tr>
+<tr>
+<td> Haskell    </td>
+<td> Strong  </td>
+<td> Strong                </td>
+<td> Strong          </td>
+<td> Strong       </td>
+</tr>
+<tr>
+<td> Python     </td>
+<td> Weak    </td>
+<td> Depends               </td>
+<td> Strong          </td>
+<td> Strong       </td>
+</tr>
+<tr>
+<td> JavaScript </td>
+<td> Weak    </td>
+<td> Weak                  </td>
+<td> Weak            </td>
+<td> Strong       </td>
+</tr>
+</tbody>
+</table>
+
+
+<p>由于“强”和“弱”的使用是如此的上下文相关又如此的混乱，所以最好不要使用这些术语，而是描述具体的问题：“JS在我们把字符串和整型相加的时候会正常返回，而Python会报错”比“JS是弱类型的，而Python是强类型的”有意义得多。这样我们在讨论中就不会花时间去纠缠在本来就不是很清晰的术语上了。</p>
+
+<p>就像Chris Smith<a href="https://cdsmith.wordpress.com/2011/01/09/an-old-article-i-wrote/">写过的那样</a>:</p>
+
+<blockquote><p>Strong typing: A type system that I like and feel comfortable with<br/>Weak typing: A type system that worries me, or makes me feel uncomfortable</p></blockquote>
+
+
+<a name="L.....................Gradual.Typing..."></a>
+<h4>渐进的类型化（Gradual Typing）</h4>
+
+<p>我们能不能给动态语言添加静态类型呢？在有些情况下，我们可以；在其他情况下，这非常难，甚至是不可能的。</p>
+
+<p>最明显的问题就是<code>eval</code>或者别的动态语言里面的类似的功能。<code>1+eval("2")</code>在Python里面会返回3，但是<code>1+eval(read_from_network())</code>会返回什么？这要看read_from_network()返回的是什么了。这种只有在运行时才知道结果的语句，是没有办法添加静态类型的支持的。</p>
+
+<p>为了使<code>eval()</code>被合法使用，有个不太让人满意的做法就是把返回值设成Any这个type，就好像很多OO语言里面返回Object，或者是Go语言里面返回<code>interface{}</code>。之所以这不太让人满意是因为，这样一来，类型系统的功能也就被去掉了。所以如果一个语言有<code>eval</code>语法，同时又有类型系统，那么当你使用<code>eval</code>语句的时候，类型安全就不能被保证了。</p>
+
+<p>有些语言允许所谓的optional或者是gradual typing：在默认情况下，类型是动态的，但是你可以声明静态的annotation。Python最近添加了这个功能；Typescript作为Javascript的superscript也有optional types；Flow会对普通的javascript代码做静态类型分析。这些语言之所以提供这些，是希望拥有一些静态类型语言的优势，但是和静态语言提供的类型保证相比，其实是很弱的：因为有些方法是动态类型的，有些方法又是静态类型的，程序员还需要自己来管理其中的差异化的东西。</p>
+
+<a name="L................................."></a>
+<h4>静态类型语言代码的编译</h4>
+
+<p>静态类型的语言写的代码在编译的时候，编译器会先检查语法，然后检查类型。因此，有时候你修复了一个语法的错误，可能会看到一堆的类型的错误。这些错误并不是修复语法错误带来的，而是之前就有的，只是编译器没法在语法正确之前，去找出类型的错误。</p>
+
+<p>一旦语法和类型都正确了之后，编译器就可以生成可执行的代码。静态类型的语言生成的代码执行起来通常比动态类型快：当你知道被加的是整数，你就可以使用CPU内置的ADD命令。如果需要动态的评估操作的是什么类型，要怎么返回或者是报错，都会花掉额外的时间。虽然有很多技术，比如JIT（Just-In-Time）编译器可以在运行时收集到需要的信息后recompile一次生成比完全动态更快的代码，但是和静态语言比如Rust写出来的程序比，运行起来还是要慢一些的。</p>
+
+<a name="L.........................................."></a>
+<h4>关于静态类型和动态类型的争论</h4>
+
+<p>静态类型语言的推崇者指出，如果没有一个严格的类型系统，那么一个微小的类型错误就可能导致生产环境崩掉。这当然是真的，所有使用过动态类型语言的同学肯定都遇见过。</p>
+
+<p>动态语言的推崇者认为，动态语言写起来要容易一些。视你写的代码究竟用来干嘛而言，这可能是对的，也可能是错的。Rich Hickey关于“easy”有个<a href="https://www.infoq.com/presentations/Simple-Made-Easy">很经典的讲座</a>，特别清楚的阐明了“easy”和“simple”的关系，以及你为什么要小心“easy”。不同的动态语言的设计者，对类型系统的考虑也就视他们想开放多少控制权给开发者自己控制，实现得非常不同。</p>
+
+<p>比如，Javascript的策略是尽量继续执行，即使<code>"a"+1</code>这样的语句明显不是很合理了，它也会返回<code>a1</code>。Python则倾向于尽可能的报错。所以虽然都是动态语言，设计上的思路是非常不同的。</p>
+
+<p>比如，C允许你从内存的任意地址读取，也允许你把一个类型的值当成任意别的类型来操作，即便这样会造成crash。Haskell，则要求哪怕是整型和浮点型相加，也需要显式的做一次类型转换。所以虽然都是静态语言，设计上的思路也是非常不同的。</p>
+
+<p>因此，任何类似于“静态语言比动态语言在某个方面好”的论断都是没有意义的。只有具体到语言，才可以进行这样的讨论，比如：“Haskell在某个方面比Python做得好”。</p>
+
+<a name="L.............................."></a>
+<h4>静态类型系统的多样性</h4>
+
+<p>我们再来仔细看看两个著名的静态类型语言：Go和Haskell。</p>
+
+<p>Go的类型里面没有generic类型：就是由其他类型来构成的类型。比如我们可能想自己构建一个MyList类型，可以保存任何类型的数据列表，可以是整数的列表，也可以是字符串的列表等等。编译器自己需要来处理对类型的限制：如果我们往一个用来放整数的MyList里面放了字符串，编译器需要拒绝程序。</p>
+
+<p>Go在设计上就故意没有支持MyList这种generic的类型。要实现类似的功能，你只能定义一个“empty interface”：这样MyList可以用来放任何类型，但是compiler没有办法知道究竟是什么类型。当我们从MyList里面获取对象的时候，我们需要自己来告诉compiler对象的类型。如果你说你获取的是个字符串，但是拿到的是个整型值，就会发生运行时的错误：这很像动态语言。</p>
+
+<p>Go还缺乏很多现代静态语言的功能，甚至连很多70年代的静态语言就支持的功能也没有。它的设计者做这样的决定自然有自己的考虑，但是使用者里面对这些功能的呼声是很高的。</p>
+
+<p>再来看看拥有强大的类型系统的Haskell。如果我们要定义一个整型的MyList，只需要这么写“MyList Integer”。在声明之后，Haskell就会让这个列表里面只能放整数而不是字符串了。</p>
+
+<p>Haskell还能表达更复杂的语义。比如<code>Num a =&gt; MyList a</code>表示，一个数值类型的列表：可以是整数，或者浮点数等，但不会是一个字符串。</p>
+
+<p>用Haskell你很容易编写适合于多个类型的函数。比如<code>Num a =&gt; (a -&gt; a -&gt; a)</code>表示：</p>
+
+<p>这是个数值类型的函数（Num a =>)
+这是函数有两个类型为a的输入参数，然后返回一个类型为a的值（a -> a -> a）</p>
+
+<p>再看一个可能更夸张的例子：<code>String -&gt; String</code>表示函数的参数是字符串，返回也是字符串；而 <code>String -&gt; IO String</code>表示，函数参数是字符串，然后要做一些IO操作（可能是磁盘的IO，也可能是网络的IO等等），然后返回字符串。</p>
+
+<p>这样精细的类型定义有什么好处呢？</p>
+
+<p>比如，在写一个Web应用的时候，我们就可以一眼看出这个函数会不会动数据库。这是大多数语言没有办法提供的便利，即使大多数静态类型语言也没有办法提供：绝大多数语言需要我们一行行去检查它有没有IO的操作，这个过程既麻烦又容易出错。</p>
+
+<p>和Go比一下，前者连MyList那样简单的概念都没有办法很好的表示，更不用提“一个有两个数值型参数的，会做一些IO操作后，返回一个数值类型参数”这样复杂的语义了。</p>
+
+<p>Go的设计思路毫无疑问可以让使用它编写适合用它编写的程序变得容易（首先，设计Go的compiler就要容易很多），同时也使得学习Go变得容易。这些优势，与Go的显而易见的限制，究竟会给你的开发工作带来正面还是负面的影响，很多时候是跟问题域相关的，非常主观的事情。</p>
+
+<p>Go和Haskell如此的不同，也使得把它们统称为“静态类型语言”表达的意思非常模糊：虽然这样说确实是没有错的。所以再次提醒，把动态类型语言和静态类型语言分成两组来比较一些东西的时候，一定要记得语言的多样性。比如我们说运行起来的安全系数（不发生类型错误导致runtime erro的系数），那么Go和C，甚至比Python这样的动态语言问题还大。</p>
+
+<a name="L.........................................."></a>
+<h4>不同的类型系统表达能力的实例</h4>
+
+<p>编程语言的类型系统越强大，我们表达的粒度就可以越精细。</p>
+
+<p>比如写一个求和的函数，在Go里面，我们只能表达“函数有两个整数类型参数，并且返回一个整数类型”：</p>
+
+<pre><code>fuc add(x int, y int) int {
      return x + y
 }
-</code></pre> <p>对浮点类型，我们可能就需要再写一个。</p> <p>在Haskell里面，我们可以定义“函数有两个数值类型的参数，并且返回一个和输入参数类型相同的类型”：</p> <pre><code>add :: Num a =&gt; a -&gt; a -&gt; a
+</code></pre>
+
+<p>对浮点类型，我们可能就需要再写一个。</p>
+
+<p>在Haskell里面，我们可以定义“函数有两个数值类型的参数，并且返回一个和输入参数类型相同的类型”：</p>
+
+<pre><code>add :: Num a =&gt; a -&gt; a -&gt; a
 add x y = x+y
-</code></pre> <p>而在Idris里面，我们可以定义“函数有两个整数类型参数，但是第一个必须比第二个小”</p> <pre><code>add : (x : Nat) -&gt; (y : Nat) -&gt; {auto smaller : LT x y} -&gt; Nat
+</code></pre>
+
+<p>而在Idris里面，我们可以定义“函数有两个整数类型参数，但是第一个必须比第二个小”</p>
+
+<pre><code>add : (x : Nat) -&gt; (y : Nat) -&gt; {auto smaller : LT x y} -&gt; Nat
 add x y = x + y
-</code></pre> <p>我们如果在调用的时候写了<code>add 2 1</code>，那么编译器就会直接报错。非常少语言有这样的表达能力，大多数时候我们要做类似的check只能在runtime，所以我们只能写类似于<code>if x&gt;=y : raise SomeError()</code>的语句。</p> <p>所以，越强的类型系统，表达能力就越强，但是也要注意的是这样语言的复杂度也上去了。</p> <p>我们可以看看按类型系统由弱到强排列的一些常见的编程语言：</p> <ul> <li>C (1972), Go (2009): 类型系统很弱，甚至连generic的类型都不支持</li> <li>Java (1995), C# (2000): 支持generic的类型</li> <li>Haskell (1990), Rust (2010), Swift (2014): 提供了更强大的类型系统</li> <li>Agda (2007), Idris (2011): 类型系统更加强大，但是学习的人还很少（虽然学了的人都表示亢奋）</li> </ul> <p>随着时间推移，具备更强大的类型系统的语言有着越来越流行的趋势（这个趋势从很多动态语言里面被加入了gradual typing的功能也能感受到）。而火爆的Go应该是一个蛮特别的反例，它也被很多推崇更强大类型系统的静态语言用户者批判它的设计者在开倒车。第二组里面的Java和C#是目前被广泛使用的，有成熟生态系统的语言。第三组是目前有了进入主流趋势的，有着大公司在背后支持的（比如Mozilla的Rust或者是Apple的Swift）。第四组看起来还离主流很远，但是究竟后面会不会有凶猛的发展势头也很难说清：就像第三组里面的这些语言十年前也没人知晓一样。</p> <p>下面，让我来一段魔性的代码：</p> <pre><code class="c">#include &lt;stdio.h&gt;
+</code></pre>
+
+<p>我们如果在调用的时候写了<code>add 2 1</code>，那么编译器就会直接报错。非常少语言有这样的表达能力，大多数时候我们要做类似的check只能在runtime，所以我们只能写类似于<code>if x&gt;=y : raise SomeError()</code>的语句。</p>
+
+<p>所以，越强的类型系统，表达能力就越强，但是也要注意的是这样语言的复杂度也上去了。</p>
+
+<p>我们可以看看按类型系统由弱到强排列的一些常见的编程语言：</p>
+
+<ul>
+<li>C (1972), Go (2009): 类型系统很弱，甚至连generic的类型都不支持</li>
+<li>Java (1995), C# (2000): 支持generic的类型</li>
+<li>Haskell (1990), Rust (2010), Swift (2014): 提供了更强大的类型系统</li>
+<li>Agda (2007), Idris (2011): 类型系统更加强大，但是学习的人还很少（虽然学了的人都表示亢奋）</li>
+</ul>
+
+
+<p>随着时间推移，具备更强大的类型系统的语言有着越来越流行的趋势（这个趋势从很多动态语言里面被加入了gradual typing的功能也能感受到）。而火爆的Go应该是一个蛮特别的反例，它也被很多推崇更强大类型系统的静态语言用户者批判它的设计者在开倒车。第二组里面的Java和C#是目前被广泛使用的，有成熟生态系统的语言。第三组是目前有了进入主流趋势的，有着大公司在背后支持的（比如Mozilla的Rust或者是Apple的Swift）。第四组看起来还离主流很远，但是究竟后面会不会有凶猛的发展势头也很难说清：就像第三组里面的这些语言十年前也没人知晓一样。</p>
+
+<p>下面，让我来一段魔性的代码：</p>
+
+<pre><code class="c">#include &lt;stdio.h&gt;
 #include &lt;stdlib.h&gt;
 #include &lt;string.h&gt;
 
@@ -50,10 +408,86 @@ int main(void) {
 
     return 0;
 }
-</code></pre> </div> <footer> <p class="meta"> <span class="byline author vcard">Posted by <span class="fn">Lenciel</span></span> <span class="categories"> <a class='category' href='/categories/programming/'>programming</a>, <a class='category' href='/categories/rants/'>rants</a>, <a class='category' href='/categories/thoughts/'>thoughts</a> </span> </p> <div class="sharing"> </div> <p class="meta"> <a class="basic-alignment left" href="/2016/09/how-to-raise-my-kids/" title="Previous Post: 如何带娃">&laquo; 如何带娃</a> <a class="basic-alignment right" href="/2016/09/computer-vision-syndrome/" title="Next Post: 电脑视觉综合症">电脑视觉综合症 &raquo;</a> </p> </footer> </article> </div> </div> </div> <footer role="contentinfo"><p> Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a> <span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span> <section class="contruction-wrap"> <div class="contruction"></div> </section> </p> </footer> <script type="text/javascript">
+</code></pre>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+<span class="byline author vcard">Posted by <span class="fn">Lenciel</span></span>
+
+      
+
+
+
+
+
+      
+
+<span class="categories">
+  
+    <a class='category' href='/categories/programming/'>programming</a>, <a class='category' href='/categories/rants/'>rants</a>, <a class='category' href='/categories/thoughts/'>thoughts</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+  <!-- JiaThis Button BEGIN -->
+  <!--<div class="jiathis_style_24x24">
+    <a class="jiathis_button_qzone"></a>
+    <a class="jiathis_button_tsina"></a>
+    <a class="jiathis_button_tqq"></a>
+    <a class="jiathis_button_weixin"></a>
+    <a class="jiathis_button_renren"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+    <a class="jiathis_counter_style"></a>
+    </div>
+    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>-->
+  <!-- JiaThis Button END -->
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2016/09/how-to-raise-my-kids/" title="Previous Post: 如何带娃">&laquo; 如何带娃</a>
+      
+      
+        <a class="basic-alignment right" href="/2016/09/computer-vision-syndrome/" title="Next Post: 电脑视觉综合症">电脑视觉综合症 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a>
+<span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span>
+  <section class="contruction-wrap">
+    <div class="contruction"></div>
+  </section>
+</p>
+
+</footer>
+  
+
+
+
+
+<script type="text/javascript">
   var stylesheet = document.createElement('link');
   stylesheet.href = '/assets/stylesheets/app.css';
   stylesheet.rel = 'stylesheet';
   stylesheet.type = 'text/css';
   document.getElementsByTagName('head')[0].appendChild(stylesheet);
-</script> </body> </html>
+</script>
+
+</body>
+</html>

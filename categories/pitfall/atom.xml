@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: pitfall | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/pitfall/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-04-02T23:44:01+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/pitfall/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-04-06T19:01:30+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[Correct Django Site Name During DB Migration]]></title>
-    <link href="http://lenciel.com/2014/11/correct-django-site-name-in-sentry/"/>
+    <link href="http://172.16.121.110:4000/2014/11/correct-django-site-name-in-sentry/"/>
     <updated>2014-11-02T16:50:40+08:00</updated>
-    <id>http://lenciel.com/2014/11/correct-django-site-name-in-sentry</id>
+    <id>http://172.16.121.110:4000/2014/11/correct-django-site-name-in-sentry</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/2014_11/sentry_incorrect_site.png" title="Don't touch me..." alt="Vhost threshold" /></p>
 
 <a name="Problem"></a>
@@ -106,9 +106,9 @@
   
   <entry>
     <title type="html"><![CDATA[Boolean Objects和Boolean Primitives]]></title>
-    <link href="http://lenciel.com/2013/08/boolean-objects-and-boolean-primitives/"/>
+    <link href="http://172.16.121.110:4000/2013/08/boolean-objects-and-boolean-primitives/"/>
     <updated>2013-08-21T11:31:00+08:00</updated>
-    <id>http://lenciel.com/2013/08/boolean-objects-and-boolean-primitives</id>
+    <id>http://172.16.121.110:4000/2013/08/boolean-objects-and-boolean-primitives</id>
     <content type="html"><![CDATA[<p>Javascript有一个小陷阱：每个primitive都有自己的constructor，但是这些constructor构造出来的却不是primitive。</p>
 
 <p>以boolean为例，大多数的代码里面用的是primitive值，比如：</p>

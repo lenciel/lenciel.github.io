@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: parenting | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/parenting/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-04-02T23:44:01+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/parenting/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-04-06T19:01:30+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[如何带娃]]></title>
-    <link href="http://lenciel.com/2016/09/how-to-raise-my-kids/"/>
+    <link href="http://172.16.121.110:4000/2016/09/how-to-raise-my-kids/"/>
     <updated>2016-09-18T21:30:41+08:00</updated>
-    <id>http://lenciel.com/2016/09/how-to-raise-my-kids</id>
+    <id>http://172.16.121.110:4000/2016/09/how-to-raise-my-kids</id>
     <content type="html"><![CDATA[<p>是一个全世界人民，特别是苦逼的中间阶层人民，亘古不变的热闹话题。</p>
 
 <p>昨天，远在LA的陈明同学分享了一个关于<a href="http://www.ted.com/talks/julie_lythcott_haims_how_to_raise_successful_kids_without_over_parenting?utm_source=newsletter_weekly_2016-09-17&amp;utm_campaign=newsletter_weekly&amp;utm_medium=email&amp;utm_content=talk_of_the_week_button&amp;from=timeline&amp;isappinstalled=0#t-318006">如何带娃的TED讲座</a>。</p>

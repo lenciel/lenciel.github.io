@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: inspiration | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/inspiration/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-04-02T23:44:01+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/inspiration/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-04-06T19:01:30+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[3D动态Gif]]></title>
-    <link href="http://lenciel.com/2014/02/3d-gifs/"/>
+    <link href="http://172.16.121.110:4000/2014/02/3d-gifs/"/>
     <updated>2014-02-18T12:40:00+08:00</updated>
-    <id>http://lenciel.com/2014/02/3d-gifs</id>
+    <id>http://172.16.121.110:4000/2014/02/3d-gifs</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/2014_02/3dgifs4.gif" title="Don't touch me..." alt="3d gifs" /></p>
 
 <p>托各种SNS的福，有趣的动态gif在网络上漫山遍野。作为电影爱好者的本座，也是<a href="http://lenciel.com/blog/categories/fu-guang-lue-ying/">重度的gif爱好者</a>。</p>

@@ -1,4 +1,113 @@
-<!DOCTYPE html> <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]--> <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]--> <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]--> <head> <meta charset="utf-8"> <title>@Lenciel</title> <meta name="author" content="Lenciel"> <meta name="description" content=" 构建Deployment系统 (1) 对软件公司，特别是互联网软件公司来说，发布流程是企业的核心竞争力。..."> <meta name="HandheldFriendly" content="True"> <meta name="MobileOptimized" content="320"> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="canonical" href="http://lenciel.com/posts/36/"> <link href="/favicon.png" rel="icon"> <script src="/assets/javascripts/app.js"></script> <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml"> <meta property="og:type" content="article"/> <meta property="og:url" content="http://lenciel.com/posts/36/"/> <meta property="og:description" content=" 构建Deployment系统 (1) 对软件公司，特别是互联网软件公司来说，发布流程是企业的核心竞争力。..."/> <meta property="og:site_name" content="http://lenciel.com"/> <meta property="article:author" content="http://lenciel.com"> <meta itemprop="description" content=" 构建Deployment系统 (1) 对软件公司，特别是互联网软件公司来说，发布流程是企业的核心竞争力。..."/> <script>
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>@Lenciel</title>
+  <meta name="author" content="Lenciel">
+
+  
+  <meta name="description" content="
+  
+  
+  
+    
+      
+  
+    
+      请输入密码
+    
+    
+      
+        
+
+
+
+
+
+        
+      
+    
+  
+
+
+  午饭之前的这点儿垃圾时间闲着也是闲着，大多数网站让用户输入密码都做得不够温柔。什么样是温柔呢...">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://172.16.121.110:4000/posts/36/">
+  <link href="/favicon.png" rel="icon">
+  <script src="/assets/javascripts/app.js"></script>
+  <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml">
+  
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://172.16.121.110:4000/posts/36/" />
+<meta property="og:description" content="
+  
+  
+  
+    
+      
+  
+    
+      请输入密码
+    
+    
+      
+        
+
+
+
+
+
+        
+      
+    
+  
+
+
+  午饭之前的这点儿垃圾时间闲着也是闲着，大多数网站让用户输入密码都做得不够温柔。什么样是温柔呢..." />
+
+<meta property="og:site_name" content="http://172.16.121.110:4000" />
+<meta property="article:author" content="http://lenciel.com">
+
+
+
+<meta itemprop="description" content="
+  
+  
+  
+    
+      
+  
+    
+      请输入密码
+    
+    
+      
+        
+
+
+
+
+
+        
+      
+    
+  
+
+
+  午饭之前的这点儿垃圾时间闲着也是闲着，大多数网站让用户输入密码都做得不够温柔。什么样是温柔呢..." />
+
+
+  <script>
     var _hmt = _hmt || [];
     (function() {
         var hm = document.createElement("script");
@@ -6,7 +115,11 @@
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
     })();
-</script> <script>
+</script>
+
+
+  
+<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -15,10 +128,212 @@
   ga('create', 'UA-175991-6', 'auto');
   ga('send', 'pageview');
 
-</script> </head> <body class="collapse-sidebar sidebar-footer"> <header role="banner"><hgroup> <h1><a href="/">@Lenciel</a></h1> </hgroup> </header> <nav role="navigation"><ul class="subscription" data-subscription="rss"> <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li> </ul> <ul class="main-navigation"> <li><a href="/"><i class="icon-home"></i>Home</a></li> <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li> <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li> </ul> </nav> <div id="main"> <div id="content"> <div class="blog-index"> <article> <header> <h1 class="entry-title"><a href="/2014/04/pipeline-for-deployment/">构建Deployment系统 (1)</a></h1> <p class="meta"> </p> </header> <div class="entry-content"><p>对软件公司，特别是互联网软件公司来说，发布流程是企业的<a href="http://lenciel.com/2013/05/the-importance-of-deploy-as-will/">核心竞争力</a>。</p> <p>那么什么是一个好的发布流程呢？Github（别忘了它本身也是一家软件公司）的CTO在介绍<a href="http://lenciel.com/2013/03/boxen-introduction/">Boxen </a>的时候说过，他们公司新员工从拿电脑到可以开始编码只要30分钟，这给混过几家10w+员工公司的我带来的震撼特别强烈。</p> <p>所以我觉得，一个好的软件发布流程应该是：</p> <ol> <li>新员工在第一天入职就能push改动到production</li> <li>新员工在第一天入职就能学会怎么从production撤销一个错误的改动</li> <li>整个deployment流程是可预测的，也是可追溯的</li> </ol> <p>那么，如果你到了一个新公司，推开门发现那是一个蛮荒之地，应该怎么办呢？这篇先理一下基本的概念，然后后面分节描述一下讲到的这些工具具体要怎么配置怎么用。</p> <a name="L........."></a> <h1>善其器</h1> <p>先check一下东西齐不齐活:</p> <ol> <li>代码repo是放在哪里： (<a href="http://git-scm.com/" title="Git">git</a>, <a href="http://mercurial.selenic.com/" title="Mercurial">hg</a>, …),</li> <li>hook到repo的一套有review功能的管理系统: (<a href="http://www.reviewboard.org">ReviewBoard</a>, <a href="https://www.gitlab.com/%E2%80%8E" title="Gitlab">Gitlab</a>, <a href="https://code.google.com/p/gerrit/" title="Gerrit">gerrit</a>, <a href="https://bitbucket.org/" title="BitBucket">bitbucket</a>, <a href="https://github.com/" title="Github">github</a>, …),</li> <li>hook到repo的一套CI管理系统: (<a href="http://jenkins-ci.org/" title="Jenkins">Jenkins</a>, <a href="https://travis-ci.org/" title="Travis CI">Travis CI</a>, …),</li> <li>自动部署代码到服务器的系统 (<a href="https://puppetlabs.com/%E2%80%8E" title="Puppet">Puppet</a>, <a href="http://www.getchef.com/chef/" title="Chef">chef</a>, <a href="http://clusto.org/" title="Clusto">clusto</a>, …).</li> </ol> <p><img src="/downloads/images/2014_04/deployment_phases.png" title="Don't touch me..." alt="Deployment Phases"/></p> <p>你选择的工具当然对后面的流程有很大的影响。我们公司是采用<code>git</code>+<code>Gitlab</code>+<code>Reviewboard</code>+<code>Jenkins</code>+<code>fabric</code>来做部署。在搭建这套东西之前我也试过很多其他的东西，有的东西我放弃了是因为太复杂不够轻量(比如Puppet)，有的东西我放弃了是因为，长得太丑(比如Gerrit)。</p> <a name="L..............."></a> <h1>开发者视角</h1> <p>假设你今天入职，写了段代码，从你的视角看到的deployment流程:</p> <ol> <li>提交到本地repo。</li> <li>运行<a href="http://www.reviewboard.org/docs/rbtools/dev/">RBTools</a>生成一个Reviewboard的<code>review request</code></li> <li>代码通过了review拿到提交许可后，把代码merge然后push到Gitlab上的<code>alpha</code>分支</li> <li>Jenkins拿到change后做自动测试，然后部署到test服务器，发邮件通知QA</li> <li>QA或者是开发者自己玩一下test服务器，发现没有问题，手动运行Jenkins脚本。脚本会对代码打tag，并部署改动到staging服务器，发邮件通知QA和PO</li> <li>PO确认某个版本的所有代码都到了staging，QA做回归测试</li> <li>测试通过后，手动运行Jenkins脚本，脚本会部署某个staging服务器的版本到production服务器</li> <li>部署完毕后，Jenkins运行相应的冒烟测试，测试通过后邮件关键人士，表明production音容宛在</li> </ol> <p>整个流程里面，如果你是一个靠谱的开发者，需要花时间参与的步骤很少。但是如果是一个习惯不好的开发者，可能被review代码的人，Jenkins的自动测试，QA的集成测试或者是回归测试不断修理，惨痛的教训一定会让你成长起来的。</p> <a name="L............"></a> <h1>机器视角</h1> <p>很多重复性的事情，都是机器在干:</p> <ol> <li><p>Reviewboard上被通过的代码被push上Gitlab的<code>alpha</code>分支后，Jenkins自动运行:</p> <ol> <li>静态扫描工具</li> <li>单元测试</li> <li>有报错发邮件通知事主。没有报错， 部署<code>alpha</code>分支到test服务器</li> <li>部署test服务器后，运行集成测试集</li> </ol> </li> <li><p>有人手工触发staging的build:</p> <ol> <li>merge<code>alpha</code>分支到<code>staging</code>分支</li> <li>部署<code>staging</code>分支到staging服务器</li> <li>部署服务器后，运行集成测试集</li> </ol> </li> <li><p>有人手工触发production的build:</p> <ol> <li>merge<code>staging</code>分支到<code>production</code>分支</li> <li>部署<code>production</code>分支到production服务器</li> <li>after deployment, runs integration tests against production</li> </ol> </li> </ol> <p>这里很多具体的步骤需要通过Jenkins和它的插件甚至是自己写的各种脚本来配合完成</p> <a name="L..............."></a> <h1>考虑扩展性</h1> <p>未知的未来，你可能会发现项目换了开发语言，项目换了JS框架，项目自动化测试改成手动了&hellip;在架构整套部署系统的时候，要做好和具体语言具体流程的解耦。</p> <p>一些可能会有用的思路:</p> <ol> <li>项目组足够小，成员能力足够好，可以不用review代码直接checkin到公共repo(成员能力足够好至少意味着，他有写靠谱的UT)</li> <li>你构建出来的系统，每个不同的build应该可以很容易的绑定不同的工具: <ol> <li>静态扫描工具是很好 (比如 <a href="http://www.pylint.org/" title="PyLint">pylint</a>, <a href="https://github.com/jcrocholl/pep8" title="pep8.py">pep8</a>或者<a href="http://www.jshint.com/" title="JSHint">jshint</a>)，但最好项目一开始就用它们。如果是旧项目不要往上套，费时费力</li> <li>如果是用precommit的hook来跑测试，开发者本地可以不跑</li> <li>如果是有特别要求的项目（安全性，健壮性等），可以很容易绑定其他的工具</li> </ol> </li> <li>每个项目对应不同的deployment环境有不同的build配置</li> <li>三驾马车的服务器配置 (test, staging, production)什么时候应该祭出？个人经验是，如果研发团队超过3人了，再怎么省也得有两个(test+production)。如果有专职的QA团队，并且希望有稳定的版本部署出去，那三种环境的配置几乎是必须的。</li> <li>手动触发test到staging以及staging到production主要是为了手动测试的时间窗，让版本发布更可控。你也可以结合项目的具体情况决定要不要把这两步也自动化。</li> </ol> <p>如果是用了Jenkins，上面这些就非常方便了，因为说白了每个build不过就是当特定条件满足时执行的一堆特定脚本而已：当然，如果你发现公司还在用Ubuntu 12.04做build server，可能也没有那么方便。</p> <a name="Rants"></a> <h1>Rants</h1> <ol> <li><em>什么时候需要考虑上这种流程?</em> 如果是三个人的车库队伍，然后就队伍里面又没人有兴趣做对运维，那就算了吧。如果是正经开门做生意的公司，都该上。</li> <li><em>能不能允许"加急"?</em> 和很多大公司比，这套流程虽然已经精简了，但是总有时候我们有非常"紧急的"改动，能不能不走这套流程直接上？ 简单的回答就是，不能。如果你发现了有人要求加急，一定是目前的流程太慢。这种情况，一定是有什么东西坏掉了吧。比如之前的代码check不严格，很严重的错误很容易就到了production，或者你的员工们写的UT跑一年都跑不完或者是在build server上根本没法跑。</li> <li><em>为什么不自动部署?</em> 是，这里描述的流程只有到test服务器是自动部署的，后面到staging和production都是手动部署。因为据说，把自动merge和自动测试的代码部署到production服务器，是一个很容易让你半夜接到电话的举动，而且很多CEO鬓角的白头发都是因为这样的部署长出来的。当然如果你的manager已经在他老板那里夸口说你来了整个手动测试team都可以解散了，我就只能祝你好运了。</li> <li>静态扫描的工具（无论是lint还是style的检查），常常都会给团队带来比UT更好的提升：很多时候你在review的时候要不断告诉同事特别是新手同事你这段代码连style都不对，对两个人都是伤害&hellip;如果有个无情的机器用不妥协地负责做这件事情，嗯哼&hellip;</li> </ol> <p>Hope you have fun when setting up the pipeline for your company.</p> </div> </article> <article> <header> <h1 class="entry-title"><a href="/2014/04/why-look-so-sad/">Why look so sad</a></h1> <p class="meta"> </p> </header> <div class="entry-content"><p><img src="/downloads/images/iwdrm/we_are_different.gif" title="Don't touch me..." alt="We are different"/></p> <blockquote><p>"Why do you look so sad?"<br/>"Because you speak to me in words and I look at you with feelings."</p><footer><strong>Jean-Paul Belmondo</strong> <cite><a href='http://www.imdb.com/title/tt0059592/'>Pierrot Le Fou (1965)</a></cite></footer></blockquote> </div> </article> <div class="pagination"> <a class="prev" href="/posts/37">&larr; Older</a> <a href="/archives">Archives</a> <a class="next" href="/posts/35">Newer &rarr;</a> </div> </div> </div> </div> <footer role="contentinfo"><p> Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a> <span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span> <section class="contruction-wrap"> <div class="contruction"></div> </section> </p> </footer> <script type="text/javascript">
+</script>
+
+
+</head>
+
+<body    class="collapse-sidebar sidebar-footer" >
+  <header role="banner"><hgroup>
+  <h1><a href="/">@Lenciel</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<ul class="main-navigation">
+  <li><a href="/"><i class="icon-home"></i>Home</a></li>
+  <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li>
+  <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2014/05/better-password-form-field/">请输入密码</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>午饭之前的这点儿垃圾时间闲着也是闲着，大多数网站让用户输入密码都做得不够温柔。什么样是温柔呢？不打扰就是温柔&hellip;</p>
+
+<p>  <link rel="stylesheet" href="/downloads/static/css/flip_animations.css">
+  <link rel="stylesheet" href="/downloads/static/css/better_password_form_field.css"></p>
+
+<div id='better-password-container'>
+    <div class="top"></div>
+    <div class="middle">
+      <div class="left"></div>
+      <div class="middle">
+        <div id="form-container">
+
+          <div id="all-done">谢谢</div>
+
+          <form id="verify-new-password">
+            <label for="verify-password">请再次输入你的密码</label>
+            <input placeholder="请再次输入你的密码" type="password" id="verify-password" name="password-to-verify" />
+            <ul>
+              <li id="matches-password">输入正确</li>
+            </ul>
+
+            <input type="submit" id="verify-password-submit" value="确认" disabled="disabled">
+            <button id="go-back">返回</button>
+          </form>
+
+          <form id="new-password">
+            <label for="password">请输入密码</label>
+            <input placeholder="请输入密码" type="password" id="password" name="password" />
+            <ul>
+              <li id="eight-plus">最少8位</li>
+              <li id="uppercase">必须包含大写字母</li>
+              <li id="lowercase">必须包含小写字母</li>
+              <li id="numbers">必须包含数字</li>
+              <li id="punctuation">必须包含符号</li>
+            </ul>
+
+            <input type="submit" id="password-submit" value="下一步" disabled="disabled">
+          </form>
+
+        </div>
+      </div>
+      <div class="right"></div>
+    </div>
+    <div class="bottom"></div>
+  </div>
+
+
+<p>  <script src="/downloads/static/js/better_password_form_field.js"></script></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2014/04/edward-gorey/">Edward Gorey</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>最近偶像派在说要买一些给蒙爷看的绘本。</p>
+
+<p>这让我想起来《读库》有几期专门在梳理国内外那些有名的插画家。的确，纸质书最让人怀念的就是里面那些精致的插画。</p>
+
+<p>我最喜欢的插画家是号称“黑旋风”的<a href="http://en.wikipedia.org/wiki/Edward_Gorey">Edward Gorey</a>。他本身是作家，但是最主要的成就却不是文字而是一系列绘本作品，比如代表作《<a href="http://www.douban.com/photos/album/34618766/?start=0">死小孩</a>》。他的画风非常特别，层层叠叠的钢笔在大片的留白中把细节逐一勾勒，塑造出神秘又阴森的质感。题材虽然常常黑暗甚至颓废，作品却总有意味深长的轻松诙谐流露出来，让你翻开的时候彷佛能看到一个倔强男人在对生活尽情调侃。</p>
+
+<p>当然，这些要拿来做蒙爷的启蒙教育绘本当然是过分“黑暗”了一些。不过从技术上来说，试试怎么把图片叠得好看总是一样的。</p>
+
+<p>所以，让我们看看Edward Gorey画的一些知名小说的封面吧（他能一直在作家圈子有帮朋友似乎也是因为画了不少封面）：
+<link rel="stylesheet" type="text/css" href="/downloads/static/css/elasticstack_slider.css" /></p>
+
+<div class="slider-container">
+    <ul id="elasticstack" class="elasticstack">
+        <li><img src="/downloads/images/2014_04/edward_gorey/gorey_kafka.jpg" alt="01"/><h6>Amerika</h6></li>
+        <li><img src="/downloads/images/2014_04/edward_gorey/gorey_james2.jpg" alt="02"/><h6>The Ambassadors</h6></li>
+        <li><img src="/downloads/images/2014_04/edward_gorey/gorey_james3.jpg" alt="03"/><h6>The Awkward Age</h6></li>
+        <li><img src="/downloads/images/2014_04/edward_gorey/gorey_james4.jpg" alt="04"/><h6>What Maisie Knows</h6></li>
+        <li><img src="/downloads/images/2014_04/edward_gorey/gorey_conrad1.jpg" alt="05"/><h6>Victory</h6></li>
+        <li><img src="/downloads/images/2014_04/edward_gorey/gorey_conrad2.jpg" alt="06"/><h6>Chance</h6></li>
+        <li><img src="/downloads/images/2014_04/edward_gorey/gorey_gogol1.jpg" alt="07"/><h6>喂...最后一张了</h6></li>
+    </ul>
+</div>
+
+
+<!-- /container -->
+
+
+
+
+<script src="/downloads/static/js/draggabilly.pkgd.min.js"></script>
+
+
+<script src="/downloads/static/js/elastiStack.js"></script>
+
+
+<script>
+    new ElastiStack( document.getElementById( 'elasticstack' ) );
+</script>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/posts/37">&larr; Older</a>
+    
+    <a href="/archives">Archives</a>
+    
+    <a class="next" href="/posts/35">Newer &rarr;</a>
+    
+  </div>
+</div>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a>
+<span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span>
+  <section class="contruction-wrap">
+    <div class="contruction"></div>
+  </section>
+</p>
+
+</footer>
+  
+
+
+
+
+<script type="text/javascript">
   var stylesheet = document.createElement('link');
   stylesheet.href = '/assets/stylesheets/app.css';
   stylesheet.rel = 'stylesheet';
   stylesheet.type = 'text/css';
   document.getElementsByTagName('head')[0].appendChild(stylesheet);
-</script> </body> </html>
+</script>
+
+</body>
+</html>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: pip | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/pip/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-04-02T23:44:01+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/pip/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-04-06T19:01:30+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[打开pip的download cache]]></title>
-    <link href="http://lenciel.com/2013/10/pip-download-cache/"/>
+    <link href="http://172.16.121.110:4000/2013/10/pip-download-cache/"/>
     <updated>2013-10-17T13:25:00+08:00</updated>
-    <id>http://lenciel.com/2013/10/pip-download-cache</id>
+    <id>http://172.16.121.110:4000/2013/10/pip-download-cache</id>
     <content type="html"><![CDATA[<p>Python的标准库实在是<a href="http://lenciel.com/2013/10/recharging-the-python-standard-library/">不够用</a>，所以一个很常见的情况是我们需要在每个项目使用的<code>virtualenv</code>里面都安装一些常用的库。</p>
 
 <p>为了加速安装的过程，有两个小窍门。</p>

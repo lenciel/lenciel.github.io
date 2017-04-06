@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: burnout | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/burnout/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-04-02T23:44:01+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/burnout/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-04-06T19:01:30+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[防止Burnout]]></title>
-    <link href="http://lenciel.com/2012/03/do-not-burn-out-yourself/"/>
+    <link href="http://172.16.121.110:4000/2012/03/do-not-burn-out-yourself/"/>
     <updated>2012-03-31T21:54:36+08:00</updated>
-    <id>http://lenciel.com/2012/03/do-not-burn-out-yourself</id>
+    <id>http://172.16.121.110:4000/2012/03/do-not-burn-out-yourself</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/2012_03/take_a_break.jpg" title="Don't touch me..." alt="take a break" /></p>
 
 <p>Google的美女副总<a href="https://plus.google.com/118207880179234484610/posts">Marissa Mayer</a>最近做了<a href="https://www.youtube.com/watch?v=EHhvIsfsSew">一个演讲</a>，里面提到了如何避免自己的团队出现"Burnout"。</p>

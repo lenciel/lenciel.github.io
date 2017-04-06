@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: CI | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/ci/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-04-02T23:44:01+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/ci/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-04-06T19:01:30+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[构建Deployment系统 (1)]]></title>
-    <link href="http://lenciel.com/2014/04/pipeline-for-deployment/"/>
+    <link href="http://172.16.121.110:4000/2014/04/pipeline-for-deployment/"/>
     <updated>2014-04-22T02:49:38+08:00</updated>
-    <id>http://lenciel.com/2014/04/pipeline-for-deployment</id>
+    <id>http://172.16.121.110:4000/2014/04/pipeline-for-deployment</id>
     <content type="html"><![CDATA[<p>对软件公司，特别是互联网软件公司来说，发布流程是企业的<a href="http://lenciel.com/2013/05/the-importance-of-deploy-as-will/">核心竞争力</a>。</p>
 
 <p>那么什么是一个好的发布流程呢？Github（别忘了它本身也是一家软件公司）的CTO在介绍<a href="http://lenciel.com/2013/03/boxen-introduction/">Boxen

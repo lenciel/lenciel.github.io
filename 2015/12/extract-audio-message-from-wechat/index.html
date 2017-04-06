@@ -1,4 +1,143 @@
-<!DOCTYPE html> <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]--> <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]--> <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]--> <head> <meta charset="utf-8"> <title>提取微信语音消息 - @Lenciel</title> <meta name="author" content="Lenciel"> <meta name="description" content=" 提取微信语音消息 Why? Why not? How? 导出原始微信的音频消息 使用iTunes创建一个不加密备份 导出备份中..."> <meta name="HandheldFriendly" content="True"> <meta name="MobileOptimized" content="320"> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="canonical" href="http://lenciel.com/2015/12/extract-audio-message-from-wechat/"> <link href="/favicon.png" rel="icon"> <script src="/assets/javascripts/app.js"></script> <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml"> <meta property="og:title" content="提取微信语音消息"/><meta itemprop="name" content="提取微信语音消息"/> <meta property="og:type" content="article"/> <meta property="og:url" content="http://lenciel.com/2015/12/extract-audio-message-from-wechat/"/> <meta property="og:description" content=" 提取微信语音消息 Why? Why not? How? 导出原始微信的音频消息 使用iTunes创建一个不加密备份 导出备份中..."/> <meta property="og:site_name" content="http://lenciel.com"/> <meta property="article:author" content="http://lenciel.com"> <meta property="article:published_time" content="2015-12-24 13:05:21 +0800"/> <meta property="article:section" content="tools-i-use"/> <meta itemprop="description" content=" 提取微信语音消息 Why? Why not? How? 导出原始微信的音频消息 使用iTunes创建一个不加密备份 导出备份中..."/> <script>
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>提取微信语音消息 - @Lenciel</title>
+  <meta name="author" content="Lenciel">
+
+  
+  <meta name="description" content="
+
+  
+  
+    
+      提取微信语音消息
+    
+    
+      
+        
+
+
+
+
+
+        
+      
+    
+  
+
+
+
+Why?
+
+Why not?
+
+
+How?
+
+
+导出原始微信的音频消息
+
+
+使用iTunes创建一个不加密备份
+导出备份中...">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://172.16.121.110:4000/2015/12/extract-audio-message-from-wechat/">
+  <link href="/favicon.png" rel="icon">
+  <script src="/assets/javascripts/app.js"></script>
+  <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml">
+  <meta property="og:title" content="提取微信语音消息" /><meta itemprop="name" content="提取微信语音消息" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://172.16.121.110:4000/2015/12/extract-audio-message-from-wechat/" />
+<meta property="og:description" content="
+
+  
+  
+    
+      提取微信语音消息
+    
+    
+      
+        
+
+
+
+
+
+        
+      
+    
+  
+
+
+
+Why?
+
+Why not?
+
+
+How?
+
+
+导出原始微信的音频消息
+
+
+使用iTunes创建一个不加密备份
+导出备份中..." />
+
+<meta property="og:site_name" content="http://172.16.121.110:4000" />
+<meta property="article:author" content="http://lenciel.com">
+<meta property="article:published_time" content="2015-12-24 13:05:21 +0800" />
+
+<meta property="article:section" content="tools-i-use" />
+<meta itemprop="description" content="
+
+  
+  
+    
+      提取微信语音消息
+    
+    
+      
+        
+
+
+
+
+
+        
+      
+    
+  
+
+
+
+Why?
+
+Why not?
+
+
+How?
+
+
+导出原始微信的音频消息
+
+
+使用iTunes创建一个不加密备份
+导出备份中..." />
+
+
+  <script>
     var _hmt = _hmt || [];
     (function() {
         var hm = document.createElement("script");
@@ -6,7 +145,11 @@
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
     })();
-</script> <script>
+</script>
+
+
+  
+<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -15,11 +158,197 @@
   ga('create', 'UA-175991-6', 'auto');
   ga('send', 'pageview');
 
-</script> </head> <body class="collapse-sidebar sidebar-footer"> <header role="banner"><hgroup> <h1><a href="/">@Lenciel</a></h1> </hgroup> </header> <nav role="navigation"><ul class="subscription" data-subscription="rss"> <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li> </ul> <ul class="main-navigation"> <li><a href="/"><i class="icon-home"></i>Home</a></li> <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li> <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li> </ul> </nav> <div id="main"> <div id="content"> <div> <article class="hentry" role="article"> <header> <h1 class="entry-title">提取微信语音消息</h1> <p class="meta"> </p> </header> <div class="entry-content"><a name="Why."></a> <h3>Why?</h3> <p>Why not?</p> <a name="How."></a> <h3>How?</h3> <a name="L................................."></a> <h4>导出原始微信的音频消息</h4> <ul> <li>使用iTunes创建一个不加密备份</li> <li>导出备份中的微信应用文件夹（可以使用iExplorer试用版）</li> <li>找到你需要转换的音频文件所在文件夹</li> </ul> <a name="L......silk3...............mp3"></a> <h4>转换silk3编码音频为mp3</h4> <p>如果你是mac机器，只需要安装ffmpeg（推荐使用homebrew）然后运行脚本：</p> <pre><code class="python">    python wechat2mp3.py 待转换音频所在文件夹
-</code></pre> <p>如果你是其他系统，确认你装好了ffmpeg之后，需要<a href="https://github.com/gaozehua/SILKCodec">自己编译SILK解码库</a>。</p> <a name="Seriously.Why."></a> <h3>Seriously Why?</h3> <p>常温常压下我并不需要导出微信的语音，之所以有这个需求是因为蒙爷在三亚经常用微信跟我们唠嗑：</p> <p><audio controls loop preload><source src="/downloads/audio/mm_voice.mp3"></audio></p> <p>听到这样销魂的声音你就算不想保存，也想要转发，对不对？</p> <p>毕竟作为一名中国人，你已经有8个亲戚群了，对不对？</p> <p>然后微信奇怪的生态圈构建方式就是，各种封闭。</p> <p>微信公众号是世间少有的不允许外链的媒体，微信客户端是世间少有的不允许导出聊天记录的聊天工具。</p> <p>它的想法大概是，你珍贵的瞬间都在我这里（微信专门做了“收藏”这个功能让你把这些片段上传到微信的服务器，打着不让它们丢失的旗号），那你就逃不出我的手掌心了。</p> <a name="Seriously.How."></a> <h3>Seriously How?</h3> <p>使用iTunes创建一个不加密的备份，然后连接iExplorer，会看到打开iTunes备份的选项：</p> <p><img src="/downloads/images/2015_12/extract_wechat_1.png" title="Don't touch me..." alt="Vhost threshold"/></p> <p>打开后在<code>App</code>文件夹下面导出微信文件夹：</p> <p><img src="/downloads/images/2015_12/extract_wechat_2.png" title="Don't touch me..." alt="Vhost threshold"/></p> <p>在导出的文件夹下面有个Audio目录，你可以根据语音消息的数量大概确认需要导出的目录（目录是个hash），然后到<code>DB/MM.sqlite</code>下面去打开<code>Chat_[hash]</code>这个表里面，看看消息来确认：</p> <p><img src="/downloads/images/2015_12/extract_wechat_3.png" title="Don't touch me..." alt="Vhost threshold"/></p> <p>二进制查看其中的任意一个文件，可以看到是<a href="https://en.wikipedia.org/wiki/SILK">SILK</a>编码的（skype早期版本包括lync都是使用的这种编码方式）：</p> <p><img src="/downloads/images/2015_12/extract_wechat_4.png" title="Don't touch me..." alt="Vhost threshold"/></p> <p>接下来你只需要按照<a href="https://github.com/lenciel/wechat2mp3">repo</a>里面的指导(愿主保佑你是用Mac因为那最简单)来进行文件转换就可以了。</p> </div> <footer> <p class="meta"> <span class="byline author vcard">Posted by <span class="fn">Lenciel</span></span> <span class="categories"> <a class='category' href='/categories/tools-i-use/'>tools-i-use</a> </span> </p> <div class="sharing"> </div> <p class="meta"> <a class="basic-alignment left" href="/2015/10/vivid/" title="Previous Post: 卫豆">&laquo; 卫豆</a> <a class="basic-alignment right" href="/2016/02/happy-new-year/" title="Next Post: 记一次成功的过年">记一次成功的过年 &raquo;</a> </p> </footer> </article> </div> </div> </div> <footer role="contentinfo"><p> Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a> <span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span> <section class="contruction-wrap"> <div class="contruction"></div> </section> </p> </footer> <script type="text/javascript">
+</script>
+
+
+</head>
+
+<body    class="collapse-sidebar sidebar-footer" >
+  <header role="banner"><hgroup>
+  <h1><a href="/">@Lenciel</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<ul class="main-navigation">
+  <li><a href="/"><i class="icon-home"></i>Home</a></li>
+  <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li>
+  <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">提取微信语音消息</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><a name="Why."></a>
+<h3>Why?</h3>
+
+<p>Why not?</p>
+
+<a name="How."></a>
+<h3>How?</h3>
+
+<a name="L................................."></a>
+<h4>导出原始微信的音频消息</h4>
+
+<ul>
+<li>使用iTunes创建一个不加密备份</li>
+<li>导出备份中的微信应用文件夹（可以使用iExplorer试用版）</li>
+<li>找到你需要转换的音频文件所在文件夹</li>
+</ul>
+
+
+<a name="L......silk3...............mp3"></a>
+<h4>转换silk3编码音频为mp3</h4>
+
+<p>如果你是mac机器，只需要安装ffmpeg（推荐使用homebrew）然后运行脚本：</p>
+
+<pre><code class="python">    python wechat2mp3.py 待转换音频所在文件夹
+</code></pre>
+
+<p>如果你是其他系统，确认你装好了ffmpeg之后，需要<a href="https://github.com/gaozehua/SILKCodec">自己编译SILK解码库</a>。</p>
+
+<a name="Seriously.Why."></a>
+<h3>Seriously Why?</h3>
+
+<p>常温常压下我并不需要导出微信的语音，之所以有这个需求是因为蒙爷在三亚经常用微信跟我们唠嗑：</p>
+
+<p><audio controls loop preload><source src="/downloads/audio/mm_voice.mp3"></audio></p>
+
+<p>听到这样销魂的声音你就算不想保存，也想要转发，对不对？</p>
+
+<p>毕竟作为一名中国人，你已经有8个亲戚群了，对不对？</p>
+
+<p>然后微信奇怪的生态圈构建方式就是，各种封闭。</p>
+
+<p>微信公众号是世间少有的不允许外链的媒体，微信客户端是世间少有的不允许导出聊天记录的聊天工具。</p>
+
+<p>它的想法大概是，你珍贵的瞬间都在我这里（微信专门做了“收藏”这个功能让你把这些片段上传到微信的服务器，打着不让它们丢失的旗号），那你就逃不出我的手掌心了。</p>
+
+<a name="Seriously.How."></a>
+<h3>Seriously How?</h3>
+
+<p>使用iTunes创建一个不加密的备份，然后连接iExplorer，会看到打开iTunes备份的选项：</p>
+
+<p><img src="/downloads/images/2015_12/extract_wechat_1.png" title="Don't touch me..." alt="Vhost threshold" /></p>
+
+<p>打开后在<code>App</code>文件夹下面导出微信文件夹：</p>
+
+<p><img src="/downloads/images/2015_12/extract_wechat_2.png" title="Don't touch me..." alt="Vhost threshold" /></p>
+
+<p>在导出的文件夹下面有个Audio目录，你可以根据语音消息的数量大概确认需要导出的目录（目录是个hash），然后到<code>DB/MM.sqlite</code>下面去打开<code>Chat_[hash]</code>这个表里面，看看消息来确认：</p>
+
+<p><img src="/downloads/images/2015_12/extract_wechat_3.png" title="Don't touch me..." alt="Vhost threshold" /></p>
+
+<p>二进制查看其中的任意一个文件，可以看到是<a href="https://en.wikipedia.org/wiki/SILK">SILK</a>编码的（skype早期版本包括lync都是使用的这种编码方式）：</p>
+
+<p><img src="/downloads/images/2015_12/extract_wechat_4.png" title="Don't touch me..." alt="Vhost threshold" /></p>
+
+<p>接下来你只需要按照<a href="https://github.com/lenciel/wechat2mp3">repo</a>里面的指导(愿主保佑你是用Mac因为那最简单)来进行文件转换就可以了。</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+<span class="byline author vcard">Posted by <span class="fn">Lenciel</span></span>
+
+      
+
+
+
+
+
+      
+
+<span class="categories">
+  
+    <a class='category' href='/categories/tools-i-use/'>tools-i-use</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+  <!-- JiaThis Button BEGIN -->
+  <!--<div class="jiathis_style_24x24">
+    <a class="jiathis_button_qzone"></a>
+    <a class="jiathis_button_tsina"></a>
+    <a class="jiathis_button_tqq"></a>
+    <a class="jiathis_button_weixin"></a>
+    <a class="jiathis_button_renren"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+    <a class="jiathis_counter_style"></a>
+    </div>
+    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>-->
+  <!-- JiaThis Button END -->
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2015/10/vivid/" title="Previous Post: 卫豆">&laquo; 卫豆</a>
+      
+      
+        <a class="basic-alignment right" href="/2016/02/happy-new-year/" title="Next Post: 记一次成功的过年">记一次成功的过年 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a>
+<span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span>
+  <section class="contruction-wrap">
+    <div class="contruction"></div>
+  </section>
+</p>
+
+</footer>
+  
+
+
+
+
+<script type="text/javascript">
   var stylesheet = document.createElement('link');
   stylesheet.href = '/assets/stylesheets/app.css';
   stylesheet.rel = 'stylesheet';
   stylesheet.type = 'text/css';
   document.getElementsByTagName('head')[0].appendChild(stylesheet);
-</script> </body> </html>
+</script>
+
+</body>
+</html>

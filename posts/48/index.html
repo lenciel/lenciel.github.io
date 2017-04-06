@@ -1,4 +1,119 @@
-<!DOCTYPE html> <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]--> <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]--> <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]--> <head> <meta charset="utf-8"> <title>@Lenciel</title> <meta name="author" content="Lenciel"> <meta name="description" content=" 打开pip的download cache Python的标准库实在是不够用，所以一个很常见的情况是我们需..."> <meta name="HandheldFriendly" content="True"> <meta name="MobileOptimized" content="320"> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="canonical" href="http://lenciel.com/posts/48/"> <link href="/favicon.png" rel="icon"> <script src="/assets/javascripts/app.js"></script> <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml"> <meta property="og:type" content="article"/> <meta property="og:url" content="http://lenciel.com/posts/48/"/> <meta property="og:description" content=" 打开pip的download cache Python的标准库实在是不够用，所以一个很常见的情况是我们需..."/> <meta property="og:site_name" content="http://lenciel.com"/> <meta property="article:author" content="http://lenciel.com"> <meta itemprop="description" content=" 打开pip的download cache Python的标准库实在是不够用，所以一个很常见的情况是我们需..."/> <script>
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>@Lenciel</title>
+  <meta name="author" content="Lenciel">
+
+  
+  <meta name="description" content="
+  
+  
+  
+    
+      
+  
+    
+      Hurt myself when shoot a goal
+    
+    
+      
+        
+
+
+
+
+
+        
+      
+    
+  
+
+
+  
+
+"I guess I’ve still ...">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://172.16.121.110:4000/posts/48/">
+  <link href="/favicon.png" rel="icon">
+  <script src="/assets/javascripts/app.js"></script>
+  <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml">
+  
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://172.16.121.110:4000/posts/48/" />
+<meta property="og:description" content="
+  
+  
+  
+    
+      
+  
+    
+      Hurt myself when shoot a goal
+    
+    
+      
+        
+
+
+
+
+
+        
+      
+    
+  
+
+
+  
+
+"I guess I’ve still ..." />
+
+<meta property="og:site_name" content="http://172.16.121.110:4000" />
+<meta property="article:author" content="http://lenciel.com">
+
+
+
+<meta itemprop="description" content="
+  
+  
+  
+    
+      
+  
+    
+      Hurt myself when shoot a goal
+    
+    
+      
+        
+
+
+
+
+
+        
+      
+    
+  
+
+
+  
+
+"I guess I’ve still ..." />
+
+
+  <script>
     var _hmt = _hmt || [];
     (function() {
         var hm = document.createElement("script");
@@ -6,7 +121,11 @@
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
     })();
-</script> <script>
+</script>
+
+
+  
+<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -15,13 +134,156 @@
   ga('create', 'UA-175991-6', 'auto');
   ga('send', 'pageview');
 
-</script> </head> <body class="collapse-sidebar sidebar-footer"> <header role="banner"><hgroup> <h1><a href="/">@Lenciel</a></h1> </hgroup> </header> <nav role="navigation"><ul class="subscription" data-subscription="rss"> <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li> </ul> <ul class="main-navigation"> <li><a href="/"><i class="icon-home"></i>Home</a></li> <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li> <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li> </ul> </nav> <div id="main"> <div id="content"> <div class="blog-index"> <article> <header> <h1 class="entry-title"><a href="/2013/10/pip-download-cache/">打开pip的download cache</a></h1> <p class="meta"> </p> </header> <div class="entry-content"><p>Python的标准库实在是<a href="http://lenciel.com/2013/10/recharging-the-python-standard-library/">不够用</a>，所以一个很常见的情况是我们需要在每个项目使用的<code>virtualenv</code>里面都安装一些常用的库。</p> <p>为了加速安装的过程，有两个小窍门。</p> <p>一个是使用国内的源，比如<a href="http://www.v2ex.com/">v2ex</a>提供的。只需要新建或者编辑<code>~/.pip/pip.conf</code>，加入一行：</p> <pre><code>[global]
-index-url = http://pypi.v2ex.com/simple
-</code></pre> <p>另一个就是打开pip的<code>download cache</code>，这样可以避免pip每次都去下载相同的东西。只需要在<code>.bashrc</code>或者是<code>.zshrc</code>里面加入一行：</p> <pre><code>export PIP_DOWNLOAD_CACHE=$HOME/.pip-download-cache
-</code></pre> </div> </article> <article> <header> <h1 class="entry-title"><a href="/2013/10/recharging-the-python-standard-library/">给Python标准库充电</a></h1> <p class="meta"> </p> </header> <div class="entry-content"><p>Python的自荐页面<a href="http://www.python.org/about/">About Python</a>上号称自家的标准库是"batteries included"的，但实际情况却不是这样。对Python标准库的批评几乎从来没有中断过。著名的Python包<a href="http://docs.python-requests.org/en/latest/">Requests</a>的作者甚至决定永久把Requests保持为第三方库而拒绝加入标准库，他的理由是：<a href="http://www.leancrew.com/all-this/2012/04/where-modules-go-to-die/">加入标准库就会死翘翘</a>。</p> <p>再举个例子，我们最近的项目里面都用到了<a href="https://pypi.python.org/pypi/pytz/">pytz</a>。标准库里面的datetime是支持时区的（tzinfo类），但是并没有包含时区信息（tzinfo是抽象类需要自己实现）。遵照前人的经验使用pytz是最好的办法<a href="" title="[如何在datetime转换中保存时区信息](http://stackoverflow.com/questions/14762518/python-datetime-strptime-and-strftime-how-to-preserve-the-timezone-informat). ">^1</a>。</p> <p>所以不奇怪的是，几乎所有的Python项目都会引用一堆优秀的第三方库。为了管理这些依赖一般都会用上pip:</p> <ul> <li>在项目里面用pip freeze生成一个<code>requirement.txt</code>文件</li> <li>在创建<code>virtualenv</code>的时候使用之前生成的文件安装所有的依赖</li> </ul> <p>为了不在每次运行<code>pip install -r requirements.txt</code>的时候都下载一堆依赖，你还可以打开pip的<a href="http://lenciel.cn/2013/10/pip-download-cache/">download cache</a>。如果整个公司在做项目的时候都需要经常使用一些包，甚至可以考虑<a href="https://github.com/wolever/pip2pi">做一个Pypi</a>的库来共享，类似于Maven的Repo。</p> </div> </article> <div class="pagination"> <a class="prev" href="/posts/49">&larr; Older</a> <a href="/archives">Archives</a> <a class="next" href="/posts/47">Newer &rarr;</a> </div> </div> </div> </div> <footer role="contentinfo"><p> Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a> <span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span> <section class="contruction-wrap"> <div class="contruction"></div> </section> </p> </footer> <script type="text/javascript">
+</script>
+
+
+</head>
+
+<body    class="collapse-sidebar sidebar-footer" >
+  <header role="banner"><hgroup>
+  <h1><a href="/">@Lenciel</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<ul class="main-navigation">
+  <li><a href="/"><i class="icon-home"></i>Home</a></li>
+  <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li>
+  <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2013/11/a-lot-of-healing-to-do/">Hurt myself when shoot a goal</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img src="/downloads/images/healing_to_do.gif" title="Don't touch me..." alt="Should do more healing" /></p>
+
+<blockquote><p>"I guess I’ve still got a lot of healing to do."</p><footer><strong>Owen Wilson</strong> <cite><a href='http://www.imdb.com/title/tt0838221/'>the Darjeeling Limited(2007)</a></cite></footer></blockquote>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2013/11/replace-goagentx-with-lines-of-scripts/">Mac下后台运行goagent</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>几年过去了，<a href="https://code.google.com/p/goagent/">Goagent</a>是本座翻墙唯一的选择。在Mac上使用它最开始我用了<a href="https://github.com/ohdarling/GoAgentX">GoAgentX</a>，但使用了一段时间之后发现几个不太满意的地方：</p>
+
+<ul>
+<li>不是简单给GoAgent做了个界面，而是集成了多个翻墙工具，选项挺多挺乱的（可能对其他用户是一个好事）</li>
+<li>每次GoAgent更新之后，GoAgentX更新的时间都比较滞后</li>
+<li>GoAgentX更新之后，经常无法工作，需要做这样那样的调整</li>
+</ul>
+
+
+<p>但其实用GoAgent我们需要的无非是<code>python proxy.py</code>，有很多办法让它运行起来。本座比较喜欢的是用tmux把这个任务跑在一个detach了的session，如果连接有问题再attach上去看看是什么问题。具体流程如下：</p>
+
+<p>先装<a href="https://github.com/aziz/tmuxinator">tmuxinator</a>，看名字不知道是不是受了ubuntu下面terminator的启发。然后新建一个项目用来跑goagent:</p>
+
+<pre><code class="bash">$ mux new goagent
+</code></pre>
+
+<p>项目配置文件（假设你的goagent放在<code>~/bin/goagent/local</code>）：</p>
+
+<pre><code class="ruby">name: goagent
+root: ~/bin/goagent/local
+
+
+windows:
+  - shell: python proxy.py
+</code></pre>
+
+<p>这样就只需要你在需要翻墙的时候<code>mux goagent</code>一下即可，detach或者attach到这个session也非常方便。当然不使用tmuxinator而是直接用shell脚本写一堆tmux命令也可以达到一样的效果，用tmuxinator是因为本座自己还有一堆别的Django项目的tmuxinator项目。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/posts/49">&larr; Older</a>
+    
+    <a href="/archives">Archives</a>
+    
+    <a class="next" href="/posts/47">Newer &rarr;</a>
+    
+  </div>
+</div>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a>
+<span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span>
+  <section class="contruction-wrap">
+    <div class="contruction"></div>
+  </section>
+</p>
+
+</footer>
+  
+
+
+
+
+<script type="text/javascript">
   var stylesheet = document.createElement('link');
   stylesheet.href = '/assets/stylesheets/app.css';
   stylesheet.rel = 'stylesheet';
   stylesheet.type = 'text/css';
   document.getElementsByTagName('head')[0].appendChild(stylesheet);
-</script> </body> </html>
+</script>
+
+</body>
+</html>

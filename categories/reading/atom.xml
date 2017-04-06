@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: reading | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/reading/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-04-02T23:44:01+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/reading/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-04-06T19:01:30+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[Web开发知识结构]]></title>
-    <link href="http://lenciel.com/2014/05/web-development-skill-set-and-reading-list/"/>
+    <link href="http://172.16.121.110:4000/2014/05/web-development-skill-set-and-reading-list/"/>
     <updated>2014-05-16T14:28:04+08:00</updated>
-    <id>http://lenciel.com/2014/05/web-development-skill-set-and-reading-list</id>
+    <id>http://172.16.121.110:4000/2014/05/web-development-skill-set-and-reading-list</id>
     <content type="html"><![CDATA[<p>这个list保存在了一个专门的<a href="https://gist.github.com/lenciel/637812a7dcbe8341b07b">Gist里面</a>，方便更新。</p>
 
 <p><noscript><pre>### 基础知识

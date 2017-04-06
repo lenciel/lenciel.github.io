@@ -1,4 +1,116 @@
-<!DOCTYPE html> <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]--> <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]--> <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]--> <head> <meta charset="utf-8"> <title>Oauth: Introduction and Tips - @Lenciel</title> <meta name="author" content="Lenciel"> <meta name="description" content=" Oauth: Introduction and Tips Terminology / Reference Signed / Signat..."> <meta name="HandheldFriendly" content="True"> <meta name="MobileOptimized" content="320"> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="canonical" href="http://lenciel.com/2013/07/oauth-introduction-and-tips/"> <link href="/favicon.png" rel="icon"> <script src="/assets/javascripts/app.js"></script> <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml"> <meta property="og:title" content="Oauth: Introduction and Tips"/><meta itemprop="name" content="Oauth: Introduction and Tips"/> <meta property="og:type" content="article"/> <meta property="og:url" content="http://lenciel.com/2013/07/oauth-introduction-and-tips/"/> <meta property="og:description" content=" Oauth: Introduction and Tips Terminology / Reference Signed / Signat..."/> <meta property="og:site_name" content="http://lenciel.com"/> <meta property="article:author" content="http://lenciel.com"> <meta property="article:published_time" content="2013-07-22 09:53:00 +0800"/> <meta property="article:section" content="oauthtipstoturials"/> <meta itemprop="description" content=" Oauth: Introduction and Tips Terminology / Reference Signed / Signat..."/> <script>
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Oauth: Introduction and Tips - @Lenciel</title>
+  <meta name="author" content="Lenciel">
+
+  
+  <meta name="description" content="
+
+  
+  
+    
+      Oauth: Introduction and Tips
+    
+    
+      
+        
+
+
+
+
+
+        
+      
+    
+  
+
+
+
+Terminology / Reference
+
+
+Signed / Signat...">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://172.16.121.110:4000/2013/07/oauth-introduction-and-tips/">
+  <link href="/favicon.png" rel="icon">
+  <script src="/assets/javascripts/app.js"></script>
+  <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml">
+  <meta property="og:title" content="Oauth: Introduction and Tips" /><meta itemprop="name" content="Oauth: Introduction and Tips" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://172.16.121.110:4000/2013/07/oauth-introduction-and-tips/" />
+<meta property="og:description" content="
+
+  
+  
+    
+      Oauth: Introduction and Tips
+    
+    
+      
+        
+
+
+
+
+
+        
+      
+    
+  
+
+
+
+Terminology / Reference
+
+
+Signed / Signat..." />
+
+<meta property="og:site_name" content="http://172.16.121.110:4000" />
+<meta property="article:author" content="http://lenciel.com">
+<meta property="article:published_time" content="2013-07-22 09:53:00 +0800" />
+
+<meta property="article:section" content="oauthtipstoturials" />
+<meta itemprop="description" content="
+
+  
+  
+    
+      Oauth: Introduction and Tips
+    
+    
+      
+        
+
+
+
+
+
+        
+      
+    
+  
+
+
+
+Terminology / Reference
+
+
+Signed / Signat..." />
+
+
+  <script>
     var _hmt = _hmt || [];
     (function() {
         var hm = document.createElement("script");
@@ -6,7 +118,11 @@
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
     })();
-</script> <script>
+</script>
+
+
+  
+<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -15,10 +131,214 @@
   ga('create', 'UA-175991-6', 'auto');
   ga('send', 'pageview');
 
-</script> </head> <body class="collapse-sidebar sidebar-footer"> <header role="banner"><hgroup> <h1><a href="/">@Lenciel</a></h1> </hgroup> </header> <nav role="navigation"><ul class="subscription" data-subscription="rss"> <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li> </ul> <ul class="main-navigation"> <li><a href="/"><i class="icon-home"></i>Home</a></li> <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li> <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li> </ul> </nav> <div id="main"> <div id="content"> <div> <article class="hentry" role="article"> <header> <h1 class="entry-title">Oauth: Introduction and Tips</h1> <p class="meta"> </p> </header> <div class="entry-content"><a name="Terminology...Reference"></a> <h2>Terminology / Reference</h2> <ul> <li>Signed / Signature <ul> <li>由一系列的HTTP request元素组成的一个字符串。</li> </ul> <p>这里说的HTTP request元素一般包括了<code>Request Method</code> <code>&amp;</code> <code>URL Query</code> <code>&amp;</code> <code>Parameters</code>, 并且这些元素用(<code>consumer_secret</code> <code>&amp;</code> <code>token_secret</code>)组成的key进行了加密。In some cases this may be the key, plaintext, or may use simply the <code>consumer_secret</code>, for RSA encryption.</p></li> <li>Consumer Secret <ul> <li>由应用提供出来作为OAuth握手的保密的token</li> </ul> </li> <li>Consumer Key <ul> <li>由应用随Consumer Secret一起提供，用来做OAuth的握手的key</li> </ul> </li> <li>Nonce / UID <ul> <li>通常<code>32</code>个字符长度，由<code>a-zA-Z0-9</code>中的字符生成的一个独一无二的ID</li> </ul> </li> <li>OAuth Token <ul> <li>由服务器或者是其他Endpoint发送的，用来作为Request或者Access的token</li> </ul> </li> <li>OAuth Token Secret <ul> <li>作为特定token的响应被发送，用来进行 <code>exchanges / refreshing</code>.</li> </ul> </li> <li>Query <ul> <li>URL中的用 <code>?</code> 符号隔开的一些键值对部分。键和值之间用 <code>=</code> 分隔，例如 <code>?query=looks&amp;like=this</code></li> </ul> </li> <li>Parameter / Argument <ul> <li>一般指Query中的键，比如 <code>oauth_token="helloWorld"</code> 中 <code>oauth_token</code> 被称为一个 <code>parameter</code> 或者 <code>argument</code> 而 <code>helloWorld</code> 则是它的值。</li> </ul> </li> <li>PLAINTEXT <ul> <li>使用普通文本作为Signature的保存方式</li> </ul> </li> <li>HMAC-SHA1 <sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> <ul> <li>Signature的保存方式，基于Secure Hash Algorithm(1)，是加密的文本</li> </ul> </li> <li>RSA-SHA1 <sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> <ul> <li>Signature的保存方式，基于Secure Hash Algorithm(1)，由一对public/ private的key组成。</li> </ul> </li> <li>Service <ul> <li>服务方指信息的提供者，在OAuth语境中，Facebook/Twitter/腾讯/新浪等就是一个个的Service</li> </ul> </li> <li>Signature Method <ul> <li>OAuth接受的加密算法，包括: PLAINTEXT, HMAC-SHA1和RSA-SHA1</li> </ul> </li> <li>Value <ul> <li>键值对中的值</li> </ul> </li> <li>URL / URI <ul> <li>URL是URI的一种，你应该懂的吧</li> </ul> </li> </ul> <a name="Signed.Requests"></a> <h3>Signed Requests</h3> <blockquote><p>本章描述的是OAuth 1.0</p></blockquote> <p>对request签名(Sign)是非常重要的，本章主要解释签名流程和各个参数的作用。从数据流上来说，签名的过程就是把应用所获取和所生成的信息放到一个地方去：可以是通过 <code>OAuth</code> 头，也可以是 <code>Query</code> 字符串。</p> <a name="Signature.Base.String"></a> <h4>Signature Base String</h4> <p>签名的基本组成有：request的 <code>Method</code>，request的 <code>URL</code> (如果是 <code>OAuth Echo</code>则是 <code>credentials uri</code>) 和 request的 <code>Query String</code>。没有加密前它看起来会是下面这样 (例子来自 <a href="https://dev.twitter.com/docs/auth/creating-signature">twitter</a>):</p> <pre><code>POST&amp;https%3A%2F%2Fapi.twitter.com%2F1%2Fstatuses%2Fupdate.json&amp;include_entities%3Dtrue%26oauth_consumer_key%3Dxvz1evFS4wEEPTGEFPHBog%26oauth_nonce%3DkYjzVBB8Y0ZFabxSWbWovY3uYSQ2pTgmZeNu2VS4cg%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1318622958%26oauth_token%3D370773112-GmHxMAgYyLbNEtIKZeRNFsMKPR9EyMZeS9weJAEb%26oauth_version%3D1.0%26status%3DHello%2520Ladies%2520%252B%2520Gentlemen%252C%2520a%2520signed%2520OAuth%2520request%2521
-</code></pre> <a name="Signing.Key"></a> <h5>Signing Key</h5> <p>上面的 <code>signature base</code> 字符串会被加密。加密时用到的key就是 <em>signing key</em> ， 是由OAuth <code>Consumer Secret</code> 和 <code>Token Secret</code> 用 <code>&amp;</code> 字符连接起来组成的:</p> <pre><code>kAcSOqF21Fu85e7zjz7ZN2U4ZRhfV3WpwPAoE3Z7kBw&amp;LswwdoUaIvS8ltyTt5jkRh4J50vUPVVHtR2YPi5kE
-</code></pre> <hr/> <p><strong>Note:</strong> 如果是使用RSA或者xAuth， <code>signing key</code> 可能只有 <code>Consumer Secret</code> 部分外加一个可以省略的 <code>&amp;</code> 。 更多相关信息可以从mashape-oauth/lib/oauth.js的 <a href="https://github.com/Mashape/mashape-oauth/blob/master/lib/oauth.js#L233">233</a>行和 <a href="https://github.com/Mashape/mashape-oauth/blob/master/lib/oauth.js#L238">238</a>行了解。</p> <hr/> <a name="Signature......"></a> <h4>Signature编码</h4> <p>有了 <code>signature base string</code> 和 <code>signature key</code> 之后，就需要从这两个字符串中提取信息完成编码。编码的方式共有三种：PLAINTEXT, HMAC, 或者是 RSA。</p> <a name="PLAINTEXT"></a> <h5>PLAINTEXT</h5> <p>没有任何编码，直接传 <code>Signature Key</code></p> <a name="HMAC-SHA1"></a> <h5>HMAC-SHA1</h5> <p>这种编码方式下，二进制格式的key被用来更新base，然后被编码成 <code>Base64</code> 放到<code>signature string</code>里面：</p> <pre><code>tnnArxj06cWHq44gCs1OSKk/jLY=
-</code></pre> <a name="RSA-SHA1"></a> <h5>RSA-SHA1</h5> <p>这种更复杂但是更安全的方式是根据<code>Signature Base</code>来生成一对<code>private key</code>和<code>public key</code>进行加密。</p> <p>然后在服务端，会用key来验证编码后的 <code>oauth_signature</code> 字段。</p> <p><strong>Note:</strong> mashape-oauth/tests/oauth.js的第<a href="https://github.com/Mashape/mashape-oauth/blob/master/tests/oauth.js#L74">74</a>行说明了如何使用生成的<code>private key</code>来对<code>signature base</code>进行编码。</p> <a name="OAuth........."></a> <h4>OAuth请求头</h4> <p>OAuth请求头包括了<code>oauth_signature</code> 和 <code>oauth_signature_method</code> 等参数及值。这些<code>oauth_*</code> 参数一般会用名字和其他<a href="https://github.com/Mashape/mashape-oauth/blob/master/lib/oauth.js#L111">复杂的规则</a>排序，相互之间用 <code>,</code> 或者是空格分隔。下面是一个取得Twitter的Request Token的例子:</p> <pre><code class="http">POST /oauth/request_token HTTP/1.1
+</script>
+
+
+</head>
+
+<body    class="collapse-sidebar sidebar-footer" >
+  <header role="banner"><hgroup>
+  <h1><a href="/">@Lenciel</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<ul class="main-navigation">
+  <li><a href="/"><i class="icon-home"></i>Home</a></li>
+  <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li>
+  <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Oauth: Introduction and Tips</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><a name="Terminology...Reference"></a>
+<h2>Terminology / Reference</h2>
+
+<ul>
+<li>Signed / Signature
+
+<ul>
+<li>由一系列的HTTP request元素组成的一个字符串。</li>
+</ul>
+
+
+<p>这里说的HTTP request元素一般包括了<code>Request Method</code> <code>&amp;</code> <code>URL Query</code> <code>&amp;</code> <code>Parameters</code>, 并且这些元素用(<code>consumer_secret</code> <code>&amp;</code> <code>token_secret</code>)组成的key进行了加密。In some cases this may be the key, plaintext, or may use simply the <code>consumer_secret</code>, for RSA encryption.</p></li>
+<li>Consumer Secret
+
+<ul>
+<li>由应用提供出来作为OAuth握手的保密的token</li>
+</ul>
+</li>
+<li>Consumer Key
+
+<ul>
+<li>由应用随Consumer Secret一起提供，用来做OAuth的握手的key</li>
+</ul>
+</li>
+<li>Nonce / UID
+
+<ul>
+<li>通常<code>32</code>个字符长度，由<code>a-zA-Z0-9</code>中的字符生成的一个独一无二的ID</li>
+</ul>
+</li>
+<li>OAuth Token
+
+<ul>
+<li>由服务器或者是其他Endpoint发送的，用来作为Request或者Access的token</li>
+</ul>
+</li>
+<li>OAuth Token Secret
+
+<ul>
+<li>作为特定token的响应被发送，用来进行 <code>exchanges / refreshing</code>.</li>
+</ul>
+</li>
+<li>Query
+
+<ul>
+<li>URL中的用 <code>?</code> 符号隔开的一些键值对部分。键和值之间用 <code>=</code> 分隔，例如 <code>?query=looks&amp;like=this</code></li>
+</ul>
+</li>
+<li>Parameter / Argument
+
+<ul>
+<li>一般指Query中的键，比如 <code>oauth_token="helloWorld"</code> 中 <code>oauth_token</code> 被称为一个 <code>parameter</code> 或者 <code>argument</code> 而 <code>helloWorld</code> 则是它的值。</li>
+</ul>
+</li>
+<li>PLAINTEXT
+
+<ul>
+<li>使用普通文本作为Signature的保存方式</li>
+</ul>
+</li>
+<li>HMAC-SHA1 <sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>
+
+<ul>
+<li>Signature的保存方式，基于Secure Hash Algorithm(1)，是加密的文本</li>
+</ul>
+</li>
+<li>RSA-SHA1 <sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>
+
+<ul>
+<li>Signature的保存方式，基于Secure Hash Algorithm(1)，由一对public/ private的key组成。</li>
+</ul>
+</li>
+<li>Service
+
+<ul>
+<li>服务方指信息的提供者，在OAuth语境中，Facebook/Twitter/腾讯/新浪等就是一个个的Service</li>
+</ul>
+</li>
+<li>Signature Method
+
+<ul>
+<li>OAuth接受的加密算法，包括: PLAINTEXT, HMAC-SHA1和RSA-SHA1</li>
+</ul>
+</li>
+<li>Value
+
+<ul>
+<li>键值对中的值</li>
+</ul>
+</li>
+<li>URL / URI
+
+<ul>
+<li>URL是URI的一种，你应该懂的吧</li>
+</ul>
+</li>
+</ul>
+
+
+<a name="Signed.Requests"></a>
+<h3>Signed Requests</h3>
+
+<blockquote><p>本章描述的是OAuth 1.0</p></blockquote>
+
+<p>对request签名(Sign)是非常重要的，本章主要解释签名流程和各个参数的作用。从数据流上来说，签名的过程就是把应用所获取和所生成的信息放到一个地方去：可以是通过 <code>OAuth</code> 头，也可以是 <code>Query</code> 字符串。</p>
+
+<a name="Signature.Base.String"></a>
+<h4>Signature Base String</h4>
+
+<p>签名的基本组成有：request的 <code>Method</code>，request的 <code>URL</code> (如果是 <code>OAuth Echo</code>则是 <code>credentials uri</code>) 和 request的 <code>Query String</code>。没有加密前它看起来会是下面这样 (例子来自 <a href="https://dev.twitter.com/docs/auth/creating-signature">twitter</a>):</p>
+
+<pre><code>POST&amp;https%3A%2F%2Fapi.twitter.com%2F1%2Fstatuses%2Fupdate.json&amp;include_entities%3Dtrue%26oauth_consumer_key%3Dxvz1evFS4wEEPTGEFPHBog%26oauth_nonce%3DkYjzVBB8Y0ZFabxSWbWovY3uYSQ2pTgmZeNu2VS4cg%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1318622958%26oauth_token%3D370773112-GmHxMAgYyLbNEtIKZeRNFsMKPR9EyMZeS9weJAEb%26oauth_version%3D1.0%26status%3DHello%2520Ladies%2520%252B%2520Gentlemen%252C%2520a%2520signed%2520OAuth%2520request%2521
+</code></pre>
+
+<a name="Signing.Key"></a>
+<h5>Signing Key</h5>
+
+<p>上面的 <code>signature base</code> 字符串会被加密。加密时用到的key就是 <em>signing key</em> ， 是由OAuth <code>Consumer Secret</code> 和 <code>Token Secret</code> 用 <code>&amp;</code> 字符连接起来组成的:</p>
+
+<pre><code>kAcSOqF21Fu85e7zjz7ZN2U4ZRhfV3WpwPAoE3Z7kBw&amp;LswwdoUaIvS8ltyTt5jkRh4J50vUPVVHtR2YPi5kE
+</code></pre>
+
+<hr />
+
+<p><strong>Note:</strong> 如果是使用RSA或者xAuth， <code>signing key</code> 可能只有 <code>Consumer Secret</code> 部分外加一个可以省略的 <code>&amp;</code> 。 更多相关信息可以从mashape-oauth/lib/oauth.js的 <a href="https://github.com/Mashape/mashape-oauth/blob/master/lib/oauth.js#L233">233</a>行和 <a href="https://github.com/Mashape/mashape-oauth/blob/master/lib/oauth.js#L238">238</a>行了解。</p>
+
+<hr />
+
+<a name="Signature......"></a>
+<h4>Signature编码</h4>
+
+<p>有了 <code>signature base string</code> 和 <code>signature key</code> 之后，就需要从这两个字符串中提取信息完成编码。编码的方式共有三种：PLAINTEXT, HMAC, 或者是 RSA。</p>
+
+<a name="PLAINTEXT"></a>
+<h5>PLAINTEXT</h5>
+
+<p>没有任何编码，直接传 <code>Signature Key</code></p>
+
+<a name="HMAC-SHA1"></a>
+<h5>HMAC-SHA1</h5>
+
+<p>这种编码方式下，二进制格式的key被用来更新base，然后被编码成 <code>Base64</code> 放到<code>signature string</code>里面：</p>
+
+<pre><code>tnnArxj06cWHq44gCs1OSKk/jLY=
+</code></pre>
+
+<a name="RSA-SHA1"></a>
+<h5>RSA-SHA1</h5>
+
+<p>这种更复杂但是更安全的方式是根据<code>Signature Base</code>来生成一对<code>private key</code>和<code>public key</code>进行加密。</p>
+
+<p>然后在服务端，会用key来验证编码后的 <code>oauth_signature</code> 字段。</p>
+
+<p><strong>Note:</strong> mashape-oauth/tests/oauth.js的第<a href="https://github.com/Mashape/mashape-oauth/blob/master/tests/oauth.js#L74">74</a>行说明了如何使用生成的<code>private key</code>来对<code>signature base</code>进行编码。</p>
+
+<a name="OAuth........."></a>
+<h4>OAuth请求头</h4>
+
+<p>OAuth请求头包括了<code>oauth_signature</code> 和 <code>oauth_signature_method</code> 等参数及值。这些<code>oauth_*</code> 参数一般会用名字和其他<a href="https://github.com/Mashape/mashape-oauth/blob/master/lib/oauth.js#L111">复杂的规则</a>排序，相互之间用 <code>,</code> 或者是空格分隔。下面是一个取得Twitter的Request Token的例子:</p>
+
+<pre><code class="http">POST /oauth/request_token HTTP/1.1
 User-Agent: themattharris' HTTP Client
 Host: api.twitter.com
 Accept: */*
@@ -30,7 +350,13 @@ Authorization:
               oauth_signature_method="HMAC-SHA1",
               oauth_timestamp="1318467427",
               oauth_version="1.0"
-</code></pre> <p><code>oauth_callback</code> 是整个认证过程完毕后的回调地址，默认情况下服务方会提供一个 <code>oauth_callback_confirmed</code> token。</p> <p>下面是一个<code>response</code>的例子：</p> <pre><code class="http">HTTP/1.1 200 OK
+</code></pre>
+
+<p><code>oauth_callback</code> 是整个认证过程完毕后的回调地址，默认情况下服务方会提供一个 <code>oauth_callback_confirmed</code> token。</p>
+
+<p>下面是一个<code>response</code>的例子：</p>
+
+<pre><code class="http">HTTP/1.1 200 OK
 Date: Thu, 13 Oct 2011 00:57:06 GMT
 Status: 200 OK
 Content-Type: text/html; charset=utf-8
@@ -44,15 +370,545 @@ Server: tfe
 oauth_token=NPcudxy0yU5T3tBzho7iCotZ3cnetKwcTIRlX0iwRl0&amp;
 oauth_token_secret=veNRnAWe6inFuo8o2u8SLLZLjolYDmDP7SzL0YfYI&amp;
 oauth_callback_confirmed=true
-</code></pre> <p>可以看到, <code>200</code> response 以及 <code>oauth_token</code>, <code>oauth_token_secret</code> 和 <code>oauth_callback_confirmed</code> 参数表示这次OAuth请求是成功的。接下来你就可以用 <code>oauth_token_secret</code> 来生成你的签名作为 <code>access token</code> 然后使用 <code>oauth_token</code>参数发送出去进行认证。</p> <p>一般来说, <code>oauth_token</code> 发送的格式是 <code>?oauth_token=[token]</code> ，在认证的endpoint收到之后会进行一次 <code>3-Legged OAuth 1.0a</code> 并返回 <code>oauth_token</code> 和 <code>oauth_verifier</code>。返回的参数也会被用到 <code>Access Token</code> request<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>中去。</p> <a name="OAuth.1.0a..one-legged."></a> <h2>OAuth 1.0a (one-legged)</h2> <p>一般被叫成 <code>two-legged</code> 的OAuth其实是只有一步的。</p> <p><img src="/downloads/images/oauth_flow_1.png" align="right"/></p> <ol> <li>应用发送一个 <strong>signed</strong> request 到服务提供商，request里包括: <ul> <li><code>oauth_token</code> <em>Empty String</em></li> <li><code>oauth_consumer_key</code></li> <li><code>oauth_timestamp</code></li> <li><code>oauth_nonce</code></li> <li><code>oauth_signature</code></li> <li><code>oauth_signature_method</code></li> <li><code>oauth_version</code> <em>Optional</em></li> </ul> </li> <li>服务提供商验证后，提供相应的资源供应用访问。</li> <li>应用请求可以访问的资源。</li> </ol> <p>这种最简单的方式当然也是安全是漏洞最多的方式。通常如果你都已经想到要用OAuth了，就不该考虑这么简陋的方式了。</p> <hr/> <p><strong>Note:</strong> Google 要求请求里面要带一个不是<code>oauth</code>开头的参数叫 <code>xoauth_requester_id</code><sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup>，这个要求在OAuth2里面过期了。</p> <hr/> <a name="OAuth.1.0a..two-legged."></a> <h2>OAuth 1.0a (two-legged)</h2> <p>真正的<code>two-legged</code>是1.0a版本的OAuth。</p> <p><img src="/downloads/images/oauth_flow_2.png" align="right"/></p> <ol> <li>应用发送一个 <strong>signed</strong> request到服务提供商请求一个 <code>Request Token</code>，request里包括: <ul> <li><code>oauth_consumer_key</code></li> <li><code>oauth_timestamp</code></li> <li><code>oauth_nonce</code></li> <li><code>oauth_signature</code></li> <li><code>oauth_signature_method</code></li> <li><code>oauth_version</code> <em>可选</em></li> </ul> </li> <li>服务提供商返回 <code>Request Token</code>: <ul> <li><code>oauth_token</code></li> <li><code>oauth_token_secret</code></li> <li>… 其他额外的参数</li> </ul> </li> <li>应用再次发送<strong>signed</strong> request来用<code>Request Token</code>换<code>Access Token</code>，请求中包括： <ul> <li><code>oauth_token</code> <em>Request Token</em></li> <li><code>oauth_consumer_key</code></li> <li><code>oauth_nonce</code></li> <li><code>oauth_signature</code></li> <li><code>oauth_signature_method</code></li> <li><code>oauth_version</code></li> </ul> </li> <li>服务提供商返回 <code>Access Token</code> 和 <code>Token Secret</code>，整个payload的参数和第二步一样主要是<code>oauth_token</code>和<code>oauth_token_secret</code>。</li> <li>应用使用<code>oauth_token</code> 和 <code>oauth_token_secret</code> 来访问被权限保护的资源。</li> </ol> <p>这里我们可以看到安全性被增强了，而应用开发者不会有太多的工作，用户更是完全觉察不到。</p> <a name="OAuth.1.0a..three-legged."></a> <h2>OAuth 1.0a (three-legged)</h2> <p>最完备同时也是带来最多麻烦的一个版本，特别是引入了需要用户操作来确认的部分，增加了开发和交互上的复杂度。一开始推出的时候，让很多用户感到不知所措。</p> <p><img src="/downloads/images/oauth_flow_3.png" align="right"/></p> <ol> <li>应用发送一个 <strong>signed</strong> request到服务提供商请求一个 <code>Request Token</code>，request里包括: <ul> <li><code>oauth_consumer_key</code></li> <li><code>oauth_timestamp</code></li> <li><code>oauth_nonce</code></li> <li><code>oauth_signature</code></li> <li><code>oauth_signature_method</code></li> <li><code>oauth_version</code> <em>Optional</em></li> <li><code>oauth_callback</code></li> </ul> </li> <li>服务提供商返回 <code>Request Token</code>: <ul> <li><code>oauth_token</code></li> <li><code>oauth_token_secret</code></li> <li><code>oauth_callback_confirmed</code></li> <li>… Additional Parameters / Arguments</li> </ul> </li> <li>返回包含下面参数的url <ul> <li><code>oauth_token</code></li> </ul> </li> <li>弹出窗口访问返回的url，要求用户授权</li> <li>用户授权</li> <li>返回到应用中，并保存下面的参数: <ul> <li><code>oauth_token</code></li> <li><code>oauth_verifier</code></li> </ul> </li> <li>应用发送<strong>signed</strong> request，用<code>Request Token</code> / <code>Verifier</code> 换 <code>Access Token</code>, 请求中包括： <ul> <li><code>oauth_token</code> <em>Request Token;</em></li> <li><code>oauth_consumer_key</code></li> <li><code>oauth_nonce</code></li> <li><code>oauth_signature</code></li> <li><code>oauth_signature_method</code></li> <li><code>oauth_version</code></li> <li><code>oauth_verifier</code></li> </ul> </li> <li>服务提供商返回 <code>Access Token</code> 和 <code>Token Secret</code>，整个payload的参数和第二步一样主要是<code>oauth_token</code>和<code>oauth_token_secret</code>。</li> <li>应用使用<code>oauth_token</code> 和 <code>oauth_token_secret</code> 来访问被权限保护的资源。</li> </ol> <hr/> <p><strong>Note:</strong> 在<em>第6步</em> 如果 <code>oauth_verifier</code> 没有被发送，那么就会认证失败。只有极少数的实现可以接受只发送<code>oauth_token</code>，这样的服务提供商被认为是不完整的实现了OAuth 1.0a 3-Legged。</p> <hr/> <a name="OAuth.1.0a..Echo."></a> <h2>OAuth 1.0a (Echo)</h2> <p>非主流的一种实现，但是确实是存在的：发明者是Twitter的Raffi。这种实现允许在首次发送的请求token里面多带两个header，这样可以通过代理的方式在代理服务商那里对原始服务商的用户进行认证。</p> <p><img src="/downloads/images/oauth_flow_4.png" align="right"/></p> <ol> <li>应用发送一个 <strong>signed</strong> request到代理服务提供商，request里包括: <ul> <li><code>oauth_consumer_key</code></li> <li><code>oauth_timestamp</code></li> <li><code>oauth_nonce</code></li> <li><code>oauth_signature</code></li> <li><code>oauth_signature_method</code></li> <li><code>oauth_version</code> <em>Optional</em></li> <li><code>oauth_callback</code></li> </ul> <p> 还包括额外的header:</p> <ul> <li><code>X-Auth-Service-Provider</code></li> <li><code>X-Verify-Credentials-Authorization</code></li> </ul> </li> <li>代理服务商拿到额外的header信息到原始服务商认证</li> <li>代理服务商认证通过后，可以返回受限资源的url给应用。</li> </ol> <a name="OAuth.1.0a..xAuth."></a> <h2>OAuth 1.0a (xAuth)</h2> <p>xAuth是一种桌面程序或者手机程序（没有使用webview等控件不能完成完整流程的程序）使用的OAuth方式。它通过提供用户的<code>email</code>和<code>password</code>给服务器提供商来换取<code>access token</code>。</p> <p>这种方式返回的一般是具有只读性质的access token，并且这种token能操作的资源也是有限的。比如Twitter的DM（类似私信）就不能使用xAuth而必须用完整的<code>three-legged</code>流程获取token才能取到。</p> <p><img src="/downloads/images/oauth_flow_5.png" align="right"/></p> <ol> <li>应用请求用户的Credentials</li> <li>应用发送一个 <strong>signed</strong> request到服务提供商请求一个 <code>Access Token</code>，request里包括: <ul> <li><code>oauth_consumer_key</code></li> <li><code>oauth_timestamp</code></li> <li><code>oauth_nonce</code></li> <li><code>oauth_signature</code></li> <li><code>oauth_signature_method</code></li> <li><code>oauth_version</code> <em>Optional</em></li> <li><code>oauth_callback</code></li> </ul> <p> 额外还包括:</p> <ul> <li><code>x_auth_mode</code> = <code>client_auth</code></li> <li><code>x_auth_username</code></li> <li><code>x_auth_password</code></li> <li><code>x_auth_permission</code> <em>可选;</em><sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup></li> </ul> </li> <li>服务提供商验证用户的Credentials之后返回Access Token <ul> <li><code>oauth_token</code></li> <li><code>oauth_token_secret</code></li> </ul> </li> <li>应用使用<code>Access Token</code>来访问被权限保护的资源。</li> </ol> <a name="OAuth.2..two-legged."></a> <h2>OAuth 2 (two-legged)</h2> <p>目前为止最容易解释的一种流程，也被称为 <em>Client Credentials</em> 认证流程<sup id="fnref:6"><a href="#fn:6" rel="footnote">6</a></sup>，也有一种 <em>Resource Owner Password</em> 流程属于这类。</p> <a name="Client.Credentials"></a> <h3>Client Credentials</h3> <ol> <li>应用发送请求给服务提供商:</li> <li><code>grant_type</code> = <code>client_credentials</code></li> </ol> <p> 如果不是用的 <code>Authorization</code> header: - <code>client_id</code> - <code>client_secret</code> 2. 应用服务商返回 <code>Access Token</code>等信息: - <code>access_token</code> - <code>expires_in</code> - <code>token_type</code></p> <a name="Resource.Owner.Password"></a> <h3>Resource Owner Password</h3> <p>基本上就是 <code>OAuth 1.0a Echo</code> 流程，但是去掉了签名等复杂的部分。</p> <ol> <li>应用向resource owner（一般就是用户)请求credentials <ul> <li><code>username</code></li> <li><code>password</code></li> </ul> </li> <li><p>应用向服务提供商发送request，请求内容为:</p> <ul> <li><code>grant_type</code> = <code>password</code></li> <li><code>username</code></li> <li><code>password</code></li> </ul> <p> 其格式如下:</p> <pre><code class="`"> grant_type=password&amp;username=my_username&amp;password=my_password
-</code></pre> <p> 如果不是用的 <code>Authorization</code> header, 下面的也需要被放到request里面:</p> <ul> <li><code>client_id</code></li> <li><code>client_secret</code></li> </ul> <p> 整个加起来回是：</p> <pre><code class="`"> grant_type=password&amp;username=my_username&amp;password=my_password&amp;client_id=random_string&amp;client_secret=random_secret
-</code></pre></li> <li><p>应用服务商返回 <code>Access Token</code>等信息:</p> <ul> <li><code>access_token</code></li> <li><code>expires_in</code></li> <li><code>token_type</code></li> </ul> </li> </ol> <a name="OAuth.2..three-legged."></a> <h2>OAuth 2 (three-legged)</h2> <p>同样去掉了很多复杂的步骤。</p> <ol> <li>应用把用户引导到认证页面: <ul> <li><code>client_id</code></li> <li><code>redirect_uri</code></li> <li><code>response_type</code><sup id="fnref:7"><a href="#fn:7" rel="footnote">7</a></sup></li> <li><code>state</code> <em>可选;</em> 防止CSRF<sup id="fnref:8"><a href="#fn:8" rel="footnote">8</a></sup></li> <li><code>scope</code> <em>可选;</em> 你可以获取的资源范围</li> </ul> <p> 一个例子（为了可读性没有进行Encode）:</p> <pre><code class="`">https://oauth_service/login/oauth/authorize?client_id=3MVG9lKcPoNINVB&amp;redirect_uri=http://localhost/oauth/code_callback&amp;scope=user
-</code></pre></li> <li>用户登录到服务中，批准应用申请权限。</li> <li>服务提供商把用户重定向到 <code>redirect_url</code> 并带上: <ul> <li><code>code</code></li> <li><code>state</code></li> </ul> </li> <li>应用使用 <code>code</code> 用来请求 <code>Access Token</code>: <ul> <li><code>client_id</code></li> <li><code>client_secret</code></li> <li><code>code</code></li> <li><code>redirect_uri</code> <em>可选;</em><sup id="fnref:9"><a href="#fn:9" rel="footnote">9</a></sup></li> <li><code>grant_type</code> = <code>"authorization_code"</code> [^7]</li> </ul> </li> <li>如果 <code>client_id</code> 和 <code>client_secret</code> 正确，服务提供商调用回调到 <code>redirect_url</code> 返回 <code>access_token</code>等信息: <ul> <li><code>access_token</code></li> <li><code>expires_in</code></li> <li><code>refresh_token</code></li> </ul> </li> <li>应用保存 <code>access_token</code> 并使用。 <ul> <li>一般来说保存到session或者是cookie里，然后放在 <code>Authorization: [Bearer] access_token</code> header里面用，其中<code>[Bearer]</code>是 <code>Header Authorization Bearer Name</code>，如<code>Bearer</code>, <code>OAuth</code>, <code>MAC</code>等。</li> </ul> </li> </ol> <hr/> <p><strong>有趣的事实:</strong> 有些RFC里面的规定，比如scope的分隔符用空格等，根本没有人遵守。所以开发者根本不知道API会在下个版本变成什么样子。</p> <hr/> <a name="OAuth.2..refresh.token."></a> <h2>OAuth 2 (refresh token)</h2> <p>在OAuth2中，<code>access_token</code>一般是有有效期的。一个过期的token被使用时，服务器会返回一个token过期的错误，并带上<code>refresh_token</code>。应用使用<code>refresh token</code>获取新的<code>access_token</code>会比前面描述的流程简单得多。</p> <ol> <li>发送请求到服务提供商的<code>Refresh Token URI</code>: <ul> <li><code>grant_type</code> = <code>"refresh_token"</code></li> <li><code>scope</code> <em>可选;</em> 更新时不能指定之前没有的scope</li> <li><code>refresh_token</code></li> <li><code>client_id</code></li> <li><code>client_secret</code></li> </ul> </li> <li>服务提供商验证参数后返回: <ul> <li><code>access_token</code></li> <li><code>issued_at</code></li> </ul> </li> </ol> <a name="Tips..amp..Tricks"></a> <h2>Tips &amp; Tricks</h2> <a name="L......Access.Token...Refresh.Key"></a> <h3>生成Access Token和Refresh Key</h3> <p>最好使用uuid，也就是固定长度的随机字符组成的字符串。</p> <a name="L......"></a> <h4>例子</h4> <pre><code class="javascript">var OAuth = require('mashape-oauth').OAuth,
+</code></pre>
+
+<p>可以看到, <code>200</code> response 以及 <code>oauth_token</code>, <code>oauth_token_secret</code> 和 <code>oauth_callback_confirmed</code> 参数表示这次OAuth请求是成功的。接下来你就可以用 <code>oauth_token_secret</code> 来生成你的签名作为 <code>access token</code> 然后使用 <code>oauth_token</code>参数发送出去进行认证。</p>
+
+<p>一般来说, <code>oauth_token</code> 发送的格式是 <code>?oauth_token=[token]</code> ，在认证的endpoint收到之后会进行一次 <code>3-Legged OAuth 1.0a</code> 并返回 <code>oauth_token</code> 和 <code>oauth_verifier</code>。返回的参数也会被用到 <code>Access Token</code> request<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>中去。</p>
+
+<a name="OAuth.1.0a..one-legged."></a>
+<h2>OAuth 1.0a (one-legged)</h2>
+
+<p>一般被叫成 <code>two-legged</code> 的OAuth其实是只有一步的。</p>
+
+<p><img src="/downloads/images/oauth_flow_1.png" align="right" /></p>
+
+<ol>
+<li>应用发送一个 <strong>signed</strong> request 到服务提供商，request里包括:
+
+<ul>
+<li><code>oauth_token</code> <em>Empty String</em></li>
+<li><code>oauth_consumer_key</code></li>
+<li><code>oauth_timestamp</code></li>
+<li><code>oauth_nonce</code></li>
+<li><code>oauth_signature</code></li>
+<li><code>oauth_signature_method</code></li>
+<li><code>oauth_version</code> <em>Optional</em></li>
+</ul>
+</li>
+<li>服务提供商验证后，提供相应的资源供应用访问。</li>
+<li>应用请求可以访问的资源。</li>
+</ol>
+
+
+<p>这种最简单的方式当然也是安全是漏洞最多的方式。通常如果你都已经想到要用OAuth了，就不该考虑这么简陋的方式了。</p>
+
+<hr />
+
+<p><strong>Note:</strong> Google 要求请求里面要带一个不是<code>oauth</code>开头的参数叫 <code>xoauth_requester_id</code><sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup>，这个要求在OAuth2里面过期了。</p>
+
+<hr />
+
+<a name="OAuth.1.0a..two-legged."></a>
+<h2>OAuth 1.0a (two-legged)</h2>
+
+<p>真正的<code>two-legged</code>是1.0a版本的OAuth。</p>
+
+<p><img src="/downloads/images/oauth_flow_2.png" align="right" /></p>
+
+<ol>
+<li>应用发送一个 <strong>signed</strong> request到服务提供商请求一个 <code>Request Token</code>，request里包括:
+
+<ul>
+<li><code>oauth_consumer_key</code></li>
+<li><code>oauth_timestamp</code></li>
+<li><code>oauth_nonce</code></li>
+<li><code>oauth_signature</code></li>
+<li><code>oauth_signature_method</code></li>
+<li><code>oauth_version</code> <em>可选</em></li>
+</ul>
+</li>
+<li>服务提供商返回 <code>Request Token</code>:
+
+<ul>
+<li><code>oauth_token</code></li>
+<li><code>oauth_token_secret</code></li>
+<li>… 其他额外的参数</li>
+</ul>
+</li>
+<li>应用再次发送<strong>signed</strong> request来用<code>Request Token</code>换<code>Access Token</code>，请求中包括：
+
+<ul>
+<li><code>oauth_token</code> <em>Request Token</em></li>
+<li><code>oauth_consumer_key</code></li>
+<li><code>oauth_nonce</code></li>
+<li><code>oauth_signature</code></li>
+<li><code>oauth_signature_method</code></li>
+<li><code>oauth_version</code></li>
+</ul>
+</li>
+<li>服务提供商返回 <code>Access Token</code> 和 <code>Token Secret</code>，整个payload的参数和第二步一样主要是<code>oauth_token</code>和<code>oauth_token_secret</code>。</li>
+<li>应用使用<code>oauth_token</code> 和 <code>oauth_token_secret</code> 来访问被权限保护的资源。</li>
+</ol>
+
+
+<p>这里我们可以看到安全性被增强了，而应用开发者不会有太多的工作，用户更是完全觉察不到。</p>
+
+<a name="OAuth.1.0a..three-legged."></a>
+<h2>OAuth 1.0a (three-legged)</h2>
+
+<p>最完备同时也是带来最多麻烦的一个版本，特别是引入了需要用户操作来确认的部分，增加了开发和交互上的复杂度。一开始推出的时候，让很多用户感到不知所措。</p>
+
+<p><img src="/downloads/images/oauth_flow_3.png" align="right" /></p>
+
+<ol>
+<li>应用发送一个 <strong>signed</strong> request到服务提供商请求一个 <code>Request Token</code>，request里包括:
+
+<ul>
+<li><code>oauth_consumer_key</code></li>
+<li><code>oauth_timestamp</code></li>
+<li><code>oauth_nonce</code></li>
+<li><code>oauth_signature</code></li>
+<li><code>oauth_signature_method</code></li>
+<li><code>oauth_version</code> <em>Optional</em></li>
+<li><code>oauth_callback</code></li>
+</ul>
+</li>
+<li>服务提供商返回 <code>Request Token</code>:
+
+<ul>
+<li><code>oauth_token</code></li>
+<li><code>oauth_token_secret</code></li>
+<li><code>oauth_callback_confirmed</code></li>
+<li>… Additional Parameters / Arguments</li>
+</ul>
+</li>
+<li>返回包含下面参数的url
+
+<ul>
+<li><code>oauth_token</code></li>
+</ul>
+</li>
+<li>弹出窗口访问返回的url，要求用户授权</li>
+<li>用户授权</li>
+<li>返回到应用中，并保存下面的参数:
+
+<ul>
+<li><code>oauth_token</code></li>
+<li><code>oauth_verifier</code></li>
+</ul>
+</li>
+<li>应用发送<strong>signed</strong> request，用<code>Request Token</code> / <code>Verifier</code> 换 <code>Access Token</code>, 请求中包括：
+
+<ul>
+<li><code>oauth_token</code> <em>Request Token;</em></li>
+<li><code>oauth_consumer_key</code></li>
+<li><code>oauth_nonce</code></li>
+<li><code>oauth_signature</code></li>
+<li><code>oauth_signature_method</code></li>
+<li><code>oauth_version</code></li>
+<li><code>oauth_verifier</code></li>
+</ul>
+</li>
+<li>服务提供商返回 <code>Access Token</code> 和 <code>Token Secret</code>，整个payload的参数和第二步一样主要是<code>oauth_token</code>和<code>oauth_token_secret</code>。</li>
+<li>应用使用<code>oauth_token</code> 和 <code>oauth_token_secret</code> 来访问被权限保护的资源。</li>
+</ol>
+
+
+<hr />
+
+<p><strong>Note:</strong> 在<em>第6步</em> 如果 <code>oauth_verifier</code> 没有被发送，那么就会认证失败。只有极少数的实现可以接受只发送<code>oauth_token</code>，这样的服务提供商被认为是不完整的实现了OAuth 1.0a 3-Legged。</p>
+
+<hr />
+
+<a name="OAuth.1.0a..Echo."></a>
+<h2>OAuth 1.0a (Echo)</h2>
+
+<p>非主流的一种实现，但是确实是存在的：发明者是Twitter的Raffi。这种实现允许在首次发送的请求token里面多带两个header，这样可以通过代理的方式在代理服务商那里对原始服务商的用户进行认证。</p>
+
+<p><img src="/downloads/images/oauth_flow_4.png" align="right" /></p>
+
+<ol>
+<li>应用发送一个 <strong>signed</strong> request到代理服务提供商，request里包括:
+
+<ul>
+<li><code>oauth_consumer_key</code></li>
+<li><code>oauth_timestamp</code></li>
+<li><code>oauth_nonce</code></li>
+<li><code>oauth_signature</code></li>
+<li><code>oauth_signature_method</code></li>
+<li><code>oauth_version</code> <em>Optional</em></li>
+<li><code>oauth_callback</code></li>
+</ul>
+
+
+<p> 还包括额外的header:</p>
+
+<ul>
+<li><code>X-Auth-Service-Provider</code></li>
+<li><code>X-Verify-Credentials-Authorization</code></li>
+</ul>
+</li>
+<li>代理服务商拿到额外的header信息到原始服务商认证</li>
+<li>代理服务商认证通过后，可以返回受限资源的url给应用。</li>
+</ol>
+
+
+<a name="OAuth.1.0a..xAuth."></a>
+<h2>OAuth 1.0a (xAuth)</h2>
+
+<p>xAuth是一种桌面程序或者手机程序（没有使用webview等控件不能完成完整流程的程序）使用的OAuth方式。它通过提供用户的<code>email</code>和<code>password</code>给服务器提供商来换取<code>access token</code>。</p>
+
+<p>这种方式返回的一般是具有只读性质的access token，并且这种token能操作的资源也是有限的。比如Twitter的DM（类似私信）就不能使用xAuth而必须用完整的<code>three-legged</code>流程获取token才能取到。</p>
+
+<p><img src="/downloads/images/oauth_flow_5.png" align="right" /></p>
+
+<ol>
+<li>应用请求用户的Credentials</li>
+<li>应用发送一个 <strong>signed</strong> request到服务提供商请求一个 <code>Access Token</code>，request里包括:
+
+<ul>
+<li><code>oauth_consumer_key</code></li>
+<li><code>oauth_timestamp</code></li>
+<li><code>oauth_nonce</code></li>
+<li><code>oauth_signature</code></li>
+<li><code>oauth_signature_method</code></li>
+<li><code>oauth_version</code> <em>Optional</em></li>
+<li><code>oauth_callback</code></li>
+</ul>
+
+
+<p> 额外还包括:</p>
+
+<ul>
+<li><code>x_auth_mode</code> = <code>client_auth</code></li>
+<li><code>x_auth_username</code></li>
+<li><code>x_auth_password</code></li>
+<li><code>x_auth_permission</code> <em>可选;</em><sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup></li>
+</ul>
+</li>
+<li>服务提供商验证用户的Credentials之后返回Access Token
+
+<ul>
+<li><code>oauth_token</code></li>
+<li><code>oauth_token_secret</code></li>
+</ul>
+</li>
+<li>应用使用<code>Access Token</code>来访问被权限保护的资源。</li>
+</ol>
+
+
+<a name="OAuth.2..two-legged."></a>
+<h2>OAuth 2 (two-legged)</h2>
+
+<p>目前为止最容易解释的一种流程，也被称为 <em>Client Credentials</em> 认证流程<sup id="fnref:6"><a href="#fn:6" rel="footnote">6</a></sup>，也有一种 <em>Resource Owner Password</em> 流程属于这类。</p>
+
+<a name="Client.Credentials"></a>
+<h3>Client Credentials</h3>
+
+<ol>
+<li>应用发送请求给服务提供商:</li>
+<li><code>grant_type</code> = <code>client_credentials</code></li>
+</ol>
+
+
+<p>  如果不是用的 <code>Authorization</code> header:
+  - <code>client_id</code>
+  - <code>client_secret</code>
+2. 应用服务商返回 <code>Access Token</code>等信息:
+    - <code>access_token</code>
+    - <code>expires_in</code>
+    - <code>token_type</code></p>
+
+<a name="Resource.Owner.Password"></a>
+<h3>Resource Owner Password</h3>
+
+<p>基本上就是 <code>OAuth 1.0a Echo</code> 流程，但是去掉了签名等复杂的部分。</p>
+
+<ol>
+<li>应用向resource owner（一般就是用户)请求credentials
+
+<ul>
+<li><code>username</code></li>
+<li><code>password</code></li>
+</ul>
+</li>
+<li><p>应用向服务提供商发送request，请求内容为:</p>
+
+<ul>
+<li><code>grant_type</code> = <code>password</code></li>
+<li><code>username</code></li>
+<li><code>password</code></li>
+</ul>
+
+
+<p> 其格式如下:</p>
+
+<pre><code class="`"> grant_type=password&amp;username=my_username&amp;password=my_password
+</code></pre>
+
+<p> 如果不是用的 <code>Authorization</code> header, 下面的也需要被放到request里面:</p>
+
+<ul>
+<li><code>client_id</code></li>
+<li><code>client_secret</code></li>
+</ul>
+
+
+<p> 整个加起来回是：</p>
+
+<pre><code class="`"> grant_type=password&amp;username=my_username&amp;password=my_password&amp;client_id=random_string&amp;client_secret=random_secret
+</code></pre></li>
+<li><p>应用服务商返回 <code>Access Token</code>等信息:</p>
+
+<ul>
+<li><code>access_token</code></li>
+<li><code>expires_in</code></li>
+<li><code>token_type</code></li>
+</ul>
+</li>
+</ol>
+
+
+<a name="OAuth.2..three-legged."></a>
+<h2>OAuth 2 (three-legged)</h2>
+
+<p>同样去掉了很多复杂的步骤。</p>
+
+<ol>
+<li>应用把用户引导到认证页面:
+
+<ul>
+<li><code>client_id</code></li>
+<li><code>redirect_uri</code></li>
+<li><code>response_type</code><sup id="fnref:7"><a href="#fn:7" rel="footnote">7</a></sup></li>
+<li><code>state</code> <em>可选;</em> 防止CSRF<sup id="fnref:8"><a href="#fn:8" rel="footnote">8</a></sup></li>
+<li><code>scope</code> <em>可选;</em> 你可以获取的资源范围</li>
+</ul>
+
+
+<p> 一个例子（为了可读性没有进行Encode）:</p>
+
+<pre><code class="`">https://oauth_service/login/oauth/authorize?client_id=3MVG9lKcPoNINVB&amp;redirect_uri=http://localhost/oauth/code_callback&amp;scope=user
+</code></pre></li>
+<li>用户登录到服务中，批准应用申请权限。</li>
+<li>服务提供商把用户重定向到 <code>redirect_url</code> 并带上:
+
+<ul>
+<li><code>code</code></li>
+<li><code>state</code></li>
+</ul>
+</li>
+<li>应用使用 <code>code</code> 用来请求 <code>Access Token</code>:
+
+<ul>
+<li><code>client_id</code></li>
+<li><code>client_secret</code></li>
+<li><code>code</code></li>
+<li><code>redirect_uri</code> <em>可选;</em><sup id="fnref:9"><a href="#fn:9" rel="footnote">9</a></sup></li>
+<li><code>grant_type</code> = <code>"authorization_code"</code> [^7]</li>
+</ul>
+</li>
+<li>如果 <code>client_id</code> 和 <code>client_secret</code> 正确，服务提供商调用回调到 <code>redirect_url</code> 返回 <code>access_token</code>等信息:
+
+<ul>
+<li><code>access_token</code></li>
+<li><code>expires_in</code></li>
+<li><code>refresh_token</code></li>
+</ul>
+</li>
+<li>应用保存 <code>access_token</code> 并使用。
+
+<ul>
+<li>一般来说保存到session或者是cookie里，然后放在 <code>Authorization: [Bearer] access_token</code> header里面用，其中<code>[Bearer]</code>是 <code>Header Authorization Bearer Name</code>，如<code>Bearer</code>, <code>OAuth</code>, <code>MAC</code>等。</li>
+</ul>
+</li>
+</ol>
+
+
+<hr />
+
+<p><strong>有趣的事实:</strong> 有些RFC里面的规定，比如scope的分隔符用空格等，根本没有人遵守。所以开发者根本不知道API会在下个版本变成什么样子。</p>
+
+<hr />
+
+<a name="OAuth.2..refresh.token."></a>
+<h2>OAuth 2 (refresh token)</h2>
+
+<p>在OAuth2中，<code>access_token</code>一般是有有效期的。一个过期的token被使用时，服务器会返回一个token过期的错误，并带上<code>refresh_token</code>。应用使用<code>refresh token</code>获取新的<code>access_token</code>会比前面描述的流程简单得多。</p>
+
+<ol>
+<li>发送请求到服务提供商的<code>Refresh Token URI</code>:
+
+<ul>
+<li><code>grant_type</code> = <code>"refresh_token"</code></li>
+<li><code>scope</code> <em>可选;</em> 更新时不能指定之前没有的scope</li>
+<li><code>refresh_token</code></li>
+<li><code>client_id</code></li>
+<li><code>client_secret</code></li>
+</ul>
+</li>
+<li>服务提供商验证参数后返回:
+
+<ul>
+<li><code>access_token</code></li>
+<li><code>issued_at</code></li>
+</ul>
+</li>
+</ol>
+
+
+<a name="Tips..amp..Tricks"></a>
+<h2>Tips &amp; Tricks</h2>
+
+<a name="L......Access.Token...Refresh.Key"></a>
+<h3>生成Access Token和Refresh Key</h3>
+
+<p>最好使用uuid，也就是固定长度的随机字符组成的字符串。</p>
+
+<a name="L......"></a>
+<h4>例子</h4>
+
+<pre><code class="javascript">var OAuth = require('mashape-oauth').OAuth,
     access_token = OAuth.nonce(/* Length, Default 32 */);
-</code></pre> <a name="References"></a> <h2>References</h2> <ol> <li><a href="http://www.flickr.com/services/api/auth.oauth.html">Authorizing with OAuth</a> - Flickr Documentation</li> <li><a href="https://confluence.atlassian.com/display/BITBUCKET/OAuth+on+Bitbucket">OAuth on Bitbucket</a> - Bitbucket Documentation</li> <li><a href="https://dev.twitter.com/docs/auth/oauth">OAuth Documentation</a> - Twitter Documentation</li> <li><a href="http://2.bp.blogspot.com/-Va1Rp3-r898/TZiVh9xEJDI/AAAAAAAAAMw/8ImBIW_dXuY/s1600/OAuth-legs.png">OAuth Extended Flows</a></li> <li><a href="https://code.google.com/p/oauth-php/wiki/ConsumerHowTo#Two-legged_OAuth">2-Legged OAuth</a> - OAuth-PHP</li> <li><a href="http://oauth.googlecode.com/svn/spec/ext/consumer_request/1.0/drafts/2/spec.html">OAuth for Consumer Requests</a></li> <li><a href="http://term.ie/oauth/example/">OAuth Example</a> - term.ie</li> <li><a href="http://hueniverse.com/oauth/guide/">OAuth 1.0 Guide</a> - Heuniverse</li> <li><a href="http://oauth.net/core/diagram.png">OAuth 1.0a Diagram</a></li> <li><a href="http://wiki.oauth.net">OAuth Wiki</a></li> <li><a href="http://architects.dzone.com/articles/2-legged-oauth-oauth-10-and-20">2-Legged OAuth 1.0 &amp; 2.0</a> - DZone</li> <li><a href="https://developers.google.com/accounts/docs/OAuth">OAuth</a> &amp; <a href="https://developers.google.com/accounts/docs/OAuth2">OAuth2</a> - Google Documentation</li> <li><a href="http://blog.nerdbank.net/2011/06/what-is-2-legged-oauth.html">What is 2-legged OAuth?</a> - Nerdbank</li> <li><a href="http://en.wikipedia.org/wiki/OAuth#List_of_OAuth_service_providers">List of Service Providers</a> - Wikipedia</li> <li><a href="http://developers.mobypicture.com/documentation/authentication/oauth-echo/">OAuth Echo</a> - mobypicture</li> <li><a href="https://dev.twitter.com/docs/auth/oauth/oauth-echo">OAuth Echo</a> - Twitter</li> <li><a href="http://developer.vimeo.com/apis/advanced">Advanced API</a> - Vimeo Developer();</li> <li><a href="https://dev.twitter.com/docs/oauth/xauth">About xAuth</a> - Twitter xAuth Documentation</li> <li><a href="https://dev.twitter.com/docs/auth/implementing-sign-twitter">Implementing Sign-in</a> - Twitter Sign-in Documentation</li> <li><a href="http://tools.ietf.org/html/rfc6749">RFC6749</a> - IETF</li> <li><a href="http://developer.github.com/v3/oauth/">Web Application Flow</a> - Github OAuth2</li> <li><a href="http://www.salesforce.com/us/developer/docs/api_rest/Content/quickstart_oauth.htm">OAuth2 Quickstart</a> - Salesforce</li> <li><a href="https://developers.geoloqi.com/api/authentication">Authentication Mechanisms</a> - Geoloqi</li> <li><a href="http://www.salesforce.com/us/developer/docs/api_rest/Content/intro_understanding_web_server_oauth_flow.htm">Understanding Web Server OAuth Flow</a> - Salesforce</li> <li><a href="http://blog.springsource.org/2011/11/30/10317/">CSRF &amp; OAuth2</a> - Springsource</li> <li><a href="https://tools.ietf.org/html/draft-ietf-oauth-v2-31">OAuth v2-31</a> - IETF</li> <li><a href="http://techblog.hybris.com/2012/06/11/oauth2-resource-owner-password-flow/">Resource Owner Flow</a> - Hybris</li> </ol> <div class="footnotes"> <hr/> <ol> <li id="fn:1"> <p><a href="http://en.wikipedia.org/wiki/Hash-based_message_authentication_code">Hash based message authentication code</a>.<a href="#fnref:1" rev="footnote">&#8617;</a></p></li> <li id="fn:2"> <p><a href="http://en.wikipedia.org/wiki/RSA_(algorithm)">RSA Algorithm</a>.<a href="#fnref:2" rev="footnote">&#8617;</a></p></li> <li id="fn:3"> <p><a href="https://dev.twitter.com/docs/auth/implementing-sign-twitter">Implementing sign twitter</a>.<a href="#fnref:3" rev="footnote">&#8617;</a></p></li> <li id="fn:4"> <p><a href="https://developers.google.com/google-apps/gmail/oauth_protocol#oauth_request_url">Oauth request url</a>.<a href="#fnref:4" rev="footnote">&#8617;</a></p></li> <li id="fn:5"> <p><a href="http://developer.vimeo.com/apis/advanced">Vimeo API Advanced</a><a href="#fnref:5" rev="footnote">&#8617;</a></p></li> <li id="fn:6"> <p><a href="https://tools.ietf.org/html/draft-ietf-oauth-v2-31#section-4.4">IETF OATUH V2 Section 4.4</a>.<a href="#fnref:6" rev="footnote">&#8617;</a></p></li> <li id="fn:7"> <p><a href="http://tools.ietf.org/html/draft-ietf-oauth-v2-31#section-4.1.1">IETF OATUH V2 Section 4.1.1</a>.<a href="#fnref:7" rev="footnote">&#8617;</a></p></li> <li id="fn:8"> <p><a href="http://blog.springsource.org/2011/11/30/10317/">CROSS SITE REQUEST FORGERY AND OAUTH2</a>.<a href="#fnref:8" rev="footnote">&#8617;</a></p></li> <li id="fn:9"> <p><a href="http://tools.ietf.org/html/rfc6749#section-4.1.3">RFC6749</a>.<a href="#fnref:9" rev="footnote">&#8617;</a></p></li> </ol> </div> </div> <footer> <p class="meta"> <span class="byline author vcard">Posted by <span class="fn">Lenciel</span></span> <span class="categories"> <a class='category' href='/categories/oauth/'>oauth</a>, <a class='category' href='/categories/tips/'>tips</a>, <a class='category' href='/categories/toturials/'>toturials</a> </span> </p> <div class="sharing"> </div> <p class="meta"> <a class="basic-alignment left" href="/2013/07/tmux-introduction-and-tips/" title="Previous Post: tmux: Introduction and Tips">&laquo; tmux: Introduction and Tips</a> <a class="basic-alignment right" href="/2013/07/we-are-men/" title="Next Post: We Are Men">We Are Men &raquo;</a> </p> </footer> </article> </div> </div> </div> <footer role="contentinfo"><p> Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a> <span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span> <section class="contruction-wrap"> <div class="contruction"></div> </section> </p> </footer> <script type="text/javascript">
+</code></pre>
+
+<a name="References"></a>
+<h2>References</h2>
+
+<ol>
+<li><a href="http://www.flickr.com/services/api/auth.oauth.html">Authorizing with OAuth</a> - Flickr Documentation</li>
+<li><a href="https://confluence.atlassian.com/display/BITBUCKET/OAuth+on+Bitbucket">OAuth on Bitbucket</a> - Bitbucket Documentation</li>
+<li><a href="https://dev.twitter.com/docs/auth/oauth">OAuth Documentation</a> - Twitter Documentation</li>
+<li><a href="http://2.bp.blogspot.com/-Va1Rp3-r898/TZiVh9xEJDI/AAAAAAAAAMw/8ImBIW_dXuY/s1600/OAuth-legs.png">OAuth Extended Flows</a></li>
+<li><a href="https://code.google.com/p/oauth-php/wiki/ConsumerHowTo#Two-legged_OAuth">2-Legged OAuth</a> - OAuth-PHP</li>
+<li><a href="http://oauth.googlecode.com/svn/spec/ext/consumer_request/1.0/drafts/2/spec.html">OAuth for Consumer Requests</a></li>
+<li><a href="http://term.ie/oauth/example/">OAuth Example</a> - term.ie</li>
+<li><a href="http://hueniverse.com/oauth/guide/">OAuth 1.0 Guide</a> - Heuniverse</li>
+<li><a href="http://oauth.net/core/diagram.png">OAuth 1.0a Diagram</a></li>
+<li><a href="http://wiki.oauth.net">OAuth Wiki</a></li>
+<li><a href="http://architects.dzone.com/articles/2-legged-oauth-oauth-10-and-20">2-Legged OAuth 1.0 &amp; 2.0</a> - DZone</li>
+<li><a href="https://developers.google.com/accounts/docs/OAuth">OAuth</a> &amp; <a href="https://developers.google.com/accounts/docs/OAuth2">OAuth2</a> - Google Documentation</li>
+<li><a href="http://blog.nerdbank.net/2011/06/what-is-2-legged-oauth.html">What is 2-legged OAuth?</a> - Nerdbank</li>
+<li><a href="http://en.wikipedia.org/wiki/OAuth#List_of_OAuth_service_providers">List of Service Providers</a> - Wikipedia</li>
+<li><a href="http://developers.mobypicture.com/documentation/authentication/oauth-echo/">OAuth Echo</a> - mobypicture</li>
+<li><a href="https://dev.twitter.com/docs/auth/oauth/oauth-echo">OAuth Echo</a> - Twitter</li>
+<li><a href="http://developer.vimeo.com/apis/advanced">Advanced API</a> - Vimeo Developer();</li>
+<li><a href="https://dev.twitter.com/docs/oauth/xauth">About xAuth</a> - Twitter xAuth Documentation</li>
+<li><a href="https://dev.twitter.com/docs/auth/implementing-sign-twitter">Implementing Sign-in</a> - Twitter Sign-in Documentation</li>
+<li><a href="http://tools.ietf.org/html/rfc6749">RFC6749</a> - IETF</li>
+<li><a href="http://developer.github.com/v3/oauth/">Web Application Flow</a> - Github OAuth2</li>
+<li><a href="http://www.salesforce.com/us/developer/docs/api_rest/Content/quickstart_oauth.htm">OAuth2 Quickstart</a> - Salesforce</li>
+<li><a href="https://developers.geoloqi.com/api/authentication">Authentication Mechanisms</a> - Geoloqi</li>
+<li><a href="http://www.salesforce.com/us/developer/docs/api_rest/Content/intro_understanding_web_server_oauth_flow.htm">Understanding Web Server OAuth Flow</a> - Salesforce</li>
+<li><a href="http://blog.springsource.org/2011/11/30/10317/">CSRF &amp; OAuth2</a> - Springsource</li>
+<li><a href="https://tools.ietf.org/html/draft-ietf-oauth-v2-31">OAuth v2-31</a> - IETF</li>
+<li><a href="http://techblog.hybris.com/2012/06/11/oauth2-resource-owner-password-flow/">Resource Owner Flow</a> - Hybris</li>
+</ol>
+
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p><a href="http://en.wikipedia.org/wiki/Hash-based_message_authentication_code">Hash based message authentication code</a>.<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p><a href="http://en.wikipedia.org/wiki/RSA_(algorithm)">RSA Algorithm</a>.<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+<li id="fn:3">
+<p><a href="https://dev.twitter.com/docs/auth/implementing-sign-twitter">Implementing sign twitter</a>.<a href="#fnref:3" rev="footnote">&#8617;</a></p></li>
+<li id="fn:4">
+<p><a href="https://developers.google.com/google-apps/gmail/oauth_protocol#oauth_request_url">Oauth request url</a>.<a href="#fnref:4" rev="footnote">&#8617;</a></p></li>
+<li id="fn:5">
+<p><a href="http://developer.vimeo.com/apis/advanced">Vimeo API Advanced</a><a href="#fnref:5" rev="footnote">&#8617;</a></p></li>
+<li id="fn:6">
+<p><a href="https://tools.ietf.org/html/draft-ietf-oauth-v2-31#section-4.4">IETF OATUH V2 Section 4.4</a>.<a href="#fnref:6" rev="footnote">&#8617;</a></p></li>
+<li id="fn:7">
+<p><a href="http://tools.ietf.org/html/draft-ietf-oauth-v2-31#section-4.1.1">IETF OATUH V2 Section 4.1.1</a>.<a href="#fnref:7" rev="footnote">&#8617;</a></p></li>
+<li id="fn:8">
+<p><a href="http://blog.springsource.org/2011/11/30/10317/">CROSS SITE REQUEST FORGERY AND OAUTH2</a>.<a href="#fnref:8" rev="footnote">&#8617;</a></p></li>
+<li id="fn:9">
+<p><a href="http://tools.ietf.org/html/rfc6749#section-4.1.3">RFC6749</a>.<a href="#fnref:9" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+<span class="byline author vcard">Posted by <span class="fn">Lenciel</span></span>
+
+      
+
+
+
+
+
+      
+
+<span class="categories">
+  
+    <a class='category' href='/categories/oauth/'>oauth</a>, <a class='category' href='/categories/tips/'>tips</a>, <a class='category' href='/categories/toturials/'>toturials</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+  <!-- JiaThis Button BEGIN -->
+  <!--<div class="jiathis_style_24x24">
+    <a class="jiathis_button_qzone"></a>
+    <a class="jiathis_button_tsina"></a>
+    <a class="jiathis_button_tqq"></a>
+    <a class="jiathis_button_weixin"></a>
+    <a class="jiathis_button_renren"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+    <a class="jiathis_counter_style"></a>
+    </div>
+    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>-->
+  <!-- JiaThis Button END -->
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2013/07/tmux-introduction-and-tips/" title="Previous Post: tmux: Introduction and Tips">&laquo; tmux: Introduction and Tips</a>
+      
+      
+        <a class="basic-alignment right" href="/2013/07/we-are-men/" title="Next Post: We Are Men">We Are Men &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a>
+<span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span>
+  <section class="contruction-wrap">
+    <div class="contruction"></div>
+  </section>
+</p>
+
+</footer>
+  
+
+
+
+
+<script type="text/javascript">
   var stylesheet = document.createElement('link');
   stylesheet.href = '/assets/stylesheets/app.css';
   stylesheet.rel = 'stylesheet';
   stylesheet.type = 'text/css';
   document.getElementsByTagName('head')[0].appendChild(stylesheet);
-</script> </body> </html>
+</script>
+
+</body>
+</html>

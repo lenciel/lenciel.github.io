@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: just-4-fun | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/just-4-fun/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-04-02T23:44:01+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/just-4-fun/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-04-06T19:01:30+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[如何不正确的殴打企鹅]]></title>
-    <link href="http://lenciel.com/2014/08/how-to-beat-the-penguin/"/>
+    <link href="http://172.16.121.110:4000/2014/08/how-to-beat-the-penguin/"/>
     <updated>2014-08-09T20:32:58+08:00</updated>
-    <id>http://lenciel.com/2014/08/how-to-beat-the-penguin</id>
+    <id>http://172.16.121.110:4000/2014/08/how-to-beat-the-penguin</id>
     <content type="html"><![CDATA[<p>今天在微信朋友圈里面看了20来条这游戏的成绩分享，还有的群开始讨论心得。打开链接一看，原来是当年那个小范围流行了一下的<a href="https://www.google.com/search?q=Penguin+Ball&amp;oq=Penguin+Ball&amp;aqs=chrome..69i57j69i60.972j0j4&amp;sourceid=chrome&amp;es_sm=91&amp;ie=UTF-8">Penguin Ball</a>嘛（我记得后来有些人开始玩那个<a href="http://www.bloody-penguin.com/">血腥版</a>，正常人就慢慢不玩这游戏了）。</p>
 
 <p>不过，链接指向的那山寨游戏虽然没有再用flash，但是对手势事件的处理有问题（他们还是挺<a href="http://game.2sky.cn/js/52/index.js">大方的</a>），所以确实还蛮难的：我打了五六次，最好成绩6000多一点。</p>
@@ -78,9 +78,9 @@
   
   <entry>
     <title type="html"><![CDATA[骗子]]></title>
-    <link href="http://lenciel.com/2008/10/the-cheator/"/>
+    <link href="http://172.16.121.110:4000/2008/10/the-cheator/"/>
     <updated>2008-10-26T23:36:00+08:00</updated>
-    <id>http://lenciel.com/2008/10/the-cheator</id>
+    <id>http://172.16.121.110:4000/2008/10/the-cheator</id>
     <content type="html"><![CDATA[<p><img height="184" alt="71" src="/downloads/images/dark_forest.jpg" width="198" align="left" /> 夏天还是到了尾声，天气变得阴冷。阳光像老人们的睡眠一样变得不知所踪。和往常一样，我被他们晨练的声音吵醒后，就在床上躺十来分钟，听他们在我的窗台下讨论股票和房价、政府和人民、过去和未来。</p>
 
 <p>然后我骑车去上班。我是个怕热不怕冷的人，所以整个夏天都没有骑车。到龙阳路的时候，我看到汽车、摩托车、电瓶车、自行车、行人、协管和警察，混合着漫天的灰尘，像污水一样沿着面目全非的道路争先恐后的缓缓流淌，就好像我是在摩西为以色列人划开的红海一样。</p>
