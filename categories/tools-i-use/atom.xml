@@ -4,7 +4,7 @@
   <title><![CDATA[Category: tools-i-use | @Lenciel]]></title>
   <link href="http://lenciel.com/categories/tools-i-use/atom.xml" rel="self"/>
   <link href="http://lenciel.com/"/>
-  <updated>2017-04-14T11:19:13+08:00</updated>
+  <updated>2017-04-14T15:06:07+08:00</updated>
   <id>http://lenciel.com/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
@@ -22,6 +22,91 @@
 <p>它的一个分支Inziu Iosevka集成了<a href="http://be5invis.github.io/Iosevka/">Iosevka</a>，<a href="https://mplus-fonts.osdn.jp/">M+</a>和<a href="https://github.com/adobe-fonts/source-han-sans">Source Han Sans</a>。并且，因为是做了<a href="https://github.com/caryll/ideohint">hinter优化</a>的字体，可以在各种尺寸的屏幕和分辨率设置下，更加清晰的显示中文。</p>
 
 <p>下载地址: <a href="https://be5invis.github.io/Iosevka/inziu.html">click</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[从Octopress转到纯Jekyll]]></title>
+    <link href="http://lenciel.com/2017/03/migrating-from-octopress-to-jekyll/"/>
+    <updated>2017-03-14T13:45:00+08:00</updated>
+    <id>http://lenciel.com/2017/03/migrating-from-octopress-to-jekyll</id>
+    <content type="html"><![CDATA[<p>离开Wordpress<a href="http://lenciel.com/2013/03/blog-with-octopress-and-github-pages/">改用Octopress</a>写blog已经好些年了，本座甚至还写了一个自己的<a href="https://github.com/lenciel/octopress-theme-lenciel">Octopress模板</a>。之所以要迁移主要是Octopress作为以Jekyll为基础的一套脚手架，自2011年发布以后进展非常缓慢，和Jekyll的快速更新很难对齐。</p>
+
+<p>在近期跳票多次的<a href="http://octopress.org/2015/01/15/octopress-3.0-is-coming/">Octopress3</a>终于发布了之后，看了一下没有什么值得迁移的新功能。所以不管是从功能、性能还是开发活跃度上，继续跟Octopress都不太明智，就决定转用纯Jekyll。</p>
+
+<p>迁移过程还算比较平滑，主要是：</p>
+
+<ul>
+<li>Blog项目的迁移</li>
+<li>模板项目的迁移</li>
+</ul>
+
+
+<a name="Blog..............."></a>
+<h3>Blog项目的迁移</h3>
+
+<p>本座主要的开发栈不是ruby，所以那套东西都放docker。配置好gem的镜像，安装最新的jekyll之后，创建一个干净的静态网站：</p>
+
+<pre><code class="bash">$ gem install jekyll
+$ jekyll new my-site &amp;&amp; cd my-site
+</code></pre>
+
+<p>然后把blog的源文件以及一些静态文件放到对应的目录，然后按照新老项目的<code>_config.yml</code>文件内容，挨个的排查之前的插件和配置情况。</p>
+
+<p>比如之前Octopress因为有自己的代码高亮和引用插件，你的日志里面可能有<code>codeblock</code>这样的不是默认支持的tag，在<code>jekyll build</code>过程中导致构建失败。</p>
+
+<p>要解决这种问题有两个思路：</p>
+
+<ol>
+<li>把Octopress的插件移植一遍</li>
+<li>把日志改成使用默认支持的语法</li>
+</ol>
+
+
+<p>实际过程里面本座的做法大概是一半一半。比如像插入gist，blockquote这些现在默认也支持得挺好的功能插件，就去掉了它们，然后通过正则表达式对<code>_posts</code>目录下的文章进行全局替换。</p>
+
+<p>而有些个人觉得Octopress确实解决得不错的功能，就按照<a href="https://jekyllrb.com/docs/plugins/">新版Jekyll插件</a>的语法进行了迁移，这部分包括对日期的处理，图片的插入等等。</p>
+
+<p>这些大体修改完毕，然后安装相应的依赖（可以对比新旧的Gemfile，只需要安装自己的插件用到的依赖），这部分改动就大概完成了。</p>
+
+<a name="L....................."></a>
+<h3>模板项目的迁移</h3>
+
+<p>因为Jekyll自己的模板是基于gem-based的，也就是说你首先得新建一个gem-based的项目：</p>
+
+<ol>
+<li>注册<a href="https://rubygems.org">rubygems</a>的账号</li>
+<li>新建项目，并按照gem的方式组织代码并发布模板</li>
+<li>在Blog项目的<code>_config.yml</code>里面引用这个模板</li>
+</ol>
+
+
+<p>最终的工作就是我又多了一个gem-based的<a href="https://github.com/lenciel/jekyll-lenciel-theme">Jekyll模板项目</a>。</p>
+
+<p>这部分要特别注意的就是Jekyll的模板项目默认能够发布的目录（也就是包含在gemfile里面，能够被你的Blog项目在安装路径找到的目录）非常有限：</p>
+
+<blockquote><p>Jekyll will look first to your site’s content before looking to the theme’s defaults for any requested file in the following folders:</p>
+
+<p>/assets
+/<em>layouts
+/</em>includes
+/_sass</p></blockquote>
+
+<p>如果你有很多其他目录希望一起发布，可以修改<code>gemspec</code>里面的相关选项：</p>
+
+<pre><code class="ruby">spec.files = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README|index)}i) }
+</code></pre>
+
+<p>还有一点就是这种发布和安装模板的方式，会破坏很多对静态资源的处理流程（如果有的话）。</p>
+
+<p>比如我自己会对图片自动压缩，对css/js文件进行合并和uglify等等。这些工作的目标文件因为很多都在gem安装的模板里面，会变得比较tricky。最终本座只好对<code>jekyll build</code>之后的<code>_site</code>目录下的部署目标文件进行处理。</p>
+
+<a name="L......"></a>
+<h3>其他</h3>
+
+<p>虽然放弃了Octopress，但并不是说Octopress是个失败的项目。一方面，它的完成度很高，如果你不是有本座一些龟毛的要求（要自己搞模板，要对静态文件做优化，要支持各种国内才需要支持的定制），已经够用。作者一个人要跟上Jekyll一个社区的开发速度，本来就很难，是属于可以理解的不足。并且，通过看它的插件源代码，对我自己的模板实现也起到了很大帮助。</p>
+
+<p>所以，感谢Octopress引进门，用了它，折腾Jekyll就容易多了。</p>
 ]]></content>
   </entry>
   
@@ -338,79 +423,6 @@ YLNU
 <p>具体使用过程请参考下面这个视频（略需要几秒加载）：</p>
 
 <p><video width='640' height='320' preload='none' controls poster=''><source src='href="http://lenciel.com/downloads/video/chrome_custom_search.mp4">http://lenciel.com/downloads/video/chrome_custom_search.mp4</a>' ></video></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[提取微信语音消息]]></title>
-    <link href="http://lenciel.com/2015/12/extract-audio-message-from-wechat/"/>
-    <updated>2015-12-24T13:05:21+08:00</updated>
-    <id>http://lenciel.com/2015/12/extract-audio-message-from-wechat</id>
-    <content type="html"><![CDATA[<a name="Why."></a>
-<h3>Why?</h3>
-
-<p>Why not?</p>
-
-<a name="How."></a>
-<h3>How?</h3>
-
-<a name="L................................."></a>
-<h4>导出原始微信的音频消息</h4>
-
-<ul>
-<li>使用iTunes创建一个不加密备份</li>
-<li>导出备份中的微信应用文件夹（可以使用iExplorer试用版）</li>
-<li>找到你需要转换的音频文件所在文件夹</li>
-</ul>
-
-
-<a name="L......silk3...............mp3"></a>
-<h4>转换silk3编码音频为mp3</h4>
-
-<p>如果你是mac机器，只需要安装ffmpeg（推荐使用homebrew）然后运行脚本：</p>
-
-<pre><code class="python">    python wechat2mp3.py 待转换音频所在文件夹
-</code></pre>
-
-<p>如果你是其他系统，确认你装好了ffmpeg之后，需要<a href="https://github.com/gaozehua/SILKCodec">自己编译SILK解码库</a>。</p>
-
-<a name="Seriously.Why."></a>
-<h3>Seriously Why?</h3>
-
-<p>常温常压下我并不需要导出微信的语音，之所以有这个需求是因为蒙爷在三亚经常用微信跟我们唠嗑：</p>
-
-<p><audio controls loop preload><source src="/downloads/audio/mm_voice.mp3"></audio></p>
-
-<p>听到这样销魂的声音你就算不想保存，也想要转发，对不对？</p>
-
-<p>毕竟作为一名中国人，你已经有8个亲戚群了，对不对？</p>
-
-<p>然后微信奇怪的生态圈构建方式就是，各种封闭。</p>
-
-<p>微信公众号是世间少有的不允许外链的媒体，微信客户端是世间少有的不允许导出聊天记录的聊天工具。</p>
-
-<p>它的想法大概是，你珍贵的瞬间都在我这里（微信专门做了“收藏”这个功能让你把这些片段上传到微信的服务器，打着不让它们丢失的旗号），那你就逃不出我的手掌心了。</p>
-
-<a name="Seriously.How."></a>
-<h3>Seriously How?</h3>
-
-<p>使用iTunes创建一个不加密的备份，然后连接iExplorer，会看到打开iTunes备份的选项：</p>
-
-<p><img src="/downloads/images/2015_12/extract_wechat_1.png" title="Don't touch me..." alt="Vhost threshold" /></p>
-
-<p>打开后在<code>App</code>文件夹下面导出微信文件夹：</p>
-
-<p><img src="/downloads/images/2015_12/extract_wechat_2.png" title="Don't touch me..." alt="Vhost threshold" /></p>
-
-<p>在导出的文件夹下面有个Audio目录，你可以根据语音消息的数量大概确认需要导出的目录（目录是个hash），然后到<code>DB/MM.sqlite</code>下面去打开<code>Chat_[hash]</code>这个表里面，看看消息来确认：</p>
-
-<p><img src="/downloads/images/2015_12/extract_wechat_3.png" title="Don't touch me..." alt="Vhost threshold" /></p>
-
-<p>二进制查看其中的任意一个文件，可以看到是<a href="https://en.wikipedia.org/wiki/SILK">SILK</a>编码的（skype早期版本包括lync都是使用的这种编码方式）：</p>
-
-<p><img src="/downloads/images/2015_12/extract_wechat_4.png" title="Don't touch me..." alt="Vhost threshold" /></p>
-
-<p>接下来你只需要按照<a href="https://github.com/lenciel/wechat2mp3">repo</a>里面的指导(愿主保佑你是用Mac因为那最简单)来进行文件转换就可以了。</p>
 ]]></content>
   </entry>
   
