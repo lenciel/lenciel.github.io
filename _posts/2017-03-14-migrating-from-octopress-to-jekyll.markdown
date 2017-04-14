@@ -29,28 +29,15 @@ $ jekyll new my-site && cd my-site
 
 然后把blog的源文件以及一些静态文件放到对应的目录，然后按照新老项目的`_config.yml`文件内容，挨个的排查之前的插件和配置情况。
 
-比如之前Octopress因为有自己的代码高亮和引用插件，你的日志里面可能有：
-
-``` raw
-codeblock %}
- ... some code ...
-endcodeblock %}
-```
-
-在`jekyll build`过程中，因为不是默认支持的tag，会导致构建失败。
+比如之前Octopress因为有自己的代码高亮和引用插件，你的日志里面可能有`codeblock`这样的不是默认支持的tag，在`jekyll build`过程中导致构建失败。
 
 要解决这种问题有两个思路：
 
 1. 把Octopress的插件移植一遍
 2. 把日志改成使用默认支持的语法
 
-实际过程里面本座的做法大概是一半一半。比如像插入gist，blockquote这些现在默认也支持得挺好的功能插件，就去掉了它们，然后通过正则表达式对`_posts`目录下的文章进行全局替换。比如前面的那段，需要替换成：
+实际过程里面本座的做法大概是一半一半。比如像插入gist，blockquote这些现在默认也支持得挺好的功能插件，就去掉了它们，然后通过正则表达式对`_posts`目录下的文章进行全局替换。
 
-``` raw
-{% highlight none %}
- ... some code ...
-{% endhighlight %}
-```
 
 而有些个人觉得Octopress确实解决得不错的功能，就按照[新版Jekyll插件](https://jekyllrb.com/docs/plugins/)的语法进行了迁移，这部分包括对日期的处理，图片的插入等等。
 
