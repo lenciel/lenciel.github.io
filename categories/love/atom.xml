@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: love | @Lenciel]]></title>
-  <link href="http://172.16.121.110:4000/categories/love/atom.xml" rel="self"/>
-  <link href="http://172.16.121.110:4000/"/>
-  <updated>2017-04-06T19:01:30+08:00</updated>
-  <id>http://172.16.121.110:4000/</id>
+  <link href="http://lenciel.com/categories/love/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-04-14T11:19:13+08:00</updated>
+  <id>http://lenciel.com/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[没完没了]]></title>
-    <link href="http://172.16.121.110:4000/2009/08/the-rain-stopped/"/>
+    <link href="http://lenciel.com/2009/08/the-rain-stopped/"/>
     <updated>2009-08-13T03:13:00+08:00</updated>
-    <id>http://172.16.121.110:4000/2009/08/the-rain-stopped</id>
+    <id>http://lenciel.com/2009/08/the-rain-stopped</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/almost_again.jpg" title="Don't touch me..." alt="Almost" /></p>
 
 <p>雨是从正中午的时候开始下的。我朝外面看了看，好像也不大，就决定坐地铁去府河边走走。从很小的时候，我就想弄明白，下雨是让天空更亮了，还是让天空更暗了。所以，每次下雨我都跑去河边看。</p>

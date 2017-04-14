@@ -1,104 +1,4 @@
-
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>Cryptography and Python - @Lenciel</title>
-  <meta name="author" content="Lenciel">
-
-  
-  <meta name="description" content="
-
-  
-  
-    
-      Cryptography and Python
-    
-    
-      
-        
-
-
-
-
-
-        
-      
-    
-  
-
-
-这周我们的一个项目里面需要调用第三方接口。对方的安全机制是调用时要进行加密和校验，但它们的文档...">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://172.16.121.110:4000/2013/07/cryptography-and-python/">
-  <link href="/favicon.png" rel="icon">
-  <script src="/assets/javascripts/app.js"></script>
-  <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml">
-  <meta property="og:title" content="Cryptography and Python" /><meta itemprop="name" content="Cryptography and Python" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="http://172.16.121.110:4000/2013/07/cryptography-and-python/" />
-<meta property="og:description" content="
-
-  
-  
-    
-      Cryptography and Python
-    
-    
-      
-        
-
-
-
-
-
-        
-      
-    
-  
-
-
-这周我们的一个项目里面需要调用第三方接口。对方的安全机制是调用时要进行加密和校验，但它们的文档..." />
-
-<meta property="og:site_name" content="http://172.16.121.110:4000" />
-<meta property="article:author" content="http://lenciel.com">
-<meta property="article:published_time" content="2013-07-25 15:13:00 +0800" />
-
-<meta property="article:section" content="cryptographynotespythontutorials" />
-<meta itemprop="description" content="
-
-  
-  
-    
-      Cryptography and Python
-    
-    
-      
-        
-
-
-
-
-
-        
-      
-    
-  
-
-
-这周我们的一个项目里面需要调用第三方接口。对方的安全机制是调用时要进行加密和校验，但它们的文档..." />
-
-
-  <script>
+<!DOCTYPE html> <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]--> <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]--> <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]--> <head> <meta charset="utf-8"> <title>Cryptography and Python - @Lenciel</title> <meta name="author" content="Lenciel"> <meta name="description" content=" Cryptography and Python 2013-07-25 15:13:00 ..."> <meta name="HandheldFriendly" content="True"> <meta name="MobileOptimized" content="320"> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="canonical" href="http://lenciel.com/2013/07/cryptography-and-python/"> <link href="/favicon.png" rel="icon"> <script src="/assets/javascripts/app.js"></script> <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml"> <meta property="og:title" content="Cryptography and Python"/><meta itemprop="name" content="Cryptography and Python"/> <meta property="og:type" content="article"/> <meta property="og:url" content="http://lenciel.com/2013/07/cryptography-and-python/"/> <meta property="og:description" content=" Cryptography and Python 2013-07-25 15:13:00 ..."/> <meta property="og:site_name" content="http://lenciel.com"/> <meta property="article:author" content="http://lenciel.com"> <meta property="article:published_time" content="2013-07-25 15:13:00 +0800"/> <meta property="article:section" content="cryptographynotespythontutorials"/> <meta itemprop="description" content=" Cryptography and Python 2013-07-25 15:13:00 ..."/> <script>
     var _hmt = _hmt || [];
     (function() {
         var hm = document.createElement("script");
@@ -106,11 +6,7 @@
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
     })();
-</script>
-
-
-  
-<script>
+</script> <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -119,56 +15,7 @@
   ga('create', 'UA-175991-6', 'auto');
   ga('send', 'pageview');
 
-</script>
-
-
-</head>
-
-<body    class="collapse-sidebar sidebar-footer" >
-  <header role="banner"><hgroup>
-  <h1><a href="/">@Lenciel</a></h1>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<ul class="main-navigation">
-  <li><a href="/"><i class="icon-home"></i>Home</a></li>
-  <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li>
-  <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div>
-<article class="hentry" role="article">
-  
-  <header>
-    
-      <h1 class="entry-title">Cryptography and Python</h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-        
-      </p>
-    
-  </header>
-
-
-<div class="entry-content"><p>这周我们的一个项目里面需要调用第三方接口。对方的安全机制是调用时要进行加密和校验，但它们的文档没有描述具体是怎么加密的，而是给了一段代码：</p>
-
-<pre><code class="java">    private static BASE64Encoder base64 = new BASE64Encoder();
+</script> </head> <body class="collapse-sidebar sidebar-footer"> <header role="banner"><hgroup> <h1><a href="/">@Lenciel</a></h1> </hgroup> </header> <nav role="navigation"><ul class="subscription" data-subscription="rss"> <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li> </ul> <ul class="main-navigation"> <li><a href="/"><i class="icon-home"></i>Home</a></li> <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li> <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li> </ul> </nav> <div id="main"> <div id="content"> <div> <article class="hentry" role="article"> <header> <h1 class="entry-title">Cryptography and Python</h1> <p class="meta"> <time class='entry-date' datetime='2013-07-25 15:13:00 +0800'> <span class='date'>2013-07-25</span> <span class='time'>15:13:00</span> </p> </header> <div class="entry-content"><p>这周我们的一个项目里面需要调用第三方接口。对方的安全机制是调用时要进行加密和校验，但它们的文档没有描述具体是怎么加密的，而是给了一段代码：</p> <pre><code class="java">    private static BASE64Encoder base64 = new BASE64Encoder();
 //  private static byte[] myIV = { 50, 51, 52, 53, 54, 55, 56, 57 };
 //  private static byte[] myIV = null;
 //  private static String strkey = "W9qPIzjaVGKUp7CKRk/qpCkg/SCMkQRu"; // 字节数必须是8的倍数
@@ -235,13 +82,7 @@
         byte[] output = cipher.doFinal(inPut);
         return new String(output, "UTF8");
     }
-</code></pre>
-
-<p>很明显，在提供文档的同学看来大家都是JEE程序员。仔细看了半天这两个函数<code>desEncrypt</code>和<code>desDecrypt</code>外加Google，才明白是<code>DES3</code>算法。</p>
-
-<p>接着这份文档的后面还有另一个对加密的描述也是代码，不过这次比较明显是MD5：</p>
-
-<pre><code class="java">public static final String MD5(String s)
+</code></pre> <p>很明显，在提供文档的同学看来大家都是JEE程序员。仔细看了半天这两个函数<code>desEncrypt</code>和<code>desDecrypt</code>外加Google，才明白是<code>DES3</code>算法。</p> <p>接着这份文档的后面还有另一个对加密的描述也是代码，不过这次比较明显是MD5：</p> <pre><code class="java">public static final String MD5(String s)
 {
   char hexDigits[] = {
     '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
@@ -270,11 +111,7 @@
 
   return new String(str);
 }
-</code></pre>
-
-<p>这些算法用python来实现当然就简单多了:MD5就是一句话，看起来非常复杂的DES3也不过几句话:</p>
-
-<pre><code class="python">from pyDes import triple_des, ECB, PAD_PKCS5
+</code></pre> <p>这些算法用python来实现当然就简单多了:MD5就是一句话，看起来非常复杂的DES3也不过几句话:</p> <pre><code class="python">from pyDes import triple_des, ECB, PAD_PKCS5
 import base64
 import datetime
 
@@ -285,45 +122,7 @@ key_bytes = key_base64_str.encode('utf-8')
 k = triple_des(key_bytes, ECB, pad=None, padmode=PAD_PKCS5)
 d = base64.b64encode(k.encrypt(input_str))
 print d
-</code></pre>
-
-<p>当然，要明白这些算法究竟怎么回事才叫认真负责的态度：下面这些内容主要来自<a href="http://www.laurentluce.com/posts/python-and-cryptography-with-pycrypto/">这篇文章</a></p>
-
-<a name="L.strong.Hash..strong."></a>
-<h2><strong>Hash</strong></h2>
-
-<p>hash就是给输入的字符串生成一个固定长度的字符串（被称为hash值）。理想的hash要满足：</p>
-
-<ul>
-<li>根据生成的字符串非常难猜到输入的字符串</li>
-<li>任意两个不同的字符串不会生成相同的hash值</li>
-<li>如果输入字符串没有变生成的hash值应该不会变</li>
-</ul>
-
-
-<p><img src="/downloads/images/hash.png" title="Don't touch me..." alt="hash" /></p>
-
-<p>hash函数可以被用来计算checksum，也可以用来进行数字签名和认证。</p>
-
-<a name="L.strong.MD5..strong."></a>
-<h3><strong>MD5</strong></h3>
-
-<p>1991年面世的一种hash算法，生成的字符串长度为128bit。</p>
-
-<p>它的算法详情可以看<a href="http://tools.ietf.org/html/rfc1321">这里</a>，简单说如下：</p>
-
-<ul>
-<li>首先需要对字符串进行扩展，使其位长对512求余的结果等于448。因此，位长（Bits Length）将被扩展至N*512+448，N为一个非负整数，N可以是零。填充的方法一般是在信息的后面填充一个1和无数个0，直到满足上面的条件时才停止用0对信息的填充。</li>
-<li>然后，在这个结果后面附加一个以64位二进制表示的填充前信息长度。经过这两步的处理，现在的位长是 <code>N*512+448+64 = (N+1）*512</code>，即长度恰好是512的整数倍。</li>
-<li>最后以512位分组来处理输入的信息，且每一分组又被划分为16个32位子分组，经过了一系列的处理后，算法的输出由四个32位分组组成，将这四个32位分组级联后将生成一个128位散列值。</li>
-</ul>
-
-
-<p>MD5对碰撞攻击(不同的输入生成相同的hash)等攻击的抵抗力比较差。</p>
-
-<p>在python中使用MD5:</p>
-
-<pre><code class="python">import os
+</code></pre> <p>当然，要明白这些算法究竟怎么回事才叫认真负责的态度：下面这些内容主要来自<a href="http://www.laurentluce.com/posts/python-and-cryptography-with-pycrypto/">这篇文章</a></p> <a name="L.strong.Hash..strong."></a> <h2><strong>Hash</strong></h2> <p>hash就是给输入的字符串生成一个固定长度的字符串（被称为hash值）。理想的hash要满足：</p> <ul> <li>根据生成的字符串非常难猜到输入的字符串</li> <li>任意两个不同的字符串不会生成相同的hash值</li> <li>如果输入字符串没有变生成的hash值应该不会变</li> </ul> <p><img src="/downloads/images/hash.png" title="Don't touch me..." alt="hash"/></p> <p>hash函数可以被用来计算checksum，也可以用来进行数字签名和认证。</p> <a name="L.strong.MD5..strong."></a> <h3><strong>MD5</strong></h3> <p>1991年面世的一种hash算法，生成的字符串长度为128bit。</p> <p>它的算法详情可以看<a href="http://tools.ietf.org/html/rfc1321">这里</a>，简单说如下：</p> <ul> <li>首先需要对字符串进行扩展，使其位长对512求余的结果等于448。因此，位长（Bits Length）将被扩展至N*512+448，N为一个非负整数，N可以是零。填充的方法一般是在信息的后面填充一个1和无数个0，直到满足上面的条件时才停止用0对信息的填充。</li> <li>然后，在这个结果后面附加一个以64位二进制表示的填充前信息长度。经过这两步的处理，现在的位长是 <code>N*512+448+64 = (N+1）*512</code>，即长度恰好是512的整数倍。</li> <li>最后以512位分组来处理输入的信息，且每一分组又被划分为16个32位子分组，经过了一系列的处理后，算法的输出由四个32位分组组成，将这四个32位分组级联后将生成一个128位散列值。</li> </ul> <p>MD5对碰撞攻击(不同的输入生成相同的hash)等攻击的抵抗力比较差。</p> <p>在python中使用MD5:</p> <pre><code class="python">import os
 from Crypto.Hash import MD5
 
 def get_file_checksum(filename):
@@ -336,23 +135,7 @@ def get_file_checksum(filename):
                 break
             h.update(chunk)
     return h.hexdigest()
-</code></pre>
-
-<a name="L.strong...............strong."></a>
-<h2><strong>加密算法</strong></h2>
-
-<p>加密算法使用key把输入的文本变成加密的文本。有两种加密的方式：分块和流。分块处理的单位是固定大小比如8或者16个bytes，流则是一个一个byte。只有知道了解密的<code>key</code>才能对加密的文本进行解密。</p>
-
-<a name="L.em.........em."></a>
-<h3><em>分块</em></h3>
-
-<p>DES是分块加密的一种，其处理对象的大小是8个bytes。DES最简单的模式是所谓的<code>ECB( electronic code book)模式</code>，也就是每个block都是独立加密，最后组成整个加密后的文本。</p>
-
-<p><img src="/downloads/images/block_cipher_ebc.png" title="Don't touch me..." alt="ecb" /></p>
-
-<p>使用pycrpto对文本使用<code>DES/ECB</code>加密很简单。假设key是<code>10234567</code>，而我们要加密的文本是<code>abcdefgh</code>，那么：</p>
-
-<pre><code class="python">&gt;&gt;&gt; from Crypto.Cipher import DES
+</code></pre> <a name="L.strong...............strong."></a> <h2><strong>加密算法</strong></h2> <p>加密算法使用key把输入的文本变成加密的文本。有两种加密的方式：分块和流。分块处理的单位是固定大小比如8或者16个bytes，流则是一个一个byte。只有知道了解密的<code>key</code>才能对加密的文本进行解密。</p> <a name="L.em.........em."></a> <h3><em>分块</em></h3> <p>DES是分块加密的一种，其处理对象的大小是8个bytes。DES最简单的模式是所谓的<code>ECB( electronic code book)模式</code>，也就是每个block都是独立加密，最后组成整个加密后的文本。</p> <p><img src="/downloads/images/block_cipher_ebc.png" title="Don't touch me..." alt="ecb"/></p> <p>使用pycrpto对文本使用<code>DES/ECB</code>加密很简单。假设key是<code>10234567</code>，而我们要加密的文本是<code>abcdefgh</code>，那么：</p> <pre><code class="python">&gt;&gt;&gt; from Crypto.Cipher import DES
 &gt;&gt;&gt; des = DES.new('01234567', DES.MODE_ECB)
 &gt;&gt;&gt; text = 'abcdefgh'
 &gt;&gt;&gt; cipher_text = des.encrypt(text)
@@ -360,15 +143,7 @@ def get_file_checksum(filename):
 '\xec\xc2\x9e\xd9] a\xd0'
 &gt;&gt;&gt; des.decrypt(cipher_text)
 'abcdefgh'
-</code></pre>
-
-<p>比<code>ECB</code>更健壮的是<code>CFB (Cipher feedback)</code>模式，也就是先组合前面加密的文本和待加密的文本，然后进行加密。</p>
-
-<p><img src="/downloads/images/block_cipher_cfb.png" title="Don't touch me..." alt="cfb" /></p>
-
-<p>下面的例子说明了算法的工作流程：待加密的是<code>abcdefghijklmnop</code>，两倍8bytes。首先生成一个随机的字符串作为初始的<code>iv</code>来生成两个<code>DES</code>对象，一个用来加密一个用来解密。之所以需要这两个对象，是因为<code>feedback</code>值会随着block被加密后变化。</p>
-
-<pre><code class="python">&gt;&gt;&gt; from Crypto.Cipher import DES
+</code></pre> <p>比<code>ECB</code>更健壮的是<code>CFB (Cipher feedback)</code>模式，也就是先组合前面加密的文本和待加密的文本，然后进行加密。</p> <p><img src="/downloads/images/block_cipher_cfb.png" title="Don't touch me..." alt="cfb"/></p> <p>下面的例子说明了算法的工作流程：待加密的是<code>abcdefghijklmnop</code>，两倍8bytes。首先生成一个随机的字符串作为初始的<code>iv</code>来生成两个<code>DES</code>对象，一个用来加密一个用来解密。之所以需要这两个对象，是因为<code>feedback</code>值会随着block被加密后变化。</p> <pre><code class="python">&gt;&gt;&gt; from Crypto.Cipher import DES
 &gt;&gt;&gt; from Crypto import Random
 &gt;&gt;&gt; iv = Random.get_random_bytes(8)
 &gt;&gt;&gt; des1 = DES.new('01234567', DES.MODE_CFB, iv)
@@ -379,16 +154,7 @@ def get_file_checksum(filename):
 "?\\\x8e\x86\xeb\xab\x8b\x97'\xa1W\xde\x89!\xc3d"
 &gt;&gt;&gt; des2.decrypt(cipher_text)
 'abcdefghijklmnop'
-</code></pre>
-
-<a name="L.em......em."></a>
-<h3><em>流</em></h3>
-
-<p>这些算法基于一个个bytes，所以block的大小总是1 byte。pycrypto提供了两个这样的算法：<code>ARC4</code> 和 <code>XOR</code>。这种基于流的算法只有一种模式：<code>ECB</code>。</p>
-
-<p>下面是一个<code>ARC4</code>的算法，使用了key <code>01234567</code>:</p>
-
-<pre><code class="python">&gt;&gt;&gt; from Crypto.Cipher import ARC4
+</code></pre> <a name="L.em......em."></a> <h3><em>流</em></h3> <p>这些算法基于一个个bytes，所以block的大小总是1 byte。pycrypto提供了两个这样的算法：<code>ARC4</code> 和 <code>XOR</code>。这种基于流的算法只有一种模式：<code>ECB</code>。</p> <p>下面是一个<code>ARC4</code>的算法，使用了key <code>01234567</code>:</p> <pre><code class="python">&gt;&gt;&gt; from Crypto.Cipher import ARC4
 &gt;&gt;&gt; obj1 = ARC4.new('01234567')
 &gt;&gt;&gt; obj2 = ARC4.new('01234567')
 &gt;&gt;&gt; text = 'abcdefghijklmnop'
@@ -397,14 +163,7 @@ def get_file_checksum(filename):
 '\xf0\xb7\x90{#ABXY9\xd06\x9f\xc0\x8c '
 &gt;&gt;&gt; obj2.decrypt(cipher_text)
 'abcdefghijklmnop'
-</code></pre>
-
-<a name="L.strong...............strong."></a>
-<h3><strong>应用程序</strong></h3>
-
-<p>在程序里面我们常常使用DES3对文件进行加密解密操作。一般来说操作对象是文件时，总是分成一个个chunck来处理以免占用太多内存。如果读入的chunck少于16bytes，就需要扩展它才能进行加密。</p>
-
-<pre><code class="python">import os
+</code></pre> <a name="L.strong...............strong."></a> <h3><strong>应用程序</strong></h3> <p>在程序里面我们常常使用DES3对文件进行加密解密操作。一般来说操作对象是文件时，总是分成一个个chunck来处理以免占用太多内存。如果读入的chunck少于16bytes，就需要扩展它才能进行加密。</p> <pre><code class="python">import os
 from Crypto.Cipher import DES3
 
 def encrypt_file(in_filename, out_filename, chunk_size, key, iv):
@@ -430,11 +189,7 @@ def decrypt_file(in_filename, out_filename, chunk_size, key, iv):
                 if len(chunk) == 0:
                     break
                 out_file.write(des3.decrypt(chunk))
-</code></pre>
-
-<p>有了上面定义的这两个函数我们可以这样使用它们：</p>
-
-<pre><code class="python">from Crypto import Random
+</code></pre> <p>有了上面定义的这两个函数我们可以这样使用它们：</p> <pre><code class="python">from Crypto import Random
 iv = Random.get_random_bytes(8)
 with open('to_enc.txt', 'r') as f:
     print 'to_enc.txt: %s' % f.read()
@@ -444,56 +199,24 @@ with open('to_enc.enc', 'r') as f:
 decrypt_file('to_enc.enc', 'to_enc.dec', 8192, key, iv)
 with open('to_enc.dec', 'r') as f:
     print 'to_enc.dec: %s' % f.read()
-</code></pre>
-
-<p>程序的输出如下：</p>
-
-<pre><code class="bash">to_enc.txt: this content needs to be encrypted.
+</code></pre> <p>程序的输出如下：</p> <pre><code class="bash">to_enc.txt: this content needs to be encrypted.
 
 to_enc.enc: ??~?E??.??]!=)??"t?
                                 JpDw???R?UN0?=??R?UN0?}0r?FV9
 to_enc.dec: this content needs to be encrypted.
-</code></pre>
-
-<a name="L.strong.Public-key.algorithms..strong."></a>
-<h2><strong>Public-key algorithms</strong></h2>
-
-<p>上面提到的加密算法的一大问题是双方都需要知道key。而<code>public-key算法</code>提供了两个key，一个用来加密，一个用来解密。</p>
-
-<p><img src="/downloads/images/public_private_key.png" title="Don't touch me..." alt="ecb" /></p>
-
-<a name="L.strong.public.private.key..strong."></a>
-<h3><strong>public/private key</strong></h3>
-
-<p>使用pycrpto很容易就可以生成一对<code>private/public key</code>，生成key的时候必须规定key的长度，越长越安全。除开长度，还需要设定生成key的方法。下面是一个使用RSA生成1024bit长度key的过程：</p>
-
-<pre><code class="python">&gt;&gt;&gt; from Crypto.PublicKey import RSA
+</code></pre> <a name="L.strong.Public-key.algorithms..strong."></a> <h2><strong>Public-key algorithms</strong></h2> <p>上面提到的加密算法的一大问题是双方都需要知道key。而<code>public-key算法</code>提供了两个key，一个用来加密，一个用来解密。</p> <p><img src="/downloads/images/public_private_key.png" title="Don't touch me..." alt="ecb"/></p> <a name="L.strong.public.private.key..strong."></a> <h3><strong>public/private key</strong></h3> <p>使用pycrpto很容易就可以生成一对<code>private/public key</code>，生成key的时候必须规定key的长度，越长越安全。除开长度，还需要设定生成key的方法。下面是一个使用RSA生成1024bit长度key的过程：</p> <pre><code class="python">&gt;&gt;&gt; from Crypto.PublicKey import RSA
 &gt;&gt;&gt; from Crypto import Random
 &gt;&gt;&gt; random_generator = Random.new().read
 &gt;&gt;&gt; key = RSA.generate(1024, random_generator)
 &gt;&gt;&gt; key
 &lt;_RSAobj @0x7f60cf1b57e8 n(1024),e,d,p,q,u,private&gt;
-</code></pre>
-
-<p>key对象有一系列的方法：
-- <code>can_encrypt()</code> 返回是否能用key来加密数据
-- <code>can_sign()</code> 返回是否能用key来进行签名
-- <code>has_private()</code> 返回是否有private key</p>
-
-<pre><code class="python">&gt;&gt;&gt; key.can_encrypt()
+</code></pre> <p>key对象有一系列的方法： - <code>can_encrypt()</code> 返回是否能用key来加密数据 - <code>can_sign()</code> 返回是否能用key来进行签名 - <code>has_private()</code> 返回是否有private key</p> <pre><code class="python">&gt;&gt;&gt; key.can_encrypt()
 True
 &gt;&gt;&gt; key.can_sign()
 True
 &gt;&gt;&gt; key.has_private()
 True
-</code></pre>
-
-<a name="L.strong.........strong."></a>
-<h3><strong>加密</strong></h3>
-
-<p>现在我们有了一对key，我们就可以加密一些数据了。加密的时候使用的是公钥: <code>public key</code> ：</p>
-
-<pre><code class="python">&gt;&gt;&gt; public_key = key.publickey()
+</code></pre> <a name="L.strong.........strong."></a> <h3><strong>加密</strong></h3> <p>现在我们有了一对key，我们就可以加密一些数据了。加密的时候使用的是公钥: <code>public key</code> ：</p> <pre><code class="python">&gt;&gt;&gt; public_key = key.publickey()
 &gt;&gt;&gt; enc_data = public_key.encrypt('abcdefgh', 32)
 &gt;&gt;&gt; enc_data
 ('\x11\x86\x8b\xfa\x82\xdf\xe3sN ~@\xdbP\x85
@@ -502,23 +225,9 @@ True
 \x94\xf0\x7f7@\x9c\x02suc\xcc\xc2j\x0c\xce\x92\x8d\xdc\x00uL\xd6.
 \x84~/\xed\xd7\xc5\xbe\xd2\x98\xec\xe4\xda\xd1L\rM`\x88\x13V\xe1M\n X
 \xce\x13 \xaf\x10|\x80\x0e\x14\xbc\x14\x1ec\xf6Rs\xbb\x93\x06\xbe',)
-</code></pre>
-
-<a name="L.strong.........strong."></a>
-<h3><strong>解密</strong></h3>
-
-<p>只要有用于解密的私钥(private key)解密是很简单的：</p>
-
-<pre><code class="python">&gt;&gt;&gt; key.decrypt(enc_data)
+</code></pre> <a name="L.strong.........strong."></a> <h3><strong>解密</strong></h3> <p>只要有用于解密的私钥(private key)解密是很简单的：</p> <pre><code class="python">&gt;&gt;&gt; key.decrypt(enc_data)
 'abcdefgh'
-</code></pre>
-
-<a name="L.strong.........strong."></a>
-<h3><strong>签名</strong></h3>
-
-<p>对信息进行签名，可以用来验证信息的作者，让我们相信它的来源。下面这个例子展示了如何先算出信息的hash值，然后送给RSA key的<code>sign()</code>方法。使用其他算法如<code>DSA</code>或者是<code>ElGamal</code>也类似。</p>
-
-<pre><code class="python">&gt;&gt;&gt; from Crypto.Hash import MD5
+</code></pre> <a name="L.strong.........strong."></a> <h3><strong>签名</strong></h3> <p>对信息进行签名，可以用来验证信息的作者，让我们相信它的来源。下面这个例子展示了如何先算出信息的hash值，然后送给RSA key的<code>sign()</code>方法。使用其他算法如<code>DSA</code>或者是<code>ElGamal</code>也类似。</p> <pre><code class="python">&gt;&gt;&gt; from Crypto.Hash import MD5
 &gt;&gt;&gt; from Crypto.PublicKey import RSA
 &gt;&gt;&gt; from Crypto import Random
 &gt;&gt;&gt; key = RSA.generate(1024, random_generator)
@@ -533,97 +242,14 @@ True
 25996986614087200336035744524518268136542404418603981729787438986
 50177007820700181992412437228386361134849096112920177007759309019
 6400328917297225219942913552938646767912958849053L,)
-</code></pre>
-
-<a name="L.strong.........strong."></a>
-<h3><strong>验证</strong></h3>
-
-<p>只要有公钥，验证信息就很简单了。未加密的文本和签名一起被发送给接收方。接收方计算hash值然后调用公钥的<code>verify()</code>方法来进行验证：</p>
-
-<pre><code class="python">&gt;&gt;&gt; text = 'abcdefgh'
+</code></pre> <a name="L.strong.........strong."></a> <h3><strong>验证</strong></h3> <p>只要有公钥，验证信息就很简单了。未加密的文本和签名一起被发送给接收方。接收方计算hash值然后调用公钥的<code>verify()</code>方法来进行验证：</p> <pre><code class="python">&gt;&gt;&gt; text = 'abcdefgh'
 &gt;&gt;&gt; hash = MD5.new(text).digest()
 &gt;&gt;&gt; public_key.verify(hash, signature)
 True
-</code></pre>
-</div>
-
-
-  <footer>
-    <p class="meta">
-      
-<span class="byline author vcard">Posted by <span class="fn">Lenciel</span></span>
-
-      
-
-
-
-
-
-      
-
-<span class="categories">
-  
-    <a class='category' href='/categories/cryptography/'>cryptography</a>, <a class='category' href='/categories/notes/'>notes</a>, <a class='category' href='/categories/python/'>python</a>, <a class='category' href='/categories/tutorials/'>tutorials</a>
-  
-</span>
-
-
-    </p>
-    
-      <div class="sharing">
-  
-  
-  
-  <!-- JiaThis Button BEGIN -->
-  <!--<div class="jiathis_style_24x24">
-    <a class="jiathis_button_qzone"></a>
-    <a class="jiathis_button_tsina"></a>
-    <a class="jiathis_button_tqq"></a>
-    <a class="jiathis_button_weixin"></a>
-    <a class="jiathis_button_renren"></a>
-    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
-    <a class="jiathis_counter_style"></a>
-    </div>
-    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>-->
-  <!-- JiaThis Button END -->
-</div>
-
-    
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/2013/07/doomsday-machines/" title="Previous Post: Doomsday Machines">&laquo; Doomsday Machines</a>
-      
-      
-        <a class="basic-alignment right" href="/2013/07/except-for-greed-and-disgust/" title="Next Post: Except For Greed and Disgust">Except For Greed and Disgust &raquo;</a>
-      
-    </p>
-  </footer>
-</article>
-
-</div>
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a>
-<span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span>
-  <section class="contruction-wrap">
-    <div class="contruction"></div>
-  </section>
-</p>
-
-</footer>
-  
-
-
-
-
-<script type="text/javascript">
+</code></pre> </div> <footer> <p class="meta"> <span class="byline author vcard">Posted by <span class="fn">Lenciel</span></span> <span class="categories"> <a class='category' href='/categories/cryptography/'>cryptography</a>, <a class='category' href='/categories/notes/'>notes</a>, <a class='category' href='/categories/python/'>python</a>, <a class='category' href='/categories/tutorials/'>tutorials</a> </span> </p> <div class="sharing"> </div> <p class="meta"> <a class="basic-alignment left" href="/2013/07/doomsday-machines/" title="Previous Post: Doomsday Machines">&laquo; Doomsday Machines</a> <a class="basic-alignment right" href="/2013/07/except-for-greed-and-disgust/" title="Next Post: Except For Greed and Disgust">Except For Greed and Disgust &raquo;</a> </p> </footer> </article> </div> </div> </div> <footer role="contentinfo"><p> Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a> <span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span> <section class="contruction-wrap"> <div class="contruction"></div> </section> </p> </footer> <script type="text/javascript">
   var stylesheet = document.createElement('link');
   stylesheet.href = '/assets/stylesheets/app.css';
   stylesheet.rel = 'stylesheet';
   stylesheet.type = 'text/css';
   document.getElementsByTagName('head')[0].appendChild(stylesheet);
-</script>
-
-</body>
-</html>
+</script> </body> </html>

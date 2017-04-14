@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: linux | @Lenciel]]></title>
-  <link href="http://172.16.121.110:4000/categories/linux/atom.xml" rel="self"/>
-  <link href="http://172.16.121.110:4000/"/>
-  <updated>2017-04-06T19:01:30+08:00</updated>
-  <id>http://172.16.121.110:4000/</id>
+  <link href="http://lenciel.com/categories/linux/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-04-14T11:19:13+08:00</updated>
+  <id>http://lenciel.com/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[Openssl Heartbleed Bug]]></title>
-    <link href="http://172.16.121.110:4000/2014/04/openssl-heartbleed-bug/"/>
+    <link href="http://lenciel.com/2014/04/openssl-heartbleed-bug/"/>
     <updated>2014-04-10T11:29:15+08:00</updated>
-    <id>http://172.16.121.110:4000/2014/04/openssl-heartbleed-bug</id>
+    <id>http://lenciel.com/2014/04/openssl-heartbleed-bug</id>
     <content type="html"><![CDATA[<p>连某宝都中招的<a href="http://heartbleed.com/">Heartbleed bug</a>究竟是个什么东西？简单地说就是攻击者可以读最多64KB内存的内容。</p>
 
 <p>读了这64KB能干嘛？用报这个bug的人的话来说：</p>
@@ -137,9 +137,9 @@ memcpy(bp, pl, payload);
   
   <entry>
     <title type="html"><![CDATA[解决iowait过高的告警]]></title>
-    <link href="http://172.16.121.110:4000/2014/02/hunting-the-iowait-problem-maker/"/>
+    <link href="http://lenciel.com/2014/02/hunting-the-iowait-problem-maker/"/>
     <updated>2014-02-24T09:22:00+08:00</updated>
-    <id>http://172.16.121.110:4000/2014/02/hunting-the-iowait-problem-maker</id>
+    <id>http://lenciel.com/2014/02/hunting-the-iowait-problem-maker</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/2014_02/warning_letter.png" title="Don't touch me..." alt="warning letter" /></p>
 
 <p>从Nagios切到<a href="https://www.zabbix.com">Zabbix</a>之后，经常大清早被iowait过高的告警邮件叫醒。因为这套Zabbix监控是本座搭的，所以解决这个问题就只有本座来了&hellip;..哎，不知道是不是把首席运营官给宠坏了。</p>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: angular | @Lenciel]]></title>
-  <link href="http://172.16.121.110:4000/categories/angular/atom.xml" rel="self"/>
-  <link href="http://172.16.121.110:4000/"/>
-  <updated>2017-04-06T19:01:30+08:00</updated>
-  <id>http://172.16.121.110:4000/</id>
+  <link href="http://lenciel.com/categories/angular/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-04-14T11:19:13+08:00</updated>
+  <id>http://lenciel.com/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[勾股定理]]></title>
-    <link href="http://172.16.121.110:4000/2014/04/time-to-talk-about-math/"/>
+    <link href="http://lenciel.com/2014/04/time-to-talk-about-math/"/>
     <updated>2014-04-02T14:30:00+08:00</updated>
-    <id>http://172.16.121.110:4000/2014/04/time-to-talk-about-math</id>
+    <id>http://lenciel.com/2014/04/time-to-talk-about-math</id>
     <content type="html"><![CDATA[<p>这篇日志主要是想试试:</p>
 
 <ul>

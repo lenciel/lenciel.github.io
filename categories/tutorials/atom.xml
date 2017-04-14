@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: tutorials | @Lenciel]]></title>
-  <link href="http://172.16.121.110:4000/categories/tutorials/atom.xml" rel="self"/>
-  <link href="http://172.16.121.110:4000/"/>
-  <updated>2017-04-06T19:01:30+08:00</updated>
-  <id>http://172.16.121.110:4000/</id>
+  <link href="http://lenciel.com/categories/tutorials/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-04-14T11:19:13+08:00</updated>
+  <id>http://lenciel.com/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[构建Deployment系统 (1)]]></title>
-    <link href="http://172.16.121.110:4000/2014/04/pipeline-for-deployment/"/>
+    <link href="http://lenciel.com/2014/04/pipeline-for-deployment/"/>
     <updated>2014-04-22T02:49:38+08:00</updated>
-    <id>http://172.16.121.110:4000/2014/04/pipeline-for-deployment</id>
+    <id>http://lenciel.com/2014/04/pipeline-for-deployment</id>
     <content type="html"><![CDATA[<p>对软件公司，特别是互联网软件公司来说，发布流程是企业的<a href="http://lenciel.com/2013/05/the-importance-of-deploy-as-will/">核心竞争力</a>。</p>
 
 <p>那么什么是一个好的发布流程呢？Github（别忘了它本身也是一家软件公司）的CTO在介绍<a href="http://lenciel.com/2013/03/boxen-introduction/">Boxen
@@ -147,9 +147,9 @@
   
   <entry>
     <title type="html"><![CDATA[Pomodoro Technique]]></title>
-    <link href="http://172.16.121.110:4000/2014/04/pomodoroda-tech/"/>
+    <link href="http://lenciel.com/2014/04/pomodoroda-tech/"/>
     <updated>2014-04-03T13:44:35+08:00</updated>
-    <id>http://172.16.121.110:4000/2014/04/pomodoroda-tech</id>
+    <id>http://lenciel.com/2014/04/pomodoroda-tech</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/2014_04/pomodoro_tech.jpg" title="Don't touch me..." alt="Pomodoro Technique" /></p>
 
 <p>时间管理对每个人都是非常重要的，相关的理论和工具都有很多。本座试过很轻量的<a href="https://github.com/vim-scripts/todolist.vim">todolist.vim</a>，也试过很大气的<a href="https://www.omnigroup.com/omnifocus">OmniFocus</a>，但可能因为自己比较爱随意乱来的性格，这些工具最终都被本座慢慢荒弃。</p>
@@ -278,9 +278,9 @@
   
   <entry>
     <title type="html"><![CDATA[Cryptography and Python]]></title>
-    <link href="http://172.16.121.110:4000/2013/07/cryptography-and-python/"/>
+    <link href="http://lenciel.com/2013/07/cryptography-and-python/"/>
     <updated>2013-07-25T15:13:00+08:00</updated>
-    <id>http://172.16.121.110:4000/2013/07/cryptography-and-python</id>
+    <id>http://lenciel.com/2013/07/cryptography-and-python</id>
     <content type="html"><![CDATA[<p>这周我们的一个项目里面需要调用第三方接口。对方的安全机制是调用时要进行加密和校验，但它们的文档没有描述具体是怎么加密的，而是给了一段代码：</p>
 
 <pre><code class="java">    private static BASE64Encoder base64 = new BASE64Encoder();
@@ -665,9 +665,9 @@ True
   
   <entry>
     <title type="html"><![CDATA[tmux: Introduction and Tips]]></title>
-    <link href="http://172.16.121.110:4000/2013/07/tmux-introduction-and-tips/"/>
+    <link href="http://lenciel.com/2013/07/tmux-introduction-and-tips/"/>
     <updated>2013-07-21T14:02:00+08:00</updated>
-    <id>http://172.16.121.110:4000/2013/07/tmux-introduction-and-tips</id>
+    <id>http://lenciel.com/2013/07/tmux-introduction-and-tips</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/tmux_tips_1.png" title="Don't touch me..." alt="tmux screenshot 1" /></p>
 
 <a name="L.strong.........strong."></a>
@@ -946,9 +946,9 @@ basic: 1 windows (created Thu Sep 27 14:32:50 2012) [122x22]
   
   <entry>
     <title type="html"><![CDATA[Vagrant for Django I: Basic]]></title>
-    <link href="http://172.16.121.110:4000/2013/06/vagrant-on-mac-os-x/"/>
+    <link href="http://lenciel.com/2013/06/vagrant-on-mac-os-x/"/>
     <updated>2013-06-19T15:19:00+08:00</updated>
-    <id>http://172.16.121.110:4000/2013/06/vagrant-on-mac-os-x</id>
+    <id>http://lenciel.com/2013/06/vagrant-on-mac-os-x</id>
     <content type="html"><![CDATA[<p>Vagrant<a href="http://www.vagrantup.com/vmware">最近支持了VMWare</a>，但是要钱的东西我们玩不起。本系列主要分享一下Vagrant+VirtualBox搭配起来如何使用。</p>
 
 <a name="L......VirtualBox"></a>

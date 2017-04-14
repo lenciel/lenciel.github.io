@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: movie | @Lenciel]]></title>
-  <link href="http://172.16.121.110:4000/categories/movie/atom.xml" rel="self"/>
-  <link href="http://172.16.121.110:4000/"/>
-  <updated>2017-04-06T19:01:30+08:00</updated>
-  <id>http://172.16.121.110:4000/</id>
+  <link href="http://lenciel.com/categories/movie/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-04-14T11:19:13+08:00</updated>
+  <id>http://lenciel.com/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[《鸟人》]]></title>
-    <link href="http://172.16.121.110:4000/2015/02/birdman/"/>
+    <link href="http://lenciel.com/2015/02/birdman/"/>
     <updated>2015-02-25T20:02:27+08:00</updated>
-    <id>http://172.16.121.110:4000/2015/02/birdman</id>
+    <id>http://lenciel.com/2015/02/birdman</id>
     <content type="html"><![CDATA[<p><img style="width:30%" src="/downloads/images/2015_02/birdman_1.jpg" title="Don't touch me..." alt="Vhost threshold" />
 <img style="width:30%" src="/downloads/images/2015_02/birdman_2.jpg" title="Don't touch me..." alt="Vhost threshold" />
 <img style="width:30%" src="/downloads/images/2015_02/birdman_3.jpg" title="Don't touch me..." alt="Vhost threshold" /></p>
@@ -72,9 +72,9 @@
   
   <entry>
     <title type="html"><![CDATA[You mean more to me]]></title>
-    <link href="http://172.16.121.110:4000/2014/05/you-mean-more-to-me/"/>
+    <link href="http://lenciel.com/2014/05/you-mean-more-to-me/"/>
     <updated>2014-05-05T23:38:20+08:00</updated>
-    <id>http://172.16.121.110:4000/2014/05/you-mean-more-to-me</id>
+    <id>http://lenciel.com/2014/05/you-mean-more-to-me</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/iwdrm/you_mean_more_to_me.gif" title="Don't touch me..." alt="You Mean More To Me" /></p>
 
 <p><blockquote><p>&ldquo;You mean more to me than any scientific truth.&rdquo;</p><footer><strong>Donatas Banionis <a href="http://www.imdb.com/title/tt0069293/">http://www.imdb.com/title/tt0069293/</a> Солярис(1972)</strong></footer></blockquote></p>
@@ -83,9 +83,9 @@
   
   <entry>
     <title type="html"><![CDATA[Change The Light]]></title>
-    <link href="http://172.16.121.110:4000/2014/04/change-the-light/"/>
+    <link href="http://lenciel.com/2014/04/change-the-light/"/>
     <updated>2014-04-27T18:31:55+08:00</updated>
-    <id>http://172.16.121.110:4000/2014/04/change-the-light</id>
+    <id>http://lenciel.com/2014/04/change-the-light</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/iwdrm/change_the_light.gif" title="Don't touch me..." alt="Change the light" /></p>
 
 <p><blockquote><p>&ldquo;It’s just that it may change the light.&rdquo;</p></p><p><a name="L...endblockquote..."></a><br/><h2></p><footer><strong>Tracy Chevalier  <a href="http://www.imdb.com/title/tt0335119/">http://www.imdb.com/title/tt0335119/</a> Girl with a Pearl Earring(2003)</strong></footer></blockquote></h2>
@@ -94,9 +94,9 @@
   
   <entry>
     <title type="html"><![CDATA[Lenciel看电影 - Memories of Matruko]]></title>
-    <link href="http://172.16.121.110:4000/2007/02/movie-review-memories-of-matruko/"/>
+    <link href="http://lenciel.com/2007/02/movie-review-memories-of-matruko/"/>
     <updated>2007-02-11T19:53:00+08:00</updated>
-    <id>http://172.16.121.110:4000/2007/02/movie-review-memories-of-matruko</id>
+    <id>http://lenciel.com/2007/02/movie-review-memories-of-matruko</id>
     <content type="html"><![CDATA[<p><img alt="block" src="/downloads/images/2007_02/memo_of_matruko.png" align="left" style="margin:5px"/>  松子失恋了十次之后，过起行尸走肉般的生活。当她终于再次张开双手拥抱生活的时候，被一群孩子杀死。看到这里，本座终于觉得，小过年的，看这种片子实在是很不应景。</p>
 
 <p>向本座推荐此片的人，有的在她做鬼脸的时候哭了，有的在她被抛弃的时候哭了，有的在她出狱的时候看到理发师美满生活的时候哭了，有的在她喊为什么的时候哭了，还有的，干脆就是一直在哭。</p>
@@ -124,9 +124,9 @@
   
   <entry>
     <title type="html"><![CDATA[Lenciel看电影 - 断背山]]></title>
-    <link href="http://172.16.121.110:4000/2006/02/movie-review-the-brokeback-mountain/"/>
+    <link href="http://lenciel.com/2006/02/movie-review-the-brokeback-mountain/"/>
     <updated>2006-02-25T19:53:00+08:00</updated>
-    <id>http://172.16.121.110:4000/2006/02/movie-review-the-brokeback-mountain</id>
+    <id>http://lenciel.com/2006/02/movie-review-the-brokeback-mountain</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/2006_02/brokeback_mountain_1.jpg" title="Don't touch me..." alt="Vhost threshold" /></p>
 
 <p>其实在夺魁法事后不久，本座就已经有机会观摩《断背山》了（好吧，你们说叫《断臂山》）。但是由于下定决心要先看小说，拖着拖着就回了学校，却一直没有足够长度的安静时间来看这部“获奖影片”。昨天和阿枯在网上整蛊“每个人心中都有一座断背山”的时候，才下定决心要在周末拿下这块心病。</p>

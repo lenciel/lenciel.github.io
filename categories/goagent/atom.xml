@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: goagent | @Lenciel]]></title>
-  <link href="http://172.16.121.110:4000/categories/goagent/atom.xml" rel="self"/>
-  <link href="http://172.16.121.110:4000/"/>
-  <updated>2017-04-06T19:01:30+08:00</updated>
-  <id>http://172.16.121.110:4000/</id>
+  <link href="http://lenciel.com/categories/goagent/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-04-14T11:19:13+08:00</updated>
+  <id>http://lenciel.com/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[Mac下后台运行goagent]]></title>
-    <link href="http://172.16.121.110:4000/2013/11/replace-goagentx-with-lines-of-scripts/"/>
+    <link href="http://lenciel.com/2013/11/replace-goagentx-with-lines-of-scripts/"/>
     <updated>2013-11-14T13:22:00+08:00</updated>
-    <id>http://172.16.121.110:4000/2013/11/replace-goagentx-with-lines-of-scripts</id>
+    <id>http://lenciel.com/2013/11/replace-goagentx-with-lines-of-scripts</id>
     <content type="html"><![CDATA[<p>几年过去了，<a href="https://code.google.com/p/goagent/">Goagent</a>是本座翻墙唯一的选择。在Mac上使用它最开始我用了<a href="https://github.com/ohdarling/GoAgentX">GoAgentX</a>，但使用了一段时间之后发现几个不太满意的地方：</p>
 
 <ul>

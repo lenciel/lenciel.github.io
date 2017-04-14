@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: 从你的全世界错过 | @Lenciel]]></title>
-  <link href="http://172.16.121.110:4000/categories/cong-ni-de-quan-shi-jie-cuo-guo/atom.xml" rel="self"/>
-  <link href="http://172.16.121.110:4000/"/>
-  <updated>2017-04-06T19:01:30+08:00</updated>
-  <id>http://172.16.121.110:4000/</id>
+  <link href="http://lenciel.com/categories/cong-ni-de-quan-shi-jie-cuo-guo/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-04-14T11:19:13+08:00</updated>
+  <id>http://lenciel.com/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[突然死亡]]></title>
-    <link href="http://172.16.121.110:4000/2014/12/sudden-death/"/>
+    <link href="http://lenciel.com/2014/12/sudden-death/"/>
     <updated>2014-12-09T04:26:28+08:00</updated>
-    <id>http://172.16.121.110:4000/2014/12/sudden-death</id>
+    <id>http://lenciel.com/2014/12/sudden-death</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/2014_12/snow_night.jpg" title="Don't touch me..." alt="Vhost threshold" /></p>
 
 <p>窗外的雪越来越大，很快就盖住了最后一点道路的痕迹。</p>
@@ -167,9 +167,9 @@
   
   <entry>
     <title type="html"><![CDATA[偶然事件]]></title>
-    <link href="http://172.16.121.110:4000/2014/08/but-does-it-flow/"/>
+    <link href="http://lenciel.com/2014/08/but-does-it-flow/"/>
     <updated>2014-08-21T03:54:13+08:00</updated>
-    <id>http://172.16.121.110:4000/2014/08/but-does-it-flow</id>
+    <id>http://lenciel.com/2014/08/but-does-it-flow</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/2014_08/just_let_it_go.jpg" title="Don't touch me..." alt="Vhost threshold" /></p>
 
 <p>葛明走了之后，我们去火葬场送他。</p>
@@ -228,9 +228,9 @@
   
   <entry>
     <title type="html"><![CDATA[白日焰火]]></title>
-    <link href="http://172.16.121.110:4000/2014/07/what-did-ocean-say-2/"/>
+    <link href="http://lenciel.com/2014/07/what-did-ocean-say-2/"/>
     <updated>2014-07-29T01:07:51+08:00</updated>
-    <id>http://172.16.121.110:4000/2014/07/what-did-ocean-say-2</id>
+    <id>http://lenciel.com/2014/07/what-did-ocean-say-2</id>
     <content type="html"><![CDATA[<p><img height="200" width="300" alt="spark" src="/downloads/images/2014_07/Black_Coal_Thin_Ice.jpg" align="left" style="margin:0px 20px;"/> “你不要再来找我了。”文慧这么说的时候，柳徽不敢看她的眼睛。</p>
 
 <p>当然，我们也可以说这是因为文慧身后的工地上高高的塔吊顶端那盏不可一世的探照灯：当时是凌晨一点，那工地又相隔甚远，本来应该是从天而降的灯光变得和视线平行。惨白的光线在茫茫夜色中显得异常刺眼，让人根本不敢看向她所在的方位。</p>
@@ -269,9 +269,9 @@
   
   <entry>
     <title type="html"><![CDATA[What did the ocean say to the other?]]></title>
-    <link href="http://172.16.121.110:4000/2014/06/what-did-ocean-say-1/"/>
+    <link href="http://lenciel.com/2014/06/what-did-ocean-say-1/"/>
     <updated>2014-06-12T01:45:06+08:00</updated>
-    <id>http://172.16.121.110:4000/2014/06/what-did-ocean-say-1</id>
+    <id>http://lenciel.com/2014/06/what-did-ocean-say-1</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/2014_06/wave.jpg" title="Don't touch me..." alt="ocean wave" /></p>
 
 <p>最近读了张嘉佳的《从你的全世界路过》，其实就是他微博“睡前故事”的合集。</p>

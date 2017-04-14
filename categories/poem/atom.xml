@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: poem | @Lenciel]]></title>
-  <link href="http://172.16.121.110:4000/categories/poem/atom.xml" rel="self"/>
-  <link href="http://172.16.121.110:4000/"/>
-  <updated>2017-04-06T19:01:30+08:00</updated>
-  <id>http://172.16.121.110:4000/</id>
+  <link href="http://lenciel.com/categories/poem/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-04-14T11:19:13+08:00</updated>
+  <id>http://lenciel.com/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[自己]]></title>
-    <link href="http://172.16.121.110:4000/2008/06/himself/"/>
+    <link href="http://lenciel.com/2008/06/himself/"/>
     <updated>2008-06-01T23:10:00+08:00</updated>
-    <id>http://172.16.121.110:4000/2008/06/himself</id>
+    <id>http://lenciel.com/2008/06/himself</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/love_affair.png" title="Don't touch me..." alt="Our love" /></p>
 
 <p>他想，让一切都慢下来。<br/>

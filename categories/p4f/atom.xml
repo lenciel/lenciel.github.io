@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: p4f | @Lenciel]]></title>
-  <link href="http://172.16.121.110:4000/categories/p4f/atom.xml" rel="self"/>
-  <link href="http://172.16.121.110:4000/"/>
-  <updated>2017-04-06T19:01:30+08:00</updated>
-  <id>http://172.16.121.110:4000/</id>
+  <link href="http://lenciel.com/categories/p4f/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-04-14T11:19:13+08:00</updated>
+  <id>http://lenciel.com/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[Palm4fun Tech Stack Review Part II]]></title>
-    <link href="http://172.16.121.110:4000/2015/02/p4f-tech-stack-part-2-others/"/>
+    <link href="http://lenciel.com/2015/02/p4f-tech-stack-part-2-others/"/>
     <updated>2015-02-20T14:11:19+08:00</updated>
-    <id>http://172.16.121.110:4000/2015/02/p4f-tech-stack-part-2-others</id>
+    <id>http://lenciel.com/2015/02/p4f-tech-stack-part-2-others</id>
     <content type="html"><![CDATA[<p>距离<a href="http://lenciel.com/2015/01/p4f-tech-stack-part-1-devops/">上篇</a>略久，主要最近很忙。</p>
 
 <a name="Application..amp..Data"></a>
@@ -116,9 +116,9 @@
   
   <entry>
     <title type="html"><![CDATA[Goodbye Palm4fun, and the tech stack review Part I]]></title>
-    <link href="http://172.16.121.110:4000/2015/01/p4f-tech-stack-part-1-devops/"/>
+    <link href="http://lenciel.com/2015/01/p4f-tech-stack-part-1-devops/"/>
     <updated>2015-01-04T14:44:23+08:00</updated>
-    <id>http://172.16.121.110:4000/2015/01/p4f-tech-stack-part-1-devops</id>
+    <id>http://lenciel.com/2015/01/p4f-tech-stack-part-1-devops</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/2015_01/goodbye_palm4fun.png" title="Don't touch me..." alt="goodbye" /></p>
 
 <p>大概两年前，和Bergkamp、194一次计划外的聊天之后，<strike>出于保护直肠的目的</strike>，本座离开了基友密布的<a href="http://www.myriadgroup.com/">Myriad</a>，作为Palm4fun的联合创始人之一，开始捣鼓着自己创业。</p>

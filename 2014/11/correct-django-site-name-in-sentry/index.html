@@ -1,119 +1,4 @@
-
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>Correct Django Site Name During DB Migration - @Lenciel</title>
-  <meta name="author" content="Lenciel">
-
-  
-  <meta name="description" content="
-
-  
-  
-    
-      Correct Django Site Name During DB Migration
-    
-    
-      
-        
-
-
-
-
-
-        
-      
-    
-  
-
-
-
-
-
-Problem
-
-就像截图上显示的那样，真正上...">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://172.16.121.110:4000/2014/11/correct-django-site-name-in-sentry/">
-  <link href="/favicon.png" rel="icon">
-  <script src="/assets/javascripts/app.js"></script>
-  <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml">
-  <meta property="og:title" content="Correct Django Site Name During DB Migration" /><meta itemprop="name" content="Correct Django Site Name During DB Migration" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="http://172.16.121.110:4000/2014/11/correct-django-site-name-in-sentry/" />
-<meta property="og:description" content="
-
-  
-  
-    
-      Correct Django Site Name During DB Migration
-    
-    
-      
-        
-
-
-
-
-
-        
-      
-    
-  
-
-
-
-
-
-Problem
-
-就像截图上显示的那样，真正上..." />
-
-<meta property="og:site_name" content="http://172.16.121.110:4000" />
-<meta property="article:author" content="http://lenciel.com">
-<meta property="article:published_time" content="2014-11-02 16:50:40 +0800" />
-
-<meta property="article:section" content="djangopitfallsentry" />
-<meta itemprop="description" content="
-
-  
-  
-    
-      Correct Django Site Name During DB Migration
-    
-    
-      
-        
-
-
-
-
-
-        
-      
-    
-  
-
-
-
-
-
-Problem
-
-就像截图上显示的那样，真正上..." />
-
-
-  <script>
+<!DOCTYPE html> <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]--> <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]--> <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]--> <head> <meta charset="utf-8"> <title>Correct Django Site Name During DB Migration - @Lenciel</title> <meta name="author" content="Lenciel"> <meta name="description" content=" Correct Django Site Name During DB Migration 2014-11-02 16:50:40 ..."> <meta name="HandheldFriendly" content="True"> <meta name="MobileOptimized" content="320"> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="canonical" href="http://lenciel.com/2014/11/correct-django-site-name-in-sentry/"> <link href="/favicon.png" rel="icon"> <script src="/assets/javascripts/app.js"></script> <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml"> <meta property="og:title" content="Correct Django Site Name During DB Migration"/><meta itemprop="name" content="Correct Django Site Name During DB Migration"/> <meta property="og:type" content="article"/> <meta property="og:url" content="http://lenciel.com/2014/11/correct-django-site-name-in-sentry/"/> <meta property="og:description" content=" Correct Django Site Name During DB Migration 2014-11-02 16:50:40 ..."/> <meta property="og:site_name" content="http://lenciel.com"/> <meta property="article:author" content="http://lenciel.com"> <meta property="article:published_time" content="2014-11-02 16:50:40 +0800"/> <meta property="article:section" content="djangopitfallsentry"/> <meta itemprop="description" content=" Correct Django Site Name During DB Migration 2014-11-02 16:50:40 ..."/> <script>
     var _hmt = _hmt || [];
     (function() {
         var hm = document.createElement("script");
@@ -121,11 +6,7 @@ Problem
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
     })();
-</script>
-
-
-  
-<script>
+</script> <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -134,74 +15,7 @@ Problem
   ga('create', 'UA-175991-6', 'auto');
   ga('send', 'pageview');
 
-</script>
-
-
-</head>
-
-<body    class="collapse-sidebar sidebar-footer" >
-  <header role="banner"><hgroup>
-  <h1><a href="/">@Lenciel</a></h1>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<ul class="main-navigation">
-  <li><a href="/"><i class="icon-home"></i>Home</a></li>
-  <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li>
-  <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div>
-<article class="hentry" role="article">
-  
-  <header>
-    
-      <h1 class="entry-title">Correct Django Site Name During DB Migration</h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-        
-      </p>
-    
-  </header>
-
-
-<div class="entry-content"><p><img src="/downloads/images/2014_11/sentry_incorrect_site.png" title="Don't touch me..." alt="Vhost threshold" /></p>
-
-<a name="Problem"></a>
-<h1>Problem</h1>
-
-<p>就像截图上显示的那样，真正上线过的Django项目都会好像被施放过诅咒一般，让你在某一天看到那个诡异的<code>example.com</code>。</p>
-
-<p>它可能是在系统发出去的重置密码的邮件里面，可能是在Sentry显示的日志里面，也可能就在你用 <code>site_name</code> tag渲染的模板里面。</p>
-
-<p>这个诅咒来自于Django的<a href="https://docs.djangoproject.com/en/1.6/ref/contrib/sites/">sites framework</a>的设计。简单来说，它提供了一个Site对象的<code>manager</code>，来<strong>方便</strong>你用一套代码给多个部署环境使用。换句话说，虽然<code>settings.py</code>文件里面也有一个<code>SITE_NAME</code>，但其实用<code>Site.objects.get_current().name</code>或者是模板里面的<code>site_name</code>取到的不是那个值，而是数据库<code>django_site</code>里面某个<code>site_id</code>对应的Site对象的<code>name</code>。</p>
-
-<p>而如果你<code>syncdb</code>之后没有手工修改过，<code>Site</code>的<code>domain</code>和<code>name</code>都被默认初始化为<code>example.com</code>，这就是问题所在了。</p>
-
-<a name="Solution"></a>
-<h1>Solution</h1>
-
-<p>stackoverflow上<a href="http://stackoverflow.com/questions/3430451/using-django-settings-in-templates">得票最高的答案</a>这样把<code>site_name</code>放到<code>response</code>的<code>local()</code>里面或者是直接做个<code>context_processor</code>是可以的。但这样的坏处是完全抛弃了Django自带的<code>sites</code>，需要在用的地方都专门的处理。</p>
-
-<p>如果要继续使用自带的<code>sites</code>，就得自己写类似下面的fixture：</p>
-
-<pre><code>[
+</script> </head> <body class="collapse-sidebar sidebar-footer"> <header role="banner"><hgroup> <h1><a href="/">@Lenciel</a></h1> </hgroup> </header> <nav role="navigation"><ul class="subscription" data-subscription="rss"> <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li> </ul> <ul class="main-navigation"> <li><a href="/"><i class="icon-home"></i>Home</a></li> <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li> <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li> </ul> </nav> <div id="main"> <div id="content"> <div> <article class="hentry" role="article"> <header> <h1 class="entry-title">Correct Django Site Name During DB Migration</h1> <p class="meta"> <time class='entry-date' datetime='2014-11-02 16:50:40 +0800'> <span class='date'>2014-11-02</span> <span class='time'>16:50:40</span> </p> </header> <div class="entry-content"><p><img src="/downloads/images/2014_11/sentry_incorrect_site.png" title="Don't touch me..." alt="Vhost threshold"/></p> <a name="Problem"></a> <h1>Problem</h1> <p>就像截图上显示的那样，真正上线过的Django项目都会好像被施放过诅咒一般，让你在某一天看到那个诡异的<code>example.com</code>。</p> <p>它可能是在系统发出去的重置密码的邮件里面，可能是在Sentry显示的日志里面，也可能就在你用 <code>site_name</code> tag渲染的模板里面。</p> <p>这个诅咒来自于Django的<a href="https://docs.djangoproject.com/en/1.6/ref/contrib/sites/">sites framework</a>的设计。简单来说，它提供了一个Site对象的<code>manager</code>，来<strong>方便</strong>你用一套代码给多个部署环境使用。换句话说，虽然<code>settings.py</code>文件里面也有一个<code>SITE_NAME</code>，但其实用<code>Site.objects.get_current().name</code>或者是模板里面的<code>site_name</code>取到的不是那个值，而是数据库<code>django_site</code>里面某个<code>site_id</code>对应的Site对象的<code>name</code>。</p> <p>而如果你<code>syncdb</code>之后没有手工修改过，<code>Site</code>的<code>domain</code>和<code>name</code>都被默认初始化为<code>example.com</code>，这就是问题所在了。</p> <a name="Solution"></a> <h1>Solution</h1> <p>stackoverflow上<a href="http://stackoverflow.com/questions/3430451/using-django-settings-in-templates">得票最高的答案</a>这样把<code>site_name</code>放到<code>response</code>的<code>local()</code>里面或者是直接做个<code>context_processor</code>是可以的。但这样的坏处是完全抛弃了Django自带的<code>sites</code>，需要在用的地方都专门的处理。</p> <p>如果要继续使用自带的<code>sites</code>，就得自己写类似下面的fixture：</p> <pre><code>[
   {
     "pk": 1,
     "model": "sites.site",
@@ -236,16 +50,7 @@ Problem
     }
   }
 ]
-</code></pre>
-
-<p>然后在部署的环境里面用<code>django_admin.py</code>或者<code>manage.py</code>运行<code>loaddata</code>。这样的坏处是<code>fixture</code>这东西本来主要是给本地测试生成mock数据的，所以<code>syncdb</code>命令其实不会发起fixture的导入，于是很多时候你部署了新版本之后，会忘记重新导入<code>fixture</code>（其实本来也不该导入fixture)，牛皮癣一样的<code>example.com</code>又回来了。</p>
-
-<a name="Solution.2"></a>
-<h1>Solution 2</h1>
-
-<p>通过修改某个现成app的<code>Migration</code>类的<code>forwards</code>方法，强制它读取一次<code>settings</code>文件里面的配置项：</p>
-
-<pre><code class="python">class Migration(DataMigration):
+</code></pre> <p>然后在部署的环境里面用<code>django_admin.py</code>或者<code>manage.py</code>运行<code>loaddata</code>。这样的坏处是<code>fixture</code>这东西本来主要是给本地测试生成mock数据的，所以<code>syncdb</code>命令其实不会发起fixture的导入，于是很多时候你部署了新版本之后，会忘记重新导入<code>fixture</code>（其实本来也不该导入fixture)，牛皮癣一样的<code>example.com</code>又回来了。</p> <a name="Solution.2"></a> <h1>Solution 2</h1> <p>通过修改某个现成app的<code>Migration</code>类的<code>forwards</code>方法，强制它读取一次<code>settings</code>文件里面的配置项：</p> <pre><code class="python">class Migration(DataMigration):
 
     def forwards(self, orm):
         Site = orm['sites.Site']
@@ -253,98 +58,10 @@ Problem
         site.domain = settings.DOMAIN_NAME
         site.name = settings.SITE_NAME
         site.save()
-</code></pre>
-
-<p>这样一来，就可以在<code>syncdb</code>的时候刷新<code>django_site</code>这张表的配置。</p>
-
-<a name="Solution.Finally"></a>
-<h1>Solution Finally</h1>
-
-<p>在Django 1.7里面，这个倒霉的设计<a href="https://docs.djangoproject.com/en/dev/ref/contrib/sites/?from=olddocs">终于被改掉了</a>。</p>
-
-<blockquote><p>To enable the sites framework, follow these steps:</p><p>1. Add 'django.contrib.sites' to your INSTALLED_APPS setting.<br/>2. Define a SITE_ID setting<br/>3. Run migrate.</p><p>django.contrib.sites registers a post_migrate signal handler which creates a default site named example.com with the domain example.com. This site will also be created after Django creates the test database. To set the correct name and domain for your project, you can use a data migration.</p></blockquote>
-
-
-<p>不但如此，Django 1.7 还引入了<code>django.contrib.sites.middleware.CurrentSiteMiddleware</code>， 如果启用，就可以直接使用<code>request.site</code>而不需要在你的<code>view</code>里面自己去调用<code>site = Site.objects.get_current()</code>了。</p>
-</div>
-
-
-  <footer>
-    <p class="meta">
-      
-<span class="byline author vcard">Posted by <span class="fn">Lenciel</span></span>
-
-      
-
-
-
-
-
-      
-
-<span class="categories">
-  
-    <a class='category' href='/categories/django/'>django</a>, <a class='category' href='/categories/pitfall/'>pitfall</a>, <a class='category' href='/categories/sentry/'>sentry</a>
-  
-</span>
-
-
-    </p>
-    
-      <div class="sharing">
-  
-  
-  
-  <!-- JiaThis Button BEGIN -->
-  <!--<div class="jiathis_style_24x24">
-    <a class="jiathis_button_qzone"></a>
-    <a class="jiathis_button_tsina"></a>
-    <a class="jiathis_button_tqq"></a>
-    <a class="jiathis_button_weixin"></a>
-    <a class="jiathis_button_renren"></a>
-    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
-    <a class="jiathis_counter_style"></a>
-    </div>
-    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>-->
-  <!-- JiaThis Button END -->
-</div>
-
-    
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/2014/09/no-happy-ending/" title="Previous Post: 聚散有期">&laquo; 聚散有期</a>
-      
-      
-        <a class="basic-alignment right" href="/2014/11/7-principles-of-rich-web-applications/" title="Next Post: Web应用开发的七项原则">Web应用开发的七项原则 &raquo;</a>
-      
-    </p>
-  </footer>
-</article>
-
-</div>
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a>
-<span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span>
-  <section class="contruction-wrap">
-    <div class="contruction"></div>
-  </section>
-</p>
-
-</footer>
-  
-
-
-
-
-<script type="text/javascript">
+</code></pre> <p>这样一来，就可以在<code>syncdb</code>的时候刷新<code>django_site</code>这张表的配置。</p> <a name="Solution.Finally"></a> <h1>Solution Finally</h1> <p>在Django 1.7里面，这个倒霉的设计<a href="https://docs.djangoproject.com/en/dev/ref/contrib/sites/?from=olddocs">终于被改掉了</a>。</p> <blockquote><p>To enable the sites framework, follow these steps:</p><p>1. Add 'django.contrib.sites' to your INSTALLED_APPS setting.<br/>2. Define a SITE_ID setting<br/>3. Run migrate.</p><p>django.contrib.sites registers a post_migrate signal handler which creates a default site named example.com with the domain example.com. This site will also be created after Django creates the test database. To set the correct name and domain for your project, you can use a data migration.</p></blockquote> <p>不但如此，Django 1.7 还引入了<code>django.contrib.sites.middleware.CurrentSiteMiddleware</code>， 如果启用，就可以直接使用<code>request.site</code>而不需要在你的<code>view</code>里面自己去调用<code>site = Site.objects.get_current()</code>了。</p> </div> <footer> <p class="meta"> <span class="byline author vcard">Posted by <span class="fn">Lenciel</span></span> <span class="categories"> <a class='category' href='/categories/django/'>django</a>, <a class='category' href='/categories/pitfall/'>pitfall</a>, <a class='category' href='/categories/sentry/'>sentry</a> </span> </p> <div class="sharing"> </div> <p class="meta"> <a class="basic-alignment left" href="/2014/09/no-happy-ending/" title="Previous Post: 聚散有期">&laquo; 聚散有期</a> <a class="basic-alignment right" href="/2014/11/7-principles-of-rich-web-applications/" title="Next Post: Web应用开发的七项原则">Web应用开发的七项原则 &raquo;</a> </p> </footer> </article> </div> </div> </div> <footer role="contentinfo"><p> Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a> <span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span> <section class="contruction-wrap"> <div class="contruction"></div> </section> </p> </footer> <script type="text/javascript">
   var stylesheet = document.createElement('link');
   stylesheet.href = '/assets/stylesheets/app.css';
   stylesheet.rel = 'stylesheet';
   stylesheet.type = 'text/css';
   document.getElementsByTagName('head')[0].appendChild(stylesheet);
-</script>
-
-</body>
-</html>
+</script> </body> </html>

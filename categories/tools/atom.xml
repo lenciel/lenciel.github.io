@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: tools | @Lenciel]]></title>
-  <link href="http://172.16.121.110:4000/categories/tools/atom.xml" rel="self"/>
-  <link href="http://172.16.121.110:4000/"/>
-  <updated>2017-04-06T19:01:30+08:00</updated>
-  <id>http://172.16.121.110:4000/</id>
+  <link href="http://lenciel.com/categories/tools/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-04-14T11:19:13+08:00</updated>
+  <id>http://lenciel.com/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[Vagrant for Django I: Basic]]></title>
-    <link href="http://172.16.121.110:4000/2013/06/vagrant-on-mac-os-x/"/>
+    <link href="http://lenciel.com/2013/06/vagrant-on-mac-os-x/"/>
     <updated>2013-06-19T15:19:00+08:00</updated>
-    <id>http://172.16.121.110:4000/2013/06/vagrant-on-mac-os-x</id>
+    <id>http://lenciel.com/2013/06/vagrant-on-mac-os-x</id>
     <content type="html"><![CDATA[<p>Vagrant<a href="http://www.vagrantup.com/vmware">最近支持了VMWare</a>，但是要钱的东西我们玩不起。本系列主要分享一下Vagrant+VirtualBox搭配起来如何使用。</p>
 
 <a name="L......VirtualBox"></a>
@@ -94,9 +94,9 @@ vagrant init
   
   <entry>
     <title type="html"><![CDATA[Use Kaleidoscope as code review tool]]></title>
-    <link href="http://172.16.121.110:4000/2013/04/use-kaleidoscope-as-code-review-tool/"/>
+    <link href="http://lenciel.com/2013/04/use-kaleidoscope-as-code-review-tool/"/>
     <updated>2013-04-14T20:57:00+08:00</updated>
-    <id>http://172.16.121.110:4000/2013/04/use-kaleidoscope-as-code-review-tool</id>
+    <id>http://lenciel.com/2013/04/use-kaleidoscope-as-code-review-tool</id>
     <content type="html"><![CDATA[<p>个人觉得Mac上最好用的文件/文件夹比较工具应该就是Kaleidoscope了。在它的<a href="http://kaleidoscopeapp.com/beta">新版本</a>中新增了 <code>KSReview</code> 功能，比较有用。</p>
 
 <p>举个常见的场景：如果 <code>master</code> 分支下有两个人lenciel和ming在做事。如果ming的事情先做完，代码上了master分支。这个时候lenciel做diff的时候，因为主分支的文件已经发生过变化，那么我们diff的结果哪些是自己的开发分支与主分支的差异哪些是ming引入的，就要靠“人工智能”来肉身体察了。</p>

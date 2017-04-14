@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: gunicorn | @Lenciel]]></title>
-  <link href="http://172.16.121.110:4000/categories/gunicorn/atom.xml" rel="self"/>
-  <link href="http://172.16.121.110:4000/"/>
-  <updated>2017-04-06T19:01:30+08:00</updated>
-  <id>http://172.16.121.110:4000/</id>
+  <link href="http://lenciel.com/categories/gunicorn/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-04-14T11:19:13+08:00</updated>
+  <id>http://lenciel.com/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[uWSGI, Gunincorn, 啥玩意儿?]]></title>
-    <link href="http://172.16.121.110:4000/2013/08/why-you-need-something-like-gunicorn/"/>
+    <link href="http://lenciel.com/2013/08/why-you-need-something-like-gunicorn/"/>
     <updated>2013-08-01T14:36:00+08:00</updated>
-    <id>http://172.16.121.110:4000/2013/08/why-you-need-something-like-gunicorn</id>
+    <id>http://lenciel.com/2013/08/why-you-need-something-like-gunicorn</id>
     <content type="html"><![CDATA[<p>因为nginx等优秀的开源项目，有不少本来不是做服务器的同学也可以写很多服务器端的程序了。但是在聊天中会发现，大家虽然写了不少代码，但是对wsgi是什么，gunicorn是什么，反向代理又是什么并不了解，也就是说对基本概念并没有一个全局的了解。</p>
 
 <a name="L........."></a>

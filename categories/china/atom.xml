@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: china | @Lenciel]]></title>
-  <link href="http://172.16.121.110:4000/categories/china/atom.xml" rel="self"/>
-  <link href="http://172.16.121.110:4000/"/>
-  <updated>2017-04-06T19:01:30+08:00</updated>
-  <id>http://172.16.121.110:4000/</id>
+  <link href="http://lenciel.com/categories/china/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-04-14T11:19:13+08:00</updated>
+  <id>http://lenciel.com/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[祝我们好运]]></title>
-    <link href="http://172.16.121.110:4000/2011/08/make-a-wish/"/>
+    <link href="http://lenciel.com/2011/08/make-a-wish/"/>
     <updated>2011-08-02T21:40:00+08:00</updated>
-    <id>http://172.16.121.110:4000/2011/08/make-a-wish</id>
+    <id>http://lenciel.com/2011/08/make-a-wish</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/boring_face.jpg" title="Don't touch me…" alt="Boring Face" /></p>
 
 <p>03年的时候，看《迷失东京》，比尔·默里的这幅样子存在了本座硬盘里。有人说这是颇有喜感的画面，却带给本座前所未有的悲催感：那就是有朝一日，我们也会一如Bob Harris这个角色，莫名其妙的活在某个看似五光十色灯红酒绿的城市里面，内心却沉寂而冰冷，不管是手中丰满的鹌鹑，还是床上丰满的妹子，都已经很难唤醒那份生活的激情。</p>

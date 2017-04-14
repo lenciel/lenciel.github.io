@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: football | @Lenciel]]></title>
-  <link href="http://172.16.121.110:4000/categories/football/atom.xml" rel="self"/>
-  <link href="http://172.16.121.110:4000/"/>
-  <updated>2017-04-06T19:01:30+08:00</updated>
-  <id>http://172.16.121.110:4000/</id>
+  <link href="http://lenciel.com/categories/football/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-04-14T11:19:13+08:00</updated>
+  <id>http://lenciel.com/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[Yeah~世界杯来了]]></title>
-    <link href="http://172.16.121.110:4000/2006/06/world-cup-2006/"/>
+    <link href="http://lenciel.com/2006/06/world-cup-2006/"/>
     <updated>2006-06-09T01:47:00+08:00</updated>
-    <id>http://172.16.121.110:4000/2006/06/world-cup-2006</id>
+    <id>http://lenciel.com/2006/06/world-cup-2006</id>
     <content type="html"><![CDATA[<p><img style="WIDTH: 168px; HEIGHT: 221px; margin-right: 45px;" alt="world cup 2006" src="/downloads/images/world_cup_2006.png" align="left" border="0" />有这么一种理论：</p>
 
 <ul>

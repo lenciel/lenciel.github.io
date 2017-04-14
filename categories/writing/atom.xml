@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: writing | @Lenciel]]></title>
-  <link href="http://172.16.121.110:4000/categories/writing/atom.xml" rel="self"/>
-  <link href="http://172.16.121.110:4000/"/>
-  <updated>2017-04-06T19:01:30+08:00</updated>
-  <id>http://172.16.121.110:4000/</id>
+  <link href="http://lenciel.com/categories/writing/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-04-14T11:19:13+08:00</updated>
+  <id>http://lenciel.com/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[记一碗滚烫的鸡汤]]></title>
-    <link href="http://172.16.121.110:4000/2016/09/what-you-want/"/>
+    <link href="http://lenciel.com/2016/09/what-you-want/"/>
     <updated>2016-09-08T20:03:03+08:00</updated>
-    <id>http://172.16.121.110:4000/2016/09/what-you-want</id>
+    <id>http://lenciel.com/2016/09/what-you-want</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/2016_09/the_player_choose_to_die.jpg" title="Don't touch me..." alt="Vhost threshold" /></p>
 
 <p>费福尔特，37岁的比利时名将，上届伦敦残奥会T52级女子轮椅短跑100米冠军和200米的亚军，一边积极备战即将到来的奥运会，一边在准备葬礼：她宣布在比赛后会安乐死结束自己的生命。</p>
@@ -73,9 +73,9 @@
   
   <entry>
     <title type="html"><![CDATA[记一次突然的旅行]]></title>
-    <link href="http://172.16.121.110:4000/2016/08/qin-hai-lake/"/>
+    <link href="http://lenciel.com/2016/08/qin-hai-lake/"/>
     <updated>2016-08-29T03:59:07+08:00</updated>
-    <id>http://172.16.121.110:4000/2016/08/qin-hai-lake</id>
+    <id>http://lenciel.com/2016/08/qin-hai-lake</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/2016_08/qin_hai_lake.jpg" title="Don't touch me..." alt="Vhost threshold" /></p>
 
 <p>七夕刚过的周末，飞到了西宁。出机场天色虽晚，但干燥凉爽，让人忘了一个小时前的闷热不堪。</p>
@@ -136,9 +136,9 @@
   
   <entry>
     <title type="html"><![CDATA[记一次快乐的生日]]></title>
-    <link href="http://172.16.121.110:4000/2016/06/work-for-10-years/"/>
+    <link href="http://lenciel.com/2016/06/work-for-10-years/"/>
     <updated>2016-06-24T22:12:13+08:00</updated>
-    <id>http://172.16.121.110:4000/2016/06/work-for-10-years</id>
+    <id>http://lenciel.com/2016/06/work-for-10-years</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/2016_06/birthday-0x32.jpg" title="Don't touch me..." alt="Vhost threshold" /></p>
 
 <p>今天收到很多“生日快乐”的祝福。</p>
@@ -193,9 +193,9 @@
   
   <entry>
     <title type="html"><![CDATA[一颗赛艇]]></title>
-    <link href="http://172.16.121.110:4000/2016/05/the-exciting-writings/"/>
+    <link href="http://lenciel.com/2016/05/the-exciting-writings/"/>
     <updated>2016-05-06T04:26:09+08:00</updated>
-    <id>http://172.16.121.110:4000/2016/05/the-exciting-writings</id>
+    <id>http://lenciel.com/2016/05/the-exciting-writings</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/2016_05/jpm.jpg" title="Don't touch me..." alt="Vhost threshold" /></p>
 
 <p>昨天立夏，闷热异常，晚上终于来了几声雷，却是雷声大雨点小。</p>
@@ -250,9 +250,9 @@
   
   <entry>
     <title type="html"><![CDATA[人工智能，奇点及其他(一)]]></title>
-    <link href="http://172.16.121.110:4000/2016/03/alphago-and-ai/"/>
+    <link href="http://lenciel.com/2016/03/alphago-and-ai/"/>
     <updated>2016-03-15T02:59:42+08:00</updated>
-    <id>http://172.16.121.110:4000/2016/03/alphago-and-ai</id>
+    <id>http://lenciel.com/2016/03/alphago-and-ai</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/2016_03/go_ai.png" title="Don't touch me..." alt="Vhost threshold" /></p>
 
 <p>3月14日，是个很魔性的日子：这天是爱因斯坦的生日，也是卡尔马克思的忌日，还是“π日"——纪念圆周率弄的“数学节"，忒魔性。</p>

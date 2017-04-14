@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: blog | @Lenciel]]></title>
-  <link href="http://172.16.121.110:4000/categories/blog/atom.xml" rel="self"/>
-  <link href="http://172.16.121.110:4000/"/>
-  <updated>2017-04-06T19:01:30+08:00</updated>
-  <id>http://172.16.121.110:4000/</id>
+  <link href="http://lenciel.com/categories/blog/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-04-14T11:19:13+08:00</updated>
+  <id>http://lenciel.com/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[Blog with Octopress and Github pages]]></title>
-    <link href="http://172.16.121.110:4000/2013/03/blog-with-octopress-and-github-pages/"/>
+    <link href="http://lenciel.com/2013/03/blog-with-octopress-and-github-pages/"/>
     <updated>2013-03-10T22:15:00+08:00</updated>
-    <id>http://172.16.121.110:4000/2013/03/blog-with-octopress-and-github-pages</id>
+    <id>http://lenciel.com/2013/03/blog-with-octopress-and-github-pages</id>
     <content type="html"><![CDATA[<p>不知不觉，写blog好像从有电脑的人都要干的事情变成很小众的活动了。除了人到了一定年纪都会不愿意开口讲话之外，本座觉得还有个很大的原因就是：要找一个靠谱的blog服务商是非常麻烦的。岂止是是blog服务商，在天朝使用大多数web服务都很吊诡地只有两个选择：</p>
 
 <ul>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: startup | @Lenciel]]></title>
-  <link href="http://172.16.121.110:4000/categories/startup/atom.xml" rel="self"/>
-  <link href="http://172.16.121.110:4000/"/>
-  <updated>2017-04-06T19:01:30+08:00</updated>
-  <id>http://172.16.121.110:4000/</id>
+  <link href="http://lenciel.com/categories/startup/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-04-14T11:19:13+08:00</updated>
+  <id>http://lenciel.com/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[在TestBird学到的——关于管理]]></title>
-    <link href="http://172.16.121.110:4000/2016/10/management-things-i-learned-at-testbird/"/>
+    <link href="http://lenciel.com/2016/10/management-things-i-learned-at-testbird/"/>
     <updated>2016-10-26T17:03:21+08:00</updated>
-    <id>http://172.16.121.110:4000/2016/10/management-things-i-learned-at-testbird</id>
+    <id>http://lenciel.com/2016/10/management-things-i-learned-at-testbird</id>
     <content type="html"><![CDATA[<ol>
 <li>沟通是所有工作内容里最困难的部分，学习一些技巧，花足够多的时间，做好自己和内外部的沟通，并且让团队内部小伙伴之间的沟通顺畅。 </li>
 <li>多听，少说，学会换位思考。 </li>
@@ -47,9 +47,9 @@
   
   <entry>
     <title type="html"><![CDATA[在TestBird学到的——关于产品]]></title>
-    <link href="http://172.16.121.110:4000/2016/10/product-things-i-learned-at-testbird/"/>
+    <link href="http://lenciel.com/2016/10/product-things-i-learned-at-testbird/"/>
     <updated>2016-10-25T17:20:29+08:00</updated>
-    <id>http://172.16.121.110:4000/2016/10/product-things-i-learned-at-testbird</id>
+    <id>http://lenciel.com/2016/10/product-things-i-learned-at-testbird</id>
     <content type="html"><![CDATA[<p>在TestBird不到两年，时间过得很快也很充实。因为分管的是产品和研发，所以总结一下产品、研发和管理这三方面学到的经验或者教训。</p>
 
 <p>先从产品说起：</p>
@@ -80,9 +80,9 @@
   
   <entry>
     <title type="html"><![CDATA[Sam Altman给创业者的建议]]></title>
-    <link href="http://172.16.121.110:4000/2015/02/startup-advices-from-sam-altman/"/>
+    <link href="http://lenciel.com/2015/02/startup-advices-from-sam-altman/"/>
     <updated>2015-02-22T22:22:00+08:00</updated>
-    <id>http://172.16.121.110:4000/2015/02/startup-advices-from-sam-altman</id>
+    <id>http://lenciel.com/2015/02/startup-advices-from-sam-altman</id>
     <content type="html"><![CDATA[<p>去年创业界的一大盛事就是YC的CEO，斯坦福的退学生<a href="http://blog.samaltman.com/">Sam Altman</a>联手斯坦福大学，开设了课程CS183B：<a href="http://startupclass.samaltman.com/">How To Start A Startup</a>。十周共20节课程请来了各路顶尖人才，从创意、产品、团队和执行这四个YC认为创业最关键的维度分享了如何进行创业。</p>
 
 <p>如果你自己是创业者，个人建议是整个课程可以好好看一遍，反正就算你不会翻墙，因为YC巨大的号召力，国内也有人为这个课程专门做了<a href="http://startupclass.club/">镜像网站</a>并配了字幕。</p>
@@ -129,9 +129,9 @@
   
   <entry>
     <title type="html"><![CDATA[Market Research, Wireframing and Desgin]]></title>
-    <link href="http://172.16.121.110:4000/2013/07/market-research/"/>
+    <link href="http://lenciel.com/2013/07/market-research/"/>
     <updated>2013-07-15T15:04:00+08:00</updated>
-    <id>http://172.16.121.110:4000/2013/07/market-research</id>
+    <id>http://lenciel.com/2013/07/market-research</id>
     <content type="html"><![CDATA[<a name="L.strong..............................strong."></a>
 <h4><strong>点子，执行力和市场</strong></h4>
 
@@ -411,9 +411,9 @@
   
   <entry>
     <title type="html"><![CDATA[Ideas Are Easy]]></title>
-    <link href="http://172.16.121.110:4000/2013/01/ideas-are-easy/"/>
+    <link href="http://lenciel.com/2013/01/ideas-are-easy/"/>
     <updated>2013-01-24T23:50:00+08:00</updated>
-    <id>http://172.16.121.110:4000/2013/01/ideas-are-easy</id>
+    <id>http://lenciel.com/2013/01/ideas-are-easy</id>
     <content type="html"><![CDATA[<p>最近做的一些事情，让本座有一些感触。昨天恰好看到Daniel Tenner的一篇文章，共鸣了3个来小时。</p>
 
 <p>Daniel的文章主要介绍了<a href="https://twitter.com/pr1001" target="_blank">Peter Robinett</a>关于创业的一些经验分享。其中特别有趣的一点是，为什么有创业想法的人，在遇到那些很愿意创业也很有实力的开发者的时候，常常没法说服他们和自己一起创业。</p>

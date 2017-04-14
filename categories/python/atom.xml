@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: python | @Lenciel]]></title>
-  <link href="http://172.16.121.110:4000/categories/python/atom.xml" rel="self"/>
-  <link href="http://172.16.121.110:4000/"/>
-  <updated>2017-04-06T19:01:30+08:00</updated>
-  <id>http://172.16.121.110:4000/</id>
+  <link href="http://lenciel.com/categories/python/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-04-14T11:19:13+08:00</updated>
+  <id>http://lenciel.com/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[简单验证码的快速识别]]></title>
-    <link href="http://172.16.121.110:4000/2016/06/python-captcha-solution/"/>
+    <link href="http://lenciel.com/2016/06/python-captcha-solution/"/>
     <updated>2016-06-16T18:48:14+08:00</updated>
-    <id>http://172.16.121.110:4000/2016/06/python-captcha-solution</id>
+    <id>http://lenciel.com/2016/06/python-captcha-solution</id>
     <content type="html"><![CDATA[<p>昨天饭局上聊起来自动化测试或者是别的奇怪事业里经常需要面对的一个问题：验证码识别。</p>
 
 <p>其实验证码的识别，技术上来说可以作为古老的OCR（Optical Character Recognition）问题的一个子集：因为OCR其实就是从图片上把文字认出来嘛。</p>
@@ -196,9 +196,9 @@ YLNU
   
   <entry>
     <title type="html"><![CDATA[How complex your python project is?]]></title>
-    <link href="http://172.16.121.110:4000/2014/08/how-complex-your-python-project-is/"/>
+    <link href="http://lenciel.com/2014/08/how-complex-your-python-project-is/"/>
     <updated>2014-08-31T21:04:47+08:00</updated>
-    <id>http://172.16.121.110:4000/2014/08/how-complex-your-python-project-is</id>
+    <id>http://lenciel.com/2014/08/how-complex-your-python-project-is</id>
     <content type="html"><![CDATA[<p>最近诸事不顺，却也理所应当。</p>
 
 <p>晚间时段迷上写字和画画，大概是因为之前看<a href="http://www.imdb.com/title/tt0460740/">《Cashback》</a>印象太深刻，觉得这些是美好遗失前力挽狂澜的技艺。</p>
@@ -244,9 +244,9 @@ YLNU
   
   <entry>
     <title type="html"><![CDATA[Fix Python after upgrade to Maverick]]></title>
-    <link href="http://172.16.121.110:4000/2013/10/maverick-and-python/"/>
+    <link href="http://lenciel.com/2013/10/maverick-and-python/"/>
     <updated>2013-10-24T22:02:00+08:00</updated>
-    <id>http://172.16.121.110:4000/2013/10/maverick-and-python</id>
+    <id>http://lenciel.com/2013/10/maverick-and-python</id>
     <content type="html"><![CDATA[<p>升级到最新的osx版本Maverick之后，打开iTerm2就报错：</p>
 
 <pre><code class="bash">Traceback (most recent call last):
@@ -286,9 +286,9 @@ sudo easy_install -U pip
   
   <entry>
     <title type="html"><![CDATA[打开pip的download cache]]></title>
-    <link href="http://172.16.121.110:4000/2013/10/pip-download-cache/"/>
+    <link href="http://lenciel.com/2013/10/pip-download-cache/"/>
     <updated>2013-10-17T13:25:00+08:00</updated>
-    <id>http://172.16.121.110:4000/2013/10/pip-download-cache</id>
+    <id>http://lenciel.com/2013/10/pip-download-cache</id>
     <content type="html"><![CDATA[<p>Python的标准库实在是<a href="http://lenciel.com/2013/10/recharging-the-python-standard-library/">不够用</a>，所以一个很常见的情况是我们需要在每个项目使用的<code>virtualenv</code>里面都安装一些常用的库。</p>
 
 <p>为了加速安装的过程，有两个小窍门。</p>
@@ -308,9 +308,9 @@ index-url = http://pypi.v2ex.com/simple
   
   <entry>
     <title type="html"><![CDATA[给Python标准库充电]]></title>
-    <link href="http://172.16.121.110:4000/2013/10/recharging-the-python-standard-library/"/>
+    <link href="http://lenciel.com/2013/10/recharging-the-python-standard-library/"/>
     <updated>2013-10-17T12:27:00+08:00</updated>
-    <id>http://172.16.121.110:4000/2013/10/recharging-the-python-standard-library</id>
+    <id>http://lenciel.com/2013/10/recharging-the-python-standard-library</id>
     <content type="html"><![CDATA[<p>Python的自荐页面<a href="http://www.python.org/about/">About Python</a>上号称自家的标准库是"batteries included"的，但实际情况却不是这样。对Python标准库的批评几乎从来没有中断过。著名的Python包<a href="http://docs.python-requests.org/en/latest/">Requests</a>的作者甚至决定永久把Requests保持为第三方库而拒绝加入标准库，他的理由是：<a href="http://www.leancrew.com/all-this/2012/04/where-modules-go-to-die/">加入标准库就会死翘翘</a>。</p>
 
 <p>再举个例子，我们最近的项目里面都用到了<a href="https://pypi.python.org/pypi/pytz/">pytz</a>。标准库里面的datetime是支持时区的（tzinfo类），但是并没有包含时区信息（tzinfo是抽象类需要自己实现）。遵照前人的经验使用pytz是最好的办法<a href="" title="[如何在datetime转换中保存时区信息](http://stackoverflow.com/questions/14762518/python-datetime-strptime-and-strftime-how-to-preserve-the-timezone-informat).    ">^1</a>。</p>

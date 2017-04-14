@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: xiaomi | @Lenciel]]></title>
-  <link href="http://172.16.121.110:4000/categories/xiaomi/atom.xml" rel="self"/>
-  <link href="http://172.16.121.110:4000/"/>
-  <updated>2017-04-06T19:01:30+08:00</updated>
-  <id>http://172.16.121.110:4000/</id>
+  <link href="http://lenciel.com/categories/xiaomi/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-04-14T11:19:13+08:00</updated>
+  <id>http://lenciel.com/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[中国式创新]]></title>
-    <link href="http://172.16.121.110:4000/2014/07/innovation-company/"/>
+    <link href="http://lenciel.com/2014/07/innovation-company/"/>
     <updated>2014-07-27T15:26:01+08:00</updated>
-    <id>http://172.16.121.110:4000/2014/07/innovation-company</id>
+    <id>http://lenciel.com/2014/07/innovation-company</id>
     <content type="html"><![CDATA[<p>今天看到一则新闻，百度要做<a href="http://www.36kr.com/p/214107.html">无人驾驶汽车</a>了。</p>
 
 <p>这要换做几年前，本座可能还要看一下评论或者搜一下新闻来源，现在基本上看看这标题也大概能猜到是怎么个事情了。以技术创新为核心竞争力的互联网行业，在中国是“BAT”这样的三家公司领跑：</p>

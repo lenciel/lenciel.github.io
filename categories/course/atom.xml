@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: course | @Lenciel]]></title>
-  <link href="http://172.16.121.110:4000/categories/course/atom.xml" rel="self"/>
-  <link href="http://172.16.121.110:4000/"/>
-  <updated>2017-04-06T19:01:30+08:00</updated>
-  <id>http://172.16.121.110:4000/</id>
+  <link href="http://lenciel.com/categories/course/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-04-14T11:19:13+08:00</updated>
+  <id>http://lenciel.com/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[Market Research, Wireframing and Desgin]]></title>
-    <link href="http://172.16.121.110:4000/2013/07/market-research/"/>
+    <link href="http://lenciel.com/2013/07/market-research/"/>
     <updated>2013-07-15T15:04:00+08:00</updated>
-    <id>http://172.16.121.110:4000/2013/07/market-research</id>
+    <id>http://lenciel.com/2013/07/market-research</id>
     <content type="html"><![CDATA[<a name="L.strong..............................strong."></a>
 <h4><strong>点子，执行力和市场</strong></h4>
 

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: css | @Lenciel]]></title>
-  <link href="http://172.16.121.110:4000/categories/css/atom.xml" rel="self"/>
-  <link href="http://172.16.121.110:4000/"/>
-  <updated>2017-04-06T19:01:30+08:00</updated>
-  <id>http://172.16.121.110:4000/</id>
+  <link href="http://lenciel.com/categories/css/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-04-14T11:19:13+08:00</updated>
+  <id>http://lenciel.com/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[Merry Christmas Css Animation]]></title>
-    <link href="http://172.16.121.110:4000/2014/12/lonely-christmas-with-css/"/>
+    <link href="http://lenciel.com/2014/12/lonely-christmas-with-css/"/>
     <updated>2014-12-16T22:18:49+08:00</updated>
-    <id>http://172.16.121.110:4000/2014/12/lonely-christmas-with-css</id>
+    <id>http://lenciel.com/2014/12/lonely-christmas-with-css</id>
     <content type="html"><![CDATA[<p>昔日一统天下的Flash继续<a href="http://www.36kr.com/p/217821.html">势微</a>，但其实Web上的各种动画效果却越来越多了。今天因为一个产品需求，花了点儿时间看了一下，感觉目前CSS动画和JS动画两大门派势力都不小，之间需要有一个把大家嫁接在一起的东西：不知道<a href="http://w3c.github.io/web-animations/">Web Animation</a>会不会<a href="http://updates.html5rocks.com/2014/05/Web-Animations---element-animate-is-now-in-Chrome-36">有机会</a>。</p>
 
 <p>纯CSS的动画实作:</p>
@@ -91,9 +91,9 @@ $('#id-btn-submit').click(function() {
   
   <entry>
     <title type="html"><![CDATA[CSS里的width:100%和width:auto]]></title>
-    <link href="http://172.16.121.110:4000/2011/09/width_with_percentage_in_css/"/>
+    <link href="http://lenciel.com/2011/09/width_with_percentage_in_css/"/>
     <updated>2011-09-22T09:53:00+08:00</updated>
-    <id>http://172.16.121.110:4000/2011/09/width_with_percentage_in_css</id>
+    <id>http://lenciel.com/2011/09/width_with_percentage_in_css</id>
     <content type="html"><![CDATA[<p><img height="200" alt="block" src="/downloads/images/2011_09/width100css.jpg" width="178" align="left" style="margin:5px"/> 这似乎是CSS里面最简单的一个概念：如果你希望一个block-level的元素填满整个父容器的所有空白，只需要为这个元素声明<font color="#0080ff">width:100%</font>这个属性就可以了。</p>
 
 <p>但从个人经验和搜索结果看，大概很多CSS使用者都有过加上这个属性后挠头不已的惨痛回忆。最后很多人不得不经过反复试验后重新转回使用绝对值的长和宽。</p>

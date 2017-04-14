@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Bill | @Lenciel]]></title>
-  <link href="http://172.16.121.110:4000/categories/bill/atom.xml" rel="self"/>
-  <link href="http://172.16.121.110:4000/"/>
-  <updated>2017-04-06T19:01:30+08:00</updated>
-  <id>http://172.16.121.110:4000/</id>
+  <link href="http://lenciel.com/categories/bill/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-04-14T11:19:13+08:00</updated>
+  <id>http://lenciel.com/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[品味时尚]]></title>
-    <link href="http://172.16.121.110:4000/2009/06/kill-yourself-in-a-fashion-way/"/>
+    <link href="http://lenciel.com/2009/06/kill-yourself-in-a-fashion-way/"/>
     <updated>2009-06-09T21:25:00+08:00</updated>
-    <id>http://172.16.121.110:4000/2009/06/kill-yourself-in-a-fashion-way</id>
+    <id>http://lenciel.com/2009/06/kill-yourself-in-a-fashion-way</id>
     <content type="html"><![CDATA[<p><img title="fashion" style="border-right: 0px; border-top: 0px; display: inline; border-left: 0px; border-bottom: 0px" height="324" alt="fashion" src="/downloads/images/fashion.jpg" width="484" border="0" /></p>
 
 <p>每年高考的时候，本座都特别期待江苏的作文题。因为传说中江苏的语文老师每年聚在一起都不骂国足是猪，而是骂作文命题老师是猪：对国足，他们还总是能猜中结果，而作文题，他们边都摸不着。</p>

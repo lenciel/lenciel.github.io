@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: gapps | @Lenciel]]></title>
-  <link href="http://172.16.121.110:4000/categories/gapps/atom.xml" rel="self"/>
-  <link href="http://172.16.121.110:4000/"/>
-  <updated>2017-04-06T19:01:30+08:00</updated>
-  <id>http://172.16.121.110:4000/</id>
+  <link href="http://lenciel.com/categories/gapps/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-04-14T11:19:13+08:00</updated>
+  <id>http://lenciel.com/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[定制机上恢复google原厂应用]]></title>
-    <link href="http://172.16.121.110:4000/2013/12/restore-google-apps/"/>
+    <link href="http://lenciel.com/2013/12/restore-google-apps/"/>
     <updated>2013-12-18T22:33:00+08:00</updated>
-    <id>http://172.16.121.110:4000/2013/12/restore-google-apps</id>
+    <id>http://lenciel.com/2013/12/restore-google-apps</id>
     <content type="html"><![CDATA[<p>最近因为移动的手机丢了，正好宽带升级到100M送了两个电信的卡没地方用，入了一个Rick推荐的电信移动双卡双待的机器：<a href="http://item.jd.com/824702.html">中兴N986</a>。</p>
 
 <p>机器用来当小三机已经是非常不错了，唯一让本座纠结的就是电信的合约机老是喜欢把google账号干掉，而小弟的所有联系人又都在google（虽然现在看起来这么做可能也未必妥当）。</p>

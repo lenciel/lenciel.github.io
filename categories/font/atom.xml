@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: font | @Lenciel]]></title>
-  <link href="http://172.16.121.110:4000/categories/font/atom.xml" rel="self"/>
-  <link href="http://172.16.121.110:4000/"/>
-  <updated>2017-04-06T19:01:30+08:00</updated>
-  <id>http://172.16.121.110:4000/</id>
+  <link href="http://lenciel.com/categories/font/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-04-14T11:19:13+08:00</updated>
+  <id>http://lenciel.com/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[Mac上使用Suite Fusion管理字体]]></title>
-    <link href="http://172.16.121.110:4000/2014/07/manage-fonts-on-your-mac/"/>
+    <link href="http://lenciel.com/2014/07/manage-fonts-on-your-mac/"/>
     <updated>2014-07-26T11:36:48+08:00</updated>
-    <id>http://172.16.121.110:4000/2014/07/manage-fonts-on-your-mac</id>
+    <id>http://lenciel.com/2014/07/manage-fonts-on-your-mac</id>
     <content type="html"><![CDATA[<p>对于从事设计工作的人员，难免要和字体打交道：因为<a href="http://lenciel.com/2013/08/buttericks-practical-typography/">设计主要就是Typography的设计</a>，而Typography的基础就是字体。</p>
 
 <p>随着完成的项目越来越多，机器上的字体也就慢慢多起来，如何快速的找到自己想要的字体变成了问题。特别是大多数设计软件里，字体选择的界面都是一个下拉框：如果你有几百个字体加载到系统，几乎每次选择字体都是一场灾难。</p>
@@ -67,9 +67,9 @@
   
   <entry>
     <title type="html"><![CDATA[Retina屏幕上的最佳编程字体]]></title>
-    <link href="http://172.16.121.110:4000/2014/07/font-for-programming/"/>
+    <link href="http://lenciel.com/2014/07/font-for-programming/"/>
     <updated>2014-07-13T18:45:27+08:00</updated>
-    <id>http://172.16.121.110:4000/2014/07/font-for-programming</id>
+    <id>http://lenciel.com/2014/07/font-for-programming</id>
     <content type="html"><![CDATA[<p>关于编程使用什么样的字体比较好<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>是一个由来已久<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>的话题<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>，但其实在不同分辨率和操作系统的屏幕上，字体的表现也不一样，所以并不应该有一统天下的字体。比如Retina的屏幕上，字体越细滑看起来似乎就好（当然这也是个体感觉），所以本座最近把所有的开发环境默认字体都换成了<a href="http://mplus-fonts.sourceforge.jp/">M+</a>。</p>
 
 <p>除开字体给人的感觉很细腻之外，M+还满足了本座心中好字体的几大标准。</p>

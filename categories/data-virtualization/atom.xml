@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: data-virtualization | @Lenciel]]></title>
-  <link href="http://172.16.121.110:4000/categories/data-virtualization/atom.xml" rel="self"/>
-  <link href="http://172.16.121.110:4000/"/>
-  <updated>2017-04-06T19:01:30+08:00</updated>
-  <id>http://172.16.121.110:4000/</id>
+  <link href="http://lenciel.com/categories/data-virtualization/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-04-14T11:19:13+08:00</updated>
+  <id>http://lenciel.com/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[How complex your python project is?]]></title>
-    <link href="http://172.16.121.110:4000/2014/08/how-complex-your-python-project-is/"/>
+    <link href="http://lenciel.com/2014/08/how-complex-your-python-project-is/"/>
     <updated>2014-08-31T21:04:47+08:00</updated>
-    <id>http://172.16.121.110:4000/2014/08/how-complex-your-python-project-is</id>
+    <id>http://lenciel.com/2014/08/how-complex-your-python-project-is</id>
     <content type="html"><![CDATA[<p>最近诸事不顺，却也理所应当。</p>
 
 <p>晚间时段迷上写字和画画，大概是因为之前看<a href="http://www.imdb.com/title/tt0460740/">《Cashback》</a>印象太深刻，觉得这些是美好遗失前力挽狂澜的技艺。</p>
