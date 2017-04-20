@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "从Octopress转到纯Jekyll"
 date: 2017-03-14 13:45:00 +0800
 comments: true
