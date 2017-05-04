@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: CQRS | @Lenciel]]></title>
+  <link href="http://lenciel.com/categories/cqrs/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-05-04T17:08:15+08:00</updated>
+  <id>http://lenciel.com/</id>
+  <author>
+    <name><![CDATA[Lenciel]]></name>
+    <email><![CDATA[lenciel@gmail.com]]></email>
+  </author>
+
+  
+  <entry>
+    <title type="html"><![CDATA[CQRS]]></title>
+    <link href="http://lenciel.com/2017/02/cqrs/"/>
+    <updated>2017-02-18T02:58:52+08:00</updated>
+    <id>http://lenciel.com/2017/02/cqrs</id>
+    <content type="html"><![CDATA[<a name="L.........CQRS"></a>
+<h2>什么是CQRS</h2>
+
+<p>CQRS是Command Query Responsibility Segregation的缩写，翻译过来是“命令查询职责分离”。</p>
+
+<p>它的概念源于Betrand Meyer（Eiffel语言之父，开-闭原则OCP提出者）在《<a href="https://www.amazon.com/Object-Oriented-Software-Construction-Book-CD-ROM/dp/0136291554">Object-Oriented Software Construction</a>》这本书中提到的“命令查询分离 (Command Query Separation,CQS) ”：把改变对象状态的命令（Command），与获取对象状态的查询（Query）拆分。</p>
+
+<p><a href="http://codebetter.com/gregyoung/">Greg Young</a>在2010年自己的<a href="http://codebetter.com/gregyoung/2010/02/16/cqrs-task-based-uis-event-sourcing-agh/">一篇博客</a>中对CQS进行了改进和简化，提出了CQRS：最核心的改动是，不仅仅对方法进行拆分，而是从数据模型上进行隔离。</p>
+
+<a name="L............"></a>
+<h2>实施方式</h2>
+
+<p>因为查询操作不会造成数据的修改，所以它属于一种幂等操作，可以反复地发起，而不用担心会对系统造成影响。基于这种特性，我们还可以为其提供缓存，从而改进查询的性能。</p>
+
+<p>命令操作则与之相反，它会直接影响系统信息的改变，因此，和查询操作相比，对事务的要求也不一样。</p>
+
+<p>从请求响应的角度来看，查询操作常常需要同步请求，实时返回结果；命令操作则不然，因为我们并不期待命令操作必须返回结果，这就可以采用fire-and-forget方式，而这种方式正是运用异步操作的前提。</p>
+
+<p>在实践上，因为两个数据模型分开了，存储也可以分开，所以可以使用主从数据库。主数据库处理CUD，从库处理R，从库的的结构可以和主库的结构完全一样，也可以不一样，从库主要用来进行只读的查询操作。</p>
+
+<p>在数量上从库的个数也可以根据查询的规模进行扩展，在业务逻辑上，也可以根据专题从主库中划分出不同的从库。从库也可以实现成<a href="https://martinfowler.com/bliki/ReportingDatabase.html">ReportingDatabase</a>，根据查询的业务需求，从主库中抽取一些必要的数据生成一系列查询报表来存储。</p>
+
+<a name="L............"></a>
+<h2>适用场景</h2>
+
+<p>把系统建模成领域对象状态迁移的一个状态机，可以让系统从Data-Driven演进成Task-Driven甚至是Event-Driven，这听起来很美。</p>
+
+<p>但CQRS解决的，主要还是业务复杂度和性能方面的问题。它的引入是会带来极大复杂度的。因此，以下场景中，可以考虑使用CQRS模式：</p>
+
+<ul>
+<li>当在业务逻辑层有很多操作需要对相同的实体或者对象进行的时候。CQRS使得我们可以对读和写定义不同的实体和方法，从而可以减少或者避免对某一方面的更改造成冲突</li>
+<li>对于一些基于任务的用户交互系统，通常这类系统会引导用户通过一系列复杂的步骤和操作，通常会需要一些复杂的领域模型，并且整个团队已经熟悉领域驱动设计技术。写模型有很多和业务逻辑相关的命令操作的堆，输入验证，业务逻辑验证来保证数据的一致性。读模型没有业务逻辑以及验证堆，仅仅是返回DTO对象为视图模型提供数据。读模型最终和写模型相一致。</li>
+<li>适用于一些需要对查询性能和写入性能分开进行优化的系统，尤其是读/写比非常高的系统，横向扩展是必须的。比如，在很多系统中读操作的请求时远大于写操作。为适应这种场景，可以考虑将写模型抽离出来单独扩展，而将写模型运行在一个或者少数几个实例上。少量的写模型实例能够减少合并冲突发生的情况</li>
+<li>适用于一些团队中，一些有经验的开发者可以关注复杂的领域模型，这些用到写操作，而另一些经验较少的开发者可以关注用户界面上的读模型。</li>
+<li>对于系统在将来会随着时间不段演化，有可能会包含不同版本的模型，或者业务规则经常变化的系统</li>
+<li>需要和其他系统整合，特别是需要和事件溯源Event Sourcing进行整合的系统，这样子系统的临时异常不会影响整个系统的其他部分。</li>
+</ul>
+
+
+<p>但是在以下场景中，可能不适宜使用CQRS：</p>
+
+<ul>
+<li>领域模型或者业务逻辑比较简单，这种情况下使用CQRS会把系统搞复杂。</li>
+<li>对于简单的，CRUD模式的用户界面以及与之相关的数据访问操作已经足够的话，没必要使用CQRS，这些都是一个简单的对数据进行增删改查。</li>
+<li>不适合在整个系统中到处使用该模式。在整个数据管理场景中的特定模块中CQRS可能比较有用。但是在有些地方使用CQRS会增加系统不必要的复杂性。</li>
+</ul>
+
+
+<a name="Reference"></a>
+<h2>Reference</h2>
+
+<ul>
+<li><ol>
+<li><a href="http://www.codeproject.com/Articles/555855/Introduction-to-CQRS">Introduction to CQRS</a></li>
+</ol>
+</li>
+<li><ol>
+<li><a href="http://martinfowler.com/bliki/CQRS.html">CQRS</a></li>
+</ol>
+</li>
+<li><ol>
+<li><a href="http://msdn.microsoft.com/en-us/library/jj554200.aspx">CQRS Journey</a></li>
+</ol>
+</li>
+<li><ol>
+<li><a href="http://msdn.microsoft.com/en-us/library/dn568103.aspx">Command and Query Responsibility Segregation (CQRS) Pattern</a></li>
+</ol>
+</li>
+<li><ol>
+<li><a href="http://msdn.microsoft.com/en-us/library/dn589792.aspx">Event Sourcing Pattern</a></li>
+</ol>
+</li>
+<li><ol>
+<li><a href="http://www.se-radio.net/2015/05/se-radio-episode-226-eric-evans-on-domain-driven-design-at-10-years/">Eric Evans on Domain-Driven Design</a></li>
+</ol>
+</li>
+<li><ol>
+<li><a href="https://hackernoon.com/oo-tricks-the-art-of-command-query-separation-9343e50a3de0">The Art of Command Query Separation</a></li>
+</ol>
+</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>
