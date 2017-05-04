@@ -53,7 +53,7 @@ end
 desc "Watch the site and regenerate when it changes"
 task :watch do
   puts "Starting to watch source with Jekyll."
-  jekyllPid = Process.spawn("jekyll build --watch")
+  jekyllPid = Process.spawn("jekyll build --watch --incremental")
 
   trap("INT") {
     [jekyllPid].each { |pid| Process.kill(9, pid) rescue Errno::ESRCH }
@@ -66,7 +66,7 @@ end
 desc "preview the site in a web browser"
 task :preview do
   puts "Starting to serve jekyll on #{localhost_ip}:#{server_port}"
-  jekyllPid = Process.spawn("jekyll serve --host #{localhost_ip} --port #{server_port} --force_polling")
+  jekyllPid = Process.spawn("jekyll serve --incremental --host #{localhost_ip} --port #{server_port} --force_polling")
 
   trap("INT") {
     [jekyllPid].each { |pid| Process.kill(9, pid) rescue Errno::ESRCH }
