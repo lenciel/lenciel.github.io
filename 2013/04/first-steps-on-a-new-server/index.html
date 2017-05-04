@@ -1,59 +1,97 @@
-<!DOCTYPE html> <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]--> <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]--> <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]--> <head> <meta charset="utf-8"> <title>First steps on a new server - @Lenciel</title> <meta name="author" content="Lenciel"> <meta name="description" content=" First steps on a new server 2013-04-04 08:44:00 ..."> <meta name="HandheldFriendly" content="True"> <meta name="MobileOptimized" content="320"> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="canonical" href="http://lenciel.com/2013/04/first-steps-on-a-new-server/"> <link href="/favicon.png" rel="icon"> <script src="/assets/javascripts/app.js"></script> <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml"> <meta property="og:title" content="First steps on a new server"/><meta itemprop="name" content="First steps on a new server"/> <meta property="og:type" content="article"/> <meta property="og:url" content="http://lenciel.com/2013/04/first-steps-on-a-new-server/"/> <meta property="og:description" content=" First steps on a new server 2013-04-04 08:44:00 ..."/> <meta property="og:site_name" content="http://lenciel.com"/> <meta property="article:author" content="http://lenciel.com"> <meta property="article:published_time" content="2013-04-04 08:44:00 +0800"/> <meta property="article:section" content="configurationservertipstutorials"/> <meta itemprop="description" content=" First steps on a new server 2013-04-04 08:44:00 ..."/> <script>
+<!DOCTYPE html> <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]--> <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]--> <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]--> <head> <meta charset="utf-8"> <title>First steps on a new server - @Lenciel</title> <meta name="author" content="Lenciel"> <meta name="description" content=" First steps on a new server 一般来说，新开张..."> <meta name="HandheldFriendly" content="True"> <meta name="MobileOptimized" content="320"> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="canonical" href="http://lenciel.com/2013/04/first-steps-on-a-new-server/"> <link href="/favicon.png" rel="icon"> <script src="/assets/javascripts/app.js"></script> <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml"> <meta property="og:title" content="First steps on a new server"/><meta itemprop="name" content="First steps on a new server"/> <meta property="og:type" content="article"/> <meta property="og:url" content="http://lenciel.com/2013/04/first-steps-on-a-new-server/"/> <meta property="og:description" content=" First steps on a new server 一般来说，新开张..."/> <meta property="og:site_name" content="http://lenciel.com"/> <meta property="article:author" content="http://lenciel.com"> <meta property="article:published_time" content="2013-04-04 08:44:00 +0800"/> <meta property="article:section" content="configurationservertipstutorials"/> <meta itemprop="description" content=" First steps on a new server 一般来说，新开张..."/> <script>
     var _hmt = _hmt || [];
     (function() {
         var hm = document.createElement("script");
-        hm.src = "//hm.baidu.com/hm.js?42345b94bf173b38bef61f873677adfa";
+        hm.src = "https://hm.baidu.com/hm.js?42345b94bf173b38bef61f873677adfa";
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
     })();
 </script> <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','http://lenciel.qiniudn.com/analytics.js','ga');
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-175991-6', 'auto');
-  ga('send', 'pageview');
+    ga('create', 'UA-175991-6', 'auto');
+    ga('send', 'pageview');
 
-</script> </head> <body class="collapse-sidebar sidebar-footer"> <header role="banner"><hgroup> <h1><a href="/">@Lenciel</a></h1> </hgroup> </header> <nav role="navigation"><ul class="subscription" data-subscription="rss"> <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li> </ul> <ul class="main-navigation"> <li><a href="/"><i class="icon-home"></i>Home</a></li> <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li> <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li> </ul> </nav> <div id="main"> <div id="content"> <div> <article class="hentry" role="article"> <header> <h1 class="entry-title">First steps on a new server</h1> <p class="meta"> <time class='entry-date' datetime='2013-04-04 08:44:00 +0800'> <span class='date'>2013-04-04</span> <span class='time'>08:44:00</span> </p> </header> <div class="entry-content"><p>一般来说，新开张的小团队不会养专职的运维和部署团队。一般服务器开发的项目组会有人兼职做这部分的事情。刚开始的时候这部分的工作量一般也不大，但是随着租用的服务器越来越多，兼职的人就会发现自己是在打上甘岭战役————坡越来越陡。</p> <p>因此，一个简单而有效的标准流程是非常必要的。ZooM团队的服务器都会配置两个固定的帐号： <code>root</code> 和 <code>deploy</code> 。 <code>deploy</code> 这个用户具有 <code>sudo</code> 的权限。开发人员使用deploy但是不通过用户名密码登录而是用 <code>public key</code> 。这样一来，只需要保证所有机器的 <code>authorized_keys</code> 文件同步即可。后面要做的改进是：</p> <ul> <li>在所有机器禁止通过 root 账号进行ssh</li> <li>在所有机器上限制可以ssh的IP范围</li> </ul> <p>这样的实施方案对 <code>authorized_keys</code> 的保密性和正确性要求是很高的，但是在没有专门IT的时候，对我们这样的小团队基本是够用的。下面是详细的步骤：</p> <p>我们拿到的第一台机器是Ubuntu的，因为 <code>Gitlab</code> 只有Debian的版本。后面的机器大多会是CentOS，所以使用的命令可能会稍微有调整，但是意思是不变的。</p> <a name="L......root......"></a> <h2>更换root密码</h2> <pre><code class="bash">passwd
-</code></pre> <p>可以很长很复杂（反正也不需要记得），保存在某个地方在你忘记 <code>sudo</code> 密码或者是不能正常 <code>ssh</code> 的时候能找出来用就可以了。</p> <a name="L............"></a> <h2>更新系统</h2> <pre><code class="bash">apt-get update
-apt-get upgrade
-</code></pre> <a name="L......Fail2ban"></a> <h2>安装Fail2ban</h2> <pre><code class="bash">apt-get install fail2ban
-</code></pre> <p>Fail2ban是一个用来监控登录尝试的 <code>daemon</code> ，可以有效侦测和防止可疑行为的发生。这个工具文档很全，而且出厂配置就很齐全，几乎不需要定制就能投入使用了。</p> <a name="L......deploy......"></a> <h2>添加deploy用户</h2> <pre><code class="bash">useradd deploy
-mkdir /home/deploy
-mkdir /home/deploy/.ssh
-chmod 700 /home/deploy/.ssh
-</code></pre> <a name="L........code.public.key..code.."></a> <h2>配置 <code>public key</code> </h2> <p>使用密码的日子已经慢慢过时了，这方面Github很有<a href="https://help.github.com/categories/56/articles">贡献</a>。只需要：</p> <pre><code class="bash">vim /home/deploy/.ssh/authorized_keys
-</code></pre> <p>把 <code>id_rsa.pub</code> 的内容拷贝进去。然后：</p> <pre><code class="bash">chmod 400 /home/deploy/.ssh/authorized_keys
-chown deploy:deploy /home/deploy -R
-</code></pre> <p>当然你也可以使用 <code>id_rsa.pub</code> 之外的key，然后在本地的 <code>~/.ssh/config</code> 里面对 <code>IdentityFile</code> 做指定。具体方式可以查看 <code>~/.ssh/config</code>的说明。</p> <a name="L......deploy.................code.Sudo..code........"></a> <h2>测试deploy用户并赋予 <code>Sudo</code> 权限</h2> <p>先测试deploy是否能够正常登录，然后使用 <code>root</code> 账号设置密码：</p> <pre><code class="bash">passwd deploy
-</code></pre> <p>这是团队要用来 <code>sudo</code> 的账号，所以要弄得有意义好记一点儿。接下来：</p> <pre><code class="bash">visudo
-</code></pre> <p>注释掉所以已经存在的用户、用户组权限，然后加上：</p> <pre><code class="bash">root    ALL=(ALL) ALL
-deploy  ALL=(ALL) ALL
-</code></pre> <a name="L......SSH"></a> <h2>锁定SSH</h2> <p>设置ssh，禁止使用密码ssh，禁止使用 <code>root</code> 账号ssh。</p> <pre><code class="bash">vim /etc/ssh/sshd_config
-</code></pre> <p>添加下面的设置：</p> <pre><code class="bash">PermitRootLogin no
-PasswordAuthentication no
-</code></pre> <p>如果有需要还可以限定可以ssh的ip地址：</p> <pre><code class="bash">AllowUsers deploy@(your-ip) deploy@(another-ip-if-any)
-</code></pre> <p>重启ssh：</p> <pre><code class="bash">service ssh restart
-</code></pre> <a name="L..............."></a> <h2>设置防火墙</h2> <p>Ubuntu提供了 <code>ufw</code>，所以只需要：</p> <pre><code class="bash">ufw allow from {your-ip} to any port 22
-ufw allow 80
-ufw allow 443
-ufw enable
-</code></pre> <a name="L........................"></a> <h2>打开自动安全更新</h2> <p>虽然很多习惯好的服务器使用者会知道运行<code>apt-get update/upgrade</code> 但是如果服务器很多，总会有一些不那么被经常登录的机器，系统会比较陈旧。特别是做负载均衡的机器，可能很少有人登录。为了保证所有的机器都有足够的安全性需要打开自动更新（作为习惯控制一切的开发人员，自动更新总是一件让我很抗拒的事情，但是安全漏洞更让人抗拒）：</p> <pre><code class="bash">apt-get install unattended-upgrades
-vim /etc/apt/apt.conf.d/10periodic
-</code></pre> <p>在文件里面修改成：</p> <pre><code class="bash">APT::Periodic::Update-Package-Lists "1";
-APT::Periodic::Download-Upgradeable-Packages "1";
-APT::Periodic::AutocleanInterval "7";
-APT::Periodic::Unattended-Upgrade "1";
-</code></pre> <p>接着修改：</p> <pre><code class="bash">vim /etc/apt/apt.conf.d/50unattended-upgrades
-</code></pre> <p>修改文件成：</p> <pre><code class="bash">Unattended-Upgrade::Allowed-Origins {        
-    "Ubuntu lucid-security";
-    //"Ubuntu lucid-updates"; 只更新安全更新
-};
-</code></pre> <a name="L......Logwatch"></a> <h2>安装Logwatch</h2> <p>Logwatch是一个监控你的日志并发送邮件通知的daemon。</p> <pre><code class="bash">apt-get install logwatch
-vim /etc/cron.daily/00logwatch
-</code></pre> <p>在文件中添加：</p> <pre><code class="bash">/usr/sbin/logwatch --output mail --mailto lenciel@gmail.com --detail high
-</code></pre> <a name="What.s.Next"></a> <h2>What&rsquo;s Next</h2> <ul> <li>使用Puppet自动化这些配置</li> <li>在基础的配置上，把一个fresh的机器如果配置成各种形态的（Django/Web/Database/LoadBalance/&hellip;)</li> </ul> </div> <footer> <p class="meta"> <span class="byline author vcard">Posted by <span class="fn">Lenciel</span></span> <span class="categories"> <a class='category' href='/categories/configuration/'>configuration</a>, <a class='category' href='/categories/server/'>server</a>, <a class='category' href='/categories/tips/'>tips</a>, <a class='category' href='/categories/tutorials/'>tutorials</a> </span> </p> <div class="sharing"> </div> <p class="meta"> <a class="basic-alignment left" href="/2013/03/boxen-introduction/" title="Previous Post: Boxen introduction">&laquo; Boxen introduction</a> <a class="basic-alignment right" href="/2013/04/use-kaleidoscope-as-code-review-tool/" title="Next Post: Use Kaleidoscope as code review tool">Use Kaleidoscope as code review tool &raquo;</a> </p> </footer> </article> </div> </div> </div> <footer role="contentinfo"><p> Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a> <span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span> <section class="contruction-wrap"> <div class="contruction"></div> </section> </p> </footer> <script type="text/javascript">
+</script> </head> <body class="collapse-sidebar sidebar-footer"> <header role="banner"><hgroup> <h1><a href="/">@Lenciel</a></h1> </hgroup> </header> <nav role="navigation"><ul class="subscription" data-subscription="rss"> <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li> </ul> <ul class="main-navigation"> <li><a href="/"><i class="icon-home"></i>Home</a></li> <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li> <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li> </ul> </nav> <div id="main"> <div id="content"> <div> <article class="hentry" role="article"> <header> <h1 class="entry-title">First steps on a new server</h1> <p class="meta"> <time class='entry-date' datetime=''> <span class='date'></span> <span class='time'></span> </time> </p> </header> <div class="entry-content"><p>一般来说，新开张的小团队不会养专职的运维和部署团队。一般服务器开发的项目组会有人兼职做这部分的事情。刚开始的时候这部分的工作量一般也不大，但是随着租用的服务器越来越多，兼职的人就会发现自己是在打上甘岭战役————坡越来越陡。</p> <p>因此，一个简单而有效的标准流程是非常必要的。ZooM团队的服务器都会配置两个固定的帐号： <code>root</code> 和 <code>deploy</code> 。 <code>deploy</code> 这个用户具有 <code>sudo</code> 的权限。开发人员使用deploy但是不通过用户名密码登录而是用 <code>public key</code> 。这样一来，只需要保证所有机器的 <code>authorized_keys</code> 文件同步即可。后面要做的改进是：</p> <ul> <li>在所有机器禁止通过 root 账号进行ssh</li> <li>在所有机器上限制可以ssh的IP范围</li> </ul> <p>这样的实施方案对 <code>authorized_keys</code> 的保密性和正确性要求是很高的，但是在没有专门IT的时候，对我们这样的小团队基本是够用的。下面是详细的步骤：</p> <p>我们拿到的第一台机器是Ubuntu的，因为 <code>Gitlab</code> 只有Debian的版本。后面的机器大多会是CentOS，所以使用的命令可能会稍微有调整，但是意思是不变的。</p> <a name="L......root......"></a> <h2>更换root密码</h2> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span></span>passwd
+</span></code></pre></td></tr></table></div></figure> <p>可以很长很复杂（反正也不需要记得），保存在某个地方在你忘记 <code>sudo</code> 密码或者是不能正常 <code>ssh</code> 的时候能找出来用就可以了。</p> <a name="L............"></a> <h2>更新系统</h2> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span></span>apt-get update
+</span><span class='line'>apt-get upgrade
+</span></code></pre></td></tr></table></div></figure> <a name="L......Fail2ban"></a> <h2>安装Fail2ban</h2> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span></span>apt-get install fail2ban
+</span></code></pre></td></tr></table></div></figure> <p>Fail2ban是一个用来监控登录尝试的 <code>daemon</code> ，可以有效侦测和防止可疑行为的发生。这个工具文档很全，而且出厂配置就很齐全，几乎不需要定制就能投入使用了。</p> <a name="L......deploy......"></a> <h2>添加deploy用户</h2> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span></span>useradd deploy
+</span><span class='line'>mkdir /home/deploy
+</span><span class='line'>mkdir /home/deploy/.ssh
+</span><span class='line'>chmod <span class="m">700</span> /home/deploy/.ssh
+</span></code></pre></td></tr></table></div></figure> <a name="L........code.public.key..code.."></a> <h2>配置 <code>public key</code> </h2> <p>使用密码的日子已经慢慢过时了，这方面Github很有<a href="https://help.github.com/categories/56/articles">贡献</a>。只需要：</p> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span></span>vim /home/deploy/.ssh/authorized_keys
+</span></code></pre></td></tr></table></div></figure> <p>把 <code>id_rsa.pub</code> 的内容拷贝进去。然后：</p> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span></span>chmod <span class="m">400</span> /home/deploy/.ssh/authorized_keys
+</span><span class='line'>chown deploy:deploy /home/deploy -R
+</span></code></pre></td></tr></table></div></figure> <p>当然你也可以使用 <code>id_rsa.pub</code> 之外的key，然后在本地的 <code>~/.ssh/config</code> 里面对 <code>IdentityFile</code> 做指定。具体方式可以查看 <code>~/.ssh/config</code>的说明。</p> <a name="L......deploy.................code.Sudo..code........"></a> <h2>测试deploy用户并赋予 <code>Sudo</code> 权限</h2> <p>先测试deploy是否能够正常登录，然后使用 <code>root</code> 账号设置密码：</p> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span></span>passwd deploy
+</span></code></pre></td></tr></table></div></figure> <p>这是团队要用来 <code>sudo</code> 的账号，所以要弄得有意义好记一点儿。接下来：</p> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span></span>visudo
+</span></code></pre></td></tr></table></div></figure> <p>注释掉所以已经存在的用户、用户组权限，然后加上：</p> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span></span>root    <span class="nv">ALL</span><span class="o">=(</span>ALL<span class="o">)</span> ALL
+</span><span class='line'>deploy  <span class="nv">ALL</span><span class="o">=(</span>ALL<span class="o">)</span> ALL
+</span></code></pre></td></tr></table></div></figure> <a name="L......SSH"></a> <h2>锁定SSH</h2> <p>设置ssh，禁止使用密码ssh，禁止使用 <code>root</code> 账号ssh。</p> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span></span>vim /etc/ssh/sshd_config
+</span></code></pre></td></tr></table></div></figure> <p>添加下面的设置：</p> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span></span>PermitRootLogin no
+</span><span class='line'>PasswordAuthentication no
+</span></code></pre></td></tr></table></div></figure> <p>如果有需要还可以限定可以ssh的ip地址：</p> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span></span>AllowUsers deploy@<span class="o">(</span>your-ip<span class="o">)</span> deploy@<span class="o">(</span>another-ip-if-any<span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure> <p>重启ssh：</p> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span></span>service ssh restart
+</span></code></pre></td></tr></table></div></figure> <a name="L..............."></a> <h2>设置防火墙</h2> <p>Ubuntu提供了 <code>ufw</code>，所以只需要：</p> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span></span>ufw allow from <span class="o">{</span>your-ip<span class="o">}</span> to any port <span class="m">22</span>
+</span><span class='line'>ufw allow <span class="m">80</span>
+</span><span class='line'>ufw allow <span class="m">443</span>
+</span><span class='line'>ufw <span class="nb">enable</span>
+</span></code></pre></td></tr></table></div></figure> <a name="L........................"></a> <h2>打开自动安全更新</h2> <p>虽然很多习惯好的服务器使用者会知道运行<code>apt-get update/upgrade</code> 但是如果服务器很多，总会有一些不那么被经常登录的机器，系统会比较陈旧。特别是做负载均衡的机器，可能很少有人登录。为了保证所有的机器都有足够的安全性需要打开自动更新（作为习惯控制一切的开发人员，自动更新总是一件让我很抗拒的事情，但是安全漏洞更让人抗拒）：</p> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span></span>apt-get install unattended-upgrades
+</span><span class='line'>vim /etc/apt/apt.conf.d/10periodic
+</span></code></pre></td></tr></table></div></figure> <p>在文件里面修改成：</p> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span></span>APT::Periodic::Update-Package-Lists <span class="s2">&quot;1&quot;</span><span class="p">;</span>
+</span><span class='line'>APT::Periodic::Download-Upgradeable-Packages <span class="s2">&quot;1&quot;</span><span class="p">;</span>
+</span><span class='line'>APT::Periodic::AutocleanInterval <span class="s2">&quot;7&quot;</span><span class="p">;</span>
+</span><span class='line'>APT::Periodic::Unattended-Upgrade <span class="s2">&quot;1&quot;</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure> <p>接着修改：</p> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span></span>vim /etc/apt/apt.conf.d/50unattended-upgrades
+</span></code></pre></td></tr></table></div></figure> <p>修改文件成：</p> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span></span>Unattended-Upgrade::Allowed-Origins <span class="o">{</span>
+</span><span class='line'>    <span class="s2">&quot;Ubuntu lucid-security&quot;</span><span class="p">;</span>
+</span><span class='line'>    //<span class="s2">&quot;Ubuntu lucid-updates&quot;</span><span class="p">;</span> 只更新安全更新
+</span><span class='line'><span class="o">}</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure> <a name="L......Logwatch"></a> <h2>安装Logwatch</h2> <p>Logwatch是一个监控你的日志并发送邮件通知的daemon。</p> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span></span>apt-get install logwatch
+</span><span class='line'>vim /etc/cron.daily/00logwatch
+</span></code></pre></td></tr></table></div></figure> <p>在文件中添加：</p> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span></span>/usr/sbin/logwatch --output mail --mailto lenciel@gmail.com --detail high
+</span></code></pre></td></tr></table></div></figure> <a name="What.s.Next"></a> <h2>What&rsquo;s Next</h2> <ul> <li>使用Puppet自动化这些配置</li> <li>在基础的配置上，把一个fresh的机器如果配置成各种形态的（Django/Web/Database/LoadBalance/&hellip;)</li> </ul> </div> <footer> <p class="meta"> <span class="byline author vcard">Posted by <span class="fn">Lenciel</span></span> <span class="categories"> <a class='category' href='/categories/configuration/'>configuration</a>, <a class='category' href='/categories/server/'>server</a>, <a class='category' href='/categories/tips/'>tips</a>, <a class='category' href='/categories/tutorials/'>tutorials</a> </span> </p> <div class="sharing"> </div> <p class="meta"> <a class="basic-alignment left" href="/2013/03/boxen-introduction/" title="Previous Post: Boxen introduction">&laquo; Boxen introduction</a> <a class="basic-alignment right" href="/2013/04/use-kaleidoscope-as-code-review-tool/" title="Next Post: Use Kaleidoscope as code review tool">Use Kaleidoscope as code review tool &raquo;</a> </p> </footer> </article> </div> </div> </div> <footer role="contentinfo"><p> Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a> <span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span> </p> </footer> <script type="text/javascript">
   var stylesheet = document.createElement('link');
   stylesheet.href = '/assets/stylesheets/app.css';
   stylesheet.rel = 'stylesheet';

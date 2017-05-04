@@ -4,13 +4,273 @@
   <title><![CDATA[Category: microservice | @Lenciel]]></title>
   <link href="http://lenciel.com/categories/microservice/atom.xml" rel="self"/>
   <link href="http://lenciel.com/"/>
-  <updated>2017-04-14T15:06:07+08:00</updated>
+  <updated>2017-05-02T17:08:47+08:00</updated>
   <id>http://lenciel.com/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[关于微服务实践的一次分享]]></title>
+    <link href="http://lenciel.com/2017/03/msa-in-practice/"/>
+    <updated>2017-03-11T14:39:44+08:00</updated>
+    <id>http://lenciel.com/2017/03/msa-in-practice</id>
+    <content type="html"><![CDATA[<p>最近在EGO里做了一次关于微服务架构的分享，<a href="https://github.com/lenciel/talks/tree/master/slides/2017_03_19_ego_msa_in_practice">keynote</a>写好了，思路在这里梳理一下。</p>
+
+<a name="L............"></a>
+<h2>不讲干货</h2>
+
+<p>码农的四大错觉里面，排第一的就是干货有用。</p>
+
+<p>我见过很多人在技术帖子或者技术大会里给其他人打“没有干货”的标签。</p>
+
+<p>太“水”的东西大家是应该抵制。</p>
+
+<p>但干货也是思维的结果，而非过程，对本座来说，就好像风干了之后的罐装海味，不好吃。</p>
+
+<p>腾讯，阿里是怎么实施微服务架构的，介绍得再“干”，你听了再兴奋，拿回去多半也没法落地。</p>
+
+<p>构建软件系统，看起来是一群理性的人，进行的一件理性的工作。</p>
+
+<p>但人类的理性在于接受自身的不理性和事物的无规律：而不是照本宣科。</p>
+
+<p>因为根本没有可以长期驻留的“本”，万事万物都在高速运动和变化着，没有什么方法论可以一直有效。</p>
+
+<p>所以Martin Fowler说，“唯一成立的业务逻辑就是业务没有逻辑”。</p>
+
+<p>好的系统，都不是被设计出来，而是被恰到好处的人在恰到好处的流程里慢慢抚育出来的。</p>
+
+<p>所以主要是分享一些我们实施过程中的故事，遇到的问题和后续的一些想法。</p>
+
+<a name="MSA............"></a>
+<h2>MSA是什么？</h2>
+
+<p>微服务架构（Microservice Architecture，简称MSA）的思想其实不是Martin Fowler提出的，而是存在已久。只不过Martin Fowler和James Lewis在那篇<a href="https://martinfowler.com/articles/microservices.html">广为传颂的文章</a>里给它下了个简明扼要的的定义：</p>
+
+<blockquote><p>In short, the microservice architectural style is an approach to developing a single application as a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API. These services are built around business capabilities and independently deployable by fully automated deployment machinery. There is a bare minimum of centralized management of these services, which may be written in different programming languages and use different data storage technologies.</p></blockquote>
+
+<p>我经常跟同学们开玩笑说，随便在软件园拦住一个人，都可以跟你聊半个小时“微服务”，因为这里提到的一些说法看起来非常具体：</p>
+
+<ul>
+<li>细粒度的服务</li>
+<li>独立进程</li>
+<li>围绕业务建模</li>
+<li>轻量级通信</li>
+<li>去中心化管理</li>
+</ul>
+
+
+<p>但一旦进入了实际操作，这些微言大义的概念，怎么落地到系统开发里面，就不是每个人都明白的了。其实回过头来看看，Martin Fowler为什么说“microservice architectural style（微服务架构风格）”而不像很多人只是说“microservice（微服务）”，是很值得玩味的。</p>
+
+<a name="L....................."></a>
+<h3>是风格不是教条</h3>
+
+<p>每个公司进行架构改造，都是<a href="/2017/02/handling-data-in-msa/">业务特点</a>、<a href="/2017/02/the-real-success-by-doing-msa/">团队情况</a>和技术栈等多方面因素综合决定的系统工程。微服务架构是一种“风格”，而不是可以按图索骥的“教条”。</p>
+
+<a name="L....................."></a>
+<h3>不是什么新科技</h3>
+
+<p>MSA里面提到的很多想法，追究起来都源远流长。“micro-web-service”的提法2005年就有，“microservice”这个叫法，也早在2011年威尼斯的软件会议里面就开始被使用了。</p>
+
+<p>整个思路的形成和演进里面，“<a href="https://en.wikipedia.org/wiki/Pipeline_(Unix">Unix-like</a>”或者是“Unix Way”被反复提及。James Lewis第一个比较正式的关于微服务架构的演讲就叫“Microservices - Java, the Unix Way”。</p>
+
+<p>这是因为Unix的很多设计哲学，比如“small is beautiful”或者“make each program do one thing well”，都深深的影响着微服务架构的设计思想。</p>
+
+<p>甚至我觉得Unix的“everything is a file”，对应过来正好是“everything is a service”。</p>
+
+<a name="L......SOA............"></a>
+<h3>不是SOA换了个壳</h3>
+
+<p>很多像我一样从业已久的人，听到新名词的时候总是持抵抗和怀疑态度的。MSA不过是Thoughtworks把SOA换了个名字出来坑钱而已，，是一个很容易入的坑。</p>
+
+<p>实际上，它们确实有关系，但并不是SOA换了个壳。你可以把MSA想成是SOA的一种实践方式，正如Scrum是Agile的实践方式一样。只不过这种实践方式，和以前的各种实践方式相比，最大的不同就是去掉了ESB这样的总线，让系统的各个部分可以相对独立的被设计、开发、部署和运维。</p>
+
+<a name="MSA.................."></a>
+<h2>MSA究竟是什么？</h2>
+
+<blockquote><p>Technology is the answer, but what was the question?
+- Cedric Price (1965)</p></blockquote>
+
+<p>前面说了很多MSA不是什么，那么它究竟是什么？不妨从我们究竟为什么需要它这个维度来思考。</p>
+
+<p>为什么单体的设计不能满足需要了？我们可以从率先进行MSA实施的公司来看。</p>
+
+<p>Nike，Twitter，Netflix，以及从来不说自己在做微服务架构，但其实是做得最好的Google，它们的业务差别其实很大。比如Nike和Twitter，一个业务很复杂，一个业务很简单。</p>
+
+<p>真正的共同之处在于它们构建的都是大型分布式系统。</p>
+
+<a name="L........................"></a>
+<h3>什么是分布式系统</h3>
+
+<p>本座在面试的时候常常问，“请问，什么样的系统，是分布式系统？”</p>
+
+<p>毕竟，我们不是所有人都在构建Twitter那样复杂的系统。</p>
+
+<p><img src="/downloads/images/2017_03/twitter_services_deps.jpg" title="Don't touch me..." alt="Vhost threshold" /></p>
+
+<p><em>fig1.1 Twitter的服务间依赖图</em></p>
+
+<p>有很多有趣的答案，但我们不妨看看图灵奖得主，分布式系统的先驱<a href="https://en.wikipedia.org/wiki/Leslie_Lamport">Leslie Lamport</a>是怎么说的：</p>
+
+<blockquote><p>A distributed system is one in which the failure of a computer you didn&rsquo;t know existed can render your own computer unusable.</p></blockquote>
+
+<p>这句话是几十年前说的，那时候有计算能力的设备还只有<code>computer</code>而已，现在把手机等各种设备都算上的话，如果一台你不知道的计算设备挂了，会影响你的设备的使用，就叫分布式系统的话，我们可以想想，有多少系统应该算是分布式系统呢？</p>
+
+<p>淘宝，京东，腾讯，百度？</p>
+
+<p>滴滴，知乎，摩拜，微信？</p>
+
+<p>可以说，移动互联网发展到今天，几乎所有的系统，都是分布式系统。</p>
+
+<a name="L........................"></a>
+<h3>分布式系统的难点</h3>
+
+<p>为什么系统都变成了分布式系统？</p>
+
+<p>因为在处理和分析数据时，最理想的计算环境是这样的：一台有无限存储和计算能力的“超级计算机”，可以提供无穷大的存储容量，并且可以将计算时间降低至无穷小。</p>
+
+<p>可是像《银河系漫游指南》里全宇宙全时空第二强的“深思”这样的计算机并不存在，因此现实里面我们需要进行两个维度的扩展：</p>
+
+<ul>
+<li>纵向的：提升单个设备的软硬件处理能力，比如我们的各种超级计算机的研究</li>
+<li>横向的：构建分布式系统，通过多台计算机来提供一个处理能力更强的系统</li>
+</ul>
+
+
+<p>对于大多数的场景，横向的扩展显然是更加现实的。但这样的系统在构建过程中，有一些固有的难点，比如物理上的，比如理论上的。因为这些难点，分布式系统有两个很难解决的问题：异步性（Asynchrony）和局部失效（Partial Failure）。</p>
+
+<a name="L........."></a>
+<h4>异步性</h4>
+
+<p>异步性表征的物理上的难点，也就是物理节点的增加带来的难点：</p>
+
+<ul>
+<li>系统整体出错概率增大</li>
+<li>节点间通信量增加</li>
+<li>节点间距离增加</li>
+</ul>
+
+
+<p>异步性会导致不确定性（Nondeterminism），包括timing上的，也包括sorting上的。</p>
+
+<p>Grace Hopper（第一个编译器的作者），喜欢给自己每个学生发一条11.8英寸的电线：这是电一纳秒能够跑的距离，他想提醒学生脑子里面要有时延。</p>
+
+<p>Jeff Dean在斯坦福的那个<a href="https://static.googleusercontent.com/media/research.google.com/zh-CN//people/jeff/stanford-295-talk.pdf">著名的讲座</a>里面提出了每个程序员都应该知道的<a href="https://www.quora.com/What-are-the-numbers-that-every-computer-engineer-should-know-according-to-Jeff-Dean">一些时延数据</a>。</p>
+
+<p><a href="http://queue.acm.org/detail.cfm?id=2745385">There is no Now</a>&hellip;</p>
+
+<a name="L............"></a>
+<h4>局部失效</h4>
+
+<p>局部失效表征的是理论上的难点：</p>
+
+<ul>
+<li>如何处理局部失效：节点失效、网络分区失效、拜占庭失效等情况下，系统的执行和操作不应受到失效的影响；</li>
+<li>失效了如何保持一致:系统中相关数据间的逻辑关系应当是正确和完整的；</li>
+</ul>
+
+
+<p>在1985年的时候，Fischer, Lynch和Patterson就提出了分布式系统最重要的理论之一：<a href="http://the-paper-trail.org/blog/a-brief-tour-of-flp-impossibility/">FLP不可能性</a>，毁灭了构建分布式超级计算机系统的幻想：</p>
+
+<blockquote><p>在假设网络可靠、计算节点只会因崩溃而失效的最小化异步模型系统中，仍然不存在一个可以解决一致性问题的确定性算法。</p></blockquote>
+
+<p>但随后，Eric Brewer等人提出了CAP定理（如今它比FLP更加深入人心）：</p>
+
+<blockquote><p>分布式计算系统不可能同时确保一致性(Consistency)、可用性(Availability)和分区容忍性(Partition tolerance)。</p></blockquote>
+
+<p>在这种三者只能取其二的思想指导下，大量的系统和协议被构建出来。</p>
+
+<a name="L............"></a>
+<h4>根本问题</h4>
+
+<p>无论是异步性还是局部失效，背后的根本问题是，任何软硬件系统都会崩坏。这两年Google的Spanner被很多人错误地称为“解决了分布式系统的。</p>
+
+<p>实际上，Spanner的TrueTime组件并不提供一个全局唯一的时钟：它给你一个当前值可能的偏差，并且在设计上它就明确，这个偏差可能在1-7毫秒。</p>
+
+<p>换句话说，虽然是Google，虽然它用上了GPS+原子钟的方案，时延仍然是这样的大。如果再考虑x86的时钟会被负载、热量、功率等各种因素影响，可以认为，Google的Spanner并不是尝试去解决分布式系统的问题：正好相反，它是承认，然后面对里面的问题。</p>
+
+<p>所有的靠谱的系统设计者都知道面对这些问题才是正确的做法：以Spanner依赖的GPS时钟为例，它靠着30颗卫星保持运行，只需要其中的4颗就可以工作，并且每颗卫星的关键部件，比如原子钟，都是有冗余的。</p>
+
+<a name="L..............."></a>
+<h3>微服务架构</h3>
+
+<p>可以认为，MSA是在下面三个方面不断发展的基础上，渐渐坐实成为一种架构的：</p>
+
+<ul>
+<li>必要的组件：服务注册与发现、熔断等等</li>
+<li>有用的方法：DDD，SAGA，CQRS等等</li>
+<li>日益成熟的新技术：容器，No-SQL等等</li>
+</ul>
+
+
+<p>所以，MSA的定义可以是：</p>
+
+<blockquote><p>在分布式系统建设中，为了应对需求的快速变更，在高增速的大公司内部构建高效、自治、响应迅速的“创业风格”团队的一些尝试。</p></blockquote>
+
+<p>换句话说，它是涵盖研发、测试、部署、监控、运维各方面的整个生命周期的生态，隐含着一些工具、方法和构建系统的思路。不仅意味着业务的切割，也要求技术栈的解构和重建。</p>
+
+<a name="L............"></a>
+<h2>如何实施</h2>
+
+<a name="L..."></a>
+<h3>人</h3>
+
+<p>人永远是最重要的环节，因此在进行MSA的落地之前，不妨问问自己：</p>
+
+<ul>
+<li>有多少研发？里面有多少懂运维？</li>
+<li>有多少团队？他们互相信任吗？</li>
+<li>有多少产品？多少业务系统？</li>
+<li>哪些需要纳入微服务化的计划？</li>
+<li>如何去在内部销售基础设施？</li>
+</ul>
+
+
+<p><a href="https://en.wikipedia.org/wiki/Conway%27s_law">康威定律</a>的内容，值得每个架构师和技术管理者<a href="http://www.infoq.com/cn/articles/every-architect-should-study-conway-law">学习</a>。</p>
+
+<a name="L......"></a>
+<h3>流程</h3>
+
+<a name="CD.CI"></a>
+<h4>CD/CI</h4>
+
+<p>MSA技术层面上每一目的的达成，几乎都是多组件、多层级、多技术的共同作用。因此，要积极地、容易地接纳新业务，新平台，新技术栈，就必须有比较顺畅的流程，特别是CD、CI流程。</p>
+
+<a name="L......"></a>
+<h4>测试</h4>
+
+<p><a href="http://www.audible.com/pd/Business/The-Hard-Thing-About-Hard-Things-Audiobook/B00I0AJC2Y?mkwid=DSAINTTitle_dc&amp;pcrid=158258695668&amp;pmt=b&amp;pkw=&amp;source_code=GO1GBSH07271690CB&amp;cvosrc=ppc%20dynamic%20search.google.634950925&amp;cvo_crid=158258695668&amp;cvo_pid=33581432409&amp;gclid=CjwKEAjw3KDIBRCz0KvZlJ7k4TgSJABDqOK7txc86bRc4oHeRJ69icgVvd0fOpt4CaUEUoaA9nLLRBoCGNnw_wcB">The Hard Thing About Hard Things</a>大家都可以去看看，非常有意思。</p>
+
+<p>分布式系统的两大难题带来的是复杂度和状态空间的指数级增加。</p>
+
+<p>比如一个单体的应用，了不起就是5个实例跑在一个HA Proxy背后，测试的时候你可以测5个实例。</p>
+
+<p>如果它被拆成了10个服务，每个服务跑了12个docker实例起来呢？</p>
+
+<p>传统的测试方法肯定是不行的。</p>
+
+<p>因此，如何进行“契约测试”是测试技术发展的一个新动向，Lamport本人就贡献了<a href="http://lamport.azurewebsites.net/tla/tla.html">TLA+</a>来进行分布式系统的<a href="https://en.wikipedia.org/wiki/Formal_verification">形式化的验证</a>。</p>
+
+<p>如何这样的投入对于团队太奢侈了怎么办？感觉可以看看<a href="https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-yuan.pdf">这篇论文</a>，里面有很多数据非常有趣，看完之后对测试设计帮助很大：</p>
+
+<blockquote><p>Three nodes or less can reproduce 98% of failures.
+35% of catastrophic failures are caused by very basic things.
+Testing error handling code could have prevented 58% of catastrophic failures.</p></blockquote>
+
+<p>另外，除开常规的测试手段，分布式系统大量的使用Fault Injection或者Game Days这种方式来进行测试。比如Netflix就公布了自己的<a href="https://github.com/Netflix/SimianArmy">Simian Army</a>工具，<a href="http://riemann.io/">Riemann</a>的作者Aphyr还用Clojure写了个工具叫<a href="https://github.com/jepsen-io/jepsen">Jepsen</a>。</p>
+
+<p>Game Days主要指通过演习来让Partial Failure确实发生。比较著名的有Google的Wheel of Misfortune，再比如Stripe在自己的Redis主节点上来了一发<code>kill -9</code>之后发现了Redis的一个bug，于是把这样的乱来变成了内部传统。</p>
+
+<a name="L......"></a>
+<h3>技术</h3>
+
+<p>解决了前面这两个方面的问题，要落地微服务其实已经成功了大半。</p>
+
+<p>关于技术方面，详见keynote吧。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[微服务架构里的数据处理]]></title>
@@ -34,7 +294,7 @@
 
 
 <a name="L.................."></a>
-<h3>什么是领域？</h3>
+<h2>什么是领域？</h2>
 
 <p>在大多数关于微服务架构的讨论中，“领域”这个关键的概念，也就是DDD（Domain Driven Design）里面的<code>Domain</code>，都是没有被提及的。</p>
 
@@ -53,7 +313,7 @@
 <p>对一个短信的发送方进行所谓的“领域建模”是相对容易的，真正的系统设计里面，我们往往面对的是复杂度高很多的，多个数据模型组成的领域模型的构建，这个时候就需要边界。</p>
 
 <a name="L......"></a>
-<h3>边界</h3>
+<h2>边界</h2>
 
 <p>什么时候需要划分边界？在<a href="http://dddcommunity.org/">DDD协会</a>发布的材料里面建议，围绕<a href="http://dddcommunity.org/resources/ddd_terms/">Entities、Value Objects和Aggregates</a>来进行领域建模，从而确定一个<a href="https://martinfowler.com/bliki/BoundedContext.html">有边界的上下文</a>。</p>
 
@@ -84,7 +344,7 @@
 <p>所以，微服务架构的实践，一定是业务领域、业务规模和组织架构的三方面需求动态平衡的结果。没有办法形成固定的套路，并不仅仅是技术方面的原因，比如系统的复杂度，而是因为每个公司在这三个方面的差别很大。</p>
 
 <a name="L......................"></a>
-<h3>什么是事务边界?</h3>
+<h2>什么是事务边界?</h2>
 
 <p>我们需要DDD这样的技术来帮助我们理解我们用来实现系统的模型，并围绕模型划定有上下文的边界。在不同上下文的不同边界内，一个现实里的对象（比如发信人）可能有不同的数据模型。</p>
 
@@ -128,7 +388,7 @@
 <p>这个简化的例子展示了我们可以怎样规划较小的事务边界。但是在很多情况下我们的数据并不是这么容易就可以处理的，比如当完成预约之后，司机和货主最终希望是形成担保交易开始进入承运环节，这就需要跨边界进行数据通信了。</p>
 
 <a name="L...................................."></a>
-<h3>如何进行跨边界的数据通信</h3>
+<h2>如何进行跨边界的数据通信</h2>
 
 <p>当这样的需求发生时，如何在不同的Aggregates甚至不同的上下文边界保持数据的一致性？</p>
 
@@ -173,7 +433,7 @@
 <p>那如果一个服务只有一个数据库，并且这个数据库不与其他服务进行分享呢？那么它可以订阅事件流中自己感兴趣的事件，然后往其他服务共享出来的数据库添加一些数据作为事件的响应。“共享数据库”在很多地方被批评说不是一种好的实现方式，其实只要是符合场景，并没有关系。记住，实践微服务架构，没有规矩，只有权衡。比如我们的好几个服务就共用了数据库，这些服务进程都是我们的团队来维护，仍然做到了良好的自治性。</p>
 
 <a name="L...................................."></a>
-<h3>如果换种方式思考数据呢？</h3>
+<h2>如果换种方式思考数据呢？</h2>
 
 <p>如果我们换一种视角，把所有的东西都作为事件来处理，并且把这些事件持久化。在这种思想下，数据库，缓存，索引都可以被看作是发生在过去的事件持久化后的库存，而当前状态则是建立在这份库存基础上的系统状态的反映。</p>
 
@@ -190,7 +450,7 @@
 <p>更多关于这方面的内容可以看看Martin Kleppmann的<a href="http://www.confluent.io/blog/turning-the-database-inside-out-with-apache-samza/">“Turning the database inside-out with Apache Samza”</a>。</p>
 
 <a name="L......"></a>
-<h3>总结</h3>
+<h2>总结</h2>
 
 <p>关于微服务架构的实践很容易陷入的陷阱就是一上来就选框架或者选模式：“我们RPC用Dubbo，用Zookeeper做配置中心”或者“每个服务都有自己独立的数据库”。微服务架构成功落地的关键，首先是人，然后是对数据进行仔细的研究和建模，最后才是确定框架和技术栈。</p>
 
@@ -204,7 +464,7 @@
     <updated>2017-02-12T03:58:52+08:00</updated>
     <id>http://lenciel.com/2017/02/why-event-driven-when-doing-msa</id>
     <content type="html"><![CDATA[<a name="L......"></a>
-<h3>事件</h3>
+<h2>事件</h2>
 
 <p>我们在实践微服务架构的时候，根本目的是为了在“商业层面”拥有更加敏捷的系统：更容易响应需求变化，更容易添加、发布和尝试新功能，从而跑在竞争对手前面。</p>
 
@@ -219,7 +479,7 @@
 <p>软件系统也可以被构造成这样：独立，自治，容错，可扩展。</p>
 
 <a name="L.........................................."></a>
-<h3>从授权到自治，以及最终一致性</h3>
+<h2>从授权到自治，以及最终一致性</h2>
 
 <p>在很多分布式系统的实现里面，人们都通过创建一个单一地址空间来适应不稳定的网络环境。这是个<a href="https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing">从很多方面来看都错误的做法</a>，但是它实现起来要简单一些：通过RPC调用，让remote的对象处理一些任务，或者请求一些数据。以电商里面结算购物车为例：购物车服务调用计价服务，计价服务可能会调用物流服务，根据发货地区和物流服务商等因素调整价格，同时购物车服务又会调用仓储服务来获取信息和更新货架。这就是所谓的“授权管理”模式：我们调用对数据有修改权限的服务，完成相应的操作。这种模式就意味着大量的全局状态和互斥锁，并且需要大量的事务。</p>
 
@@ -228,7 +488,7 @@
 <p>如果我们换个角度来看系统：不是依靠调用方对某个资源或者服务可以行使的权力来驱动系统，而是通过时间和时间轴上发生的事件来驱动系统，就像我们自己的实际生活一样。还是以电商的系统举例，我们的物流服务有没有可能知道目前顺丰在某个区域搞活动，使用顺丰有优惠，然后把这个数据保存在自己的数据库里面，这样每个订单产生时，这些区域的订单默认使用顺丰？如果我们的服务都这样来设计，它们的研发就不需要考虑太多依赖方当前的状态。</p>
 
 <a name="L.................."></a>
-<h3>最终一致性？</h3>
+<h2>最终一致性？</h2>
 
 <p>通过事件驱动，而不是通过“just-in-time”的授权查询使得系统里各个服务能够更加自治，更好容错，更有弹性。但是影响复杂自适应系统的自治性的一个因素，也会影响自治的事件驱动系统，那就是时延“delays”。</p>
 
@@ -237,7 +497,7 @@
 <p>么最终一致性指什么呢？再以购物为例。如果不是事件驱动的，那么如果你往购物车里面添加了某个商品，这时候仓储服务如果出了问题，你的查询没有返回，你就只好死等在那里。但是如果大家都使用事件驱动，你添加购物车的时候，发出了一个事件。这个时候仓储服务不在线，前端上看来，你还是把商品加入了购物车。当仓储系统恢复时，它收到之前那个事件，发现这个商品已经卖光了，这个时候它抛出一个“库存不足”的事件。购物车服务，计费服务等服务就根据当前用户的状态，去消费这个事件（如果没有结算就在结算的时候通知用户，如果已经结算就要退款或者补货等等）。这样让用户不被阻塞，并最终保持状态一致，就叫做最终一致性。</p>
 
 <a name="L..............."></a>
-<h3>需要的技术</h3>
+<h2>需要的技术</h2>
 
 <p>关于事件，延迟和一致性，再多说几句。事件只有在能够保证它们的时序的时候，才是可用的。也就是说，一组事件的时序，必须对于消费方来说是可信的。这涉及分布式系统里面的另外一个难题，对于构建“transactionality”也同样重要，以后再细说。但总的来说，如果事件乱序了，那么我们不做手工的修复就没有保持最终一致性。<a href="https://martin.kleppmann.com/">Martin Kleppmann</a>管这个叫做“perpetual inconsistency”。时延，乱序，是分布式系统里面的两个难题。</p>
 
@@ -257,12 +517,12 @@
 <p>所以看到各种会议，博客，社交媒体上实施微服务架构的经验分享时，要明白这里面真正的成功并不在于对各种技术的应用，或者说，在成功利用Docker、Kubernets或者SpringBoot等等性感的技术之外，微服务架构带来的最大的收益并不简简单单是技术的落地。</p>
 
 <a name="L..............."></a>
-<h3>最大的收益</h3>
+<h2>最大的收益</h2>
 
 <p>微服务架构真正的收益在于形成小而美，能胜任各种职能的扁平化，自组织，自管理的团队，完成在传统组织架构下无法完成的拓展性和创新性工作。</p>
 
 <a name="L....................."></a>
-<h4>两个披萨的团队</h4>
+<h3>两个披萨的团队</h3>
 
 <p>Amazon的“团队规模应该控制在点两个披萨就可以吃饱”的规则很有名，Jeff Bezos<a href="http://99u.com/articles/7255/the-jeff-bezos-school-of-long-term-thinking">自己说</a>：</p>
 
@@ -284,7 +544,7 @@ Bezos: No. Communication is terrible”</p></blockquote>
 <p>其实要感受这个不需要那么多理论，回忆一下参加一个婚礼时在餐桌上沟通的质量，和跟两三个朋友喝个茶沟通的质量对比一下，就明白小团队的优势。但我还是推荐好好读读Hackman关于<a href="http://econ.au.dk/fileadmin/Economics_Business/Currently/Events/PhDFinance/Kauttu_Why-Teams-Dont-Work-by-J.-Richard-Hackman.pdf">团队的文章</a>。</p>
 
 <a name="L..............."></a>
-<h4>多功能团队</h4>
+<h3>多功能团队</h3>
 
 <p>为什么我们需要一个团队有各种功能，而不是负责开发、测试、产品、运维的某个单一方面？</p>
 
@@ -302,7 +562,7 @@ Bezos: No. Communication is terrible”</p></blockquote>
 <p>要防止这些对话发生在你的团队，就需要引导和宣扬“一专多能”的文化。在很多成功的公司里面（Amazon，Netflix，Facebook，Google）都很强调这点，比如Amazon著名的“谁编写，谁负责”。现在行业里面很流行另外一个热词DevOps，实际上DevOps的本质是Dev在前的，甚至<a href="https://www.rallydev.com/blog/engineering/you-don-t-need-devops-team-you-need-tools-team">不应该有专职的DevOps部门</a>。</p>
 
 <a name="L............"></a>
-<h4>康威定律</h4>
+<h3>康威定律</h3>
 
 <p>软件开发里面，技术问题远没有人的问题难解决。所以康威说：</p>
 
@@ -311,14 +571,14 @@ Bezos: No. Communication is terrible”</p></blockquote>
 <p>要如何打破内部各个团队之间的壁垒呢？除开自顶向下的进行组织架构的变更，还可以尝试内部开源。</p>
 
 <a name="L............"></a>
-<h4>内部开源</h4>
+<h3>内部开源</h3>
 
 <p>一旦你打破职能壁垒，构建起小的，多职能的团队，就能够看到这些人为了构造一个高质量的软件系统，一起努力。他们的工作形态其实挺像开源组织的：大家都可以发表意见，都可以贡献代码，对最终的发布负责。</p>
 
 <p>这样的团队形成之后，在他们的输出基本稳定成形后，就可以开始尝试内部开源。</p>
 
 <a name="L......"></a>
-<h3>总结</h3>
+<h2>总结</h2>
 
 <p>微服务架构的各种成功案例和大家拥抱它的热切姿态，很容易让我们觉得它解决了很大的问题。</p>
 

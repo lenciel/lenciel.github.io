@@ -1,0 +1,118 @@
+<!DOCTYPE html> <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]--> <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]--> <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]--> <head> <meta charset="utf-8"> <title>增加ssl证书和对http2的支持 - @Lenciel</title> <meta name="author" content="Lenciel"> <meta name="description" content=" 增加ssl证书和对http2的支持 Google一直在致力于提醒用户更..."> <meta name="HandheldFriendly" content="True"> <meta name="MobileOptimized" content="320"> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="canonical" href="http://lenciel.com/2017/03/add-supporting-for-ssl-and-http2/"> <link href="/favicon.png" rel="icon"> <script src="/assets/javascripts/app.js"></script> <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml"> <meta property="og:title" content="增加ssl证书和对http2的支持"/><meta itemprop="name" content="增加ssl证书和对http2的支持"/> <meta property="og:type" content="article"/> <meta property="og:url" content="http://lenciel.com/2017/03/add-supporting-for-ssl-and-http2/"/> <meta property="og:description" content=" 增加ssl证书和对http2的支持 Google一直在致力于提醒用户更..."/> <meta property="og:site_name" content="http://lenciel.com"/> <meta property="article:author" content="http://lenciel.com"> <meta property="article:published_time" content="2017-03-22 14:39:44 +0800"/> <meta property="article:section" content="bloggingtechweb-dev"/> <meta itemprop="description" content=" 增加ssl证书和对http2的支持 Google一直在致力于提醒用户更..."/> <script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?42345b94bf173b38bef61f873677adfa";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script> <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-175991-6', 'auto');
+    ga('send', 'pageview');
+
+</script> </head> <body class="collapse-sidebar sidebar-footer"> <header role="banner"><hgroup> <h1><a href="/">@Lenciel</a></h1> </hgroup> </header> <nav role="navigation"><ul class="subscription" data-subscription="rss"> <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li> </ul> <ul class="main-navigation"> <li><a href="/"><i class="icon-home"></i>Home</a></li> <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li> <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li> </ul> </nav> <div id="main"> <div id="content"> <div> <article class="hentry" role="article"> <header> <h1 class="entry-title">增加ssl证书和对http2的支持</h1> <p class="meta"> <time class='entry-date' datetime=''> <span class='date'></span> <span class='time'></span> </time> </p> </header> <div class="entry-content"><p> Google一直在致力于提醒用户<a href="https://security.googleblog.com/2016/09/moving-towards-more-secure-web.html">更加安全的上网</a>，并从Chrome 56版本开始，把使用HTTP的网站直接<a href="http://www.zdnet.com/article/chrome-56-google-starts-slapping-not-secure-on-http-payment-and-login-pages/">标记为“不安全的”</a>。随后Firefox等浏览器也宣布加入了类似的功能，来逼迫网站开发者逐步废弃使用HTTP。</p> <p>在过去，要支持SSL其实还是挺麻烦的，因为首先你需要<a href="https://www.digicert.com/ssl-certificate.htm">一个证书</a>。这东西申请起来麻烦，但只要给钱就特别好办：为这个，Google年初还以乱发了3万个证书为由宣布<a href="https://arstechnica.com/security/2017/03/google-takes-symantec-to-the-woodshed-for-mis-issuing-30000-https-certs/">不再信任Symantec签发的证书</a>。</p> <p>这也跟Google等一干巨头背后撑腰的免费证书发放机构<a href="https://letsencrypt.org/">Let&rsquo;s Encrypt</a>做大了有些关系。从它的官网上的数据可以看到，一年下来，证书发放量相当感人：</p> <p><img src="/downloads/images/2017_03/certs_num_by_year.jpg" title="Don't touch me..." alt="Vhost threshold"/></p> <p>但作为一名上年纪的人，本座已经不会再时间紧跟业界潮流：所以Let&rsquo;s Encrypt出来了很久，大概试过之后就一直在等待工具链成熟。这次正好<a href="/2017/03/migrating-from-octopress-to-jekyll/">搬迁到Jekyll</a>，眼看着围绕着<a href="https://certbot.eff.org/">certbot</a>构建的生态也非常完善，就做了切换。</p> <p>把切换到HTTP2也一并做了。</p> <p>HTTP2的介绍文章已经<a href="https://developers.google.com/web/fundamentals/performance/http2/">很多了</a>，毕竟已经占据了<a href="https://w3techs.com/technologies/details/ce-http2/all/all">超过8%</a>的整体份额，感兴趣的同学可以去看看Ilya Grigorik的相关文章或者<a href="https://docs.google.com/presentation/d/1r7QXGYOLCh4fcUq0jDdDwKJWNqWK1o4xMtYpKZCJYjM/edit#slide=id.g40fbe7d8c_051">讲座</a>。</p> <p>这里主要讲怎么开启。</p> <p>因为国内访问github pages随时被墙的原因，这次迁移到纯Jekyll是在CentOS7上用Nginx来做的host。理论上来说，Nginx 1.9.5及其以上版本的开启非常简单：</p> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span></span>server <span class="o">{</span>
+</span><span class='line'>   listen <span class="m">443</span> ssl http2<span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>   server_name lenciel.com www.lenciel.com<span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>   ssl_certificate /etc/letsencrypt/live/lenciel.com/fullchain.pem<span class="p">;</span>
+</span><span class='line'>   ssl_certificate_key /etc/letsencrypt/live/lenciel.com/privkey.pem<span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>   ssl_protocols TLSv1 TLSv1.1 TLSv1.2<span class="p">;</span>
+</span><span class='line'>   ssl_prefer_server_ciphers on<span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure> <p>注意到第二行里面的<code>http2</code>了吗？加上它就可以了。用浏览器看看请求是不是都是走HTTP2了：</p> <p><img src="/downloads/images/2017_03/http_orig_requests.jpg" title="Don't touch me..." alt="Vhost threshold"/></p> <p>咦？为什么没有起作用？查了一下，原来除开Nginx版本的要求，对OpenSSL和ALPN的版本<a href="https://www.nginx.com/blog/supporting-http2-google-chrome-users/">也有要求</a>。看了一下CentOS7通过yum安装的nginx的参数：</p> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span></span>$ nginx -V
+</span><span class='line'>nginx version: nginx/1.10.2
+</span><span class='line'>built by gcc <span class="m">4</span>.8.5 <span class="m">20150623</span> <span class="o">(</span>Red Hat <span class="m">4</span>.8.5-4<span class="o">)</span> <span class="o">(</span>GCC<span class="o">)</span>
+</span><span class='line'>built with OpenSSL <span class="m">1</span>.0.1e-fips <span class="m">11</span> Feb <span class="m">2013</span>
+</span><span class='line'>TLS SNI support enabled
+</span></code></pre></td></tr></table></div></figure> <p>OpenSSL的版本果然是太低了，只好从源码来编译一个更新的版本：</p> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span></span>yum -y groupinstall <span class="s1">&#39;Development Tools&#39;</span>
+</span><span class='line'>yum -y install wget openssl-devel libxml2-devel libxslt-devel gd-devel perl-ExtUtils-Embed GeoIP-devel rpmdevtools
+</span><span class='line'>
+</span><span class='line'><span class="nv">OPENSSL</span><span class="o">=</span><span class="s2">&quot;openssl-1.1.0-pre5&quot;</span>
+</span><span class='line'><span class="nv">NGINX_VERSION</span><span class="o">=</span><span class="s2">&quot;1.11.13-1&quot;</span>
+</span><span class='line'><span class="nv">NJS_VERSION</span><span class="o">=</span><span class="s2">&quot;1.11.13.0.1.10-1&quot;</span>
+</span><span class='line'>
+</span><span class='line'>rpm -ivh http://nginx.org/packages/mainline/centos/7/SRPMS/nginx-<span class="nv">$NGINX_VERSION</span>.el7.ngx.src.rpm
+</span><span class='line'>rpm -ivh http://nginx.org/packages/mainline/centos/7/SRPMS/nginx-module-geoip-<span class="nv">$NGINX_VERSION</span>.el7.ngx.src.rpm
+</span><span class='line'>rpm -ivh http://nginx.org/packages/mainline/centos/7/SRPMS/nginx-module-image-filter-<span class="nv">$NGINX_VERSION</span>.el7.ngx.src.rpm
+</span><span class='line'>rpm -ivh http://nginx.org/packages/mainline/centos/7/SRPMS/nginx-module-njs-<span class="nv">$NJS_VERSION</span>.el7.ngx.src.rpm
+</span><span class='line'>rpm -ivh http://nginx.org/packages/mainline/centos/7/SRPMS/nginx-module-perl-<span class="nv">$NGINX_VERSION</span>.el7.ngx.src.rpm
+</span><span class='line'>rpm -ivh http://nginx.org/packages/mainline/centos/7/SRPMS/nginx-module-xslt-<span class="nv">$NGINX_VERSION</span>.el7.ngx.src.rpm
+</span><span class='line'>
+</span><span class='line'>sed -i <span class="s2">&quot;/Source12: .*/a Source100: https://www.openssl.org/source/</span><span class="nv">$OPENSSL</span><span class="s2">.tar.gz&quot;</span> /root/rpmbuild/SPECS/nginx.spec
+</span><span class='line'>sed -i <span class="s2">&quot;s|--with-http_ssl_module|--with-http_ssl_module --with-openssl=</span><span class="nv">$OPENSSL</span><span class="s2">|g&quot;</span> /root/rpmbuild/SPECS/nginx.spec
+</span><span class='line'>sed -i <span class="s1">&#39;/%setup -q/a tar zxf %{SOURCE100}&#39;</span> /root/rpmbuild/SPECS/nginx.spec
+</span><span class='line'>sed -i <span class="s1">&#39;/.*Requires: openssl.*/d&#39;</span> /root/rpmbuild/SPECS/nginx.spec
+</span><span class='line'>sed -i <span class="s1">&#39;s|%define WITH_LD_OPT .*|%define WITH_LD_OPT &quot;&quot;|g&#39;</span> /root/rpmbuild/SPECS/nginx.spec
+</span><span class='line'>sed -i <span class="s1">&#39;s| -fPIC||g&#39;</span> /root/rpmbuild/SPECS/nginx.spec
+</span><span class='line'>spectool -g -R /root/rpmbuild/SPECS/nginx.spec
+</span><span class='line'>rpmbuild -ba /root/rpmbuild/SPECS/nginx.spec
+</span><span class='line'>rpmbuild -ba /root/rpmbuild/SPECS/nginx-module-geoip.spec
+</span><span class='line'>rpmbuild -ba /root/rpmbuild/SPECS/nginx-module-image-filter.spec
+</span><span class='line'>rpmbuild -ba /root/rpmbuild/SPECS/nginx-module-njs.spec
+</span><span class='line'>rpmbuild -ba /root/rpmbuild/SPECS/nginx-module-perl.spec
+</span><span class='line'>rpmbuild -ba /root/rpmbuild/SPECS/nginx-module-xslt.spec
+</span></code></pre></td></tr></table></div></figure> <p>然后再次检查：</p> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span></span>$ nginx -V
+</span><span class='line'>nginx version: nginx/1.11.13
+</span><span class='line'>built by gcc <span class="m">4</span>.8.5 <span class="m">20150623</span> <span class="o">(</span>Red Hat <span class="m">4</span>.8.5-11<span class="o">)</span> <span class="o">(</span>GCC<span class="o">)</span>
+</span><span class='line'>built with OpenSSL <span class="m">1</span>.0.2k  <span class="m">26</span> Jan <span class="m">2017</span>
+</span><span class='line'>TLS SNI support enabled
+</span></code></pre></td></tr></table></div></figure> <p>完成后，重启nginx，再次检查访问的情况：</p> <p><img src="/downloads/images/2017_03/http2_requests.jpg" title="Don't touch me..." alt="Vhost threshold"/></p> <p>然后从Chrome的<code>chrome://net-internals/#http2</code>入口进去，可以看到<code>lenciel.com</code>已经在列了：</p> <p><img src="/downloads/images/2017_03/http2_internals.jpg" title="Don't touch me..." alt="Vhost threshold"/></p> </div> <footer> <p class="meta"> <span class="byline author vcard">Posted by <span class="fn">Lenciel</span></span> <span class="categories"> <a class='category' href='/categories/blogging/'>blogging</a>, <a class='category' href='/categories/tech/'>tech</a>, <a class='category' href='/categories/web-dev/'>web-dev</a> </span> </p> <div class="sharing"> </div> <p class="meta"> <a class="basic-alignment left" href="/2017/03/migrating-from-octopress-to-jekyll/" title="Previous Post: 从Octopress转到纯Jekyll">&laquo; 从Octopress转到纯Jekyll</a> <a class="basic-alignment right" href="/2017/04/font-inziu-iosevka/" title="Next Post: 免费开源字体Inziu Iosevka推荐">免费开源字体Inziu Iosevka推荐 &raquo;</a> </p> </footer> </article> </div> </div> </div> <footer role="contentinfo"><p> Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a> <span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span> </p> </footer> <script type="text/javascript">
+  var stylesheet = document.createElement('link');
+  stylesheet.href = '/assets/stylesheets/app.css';
+  stylesheet.rel = 'stylesheet';
+  stylesheet.type = 'text/css';
+  document.getElementsByTagName('head')[0].appendChild(stylesheet);
+</script> </body> </html>

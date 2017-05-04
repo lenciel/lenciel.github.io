@@ -4,7 +4,7 @@
   <title><![CDATA[Category: tools-i-use | @Lenciel]]></title>
   <link href="http://lenciel.com/categories/tools-i-use/atom.xml" rel="self"/>
   <link href="http://lenciel.com/"/>
-  <updated>2017-04-14T15:06:07+08:00</updated>
+  <updated>2017-05-02T17:08:47+08:00</updated>
   <id>http://lenciel.com/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
@@ -43,7 +43,7 @@
 
 
 <a name="Blog..............."></a>
-<h3>Blog项目的迁移</h3>
+<h2>Blog项目的迁移</h2>
 
 <p>本座主要的开发栈不是ruby，所以那套东西都放docker。配置好gem的镜像，安装最新的jekyll之后，创建一个干净的静态网站：</p>
 
@@ -70,7 +70,7 @@ $ jekyll new my-site &amp;&amp; cd my-site
 <p>这些大体修改完毕，然后安装相应的依赖（可以对比新旧的Gemfile，只需要安装自己的插件用到的依赖），这部分改动就大概完成了。</p>
 
 <a name="L....................."></a>
-<h3>模板项目的迁移</h3>
+<h2>模板项目的迁移</h2>
 
 <p>因为Jekyll自己的模板是基于gem-based的，也就是说你首先得新建一个gem-based的项目：</p>
 
@@ -102,7 +102,7 @@ $ jekyll new my-site &amp;&amp; cd my-site
 <p>比如我自己会对图片自动压缩，对css/js文件进行合并和uglify等等。这些工作的目标文件因为很多都在gem安装的模板里面，会变得比较tricky。最终本座只好对<code>jekyll build</code>之后的<code>_site</code>目录下的部署目标文件进行处理。</p>
 
 <a name="L......"></a>
-<h3>其他</h3>
+<h2>其他</h2>
 
 <p>虽然放弃了Octopress，但并不是说Octopress是个失败的项目。一方面，它的完成度很高，如果你不是有本座一些龟毛的要求（要自己搞模板，要对静态文件做优化，要支持各种国内才需要支持的定制），已经够用。作者一个人要跟上Jekyll一个社区的开发速度，本来就很难，是属于可以理解的不足。并且，通过看它的插件源代码，对我自己的模板实现也起到了很大帮助。</p>
 

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[ | @Lenciel]]></title>
-  <link href="http://lenciel.com/" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-04-14T15:06:07+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-04-23T00:36:37+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>

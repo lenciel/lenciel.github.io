@@ -1,24 +1,63 @@
-<!DOCTYPE html> <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]--> <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]--> <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]--> <head> <meta charset="utf-8"> <title>@Lenciel</title> <meta name="author" content="Lenciel"> <meta name="description" content=" 打开pip的download cache 2013-10-17 13:25:00 ..."> <meta name="HandheldFriendly" content="True"> <meta name="MobileOptimized" content="320"> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="canonical" href="http://lenciel.com/posts/52/"> <link href="/favicon.png" rel="icon"> <script src="/assets/javascripts/app.js"></script> <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml"> <meta property="og:type" content="article"/> <meta property="og:url" content="http://lenciel.com/posts/52/"/> <meta property="og:description" content=" 打开pip的download cache 2013-10-17 13:25:00 ..."/> <meta property="og:site_name" content="http://lenciel.com"/> <meta property="article:author" content="http://lenciel.com"> <meta itemprop="description" content=" 打开pip的download cache 2013-10-17 13:25:00 ..."/> <script>
+<!DOCTYPE html> <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]--> <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]--> <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]--> <head> <meta charset="utf-8"> <title>@Lenciel</title> <meta name="author" content="Lenciel"> <meta name="description" content=" Fix Python after upgrade to Maverick 2013-10-24 22:02:00..."> <meta name="HandheldFriendly" content="True"> <meta name="MobileOptimized" content="320"> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="canonical" href="http://lenciel.com/posts/52/"> <link href="/favicon.png" rel="icon"> <script src="/assets/javascripts/app.js"></script> <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml"> <meta property="og:type" content="article"/> <meta property="og:url" content="http://lenciel.com/posts/52/"/> <meta property="og:description" content=" Fix Python after upgrade to Maverick 2013-10-24 22:02:00..."/> <meta property="og:site_name" content="http://lenciel.com"/> <meta property="article:author" content="http://lenciel.com"> <meta itemprop="description" content=" Fix Python after upgrade to Maverick 2013-10-24 22:02:00..."/> <script>
     var _hmt = _hmt || [];
     (function() {
         var hm = document.createElement("script");
-        hm.src = "//hm.baidu.com/hm.js?42345b94bf173b38bef61f873677adfa";
+        hm.src = "https://hm.baidu.com/hm.js?42345b94bf173b38bef61f873677adfa";
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
     })();
 </script> <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','http://lenciel.qiniudn.com/analytics.js','ga');
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-175991-6', 'auto');
-  ga('send', 'pageview');
+    ga('create', 'UA-175991-6', 'auto');
+    ga('send', 'pageview');
 
-</script> </head> <body class="collapse-sidebar sidebar-footer"> <header role="banner"><hgroup> <h1><a href="/">@Lenciel</a></h1> </hgroup> </header> <nav role="navigation"><ul class="subscription" data-subscription="rss"> <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li> </ul> <ul class="main-navigation"> <li><a href="/"><i class="icon-home"></i>Home</a></li> <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li> <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li> </ul> </nav> <div id="main"> <div id="content"> <div class="blog-index"> <article> <header> <h1 class="entry-title"><a href="/2013/10/pip-download-cache/">打开pip的download cache</a></h1> <p class="meta"> <time class='entry-date' datetime='2013-10-17 13:25:00 +0800'> <span class='date'>2013-10-17</span> <span class='time'>13:25:00</span> </time> </p> </header> <div class="entry-content"><p>Python的标准库实在是<a href="http://lenciel.com/2013/10/recharging-the-python-standard-library/">不够用</a>，所以一个很常见的情况是我们需要在每个项目使用的<code>virtualenv</code>里面都安装一些常用的库。</p> <p>为了加速安装的过程，有两个小窍门。</p> <p>一个是使用国内的源，比如<a href="http://www.v2ex.com/">v2ex</a>提供的。只需要新建或者编辑<code>~/.pip/pip.conf</code>，加入一行：</p> <pre><code>[global]
-index-url = http://pypi.v2ex.com/simple
-</code></pre> <p>另一个就是打开pip的<code>download cache</code>，这样可以避免pip每次都去下载相同的东西。只需要在<code>.bashrc</code>或者是<code>.zshrc</code>里面加入一行：</p> <pre><code>export PIP_DOWNLOAD_CACHE=$HOME/.pip-download-cache
-</code></pre> </div> </article> <article> <header> <h1 class="entry-title"><a href="/2013/10/recharging-the-python-standard-library/">给Python标准库充电</a></h1> <p class="meta"> <time class='entry-date' datetime='2013-10-17 12:27:00 +0800'> <span class='date'>2013-10-17</span> <span class='time'>12:27:00</span> </time> </p> </header> <div class="entry-content"><p>Python的自荐页面<a href="http://www.python.org/about/">About Python</a>上号称自家的标准库是"batteries included"的，但实际情况却不是这样。对Python标准库的批评几乎从来没有中断过。著名的Python包<a href="http://docs.python-requests.org/en/latest/">Requests</a>的作者甚至决定永久把Requests保持为第三方库而拒绝加入标准库，他的理由是：<a href="http://www.leancrew.com/all-this/2012/04/where-modules-go-to-die/">加入标准库就会死翘翘</a>。</p> <p>再举个例子，我们最近的项目里面都用到了<a href="https://pypi.python.org/pypi/pytz/">pytz</a>。标准库里面的datetime是支持时区的（tzinfo类），但是并没有包含时区信息（tzinfo是抽象类需要自己实现）。遵照前人的经验使用pytz是最好的办法<a href="" title="[如何在datetime转换中保存时区信息](http://stackoverflow.com/questions/14762518/python-datetime-strptime-and-strftime-how-to-preserve-the-timezone-informat). ">^1</a>。</p> <p>所以不奇怪的是，几乎所有的Python项目都会引用一堆优秀的第三方库。为了管理这些依赖一般都会用上pip:</p> <ul> <li>在项目里面用pip freeze生成一个<code>requirement.txt</code>文件</li> <li>在创建<code>virtualenv</code>的时候使用之前生成的文件安装所有的依赖</li> </ul> <p>为了不在每次运行<code>pip install -r requirements.txt</code>的时候都下载一堆依赖，你还可以打开pip的<a href="http://lenciel.cn/2013/10/pip-download-cache/">download cache</a>。如果整个公司在做项目的时候都需要经常使用一些包，甚至可以考虑<a href="https://github.com/wolever/pip2pi">做一个Pypi</a>的库来共享，类似于Maven的Repo。</p> </div> </article> <div class="pagination"> <a class="prev" href="/posts/53">&larr; Older</a> <a href="/archives">Archives</a> <a class="next" href="/posts/51">Newer &rarr;</a> </div> </div> </div> </div> <footer role="contentinfo"><p> Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a> <span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span> <section class="contruction-wrap"> <div class="contruction"></div> </section> </p> </footer> <script type="text/javascript">
+</script> </head> <body class="collapse-sidebar sidebar-footer"> <header role="banner"><hgroup> <h1><a href="/">@Lenciel</a></h1> </hgroup> </header> <nav role="navigation"><ul class="subscription" data-subscription="rss"> <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li> </ul> <ul class="main-navigation"> <li><a href="/"><i class="icon-home"></i>Home</a></li> <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li> <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li> </ul> </nav> <div id="main"> <div id="content"> <div class="blog-index"> <article> <header> <h1 class="entry-title"><a href="/2013/10/maverick-and-python/">Fix Python after upgrade to Maverick</a></h1> <p class="meta"> <time class='entry-date' datetime='2013-10-24 22:02:00 +0800'> <span class='date'>2013-10-24</span> <span class='time'>22:02:00</span> </time> </p> </header> <div class="entry-content"><p>升级到最新的osx版本Maverick之后，打开iTerm2就报错：</p> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span></span>Traceback <span class="o">(</span>most recent call last<span class="o">)</span>:
+</span><span class='line'>  File <span class="s2">&quot;&lt;string&gt;&quot;</span>, line <span class="m">1</span>, in &lt;module&gt;
+</span><span class='line'>ImportError: No module named virtualenvwrapper.hook_loader
+</span><span class='line'>virtualenvwrapper.sh: There was a problem running the initialization hooks.
+</span><span class='line'>If Python could not import the module virtualenvwrapper.hook_loader,
+</span><span class='line'>check that virtualenv has been installed <span class="k">for</span>
+</span><span class='line'><span class="nv">VIRTUALENVWRAPPER_PYTHON</span><span class="o">=</span>/usr/bin/python and that PATH is
+</span><span class='line'><span class="nb">set</span> properly.
+</span></code></pre></td></tr></table></div></figure> <p>敲pip之后也报错：</p> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span></span>Traceback <span class="o">(</span>most recent call last<span class="o">)</span>:
+</span><span class='line'>  File <span class="s2">&quot;/usr/local/bin/pip&quot;</span>, line <span class="m">5</span>, in &lt;module&gt;
+</span><span class='line'>    from pkg_resources import load_entry_point
+</span><span class='line'>  File <span class="s2">&quot;/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/pkg_resources.py&quot;</span>, line <span class="m">2603</span>, in &lt;module&gt;
+</span><span class='line'>    working_set.require<span class="o">(</span>__requires__<span class="o">)</span>
+</span><span class='line'>  File <span class="s2">&quot;/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/pkg_resources.py&quot;</span>, line <span class="m">666</span>, in require
+</span><span class='line'>    <span class="nv">needed</span> <span class="o">=</span> self.resolve<span class="o">(</span>parse_requirements<span class="o">(</span>requirements<span class="o">))</span>
+</span><span class='line'>  File <span class="s2">&quot;/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/pkg_resources.py&quot;</span>, line <span class="m">565</span>, in resolve
+</span><span class='line'>    raise DistributionNotFound<span class="o">(</span>req<span class="o">)</span>  <span class="c1"># XXX put more info here</span>
+</span><span class='line'>pkg_resources.DistributionNotFound: <span class="nv">pip</span><span class="o">==</span><span class="m">1</span>.3.1
+</span></code></pre></td></tr></table></div></figure> <p>这坨<code>pkg_resources.DistributionNotFound</code>的错正好前两天装CentOS的机器<a href="http://stackoverflow.com/questions/7446187/no-module-named-pkg-resources">看到过</a>。</p> <p>运行下面的命令更新了<code>setuptools</code>之后重装了<code>pip</code>和<code>virtualenv</code>、<code>virtualenvwrapper</code>就好了：</p> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span></span>wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py
+</span><span class='line'>sudo python ez_setup.py
+</span><span class='line'>sudo easy_install -U pip
+</span></code></pre></td></tr></table></div></figure> </div> </article> <article> <header> <h1 class="entry-title"><a href="/2013/10/sinned-too-much/">Sinned Too Much</a></h1> <p class="meta"> <time class='entry-date' datetime='2013-10-20 16:49:00 +0800'> <span class='date'>2013-10-20</span> <span class='time'>16:49:00</span> </time> </p> </header> <div class="entry-content"><p><img src="/downloads/images/live_a_simple_life.gif" title="Live a simple life..." alt="Sinned Too Much"/></p> <blockquote><p>"I thought I’d lived a simple life. But I’ve sinned too much."</p><footer><strong>Chan-wook Park</strong> <cite><a href='http://www.imdb.com/title/tt0364569/'>Oldboy(2003)</a></cite></footer></blockquote> </div> </article> <div class="pagination"> <a class="prev" href="/posts/53">&larr; Older</a> <a href="/archives">Archives</a> <a class="next" href="/posts/51">Newer &rarr;</a> </div> </div> </div> </div> <footer role="contentinfo"><p> Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a> <span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span> </p> </footer> <script type="text/javascript">
   var stylesheet = document.createElement('link');
   stylesheet.href = '/assets/stylesheets/app.css';
   stylesheet.rel = 'stylesheet';

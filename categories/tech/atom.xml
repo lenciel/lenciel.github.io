@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: tech | @Lenciel]]></title>
+  <link href="http://lenciel.com/categories/tech/atom.xml" rel="self"/>
+  <link href="http://lenciel.com/"/>
+  <updated>2017-05-02T17:08:47+08:00</updated>
+  <id>http://lenciel.com/</id>
+  <author>
+    <name><![CDATA[Lenciel]]></name>
+    <email><![CDATA[lenciel@gmail.com]]></email>
+  </author>
+
+  
+  <entry>
+    <title type="html"><![CDATA[增加ssl证书和对http2的支持]]></title>
+    <link href="http://lenciel.com/2017/03/add-supporting-for-ssl-and-http2/"/>
+    <updated>2017-03-22T14:39:44+08:00</updated>
+    <id>http://lenciel.com/2017/03/add-supporting-for-ssl-and-http2</id>
+    <content type="html"><![CDATA[<p> Google一直在致力于提醒用户<a href="https://security.googleblog.com/2016/09/moving-towards-more-secure-web.html">更加安全的上网</a>，并从Chrome 56版本开始，把使用HTTP的网站直接<a href="http://www.zdnet.com/article/chrome-56-google-starts-slapping-not-secure-on-http-payment-and-login-pages/">标记为“不安全的”</a>。随后Firefox等浏览器也宣布加入了类似的功能，来逼迫网站开发者逐步废弃使用HTTP。</p>
+
+<p>在过去，要支持SSL其实还是挺麻烦的，因为首先你需要<a href="https://www.digicert.com/ssl-certificate.htm">一个证书</a>。这东西申请起来麻烦，但只要给钱就特别好办：为这个，Google年初还以乱发了3万个证书为由宣布<a href="https://arstechnica.com/security/2017/03/google-takes-symantec-to-the-woodshed-for-mis-issuing-30000-https-certs/">不再信任Symantec签发的证书</a>。</p>
+
+<p>这也跟Google等一干巨头背后撑腰的免费证书发放机构<a href="https://letsencrypt.org/">Let&rsquo;s Encrypt</a>做大了有些关系。从它的官网上的数据可以看到，一年下来，证书发放量相当感人：</p>
+
+<p><img src="/downloads/images/2017_03/certs_num_by_year.jpg" title="Don't touch me..." alt="Vhost threshold" /></p>
+
+<p>但作为一名上年纪的人，本座已经不会再时间紧跟业界潮流：所以Let&rsquo;s Encrypt出来了很久，大概试过之后就一直在等待工具链成熟。这次正好<a href="/2017/03/migrating-from-octopress-to-jekyll/">搬迁到Jekyll</a>，眼看着围绕着<a href="https://certbot.eff.org/">certbot</a>构建的生态也非常完善，就做了切换。</p>
+
+<p>把切换到HTTP2也一并做了。</p>
+
+<p>HTTP2的介绍文章已经<a href="https://developers.google.com/web/fundamentals/performance/http2/">很多了</a>，毕竟已经占据了<a href="https://w3techs.com/technologies/details/ce-http2/all/all">超过8%</a>的整体份额，感兴趣的同学可以去看看Ilya Grigorik的相关文章或者<a href="https://docs.google.com/presentation/d/1r7QXGYOLCh4fcUq0jDdDwKJWNqWK1o4xMtYpKZCJYjM/edit#slide=id.g40fbe7d8c_051">讲座</a>。</p>
+
+<p>这里主要讲怎么开启。</p>
+
+<p>因为国内访问github pages随时被墙的原因，这次迁移到纯Jekyll是在CentOS7上用Nginx来做的host。理论上来说，Nginx 1.9.5及其以上版本的开启非常简单：</p>
+
+<pre><code class="bash">server {
+   listen 443 ssl http2;
+
+   server_name lenciel.com www.lenciel.com;
+
+   ssl_certificate /etc/letsencrypt/live/lenciel.com/fullchain.pem;
+   ssl_certificate_key /etc/letsencrypt/live/lenciel.com/privkey.pem;
+
+   ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+   ssl_prefer_server_ciphers on;
+</code></pre>
+
+<p>注意到第二行里面的<code>http2</code>了吗？加上它就可以了。用浏览器看看请求是不是都是走HTTP2了：</p>
+
+<p><img src="/downloads/images/2017_03/http_orig_requests.jpg" title="Don't touch me..." alt="Vhost threshold" /></p>
+
+<p>咦？为什么没有起作用？查了一下，原来除开Nginx版本的要求，对OpenSSL和ALPN的版本<a href="https://www.nginx.com/blog/supporting-http2-google-chrome-users/">也有要求</a>。看了一下CentOS7通过yum安装的nginx的参数：</p>
+
+<pre><code class="bash">$ nginx -V
+nginx version: nginx/1.10.2
+built by gcc 4.8.5 20150623 (Red Hat 4.8.5-4) (GCC)
+built with OpenSSL 1.0.1e-fips 11 Feb 2013
+TLS SNI support enabled
+</code></pre>
+
+<p>OpenSSL的版本果然是太低了，只好从源码来编译一个更新的版本：</p>
+
+<pre><code class="bash">yum -y groupinstall 'Development Tools'
+yum -y install wget openssl-devel libxml2-devel libxslt-devel gd-devel perl-ExtUtils-Embed GeoIP-devel rpmdevtools
+
+OPENSSL="openssl-1.1.0-pre5"
+NGINX_VERSION="1.11.13-1"
+NJS_VERSION="1.11.13.0.1.10-1"
+
+rpm -ivh http://nginx.org/packages/mainline/centos/7/SRPMS/nginx-$NGINX_VERSION.el7.ngx.src.rpm
+rpm -ivh http://nginx.org/packages/mainline/centos/7/SRPMS/nginx-module-geoip-$NGINX_VERSION.el7.ngx.src.rpm
+rpm -ivh http://nginx.org/packages/mainline/centos/7/SRPMS/nginx-module-image-filter-$NGINX_VERSION.el7.ngx.src.rpm
+rpm -ivh http://nginx.org/packages/mainline/centos/7/SRPMS/nginx-module-njs-$NJS_VERSION.el7.ngx.src.rpm
+rpm -ivh http://nginx.org/packages/mainline/centos/7/SRPMS/nginx-module-perl-$NGINX_VERSION.el7.ngx.src.rpm
+rpm -ivh http://nginx.org/packages/mainline/centos/7/SRPMS/nginx-module-xslt-$NGINX_VERSION.el7.ngx.src.rpm
+
+sed -i "/Source12: .*/a Source100: https://www.openssl.org/source/$OPENSSL.tar.gz" /root/rpmbuild/SPECS/nginx.spec
+sed -i "s|--with-http_ssl_module|--with-http_ssl_module --with-openssl=$OPENSSL|g" /root/rpmbuild/SPECS/nginx.spec
+sed -i '/%setup -q/a tar zxf %{SOURCE100}' /root/rpmbuild/SPECS/nginx.spec
+sed -i '/.*Requires: openssl.*/d' /root/rpmbuild/SPECS/nginx.spec
+sed -i 's|%define WITH_LD_OPT .*|%define WITH_LD_OPT ""|g' /root/rpmbuild/SPECS/nginx.spec
+sed -i 's| -fPIC||g' /root/rpmbuild/SPECS/nginx.spec
+spectool -g -R /root/rpmbuild/SPECS/nginx.spec
+rpmbuild -ba /root/rpmbuild/SPECS/nginx.spec
+rpmbuild -ba /root/rpmbuild/SPECS/nginx-module-geoip.spec
+rpmbuild -ba /root/rpmbuild/SPECS/nginx-module-image-filter.spec
+rpmbuild -ba /root/rpmbuild/SPECS/nginx-module-njs.spec
+rpmbuild -ba /root/rpmbuild/SPECS/nginx-module-perl.spec
+rpmbuild -ba /root/rpmbuild/SPECS/nginx-module-xslt.spec
+</code></pre>
+
+<p>然后再次检查：</p>
+
+<pre><code class="bash">$ nginx -V
+nginx version: nginx/1.11.13
+built by gcc 4.8.5 20150623 (Red Hat 4.8.5-11) (GCC)
+built with OpenSSL 1.0.2k  26 Jan 2017
+TLS SNI support enabled
+</code></pre>
+
+<p>完成后，重启nginx，再次检查访问的情况：</p>
+
+<p><img src="/downloads/images/2017_03/http2_requests.jpg" title="Don't touch me..." alt="Vhost threshold" /></p>
+
+<p>然后从Chrome的<code>chrome://net-internals/#http2</code>入口进去，可以看到<code>lenciel.com</code>已经在列了：</p>
+
+<p><img src="/downloads/images/2017_03/http2_internals.jpg" title="Don't touch me..." alt="Vhost threshold" /></p>
+]]></content>
+  </entry>
+  
+</feed>

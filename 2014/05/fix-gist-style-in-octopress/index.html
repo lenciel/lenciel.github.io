@@ -1,110 +1,197 @@
-<!DOCTYPE html> <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]--> <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]--> <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]--> <head> <meta charset="utf-8"> <title>Octopress里插入带中文Gist的问题和解决 - @Lenciel</title> <meta name="author" content="Lenciel"> <meta name="description" content=" Octopress里插入带中文Gist的问题和解决 2014-05-17 13:00:38 ..."> <meta name="HandheldFriendly" content="True"> <meta name="MobileOptimized" content="320"> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="canonical" href="http://lenciel.com/2014/05/fix-gist-style-in-octopress/"> <link href="/favicon.png" rel="icon"> <script src="/assets/javascripts/app.js"></script> <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml"> <meta property="og:title" content="Octopress里插入带中文Gist的问题和解决"/><meta itemprop="name" content="Octopress里插入带中文Gist的问题和解决"/> <meta property="og:type" content="article"/> <meta property="og:url" content="http://lenciel.com/2014/05/fix-gist-style-in-octopress/"/> <meta property="og:description" content=" Octopress里插入带中文Gist的问题和解决 2014-05-17 13:00:38 ..."/> <meta property="og:site_name" content="http://lenciel.com"/> <meta property="article:author" content="http://lenciel.com"> <meta property="article:published_time" content="2014-05-17 13:00:38 +0800"/> <meta property="article:section" content="gistoctopresstips"/> <meta itemprop="description" content=" Octopress里插入带中文Gist的问题和解决 2014-05-17 13:00:38 ..."/> <script>
+<!DOCTYPE html> <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]--> <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]--> <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]--> <head> <meta charset="utf-8"> <title>Octopress里插入带中文Gist的问题和解决 - @Lenciel</title> <meta name="author" content="Lenciel"> <meta name="description" content=" Octopress里插入带中文Gist的问题和解决 Gist是Githu..."> <meta name="HandheldFriendly" content="True"> <meta name="MobileOptimized" content="320"> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="canonical" href="http://lenciel.com/2014/05/fix-gist-style-in-octopress/"> <link href="/favicon.png" rel="icon"> <script src="/assets/javascripts/app.js"></script> <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml"> <meta property="og:title" content="Octopress里插入带中文Gist的问题和解决"/><meta itemprop="name" content="Octopress里插入带中文Gist的问题和解决"/> <meta property="og:type" content="article"/> <meta property="og:url" content="http://lenciel.com/2014/05/fix-gist-style-in-octopress/"/> <meta property="og:description" content=" Octopress里插入带中文Gist的问题和解决 Gist是Githu..."/> <meta property="og:site_name" content="http://lenciel.com"/> <meta property="article:author" content="http://lenciel.com"> <meta property="article:published_time" content="2014-05-17 13:00:38 +0800"/> <meta property="article:section" content="gistoctopresstips"/> <meta itemprop="description" content=" Octopress里插入带中文Gist的问题和解决 Gist是Githu..."/> <script>
     var _hmt = _hmt || [];
     (function() {
         var hm = document.createElement("script");
-        hm.src = "//hm.baidu.com/hm.js?42345b94bf173b38bef61f873677adfa";
+        hm.src = "https://hm.baidu.com/hm.js?42345b94bf173b38bef61f873677adfa";
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
     })();
 </script> <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','http://lenciel.qiniudn.com/analytics.js','ga');
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-175991-6', 'auto');
-  ga('send', 'pageview');
+    ga('create', 'UA-175991-6', 'auto');
+    ga('send', 'pageview');
 
-</script> </head> <body class="collapse-sidebar sidebar-footer"> <header role="banner"><hgroup> <h1><a href="/">@Lenciel</a></h1> </hgroup> </header> <nav role="navigation"><ul class="subscription" data-subscription="rss"> <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li> </ul> <ul class="main-navigation"> <li><a href="/"><i class="icon-home"></i>Home</a></li> <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li> <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li> </ul> </nav> <div id="main"> <div id="content"> <div> <article class="hentry" role="article"> <header> <h1 class="entry-title">Octopress里插入带中文Gist的问题和解决</h1> <p class="meta"> <time class='entry-date' datetime='2014-05-17 13:00:38 +0800'> <span class='date'>2014-05-17</span> <span class='time'>13:00:38</span> </p> </header> <div class="entry-content"><p><a href="https://gist.github.com/">Gist</a>是Github提供用来管理和分享<a href="https://gist.github.com/lenciel/4105165">代码片断</a>或者<a href="https://gist.github.com/lenciel/3462897">文档片断</a>的服务。和传统的<a href="http://en.wikipedia.org/wiki/Snippet_(programming">snippet</a>)管理系统相比，Gist因为实际上依托了Github的实现技术，所以具有存储在云端、自动的版本化、语法高亮支持的语言种类齐全、分享的便利性高等等优势。</p> <p><a href="http://octopress.org">Octopress</a>里面引用你创建的gist的好处是显而易见的：你需要分享的<strong>内容</strong>在Gist那边被更好的管理了，而在日志里面用下面这样的语句就可以很容易的插入gist里面的内容:</p> <div class="highlight"><pre><code class="text">{% gist gist_id [filename] %}
+</script> </head> <body class="collapse-sidebar sidebar-footer"> <header role="banner"><hgroup> <h1><a href="/">@Lenciel</a></h1> </hgroup> </header> <nav role="navigation"><ul class="subscription" data-subscription="rss"> <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li> </ul> <ul class="main-navigation"> <li><a href="/"><i class="icon-home"></i>Home</a></li> <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li> <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li> </ul> </nav> <div id="main"> <div id="content"> <div> <article class="hentry" role="article"> <header> <h1 class="entry-title">Octopress里插入带中文Gist的问题和解决</h1> <p class="meta"> <time class='entry-date' datetime=''> <span class='date'></span> <span class='time'></span> </time> </p> </header> <div class="entry-content"><p><a href="https://gist.github.com/">Gist</a>是Github提供用来管理和分享<a href="https://gist.github.com/lenciel/4105165">代码片断</a>或者<a href="https://gist.github.com/lenciel/3462897">文档片断</a>的服务。和传统的<a href="http://en.wikipedia.org/wiki/Snippet_(programming">snippet</a>)管理系统相比，Gist因为实际上依托了Github的实现技术，所以具有存储在云端、自动的版本化、语法高亮支持的语言种类齐全、分享的便利性高等等优势。</p> <p><a href="http://octopress.org">Octopress</a>里面引用你创建的gist的好处是显而易见的：你需要分享的<strong>内容</strong>在Gist那边被更好的管理了，而在日志里面用下面这样的语句就可以很容易的插入gist里面的内容:</p> <div class="highlight"><pre><code class="text">{% gist gist_id [filename] %}
 </code></pre></div> <p>比如<a href="http://lenciel.com/2014/05/web-development-skill-set-and-reading-list/">上篇文章</a>，理论上源代码就是这么一句：</p> <div class="highlight"><pre><code class="text">{% gist lenciel/637812a7dcbe8341b07b web_skill_list.md %}
-</code></pre></div> <p>当然之所以说理论上，是因为首先Octopress的markdown插件对unicode的支持<a href="http://tokkonopapa.github.io/blog/2013/02/23/octopress-toc/">是有bug</a>的。所以直接插入带中文的gist在build的时候会看到<code>Liquid Exception</code>:</p> <pre><code class="bash">&gt;&gt;&gt; Compass is watching for changes. Press Ctrl-C to Stop.
-Liquid Exception: incompatible character encodings: UTF-8 and ASCII-8BIT in 2014-05-16-web-development-skill-set-and-reading-list.markdown
-</code></pre> <p>解决起来也很简单，只需要在<code>lib/jekyll/converters/markdown.rb</code>里面强制设定encoding就可以了：</p> <pre><code class="diff lib/jekyll/converters/markdown.rb">@@ -120,7 +120,7 @@ def convert(content)
-           rd = RDiscount.new(content, *@rdiscount_extensions)
-           html = rd.to_html
-           if rd.generate_toc and html.include?(@config['rdiscount']['toc_token'])
--            html.gsub!(@config['rdiscount']['toc_token'], rd.toc_content)
-+            html.gsub!(@config['rdiscount']['toc_token'], rd.toc_content.force_encoding('utf-8'))
-           end
-</code></pre> <p>接下来就是render出来的效果，样子丑到让人无法直视：</p> <p><img src="/downloads/images/2014_05/gist_render_output_orig.jpg" title="Don't touch me..." alt="original gist render output"/></p> <p>大概看了一下Octopress的文档，原来代码片断的样式（包括gist的渲染样式）都在<a href="https://github.com/imathis/octopress/blob/master/.themes/classic/sass/partials/_syntax.scss">_syntax.scss</a>里面。这个文件2012年就没有更新过了，但是github的gist输出在2013年有过变化，所以就有些不匹配了。</p> <p>打开自己的模板，大概调了一下这个sass，主要是和其他的代码高亮一致：</p> <p><img src="/downloads/images/2014_05/gist_render_output.jpg" title="Don't touch me..." alt="current gist render output"/></p> <p>调整的地方见<a href="https://gist.github.com/lenciel/ecc8b3805ed346727abe">这里</a>:</p> <pre><code class="diff _sass/partials/_syntax.scss">diff --git a/46501e4:sass/partials/_syntax.scss b/02b0441:sass/partials/_syntax.scss
-index 137d475..5465286 100644
---- a/46501e4:sass/partials/_syntax.scss
-+++ b/02b0441:sass/partials/_syntax.scss
-@@ -22,10 +22,6 @@
-   @include border-radius(0);
- }
-
--.line-data {
--   font-size: 13px;
--}
--
- figure.code, .gist-file, pre {
-   @include box-shadow(rgba(#000, .06) 0 0 10px);
-   .highlight pre { @include box-shadow(none); }
-@@ -43,10 +39,8 @@ html .gist .gist-file {
-     margin-bottom: 0;
-   }
-   .gist-syntax {
--    background: #01222d !important;
--    color: #d5dee2 !important;
--    padding: 0 2em;
-     border-bottom: 0 !important;
-+    background: none !important;
-     .gist-highlight {
-       background: $base03 !important;
-     }
-@@ -57,17 +51,15 @@ html .gist .gist-file {
-   }
-   .gist-meta {
-    padding: .6em 0.8em;
-+   border: 1px solid lighten($base02, 2) !important;
-+   color: $base01;
-    font-size: .7em !important;
-    @if $solarized == light {
--     color: $base01;
--     border: 1px solid lighten($base02, 2) !important;
-      background: lighten($base03, 2) $noise-bg;
-      border: 1px solid $pre-border !important;
-      border-top: 1px solid lighten($base03, 2) !important;
-    } @else {
--     background: #01222d $noise-bg;
--     text-shadow: none !important;
--     color: #d5dee2;
-+     background: $base02 $noise-bg;
-    }
-    @extend .sans;
-    line-height: 1.5em;
-@@ -77,7 +69,7 @@ html .gist .gist-file {
-       &amp;:hover { color: $base1 !important; }
-     }
-     a[href*='#file'] {
--      position: absolute; top: 0; left:0; right:0px;
-+      position: absolute; top: 0; left:0; right:-10px;
-       color: #474747 !important;
-       @extend .code-title;
-       &amp;:hover { color: $link-color !important; }
-@@ -221,7 +213,7 @@ pre, .highlight, .gist-highlight {
-   &amp;::-webkit-scrollbar-thumb:horizontal { background: $solar-scroll-thumb;  -webkit-border-radius: 4px; border-radius: 4px }
- }
-
--.highlight code {
-+.highlight code { 
-   @extend .pre-code; background: #000;
- }
- figure.code {
-@@ -267,11 +259,3 @@ figure.code {
-   text-shadow: #cbcccc 0 1px 0;
-   padding-left: 3em;
- }
--
--.gist-file {
--  font-size:.8em !important;
--}
--
--table.lines{
--  width: 100%;
--}
-</code></pre> </div> <footer> <p class="meta"> <span class="byline author vcard">Posted by <span class="fn">Lenciel</span></span> <span class="categories"> <a class='category' href='/categories/gist/'>gist</a>, <a class='category' href='/categories/octopress/'>octopress</a>, <a class='category' href='/categories/tips/'>tips</a> </span> </p> <div class="sharing"> </div> <p class="meta"> <a class="basic-alignment left" href="/2014/05/web-development-skill-set-and-reading-list/" title="Previous Post: Web开发知识结构">&laquo; Web开发知识结构</a> <a class="basic-alignment right" href="/2014/05/this-is-not-happiness/" title="Next Post: This isn't happiness">This isn't happiness &raquo;</a> </p> </footer> </article> </div> </div> </div> <footer role="contentinfo"><p> Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a> <span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span> <section class="contruction-wrap"> <div class="contruction"></div> </section> </p> </footer> <script type="text/javascript">
+</code></pre></div> <p>当然之所以说理论上，是因为首先Octopress的markdown插件对unicode的支持<a href="http://tokkonopapa.github.io/blog/2013/02/23/octopress-toc/">是有bug</a>的。所以直接插入带中文的gist在build的时候会看到<code>Liquid Exception</code>:</p> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span></span>&gt;&gt;&gt; Compass is watching <span class="k">for</span> changes. Press Ctrl-C to Stop.
+</span><span class='line'>Liquid Exception: incompatible character encodings: UTF-8 and ASCII-8BIT in <span class="m">2014</span>-05-16-web-development-skill-set-and-reading-list.markdown
+</span></code></pre></td></tr></table></div></figure> <p>解决起来也很简单，只需要在<code>lib/jekyll/converters/markdown.rb</code>里面强制设定encoding就可以了：</p> <figure class='code'><figcaption><span>lib/jekyll/converters/markdown.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='diff'><span class='line'><span></span><span class="gu">@@ -120,7 +120,7 @@ def convert(content)</span>
+</span><span class='line'>           rd = RDiscount.new(content, *@rdiscount_extensions)
+</span><span class='line'>           html = rd.to_html
+</span><span class='line'>           if rd.generate_toc and html.include?(@config[&#39;rdiscount&#39;][&#39;toc_token&#39;])
+</span><span class='line'><span class="gd">-            html.gsub!(@config[&#39;rdiscount&#39;][&#39;toc_token&#39;], rd.toc_content)</span>
+</span><span class='line'><span class="gi">+            html.gsub!(@config[&#39;rdiscount&#39;][&#39;toc_token&#39;], rd.toc_content.force_encoding(&#39;utf-8&#39;))</span>
+</span><span class='line'>           end
+</span></code></pre></td></tr></table></div></figure> <p>接下来就是render出来的效果，样子丑到让人无法直视：</p> <p><img src="/downloads/images/2014_05/gist_render_output_orig.jpg" title="Don't touch me..." alt="original gist render output"/></p> <p>大概看了一下Octopress的文档，原来代码片断的样式（包括gist的渲染样式）都在<a href="https://github.com/imathis/octopress/blob/master/.themes/classic/sass/partials/_syntax.scss">_syntax.scss</a>里面。这个文件2012年就没有更新过了，但是github的gist输出在2013年有过变化，所以就有些不匹配了。</p> <p>打开自己的模板，大概调了一下这个sass，主要是和其他的代码高亮一致：</p> <p><img src="/downloads/images/2014_05/gist_render_output.jpg" title="Don't touch me..." alt="current gist render output"/></p> <p>调整的地方见<a href="https://gist.github.com/lenciel/ecc8b3805ed346727abe">这里</a>:</p> <figure class='code'><figcaption><span>_sass/partials/_syntax.scss</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+</pre></td><td class='code'><pre><code class='diff'><span class='line'><span></span><span class="gh">diff --git a/46501e4:sass/partials/_syntax.scss b/02b0441:sass/partials/_syntax.scss</span>
+</span><span class='line'><span class="gh">index 137d475..5465286 100644</span>
+</span><span class='line'><span class="gd">--- a/46501e4:sass/partials/_syntax.scss</span>
+</span><span class='line'><span class="gi">+++ b/02b0441:sass/partials/_syntax.scss</span>
+</span><span class='line'><span class="gu">@@ -22,10 +22,6 @@</span>
+</span><span class='line'>   @include border-radius(0);
+</span><span class='line'> }
+</span><span class='line'>
+</span><span class='line'><span class="gd">-.line-data {</span>
+</span><span class='line'><span class="gd">-   font-size: 13px;</span>
+</span><span class='line'><span class="gd">-}</span>
+</span><span class='line'><span class="gd">-</span>
+</span><span class='line'> figure.code, .gist-file, pre {
+</span><span class='line'>   @include box-shadow(rgba(#000, .06) 0 0 10px);
+</span><span class='line'>   .highlight pre { @include box-shadow(none); }
+</span><span class='line'><span class="gu">@@ -43,10 +39,8 @@ html .gist .gist-file {</span>
+</span><span class='line'>     margin-bottom: 0;
+</span><span class='line'>   }
+</span><span class='line'>   .gist-syntax {
+</span><span class='line'><span class="gd">-    background: #01222d !important;</span>
+</span><span class='line'><span class="gd">-    color: #d5dee2 !important;</span>
+</span><span class='line'><span class="gd">-    padding: 0 2em;</span>
+</span><span class='line'>     border-bottom: 0 !important;
+</span><span class='line'><span class="gi">+    background: none !important;</span>
+</span><span class='line'>     .gist-highlight {
+</span><span class='line'>       background: $base03 !important;
+</span><span class='line'>     }
+</span><span class='line'><span class="gu">@@ -57,17 +51,15 @@ html .gist .gist-file {</span>
+</span><span class='line'>   }
+</span><span class='line'>   .gist-meta {
+</span><span class='line'>    padding: .6em 0.8em;
+</span><span class='line'><span class="gi">+   border: 1px solid lighten($base02, 2) !important;</span>
+</span><span class='line'><span class="gi">+   color: $base01;</span>
+</span><span class='line'>    font-size: .7em !important;
+</span><span class='line'>    @if $solarized == light {
+</span><span class='line'><span class="gd">-     color: $base01;</span>
+</span><span class='line'><span class="gd">-     border: 1px solid lighten($base02, 2) !important;</span>
+</span><span class='line'>      background: lighten($base03, 2) $noise-bg;
+</span><span class='line'>      border: 1px solid $pre-border !important;
+</span><span class='line'>      border-top: 1px solid lighten($base03, 2) !important;
+</span><span class='line'>    } @else {
+</span><span class='line'><span class="gd">-     background: #01222d $noise-bg;</span>
+</span><span class='line'><span class="gd">-     text-shadow: none !important;</span>
+</span><span class='line'><span class="gd">-     color: #d5dee2;</span>
+</span><span class='line'><span class="gi">+     background: $base02 $noise-bg;</span>
+</span><span class='line'>    }
+</span><span class='line'>    @extend .sans;
+</span><span class='line'>    line-height: 1.5em;
+</span><span class='line'><span class="gu">@@ -77,7 +69,7 @@ html .gist .gist-file {</span>
+</span><span class='line'>       &amp;:hover { color: $base1 !important; }
+</span><span class='line'>     }
+</span><span class='line'>     a[href*=&#39;#file&#39;] {
+</span><span class='line'><span class="gd">-      position: absolute; top: 0; left:0; right:0px;</span>
+</span><span class='line'><span class="gi">+      position: absolute; top: 0; left:0; right:-10px;</span>
+</span><span class='line'>       color: #474747 !important;
+</span><span class='line'>       @extend .code-title;
+</span><span class='line'>       &amp;:hover { color: $link-color !important; }
+</span><span class='line'><span class="gu">@@ -221,7 +213,7 @@ pre, .highlight, .gist-highlight {</span>
+</span><span class='line'>   &amp;::-webkit-scrollbar-thumb:horizontal { background: $solar-scroll-thumb;  -webkit-border-radius: 4px; border-radius: 4px }
+</span><span class='line'> }
+</span><span class='line'>
+</span><span class='line'><span class="gd">-.highlight code {</span>
+</span><span class='line'><span class="gi">+.highlight code { </span>
+</span><span class='line'>   @extend .pre-code; background: #000;
+</span><span class='line'> }
+</span><span class='line'> figure.code {
+</span><span class='line'><span class="gu">@@ -267,11 +259,3 @@ figure.code {</span>
+</span><span class='line'>   text-shadow: #cbcccc 0 1px 0;
+</span><span class='line'>   padding-left: 3em;
+</span><span class='line'> }
+</span><span class='line'><span class="gd">-</span>
+</span><span class='line'><span class="gd">-.gist-file {</span>
+</span><span class='line'><span class="gd">-  font-size:.8em !important;</span>
+</span><span class='line'><span class="gd">-}</span>
+</span><span class='line'><span class="gd">-</span>
+</span><span class='line'><span class="gd">-table.lines{</span>
+</span><span class='line'><span class="gd">-  width: 100%;</span>
+</span><span class='line'><span class="gd">-}</span>
+</span></code></pre></td></tr></table></div></figure> </div> <footer> <p class="meta"> <span class="byline author vcard">Posted by <span class="fn">Lenciel</span></span> <span class="categories"> <a class='category' href='/categories/gist/'>gist</a>, <a class='category' href='/categories/octopress/'>octopress</a>, <a class='category' href='/categories/tips/'>tips</a> </span> </p> <div class="sharing"> </div> <p class="meta"> <a class="basic-alignment left" href="/2014/05/web-development-skill-set-and-reading-list/" title="Previous Post: Web开发知识结构">&laquo; Web开发知识结构</a> <a class="basic-alignment right" href="/2014/05/this-is-not-happiness/" title="Next Post: This isn't happiness">This isn't happiness &raquo;</a> </p> </footer> </article> </div> </div> </div> <footer role="contentinfo"><p> Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a> <span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span> </p> </footer> <script type="text/javascript">
   var stylesheet = document.createElement('link');
   stylesheet.href = '/assets/stylesheets/app.css';
   stylesheet.rel = 'stylesheet';

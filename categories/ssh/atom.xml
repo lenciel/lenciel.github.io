@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ssh | @Lenciel]]></title>
   <link href="http://lenciel.com/categories/ssh/atom.xml" rel="self"/>
   <link href="http://lenciel.com/"/>
-  <updated>2017-04-14T15:06:07+08:00</updated>
+  <updated>2017-05-02T17:08:47+08:00</updated>
   <id>http://lenciel.com/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
@@ -34,7 +34,7 @@
 
 <p>最后，虽然demo的例子也挺多，但是好像没有说清楚怎么用invoke_shell和get_pty以及照例奉上一段代码。</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span> (paramiko_sample.py)</span> <a href='/downloads/code/paramiko_sample.py'>download</a></figcaption>
+<p><figure class='code'><figcaption><span> (paramiko_sample.py)</span> <a href='/downloads/code/paramiko_sample.py'>download</a></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -319,7 +319,7 @@
 </span><span class='line'>    <span class="n">b</span><span class="o">.</span><span class="n">genXlf</span><span class="p">()</span>
 </span><span class='line'>    <span class="c1">#b.runCmd(&#39;ls&#39;)</span>
 </span><span class='line'>    <span class="n">b</span><span class="o">.</span><span class="n">closeConn</span><span class="p">()</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+</span></code></pre></td></tr></table></div></figure></p>
 ]]></content>
   </entry>
   
