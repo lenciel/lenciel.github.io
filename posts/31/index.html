@@ -1,4 +1,89 @@
-<!DOCTYPE html> <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]--> <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]--> <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]--> <head> <meta charset="utf-8"> <title>@Lenciel</title> <meta name="author" content="Lenciel"> <meta name="description" content=" It's August now, boy... 2014-08-04 23:47:03 ..."> <meta name="HandheldFriendly" content="True"> <meta name="MobileOptimized" content="320"> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="canonical" href="http://lenciel.com/posts/31/"> <link href="/favicon.png" rel="icon"> <script src="/assets/javascripts/app.js"></script> <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml"> <meta property="og:type" content="article"/> <meta property="og:url" content="http://lenciel.com/posts/31/"/> <meta property="og:description" content=" It's August now, boy... 2014-08-04 23:47:03 ..."/> <meta property="og:site_name" content="http://lenciel.com"/> <meta property="article:author" content="http://lenciel.com"> <meta itemprop="description" content=" It's August now, boy... 2014-08-04 23:47:03 ..."/> <script>
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>@Lenciel</title>
+  <meta name="author" content="Lenciel">
+
+  
+  <meta name="description" content="
+  
+  
+  
+    
+      
+  
+    
+      Data Migration in Django 1.7 (1)
+    
+    
+      
+        
+        
+          2014-08-05
+          11:12:41
+   ...">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://172.16.121.110:4000/posts/31/">
+  <link href="/favicon.png" rel="icon">
+  <script src="/assets/javascripts/app.js"></script>
+  <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml">
+  
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://172.16.121.110:4000/posts/31/" />
+<meta property="og:description" content="
+  
+  
+  
+    
+      
+  
+    
+      Data Migration in Django 1.7 (1)
+    
+    
+      
+        
+        
+          2014-08-05
+          11:12:41
+   ..." />
+
+<meta property="og:site_name" content="http://172.16.121.110:4000" />
+<meta property="article:author" content="http://lenciel.com">
+
+
+
+<meta itemprop="description" content="
+  
+  
+  
+    
+      
+  
+    
+      Data Migration in Django 1.7 (1)
+    
+    
+      
+        
+        
+          2014-08-05
+          11:12:41
+   ..." />
+
+
+  <script>
     var _hmt = _hmt || [];
     (function() {
         var hm = document.createElement("script");
@@ -6,7 +91,10 @@
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
     })();
-</script> <script>
+</script>
+
+  
+<script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -15,10 +103,520 @@
     ga('create', 'UA-175991-6', 'auto');
     ga('send', 'pageview');
 
-</script> </head> <body class="collapse-sidebar sidebar-footer"> <header role="banner"><hgroup> <h1><a href="/">@Lenciel</a></h1> </hgroup> </header> <nav role="navigation"><ul class="subscription" data-subscription="rss"> <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li> </ul> <ul class="main-navigation"> <li><a href="/"><i class="icon-home"></i>Home</a></li> <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li> <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li> </ul> </nav> <div id="main"> <div id="content"> <div class="blog-index"> <article> <header> <h1 class="entry-title"><a href="/2014/08/before-sunrise/">It's August now, boy...</a></h1> <p class="meta"> <time class='entry-date' datetime='2014-08-04 23:47:03 +0800'> <span class='date'>2014-08-04</span> <span class='time'>23:47:03</span> </time> </p> </header> <div class="entry-content"><p><img src="/downloads/images/2014_08/before_sunrise_1.jpg" title="Don't touch me..." alt="before sunrise1"/> <img src="/downloads/images/2014_08/before_sunrise_2.jpg" title="Don't touch me..." alt="before sunrise2"/></p> <blockquote><p>"I believe if there’s any kind of God it wouldn’t be in any of us, not you or me but just this little space in between. If there’s any kind of magic in this world it must be in the attempt of understanding someone, sharing something."</p><footer><strong>Ethan Hawke</strong> <cite><a href='http://www.imdb.com/title/tt0112471/'>Before Sunrise(1995)</a></cite></footer></blockquote> </div> </article> <article> <header> <h1 class="entry-title"><a href="/2014/07/what-did-ocean-say-2/">白日焰火</a></h1> <p class="meta"> <time class='entry-date' datetime='2014-07-29 01:07:51 +0800'> <span class='date'>2014-07-29</span> <span class='time'>01:07:51</span> </time> </p> </header> <div class="entry-content"><p><img height="200" width="300" alt="spark" src="/downloads/images/2014_07/Black_Coal_Thin_Ice.jpg" align="left" style="margin:0px 20px;"/> “你不要再来找我了。”文慧这么说的时候，柳徽不敢看她的眼睛。</p> <p>当然，我们也可以说这是因为文慧身后的工地上高高的塔吊顶端那盏不可一世的探照灯：当时是凌晨一点，那工地又相隔甚远，本来应该是从天而降的灯光变得和视线平行。惨白的光线在茫茫夜色中显得异常刺眼，让人根本不敢看向她所在的方位。</p> <p>他们常常在夜里聊天，这是有原因的。白天让人们变得循规蹈矩，不敢轻举妄动。放眼望去，每个人的额头上似乎贴上了符咒，世俗的规则在所有人身上发挥着魔法般的控制力，消磨掉生活本该有的神奇之处。无论扮演着紧张呆板，还是飞扬跋扈的角色，一切言谈举止一切思绪梦想，都仿佛在执行预设的程序而已。</p> <p>只有在夜里，他们才会感觉摆脱了现实的控制，让自己任性地随心游走。</p> <p>“你说，那盏灯有没有200米远啊？”</p> <p>“可能有吧，那又怎样？”</p> <p>“如果，有一个地方离我们很远很远，比如十光年，二十光年。站在那个地方，往我们这里看，过去的十年、二十年就会一幕幕重现的，对吧？”</p> <p>“啊？”</p> <p>“就好比，你看，天上这些星星。很多说不定老早就已经挂掉了。只不过是因为和我们隔了几十万光年，我们就以为它还在一闪一闪亮晶晶呢。”</p> <p>“我现在说的事情，跟这有什么关系？”</p> <p>“你看，是活着还是已经死掉都可能只是站在哪里看的问题。”</p> <p>“嗯，继续。”</p> <p>“对一个时间旅行者来说，没有你们所谓生和死的区别，当然也没有在一起和分开的区别。不光是周围的人，我生活的地点也一直在变，在这里几年，到那里几年。但在这个城市里面，我知道有你，会觉得对它格外熟悉和依恋：那是因为在需要温暖的时候，我知道能躲到你的怀抱里面。据蔡先生说，这就是本地人和旅行者最大的区别。”</p> <p>柳徽说这些的时候，认真地看着文慧。当然，还是看不清她是什么表情，就只好继续说下去：</p> <p>“你说不要再见了，那我会听你的话。我只是想让你知道，人肯定是有能够吸引某个特定的人的线，即使没有太多话想聊，也能把对方拉过来。呆呆看着也好，默默守着也罢，就是想感受着有这个人的存在。”</p> <p>然后，柳徽就慢慢变得透明起来。还没等文慧反应过来，就消失在无边的夜色之中。</p> <p>这就是为什么女孩儿们从小就被教育千万不要搭理时间旅行者的原因：据说，他们的出现总是显得过于匆忙，好像白日焰火，很快就变得无影无踪。</p> </div> </article> <div class="pagination"> <a class="prev" href="/posts/32">&larr; Older</a> <a href="/archives">Archives</a> <a class="next" href="/posts/30">Newer &rarr;</a> </div> </div> </div> </div> <footer role="contentinfo"><p> Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a> <span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span> </p> </footer> <script type="text/javascript">
+</script>
+
+
+</head>
+
+<body    class="collapse-sidebar sidebar-footer" >
+  <header role="banner"><hgroup>
+  <h1><a href="/">@Lenciel</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<ul class="main-navigation">
+  <li><a href="/"><i class="icon-home"></i>Home</a></li>
+  <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li>
+  <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2014/08/django-1-dot-7-migrations/">Data Migration in Django 1.7 (1)</a></h1>
+    
+    
+      <p class="meta">
+        <!--
+
+
+
+
+-->
+        <time class='entry-date' datetime='2014-08-05 11:12:41 +0800'>
+          <span class='date'>2014-08-05</span>
+          <span class='time'>11:12:41</span>
+        </time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Django 1.7已经发布一段时间了，基本上这个版本最主要的改动就是加入了<code>migrations</code>。</p>
+
+<p>在过去，几乎所有的Django项目都是用South来处理数据变更的。而在Django1.7版本，South的作者Andrew Godwin把<code>migrations</code>加到了Django Core里面。</p>
+
+<p>So&hellip;</p>
+
+<a name="Migrations............"></a>
+<h1>Migrations是什么？</h1>
+
+<p>Migrations其实就是一堆帮助你完成数据库变更和数据迁移的命令，使得你可以用“Django”的方式来管理和变更数据库的schema。比如，当你的model改变了，你需要在数据库里面去重命名一列时，你不会想跑到命令行下面去敲SQL吧？特别是，如果你要变更的数据库是线上的，有几百万用户数据，你应该更不愿意搭上这种活了吧？</p>
+
+<p>Migrations让事情变得简单可控：</p>
+
+<ol>
+<li>它使得数据库schema的调整可以通过Django命令来完成</li>
+<li>它使得数据库的schema和对应的model的变更被track起来：整个历史都可以版本化在Git里面</li>
+<li>提供了一套匹配schema和对应的fixture的机制</li>
+<li>如何和CI搭配起来，可以保证代码和数据一致性</li>
+</ol>
+
+
+<a name="Migrations......"></a>
+<h1>Migrations上手</h1>
+
+<a name="L.................."></a>
+<h2>创建测试项目</h2>
+
+<p>首先创建一个virtualenv和django项目：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span></span>$ mkvirtualenv django17
+</span><span class='line'>$ pip install https://www.djangoproject.com/download/1.7c2/tarball/
+</span><span class='line'>$ django-admin.py startproject django_migration_test
+</span><span class='line'>$ <span class="nb">cd</span> django_migration_test
+</span><span class='line'>$ python manage.py startapp ts_data
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>然后创建一个model到subl ts_data/models.py：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span></span><span class="kn">from</span> <span class="nn">django.db</span> <span class="kn">import</span> <span class="n">models</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Create your models here.</span>
+</span><span class='line'><span class="k">class</span> <span class="nc">PingPongPrice</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+</span><span class='line'>    <span class="n">date</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">DateTimeField</span><span class="p">(</span><span class="n">auto_now_add</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">price</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">DecimalField</span><span class="p">(</span><span class="n">max_digits</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">decimal_places</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>subl django_migration_test/settings.py</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span></span><span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="p">(</span>
+</span><span class='line'>    <span class="o">...</span>
+</span><span class='line'>    <span class="s1">&#39;ts_data&#39;</span><span class="p">,</span>
+</span><span class='line'><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<a name="L......Migrations"></a>
+<h2>创建Migrations</h2>
+
+<p>使用下面的命令可以创建ts_data这个app的Migrations。当然，和大多数Django命令一样，如果你不显式的指定，就</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span></span><span class="p">(</span><span class="n">django17</span><span class="p">)</span> <span class="err">○</span> <span class="n">python</span> <span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">makemigrations</span> <span class="n">ts_data</span>
+</span><span class='line'><span class="n">Migrations</span> <span class="k">for</span> <span class="s1">&#39;ts_data&#39;</span><span class="p">:</span>
+</span><span class='line'>  <span class="mo">0001</span><span class="n">_initial</span><span class="o">.</span><span class="n">py</span><span class="p">:</span>
+</span><span class='line'>    <span class="o">-</span> <span class="n">Create</span> <span class="n">model</span> <span class="n">PingPongPrice</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<a name="L......Migrations"></a>
+<h2>应用Migrations</h2>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span></span><span class="o">(</span>django17<span class="o">)</span> ○ python manage.py migrate
+</span><span class='line'>Operations to perform:
+</span><span class='line'>  Apply all migrations: admin, contenttypes, ts_data, auth, sessions
+</span><span class='line'>Running migrations:
+</span><span class='line'>  Applying contenttypes.0001_initial... OK
+</span><span class='line'>  Applying auth.0001_initial... OK
+</span><span class='line'>  Applying admin.0001_initial... OK
+</span><span class='line'>  Applying sessions.0001_initial... OK
+</span><span class='line'>  Applying ts_data.0001_initial... OK
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>注意，因为是一个全新的app，这条命令会先建表，换句话说，之前版本的<code>syncdb</code>命令可以不用了。整个使用流程应该变成：</p>
+
+<ol>
+<li>建立或者更新一个model</li>
+<li>运行<code>python manage.py makemigrations &lt;app_name&gt;</code></li>
+<li>运行<code>python mange.py migrate &lt;app_name</code>来应用创建的Migrations</li>
+<li>重复前面的步骤</li>
+</ol>
+
+
+<a name="L................................."></a>
+<h1>不是新建的项目如何使用</h1>
+
+<p>大多数情况下我们都是从旧版本的Django迁移过来，也就意味着是从South迁移过来。这种情况下需要：</p>
+
+<ol>
+<li>删除所有的South创建的migration文件</li>
+<li>运行 <code>./manage.py makemigrations</code>，Django会根据你当前model来创建那份<code>initial migrations file</code></li>
+<li>运行<code>./manage.py migrate</code>，Django会把已经存在的数据库table当成是migration的产物，完成整个migration</li>
+</ol>
+
+
+<p>如果你运行上面的命令遇到错误，就需要运行 <code>./manage.py migrate --fake &lt;appname&gt;</code> 做一个fake的migration。</p>
+
+<p>如果你不想丢掉过去的South维护的历史记录，可以同时使用South和Django Migrations：升级South到1.0，然后<a href="http://www.aeracode.org/2014/7/1/end-era/">参考这篇文章的做法</a>。</p>
+
+<a name="South...Django.Migrations......"></a>
+<h1>South和Django Migrations比较</h1>
+
+<p>对比一下South和Django Migrations的workflow，可能会更加清晰：</p>
+
+<a name="L............migrations"></a>
+<h2>首次全新migrations</h2>
+
+<p>South:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span></span><span class="o">./</span><span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">syncdb</span>
+</span><span class='line'><span class="o">./</span><span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">schemamigration</span> <span class="o">&lt;</span><span class="n">appname</span><span class="o">&gt;</span> <span class="o">--</span><span class="n">initial</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Django Migrations:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span></span><span class="o">./</span><span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">makemigrations</span> <span class="o">&lt;</span><span class="n">appname</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<a name="L......migrations"></a>
+<h2>应用migrations</h2>
+
+<p>South:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span></span><span class="o">./</span><span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">migrate</span> <span class="o">&lt;</span><span class="n">appname</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Django Migrations:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span></span><span class="o">./</span><span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">migrate</span> <span class="o">&lt;</span><span class="n">appname</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<a name="L.........migrations"></a>
+<h2>非首次migrations</h2>
+
+<p>South:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span></span><span class="o">./</span><span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">schemamigration</span> <span class="o">&lt;</span><span class="n">appname</span><span class="o">&gt;</span> <span class="o">--</span><span class="n">auto</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Django Migrations:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span></span><span class="o">./</span><span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">makemigration</span> <span class="o">&lt;</span><span class="n">appname</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>可以看到，大概是因为出自同一个作者的原因，Django Migrations基本上follow了South的工作流程，只不过是命令更加简洁和清晰了。</p>
+
+<a name="L............"></a>
+<h1>更多细节</h1>
+
+<a name="L..................Django.Migrations........."></a>
+<h2>哪些变化会被Django Migrations找到？</h2>
+
+<p>如果你再次运行<code>python manage.py migrate</code>，会发现什么都没有发生：这是因为在项目的数据库中有一张<code>django_migrations</code>仍然被更新。表，记录了哪些Migrations已经被应用过了：无论是运行了migrate还是fake的，这个表都会被插入一条记录。比如从South升级到使用Django自带的MigrationsDjango会检查是否有更新。如果没有，它就fake一次，但<code>django_migrations</code>仍然被更新。</p>
+
+<p>在少数情况下，确实有需要再次运行某个特定的Migrations，我们可以在<code>django_migrations</code>里面把这个记录删除掉。</p>
+
+<p>在极少数情况下，如果你有需要回退到特定的版本，比如最初的zero版本，可以用类似<code>python manage.py migrate &lt;app_name&gt; zero</code>的语法。</p>
+
+<a name="Migration......."></a>
+<h2>Migration 文件</h2>
+
+<p>在我们运行<code>python manage.py migrate &lt;app_name&gt;</code>究竟发生了什么？实际上，Django会创建一个python文件来描述如何完成这个migration，以前面的ts_data为例，这个文件位于<code>ts_data/migrations/0001_initial.py</code>，内容如下：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+</span><span class='line'><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">unicode_literals</span>
+</span><span class='line'>
+</span><span class='line'><span class="kn">from</span> <span class="nn">django.db</span> <span class="kn">import</span> <span class="n">models</span><span class="p">,</span> <span class="n">migrations</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="k">class</span> <span class="nc">Migration</span><span class="p">(</span><span class="n">migrations</span><span class="o">.</span><span class="n">Migration</span><span class="p">):</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">dependencies</span> <span class="o">=</span> <span class="p">[</span>
+</span><span class='line'>    <span class="p">]</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">operations</span> <span class="o">=</span> <span class="p">[</span>
+</span><span class='line'>        <span class="n">migrations</span><span class="o">.</span><span class="n">CreateModel</span><span class="p">(</span>
+</span><span class='line'>            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;PingPongPrice&#39;</span><span class="p">,</span>
+</span><span class='line'>            <span class="n">fields</span><span class="o">=</span><span class="p">[</span>
+</span><span class='line'>                <span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="n">models</span><span class="o">.</span><span class="n">AutoField</span><span class="p">(</span><span class="n">verbose_name</span><span class="o">=</span><span class="s1">&#39;ID&#39;</span><span class="p">,</span> <span class="n">serialize</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">auto_created</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">primary_key</span><span class="o">=</span><span class="bp">True</span><span class="p">)),</span>
+</span><span class='line'>                <span class="p">(</span><span class="s1">&#39;date&#39;</span><span class="p">,</span> <span class="n">models</span><span class="o">.</span><span class="n">DateTimeField</span><span class="p">(</span><span class="n">auto_now_add</span><span class="o">=</span><span class="bp">True</span><span class="p">)),</span>
+</span><span class='line'>                <span class="p">(</span><span class="s1">&#39;price&#39;</span><span class="p">,</span> <span class="n">models</span><span class="o">.</span><span class="n">DecimalField</span><span class="p">(</span><span class="n">max_digits</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">decimal_places</span><span class="o">=</span><span class="mi">2</span><span class="p">)),</span>
+</span><span class='line'>            <span class="p">],</span>
+</span><span class='line'>            <span class="n">options</span><span class="o">=</span><span class="p">{</span>
+</span><span class='line'>            <span class="p">},</span>
+</span><span class='line'>            <span class="n">bases</span><span class="o">=</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">,),</span>
+</span><span class='line'>        <span class="p">),</span>
+</span><span class='line'>    <span class="p">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>可以看到，是完全可读的Python代码。这也是为什么推荐把整个<code>migrations</code>文件夹加入版本控制的原因：这样你的应用经过了怎样的变更就变得可以回溯了。</p>
+
+<a name="Migration.Dependencies"></a>
+<h2>Migration Dependencies</h2>
+
+<p>上面的源代码有一些值得注意的地方。</p>
+
+<p>首先，所有的migration file里面都有一个<code>Migration()</code>类，继承自<code>django.db.migrations.Migration</code>。在我们运行<code>migrate</code>命令的时候，运行的就是这个类。</p>
+
+<p>这个类有两个list，一个是<code>dependencies</code>，一个是<code>operations</code>。</p>
+
+<p><code>dependencies</code>定义了这个migration之前必须完成的操作，比如你的model里面包括一个外键，那么你得首先有对应的table。比如，假设外键指向的model在<code>app_1</code>，那么<code>dependencies</code>会像这样：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span></span><span class="n">dependencies</span> <span class="o">=</span> <span class="p">[</span>
+</span><span class='line'>   <span class="p">(</span><span class="s1">&#39;main&#39;</span><span class="p">,</span> <span class="s1">&#39;__first__&#39;</span><span class="p">),</span>
+</span><span class='line'><span class="p">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>如果没有前置条件，这个list可以为空。但大多数时候<code>dependencies</code>是指向其他的migration文件。比如：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span></span><span class="n">dependencies</span> <span class="o">=</span> <span class="p">[</span>
+</span><span class='line'>    <span class="p">(</span><span class="s1">&#39;main&#39;</span><span class="p">,</span> <span class="s1">&#39;0001_initial&#39;</span><span class="p">),</span>
+</span><span class='line'><span class="p">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>这里使用list的结果是，所有的依赖是没有顺序的，也就是说你不需要按照0001、0002、0003的顺序来排列所有的依赖。</p>
+
+<a name="Migration.Operations"></a>
+<h2>Migration Operations</h2>
+
+<p>这个list定义的就是migration完成的操作，可以分为下面的这些种类：</p>
+
+<ul>
+<li>CreateModel</li>
+<li>DeleteModel</li>
+<li>RenameModel</li>
+<li>AlterModelTable</li>
+<li>AlterUniqueTogether</li>
+<li>AlteIndexTogether</li>
+<li>AddField</li>
+<li>RemoveField</li>
+<li>RenameField</li>
+<li>RunSQL</li>
+<li>RunPython</li>
+</ul>
+
+
+<p>前面的那些操作是整个Django Migrations的核心：因为需要对各种不同的数据库做适配。而后面的两个操作则是灵活度非常高的，几乎可以干任何事情。</p>
+
+<a name="L......"></a>
+<h1>实例</h1>
+
+<p>让我们试试把<code>PingPongPrice</code>的<code>price</code>这个field的<code>max_digits</code>改成8位的（通货膨胀嘛），然后再次运<code>makemigrations</code>行命令:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span></span><span class="o">(</span>django17<span class="o">)</span> ○ python manage.py makemigrations ts_data
+</span><span class='line'>Migrations <span class="k">for</span> <span class="s1">&#39;ts_data&#39;</span>:
+</span><span class='line'>  0002_auto_20140805_1525.py:
+</span><span class='line'>    - Alter field price on PingPongPrice
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>可以看到这次生成的migration文件里面有<code>AlterField</code>操作：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+</span><span class='line'><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">unicode_literals</span>
+</span><span class='line'>
+</span><span class='line'><span class="kn">from</span> <span class="nn">django.db</span> <span class="kn">import</span> <span class="n">models</span><span class="p">,</span> <span class="n">migrations</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="k">class</span> <span class="nc">Migration</span><span class="p">(</span><span class="n">migrations</span><span class="o">.</span><span class="n">Migration</span><span class="p">):</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">dependencies</span> <span class="o">=</span> <span class="p">[</span>
+</span><span class='line'>        <span class="p">(</span><span class="s1">&#39;ts_data&#39;</span><span class="p">,</span> <span class="s1">&#39;0001_initial&#39;</span><span class="p">),</span>
+</span><span class='line'>    <span class="p">]</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">operations</span> <span class="o">=</span> <span class="p">[</span>
+</span><span class='line'>        <span class="n">migrations</span><span class="o">.</span><span class="n">AlterField</span><span class="p">(</span>
+</span><span class='line'>            <span class="n">model_name</span><span class="o">=</span><span class="s1">&#39;PingPongPrice&#39;</span><span class="p">,</span>
+</span><span class='line'>            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;price&#39;</span><span class="p">,</span>
+</span><span class='line'>            <span class="n">field</span><span class="o">=</span><span class="n">models</span><span class="o">.</span><span class="n">DecimalField</span><span class="p">(</span><span class="n">max_digits</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">decimal_places</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span>
+</span><span class='line'>        <span class="p">),</span>
+</span><span class='line'>    <span class="p">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2014/08/before-sunrise/">It's August now, boy...</a></h1>
+    
+    
+      <p class="meta">
+        <!--
+
+
+
+
+-->
+        <time class='entry-date' datetime='2014-08-04 23:47:03 +0800'>
+          <span class='date'>2014-08-04</span>
+          <span class='time'>23:47:03</span>
+        </time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img src="/downloads/images/2014_08/before_sunrise_1.jpg" title="Don't touch me..." alt="before sunrise1" />
+<img src="/downloads/images/2014_08/before_sunrise_2.jpg" title="Don't touch me..." alt="before sunrise2" /></p>
+
+<blockquote><p>"I believe if there’s any kind of God it wouldn’t be in any of us, not you or me but just this little space in between. If there’s any kind of magic in this world it must be in the attempt of understanding someone, sharing something."</p><footer><strong>Ethan Hawke</strong> <cite><a href='http://www.imdb.com/title/tt0112471/'>Before Sunrise(1995)</a></cite></footer></blockquote>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/posts/32">&larr; Older</a>
+    
+    <a href="/archives">Archives</a>
+    
+    <a class="next" href="/posts/30">Newer &rarr;</a>
+    
+  </div>
+</div>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a>
+<span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+<script type="text/javascript">
   var stylesheet = document.createElement('link');
   stylesheet.href = '/assets/stylesheets/app.css';
   stylesheet.rel = 'stylesheet';
   stylesheet.type = 'text/css';
   document.getElementsByTagName('head')[0].appendChild(stylesheet);
-</script> </body> </html>
+</script>
+
+</body>
+</html>

@@ -1,4 +1,95 @@
-<!DOCTYPE html> <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]--> <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]--> <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]--> <head> <meta charset="utf-8"> <title>@Lenciel</title> <meta name="author" content="Lenciel"> <meta name="description" content=" 推行微服务架构的最大收益 2017-02-10 17:58:52 ..."> <meta name="HandheldFriendly" content="True"> <meta name="MobileOptimized" content="320"> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="canonical" href="http://lenciel.com/posts/5/"> <link href="/favicon.png" rel="icon"> <script src="/assets/javascripts/app.js"></script> <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml"> <meta property="og:type" content="article"/> <meta property="og:url" content="http://lenciel.com/posts/5/"/> <meta property="og:description" content=" 推行微服务架构的最大收益 2017-02-10 17:58:52 ..."/> <meta property="og:site_name" content="http://lenciel.com"/> <meta property="article:author" content="http://lenciel.com"> <meta itemprop="description" content=" 推行微服务架构的最大收益 2017-02-10 17:58:52 ..."/> <script>
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>@Lenciel</title>
+  <meta name="author" content="Lenciel">
+
+  
+  <meta name="description" content="
+  
+  
+  
+    
+      
+  
+    
+      采用事件驱动实施微服务架构
+    
+    
+      
+        
+        
+          2017-02-12
+          03:58:52
+        
+        
+    ...">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://172.16.121.110:4000/posts/5/">
+  <link href="/favicon.png" rel="icon">
+  <script src="/assets/javascripts/app.js"></script>
+  <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml">
+  
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://172.16.121.110:4000/posts/5/" />
+<meta property="og:description" content="
+  
+  
+  
+    
+      
+  
+    
+      采用事件驱动实施微服务架构
+    
+    
+      
+        
+        
+          2017-02-12
+          03:58:52
+        
+        
+    ..." />
+
+<meta property="og:site_name" content="http://172.16.121.110:4000" />
+<meta property="article:author" content="http://lenciel.com">
+
+
+
+<meta itemprop="description" content="
+  
+  
+  
+    
+      
+  
+    
+      采用事件驱动实施微服务架构
+    
+    
+      
+        
+        
+          2017-02-12
+          03:58:52
+        
+        
+    ..." />
+
+
+  <script>
     var _hmt = _hmt || [];
     (function() {
         var hm = document.createElement("script");
@@ -6,7 +97,10 @@
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
     })();
-</script> <script>
+</script>
+
+  
+<script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -15,10 +109,244 @@
     ga('create', 'UA-175991-6', 'auto');
     ga('send', 'pageview');
 
-</script> </head> <body class="collapse-sidebar sidebar-footer"> <header role="banner"><hgroup> <h1><a href="/">@Lenciel</a></h1> </hgroup> </header> <nav role="navigation"><ul class="subscription" data-subscription="rss"> <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li> </ul> <ul class="main-navigation"> <li><a href="/"><i class="icon-home"></i>Home</a></li> <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li> <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li> </ul> </nav> <div id="main"> <div id="content"> <div class="blog-index"> <article> <header> <h1 class="entry-title"><a href="/2017/02/the-real-success-by-doing-msa/">推行微服务架构的最大收益</a></h1> <p class="meta"> <time class='entry-date' datetime='2017-02-10 17:58:52 +0800'> <span class='date'>2017-02-10</span> <span class='time'>17:58:52</span> </time> </p> </header> <div class="entry-content"><p>作为行业里面最火热的名词之一，“微服务架构”在<a href="http://www.zdnet.com/article/soa-done-right-the-amazon-strategy/">Amazon</a>、<a href="http://nginx.com/blog/microservices-at-netflix-architectural-best-practices/">Netflix</a>等大厂取得的成功，大家算是耳熟能详了。</p> <p>但是作为CTO、技术VP或者架构师，要把你服务的公司或者项目加入到“实践微服务并取得成功”的列表上，难度其实是很大的。仅仅是把自己的系统打散成多个服务，就有很大的<a href="https://www.slideshare.net/ceposta/camel-microservicesfabric8">成本</a>。所以Martin Flower也<a href="http://martinfowler.com/articles/microservice-trade-offs.html">提醒过</a>要当心入坑。</p> <p>所以看到各种会议，博客，社交媒体上实施微服务架构的经验分享时，要明白这里面真正的成功并不在于对各种技术的应用，或者说，在成功利用Docker、Kubernets或者SpringBoot等等性感的技术之外，微服务架构带来的最大的收益并不简简单单是技术的落地。</p> <a name="L..............."></a> <h2>最大的收益</h2> <p>微服务架构真正的收益在于形成小而美，能胜任各种职能的扁平化，自组织，自管理的团队，完成在传统组织架构下无法完成的拓展性和创新性工作。</p> <a name="L....................."></a> <h3>两个披萨的团队</h3> <p>Amazon的“团队规模应该控制在点两个披萨就可以吃饱”的规则很有名，Jeff Bezos<a href="http://99u.com/articles/7255/the-jeff-bezos-school-of-long-term-thinking">自己说</a>：</p> <blockquote><p>Managers: We need more communication on and between our teams Bezos: No. Communication is terrible”</p></blockquote> <p>要构建自组织的，创新的团队，需要的不是“更多”的沟通而是 <a href="http://blog.idonethis.com/two-pizza-team/">更有效的沟通</a>。这点说起来容易也很好听懂，但要做到其实非常难，只要看看你自己手机上那50多个工作原因拉的微信群就知道。</p> <p>但我们可以在团队规模较小的时候开始尝试。所有人一起办公，培养起友谊和信任，产生化学反应互相激发：这样发生<a href="https://en.wikipedia.org/wiki/Groupthink">group think</a>或者<a href="https://en.wikipedia.org/wiki/Social_loafing">social loafing</a>的几率就会变小很多。</p> <p><a href="http://hackman.socialpsychology.org/">J Richard Hackman</a>在研究了团队和组织之后指出，团队里面的人之间的沟通和人数的关系是：</p> <blockquote><p>(n*n-1)/2</p></blockquote> <p>如果人数n不断增加，顺畅沟通的难度就会变大，团队的效率就会降低。</p> <p>Hackman建议的人数是10人以内，Amazon一般是6-8个人，海军陆战队是4人一个编组：也就是说，人数不需要那么死板的规定，只是应该比较少。</p> <p>其实要感受这个不需要那么多理论，回忆一下参加一个婚礼时在餐桌上沟通的质量，和跟两三个朋友喝个茶沟通的质量对比一下，就明白小团队的优势。但我还是推荐好好读读Hackman关于<a href="http://econ.au.dk/fileadmin/Economics_Business/Currently/Events/PhDFinance/Kauttu_Why-Teams-Dont-Work-by-J.-Richard-Hackman.pdf">团队的文章</a>。</p> <a name="L..............."></a> <h3>多功能团队</h3> <p>为什么我们需要一个团队有各种功能，而不是负责开发、测试、产品、运维的某个单一方面？</p> <blockquote><p>Bad behavior arises when you abstract people away from the consequences of their actions</p></blockquote> <p>创建团队在功能上的清晰分界，就跟告诉住宾馆的人弄脏了房间是服务员来打扫一样，是在鼓励“坏行为”的发生。一个优秀的程序员应该在编写质量上乘的代码的同时，关注可测试性、易维护性、安全性、性能、可扩展性和易用性等多个方面的问题。如果你划分了DBA、OPS、QA等职能团队，开发自然而然的就会认为自己把功能实现出来，工作就完毕了，下面的话就会出来：</p> <ul> <li>“我哪有时间测试，那是测试做的”</li> <li>“数据库的变更找DBA”</li> <li>“我只负责这个功能的实现，基础设施和运维负责它的高可用”</li> </ul> <p>要防止这些对话发生在你的团队，就需要引导和宣扬“一专多能”的文化。在很多成功的公司里面（Amazon，Netflix，Facebook，Google）都很强调这点，比如Amazon著名的“谁编写，谁负责”。现在行业里面很流行另外一个热词DevOps，实际上DevOps的本质是Dev在前的，甚至<a href="https://www.rallydev.com/blog/engineering/you-don-t-need-devops-team-you-need-tools-team">不应该有专职的DevOps部门</a>。</p> <a name="L............"></a> <h3>康威定律</h3> <p>软件开发里面，技术问题远没有人的问题难解决。所以康威说：</p> <blockquote><p>organizations which design systems … are constrained to produce designs which are copies of the communication structures of these organizations</p></blockquote> <p>要如何打破内部各个团队之间的壁垒呢？除开自顶向下的进行组织架构的变更，还可以尝试内部开源。</p> <a name="L............"></a> <h3>内部开源</h3> <p>一旦你打破职能壁垒，构建起小的，多职能的团队，就能够看到这些人为了构造一个高质量的软件系统，一起努力。他们的工作形态其实挺像开源组织的：大家都可以发表意见，都可以贡献代码，对最终的发布负责。</p> <p>这样的团队形成之后，在他们的输出基本稳定成形后，就可以开始尝试内部开源。</p> <a name="L......"></a> <h2>总结</h2> <p>微服务架构的各种成功案例和大家拥抱它的热切姿态，很容易让我们觉得它解决了很大的问题。</p> <p>其实微服务架构里面很多基本指导原则，SOA里面都有。但后者最终的失败就在于，虽然技术上有一整套WS-*的规范，但是却没有在组织结构上做相应的适配，所以陷入了康威定律指出的死路。</p> <p>技术和流程当然很重要，但是它们的推动，永远是靠人的，因此，组织结构先行，全员参与，共同为建设能够输出高质量系统，快速响应需求变更的团队努力， 这才是实践微服务架构或者DevOps对一个公司最大的收益。</p> </div> </article> <article> <header> <h1 class="entry-title"><a href="/2017/01/wechat-platform-oddpill/">我可能要搞个公众号</a></h1> <p class="meta"> <time class='entry-date' datetime='2017-01-07 22:28:40 +0800'> <span class='date'>2017-01-07</span> <span class='time'>22:28:40</span> </time> </p> </header> <div class="entry-content"><p><img src="http://upload-images.jianshu.io/upload_images/20292-62f8d200eaf98b3a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Nonverbal Space by Shin Noguchi"/></p> <p>这当然是个错误。</p> <p>因为爱吹水，一直有朋友要我开个公众号。但试用了一下之后，感觉微信公众号的用心特别险恶：评论功能默认没有不说，外链的功能居然也没有。</p> <p>很多人可能不会理解，但互联网最大的作用在于各种各样的信息被“链接”起来，孤立信息不再有被“收藏”的价值，而是被更高效地消费和验证了。</p> <p>在没有互联网之前，孤立的信息也是有价值的：能够读到的书，能够听到的曲，就是高价值的，一般老百姓无福消受。</p> <p>比如贵妃约明皇吃个饭，傻等了半天结果听说皇上早去了西宫，一举喝大伤伤心心起个四平调，唱得再凄美，唱完就消失在空气里了。而梅兰芳的《贵妃醉酒》就已经可以被灌进唱片，但唱片仍然不便宜。到了<a href="https://v.qq.com/x/cover/5igaqzujk528vyf/9dHuyHuhx9O.html">李玉刚的《新贵妃醉酒》</a>呢？你随便搜一下就听到了。</p> <p>所以互联网时代，孤立的信息失去了价值：能背得四书五经，记下元素周期表不再有用，真正有意义的变成了我们在信息之间添加的“链接”。</p> <p>而互联网寡头的做法，常常就是依靠“相关法律和政策”，把本来是链接起来可以不断流转和冲洗的信息，变成独家提供。特别在国内，在构建局域网这件事情上，国家有国家的政治需要，寡头有寡头的商业需要，一拍即合。</p> <p>因此，作为一名互联网从业者，我一直认为迎合微信公众号这种东西绝对是错误的。</p> <p>但本座很喜欢的前苹果设计师Bret Victor给自己设定的新年目标让我有了一些新想法，他说他要：</p> <blockquote><p>改造我们的低幼化社会。提供工具，帮助人们对抗和摧毁消费主义文化（无孔不入的、以操纵情感为手段的品牌营销和广告，物质主义，人为造出的时尚和潮流），以及巨型企业对劳动市场、娱乐以及创造力的垄断性控制。将权力、尊严和责任还给个体。</p></blockquote> <p>这样的愿景是很好的，社会也非常需要这样的人。但我突然发现，从2012年到现在，他花在“提供工具”的时间越来越多，“帮助人们对抗和摧毁消费主义文化”的时间也越来越少了。</p> <p>这种用技术手段对抗技术手段的做法有没有取胜的希望呢？</p> <p>Harold Innis 在《The Bias of Communication》里用许多历史证据说明了新技术如何“击破”传统的知识垄断，并创造出由另一批人掌控的新垄断。他认为新技术的好处和坏处并不是平均分布的。</p> <blockquote><p>总是会有赢家和输家：很多时候，输家还会出于无知为赢家欢呼。</p></blockquote> <p>这种看起来不合理又悲哀的事情，其实一直在发生。</p> <p>技术带来的好处，究竟是对谁更大？如果仔细想一下，电脑的普及究竟是让你交税更方便了，还是让政府查到你漏税方便了？摄像头的普及，究竟是让你记录美好时刻更方便了，还是让你被跟踪，被识别，被开罚单更容易了？</p> <p>所以其实没有什么好对抗的。用什么不用什么如果看得太重，可能反而有些役于物了，就好比反抗母亲的小孩常常恰恰是被定义的小孩一样：只不过做了个取反的操作。</p> <p>何况，开公众号是个错误也挺好。随着年纪的增长，我越来越喜欢错误。《西部世界》里面有段让我觉得很有趣的台词：</p> <blockquote><p>Bernard Lowe: 是您加的代码，福特先生，那些「白日梦」，里面有一些…… Robert Ford: “错误”。你不愿意说出来的就是这个词。这没有必要。你自己就是亿万个错误的结果。这个星球上的一切有知觉生命都是用「错误」这唯一的工具演化出来的……但我们现在已经摆脱了演化的枷锁不是吗？任何疾病都可以治好，最弱的人也能生存，或许有朝一日我们还能把<a href="https://zh.wikipedia.org/wiki/%E6%8B%89%E6%92%92%E8%B7%AF">Lazarus</a>从洞穴里召唤出来，到时连起死回生都不是问题。你知道那意味着什么？意味着我们完了，意味着我们目前已经做到了尽头。</p></blockquote> <p>这让我想起了Nelson 和他的“世外桃源计划”。Seymour Papert 的那本先知般的<a href="http://www.amazon.com/Mindstorms-Children-Computers-Powerful-Ideas/dp/0465046746">《Mindstorms》</a>里面也说过：</p> <blockquote><p>许多儿童学习受阻，是因为在他们的学习模式里，对与错总是泾渭分明。但在编程时你几乎不可能第一次就做对。成为编程高手的过程就是学会熟练地找出并修复Bug的过程。在编程时我们要问的不是对或错，而是错误能否被修正。如果这种对待智识产品的方法被普及到更大的文化范畴，成为人们对待知识的态度的一部分，或许我们就都不会那么怕错了。</p></blockquote> <p>在70年代末，个人电脑的萌芽期，人们还在讨论使用它会不会让人类变得离群索居的时候，Nelson就觉察到了，作为媒介，电脑和编程对那些能够运用它们创造价值的人，在思维方面可能产生的微妙却根本性的改变：试错、迭代、进化。</p> <p>技术发展到今天，进化的齿轮似乎已经运转得日益高效，超越我们想像边界的可能性不断出现。郭敬明电影里面的元素，是根据三、四线城市小姑娘放到淘宝收藏夹里面的物品拼凑的；世界上最厉害的围棋手变成了Google的机器人；政府可以在你以为关机的时候，通过电脑的前置摄像头看到你的一切&hellip;&hellip;</p> <p>面对这样的世界，我不想像Bret那样号召大家去抵抗。出世修炼，回归自然，或者心灰意冷没有任何好处。我们还是应该多读，多看，多写，用更完整的视角来观察社会，特别是商业社会的方方面面。</p> <p>保持创造力，保持对技术和艺术的感受力，保持精神和肉体的强健，才是在享受生活的同时，对抗消费主义的办法。</p> <p>所以虽然微信公众号这么反人类，还是准备就范了。本座现在的心情，大概很像横尾忠则在自传里面写自己在浴室滑倒把肋骨摔碎的时候：</p> <blockquote><p>……那瞬间我在无法呼吸的剧痛当中内心呼喊着：“太棒了，这样我的风格又要改变了。”</p></blockquote> </div> </article> <div class="pagination"> <a class="prev" href="/posts/6">&larr; Older</a> <a href="/archives">Archives</a> <a class="next" href="/posts/4">Newer &rarr;</a> </div> </div> </div> </div> <footer role="contentinfo"><p> Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a> <span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span> </p> </footer> <script type="text/javascript">
+</script>
+
+
+</head>
+
+<body    class="collapse-sidebar sidebar-footer" >
+  <header role="banner"><hgroup>
+  <h1><a href="/">@Lenciel</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<ul class="main-navigation">
+  <li><a href="/"><i class="icon-home"></i>Home</a></li>
+  <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li>
+  <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2017/02/why-event-driven-when-doing-msa/">采用事件驱动实施微服务架构</a></h1>
+    
+    
+      <p class="meta">
+        <!--
+
+
+
+
+-->
+        <time class='entry-date' datetime='2017-02-12 03:58:52 +0800'>
+          <span class='date'>2017-02-12</span>
+          <span class='time'>03:58:52</span>
+        </time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><a name="L......"></a>
+<h2>事件</h2>
+
+<p>我们在实践微服务架构的时候，根本目的是为了在“商业层面”拥有更加敏捷的系统：更容易响应需求变化，更容易添加、发布和尝试新功能，从而跑在竞争对手前面。</p>
+
+<p>要做到敏捷，系统首先必须是自治的（autonomous）。自治性（autonomy）可以说是敏捷系统的一个先决条件：系统的各个部分相互之间如何沟通，当某个部分失败时如何处理和自动恢复等等，都需要自治性。自治性意味着系统的各个部分可以独立运作，对其他系统，团队和流程的依赖都可以shed：也就是说，对服务A的修改不应该影响到依赖它的服务B，A服务挂了，B服务也应该健在。</p>
+
+<p>自治性的系统是微服务架构造就的吗？并不见得：真正成功实践了微服务架构的公司，真正重要的也不是这个技术而是组织架构上的先行。自治的系统，比如开源社区，城市，自由股票市场，甚至是一个迁徙中的鸟群，它们都不断地适应环境，响应变化，在失败案例中不断地学习。</p>
+
+<p>这类被称为“复杂自适应系统（<a href="https://en.wikipedia.org/wiki/Complex_adaptive_system">Complex Adaptive Systems</a>）”的系统，是经过科学家专门研究，得出了很多结论的。其中很重要的一个就是，自治的系统会对“事件”作出“响应”。</p>
+
+<p>当有事件发生时，一个自治的系统，不管是蚁群，人类组织，还是一个软件服务，会选择“做什么”或者“不做什么”，来进行响应。整个复杂的系统，都是这些事件在驱动的。这其实也很好理解，想想我们每天醒来，会根据温度穿衣；开车上班，会根据信号灯启停。我们人类的整个生活都是在对各种事件作出响应。</p>
+
+<p>软件系统也可以被构造成这样：独立，自治，容错，可扩展。</p>
+
+<a name="L.........................................."></a>
+<h2>从授权到自治，以及最终一致性</h2>
+
+<p>在很多分布式系统的实现里面，人们都通过创建一个单一地址空间来适应不稳定的网络环境。这是个<a href="https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing">从很多方面来看都错误的做法</a>，但是它实现起来要简单一些：通过RPC调用，让remote的对象处理一些任务，或者请求一些数据。以电商里面结算购物车为例：购物车服务调用计价服务，计价服务可能会调用物流服务，根据发货地区和物流服务商等因素调整价格，同时购物车服务又会调用仓储服务来获取信息和更新货架。这就是所谓的“授权管理”模式：我们调用对数据有修改权限的服务，完成相应的操作。这种模式就意味着大量的全局状态和互斥锁，并且需要大量的事务。</p>
+
+<p>并且，这种基于授权的设计也会导致瓶颈产生：一个服务挂掉，就容易雪崩；不同服务对数据需求不一样的时候，API越来越乱，或者产生一个大而全的统一API，提供给每个服务大量不需要的细节数据。</p>
+
+<p>如果我们换个角度来看系统：不是依靠调用方对某个资源或者服务可以行使的权力来驱动系统，而是通过时间和时间轴上发生的事件来驱动系统，就像我们自己的实际生活一样。还是以电商的系统举例，我们的物流服务有没有可能知道目前顺丰在某个区域搞活动，使用顺丰有优惠，然后把这个数据保存在自己的数据库里面，这样每个订单产生时，这些区域的订单默认使用顺丰？如果我们的服务都这样来设计，它们的研发就不需要考虑太多依赖方当前的状态。</p>
+
+<a name="L.................."></a>
+<h2>最终一致性？</h2>
+
+<p>通过事件驱动，而不是通过“just-in-time”的授权查询使得系统里各个服务能够更加自治，更好容错，更有弹性。但是影响复杂自适应系统的自治性的一个因素，也会影响自治的事件驱动系统，那就是时延“delays”。</p>
+
+<p>如果你发现了某个事件已经发生，你立刻就可以做出反应。比如，有车强行变道进入你的车道，你会马上变道避让或者刹车。但是如果在“知道事件发生”这部分有时延，你的反应就没法那么迅速了，比如你正在训家里小朋友，结果没有发现有车变道进来了，就会“咣”&hellip;软件系统也一样。</p>
+
+<p>么最终一致性指什么呢？再以购物为例。如果不是事件驱动的，那么如果你往购物车里面添加了某个商品，这时候仓储服务如果出了问题，你的查询没有返回，你就只好死等在那里。但是如果大家都使用事件驱动，你添加购物车的时候，发出了一个事件。这个时候仓储服务不在线，前端上看来，你还是把商品加入了购物车。当仓储系统恢复时，它收到之前那个事件，发现这个商品已经卖光了，这个时候它抛出一个“库存不足”的事件。购物车服务，计费服务等服务就根据当前用户的状态，去消费这个事件（如果没有结算就在结算的时候通知用户，如果已经结算就要退款或者补货等等）。这样让用户不被阻塞，并最终保持状态一致，就叫做最终一致性。</p>
+
+<a name="L..............."></a>
+<h2>需要的技术</h2>
+
+<p>关于事件，延迟和一致性，再多说几句。事件只有在能够保证它们的时序的时候，才是可用的。也就是说，一组事件的时序，必须对于消费方来说是可信的。这涉及分布式系统里面的另外一个难题，对于构建“transactionality”也同样重要，以后再细说。但总的来说，如果事件乱序了，那么我们不做手工的修复就没有保持最终一致性。<a href="https://martin.kleppmann.com/">Martin Kleppmann</a>管这个叫做“perpetual inconsistency”。时延，乱序，是分布式系统里面的两个难题。</p>
+
+<p><img src="/downloads/images/2017_02/two_hard_problems.jpg" title="Don't touch me..." alt="Vhost threshold" /></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2017/02/the-real-success-by-doing-msa/">推行微服务架构的最大收益</a></h1>
+    
+    
+      <p class="meta">
+        <!--
+
+
+
+
+-->
+        <time class='entry-date' datetime='2017-02-10 17:58:52 +0800'>
+          <span class='date'>2017-02-10</span>
+          <span class='time'>17:58:52</span>
+        </time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>作为行业里面最火热的名词之一，“微服务架构”在<a href="http://www.zdnet.com/article/soa-done-right-the-amazon-strategy/">Amazon</a>、<a href="http://nginx.com/blog/microservices-at-netflix-architectural-best-practices/">Netflix</a>等大厂取得的成功，大家算是耳熟能详了。</p>
+
+<p>但是作为CTO、技术VP或者架构师，要把你服务的公司或者项目加入到“实践微服务并取得成功”的列表上，难度其实是很大的。仅仅是把自己的系统打散成多个服务，就有很大的<a href="https://www.slideshare.net/ceposta/camel-microservicesfabric8">成本</a>。所以Martin Flower也<a href="http://martinfowler.com/articles/microservice-trade-offs.html">提醒过</a>要当心入坑。</p>
+
+<p>所以看到各种会议，博客，社交媒体上实施微服务架构的经验分享时，要明白这里面真正的成功并不在于对各种技术的应用，或者说，在成功利用Docker、Kubernets或者SpringBoot等等性感的技术之外，微服务架构带来的最大的收益并不简简单单是技术的落地。</p>
+
+<a name="L..............."></a>
+<h2>最大的收益</h2>
+
+<p>微服务架构真正的收益在于形成小而美，能胜任各种职能的扁平化，自组织，自管理的团队，完成在传统组织架构下无法完成的拓展性和创新性工作。</p>
+
+<a name="L....................."></a>
+<h3>两个披萨的团队</h3>
+
+<p>Amazon的“团队规模应该控制在点两个披萨就可以吃饱”的规则很有名，Jeff Bezos<a href="http://99u.com/articles/7255/the-jeff-bezos-school-of-long-term-thinking">自己说</a>：</p>
+
+<blockquote><p>Managers: We need more communication on and between our teams
+Bezos: No. Communication is terrible”</p></blockquote>
+
+<p>要构建自组织的，创新的团队，需要的不是“更多”的沟通而是 <a href="http://blog.idonethis.com/two-pizza-team/">更有效的沟通</a>。这点说起来容易也很好听懂，但要做到其实非常难，只要看看你自己手机上那50多个工作原因拉的微信群就知道。</p>
+
+<p>但我们可以在团队规模较小的时候开始尝试。所有人一起办公，培养起友谊和信任，产生化学反应互相激发：这样发生<a href="https://en.wikipedia.org/wiki/Groupthink">group think</a>或者<a href="https://en.wikipedia.org/wiki/Social_loafing">social loafing</a>的几率就会变小很多。</p>
+
+<p><a href="http://hackman.socialpsychology.org/">J Richard Hackman</a>在研究了团队和组织之后指出，团队里面的人之间的沟通和人数的关系是：</p>
+
+<blockquote><p>(n*n-1)/2</p></blockquote>
+
+<p>如果人数n不断增加，顺畅沟通的难度就会变大，团队的效率就会降低。</p>
+
+<p>Hackman建议的人数是10人以内，Amazon一般是6-8个人，海军陆战队是4人一个编组：也就是说，人数不需要那么死板的规定，只是应该比较少。</p>
+
+<p>其实要感受这个不需要那么多理论，回忆一下参加一个婚礼时在餐桌上沟通的质量，和跟两三个朋友喝个茶沟通的质量对比一下，就明白小团队的优势。但我还是推荐好好读读Hackman关于<a href="http://econ.au.dk/fileadmin/Economics_Business/Currently/Events/PhDFinance/Kauttu_Why-Teams-Dont-Work-by-J.-Richard-Hackman.pdf">团队的文章</a>。</p>
+
+<a name="L..............."></a>
+<h3>多功能团队</h3>
+
+<p>为什么我们需要一个团队有各种功能，而不是负责开发、测试、产品、运维的某个单一方面？</p>
+
+<blockquote><p>Bad behavior arises when you abstract people away from the consequences of their actions</p></blockquote>
+
+<p>创建团队在功能上的清晰分界，就跟告诉住宾馆的人弄脏了房间是服务员来打扫一样，是在鼓励“坏行为”的发生。一个优秀的程序员应该在编写质量上乘的代码的同时，关注可测试性、易维护性、安全性、性能、可扩展性和易用性等多个方面的问题。如果你划分了DBA、OPS、QA等职能团队，开发自然而然的就会认为自己把功能实现出来，工作就完毕了，下面的话就会出来：</p>
+
+<ul>
+<li>“我哪有时间测试，那是测试做的”</li>
+<li>“数据库的变更找DBA”</li>
+<li>“我只负责这个功能的实现，基础设施和运维负责它的高可用”</li>
+</ul>
+
+
+<p>要防止这些对话发生在你的团队，就需要引导和宣扬“一专多能”的文化。在很多成功的公司里面（Amazon，Netflix，Facebook，Google）都很强调这点，比如Amazon著名的“谁编写，谁负责”。现在行业里面很流行另外一个热词DevOps，实际上DevOps的本质是Dev在前的，甚至<a href="https://www.rallydev.com/blog/engineering/you-don-t-need-devops-team-you-need-tools-team">不应该有专职的DevOps部门</a>。</p>
+
+<a name="L............"></a>
+<h3>康威定律</h3>
+
+<p>软件开发里面，技术问题远没有人的问题难解决。所以康威说：</p>
+
+<blockquote><p>organizations which design systems … are constrained to produce designs which are copies of the communication structures of these organizations</p></blockquote>
+
+<p>要如何打破内部各个团队之间的壁垒呢？除开自顶向下的进行组织架构的变更，还可以尝试内部开源。</p>
+
+<a name="L............"></a>
+<h3>内部开源</h3>
+
+<p>一旦你打破职能壁垒，构建起小的，多职能的团队，就能够看到这些人为了构造一个高质量的软件系统，一起努力。他们的工作形态其实挺像开源组织的：大家都可以发表意见，都可以贡献代码，对最终的发布负责。</p>
+
+<p>这样的团队形成之后，在他们的输出基本稳定成形后，就可以开始尝试内部开源。</p>
+
+<a name="L......"></a>
+<h2>总结</h2>
+
+<p>微服务架构的各种成功案例和大家拥抱它的热切姿态，很容易让我们觉得它解决了很大的问题。</p>
+
+<p>其实微服务架构里面很多基本指导原则，SOA里面都有。但后者最终的失败就在于，虽然技术上有一整套WS-*的规范，但是却没有在组织结构上做相应的适配，所以陷入了康威定律指出的死路。</p>
+
+<p>技术和流程当然很重要，但是它们的推动，永远是靠人的，因此，组织结构先行，全员参与，共同为建设能够输出高质量系统，快速响应需求变更的团队努力， 这才是实践微服务架构或者DevOps对一个公司最大的收益。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/posts/6">&larr; Older</a>
+    
+    <a href="/archives">Archives</a>
+    
+    <a class="next" href="/posts/4">Newer &rarr;</a>
+    
+  </div>
+</div>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a>
+<span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+<script type="text/javascript">
   var stylesheet = document.createElement('link');
   stylesheet.href = '/assets/stylesheets/app.css';
   stylesheet.rel = 'stylesheet';
   stylesheet.type = 'text/css';
   document.getElementsByTagName('head')[0].appendChild(stylesheet);
-</script> </body> </html>
+</script>
+
+</body>
+</html>

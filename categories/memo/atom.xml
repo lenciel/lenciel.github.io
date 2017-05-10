@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: memo | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/memo/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-05-04T17:08:15+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/memo/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-05-10T01:29:34+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[What I know, in 2016, 😳]]></title>
-    <link href="http://lenciel.com/2016/12/what-i-konw-in-2016/"/>
+    <link href="http://172.16.121.110:4000/2016/12/what-i-konw-in-2016/"/>
     <updated>2016-12-31T22:28:40+08:00</updated>
-    <id>http://lenciel.com/2016/12/what-i-konw-in-2016</id>
+    <id>http://172.16.121.110:4000/2016/12/what-i-konw-in-2016</id>
     <content type="html"><![CDATA[<ul>
 <li>物流占中国GDP总量的18%，而发达国家都在6%-8%左右。成都造的一双女鞋运到上海的成本甚至超过了运到纽约的成本。[<a href="http://www.bookschina.com/7066710.htm">中国采购发展报告</a>]</li>
 <li>中国手游和直播行业开始被两个监管部门交叉管控，手游不许随便使用英文，直播不许吃香蕉。[<a href="http://a16z.com/2016/09/27/livestreaming-trend-china/">Connie Chan</a>]</li>
@@ -71,9 +71,9 @@
   
   <entry>
     <title type="html"><![CDATA[一天很长，十年很短]]></title>
-    <link href="http://lenciel.com/2016/05/but-does-it-float/"/>
+    <link href="http://172.16.121.110:4000/2016/05/but-does-it-float/"/>
     <updated>2016-05-18T20:50:55+08:00</updated>
-    <id>http://lenciel.com/2016/05/but-does-it-float</id>
+    <id>http://172.16.121.110:4000/2016/05/but-does-it-float</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/2016_05/ppl_5.jpg" title="Don't touch me..." alt="Vhost threshold" /></p>
 
 <p>夏天来了。</p>
@@ -122,9 +122,9 @@
   
   <entry>
     <title type="html"><![CDATA[记一次成功的过年]]></title>
-    <link href="http://lenciel.com/2016/02/happy-new-year/"/>
+    <link href="http://172.16.121.110:4000/2016/02/happy-new-year/"/>
     <updated>2016-02-13T22:41:48+08:00</updated>
-    <id>http://lenciel.com/2016/02/happy-new-year</id>
+    <id>http://172.16.121.110:4000/2016/02/happy-new-year</id>
     <content type="html"><![CDATA[<p>过年在三亚呆了一周。</p>
 
 <p>虽然中学毕业就已经习惯了在外面跑，像今年这样一大家子人到外地过年，却还是头次。</p>
@@ -183,9 +183,9 @@
   
   <entry>
     <title type="html"><![CDATA[马尔克斯的孤独与爱]]></title>
-    <link href="http://lenciel.com/2014/04/rip-marquez/"/>
+    <link href="http://172.16.121.110:4000/2014/04/rip-marquez/"/>
     <updated>2014-04-18T20:58:42+08:00</updated>
-    <id>http://lenciel.com/2014/04/rip-marquez</id>
+    <id>http://172.16.121.110:4000/2014/04/rip-marquez</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/2014_04/rip_marquez.jpg" title="Don't touch me..." alt="Vhost threshold" /></p>
 
 <p>度过了忙乱的一周，又回到了广汉。吃完饭洗个澡，继续在书房干活，外面的天不知不觉就黯淡下来。偶像派走过来说，《舌尖上的中国》第二季开播了，快来看吧。</p>
@@ -222,9 +222,9 @@
   
   <entry>
     <title type="html"><![CDATA[An Accident of My Dog]]></title>
-    <link href="http://lenciel.com/2013/07/my-dog/"/>
+    <link href="http://172.16.121.110:4000/2013/07/my-dog/"/>
     <updated>2013-07-06T22:57:00+08:00</updated>
-    <id>http://lenciel.com/2013/07/my-dog</id>
+    <id>http://172.16.121.110:4000/2013/07/my-dog</id>
     <content type="html"><![CDATA[<p>今年2月4号，花卷被偶像派接到了我们家，处于眼睛基本刚刚能睁开的状态。</p>
 
 <p><img src="/downloads/images/huajuan_in_hands.jpg" title="Don't touch me..." alt="花卷来我家" /></p>

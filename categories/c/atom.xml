@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: c | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/c/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-05-04T17:08:15+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/c/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-05-10T01:29:34+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[Openssl Heartbleed Bug]]></title>
-    <link href="http://lenciel.com/2014/04/openssl-heartbleed-bug/"/>
+    <link href="http://172.16.121.110:4000/2014/04/openssl-heartbleed-bug/"/>
     <updated>2014-04-10T11:29:15+08:00</updated>
-    <id>http://lenciel.com/2014/04/openssl-heartbleed-bug</id>
+    <id>http://172.16.121.110:4000/2014/04/openssl-heartbleed-bug</id>
     <content type="html"><![CDATA[<p>连某宝都中招的<a href="http://heartbleed.com/">Heartbleed bug</a>究竟是个什么东西？简单地说就是攻击者可以读最多64KB内存的内容。</p>
 
 <p>读了这64KB能干嘛？用报这个bug的人的话来说：</p>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: hcb | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/hcb/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-05-04T17:08:15+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/hcb/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-05-10T01:29:34+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[关于微服务实践的一次分享]]></title>
-    <link href="http://lenciel.com/2017/03/msa-in-practice/"/>
+    <link href="http://172.16.121.110:4000/2017/03/msa-in-practice/"/>
     <updated>2017-03-11T14:39:44+08:00</updated>
-    <id>http://lenciel.com/2017/03/msa-in-practice</id>
+    <id>http://172.16.121.110:4000/2017/03/msa-in-practice</id>
     <content type="html"><![CDATA[<p>最近在EGO里做了一次关于微服务架构的分享，<a href="https://github.com/lenciel/talks/tree/master/slides/2017_03_19_ego_msa_in_practice">keynote</a>写好了，思路在这里梳理一下。</p>
 
 <a name="L............"></a>
@@ -185,7 +185,7 @@
 <a name="L............"></a>
 <h4>根本问题</h4>
 
-<p>无论是异步性还是局部失效，背后的根本问题是，任何软硬件系统都会崩坏。这两年Google的Spanner被很多人错误地称为“解决了分布式系统的。</p>
+<p>无论是异步性还是局部失效，背后的根本问题是，任何软硬件系统都会崩坏。这两年Google的Spanner被很多人错误地称为“解决了分布式系统的一致性问题”。</p>
 
 <p>实际上，Spanner的TrueTime组件并不提供一个全局唯一的时钟：它给你一个当前值可能的偏差，并且在设计上它就明确，这个偏差可能在1-7毫秒。</p>
 
@@ -274,9 +274,9 @@ Testing error handling code could have prevented 58% of catastrophic failures.</
   
   <entry>
     <title type="html"><![CDATA[微服务架构里的数据处理]]></title>
-    <link href="http://lenciel.com/2017/02/handling-data-in-msa/"/>
+    <link href="http://172.16.121.110:4000/2017/02/handling-data-in-msa/"/>
     <updated>2017-02-16T02:58:52+08:00</updated>
-    <id>http://lenciel.com/2017/02/handling-data-in-msa</id>
+    <id>http://172.16.121.110:4000/2017/02/handling-data-in-msa</id>
     <content type="html"><![CDATA[<p>之前说过，实践微服务架构的<a href="http://lenciel.com/2017/02/the-real-success-by-doing-msa/">最大收益</a>在于对团队的改造：我们希望构建起彼此独立，以不同技术栈和不同速度进行工作，在需求变更时能够快速响应和更新而不会相互影响，具备良好自治性的团队。根据康威定律，如果我们的组织结构进化成这样，我们的软件才可以变得符合“微服务架构”。</p>
 
 <p>要达到这种自治性，就需要“解耦”：这个词90%念叨它的人都不知道怎么做，有一些所谓的微服务架构实践指南上甚至有“每个微服务应该有自己的数据库，两个微服务之间不能共享数据库”这样的硬性条款。乍听起来这很棒，因为你不会遇到不同的服务读写模型不同带来的各种竞争，也不会遇到不同业务需要的数据模型不同带来的冲突等等。</p>
@@ -460,9 +460,9 @@ Testing error handling code could have prevented 58% of catastrophic failures.</
   
   <entry>
     <title type="html"><![CDATA[采用事件驱动实施微服务架构]]></title>
-    <link href="http://lenciel.com/2017/02/why-event-driven-when-doing-msa/"/>
+    <link href="http://172.16.121.110:4000/2017/02/why-event-driven-when-doing-msa/"/>
     <updated>2017-02-12T03:58:52+08:00</updated>
-    <id>http://lenciel.com/2017/02/why-event-driven-when-doing-msa</id>
+    <id>http://172.16.121.110:4000/2017/02/why-event-driven-when-doing-msa</id>
     <content type="html"><![CDATA[<a name="L......"></a>
 <h2>事件</h2>
 
@@ -507,9 +507,9 @@ Testing error handling code could have prevented 58% of catastrophic failures.</
   
   <entry>
     <title type="html"><![CDATA[推行微服务架构的最大收益]]></title>
-    <link href="http://lenciel.com/2017/02/the-real-success-by-doing-msa/"/>
+    <link href="http://172.16.121.110:4000/2017/02/the-real-success-by-doing-msa/"/>
     <updated>2017-02-10T17:58:52+08:00</updated>
-    <id>http://lenciel.com/2017/02/the-real-success-by-doing-msa</id>
+    <id>http://172.16.121.110:4000/2017/02/the-real-success-by-doing-msa</id>
     <content type="html"><![CDATA[<p>作为行业里面最火热的名词之一，“微服务架构”在<a href="http://www.zdnet.com/article/soa-done-right-the-amazon-strategy/">Amazon</a>、<a href="http://nginx.com/blog/microservices-at-netflix-architectural-best-practices/">Netflix</a>等大厂取得的成功，大家算是耳熟能详了。</p>
 
 <p>但是作为CTO、技术VP或者架构师，要把你服务的公司或者项目加入到“实践微服务并取得成功”的列表上，难度其实是很大的。仅仅是把自己的系统打散成多个服务，就有很大的<a href="https://www.slideshare.net/ceposta/camel-microservicesfabric8">成本</a>。所以Martin Flower也<a href="http://martinfowler.com/articles/microservice-trade-offs.html">提醒过</a>要当心入坑。</p>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: apps | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/apps/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-05-04T17:08:15+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/apps/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-05-10T01:29:34+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[应用开发能火多久?]]></title>
-    <link href="http://lenciel.com/2014/04/why-made-apps/"/>
+    <link href="http://172.16.121.110:4000/2014/04/why-made-apps/"/>
     <updated>2014-04-09T15:07:57+08:00</updated>
-    <id>http://lenciel.com/2014/04/why-made-apps</id>
+    <id>http://172.16.121.110:4000/2014/04/why-made-apps</id>
     <content type="html"><![CDATA[<p>不管是从日常生活里面的观察和感受，还是查看统计数据，都很容易发现人们在移动设备上停留的时间已经逐渐超过了在PC上停留的时间。当然拐点是不是如下图所示就在今年业界有些争议，但是拐点已经要来了是没有人再怀疑了。</p>
 
 <p><img src="/downloads/images/2014_04/comscore_mobile_users_desktop_users_2014.jpg" title="Don't touch me..." alt="mobile vs desktop" /></p>

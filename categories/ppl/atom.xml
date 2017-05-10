@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: ppl | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/ppl/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-05-04T17:08:15+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/ppl/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-05-10T01:29:34+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[记一次春游]]></title>
-    <link href="http://lenciel.com/2007/04/ji4yi1ci4chun1you5234/"/>
+    <link href="http://172.16.121.110:4000/2007/04/ji4yi1ci4chun1you5234/"/>
     <updated>2007-04-14T19:53:00+08:00</updated>
-    <id>http://lenciel.com/2007/04/ji4yi1ci4chun1you5234</id>
+    <id>http://172.16.121.110:4000/2007/04/ji4yi1ci4chun1you5234</id>
     <content type="html"><![CDATA[<p><img alt="block" src="/downloads/images/2007_04/spring_outting.png" align="left" style="margin:5px"/>  本座常常在想，漫长人类文明史上发现火的那一刹，肯定不是所有人都把注意力放在了烤肉的香味上：巧克力球的祖上诸神，看到的必是某洞穴女前凸后翘引人入胜的曼妙身姿。</p>
 
 <p>这么一来，春游的消息传来他还露出欣喜的表情，就显得颇有道理了。在小黑屋里的这几个礼拜让我们身心俱疲<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>，老大居然要率领全组去BBQ。本座看到邮件就长吁短叹满地打滚，巧克力球却颇为罕见的飘过来曰：“不错啊，可以出去看看mm”……</p>

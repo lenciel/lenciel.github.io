@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: distributed-system | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/distributed-system/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-05-04T17:08:15+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/distributed-system/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-05-10T01:29:34+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[关于微服务实践的一次分享]]></title>
-    <link href="http://lenciel.com/2017/03/msa-in-practice/"/>
+    <link href="http://172.16.121.110:4000/2017/03/msa-in-practice/"/>
     <updated>2017-03-11T14:39:44+08:00</updated>
-    <id>http://lenciel.com/2017/03/msa-in-practice</id>
+    <id>http://172.16.121.110:4000/2017/03/msa-in-practice</id>
     <content type="html"><![CDATA[<p>最近在EGO里做了一次关于微服务架构的分享，<a href="https://github.com/lenciel/talks/tree/master/slides/2017_03_19_ego_msa_in_practice">keynote</a>写好了，思路在这里梳理一下。</p>
 
 <a name="L............"></a>
@@ -185,7 +185,7 @@
 <a name="L............"></a>
 <h4>根本问题</h4>
 
-<p>无论是异步性还是局部失效，背后的根本问题是，任何软硬件系统都会崩坏。这两年Google的Spanner被很多人错误地称为“解决了分布式系统的。</p>
+<p>无论是异步性还是局部失效，背后的根本问题是，任何软硬件系统都会崩坏。这两年Google的Spanner被很多人错误地称为“解决了分布式系统的一致性问题”。</p>
 
 <p>实际上，Spanner的TrueTime组件并不提供一个全局唯一的时钟：它给你一个当前值可能的偏差，并且在设计上它就明确，这个偏差可能在1-7毫秒。</p>
 

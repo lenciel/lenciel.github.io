@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: archive | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/archive/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-05-04T17:08:15+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/archive/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-05-10T01:29:34+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[后患无穷]]></title>
-    <link href="http://lenciel.com/2008/07/write-no-letter/"/>
+    <link href="http://172.16.121.110:4000/2008/07/write-no-letter/"/>
     <updated>2008-07-13T00:57:00+08:00</updated>
-    <id>http://lenciel.com/2008/07/write-no-letter</id>
+    <id>http://172.16.121.110:4000/2008/07/write-no-letter</id>
     <content type="html"><![CDATA[<p><img style="padding-right:2px; border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="190" alt="never write letters" src="/downloads/images/do_never_write_letters.jpg" width="142" align="left" border="0" /> “如果我对你说过谎，那是因为我必须向你证明假的就是真的”</p>
 
 <p>—— 让·罗凯尔《异物》</p>

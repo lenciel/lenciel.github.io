@@ -1,4 +1,92 @@
-<!DOCTYPE html> <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]--> <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]--> <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]--> <head> <meta charset="utf-8"> <title>@Lenciel</title> <meta name="author" content="Lenciel"> <meta name="description" content=" Doomsday Machines 2013-07-23 23:25:00 ..."> <meta name="HandheldFriendly" content="True"> <meta name="MobileOptimized" content="320"> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="canonical" href="http://lenciel.com/posts/61/"> <link href="/favicon.png" rel="icon"> <script src="/assets/javascripts/app.js"></script> <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml"> <meta property="og:type" content="article"/> <meta property="og:url" content="http://lenciel.com/posts/61/"/> <meta property="og:description" content=" Doomsday Machines 2013-07-23 23:25:00 ..."/> <meta property="og:site_name" content="http://lenciel.com"/> <meta property="article:author" content="http://lenciel.com"> <meta itemprop="description" content=" Doomsday Machines 2013-07-23 23:25:00 ..."/> <script>
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>@Lenciel</title>
+  <meta name="author" content="Lenciel">
+
+  
+  <meta name="description" content="
+  
+  
+  
+    
+      
+  
+    
+      Cryptography and Python
+    
+    
+      
+        
+        
+          2013-07-25
+          15:13:00
+        
+   ...">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://172.16.121.110:4000/posts/61/">
+  <link href="/favicon.png" rel="icon">
+  <script src="/assets/javascripts/app.js"></script>
+  <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml">
+  
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://172.16.121.110:4000/posts/61/" />
+<meta property="og:description" content="
+  
+  
+  
+    
+      
+  
+    
+      Cryptography and Python
+    
+    
+      
+        
+        
+          2013-07-25
+          15:13:00
+        
+   ..." />
+
+<meta property="og:site_name" content="http://172.16.121.110:4000" />
+<meta property="article:author" content="http://lenciel.com">
+
+
+
+<meta itemprop="description" content="
+  
+  
+  
+    
+      
+  
+    
+      Cryptography and Python
+    
+    
+      
+        
+        
+          2013-07-25
+          15:13:00
+        
+   ..." />
+
+
+  <script>
     var _hmt = _hmt || [];
     (function() {
         var hm = document.createElement("script");
@@ -6,7 +94,10 @@
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
     })();
-</script> <script>
+</script>
+
+  
+<script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -15,13 +106,760 @@
     ga('create', 'UA-175991-6', 'auto');
     ga('send', 'pageview');
 
-</script> </head> <body class="collapse-sidebar sidebar-footer"> <header role="banner"><hgroup> <h1><a href="/">@Lenciel</a></h1> </hgroup> </header> <nav role="navigation"><ul class="subscription" data-subscription="rss"> <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li> </ul> <ul class="main-navigation"> <li><a href="/"><i class="icon-home"></i>Home</a></li> <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li> <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li> </ul> </nav> <div id="main"> <div id="content"> <div class="blog-index"> <article> <header> <h1 class="entry-title"><a href="/2013/07/doomsday-machines/">Doomsday Machines</a></h1> <p class="meta"> <time class='entry-date' datetime='2013-07-23 23:25:00 +0800'> <span class='date'>2013-07-23</span> <span class='time'>23:25:00</span> </time> </p> </header> <div class="entry-content"><p><img src="/downloads/images/dr_strangelove_doomsday_machine.gif" title="Don't touch me..." alt="doomsday machines"/></p> <blockquote><p>Gee, I wish we had one of them doomsday machines.</p><footer><strong>Stanley Kubrick</strong> <cite><a href='http://www.imdb.com/title/tt0057012/'>Fight Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb(1964)</a></cite></footer></blockquote> </div> </article> <article> <header> <h1 class="entry-title"><a href="/2013/07/stop-specific-zsh-shell-auto-correct/">关掉Zsh对指定命令的自动纠错</a></h1> <p class="meta"> <time class='entry-date' datetime='2013-07-23 14:47:00 +0800'> <span class='date'>2013-07-23</span> <span class='time'>14:47:00</span> </time> </p> </header> <div class="entry-content"><p>工作机器切换到Mac之后我一直在自用并在团队中推广 <a href="https://github.com/lenciel/oh-my-zsh"><code>oh-my-zsh</code></a>。99%的时间本座对它是如此满意，除开有的时候它的服务太主动了一些。</p> <p>比如今天在用<code>curl</code>试用一个接口的时候，我测试用的payload放在一个<code>payload.json</code>文件里面，所以命令是：</p> <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>curl -H "Content-Type: application/json" -X POST -d @payload.json  http://xxx.xxx.xxx/xxx/StartServiceServlet</span></code></pre></td></tr></table></div></figure> <p>然后它就一直提示：</p> <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>zsh: correct '@payload.json' to 'payload.json' [nyae]?</span></code></pre></td></tr></table></div></figure> <p>一，直，提，示。</p> <p>跑到代码里面去看了一下，要关掉这种自动纠错的提示可以配置 <code>~/.oh-my-zsh/lib/correction.zsh</code>：</p> <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>alias curl='nocorrect curl'</span></code></pre></td></tr></table></div></figure> <p>整个世界清静了&hellip;</p> </div> </article> <div class="pagination"> <a class="prev" href="/posts/62">&larr; Older</a> <a href="/archives">Archives</a> <a class="next" href="/posts/60">Newer &rarr;</a> </div> </div> </div> </div> <footer role="contentinfo"><p> Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a> <span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span> </p> </footer> <script type="text/javascript">
+</script>
+
+
+</head>
+
+<body    class="collapse-sidebar sidebar-footer" >
+  <header role="banner"><hgroup>
+  <h1><a href="/">@Lenciel</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<ul class="main-navigation">
+  <li><a href="/"><i class="icon-home"></i>Home</a></li>
+  <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li>
+  <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2013/07/cryptography-and-python/">Cryptography and Python</a></h1>
+    
+    
+      <p class="meta">
+        <!--
+
+
+
+
+-->
+        <time class='entry-date' datetime='2013-07-25 15:13:00 +0800'>
+          <span class='date'>2013-07-25</span>
+          <span class='time'>15:13:00</span>
+        </time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>这周我们的一个项目里面需要调用第三方接口。对方的安全机制是调用时要进行加密和校验，但它们的文档没有描述具体是怎么加密的，而是给了一段代码：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span></span><span class="kd">private</span> <span class="kd">static</span> <span class="n">BASE64Encoder</span> <span class="n">base64</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BASE64Encoder</span><span class="o">();</span>
+</span><span class='line'><span class="c1">//  private static byte[] myIV = { 50, 51, 52, 53, 54, 55, 56, 57 };</span>
+</span><span class='line'><span class="c1">//  private static byte[] myIV = null;</span>
+</span><span class='line'><span class="c1">//  private static String strkey = &quot;W9qPIzjaVGKUp7CKRk/qpCkg/SCMkQRu&quot;; // 字节数必须是8的倍数</span>
+</span><span class='line'><span class="c1">//密钥</span>
+</span><span class='line'><span class="kd">private</span> <span class="kd">static</span> <span class="n">String</span> <span class="n">strkey</span> <span class="o">=</span> <span class="s">&quot;NDg5MDY2NjczMxxxxXXXXXyNzUzNTg2&quot;</span><span class="o">;</span>
+</span><span class='line'><span class="kd">private</span> <span class="kd">static</span> <span class="n">String</span> <span class="nf">removeBR</span><span class="o">(</span><span class="n">String</span> <span class="n">str</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>    <span class="n">StringBuffer</span> <span class="n">sf</span> <span class="o">=</span> <span class="k">new</span> <span class="n">StringBuffer</span><span class="o">(</span><span class="n">str</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">sf</span><span class="o">.</span><span class="na">length</span><span class="o">();</span> <span class="o">++</span><span class="n">i</span><span class="o">)</span>
+</span><span class='line'>    <span class="o">{</span>
+</span><span class='line'>      <span class="k">if</span> <span class="o">(</span><span class="n">sf</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">i</span><span class="o">)</span> <span class="o">==</span> <span class="sc">&#39;\n&#39;</span><span class="o">)</span>
+</span><span class='line'>      <span class="o">{</span>
+</span><span class='line'>        <span class="n">sf</span> <span class="o">=</span> <span class="n">sf</span><span class="o">.</span><span class="na">deleteCharAt</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+</span><span class='line'>      <span class="o">}</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'>    <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">sf</span><span class="o">.</span><span class="na">length</span><span class="o">();</span> <span class="o">++</span><span class="n">i</span><span class="o">)</span>
+</span><span class='line'>    <span class="o">{</span>
+</span><span class='line'>      <span class="k">if</span> <span class="o">(</span><span class="n">sf</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">i</span><span class="o">)</span> <span class="o">==</span> <span class="sc">&#39;\r&#39;</span><span class="o">)</span>
+</span><span class='line'>      <span class="o">{</span>
+</span><span class='line'>        <span class="n">sf</span> <span class="o">=</span> <span class="n">sf</span><span class="o">.</span><span class="na">deleteCharAt</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+</span><span class='line'>      <span class="o">}</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">sf</span><span class="o">.</span><span class="na">toString</span><span class="o">();</span>
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">private</span> <span class="kd">static</span> <span class="n">String</span> <span class="nf">desEncrypt</span><span class="o">(</span><span class="n">String</span> <span class="n">input</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">Exception</span>
+</span><span class='line'><span class="o">{</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">BASE64Decoder</span> <span class="n">base64d</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BASE64Decoder</span><span class="o">();</span>
+</span><span class='line'>    <span class="n">DESedeKeySpec</span> <span class="n">p8ksp</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+</span><span class='line'>    <span class="n">p8ksp</span> <span class="o">=</span> <span class="k">new</span> <span class="n">DESedeKeySpec</span><span class="o">(</span><span class="n">base64d</span><span class="o">.</span><span class="na">decodeBuffer</span><span class="o">(</span><span class="n">strkey</span><span class="o">));</span>
+</span><span class='line'>    <span class="n">Key</span> <span class="n">key</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+</span><span class='line'>    <span class="n">key</span> <span class="o">=</span> <span class="n">SecretKeyFactory</span><span class="o">.</span><span class="na">getInstance</span><span class="o">(</span><span class="s">&quot;DESede&quot;</span><span class="o">).</span><span class="na">generateSecret</span><span class="o">(</span><span class="n">p8ksp</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="kt">byte</span><span class="o">[]</span> <span class="n">plainBytes</span> <span class="o">=</span> <span class="o">(</span><span class="kt">byte</span><span class="o">[])</span><span class="kc">null</span><span class="o">;</span>
+</span><span class='line'>    <span class="n">Cipher</span> <span class="n">cipher</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+</span><span class='line'>    <span class="kt">byte</span><span class="o">[]</span> <span class="n">cipherText</span> <span class="o">=</span> <span class="o">(</span><span class="kt">byte</span><span class="o">[])</span><span class="kc">null</span><span class="o">;</span>
+</span><span class='line'>    <span class="c1">//“算法/模式/填充”</span>
+</span><span class='line'>    <span class="n">plainBytes</span> <span class="o">=</span> <span class="n">input</span><span class="o">.</span><span class="na">getBytes</span><span class="o">(</span><span class="s">&quot;UTF8&quot;</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">cipher</span> <span class="o">=</span> <span class="n">Cipher</span><span class="o">.</span><span class="na">getInstance</span><span class="o">(</span><span class="s">&quot;DESede/ECB/PKCS5Padding&quot;</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">SecretKeySpec</span> <span class="n">myKey</span> <span class="o">=</span> <span class="k">new</span> <span class="n">SecretKeySpec</span><span class="o">(</span><span class="n">key</span><span class="o">.</span><span class="na">getEncoded</span><span class="o">(),</span> <span class="s">&quot;DESede&quot;</span><span class="o">);</span>
+</span><span class='line'> <span class="c1">//       IvParameterSpec ivspec = new IvParameterSpec(myIV);</span>
+</span><span class='line'>    <span class="n">cipher</span><span class="o">.</span><span class="na">init</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="n">myKey</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">cipherText</span> <span class="o">=</span> <span class="n">cipher</span><span class="o">.</span><span class="na">doFinal</span><span class="o">(</span><span class="n">plainBytes</span><span class="o">);</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">removeBR</span><span class="o">(</span><span class="n">base64</span><span class="o">.</span><span class="na">encode</span><span class="o">(</span><span class="n">cipherText</span><span class="o">));</span>
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">private</span> <span class="kd">static</span> <span class="n">String</span> <span class="nf">desDecrypt</span><span class="o">(</span><span class="n">String</span> <span class="n">cipherText</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">Exception</span>
+</span><span class='line'><span class="o">{</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">BASE64Decoder</span> <span class="n">base64d</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BASE64Decoder</span><span class="o">();</span>
+</span><span class='line'>    <span class="n">DESedeKeySpec</span> <span class="n">p8ksp</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+</span><span class='line'>    <span class="n">p8ksp</span> <span class="o">=</span> <span class="k">new</span> <span class="n">DESedeKeySpec</span><span class="o">(</span><span class="n">base64d</span><span class="o">.</span><span class="na">decodeBuffer</span><span class="o">(</span><span class="n">strkey</span><span class="o">));</span>
+</span><span class='line'>    <span class="n">Key</span> <span class="n">key</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+</span><span class='line'>    <span class="n">key</span> <span class="o">=</span> <span class="n">SecretKeyFactory</span><span class="o">.</span><span class="na">getInstance</span><span class="o">(</span><span class="s">&quot;DESede&quot;</span><span class="o">).</span><span class="na">generateSecret</span><span class="o">(</span><span class="n">p8ksp</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">Cipher</span> <span class="n">cipher</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+</span><span class='line'>    <span class="kt">byte</span><span class="o">[]</span> <span class="n">inPut</span> <span class="o">=</span> <span class="n">base64d</span><span class="o">.</span><span class="na">decodeBuffer</span><span class="o">(</span><span class="n">cipherText</span><span class="o">);</span>
+</span><span class='line'>    <span class="c1">//“算法/模式/填充”</span>
+</span><span class='line'>    <span class="n">cipher</span> <span class="o">=</span> <span class="n">Cipher</span><span class="o">.</span><span class="na">getInstance</span><span class="o">(</span><span class="s">&quot;DESede/ECB/PKCS5Padding&quot;</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">SecretKeySpec</span> <span class="n">myKey</span> <span class="o">=</span> <span class="k">new</span> <span class="n">SecretKeySpec</span><span class="o">(</span><span class="n">key</span><span class="o">.</span><span class="na">getEncoded</span><span class="o">(),</span> <span class="s">&quot;DESede&quot;</span><span class="o">);</span>
+</span><span class='line'> <span class="c1">//       IvParameterSpec ivspec = new IvParameterSpec(myIV);</span>
+</span><span class='line'>    <span class="n">cipher</span><span class="o">.</span><span class="na">init</span><span class="o">(</span><span class="mi">2</span><span class="o">,</span> <span class="n">myKey</span><span class="o">);</span>
+</span><span class='line'>    <span class="kt">byte</span><span class="o">[]</span> <span class="n">output</span> <span class="o">=</span> <span class="n">cipher</span><span class="o">.</span><span class="na">doFinal</span><span class="o">(</span><span class="n">inPut</span><span class="o">);</span>
+</span><span class='line'>    <span class="k">return</span> <span class="k">new</span> <span class="n">String</span><span class="o">(</span><span class="n">output</span><span class="o">,</span> <span class="s">&quot;UTF8&quot;</span><span class="o">);</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>很明显，在提供文档的同学看来大家都是JEE程序员。仔细看了半天这两个函数<code>desEncrypt</code>和<code>desDecrypt</code>外加Google，才明白是<code>DES3</code>算法。</p>
+
+<p>接着这份文档的后面还有另一个对加密的描述也是代码，不过这次比较明显是MD5：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span></span><span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="nf">MD5</span><span class="o">(</span><span class="n">String</span> <span class="n">s</span><span class="o">)</span>
+</span><span class='line'><span class="o">{</span>
+</span><span class='line'>  <span class="kt">char</span> <span class="n">hexDigits</span><span class="o">[]</span> <span class="o">=</span> <span class="o">{</span>
+</span><span class='line'>    <span class="sc">&#39;0&#39;</span><span class="o">,</span> <span class="sc">&#39;1&#39;</span><span class="o">,</span> <span class="sc">&#39;2&#39;</span><span class="o">,</span> <span class="sc">&#39;3&#39;</span><span class="o">,</span> <span class="sc">&#39;4&#39;</span><span class="o">,</span> <span class="sc">&#39;5&#39;</span><span class="o">,</span> <span class="sc">&#39;6&#39;</span><span class="o">,</span> <span class="sc">&#39;7&#39;</span><span class="o">,</span> <span class="sc">&#39;8&#39;</span><span class="o">,</span> <span class="sc">&#39;9&#39;</span><span class="o">,</span>
+</span><span class='line'>    <span class="sc">&#39;a&#39;</span><span class="o">,</span> <span class="sc">&#39;b&#39;</span><span class="o">,</span> <span class="sc">&#39;c&#39;</span><span class="o">,</span> <span class="sc">&#39;d&#39;</span><span class="o">,</span> <span class="sc">&#39;e&#39;</span><span class="o">,</span> <span class="sc">&#39;f&#39;</span>
+</span><span class='line'>    <span class="o">};</span>
+</span><span class='line'>  <span class="kt">char</span> <span class="n">str</span><span class="o">[]</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+</span><span class='line'>  <span class="kt">byte</span> <span class="n">strTemp</span><span class="o">[]</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="na">getBytes</span><span class="o">();</span>
+</span><span class='line'>  <span class="n">MessageDigest</span> <span class="n">mdTemp</span><span class="o">;</span>
+</span><span class='line'>  <span class="k">try</span> <span class="o">{</span>
+</span><span class='line'>    <span class="n">mdTemp</span> <span class="o">=</span> <span class="n">MessageDigest</span><span class="o">.</span><span class="na">getInstance</span><span class="o">(</span><span class="s">&quot;MD5&quot;</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">mdTemp</span><span class="o">.</span><span class="na">update</span><span class="o">(</span><span class="n">strTemp</span><span class="o">);</span>
+</span><span class='line'>    <span class="kt">byte</span> <span class="n">md</span><span class="o">[]</span> <span class="o">=</span> <span class="n">mdTemp</span><span class="o">.</span><span class="na">digest</span><span class="o">();</span>
+</span><span class='line'>    <span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="n">md</span><span class="o">.</span><span class="na">length</span><span class="o">;</span>
+</span><span class='line'>    <span class="n">str</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span><span class="o">[</span><span class="n">j</span> <span class="o">*</span> <span class="mi">2</span><span class="o">];</span>
+</span><span class='line'>    <span class="kt">int</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+</span><span class='line'>    <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">j</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span>
+</span><span class='line'>    <span class="o">{</span>
+</span><span class='line'>      <span class="kt">byte</span> <span class="n">b</span> <span class="o">=</span> <span class="n">md</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
+</span><span class='line'>      <span class="n">str</span><span class="o">[</span><span class="n">k</span><span class="o">++]</span> <span class="o">=</span> <span class="n">hexDigits</span><span class="o">[</span><span class="n">b</span> <span class="o">&gt;&gt;</span> <span class="mi">4</span> <span class="o">&amp;</span> <span class="mh">0xf</span><span class="o">];</span>
+</span><span class='line'>      <span class="n">str</span><span class="o">[</span><span class="n">k</span><span class="o">++]</span> <span class="o">=</span> <span class="n">hexDigits</span><span class="o">[</span><span class="n">b</span> <span class="o">&amp;</span> <span class="mh">0xf</span><span class="o">];</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'>  <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">NoSuchAlgorithmException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>    <span class="c1">// TODO Auto-generated catch block</span>
+</span><span class='line'>    <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+</span><span class='line'>  <span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">return</span> <span class="k">new</span> <span class="n">String</span><span class="o">(</span><span class="n">str</span><span class="o">);</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>这些算法用python来实现当然就简单多了:MD5就是一句话，看起来非常复杂的DES3也不过几句话:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span></span><span class="kn">from</span> <span class="nn">pyDes</span> <span class="kn">import</span> <span class="n">triple_des</span><span class="p">,</span> <span class="n">ECB</span><span class="p">,</span> <span class="n">PAD_PKCS5</span>
+</span><span class='line'><span class="kn">import</span> <span class="nn">base64</span>
+</span><span class='line'><span class="kn">import</span> <span class="nn">datetime</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">input_str</span> <span class="o">=</span> <span class="s2">&quot;test string&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">key_base64_str</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64decode</span><span class="p">(</span><span class="s2">&quot;NDg5MDY2NjczMxxxxXXXXXyNzUzNTg2&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
+</span><span class='line'><span class="n">key_bytes</span> <span class="o">=</span> <span class="n">key_base64_str</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+</span><span class='line'><span class="n">k</span> <span class="o">=</span> <span class="n">triple_des</span><span class="p">(</span><span class="n">key_bytes</span><span class="p">,</span> <span class="n">ECB</span><span class="p">,</span> <span class="n">pad</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">padmode</span><span class="o">=</span><span class="n">PAD_PKCS5</span><span class="p">)</span>
+</span><span class='line'><span class="n">d</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64encode</span><span class="p">(</span><span class="n">k</span><span class="o">.</span><span class="n">encrypt</span><span class="p">(</span><span class="n">input_str</span><span class="p">))</span>
+</span><span class='line'><span class="k">print</span> <span class="n">d</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>当然，要明白这些算法究竟怎么回事才叫认真负责的态度：下面这些内容主要来自<a href="http://www.laurentluce.com/posts/python-and-cryptography-with-pycrypto/">这篇文章</a></p>
+
+<a name="L.strong.Hash..strong."></a>
+<h2><strong>Hash</strong></h2>
+
+<p>hash就是给输入的字符串生成一个固定长度的字符串（被称为hash值）。理想的hash要满足：</p>
+
+<ul>
+<li>根据生成的字符串非常难猜到输入的字符串</li>
+<li>任意两个不同的字符串不会生成相同的hash值</li>
+<li>如果输入字符串没有变生成的hash值应该不会变</li>
+</ul>
+
+
+<p><img src="/downloads/images/hash.png" title="Don't touch me..." alt="hash" /></p>
+
+<p>hash函数可以被用来计算checksum，也可以用来进行数字签名和认证。</p>
+
+<a name="L.strong.MD5..strong."></a>
+<h3><strong>MD5</strong></h3>
+
+<p>1991年面世的一种hash算法，生成的字符串长度为128bit。</p>
+
+<p>它的算法详情可以看<a href="http://tools.ietf.org/html/rfc1321">这里</a>，简单说如下：</p>
+
+<ul>
+<li>首先需要对字符串进行扩展，使其位长对512求余的结果等于448。因此，位长（Bits Length）将被扩展至N*512+448，N为一个非负整数，N可以是零。填充的方法一般是在信息的后面填充一个1和无数个0，直到满足上面的条件时才停止用0对信息的填充。</li>
+<li>然后，在这个结果后面附加一个以64位二进制表示的填充前信息长度。经过这两步的处理，现在的位长是 <code>N*512+448+64 = (N+1）*512</code>，即长度恰好是512的整数倍。</li>
+<li>最后以512位分组来处理输入的信息，且每一分组又被划分为16个32位子分组，经过了一系列的处理后，算法的输出由四个32位分组组成，将这四个32位分组级联后将生成一个128位散列值。</li>
+</ul>
+
+
+<p>MD5对碰撞攻击(不同的输入生成相同的hash)等攻击的抵抗力比较差。</p>
+
+<p>在python中使用MD5:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span></span><span class="kn">import</span> <span class="nn">os</span>
+</span><span class='line'><span class="kn">from</span> <span class="nn">Crypto.Hash</span> <span class="kn">import</span> <span class="n">MD5</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">get_file_checksum</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+</span><span class='line'>    <span class="n">h</span> <span class="o">=</span> <span class="n">MD5</span><span class="o">.</span><span class="n">new</span><span class="p">()</span>
+</span><span class='line'>    <span class="n">chunk_size</span> <span class="o">=</span> <span class="mi">8192</span>
+</span><span class='line'>    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span><span class='line'>        <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+</span><span class='line'>            <span class="n">chunk</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">chunk_size</span><span class="p">)</span>
+</span><span class='line'>            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">chunk</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span><span class='line'>                <span class="k">break</span>
+</span><span class='line'>            <span class="n">h</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">chunk</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">h</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<a name="L.strong...............strong."></a>
+<h2><strong>加密算法</strong></h2>
+
+<p>加密算法使用key把输入的文本变成加密的文本。有两种加密的方式：分块和流。分块处理的单位是固定大小比如8或者16个bytes，流则是一个一个byte。只有知道了解密的<code>key</code>才能对加密的文本进行解密。</p>
+
+<a name="L.em.........em."></a>
+<h3><em>分块</em></h3>
+
+<p>DES是分块加密的一种，其处理对象的大小是8个bytes。DES最简单的模式是所谓的<code>ECB( electronic code book)模式</code>，也就是每个block都是独立加密，最后组成整个加密后的文本。</p>
+
+<p><img src="/downloads/images/block_cipher_ebc.png" title="Don't touch me..." alt="ecb" /></p>
+
+<p>使用pycrpto对文本使用<code>DES/ECB</code>加密很简单。假设key是<code>10234567</code>，而我们要加密的文本是<code>abcdefgh</code>，那么：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span></span><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">Crypto.Cipher</span> <span class="kn">import</span> <span class="n">DES</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">des</span> <span class="o">=</span> <span class="n">DES</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s1">&#39;01234567&#39;</span><span class="p">,</span> <span class="n">DES</span><span class="o">.</span><span class="n">MODE_ECB</span><span class="p">)</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">text</span> <span class="o">=</span> <span class="s1">&#39;abcdefgh&#39;</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">cipher_text</span> <span class="o">=</span> <span class="n">des</span><span class="o">.</span><span class="n">encrypt</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">cipher_text</span>
+</span><span class='line'><span class="s1">&#39;</span><span class="se">\xec\xc2\x9e\xd9</span><span class="s1">] a</span><span class="se">\xd0</span><span class="s1">&#39;</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">des</span><span class="o">.</span><span class="n">decrypt</span><span class="p">(</span><span class="n">cipher_text</span><span class="p">)</span>
+</span><span class='line'><span class="s1">&#39;abcdefgh&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>比<code>ECB</code>更健壮的是<code>CFB (Cipher feedback)</code>模式，也就是先组合前面加密的文本和待加密的文本，然后进行加密。</p>
+
+<p><img src="/downloads/images/block_cipher_cfb.png" title="Don't touch me..." alt="cfb" /></p>
+
+<p>下面的例子说明了算法的工作流程：待加密的是<code>abcdefghijklmnop</code>，两倍8bytes。首先生成一个随机的字符串作为初始的<code>iv</code>来生成两个<code>DES</code>对象，一个用来加密一个用来解密。之所以需要这两个对象，是因为<code>feedback</code>值会随着block被加密后变化。</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span></span><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">Crypto.Cipher</span> <span class="kn">import</span> <span class="n">DES</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">Crypto</span> <span class="kn">import</span> <span class="n">Random</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">iv</span> <span class="o">=</span> <span class="n">Random</span><span class="o">.</span><span class="n">get_random_bytes</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">des1</span> <span class="o">=</span> <span class="n">DES</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s1">&#39;01234567&#39;</span><span class="p">,</span> <span class="n">DES</span><span class="o">.</span><span class="n">MODE_CFB</span><span class="p">,</span> <span class="n">iv</span><span class="p">)</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">des2</span> <span class="o">=</span> <span class="n">DES</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s1">&#39;01234567&#39;</span><span class="p">,</span> <span class="n">DES</span><span class="o">.</span><span class="n">MODE_CFB</span><span class="p">,</span> <span class="n">iv</span><span class="p">)</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">text</span> <span class="o">=</span> <span class="s1">&#39;abcdefghijklmnop&#39;</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">cipher_text</span> <span class="o">=</span> <span class="n">des1</span><span class="o">.</span><span class="n">encrypt</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">cipher_text</span>
+</span><span class='line'><span class="s2">&quot;?</span><span class="se">\\\x8e\x86\xeb\xab\x8b\x97</span><span class="s2">&#39;</span><span class="se">\xa1</span><span class="s2">W</span><span class="se">\xde\x89</span><span class="s2">!</span><span class="se">\xc3</span><span class="s2">d&quot;</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">des2</span><span class="o">.</span><span class="n">decrypt</span><span class="p">(</span><span class="n">cipher_text</span><span class="p">)</span>
+</span><span class='line'><span class="s1">&#39;abcdefghijklmnop&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<a name="L.em......em."></a>
+<h3><em>流</em></h3>
+
+<p>这些算法基于一个个bytes，所以block的大小总是1 byte。pycrypto提供了两个这样的算法：<code>ARC4</code> 和 <code>XOR</code>。这种基于流的算法只有一种模式：<code>ECB</code>。</p>
+
+<p>下面是一个<code>ARC4</code>的算法，使用了key <code>01234567</code>:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span></span><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">Crypto.Cipher</span> <span class="kn">import</span> <span class="n">ARC4</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">obj1</span> <span class="o">=</span> <span class="n">ARC4</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s1">&#39;01234567&#39;</span><span class="p">)</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">obj2</span> <span class="o">=</span> <span class="n">ARC4</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s1">&#39;01234567&#39;</span><span class="p">)</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">text</span> <span class="o">=</span> <span class="s1">&#39;abcdefghijklmnop&#39;</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">cipher_text</span> <span class="o">=</span> <span class="n">obj1</span><span class="o">.</span><span class="n">encrypt</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">cipher_text</span>
+</span><span class='line'><span class="s1">&#39;</span><span class="se">\xf0\xb7\x90</span><span class="s1">{#ABXY9</span><span class="se">\xd0</span><span class="s1">6</span><span class="se">\x9f\xc0\x8c</span><span class="s1"> &#39;</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">obj2</span><span class="o">.</span><span class="n">decrypt</span><span class="p">(</span><span class="n">cipher_text</span><span class="p">)</span>
+</span><span class='line'><span class="s1">&#39;abcdefghijklmnop&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<a name="L.strong...............strong."></a>
+<h3><strong>应用程序</strong></h3>
+
+<p>在程序里面我们常常使用DES3对文件进行加密解密操作。一般来说操作对象是文件时，总是分成一个个chunck来处理以免占用太多内存。如果读入的chunck少于16bytes，就需要扩展它才能进行加密。</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span></span><span class="kn">import</span> <span class="nn">os</span>
+</span><span class='line'><span class="kn">from</span> <span class="nn">Crypto.Cipher</span> <span class="kn">import</span> <span class="n">DES3</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">encrypt_file</span><span class="p">(</span><span class="n">in_filename</span><span class="p">,</span> <span class="n">out_filename</span><span class="p">,</span> <span class="n">chunk_size</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">iv</span><span class="p">):</span>
+</span><span class='line'>    <span class="n">des3</span> <span class="o">=</span> <span class="n">DES3</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">DES3</span><span class="o">.</span><span class="n">MODE_CFB</span><span class="p">,</span> <span class="n">iv</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">in_filename</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">in_file</span><span class="p">:</span>
+</span><span class='line'>        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">out_filename</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">out_file</span><span class="p">:</span>
+</span><span class='line'>            <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+</span><span class='line'>                <span class="n">chunk</span> <span class="o">=</span> <span class="n">in_file</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">chunk_size</span><span class="p">)</span>
+</span><span class='line'>                <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">chunk</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span><span class='line'>                    <span class="k">break</span>
+</span><span class='line'>                <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">chunk</span><span class="p">)</span> <span class="o">%</span> <span class="mi">16</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+</span><span class='line'>                    <span class="n">chunk</span> <span class="o">+=</span> <span class="s1">&#39; &#39;</span> <span class="o">*</span> <span class="p">(</span><span class="mi">16</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">chunk</span><span class="p">)</span> <span class="o">%</span> <span class="mi">16</span><span class="p">)</span>
+</span><span class='line'>                <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">des3</span><span class="o">.</span><span class="n">encrypt</span><span class="p">(</span><span class="n">chunk</span><span class="p">))</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">decrypt_file</span><span class="p">(</span><span class="n">in_filename</span><span class="p">,</span> <span class="n">out_filename</span><span class="p">,</span> <span class="n">chunk_size</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">iv</span><span class="p">):</span>
+</span><span class='line'>    <span class="n">des3</span> <span class="o">=</span> <span class="n">DES3</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">DES3</span><span class="o">.</span><span class="n">MODE_CFB</span><span class="p">,</span> <span class="n">iv</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">in_filename</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">in_file</span><span class="p">:</span>
+</span><span class='line'>        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">out_filename</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">out_file</span><span class="p">:</span>
+</span><span class='line'>            <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+</span><span class='line'>                <span class="n">chunk</span> <span class="o">=</span> <span class="n">in_file</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">chunk_size</span><span class="p">)</span>
+</span><span class='line'>                <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">chunk</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span><span class='line'>                    <span class="k">break</span>
+</span><span class='line'>                <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">des3</span><span class="o">.</span><span class="n">decrypt</span><span class="p">(</span><span class="n">chunk</span><span class="p">))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>有了上面定义的这两个函数我们可以这样使用它们：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span></span><span class="kn">from</span> <span class="nn">Crypto</span> <span class="kn">import</span> <span class="n">Random</span>
+</span><span class='line'><span class="n">iv</span> <span class="o">=</span> <span class="n">Random</span><span class="o">.</span><span class="n">get_random_bytes</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+</span><span class='line'><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;to_enc.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span><span class='line'>    <span class="k">print</span> <span class="s1">&#39;to_enc.txt: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</span><span class='line'><span class="n">encrypt_file</span><span class="p">(</span><span class="s1">&#39;to_enc.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;to_enc.enc&#39;</span><span class="p">,</span> <span class="mi">8192</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">iv</span><span class="p">)</span>
+</span><span class='line'><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;to_enc.enc&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span><span class='line'>    <span class="k">print</span> <span class="s1">&#39;to_enc.enc: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</span><span class='line'><span class="n">decrypt_file</span><span class="p">(</span><span class="s1">&#39;to_enc.enc&#39;</span><span class="p">,</span> <span class="s1">&#39;to_enc.dec&#39;</span><span class="p">,</span> <span class="mi">8192</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">iv</span><span class="p">)</span>
+</span><span class='line'><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;to_enc.dec&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span><span class='line'>    <span class="k">print</span> <span class="s1">&#39;to_enc.dec: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>程序的输出如下：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span></span>to_enc.txt: this content needs to be encrypted.
+</span><span class='line'>
+</span><span class='line'>to_enc.enc: ??~?E??.??<span class="o">]</span>!<span class="o">=)</span>??<span class="s2">&quot;t?</span>
+</span><span class='line'><span class="s2">                                JpDw???R?UN0?=??R?UN0?}0r?FV9</span>
+</span><span class='line'><span class="s2">to_enc.dec: this content needs to be encrypted.</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<a name="L.strong.Public-key.algorithms..strong."></a>
+<h2><strong>Public-key algorithms</strong></h2>
+
+<p>上面提到的加密算法的一大问题是双方都需要知道key。而<code>public-key算法</code>提供了两个key，一个用来加密，一个用来解密。</p>
+
+<p><img src="/downloads/images/public_private_key.png" title="Don't touch me..." alt="ecb" /></p>
+
+<a name="L.strong.public.private.key..strong."></a>
+<h3><strong>public/private key</strong></h3>
+
+<p>使用pycrpto很容易就可以生成一对<code>private/public key</code>，生成key的时候必须规定key的长度，越长越安全。除开长度，还需要设定生成key的方法。下面是一个使用RSA生成1024bit长度key的过程：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span></span><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">Crypto.PublicKey</span> <span class="kn">import</span> <span class="n">RSA</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">Crypto</span> <span class="kn">import</span> <span class="n">Random</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">random_generator</span> <span class="o">=</span> <span class="n">Random</span><span class="o">.</span><span class="n">new</span><span class="p">()</span><span class="o">.</span><span class="n">read</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">key</span> <span class="o">=</span> <span class="n">RSA</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span><span class="mi">1024</span><span class="p">,</span> <span class="n">random_generator</span><span class="p">)</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">key</span>
+</span><span class='line'><span class="o">&lt;</span><span class="n">_RSAobj</span> <span class="nd">@0x7f60cf1b57e8</span> <span class="n">n</span><span class="p">(</span><span class="mi">1024</span><span class="p">),</span><span class="n">e</span><span class="p">,</span><span class="n">d</span><span class="p">,</span><span class="n">p</span><span class="p">,</span><span class="n">q</span><span class="p">,</span><span class="n">u</span><span class="p">,</span><span class="n">private</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>key对象有一系列的方法：
+- <code>can_encrypt()</code> 返回是否能用key来加密数据
+- <code>can_sign()</code> 返回是否能用key来进行签名
+- <code>has_private()</code> 返回是否有private key</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">key</span><span class="o">.</span><span class="n">can_encrypt</span><span class="p">()</span>
+</span><span class='line'><span class="bp">True</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">key</span><span class="o">.</span><span class="n">can_sign</span><span class="p">()</span>
+</span><span class='line'><span class="bp">True</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">key</span><span class="o">.</span><span class="n">has_private</span><span class="p">()</span>
+</span><span class='line'><span class="bp">True</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<a name="L.strong.........strong."></a>
+<h3><strong>加密</strong></h3>
+
+<p>现在我们有了一对key，我们就可以加密一些数据了。加密的时候使用的是公钥: <code>public key</code> ：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">public_key</span> <span class="o">=</span> <span class="n">key</span><span class="o">.</span><span class="n">publickey</span><span class="p">()</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">enc_data</span> <span class="o">=</span> <span class="n">public_key</span><span class="o">.</span><span class="n">encrypt</span><span class="p">(</span><span class="s1">&#39;abcdefgh&#39;</span><span class="p">,</span> <span class="mi">32</span><span class="p">)</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">enc_data</span>
+</span><span class='line'><span class="p">(</span><span class="s1">&#39;</span><span class="se">\x11\x86\x8b\xfa\x82\xdf\xe3</span><span class="s1">sN ~@</span><span class="se">\xdb</span><span class="s1">P</span><span class="se">\x85</span>
+</span><span class='line'>\<span class="n">x93</span>\<span class="n">xe6</span>\<span class="n">xb9</span>\<span class="n">xe9</span>\<span class="n">x95I</span>\<span class="n">xa7</span>\<span class="n">xadQ</span>\<span class="n">x08</span>\<span class="n">xe5</span>\<span class="n">xc8</span><span class="err">$</span><span class="mi">9</span>\<span class="n">x81K</span>\<span class="n">xa0</span>\<span class="n">xb5</span>\<span class="n">xee</span>\<span class="n">x1e</span>\<span class="n">xb5r</span>
+</span><span class='line'>\<span class="n">x9bH</span><span class="p">)</span>\<span class="n">xd8</span>\<span class="n">xeb</span>\<span class="n">x03</span>\<span class="n">xf3</span>\<span class="n">x86</span>\<span class="n">xb5</span>\<span class="n">x03</span>\<span class="n">xfd</span>\<span class="n">x97</span>\<span class="n">xe6</span><span class="o">%</span>\<span class="n">x9e</span>\<span class="n">xf7</span>\<span class="n">x11</span><span class="o">=</span>\<span class="n">xa1Y</span><span class="o">&lt;</span>\<span class="n">xdc</span>
+</span><span class='line'>\<span class="n">x94</span>\<span class="n">xf0</span>\<span class="n">x7f7</span><span class="err">@</span>\<span class="n">x9c</span>\<span class="n">x02suc</span>\<span class="n">xcc</span>\<span class="n">xc2j</span>\<span class="n">x0c</span>\<span class="n">xce</span>\<span class="n">x92</span>\<span class="n">x8d</span>\<span class="n">xdc</span>\<span class="n">x00uL</span>\<span class="n">xd6</span><span class="o">.</span>
+</span><span class='line'>\<span class="n">x84</span><span class="o">~/</span>\<span class="n">xed</span>\<span class="n">xd7</span>\<span class="n">xc5</span>\<span class="n">xbe</span>\<span class="n">xd2</span>\<span class="n">x98</span>\<span class="n">xec</span>\<span class="n">xe4</span>\<span class="n">xda</span>\<span class="n">xd1L</span>\<span class="n">rM</span><span class="err">`</span>\<span class="n">x88</span>\<span class="n">x13V</span>\<span class="n">xe1M</span>\<span class="n">n</span> <span class="n">X</span>
+</span><span class='line'>\<span class="n">xce</span>\<span class="n">x13</span> \<span class="n">xaf</span>\<span class="n">x10</span><span class="o">|</span>\<span class="n">x80</span>\<span class="n">x0e</span>\<span class="n">x14</span>\<span class="n">xbc</span>\<span class="n">x14</span>\<span class="n">x1ec</span>\<span class="n">xf6Rs</span>\<span class="n">xbb</span>\<span class="n">x93</span>\<span class="n">x06</span>\<span class="n">xbe</span><span class="s1">&#39;,)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<a name="L.strong.........strong."></a>
+<h3><strong>解密</strong></h3>
+
+<p>只要有用于解密的私钥(private key)解密是很简单的：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">key</span><span class="o">.</span><span class="n">decrypt</span><span class="p">(</span><span class="n">enc_data</span><span class="p">)</span>
+</span><span class='line'><span class="s1">&#39;abcdefgh&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<a name="L.strong.........strong."></a>
+<h3><strong>签名</strong></h3>
+
+<p>对信息进行签名，可以用来验证信息的作者，让我们相信它的来源。下面这个例子展示了如何先算出信息的hash值，然后送给RSA key的<code>sign()</code>方法。使用其他算法如<code>DSA</code>或者是<code>ElGamal</code>也类似。</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span></span><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">Crypto.Hash</span> <span class="kn">import</span> <span class="n">MD5</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">Crypto.PublicKey</span> <span class="kn">import</span> <span class="n">RSA</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">Crypto</span> <span class="kn">import</span> <span class="n">Random</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">key</span> <span class="o">=</span> <span class="n">RSA</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span><span class="mi">1024</span><span class="p">,</span> <span class="n">random_generator</span><span class="p">)</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">text</span> <span class="o">=</span> <span class="s1">&#39;abcdefgh&#39;</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="nb">hash</span> <span class="o">=</span> <span class="n">MD5</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">text</span><span class="p">)</span><span class="o">.</span><span class="n">digest</span><span class="p">()</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="nb">hash</span>
+</span><span class='line'><span class="s1">&#39;</span><span class="se">\xe8\xdc</span><span class="s1">@</span><span class="se">\x81\xb1</span><span class="s1">44</span><span class="se">\xb4</span><span class="s1">Q</span><span class="se">\x89\xa7</span><span class="s1"> </span><span class="se">\xb7</span><span class="s1">{h</span><span class="se">\x18</span><span class="s1">&#39;</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">signature</span> <span class="o">=</span> <span class="n">key</span><span class="o">.</span><span class="n">sign</span><span class="p">(</span><span class="nb">hash</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">signature</span>
+</span><span class='line'><span class="p">(</span><span class="mi">1549358700992033008647390368952919655009213441715588267926189797</span>
+</span><span class='line'><span class="mi">14352832388210003027089995136141364041133696073722879839526120115</span>
+</span><span class='line'><span class="mi">25996986614087200336035744524518268136542404418603981729787438986</span>
+</span><span class='line'><span class="mi">50177007820700181992412437228386361134849096112920177007759309019</span>
+</span><span class='line'><span class="il">6400328917297225219942913552938646767912958849053L</span><span class="p">,)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<a name="L.strong.........strong."></a>
+<h3><strong>验证</strong></h3>
+
+<p>只要有公钥，验证信息就很简单了。未加密的文本和签名一起被发送给接收方。接收方计算hash值然后调用公钥的<code>verify()</code>方法来进行验证：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">text</span> <span class="o">=</span> <span class="s1">&#39;abcdefgh&#39;</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="nb">hash</span> <span class="o">=</span> <span class="n">MD5</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">text</span><span class="p">)</span><span class="o">.</span><span class="n">digest</span><span class="p">()</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">public_key</span><span class="o">.</span><span class="n">verify</span><span class="p">(</span><span class="nb">hash</span><span class="p">,</span> <span class="n">signature</span><span class="p">)</span>
+</span><span class='line'><span class="bp">True</span>
+</span></code></pre></td></tr></table></div></figure>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2013/07/doomsday-machines/">Doomsday Machines</a></h1>
+    
+    
+      <p class="meta">
+        <!--
+
+
+
+
+-->
+        <time class='entry-date' datetime='2013-07-23 23:25:00 +0800'>
+          <span class='date'>2013-07-23</span>
+          <span class='time'>23:25:00</span>
+        </time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img src="/downloads/images/dr_strangelove_doomsday_machine.gif" title="Don't touch me..." alt="doomsday machines" /></p>
+
+<blockquote><p>Gee, I wish we had one of them doomsday machines.</p><footer><strong>Stanley Kubrick</strong> <cite><a href='http://www.imdb.com/title/tt0057012/'>Fight Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb(1964)</a></cite></footer></blockquote>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/posts/62">&larr; Older</a>
+    
+    <a href="/archives">Archives</a>
+    
+    <a class="next" href="/posts/60">Newer &rarr;</a>
+    
+  </div>
+</div>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a>
+<span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+<script type="text/javascript">
   var stylesheet = document.createElement('link');
   stylesheet.href = '/assets/stylesheets/app.css';
   stylesheet.rel = 'stylesheet';
   stylesheet.type = 'text/css';
   document.getElementsByTagName('head')[0].appendChild(stylesheet);
-</script> </body> </html>
+</script>
+
+</body>
+</html>

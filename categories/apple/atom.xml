@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: apple | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/apple/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-05-04T17:08:15+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/apple/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-05-10T01:29:34+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[如何解决苹果的邮件Spam]]></title>
-    <link href="http://lenciel.com/2016/11/how-to-resolve-apple-calendar-spam/"/>
+    <link href="http://172.16.121.110:4000/2016/11/how-to-resolve-apple-calendar-spam/"/>
     <updated>2016-11-30T22:28:40+08:00</updated>
-    <id>http://lenciel.com/2016/11/how-to-resolve-apple-calendar-spam</id>
+    <id>http://172.16.121.110:4000/2016/11/how-to-resolve-apple-calendar-spam</id>
     <content type="html"><![CDATA[<p>从10月的某一天开始，我发现我的日历每天都充满了外部邀请：</p>
 
 <p><img src="http://upload-images.jianshu.io/upload_images/20292-5d2a6a90f697fcab.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Oh Shoot" /></p>

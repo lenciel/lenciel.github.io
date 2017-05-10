@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: server | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/server/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-05-04T17:08:15+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/server/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-05-10T01:29:34+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[解决iowait过高的告警]]></title>
-    <link href="http://lenciel.com/2014/02/hunting-the-iowait-problem-maker/"/>
+    <link href="http://172.16.121.110:4000/2014/02/hunting-the-iowait-problem-maker/"/>
     <updated>2014-02-24T09:22:00+08:00</updated>
-    <id>http://lenciel.com/2014/02/hunting-the-iowait-problem-maker</id>
+    <id>http://172.16.121.110:4000/2014/02/hunting-the-iowait-problem-maker</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/2014_02/warning_letter.png" title="Don't touch me..." alt="warning letter" /></p>
 
 <p>从Nagios切到<a href="https://www.zabbix.com">Zabbix</a>之后，经常大清早被iowait过高的告警邮件叫醒。因为这套Zabbix监控是本座搭的，所以解决这个问题就只有本座来了&hellip;..哎，不知道是不是把首席运营官给宠坏了。</p>
@@ -189,9 +189,9 @@ sudo chmod -x /etc/cron.daily/mlocate
   
   <entry>
     <title type="html"><![CDATA[uWSGI, Gunincorn, 啥玩意儿?]]></title>
-    <link href="http://lenciel.com/2013/08/why-you-need-something-like-gunicorn/"/>
+    <link href="http://172.16.121.110:4000/2013/08/why-you-need-something-like-gunicorn/"/>
     <updated>2013-08-01T14:36:00+08:00</updated>
-    <id>http://lenciel.com/2013/08/why-you-need-something-like-gunicorn</id>
+    <id>http://172.16.121.110:4000/2013/08/why-you-need-something-like-gunicorn</id>
     <content type="html"><![CDATA[<p>因为nginx等优秀的开源项目，有不少本来不是做服务器的同学也可以写很多服务器端的程序了。但是在聊天中会发现，大家虽然写了不少代码，但是对wsgi是什么，gunicorn是什么，反向代理又是什么并不了解，也就是说对基本概念并没有一个全局的了解。</p>
 
 <a name="L........."></a>
@@ -355,9 +355,9 @@ sudo chmod -x /etc/cron.daily/mlocate
   
   <entry>
     <title type="html"><![CDATA[First steps on a new server]]></title>
-    <link href="http://lenciel.com/2013/04/first-steps-on-a-new-server/"/>
+    <link href="http://172.16.121.110:4000/2013/04/first-steps-on-a-new-server/"/>
     <updated>2013-04-04T08:44:00+08:00</updated>
-    <id>http://lenciel.com/2013/04/first-steps-on-a-new-server</id>
+    <id>http://172.16.121.110:4000/2013/04/first-steps-on-a-new-server</id>
     <content type="html"><![CDATA[<p>一般来说，新开张的小团队不会养专职的运维和部署团队。一般服务器开发的项目组会有人兼职做这部分的事情。刚开始的时候这部分的工作量一般也不大，但是随着租用的服务器越来越多，兼职的人就会发现自己是在打上甘岭战役————坡越来越陡。</p>
 
 <p>因此，一个简单而有效的标准流程是非常必要的。ZooM团队的服务器都会配置两个固定的帐号： <code>root</code> 和 <code>deploy</code> 。 <code>deploy</code>  这个用户具有 <code>sudo</code> 的权限。开发人员使用deploy但是不通过用户名密码登录而是用 <code>public key</code> 。这样一来，只需要保证所有机器的 <code>authorized_keys</code> 文件同步即可。后面要做的改进是：</p>

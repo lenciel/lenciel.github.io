@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: CQRS | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/cqrs/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-05-04T17:08:15+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/cqrs/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-05-10T01:29:34+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[CQRS]]></title>
-    <link href="http://lenciel.com/2017/02/cqrs/"/>
+    <link href="http://172.16.121.110:4000/2017/02/cqrs/"/>
     <updated>2017-02-18T02:58:52+08:00</updated>
-    <id>http://lenciel.com/2017/02/cqrs</id>
+    <id>http://172.16.121.110:4000/2017/02/cqrs</id>
     <content type="html"><![CDATA[<a name="L.........CQRS"></a>
 <h2>什么是CQRS</h2>
 

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: tools-i-use | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/tools-i-use/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-05-04T17:08:15+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/tools-i-use/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-05-10T01:29:34+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[免费开源字体Inziu Iosevka推荐]]></title>
-    <link href="http://lenciel.com/2017/04/font-inziu-iosevka/"/>
+    <link href="http://172.16.121.110:4000/2017/04/font-inziu-iosevka/"/>
     <updated>2017-04-06T15:11:19+08:00</updated>
-    <id>http://lenciel.com/2017/04/font-inziu-iosevka</id>
+    <id>http://172.16.121.110:4000/2017/04/font-inziu-iosevka</id>
     <content type="html"><![CDATA[<p>之前<a href="http://lenciel.com/2014/07/font-for-programming">曾经推荐过M+系列字体</a>，自己用的也一直是它。最近看到一个不错的字体项目<a href="https://github.com/be5invis/Iosevka">Iosevka</a>。</p>
 
 <p>它的一个分支Inziu Iosevka集成了<a href="http://be5invis.github.io/Iosevka/">Iosevka</a>，<a href="https://mplus-fonts.osdn.jp/">M+</a>和<a href="https://github.com/adobe-fonts/source-han-sans">Source Han Sans</a>。并且，因为是做了<a href="https://github.com/caryll/ideohint">hinter优化</a>的字体，可以在各种尺寸的屏幕和分辨率设置下，更加清晰的显示中文。</p>
@@ -27,9 +27,9 @@
   
   <entry>
     <title type="html"><![CDATA[从Octopress转到纯Jekyll]]></title>
-    <link href="http://lenciel.com/2017/03/migrating-from-octopress-to-jekyll/"/>
+    <link href="http://172.16.121.110:4000/2017/03/migrating-from-octopress-to-jekyll/"/>
     <updated>2017-03-14T13:45:00+08:00</updated>
-    <id>http://lenciel.com/2017/03/migrating-from-octopress-to-jekyll</id>
+    <id>http://172.16.121.110:4000/2017/03/migrating-from-octopress-to-jekyll</id>
     <content type="html"><![CDATA[<p>离开Wordpress<a href="http://lenciel.com/2013/03/blog-with-octopress-and-github-pages/">改用Octopress</a>写blog已经好些年了，本座甚至还写了一个自己的<a href="https://github.com/lenciel/octopress-theme-lenciel">Octopress模板</a>。之所以要迁移主要是Octopress作为以Jekyll为基础的一套脚手架，自2011年发布以后进展非常缓慢，和Jekyll的快速更新很难对齐。</p>
 
 <p>在近期跳票多次的<a href="http://octopress.org/2015/01/15/octopress-3.0-is-coming/">Octopress3</a>终于发布了之后，看了一下没有什么值得迁移的新功能。所以不管是从功能、性能还是开发活跃度上，继续跟Octopress都不太明智，就决定转用纯Jekyll。</p>
@@ -112,9 +112,9 @@ $ jekyll new my-site &amp;&amp; cd my-site
   
   <entry>
     <title type="html"><![CDATA[简单验证码的快速识别]]></title>
-    <link href="http://lenciel.com/2016/06/python-captcha-solution/"/>
+    <link href="http://172.16.121.110:4000/2016/06/python-captcha-solution/"/>
     <updated>2016-06-16T18:48:14+08:00</updated>
-    <id>http://lenciel.com/2016/06/python-captcha-solution</id>
+    <id>http://172.16.121.110:4000/2016/06/python-captcha-solution</id>
     <content type="html"><![CDATA[<p>昨天饭局上聊起来自动化测试或者是别的奇怪事业里经常需要面对的一个问题：验证码识别。</p>
 
 <p>其实验证码的识别，技术上来说可以作为古老的OCR（Optical Character Recognition）问题的一个子集：因为OCR其实就是从图片上把文字认出来嘛。</p>
@@ -294,9 +294,9 @@ YLNU
   
   <entry>
     <title type="html"><![CDATA[从Markdown列表转换成脑图]]></title>
-    <link href="http://lenciel.com/2016/02/markdown-to-mindmap/"/>
+    <link href="http://172.16.121.110:4000/2016/02/markdown-to-mindmap/"/>
     <updated>2016-02-25T21:19:33+08:00</updated>
-    <id>http://lenciel.com/2016/02/markdown-to-mindmap</id>
+    <id>http://172.16.121.110:4000/2016/02/markdown-to-mindmap</id>
     <content type="html"><![CDATA[<p>去年过年整理了一次<a href="http://lenciel.com/2015/01/p4f-tech-stack-part-1-devops/">p4f的技术栈</a>，最近受<a href="http://www.stuq.org/subject/skill-map/">StuQ</a>和<a href="https://leohxj.gitbooks.io/front-end-database/content/interview/skill-path.html">leohxj</a>的启发又开始整理适合我司的各个研发职位的技能图谱：这类树状的图片其实就是脑图(Mindmap)。</p>
 
 <p>图片形式的文档都有一个麻烦的地方，就是不太好做版本控制和review。比如如果本座来整理Web前端技能图谱，总希望：</p>
@@ -347,9 +347,9 @@ YLNU
   
   <entry>
     <title type="html"><![CDATA[使用Chrome自定义搜索引擎快速查找资源]]></title>
-    <link href="http://lenciel.com/2016/02/how-can-everybody-use-chrome/"/>
+    <link href="http://172.16.121.110:4000/2016/02/how-can-everybody-use-chrome/"/>
     <updated>2016-02-20T11:53:34+08:00</updated>
-    <id>http://lenciel.com/2016/02/how-can-everybody-use-chrome</id>
+    <id>http://172.16.121.110:4000/2016/02/how-can-everybody-use-chrome</id>
     <content type="html"><![CDATA[<p>这篇文章讨论的办法，主要是结合使用<code>带参数Google搜索</code>+<code>Chrome快捷搜索入口</code>，鉴于众所周知的原因，如果你不会翻墙可能不能直接使用。</p>
 
 <p>但是鉴于国内搜索引擎功能上多少都有借鉴Google，浏览器多少都有借鉴Chrome，所以这里讨论的办法也许用其他"搜索"+&ldquo;浏览器"组合也可以使用。只是我们都知道国内搜索引擎索引出来的结果有多离奇，所以效果上可能会打一些折扣。</p>

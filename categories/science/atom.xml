@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: science | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/science/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-05-04T17:08:15+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/science/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-05-10T01:29:34+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[走进科学]]></title>
-    <link href="http://lenciel.com/2013/02/science-is-not-that-easy/"/>
+    <link href="http://172.16.121.110:4000/2013/02/science-is-not-that-easy/"/>
     <updated>2013-02-01T23:40:00+08:00</updated>
-    <id>http://lenciel.com/2013/02/science-is-not-that-easy</id>
+    <id>http://172.16.121.110:4000/2013/02/science-is-not-that-easy</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/black_and_white.jpg" title="Don't touch me…" alt="Black and White" /></p>
 
 <p>最近波音787曝出锂电池起火燃烧的<a href="http://finance.sina.com.cn/world/mzjj/20130130/140414451075.shtml">问题</a>。全世界人民，特别是中国人民纷纷摇头叹息：以精密和严谨著称的日本人，现在终归是堕落了。奇怪的是，如果你想稍微深入一点儿去搜索日本制造的锂电池究竟出了什么问题，答案就欠奉了。于是本座花了点儿时间试图去把这事情弄明白。</p>

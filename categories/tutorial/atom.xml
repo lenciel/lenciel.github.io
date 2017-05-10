@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: tutorial | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/tutorial/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-05-04T17:08:15+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/tutorial/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-05-10T01:29:34+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[Data Migration in Django 1.7 (2)]]></title>
-    <link href="http://lenciel.com/2014/08/django-1-dot-7-migrations-part-2/"/>
+    <link href="http://172.16.121.110:4000/2014/08/django-1-dot-7-migrations-part-2/"/>
     <updated>2014-08-11T03:59:47+08:00</updated>
-    <id>http://lenciel.com/2014/08/django-1-dot-7-migrations-part-2</id>
+    <id>http://172.16.121.110:4000/2014/08/django-1-dot-7-migrations-part-2</id>
     <content type="html"><![CDATA[<p>在应用开发的过程中，我们会遇到migration主要分为：</p>
 
 <ol>
@@ -86,9 +86,9 @@ class Migration(migrations.Migration):
   
   <entry>
     <title type="html"><![CDATA[Data Migration in Django 1.7 (1)]]></title>
-    <link href="http://lenciel.com/2014/08/django-1-dot-7-migrations/"/>
+    <link href="http://172.16.121.110:4000/2014/08/django-1-dot-7-migrations/"/>
     <updated>2014-08-05T11:12:41+08:00</updated>
-    <id>http://lenciel.com/2014/08/django-1-dot-7-migrations</id>
+    <id>http://172.16.121.110:4000/2014/08/django-1-dot-7-migrations</id>
     <content type="html"><![CDATA[<p>Django 1.7已经发布一段时间了，基本上这个版本最主要的改动就是加入了<code>migrations</code>。</p>
 
 <p>在过去，几乎所有的Django项目都是用South来处理数据变更的。而在Django1.7版本，South的作者Andrew Godwin把<code>migrations</code>加到了Django Core里面。</p>
@@ -371,9 +371,9 @@ class Migration(migrations.Migration):
   
   <entry>
     <title type="html"><![CDATA[How Does iBeacons Work]]></title>
-    <link href="http://lenciel.com/2014/05/how-does-ibeacons-work/"/>
+    <link href="http://172.16.121.110:4000/2014/05/how-does-ibeacons-work/"/>
     <updated>2014-05-14T15:19:59+08:00</updated>
-    <id>http://lenciel.com/2014/05/how-does-ibeacons-work</id>
+    <id>http://172.16.121.110:4000/2014/05/how-does-ibeacons-work</id>
     <content type="html"><![CDATA[<p>iBeacons这个怪怪的单词<a href="https://www.google.com/search?q=%E6%9C%80%E8%BF%91%E5%87%BA%E9%95%9C%E7%8E%87%E5%BE%88%E9%AB%98+site%3A36kr.com&amp;oq=%E6%9C%80%E8%BF%91%E5%87%BA%E9%95%9C%E7%8E%87%E5%BE%88%E9%AB%98+site%3A36kr.com&amp;aqs=chrome..69i57.5408j0j7&amp;sourceid=chrome&amp;es_sm=91&amp;ie=UTF-8#newwindow=1&amp;q=ibeacons+site:36kr.com&amp;safe=off">最近出镜率很高</a>。它可以用的场景很多，考勤打卡，室内导航，各种关联位置的推送以及我们现在还想不到诡异的应用。但虽然满坑满谷的文章介绍如何应用iBeacons，但它工作的原理究竟是什么样的呢？</p>
 
 <a name="Bluetooth.LE"></a>
@@ -493,9 +493,9 @@ C5: 2’s complement of measured TX power
   
   <entry>
     <title type="html"><![CDATA[Boxen introduction]]></title>
-    <link href="http://lenciel.com/2013/03/boxen-introduction/"/>
+    <link href="http://172.16.121.110:4000/2013/03/boxen-introduction/"/>
     <updated>2013-03-31T08:28:00+08:00</updated>
-    <id>http://lenciel.com/2013/03/boxen-introduction</id>
+    <id>http://172.16.121.110:4000/2013/03/boxen-introduction</id>
     <content type="html"><![CDATA[<p>如果列举开发人员在工作中最讨厌的部分，估计搭建开发环境得票率肯定可以排进前三。年初Github开源了自己内部的Privision框架<a href="http://boxen.github.com/">Boxen</a>，趁着新笔记本需要起轿，尝试了一把。</p>
 
 <a name="Boxen............"></a>
@@ -668,9 +668,9 @@ github "jumpcut",   "1.0.0"
   
   <entry>
     <title type="html"><![CDATA[Getting Start With Python]]></title>
-    <link href="http://lenciel.com/2012/05/get-start-with-python/"/>
+    <link href="http://172.16.121.110:4000/2012/05/get-start-with-python/"/>
     <updated>2012-05-28T22:15:00+08:00</updated>
-    <id>http://lenciel.com/2012/05/get-start-with-python</id>
+    <id>http://172.16.121.110:4000/2012/05/get-start-with-python</id>
     <content type="html"><![CDATA[<p>刚刚开始使用Python开发的新手，遇到的第一个瓶颈（常常）就是缺乏对整个Python生态系统的理解。大家总是在网上搜索完成这件事或者那件事的“标准做法”，就像我们使用其他编程语言的时候常常需要掌握的一样。</p>
 
 <p>在和几个朋友开始iDVR的开发的时候，我们在内部Wiki上维护过一个Python中常见问题列表。我们的目标是随着项目的不断进步，这个内部的wiki能够变成一个豪华的Q&amp;A索引，但是事实证明项目一忙起来就没有人去写Wiki了。</p>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: iowait | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/iowait/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-05-04T17:08:15+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/iowait/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-05-10T01:29:34+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[解决iowait过高的告警]]></title>
-    <link href="http://lenciel.com/2014/02/hunting-the-iowait-problem-maker/"/>
+    <link href="http://172.16.121.110:4000/2014/02/hunting-the-iowait-problem-maker/"/>
     <updated>2014-02-24T09:22:00+08:00</updated>
-    <id>http://lenciel.com/2014/02/hunting-the-iowait-problem-maker</id>
+    <id>http://172.16.121.110:4000/2014/02/hunting-the-iowait-problem-maker</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/2014_02/warning_letter.png" title="Don't touch me..." alt="warning letter" /></p>
 
 <p>从Nagios切到<a href="https://www.zabbix.com">Zabbix</a>之后，经常大清早被iowait过高的告警邮件叫醒。因为这套Zabbix监控是本座搭的，所以解决这个问题就只有本座来了&hellip;..哎，不知道是不是把首席运营官给宠坏了。</p>

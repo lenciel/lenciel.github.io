@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: fun | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/fun/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-05-04T17:08:15+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/fun/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-05-10T01:29:34+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[Let Me Show You The World]]></title>
-    <link href="http://lenciel.com/2015/02/let-me-show-you-the-world/"/>
+    <link href="http://172.16.121.110:4000/2015/02/let-me-show-you-the-world/"/>
     <updated>2015-02-23T21:08:02+08:00</updated>
-    <id>http://lenciel.com/2015/02/let-me-show-you-the-world</id>
+    <id>http://172.16.121.110:4000/2015/02/let-me-show-you-the-world</id>
     <content type="html"><![CDATA[<p>之前提过有一些机构<a href="http://www.ppgis.net/imagery.htm">开放</a>了卫星云图，可以用GIS信息通过接口去获取。从天上看，地球还是挺美的，很多都可以用来做手机的桌面，如果你需要下载无损的版本：<a href="http://pan.baidu.com/s/1sjuiOqx">click</a>，分享码:<code>gdyv</code>：</p>
 
 <p><link rel="stylesheet" type="text/css" href="/downloads/static/css/elasticstack_slider.css" /></p>
@@ -78,9 +78,9 @@
   
   <entry>
     <title type="html"><![CDATA[起飞之前]]></title>
-    <link href="http://lenciel.com/2009/01/on-my-way-home/"/>
+    <link href="http://172.16.121.110:4000/2009/01/on-my-way-home/"/>
     <updated>2009-01-18T11:50:00+08:00</updated>
-    <id>http://lenciel.com/2009/01/on-my-way-home</id>
+    <id>http://172.16.121.110:4000/2009/01/on-my-way-home</id>
     <content type="html"><![CDATA[<blockquote><p><strong>英语教员</strong>：Have you watched &ldquo;<a href="http://www.google.com/url?sa=t&source=web&ct=res&cd=7&url=http%3A%2F%2Fwww.moviexclusive.com%2Freview%2Fredcliff%2Fredcliff.htm&ei=u6FySbmAJJ6GsgLM9qWsBw&usg=AFQjCNFzLu3coQFVzqJeIQFsbu7cYbgycQ&sig2=Bq1O9_ciqzxXqJf4cuVDTA" target="_blank">Red Cliff</a>&rdquo;? <br/>
 <strong>本组天才</strong>：Yes, long time ago. It&#8217;s a story in the war time.   <br/>
 <strong>英语教员</strong>：Yeah, tell us about the story…   <br/>

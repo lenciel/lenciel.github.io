@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: dnsmasq | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/dnsmasq/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-05-04T17:08:15+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/dnsmasq/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-05-10T01:29:34+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[使用dnsmasq配置本地开发环境]]></title>
-    <link href="http://lenciel.com/2014/04/dnsmasq-on-mac/"/>
+    <link href="http://172.16.121.110:4000/2014/04/dnsmasq-on-mac/"/>
     <updated>2014-04-25T14:53:37+08:00</updated>
-    <id>http://lenciel.com/2014/04/dnsmasq-on-mac</id>
+    <id>http://172.16.121.110:4000/2014/04/dnsmasq-on-mac</id>
     <content type="html"><![CDATA[<p>做Web开发的时候经常需要修改<code>/etc/hosts</code>文件把<code>dev.cool.project</code>或者<code>cool.project.dev</code>这样的域名指向127.0.0.1(如果你从来没有这么做过那你可以跳过后面的内容了但, seriously? you are a web dev and never did this before?）。这样做有些麻烦：</p>
 
 <ul>

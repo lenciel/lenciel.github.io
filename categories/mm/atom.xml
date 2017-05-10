@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: mm | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/mm/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-05-04T17:08:15+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/mm/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-05-10T01:29:34+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[Edward Gorey]]></title>
-    <link href="http://lenciel.com/2014/04/edward-gorey/"/>
+    <link href="http://172.16.121.110:4000/2014/04/edward-gorey/"/>
     <updated>2014-04-29T13:48:21+08:00</updated>
-    <id>http://lenciel.com/2014/04/edward-gorey</id>
+    <id>http://172.16.121.110:4000/2014/04/edward-gorey</id>
     <content type="html"><![CDATA[<p>最近偶像派在说要买一些给蒙爷看的绘本。</p>
 
 <p>这让我想起来《读库》有几期专门在梳理国内外那些有名的插画家。的确，纸质书最让人怀念的就是里面那些精致的插画。</p>

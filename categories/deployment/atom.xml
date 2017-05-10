@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: deployment | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/deployment/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-05-04T17:08:15+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/deployment/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-05-10T01:29:34+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[构建Deployment系统 (1)]]></title>
-    <link href="http://lenciel.com/2014/04/pipeline-for-deployment/"/>
+    <link href="http://172.16.121.110:4000/2014/04/pipeline-for-deployment/"/>
     <updated>2014-04-22T02:49:38+08:00</updated>
-    <id>http://lenciel.com/2014/04/pipeline-for-deployment</id>
+    <id>http://172.16.121.110:4000/2014/04/pipeline-for-deployment</id>
     <content type="html"><![CDATA[<p>对软件公司，特别是互联网软件公司来说，发布流程是企业的<a href="http://lenciel.com/2013/05/the-importance-of-deploy-as-will/">核心竞争力</a>。</p>
 
 <p>那么什么是一个好的发布流程呢？Github（别忘了它本身也是一家软件公司）的CTO在介绍<a href="http://lenciel.com/2013/03/boxen-introduction/">Boxen
@@ -147,9 +147,9 @@
   
   <entry>
     <title type="html"><![CDATA[The Importance of Deploy As Will]]></title>
-    <link href="http://lenciel.com/2013/05/the-importance-of-deploy-as-will/"/>
+    <link href="http://172.16.121.110:4000/2013/05/the-importance-of-deploy-as-will/"/>
     <updated>2013-05-29T22:41:00+08:00</updated>
-    <id>http://lenciel.com/2013/05/the-importance-of-deploy-as-will</id>
+    <id>http://172.16.121.110:4000/2013/05/the-importance-of-deploy-as-will</id>
     <content type="html"><![CDATA[<p>最近公司里面两个比较资深的开发兄弟在我座位旁边进行了一场关于“代码优化到什么程度才算好”的争论。</p>
 
 <p>他们一起工作的项目是一个比较小的python模块（几百行的规模吧），用来在嵌入式设备对接入的手机进行一些操作。其中一个人希望把这部分代码重构到“如果需求有这样那样的改变能够承受。并且即便不是我们两个来继续这个模块，任何一个人拿到都能很容易的扩展和维护”；而另一个人则认为“这个模块的规模很小不需要那么大精力做重构，并且在需求出现的时候再开始在现有代码基础上重构比先设想可能的需求来重构有意义”。</p>

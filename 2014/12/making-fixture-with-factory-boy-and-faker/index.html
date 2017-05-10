@@ -1,4 +1,89 @@
-<!DOCTYPE html> <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]--> <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]--> <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]--> <head> <meta charset="utf-8"> <title>Making fixture with factory boy and faker - @Lenciel</title> <meta name="author" content="Lenciel"> <meta name="description" content=" Making fixture with factory boy and faker ..."> <meta name="HandheldFriendly" content="True"> <meta name="MobileOptimized" content="320"> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="canonical" href="http://lenciel.com/2014/12/making-fixture-with-factory-boy-and-faker/"> <link href="/favicon.png" rel="icon"> <script src="/assets/javascripts/app.js"></script> <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml"> <meta property="og:title" content="Making fixture with factory boy and faker"/><meta itemprop="name" content="Making fixture with factory boy and faker"/> <meta property="og:type" content="article"/> <meta property="og:url" content="http://lenciel.com/2014/12/making-fixture-with-factory-boy-and-faker/"/> <meta property="og:description" content=" Making fixture with factory boy and faker ..."/> <meta property="og:site_name" content="http://lenciel.com"/> <meta property="article:author" content="http://lenciel.com"> <meta property="article:published_time" content="2014-12-20 03:14:59 +0800"/> <meta property="article:section" content="djangotestingtools-i-use"/> <meta itemprop="description" content=" Making fixture with factory boy and faker ..."/> <script>
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Making fixture with factory boy and faker - @Lenciel</title>
+  <meta name="author" content="Lenciel">
+
+  
+  <meta name="description" content="
+
+  
+  
+    
+      Making fixture with factory boy and faker
+    
+    
+      
+        
+        
+          
+          
+        
+        
+      
+    ...">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://172.16.121.110:4000/2014/12/making-fixture-with-factory-boy-and-faker/">
+  <link href="/favicon.png" rel="icon">
+  <script src="/assets/javascripts/app.js"></script>
+  <link href="http://feeds.feedburner.com/github/lenciel" rel="alternate" title="@Lenciel" type="application/atom+xml">
+  <meta property="og:title" content="Making fixture with factory boy and faker" /><meta itemprop="name" content="Making fixture with factory boy and faker" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://172.16.121.110:4000/2014/12/making-fixture-with-factory-boy-and-faker/" />
+<meta property="og:description" content="
+
+  
+  
+    
+      Making fixture with factory boy and faker
+    
+    
+      
+        
+        
+          
+          
+        
+        
+      
+    ..." />
+
+<meta property="og:site_name" content="http://172.16.121.110:4000" />
+<meta property="article:author" content="http://lenciel.com">
+<meta property="article:published_time" content="2014-12-20 03:14:59 +0800" />
+
+<meta property="article:section" content="djangotestingtools-i-use" />
+<meta itemprop="description" content="
+
+  
+  
+    
+      Making fixture with factory boy and faker
+    
+    
+      
+        
+        
+          
+          
+        
+        
+      
+    ..." />
+
+
+  <script>
     var _hmt = _hmt || [];
     (function() {
         var hm = document.createElement("script");
@@ -6,7 +91,10 @@
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
     })();
-</script> <script>
+</script>
+
+  
+<script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -15,11 +103,98 @@
     ga('create', 'UA-175991-6', 'auto');
     ga('send', 'pageview');
 
-</script> </head> <body class="collapse-sidebar sidebar-footer"> <header role="banner"><hgroup> <h1><a href="/">@Lenciel</a></h1> </hgroup> </header> <nav role="navigation"><ul class="subscription" data-subscription="rss"> <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li> </ul> <ul class="main-navigation"> <li><a href="/"><i class="icon-home"></i>Home</a></li> <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li> <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li> </ul> </nav> <div id="main"> <div id="content"> <div> <article class="hentry" role="article"> <header> <h1 class="entry-title">Making fixture with factory boy and faker</h1> <p class="meta"> <time class='entry-date' datetime=''> <span class='date'></span> <span class='time'></span> </time> </p> </header> <div class="entry-content"><p>我们在Django项目的开发和测试过程中经常需要mock一些数据作为<a href="https://docs.djangoproject.com/en/1.7/howto/initial-data/">fixture</a>，比较常见的做法是：</p> <ol> <li>进行一些操作创建测试数据</li> <li>使用<code>dumpdata</code>命令导出json格式的数据</li> <li>以导出的json为模板构造测试数据用<code>loaddata</code>命令导入到数据库</li> </ol> <p>这样对于大多数场景也算够用了，但是你总会遇到某一天客户走来说：“我想看看那个报表生成出来啥样，能不能创建两千条记录？”</p> <p>这种时候你大概你第一反应是把之前那个json搞来copy-paste出两千份数据。但很快你就会意识到那是不行的：要构建一个对象，你常常需要先构建它外键的对象，而实际上线的项目它的数据库结构是非常复杂的（数据库结构图的生成见<a href="http://lenciel.com/2014/12/integrate-schemaspy-with-sphinx-build-for-django-database-design-visualization/">这里</a>），所以构建两千条记录的工作量会远远超过你的想象：</p> <p><img src="/downloads/images/2014_12/database_design_visualization.png" title="schemaSpy..." alt="schemaSpy"/></p> <p>最近本座试用了<a href="https://github.com/rbarrois/factory_boy/">factory boy</a>和<a href="https://github.com/joke2k/faker">faker</a>的组合，感觉还比较好用。</p> <a name="Factory.Boy"></a> <h2>Factory Boy</h2> <p>最开始找这类批量生成测试数据的库，主要考察的是<a href="https://github.com/vandersonmota/model_mommy">Model Mommy</a>和<a href="https://github.com/rbarrois/factory_boy/">Factory Boy</a>。看了一下文档感觉两者的差别并不算很大，但是<a href="http://movie.douban.com/subject/1898357/">Factory Girl</a>里面的<a href="http://movie.douban.com/celebrity/1003485/">Sienna Miller</a>实在是让人过目不忘所以有什么好犹豫的呢？</p> <p>Factories的文档上说明了基本的用法，需要注意的主要是如何生成有一定依赖关系的一组测试对象。</p> <a name="L............"></a> <h3>数据构造</h3> <p>Factory Boy下的数据构造主要是通过<code>Sequence</code>和<code>Fuzz</code>两个包来完成。</p> <p><code>Sequence</code>故名思议是顺序生成的，比如你要让生成的数据有规律的用户名和电话号码，这样你看到电话<code>13000000001</code>就是是对应<code>user0001</code>：</p> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</script>
+
+
+</head>
+
+<body    class="collapse-sidebar sidebar-footer" >
+  <header role="banner"><hgroup>
+  <h1><a href="/">@Lenciel</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/github/lenciel" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<ul class="main-navigation">
+  <li><a href="/"><i class="icon-home"></i>Home</a></li>
+  <li><a href="/archives"><i class="icon-book-alt"></i>Archives</a><span class="divider"></span></li>
+  <li><a href="/about"><i class="icon-user"></i>About</a><span class="divider"></span></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Making fixture with factory boy and faker</h1>
+    
+    
+      <p class="meta">
+        <!--
+
+
+
+
+-->
+        <time class='entry-date' datetime=''>
+          <span class='date'></span>
+          <span class='time'></span>
+        </time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>我们在Django项目的开发和测试过程中经常需要mock一些数据作为<a href="https://docs.djangoproject.com/en/1.7/howto/initial-data/">fixture</a>，比较常见的做法是：</p>
+
+<ol>
+<li>进行一些操作创建测试数据</li>
+<li>使用<code>dumpdata</code>命令导出json格式的数据</li>
+<li>以导出的json为模板构造测试数据用<code>loaddata</code>命令导入到数据库</li>
+</ol>
+
+
+<p>这样对于大多数场景也算够用了，但是你总会遇到某一天客户走来说：“我想看看那个报表生成出来啥样，能不能创建两千条记录？”</p>
+
+<p>这种时候你大概你第一反应是把之前那个json搞来copy-paste出两千份数据。但很快你就会意识到那是不行的：要构建一个对象，你常常需要先构建它外键的对象，而实际上线的项目它的数据库结构是非常复杂的（数据库结构图的生成见<a href="http://lenciel.com/2014/12/integrate-schemaspy-with-sphinx-build-for-django-database-design-visualization/">这里</a>），所以构建两千条记录的工作量会远远超过你的想象：</p>
+
+<p><img src="/downloads/images/2014_12/database_design_visualization.png" title="schemaSpy..." alt="schemaSpy" /></p>
+
+<p>最近本座试用了<a href="https://github.com/rbarrois/factory_boy/">factory boy</a>和<a href="https://github.com/joke2k/faker">faker</a>的组合，感觉还比较好用。</p>
+
+<a name="Factory.Boy"></a>
+<h2>Factory Boy</h2>
+
+<p>最开始找这类批量生成测试数据的库，主要考察的是<a href="https://github.com/vandersonmota/model_mommy">Model Mommy</a>和<a href="https://github.com/rbarrois/factory_boy/">Factory Boy</a>。看了一下文档感觉两者的差别并不算很大，但是<a href="http://movie.douban.com/subject/1898357/">Factory Girl</a>里面的<a href="http://movie.douban.com/celebrity/1003485/">Sienna Miller</a>实在是让人过目不忘所以有什么好犹豫的呢？</p>
+
+<p>Factories的文档上说明了基本的用法，需要注意的主要是如何生成有一定依赖关系的一组测试对象。</p>
+
+<a name="L............"></a>
+<h3>数据构造</h3>
+
+<p>Factory Boy下的数据构造主要是通过<code>Sequence</code>和<code>Fuzz</code>两个包来完成。</p>
+
+<p><code>Sequence</code>故名思议是顺序生成的，比如你要让生成的数据有规律的用户名和电话号码，这样你看到电话<code>13000000001</code>就是是对应<code>user0001</code>：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 </pre></td><td class='code'><pre><code class='python'><span class='line'><span></span><span class="n">user</span> <span class="o">=</span> <span class="n">Sequence</span><span class="p">(</span><span class="k">lambda</span> <span class="n">n</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;user</span><span class="si">%04d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">n</span><span class="p">)</span>
 </span><span class='line'><span class="n">phone</span> <span class="o">=</span> <span class="n">Sequence</span><span class="p">(</span><span class="k">lambda</span> <span class="n">n</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;1300000</span><span class="si">%04d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">n</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure> <p>而<code>Fuzz</code>则是随机的，主要用来构造像学校、专业或者生日这样的数据：</p> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>而<code>Fuzz</code>则是随机的，主要用来构造像学校、专业或者生日这样的数据：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -41,7 +216,17 @@
 </span><span class='line'>                  <span class="sa">u</span><span class="s1">&#39;公安技术&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;材料科学&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;材料&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;水利&#39;</span><span class="p">,</span>
 </span><span class='line'>                  <span class="sa">u</span><span class="s1">&#39;林业工程&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;轻工纺织食品&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;电子信息科学&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;其他&#39;</span><span class="p">])</span>
 </span><span class='line'><span class="n">birthday</span> <span class="o">=</span> <span class="n">FuzzyNaiveDateTime</span><span class="p">(</span><span class="n">dt</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">1992</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">dt</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">1996</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
-</span></code></pre></td></tr></table></div></figure> <p>当然，有的字段，比如姓名、地址这类通过顺序或者是随机的从某个设定的集合抽取效果都不够理想，后面会看到怎么用<a href="https://github.com/joke2k/faker">faker</a>来构造它们。</p> <a name="L.................."></a> <h3>关联对象生成</h3> <p>关联对象的关系有很多种(1:1, 1:n, n:1, n:n)，主要都是通过组合运用<code>SubFactory</code>和<code>RelatedFactory</code>两者来生成，但具体的构造方式和先构造谁都要以实际情况而定。比如我们有User和Tester这样的1:1的关系：</p> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>当然，有的字段，比如姓名、地址这类通过顺序或者是随机的从某个设定的集合抽取效果都不够理想，后面会看到怎么用<a href="https://github.com/joke2k/faker">faker</a>来构造它们。</p>
+
+<a name="L.................."></a>
+<h3>关联对象生成</h3>
+
+<p>关联对象的关系有很多种(1:1, 1:n, n:1, n:n)，主要都是通过组合运用<code>SubFactory</code>和<code>RelatedFactory</code>两者来生成，但具体的构造方式和先构造谁都要以实际情况而定。比如我们有User和Tester这样的1:1的关系：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -53,13 +238,25 @@
 </span><span class='line'>                                <span class="n">verbose_name</span><span class="o">=</span><span class="sa">u</span><span class="s1">&#39;账号&#39;</span><span class="p">,</span>
 </span><span class='line'>                                <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;tester&#39;</span><span class="p">)</span>
 </span><span class='line'>    <span class="o">...</span>
-</span></code></pre></td></tr></table></div></figure> <p>这里在考虑是在<code>TesterFactory</code>里面把<code>User</code>作为<code>SubFactory</code>来生成，还是在<code>UserFactory</code>里面把<code>Tester</code>作为<code>RelatedFactory</code>来生成，主要就是看先后关系。很显然，在这里我们应该先构造系统里的User：</p> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>这里在考虑是在<code>TesterFactory</code>里面把<code>User</code>作为<code>SubFactory</code>来生成，还是在<code>UserFactory</code>里面把<code>Tester</code>作为<code>RelatedFactory</code>来生成，主要就是看先后关系。很显然，在这里我们应该先构造系统里的User：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class='python'><span class='line'><span></span><span class="k">class</span> <span class="nc">TestUserFactory</span><span class="p">(</span><span class="n">UserFactory</span><span class="p">):</span>
 </span><span class='line'>    <span class="o">...</span>
 </span><span class='line'>    <span class="n">tester</span> <span class="o">=</span> <span class="n">RelatedFactory</span><span class="p">(</span><span class="s1">&#39;apps.tester.factories.TesterFactory&#39;</span><span class="p">,</span> <span class="s1">&#39;user&#39;</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure> <p>这段代码告诉系统，在每个<code>TestUser</code>被构造的时候，用构造出来的<code>user</code>来创建一个1:1的<code>Tester</code>。这个<code>Tester</code>的构造会在<code>user</code>的<code>save</code>之前完成。</p> <p>然后在<code>Tester</code>的构造过程中你可以直接通过<code>SelfAttribute</code>使用传入的<code>user</code>:</p> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>这段代码告诉系统，在每个<code>TestUser</code>被构造的时候，用构造出来的<code>user</code>来创建一个1:1的<code>Tester</code>。这个<code>Tester</code>的构造会在<code>user</code>的<code>save</code>之前完成。</p>
+
+<p>然后在<code>Tester</code>的构造过程中你可以直接通过<code>SelfAttribute</code>使用传入的<code>user</code>:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -69,7 +266,12 @@
 </span><span class='line'>    <span class="n">phone</span> <span class="o">=</span> <span class="n">SelfAttribute</span><span class="p">(</span><span class="s1">&#39;user.phone&#39;</span><span class="p">)</span>
 </span><span class='line'>    <span class="n">nick_name</span> <span class="o">=</span> <span class="n">SelfAttribute</span><span class="p">(</span><span class="s1">&#39;user.nick_name&#39;</span><span class="p">)</span>
 </span><span class='line'>    <span class="n">creator</span> <span class="o">=</span> <span class="n">SelfAttribute</span><span class="p">(</span><span class="s1">&#39;user&#39;</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure> <p>再比如，我们的<code>Tester</code>和<code>PlatformTask</code>都会关联到测试任务<code>TesterTask</code>，它们俩看起来都是<code>ForeinKey</code>。</p> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>再比如，我们的<code>Tester</code>和<code>PlatformTask</code>都会关联到测试任务<code>TesterTask</code>，它们俩看起来都是<code>ForeinKey</code>。</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -83,7 +285,14 @@
 </span><span class='line'>    <span class="n">platform_task</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ForeignKey</span><span class="p">(</span><span class="n">PlatformTask</span><span class="p">,</span>
 </span><span class='line'>                                      <span class="n">verbose_name</span><span class="o">=</span><span class="sa">u</span><span class="s1">&#39;任务&#39;</span><span class="p">,</span>
 </span><span class='line'>                                      <span class="n">related_name</span><span class="o">=</span><span class="sa">u</span><span class="s1">&#39;tester_tasks&#39;</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure> <p>但对生成数据而言，我们的目标会是每个<code>Tester</code>在被创建的时候，都给它创建一个以这个<code>Tester</code>为<code>owner</code>的<code>TesterTask</code>，并且给这个<code>TesterTask</code>创建一个关联的<code>PlatformTask</code>。</p> <p>于是我们的写法就会是，首先在<code>TesterFactory</code>里面使用<code>RelatedFactory</code>来创建<code>TesterTask</code>:</p> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>但对生成数据而言，我们的目标会是每个<code>Tester</code>在被创建的时候，都给它创建一个以这个<code>Tester</code>为<code>owner</code>的<code>TesterTask</code>，并且给这个<code>TesterTask</code>创建一个关联的<code>PlatformTask</code>。</p>
+
+<p>于是我们的写法就会是，首先在<code>TesterFactory</code>里面使用<code>RelatedFactory</code>来创建<code>TesterTask</code>:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -91,7 +300,12 @@
 </span><span class='line'>    <span class="o">...</span>
 </span><span class='line'>    <span class="n">tester_task</span> <span class="o">=</span> <span class="n">RelatedFactory</span><span class="p">(</span><span class="s1">&#39;apps.tester.factories.TesterTaskFactory&#39;</span><span class="p">,</span> <span class="s1">&#39;owner&#39;</span><span class="p">)</span>
 </span><span class='line'>    <span class="o">...</span>
-</span></code></pre></td></tr></table></div></figure> <p>然后在<code>TesterTaskFactory</code>里面创建<code>PlatformTask</code>，并且在构造的时候使用传入的<code>owner</code>的参数：</p> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>然后在<code>TesterTaskFactory</code>里面创建<code>PlatformTask</code>，并且在构造的时候使用传入的<code>owner</code>的参数：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -103,7 +317,15 @@
 </span><span class='line'>                               <span class="n">company</span><span class="o">=</span><span class="n">SelfAttribute</span><span class="p">(</span><span class="s1">&#39;..owner.user.company&#39;</span><span class="p">),</span>
 </span><span class='line'>                               <span class="n">owner</span><span class="o">=</span><span class="n">SelfAttribute</span><span class="p">(</span><span class="s1">&#39;..owner.user&#39;</span><span class="p">))</span>
 </span><span class='line'>    <span class="o">...</span>
-</span></code></pre></td></tr></table></div></figure> <a name="faker"></a> <h2>faker</h2> <p>有很多字段，比如姓名、地址这些，纯粹用Fuzz的办法很难做到“贴近真实”。<a href="https://github.com/joke2k/faker">faker</a>就是用来解决这类字段的。</p> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<a name="faker"></a>
+<h2>faker</h2>
+
+<p>有很多字段，比如姓名、地址这些，纯粹用Fuzz的办法很难做到“贴近真实”。<a href="https://github.com/joke2k/faker">faker</a>就是用来解决这类字段的。</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -143,11 +365,26 @@
 </span><span class='line'><span class="c1"># Aut molestias et maxime. Fugit autem facilis quos vero. Eius quibusdam possimus est.</span>
 </span><span class='line'><span class="c1"># Ea quaerat et quisquam. Deleniti sunt quam. Adipisci consequatur id in occaecati.</span>
 </span><span class='line'><span class="c1"># Et sint et. Ut ducimus quod nemo ab voluptatum.</span>
-</span></code></pre></td></tr></table></div></figure> <p>这个包最可爱的地方就是支持本地化，比如一个随机的中文姓名可以这么去构造：</p> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>这个包最可爱的地方就是支持本地化，比如一个随机的中文姓名可以这么去构造：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 </pre></td><td class='code'><pre><code class='python'><span class='line'><span></span><span class="n">faker</span> <span class="o">=</span> <span class="n">FakerFactory</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="s1">&#39;zh_CN&#39;</span><span class="p">)</span>
 </span><span class='line'><span class="n">name</span> <span class="o">=</span> <span class="n">lazy_attribute</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">faker</span><span class="o">.</span><span class="n">name</span><span class="p">())</span>
-</span></code></pre></td></tr></table></div></figure> <a name="L......fixture"></a> <h2>生成fixture</h2> <p>因为<a href="https://github.com/rbarrois/factory_boy/">factory boy</a>和<a href="https://github.com/joke2k/faker">faker</a>主要的作用是在测试里面去mock数据，所以要用它们生成fixture不是那么容易。这是因为Django的整个设计上就很注意避免你把测试的数据写到生产的数据库，所以测试都会在一个在<code>Setup</code>阶段被创建，在<code>TearDown</code>阶段被删除的临时数据库里面进行（我看了一下，在开发版本的Django上已经加了一个<code>--keepdb</code>的参数使得你可以<a href="https://docs.djangoproject.com/en/dev/ref/django-admin/#django-admin-option---keepdb">保留你用来运行测试的数据库了</a>）。</p> <p>所以我们可以在一个测试的<code>Setup</code>阶段把数据生成后，直接调用<code>dumpdata</code>命令来把数据<code>dump</code>出去：</p> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<a name="L......fixture"></a>
+<h2>生成fixture</h2>
+
+<p>因为<a href="https://github.com/rbarrois/factory_boy/">factory boy</a>和<a href="https://github.com/joke2k/faker">faker</a>主要的作用是在测试里面去mock数据，所以要用它们生成fixture不是那么容易。这是因为Django的整个设计上就很注意避免你把测试的数据写到生产的数据库，所以测试都会在一个在<code>Setup</code>阶段被创建，在<code>TearDown</code>阶段被删除的临时数据库里面进行（我看了一下，在开发版本的Django上已经加了一个<code>--keepdb</code>的参数使得你可以<a href="https://docs.djangoproject.com/en/dev/ref/django-admin/#django-admin-option---keepdb">保留你用来运行测试的数据库了</a>）。</p>
+
+<p>所以我们可以在一个测试的<code>Setup</code>阶段把数据生成后，直接调用<code>dumpdata</code>命令来把数据<code>dump</code>出去：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -165,7 +402,14 @@
 </span><span class='line'>
 </span><span class='line'>    <span class="n">create_fixture</span><span class="p">(</span><span class="s1">&#39;tester&#39;</span><span class="p">,</span> <span class="s1">&#39;tester.json&#39;</span><span class="p">)</span>
 </span><span class='line'>    <span class="n">create_fixture</span><span class="p">(</span><span class="s1">&#39;account&#39;</span><span class="p">,</span> <span class="s1">&#39;account.json&#39;</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure> <p>注意，这里在创建的时候指定id主要是为了让初始的id比较大，避免和系统里面已经有的id撞车导致你构造的测试数据在<code>loaddata</code>的时候报错或者覆盖现有数据。</p> <p>其中，<code>create_fixture</code>函数内容如下：</p> <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>注意，这里在创建的时候指定id主要是为了让初始的id比较大，避免和系统里面已经有的id撞车导致你构造的测试数据在<code>loaddata</code>的时候报错或者覆盖现有数据。</p>
+
+<p>其中，<code>create_fixture</code>函数内容如下：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -177,10 +421,86 @@
 </span><span class='line'>    <span class="n">buf</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 </span><span class='line'>    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
 </span><span class='line'>        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">buf</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">))</span>
-</span></code></pre></td></tr></table></div></figure> </div> <footer> <p class="meta"> <span class="byline author vcard">Posted by <span class="fn">Lenciel</span></span> <span class="categories"> <a class='category' href='/categories/django/'>django</a>, <a class='category' href='/categories/testing/'>testing</a>, <a class='category' href='/categories/tools-i-use/'>tools-i-use</a> </span> </p> <div class="sharing"> </div> <p class="meta"> <a class="basic-alignment left" href="/2014/12/integrate-schemaspy-with-sphinx-build-for-django-database-design-visualization/" title="Previous Post: Integrate schemaSpy with Sphinx build">&laquo; Integrate schemaSpy with Sphinx build</a> <a class="basic-alignment right" href="/2015/01/p4f-tech-stack-part-1-devops/" title="Next Post: Goodbye Palm4fun, and the tech stack review Part I">Goodbye Palm4fun, and the tech stack review Part I &raquo;</a> </p> </footer> </article> </div> </div> </div> <footer role="contentinfo"><p> Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a> <span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span> </p> </footer> <script type="text/javascript">
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+<span class="byline author vcard">Posted by <span class="fn">Lenciel</span></span>
+
+      
+
+
+
+
+
+      
+
+<span class="categories">
+  
+    <a class='category' href='/categories/django/'>django</a>, <a class='category' href='/categories/testing/'>testing</a>, <a class='category' href='/categories/tools-i-use/'>tools-i-use</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+  <!-- JiaThis Button BEGIN -->
+  <!--<div class="jiathis_style_24x24">
+    <a class="jiathis_button_qzone"></a>
+    <a class="jiathis_button_tsina"></a>
+    <a class="jiathis_button_tqq"></a>
+    <a class="jiathis_button_weixin"></a>
+    <a class="jiathis_button_renren"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+    <a class="jiathis_counter_style"></a>
+    </div>
+    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>-->
+  <!-- JiaThis Button END -->
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2014/12/integrate-schemaspy-with-sphinx-build-for-django-database-design-visualization/" title="Previous Post: Integrate schemaSpy with Sphinx build">&laquo; Integrate schemaSpy with Sphinx build</a>
+      
+      
+        <a class="basic-alignment right" href="/2015/01/p4f-tech-stack-part-1-devops/" title="Next Post: Goodbye Palm4fun, and the tech stack review Part I">Goodbye Palm4fun, and the tech stack review Part I &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+Blog theme: <a href="https://github.com/lenciel/jekyll-lenciel-theme">jekyll-lenciel-theme</a>
+<span class="theme-version">Copyright &copy; 2004-2017 by <a href="mailto:lenciel@gmail.com">Lenciel</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+<script type="text/javascript">
   var stylesheet = document.createElement('link');
   stylesheet.href = '/assets/stylesheets/app.css';
   stylesheet.rel = 'stylesheet';
   stylesheet.type = 'text/css';
   document.getElementsByTagName('head')[0].appendChild(stylesheet);
-</script> </body> </html>
+</script>
+
+</body>
+</html>

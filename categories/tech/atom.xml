@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: tech | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/tech/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-05-04T17:08:15+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/tech/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-05-10T01:29:34+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[增加ssl证书和对http2的支持]]></title>
-    <link href="http://lenciel.com/2017/03/add-supporting-for-ssl-and-http2/"/>
+    <link href="http://172.16.121.110:4000/2017/03/add-supporting-for-ssl-and-http2/"/>
     <updated>2017-03-22T14:39:44+08:00</updated>
-    <id>http://lenciel.com/2017/03/add-supporting-for-ssl-and-http2</id>
+    <id>http://172.16.121.110:4000/2017/03/add-supporting-for-ssl-and-http2</id>
     <content type="html"><![CDATA[<p> Google一直在致力于提醒用户<a href="https://security.googleblog.com/2016/09/moving-towards-more-secure-web.html">更加安全的上网</a>，并从Chrome 56版本开始，把使用HTTP的网站直接<a href="http://www.zdnet.com/article/chrome-56-google-starts-slapping-not-secure-on-http-payment-and-login-pages/">标记为“不安全的”</a>。随后Firefox等浏览器也宣布加入了类似的功能，来逼迫网站开发者逐步废弃使用HTTP。</p>
 
 <p>在过去，要支持SSL其实还是挺麻烦的，因为首先你需要<a href="https://www.digicert.com/ssl-certificate.htm">一个证书</a>。这东西申请起来麻烦，但只要给钱就特别好办：为这个，Google年初还以乱发了3万个证书为由宣布<a href="https://arstechnica.com/security/2017/03/google-takes-symantec-to-the-woodshed-for-mis-issuing-30000-https-certs/">不再信任Symantec签发的证书</a>。</p>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: product | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/product/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-05-04T17:08:15+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/product/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-05-10T01:29:34+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[在TestBird学到的——关于产品]]></title>
-    <link href="http://lenciel.com/2016/10/product-things-i-learned-at-testbird/"/>
+    <link href="http://172.16.121.110:4000/2016/10/product-things-i-learned-at-testbird/"/>
     <updated>2016-10-25T17:20:29+08:00</updated>
-    <id>http://lenciel.com/2016/10/product-things-i-learned-at-testbird</id>
+    <id>http://172.16.121.110:4000/2016/10/product-things-i-learned-at-testbird</id>
     <content type="html"><![CDATA[<p>在TestBird不到两年，时间过得很快也很充实。因为分管的是产品和研发，所以总结一下产品、研发和管理这三方面学到的经验或者教训。</p>
 
 <p>先从产品说起：</p>
@@ -47,9 +47,9 @@
   
   <entry>
     <title type="html"><![CDATA[好的引导流程胜过10个新功能]]></title>
-    <link href="http://lenciel.com/2015/06/the-next-fucking-new-feature/"/>
+    <link href="http://172.16.121.110:4000/2015/06/the-next-fucking-new-feature/"/>
     <updated>2015-06-26T13:55:49+08:00</updated>
-    <id>http://lenciel.com/2015/06/the-next-fucking-new-feature</id>
+    <id>http://172.16.121.110:4000/2015/06/the-next-fucking-new-feature</id>
     <content type="html"><![CDATA[<p>SNS的有趣之处就在于，经常你会看到一些话，让你对着屏幕点头不已。比如下面这句：</p>
 
 <p><img src="/downloads/images/2015_06/the_next_new_feature.png" title="Don't touch me..." alt="Vhost threshold" /></p>

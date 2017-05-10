@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: tmux | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/tmux/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-05-04T17:08:15+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/tmux/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-05-10T01:29:34+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[tmux: Introduction and Tips]]></title>
-    <link href="http://lenciel.com/2013/07/tmux-introduction-and-tips/"/>
+    <link href="http://172.16.121.110:4000/2013/07/tmux-introduction-and-tips/"/>
     <updated>2013-07-21T14:02:00+08:00</updated>
-    <id>http://lenciel.com/2013/07/tmux-introduction-and-tips</id>
+    <id>http://172.16.121.110:4000/2013/07/tmux-introduction-and-tips</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/tmux_tips_1.png" title="Don't touch me..." alt="tmux screenshot 1" /></p>
 
 <a name="L.strong.........strong."></a>

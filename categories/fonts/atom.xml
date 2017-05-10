@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: fonts | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/fonts/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-05-04T17:08:15+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/fonts/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-05-10T01:29:34+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[免费开源字体Inziu Iosevka推荐]]></title>
-    <link href="http://lenciel.com/2017/04/font-inziu-iosevka/"/>
+    <link href="http://172.16.121.110:4000/2017/04/font-inziu-iosevka/"/>
     <updated>2017-04-06T15:11:19+08:00</updated>
-    <id>http://lenciel.com/2017/04/font-inziu-iosevka</id>
+    <id>http://172.16.121.110:4000/2017/04/font-inziu-iosevka</id>
     <content type="html"><![CDATA[<p>之前<a href="http://lenciel.com/2014/07/font-for-programming">曾经推荐过M+系列字体</a>，自己用的也一直是它。最近看到一个不错的字体项目<a href="https://github.com/be5invis/Iosevka">Iosevka</a>。</p>
 
 <p>它的一个分支Inziu Iosevka集成了<a href="http://be5invis.github.io/Iosevka/">Iosevka</a>，<a href="https://mplus-fonts.osdn.jp/">M+</a>和<a href="https://github.com/adobe-fonts/source-han-sans">Source Han Sans</a>。并且，因为是做了<a href="https://github.com/caryll/ideohint">hinter优化</a>的字体，可以在各种尺寸的屏幕和分辨率设置下，更加清晰的显示中文。</p>

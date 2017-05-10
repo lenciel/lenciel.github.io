@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: ssh | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/ssh/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-05-04T17:08:15+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/ssh/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-05-10T01:29:34+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[使用paramiko进行ssh工作]]></title>
-    <link href="http://lenciel.com/2009/04/ssh-using-paramiko/"/>
+    <link href="http://172.16.121.110:4000/2009/04/ssh-using-paramiko/"/>
     <updated>2009-04-23T00:37:00+08:00</updated>
-    <id>http://lenciel.com/2009/04/ssh-using-paramiko</id>
+    <id>http://172.16.121.110:4000/2009/04/ssh-using-paramiko</id>
     <content type="html"><![CDATA[<p>最近在单位写一个自动build的小工具。因为clearcase的<code>setview</code>命令实际上是激活一个新的<code>shell</code>，所以用简单的“串通”<code>shell</code>的脚本很难做到。</p>
 
 <p>因为在邮件组里面看到有同样问题的Matt说用<code>paramiko</code>解决了问题，就试了试，过程还颇有点艰辛。</p>

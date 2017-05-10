@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: thinking | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/thinking/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-05-04T17:08:15+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/thinking/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-05-10T01:29:34+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[走进科学]]></title>
-    <link href="http://lenciel.com/2013/02/science-is-not-that-easy/"/>
+    <link href="http://172.16.121.110:4000/2013/02/science-is-not-that-easy/"/>
     <updated>2013-02-01T23:40:00+08:00</updated>
-    <id>http://lenciel.com/2013/02/science-is-not-that-easy</id>
+    <id>http://172.16.121.110:4000/2013/02/science-is-not-that-easy</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/black_and_white.jpg" title="Don't touch me…" alt="Black and White" /></p>
 
 <p>最近波音787曝出锂电池起火燃烧的<a href="http://finance.sina.com.cn/world/mzjj/20130130/140414451075.shtml">问题</a>。全世界人民，特别是中国人民纷纷摇头叹息：以精密和严谨著称的日本人，现在终归是堕落了。奇怪的是，如果你想稍微深入一点儿去搜索日本制造的锂电池究竟出了什么问题，答案就欠奉了。于是本座花了点儿时间试图去把这事情弄明白。</p>
@@ -41,9 +41,9 @@
   
   <entry>
     <title type="html"><![CDATA[Ideas Are Easy]]></title>
-    <link href="http://lenciel.com/2013/01/ideas-are-easy/"/>
+    <link href="http://172.16.121.110:4000/2013/01/ideas-are-easy/"/>
     <updated>2013-01-24T23:50:00+08:00</updated>
-    <id>http://lenciel.com/2013/01/ideas-are-easy</id>
+    <id>http://172.16.121.110:4000/2013/01/ideas-are-easy</id>
     <content type="html"><![CDATA[<p>最近做的一些事情，让本座有一些感触。昨天恰好看到Daniel Tenner的一篇文章，共鸣了3个来小时。</p>
 
 <p>Daniel的文章主要介绍了<a href="https://twitter.com/pr1001" target="_blank">Peter Robinett</a>关于创业的一些经验分享。其中特别有趣的一点是，为什么有创业想法的人，在遇到那些很愿意创业也很有实力的开发者的时候，常常没法说服他们和自己一起创业。</p>
@@ -80,9 +80,9 @@
   
   <entry>
     <title type="html"><![CDATA[Plan for 2012]]></title>
-    <link href="http://lenciel.com/2012/01/plan-for-2012/"/>
+    <link href="http://172.16.121.110:4000/2012/01/plan-for-2012/"/>
     <updated>2012-01-10T11:07:00+08:00</updated>
-    <id>http://lenciel.com/2012/01/plan-for-2012</id>
+    <id>http://172.16.121.110:4000/2012/01/plan-for-2012</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/2012_great_view.jpg" title="Don't touch me..." alt="2012 Great View" /></p>
 
 <p>在读过《<a href="http://book.douban.com/subject/3609132/" target="_blank">把时间当作朋友</a>》和<a href="http://matt.might.usesthis.com/" target="_blank">Matt Might</a>的文章之后，回首2011就让人觉得莫名慌张起来。按《<a href="http://book.douban.com/subject/3609132/" target="_blank">把时间当作朋友</a>》这本书里所说，定计划要以周为单位，通过培养自己对时间的控制力，逐步把计划做到月甚至年这样的跨度。本座自觉还算比较能控制自己，所以打算制作一个基本单位为月的计划，下面的十项活动将穿插在这个计划之中：</p>
@@ -217,9 +217,9 @@
   
   <entry>
     <title type="html"><![CDATA[祝我们好运]]></title>
-    <link href="http://lenciel.com/2011/08/make-a-wish/"/>
+    <link href="http://172.16.121.110:4000/2011/08/make-a-wish/"/>
     <updated>2011-08-02T21:40:00+08:00</updated>
-    <id>http://lenciel.com/2011/08/make-a-wish</id>
+    <id>http://172.16.121.110:4000/2011/08/make-a-wish</id>
     <content type="html"><![CDATA[<p><img src="/downloads/images/boring_face.jpg" title="Don't touch me…" alt="Boring Face" /></p>
 
 <p>03年的时候，看《迷失东京》，比尔·默里的这幅样子存在了本座硬盘里。有人说这是颇有喜感的画面，却带给本座前所未有的悲催感：那就是有朝一日，我们也会一如Bob Harris这个角色，莫名其妙的活在某个看似五光十色灯红酒绿的城市里面，内心却沉寂而冰冷，不管是手中丰满的鹌鹑，还是床上丰满的妹子，都已经很难唤醒那份生活的激情。</p>

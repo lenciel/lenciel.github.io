@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: blog | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/blog/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-05-04T17:08:15+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/blog/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-05-10T01:29:34+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[从Octopress转到纯Jekyll]]></title>
-    <link href="http://lenciel.com/2017/03/migrating-from-octopress-to-jekyll/"/>
+    <link href="http://172.16.121.110:4000/2017/03/migrating-from-octopress-to-jekyll/"/>
     <updated>2017-03-14T13:45:00+08:00</updated>
-    <id>http://lenciel.com/2017/03/migrating-from-octopress-to-jekyll</id>
+    <id>http://172.16.121.110:4000/2017/03/migrating-from-octopress-to-jekyll</id>
     <content type="html"><![CDATA[<p>离开Wordpress<a href="http://lenciel.com/2013/03/blog-with-octopress-and-github-pages/">改用Octopress</a>写blog已经好些年了，本座甚至还写了一个自己的<a href="https://github.com/lenciel/octopress-theme-lenciel">Octopress模板</a>。之所以要迁移主要是Octopress作为以Jekyll为基础的一套脚手架，自2011年发布以后进展非常缓慢，和Jekyll的快速更新很难对齐。</p>
 
 <p>在近期跳票多次的<a href="http://octopress.org/2015/01/15/octopress-3.0-is-coming/">Octopress3</a>终于发布了之后，看了一下没有什么值得迁移的新功能。所以不管是从功能、性能还是开发活跃度上，继续跟Octopress都不太明智，就决定转用纯Jekyll。</p>
@@ -99,9 +99,9 @@ $ jekyll new my-site &amp;&amp; cd my-site
   
   <entry>
     <title type="html"><![CDATA[Blog with Octopress and Github pages]]></title>
-    <link href="http://lenciel.com/2013/03/blog-with-octopress-and-github-pages/"/>
+    <link href="http://172.16.121.110:4000/2013/03/blog-with-octopress-and-github-pages/"/>
     <updated>2013-03-10T22:15:00+08:00</updated>
-    <id>http://lenciel.com/2013/03/blog-with-octopress-and-github-pages</id>
+    <id>http://172.16.121.110:4000/2013/03/blog-with-octopress-and-github-pages</id>
     <content type="html"><![CDATA[<p>不知不觉，写blog好像从有电脑的人都要干的事情变成很小众的活动了。除了人到了一定年纪都会不愿意开口讲话之外，本座觉得还有个很大的原因就是：要找一个靠谱的blog服务商是非常麻烦的。岂止是是blog服务商，在天朝使用大多数web服务都很吊诡地只有两个选择：</p>
 
 <ul>

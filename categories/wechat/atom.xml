@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: wechat | @Lenciel]]></title>
-  <link href="http://lenciel.com/categories/wechat/atom.xml" rel="self"/>
-  <link href="http://lenciel.com/"/>
-  <updated>2017-05-04T17:08:15+08:00</updated>
-  <id>http://lenciel.com/</id>
+  <link href="http://172.16.121.110:4000/categories/wechat/atom.xml" rel="self"/>
+  <link href="http://172.16.121.110:4000/"/>
+  <updated>2017-05-10T01:29:34+08:00</updated>
+  <id>http://172.16.121.110:4000/</id>
   <author>
     <name><![CDATA[Lenciel]]></name>
     <email><![CDATA[lenciel@gmail.com]]></email>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[我可能要搞个公众号]]></title>
-    <link href="http://lenciel.com/2017/01/wechat-platform-oddpill/"/>
+    <link href="http://172.16.121.110:4000/2017/01/wechat-platform-oddpill/"/>
     <updated>2017-01-07T22:28:40+08:00</updated>
-    <id>http://lenciel.com/2017/01/wechat-platform-oddpill</id>
+    <id>http://172.16.121.110:4000/2017/01/wechat-platform-oddpill</id>
     <content type="html"><![CDATA[<p><img src="http://upload-images.jianshu.io/upload_images/20292-62f8d200eaf98b3a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Nonverbal Space by Shin Noguchi" /></p>
 
 <p>这当然是个错误。</p>
