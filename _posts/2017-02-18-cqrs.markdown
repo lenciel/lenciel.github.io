@@ -53,12 +53,12 @@ CQRS是Command Query Responsibility Segregation的缩写，翻译过来是“命
 
 ## Reference
 
-- 1. [Introduction to CQRS](http://www.codeproject.com/Articles/555855/Introduction-to-CQRS) 
-- 2. [CQRS](http://martinfowler.com/bliki/CQRS.html) 
-- 3. [CQRS Journey](http://msdn.microsoft.com/en-us/library/jj554200.aspx) 
-- 4. [Command and Query Responsibility Segregation (CQRS) Pattern](http://msdn.microsoft.com/en-us/library/dn568103.aspx) 
-- 5. [Event Sourcing Pattern](http://msdn.microsoft.com/en-us/library/dn589792.aspx) 
-- 6. [Eric Evans on Domain-Driven Design](http://www.se-radio.net/2015/05/se-radio-episode-226-eric-evans-on-domain-driven-design-at-10-years/)
-- 7. [The Art of Command Query Separation](https://hackernoon.com/oo-tricks-the-art-of-command-query-separation-9343e50a3de0)
+- [Introduction to CQRS](http://www.codeproject.com/Articles/555855/Introduction-to-CQRS) 
+- [CQRS](http://martinfowler.com/bliki/CQRS.html) 
+- [CQRS Journey](http://msdn.microsoft.com/en-us/library/jj554200.aspx) 
+- [Command and Query Responsibility Segregation (CQRS) Pattern](http://msdn.microsoft.com/en-us/library/dn568103.aspx) 
+- [Event Sourcing Pattern](http://msdn.microsoft.com/en-us/library/dn589792.aspx) 
+- [Eric Evans on Domain-Driven Design](http://www.se-radio.net/2015/05/se-radio-episode-226-eric-evans-on-domain-driven-design-at-10-years/)
+- [The Art of Command Query Separation](https://hackernoon.com/oo-tricks-the-art-of-command-query-separation-9343e50a3de0)
 
 
