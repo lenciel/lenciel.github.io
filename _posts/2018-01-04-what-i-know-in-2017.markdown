@@ -30,7 +30,6 @@ categories:
 * 中国首家互联网模式创业保险公司众安保险（腾讯和阿里都是股东）在第一年就卖出了十亿个保单。[[Matthew Wong](https://medium.com/@mlcwong/lessons-from-the-front-lines-of-insurance-tech-innovation-in-china-a1568b69bfb7)]
 * 克里姆林宫的GPS信号一直被官方干扰，附近的人会被定位到莫斯科伏努科沃机场附近，有32公里左右的偏差。因为偏差较小，这个问题一直没有被普通百姓发现，直到Pokemon Go上市。[[Tyler Rogoway](http://www.thedrive.com/the-war-zone/13549/russia-may-be-testing-its-gps-spoofing-capabilities-around-the-black-sea)]
 * 五月份，英国所有太阳能面板发电量总和超过了其所有核电站发电量总和。[[Andrew Ward](https://www.ft.com/content/c22669de-4203-11e7-9d56-25f963e998b2)]
-* 2006年900名巴基斯坦产后抑郁症妇女接受了认知行为疗法。多年的跟踪显示她们和未接受治疗的母亲比起来，过得更快乐，经济更独立，在子女抚养上也更合格，特别是对女孩儿没有任何偏见。[[Sonia Bhalotra](http://www.res.org.uk/details/mediabrief/10504069/TREATING-MATERNAL-DEPRESSION-Evidence-of-the-impact-on-mental-health-parenting-f.html)]
 * 全球食用的大部分松果产自中国东北和朝鲜交界处。这里的农民坐非常简陋的氢气球穿梭在原始森林的树尖，常有伤亡。[[Shen Wendi](http://www.sixthtone.com/news/1001195/the-life-and-death-of-a-pine-nut-picker)]
 * 2017年在google上通过搜索确认自己的老公是不是同性恋的妇女是确认自己的老公是不是酒鬼的人的8倍。[[Sean Illing](https://www.vox.com/conversations/2017/6/27/15873072/google-porn-addiction-america-everybody-lies)]
 * Uber在2016年亏损28亿美金，在2017年上半年再亏13.5亿美金，是全球有史以来亏损最严重的科技公司。[[Leslie Hook](https://www.ft.com/content/09278d4e-579a-11e7-80b6-9bfa4c1f83d2)]
