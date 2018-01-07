@@ -40,7 +40,6 @@ categories:
 * 在80年代早期，AT&T找到麦肯锡咨询到2000年左右，全球手机市场规模。麦肯锡给出的估计是90万台，AT&T根据这份咨询报告决定不进入手机行业。2000年实际的手机市场规模是73800万。[[Andrew Chen](http://andrewchen.co/bad-product-fallacy/)]
 * 印度的手机充电服务提供商偷偷保存了女性使用者的号码，这些号码被贩卖给男性来进行电话骚扰，号码售价根据女性的“迷人程度”进行分类标价。[[Snigdha Poonam](http://www.hindustantimes.com/india-news/girls-mobile-numbers-up-for-sale-in-uttar-pradesh-price-rs-50-to-rs-500/story-5lYPcav12h7rnW6A6UDLLI.html)]
 * 通过Netflix而不是电视追剧，一年可以少看160个小时的广告，相当于对8小时工作制的人来说省下了一个月上班时间。[[Dan Calladine](http://digital-stats.blogspot.co.uk/2016/05/american-netflix-users-miss-160-hours.html)]
-* 创业公司美童科技，2017年获得了1000w美金的众筹。他们计划推出智能便携式宝贝4D成像相机，孕妇只需使用以超声波技术为核心的便携式仪器贴住肚皮，并通过wifi与智能手机连接后，在手机端就可呈现胎儿的二维、三维及动态影像。[[徐宇](http://36kr.com/p/5096088.html)]
 * 创业公司作物在大商场里面提供木匠培训和木工活体验，目前提供家居用品和木质工艺品两个课程系统。[[思齐](http://36kr.com/p/5090954.html)]
 * Pebble Post是一个提供特殊线下提醒服务的创业公司：当你从购物车里删除一件货物之后，你就可以选择由它隔天寄出一份纸质的物理邮件，表扬你及时剁手，并记下这个心愿。[[Dan O’Shea](http://www.retaildive.com/news/saving-the-sale-new-ideas-for-averting-cart-abandonment/435269/)]
 * 江小白的双十一营销是“一生一世的酒”：原价99999元，双11打折促销11111元，江小白承诺付款后客户一生中每月可收到一箱该品牌的酒。[[悟空网](https://www.wukong.com/question/6486249401051250957/)]
@@ -55,7 +54,6 @@ categories:
 * 整个互联网有30%左右的流量是机器人或者手工工作室制造的虚假流量。[[Matthew Ingram](https://gigaom.com/2014/03/24/traffic-is-a-good-thing-for-media-companies-to-pay-attention-to-except-when-it-isnt/)]
 * 全球大约仍有14%的人口是文盲。在1820年，大概有88%的人口是文盲。[[Human Progress](http://humanprogress.org/story/2116?utm_content=buffer7d4f5&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)]
 * Google在过去的十五年平均明天要处理500万个从未处理过的新增的搜索。Google每个月处理的搜索规模是千亿次左右，里面大部分的搜索都可以在毫秒内返回结果。[[cNet](https://www.cnet.com/news/google-search-scratches-its-brain-500-million-times-a-day/)]
-* 打车业务每进入一个城市，出租车司机大概要面临10%-20%的收入缩减。[[]()]
 * 60%的新装App会被用户关掉Notification权限。[[Shannon Levis](http://andrewchen.co/why-people-are-turning-off-push/)]
 
 你还可以看看[2016年的版本](/2016/12/what-i-konw-in-2016/)。
