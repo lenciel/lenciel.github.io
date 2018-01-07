@@ -34,16 +34,16 @@ categories:
 * 2017年在google上通过搜索确认自己的老公是不是同性恋的妇女是确认自己的老公是不是酒鬼的人的8倍。[[Sean Illing](https://www.vox.com/conversations/2017/6/27/15873072/google-porn-addiction-america-everybody-lies)]
 * Uber在2016年亏损28亿美金，在2017年上半年再亏13.5亿美金，是全球有史以来亏损最严重的科技公司。[[Leslie Hook](https://www.ft.com/content/09278d4e-579a-11e7-80b6-9bfa4c1f83d2)]
 * 过去5年，中国平均每年建成50座大桥，全球其他地方加起来建成10座。尽管对经济确实有促进作用，这些建设如何收回成本是个巨大的难题。[[储百亮](https://cn.nyt/china/20170612/china-bridges-infrastructure/zh-hant/)]
-* 纽约50%左右送修的Sony PS4主机是因为主机内部比较温暖，蟑螂在里面筑巢。[[Cecilia D’Anastacio](http://kotaku.com/console-repairmen-explain-why-cockroaches-love-ps4s-1794393470)]
+* 纽约50%左右送修的Sony PS4主机是因为其内部比较温暖，蟑螂在里面筑巢产生的故障。[[Cecilia D’Anastacio](http://kotaku.com/console-repairmen-explain-why-cockroaches-love-ps4s-1794393470)]
 * Amazon Echo受到了阿兹海默患者的喜爱：“我虽然每天会因为患病问它很多重复的问题，它都能迅速地给我正确答案，没有一点儿情绪。”[[Rick Phelps](http://dailycaring.com/amazon-echo-for-dementia-technology-for-seniors/)]
 * 在80年代早期，AT&T找到麦肯锡咨询到2000年左右，全球手机市场规模。麦肯锡给出的估计是90万台，AT&T根据这份咨询报告决定不进入手机行业。2000年实际的手机市场规模是73800万。[[Andrew Chen](http://andrewchen.co/bad-product-fallacy/)]
 * 印度的手机充电服务提供商偷偷保存了女性使用者的号码，这些号码被贩卖给男性来进行电话骚扰，号码售价根据女性的“迷人程度”进行分类标价。[[Snigdha Poonam](http://www.hindustantimes.com/india-news/girls-mobile-numbers-up-for-sale-in-uttar-pradesh-price-rs-50-to-rs-500/story-5lYPcav12h7rnW6A6UDLLI.html)]
-* 通过Netflix而不是电视追剧，一年可以少看160个小时的广告，相当于对8小时工作制的人来说省下了一个月上班时间。[[Dan Calladine](http://digital-stats.blogspot.co.uk/2016/05/american-netflix-users-miss-160-hours.html)]
+* 通过Netflix而不是传统电视台追剧，一年可以少看160个小时的广告，相当于对8小时工作制的人来说省下了一个月上班时间。[[Dan Calladine](http://digital-stats.blogspot.co.uk/2016/05/american-netflix-users-miss-160-hours.html)]
 * 创业公司作物在大商场里面提供木匠培训和木工活体验，目前提供家居用品和木质工艺品两个课程系统。[[思齐](http://36kr.com/p/5090954.html)]
 * Pebble Post是一个提供特殊线下提醒服务的创业公司：当你从购物车里删除一件货物之后，你就可以选择由它隔天寄出一份纸质的物理邮件，表扬你及时剁手，并记下这个心愿。[[Dan O’Shea](http://www.retaildive.com/news/saving-the-sale-new-ideas-for-averting-cart-abandonment/435269/)]
 * 江小白的双十一营销是“一生一世的酒”：原价99999元，双11打折促销11111元，江小白承诺付款后客户一生中每月可收到一箱该品牌的酒。[[悟空网](https://www.wukong.com/question/6486249401051250957/)]
 * 全球小儿麻痹症从1980年的5万例下降到了42例。[[Jennings Brown](https://gizmodo.com/the-last-of-the-iron-lungs-1819079169)]
-* google处理的手机上发起的搜索总量里，已经有1/5是语音搜索。[[Eric Johnsa](https://realmoney.thestreet.com/articles/03/03/2017/amazon-pulling-out-all-stops-against-apple-and-google-voice-assistant-wars)]
+* Google处理的手机上发起的搜索总量里，已经有1/5是语音搜索。[[Eric Johnsa](https://realmoney.thestreet.com/articles/03/03/2017/amazon-pulling-out-all-stops-against-apple-and-google-voice-assistant-wars)]
 * 除去人工智能的过滤器，Facebook还需要雇佣12人左右对Mark Zuckerberg的页面进行人工的垃圾留言处理。[[Sarah Frier](https://www.bloomberg.com/news/articles/2017-01-18/this-team-runs-mark-zuckerberg-s-facebook-page)]
 * 在1990年，世界范围内有1/3的人日消费额不超过1.9美金。到了2013年这个比例已经降到了1/10。[[Dylan Matthews](https://www.vox.com/world/2016/10/2/13123980/extreme-poverty-world-bank)]
 * 韩国创业公司启动了Ratchair项目，目标是研发可以自管理的家具，功能包括根据房屋的空间自己移动，自我监测。这个项目的目标是家具能够自己清洁自己。[[Tetiana Parshakova & co](http://mid.kaist.ac.kr/projects/ratchair/)]
@@ -55,6 +55,6 @@ categories:
 * Google在过去的十五年平均明天要处理500万个从未处理过的新增的搜索。Google每个月处理的搜索规模是千亿次左右，里面大部分的搜索都可以在毫秒内返回结果。[[cNet](https://www.cnet.com/news/google-search-scratches-its-brain-500-million-times-a-day/)]
 * 60%的新装App会被用户关掉Notification权限。[[Shannon Levis](http://andrewchen.co/why-people-are-turning-off-push/)]
 
-你还可以看看[2016年的版本](/2016/12/what-i-konw-in-2016/)。
+时光隧道：[2016年的版本](/2016/12/what-i-konw-in-2016/)。
 
 
