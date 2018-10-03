@@ -8,7 +8,7 @@ baseurl: ""
 author: "Lenciel"
 url: "http://lenciel.com"
 date_format: "%Y/%m/%d %H:%M"
-subscribe_rss: http://feeds.feedburner.com/github/lenciel
+subscribe_rss: /feed.xml
 default_asides: []
 sidebar: collapse
 
@@ -26,6 +26,7 @@ gems:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-sitemap
+  - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -59,3 +60,4 @@ google_analytics_tracking_id: UA-175991-6
 
 # Facebook Like
 facebook_like: false
+

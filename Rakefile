@@ -29,7 +29,8 @@ posts_dir       = "_posts"    # directory for blog files
 new_post_ext    = "markdown"  # default new post file extension when using the new_post task
 new_page_ext    = "markdown"  # default new page file extension when using the new_page task
 server_port     = "4000"      # port for preview server eg. localhost:4000
-localhost_ip    = "172.16.121.110"  # just incase you're using vm like me
+# localhost_ip    = "172.16.121.110"  # just incase you're using vm like me
+localhost_ip    = "127.0.0.1"  # just incase you're using vm like me
 
 n_cores = 4
 js_for_combine   = { 'app.js' => ['libs/modernizr.custom.55630.js', 'ender.js', 'libs/jquery.min.js'],

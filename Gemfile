@@ -26,6 +26,7 @@ group :jekyll_plugins do
    gem 'pygments.rb'
    gem 'rdiscount', '~> 2.2.0'
    gem 'stringex', '~> 2.7.1'
+   gem 'jekyll-feed'
    #gem 'haml', '~> 4.0.7'
    #gem 'rubypants', '~> 0.6.0'
    #gem 'octopress-hooks', '~> 2.6.2'
