@@ -6,7 +6,7 @@ email: "lenciel@gmail.com"
 description: "Thoughts and Rants by Lenciel"
 baseurl: ""
 author: "Lenciel"
-url: "http://lenciel.com"
+url: "https://lenciel.com"
 date_format: "%Y/%m/%d %H:%M"
 subscribe_rss: /feed.xml
 default_asides: []
@@ -44,8 +44,7 @@ code_dir: downloads/code
 # category_generator
 category_dir: categories
 
-
-highlighter: pygments # default python pygments have been replaced by pygments.rb
+highlighter: rouge
 paginate: 2          # Posts per page on the blog index
 paginate_path: "posts/:num"  # Directory base for pagination URLs eg. /posts/2/
 recent_posts: 5       # Posts in the sidebar Recent Posts section
