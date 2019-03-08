@@ -3,7 +3,7 @@ layout: post
 title: "使用paramiko进行ssh工作"
 date: 2009-04-23 00:37
 comments: true
-categories: 
+categories:
 -  python
 -  ssh
 -  cli

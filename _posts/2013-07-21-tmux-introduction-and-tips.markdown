@@ -3,7 +3,7 @@ layout: post
 title: "tmux: Introduction and Tips"
 date: 2013-07-21 14:02
 comments: true
-categories: 
+categories:
 - tmux
 - tools-i-use
 - tips
@@ -80,7 +80,7 @@ $ tmux attach
 
 ```bash
 tmux new -s windows -n shell
-``` 
+```
 
 `-s`是对`session`进行命名的，`-n`是用来对窗口进行命名的。
 
@@ -94,8 +94,8 @@ tmux new -s windows -n shell
 #### **分栏**
 
 - 竖分: `Prefix+%`
-- 横分: `Prefix+"`   
-- 在分栏中切换: `Prefix+o`   
+- 横分: `Prefix+"`
+- 在分栏中切换: `Prefix+o`
 - 在分栏中切换: `Prefix+方向键`
 - 在不同的布局间切换: `Prefix+space`
 - 关闭: `Prefix+x`
@@ -117,19 +117,19 @@ tmux new -s windows -n shell
 
 ```bash
 set -g base-index 1
-``` 
+```
 
 同理分栏的序列号也可以从1开始：
 
 ```bash
 setw -g pane-base-index 1
-``` 
+```
 
 另外一般需要把发送命令的延迟设置为没延迟
 
 ```bash
 set -sg escape-time 1
-``` 
+```
 
 完整的配置文件在[这里](https://github.com/lenciel/oh-my-zsh/blob/master/dot_files/tmux.conf)：
 

@@ -197,7 +197,7 @@ def parseoptions(args):
                       help="The filename to be process.")
     parser.add_option("-o", "--output", type="string",
                       help="The filename where you want the output stored.")
-    parser.add_option("-u", "--url", default="http://lenciel.com",type="string",
+    parser.add_option("-u", "--url", default="https://lenciel.com",type="string",
                   help="The url you use for your new wordpress blog.")
     return parser.parse_args(args)[0]
 
