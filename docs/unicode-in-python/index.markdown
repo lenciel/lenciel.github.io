@@ -29,7 +29,7 @@ Debug Part I 单纯字符串操作
 
 ```python
 # -*- coding: utf-8 -*-
-	
+
 import sys
 reload(sys)
 sys.setdefaultencoding('utf8')
@@ -37,27 +37,27 @@ ss ="全部"
 uu = u'全部'
 CODEC = 'utf-8'
 FILE = 'unicodetest.html'
- 
+
 f = open('archive.html', "r")
 bytes_out = f.read().decode(CODEC)
 bytes_in = bytes_out.encode(CODEC)
 f = open(FILE, "w")
 f.write(bytes_in)
 f.close()
- 
+
 print repr(ss)
 print repr(uu)
- 
+
 print("-------------------------------")
 print ss.decode(CODEC )
 print uu.encode(CODEC )
- 
+
 print("-------------------------------")
 print repr(ss.decode(CODEC).encode('gbk'))
 print uu
 ```
 
-这段程序里面，有三个地方是跟编解码有关的。 
+这段程序里面，有三个地方是跟编解码有关的。
 
 ###1. 声明代码用utf-8编码保存：因为我们的代码里面有中文。
 
@@ -70,9 +70,9 @@ print uu
 ###2. 指明在console显示中sys的编码
 
 ```python
-import sys  
-reload(sys)  
-sys.setdefaultencoding(utf8) 
+import sys
+reload(sys)
+sys.setdefaultencoding(utf8)
 ```
 
 如果你的程序不需要在console打印中用utf-8编码，这个声明不必要（比如上面程序里没有那些print，只是写内容到文件的话）。
@@ -102,7 +102,7 @@ Debug Part II lxml解析HTML
 import urllib2
 import lxml.html as H
 from lxml.html.clean import Cleaner
- 
+
 if __name__ == '__main__':
     FILE = 'htmltest.html'
     stringUrl = 'http://lenciel.ycool.com/archive.html'
@@ -115,7 +115,7 @@ if __name__ == '__main__':
     f = open(FILE, "w")
     f.write(bytes_in)
     f.close()
-    
+
 ```
 
 但是这样在保存在本地的中文页面就会是乱码：
@@ -134,17 +134,17 @@ if __name__ == '__main__':
 import urllib2
 import lxml.html as H
 from lxml.html.clean import Cleaner
- 
+
 if __name__ == '__main__':
- 
+
     FILE = 'htmltest.html'
     stringUrl = 'http://lenciel.ycool.com/archive.html'
     req = urllib2.Request(stringUrl)
     req.add_header('User-agent', 'Ugrah/0.1')
     site = urllib2.urlopen(req).read()
- 
+
     doc = H.document_fromstring(site.decode('utf-8'))
- 
+
     for child in doc:
         print(child.tag)
     bytes_in = H.tostring(doc, pretty_print=True,encoding=unicode)
@@ -152,7 +152,7 @@ if __name__ == '__main__':
     f = open(FILE, "w")
     f.write(bytes_in.encode('utf-8'))
     f.close()
-    
+
 ```
 
 总结
@@ -171,29 +171,29 @@ if __name__ == '__main__':
 * python提供了codec来减少我们的代码行数，它不是你乱码的救星：
 
 ```python
-f = open(&#8216;small.html&#8217;, "r")  
-bytes_in=f.read()  
+f = open(&#8216;small.html&#8217;, "r")
+bytes_in=f.read()
 unicode\_in=bytes\_in.encode(utf-8)
- 
+
 ===>fileObj = codecs.open( "small.html", "r", "utf-8" )
 ```
 
 * BOM这东西对UTF-16和UTF-32（python不支持）是很关键的，但是对UTF-8而言可有可无，因为后者不需要大小端对齐（详情请看[这里][1]）。BOM在windows平台上见到得较多，长度2个bytes到4个bytes不等，codec提供了方法检验BOM：
 
 ```python
-sample.startswith(codecs.BOM\_UTF16\_LE)  
-sample.startswith(codecs.BOM\_UTF16\_BE)  
-sample.startswith(codecs.BOM_UTF8) 
+sample.startswith(codecs.BOM\_UTF16\_LE)
+sample.startswith(codecs.BOM\_UTF16\_BE)
+sample.startswith(codecs.BOM_UTF8)
 ```
 
 有时候我们是从文件读入内容进行解码，需要去除BOM部分。UTF-16的格式，python会自动去除BOM，UTF-8格式的需要显式调用：
 
 ```python
-s.decode(utf-8-sig) 
+s.decode(utf-8-sig)
 ```
 
 * 文件或者网页使用的编码方式还没有很完美的方法进行检测。文件的话从BOM判断算是一个不错的选择。网页的话先查看header里面的`Content-Type`内容。
 
 * 有些第三方库如果没有支持unicode功能的话，你要自己重写一部分wrapper。自己写的代码，在ut的时候一定要用unicode进行测试。
 
- [1]: http://lenciel.com/docs/unicode-complete/
+ [1]: https://lenciel.com/docs/unicode-complete/

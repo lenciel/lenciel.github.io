@@ -13,7 +13,9 @@ Lenciel的人生信条是“既往不恋，当下不杂，未来不迎”，简�
 
 
 <p style="margin: 2em 0 2em 0;">
-  <a class="network" href="https://www.linkedin.com/in/lenciel-li-73483021/" rel="me"><img style="border:none !important;" src="../downloads/images/about/lk.png" alt="" width="16" height="16" /> LinkedIn</a> <a class="network" href="http://weibo.com/lenciel/" rel="me"><img style="border:none !important;" src="../downloads/images/about/sina_button.png" alt="" width="16" height="16" /> Sina</a> <a class="network" href="http://twitter.com/lenciel" rel="me"><img style="border:none !important;" src="../downloads/images/about/twitter.png" alt="" width="16" height="16" /> Twitter</a> <a class="network" href="http://github.com/lenciel" rel="me"><img style="border:none !important;" src="../downloads/images/about/github_button.png" alt="" width="16" height="16" /> GitHub</a> <a class="network" href="https://plus.google.com/111177363143487451853" rel="me"><img style="border:none !important;" src="../downloads/images/about/gprofile_button-16.png" alt="" width="16" height="16" /> Google+</a> <a class="network" href="http://www.flickr.com/photos/lenciel/" rel="me"><img style="border:none !important;" src="../downloads/images/about/flickr.png" alt="" width="16" height="16" /> Flickr</a>
+  <a class="network" href="https://www.linkedin.com/in/lenciel-li-73483021/" rel="me"><img style="border:none !important;" src="../downloads/images/about/lk.png" alt="" width="16" height="16" /> LinkedIn</a>
+  <a class="network" href="http://twitter.com/lenciel" rel="me"><img style="border:none !important;" src="../downloads/images/about/twitter.png" alt="" width="16" height="16" /> Twitter</a>
+  <a class="network" href="http://github.com/lenciel" rel="me"><img style="border:none !important;" src="../downloads/images/about/github_button.png" alt="" width="16" height="16" /> GitHub</a>
 </p>
 
 #### **假装爱好文学**
@@ -23,27 +25,27 @@ Lenciel的人生信条是“既往不恋，当下不杂，未来不迎”，简�
 *   [洛带][5]
 *   [魂飞魄散][6]
 *   [禽兽不如][7]
-*   <a href="http://lenciel.com/2009/08/the-rain-stopped/" target="_blank">没完没了</a>
-*   <a href="http://lenciel.com/2008/05/forget-everything/" target="_blank">落花流水</a>
-*   <a href="http://lenciel.com/2008/07/write-no-letter/" target="_blank">后患无穷</a>
+*   <a href="https://lenciel.com/2009/08/the-rain-stopped/" target="_blank">没完没了</a>
+*   <a href="https://lenciel.com/2008/05/forget-everything/" target="_blank">落花流水</a>
+*   <a href="https://lenciel.com/2008/07/write-no-letter/" target="_blank">后患无穷</a>
 
 
 #### **假装爱好科学**
 
-*   <a title="Unicode漫游指南" href="http://lenciel.com/docs/unicode-complete/" target="_blank">Unicode漫游指南</a>
+*   <a title="Unicode漫游指南" href="https://lenciel.com/docs/unicode-complete/" target="_blank">Unicode漫游指南</a>
 *   [深入Linux启动流程][8]
-*   <a href="http://lenciel.com/docs/x2blog-to-wordpress/" target="_blank">用Python搬x2blog到wordpress</a>
-*   <a href="http://lenciel.com/docs/unicode-in-python/" target="_blank">Python编码解码操作指南</a>
-*   <a href="http://lenciel.com/2009/04/ssh-using-paramiko/" target="_blank">使用paramiko进行ssh工作</a>
-*   <a href="http://lenciel.com/docs/scsi-sata-reliability" target="_blank">SCSI和SATA可靠性比较</a>
-*   <a href="http://lenciel.com/2011/09/width_with_percentage_in_css/" target="_blank">width:100%</a>
+*   <a href="https://lenciel.com/docs/x2blog-to-wordpress/" target="_blank">用Python搬x2blog到wordpress</a>
+*   <a href="https://lenciel.com/docs/unicode-in-python/" target="_blank">Python编码解码操作指南</a>
+*   <a href="https://lenciel.com/2009/04/ssh-using-paramiko/" target="_blank">使用paramiko进行ssh工作</a>
+*   <a href="https://lenciel.com/docs/scsi-sata-reliability" target="_blank">SCSI和SATA可靠性比较</a>
+*   <a href="https://lenciel.com/2011/09/width_with_percentage_in_css/" target="_blank">width:100%</a>
 
 
  [1]: http://www.flickr.com/photos/lenciel/6465436339/
  [2]: http://weibo.com/lenciel
- [3]: http://lenciel.com/2010/03/half-a-year/
- [4]: http://lenciel.com/2008/10/the-cheator/
- [5]: http://lenciel.com/2010/05/luo-dai-tour/
- [6]: http://lenciel.com/2008/10/memo-of-the-old-man/
- [7]: http://lenciel.com/2008/06/weng-an/
- [8]: http://lenciel.com/docs/dive-into-linux-boot/
+ [3]: https://lenciel.com/2010/03/half-a-year/
+ [4]: https://lenciel.com/2008/10/the-cheator/
+ [5]: https://lenciel.com/2010/05/luo-dai-tour/
+ [6]: https://lenciel.com/2008/10/memo-of-the-old-man/
+ [7]: https://lenciel.com/2008/06/weng-an/
+ [8]: https://lenciel.com/docs/dive-into-linux-boot/

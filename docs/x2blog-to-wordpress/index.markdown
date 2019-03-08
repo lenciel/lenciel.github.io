@@ -29,7 +29,7 @@ def __init__(self, input):
         """Creates the basic document."""
         self.input_tree = input
         self.site = ''
- 
+
         self.xml = xml.dom.minidom.Document()
         self.rss = self._create_element('rss', self.xml)
         self.rss.setAttribute('xmlns:content',
