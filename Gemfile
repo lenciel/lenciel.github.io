@@ -26,7 +26,7 @@ group :jekyll_plugins do
    gem 'pygments.rb'
    gem 'rdiscount', '~> 2.2.0'
    gem 'stringex', '~> 2.7.1'
-   gem 'jekyll-feed'
+   gem 'jekyll-feed', '~> 0.12.1'
    #gem 'haml', '~> 4.0.7'
    #gem 'rubypants', '~> 0.6.0'
    #gem 'octopress-hooks', '~> 2.6.2'
@@ -39,6 +39,3 @@ group :jekyll_plugins do
    gem 'parallel'
    gem 'ruby-progressbar'
 end
-
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
