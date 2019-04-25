@@ -30,7 +30,7 @@ GEM
       jekyll (~> 3.3)
     jekyll-gist (1.4.0)
       octokit (~> 4.2)
-    jekyll-lenciel-theme (0.3.0)
+    jekyll-lenciel-theme (0.4.0)
       jekyll (~> 3.4)
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.5.0)
@@ -78,7 +78,7 @@ DEPENDENCIES
   jekyll (= 3.4.3)
   jekyll-feed
   jekyll-gist
-  jekyll-lenciel-theme (~> 0.3.0)
+  jekyll-lenciel-theme (~> 0.4.0)
   jekyll-paginate
   jekyll-sitemap
   parallel
