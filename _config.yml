@@ -22,7 +22,7 @@ rdiscount:
     - generate_toc
   toc_token: "{:toc}"
 theme: jekyll-lenciel-theme
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-sitemap
