@@ -5,3 +5,4 @@ _site
 /_posts/media
 .MWebMetaData
 _temp
+/node_modules
