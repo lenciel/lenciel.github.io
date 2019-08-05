@@ -48,7 +48,7 @@ end
 desc "Generate jekyll site"
 task :generate do
   puts "## Generating Site with Jekyll"
-  #rm_rf [Dir.glob("#{deploy_dir}")]
+  rm_rf [Dir.glob("#{deploy_dir}/index.html")]
   system "jekyll build --incremental"
 end
 
@@ -314,4 +314,10 @@ task :optimize_images do
       system("imagemin --plugin=pngquant #{f}  --out-dir=#{File.dirname(f)}/")
     end
   end
+end
+
+desc "Remove Unused CSS"
+task :uncss do
+  puts "## Removing Unused CSS"
+  system("gulp uncss")
 end
