@@ -48,6 +48,7 @@ end
 desc "Generate jekyll site"
 task :generate do
   puts "## Generating Site with Jekyll"
+  #rm_rf [Dir.glob("#{deploy_dir}")]
   system "jekyll build --incremental"
 end
 
@@ -172,6 +173,8 @@ task :prepare_deploy do
   Rake::Task[:integrate].execute
   Rake::Task[:generate].execute
   Rake::Task[:minify_html].execute
+  rm_rf [Dir.glob("#{deploy_dir}/node_modules"), Dir.glob("#{deploy_dir}/*.md"), Dir.glob("#{deploy_dir}/*.json"), Dir.glob("#{deploy_dir}/*.sh"), "#{deploy_dir}/plugins", "#{deploy_dir}/Rakefile", "#{deploy_dir}/Makefile"]
+  #Rake::Task[:optimize_images].execute
   # Rake::Task[:copydot].invoke(source_dir, deploy_dir)
 end
 
@@ -205,7 +208,7 @@ desc "deploy directory to github user pages"
 multitask :push do
   puts "## Deploying master branch to Github Pages "
   puts "## Pulling any updates from Github Pages "
-  cd "#{deploy_dir}" do 
+  cd "#{deploy_dir}" do
     Bundler.with_clean_env { system "git pull" }
   end
   (Dir["#{deploy_dir}/*"]).each { |f| rm_rf(f) }
@@ -295,5 +298,20 @@ task :minify_html, :dir do |t, args|
     output << compressor.compress(input)
     output.close
     progressbar.increment
+  end
+end
+
+desc "Optimize Images"
+task :optimize_images do
+  puts "## Optimizing JPEG Images"
+  Dir.glob("#{source_dir}/downloads/images/**/*.{jp,jpe}g").each do |f|
+    if (Time.now - File.stat(f).mtime).to_i / 86400.0 < 2
+      system("imagemin --plugin=mozjpeg #{f}  --out-dir=#{File.dirname(f)}/")
+    end
+  end
+  Dir.glob("#{source_dir}/downloads/images/**/*.png").each do |f|
+    if (Time.now - File.stat(f).mtime).to_i / 86400.0 < 2
+      system("imagemin --plugin=pngquant #{f}  --out-dir=#{File.dirname(f)}/")
+    end
   end
 end
