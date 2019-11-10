@@ -48,7 +48,7 @@ end
 desc "Generate jekyll site"
 task :generate do
   puts "## Generating Site with Jekyll"
-  rm_rf [Dir.glob("#{deploy_dir}/index.html")]
+  system "jekyll clean"
   system "jekyll build --incremental"
 end
 
