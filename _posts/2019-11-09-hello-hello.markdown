@@ -11,8 +11,6 @@ categories:
 
 ---
 
-<audio controls loop preload><source src="/downloads/audio/say_hello.mp3"></audio>
-
 <center><h3>1</h3></center>
 
 林记兔头是广汉名店。
@@ -378,5 +376,3 @@ categories:
 但大部分广汉人，并不知道林记兔头前面不远，有个逸风堂。
 
 也不知道逸风堂有位老太太，很会卤肉，但从来不吃，只扔在鸭子河里。
-
-<audio controls loop preload><source src="/downloads/audio/say_hello.mp3"></audio>
