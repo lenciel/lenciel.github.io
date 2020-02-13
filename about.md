@@ -6,35 +6,51 @@ permalink: /about/
 ---
 
 <img class="pad" style="border: 1px solid #cccccc; padding: 3px; margin-right: 1em;" title="Lenciel Li" src="../downloads/images/wu_kong.jpg" alt="Lenciel Lei" width="155" height="147" align="left" />
-Lenciel于2006年从老和山职业技术学院毕业，成为一名程序员。先后在在做基站最好的公司做过基站，做存储最好的公司做过存储。之后为长期垄断偶像派的临幸，并最终将此女据为己有，回到成都扎根。对物质生活悟性一般，勉强能分清鲍鱼和鲤鱼，但对各种精巧的电子产品缺乏足够的抵抗能力。自以为是个好老公，但据说也就敏捷属性比较高，智力和力量都是废柴。
+Lenciel，工程师。从业时间略长，在做存储最好的公司做过存储，做基站最好的公司做过基站。创过业，折腾过小而美的团队，也在几十亿美金估值的公司管过研发、产品和运营。对物质生活悟性一般，勉强能分清鲍鱼和鲤鱼。但对各种精巧的技术和产品缺乏足够的抵抗能力，因此据说也就敏捷属性比较高，智力和力量都是废柴。
 
-Lenciel最大的爱好是足球，从中学到研究生毕业都是校队队员，打过几届飞利浦，运气好的两次还打到全国赛见识了一下贵圈有多乱。虽然生活在天朝，这项爱好显得不那么讲究，但目前仍每周参与，不离不弃。除此之外，Lenciel爱读书，爱看片，爱喝茶，爱睡觉。
+最大的爱好是足球，从中学到研究生毕业都是校队队员，打过几届飞利浦，运气好的两次还打到全国赛见识了一下。虽然生活在天朝，这项爱好显得不那么讲究，但目前仍每周参与，不离不弃，直到 2019 年被坏人弄断了十字韧带，出现了暂停。
 
-Lenciel的人生信条是“既往不恋，当下不杂，未来不迎”，简单的说就是懒。当年听好朋友们反复教诲古典音乐好听极了，Lenciel心里却想，他娘的14岁之前都没有听过钢琴声，就别蒙自己了，于是至今只会欣赏王菲和陈奕迅。即便是在成家之后，也从不花时间研究股票、楼市，从不认真学习各界精英辛苦编撰慷慨分享的成功学。因此，在可以预见的未来，都很难成为一名成功人士。如果即便如此您仍然需要联系他，可以试试发邮件给他。
+除此之外，爱音乐，不限风格；爱读书，不限题材；爱电影，不限短长。
 
-#### **假装爱好文学**
+因为一个人感兴趣的事情越多，快乐的机会也越多，而受命运摆布的可能性便愈少，因为他若不能享受某一种快乐，还可享受另一种。我们都有内省癖的倾向，眼前无数有趣的事物不去欣赏，而把目光投向一无所有的内心。切勿以为，在不断拷问自己的内省里得到的那些不快乐里有什么伟大之处。
 
+这话不是我说的，是罗素。
+
+## 阅读量较高的日志入口：
+
+#### **假装懂点写字**
+
+*   <a href="https://lenciel.com/2019/11/hello-hello/" target="_blank">林记兔头</a>
+*   <a href="https://lenciel.com/2017/03/tale-of-an-old-man/" target="_blank">苏大爷</a>
 *   [半年][3]
 *   [骗子][4]
 *   [洛带][5]
-*   <a href="https://lenciel.com/2017/03/tale-of-an-old-man/" target="_blank">苏大爷</a>
 *   [魂飞魄散][6]
 *   [禽兽不如][7]
 *   <a href="https://lenciel.com/2009/08/the-rain-stopped/" target="_blank">没完没了</a>
 *   <a href="https://lenciel.com/2008/05/forget-everything/" target="_blank">落花流水</a>
 *   <a href="https://lenciel.com/2008/07/write-no-letter/" target="_blank">后患无穷</a>
 
-
-#### **假装爱好科学**
+#### **假装懂点技术**
 
 *   <a title="Unicode漫游指南" href="https://lenciel.com/docs/unicode-complete/" target="_blank">Unicode漫游指南</a>
+*   <a title="分布式系统介绍" href="https://lenciel.com/2018/04/distributed-system-introduction/" target="_blank">分布式系统介绍</a>
+*   <a href="https://lenciel.com/2016/09/types-in-programming-languages/" target="_blank">编程语言里的类型系统</a>
+*   <a href="https://lenciel.com/2016/03/alphago-and-ai/" target="_blank">人工智能，奇点及其他</a>
+*   <a href="https://lenciel.com/2018/01/blockchain-myth/" target="_blank">颠覆者区块链</a>
 *   [深入Linux启动流程][8]
-*   <a href="https://lenciel.com/docs/x2blog-to-wordpress/" target="_blank">用Python搬x2blog到wordpress</a>
 *   <a href="https://lenciel.com/docs/unicode-in-python/" target="_blank">Python编码解码操作指南</a>
-*   <a href="https://lenciel.com/2009/04/ssh-using-paramiko/" target="_blank">使用paramiko进行ssh工作</a>
 *   <a href="https://lenciel.com/docs/scsi-sata-reliability" target="_blank">SCSI和SATA可靠性比较</a>
-*   <a href="https://lenciel.com/2011/09/width_with_percentage_in_css/" target="_blank">width:100%</a>
 
+#### **假装懂点管理**
+
+*   <a href="https://lenciel.com/2019/10/how-to-treat-your-30-years-career-as-a-product/" target="_blank">1024的礼物</a>
+*   <a href="https://lenciel.com/2016/05/but-does-it-float/" target="_blank">微服务实践的一次分享</a>
+*   <a href="https://lenciel.com/2019/04/a-talk-about-996/">996和拼搏精神</a>
+*   <a href="https://lenciel.com/2016/10/product-things-i-learned-at-testbird/" target="_blank">在TestBird学到的——关于产品</a>
+*   <a href="https://lenciel.com/2016/10/management-things-i-learned-at-testbird/" target="_blank">在TestBird学到的——关于管理</a>
+*   <a href="https://lenciel.com/2017/03/msa-in-practice/" target="_blank">在TestBird学到的——关于管理</a>
+*   <a href="https://lenciel.com/2016/05/but-does-it-float/" target="_blank">一天很长，十年很短</a>
 
  [1]: http://www.flickr.com/photos/lenciel/6465436339/
  [2]: http://weibo.com/lenciel
