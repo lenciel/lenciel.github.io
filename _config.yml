@@ -13,14 +13,15 @@ default_asides: []
 sidebar: collapse
 
 # Build settings
-markdown: rdiscount
-rdiscount:
-  extensions:
-    - autolink
-    - footnotes
-    - smart
-    - generate_toc
-  toc_token: "{:toc}"
+#markdown: rdiscount
+#rdiscount:
+#  extensions:
+#    - autolink
+#    - footnotes
+#    - smart
+#    - generate_toc
+#  toc_token: "{:toc}"
+
 theme: jekyll-lenciel-theme
 plugins:
   - jekyll-paginate
