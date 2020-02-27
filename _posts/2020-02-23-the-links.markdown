@@ -1,0 +1,16 @@
+---
+layout: post
+title: "the links"
+date: 2020-02-23 19:44:32 +0800
+comments: true
+categories: 
+- 弹指一挥
+
+---
+
+1. [Trax](https://github.com/google/trax) — Google Brain 开放的深度学习资料。
+2. [Hacker Laws](https://github.com/nusr/hacker-laws-zh) — 对软件工程师有用的一些定律、模式和原则的中文版本集合。
+3. [Millions of Tiny Databases](https://assets.amazon.science/c4/11/de2606884b63bf4d95190a3c2390/millions-of-tiny-databases.pdf) — 使用 TLA+ 提供正确性证明和测试用例的数据库设计。
+4. [The North Star Playbook](https://amplitude.com/north-star) — Amplitude 关于如何选择和跟踪产品北极星指标的一本好书。
+5. [蓝牙漏洞](https://asset-group.github.io/disclosures/sweyntooth/)— 各种蓝牙设备，特别是小米在你家的那堆，有很多类似的问题。
+6. [AI Research Rankings 2019](https://medium.com/@chuvpilo/ai-research-rankings-2019-insights-from-neurips-and-icml-leading-ai-conferences-ee6953152c1a)— 中国依然非常强劲。
