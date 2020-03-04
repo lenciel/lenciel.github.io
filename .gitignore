@@ -7,3 +7,4 @@ _site
 _temp
 /node_modules
 .textlintrc
+/downloads/code/upload_dir.py
