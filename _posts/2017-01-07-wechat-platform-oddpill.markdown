@@ -9,7 +9,7 @@ categories:
 - 公众号
 ---
 
-![Nonverbal Space by Shin Noguchi](http://upload-images.jianshu.io/upload_images/20292-62f8d200eaf98b3a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Nonverbal Space by Shin Noguchi](downloads/images/2017_01/flower_in_wall.png "Don't touch me...")
 
 这当然是个错误。
 

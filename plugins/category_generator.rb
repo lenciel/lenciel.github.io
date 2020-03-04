@@ -20,7 +20,7 @@
 #                          'Category: ').
 
 require 'stringex'
-
+I18n.config.available_locales = :en
 module Jekyll
 
   # The CategoryIndex class creates a single category page for the specified category.

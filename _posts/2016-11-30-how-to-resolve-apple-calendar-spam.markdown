@@ -12,7 +12,7 @@ categories:
 
 从10月的某一天开始，我发现我的日历每天都充满了外部邀请：
 
-![Oh Shoot](http://upload-images.jianshu.io/upload_images/20292-5d2a6a90f697fcab.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image holder](/downloads/images/2016_11/mac_spam_01.jpg "Don’t touch me...")
 
 很显然，天朝的某些人拿到了一个超大的邮件地址列表，然后在发送事件邀请：Mac会把这种邀请显示在日历上面，然后显示一个通知。
 
@@ -30,11 +30,11 @@ categories:
 
 首先登录[icloud网站](https://www.icloud.com)，然后进入calendar，点击`Edit`然后新建一个日历，比如`Spam`：
 
-![新建日历](http://upload-images.jianshu.io/upload_images/20292-9d6643b09baec11f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image holder](/downloads/images/2016_11/mac_spam_02.jpg "Don’t touch me...")
 
 然后点击某个你想删除的邀请，把它归档到这个新建的日历里面，要点右上角进入这个操作的入口：
 
-![归档邀请](http://upload-images.jianshu.io/upload_images/20292-addf2b77d0760b4c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image holder](/downloads/images/2016_11/mac_spam_03.jpg "Don’t touch me...")
 
 最后，删除这个新建的日历，这个系列的邀请就被清理干净了。
 
@@ -42,8 +42,8 @@ categories:
 
 但是这样能清静多久完全取决于你在攻击者心中的权重，如果来一串邀请就这么操作一遍，心情也是很差的，所以你可以直接把所有的邀请都设置成通过邮件来通知：
 
-![第一步：进入设置](http://upload-images.jianshu.io/upload_images/20292-a2a0d0c09520b3e8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image holder](/downloads/images/2016_11/mac_spam_04.jpg "Don’t touch me...")
 
-![第二步：进入高级选项](http://upload-images.jianshu.io/upload_images/20292-702275e3ee3966cf.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image holder](/downloads/images/2016_11/mac_spam_05.jpg "Don’t touch me...")
 
-![第三步：勾选通过邮件通知](http://upload-images.jianshu.io/upload_images/20292-72790afa08ac2789.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image holder](/downloads/images/2016_11/mac_spam_06.jpg "Don’t touch me...")

@@ -29,4 +29,3 @@ paramiko.SSHException: No suitable address
 最后，虽然demo的例子也挺多，但是好像没有说清楚怎么用invoke_shell和get_pty以及照例奉上一段代码。
 
 {% include_code paramiko_sample.py lang:python %}
-

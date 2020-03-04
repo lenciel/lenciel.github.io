@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-ruby '2.5.1'
+ruby '2.7.0'
 
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
@@ -9,10 +9,10 @@ ruby '2.5.1'
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "3.8.5"
+gem "jekyll", "4.0.0"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
-gem "jekyll-lenciel-theme", "~> 0.9.0"
+gem "jekyll-lenciel-theme", "~> 1.0.0", path: "../jekyll-lenciel-theme/"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
@@ -22,17 +22,11 @@ gem "jekyll-lenciel-theme", "~> 0.9.0"
 group :jekyll_plugins do
    gem 'jekyll-paginate'
    gem 'jekyll-gist'
+   gem 'jekyll_picture_tag'
    gem 'jekyll-sitemap'
    gem 'pygments.rb'
-   gem 'rdiscount', '~> 2.2.0'
-   gem 'stringex', '~> 2.7.1'
-   gem 'jekyll-feed', '~> 0.12.1'
-   #gem 'haml', '~> 4.0.7'
-   #gem 'rubypants', '~> 0.6.0'
-   #gem 'octopress-hooks', '~> 2.6.2'
-   #gem 'octopress-date-format', '~> 3.0.3'
-   #gem 'jekyll-sitemap'
-   #gem 'sass-globbing', '~> 1.0.0'
+   gem 'stringex'
+   gem 'jekyll-feed'
    # gems below are installed for rake task
    gem 'colorize'
    gem 'html_compressor'

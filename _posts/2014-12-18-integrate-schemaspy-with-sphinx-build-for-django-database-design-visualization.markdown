@@ -11,7 +11,7 @@ categories:
 ---
 
 
-![schemaSpy](/downloads/images/2014_12/schemaSpy.png "schemaSpy...")
+![schemaSpy](/downloads/images/2014_12/schemaSpy.png "schemaSpy")
 
 在做项目的时候，客户或者合作的部门常常问研发要“数据库设计”。在古代，瀑布式开发的第一个阶段是做架构设计和写文档，所以这样的需求一般都能被“充分满足”。而在我们现在的项目节奏和迭代速度都很快，数据库的设计在项目初期经常也在变化，如何能够比较方便的文档化这些变更？
 
@@ -26,7 +26,7 @@ $ ./manage.py graph_models -a -g -o my_project_visualized.png
 
 效果如下：
 
-![django-extension-sample](/downloads/images/2014_12/django_extension.svg "django-extension-sample...")
+<img src="/downloads/images/2014_12/django_extension.svg" title="django-extension-sample" alt="django-extension-sample"/>
 
 这里的图是通过[graphviz](http://www.graphviz.org/)来完成的，可以看到一般的了解也足够了，但是缺点主要是：
 
@@ -47,22 +47,22 @@ $ ./manage.py graph_models -a -g -o my_project_visualized.png
 )包`sqlite-xerial.jar`
 3. 创建一个`sqlite-xerial.properties`文件，内容如下：
 
-    ```
-    # Use -dp to override.
-    description=SQLite
-    connectionSpec=jdbc:sqlite:<db>
-    db=database name
-    driver=org.sqlite.JDBC
-    #you may need to put the full path to the driver depending on your setup
-    driverPath=sqlite-jdbc-3.8.7.jar
-    selectTablesSql=.tables
-    ```
+```
+# Use -dp to override.
+description=SQLite
+connectionSpec=jdbc:sqlite:<db>
+db=database name
+driver=org.sqlite.JDBC
+#you may need to put the full path to the driver depending on your setup
+driverPath=sqlite-jdbc-3.8.7.jar
+selectTablesSql=.tables
+```
 
 4. 运行命令：
 
-    ```
-    java -jar schemaSpy_5.0.0.jar -t  sqlite-xerial.properties -db ../src/default.db  -o django-testbird -sso
-    ```
+```
+java -jar schemaSpy_5.0.0.jar -t  sqlite-xerial.properties -db ../src/default.db  -o django-testbird -sso
+```
 
 会看到有`warning`，但是无需惊慌，我看了一下是schemaSpy的作者没有正确的处理`[]`。
 
@@ -79,7 +79,7 @@ $ ./manage.py graph_models -a -g -o my_project_visualized.png
 
 要实现#5，最简单的办法是在Sphinx文档目录下的`Makefile`里面加一个`target`：
 
-``` java
+```java
 dbv:
     java -jar schemaSpy_5.0.0.jar -t sqlite-xerial.properties -db ../src/default.db  -o _db_virtualization/django-testproject -sso
 ```

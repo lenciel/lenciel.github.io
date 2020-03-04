@@ -12,16 +12,6 @@ subscribe_rss: /feed.xml
 default_asides: []
 sidebar: collapse
 
-# Build settings
-#markdown: rdiscount
-#rdiscount:
-#  extensions:
-#    - autolink
-#    - footnotes
-#    - smart
-#    - generate_toc
-#  toc_token: "{:toc}"
-
 theme: jekyll-lenciel-theme
 plugins:
   - jekyll-paginate
@@ -54,6 +44,12 @@ excerpt_separator: "<!--more-->"
 
 titlecase: true       # Converts page and post titles to titlecase
 
+# jekyll-picture-tag
+picture:
+  output: "../resized"
+  cdn_url: "https://cdn.lenciel.com"
+  cdn_environments: ['production']
+  suppress_warnings: true
 
 # Google Analytics
 google_analytics_tracking_id: UA-175991-6
