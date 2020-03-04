@@ -49,7 +49,7 @@ desc "Generate jekyll site"
 task :generate do
   puts "## Generating Site with Jekyll"
   system "jekyll clean"
-  system "jekyll build --incremental"
+  system "JEKYLL_ENV=production jekyll build --incremental"
 end
 
 desc "Watch the site and regenerate when it changes"
@@ -68,7 +68,8 @@ end
 desc "preview the site in a web browser"
 task :preview do
   puts "Starting to serve jekyll on #{localhost_ip}:#{server_port}"
-  jekyllPid = Process.spawn("jekyll serve --incremental --host #{localhost_ip} --port #{server_port} --force_polling")
+  # jekyllPid = Process.spawn("jekyll serve --incremental --host #{localhost_ip} --port #{server_port}")
+  jekyllPid = Process.spawn("jekyll serve --incremental")
 
   trap("INT") {
     [jekyllPid].each { |pid| Process.kill(9, pid) rescue Errno::ESRCH }
