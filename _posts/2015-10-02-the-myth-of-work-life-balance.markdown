@@ -3,7 +3,7 @@ layout: post
 title: "Work Life Balance的神话"
 date: 2015-10-02 22:35:05 +0800
 comments: true
-categories: 
+categories:
 
 - rants
 
@@ -38,7 +38,7 @@ categories:
 
 包括这次Amazon的新闻一出，先后参与了Facebook和Asana的创建，31岁就已经攒下79亿美刀身家的[达斯汀·莫斯科维茨](http://www.forbeschina.com/review/billionaires/home/106757.shtml)就发了[一篇雄文](https://medium.com/life-learning/work-hard-live-well-ead679cb506d)表达自己的态度：如果能够再来一次，他希望自己在创建Facebook的过程中能够过得轻松一些。
 
-文章里面提到的那个一周不能工作超过40个小时的理论，我[之前也唠叨](http://lenciel.com/2013/05/the-myth-of-productivity/)过。实际上这个结论福特在1926年就调查得出了，并且开始[实施在自己的汽车厂](http://www.history.com/this-day-in-history/ford-factory-workers-get-40-hour-week)。
+文章里面提到的那个一周不能工作超过40个小时的理论，我[之前也唠叨](https://lenciel.com/2013/05/the-myth-of-productivity/)过。实际上这个结论福特在1926年就调查得出了，并且开始[实施在自己的汽车厂](http://www.history.com/this-day-in-history/ford-factory-workers-get-40-hour-week)。
 
 ## 说好的Work Life Balance呢？
 
@@ -52,7 +52,7 @@ categories:
 
 现在好了，发现其实全世界大多数从业者的日子都没什么大的区别（注意我这里说的从业者不包括各路水货混子嘴炮流选手），真是给了本座莫大的安慰。
 
-还在M记的时候，[我就挺关注burnout](http://lenciel.com/2012/03/do-not-burn-out-yourself/)的，因为自己确实有过经历，所以很怕带的团队里有小伙伴中招。
+还在M记的时候，[我就挺关注burnout](https://lenciel.com/2012/03/do-not-burn-out-yourself/)的，因为自己确实有过经历，所以很怕带的团队里有小伙伴中招。
 
 出来创业为了大家不搞出内伤，我们不打卡不搞绩效不规定上下班时间不限制休假长度。
 

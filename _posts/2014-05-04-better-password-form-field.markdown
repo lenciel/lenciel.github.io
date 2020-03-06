@@ -3,15 +3,15 @@ layout: post
 title: "请输入密码"
 date: 2014-05-04 09:33:43 +0800
 comments: true
-categories: 
+categories:
 - playground
 - web
 ---
 
 午饭之前的这点儿垃圾时间闲着也是闲着，大多数网站让用户输入密码都做得不够温柔。什么样是温柔呢？不打扰就是温柔...
 
-  <link rel="stylesheet" href="/downloads/static/css/flip_animations.css">
-  <link rel="stylesheet" href="/downloads/static/css/better_password_form_field.css">
+  <link rel="stylesheet" href="{{ site.static_base }}/downloads/static/css/flip_animations.css">
+  <link rel="stylesheet" href="{{ site.static_base }}/downloads/static/css/better_password_form_field.css">
 
 <div id='better-password-container'>
     <div class="top"></div>
@@ -54,4 +54,4 @@ categories:
     <div class="bottom"></div>
   </div>
 
-  <script src="/downloads/static/js/better_password_form_field.js"></script>
+  <script src="{{ site.static_base }}/downloads/static/js/better_password_form_field.js"></script>

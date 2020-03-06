@@ -108,10 +108,10 @@ PLATFORMS
 DEPENDENCIES
   colorize
   html_compressor
-  jekyll (= 4.0.0)
+  jekyll (>= 3.6, < 5.0)
   jekyll-feed
   jekyll-gist
-  jekyll-lenciel-theme (~> 1.0.0)!
+  jekyll-lenciel-theme!
   jekyll-paginate
   jekyll-sitemap
   jekyll_picture_tag

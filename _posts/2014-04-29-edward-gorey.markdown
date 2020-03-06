@@ -18,7 +18,7 @@ categories:
 
 
 所以，让我们看看Edward Gorey画的一些知名小说的封面吧（他能一直在作家圈子有帮朋友似乎也是因为画了不少封面）：
-<link rel="stylesheet" type="text/css" href="/downloads/static/css/elasticstack_slider.css" />
+<link rel="stylesheet" type="text/css" href="{{ site.static_base }}/downloads/static/css/elasticstack_slider.css" />
 
 <div class="slider-container">
     <ul id="elasticstack" class="elasticstack">
@@ -32,9 +32,9 @@ categories:
     </ul>
 </div><!-- /container -->
 
-<script src="/downloads/static/js/draggabilly.pkgd.min.js"></script>
-<script src="/downloads/static/js/modernizr.custom.js"></script>
-<script src="/downloads/static/js/elastiStack.js"></script>
+<script src="{{ site.static_base }}/downloads/static/js/draggabilly.pkgd.min.js"></script>
+<script src="{{ site.static_base }}/downloads/static/js/modernizr.custom.js"></script>
+<script src="{{ site.static_base }}/downloads/static/js/elastiStack.js"></script>
 <script>
     new ElastiStack( document.getElementById( 'elasticstack' ) );
 </script>

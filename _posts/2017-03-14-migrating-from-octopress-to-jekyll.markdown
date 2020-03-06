@@ -3,14 +3,14 @@ layout: post
 title: "从Octopress转到纯Jekyll"
 date: 2017-03-14 13:45:00 +0800
 comments: true
-categories: 
+categories:
 - blog
 - tools-i-use
 - jekyll
 - octopress
 ---
 
-离开Wordpress[改用Octopress](http://lenciel.com/2013/03/blog-with-octopress-and-github-pages/)写blog已经好些年了，本座甚至还写了一个自己的[Octopress模板](https://github.com/lenciel/octopress-theme-lenciel)。之所以要迁移主要是Octopress作为以Jekyll为基础的一套脚手架，自2011年发布以后进展非常缓慢，和Jekyll的快速更新很难对齐。
+离开Wordpress[改用Octopress](https://lenciel.com/2013/03/blog-with-octopress-and-github-pages/)写blog已经好些年了，本座甚至还写了一个自己的[Octopress模板](https://github.com/lenciel/octopress-theme-lenciel)。之所以要迁移主要是Octopress作为以Jekyll为基础的一套脚手架，自2011年发布以后进展非常缓慢，和Jekyll的快速更新很难对齐。
 
 在近期跳票多次的[Octopress3](http://octopress.org/2015/01/15/octopress-3.0-is-coming/)终于发布了之后，看了一下没有什么值得迁移的新功能。所以不管是从功能、性能还是开发活跃度上，继续跟Octopress都不太明智，就决定转用纯Jekyll。
 
@@ -57,7 +57,7 @@ $ jekyll new my-site && cd my-site
 这部分要特别注意的就是Jekyll的模板项目默认能够发布的目录（也就是包含在gemfile里面，能够被你的Blog项目在安装路径找到的目录）非常有限：
 
 > Jekyll will look first to your site’s content before looking to the theme’s defaults for any requested file in the following folders:
-> 
+>
 > /assets
 > /_layouts
 > /_includes

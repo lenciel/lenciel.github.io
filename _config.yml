@@ -11,13 +11,9 @@ date_format: "%Y/%m/%d %H:%M"
 subscribe_rss: /feed.xml
 default_asides: []
 sidebar: collapse
+static_base: "https://cdn.lenciel.com"
 
 theme: jekyll-lenciel-theme
-plugins:
-  - jekyll-paginate
-  - jekyll-gist
-  - jekyll-sitemap
-  - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -46,10 +42,11 @@ titlecase: true       # Converts page and post titles to titlecase
 
 # jekyll-picture-tag
 picture:
-  output: "../resized"
+  output: "resized"
   cdn_url: "https://cdn.lenciel.com"
   cdn_environments: ['production']
   suppress_warnings: true
+  noscript: true # add a fallback image inside a <noscript> tag.
 
 # Google Analytics
 google_analytics_tracking_id: UA-175991-6

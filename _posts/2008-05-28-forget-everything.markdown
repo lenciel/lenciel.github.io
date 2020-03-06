@@ -3,7 +3,7 @@ layout: post
 title: "落花流水"
 date: 2008-05-28 12:50
 comments: true
-categories: 
+categories:
 
  - writing
 
@@ -39,13 +39,13 @@ categories:
 
 “好吧，我唱给你听。”
 
-> Still a little bit of your ghost your witness  
-> Still a little bit of your face I haven&#8217;t kissed  
-> You step a little closer each day  
+> Still a little bit of your ghost your witness
+> Still a little bit of your face I haven&#8217;t kissed
+> You step a little closer each day
 > that I can&#8217;t say what&#8217;s going on
-> 
+>
 
-<audio controls loop preload><source src="/downloads/audio/cannonball.mp3"></audio>
+<audio controls loop preload><source src="{{ site.static_base }}/downloads/audio/cannonball.mp3"></audio>
 
 他有些不好意思，唱的时候就故意怪腔怪调，好像一盘有划痕的CD在执拗的旋转一样。她就咯咯笑着用手来封他的嘴巴。很快餐厅里面的音乐声就盖过了他的声音。
 

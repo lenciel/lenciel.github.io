@@ -3,7 +3,7 @@ layout: post
 title: "疤"
 date: 2014-09-01 03:38:50 +0800
 comments: true
-categories: 
+categories:
 
 - rants
 - writing
@@ -40,7 +40,7 @@ categories:
 
 而偏偏也是他们选择了自戕，仿佛在提醒大家：你看，就算知道有这么多人这样活着，我也不知道如何是好。
 
-我想他们不是没有放胆让那些温暖的人走进自己内心，也感受过幸福和快乐。但要习得[孤独与爱](http://lenciel.com/2014/04/rip-marquez/)的要义实在是太难。更何况，抑郁并不仅仅是心理上的问题而已。
+我想他们不是没有放胆让那些温暖的人走进自己内心，也感受过幸福和快乐。但要习得[孤独与爱](https://lenciel.com/2014/04/rip-marquez/)的要义实在是太难。更何况，抑郁并不仅仅是心理上的问题而已。
 
 最后，摘一段献给孙仲旭老师，Wish you rest in peace：
 

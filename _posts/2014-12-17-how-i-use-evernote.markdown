@@ -11,7 +11,7 @@ categories:
 ---
 
 
-其实之前也分享了一些[自己使用的工具](http://lenciel.com/blog/categories/tools-i-use/)，只是更偏重研发。今天跟另外一个也用Evernote的同事交流了一下我怎么用Evernote，效果还可以，干脆在年关将至的时候分享一下自己日常使用的一些软件。
+其实之前也分享了一些[自己使用的工具](https://lenciel.com/blog/categories/tools-i-use/)，只是更偏重研发。今天跟另外一个也用Evernote的同事交流了一下我怎么用Evernote，效果还可以，干脆在年关将至的时候分享一下自己日常使用的一些软件。
 
 从Evernote开始。
 

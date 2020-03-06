@@ -3,7 +3,7 @@ layout: post
 title: "使用Chrome自定义搜索引擎快速查找资源"
 date: 2016-02-20 11:53:34 +0800
 comments: true
-categories: 
+categories:
 
 - tools-i-use
 - tips
@@ -78,6 +78,4 @@ https://www.google.com.hk/search?q=%s+site%3Apan.baidu.com
 
 具体使用过程请参考下面这个视频（略需要几秒加载）：
 
-{% video http://lenciel.com/downloads/video/chrome_custom_search.mp4 640 320 http://lenciel.com/downloads/images/2016_02/chrome_custom_search.png %}
-
-
+<video width="640" height="320" preload="none" controls="" poster="{{ site.static_base }}/downloads/images/2016_02/chrome_custom_search.png"><source src="{{ site.static_base }}/downloads/video/chrome_custom_search.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;"></video>

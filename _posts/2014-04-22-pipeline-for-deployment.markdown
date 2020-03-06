@@ -3,17 +3,17 @@ layout: post
 title: "构建Deployment系统 (1)"
 date: 2014-04-22 02:49:38 +0800
 comments: true
-categories: 
+categories:
 - deployment
 - tutorials
 - tips
 - CI
 ---
 
-对软件公司，特别是互联网软件公司来说，发布流程是企业的[核心竞争力](http://lenciel.com/2013/05/the-importance-of-deploy-as-will/)。
+对软件公司，特别是互联网软件公司来说，发布流程是企业的[核心竞争力](https://lenciel.com/2013/05/the-importance-of-deploy-as-will/)。
 
 那么什么是一个好的发布流程呢？Github（别忘了它本身也是一家软件公司）的CTO在介绍[Boxen
-](http://lenciel.com/2013/03/boxen-introduction/)的时候说过，他们公司新员工从拿电脑到可以开始编码只要30分钟，这给混过几家10w+员工公司的我带来的震撼特别强烈。
+](https://lenciel.com/2013/03/boxen-introduction/)的时候说过，他们公司新员工从拿电脑到可以开始编码只要30分钟，这给混过几家10w+员工公司的我带来的震撼特别强烈。
 
 所以我觉得，一个好的软件发布流程应该是：
 
@@ -61,7 +61,7 @@ categories:
     2. 单元测试
     3. 有报错发邮件通知事主。没有报错， 部署`alpha`分支到test服务器
     4. 部署test服务器后，运行集成测试集
-    
+
 2. 有人手工触发staging的build:
     1. merge`alpha`分支到`staging`分支
     2. 部署`staging`分支到staging服务器

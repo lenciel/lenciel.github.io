@@ -3,7 +3,7 @@ layout: post
 title: "微服务架构里的数据处理"
 date: 2017-02-16 02:58:52 +0800
 comments: true
-categories: 
+categories:
 - microservice
 - hcb
 - MSA
@@ -11,7 +11,7 @@ categories:
 - architecture
 ---
 
-之前说过，实践微服务架构的[最大收益](http://lenciel.com/2017/02/the-real-success-by-doing-msa/)在于对团队的改造：我们希望构建起彼此独立，以不同技术栈和不同速度进行工作，在需求变更时能够快速响应和更新而不会相互影响，具备良好自治性的团队。根据康威定律，如果我们的组织结构进化成这样，我们的软件才可以变得符合“微服务架构”。
+之前说过，实践微服务架构的[最大收益](https://lenciel.com/2017/02/the-real-success-by-doing-msa/)在于对团队的改造：我们希望构建起彼此独立，以不同技术栈和不同速度进行工作，在需求变更时能够快速响应和更新而不会相互影响，具备良好自治性的团队。根据康威定律，如果我们的组织结构进化成这样，我们的软件才可以变得符合“微服务架构”。
 
 要达到这种自治性，就需要“解耦”：这个词90%念叨它的人都不知道怎么做，有一些所谓的微服务架构实践指南上甚至有“每个微服务应该有自己的数据库，两个微服务之间不能共享数据库”这样的硬性条款。乍听起来这很棒，因为你不会遇到不同的服务读写模型不同带来的各种竞争，也不会遇到不同业务需要的数据模型不同带来的冲突等等。
 
@@ -58,8 +58,8 @@ categories:
 
 其实并不是这样，你看Netflix的架构师是这么说的：
 
-> “People try to copy Netflix, but they can only copy what they see. They copy the results, not the process” 
-> 
+> “People try to copy Netflix, but they can only copy what they see. They copy the results, not the process”
+>
 > Adrian Cockcroft, former Netflix Chief Cloud Architect
 
 实践微服务框架的落地，并没有固定路径可走，每个公司都会有自己的实际情况，所以原样照搬Netflix或者任何一家公司的经验，都注定失败。
@@ -118,7 +118,7 @@ categories:
 
 考虑这些问题时我们首先要考虑分布式系统的特性：[没有什么是可以预期的](http://queue.acm.org/detail.cfm?id=2953944)。无论是系统里面的某个部分出问题还是网络出问题都是非常常见的。正确的做法是直面这些挑战，让你的数据模型可以在它依赖的其他部分，别的边界里包含的系统出问题的时，继续工作，并稍后修复并保证一致性。
 
-在之前提到过，微服务架构里面，自治的重要性：这其实并不是一个有弹性的软件系统的需求，[任何有弹性的系统都这样](http://lenciel.com/2017/02/why-event-driven-when-doing-msa/)。
+在之前提到过，微服务架构里面，自治的重要性：这其实并不是一个有弹性的软件系统的需求，[任何有弹性的系统都这样](https://lenciel.com/2017/02/why-event-driven-when-doing-msa/)。
 
 所以，在事务边界和上下文边界之间，通过事件通信，来进行同步和一致性的保证。“事件”可以被看成是系统的某个局部在某个确定的时间点的快照被拍下来之后发给其他的节点。各个节点都可以监听自己感兴趣的事件，保存其中的数据，根据其中的数据做响应。
 

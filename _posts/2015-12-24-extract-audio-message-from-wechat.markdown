@@ -3,7 +3,7 @@ layout: post
 title: "提取微信语音消息"
 date: 2015-12-24 13:05:21 +0800
 comments: true
-categories: 
+categories:
 
 - tools-i-use
 
@@ -35,7 +35,7 @@ Why not?
 
 常温常压下我并不需要导出微信的语音，之所以有这个需求是因为蒙爷在三亚经常用微信跟我们唠嗑：
 
-<audio controls loop preload><source src="/downloads/audio/mm_voice.mp3"></audio>
+<audio controls loop preload><source src="{{ site.static_base }}/downloads/audio/mm_voice.mp3"></audio>
 
 听到这样销魂的声音你就算不想保存，也想要转发，对不对？
 

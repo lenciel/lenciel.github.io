@@ -3,14 +3,14 @@ layout: post
 title: "Data Migration in Django 1.7 (2)"
 date: 2014-08-11 03:59:47 +0800
 comments: true
-categories: 
+categories:
 - django
 - tutorial
 ---
 
 在应用开发的过程中，我们会遇到migration主要分为：
 
-1. Schema Migrations：数据库schema的变化，也就是我们前面[讨论的内容](http://lenciel.com/2014/08/django-1-dot-7-migrations/)
+1. Schema Migrations：数据库schema的变化，也就是我们前面[讨论的内容](https://lenciel.com/2014/08/django-1-dot-7-migrations/)
 2. Data Migrations：数据的变化，比如需要批量变更数据或者备份在其他地方的历史数据
 
 第二种是没法敲几条命令让Django自动帮你完成其他的事情的，而是需要手动使用`RunPython`，这里具体说一下做法。

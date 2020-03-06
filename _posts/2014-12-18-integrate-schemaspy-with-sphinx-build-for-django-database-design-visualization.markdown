@@ -15,7 +15,7 @@ categories:
 
 在做项目的时候，客户或者合作的部门常常问研发要“数据库设计”。在古代，瀑布式开发的第一个阶段是做架构设计和写文档，所以这样的需求一般都能被“充分满足”。而在我们现在的项目节奏和迭代速度都很快，数据库的设计在项目初期经常也在变化，如何能够比较方便的文档化这些变更？
 
-对开发团队内部来说，我个人觉得Django的South或者是1.7之后加入的[Migration](http://lenciel.com/2014/08/django-1-dot-7-migrations/)里面每次变更生成的migration文件就已经足够开发人员了解底层的设计发生了什么变化。
+对开发团队内部来说，我个人觉得Django的South或者是1.7之后加入的[Migration](https://lenciel.com/2014/08/django-1-dot-7-migrations/)里面每次变更生成的migration文件就已经足够开发人员了解底层的设计发生了什么变化。
 
 而对外提供的文档，主要是在更高层级进行设计的沟通，所以之前我们一般是通过[django-extension](https://github.com/django-extensions/django-extensions)里面的`graph_models`命令来生成简单的关系图：
 

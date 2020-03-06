@@ -16,7 +16,7 @@ categories:
 
 所以虽然知道[Github](http://github.com)可以免费host任何静态页面很久了，眼看着[Octopress](http://octopress.org/)也日益成熟，但一直都下定决心去试：谁知道哪天Github又被墙了呢？
 
-不过，在最近自己的职业生涯发生了不小的变化，在可预见的未来，肯定要做很多跟code有关的笔记。[现在的blog](http://lenciel.com)系统是wordpress，虽然非常好用，但是比起markdown来说，写起code来速度就差太多了。所以今天下定决心试了一把Octopress+Github Pages，效果非常满意，特别记录一下过程，像大家做个推荐。
+不过，在最近自己的职业生涯发生了不小的变化，在可预见的未来，肯定要做很多跟code有关的笔记。[现在的blog](https://lenciel.com)系统是wordpress，虽然非常好用，但是比起markdown来说，写起code来速度就差太多了。所以今天下定决心试了一把Octopress+Github Pages，效果非常满意，特别记录一下过程，像大家做个推荐。
 
 Jekyll&Octopress
 ----------------
@@ -127,7 +127,7 @@ rake generate && rake deploy
 
 ###新建文章###
 
-``` 
+```
 rake new_post\["Blog with Octopress and Github Pages"\]
 ```
 

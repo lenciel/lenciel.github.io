@@ -3,7 +3,7 @@ layout: post
 title: "使用dnsmasq配置本地开发环境"
 date: 2014-04-25 14:53:37 +0800
 comments: true
-categories: 
+categories:
 - dnsmasq
 - dev
 - tips
@@ -24,7 +24,7 @@ categories:
     $ brew up
 ```
 
-然后安装dnsmasq。注意安装命令的输出，结尾是有配置的简单说明的。因为我用了[boxen](http://lenciel.com/2013/03/boxen-introduction/)所以路径不一定对每个人都适用，以你自己的输出为准：
+然后安装dnsmasq。注意安装命令的输出，结尾是有配置的简单说明的。因为我用了[boxen](https://lenciel.com/2013/03/boxen-introduction/)所以路径不一定对每个人都适用，以你自己的输出为准：
 
 ```bash
     $ brew install dnsmasq
@@ -70,7 +70,7 @@ $ sudo launchctl start homebrew.mxcl.dnsmasq
 ```bash
 $ sudo mkdir -p /etc/resolver
 $ sudo touch /etc/resolver/dev
-$ sudo vi /etc/resolver/dev 
+$ sudo vi /etc/resolver/dev
 ```
 
 在`/etc/resolver/dev`里面添加一行`nameserver 127.0.0.1`就可以了。
@@ -81,10 +81,10 @@ $ sudo vi /etc/resolver/dev
 
     $ ping -c 1 www.sina.com.cn
     PING newscd.sina.com.cn (221.236.31.145): 56 data bytes
- 
+
     $ ping -c 1 this.is.a.test.dev
     PING this.is.a.test.dev (127.0.0.1): 56 data bytes
- 
+
     $ ping -c 1 this.is.cool.dev
     PING this.is.cool.dev (127.0.0.1): 56 data bytes
 ```

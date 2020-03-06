@@ -45,9 +45,9 @@ categories:
 
 所以我们可以直接查看到很多过去要花钱才能[捧回家](https://society6.com/product/rusty-leaved-rhododendron-from-the-moral-of-flowers-1833-by-rebecca-hey_print?curator=brainpicker)的好资源了。
 
-不仅仅是植物，比如和达尔文合作过的 [John Gould](https://en.wikipedia.org/wiki/John_Gould) ，他专门搞动物的，特别是鸟类，[每本书](https://www.biodiversitylibrary.org/search?searchTerm=John+Gould&stype=F#/titles)都极其精美，试举一例：
+不仅仅是植物，比如和达尔文合作过的 [John Gould](https://en.wikipedia.org/wiki/John_Gould) ，他专门搞动物的，特别是鸟类，[每本书](https://www.biodiversitylibrary.org/search?searchTerm=John+Gould&stype=F#/titles)都极其精美，试举一例（请用手指或鼠标滑动图片翻页）：
 
-<link rel="stylesheet" type="text/css" href="/downloads/static/css/elasticstack_slider.css" />
+<link rel="stylesheet" type="text/css" href="{{ site.static_base }}/downloads/static/css/elasticstack_slider.css" />
 
 <div class="slider-container">
     <ul id="elasticstack" class="elasticstack">
@@ -101,9 +101,9 @@ categories:
 
 这应该就是大自然教给我们的最宝贵的东西。
 
-<script src="/downloads/static/js/draggabilly.pkgd.min.js"></script>
-<script src="/downloads/static/js/modernizr.custom.js"></script>
-<script src="/downloads/static/js/elastiStack.js"></script>
+<script src="{{ site.static_base }}/downloads/static/js/draggabilly.pkgd.min.js"></script>
+<script src="{{ site.static_base }}/downloads/static/js/modernizr.custom.js"></script>
+<script src="{{ site.static_base }}/downloads/static/js/elastiStack.js"></script>
 <script>
     new ElastiStack( document.getElementById( 'elasticstack' ) );
 </script>

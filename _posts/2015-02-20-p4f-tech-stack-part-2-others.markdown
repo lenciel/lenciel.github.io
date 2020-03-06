@@ -3,14 +3,14 @@ layout: post
 title: "Palm4fun Tech Stack Review Part II"
 date: 2015-02-20 14:11:19 +0800
 comments: true
-categories: 
+categories:
 
 - tools-i-use
 - p4f
 - tech-stack
 ---
 
-距离[上篇](http://lenciel.com/2015/01/p4f-tech-stack-part-1-devops/)略久，主要最近很忙。
+距离[上篇](https://lenciel.com/2015/01/p4f-tech-stack-part-1-devops/)略久，主要最近很忙。
 
 ## Application & Data
 
@@ -48,7 +48,7 @@ categories:
 - Browserify使得你可以在browser里面直接使用npm的module，而不仅仅是在server端。完全是一次革命，非常好用。
 - Gulp和Grunt是build工具（类比Ant/Maven），Gulp更新而且设计上非常成熟，推荐学习和使用Gulp。
 - express.js是服务器端JS应用开发需要学习的东西。
-- Meteor是设计非常领先的一个全栈的框架（想想Django），整体上非常酷，目前也很流行。如果你想试试自己的学习能力和承受能力，值得一试。 
+- Meteor是设计非常领先的一个全栈的框架（想想Django），整体上非常酷，目前也很流行。如果你想试试自己的学习能力和承受能力，值得一试。
 - jQuery之于JavaScript就好比少林寺之于中华武术。每个人都在学，都以为它就可以搞定整个武林，但那是错的。JQuery是用来对DOM做操作的，如果你用它在干别的，你多半错了。
 
 ### Assets & Media

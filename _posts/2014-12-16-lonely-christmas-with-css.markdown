@@ -14,7 +14,7 @@ categories:
 
 纯CSS的动画实作:
 
-<link rel="stylesheet" type="text/css" href="/downloads/static/css/christmas_animation.css" />
+<link rel="stylesheet" type="text/css" href="{{ site.static_base }}/downloads/static/css/christmas_animation.css" />
 
 <script>
   function resetSvgText() {

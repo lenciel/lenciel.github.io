@@ -5,7 +5,7 @@ date: 2013-07-10 21:55
 permalink: /about/
 ---
 
-<img class="pad" style="border: 1px solid #cccccc; padding: 3px; margin-right: 1em;" title="Lenciel Li" src="../downloads/images/wu_kong.jpg" alt="Lenciel Lei" width="155" height="147" align="left" />
+<img class="pad" style="border: 1px solid #cccccc; padding: 3px; margin-right: 1em;" title="Lenciel Li" src="{{ site.static_base }}/downloads/images/wu_kong.jpg" alt="Lenciel Lei" width="155" height="147" align="left" />
 Lenciel，工程师。从业时间略长，在做存储最好的公司做过存储，做基站最好的公司做过基站。创过业，折腾过小而美的团队，也在几十亿美金估值的公司管过研发、产品和运营。对物质生活悟性一般，勉强能分清鲍鱼和鲤鱼。对各种技术和产品坚持刨根问底，因此据说敏捷和智力属性还比较高。
 
 最大的爱好是足球，从中学到研究生毕业都是校队队员，打过几届飞利浦，运气好的两次还打到全国赛见识了一下。虽然生活在天朝，这项爱好显得不那么讲究，但目前仍每周参与，不离不弃，直到 2019 年被坏人弄断了十字韧带，出现了暂停。

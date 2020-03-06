@@ -3,7 +3,7 @@ layout: post
 title: "苏大爷"
 date: 2017-03-10 14:40:45 +0800
 comments: true
-categories: 
+categories:
 
 - 不美好药店
 
@@ -263,4 +263,4 @@ categories:
 
 我呆呆看着，感觉是苏大爷抱了爱人入怀，紧紧地捂。
 
-<audio controls loop preload><source src="/downloads/audio/do_u_know.mp3"></audio>
+<audio controls loop preload><source src="{{ site.static_base }}/downloads/audio/do_u_know.mp3"></audio>
