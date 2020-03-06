@@ -8,3 +8,8 @@ _temp
 /node_modules
 .textlintrc
 /downloads/code/upload_dir.py
+/_ftp
+/site_bak
+/site_bak1
+/_site_bak
+lenciel.com_*.report.html
