@@ -25,6 +25,8 @@ page_dir        = "docs"      # page directory
 blog_index_dir  = './'        # directory for your blog's index page
 deploy_dir      = "_site"     # Github repo lenciel.github.io master branch or static site hosting folder)
 stash_dir       = "_stash"    # directory to stash posts for speedy generation
+back_dir       = "_site_bak"    # directory to stash posts for speedy generation
+ftp_dir       = "_ftp"    # directory to stash posts for speedy generation
 posts_dir       = "_posts"    # directory for blog files
 new_post_ext    = "markdown"  # default new post file extension when using the new_post task
 new_page_ext    = "markdown"  # default new page file extension when using the new_page task
@@ -45,17 +47,37 @@ end
 # Working with Jekyll #
 #######################
 
-desc "Generate jekyll site"
-task :generate do
-  puts "## Generating Site with Jekyll"
+desc "Backup exsiting _site to site_old"
+task :backup_site do
+  puts "## Backing up _site to site_old"
+  rm_rf "#{back_dir}"
+  cp_r "#{deploy_dir}", "#{back_dir}"
+end
+
+desc "Copy exsiting resized image to _site"
+task :copy_resized do
+  puts "## Copying exsiting resized image to _site"
   system "jekyll clean"
+  system "mkdir -p #{deploy_dir}"
+  FileUtils.mv Dir.glob("#{back_dir}/resized"), "#{deploy_dir}/"
+end
+
+desc "Generate jekyll site for production deployment"
+task :generate do
+  Rake::Task[:backup_site].execute
+  Rake::Task[:copy_resized].execute
+  puts "## Generating Site with Jekyll"
   system "JEKYLL_ENV=production jekyll build --incremental"
 end
 
-desc "Watch the site and regenerate when it changes"
+desc "Watch the prod site and regenerate when it changes"
 task :watch do
+  Rake::Task[:backup_site].execute
+  Rake::Task[:copy_resized].execute
+
   puts "Starting to watch source with Jekyll."
-  jekyllPid = Process.spawn("jekyll build --watch --incremental")
+
+  jekyllPid = Process.spawn({"JEKYLL_ENV"=>"production"}, "jekyll build --watch")
 
   trap("INT") {
     [jekyllPid].each { |pid| Process.kill(9, pid) rescue Errno::ESRCH }
@@ -65,11 +87,29 @@ task :watch do
   [jekyllPid].each { |pid| Process.wait(pid) }
 end
 
-desc "preview the site in a web browser"
+desc "preview the dev site in a web browser"
 task :preview do
+  Rake::Task[:backup_site].execute
   puts "Starting to serve jekyll on #{localhost_ip}:#{server_port}"
-  # jekyllPid = Process.spawn("jekyll serve --incremental --host #{localhost_ip} --port #{server_port}")
-  jekyllPid = Process.spawn("jekyll serve --incremental")
+
+  jekyllPid = Process.spawn("jekyll serve --incremental --host #{localhost_ip} --port #{server_port}  --watch --config _config.yml,_config_dev.yml")
+
+  trap("INT") {
+    [jekyllPid].each { |pid| Process.kill(9, pid) rescue Errno::ESRCH }
+    exit 0
+  }
+
+  [jekyllPid].each { |pid| Process.wait(pid) }
+end
+
+
+desc "preview the prod site in a web browser"
+task :preview_prod do
+  Rake::Task[:backup_site].execute
+  puts "Starting to serve jekyll on #{localhost_ip}:#{server_port}"
+
+  jekyllPid = Process.spawn({"JEKYLL_ENV"=>"production"}, "jekyll serve --watch")
+  puts "Starting to serve jekyll on #{jekyllPid}"
 
   trap("INT") {
     [jekyllPid].each { |pid| Process.kill(9, pid) rescue Errno::ESRCH }
@@ -98,7 +138,6 @@ task :new_post, :title do |t, args|
     post.puts "layout: post"
     post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
     post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}"
-    post.puts "comments: true"
     post.puts "categories: "
     post.puts "---"
   end
@@ -135,7 +174,6 @@ task :new_page, :filename do |t, args|
       page.puts "layout: page"
       page.puts "title: \"#{title}\""
       page.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M')}"
-      page.puts "comments: true"
       page.puts "sharing: true"
       page.puts "footer: true"
       page.puts "---"
@@ -174,7 +212,13 @@ task :prepare_deploy do
   Rake::Task[:integrate].execute
   Rake::Task[:generate].execute
   Rake::Task[:minify_html].execute
-  rm_rf [Dir.glob("#{deploy_dir}/node_modules"), Dir.glob("#{deploy_dir}/*.md"), Dir.glob("#{deploy_dir}/*.json"), Dir.glob("#{deploy_dir}/*.sh"), "#{deploy_dir}/plugins", "#{deploy_dir}/Rakefile", "#{deploy_dir}/Makefile"]
+  rm_rf [Dir.glob("#{deploy_dir}/node_modules"), Dir.glob("#{deploy_dir}/*.md"), Dir.glob("#{deploy_dir}/*.py"), Dir.glob("#{deploy_dir}/*.json"), Dir.glob("#{deploy_dir}/*.sh"), "#{deploy_dir}/plugins", "#{deploy_dir}/Rakefile", "#{deploy_dir}/Makefile", "#{deploy_dir}/gulpfile.js"]
+
+  puts "\n## Copying #{deploy_dir} to #{ftp_dir}"
+  rm_rf "{ftp_dir}"
+  cp_r "#{deploy_dir}/.", ftp_dir
+  #rm_rf [Dir.glob("#{ftp_dir}/resized"), Dir.glob("#{ftp_dir}/assets"), Dir.glob("#{ftp_dir}/downloads")]
+
   #Rake::Task[:optimize_images].execute
   # Rake::Task[:copydot].invoke(source_dir, deploy_dir)
 end
