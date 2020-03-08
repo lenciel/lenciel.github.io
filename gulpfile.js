@@ -8,7 +8,7 @@ var gulp = require('gulp'),
 
 // Minfiy css
 gulp.task('uncss', function() {
-    return gulp.src('downloads/static/css/app.css')
+    return gulp.src('downloads/static/css/screen.css')
         .pipe(uncss({
             ignore: ['#added_at_runtime',
                 '_site/2016/05/starry-starry-night/index.html',

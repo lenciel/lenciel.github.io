@@ -44,7 +44,7 @@ python downloads/code/upload_dir.py
 
 如何做增量？如何做刷新是需要仔细去看的：
 
-- [刷新缓存](https://portal.qiniu.com/domain/refresh?ref=developer.qiniu.com)针对 app.js/app.css 这类文件
+- [刷新缓存](https://portal.qiniu.com/domain/refresh?ref=developer.qiniu.com)针对 app.js/screen.css 这类文件
 - 增量上传主要针对resized 等目录下的图片文件
 
 then just
@@ -59,4 +59,3 @@ $ mv .site/* *
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-

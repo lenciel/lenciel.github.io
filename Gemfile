@@ -21,12 +21,11 @@ gem "jekyll-lenciel-theme", path: "../jekyll-lenciel-theme/"
 group :jekyll_plugins do
    gem 'jekyll-paginate'
    gem 'jekyll-gist'
-   gem 'jekyll_picture_tag'
+   gem 'jekyll_picture_tag', '~> 1.9.0'
    gem 'jekyll-sitemap'
    gem 'jekyll-feed'
-   gem 'pygments.rb'
-   gem 'stringex'
    # gems below are installed for rake task
+   gem 'stringex'
    gem 'colorize'
    gem 'html_compressor'
    gem 'parallel'

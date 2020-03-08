@@ -32,7 +32,7 @@ new_post_ext    = "markdown"  # default new post file extension when using the n
 new_page_ext    = "markdown"  # default new page file extension when using the new_page task
 server_port     = "4000"      # port for preview server eg. localhost:4000
 # localhost_ip    = "172.16.121.110"  # just incase you're using vm like me
-localhost_ip    = "127.0.0.1"  # just incase you're using vm like me
+localhost_ip    = "0.0.0.0"  # just incase you're using vm like me
 
 n_cores = 4
 js_for_combine   = { 'app.js' => ['libs/modernizr.custom.55630.js', 'ender.js', 'libs/jquery.min.js'],
@@ -50,8 +50,8 @@ end
 desc "Backup exsiting _site to site_old"
 task :backup_site do
   puts "## Backing up _site to site_old"
-  rm_rf "#{back_dir}"
-  cp_r "#{deploy_dir}", "#{back_dir}"
+  rm_rf Dir.glob("#{back_dir}")
+  cp_r "#{ftp_dir}", back_dir
 end
 
 desc "Copy exsiting resized image to _site"
@@ -90,9 +90,9 @@ end
 desc "preview the dev site in a web browser"
 task :preview do
   Rake::Task[:backup_site].execute
-  puts "Starting to serve jekyll on #{localhost_ip}:#{server_port}"
+  puts "Starting to serve jekyll on http://#{localhost_ip}:#{server_port}"
 
-  jekyllPid = Process.spawn("jekyll serve --incremental --host #{localhost_ip} --port #{server_port}  --watch --config _config.yml,_config_dev.yml")
+  jekyllPid = Process.spawn("jekyll serve --incremental --host #{localhost_ip} --port #{server_port}  -w --config _config.yml,_config_dev.yml")
 
   trap("INT") {
     [jekyllPid].each { |pid| Process.kill(9, pid) rescue Errno::ESRCH }
@@ -106,7 +106,7 @@ end
 desc "preview the prod site in a web browser"
 task :preview_prod do
   Rake::Task[:backup_site].execute
-  puts "Starting to serve jekyll on #{localhost_ip}:#{server_port}"
+  puts "Starting to serve jekyll on http://#{localhost_ip}:#{server_port}"
 
   jekyllPid = Process.spawn({"JEKYLL_ENV"=>"production"}, "jekyll serve --watch")
   puts "Starting to serve jekyll on #{jekyllPid}"
@@ -200,7 +200,7 @@ end
 
 desc "Clean out caches: .pygments-cache, .gist-cache, .sass-cache"
 task :clean do
-  rm_rf [Dir.glob(".pygments-cache/**"), Dir.glob(".gist-cache/**"), Dir.glob(".sass-cache/**"), "source/stylesheets/screen.css"]
+  rm_rf [Dir.glob(".pygments-cache/**"), Dir.glob(".gist-cache/**"), Dir.glob(".sass-cache/**")]
 end
 
 ##############
@@ -215,7 +215,8 @@ task :prepare_deploy do
   rm_rf [Dir.glob("#{deploy_dir}/node_modules"), Dir.glob("#{deploy_dir}/*.md"), Dir.glob("#{deploy_dir}/*.py"), Dir.glob("#{deploy_dir}/*.json"), Dir.glob("#{deploy_dir}/*.sh"), "#{deploy_dir}/plugins", "#{deploy_dir}/Rakefile", "#{deploy_dir}/Makefile", "#{deploy_dir}/gulpfile.js"]
 
   puts "\n## Copying #{deploy_dir} to #{ftp_dir}"
-  rm_rf "{ftp_dir}"
+  rm_rf Dir.glob("#{ftp_dir}")
+  mkdir ftp_dir
   cp_r "#{deploy_dir}/.", ftp_dir
   #rm_rf [Dir.glob("#{ftp_dir}/resized"), Dir.glob("#{ftp_dir}/assets"), Dir.glob("#{ftp_dir}/downloads")]
 
