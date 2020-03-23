@@ -52,6 +52,11 @@ facebook_like: false
 # Beian
 beian: 沪ICP备19012437号
 
+# Valine
+comment_appId: 7gWogz4Czk9e67kYRYzcEtBY-gzGzoHsz
+comment_appKey: PjJJiU2I8wRBNrbYnCSNXqJK
+
+
 ## 4. Jekyll settings
 sass:
   style: compressed # Style compression

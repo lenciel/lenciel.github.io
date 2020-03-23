@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "升级到Jekyll 4"
 date: 2020-03-07 17:45:08 +0800
 categories:

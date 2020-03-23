@@ -18,7 +18,7 @@ categories:
 
 ## 智慧和技能
 
-[前面我们](/2020-02-21-how-to-read-the-books-part-1/)说了读书给你更好的观念、智慧和技能，以及什么是我觉得更好的观念。
+[前面我们](/2020/02/how-to-read-the-books-part-1/)说了读书给你更好的观念、智慧和技能，以及什么是我觉得更好的观念。
 
 我们接着说智慧和技能。
 
@@ -233,7 +233,7 @@ categories:
 
 如果你还是很犹豫，那么我来给你兜个底。
 
-我会在[第三部分](/2020-02-21-how-to-read-the-books-part-3/)告诉你，[图书分类](https://book.jd.com/booksort.html)里那些教你「智慧」的书，读完哪些，就基本够应付其他人类了：
+我会在[第三部分](/2020/02/how-to-read-the-books-part-3/)告诉你，[图书分类](https://book.jd.com/booksort.html)里那些教你「智慧」的书，读完哪些，就基本够应付其他人类了：
 
 ![image holder](/downloads/images/2020_02/book_categories.jpg "Don't touch me...")
 
