@@ -30,7 +30,7 @@ ftp_dir       = "_ftp"    # directory to stash posts for speedy generation
 posts_dir       = "_posts"    # directory for blog files
 new_post_ext    = "markdown"  # default new post file extension when using the new_post task
 new_page_ext    = "markdown"  # default new page file extension when using the new_page task
-server_port     = "4000"      # port for preview server eg. localhost:4000
+server_port     = "4003"      # port for preview server eg. localhost:4000
 # localhost_ip    = "172.16.121.110"  # just incase you're using vm like me
 localhost_ip    = "0.0.0.0"  # just incase you're using vm like me
 
@@ -90,6 +90,7 @@ end
 desc "preview the dev site in a web browser"
 task :preview do
   Rake::Task[:backup_site].execute
+  Rake::Task[:copy_resized].execute
   puts "Starting to serve jekyll on http://#{localhost_ip}:#{server_port}"
 
   jekyllPid = Process.spawn("jekyll serve --incremental --host #{localhost_ip} --port #{server_port}  -w --config _config.yml,_config_dev.yml")
@@ -106,6 +107,7 @@ end
 desc "preview the prod site in a web browser"
 task :preview_prod do
   Rake::Task[:backup_site].execute
+  Rake::Task[:copy_resized].execute
   puts "Starting to serve jekyll on http://#{localhost_ip}:#{server_port}"
 
   jekyllPid = Process.spawn({"JEKYLL_ENV"=>"production"}, "jekyll serve --watch")
@@ -136,6 +138,7 @@ task :new_post, :title do |t, args|
   open(filename, 'w') do |post|
     post.puts "---"
     post.puts "layout: post"
+    post.puts "comments: true"
     post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
     post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}"
     post.puts "categories: "
@@ -172,6 +175,7 @@ task :new_page, :filename do |t, args|
     open(file, 'w') do |page|
       page.puts "---"
       page.puts "layout: page"
+      post.puts "comments: true"
       page.puts "title: \"#{title}\""
       page.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M')}"
       page.puts "sharing: true"
