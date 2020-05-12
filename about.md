@@ -13,7 +13,7 @@ Lenciel，工程师。从业时间略长，在做存储最好的公司做过存�
 
 除此之外，爱音乐，不限风格；[爱读书](/docs/reading-list/)，不限题材；爱电影，不限短长。
 
-因为一个人感兴趣的事情越多，快乐的机会也越多，而受命运摆布的可能性就越小。因为他如果不能享受一种快乐，还可以享受另一种。我们人类很容易有内省癖的倾向，眼前无数有趣的事物不去欣赏和研究，无数壮阔的事业不去开创和发展，却把目光投向一无所有的内心。
+因为一个人感兴趣的事情越多，快乐的机会也越多，而受命运摆布的可能性就越小。毕竟当他不能享受一种快乐时，还可以享受另一种。我们人类很容易有内省癖的倾向，眼前无数有趣的事物不去欣赏和研究，无数壮阔的事业不去开创和发展，却把目光投向一无所有的内心。
 
 切勿以为，在不断拷问自己的内省过程里，得到的那些不快乐里有什么伟大之处。
 
@@ -39,6 +39,9 @@ Just Do It!
 
 #### **假装懂点技术**
 
+*   <a title="怎样读书(3)" href="https://lenciel.com/2020/02/how-to-read-the-books-part-3/" target="_blank">怎样读书(3)</a>
+*   <a title="怎样读书(2)" href="https://lenciel.com/2020/02/how-to-read-the-books-part-2/" target="_blank">怎样读书(2)</a>
+*   <a title="怎样读书(1)" href="https://lenciel.com/2020/02/how-to-read-the-books-part-1/" target="_blank">怎样读书(1)</a>
 *   <a title="Unicode漫游指南" href="https://lenciel.com/docs/unicode-complete/" target="_blank">Unicode漫游指南</a>
 *   <a title="分布式系统介绍" href="https://lenciel.com/2018/04/distributed-system-introduction/" target="_blank">分布式系统介绍</a>
 *   <a href="https://lenciel.com/2016/09/types-in-programming-languages/" target="_blank">编程语言里的类型系统</a>
@@ -57,7 +60,6 @@ Just Do It!
 *   <a href="https://lenciel.com/2019/04/a-talk-about-996/">996和拼搏精神</a>
 *   <a href="https://lenciel.com/2016/10/product-things-i-learned-at-testbird/" target="_blank">在TestBird学到的——关于产品</a>
 *   <a href="https://lenciel.com/2016/10/management-things-i-learned-at-testbird/" target="_blank">在TestBird学到的——关于管理</a>
-*   <a href="https://lenciel.com/2017/03/msa-in-practice/" target="_blank">在TestBird学到的——关于管理</a>
 *   <a href="https://lenciel.com/2016/05/but-does-it-float/" target="_blank">一天很长，十年很短</a>
 
  [1]: http://www.flickr.com/photos/lenciel/6465436339/
