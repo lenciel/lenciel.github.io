@@ -3,12 +3,12 @@ layout: post
 title: "晚安(一)"
 date: 2014-03-10 04:18
 comments: true
-categories: 
+categories:
 - writing
 - iwdrm
 ---
 
-<img alt="block" src="/downloads/images/2014_03/good_night.jpg" align="left" style="margin:0px 5px;width:23%"/>在一个看起来平凡无奇的早上，我接到了母亲的电话，告诉我外公在兰州去世了。挂掉电话，我呆呆的望着窗外，对于要不要去兰州感到有点儿犹豫。
+<img alt="block" src="{{ site.static_base }}/downloads/images/2014_03/good_night.jpg" align="left" style="margin:0px 5px;width:23%"/>在一个看起来平凡无奇的早上，我接到了母亲的电话，告诉我外公在兰州去世了。挂掉电话，我呆呆的望着窗外，对于要不要去兰州感到有点儿犹豫。
 
 我的意思当然不是说外公下葬这件事情不值得专程跑一趟。实际上，从他确诊后提出要回兰州去看看，我就一直在帮他说服家里的人，帮他买机票，最后还请假把他和母亲一起送到了兰州。一方面，我在公司算是可有可无的人，有没有出现对大家都不会有影响，走起来非常方便。另一方面，以前每次外公去兰州都是我陪他去的，母亲从来没有去过。毕竟外公是重病之中，有我这样一个轻车熟路的人，好有个照应。
 

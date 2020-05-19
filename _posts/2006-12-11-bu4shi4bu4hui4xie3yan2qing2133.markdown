@@ -3,11 +3,11 @@ layout: post
 title: 络绎不绝
 date: 2006-12-11 09:53
 comments: true
-categories: 
+categories:
 - writing
 ---
 
-<img alt="block" src="/downloads/images/2006_12/truth_and_fake.png" style="margin:5px;width:30%" align="left" />  "没下雨了也带上伞吧。记住，旧缘需了断，新缘要接引。人生就该如此，迎来送往，络绎不绝。"去找S过圣诞之前，A听到L在电话里面说。
+<img alt="block" src="{{ site.static_base }}/downloads/images/2006_12/truth_and_fake.png" style="margin:5px;width:30%" align="left" />  "没下雨了也带上伞吧。记住，旧缘需了断，新缘要接引。人生就该如此，迎来送往，络绎不绝。"去找S过圣诞之前，A听到L在电话里面说。
 
 其实约会倒也没有因为圣诞节而变得特别，两个人照例去看了晚场电影。散场后出来，月光已经把小雨留下的最后一丝痕迹晒干了。春熙路挤满了人，和这个城市一起浮躁地游动着。这样热闹的人群中，他们两个看起来显得很奇怪。S只是用手臂围住围着A的肩膀，紧贴着她羊皮靴在地上磨出的沙沙的脚步。好像是因为身旁的噪音拥挤过来，他们便安静的走进屋檐打下来的阴影里，不去和任何人有眼光的接触。
 

@@ -9,7 +9,7 @@ categories:
   - rants
 ---
 
-<img title="fashion" style="border-right: 0px; border-top: 0px; display: inline; border-left: 0px; border-bottom: 0px" height="324" alt="fashion" src="/downloads/images/2009_06/fashion.jpg" width="484" border="0" />
+<img title="fashion" style="border-right: 0px; border-top: 0px; display: inline; border-left: 0px; border-bottom: 0px" height="324" alt="fashion" src="{{ site.static_base }}/downloads/images/2009_06/fashion.jpg" width="484" border="0" />
 
 每年高考的时候，本座都特别期待江苏的作文题。因为传说中江苏的语文老师每年聚在一起都不骂国足是猪，而是骂作文命题老师是猪：对国足，他们还总是能猜中结果，而作文题，他们边都摸不着。
 

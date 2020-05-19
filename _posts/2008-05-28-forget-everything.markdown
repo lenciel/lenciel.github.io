@@ -9,7 +9,7 @@ categories:
 
 ---
 
-<img height="240" alt="block" src="/downloads/images/2008_05/block.jpg" width="178" align="left" style="margin:5px"/> 收到短信，飞机要晚点两个小时。
+<img height="240" alt="block" src="{{ site.static_base }}/downloads/images/2008_05/block.jpg" width="178" align="left" style="margin:5px"/> 收到短信，飞机要晚点两个小时。
 
 “那就去龙汇路看看吧”，他对出租车司机也是对自己说，“正好这么多年都想去那条街再看看。”
 

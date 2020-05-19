@@ -10,7 +10,7 @@ categories:
 - tutorials
 ---
 
-今天被同事问到怎么在release版本里面所有的日志都去掉的时候，竟然只能回忆起用`ProGuard`做过这个，完全忘记怎么做的了，特立此存照。文章里面使用的例子放在<a class="network" href="https://github.com/lenciel/AMP" rel="me"><img src="/downloads/images/2012_02/github_button.png" alt="" width="16" height="16" /> Android-Maven-ProGuard-Sample-App</a>。
+今天被同事问到怎么在release版本里面所有的日志都去掉的时候，竟然只能回忆起用`ProGuard`做过这个，完全忘记怎么做的了，特立此存照。文章里面使用的例子放在<a class="network" href="https://github.com/lenciel/AMP" rel="me"><img src="{{ site.static_base }}/downloads/images/2012_02/github_button.png" alt="" width="16" height="16" /> Android-Maven-ProGuard-Sample-App</a>。
 
 #### ProGuard简介
 

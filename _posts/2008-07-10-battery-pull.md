@@ -9,7 +9,7 @@ categories:
 
 ---
 
-<img height="240" alt="block" src="/downloads/images/2008_05/just_pull.png" width="178" align="left" style="margin:5px"/> 上午，手机幽幽滴响起：“先生，是您丫滴快递来了。”[^1]
+<img height="240" alt="block" src="{{ site.static_base }}/downloads/images/2008_05/just_pull.png" width="178" align="left" style="margin:5px"/> 上午，手机幽幽滴响起：“先生，是您丫滴快递来了。”[^1]
 
 打开，那砣京东上面订的<a href="http://www.360buy.com/wareshow.asp?wid=120336" target="_blank">电池</a>亭亭玉立。
 

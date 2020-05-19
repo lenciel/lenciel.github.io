@@ -51,19 +51,19 @@ categories:
 
 <div class="slider-container">
     <ul id="elasticstack" class="elasticstack">
-        <li><img src="/downloads/images/2020_02/trogons/trogons_01.jpg" alt="01"/><h6>Harpactes Oreskios</h6></li>
-        <li><img src="/downloads/images/2020_02/trogons/trogons_02.jpg" alt="02"/><h6>Harpactes Mackloti</h6></li>
-        <li><img src="/downloads/images/2020_02/trogons/trogons_03.jpg" alt="03"/><h6>Harpactes Reinwardti</h6></li>
-        <li><img src="/downloads/images/2020_02/trogons/trogons_04.jpg" alt="04"/><h6>Harpactes Kasumba</h6></li>
-        <li><img src="/downloads/images/2020_02/trogons/trogons_05.jpg" alt="05"/><h6>Harpactes Ardens</h6></li>
-        <li><img src="/downloads/images/2020_02/trogons/trogons_06.jpg" alt="06"/><h6>Harpactes Hodgsoni</h6></li>
-        <li><img src="/downloads/images/2020_02/trogons/trogons_07.jpg" alt="07"/><h6>Harpactes Massene</h6></li>
-        <li><img src="/downloads/images/2020_02/trogons/trogons_08.jpg" alt="08"/><h6>Trogon Viridis</h6></li>
-        <li><img src="/downloads/images/2020_02/trogons/trogons_09.jpg" alt="09"/><h6>Trogon Autrantius</h6></li>
-        <li><img src="/downloads/images/2020_02/trogons/trogons_10.jpg" alt="10"/><h6>Trogon Surucua</h6></li>
-        <li><img src="/downloads/images/2020_02/trogons/trogons_11.jpg" alt="11"/><h6>Trogon Elegans</h6></li>
-        <li><img src="/downloads/images/2020_02/trogons/trogons_12.jpg" alt="12"/><h6>Perionotkius Temnurus</h6></li>
-        <li><img src="/downloads/images/2020_02/trogons/trogons_13.jpg" alt="13"/><h6>Pharomacrus Pavonius</h6></li>
+        <li><img src="{{ site.static_base }}/downloads/images/2020_02/trogons/trogons_01.jpg" alt="01"/><h6>Harpactes Oreskios</h6></li>
+        <li><img src="{{ site.static_base }}/downloads/images/2020_02/trogons/trogons_02.jpg" alt="02"/><h6>Harpactes Mackloti</h6></li>
+        <li><img src="{{ site.static_base }}/downloads/images/2020_02/trogons/trogons_03.jpg" alt="03"/><h6>Harpactes Reinwardti</h6></li>
+        <li><img src="{{ site.static_base }}/downloads/images/2020_02/trogons/trogons_04.jpg" alt="04"/><h6>Harpactes Kasumba</h6></li>
+        <li><img src="{{ site.static_base }}/downloads/images/2020_02/trogons/trogons_05.jpg" alt="05"/><h6>Harpactes Ardens</h6></li>
+        <li><img src="{{ site.static_base }}/downloads/images/2020_02/trogons/trogons_06.jpg" alt="06"/><h6>Harpactes Hodgsoni</h6></li>
+        <li><img src="{{ site.static_base }}/downloads/images/2020_02/trogons/trogons_07.jpg" alt="07"/><h6>Harpactes Massene</h6></li>
+        <li><img src="{{ site.static_base }}/downloads/images/2020_02/trogons/trogons_08.jpg" alt="08"/><h6>Trogon Viridis</h6></li>
+        <li><img src="{{ site.static_base }}/downloads/images/2020_02/trogons/trogons_09.jpg" alt="09"/><h6>Trogon Autrantius</h6></li>
+        <li><img src="{{ site.static_base }}/downloads/images/2020_02/trogons/trogons_10.jpg" alt="10"/><h6>Trogon Surucua</h6></li>
+        <li><img src="{{ site.static_base }}/downloads/images/2020_02/trogons/trogons_11.jpg" alt="11"/><h6>Trogon Elegans</h6></li>
+        <li><img src="{{ site.static_base }}/downloads/images/2020_02/trogons/trogons_12.jpg" alt="12"/><h6>Perionotkius Temnurus</h6></li>
+        <li><img src="{{ site.static_base }}/downloads/images/2020_02/trogons/trogons_13.jpg" alt="13"/><h6>Pharomacrus Pavonius</h6></li>
     </ul>
 </div>
 

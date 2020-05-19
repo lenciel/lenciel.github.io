@@ -3,13 +3,13 @@ layout: post
 title: "爱情走过峨山路"
 date: 2007-03-26 14:03:43 +0800
 comments: true
-categories: 
+categories:
 
 - writing
 
 ---
 
- <img height="243" alt="" width="174" align="left" border="0" src="/downloads/images/2016_06/love_and_accicent_1.png" style="margin:5px;"/>雨不大，但很粘。
+ <img height="243" alt="" width="174" align="left" border="0" src="{{ site.static_base }}/downloads/images/2016_06/love_and_accicent_1.png" style="margin:5px;"/>雨不大，但很粘。
 
 Stan抬头一看，发现公车已经过站，就笑着骂自己一句，然后下车往回朝峨山路走。天色已晚，路边商铺里灯火辉煌，街上却早就黯淡下来。
 
@@ -51,7 +51,7 @@ CD店的老板Lenciel和Stan很熟，看到他就跟他挥起手来。老板娘�
 
 
 [^1]: 这首歌当年在榜单上驻留数月，本座和偶像派曾经聊起来说，要是中国有谁唱《我要上你》，恐怕早就被广大人民群众鞭之数十，驱之别院了。所以本座遇到难开口的话，不自觉就要用外语加持。另外，这首歌还帮本座打赌赢了一顿饭，赌的是make love的介词是with还是to…现在想想，好像都可以的吧
-[^2]: 只适合我们那代人了。现在的小朋友，认识不久就开始日落而做，日出而息的生活了  
+[^2]: 只适合我们那代人了。现在的小朋友，认识不久就开始日落而做，日出而息的生活了
 [^3]: 上周老板娘要求本座给她专门做一个表情符号，还要不能被别人点。嗯，结果佳人选来选去，藕臂一挥，选了个粉红猪
 [^4]: 用《美丽心灵》来结尾，会不会很不过瘾啊，各位看官
 

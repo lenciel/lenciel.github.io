@@ -3,7 +3,7 @@ layout: post
 title: "Better Dictionary on Mac"
 date: 2014-05-23 14:02:14 +0800
 comments: true
-categories: 
+categories:
 - tips
 - mac
 - tools-i-use
@@ -20,7 +20,7 @@ pathos /ˈpāˌTHäs/, a quality that evokes pity or sadness
 这是《韦氏词典》的：
 
 {% blockquote %}
-pathos /ˈpāˌTHäs/, n. 
+pathos /ˈpāˌTHäs/, n.
 
 1. The quality or character of those emotions, traits, or experiences which are personal, and therefore restricted and evanescent; transitory and idiosyncratic dispositions or feelings as distinguished from those which are universal and deep-seated in character; — opposed to ethos.
 
@@ -34,7 +34,7 @@ pathos /ˈpāˌTHäs/, n.
 
 安装完毕运行`Dictionary`应用，勾选你期望出现的字典和顺序即可，我启用了《朗道英汉词典》、《韦氏词典》和《维基百科》:
 
-<p><img src="/downloads/images/2014_05/apple_dict_effect.png" title="Apple Dict" alt="Don't touch me" width="60%"></p>
+<p><img src="{{ site.static_base }}/downloads/images/2014_05/apple_dict_effect.png" title="Apple Dict" alt="Don't touch me" width="60%"></p>
 
 另外，词典的样式其实是用css定义的，就在每个字典文件的Contetns目录，比如：`~/Library/Dictionaries/dictd_www.dict.org_web1913.dictionary/Contents/DefaultStyle.css`。如果你不满意字典出来的样子，可以自定义格式。
 

@@ -3,13 +3,13 @@ layout: post
 title: "晚安(三)"
 date: 2014-05-05 03:38:34 +0800
 comments: true
-categories: 
+categories:
 - iwdrm
 - writing
 ---
 
 
-<img alt="block" src="/downloads/images/2014_03/good_night.jpg" align="left" style="margin:0px 5px;width:23%"/>  
+<img alt="block" src="{{ site.static_base }}/downloads/images/2014_03/good_night.jpg" align="left" style="margin:0px 5px;width:23%"/>
 
 “喂，又在发什么呆啊，李重。”
 

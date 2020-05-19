@@ -3,14 +3,14 @@ layout: post
 title: "CSS里的width:100%和width:auto"
 date: 2011-09-22 09:53
 comments: true
-categories: 
+categories:
 - web-dev
 - tips
 - css
 ---
 
 
-<img height="200" alt="block" src="/downloads/images/2011_09/width100css.jpg" width="178" align="left" style="margin:5px"/> 这似乎是CSS里面最简单的一个概念：如果你希望一个block-level的元素填满整个父容器的所有空白，只需要为这个元素声明<font color="#0080ff">width:100%</font>这个属性就可以了。
+<img height="200" alt="block" src="{{ site.static_base }}/downloads/images/2011_09/width100css.jpg" width="178" align="left" style="margin:5px"/> 这似乎是CSS里面最简单的一个概念：如果你希望一个block-level的元素填满整个父容器的所有空白，只需要为这个元素声明<font color="#0080ff">width:100%</font>这个属性就可以了。
 
 但从个人经验和搜索结果看，大概很多CSS使用者都有过加上这个属性后挠头不已的惨痛回忆。最后很多人不得不经过反复试验后重新转回使用绝对值的长和宽。
 
@@ -28,7 +28,7 @@ categories:
 
 真实的含义
 ------------------
- 
+
 如果你在CSS中给一个元素x%的宽度，其实就是定义：“把这个元素所占的区域扩成它父容器的绝对宽度的x%，当然，必须它父容器有一个绝对宽度啊，亲。”比如你的元素放在一个400px宽度的容器里面，然后它的宽度定成了100%，那么它在保证自己被渲染成400px宽度之后，还是会遵守自己被定义margin/padding/border的设置，所以最好出来的效果很可能就是下图那悲催样：
 
 

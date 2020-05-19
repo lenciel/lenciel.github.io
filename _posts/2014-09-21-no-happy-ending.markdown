@@ -1,14 +1,14 @@
---- 
+---
 layout: post
-title: "聚散有期" 
-date: 2014-09-22 04:20:15 +0800 
+title: "聚散有期"
+date: 2014-09-22 04:20:15 +0800
 comments: true
-categories: 
+categories:
 - writing
 - rants
 ---
 
-<img alt="block" src="/downloads/images/2014_09/death_words.jpg" style="margin:5px;width:40%" align="left" />上周参加了偶像派她爷爷的90大寿，这周就迎来了她另一位爷爷离世的消息。
+<img alt="block" src="{{ site.static_base }}/downloads/images/2014_09/death_words.jpg" style="margin:5px;width:40%" align="left" />上周参加了偶像派她爷爷的90大寿，这周就迎来了她另一位爷爷离世的消息。
 
 这位爷爷是我丈母娘保娘(干妈)的老伴，在一场事后被认为是回光返照的愉快聊天后，他独自在卧室睡去，再也没有醒来。
 

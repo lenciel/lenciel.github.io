@@ -22,13 +22,13 @@ categories:
 
 <div class="slider-container">
     <ul id="elasticstack" class="elasticstack">
-        <li><img src="/downloads/images/2014_04/edward_gorey/gorey_kafka.jpg" alt="01"/><h6>Amerika</h6></li>
-        <li><img src="/downloads/images/2014_04/edward_gorey/gorey_james2.jpg" alt="02"/><h6>The Ambassadors</h6></li>
-        <li><img src="/downloads/images/2014_04/edward_gorey/gorey_james3.jpg" alt="03"/><h6>The Awkward Age</h6></li>
-        <li><img src="/downloads/images/2014_04/edward_gorey/gorey_james4.jpg" alt="04"/><h6>What Maisie Knows</h6></li>
-        <li><img src="/downloads/images/2014_04/edward_gorey/gorey_conrad1.jpg" alt="05"/><h6>Victory</h6></li>
-        <li><img src="/downloads/images/2014_04/edward_gorey/gorey_conrad2.jpg" alt="06"/><h6>Chance</h6></li>
-        <li><img src="/downloads/images/2014_04/edward_gorey/gorey_gogol1.jpg" alt="07"/><h6>喂...最后一张了</h6></li>
+        <li><img src="{{ site.static_base }}/downloads/images/2014_04/edward_gorey/gorey_kafka.jpg" alt="01"/><h6>Amerika</h6></li>
+        <li><img src="{{ site.static_base }}/downloads/images/2014_04/edward_gorey/gorey_james2.jpg" alt="02"/><h6>The Ambassadors</h6></li>
+        <li><img src="{{ site.static_base }}/downloads/images/2014_04/edward_gorey/gorey_james3.jpg" alt="03"/><h6>The Awkward Age</h6></li>
+        <li><img src="{{ site.static_base }}/downloads/images/2014_04/edward_gorey/gorey_james4.jpg" alt="04"/><h6>What Maisie Knows</h6></li>
+        <li><img src="{{ site.static_base }}/downloads/images/2014_04/edward_gorey/gorey_conrad1.jpg" alt="05"/><h6>Victory</h6></li>
+        <li><img src="{{ site.static_base }}/downloads/images/2014_04/edward_gorey/gorey_conrad2.jpg" alt="06"/><h6>Chance</h6></li>
+        <li><img src="{{ site.static_base }}/downloads/images/2014_04/edward_gorey/gorey_gogol1.jpg" alt="07"/><h6>喂...最后一张了</h6></li>
     </ul>
 </div><!-- /container -->
 

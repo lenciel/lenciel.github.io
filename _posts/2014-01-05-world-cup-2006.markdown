@@ -9,7 +9,7 @@ categories:
 - rants
 ---
 
-<img style="WIDTH: 168px; HEIGHT: 221px; margin-right: 45px;" alt="world cup 2006" src="/downloads/images/2006_06/world_cup_2006.png" align="left" border="0" />有这么一种理论：
+<img style="WIDTH: 168px; HEIGHT: 221px; margin-right: 45px;" alt="world cup 2006" src="{{ site.static_base }}/downloads/images/2006_06/world_cup_2006.png" align="left" border="0" />有这么一种理论：
 
 * 1978/1986年的冠军是阿根廷，`1978+1986=3964`  
 * 1974/1990年的冠军是德国，`1974+1990=3964`   
