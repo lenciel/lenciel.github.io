@@ -80,13 +80,13 @@ sys.setdefaultencoding(utf8)
 如果你指定了sys的encoding，但是在所用的console（如这里的Eclipse）里面没有设置成一致的选项，还是会报错。
 
 
-![unicode](/downloads/images/python_unicode_output0.png "Don't touch me...")
+![unicode](/downloads/images/2014_02/python_unicode_output0.png "Don't touch me...")
 
 ###3. 对字符串进行的编码解码
 
 这里我们分别打印了str对象和unicode对象，并对它们进行了一些转换操作。程序的输出是这样的：
 
-![unicode](/downloads/images/python_unicode_output1.png "Don't touch me...")
+![unicode](/downloads/images/2014_02/python_unicode_output1.png "Don't touch me...")
 
 可以看到，一切正常。python没有问题，本座的环境也是正常的。
 
@@ -120,12 +120,12 @@ if __name__ == '__main__':
 
 但是这样在保存在本地的中文页面就会是乱码：
 
-![unicode](/downloads/images/python_unicode_output2.png "Don't touch me...")
+![unicode](/downloads/images/2014_02/python_unicode_output2.png "Don't touch me...")
 
 代码打印了bytes_in的保存方式，我们可以看到“全部”这两个汉字的编码是：
 
 
-![unicode](/downloads/images/python_unicode_output3.png "Don't touch me...")
+![unicode](/downloads/images/2014_02/python_unicode_output3.png "Don't touch me...")
 
 原来在序列化的时候，虽然指定了encoding是utf-8，但是两个汉字不知道为什么居然编出来了12个byte。本座也懒得去下序列化的源代码看里面究竟做了什么操作。反正lxml提供了一个从字符串里面解析出html对象树的方法，叫做`document_fromstring`。所以把自己知道格式的字符串传进去让它解析就对了：
 

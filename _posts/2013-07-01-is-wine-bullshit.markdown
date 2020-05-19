@@ -3,12 +3,12 @@ layout: post
 title: "Is Wine Bullshit"
 date: 2013-07-01 15:05
 comments: true
-categories: 
+categories:
 - rants
 - knowledge
 ---
 
-![Raw git log output](/downloads/images/wine.jpeg "Don't touch me...")
+![Raw git log output](/downloads/images/2013_07/wine.jpeg "Don't touch me...")
 
 一瓶Lafite Rothschild Bordeaux最少要几千块，一瓶Charles Shaw或者Franzia卖十几块。我们经常可以看到那些红酒的广告宣扬着高档红酒的品质和口感是多么美妙。但其实很多人不知道，按照"酒类经济学家"的说法，葡萄酒的价格和口感之间的关系可能不是那么紧密。他们中不少人甚至声称，葡萄酒的价格根本就是乱来的，而那些号称能被品出来的万千滋味不过是付钱过后脑袋里面的自我安慰。
 
@@ -57,12 +57,12 @@ When tasteless yellow coloring is added to vanilla pudding, consumers say it tas
 《今日心理学》上面[有篇文章](http://www.psychologytoday.com/blog/sensory-superpowers/200908/you-drink-what-you-think)对此做了解答，认为专业品酒师主要靠的是良好的分析能力和大量的练习积累的知识：
 
 {% blockquote %}
-Research shows that contrary to common thought, wine experts do not have more sensitive palates, per se. They don’t, for example, have lower thresholds for detecting a wine’s tannin and alcohol content. Experts are also no better than novices at tasting whether two wines are the same or different. 
+Research shows that contrary to common thought, wine experts do not have more sensitive palates, per se. They don’t, for example, have lower thresholds for detecting a wine’s tannin and alcohol content. Experts are also no better than novices at tasting whether two wines are the same or different.
 
 What makes [Master Sommelier] Steven Poe an expert is how he brings his formal knowledge of wine production to what he tastes. For example, Poe would be familiar with the flavor outcomes of malolactic fermentation —a process of secondary wine fermentation. In a blind tasting, he might notice one of the flavors associated with the process—a buttery texture, for example—and then attend to the other likely flavor results of malolactic fermentation including hints of yogurt and sauerkraut. This could help Poe narrow down a wine’s region and vintage.
 {% endblockquote %}
 
-换句话说即使是Master Sommelier也有可能把染色的white wine搞成red wine，或者是在盲测的时候觉得一种便宜的酒比贵的酒还好喝。他们像福尔摩斯一样，是根据线索和知识解开口中的酒是什么样的酒的谜题，而不可能像广告里面一口入喉，就击掌高呼：“哇，这酒太好喝了，这一定是xxx年份的xxx。” 
+换句话说即使是Master Sommelier也有可能把染色的white wine搞成red wine，或者是在盲测的时候觉得一种便宜的酒比贵的酒还好喝。他们像福尔摩斯一样，是根据线索和知识解开口中的酒是什么样的酒的谜题，而不可能像广告里面一口入喉，就击掌高呼：“哇，这酒太好喝了，这一定是xxx年份的xxx。”
 
 So?
 ====

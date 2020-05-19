@@ -8,7 +8,7 @@ categories:
 - thoughts
 ---
 
-![nerd sniping](/downloads/images/nerd_sniping.png "Don't touch me...")
+![nerd sniping](/downloads/images/2012_03/nerd_sniping.png "Don't touch me...")
 
 ## **起**
 
@@ -17,13 +17,13 @@ categories:
 大前天回到家感觉不算太忙，本座就开始家姐布置的家庭作业：做一个用于心理学测试的游戏。需求简单来说就是：
 
 - 游戏开始后轮转播放图片、视频或者音频 （媒体库要容易换，播放的切换间隙也要能配置）
-- 被试通过操控手中的手柄表达心理的反应，由程序转成可统计的数据（比如看到美女图按同时按下AB）   
+- 被试通过操控手中的手柄表达心理的反应，由程序转成可统计的数据（比如看到美女图按同时按下AB）
 - 程序得到的数据能够很容易的被统计，统计结果能够很优雅的呈现出来
 
 为了让这个事情变得更有趣，本座在需求确定之后决定：
 
-1. 用帅气的<a href="http://www.nintendo.co.uk/NOE/en_GB/systems/accessories_1243.html" target="_blank" class="broken_link">Wii Remote</a>来让被试表达自己（想想美女图片一出就甩或者是撸一下WiiRemote有多实在）   
-2. 用<a href="http://www.pygame.org/news.html" target="_blank">pyGame</a>来写这个游戏（早就想学习pyGame了）   
+1. 用帅气的<a href="http://www.nintendo.co.uk/NOE/en_GB/systems/accessories_1243.html" target="_blank" class="broken_link">Wii Remote</a>来让被试表达自己（想想美女图片一出就甩或者是撸一下WiiRemote有多实在）
+2. 用<a href="http://www.pygame.org/news.html" target="_blank">pyGame</a>来写这个游戏（早就想学习pyGame了）
 3. 把统计数据的输出作为一个用<a href="http://www.r-project.org/" target="_blank">R语言</a>实现的统计绘图的界面的输入
 
 接着就开始第一项。当程序把 `Wii Remote` 的蓝牙信号正确的转换成标准的手柄信号的时候，一看已经挺晚了，本座就只好把后面两个放在了 `todo list` 上。接着这两天都很忙这些东西就继续的呆在 `todo list` 。
@@ -38,7 +38,7 @@ categories:
 
 这种情况之所以对你的效率有很大的伤害是因为：
 
-1. 你认为你是在完成自己 `todo list` 上的东西，所以你觉得自己是在“进展中”而不是“瞎逛”。   
+1. 你认为你是在完成自己 `todo list` 上的东西，所以你觉得自己是在“进展中”而不是“瞎逛”。
 2. 你认为的进展给你带来了更多 `todo list` 上的东西，而且有些确实对原来的目标是无益的。
 
 人的精力是有限的，如果你长期处于这种状况（太正常了，如果你是玩电脑的话），可就要小心了。

@@ -3,7 +3,7 @@ layout: post
 title: "Market Research, Wireframing and Desgin"
 date: 2013-07-15 15:04
 comments: true
-categories: 
+categories:
 - startup
 - course
 ---
@@ -14,10 +14,10 @@ Quora上有一个著名的[问答](http://www.quora.com/Startup-Advice-and-Strat
 
 {% blockquote %}
 An idea is not a mockup
-A mockup is not a prototype 
-A prototype is not a program 
-A program is not a product 
-A product is not a business 
+A mockup is not a prototype
+A prototype is not a program
+A program is not a product
+A product is not a business
 And a business is not profits
 {% endblockquote %}
 
@@ -31,7 +31,7 @@ And a business is not profits
 | Program  | 有测试并覆盖了所有流程的完整实现          | 2-4周+  |
 | Product  | 工业设计，专利，定价，生产等          | 3-6月+  |
 | Business | 注册，监管机构备案，工资公司准备金等          | 6-12月+  |
-| Profits  | 以超过成本的价格售出产品          | 1年-正无穷|  
+| Profits  | 以超过成本的价格售出产品          | 1年-正无穷|
 
 从完成各个stage需要的时间可以看出，成功的企业都不是只有一个好点子：在状态机的前端，一定是一大堆好的点子。这些点子中的致命缺陷一定要在下面的某个stage才会暴露出来，但足够多的点子是基础。建议有一个专门的地方，`Google Docs` 也好， `OmniFocus` 也好，就是个简单的txt也好，保存和整理自己的点子，并且记录这些点子被推动到哪个阶段了。
 
@@ -80,7 +80,7 @@ In a great market – a market with lots of real potential customers – the mar
 
 一个好的创始人不应该只是有个好点子，他/她应该具备鸟瞰“点子迷宫”的能力。把解决一个需求的各种点子想象成迷宫里面的各条道路，作为消费者很可能只看到了拿出了产品的公司走的那条路。而作为好的创始人需要了解其他的公司是死在什么样的路上以及它们遇到了什么样的无法解决的问题。下图就是一个迷宫的例子：
 
-![example of idea maze](/downloads/images/example_of_idea_maze.png "Don't touch me...")
+![example of idea maze](/downloads/images/2013_07/example_of_idea_maze.png "Don't touch me...")
 
 有时候你不经过前一个迷宫有所积累，就没法到达下一个迷宫并走出去（比如Google是在search上有所收获之后，在[eamil](http://googlepress.blogspot.com/2004/04/google-gets-message-launches-gmail.html)上也开始有了建树）。有时候迷宫自己也会随着时间变化（比如[Pandora的iPhone版本](http://readwrite.com/2012/09/24/pandora-internet-radio-fairness-act#awesm=~obLCTtNRcPEnuA)）。有时候别的公司无法解决的问题被其他一些公司解决了（[Webvan失败了](http://www.gartner.com/id%3D334368)，但是[Amazon](http://fresh.amazon.com/welcome;jsessionid=555BD9DF6EBBE824BCB76464FB768B3C)、[Walmart](http://delivery.walmart.com/usd-estore/index.jsp?referrer=cookiesDetecting)和[Safeway](http://shop.safeway.com/ecom/home)成功的建立了送鲜货的物流）。有的时候解决前面的公司遇到的问题就形成了新公司进入迷宫时手里最有利的武器（比如Google的Pagerank灵感正是来源于Alta Vista在[1991年](http://home.web.cern.ch/about/birth-web)还不那么明显的[问题](https://news.ycombinator.com/item?id=3925089)）。
 
@@ -134,7 +134,7 @@ In a great market – a market with lots of real potential customers – the mar
 很明显，你如果梦想拥有年销售额10亿的事业，这个市场要不就是产品价格很高，要不就是消费总数很大。下面的一些例子说明了10亿的事业可以如何被构建出来：
 
 - 均价$1，总数超过10亿: Coca Cola
-- 均价$10，总数超过1亿: Johnson and Johnson 
+- 均价$10，总数超过1亿: Johnson and Johnson
 - 均价$100，总数超过千万: Blizzard
 - 均价$1000，总数超过百万: Lenovo
 - 均价$10,000，总数超过十万: Toyota
@@ -200,7 +200,7 @@ In a great market – a market with lots of real potential customers – the mar
 - **Vector和Raster图片** ：首先你要明白[vector](http://en.wikipedia.org/wiki/Vector_graphics)和[raster](http://en.wikipedia.org/wiki/Raster_graphics)的区别。如果可能的话，尽量使用vector，特别是在早期MVP阶段。
 - **对齐，对比度等**：Robin Williams的《[Non-Designer's Desgin Book](http://www.amazon.com/The-Non-Designers-Design-Book-Typographic/dp/1566091594)》值得一读。特别是其中提到的[4个基本原则](http://www.nurelm.com/themanual/2009/07/07/designing-for-the-non-designer-part-i-the-basics/)：[Alignment](http://www.vanseodesign.com/web-design/design-basics-alignment/)，[Repetition](http://www.vanseodesign.com/web-design/design-basics-repetition/)，[Contrast](http://www.vanseodesign.com/web-design/design-basics-contrast/)，[Proximity](http://www.vanseodesign.com/web-design/design-basics-proximity-to-know-what-belongs-with-what/)。
 - **字体和图标** ：尽量使用字体来表达设计。因为字体是矢量图，并且在所有的浏览器里面都可以用 `CSS`
-进行控制和调整。现在还非常集成了矢量的图标的字体库，比如[FontAwesome](http://fortawesome.github.io/Font-Awesome/)。 
+进行控制和调整。现在还非常集成了矢量的图标的字体库，比如[FontAwesome](http://fortawesome.github.io/Font-Awesome/)。
 - **视频，动画**：宁缺毋滥。一定要精心制作，能给客户留下深刻印象同时又深入解析了产品的特性的。
 - **使用Bootstrap，Themeforest，99Designs，Dribble**：当把wireframe变成网页时，不要重新造轮子。Bootstrap是一个免费的框架，和前面提到的Jetstrap合用很有威力。[Themeforest](http://themeforest.net/)上的服务要贵一些，一般是$9到$12的模板。而[99Designs](http://99designs.com/)这样的专业设计所要大概几百到几千刀。[Dribble](http://dribbble.com/)是需找合适Designer的很好的地方。
 

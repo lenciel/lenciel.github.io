@@ -3,7 +3,7 @@ layout: post
 title: "Oauth: Introduction and Tips"
 date: 2013-07-22 09:53
 comments: true
-categories: 
+categories:
 - oauth
 - tips
 - toturials
@@ -48,7 +48,7 @@ categories:
   - 键值对中的值
 * URL / URI
   - URL是URI的一种，你应该懂的吧
-  
+
 ### Signed Requests
 
 > 本章描述的是OAuth 1.0
@@ -152,7 +152,7 @@ oauth_callback_confirmed=true
 
 一般被叫成 `two-legged` 的OAuth其实是只有一步的。
 
-<img src="/downloads/images/oauth_flow_1.png" align="right" />
+<img src="/downloads/images/2013_07/oauth_flow_1.png" align="right" />
 
 1. 应用发送一个 **signed** request 到服务提供商，request里包括:
     - `oauth_token` *Empty String*
@@ -177,7 +177,7 @@ oauth_callback_confirmed=true
 
 真正的`two-legged`是1.0a版本的OAuth。
 
-<img src="/downloads/images/oauth_flow_2.png" align="right" />
+<img src="/downloads/images/2013_07/oauth_flow_2.png" align="right" />
 
 1. 应用发送一个 **signed** request到服务提供商请求一个 `Request Token`，request里包括:
     - `oauth_consumer_key`
@@ -206,7 +206,7 @@ oauth_callback_confirmed=true
 
 最完备同时也是带来最多麻烦的一个版本，特别是引入了需要用户操作来确认的部分，增加了开发和交互上的复杂度。一开始推出的时候，让很多用户感到不知所措。
 
-<img src="/downloads/images/oauth_flow_3.png" align="right" />
+<img src="/downloads/images/2013_07/oauth_flow_3.png" align="right" />
 
 1. 应用发送一个 **signed** request到服务提供商请求一个 `Request Token`，request里包括:
     - `oauth_consumer_key`
@@ -250,7 +250,7 @@ oauth_callback_confirmed=true
 
 非主流的一种实现，但是确实是存在的：发明者是Twitter的Raffi。这种实现允许在首次发送的请求token里面多带两个header，这样可以通过代理的方式在代理服务商那里对原始服务商的用户进行认证。
 
-<img src="/downloads/images/oauth_flow_4.png" align="right" />
+<img src="/downloads/images/2013_07/oauth_flow_4.png" align="right" />
 
 
 1. 应用发送一个 **signed** request到代理服务提供商，request里包括:
@@ -261,7 +261,7 @@ oauth_callback_confirmed=true
     - `oauth_signature_method`
     - `oauth_version` *Optional*
     - `oauth_callback`
-    
+
     还包括额外的header:
     - `X-Auth-Service-Provider`
     - `X-Verify-Credentials-Authorization`
@@ -270,11 +270,11 @@ oauth_callback_confirmed=true
 
 ## OAuth 1.0a (xAuth)
 
-xAuth是一种桌面程序或者手机程序（没有使用webview等控件不能完成完整流程的程序）使用的OAuth方式。它通过提供用户的`email`和`password`给服务器提供商来换取`access token`。 
+xAuth是一种桌面程序或者手机程序（没有使用webview等控件不能完成完整流程的程序）使用的OAuth方式。它通过提供用户的`email`和`password`给服务器提供商来换取`access token`。
 
 这种方式返回的一般是具有只读性质的access token，并且这种token能操作的资源也是有限的。比如Twitter的DM（类似私信）就不能使用xAuth而必须用完整的`three-legged`流程获取token才能取到。
 
-<img src="/downloads/images/oauth_flow_5.png" align="right" />
+<img src="/downloads/images/2013_07/oauth_flow_5.png" align="right" />
 
 1. 应用请求用户的Credentials
 2. 应用发送一个 **signed** request到服务提供商请求一个 `Access Token`，request里包括:
@@ -285,7 +285,7 @@ xAuth是一种桌面程序或者手机程序（没有使用webview等控件不�
     - `oauth_signature_method`
     - `oauth_version` *Optional*
     - `oauth_callback`
-    
+
     额外还包括:
     - `x_auth_mode` = `client_auth`
     - `x_auth_username`
@@ -305,7 +305,7 @@ xAuth是一种桌面程序或者手机程序（没有使用webview等控件不�
 
 1. 应用发送请求给服务提供商:
   - `grant_type` = `client_credentials`
-  
+
   如果不是用的 `Authorization` header:
   - `client_id`
   - `client_secret`
@@ -325,17 +325,17 @@ xAuth是一种桌面程序或者手机程序（没有使用webview等控件不�
     - `grant_type` = `password`
     - `username`
     - `password`
-    
+
     其格式如下:
 
     ```
     grant_type=password&username=my_username&password=my_password
     ```
-    
+
     如果不是用的 `Authorization` header, 下面的也需要被放到request里面:
     - `client_id`
     - `client_secret`
-    
+
     整个加起来回是：
 
     ```
@@ -358,9 +358,9 @@ xAuth是一种桌面程序或者手机程序（没有使用webview等控件不�
     - `response_type`[^5]
     - `state` *可选;* 防止CSRF[^6]
     - `scope` *可选;* 你可以获取的资源范围
-    
+
     一个例子（为了可读性没有进行Encode）:
-    
+
     ```
 https://oauth_service/login/oauth/authorize?client_id=3MVG9lKcPoNINVB&redirect_uri=http://localhost/oauth/code_callback&scope=user
     ```

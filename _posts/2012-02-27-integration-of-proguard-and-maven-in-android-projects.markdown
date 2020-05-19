@@ -3,14 +3,14 @@ layout: post
 title: "Android开发中使用ProGuard"
 date: 2012-02-27 22:46
 comments: true
-categories: 
+categories:
 - android
 - maven
 - proguard
 - tutorials
 ---
 
-今天被同事问到怎么在release版本里面所有的日志都去掉的时候，竟然只能回忆起用`ProGuard`做过这个，完全忘记怎么做的了，特立此存照。文章里面使用的例子放在<a class="network" href="https://github.com/lenciel/AMP" rel="me"><img src="/downloads/images/github_button.png" alt="" width="16" height="16" /> Android-Maven-ProGuard-Sample-App</a>。
+今天被同事问到怎么在release版本里面所有的日志都去掉的时候，竟然只能回忆起用`ProGuard`做过这个，完全忘记怎么做的了，特立此存照。文章里面使用的例子放在<a class="network" href="https://github.com/lenciel/AMP" rel="me"><img src="/downloads/images/2012_02/github_button.png" alt="" width="16" height="16" /> Android-Maven-ProGuard-Sample-App</a>。
 
 #### ProGuard简介
 
@@ -18,19 +18,19 @@ categories:
 
 做Android之前就是Java程序员的可能早就已经对ProGuard很熟悉了。简单的来说，ProGuard就是一个Java的class文件处理器，主要的功能类似奥运会口号：
 
-*   让你的程序变得更小更快 
-*   让你的程序变得更难被反向工程 
+*   让你的程序变得更小更快
+*   让你的程序变得更难被反向工程
 
 尽管ProGuard不是专用于Android开发的，但是在Android的SDK里面已经包括了这个工具，路径是`ANDROID_HOME/tools/proguard`，文档可以在<http://proguard.sourceforge.net>看到。
 
 让程序变得更小更快的好处是不言而喻的。ProGuard通过对bytecode进行优化，优化手段包括去掉无用的代码，去掉内联方法的调用，对类的继承结构进行优化，把所有能加上的`final`和`static`加上，以及对算术运算进行<a href="http://en.wikipedia.org/wiki/Peephole_optimization" target="_blank">Peephole optimization</a>等等。
 
-让程序变得更难被反向工程就不一定是每个人都需要的了。一般情况下，对Android的反向工程是把Dalvik的bytecode转换成Java的bytecode，然后使用传统的Java反向工具转成成Java源代码。如果你的项目是开源的，显然也没有必要防止别人反向。但是如果是下面几种情况，你就很可能需要它了： 
+让程序变得更难被反向工程就不一定是每个人都需要的了。一般情况下，对Android的反向工程是把Dalvik的bytecode转换成Java的bytecode，然后使用传统的Java反向工具转成成Java源代码。如果你的项目是开源的，显然也没有必要防止别人反向。但是如果是下面几种情况，你就很可能需要它了：
 
-* 你在源文件里面有一些不想被别人看到的信息，如密码等 
-* 你的代码里面有自己或者公司的赖以生存的知识产权 
-* 你的甲方有明确的要求 
-* 你的程序按license等方式收费，你不想被别人把licens检查的部分去掉重新编译个版本 
+* 你在源文件里面有一些不想被别人看到的信息，如密码等
+* 你的代码里面有自己或者公司的赖以生存的知识产权
+* 你的甲方有明确的要求
+* 你的程序按license等方式收费，你不想被别人把licens检查的部分去掉重新编译个版本
 
 ProGuard可以帮助通过对类，方法和成员名称进行混淆，同时通过去掉结构化的信息，如文件名或者行号表等，来使得代码从理论上变得不可被反向工程。
 
@@ -50,8 +50,8 @@ proguard.config=proguard.cfg
 
 当ProGuard执行以后，会产生几个特别重要的文件：
 
-*   `mapping.txt`：保存了混淆后的名字和混淆前名字的对应关系。对于每次release的build，都要记得保存这个文件，要不然如果你收到release版本上报出的defect的时候，就等着哭吧。 
-*   `seeds.txt`：ProGuard找到的你的程序的entrypoint列表。 
+*   `mapping.txt`：保存了混淆后的名字和混淆前名字的对应关系。对于每次release的build，都要记得保存这个文件，要不然如果你收到release版本上报出的defect的时候，就等着哭吧。
+*   `seeds.txt`：ProGuard找到的你的程序的entrypoint列表。
 *   `usage.txt`：ProGuard觉得没有用所以移除了的一堆类，域和方法的list。要想学习写作“完美”的ProGuard规则的同学就要经常来这个文件看看自己定下的rule对ProGuard的行为究竟有什么样的影响。如果你有用的类出现在list里面了，说明你削得太猛了，反之亦然。
 
 需要注意的是这些文件的输出目录。在使用Ant ProGuard target的时候，输出目录是`bin/proguard/`，但是如果是通过ADT(右键project>Android Tools>Export）的话，输出目录会是`proguard/`。
@@ -70,14 +70,14 @@ ProGuard和很多工具一样，其强大之处在于选项够多。作为Androi
 
 我们期望ProGuard做的事情包括：
 
-*   保留`AMPSampleActivity`类，因为它是我们在XML里面指定的程序入口 
-*   保留`StringUtils`类和它的`repeat`方法 
-*   保留`myClickHandler`方法 
-*   保留`MyButton`类 
-*   去掉`unusedMethod` 
-*   除开XML里面引用的类（`AMPSampleActivity`和`MyButton`），其他的类名都需要被混淆 
-*   除开XML里面引用的方法名（`myClickHandler`），其他的方法名都要被混淆 
-*   完成一些对Android而言通常适用的优化（下面会仔细展开） 
+*   保留`AMPSampleActivity`类，因为它是我们在XML里面指定的程序入口
+*   保留`StringUtils`类和它的`repeat`方法
+*   保留`myClickHandler`方法
+*   保留`MyButton`类
+*   去掉`unusedMethod`
+*   除开XML里面引用的类（`AMPSampleActivity`和`MyButton`），其他的类名都需要被混淆
+*   除开XML里面引用的方法名（`myClickHandler`），其他的方法名都要被混淆
+*   完成一些对Android而言通常适用的优化（下面会仔细展开）
 
 ProGuard的规则是“白名单”的，也就是说ProGuard只会对你特别指定的类刀下开恩。这也就是说，对任何程序，我们都至少要写一条规则，来保留程序的入口类。因为是Android程序，我们可以这么写：
 
@@ -86,11 +86,11 @@ ProGuard的规则是“白名单”的，也就是说ProGuard只会对你特别�
 ```
 这里我们可以看到ProGuard的rule用的语法基本上遵循了Java本身的语法（`extends`等等），但是它支持使用通配符。规则中的`-keep`告诉ProGuard不要删除也不要混淆任何从`android.app.Activity`继承的类。
 
-很简单，不是吗？如果你这个时候运行程序，会看到： 
+很简单，不是吗？如果你这个时候运行程序，会看到：
 
 ```java
-org.lenciel.android/org.lenciel.android.AMPSampleActivity}: 
-    ➥ android.view.InflateException: Binary XML file line #6: Error inflating 
+org.lenciel.android/org.lenciel.android.AMPSampleActivity}:
+    ➥ android.view.InflateException: Binary XML file line #6: Error inflating
     ➥ class org.lenciel.android.MyButton
 ```
 
@@ -98,11 +98,11 @@ org.lenciel.android/org.lenciel.android.AMPSampleActivity}:
 
 ```java
 -keepclasseswithmembers class * {
-    public <init>(android.content.Context, android.util.AttributeSet); 
-} 
- 
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+
 -keepclasseswithmembers class * {
-    public <init>(android.content.Context, android.util.AttributeSet, int); 
+    public <init>(android.content.Context, android.util.AttributeSet, int);
 }
 ```
 
@@ -111,16 +111,16 @@ org.lenciel.android/org.lenciel.android.AMPSampleActivity}:
 再次运行，会遇到下面的错误：
 
 ```java
-java.lang.IllegalStateException: Could not find a method 
-   ➥ myClickHandler(View) in the activity class org.lenciel.android.AMPSampleActivity for onClick handler on 
+java.lang.IllegalStateException: Could not find a method
+   ➥ myClickHandler(View) in the activity class org.lenciel.android.AMPSampleActivity for onClick handler on
    ➥ view class org.lenciel.android.MyButton
 ```
 
 去查看`usage.txt`你会发现`myClickHandler`又被干掉了。为什么在第一条规则里面我们告诉ProGuard不要动`AMPSampleActivity`里面的任何东西，还是会有这种情况发生？这是使用`-keep`的一个常见的误会。我们用`-keep`告诉ProGuard保留一个类的时候，没有提供任何类的“body”信息的话，ProGuard仅仅会保留这个类的名字。它仍然会对这个类内部的所有东西进行优化和混淆。要保留方法，我们需要这么写：
 
 ```java
--keep public class * extends android.app.Activity { 
-    methods; 
+-keep public class * extends android.app.Activity {
+    methods;
 }
 ```
 
@@ -128,7 +128,7 @@ java.lang.IllegalStateException: Could not find a method
 
 ```java
 -keepclassmembers class * extends android.app.Activity {
-    public void *(android.view.View); 
+    public void *(android.view.View);
 }
 ```
 
@@ -145,13 +145,13 @@ java.lang.IllegalStateException: Could not find a method
 一般来说，下面的Android framework class都是需要保留的：
 
 ```java
--keep public class * extends android.app.Activity 
--keep public class * extends android.app.Application 
--keep public class * extends android.app.Service 
--keep public class * extends android.content.BroadcastReceiver 
--keep public class * extends android.content.ContentProvider 
--keep public class * extends android.app.backup.BackupAgentHelper 
--keep public class * extends android.preference.Preference 
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
 -keep public class com.android.vending.licensing.ILicensingService
 ```
 
@@ -161,15 +161,15 @@ java.lang.IllegalStateException: Could not find a method
 
 ```java
 -keepclassmembers class * implements android.os.Parcelable {
-    static android.os.Parcelable$Creator CREATOR; 
+    static android.os.Parcelable$Creator CREATOR;
 }
 ```
 
 在程序中如果你调用了native的code，比如你用JNI来调用了c的lib，由于在Java代码里面是一份方法的签名，而没有方法的实现，它必须被链接到native code上。这也就意味着这些函数名不能被ProGuard加以混淆了，不然链接的过程就会失败。下面的规则可以保证ProGuard不去动native的方法名：
 
 ```java
--keepclasseswithmembernames class * { 
-     native methods; 
+-keepclasseswithmembernames class * {
+     native methods;
 }
 ```
 
@@ -178,9 +178,9 @@ java.lang.IllegalStateException: Could not find a method
 前面的规则看起来都一目了然。下面这个可能要费解一些：
 
 ```java
--keepclassmembers enum * {   
-     public static **[] values(); 
-     public static ** valueOf(java.lang.String); 
+-keepclassmembers enum * {
+     public static **[] values();
+     public static ** valueOf(java.lang.String);
 }
 ```
 
@@ -189,9 +189,9 @@ java.lang.IllegalStateException: Could not find a method
 下面来看看常用的选项：
 
 ```java
--dontusemixedcaseclassnames 
--dontskipnonpubliclibraryclasses 
--dontpreverify 
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-dontpreverify
 -verbose
 ```
 
@@ -244,7 +244,7 @@ public void onCreate(Bundle savedInstanceState) {
 如果你运行程序，就会看到下面的错误：
 
 ```java
-java.lang.RuntimeException: Unable to start activity ...MainActivity}: 
+java.lang.RuntimeException: Unable to start activity ...MainActivity}:
 java.lang.RuntimeException: Boom!
 ...
 Caused by: java.lang.RuntimeException: Boom!

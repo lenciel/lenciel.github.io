@@ -3,7 +3,7 @@ layout: post
 title: "Quartz Composer和Origami试玩"
 date: 2014-06-26 22:57:05 +0800
 comments: true
-categories: 
+categories:
 - tools-i-use
 - prototyping
 - design
@@ -31,4 +31,13 @@ categories:
 其次，这套工具也称不上“photoshop for interaction design”。你仍然需要使用PS（或者Sketch等等做图的软件）做上游，把静态资源做好，然后导入到QC里面完成动态效果。这种"设计-切图-导入-动态化"的模式其实还蛮像一度风靡网络的flash的制作流程。
 
 最后，如果你是程序员，习惯了写CSS/JS来控制界面，要适应QC的图形化编程（类似VB那样先选控件再改属性然后绑事件）还是蛮蛋疼的。比如它里面的设定偏移量来定位元素的方式，就让本座觉得用起来非常虐心。
-<p><img src="/downloads/images/2014_06/qc_yx_intro.gif" title="intro" alt="Don't touch me" width="35%" style="margin-left:30px"><img src="/downloads/images/2014_06/qc_yx_bd.gif" title="bd" alt="Don't touch me" width="38%" style="margin-left:30px"></p>
+
+<video autoplay loop muted playsinline>
+    <source src="/downloads/images/2014_06/qc_yx_intro.mp4" type="video/mp4">
+    <p>Your browser doesn't support this embedded video.</p>
+</video>
+
+<video autoplay loop muted playsinline>
+    <source src="/downloads/images/2014_06/qc_yx_bd.mp4" type="video/mp4">
+    <p>Your browser doesn't support this embedded video.</p>
+</video>

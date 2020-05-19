@@ -3,7 +3,7 @@ layout: post
 title: "魂飞魄散"
 date: 2008-10-09 03:22
 comments: true
-categories: 
+categories:
 
 - writing
 - shanghai
@@ -12,7 +12,7 @@ categories:
 ---
 
 
-![Memo of the old man](/downloads/images/memo_of_the_old_man.jpg "Don't touch me...")
+![Memo of the old man](/downloads/images/2008_10/memo_of_the_old_man.jpg "Don't touch me...")
 
 我已经四十一岁了。
 
@@ -40,9 +40,9 @@ categories:
 **Coffee Break**
 ------------------
 
-你们觉得Lenciel的结尾是，请投票：  
-[A]她的胸部有巨大的伤疤，原来她得过乳腺癌，丢，在这个奶粉不靠谱的年代，只能忍痛割爱。  
-[B]她的胸部怎么形状有些奇怪，原来是块健硕的胸大肌。再往下一看，丢，我发现他是个男人。  
+你们觉得Lenciel的结尾是，请投票：
+[A]她的胸部有巨大的伤疤，原来她得过乳腺癌，丢，在这个奶粉不靠谱的年代，只能忍痛割爱。
+[B]她的胸部怎么形状有些奇怪，原来是块健硕的胸大肌。再往下一看，丢，我发现他是个男人。
 [C]还是不要搞笑，好好结个尾：
 
 > 这一次，我感到了真正的魂飞魄散。

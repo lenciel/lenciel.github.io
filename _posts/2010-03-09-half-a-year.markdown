@@ -3,13 +3,13 @@ layout: post
 title: "半年"
 date: 2010-03-09 00:12
 comments: true
-categories: 
+categories:
 - memorize
 - lenceel
 ---
 
 
-![My Idol](/downloads/images/my_idol.jpg "Don't touch me…")
+![My Idol](/downloads/images/2010_03/my_idol.png "Don't touch me…")
 
 偶像派，
 

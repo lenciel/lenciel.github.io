@@ -9,7 +9,7 @@ categories:
   - rants
 ---
 
-<img title="fashion" style="border-right: 0px; border-top: 0px; display: inline; border-left: 0px; border-bottom: 0px" height="324" alt="fashion" src="/downloads/images/fashion.jpg" width="484" border="0" />
+<img title="fashion" style="border-right: 0px; border-top: 0px; display: inline; border-left: 0px; border-bottom: 0px" height="324" alt="fashion" src="/downloads/images/2009_06/fashion.jpg" width="484" border="0" />
 
 每年高考的时候，本座都特别期待江苏的作文题。因为传说中江苏的语文老师每年聚在一起都不骂国足是猪，而是骂作文命题老师是猪：对国足，他们还总是能猜中结果，而作文题，他们边都摸不着。
 
@@ -32,7 +32,7 @@ categories:
 大家都知道，《Kill Bill》里面的Bill，最近挂了：是真的把自己挂起来了。不过，如果你用不同的关键字去搜索，会得出蛮有趣的结果。
 
 > 心地纯良如偶像派的时尚品味者：<a href="http://www.google.com/search?hl=en&q=kill+bill+%E4%B8%BB%E8%A7%92+%E8%87%AA%E6%9D%80&sourceid=navclient-ff&rlz=1B3GGGL_zh-CN___CN231&ie=UTF-8" target="_blank">click</a>
-> 
+>
 > 心地不纯良如本座的时尚品味者：<a href="http://www.google.com/search?hl=en&q=kill+bill+%E4%B8%BB%E8%A7%92+%E8%87%AA%E6%85%B0&sourceid=navclient-ff&rlz=1B3GGGL_zh-CN___CN231&ie=UTF-8" target="_blank">click</a>
 
 嗯哼……其实大家不要觉得从事“手工业”的时候出事有什么奇怪的。本座在以前看<a href="http://en.wikipedia.org/wiki/Chuck_Palahniuk" target="_blank">Chuck</a>大叔[^1] 那篇著名的<a href="http://chuckpalahniuk.net/features/shorts/guts" target="_blank">Guts</a>的时候（已经有人<a href="http://www.verycd.com/groups/@g2386100/683454.topic" target="_blank">翻译</a>，慎入！！）有读到过一段：
@@ -50,5 +50,5 @@ categories:
 可惜啊，老师，您看我肚子里面这么有货，却没法跟您一起品味时尚。
 
 [^1]:  这位大叔不是写黄书的，写的第一篇长篇小说叫做，《<a href="http://www.imdb.com/title/tt0137523/" target="_blank">Fight Club</a>》。
-[^2]: 还有一种是鸳鸯么？   
+[^2]: 还有一种是鸳鸯么？
 [^3]: 请问这样是不是比较隐晦一点…

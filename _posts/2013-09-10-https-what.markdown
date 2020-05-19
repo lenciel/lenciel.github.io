@@ -3,7 +3,7 @@ layout: post
 title: "HTTPS WHAT?"
 date: 2013-09-10 13:28
 comments: true
-categories: 
+categories:
 ---
 
 最近NSA相关话题很火。很多IT从业者都知道，HTTPS可以保护用户敏感的数据，但是说起HTTPS _到底_ 是如何工作的，其实心里并不清楚。
@@ -14,7 +14,7 @@ categories:
 
 当你访问网页的时候，你发出的请求其实要翻越各种网关走很长的路，这一路上都可能有妖魔鬼怪在等着搞你，的数据。
 
-![A series of tubes](/downloads/images/series_of_tubes.png "Don't touch me…")
+![A series of tubes](/downloads/images/2013_09/series_of_tubes.png "Don't touch me…")
 
 
 一般我们访问网页的时候，请求使用的是HTTP，也就是Client和Server之间的数据是明文传送的。[HTTP没有使用任何加密的原因有很多][3]:
@@ -31,9 +31,9 @@ TLS作为SSL的前驱协议，常常被用来实现对HTTP连接的加密（比�
 
 TLS是一种混合型的加密系统，也就是说它使用了多种加密技术体系，比如：
 
-> **Public Key Cryptography** 
+> **Public Key Cryptography**
 >
-> **Symmetric Key Cryptography** 
+> **Symmetric Key Cryptography**
 
 ### Public Key Encryption
 
@@ -135,4 +135,3 @@ Diffie-Hellman密钥交换流程没有解决认证的问题。这就好比我们
    [17]: http://marketingforhackers.com/
    [18]: http://blog.hartleybrody.com/guide-to-web-scraping/
    [19]: http://blog.hartleybrody.com/https-certificates/javascript:void(0);
-  

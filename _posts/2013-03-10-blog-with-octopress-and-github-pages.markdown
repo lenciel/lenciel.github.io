@@ -145,7 +145,7 @@ subl是本座在mac上使用的编辑器`Sublime Text 2`的命令行命令，它
 
 [Markdown Editing](http://ttscoff.github.com/MarkdownEditing/)对语法高亮，粘贴超链接，样式化，加footnote等都做了很好的支持：
 
-![Sublime with Markdown Editing](/downloads/images/sublime_with_markdown_editing.png "Don't touch me...")
+![Sublime with Markdown Editing](/downloads/images/2013_03/sublime_with_markdown_editing.png "Don't touch me...")
 
 ####OmniMarkupPreview####
 

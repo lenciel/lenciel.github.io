@@ -3,7 +3,7 @@ layout: post
 title: "Boxen introduction"
 date: 2013-03-31 08:28
 comments: true
-categories: 
+categories:
 - tool
 - osx
 - tutorial
@@ -43,13 +43,13 @@ Boxen基于大红大紫的[Puppet](https://puppetlabs.com/)，但和后者目前
 * 启动Xcode，在Preferences里面选择下载
 * 安装"Command Line Tools"
 
-![Xcode Command Line Tools](/downloads/images/xcode_clt.png "Don't touch me...")
+![Xcode Command Line Tools](/downloads/images/2013_03/xcode_clt.png "Don't touch me...")
 
 ###打开FireVault2###
 
 Boxen默认会希望硬盘信息是被加密的：
 
-![Turn on FireVault2](/downloads/images/turn_on_fire_vault.png "Don't touch me...")
+![Turn on FireVault2](/downloads/images/2013_03/turn_on_fire_vault.png "Don't touch me...")
 
 ###Fork our-boxen###
 
@@ -58,12 +58,12 @@ Boxen默认会希望硬盘信息是被加密的：
 首先按照repo说明中的方式来clone和配置本地repo：
 
 ``` bash
-sudo mkdir -p /opt/boxen    
-sudo chown ${USER}:admin /opt/boxen    
-git clone https://github.com/boxen/our-boxen /opt/boxen/repo    
-cd /opt/boxen/repo    
-git remote rm origin    
-git remote add origin     
+sudo mkdir -p /opt/boxen
+sudo chown ${USER}:admin /opt/boxen
+git clone https://github.com/boxen/our-boxen /opt/boxen/repo
+cd /opt/boxen/repo
+git remote rm origin
+git remote add origin
 git push -u origin master
 ```
 
@@ -133,25 +133,25 @@ end
 
 而 ``version`` 则是对应具体repo的tag，比如[puppet-skype](https://github.com/boxen/puppet-skype)对应的[tag](https://github.com/boxen/puppet-skype/tags)有：
 
-![Version and tags](/downloads/images/version_tag.png "Don't touch me...")
+![Version and tags](/downloads/images/2013_03/version_tag.png "Don't touch me...")
 
 如果你的repo不是在github也很简单，只需要指定repo的位置即可。比如如果你自己的Skype是放在Bitbucket上的:
 
 ``` ruby
-   mod "skype", :git => "git@bitbucket.org:yourusername/puppet-skype.git" 
+   mod "skype", :git => "git@bitbucket.org:yourusername/puppet-skype.git"
 ```
 
 在 ``Puppetfile`` 里面完成的声明主要是让Boxen（实际上是Puppet）知道去哪里找安装和配置文件。要告诉Boxen安装Skype还需要在 ``manifests/site.pp`` 里面 ``include`` 需要安装的module：
 
 ``` ruby
-...    
-    node default {      
-        include dnsmasq      
-        include ruby      
-        include git      
-        include hub      
-        include homebrew      
-        include skype    
+...
+    node default {
+        include dnsmasq
+        include ruby
+        include git
+        include hub
+        include homebrew
+        include skype
     }
 ...
 ```

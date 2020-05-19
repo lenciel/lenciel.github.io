@@ -8,7 +8,7 @@ categories:
 ---
 
 
-![Space Pen](/downloads/images/space-pen.jpg "Don't touch me...")
+![Space Pen](/downloads/images/2013_10/space_pen.jpg "Don't touch me...")
 
 在软件开发中我们一说到避免过度设计，经常有两个例子会被抬出来，其中一个就是NASA造了昂贵的太空笔，然后俄罗斯用很简单的方案解决问题的故事（另一个大概就是传送带旁边放电风扇的故事）。[NASA造笔的故事](http://www.snopes.com/business/genius/spacepen.asp)大概是这样的:
 
@@ -29,4 +29,3 @@ Paul C. Fisher and his company, the Fisher Pen Company, reportedly invested $1 m
 
 在测试之后，NASA订购了400支Fisher笔，总共花费在一千美元以下。俄罗斯在一年之后也开始订这种笔了。Fisher公司目前仍然在[销售这种太空笔](http://www.spacepen.com/originalastronautspacepen.aspx)，并且你可以很方便的买到：[Amazon上](http://www.amazon.com/exec/obidos/ASIN/B0015ZP2AC/ref=nosim/0sil8)30来刀，甚至还有一个一看就不是官方网站的[中文官方网站](http://www.spacepen.cn/index.php)。
 
-  

@@ -3,12 +3,12 @@ layout: post
 title: "后患无穷"
 date: 2008-07-13 00:57
 comments: true
-categories: 
+categories:
 - writing
 - rants
 - archive
 ---
-<img style="padding-right:2px; border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="190" alt="never write letters" src="/downloads/images/do_never_write_letters.jpg" width="142" align="left" border="0" /> “如果我对你说过谎，那是因为我必须向你证明假的就是真的”
+<img style="padding-right:2px; border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="190" alt="never write letters" src="/downloads/images/2008_07/do_never_write_letters.jpg" width="142" align="left" border="0" /> “如果我对你说过谎，那是因为我必须向你证明假的就是真的”
 
 —— 让·罗凯尔《异物》
 

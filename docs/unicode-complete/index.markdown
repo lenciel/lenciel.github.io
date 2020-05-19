@@ -23,14 +23,14 @@ footer: true
 
 最初计算机可以读的，是小箭猪打孔机处理过的卡片。不久，<a href="http://en.wikipedia.org/wiki/EBCDIC" target="_blank">EBCDIC</a>编码方式得到了使用。这些东西，和现代的计算机编码解码已经无关。
 
-<img src="/downloads/images/ascii_table.png" align="right" />
+<img src="/downloads/images/2008_06/ascii_table.png" align="right" />
 
 很快，就在Unix出现，K&R开始<a href="http://cm.bell-labs.com/cm/cs/cbook/" target="_blank">写书</a>的时候，EBCDIC退朝，右图所示的<a href="http://www.asciitable.com/" target="_blank">ASCII</a>上位了。ASCII的想法是用32到127之间的数字表示所有的英文字母符号，而0到31位是放控制字。比如7是让电脑“beep”一声等等。因为当时的电脑大都是8位的，ASCII只能用掉7位，有的兽欲无法得到满足的程序员还会在剩余的一位加入自己的邪念：比如当年著名的编辑器WordStar就用每个byte的最高一位来表示后面7位表示的字母是不是一个单词里面的最后一个字母。因为这样华丽的用掉了1位，WordStar变得只能编辑英文，不过那个时候的用户都是讲英文的，所以也就没什么抱怨的声音。
 
 
 问题就出在，对剩下那个bit，也就是128-255这些码位有邪念的可不是WordStar作者一人。从81年开始，IBM在做IBM-PC的时候，就把它们用来表示一些欧洲的带音调的字母和横条竖条这样的用来做框的记号。因为是出厂的时候做到硬件里面的，所以被称为如右下图所示的<a href="http://en.wikipedia.org/wiki/Code_page_437" target="_blank">OEM</a>的字符集（OEM这个叫法也是这么来的）。
 
-<img src="/downloads/images/oem.png" align="right" />
+<img src="/downloads/images/2008_06/oem.png" align="right" />
 
 这些电脑很快被卖到了世界各地，于是各种各样的OEM字符集被创造出来，用高128位表示各自需要的字符。例如，完成殖民生活回到英国的奥利弗勋爵就会发现自己发给印度老朋友的电子邮件被抱怨有些字显示不正确。而负责冷战的FBI们更是发现，在自己的机器上打开苏联的文档几乎不可能：对俄语的编码方式实在是太多了。
 
@@ -47,11 +47,11 @@ ANSI（美国国家标准学会）用`code pages`[^1]来表示这种按地域区
 
 实际上Unicode是对世界上所有的字符分配了一个所谓`code point`的码位。
 
-![unicode](/downloads/images/apple_code_table.jpg "Don't touch me...")
+![unicode](/downloads/images/2008_06/apple_code_table.jpg "Don't touch me...")
 
 你可以在Windows的命令行输入`charmap`来查看这些码位。比如字母A，它的unicode码位是`+U0041`，而不幸被本座选中的汉字是`U+04C7`。
 
-![unicode](/downloads/images/unicode.png "Don't touch me...")
+![unicode](/downloads/images/2008_06/unicode.png "Don't touch me...")
 
 由于世界上有如此多的字符，实际上0到65535的code point早就已经被用光了。也就是说，16个bit并不能装下所有的Unicode。
 
@@ -94,7 +94,7 @@ Unicode的编码，最先被想到也是最容易被想到的，就是使用两�
 UTF-8[^2]的思想一句话就能说清：对code point分段进行编码。从0-127的用8个bit，后面的用16个、24个、32个…
 
 同时，人们把过去那种编码方式称为UTF-16（因为是用16个bit）或者UCS-2（因为是2个byte）。
-<img src="/downloads/images/utf8.png" align="right" />可以看出来，UTF-8的编码方式中，英文字母的编码和ASCII中是一致的。对于美国的软件工程师而言，使用UTF-8工作和ASCII工作的差异被抹去了。而且你也不需要像UCS-2那样去分辨它是大端对齐还是小端对齐的了。
+<img src="/downloads/images/2008_06/utf8.png" align="right" />可以看出来，UTF-8的编码方式中，英文字母的编码和ASCII中是一致的。对于美国的软件工程师而言，使用UTF-8工作和ASCII工作的差异被抹去了。而且你也不需要像UCS-2那样去分辨它是大端对齐还是小端对齐的了。
 
 当然，对Unicode的编码方式还远不只这两种。我们常常可以看到UTF-7，UCS-4这样的编码方式（后面这种腐败的编码方式，估计是天朝的乡长发明的）。
 
@@ -110,8 +110,8 @@ UTF-8[^2]的思想一句话就能说清：对code point分段进行编码。从0
 
 下面是一些有趣的Unicode码，来自[这里](http://wiki.secondlife.com/wiki/Unicode_In_5_Minutes)：
 
-![unicode fun](/downloads/images/unicode_fun.png "Don't touch me...")
+![unicode fun](/downloads/images/2008_06/unicode_fun.png "Don't touch me...")
 
- [^1]: http://www.i18nguy.com/unicode/codepages.html#msftdos     
- [^2]: http://www.ietf.org/rfc/rfc3629.txt    
- [^3]: http://www.htmlhelp.com/reference/charset/    
+ [^1]: http://www.i18nguy.com/unicode/codepages.html#msftdos
+ [^2]: http://www.ietf.org/rfc/rfc3629.txt
+ [^3]: http://www.htmlhelp.com/reference/charset/

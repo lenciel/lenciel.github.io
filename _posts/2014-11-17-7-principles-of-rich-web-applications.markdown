@@ -144,7 +144,10 @@ So: the hardware of the Internet can currently achieve within a factor of two of
 
 再比如，我们处理的是一个表单。也许你觉得一个表单在数据被提交到服务器，处理结果返回之前，不能做太多的事情。但其实当用户完成输入并点击提交的时候，我们就可以开始响应了。甚至有些做到极致的应用，比如Google搜索页面，当用户开始输入的时候，展示搜索结果的页面就已经开始渲染了。
 
-![Google Homepage](/downloads/images/2014_11/google_homepage.gif "Google Homepage")
+<video autoplay loop muted playsinline>
+    <source src="/downloads/images/2014_11/google_homepage.mp4" type="video/mp4">
+    <p>Your browser doesn't support this embedded video.</p>
+</video>
 
 图4. Google在用户输入搜素关键字时就开始渲染搜索结果页面
 
@@ -184,8 +187,10 @@ Take a look at Google Suggest. Watch the way the suggested terms update as you t
 
    [36]: https://developer.mozilla.org/en-US/docs/Using_files_from_web_applications
 
-![Cloudup upload](/downloads/images/2014_11/cldup_upload.gif "Cloudup upload")
-
+<video autoplay loop muted playsinline>
+    <source src="/downloads/images/2014_11/cldup_upload.mp4" type="video/mp4">
+    <p>Your browser doesn't support this embedded video.</p>
+</video>
 图6. 在上传完成前图片就被显示出来并且加入了虚化效果
 
 上面的方式都是采用前端技术来制造_速度的假象_，但这种方式其实在很多地方都被证明是有效的。[一个例子][38]是在美国休斯顿机场，通过_增加_到达乘客走到行李提取处的距离，而不是实际上的行李处理速度，就大大的_减少_了旅客抱怨行李领取太慢的问题。
@@ -217,14 +222,18 @@ The basic advice regarding response times has been about the same for thirty yea
 
 以Facebook初期对newsfeed的实现为例，因为用户都是用PC机在更新状态，把它实现成静态的网页未尝不可：一般来说，人们一天更新一次就差不多了。但现在我们生活在一个人们拍照后可以立刻分享，朋友们可以立刻发表评论的时代，对数据变化的实时响应成为了应用开发的基础需求。这不仅仅是因为我们的应用程序是多用户并发访问的，即便就考虑单用户的场景，实时更新也是很重要的。以用笔记本分享我们手机上的照片的场景为例：
 
-![Concurrent Data Points](/downloads/images/2014_11/concurrent_data_points.gif "Concurrent Data Points")
-
+<video autoplay loop muted playsinline>
+    <source src="/downloads/images/2014_11/concurrent_data_points.mp4" type="video/mp4">
+    <p>Your browser doesn't support this embedded video.</p>
+</video>
 图7. 即便是单个用户操作的场景，更好的响应性也能带来体验的提升
 
 有的数据，比如**Session和登录状态的同步**，在多个页面间应该是非常实时的同步的。这样，当用户打开了多个tab，从其中的任何一个登出，其他的所有页面都应该登出。这点对保护用户的隐私是非常重要的，特别是我们有些设备是多个人在同时使用。
 
-![Each page reacts to the session and login state](/downloads/images/2014_11/login_sync.gif "Login synchronization")
-
+<video autoplay loop muted playsinline>
+    <source src="/downloads/images/2014_11/login_sync.mp4" type="video/mp4">
+    <p>Your browser doesn't support this embedded video.</p>
+</video>
 图8. 不同的页面间同步登录状态
 
 一旦你的用户习惯了你的应用的数据是自动更新的，那么你就要考虑一个新的需求：**状态一致性**。当客户端收到一个原子的数据更新时，必须考虑即便在断网很长时间之后，也能够正确的完成更新。比如，你的笔记本突然没电了，几天后再打开，应用的数据是不是还正确？
@@ -285,19 +294,26 @@ The basic advice regarding response times has been about the same for thirty yea
 
 另外，有一些场景下，你没法控制缓存的行为。比如，如果用户在你渲染一个页面的时候跳到第三方网站上去了，然后他按回退键。这个时候就会遇到下面的这个bug：
 
-![Pressing back incorrectly loads the initial HTML from the pageload](/downloads/images/2014_11/back_button_bug.gif "Back Button Bug")
+<video autoplay loop muted playsinline>
+    <source src="/downloads/images/2014_11/back_button_bug.mp4" type="video/mp4">
+    <p>Your browser doesn't support this embedded video.</p>
+</video>
 图12. 按回退键时载入了原始页面的HTML而不是刷新后的
 
 另一种破坏性的操作是忽略 _scrolling memory_。和之前那个问题一样，如果页面没有JS或者其他人工的history管理，多半就不会有这个问题。但局部动态刷新的页面多半就会遇到：我测试了最著名的Javascript驱动的网站，它们的newsfeeds都有_scrolling amnesia_的问题：
 
-![Infinite pagination is usually susceptible to scrolling amnesia](/downloads/images/2014_11/back_button_bug.gif "Scrolling Amnesia")
-
+<video autoplay loop muted playsinline>
+    <source src="/downloads/images/2014_11/back_button_bug.mp4" type="video/mp4">
+    <p>Your browser doesn't support this embedded video.</p>
+</video>
 图13. 滚动失忆问题
 
 最后，要注意哪些状态应该被持久化。比如是不是需要展开显示文章的评论：
 
-![Infinite pagination is usually susceptible to scrolling amnesia](/downloads/images/2014_11/back_button_bug.gif "Scrolling Amnesia")
-
+<video autoplay loop muted playsinline>
+    <source src="/downloads/images/2014_11/back_button_bug.mp4" type="video/mp4">
+    <p>Your browser doesn't support this embedded video.</p>
+</video>
 图14. 在操作history来导航时，是否展开显示评论也被持久化了
 
 因为是在应用内使用超链接触发的页面重渲染，用户的期望是回到这页时，他之前展开的评论树仍然是展开的。这个状态其实是_瞬态的_， 仅仅在history栈上的这页有这个状态。
@@ -345,8 +361,10 @@ The basic advice regarding response times has been about the same for thirty yea
 
    [60]: https://medium.com/@cihadturhan/a-ux-idea-i-know-where-you-are-aiming-3e00d152afb2
 
-![jQuery plugin that predicts the mouse trajectory](/downloads/images/2014_11/behavior_predict.gif "I know where you're aiming")
-
+<video autoplay loop muted playsinline>
+    <source src="/downloads/images/2014_11/behavior_predict.mp4" type="video/mp4">
+    <p>Your browser doesn't support this embedded video.</p>
+</video>
 图12. jQuery鼠标运动轨迹预测插件
 
 ## 结论<a name="conclusion"></a>

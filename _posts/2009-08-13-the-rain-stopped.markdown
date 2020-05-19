@@ -3,7 +3,7 @@ layout: post
 title: "没完没了"
 date: 2009-08-13 03:13
 comments: true
-categories: 
+categories:
 
 - writings
 - love
@@ -11,8 +11,7 @@ categories:
 
 ---
 
-
-![Almost](/downloads/images/almost_again.jpg "Don't touch me...")
+![Almost](/downloads/images/2009_08/almost_again.jpg "Don't touch me...")
 
 雨是从正中午的时候开始下的。我朝外面看了看，好像也不大，就决定坐地铁去府河边走走。从很小的时候，我就想弄明白，下雨是让天空更亮了，还是让天空更暗了。所以，每次下雨我都跑去河边看。
 

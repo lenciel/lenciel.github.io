@@ -3,12 +3,15 @@ layout: post
 title: "We Are Men"
 date: 2013-07-22 21:24
 comments: true
-categories: 
+categories:
 - 浮光掠影
 - iwdrm
 ---
 
-![we are men](/downloads/images/fight_club.gif "Don't touch me...")
+<video autoplay loop muted playsinline>
+    <source src="/downloads/video/movie_clips/fight_club.mp4" type="video/mp4">
+    <p>Your browser doesn't support this embedded video.</p>
+</video>
 
 {% blockquote Palahniuk http://en.wikipedia.org/wiki/Fight_Club Fight Club(1999)%}
 Yes, we’re men. Men is what we are.

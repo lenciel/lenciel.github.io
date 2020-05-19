@@ -3,12 +3,15 @@ layout: post
 title: "Why look so sad"
 date: 2014-04-19 21:54:53 +0800
 comments: true
-categories: 
+categories:
 - 浮光掠影
 - iwdrm
 ---
 
-![We are different](/downloads/images/iwdrm/we_are_different.gif "Don't touch me...")
+<video autoplay loop muted playsinline>
+    <source src="/downloads/video/movie_clips/we_are_different.mp4" type="video/mp4">
+    <p>Your browser doesn't support this embedded video.</p>
+</video>
 
 {% blockquote Jean-Paul Belmondo  http://www.imdb.com/title/tt0059592/ Pierrot le fou (1965)%}
 "Why do you look so sad?"

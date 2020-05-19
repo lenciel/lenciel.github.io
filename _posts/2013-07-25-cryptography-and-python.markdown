@@ -3,7 +3,7 @@ layout: post
 title: "Cryptography and Python"
 date: 2013-07-25 15:13
 comments: true
-categories: 
+categories:
 - cryptography
 - notes
 - tutorials
@@ -144,7 +144,7 @@ hash就是给输入的字符串生成一个固定长度的字符串（被称为h
 - 任意两个不同的字符串不会生成相同的hash值
 - 如果输入字符串没有变生成的hash值应该不会变
 
-![hash](/downloads/images/hash.png "Don't touch me...")
+![hash](/downloads/images/2013_07/hash.png "Don't touch me...")
 
 hash函数可以被用来计算checksum，也可以用来进行数字签名和认证。
 
@@ -187,7 +187,7 @@ def get_file_checksum(filename):
 DES是分块加密的一种，其处理对象的大小是8个bytes。DES最简单的模式是所谓的`ECB( electronic code book)模式`，也就是每个block都是独立加密，最后组成整个加密后的文本。
 
 
-![ecb](/downloads/images/block_cipher_ebc.png "Don't touch me...")
+![ecb](/downloads/images/2013_07/block_cipher_ebc.png "Don't touch me...")
 
 使用pycrpto对文本使用`DES/ECB`加密很简单。假设key是`10234567`，而我们要加密的文本是`abcdefgh`，那么：
 
@@ -204,7 +204,7 @@ DES是分块加密的一种，其处理对象的大小是8个bytes。DES最简�
 
 比`ECB`更健壮的是`CFB (Cipher feedback)`模式，也就是先组合前面加密的文本和待加密的文本，然后进行加密。
 
-![cfb](/downloads/images/block_cipher_cfb.png "Don't touch me...")
+![cfb](/downloads/images/2013_07/block_cipher_cfb.png "Don't touch me...")
 
 下面的例子说明了算法的工作流程：待加密的是`abcdefghijklmnop`，两倍8bytes。首先生成一个随机的字符串作为初始的`iv`来生成两个`DES`对象，一个用来加密一个用来解密。之所以需要这两个对象，是因为`feedback`值会随着block被加密后变化。
 
@@ -247,10 +247,10 @@ DES是分块加密的一种，其处理对象的大小是8个bytes。DES最简�
 ```python
 import os
 from Crypto.Cipher import DES3
-  
+
 def encrypt_file(in_filename, out_filename, chunk_size, key, iv):
     des3 = DES3.new(key, DES3.MODE_CFB, iv)
-  
+
     with open(in_filename, 'r') as in_file:
         with open(out_filename, 'w') as out_file:
             while True:
@@ -260,10 +260,10 @@ def encrypt_file(in_filename, out_filename, chunk_size, key, iv):
                 elif len(chunk) % 16 != 0:
                     chunk += ' ' * (16 - len(chunk) % 16)
                 out_file.write(des3.encrypt(chunk))
-  
+
 def decrypt_file(in_filename, out_filename, chunk_size, key, iv):
     des3 = DES3.new(key, DES3.MODE_CFB, iv)
-  
+
     with open(in_filename, 'r') as in_file:
         with open(out_filename, 'w') as out_file:
             while True:
@@ -292,7 +292,7 @@ with open('to_enc.dec', 'r') as f:
 
 ```bash
 to_enc.txt: this content needs to be encrypted.
-  
+
 to_enc.enc: ??~?E??.??]!=)??"t?
                                 JpDw???R?UN0?=??R?UN0?}0r?FV9
 to_enc.dec: this content needs to be encrypted.
@@ -300,9 +300,9 @@ to_enc.dec: this content needs to be encrypted.
 
 ## **Public-key algorithms**
 
-上面提到的加密算法的一大问题是双方都需要知道key。而`public-key算法`提供了两个key，一个用来加密，一个用来解密。 
+上面提到的加密算法的一大问题是双方都需要知道key。而`public-key算法`提供了两个key，一个用来加密，一个用来解密。
 
-![ecb](/downloads/images/public_private_key.png "Don't touch me...")
+![ecb](/downloads/images/2013_07/public_private_key.png "Don't touch me...")
 
 ### **public/private key**
 
@@ -318,7 +318,7 @@ to_enc.dec: this content needs to be encrypted.
 ```
 
 key对象有一系列的方法：
-- `can_encrypt()` 返回是否能用key来加密数据 
+- `can_encrypt()` 返回是否能用key来加密数据
 - `can_sign()` 返回是否能用key来进行签名
 - `has_private()` 返回是否有private key
 
