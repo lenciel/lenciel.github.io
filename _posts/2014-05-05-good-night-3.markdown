@@ -8,9 +8,7 @@ categories:
 - writing
 ---
 
-
-<img alt="block" src="{{ site.static_base }}/downloads/images/2014_03/good_night.jpg" align="left" style="margin:0px 5px;width:23%"/>
-
+{% picture /downloads/images/2014_03/good_night.jpg --img width="180" height="240" class="left" %}
 “喂，又在发什么呆啊，李重。”
 
 项目经理张烈路过我座位的时候在我的显示器上狠狠地敲了一下，我好像睡梦中突然被惊醒的人一样猛地打了个寒颤，整个人立刻从延绵不绝的回忆中清醒过来。

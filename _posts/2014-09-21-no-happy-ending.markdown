@@ -8,7 +8,8 @@ categories:
 - rants
 ---
 
-<img alt="block" src="{{ site.static_base }}/downloads/images/2014_09/death_words.jpg" style="margin:5px;width:40%" align="left" />上周参加了偶像派她爷爷的90大寿，这周就迎来了她另一位爷爷离世的消息。
+{% picture /downloads/images/2014_09/death_words.jpg --img width="250" height="205" class="left" %}
+上周参加了偶像派她爷爷的90大寿，这周就迎来了她另一位爷爷离世的消息。
 
 这位爷爷是我丈母娘保娘(干妈)的老伴，在一场事后被认为是回光返照的愉快聊天后，他独自在卧室睡去，再也没有醒来。
 

@@ -152,7 +152,7 @@ oauth_callback_confirmed=true
 
 一般被叫成 `two-legged` 的OAuth其实是只有一步的。
 
-<img src="{{ site.static_base }}/downloads/images/2013_07/oauth_flow_1.png" align="right" />
+{% picture /downloads/images/2013_07/oauth_flow_1.png --img width="414" height="252" class="right" %}
 
 1. 应用发送一个 **signed** request 到服务提供商，request里包括:
     - `oauth_token` *Empty String*
@@ -177,7 +177,7 @@ oauth_callback_confirmed=true
 
 真正的`two-legged`是1.0a版本的OAuth。
 
-<img src="{{ site.static_base }}/downloads/images/2013_07/oauth_flow_2.png" align="right" />
+{% picture /downloads/images/2013_07/oauth_flow_2.png --img width="401" height="307" class="right" %}
 
 1. 应用发送一个 **signed** request到服务提供商请求一个 `Request Token`，request里包括:
     - `oauth_consumer_key`
@@ -206,7 +206,7 @@ oauth_callback_confirmed=true
 
 最完备同时也是带来最多麻烦的一个版本，特别是引入了需要用户操作来确认的部分，增加了开发和交互上的复杂度。一开始推出的时候，让很多用户感到不知所措。
 
-<img src="{{ site.static_base }}/downloads/images/2013_07/oauth_flow_3.png" align="right" />
+{% picture /downloads/images/2013_07/oauth_flow_3.png --img width="513" height="488" class="right" %}
 
 1. 应用发送一个 **signed** request到服务提供商请求一个 `Request Token`，request里包括:
     - `oauth_consumer_key`
@@ -250,8 +250,7 @@ oauth_callback_confirmed=true
 
 非主流的一种实现，但是确实是存在的：发明者是Twitter的Raffi。这种实现允许在首次发送的请求token里面多带两个header，这样可以通过代理的方式在代理服务商那里对原始服务商的用户进行认证。
 
-<img src="{{ site.static_base }}/downloads/images/2013_07/oauth_flow_4.png" align="right" />
-
+{% picture /downloads/images/2013_07/oauth_flow_4.png --img width="518" height="257" class="right" %}
 
 1. 应用发送一个 **signed** request到代理服务提供商，request里包括:
     - `oauth_consumer_key`
@@ -274,7 +273,7 @@ xAuth是一种桌面程序或者手机程序（没有使用webview等控件不�
 
 这种方式返回的一般是具有只读性质的access token，并且这种token能操作的资源也是有限的。比如Twitter的DM（类似私信）就不能使用xAuth而必须用完整的`three-legged`流程获取token才能取到。
 
-<img src="{{ site.static_base }}/downloads/images/2013_07/oauth_flow_5.png" align="right" />
+{% picture /downloads/images/2013_07/oauth_flow_5.png --img width="392" height="291" class="right" %}
 
 1. 应用请求用户的Credentials
 2. 应用发送一个 **signed** request到服务提供商请求一个 `Access Token`，request里包括:
@@ -443,7 +442,6 @@ var OAuth = require('mashape-oauth').OAuth,
 25. [CSRF & OAuth2](http://blog.springsource.org/2011/11/30/10317/) - Springsource
 26. [OAuth v2-31](https://tools.ietf.org/html/draft-ietf-oauth-v2-31) - IETF
 27. [Resource Owner Flow](http://techblog.hybris.com/2012/06/11/oauth2-resource-owner-password-flow/) - Hybris
-
 
 [^1]: [Implementing sign twitter](https://dev.twitter.com/docs/auth/implementing-sign-twitter).
 [^2]: [Oauth request url](https://developers.google.com/google-apps/gmail/oauth_protocol#oauth_request_url).

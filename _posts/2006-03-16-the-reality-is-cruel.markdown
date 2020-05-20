@@ -7,7 +7,8 @@ categories:
 - writing
 ---
 
-<img height="320" alt="block" src="{{ site.static_base }}/downloads/images/2006_03/reality.png" width="178" align="left" style="margin:5px"/>  三月的西湖岸边，一棵柳树因为虫害，正在走向死亡。
+{% picture /downloads/images/2006_03/reality.png --alt < --img width="178" height="147" class="left" %}
+三月的西湖岸边，一棵柳树因为虫害，正在走向死亡。
 
 早上八点钟的时候，B站在窗口。他好像看到很多东西，但都没有看进心里去。他只是感到户外温暖热烈，“那是阳光。”B心想。然后他将手伸出了窗台，手上竟然是一遍冷漠的感觉。仔细一看，原来窗外飘落着春天忧愁的眼泪。B心里微微一怔，手指开始有些颤抖。绵绵细雨造成的地上起伏不定的斑驳，让他无端地想象出某一条凹凸艰难的路，或许他总有一天会走到这条路上去。
 

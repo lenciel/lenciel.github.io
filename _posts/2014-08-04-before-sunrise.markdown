@@ -3,7 +3,7 @@ layout: post
 title: "It's August now, boy..."
 date: 2014-08-04 23:47:03 +0800
 comments: true
-categories: 
+categories:
 - iwdrm
 - 浮光掠影
 ---

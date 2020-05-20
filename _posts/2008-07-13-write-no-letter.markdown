@@ -8,7 +8,10 @@ categories:
 - rants
 - archive
 ---
-<img style="padding-right:2px; border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="190" alt="never write letters" src="{{ site.static_base }}/downloads/images/2008_07/do_never_write_letters.jpg" width="142" align="left" border="0" /> “如果我对你说过谎，那是因为我必须向你证明假的就是真的”
+
+
+{% picture /downloads/images/2008_07/do_never_write_letters.jpg --img width="142" height="190" class="left" %}
+“如果我对你说过谎，那是因为我必须向你证明假的就是真的”
 
 —— 让·罗凯尔《异物》
 

@@ -9,7 +9,8 @@ categories:
 
 ---
 
- <img height="243" alt="" width="174" align="left" border="0" src="{{ site.static_base }}/downloads/images/2016_06/love_and_accicent_1.png" style="margin:5px;"/>雨不大，但很粘。
+{% picture /downloads/images/2016_06/love_and_accicent_1.png --img width="174" height="243" class="left" %}
+雨不大，但很粘。
 
 Stan抬头一看，发现公车已经过站，就笑着骂自己一句，然后下车往回朝峨山路走。天色已晚，路边商铺里灯火辉煌，街上却早就黯淡下来。
 

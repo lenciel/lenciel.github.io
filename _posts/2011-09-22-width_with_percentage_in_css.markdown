@@ -9,8 +9,8 @@ categories:
 - css
 ---
 
-
-<img height="200" alt="block" src="{{ site.static_base }}/downloads/images/2011_09/width100css.jpg" width="178" align="left" style="margin:5px"/> 这似乎是CSS里面最简单的一个概念：如果你希望一个block-level的元素填满整个父容器的所有空白，只需要为这个元素声明<font color="#0080ff">width:100%</font>这个属性就可以了。
+{% picture /downloads/images/2011_09/width100css.jpg --img width="178" height="200" class="left" %}
+这似乎是CSS里面最简单的一个概念：如果你希望一个block-level的元素填满整个父容器的所有空白，只需要为这个元素声明<font color="#0080ff">width:100%</font>这个属性就可以了。
 
 但从个人经验和搜索结果看，大概很多CSS使用者都有过加上这个属性后挠头不已的惨痛回忆。最后很多人不得不经过反复试验后重新转回使用绝对值的长和宽。
 
@@ -21,7 +21,6 @@ categories:
 
 大多数专业的Web开发者都清楚，block-level的元素(如div, p, ul等)和inline的元素两者的区别就在于默认情况下，block元素的宽度就会取填满父容器的宽度(减去自己的margin或者父容器的padding)。
 
-
 ![block element is not needed](/downloads/images/2011_09/blockelementnoneed.jpg "Don't touch me...")
 
 这知识虽然初级，理解这点对我们明白百分比的实际作用很有帮助。
@@ -30,7 +29,6 @@ categories:
 ------------------
 
 如果你在CSS中给一个元素x%的宽度，其实就是定义：“把这个元素所占的区域扩成它父容器的绝对宽度的x%，当然，必须它父容器有一个绝对宽度啊，亲。”比如你的元素放在一个400px宽度的容器里面，然后它的宽度定成了100%，那么它在保证自己被渲染成400px宽度之后，还是会遵守自己被定义margin/padding/border的设置，所以最好出来的效果很可能就是下图那悲催样：
-
 
 ![just pull](/downloads/images/2011_09/childequal.jpg "Don't touch me...")
 

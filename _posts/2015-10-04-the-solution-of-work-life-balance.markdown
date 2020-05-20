@@ -3,7 +3,7 @@ layout: post
 title: "关于工作与生活"
 date: 2015-10-04 00:06:16 +0800
 comments: true
-categories: 
+categories:
 
 - rants
 - words
@@ -89,7 +89,7 @@ categories:
 
 你去软件园地铁站门口随便拦住那帮背双肩包的，问问他们自己觉得质量不错又能上线的项目哪个是靠加班加出来的。
 
-## 所以工作和生活？
+## 所以工作和生活?
 
 所以工作和生活的节奏，是很私人的事情。
 
@@ -97,7 +97,7 @@ categories:
 
 组织和个人努力的方向，都应该是让有效时间内输出最大化：说简单一点儿，即便有必要加班，目的都应该是为了能尽早达到按时下班，而不是在公司里面形成一种”多花点儿时间就能做出更多东西”的错觉。
 
-<img src="/downloads/images/2015_10/no_one_wants_more_work.png" alt="" width="420" height="294" align="left" style="margin:5px"/>
+{% picture /downloads/images/2015_10/no_one_wants_more_work.png --img width="420" height="294" class="left" %}
 
 拿我个人来说，很长一段时间以来都很忙，每周工作时间常常超过80个小时。虽然也知道[人生是玩5个球](http://blog.sina.com.cn/s/blog_5d7e3c150100h2c8.html)之类的道理，但却并不觉得自己的选择有什么问题：目前确实有那么多事情需要处理，自己又很愿意花时间去处理它们。
 
