@@ -26,7 +26,7 @@ $ ./manage.py graph_models -a -g -o my_project_visualized.png
 
 效果如下：
 
-<img src="/downloads/images/2014_12/django_extension.svg" title="django-extension-sample" alt="django-extension-sample"/>
+<img src="{{ site.static_base }}/downloads/images/2014_12/django_extension.svg" title="django-extension-sample" alt="django-extension-sample"/>
 
 这里的图是通过[graphviz](http://www.graphviz.org/)来完成的，可以看到一般的了解也足够了，但是缺点主要是：
 
