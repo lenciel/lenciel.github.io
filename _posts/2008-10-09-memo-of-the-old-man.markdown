@@ -11,8 +11,7 @@ categories:
 
 ---
 
-
-![Memo of the old man](/downloads/images/2008_10/memo_of_the_old_man.jpg "Don't touch me...")
+{% picture /downloads/images/2008_10/memo_of_the_old_man.jpg --img width="240" height="240" class="left" %}
 
 我已经四十一岁了。
 
