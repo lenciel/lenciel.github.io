@@ -45,8 +45,7 @@ picture:
   cdn_environments: ['production']
   suppress_warnings: true
   noscript: true # add a fallback image inside a <noscript> tag.
-# google analytics
-google_analytics_tracking_id: UA-175991-6
+
 # facebook kike
 facebook_like: false
 # Beian
