@@ -46,11 +46,11 @@ categories:
 
 注意，收录的时候我都习惯用下面的选项，去掉所有的样式：
 
-![Evernote Clipper](/downloads/images/2014_12/evernote_chrome_clipper.png "Evernote Clipper")
+![Evernote Clipper](/downloads/images/2014_12/evernote_chrome_clipper.png --alt Evernote Clipper)
 
 最后，在整理Inbox的时候，对每篇文章做一些修修剪剪，给Note加上合适的Tag，然后放到`Archive`。可以看到，因为tag可以嵌套和展开，要找到自己感兴趣的文章变得容易很多：
 
-![Evernote Clipper](/downloads/images/2014_12/evernote_nested_tags.png "Evernote Clipper")
+![Evernote Clipper](/downloads/images/2014_12/evernote_nested_tags.png --alt Evernote Clipper)
 
 
 

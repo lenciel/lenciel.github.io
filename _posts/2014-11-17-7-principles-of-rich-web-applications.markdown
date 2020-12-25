@@ -67,7 +67,7 @@ So: the hardware of the Internet can currently achieve within a factor of two of
 考虑下面的这个场景：用户在浏览器上访问`http://app.com/orders/`，如果这是一个传统的网页，那么在后台处理这个请求的时，就会带回重要的 _信息_ ，用来完成页面的显示：比如，从数据库里面查询出订单，然后把它们的数据放在请求的返回里面。但如果这是一个SPA，那么第一次可能会立刻返回一个包含`<script>`标签的空页面，然后再跑一趟才能拿回用来渲染页面的内容和数据。
 
 
-![SPA code breakdown](/downloads/images/2014_11/spa_code_breakdown.png "SPA code breakdown")
+![SPA code breakdown](/downloads/images/2014_11/spa_code_breakdown.png --alt SPA code breakdown)
 图1. 服务器端发送的SPA的每个页面组成结构分析
 
 目前大多数的开发者都大方接受了这个额外的 _网络传输过程_ 是因为他们确信这只发生一次：后面反正是有cache的。也就是说，大家形成了这么一个共识，既然整个代码包一旦加载一次，就可以不用再请求其他的脚本和资源就完成对绝大多数的用户交互（包括跳转到应用的其他页面）的处理，那么这个开销就是可以接受的。
@@ -84,7 +84,7 @@ So: the hardware of the Internet can currently achieve within a factor of two of
 
 其次，TCP协议里面有一个流控机制，被称为 `slow start`，也就是在连接建立过程中逐渐增加传输的分段(`segments`)大小，入下图所示：
 
-![TCP segments chart](/downloads/images/2014_11/tcp_segments_chart.png "TCP segments chart")
+![TCP segments chart](/downloads/images/2014_11/tcp_segments_chart.png --alt TCP segments chart)
 图2. 服务器端在TCP连接的不同阶段能够发送的分段大小(KB)
 
 这对SPA有两个很大的影响：
@@ -113,7 +113,7 @@ So: the hardware of the Internet can currently achieve within a factor of two of
    [21]: http://danlec.com/blog/stackoverflow-in-4096-bytes
    [22]: http://www.chromium.org/spdy/link-headers-and-server-hint
 
-![StackOverflow clone in 4096 bytes](/downloads/images/2014_11/st4k.png "StackOverflow clone in 4096 bytes")
+![StackOverflow clone in 4096 bytes](/downloads/images/2014_11/st4k.png --alt StackOverflow clone in 4096 bytes)
 
 图3. 使用了内链CSS和JS技术的`Stackoverflow in 4096 bytes`
 
@@ -175,7 +175,7 @@ Take a look at Google Suggest. Watch the way the suggested terms update as you t
 
 另一个例子是iOS。在很早期的版本，iPhone就要求开发者提供一个`default.png`图片，用来在应用被加载完成之前显示给用户:
 
-![iPhone default](/downloads/images/2014_11/iphone_default_png.png "iPhone default")
+![iPhone default](/downloads/images/2014_11/iphone_default_png.png --alt iPhone default)
 
 图5. iPhone OS强制在应用加载前显示一个default.png
 
@@ -238,7 +238,7 @@ The basic advice regarding response times has been about the same for thirty yea
 
 一旦你的用户习惯了你的应用的数据是自动更新的，那么你就要考虑一个新的需求：**状态一致性**。当客户端收到一个原子的数据更新时，必须考虑即便在断网很长时间之后，也能够正确的完成更新。比如，你的笔记本突然没电了，几天后再打开，应用的数据是不是还正确？
 
-![twitter数据一致性](/downloads/images/2014_11/twitter_data_reconciliation.png "twitter数据一致性")
+![twitter数据一致性](/downloads/images/2014_11/twitter_data_reconciliation.png --alt twitter数据一致性)
 
 图9. 长时间断线后重连的情况下twitter的页面
 
@@ -256,7 +256,7 @@ The basic advice regarding response times has been about the same for thirty yea
 
 这个模型以其简洁性显得很具吸引力，但是我们今天要明白服务器和客户端之间的数据交互，学习曲线就陡多了。最大的问题在第二点，如果不能在不刷新页面的情况下提交数据，毫无疑问是一个性能上的弱点。更重要的是，它会使得回退键不可用：
 
-![Possibly the most annoying artifact of the old web](/downloads/images/2014_11/annoy_artifact.png "Annoy Artifact")
+![Possibly the most annoying artifact of the old web](/downloads/images/2014_11/annoy_artifact.png --alt Annoy Artifac)
 
 图10. 老一代网页上最让人讨厌的东西
 
@@ -270,7 +270,7 @@ The basic advice regarding response times has been about the same for thirty yea
 
 还要注意使用这种模式时，要屏蔽用户中断数据流的操作。这种操作有两种，第一种也是最明显的一种是用户尝试关闭当前页面，这种情况可以通过`beforeunload`这个`handler`来处理。
 
-![The beforeunload browser warning](/downloads/images/2014_11/before_unload_warning.png "Before unload warning")
+![The beforeunload browser warning](/downloads/images/2014_11/before_unload_warning.png --alt Before unload warning)
 
 图11. 页面关闭之前弹出警告
 

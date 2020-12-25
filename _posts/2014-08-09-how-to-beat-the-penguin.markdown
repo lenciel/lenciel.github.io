@@ -3,7 +3,7 @@ layout: post
 title: "如何不正确的殴打企鹅"
 date: 2014-08-09 20:32:58 +0800
 comments: true
-categories: 
+categories:
 - just-4-fun
 ---
 
@@ -17,7 +17,7 @@ categories:
 
 去看了一下微信的分享是怎么弄出去的，原来有个非官方的叫`WeixinJSBridge`的东西：只要是通过微信应用内置的Webview打开的网页就可以调用到一组特别的接口，比如分享链接到朋友圈或者发送链接给朋友。这两个接口的参数非常类似：
 
-* 分享链接消息里面的title image的url 
+* 分享链接消息里面的title image的url
 * title image的宽度和高度
 * 标题
 * 描述
@@ -26,7 +26,7 @@ categories:
 
 分享出来的链接，以这个“打企鹅”的游戏为例，是长成下面这样子的一条链接消息：
 
-![Wechat Message](/downloads/images/2014_08/wechat_share_msg.jpg "Don't touch me...")
+![Wechat Message](/downloads/images/2014_08/wechat_share_msg.jpg --alt Don't touch me)
 
 所以，要伪装一个“打企鹅”的高分数链接就只需要找到title image的url和链接指向的url（因为标题和描述照着编就是了）。
 
@@ -41,8 +41,8 @@ categories:
             "url": "http://bingkafei.hnsdcpa.com/game/52/",
             "tTitle": "打企鹅-6e游戏",
             "tContent": "打企鹅-6e游戏"
-        };  
-        
+        };
+
         dataForWeixin.appId = "wx8820cdf5db680ffa";
         dataForWeixin.url = "http://weiapp.552200.com/game/"+_con["num"]+"/";
 

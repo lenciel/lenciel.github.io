@@ -8,7 +8,7 @@ categories:
 - memo
 ---
 
-![You are fucked](/downloads/images/2010_05/you_are_fucked.png "Don't touch me...")
+![You are fucked](/downloads/images/2010_05/you_are_fucked.png --alt Don't touch me)
 
 
 上周五和偶像派请假去办公积金贷款，惨遭拒绝：您丫有一张信用卡处于冻结状态。

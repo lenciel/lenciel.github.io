@@ -3,14 +3,14 @@ layout: post
 title: "记一次突然的旅行"
 date: 2016-08-29 03:59:07 +0800
 comments: true
-categories: 
+categories:
 
 - writing
 - iwdrm
 
 ---
 
-![Vhost threshold](/downloads/images/2016_08/qin_hai_lake.jpg "Don't touch me...")
+![Vhost threshold](/downloads/images/2016_08/qin_hai_lake.jpg --alt Don't touch me)
 
 七夕刚过的周末，飞到了西宁。出机场天色虽晚，但干燥凉爽，让人忘了一个小时前的闷热不堪。
 
@@ -20,11 +20,11 @@ categories:
 
 第一站是茶卡盐湖。晒盐和打铁类似，是古代底层人民用来恐吓顽皮小孩儿的苦行当。如今的盐场前面接待游客后面规模生产，早就完成了机械化，已经看不到露天劳作的盐工。
 
-![](/downloads/images/2016_08/day1_chaka_2.jpg "Don't touch me...")
+![](/downloads/images/2016_08/day1_chaka_2.jpg --alt Don't touch me)
 
 从布满脏兮兮脚印的湖边走到湖心，“天空之镜”总算被本座召唤出来：刚刚可以淹没脚背的盐湖水，在湖底白色结晶的帮衬下恰好变成了反光镜。头上低垂的黑云，远处巍峨的碧山，被这一望无际到天尽处白茫茫明晃晃的盐湖连了起来。专程来照相的人都穿了红的绿的对比强烈的衣服，三五成群叽叽喳喳地雀跃着，双脚黏黏糊糊的置身于这热闹的镜面，让人很容易感觉到空寂。
 
-![](/downloads/images/2016_08/day1_chaka.jpg "Don't touch me...")
+![](/downloads/images/2016_08/day1_chaka.jpg --alt Don't touch me)
 
 于是围着盐田乱走，发现盐雕边还有个“卤水体验池”。以前看书讲台湾盐工验卤水，舀出一勺，放几粒莲子，三浮五沉的是淡卤，七八浮起的就是淳卤：这地方却是一堆人在里面泡着，不知道体验的项目是做浮标还是卤肉。
 
@@ -40,17 +40,17 @@ categories:
 
 夜里电闪雷鸣，狂风暴雨，我知道第二天这日出是看不了了。醒来果然没有太阳，吃了早饭继续出发，眼看着路两边很多地方河水暴涨漫过了河堤，有些河滩地里比我腰还粗的大树也被连根拔起。青海这边大概很少见这样的大水，于是大家纷纷停车合影留念。
 
-![](/downloads/images/2016_08/day2_qilian_1.jpg "Don't touch me...")
+![](/downloads/images/2016_08/day2_qilian_1.jpg --alt Don't touch me)
 
 到了下午，总算是来到了祁连山下，所谓的“东方瑞士小镇”卓尔山。却是非常不巧，[景区大巴出了事情景区封闭](http://baike.baidu.com/item/8%C2%B79%E5%8D%93%E5%B0%94%E5%B1%B1%E6%99%AF%E5%8C%BA%E8%A7%82%E5%85%89%E8%BD%A6%E4%BE%A7%E7%BF%BB%E4%BA%8B%E6%95%85)。问酒店老板，原来是景区为了创收，把大门从山上移到山脚，让所有人都必须坐摆渡车上山（这也是国内景区的设计模式）。结果车没有年检，司机驾照只能开小车，上班前还喝了酒，就成了索命阎王。
 
 最近的下一站也还有还几百公里，只好住下，走到景区后面的田里面，搓一把青稞吃了，感谢卓尔山不收之恩。
 
-![](/downloads/images/2016_08/day2_qilian_2.jpg "Don't touch me...")
+![](/downloads/images/2016_08/day2_qilian_2.jpg --alt Don't touch me)
 
 第三天就是回程。一路上绵延不尽的祁连山脉，低处是绿油油的牧场，万仞之上却终年覆盖着薄雪，风光比青海湖两边起了癞子一般的草地要好看得多。下车来到一个山腰上规模颇大的藏传寺庙，站在主殿向外望去，背后是威严法相当头棒喝，远方是漫漫天地滚滚红尘，突然想到，陈家洛手托短剑，呆呆地望着霍青桐追上族人，身影渐渐消失草地与蓝天相接之处，应该就是这场面吧。
 
-![](/downloads/images/2016_08/day3_datong_1.jpg "Don't touch me...")
+![](/downloads/images/2016_08/day3_datong_1.jpg --alt Don't touch me)
 
 正在走神，突然呼啦啦来了一帮喇嘛，一言不合就脱了靴子开始唱经。他们年纪都挺小，唱起来还不算熟练，却很鲜活。
 

@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "校友杯漫记(2)"
 date: 2017-05-18 21:23:56 +0800
-categories: 
+categories:
 
 - football
 - writing
@@ -41,7 +41,7 @@ categories:
 
 路过七舍边的铁笼，球门倒在地上锈着，看来是废了。
 
-![football_zju_01.jpg](/downloads/images/2020_03/football_zju_01.jpg "Don't touch me...")
+![football_zju_01.jpg](/downloads/images/2020_03/football_zju_01.jpg --alt Don't touch me)
 
 当年这里火爆得很，踢球出了界就要换人。
 
@@ -125,7 +125,7 @@ categories:
 
 我们却不恼：好些人是第一次见面，认识的也十年没在一起踢过了，场上还算有模有样。一想到后面还有三场，大家赶紧趁着音容宛在，在无限唏嘘的横幅下合影一张，就去草场参加开幕式。
 
-![football_zju_02.jpg](/downloads/images/2020_03/football_zju_02.jpg "Don't touch me...")
+![football_zju_02.jpg](/downloads/images/2020_03/football_zju_02.jpg --alt Don't touch me)
 
 后排: 陈禹、段鹏、黄科、夏可立、邢燚、罗祾、刘坚、冯剑
 前排: 金孝、本座、张鹏
@@ -138,7 +138,7 @@ categories:
 
  入口对联还新着，不知道谁选的，挺好。
 
-![football_zju_03.png](/downloads/images/2020_03/football_zju_03.png "Don't touch me...")
+![football_zju_03.png](/downloads/images/2020_03/football_zju_03.png --alt Don't touch me)
 
 轻研竹露，是泡了茶，细嚼梅花，又倒了酒，挺好。
 
@@ -150,13 +150,13 @@ categories:
 
 拐进草场，这里的比赛还没完。蓝天白云下，代表各只参赛队伍的彩旗迎风飘着，布置得漂亮极了。
 
-![football_zju_04.jpg](/downloads/images/2020_03/football_zju_04.jpg "Don't touch me...")
+![football_zju_04.jpg](/downloads/images/2020_03/football_zju_04.jpg --alt Don't touch me)
 
 我走上看台，看着场下，视线所及，都是或坐着或站着或走着或跑着的五颜六色的熟人。每个人，都是原来的样子，又都不是。
 
 因为没有收到诸位的赞助费，就懒得再一一介绍。合了影的这几个头牌，挂在下面，你们喜欢哪位，可以找我下单。
 
-![football_zju_05.jpg](/downloads/images/2020_03/football_zju_05.jpg "Don't touch me...")
+![football_zju_05.jpg](/downloads/images/2020_03/football_zju_05.jpg --alt Don't touch me)
 
 左起：王超、李衡、罗祾、杨鑫祎、竺涛、翟羽、李晨、本座、屠玮
 

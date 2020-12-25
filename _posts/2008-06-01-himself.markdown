@@ -9,7 +9,7 @@ categories:
 - thoughts
 ---
 
-![Our love](/downloads/images/2008_06/love_affair.png "Don't touch me...")
+![Our love](/downloads/images/2008_06/love_affair.png --alt Don't touch me)
 
 他想，让一切都慢下来。<br/>
 太阳把阳光，忘在屋子里。<br/>

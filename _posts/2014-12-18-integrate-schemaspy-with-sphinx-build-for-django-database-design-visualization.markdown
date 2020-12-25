@@ -11,7 +11,7 @@ categories:
 ---
 
 
-![schemaSpy](/downloads/images/2014_12/schemaSpy.png "schemaSpy")
+![schemaSpy](/downloads/images/2014_12/schemaSpy.png --alt schemaSpy)
 
 在做项目的时候，客户或者合作的部门常常问研发要“数据库设计”。在古代，瀑布式开发的第一个阶段是做架构设计和写文档，所以这样的需求一般都能被“充分满足”。而在我们现在的项目节奏和迭代速度都很快，数据库的设计在项目初期经常也在变化，如何能够比较方便的文档化这些变更？
 

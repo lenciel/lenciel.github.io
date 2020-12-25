@@ -1,0 +1,54 @@
+---
+layout: post
+comments: true
+title: "What I know in 2020, 😳"
+date: 2020-12-13 11:46:15 +0800
+categories: 
+
+- rants
+- memo
+---
+
+你我都知道的旷世奇闻，仍然不在此列。
+
+- 中国地图上，从黑河到腾冲画一条线，这条线以东住着全国 94%的人口。这是 1935 年由地理学家胡焕庸首次提出的。[ [维基百科](https://zh.wikipedia.org/wiki/%E9%BB%91%E6%B2%B3%EF%BC%8D%E8%85%BE%E5%86%B2%E7%BA%BF) ]
+- 20 世纪 70 年代，挪威政府希望与瑞典沃尔沃汽车公司达成一项股权协议。挪威获得沃尔沃 40％的股份，而沃尔沃将获得挪威大陆架上石油开采权。沃尔沃的股东于 1979 年 1 月拒绝了该计划，他们认为价格太低了，挪威的石油并不值钱。后来，挪威石油被放到在挪威的主权财富基金中，2018 年该基金达到 1 万亿美元。而沃尔沃公司 2010 年被中国的吉利公司收购。[ [维基百科](https://en.wikipedia.org/wiki/Volvo_Deal) ]
+- 人应该谨慎地选择工作：人的一生中，上班（包括通勤和思考工作的时间）将占去 50,000 至 150,000 个小时。目前，人类的寿命大约为 750,000 小时。当减去童年（约 175,000 小时）和成年生活中睡眠、进食、锻炼和其他个人生活的时间（约 325,000 小时），那么剩下 250,000 个"有意义的成人小时" 而上班将占用其中 20％ 到 60％ 之间的时间。[ [waitbutwhy](https://waitbutwhy.com/2018/04/picking-career.html) ]
+- 日本千叶县的一座寺庙举行了一场特殊的「葬礼」，哀悼索尼公司生产的机器狗 AIBO。当天，56 条机器狗并排「躺」在祭坛上，而它们的原主人等也到场参加了「祭奠」。主办这场葬礼的是一家电器修理公司，每次先由机器人进行致词，随后由 2 条 AIBO 机器狗朗读佛经，最后再由寺院的住持为「去世」的 AIBO 们诵经超度。[ [稻田博一](https://asahichinese-j.com/society/12977340) ]
+- 一篇论文分析了英国 400 万例手术，发现星期五手术的死亡率比星期一高出 40%，周末手术的死亡率更是高出 80%。论文结论是，上半周手术风险明显小于下半周。[ [P Aylin](https://www.bmj.com/content/346/bmj.f2424) ]
+- 南太平洋的波利尼希亚人曾经在太平洋各岛屿之间长途往返，但是他们为了做木筏，用光了岛上的高大树木，无法再制造木筏。于是，后代忘记了怎样航海，行动被限制在岛上。[ [《秘境》](https://book.douban.com/subject/33446318/) ]
+- 《牛津英语词典》从「A」编到「ant」花了 10 年，剩下的部分又花了 60 年才编完。[ [abc](https://www.abc.net.au/news/2020-04-09/history-of-the-oxford-english-dictionary/12010628) ]
+- 1955 年，英国历史学家帕金森发现，1914 年至 1928 年之间，英国海军舰只的数量减少了三分之二，船员数量减少了三分之一，但官僚的人数每年仍激增近 6％。他得出一个结论，官僚组织会自我膨胀，这被称为「帕金森定律」。[ [BBC](https://www.bbc.com/worklife/article/20191107-the-law-that-explains-why-you-cant-get-anything-done) ]
+- 澳大利亚科学家在《自然》杂志发表论文，认为人类的自然寿命是 38 岁。所谓自然寿命，就是在野生状态下人类的平均寿命。研究人员发现，基因的 DNA 有 42 处与哺乳动物的最大寿命有关。他们一共研究了 252 种脊椎动物的基因组，发现最长寿的哺乳动物是弓头鲸，寿命为 268 岁。巨型海龟的寿命为 120 岁，非洲象为 65 岁。目前，人类人均寿命的提高完全是生活水平和医疗条件改善导致的。[ [Benjamin Mayne](https://theconversation.com/a-new-study-shows-an-animals-lifespan-is-written-in-the-dna-for-humans-its-38-years-128623) ]
+- 1975 年，中央情报局局长威廉·科尔比在美国国会，展示了一把心脏麻痹枪。这把手枪的顶部有瞄准器，发射的不是子弹，而是飞镖。目标被射中后，皮肤会出现一个小红点，然后心脏麻痹死亡。尸体解剖查不出毒药，死亡原因会被认为是心脏病。[ [History Collection](https://historycollection.com/conspiracy-8-far-fetched-theories-turned-true/7/) ]
+- 为了让手指幅度没有那么大的人也能享受弹奏钢琴的快乐，PASK 项目（Pianists for Alternatively Sized Keyboards）推动设立三种键盘尺寸的钢琴，适合不同大小的人。[ [paskpiano](http://paskpiano.org/about/) ]
+- 高端再生 PET 的市场规模，正在以 100%的速度递增。中国目前有超过 13 万家经营范围包含回收、再生 PET 等领域的企业。今年初至 11 月 10 日，以工商登记为准，中国新增可回收塑料相关企业近 2.5 万家，同比增长 15%。。[ [制造局](https://m.jiemian.com/article/5290631.html) ]
+- 如果苹果 AirPods 是一项独立的业务（成立于 2016 年，收入 120 亿美元，增长 125% ，利润率 30%-50%) ，那么它可能是世界上最有价值的创业公司。[ [Kevin Rooke](https://www.kevinrooke.com/post/apple-airpods-iphone-accessory-or-the-next-big-thing) ]
+- 20 年过去了，人工智能仍然没有办法检测出来一句话是不是有「讽刺意味」。[ [Martin Gardiner](https://www.improbable.com/2020/05/05/recent-progress-in-automatic-sarcasm-detection/) ]
+- 研究 AI 伦理学的 Timnit Gebru 被 Google 辞退（Jeff Dean 说是她自己离职）后，那篇带来争议的论文里[居然提到](https://www.technologyreview.com/2020/12/04/1013294/google-ai-ethics-research-paper-forced-out-timnit-gebru/)了「213 M 个参数的 Transformer AI 模型差不多碳足迹 284 吨」，甚至把它等同于五辆车全生命周期的碳排放。这让我想起来，之前看到的一个研究说，当你减掉 1 公斤体重时，大约有 840 克体重以二氧化碳的形式排出……[ [Ruben Meerman & Andrew Brown](https://theconversation.com/when-we-lose-weight-where-does-it-go-91594) ]
+- 20 世纪 30 年代，氢气飞艇里的气囊是用牛肠子的外层制成的。肠子还湿的时候，组织缔结在一起，生长成一种不透气的结合物。齐柏林飞艇的气囊是用大约 50 万头牛的内脏制成的。。[ [Mark Steadman](http://www.ptt-museum.dk/en/online_magazine/previous_articles/broadcasting/?id=74) ]
+- 因为白天工作太忙压力太大或者太忙没有时间安排自己喜欢的活动，有很多人在晚上进行报复性熬夜 ——「那些对白天生活没有太多控制力的人拒绝早睡，以便在深夜恢复一些自由感」。 [ [新华网](http://www.xinhuanet.com/politics/2019-03/18/c_1124247790.htm) ]
+- 2006 年 10 月，广电总局决定推广移动多媒体广播格式 CMMB，可以在手机上看电视。这是一个中国独有的标准，词首的 C 代表 China。前后一共投入超过 100 多亿，现在已经被彻底淘汰了。[ [新浪财经](https://finance.sina.com.cn/tech/2020-10-12/doc-iivhuipp9118153.shtml)]
+- 美国的汽车安全法令，使得在强制汽车安全座椅的州，生第三个孩子的可能性降低了 0.7% 。这些安全措施每年挽救了 57 个儿童死于车祸，但是自 1980 年以来却减少了 14.5 万儿童的出生。。[ [Jordan Nickerson & David H. Solomon](https://privpapers.ssrn.com/sol3/papers.cfm?abstract_id=3665046) ]
+- 72 法则是一种估计翻倍需要多长时间的方法。比如，当注册用户每周增长 5% ，那么在没有任何客户流失的情况下，需要大约 14 周 ( 72/5 )的时间用户翻倍。[ [Robert Vitillo](https://robertovitillo.com/back-of-the-envelope-estimation-hacks/) ]
+- 日本是一个海岛，自身没有石油和煤炭资源，都依靠进口。为了保证能源供应和保护环境，日本政府正在研究一个氢能源计划，尝试使用氢气作为国家的常规能源。[ [Tech Explore](https://techxplore.com/news/2020-11-ambitious-controversial-japan-hydrogen.html) ]
+- 球鞋的成本差别主要在「中底」，也就是鞋垫和大底中间的部分。中国品牌的创新瓶颈也在这里。[ [辛晓彤](http://www.lanxiongsports.com/posts/view/id/19913.html) ]
+- 尼泊尔 GDP 的 10% 来自于攀登珠穆朗玛峰的人们。图鲁瓦（Tuvalu）GDP 的 10% 来自于「.tv」域名的销售。 [ [Alexander Lee](https://www.washingtonpost.com/video-games/2019/12/23/tuvalu-is-tiny-island-nation-people-its-cashing-thanks-twitch/) ]
+- iPod 从第一次会议(没有团队，没有原型，没有设计)到向消费者提供 iPod，一共只用了 41 周。[ [Patrick Collison](https://twitter.com/patrickc/status/1216477318434050048?mc_cid=940c6cead2&mc_eid=7283e54efa) ]
+- 清洁肉类行业目前最大的问题是依赖动物血清。血清，目前每升价值几百美元，创业公司希望能够自己合成它，把价格降到每升一美元。[ [Matt Reynolds](https://www.wired.co.uk/article/scaling-clean-meat-serum-just-finless-foods-mosa-meat) ]
+- 在非洲，40% 的智能手机是由深圳电话公司 Transsion 生产的，该公司已经在埃塞俄比亚、斯瓦希里等国家开发了键盘和相机、闪光灯和成像软件，都是为深色肤色量身定制的。[ [Andrew Deck](https://restofworld.org/2020/transsion-from-china-to-africa/) ]
+- Bernard Rudofsky 在 1944 年 MOMA 举行的展览中推出了一系列服装，并认为，一个衣着光鲜的 20 世纪男人会有 78 个纽扣和 24 个口袋。[ [Hannah Carlson](http://www.partinandcheeklaw.com/feature/fashion-and-function-at-moma/39653) ]
+- 在华沙的 Gruba Kaśka 水厂里，有 8 个蛤蜊的壳上装有感应器。如果蛤蜊因为不喜欢水的味道而合上壳子，这个城市的自来水供应就会自动关闭。[ [Judita K](https://www.boredpanda.com/clams-measure-water-quality-poland-fat-kathy/) ]
+- 位于亚特兰大的艾默理大学的流行病学家认为，自 1990 年以来，如果将美国的临时工资提高 1 美元，就可以避免 27550 起自杀事件。[ [John A Kaufman & Co, via The Economist](https://www.economist.com/graphic-detail/2020/01/20/higher-minimum-wages-are-linked-to-lower-suicide-rates) ]
+- 音乐的八度音阶可能是后天习得的，而不是自然地植入大脑: [Sidney H Aronson 西德尼 · 阿伦森](https://pdfs.semanticscholar.org/ea46/5b2cecc1535ca330d8e6b6ae32ce4eb45354.pdf)低地的齐马内人很少一起唱歌或用乐器演奏，似乎无法感知八度音阶。[ [Elena Renken](https://www.quantamagazine.org/perceptions-of-musical-octaves-are-learned-not-wired-in-the-brain-20191030/) ]
+- 人类的第一次电话咨询发生在 1879 年，距离电话发明仅仅三年: 一位医生通过电话聆听孩子的咳嗽，给出诊断(「不是哮喘」)和治疗(「让他安静下来，睡一会儿」）。[ [Sidney H Aronson](https://pdfs.semanticscholar.org/ea46/5b2cecc1535ca330d8e6b6ae32ce4eb45354.pdf) ]
+- 科学家们寻找暗物质非常依赖于古代沉船，因为一些测试设备是用千年前罗马海难中沉船上的铅制成的，因为这些铅一直深埋在水下，它的天然放射性已经衰变到不再产生颗粒物的程度。[ [Robin George Andrews](https://www.theatlantic.com/science/archive/2019/10/search-dark-matter-depends-ancient-shipwrecks/600718/) ]
+- 「micromort」是一个微小死亡率的单位，也就是百万分之一。仅仅是活着就是每天 24 micromort，跳伞就是每跳 8 micromort。[ [Matt Webb](http://interconnected.org/home/2020/09/01/microcovids) ]
+- 10 月 25 日，苏格兰足球联赛出现了一个令人啼笑皆非的直播事故。赛前，俱乐部宣布，本场比赛将采用 AI 摄像头替代人工摄像师，摄像头会自动识别足球，始终追踪球的运动。意想不到的是，本场比赛的边裁是一个光头裁判，AI 摄像头分不清光头与足球，很多时候将光头误认为是足球，镜头跟着边裁。观众们纷纷抱怨错过了进球，只看见边判跑来跑去，要求俱乐部赶快为边裁提供一个假发或帽子。[ [James Felton](https://www.iflscience.com/technology/ai-camera-ruins-soccar-game-for-fans-after-mistaking-referees-bald-head-for-ball/) ]
+- 气候科学家预测，2030 年全球气温可能会上升 1.5 C。不考虑其他因素的情况下，用电量将增加 12％，用水增加 4％。如果气温上升 2.0 C，用电量增加 20％，用水增加 6％。这意味着，十年后许多城市的用水用电，都会变得非常紧张。[ [Purdue University](https://phys.org/news/2020-03-accurate-climate-reveals-bleaker-outlook.html) ]
+- 由于公交车的车身比较高大，跟在后面的小汽车往往看不见前方的红绿灯。为了解决这个问题，湖南长沙的公交 315 线会在车尾显示前方路口的红绿灯，方便后方的司机了解路况。它的原理是，公交车经过路口时，会通过物联网连网，将路口红绿灯的信息同步到公交车上。除了红绿灯状态，还能同步读秒信息，显示多少秒后红绿灯改变状态。据介绍，长沙目前已有 2000 余辆公交车完成了改造。[ [新浪财经](https://finance.sina.com.cn/tech/2020-10-16/doc-iiznctkc5897927.shtml) ]
+- 德国科学家发表论文，认为城市夜晚的照明（广告、建筑物、停车场、体育场等）大部分都浪费了，因为很大一部分灯光都向上发射到太空，形成光污染，而没有集中照亮路标、街道或建筑物。[ [Victoria Gill](https://www.bbc.com/news/science-environment-54721921) ]
+- 摩根士丹利分析师提出，郑州 10 月份的空气质量突然下降，表明 iPhone 12 正在加紧生产。富士康的郑州工厂是苹果手机的主要生产地之一。[ [新浪财经](https://finance.sina.com.cn/stock/usstock/c/2020-10-29/doc-iiznctkc8235190.shtml) ]
+- 全球的 IPv4 地址历史上有 1600 万个分配给了业余无线电协会。由于 IPv4 地址已经没有剩余了，亚马逊公司最近花了 1.08 亿美元，向该协会购买了 400 万个 IPv4 地址。[ [South Gate](http://www.southgatearc.org/news/2020/october/sale-of-amateur-radio-amprnet-tcp-ip-addresses.htm) ]
+
+时光隧道：[2018年](https://lenciel.com/2018/12/what-i-know-in-2018/) / [2017年](https://lenciel.com/2017/12/what-i-know-in-2017/) / [2016年](https://lenciel.com/2016/12/what-i-konw-in-2016/)

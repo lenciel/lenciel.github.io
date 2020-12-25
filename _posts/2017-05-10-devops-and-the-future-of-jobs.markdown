@@ -3,7 +3,7 @@ layout: post
 title: "DevOps"
 date: 2017-05-10 01:28:52 +0800
 comments: true
-categories: 
+categories:
 
 - devops
 - infrastructure
@@ -29,7 +29,7 @@ categories:
 
 网上有张流传甚广的图：
 
-![Vhost threshold](/downloads/images/2017_05/devops.png "Don't touch me...")
+![Vhost threshold](/downloads/images/2017_05/devops.png --alt Don't touch me)
 
 这张看起来颇有道理的图其实什么也没有说：测试、开发和运维这三种角色的工作，究竟有什么交集，可以被称为DevOps呢？
 

@@ -3,7 +3,7 @@ layout: post
 title: "2017年终总结"
 date: 2017-12-31 13:41:02 +0800
 comments: true
-categories: 
+categories:
 
 - thinking
 - writing
@@ -11,7 +11,7 @@ categories:
 
 ---
 
-![call me by your name](/downloads/images/2017_12/call_me_by_your_name.jpg "Don't touch me...")
+![call me by your name](/downloads/images/2017_12/call_me_by_your_name.jpg --alt Don't touch me)
 
 今天是本周的最后一天，也是今年的最后一天。
 

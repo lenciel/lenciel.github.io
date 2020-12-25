@@ -10,7 +10,7 @@ categories:
 - pitfall
 ---
 
-![Vhost threshold](/downloads/images/2014_11/sentry_incorrect_site.png "Don't touch me...")
+![Vhost threshold](/downloads/images/2014_11/sentry_incorrect_site.png --alt Don't touch me)
 
 Problem
 ==========

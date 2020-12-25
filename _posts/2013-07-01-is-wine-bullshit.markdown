@@ -8,7 +8,7 @@ categories:
 - knowledge
 ---
 
-![Raw git log output](/downloads/images/2013_07/wine.jpeg "Don't touch me...")
+![Raw git log output](/downloads/images/2013_07/wine.jpeg --alt Don't touch me)
 
 一瓶Lafite Rothschild Bordeaux最少要几千块，一瓶Charles Shaw或者Franzia卖十几块。我们经常可以看到那些红酒的广告宣扬着高档红酒的品质和口感是多么美妙。但其实很多人不知道，按照"酒类经济学家"的说法，葡萄酒的价格和口感之间的关系可能不是那么紧密。他们中不少人甚至声称，葡萄酒的价格根本就是乱来的，而那些号称能被品出来的万千滋味不过是付钱过后脑袋里面的自我安慰。
 

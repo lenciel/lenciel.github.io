@@ -3,15 +3,15 @@ layout: post
 title: "Django其实不是MVC"
 date: 2015-03-30 11:36:24 +0800
 comments: true
-categories: 
+categories:
 
-- django 
+- django
 - thoughts
 
 ---
 
 
-![Vhost threshold](/downloads/images/2015_03/mvc.jpg "Don't touch me...")
+![Vhost threshold](/downloads/images/2015_03/mvc.jpg --alt Don't touch me)
 
 很多时候[Django](https://www.djangoproject.com/)都被称为是一个MVC框架 — `Model-View-Controller`。这样说的人要么就是已经熟悉过其他的MVC框架，所以看到Django有自己的Template系统和`views.py`来放各种逻辑代码，就想当然的认为Django也是；要么就是其实没有真正实践过Django，从各种其他的错误文档里面看到或者是听说的。
 

@@ -10,7 +10,7 @@ categories:
 
 ---
 
-![work life balance](/downloads/images/2015_10/dilbert_work_life_balance.png "Don't touch me...")
+![work life balance](/downloads/images/2015_10/dilbert_work_life_balance.png --alt Don't touch me)
 
 前面说了，[Work Life Balance的神话其实并不靠谱](http://lenciel.cn/2015/10/the-myth-of-work-life-balance/)。
 

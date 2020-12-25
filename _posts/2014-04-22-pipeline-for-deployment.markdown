@@ -33,7 +33,7 @@ categories:
   4. 自动部署代码到服务器的系统 ([Puppet][14], [chef][8], [clusto][9], …).
 
 
-![Deployment Phases](/downloads/images/2014_04/deployment_phases.png "Don't touch me...")
+![Deployment Phases](/downloads/images/2014_04/deployment_phases.png --alt Don't touch me)
 
 你选择的工具当然对后面的流程有很大的影响。我们公司是采用`git`+`Gitlab`+`Reviewboard`+`Jenkins`+`fabric`来做部署。在搭建这套东西之前我也试过很多其他的东西，有的东西我放弃了是因为太复杂不够轻量(比如Puppet)，有的东西我放弃了是因为，长得太丑(比如Gerrit)。
 

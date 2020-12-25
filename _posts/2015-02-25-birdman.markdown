@@ -3,16 +3,16 @@ layout: post
 title: "《鸟人》"
 date: 2015-02-25 20:02:27 +0800
 comments: true
-categories: 
+categories:
 
 - movie
 - review
 
 ---
 
-<p><img style="width:30%" src="{{ site.static_base }}/downloads/images/2015_02/birdman_1.jpg" title="Don't touch me..." alt="Vhost threshold" />
-<img style="width:30%" src="{{ site.static_base }}/downloads/images/2015_02/birdman_2.jpg" title="Don't touch me..." alt="Vhost threshold" />
-<img style="width:30%" src="{{ site.static_base }}/downloads/images/2015_02/birdman_3.jpg" title="Don't touch me..." alt="Vhost threshold" /></p>
+<p><img style="width:30%" src="{{ site.static_base }}/downloads/images/2015_02/birdman_1.jpg" title=--alt Don't touch me alt="Vhost threshold" />
+<img style="width:30%" src="{{ site.static_base }}/downloads/images/2015_02/birdman_2.jpg" title=--alt Don't touch me alt="Vhost threshold" />
+<img style="width:30%" src="{{ site.static_base }}/downloads/images/2015_02/birdman_3.jpg" title=--alt Don't touch me alt="Vhost threshold" /></p>
 
 今年奥斯卡最佳电影颁给了《鸟人》，喜欢电影的小伙伴们纷纷起立...
 

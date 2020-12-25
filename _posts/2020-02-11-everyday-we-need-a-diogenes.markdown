@@ -3,14 +3,14 @@ layout: post
 title: "被低估的第欧根尼"
 date: 2020-02-11 13:29:17 +0800
 comments: true
-categories: 
+categories:
 
 - lifestyle
 - rants
 - writing
 ---
 
-![image holder](/downloads/images/2020_02/diogenes.jpg "Don't touch me...")
+![image holder](/downloads/images/2020_02/diogenes.jpg --alt Don't touch me)
 
 今天公司群里出现了一点小插曲，于是我们聊到了远程办公沟通工作时，最好[不要开玩笑](https://lenciel.com/2020/02/on-remote-work/)。
 
@@ -37,11 +37,11 @@ categories:
 他们经常被人放一起念叨，除开是一天死的，还因为那个脍炙人口的传说：
 　
 > 亚历山大巡游，遇见正躺着晒太阳的第欧根尼，这位世界之王上前自我介绍：「我是大帝亚历山大。」
-> 
+>
 > 哲学家依然躺着，也自报家门：「我是狗儿第欧根尼。」
-> 
+>
 > 大帝肃然起敬，问：「我有什么可以为先生效劳的吗？」
-> 
+>
 > 哲学家的回答是：「有的，就是——站开点，不要挡住我的阳光。」
 
 据说亚历山大事后感叹道：「如果我不是亚历山大，我就愿意做第欧根尼」。
@@ -76,7 +76,7 @@ categories:
 
 所以在 1983 年出版的「[Artforum](https://www.artforum.com/print/198303/diogenes-of-sinope-ca-410-ca-320-b-c-selected-performance-pieces-35513)」杂志上，[Thomas McEvilley](https://www.nytimes.com/2013/03/31/arts/thomas-mcevilley-critic-and-scholar-of-non-western-art-dies-at-73.html) 称第欧根尼是「许多行为艺术的伟大原型」 ，并将一部分第欧根尼的故事改编成行为艺术作品，或称「行为哲学」 ，收录在「[第欧根尼: 缺乏](https://www.johnsonrarebooks.com/pages/books/65768/thomas-mcevilley/diogenes-defictions)」中。
 
-![image holder](/downloads/images/2020_02/diogenes_book.jpg "Don't touch me...")
+![image holder](/downloads/images/2020_02/diogenes_book.jpg --alt Don't touch me)
 
 后来搞行为艺术的人也挺多。比如把自己关在瓦尔登湖边的小木屋，也很行为艺术。
 

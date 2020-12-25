@@ -3,14 +3,14 @@ layout: post
 title: "2019年终总结"
 date: 2019-12-31 00:02:13 +0800
 comments: true
-categories: 
+categories:
 
 - rants
 - thinking
 
 ---
 
-![Hosue M.D.](/downloads/images/2019_12/house.jpg "Don't touch me...")
+![Hosue M.D.](/downloads/images/2019_12/house.jpg --alt Don't touch me)
 
 今天看到 8tracks 的[关门声明](https://blog.8tracks.com/2019/12/26/to-everything-there-is-a-season/)。
 
@@ -127,7 +127,7 @@ categories:
 我觉得，没那么容易。
 
 等你所遇都是艰难困苦，所得都是烦恼哀愁，要少装 House ，多学杜甫。
- 
+
 To everything there is a season.
 
 Then don’t waste your season.

@@ -33,14 +33,14 @@ Producing pretty graphs is fun, but I found the most leverage of it when I try t
 
 下面是本座心目中永远的"优雅Python代码第一名"[Requests](http://docs.python-requests.org/en/latest/)的分析结果：
 
-![requests](/downloads/images/2014_08/requests.png "requests dependencies")
+![requests](/downloads/images/2014_08/requests.png --alt requests dependencies)
 
 再来看看[Django](https://github.com/django/django)的最新版分析结果：
 
-![django](/downloads/images/2014_08/django.png "django dependencies")
+![django](/downloads/images/2014_08/django.png --alt django dependencies)
 
 下面是本座最近撸完的一个项目，印到衣服上感觉还好吧：
-![yawp](/downloads/images/2014_08/yawp.png "yawp dependencies")
+![yawp](/downloads/images/2014_08/yawp.png --alt yawp dependencies)
 
 结论
 ------

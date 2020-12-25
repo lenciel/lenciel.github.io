@@ -6,11 +6,11 @@ comments: true
 categories:
 - tools-i-use
 - tips
-- tutorials 
+- tutorials
 ---
 
 
-![Pomodoro Technique](/downloads/images/2014_04/pomodoro_tech.jpg "Don't touch me...")
+![Pomodoro Technique](/downloads/images/2014_04/pomodoro_tech.jpg --alt Don't touch me)
 
 时间管理对每个人都是非常重要的，相关的理论和工具都有很多。本座试过很轻量的[todolist.vim](https://github.com/vim-scripts/todolist.vim)，也试过很大气的[OmniFocus](https://www.omnigroup.com/omnifocus)，但可能因为自己比较爱随意乱来的性格，这些工具最终都被本座慢慢荒弃。
 

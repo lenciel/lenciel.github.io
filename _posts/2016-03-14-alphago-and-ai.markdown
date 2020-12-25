@@ -3,7 +3,7 @@ layout: post
 title: "人工智能，奇点及其他(一)"
 date: 2016-03-15 02:59:42 +0800
 comments: true
-categories: 
+categories:
 
 - writing
 - AI
@@ -12,7 +12,7 @@ categories:
 ---
 
 
-![Vhost threshold](/downloads/images/2016_03/go_ai.png "Don't touch me...")
+![Vhost threshold](/downloads/images/2016_03/go_ai.png --alt Don't touch me)
 
 3 月 14 日，是个很魔性的日子：这天是爱因斯坦的生日，也是卡尔马克思的忌日，还是“π日"——纪念圆周率弄的“数学节"，忒魔性。
 
@@ -77,7 +77,7 @@ As soon as it works, no one calls it AI.
 - 罗切斯特（N. Rochester）：IBM 信息研究经理，IBM 第一台商用计算机 701 机型设计者。作为一名计算机象棋研究者，他在 IBM 内部推动了很多人工智能研究，但是在董事会打压当时对这方面研究鼎力支持的主席 Watson 之后被搁置了。多年以后的今天，我们看到十八摸的救命稻草就是纪念这位主席的同名计算机认知系统[Watson](http://www.ibm.com/smarterplanet/us/en/ibmwatson/ecosystem.html)。
 
 - 撒缪尔（A. Samuel）：在 IBM 工作的真正的编程爱好者。使用 701 编写的跳棋程序是第一个具有学习能力的下棋程序，使用的就是现在被称为“α-β剪枝”的搜索。从 IBM 退休后去了 Stanford 执教，大量的时间都用来和 Knuth 搞 Tex 了。据说 88 岁生日的时候，都还在写程序。
- 
+
 整个人工智能研究的发展历史，其实是很值得国内建高校的人好好看看的。但是作为一名凡夫俗子，这里宛如奥斯卡红毯秀般铺陈星光熠熠的出场阵容，有几个目的：
 
 1. 首先，可以看到，从人工智能奠基会上，就有三个人都是研究了“计算机下棋“的。下棋实在是一个贯穿人工智能这么多年历史的课题：这方面有个很好的资料网站是[CPW](https://chessprogramming.wikispaces.com/)。

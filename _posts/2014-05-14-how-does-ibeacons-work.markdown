@@ -3,7 +3,7 @@ layout: post
 title: "How Does iBeacons Work"
 date: 2014-05-14 15:19:59 +0800
 comments: true
-categories: 
+categories:
 -  iBeacons
 -  ble
 -  tutorial
@@ -22,7 +22,7 @@ Bluetooth LE
 - Bluetooth Smart Ready: `传统`和`低功耗`通吃的蓝牙
 - Bluetooth Smart: 仅支持`低功耗`蓝牙
 
-![bluetooth smart ready logo](/downloads/images/2014_05/bluetooth_smart_ready_logo.jpg "Don't touch me...")
+![bluetooth smart ready logo](/downloads/images/2014_05/bluetooth_smart_ready_logo.jpg --alt Don't touch me)
 
 比较老的设备，以及大部分的汽车，家电等等，是仅支持传统意义上的Bluetooth的。
 
@@ -42,7 +42,7 @@ BLE通信主要是两种模式：`Advertising`和`Connecting`。
 - 2-39 bytes advertising channel PDU
 - 3 bytes CRC
 
-![bluetooth le packet](/downloads/images/2014_05/bluetooth_le_packet.png "Don't touch me...")
+![bluetooth le packet](/downloads/images/2014_05/bluetooth_le_packet.png --alt Don't touch me)
 
 其中`access address`在这种模式下是固定的`0x8E89BED6`。换句话说，`Advertising`模式就是对外以一个固定的读取地址和固定的时间间隔不断的发送数据。
 
@@ -74,7 +74,7 @@ C5: 2’s complement of measured TX power
 ```
 
 
-![bluetooth le ibeacon packet](/downloads/images/2014_05/bluetooth_le_ibeacon_packet.png "Don't touch me...")
+![bluetooth le ibeacon packet](/downloads/images/2014_05/bluetooth_le_ibeacon_packet.png --alt Don't touch me)
 
 换句哈说，如果你想试玩一下iBeacons技术，在买到beacon之前，其实你手边的任何新一点儿的iPhone或者[Mac设备都可以拿来作为iBeacon](http://developer.radiusnetworks.com/2013/10/09/how-to-make-an-ibeacon-out-of-a-raspberry-pi.html)的发射端或者接收端。当然，[万能的树莓](http://developer.radiusnetworks.com/2013/10/09/how-to-make-an-ibeacon-out-of-a-raspberry-pi.html)也可以改造成beacon。
 

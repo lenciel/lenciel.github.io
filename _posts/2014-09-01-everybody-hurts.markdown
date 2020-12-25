@@ -10,7 +10,7 @@ categories:
 
 ---
 
-![careful to choose](/downloads/images/2014_09/choose_who_to_let_in.jpg "Be careful to choose...")
+![careful to choose](/downloads/images/2014_09/choose_who_to_let_in.jpg --alt Be careful to choose...)
 
 一个朋友最近跟我说，想去把伤口结痂留下的疤痕用液氮处理一下。
 

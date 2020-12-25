@@ -116,7 +116,7 @@ categories:
 
 区别可能是，这副眼罩是纯金的。
 
-![dev_donkey.jpg](/downloads/images/2020_05/dev_donkey.jpg "Don't touch me...")
+![dev_donkey.jpg](/downloads/images/2020_05/dev_donkey.jpg --alt Don't touch me)
 
 ### 我们能改变什么？
 

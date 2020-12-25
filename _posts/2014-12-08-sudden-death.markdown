@@ -9,7 +9,7 @@ categories:
 - 从你的全世界错过
 ---
 
-![Vhost threshold](/downloads/images/2014_12/snow_night.jpg "Don't touch me...")
+![Vhost threshold](/downloads/images/2014_12/snow_night.jpg --alt Don't touch me)
 
 窗外的雪越来越大，很快就盖住了最后一点道路的痕迹。
 

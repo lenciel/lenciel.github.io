@@ -3,13 +3,13 @@ layout: post
 title: "好的引导流程胜过10个新功能"
 date: 2015-06-26 13:55:49 +0800
 comments: true
-categories: 
+categories:
 - product
 ---
 
 SNS的有趣之处就在于，经常你会看到一些话，让你对着屏幕点头不已。比如下面这句：
 
-![Vhost threshold](/downloads/images/2015_06/the_next_new_feature.png "Don't touch me...")
+![Vhost threshold](/downloads/images/2015_06/the_next_new_feature.png --alt Don't touch me)
 
 Joshua Porter的这段话看起来是吐槽，但又实实在在的发生在参与创业大潮的你我身边。在2000年互联网泡沫破灭之前，那些最终幻灭的高科技公司的发展轨迹无非是：
 
@@ -35,7 +35,7 @@ Joshua Porter的这段话看起来是吐槽，但又实实在在的发生在参�
 
 Hmmm...所以也难免有人会说这其实没有什么不同嘛：
 
-![Vhost threshold](/downloads/images/2015_06/chuangyeban.png "Don't touch me...")
+![Vhost threshold](/downloads/images/2015_06/chuangyeban.png --alt Don't touch me)
 
 然而无论预警者的声音再大声，作为创业者这种"启动-失败-再启动"的反复试错的精神都已经成为了我们的信条。的确，就跟你打开一张刮刮乐发现没奖时一样，如果我们做出来的项目没有人用，那么再来一次无疑是最轻松最诱人的选择。
 
@@ -46,7 +46,7 @@ Hmmm...所以也难免有人会说这其实没有什么不同嘛：
 
 下面这个曲线是从业者们最不愿意面对的曲线，展示了从流量导入到一个月后可怜的留存数据：
 
-![Vhost threshold](/downloads/images/2015_06/the_tragic_curve.png "Don't touch me...")
+![Vhost threshold](/downloads/images/2015_06/the_tragic_curve.png --alt Don't touch me)
 
 * 1000个UV访问
 * 200个用户注册(20%)

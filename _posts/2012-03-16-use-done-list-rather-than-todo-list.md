@@ -8,7 +8,7 @@ categories:
 - thoughts
 ---
 
-![nerd sniping](/downloads/images/2012_03/nerd_sniping.png "Don't touch me...")
+![nerd sniping](/downloads/images/2012_03/nerd_sniping.png --alt Don't touch me)
 
 ## **起**
 

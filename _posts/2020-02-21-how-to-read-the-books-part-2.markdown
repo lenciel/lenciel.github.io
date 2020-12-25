@@ -4,7 +4,7 @@ title: "怎样读书(2) "
 date: 2020-02-21 21:41:55 +0800
 comments: true
 categories:
- 
+
 - books
 - education
 - tips
@@ -39,7 +39,7 @@ categories:
 
 我觉得它们的关系，可以用 [Weierstrass 椭圆函数图](http://mathworld.wolfram.com/WeierstrassEllipticFunction.html)来说清楚：
 
-![image holder](/downloads/images/2020_02/weierstrass.jpg "Don't touch me...")
+![image holder](/downloads/images/2020_02/weierstrass.jpg --alt Don't touch me)
 
 如果你觉得搞得太高深了，可以想象一笼[烧卖](https://www.haodou.com/recipe/276541)。
 
@@ -175,7 +175,7 @@ categories:
 
 为什么面向「智慧」的教育仍然占据主流？为什么我们并不崇拜智者但又到处都能感受到智慧曾经至高无上的痕迹？
 
-我觉得有一个很大的原因是即使是现在，大多数人的工作还是与创造无关：只是针对面前的问题，在已知的选项里面尽力选个最优解。 
+我觉得有一个很大的原因是即使是现在，大多数人的工作还是与创造无关：只是针对面前的问题，在已知的选项里面尽力选个最优解。
 
 但创造性工作的比例不断在增大，极限也不断被突破。
 
@@ -235,7 +235,7 @@ categories:
 
 我会在[第三部分](/2020/02/how-to-read-the-books-part-3/)告诉你，[图书分类](https://book.jd.com/booksort.html)里那些教你「智慧」的书，读完哪些，就基本够应付其他人类了：
 
-![image holder](/downloads/images/2020_02/book_categories.jpg "Don't touch me...")
+![image holder](/downloads/images/2020_02/book_categories.jpg --alt Don't touch me)
 
 [^1]: 这里不是用「知识」对着「智慧」是因为有很多知识是属于「记忆性质」的东西.就像爱因斯坦说过的一样，不要把时间花在记住任何可以查到的东西上面，在互联网时代尤其如此，我们需要的是「技能」。
 

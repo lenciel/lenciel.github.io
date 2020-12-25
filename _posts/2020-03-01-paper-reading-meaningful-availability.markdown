@@ -28,16 +28,16 @@ categories:
 
 一提到可用性大家就会想到那几个 9。
 
-|可靠性级别|允许的故障时间<br/>（每年）|允许的故障时间<br/>（每季度）|允许的故障时间<br/>（每 28 天）|
-|---|---|---|---|
-| 90%  |  36 天 12 小时  | 9 天  | 2 天 19 小时 12 分 |
-| 95% | 18 天 6 小时  | 4 天 12 小时  | 1 天 9 小时 36 分  |
-|  99% | 3 天 15 小时 35 分 |  21 小时 36 分 | 6 小时 43 分 12 秒  |
-| 99.5%  | 1 天 19 小时 48 分  | 10 小时 48 分  | 3 小时 21 分 36 秒  |
-| 99.9%  |  8 小时 45 分 36 秒 |  2h 9 分 36 秒 |  40 分 19 秒 |
-| 99.95%  |  4 小时 22 分 48 秒 |  1 小时 4 分 48 秒 | 20 分 10 秒  |
-|  99.99% |  52 分 33.6 秒 | 12 分 57.6 秒 | 4 分 1.9 秒  |
-|  99.999% | 5 分 15.4 秒  | 1 分 17.8 秒 | 24.2 秒 |
+| 可靠性级别 | 允许的故障时间<br/>（每年） | 允许的故障时间<br/>（每季度） | 允许的故障时间<br/>（每 28 天） |
+| ---------- | --------------------------- | ----------------------------- | ------------------------------- |
+| 90%        | 36 天 12 小时               | 9 天                          | 2 天 19 小时 12 分              |
+| 95%        | 18 天 6 小时                | 4 天 12 小时                  | 1 天 9 小时 36 分               |
+| 99%        | 3 天 15 小时 35 分          | 21 小时 36 分                 | 6 小时 43 分 12 秒              |
+| 99.5%      | 1 天 19 小时 48 分          | 10 小时 48 分                 | 3 小时 21 分 36 秒              |
+| 99.9%      | 8 小时 45 分 36 秒          | 2h 9 分 36 秒                 | 40 分 19 秒                     |
+| 99.95%     | 4 小时 22 分 48 秒          | 1 小时 4 分 48 秒             | 20 分 10 秒                     |
+| 99.99%     | 52 分 33.6 秒               | 12 分 57.6 秒                 | 4 分 1.9 秒                     |
+| 99.999%    | 5 分 15.4 秒                | 1 分 17.8 秒                  | 24.2 秒                         |
 
 <br/>
 在国内技术圈你还经常可以看到或者听到「高可用」这个词。
@@ -127,7 +127,7 @@ Google 在论文里面提出的计算方法是：
 
 另外，还有一个概念是「截止期」（cutoff time）：用户平均请求时间间隔的 99 分位。如果一个用户发送了一个请求，然后在截止期内没有再发送请求，则既不计入 uptime 也不计入 downtime，而是计入 inactive time：
 
-![image holder](/downloads/images/2020_02/meaningful_availability_fig_5.jpeg "Don't touch me...")
+![image holder](/downloads/images/2020_02/meaningful_availability_fig_5.jpeg --alt Don't touch me)
 
 这个指标显然是 meaningful 并且 proportional 的，那么它是 actionable 的吗？
 
@@ -141,7 +141,7 @@ Google 在论文里面提出的计算方法是：
 
 我们来看论文里面的例子：
 
-![image holder](/downloads/images/2020_02/meaningful_availability_fig_9.jpeg "Don't touch me...")
+![image holder](/downloads/images/2020_02/meaningful_availability_fig_9.jpeg --alt Don't touch me)
 
 和别的可用性指标的图表不同，这里的信息变得非常丰富:
 
@@ -151,13 +151,13 @@ Google 在论文里面提出的计算方法是：
 
 曲线的拐点还告诉我们应该对什么大小的窗口感兴趣，技术团队应该怎样去解决：
 
-![image holder](/downloads/images/2020_02/meaningful_availability_fig_10.jpeg "Don't touch me...")
+![image holder](/downloads/images/2020_02/meaningful_availability_fig_10.jpeg --alt Don't touch me)
 
 然后，在文章的 5.2 节，提出了一个简化的计算方式：保持窗口大小线性倍增(例如 2 的幂)来采样。
 
 最后，在文章的第 6 节，以实例说明了所有讨论过的基于时间和基于计数的指标的可用性指标的限制，并给出了 计算窗口化的 user uptime 的实际例子：
 
-![image holder](/downloads/images/2020_02/meaningful_availability_fig_20.jpeg "Don't touch me...")
+![image holder](/downloads/images/2020_02/meaningful_availability_fig_20.jpeg --alt Don't touch me)
 
 可以看到 Hangouts 的可用性受到了一个 4 小时事件的影响(曲线拐点) ，而 Drive 没有明显的拐点。这表明 Google 云盘的系统不是单一的宕机引起的可用性差，而是频繁的短故障：这往往意味着如果不解决系统层面的问题，故障时间根本降不下来。
 

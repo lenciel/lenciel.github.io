@@ -51,19 +51,19 @@ Why not?
 
 使用iTunes创建一个不加密的备份，然后连接iExplorer，会看到打开iTunes备份的选项：
 
-![Vhost threshold](/downloads/images/2015_12/extract_wechat_1.png "Don't touch me...")
+![Vhost threshold](/downloads/images/2015_12/extract_wechat_1.png --alt Don't touch me)
 
 打开后在`App`文件夹下面导出微信文件夹：
 
-![Vhost threshold](/downloads/images/2015_12/extract_wechat_2.png "Don't touch me...")
+![Vhost threshold](/downloads/images/2015_12/extract_wechat_2.png --alt Don't touch me)
 
 在导出的文件夹下面有个Audio目录，你可以根据语音消息的数量大概确认需要导出的目录（目录是个hash），然后到`DB/MM.sqlite`下面去打开`Chat_[hash]`这个表里面，看看消息来确认：
 
-![Vhost threshold](/downloads/images/2015_12/extract_wechat_3.png "Don't touch me...")
+![Vhost threshold](/downloads/images/2015_12/extract_wechat_3.png --alt Don't touch me)
 
 二进制查看其中的任意一个文件，可以看到是[SILK](https://en.wikipedia.org/wiki/SILK)编码的（skype早期版本包括lync都是使用的这种编码方式）：
 
-![Vhost threshold](/downloads/images/2015_12/extract_wechat_4.png "Don't touch me...")
+![Vhost threshold](/downloads/images/2015_12/extract_wechat_4.png --alt Don't touch me)
 
 接下来你只需要按照[repo](https://github.com/lenciel/wechat2mp3)里面的指导(愿主保佑你是用Mac因为那最简单)来进行文件转换就可以了。
 

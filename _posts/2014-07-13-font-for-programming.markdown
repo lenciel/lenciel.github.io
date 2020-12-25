@@ -3,7 +3,7 @@ layout: post
 title: "Retina屏幕上的最佳编程字体"
 date: 2014-07-13 18:45:27 +0800
 comments: true
-categories: 
+categories:
 - tools-i-use
 - programming
 - font
@@ -16,11 +16,11 @@ categories:
 窄
 ---
 
-![fonts comparision](/downloads/images/2014_07/fonts_comparision.png "Don't touch me...")
+![fonts comparision](/downloads/images/2014_07/fonts_comparision.png --alt Don't touch me)
 
 可以看到，它比大多数的等宽字体都要窄。这样在本座13寸的笔记本屏幕上，也能在显示80个字符宽度的标线的同时，完整看到最少两个水平分割的编辑区。
 
-![pycharm split](/downloads/images/2014_07/pycharm_split.png "Don't touch me...")
+![pycharm split](/downloads/images/2014_07/pycharm_split.png --alt Don't touch me)
 
 当然，如果你对码农们为什么需要显示一根80个字符宽度的标线有疑问：这一方面是[处女座程序员对历史的坚持](http://programmers.stackexchange.com/questions/148677/why-is-80-characters-the-standard-limit-for-code-width)，另一方面，如果你经常写出很长的语句，也意味着你的代码质量有问题。
 
@@ -29,7 +29,7 @@ categories:
 
 除开基本的字符，M+因为是出自日本设计师的关系，字符很全。
 
-![fonts map](/downloads/images/2014_07/fonts_map.png "Don't touch me...")
+![fonts map](/downloads/images/2014_07/fonts_map.png --alt Don't touch me)
 
 清
 ----
@@ -42,7 +42,7 @@ categories:
 
 M+在这方面也是非常棒的：
 
-![fonts clear](/downloads/images/2014_07/fonts_clear.png "Don't touch me...")
+![fonts clear](/downloads/images/2014_07/fonts_clear.png --alt Don't touch me)
 
 因为是开源字体，M+是可以自由下载和使用的。但因为你在中国，可能访问不了Sourceforge，不如下载[我分享的zip包](http://pan.baidu.com/s/1gdgk6VT)吧，lol。
 

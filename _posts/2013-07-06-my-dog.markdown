@@ -10,7 +10,7 @@ categories:
 
 今年2月4号，花卷被偶像派接到了我们家，处于眼睛基本刚刚能睁开的状态。
 
-![花卷来我家](/downloads/images/2013_07/huajuan_in_hands.jpg "Don't touch me...")
+![花卷来我家](/downloads/images/2013_07/huajuan_in_hands.jpg --alt Don't touch me)
 
 来家里一个月左右，花卷被养得脑满肠肥，开始四处找东西咬着玩。我们给它备了一些狗玩具，但它玩玩就腻，反而对拖鞋、鞋带这些东西非常有兴趣。
 
@@ -30,7 +30,7 @@ categories:
 
 到了医院照X光，解开了它为什么能吞下那么长一根胶管的谜：原来那根它“不可能咬断”的胶管被它咬成了很多截，一截截的吞了进去。从X光来看，满满当当的塞满了它的胃。
 
-![花卷的X光片局部](/downloads/images/2013_07/x_ray_of_huajuan.png "Don't touch me...")
+![花卷的X光片局部](/downloads/images/2013_07/x_ray_of_huajuan.png --alt Don't touch me)
 
 这个时候他们的主治医师出来说，因为管子的直径超过了肠子直径不少，所以是不可能进入肠道排出去的 。这样堵在胃里，肯定会有问题，只能马上开刀。
 
@@ -80,8 +80,8 @@ categories:
 
 不久花卷就排完了所有的胶管：之所以敢说所有是因为一截截的本座都洗干净拼起来了。
 
-![花卷认罪伏法图](/downloads/images/2013_07/the_pipe.png "Don't touch me...")
+![花卷认罪伏法图](/downloads/images/2013_07/the_pipe.png --alt Don't touch me)
 
 事后我们制造了“死罪可免，活罪难逃”的气氛希望这位同学吸取教训。当然，虽然认罪伏法的时候花卷看起来态度尚好，但劫后余生的它最终还是在我们的纵容下过起了更加飞扬跋扈的生活。
 
-![花卷认罪伏法图](/downloads/images/2013_07/huanjuan_after_accident.jpg "Don't touch me...")
+![花卷认罪伏法图](/downloads/images/2013_07/huanjuan_after_accident.jpg --alt Don't touch me)

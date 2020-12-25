@@ -10,7 +10,7 @@ categories:
 - tutorials
 ---
 
-![tmux screenshot 1](/downloads/images/2013_07/tmux_tips_1.png "Don't touch me...")
+![tmux screenshot 1](/downloads/images/2013_07/tmux_tips_1.png --alt Don't touch me)
 
 ### **简介**
 

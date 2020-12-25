@@ -8,7 +8,7 @@ categories:
 - thinking
 ---
 
-![2012 Great View](/downloads/images/2012_01/2012_great_view.jpg "Don't touch me...")
+![2012 Great View](/downloads/images/2012_01/2012_great_view.jpg --alt Don't touch me)
 
 在读过《<a href="http://book.douban.com/subject/3609132/" target="_blank">把时间当作朋友</a>》和<a href="http://matt.might.usesthis.com/" target="_blank">Matt Might</a>的文章之后，回首2011就让人觉得莫名慌张起来。按《<a href="http://book.douban.com/subject/3609132/" target="_blank">把时间当作朋友</a>》这本书里所说，定计划要以周为单位，通过培养自己对时间的控制力，逐步把计划做到月甚至年这样的跨度。本座自觉还算比较能控制自己，所以打算制作一个基本单位为月的计划，下面的十项活动将穿插在这个计划之中：
 
@@ -110,4 +110,4 @@ categories:
 要顺利贯彻执行计划，总得有个考核标准。打算今后多写一点儿blog记录在案，不然也对不起本座A给酋长的银子啊：
 
 
-![Vhost threshold](/downloads/images/2012_01/vhost_threshold.png "Don't touch me...")
+![Vhost threshold](/downloads/images/2012_01/vhost_threshold.png --alt Don't touch me)

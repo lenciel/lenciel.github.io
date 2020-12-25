@@ -9,7 +9,7 @@ categories:
 
 ---
 
-![work life balance](/downloads/images/2015_10/work_life_balance.jpg "Don't touch me...")
+![work life balance](/downloads/images/2015_10/work_life_balance.jpg --alt Don't touch me)
 
 最近有几个事情让我在这方面想了很多。
 

@@ -3,7 +3,7 @@ layout: post
 title: "马尔克斯的孤独与爱"
 date: 2014-04-18 20:58:42 +0800
 comments: true
-categories: 
+categories:
 - writing
 - rants
 - memo
@@ -11,7 +11,7 @@ categories:
 ---
 
 
-![Vhost threshold](/downloads/images/2014_04/rip_marquez.jpg "Don't touch me...")
+![Vhost threshold](/downloads/images/2014_04/rip_marquez.jpg --alt Don't touch me)
 
 度过了忙乱的一周，又回到了广汉。吃完饭洗个澡，继续在书房干活，外面的天不知不觉就黯淡下来。偶像派走过来说，《舌尖上的中国》第二季开播了，快来看吧。
 

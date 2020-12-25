@@ -23,15 +23,15 @@ And a business is not profits
 
 这里描述了一个从点子到产品到盈利的状态机，在每个阶段，都有很多人失败了，无法进入下一个阶段。失败的原因，主要是因为面对的系统足够复杂时，可能会有不可预见的各种[缺陷](http://www.maa.org/devlin/devlin_05_03.html)。特别是对我们搞技术的而言，虽然可能走完Program这个阶段，但是后面的三个阶段才是真正考验的开始。
 
-| 阶段      |  完成的条件      | 完成需要的最短时间 |
-| ---------| ----------------|-----------------|
-| Idea     | 有一个赚钱的点子  | 1分钟  |
-| Mockup   | 所有流程的Wireframe          | 1天+  |
-| Prototype| 跑通最关键流程的一个丑陋的实现          | 1周+  |
-| Program  | 有测试并覆盖了所有流程的完整实现          | 2-4周+  |
-| Product  | 工业设计，专利，定价，生产等          | 3-6月+  |
-| Business | 注册，监管机构备案，工资公司准备金等          | 6-12月+  |
-| Profits  | 以超过成本的价格售出产品          | 1年-正无穷|
+| 阶段      | 完成的条件                           | 完成需要的最短时间 |
+| --------- | ------------------------------------ | ------------------ |
+| Idea      | 有一个赚钱的点子                     | 1分钟              |
+| Mockup    | 所有流程的Wireframe                  | 1天+               |
+| Prototype | 跑通最关键流程的一个丑陋的实现       | 1周+               |
+| Program   | 有测试并覆盖了所有流程的完整实现     | 2-4周+             |
+| Product   | 工业设计，专利，定价，生产等         | 3-6月+             |
+| Business  | 注册，监管机构备案，工资公司准备金等 | 6-12月+            |
+| Profits   | 以超过成本的价格售出产品             | 1年-正无穷         |
 
 从完成各个stage需要的时间可以看出，成功的企业都不是只有一个好点子：在状态机的前端，一定是一大堆好的点子。这些点子中的致命缺陷一定要在下面的某个stage才会暴露出来，但足够多的点子是基础。建议有一个专门的地方，`Google Docs` 也好， `OmniFocus` 也好，就是个简单的txt也好，保存和整理自己的点子，并且记录这些点子被推动到哪个阶段了。
 
@@ -80,7 +80,7 @@ In a great market – a market with lots of real potential customers – the mar
 
 一个好的创始人不应该只是有个好点子，他/她应该具备鸟瞰“点子迷宫”的能力。把解决一个需求的各种点子想象成迷宫里面的各条道路，作为消费者很可能只看到了拿出了产品的公司走的那条路。而作为好的创始人需要了解其他的公司是死在什么样的路上以及它们遇到了什么样的无法解决的问题。下图就是一个迷宫的例子：
 
-![example of idea maze](/downloads/images/2013_07/example_of_idea_maze.png "Don't touch me...")
+![example of idea maze](/downloads/images/2013_07/example_of_idea_maze.png --alt Don't touch me)
 
 有时候你不经过前一个迷宫有所积累，就没法到达下一个迷宫并走出去（比如Google是在search上有所收获之后，在[eamil](http://googlepress.blogspot.com/2004/04/google-gets-message-launches-gmail.html)上也开始有了建树）。有时候迷宫自己也会随着时间变化（比如[Pandora的iPhone版本](http://readwrite.com/2012/09/24/pandora-internet-radio-fairness-act#awesm=~obLCTtNRcPEnuA)）。有时候别的公司无法解决的问题被其他一些公司解决了（[Webvan失败了](http://www.gartner.com/id%3D334368)，但是[Amazon](http://fresh.amazon.com/welcome;jsessionid=555BD9DF6EBBE824BCB76464FB768B3C)、[Walmart](http://delivery.walmart.com/usd-estore/index.jsp?referrer=cookiesDetecting)和[Safeway](http://shop.safeway.com/ecom/home)成功的建立了送鲜货的物流）。有的时候解决前面的公司遇到的问题就形成了新公司进入迷宫时手里最有利的武器（比如Google的Pagerank灵感正是来源于Alta Vista在[1991年](http://home.web.cern.ch/about/birth-web)还不那么明显的[问题](https://news.ycombinator.com/item?id=3925089)）。
 
@@ -112,11 +112,11 @@ In a great market – a market with lots of real potential customers – the mar
 
 我们都知道产品的成本会随着产量的增大变低。假设产量、成本和利润的关系如下表所示：
 
-| 产品产量      |  单位产品成本      | 单位产品利润 |
-| ---------| ----------------|-----------------|
-| 0<=n<=00     | 1200  | 1000  |
-| 101<=n<=1000   | 975          | 1000  |
-| 1001<=n| 700          | 1000  |
+| 产品产量     | 单位产品成本 | 单位产品利润 |
+| ------------ | ------------ | ------------ |
+| 0<=n<=00     | 1200         | 1000         |
+| 101<=n<=1000 | 975          | 1000         |
+| 1001<=n      | 700          | 1000         |
 
 凭着这张表你就可以筹到大约 `$50000` 启动资金来完成最初的100个订单，然后准备 `$24,7500` 用于后续的1000个订单的完成。经过这两个阶段性胜利之后，你大概才仅仅把成本捞回来而已。
 

@@ -31,7 +31,7 @@ categories:
 满眼泪痕滴打开了京东那砣网页，终于找到了疑似道友，留下滴经验之谈：
 
 
-![just pull](/downloads/images/2008_05/jindong.png "Don't touch me...")
+![just pull](/downloads/images/2008_05/jindong.png --alt Don't touch me)
 
 
 大家都应该记住[^3]，买东西真的要看留言[^4]。

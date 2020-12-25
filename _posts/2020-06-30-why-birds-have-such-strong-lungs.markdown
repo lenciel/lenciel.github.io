@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "大雁为什么那么能飞？"
 date: 2020-06-30 11:41:52 +0800
-categories: 
+categories:
 
 - why
 - children
@@ -13,7 +13,7 @@ categories:
 ---
 
 
-![donne_moi_des_ailes.jpg](/downloads/images/2020_06/donne_moi_des_ailes.jpg "Don't touch me...")
+![donne_moi_des_ailes.jpg](/downloads/images/2020_06/donne_moi_des_ailes.jpg --alt Don't touch me)
 
 最近看了《[给我翅膀](https://movie.douban.com/subject/30410114/)》，讲爱鸟爱到孑然一身的科学家，拉上孩子一起伪装大雁的父母，用轻型飞机引领它们学会迁徙的故事。
 
@@ -26,7 +26,7 @@ categories:
 
 ### 大雁为什么这么能飞
 
-答案似乎是，大雁和所有的鸟类一样——无论是小如蜂鸟大如鸵鸟ーー都有效率超级高的肺。 
+答案似乎是，大雁和所有的鸟类一样——无论是小如蜂鸟大如鸵鸟ーー都有效率超级高的肺。
 
 我们这些哺乳动物的肺拿到自然界环评，是很原始甚至很可怜的：哺乳动物呼吸系统的入口和出口是复用的，也就是说我们用同样的通道吸气和呼气。
 
@@ -38,7 +38,7 @@ categories:
 
 ### 为什么鸟的肺这么强？
 
-是恐龙爸爸给它们的。 
+是恐龙爸爸给它们的。
 
 鸟就是恐龙。
 

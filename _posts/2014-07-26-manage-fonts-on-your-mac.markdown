@@ -44,7 +44,7 @@ Suite Fusion提供了一个可以自己定义路径的Font Vault。然后你如�
 
 整理字体的界面可以参考下面的截图：
 
-![suite fusion 5](/downloads/images/2014_07/suite_fusion_5.png "Don't touch me...")
+![suite fusion 5](/downloads/images/2014_07/suite_fusion_5.png --alt Don't touch me)
 
 建立的这些字体库可以根据你打开的文档类型来进行激活和去激活。并且Suite Fusion提供了很多常见设计软件（比如Photoshop、Sketch等）的插件，让你直接在这些软件里面操作字体库。
 

@@ -9,7 +9,7 @@ categories:
 
 ---
 
-![Vhost threshold](/downloads/images/2016_05/essay_harry_potter.png "Don't touch me...")
+![Vhost threshold](/downloads/images/2016_05/essay_harry_potter.png --alt Don't touch me)
 
 看paper是不是比较无聊的事情？
 

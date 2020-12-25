@@ -3,7 +3,7 @@ layout: post
 title: "中国式创新"
 date: 2014-07-27 15:26:01 +0800
 comments: true
-categories: 
+categories:
 - rants
 - xiaomi
 ---
@@ -22,30 +22,30 @@ categories:
 
 这是当年米3手机宣传册上的图标和苹果的Aperture应用的图标
 
-![Vhost threshold](/downloads/images/2014_07/xiaoxi_icon_mac_icon.jpg "Don't touch me...")
+![Vhost threshold](/downloads/images/2014_07/xiaoxi_icon_mac_icon.jpg --alt Don't touch me)
 
 这是小米盒子和Apple TV盒子
 
-![Vhost threshold](/downloads/images/2014_07/xiao_tv_mac_tv.jpg "Don't touch me...")
+![Vhost threshold](/downloads/images/2014_07/xiao_tv_mac_tv.jpg --alt Don't touch me)
 
 这是小米零售店和苹果零售店 (除开装潢，小米居然一样有蓝衣genius)
 
-![Vhost threshold](/downloads/images/2014_07/xiaomi_mac_shop.jpg "Don't touch me...")
+![Vhost threshold](/downloads/images/2014_07/xiaomi_mac_shop.jpg --alt Don't touch me)
 
 这是小米的平板系列和苹果的5c系列
 
-![Vhost threshold](/downloads/images/2014_07/xiaomi_pad_mac_phone.jpg "Don't touch me...")
+![Vhost threshold](/downloads/images/2014_07/xiaomi_pad_mac_phone.jpg --alt Don't touch me)
 
 这是小米的路由器和苹果的触摸板
 
-![Vhost threshold](/downloads/images/2014_07/xiaomi_router_mac_pad.jpg "Don't touch me...")
+![Vhost threshold](/downloads/images/2014_07/xiaomi_router_mac_pad.jpg --alt Don't touch me)
 
 这是最新款小米4手机和苹果5s手机
 
-![Vhost threshold](/downloads/images/2014_07/xiaomi_mac_new_phone.jpg "Don't touch me...")
+![Vhost threshold](/downloads/images/2014_07/xiaomi_mac_new_phone.jpg --alt Don't touch me)
 
 当然，发布会上有一张图让本座明白雷布斯内心有多么强大，所以抄抄产品外观算得了什么...
 
-![Vhost threshold](/downloads/images/2014_07/xiaomi_mac_presentation.jpg "Don't touch me...")
+![Vhost threshold](/downloads/images/2014_07/xiaomi_mac_presentation.jpg --alt Don't touch me)
 
 你当然可以说，这是人家雷布斯的“苹果”情怀嘛。是啊是啊，不知道什么时候开始，“情怀”这个词居然变成了无能的解药。

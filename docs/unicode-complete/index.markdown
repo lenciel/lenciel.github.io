@@ -47,11 +47,11 @@ ANSI（美国国家标准学会）用`code pages`[^1]来表示这种按地域区
 
 实际上Unicode是对世界上所有的字符分配了一个所谓`code point`的码位。
 
-![unicode](/downloads/images/2008_06/apple_code_table.jpg "Don't touch me...")
+![unicode](/downloads/images/2008_06/apple_code_table.jpg --alt Don't touch me)
 
 你可以在Windows的命令行输入`charmap`来查看这些码位。比如字母A，它的unicode码位是`+U0041`，而不幸被本座选中的汉字是`U+04C7`。
 
-![unicode](/downloads/images/2008_06/unicode.png "Don't touch me...")
+![unicode](/downloads/images/2008_06/unicode.png --alt Don't touch me)
 
 由于世界上有如此多的字符，实际上0到65535的code point早就已经被用光了。也就是说，16个bit并不能装下所有的Unicode。
 
@@ -110,7 +110,7 @@ UTF-8[^2]的思想一句话就能说清：对code point分段进行编码。从0
 
 下面是一些有趣的Unicode码，来自[这里](http://wiki.secondlife.com/wiki/Unicode_In_5_Minutes)：
 
-![unicode fun](/downloads/images/2008_06/unicode_fun.png "Don't touch me...")
+![unicode fun](/downloads/images/2008_06/unicode_fun.png --alt Don't touch me)
 
  [^1]: http://www.i18nguy.com/unicode/codepages.html#msftdos
  [^2]: http://www.ietf.org/rfc/rfc3629.txt

@@ -2,7 +2,7 @@
 layout: post
 title: "关于微服务实践的一次分享"
 date: 2017-03-11 14:39:44 +0800
-categories: 
+categories:
 
 - microservice
 - hcb
@@ -51,13 +51,13 @@ categories:
  - 去中心化管理
 
 但一旦进入了实际操作，这些微言大义的概念，怎么落地到系统开发里面，就不是每个人都明白的了。其实回过头来看看，Martin Fowler为什么说“microservice architectural style（微服务架构风格）”而不像很多人只是说“microservice（微服务）”，是很值得玩味的。
- 
- 
+
+
 ### 是风格不是教条
- 
+
 每个公司进行架构改造，都是[业务特点](/2017/02/handling-data-in-msa/)、[团队情况](/2017/02/the-real-success-by-doing-msa/)和技术栈等多方面因素综合决定的系统工程。微服务架构是一种“风格”，而不是可以按图索骥的“教条”。
 
- 
+
 ### 不是什么新科技
 
 MSA里面提到的很多想法，追究起来都源远流长。“micro-web-service”的提法2005年就有，“microservice”这个叫法，也早在2011年威尼斯的软件会议里面就开始被使用了。
@@ -67,20 +67,20 @@ MSA里面提到的很多想法，追究起来都源远流长。“micro-web-serv
 这是因为Unix的很多设计哲学，比如“small is beautiful”或者“make each program do one thing well”，都深深的影响着微服务架构的设计思想。
 
 甚至我觉得Unix的“everything is a file”，对应过来正好是“everything is a service”。
- 
+
 ### 不是SOA换了个壳
- 
+
 很多像我一样从业已久的人，听到新名词的时候总是持抵抗和怀疑态度的。MSA不过是Thoughtworks把SOA换了个名字出来坑钱而已，，是一个很容易入的坑。
 
 实际上，它们确实有关系，但并不是SOA换了个壳。你可以把MSA想成是SOA的一种实践方式，正如Scrum是Agile的实践方式一样。只不过这种实践方式，和以前的各种实践方式相比，最大的不同就是去掉了ESB这样的总线，让系统的各个部分可以相对独立的被设计、开发、部署和运维。
- 
+
 ## MSA究竟是什么？
-  
+
   > Technology is the answer, but what was the question?
   > - Cedric Price (1965)
-  
+
 前面说了很多MSA不是什么，那么它究竟是什么？不妨从我们究竟为什么需要它这个维度来思考。
-  
+
 为什么单体的设计不能满足需要了？我们可以从率先进行MSA实施的公司来看。
 
 Nike，Twitter，Netflix，以及从来不说自己在做微服务架构，但其实是做得最好的Google，它们的业务差别其实很大。比如Nike和Twitter，一个业务很复杂，一个业务很简单。
@@ -93,7 +93,7 @@ Nike，Twitter，Netflix，以及从来不说自己在做微服务架构，但�
 
 毕竟，我们不是所有人都在构建Twitter那样复杂的系统。
 
-![Vhost threshold](/downloads/images/2017_03/twitter_services_deps.jpg "Don't touch me...")
+![Vhost threshold](/downloads/images/2017_03/twitter_services_deps.jpg --alt Don't touch me)
 
 *fig1.1 Twitter的服务间依赖图*
 

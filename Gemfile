@@ -21,7 +21,7 @@ gem "jekyll-lenciel-theme", path: "../jekyll-lenciel-theme/"
 group :jekyll_plugins do
    gem 'jekyll-paginate'
    gem 'jekyll-gist'
-   gem 'jekyll_picture_tag', '~> 1.9.0'
+   gem 'jekyll_picture_tag'
    gem 'jekyll-sitemap'
    gem 'jekyll-feed'
    # gems below are installed for rake task

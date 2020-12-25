@@ -3,13 +3,13 @@ layout: post
 title: "他的密码原来是..."
 date: 2019-10-11 11:29:44 +0800
 comments: true
-categories: 
+categories:
 - memo
 ---
 
 2014年左右，大叔们往 Github 上丢 BSD3 的源码时，放上了 `/etc/passwd` 文件，于是诸如 Ken Thompson，Dennis Ritchie，Brian W. Kernighan 这样的老司机就玉体横陈了，只不过关键部位，打了马赛克：
 
-![call me by your name](/downloads/images/2019_10/passwd.jpg "Don't touch me...")
+![call me by your name](/downloads/images/2019_10/passwd.jpg --alt Don't touch me)
 
 众所周知，打马赛克的 `crypt` 函数是基于 DES 的，很弱。说众所周知是因为它的作者 Robert Morris 和 Ken Thompson 在 [manpage](http://man7.org/linux/man-pages/man3/crypt.3.html) 里面自己就是这么写的：
 
@@ -23,7 +23,7 @@ categories:
 
 结果，今天偶然在订阅里看到[一个帖子](https://inbox.vuxu.org/tuhs/CACCFpdx_6oeyNkgH_5jgfxbxWbZ6VtOXQNKOsonHPF2=747ZOw@mail.gmail.com/)，上个月一个叫 Nigel Williams 的兄弟用一块 AMD （还能是谁的呢）的 [Radeon Vega64](https://www.amd.com/en/products/graphics/radeon-rx-vega-64) 把这个密码给破解了：
 
-![call me by your name](/downloads/images/2019_10/ken_sovled.jpg "Don't touch me...")
+![call me by your name](/downloads/images/2019_10/ken_sovled.jpg --alt Don't touch me)
 
 所有人看到这邮件的感觉应该都是，原来如此，但 `p/q2-q4!` ，这密码Ken爷你怎么记住的。
 

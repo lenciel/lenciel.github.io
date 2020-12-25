@@ -9,7 +9,7 @@ categories:
 ---
 
 
-![My Idol](/downloads/images/2010_03/my_idol.png "Don't touch me…")
+![My Idol](/downloads/images/2010_03/my_idol.png --alt Don't touch me)
 
 偶像派，
 

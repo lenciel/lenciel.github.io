@@ -10,7 +10,7 @@ categories:
 - lenceel
 ---
 
-![](/downloads/images/2010_05/beautiful_loser.png "Don't touch me...")
+![](/downloads/images/2010_05/beautiful_loser.png --alt Don't touch me)
 
 周末开车去了趟洛带古镇。倒不是专为了枇杷，更多是解闷。和偶像派坐在一条有大树遮盖的巷子，就着一口有水藻覆盖的池塘，点两杯冰糖过量的柠檬水，大眼瞪小眼的回忆童年、青春、挨揍、被追。太阳下去，微风上来，买两斤鲜枇杷，剥出天下、百姓、出世、入球。灯光亮起来的时候，吃伤心凉粉，砍公社烧鹅，再探讨为什么我们一个美又白，一个丑又黑，但千百人中，我们好了。
 

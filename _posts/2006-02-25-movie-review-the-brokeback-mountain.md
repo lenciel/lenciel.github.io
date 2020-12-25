@@ -10,7 +10,7 @@ categories:
 - rants
 ---
 
-![Vhost threshold](/downloads/images/2006_02/brokeback_mountain_1.jpg "Don't touch me...")
+![Vhost threshold](/downloads/images/2006_02/brokeback_mountain_1.jpg --alt Don't touch me)
 
 其实在夺魁法事后不久，本座就已经有机会观摩《断背山》了（好吧，你们说叫《断臂山》）。但是由于下定决心要先看小说，拖着拖着就回了学校，却一直没有足够长度的安静时间来看这部“获奖影片”。昨天和阿枯在网上整蛊“每个人心中都有一座断背山”的时候，才下定决心要在周末拿下这块心病。
 

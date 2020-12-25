@@ -10,7 +10,7 @@ categories:
 ---
 
 
-![Boring Face](/downloads/images/2011_08/boring_face.jpg "Don't touch me…")
+![Boring Face](/downloads/images/2011_08/boring_face.jpg --alt Don't touch me)
 
 
 03年的时候，看《迷失东京》，比尔·默里的这幅样子存在了本座硬盘里。有人说这是颇有喜感的画面，却带给本座前所未有的悲催感：那就是有朝一日，我们也会一如Bob Harris这个角色，莫名其妙的活在某个看似五光十色灯红酒绿的城市里面，内心却沉寂而冰冷，不管是手中丰满的鹌鹑，还是床上丰满的妹子，都已经很难唤醒那份生活的激情。

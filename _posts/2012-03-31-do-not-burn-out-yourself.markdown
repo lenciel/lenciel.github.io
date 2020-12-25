@@ -3,14 +3,14 @@ layout: post
 title: "防止Burnout"
 date: 2012-03-31 21:54:36 +0800
 comments: true
-categories: 
+categories:
 
 - burnout
 - rants
 
 ---
 
-![take a break](/downloads/images/2012_03/take_a_break.jpg "Don't touch me...")
+![take a break](/downloads/images/2012_03/take_a_break.jpg --alt Don't touch me)
 
 
 Google的美女副总[Marissa Mayer](https://plus.google.com/118207880179234484610/posts)最近做了[一个演讲](https://www.youtube.com/watch?v=EHhvIsfsSew)，里面提到了如何避免自己的团队出现"Burnout"。

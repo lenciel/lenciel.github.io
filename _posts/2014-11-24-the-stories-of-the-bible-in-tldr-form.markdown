@@ -7,7 +7,7 @@ categories:
 - rants
 ---
 
-![Vhost threshold](/downloads/images/2014_11/bible_story.png "Don't touch me...")
+![Vhost threshold](/downloads/images/2014_11/bible_story.png --alt Don't touch me)
 
 很多人问什么是`TL;DR`，其实是`Too long, didn't read`的缩写，一般用来暗示下面是一段摘要，如果你对这长得要死的文章的细节没兴趣，读读它就可以了。
 

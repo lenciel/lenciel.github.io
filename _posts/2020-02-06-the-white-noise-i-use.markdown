@@ -3,13 +3,13 @@ layout: post
 title: "白噪声"
 date: 2020-02-06 17:00:30 +0800
 comments: true
-categories: 
+categories:
 
 - white_noise
 - tools-i-use
 ---
 
-![Vhost threshold](/downloads/images/2020_02/White_Noise_Sounds_of_Frozen_Arctic_Ocean_with_Polar_Icebreaker_Idling.png "Don't touch me...")
+![Vhost threshold](/downloads/images/2020_02/White_Noise_Sounds_of_Frozen_Arctic_Ocean_with_Polar_Icebreaker_Idling.png --alt Don't touch me)
 
 作为程序员，我们希望在工作的时候希望不被打扰。
 
@@ -21,7 +21,7 @@ categories:
 
 我试过让人感觉放松的音乐。
 
-根据 David Lewis-Hodgson 博士进行的[一项调查](http://www.inc.com/melanie-curtin/neuroscience-says-listening-to-this-one-song-reduces-anxiety-by-up-to-65-percent.html)，世界上最让人放松的音乐是 Marconi Union 乐队的《 Weightless 》。 
+根据 David Lewis-Hodgson 博士进行的[一项调查](http://www.inc.com/melanie-curtin/neuroscience-says-listening-to-this-one-song-reduces-anxiety-by-up-to-65-percent.html)，世界上最让人放松的音乐是 Marconi Union 乐队的《 Weightless 》。
 
 这首歌是他们与英国声音治疗学院合作制作的：
 
@@ -59,7 +59,7 @@ categories:
 ```
 ffmpeg -i White_Noise_Sounds_of_Frozen_Arctic_Ocean_with_Polar_Icebreaker_Idling.mp4 -q:a 0 -map a white_noise_sample.mp3
 
-ffmpeg -i white_noise_sample.mp3 -f segment -segment_time 300 -c copy wn_arctic_icebreaker_%02d.mp3 
+ffmpeg -i white_noise_sample.mp3 -f segment -segment_time 300 -c copy wn_arctic_icebreaker_%02d.mp3
 ```
 
 然后就可以[放在网站上](https://dbp.lenciel.com/whitenoise/)分享给大家了。

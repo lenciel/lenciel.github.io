@@ -3,7 +3,7 @@ layout: post
 title: "敏捷开发的成本"
 date: 2018-08-13 02:17:21 +0800
 comments: true
-categories: 
+categories:
 
 - software-engineering
 - agile
@@ -14,7 +14,7 @@ categories:
 
 瀑布是一个现实生活里面有的东西，这个类比就变得很好理解。
 
-![Vhost threshold](/downloads/images/2018_08/waterfall.png "Don't touch me...")
+![Vhost threshold](/downloads/images/2018_08/waterfall.png --alt Don't touch me)
 
 敏捷究竟是什么？如果我们忘记那些story point，站会，sprint，scrum，想一想，“敏捷”这两个字代表什么？
 

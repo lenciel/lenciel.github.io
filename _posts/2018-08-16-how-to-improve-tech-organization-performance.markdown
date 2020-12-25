@@ -3,7 +3,7 @@ layout: post
 title: "技术团队的绩效提升"
 date: 2018-08-16 15:47:41 +0800
 comments: true
-categories: 
+categories:
 
 - management
 - agile
@@ -14,7 +14,7 @@ categories:
 
 接着上一篇，我们谈了技术团队怎么去进行[绩效的度量](/2018/08/how-to-measure-tech-organization-performance)。通过这些度量可以看到，从行业和我们自己的结果数据来看，提高生产率并不会牺牲质量，相反，产出越高效的团队，在各个指标上会全面领先。并且，好的团队和差的团队的差距在逐步拉开：
 
-![Vhost threshold](/downloads/images/2018_08/software_team_metrix.jpg "Don't touch me...")
+![Vhost threshold](/downloads/images/2018_08/software_team_metrix.jpg --alt Don't touch me)
 
  那么，这些指标如何进行提高呢？
 
@@ -40,7 +40,7 @@ categories:
 
 如何使用这个模型进行文化的度量在行业里面已经有很多[可借鉴的实践](https://www.andykelk.net/devops/using-the-westrum-typology-to-measure-culture)了。以Google为例，花了两年针对180+个团队的250个属性进行的跟踪并且做了几百场访谈，并且把[结论](https://rework.withgoogle.com/blog/five-keys-to-a-successful-google-team/)和使用的[工具](https://rework.withgoogle.com/guides/understanding-team-effectiveness/steps/help-teams-determine-their-needs/)都大方公布出来了。
 
-![Vhost threshold](/downloads/images/2018_08/google_survey.jpg "Don't touch me...")
+![Vhost threshold](/downloads/images/2018_08/google_survey.jpg --alt Don't touch me)
 
 这些结论里令人印象特别深刻的是：团队里面有没有超级明星不那么重要，而是团队成员间的互动，工作的分工和架构，以及贡献如何被衡量，是最重要的。
 
@@ -74,7 +74,7 @@ categories:
 
 落地了技术上的最佳实践，敏捷流程也像模像样的跑起来了，接下来还需要管理上做一些改变和进化。
 
-#### 服务心态 
+#### 服务心态
 
 互联网发展到今天，绝大多数工作，特别是创新性的工作，都是一线员工主导的。作为技术管理者，要有良好的服务心态。这听起来很虚，但其实有很多具体的事情可做。
 

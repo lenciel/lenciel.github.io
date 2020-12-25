@@ -11,7 +11,7 @@ categories:
 - memo
 ---
 
-![long live old times](/downloads/images/2011_11/IMG_0313.jpg "Don't touch me...")
+![long live old times](/downloads/images/2011_11/IMG_0313.jpg --alt Don't touch me)
 
 
 国庆回了一趟银厂沟白水河。出发的那天天气并不好，可是对爸妈而言，去看看那个安放了自己青春的地方，已经计划过太多次而不能成行。所以犹豫了一下，就决定还是要去。
@@ -27,7 +27,7 @@ categories:
 首先让我觉得特别温暖的是装老照片的这个信封。这是外公写给我妈的，不知道当年那封信具体写得是啥。在这根本不用写信甚至不用写字的时代生活久了，这样的物件总给人一种特别的质感。
 
 
-![long live old times](/downloads/images/2011_11/IMG_0366_1.png "Don't touch me...")
+![long live old times](/downloads/images/2011_11/IMG_0366_1.png --alt Don't touch me)
 
 我还找到了几张Konthiga和我都还挺萌的时候的照片。这个阶段我们的衣服全是老爸用缝纫机做的，看着都是一段段特别的回忆。另外从红领巾出现的频率来看，除了伟大的六一儿童节，我们一直对照相这事情兴趣不大。
 

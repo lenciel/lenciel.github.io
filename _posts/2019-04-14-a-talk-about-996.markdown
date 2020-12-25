@@ -3,7 +3,7 @@ layout: post
 title: "996和拼搏精神"
 date: 2019-04-14 23:07:52 +0800
 comments: true
-categories: 
+categories:
 
 - talks
 - writing
@@ -54,7 +54,7 @@ categories:
 
 这两位都觉得，当时的文化痴迷于将工作本身视为崇高追求，而不是将其视为一个完整生活的一部分，对文明的发展大大有害。
 
-利兹大学商学院经济学教授大卫斯宾塞后来研究说，公司高管、经济学家和政治家赞美痴迷工作的这种姿态至少可以追溯到16世纪欧洲重商主义的兴起：“雇主一直在努力消解工作无法吸引人的本性，希望通过各种宣传让大家喜欢甚至追求它。” 
+利兹大学商学院经济学教授大卫斯宾塞后来研究说，公司高管、经济学家和政治家赞美痴迷工作的这种姿态至少可以追溯到16世纪欧洲重商主义的兴起：“雇主一直在努力消解工作无法吸引人的本性，希望通过各种宣传让大家喜欢甚至追求它。”
 
 但这种宣传可能会适得其反，斯宾塞的研究表明，在17世纪的英格兰，工作甚至被教会官方宣布为治疗罪恶的方法，但这造成了酗酒的工人急剧增加。
 
@@ -66,7 +66,7 @@ categories:
 
 不管是[Amazon的高压管理制度](http://www.nytimes.com/2015/08/16/technology/inside-amazon-wrestling-big-ideas-in-a-bruising-workplace.html)，还是每天睡4个小时每周至少一个通宵产假休11天的梅姐（Quora上有人认真的研究[有没有可能按照她每周130小时](https://www.quora.com/How-did-CEO-Marissa-Mayer-pull-all-nighters-and-130-hour-work-weeks-while-at-Google)的工作时长来生活），还是Musk在twitter上教育大家40个小时一周的工作[无法改变世界](https://new.qq.com/cmsn/20181127/20181127003252.html)，还是最近引起一些讨论的wework的饮料桶：
 
-![Vhost threshold](/downloads/images/2019_04/wework.jpg "Don't touch me...")
+![Vhost threshold](/downloads/images/2019_04/wework.jpg --alt Don't touch me)
 
 很显然，全世界都有一些很拼很疯狂的人，为了自己的事业非常投入。
 
@@ -110,7 +110,7 @@ HBO在拍《硅谷》的时候甚至专门恶搞了一下“使这个世界变�
 
 一个人如果觉得他累了，或者他有名利之外别的追求，我们要能够接受和尊重。不能把年轻人当成燃料，要当成产品去打磨。如果光讲拼搏，我们有过比996更狂热的时期，不是吗？
 
-![Vhost threshold](/downloads/images/2019_04/old_posters.jpg "Don't touch me...")
+![Vhost threshold](/downloads/images/2019_04/old_posters.jpg --alt Don't touch me)
 
 但是，我也得说，把事情做到极致的人，大多数都有这份拼劲。究竟该怎么活，自己真正享受什么，喜欢什么，很多时候不是通过循规蹈矩的生活就能弄明白的，总得为什么东西拼过。
 

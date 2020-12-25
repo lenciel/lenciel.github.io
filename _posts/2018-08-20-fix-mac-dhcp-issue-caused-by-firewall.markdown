@@ -3,7 +3,7 @@ layout: post
 title: "修复无法获取IP的MBP"
 date: 2018-08-20 03:47:41 +0800
 comments: true
-categories: 
+categories:
 
 - mac
 - tips
@@ -23,7 +23,7 @@ categories:
 
 立马把有线连上试了一下，排除是wifi的问题。结果一样：
 
-![Vhost threshold](/downloads/images/2018_08/oops_self_assigned_ip.jpg "Don't touch me...")
+![Vhost threshold](/downloads/images/2018_08/oops_self_assigned_ip.jpg --alt Don't touch me)
 
 当时其他设备都跑得很欢畅，路由器也设置了正确的DHCP方式，所以是本机的问题无疑了。Google了一下，发现官网有一个[十页的帖子](https://discussions.apple.com/message/10753369#10753369)，充满了血泪，但是没有解决方案。
 
@@ -58,7 +58,7 @@ $ sudo tcpdump -i en0
 
 值得吐槽的是Mac[推出SIP](https://support.apple.com/en-us/HT204899)之后，找个问题麻烦到不行。比如防火墙，默认是没有日志的 ，就算你敲[一堆命令](https://discussions.apple.com/thread/7849608)下去，拿到的也是个空文件。而它的配置界面上，又很大方的把绝大多数系统应用的设置隐藏了（默认勾选了通通放行），同时又很鬼畜地显示着里面的一两个（比如netbiosd和rapportd）：
 
-![Vhost threshold](/downloads/images/2018_08/mac_firewall_1.jpg "Don't touch me...")
+![Vhost threshold](/downloads/images/2018_08/mac_firewall_1.jpg --alt Don't touch me)
 
 最后，我饶有兴致地查了一下防火墙突然抽风的原因，苹果的说法是：
 

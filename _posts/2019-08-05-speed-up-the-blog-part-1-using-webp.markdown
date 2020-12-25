@@ -3,7 +3,7 @@ layout: post
 title: "Blog加速：使用WebP图片格式"
 date: 2019-08-05 14:38:29 +0800
 comments: true
-categories: 
+categories:
 ---
 
 这个 Blog 对本座来说，除开记录胡思乱想，最重要的作用就是保持和前端世界一点同步。最近打算在不使用 CDN 的情况下， [pagespeed](https://developers.google.com/speed/pagespeed/) 跑到100分，所以做一些早就想做但是一直没空的改造，排在最前面的就是使用 WebP 格式放正文图片。
@@ -17,7 +17,7 @@ WebP 是 Google 开发的新图像格式，旨在以可接受的视觉质量为�
 以我最近用过的一张图片为例，使用 WebP 的效果是非常明显的：
 
 
-![Vhost threshold](/downloads/images/2019_08/file_size_webp.png "Don't touch me...")
+![Vhost threshold](/downloads/images/2019_08/file_size_webp.png --alt Don't touch me)
 
 ### 怎么办
 
@@ -74,6 +74,6 @@ map $http_accept $webp_suffix {
 
 重启服务器之后，就可以看到已经工作了。在使用 Chrome 进行访问的时候，WebP 格式的图片会加载。
 
-![Vhost threshold](/downloads/images/2019_08/webp_serving.jpg "Don't touch me...")
+![Vhost threshold](/downloads/images/2019_08/webp_serving.jpg --alt Don't touch me)
 
 至于如何批量把现有的图片转换成 WebP 格式，有很多工具可以用，需要考虑的是在服务器端完成，还是在本地完成。

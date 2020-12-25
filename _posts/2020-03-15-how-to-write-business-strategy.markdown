@@ -45,7 +45,7 @@ Will Larson 有篇长文讨论了担任[工程团队高管角色的前九十天]
 
 首先，战略的抽象层次比较高。在很多人的概念里面，[使命](/2020/03/how-to-write-strategy-proposals/#%E4%BD%BF%E5%91%BDmission)、[愿景](/2020/03/how-to-write-strategy-proposals/#%E6%84%BF%E6%99%AFvision)和[文化](/2020/03/how-to-write-strategy-proposals/#%E6%96%87%E5%8C%96culture)[价值观](/2020/03/how-to-write-strategy-proposals/#%E4%BB%B7%E5%80%BC%E8%A7%82value)过了，就到战略了。
 
-![image holder](/downloads/images/2020_03/strategy_01.png "Don’t touch me...")
+![image holder](/downloads/images/2020_03/strategy_01.png --alt Don’t touch me)
 
 更重要的是，每个公司里面会有三种语言: **客户的语言**(需求、体验、满足) 、**产品的语言**(特性、功能、发布) 和**业务的语言**(收入、增长、复购、续购)。三者没有连接起来，就没有战略，但能把三者连接起来的，又只有战略：这很容易让人陷入没有黄金就炼不出黄金的困局。
 
@@ -314,11 +314,11 @@ Will Larson 有篇长文讨论了担任[工程团队高管角色的前九十天]
 1. 把所有打算做的[动作](/2020/03/how-to-write-strategy-proposals/#%E5%8A%A8%E4%BD%9Caction)根据它和[输入要素](/2020/03/how-to-write-strategy-proposals/#输入要素key-input)的关系确定目的、步骤和优先级。
 2. 根据对北极星的影响大小，资源耗费情况等，排一个赌注相对分散可控的规划，实施这些动作，监控对北极星指标的影响并调整。
 
-![image holder](/downloads/images/2020_03/strategy_02.png "Don’t touch me...")
+![image holder](/downloads/images/2020_03/strategy_02.png --alt Don’t touch me)
 
 当然，每个团队到这里都可以根据自己的组织架构、流程规范、绩效管理等方面的实际情况，形成一套自己的拆解。比如 Optimizely 觉得自己的战略就在一面墙上：
 
-![image holder](/downloads/images/2020_03/strategy_03.jpeg "Don’t touch me...")
+![image holder](/downloads/images/2020_03/strategy_03.jpeg --alt Don’t touch me)
 
 但无论如何，有了这个，工程团队的战略规划应该是好写一些了，我们有空再说它怎么写。
 

@@ -2,7 +2,7 @@
 layout: post
 title: "采用事件驱动实施微服务架构"
 date: 2017-02-12 03:58:52 +0800
-categories: 
+categories:
 - microservice
 - hcb
 - MSA
@@ -44,5 +44,5 @@ categories:
 
 关于事件，延迟和一致性，再多说几句。事件只有在能够保证它们的时序的时候，才是可用的。也就是说，一组事件的时序，必须对于消费方来说是可信的。这涉及分布式系统里面的另外一个难题，对于构建“transactionality”也同样重要，以后再细说。但总的来说，如果事件乱序了，那么我们不做手工的修复就没有保持最终一致性。[Martin Kleppmann](https://martin.kleppmann.com/)管这个叫做“perpetual inconsistency”。时延，乱序，是分布式系统里面的两个难题。
 
-![Vhost threshold](/downloads/images/2017_02/two_hard_problems.jpg "Don't touch me...")
+![Vhost threshold](/downloads/images/2017_02/two_hard_problems.jpg --alt Don't touch me)
 

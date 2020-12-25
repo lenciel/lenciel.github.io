@@ -3,14 +3,14 @@ layout: post
 title: "电脑视觉综合症"
 date: 2016-09-30 13:49:17 +0800
 comments: true
-categories: 
+categories:
 
 - tips
 - health
 
 ---
 
-![Vhost threshold](/downloads/images/2016_09/computer.png "Don't touch me...")
+![Vhost threshold](/downloads/images/2016_09/computer.png --alt Don't touch me)
 
 虽然叫做“[电脑视觉综合症(Computer Vision Syndrome)](https://zh.wikipedia.org/wiki/%E7%94%B5%E8%84%91%E8%A7%86%E8%A7%89%E7%BB%BC%E5%90%88%E7%97%87)”，但真正成为祸害，却是在智能手机一统天下之后：据美帝医生的统计，已经有八千万左右的患者。
 

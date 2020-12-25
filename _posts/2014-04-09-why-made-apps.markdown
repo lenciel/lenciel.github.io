@@ -3,7 +3,7 @@ layout: post
 title: "应用开发能火多久?"
 date: 2014-04-09 15:07:57 +0800
 comments: true
-categories: 
+categories:
 - mobile
 - thoughts
 - apps
@@ -13,13 +13,13 @@ categories:
 不管是从日常生活里面的观察和感受，还是查看统计数据，都很容易发现人们在移动设备上停留的时间已经逐渐超过了在PC上停留的时间。当然拐点是不是如下图所示就在今年业界有些争议，但是拐点已经要来了是没有人再怀疑了。
 
 
-![mobile vs desktop](/downloads/images/2014_04/comscore_mobile_users_desktop_users_2014.jpg "Don't touch me...")
+![mobile vs desktop](/downloads/images/2014_04/comscore_mobile_users_desktop_users_2014.jpg --alt Don't touch me)
 
 
 而移动设备取代PC机成为最主要的入口之后，就意味着谁占领了移动设备，谁就拥有未来。同样不管是从切身体会还是数据都不难知道，和PC上各种网站（包括各种浏览器+插件提供的服务）占据统治地位不同，在移动平台上，应用程序获得了全面的胜利。
 
 
-![mobile apps vs website](/downloads/images/2014_04/apps_dominate_hires.png "Don't touch me...")
+![mobile apps vs website](/downloads/images/2014_04/apps_dominate_hires.png --alt Don't touch me)
 
 移动客户端上网站和App相比所处的劣势会越来越严重。无论是我们自己公司还是行业内其他人，都知道做移动互联网就是要做应用才行。所以你看手机网页上和游戏里，各种弹窗、各种广告、各种骚扰短信，都是指向某个应用的下载链接。
 

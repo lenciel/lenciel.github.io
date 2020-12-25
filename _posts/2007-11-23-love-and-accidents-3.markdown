@@ -3,11 +3,11 @@ layout: post
 title: "爱情走过浦山路"
 date: 2007-11-23 00:43:05 +0800
 comments: true
-categories: 
+categories:
 - writing
 ---
 
-![Vhost threshold](/downloads/images/2007_11/eshan_road.jpeg "Don't touch me...")
+![Vhost threshold](/downloads/images/2007_11/eshan_road.jpeg --alt Don't touch me)
 
 从公司出来，已经是晚上八点。虽然还要赶着去见Frank，Carmen还是先找了个面馆吃了点东西，再慢慢走去公车站等车。面前有几辆空载的出租车跑过，她也懒得伸手去拦。
 
@@ -35,8 +35,8 @@ Carmen应了一声，装作百无聊赖的样子把头往窗外探着，就果�
 
 Carmen一把拉开抽屉，翻出所有能找到的糖，扔进嘴里大口嚼起来[^3]。
 
-[^1]: 这是一句病句。  
-[^2]: 本座应该没有冤枉sina吧。  
+[^1]: 这是一句病句。
+[^2]: 本座应该没有冤枉sina吧。
 [^3]: 好久没有写这么狗屁的结局了，仅次于上次的美丽心灵。
 
 

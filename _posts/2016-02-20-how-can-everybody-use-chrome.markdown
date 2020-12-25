@@ -49,7 +49,7 @@ Chrome里面你可以这样使用的搜索引擎数量其实是远超你想象�
 
 在地址栏里面敲入`chrome://settings/`，然后进入搜索引擎的配置你就可以看到它们：
 
-![Vhost threshold](/downloads/images/2016_02/manage_search_engine.png "Don't touch me...")
+![Vhost threshold](/downloads/images/2016_02/manage_search_engine.png --alt Don't touch me)
 
 
 ### 创建使用自定义搜索引擎
@@ -62,7 +62,7 @@ Chrome里面你可以这样使用的搜索引擎数量其实是远超你想象�
 
 这个时候你只需要在搜索引擎列表的末尾添加一个自定义项：
 
-![Vhost threshold](/downloads/images/2016_02/custom_search_engine.png "Don't touch me...")
+![Vhost threshold](/downloads/images/2016_02/custom_search_engine.png --alt Don't touch me)
 
 比如我们添加一个`Keyword`是`panb`的搜索引擎，它的URL是：
 

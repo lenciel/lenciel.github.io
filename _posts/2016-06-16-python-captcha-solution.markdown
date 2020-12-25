@@ -41,11 +41,11 @@ categories:
 所以下面这两个验证码，哪个的难度大一些？
 
 <p style="font-size: 0.8em;
-"><img src="{{ site.static_base }}/downloads/images/2016_06/orig_code.png" title="Don't touch me..." alt="Vhost threshold" data-pin-nopin="true"><br/>
+"><img src="{{ site.static_base }}/downloads/images/2016_06/orig_code.png" title=--alt Don't touch me alt="Vhost threshold" data-pin-nopin="true"><br/>
 图1. 微林的验证码</p>
 
 <p style="font-size: 0.8em;
-"><img src="{{ site.static_base }}/downloads/images/2016_06/orig_code_2.jpg" title="Don't touch me..." alt="Vhost threshold" data-pin-nopin="true"><br/>
+"><img src="{{ site.static_base }}/downloads/images/2016_06/orig_code_2.jpg" title=--alt Don't touch me alt="Vhost threshold" data-pin-nopin="true"><br/>
 图2. 饭局后J.Snow提供的验证码</p>
 
 如果你脑子里面没有二值化的概念大概会觉得第一个难度大一些，因为以人眼的视线去考虑，好像第一张要“难分辨”一些。
@@ -120,7 +120,7 @@ $ python convert_grayscale.py regcode.png 10
 
 结果如下：
 
-<p><img src="{{ site.static_base }}/downloads/images/2016_06/convert_1.png" title="Don't touch me..." alt="Vhost threshold" data-pin-nopin="true">&nbsp;&nbsp;&nbsp;&nbsp;<img src="{{ site.static_base }}/downloads/images/2016_06/convert_10.png" title="Don't touch me..." alt="Vhost threshold" data-pin-nopin="true"></p>
+<p><img src="{{ site.static_base }}/downloads/images/2016_06/convert_1.png" title=--alt Don't touch me alt="Vhost threshold" data-pin-nopin="true">&nbsp;&nbsp;&nbsp;&nbsp;<img src="{{ site.static_base }}/downloads/images/2016_06/convert_10.png" title=--alt Don't touch me alt="Vhost threshold" data-pin-nopin="true"></p>
 
 很明显目标像素是1而不是10。
 
@@ -132,7 +132,7 @@ $ python convert_grayscale.py regcode.png 10
 
 然后我们对排名靠前的像素进行提取会得到下面的结果：
 
-<p><img src="{{ site.static_base }}/downloads/images/2016_06/convert_225.png" title="Don't touch me..." alt="Vhost threshold" data-pin-nopin="true"><img src="{{ site.static_base }}/downloads/images/2016_06/convert_139.png" title="Don't touch me..." alt="Vhost threshold" data-pin-nopin="true"><img src="{{ site.static_base }}/downloads/images/2016_06/convert_182.png" title="Don't touch me..." alt="Vhost threshold" data-pin-nopin="true"><img src="{{ site.static_base }}/downloads/images/2016_06/convert_219.png" title="Don't touch me..." alt="Vhost threshold" data-pin-nopin="true"></p>
+<p><img src="{{ site.static_base }}/downloads/images/2016_06/convert_225.png" title=--alt Don't touch me alt="Vhost threshold" data-pin-nopin="true"><img src="{{ site.static_base }}/downloads/images/2016_06/convert_139.png" title=--alt Don't touch me alt="Vhost threshold" data-pin-nopin="true"><img src="{{ site.static_base }}/downloads/images/2016_06/convert_182.png" title=--alt Don't touch me alt="Vhost threshold" data-pin-nopin="true"><img src="{{ site.static_base }}/downloads/images/2016_06/convert_219.png" title=--alt Don't touch me alt="Vhost threshold" data-pin-nopin="true"></p>
 
 这种情况下怎么办？直观观察一下验证码，会发现背景噪声点相比验证码像素点来说很少（这也正常，都是一个颜色如果太多就没法看了）， 很适合先做一些切割，然后进行模糊匹配（因为验证码的像素是幻彩的不是单一的，需要匹配相近像素点），然后再做二值化。
 
@@ -144,7 +144,7 @@ $ convert 1.pic.jpg -gravity Center -crop 48x16+0+0  +repage -fuzz 50% -fill whi
 
 效果如下：
 
-<p><img src="{{ site.static_base }}/downloads/images/2016_06/orig_code_2.jpg" title="Don't touch me..." alt="Vhost threshold" data-pin-nopin="true">&nbsp;&nbsp;&nbsp;&nbsp;<img src="{{ site.static_base }}/downloads/images/2016_06/convert_im.jpg" title="Don't touch me..." alt="Vhost threshold" data-pin-nopin="true"></p>
+<p><img src="{{ site.static_base }}/downloads/images/2016_06/orig_code_2.jpg" title=--alt Don't touch me alt="Vhost threshold" data-pin-nopin="true">&nbsp;&nbsp;&nbsp;&nbsp;<img src="{{ site.static_base }}/downloads/images/2016_06/convert_im.jpg" title=--alt Don't touch me alt="Vhost threshold" data-pin-nopin="true"></p>
 
 ### 字符怎么分割
 

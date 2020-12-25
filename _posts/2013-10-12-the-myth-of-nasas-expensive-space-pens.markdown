@@ -8,7 +8,7 @@ categories:
 ---
 
 
-![Space Pen](/downloads/images/2013_10/space_pen.jpg "Don't touch me...")
+![Space Pen](/downloads/images/2013_10/space_pen.jpg --alt Don't touch me)
 
 在软件开发中我们一说到避免过度设计，经常有两个例子会被抬出来，其中一个就是NASA造了昂贵的太空笔，然后俄罗斯用很简单的方案解决问题的故事（另一个大概就是传送带旁边放电风扇的故事）。[NASA造笔的故事](http://www.snopes.com/business/genius/spacepen.asp)大概是这样的:
 

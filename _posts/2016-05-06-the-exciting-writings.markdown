@@ -3,7 +3,7 @@ layout: post
 title: "一颗赛艇"
 date: 2016-05-06 04:26:09 +0800
 comments: true
-categories: 
+categories:
 
 - rants
 - writing
@@ -11,7 +11,7 @@ categories:
 ---
 
 
-![Vhost threshold](/downloads/images/2016_05/jpm.jpg "Don't touch me...")
+![Vhost threshold](/downloads/images/2016_05/jpm.jpg --alt Don't touch me)
 
 昨天立夏，闷热异常，晚上终于来了几声雷，却是雷声大雨点小。
 

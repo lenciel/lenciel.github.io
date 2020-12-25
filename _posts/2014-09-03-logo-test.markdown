@@ -51,6 +51,6 @@ for x, y in grid( resx, resy ) :
 
 感受一下，哪个印出来比较好看呢...
 
-![Vhost threshold](/downloads/images/2014_09/logo1.png "Don't touch me...")
-![Vhost threshold](/downloads/images/2014_09/logo2.png "Don't touch me...")
-![Vhost threshold](/downloads/images/2014_09/logo3.png "Don't touch me...")
+![Vhost threshold](/downloads/images/2014_09/logo1.png --alt Don't touch me)
+![Vhost threshold](/downloads/images/2014_09/logo2.png --alt Don't touch me)
+![Vhost threshold](/downloads/images/2014_09/logo3.png --alt Don't touch me)

@@ -21,7 +21,7 @@ categories:
 
 这种时候你大概你第一反应是把之前那个json搞来copy-paste出两千份数据。但很快你就会意识到那是不行的：要构建一个对象，你常常需要先构建它外键的对象，而实际上线的项目它的数据库结构是非常复杂的（数据库结构图的生成见[这里](https://lenciel.com/2014/12/integrate-schemaspy-with-sphinx-build-for-django-database-design-visualization/)），所以构建两千条记录的工作量会远远超过你的想象：
 
-![schemaSpy](/downloads/images/2014_12/database_design_visualization.png "schemaSpy...")
+![schemaSpy](/downloads/images/2014_12/database_design_visualization.png --alt schemaSpy)
 
 最近本座试用了[factory boy](https://github.com/rbarrois/factory_boy/)和[faker](https://github.com/joke2k/faker)的组合，感觉还比较好用。
 

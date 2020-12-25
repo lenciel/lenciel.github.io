@@ -3,7 +3,7 @@ layout: post
 title: "解决iowait过高的告警"
 date: 2014-02-24 09:22
 comments: true
-categories: 
+categories:
 
 - tips
 - iowait
@@ -13,7 +13,7 @@ categories:
 
 ---
 
-![warning letter](/downloads/images/2014_02/warning_letter.png "Don't touch me...")
+![warning letter](/downloads/images/2014_02/warning_letter.png --alt Don't touch me)
 
 从Nagios切到[Zabbix](https://www.zabbix.com)之后，经常大清早被iowait过高的告警邮件叫醒。因为这套Zabbix监控是本座搭的，所以解决这个问题就只有本座来了.....哎，不知道是不是把首席运营官给宠坏了。
 
@@ -135,7 +135,7 @@ iowait的意义
 
 然后在又一个这样的6点半：
 
-![warning letter](/downloads/images/2014_02/zabbix_cpu_util.png "Don't touch me...")
+![warning letter](/downloads/images/2014_02/zabbix_cpu_util.png --alt Don't touch me)
 
 去日志里面查看：
 

@@ -9,7 +9,7 @@ categories:
 - rss
 ---
 
-![Google reader is gone](/downloads/images/2013_03/google_reader.png "Don't touch me...")
+![Google reader is gone](/downloads/images/2013_03/google_reader.png --alt Don't touch me)
 
 Google Reader关掉的消息出来做之后网上的反应其实是很耐人寻味的。
 

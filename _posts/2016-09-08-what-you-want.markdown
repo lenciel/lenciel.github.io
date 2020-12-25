@@ -3,12 +3,12 @@ layout: post
 title: "记一碗滚烫的鸡汤"
 date: 2016-09-08 20:03:03 +0800
 comments: true
-categories: 
+categories:
 - rants
 - writing
 ---
 
-![Vhost threshold](/downloads/images/2016_09/the_player_choose_to_die.jpg "Don't touch me...")
+![Vhost threshold](/downloads/images/2016_09/the_player_choose_to_die.jpg --alt Don't touch me)
 
 费福尔特，37岁的比利时名将，上届伦敦残奥会T52级女子轮椅短跑100米冠军和200米的亚军，一边积极备战即将到来的奥运会，一边在准备葬礼：她宣布在比赛后会安乐死结束自己的生命。
 

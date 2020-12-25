@@ -14,7 +14,7 @@ categories:
 
 当你访问网页的时候，你发出的请求其实要翻越各种网关走很长的路，这一路上都可能有妖魔鬼怪在等着搞你，的数据。
 
-![A series of tubes](/downloads/images/2013_09/series_of_tubes.png "Don't touch me…")
+![A series of tubes](/downloads/images/2013_09/series_of_tubes.png --alt Don't touch me)
 
 
 一般我们访问网页的时候，请求使用的是HTTP，也就是Client和Server之间的数据是明文传送的。[HTTP没有使用任何加密的原因有很多][3]:

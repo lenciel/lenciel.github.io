@@ -75,11 +75,11 @@ categories:
 
 比如这种被中国叫做蜀羊泉的植物，它的英文名叫 bittersweet ，这个喜忧参半的名字本身就很有味道：
 
-![image holder](/downloads/images/2020_02/moralofflowers_rebeccahey_bittersweet.jpg "Don't touch me...")
+![image holder](/downloads/images/2020_02/moralofflowers_rebeccahey_bittersweet.jpg --alt Don't touch me)
 
 她还根据自己的理解，给这些花配了质量很高的小诗。
 
-![image holder](/downloads/images/2020_02/moralofflowers_rebeccahey_frontispiece.jpg "Don't touch me...")
+![image holder](/downloads/images/2020_02/moralofflowers_rebeccahey_frontispiece.jpg --alt Don't touch me)
 
 > Flowers of the field, how meet ye seem,
 >

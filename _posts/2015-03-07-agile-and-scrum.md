@@ -3,13 +3,13 @@ layout: post
 title: "Agile and Scrum, The Love Story"
 date: 2015-03-07 03:05:36 +0800
 comments: true
-categories: 
+categories:
 
 - rants
 
 ---
 
-![Vhost threshold](/downloads/images/2015_03/minime.png "Don't touch me...")
+![Vhost threshold](/downloads/images/2015_03/minime.png --alt Don't touch me)
 
 本次吐槽献给Scrum Master们。毕竟了解了软件社区其实对Agile和Scrum的情绪已经有些像走到结尾的爱情故事，也许可以让大家在工作中不要把自己和大家SM得太惨。加上我们进新公司之后也在推行敏捷流程，不如整理一下本座对这套东西好鬼复杂的情绪...
 
@@ -39,11 +39,11 @@ Agile，中文翻译为“敏捷”，是在90年代逐渐引起广泛关注的�
 
 比如下面是一次提交之后Gitlab上提供的查看diff的界面：通过这样的方式review整个改动，比小伙伴坐在自己怀里结对编码要清楚得多（而且小伙伴坐在怀里的时候引发的羞赧常常让你难以把他的错误直接打到他脸上不是么）：
 
-![Vhost threshold](/downloads/images/2015_03/gitlab_diff.png "Don't touch me...")
+![Vhost threshold](/downloads/images/2015_03/gitlab_diff.png --alt Don't touch me)
 
 所以我会经常在公司里面鼓动大家把输出都落到代码和文档里面。经过一段时间，就会慢慢看到有人在群里面问“那个什么什么是怎么回事”的时候，后面的回复是“你去看看confluence上xxx页面”或者是“这个是jira的xxx问题单讨论的”。
 
-![Vhost threshold](/downloads/images/2015_03/written_words_is_better.png "Don't touch me...")
+![Vhost threshold](/downloads/images/2015_03/written_words_is_better.png --alt Don't touch me)
 
 如果你的员工经常需要重复回答同一个问题，包括来个新员工这个环境怎么配那个Wifi的密码还需要人告诉他/她，你也好意思说自己是敏捷的？
 
@@ -79,7 +79,7 @@ Agile，中文翻译为“敏捷”，是在90年代逐渐引起广泛关注的�
 
 这也就是[Marshall McLuhan](http://en.wikipedia.org/wiki/Marshall_McLuhan)的著名论断`The medium is the message` （[Wired](http://www.wired.com)杂志把他视为办刊的精神导师，我觉得搞互联网的人都该看看他的书）:
 
-![Vhost threshold](/downloads/images/2015_03/mcluhan.jpg "Don't touch me...")
+![Vhost threshold](/downloads/images/2015_03/mcluhan.jpg --alt Don't touch me)
 
 ## Daily StandUp or Daily FuckUp
 

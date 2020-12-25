@@ -3,14 +3,14 @@ layout: post
 title: "记一次快乐的生日"
 date: 2016-06-24 22:12:13 +0800
 comments: true
-categories: 
+categories:
 
 - writing
 
 ---
 
 
-![Vhost threshold](/downloads/images/2016_06/birthday-0x32.jpg "Don't touch me...")
+![Vhost threshold](/downloads/images/2016_06/birthday-0x32.jpg --alt Don't touch me)
 
 今天收到很多“生日快乐”的祝福。
 

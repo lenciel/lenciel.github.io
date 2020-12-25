@@ -3,13 +3,13 @@ layout: post
 title: "What did the ocean say to the other?"
 date: 2014-06-12 01:45:06 +0800
 comments: true
-categories: 
+categories:
 - iwdrm
 - writing
 - 从你的全世界错过
 ---
 
-![ocean wave](/downloads/images/2014_06/wave.jpg "Don't touch me...")
+![ocean wave](/downloads/images/2014_06/wave.jpg --alt Don't touch me)
 
 最近读了张嘉佳的《从你的全世界路过》，其实就是他微博“睡前故事”的合集。
 

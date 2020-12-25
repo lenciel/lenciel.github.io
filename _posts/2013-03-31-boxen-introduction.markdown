@@ -43,13 +43,13 @@ Boxen基于大红大紫的[Puppet](https://puppetlabs.com/)，但和后者目前
 * 启动Xcode，在Preferences里面选择下载
 * 安装"Command Line Tools"
 
-![Xcode Command Line Tools](/downloads/images/2013_03/xcode_clt.png "Don't touch me...")
+![Xcode Command Line Tools](/downloads/images/2013_03/xcode_clt.png --alt Don't touch me)
 
 ###打开FireVault2###
 
 Boxen默认会希望硬盘信息是被加密的：
 
-![Turn on FireVault2](/downloads/images/2013_03/turn_on_fire_vault.png "Don't touch me...")
+![Turn on FireVault2](/downloads/images/2013_03/turn_on_fire_vault.png --alt Don't touch me)
 
 ###Fork our-boxen###
 
@@ -133,7 +133,7 @@ end
 
 而 ``version`` 则是对应具体repo的tag，比如[puppet-skype](https://github.com/boxen/puppet-skype)对应的[tag](https://github.com/boxen/puppet-skype/tags)有：
 
-![Version and tags](/downloads/images/2013_03/version_tag.png "Don't touch me...")
+![Version and tags](/downloads/images/2013_03/version_tag.png --alt Don't touch me)
 
 如果你的repo不是在github也很简单，只需要指定repo的位置即可。比如如果你自己的Skype是放在Bitbucket上的:
 

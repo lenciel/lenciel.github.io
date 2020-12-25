@@ -34,7 +34,7 @@ var rawr = ["r", "a", "w", "r"];<br>
 
 但是自从它改成按月订阅付费，并且每个月要好几十块钱，我就转到了 mac 自带的「shortcut」：
 
-![keyboard_shortcut.jpg](/downloads/images/2020_03/keyboard_shortcut.jpg "Don't touch me...")
+![keyboard_shortcut.jpg](/downloads/images/2020_03/keyboard_shortcut.jpg --alt Don't touch me)
 
 它的功能很简陋，特别是不支持宏（后面可以看到有它没它区别多大）。
 
@@ -44,7 +44,7 @@ var rawr = ["r", "a", "w", "r"];<br>
 
 拿写 markdown 的文档时经常要插入图片这件事情举个例子。我们可以在 Alfred 里面建一个类别，Prefix 为「.」，keyword 为「mki」，然后它的公式是：
 
-> \![{clipboard:0}]\(/downloads/images/{date:yyyy/MM}/{clipboard:0} "Don't touch me…"\)
+> \![{clipboard:0}]\(/downloads/images/{date:yyyy/MM}/{clipboard:0} --alt Don't touch me\)
 
 这里：
 

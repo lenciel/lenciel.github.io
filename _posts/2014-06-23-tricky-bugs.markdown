@@ -3,7 +3,7 @@ layout: post
 title: "Tricky Bugs are tricky"
 date: 2014-06-23 13:05:33 +0800
 comments: true
-categories: 
+categories:
 - front-end
 - development
 ---
@@ -18,7 +18,7 @@ categories:
 
 接下来的一个更加tricky，我们的蔡天王在写代码的过程中发现表单被填了怪怪的内容，如下图：
 
-![chrome auto fill](/downloads/images/2014_06/chrome_auto_fill.png "Don't touch me...")
+![chrome auto fill](/downloads/images/2014_06/chrome_auto_fill.png --alt Don't touch me)
 
 他检查了js和html，发现这些值不是我们处理表单的时候填的，WTF？
 

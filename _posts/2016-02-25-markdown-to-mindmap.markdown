@@ -39,17 +39,17 @@ categories:
 
 这样贴到MindNode里面，就会生成下面的脑图：
 
-![Vhost threshold](/downloads/images/2016_02/mindmap_1.png "Don't touch me...")
+![Vhost threshold](/downloads/images/2016_02/mindmap_1.png --alt Don't touch me)
 
 但是上面的格式，如果是以Markdown的格式放到代码库里面，有略显难看。所以更进一步，你可以先用Markdown的`#`来标不同层级，使得文档本身可以在网页上显示成规则的列表，[类似这样](https://lenciel.com/2014/05/web-development-skill-set-and-reading-list/)，它的原始Markdown文件在[这里](https://gist.github.com/lenciel/637812a7dcbe8341b07b)。
 
 然后，通过脚本把文档里面的`#`转换成`\t`，就可以得到能够直接粘贴到MindNode里面生成脑图的文本了。如果你是使用Mac，还可以直接把转换脚本创建成一个`service`通过`Automator`安装，这样你在任何一个Markdown文档上选中需要生成脑图的部分，右键就可以了：
 
-![Vhost threshold](/downloads/images/2016_02/mindmap_2.png "Don't touch me...")
+![Vhost threshold](/downloads/images/2016_02/mindmap_2.png --alt Don't touch me)
 
 还有个未尽事宜就是在转换脚本里面加一个步骤：Markdown里面的链接，生成图片的时候把方括号、圆括号以及圆括号里面的链接去掉，不然就太难看了：
 
-![Vhost threshold](/downloads/images/2016_02/mindmap_3.png "Don't touch me...")
+![Vhost threshold](/downloads/images/2016_02/mindmap_3.png --alt Don't touch me)
 
 
 

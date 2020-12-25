@@ -12,7 +12,7 @@ categories:
 ---
 
 
-![goodbye](/downloads/images/2015_01/goodbye_palm4fun.png "Don't touch me...")
+![goodbye](/downloads/images/2015_01/goodbye_palm4fun.png --alt Don't touch me)
 
 大概两年前，和Bergkamp、194一次计划外的聊天之后，<strike>出于保护直肠的目的</strike>，本座离开了基友密布的[Myriad](http://www.myriadgroup.com/)，作为Palm4fun的联合创始人之一，开始捣鼓着自己创业。
 
@@ -32,13 +32,13 @@ categories:
 
 跨年的时候，茕茕孑立的本座画了张思维导图，主要目的是把过去两年palm4fun的积累整理一下。画出来之后很多朋友希望我分享高清无码图：因为整个图非常大，不太适合在移动设备上看。
 
-![stack_all](/downloads/images/2015_01/p4f_stack_all.png "Don't touch me...")
+![stack_all](/downloads/images/2015_01/p4f_stack_all.png --alt Don't touch me)
 
 其实在一开始选择这些的时候，基本上就是从运维支撑和测试部署工具、产品开发和数据管理、基础设施和功能模块以及商业工具四个维度出发，所以就拆成四个部分简单过一遍。特别声明：选择的依据和出发点主要是根据个人喜好，包括自己使用的体验以及眼缘，并没有特别的理由。比如我们用Reviewboard不用Phabricator，完全是因为团队中大多数人已经用习惯了。
 
 ## Build/Test/Deploy
 
-![stack_devops_1](/downloads/images/2015_01/p4f_stack_devops_1.png "Don't touch me...")
+![stack_devops_1](/downloads/images/2015_01/p4f_stack_devops_1.png --alt Don't touch me)
 
 - 我们没有用Gerrit或者Phabricator的原因是它们功能太多了
 - Ngrok是做微信接口调试时意外发现的好物
@@ -46,7 +46,7 @@ categories:
 
 ## Monitoring
 
-![stack_devops_2](/downloads/images/2015_01/p4f_stack_devops_2.png "Don't touch me...")
+![stack_devops_2](/downloads/images/2015_01/p4f_stack_devops_2.png --alt Don't touch me)
 
 - Sentry帮我们在用户找到我们之前找到了很多问题
 - 一开始我们用过Nagios，它的设计也很不错，就是界面太...
