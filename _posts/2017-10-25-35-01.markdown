@@ -7,7 +7,7 @@ categories:
 
 - writing
 - 35-stories
-- IWDRM
+- iwdrm
 
 ---
 

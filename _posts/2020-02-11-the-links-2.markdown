@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "the links"
+title: "the links (2)"
 date: 2020-02-11 16:46:29 +0800
 comments: true
 categories: 
@@ -13,4 +13,4 @@ categories:
 2. [Contextualise](https://github.com/brettkromkamp/contextualise) — 一个构建和管理带上下文信息的树状资源的库，感觉西瓜用户创意作品的资源以这种形式管理更好。
 3. [Meaningful Availability](https://www.usenix.org/system/files/nsdi20spring_hauer_prepub.pdf) — Google 关于 Availability 的一篇论文，提出了一种看起来很靠谱的新指标：windowed user-uptime 。
 4. [Jim Keller: Moore’s Law, Microprocessors, Abstractions, and First Principles](https://lexfridman.com/jim-keller/) — 一个很好的访谈，作为传奇般的工程师，Jim 回答问题有两个显著的特点：首先，几乎不需要时间想；其次，充满了 "I imagine 99% of your thought process is protecting your self-conception, and 98% of that is wrong" 这样的金句。
-5. [crtipcorp / apollo](https://github.com/ctripcorp/apollo) — 携程开源的配置中心，质量相当高。
+5. [crtipcorp / apollo](https://github.com/ctripcorp/apollo) — 携程开源的配置中心，质量相当高。 (3)
