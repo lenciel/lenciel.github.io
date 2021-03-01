@@ -8,7 +8,7 @@ categories:
 - 浮光掠影
 ---
 
-<video autoplay loop muted playsinline>
+<video playsInline autoplay loop muted>
     <source src="{{ site.static_base }}/downloads/video/movie_clips/false_start.mp4" type="video/mp4">
     <p>Your browser doesn't support this embedded video.</p>
 </video>

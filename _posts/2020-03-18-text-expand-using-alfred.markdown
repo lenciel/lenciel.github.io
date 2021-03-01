@@ -53,7 +53,7 @@ var rawr = ["r", "a", "w", "r"];<br>
 
 于是，每次要往 Blog 里面插入一个图片的时候，只需要复制文件名，然后在编辑器里面敲击 `.mki` 就可以了：
 
-<video autoplay loop muted playsinline>
+<video playsInline autoplay loop muted>
     <source src="{{ site.static_base }}/downloads/video/mki.mp4" type="video/mp4">
     <p>Your browser doesn't support this embedded video.</p>
 </video>

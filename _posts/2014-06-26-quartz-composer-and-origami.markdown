@@ -32,12 +32,12 @@ categories:
 
 最后，如果你是程序员，习惯了写CSS/JS来控制界面，要适应QC的图形化编程（类似VB那样先选控件再改属性然后绑事件）还是蛮蛋疼的。比如它里面的设定偏移量来定位元素的方式，就让本座觉得用起来非常虐心。
 
-<video autoplay loop muted playsinline>
+<video playsInline autoplay loop muted>
     <source src="{{ site.static_base }}/downloads/images/2014_06/qc_yx_intro.mp4" type="video/mp4">
     <p>Your browser doesn't support this embedded video.</p>
 </video>
 
-<video autoplay loop muted playsinline>
+<video playsInline autoplay loop muted>
     <source src="{{ site.static_base }}/downloads/images/2014_06/qc_yx_bd.mp4" type="video/mp4">
     <p>Your browser doesn't support this embedded video.</p>
 </video>
