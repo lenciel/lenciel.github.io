@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: "如何干好架构师（1）"
+title: "如何干好架构师(1)"
 date: 2021-02-23 10:01:07 +0800
 categories: 
 

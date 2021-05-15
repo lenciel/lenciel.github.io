@@ -4,6 +4,11 @@ title: "卫豆"
 date: 2015-10-24 03:30:20 +0800
 comments: true
 categories:
+
+- rip
+- figure
+- memorial
+
 ---
 
 每个人的生命中都有一个胖子。
@@ -166,6 +171,3 @@ categories:
 而正是他们给我们的那些影响，让我们成为了今天的样子。
 
 卫豆，我还没有和你好够。
-
-
-

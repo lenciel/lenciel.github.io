@@ -10,6 +10,8 @@ categories:
 
 ---
 
+![wumengda.png](/downloads/images/2021_02/wumengda.png --alt Don't touch me...)
+
 常温常压下，人们看重的是花。
 
 因为花，有投入也有产出：开放枯萎，轰轰烈烈，周而复始，意味深长。

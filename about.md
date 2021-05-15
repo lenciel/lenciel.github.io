@@ -19,7 +19,7 @@ Lenciel，工程师。从业时间略长，在做存储最好的公司做过存�
 
 这话不是我说的，是罗素。
 
-Just Do It!
+Brevity is for the weak. JUST DO IT!
 
 ## 阅读量较高的日志入口：
 
