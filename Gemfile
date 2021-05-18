@@ -27,7 +27,7 @@ group :jekyll_plugins do
    # gems below are installed for rake task
    gem 'stringex'
    gem 'colorize'
-   gem 'html_compressor'
+   gem 'htmlcompressor', '~> 0.4.0'
    gem 'parallel'
    gem 'ruby-progressbar'
 end

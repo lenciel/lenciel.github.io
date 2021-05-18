@@ -2,7 +2,7 @@ require "rubygems"
 require "bundler/setup"
 require "stringex"
 require "colorize"
-require "html_compressor"
+require "htmlcompressor"
 require "parallel"
 require "ruby-progressbar"
 
@@ -341,7 +341,7 @@ task :minify_html, :dir do |t, args|
                                    :starting_at => 0,
                                    :total => htmls.size,
                                    :format => '%t, %a |%b%i| %p%')
-  compressor = HtmlCompressor::HtmlCompressor.new
+  compressor = HtmlCompressor::Compressor.new
   Parallel.map(htmls, :in_threads => n_cores) do |f|
     input = File.read(f)
     output = File.open("#{f}", "w")
