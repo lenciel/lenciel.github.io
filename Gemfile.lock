@@ -1,7 +1,7 @@
 PATH
   remote: ../jekyll-lenciel-theme
   specs:
-    jekyll-lenciel-theme (1.0.13)
+    jekyll-lenciel-theme (1.0.15)
       jekyll (>= 3.6, < 5.0)
       jekyll-feed
       jekyll-paginate
