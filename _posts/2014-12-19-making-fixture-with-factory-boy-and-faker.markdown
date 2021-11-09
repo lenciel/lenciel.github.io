@@ -17,7 +17,7 @@ categories:
 2. 使用`dumpdata`命令导出json格式的数据
 3. 以导出的json为模板构造测试数据用`loaddata`命令导入到数据库
 
-这样对于大多数场景也算够用了，但是你总会遇到某一天客户走来说：“我想看看那个报表生成出来啥样，能不能创建两千条记录？”
+这样对于大多数场景也算够用了，但是你总会遇到某一天客户走来说：「我想看看那个报表生成出来啥样，能不能创建两千条记录？」
 
 这种时候你大概你第一反应是把之前那个json搞来copy-paste出两千份数据。但很快你就会意识到那是不行的：要构建一个对象，你常常需要先构建它外键的对象，而实际上线的项目它的数据库结构是非常复杂的（数据库结构图的生成见[这里](https://lenciel.com/2014/12/integrate-schemaspy-with-sphinx-build-for-django-database-design-visualization/)），所以构建两千条记录的工作量会远远超过你的想象：
 
@@ -147,7 +147,7 @@ class TesterTaskFactory(DjangoModelFactory):
 
 ## faker
 
-有很多字段，比如姓名、地址这些，纯粹用Fuzz的办法很难做到“贴近真实”。[faker](https://github.com/joke2k/faker)就是用来解决这类字段的。
+有很多字段，比如姓名、地址这些，纯粹用Fuzz的办法很难做到「贴近真实」。[faker](https://github.com/joke2k/faker)就是用来解决这类字段的。
 
 ``` python
 

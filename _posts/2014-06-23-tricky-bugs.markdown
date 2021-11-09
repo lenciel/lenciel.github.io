@@ -36,11 +36,11 @@ categories:
 
 {% blockquote %}
 
-Chrome 34 will now offer to remember and fill password fields in the presence of autocomplete=off.” That means that if a website turns off automatic password collection, Chrome will offer to do it anyway if password manager is enabled.
+Chrome 34 will now offer to remember and fill password fields in the presence of autocomplete=off.」 That means that if a website turns off automatic password collection, Chrome will offer to do it anyway if password manager is enabled.
 
 {% endblockquote %}
 
-古德，瓦力瓦力古德。看了如果一个网站你选择了“记住密码”，Chrome的密码管理器就会被这个域名下包含了`$('input[name=password]')`的表单激活。并且它居然蠢到直接去找`password`上面一个input来填入用户名，how convenient...
+古德，瓦力瓦力古德。看了如果一个网站你选择了「记住密码」，Chrome的密码管理器就会被这个域名下包含了`$('input[name=password]')`的表单激活。并且它居然蠢到直接去找`password`上面一个input来填入用户名，how convenient...
 
 要fix这种行为只能通过在出事的表单里面加上占位用的`input`来欺骗浏览器。比如我们是在django里面使用`django-crispy-form`生成表单，就可以重载它的Layout：
 

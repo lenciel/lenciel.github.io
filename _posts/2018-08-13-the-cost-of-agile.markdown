@@ -16,7 +16,7 @@ categories:
 
 ![Vhost threshold](/downloads/images/2018_08/waterfall.png --alt Don't touch me)
 
-敏捷究竟是什么？如果我们忘记那些story point，站会，sprint，scrum，想一想，“敏捷”这两个字代表什么？
+敏捷究竟是什么？如果我们忘记那些story point，站会，sprint，scrum，想一想，「敏捷」这两个字代表什么？
 
 我觉得无非是代表当变化发生的时候，有足够的灵活性。
 

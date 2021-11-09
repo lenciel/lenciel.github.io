@@ -25,7 +25,7 @@ I know it because everytime when you join a new team you will have the disappoin
 
 On the very first day of the new job. When you walk in the building knowing practically no one. Everyone is pleasant and nice… almost too nice. Everyone (including you) is not quite themselves because everyone understands the power of the first impression. They’re watching every single move and attempting to interpret how these moves might be perceived. It’s exhausting and it doesn’t reflect the natural steady state of the team.
 
-You listen. You talk to every single person who is willing and you slowly form the impression of the tangible and intangible aspects of this group of people. A picture slowly forms in your mind of how it fits together and, as an aside, it’s almost always wrong because your brain hates discord. As quickly as possible, your brain wants a framework that efficiently predicts what is going to happen next. Your initial framework is a calming hodgepodge of past experience combined with your three most recent epiphanies, and you call this weak sauce, “The way they work.”
+You listen. You talk to every single person who is willing and you slowly form the impression of the tangible and intangible aspects of this group of people. A picture slowly forms in your mind of how it fits together and, as an aside, it’s almost always wrong because your brain hates discord. As quickly as possible, your brain wants a framework that efficiently predicts what is going to happen next. Your initial framework is a calming hodgepodge of past experience combined with your three most recent epiphanies, and you call this weak sauce, 「The way they work.」
 
 And this poor assessment goes both ways. It’s the beginning of the disappointment. You discover your model for them is incorrect. They discover that you are not who they expected. It’s the end of the honeymoon and the fact the end has begun is progress, but it mostly feels like disappointment. You’re in an unfortunate hole. It’s buyer’s remorse. It’s understanding the world is never, ever that simple.
 
@@ -37,7 +37,7 @@ How can you start climbing out of the disappointment? The only way I know is thr
 
 Find something small enough that you can fix it without breaking other things.
 
-No one expected you to fix that; no one even knew it was broken; and no one thought it was that important. When you fixed it, no one really noticed. When the consequences of the fix became obvious, they thought, “She/He can do that? Hmmm....interesting.”
+No one expected you to fix that; no one even knew it was broken; and no one thought it was that important. When you fixed it, no one really noticed. When the consequences of the fix became obvious, they thought, 「She/He can do that? Hmmm....interesting.」
 
 Your fix is your first legitimate reputation defining moment, because while people were told who you were, they didn’t believe it because people don’t believe what they have not seen.
 

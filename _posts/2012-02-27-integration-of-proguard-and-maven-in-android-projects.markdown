@@ -52,19 +52,19 @@ proguard.config=proguard.cfg
 
 *   `mapping.txt`：保存了混淆后的名字和混淆前名字的对应关系。对于每次release的build，都要记得保存这个文件，要不然如果你收到release版本上报出的defect的时候，就等着哭吧。
 *   `seeds.txt`：ProGuard找到的你的程序的entrypoint列表。
-*   `usage.txt`：ProGuard觉得没有用所以移除了的一堆类，域和方法的list。要想学习写作“完美”的ProGuard规则的同学就要经常来这个文件看看自己定下的rule对ProGuard的行为究竟有什么样的影响。如果你有用的类出现在list里面了，说明你削得太猛了，反之亦然。
+*   `usage.txt`：ProGuard觉得没有用所以移除了的一堆类，域和方法的list。要想学习写作「完美」的ProGuard规则的同学就要经常来这个文件看看自己定下的rule对ProGuard的行为究竟有什么样的影响。如果你有用的类出现在list里面了，说明你削得太猛了，反之亦然。
 
 需要注意的是这些文件的输出目录。在使用Ant ProGuard target的时候，输出目录是`bin/proguard/`，但是如果是通过ADT(右键project>Android Tools>Export）的话，输出目录会是`proguard/`。
 
 还有一个常见的困惑就是ProGuard是怎么找到那些需要处理的文件的。一般情况下，ProGuard希望你用`-injars`或者是`-libraryjars`来告诉它。但是对Android开发而言，Ant任务和ADT都会自动的查看你的`libs`，`output`和项目的`classpath`目录。
 
-从执行过程的日志来看，ProGuard对类文件的操作分为三个步骤：shrink，optimize，obfuscate。每个步骤都是可选的，可以通过使用`-dontshrink`、`-dontoptimize`和`-dontobfuscate`来分别关掉。一般来说，不用因为结果“不如人意”就随意的关掉某个步骤。完整的进行三个步骤，然后不断的改变规则，直到达到最佳效果，是使用ProGuard的最佳方式。
+从执行过程的日志来看，ProGuard对类文件的操作分为三个步骤：shrink，optimize，obfuscate。每个步骤都是可选的，可以通过使用`-dontshrink`、`-dontoptimize`和`-dontobfuscate`来分别关掉。一般来说，不用因为结果「不如人意」就随意的关掉某个步骤。完整的进行三个步骤，然后不断的改变规则，直到达到最佳效果，是使用ProGuard的最佳方式。
 
 #### 编写ProGuard规则
 
 ProGuard和很多工具一样，其强大之处在于选项够多。作为Android开发者使用，首先心里要明白，没有一个唯一的最佳配置规则。在此基础上，去掌握一些对Android程序而言通常是适用的规则。然后，就像在文章里面已经反复强调过的一样，以这些规则为起点，反复的调整你的规则，找出一个对自己的程序最适用的规则。
 
-当然，因为选项太多，ProGuard给初学者的感觉难免是千头万绪，无从下手。因此，我们可以从一个例子程序入手来找到对ProGuard的“感觉”。
+当然，因为选项太多，ProGuard给初学者的感觉难免是千头万绪，无从下手。因此，我们可以从一个例子程序入手来找到对ProGuard的「感觉」。
 
 这个例子本身没有任何特别之处，`MyButton`类继承自`Button`但是没有添加新的方法，可以通过它来观察ProGuard如何对继承结构进行压缩。Click的handler除开显示toast之外也没有特别的功能，可以通过它来观察ProGuard对方法名的混淆。`AMPSampleActivity`里面还专门有一个没有被调用的方法，可以通过它来观察ProGuard对这种情况的处理。下面是程序的入口Activity的实现：
 
@@ -79,7 +79,7 @@ ProGuard和很多工具一样，其强大之处在于选项够多。作为Androi
 *   除开XML里面引用的方法名（`myClickHandler`），其他的方法名都要被混淆
 *   完成一些对Android而言通常适用的优化（下面会仔细展开）
 
-ProGuard的规则是“白名单”的，也就是说ProGuard只会对你特别指定的类刀下开恩。这也就是说，对任何程序，我们都至少要写一条规则，来保留程序的入口类。因为是Android程序，我们可以这么写：
+ProGuard的规则是「白名单」的，也就是说ProGuard只会对你特别指定的类刀下开恩。这也就是说，对任何程序，我们都至少要写一条规则，来保留程序的入口类。因为是Android程序，我们可以这么写：
 
 ```java
 -keep public class * extends android.app.Activity
@@ -116,7 +116,7 @@ java.lang.IllegalStateException: Could not find a method
    ➥ view class org.lenciel.android.MyButton
 ```
 
-去查看`usage.txt`你会发现`myClickHandler`又被干掉了。为什么在第一条规则里面我们告诉ProGuard不要动`AMPSampleActivity`里面的任何东西，还是会有这种情况发生？这是使用`-keep`的一个常见的误会。我们用`-keep`告诉ProGuard保留一个类的时候，没有提供任何类的“body”信息的话，ProGuard仅仅会保留这个类的名字。它仍然会对这个类内部的所有东西进行优化和混淆。要保留方法，我们需要这么写：
+去查看`usage.txt`你会发现`myClickHandler`又被干掉了。为什么在第一条规则里面我们告诉ProGuard不要动`AMPSampleActivity`里面的任何东西，还是会有这种情况发生？这是使用`-keep`的一个常见的误会。我们用`-keep`告诉ProGuard保留一个类的时候，没有提供任何类的「body」信息的话，ProGuard仅仅会保留这个类的名字。它仍然会对这个类内部的所有东西进行优化和混淆。要保留方法，我们需要这么写：
 
 ```java
 -keep public class * extends android.app.Activity {
@@ -209,9 +209,9 @@ java.lang.IllegalStateException: Could not find a method
 -optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
 ```
 
-Google并没有提供他们这么配置的依据。我们可以试着先禁用这个选项，看看程序运行起来会不会有问题。如果遇到了问题再试着慢慢的减弱优化，来“探底”。
+Google并没有提供他们这么配置的依据。我们可以试着先禁用这个选项，看看程序运行起来会不会有问题。如果遇到了问题再试着慢慢的减弱优化，来「探底」。
 
-同时ProGuard的优化是可以“递归”的，也就是优化完的结果可以作为下次优化的输入继续优化。你可以指定它反复进行多少次。但ProGuard如果发现已经没有什么可以优化，会自动停下来，不一定跑到你指定的次数。一般设置成5就够了：
+同时ProGuard的优化是可以「递归」的，也就是优化完的结果可以作为下次优化的输入继续优化。你可以指定它反复进行多少次。但ProGuard如果发现已经没有什么可以优化，会自动停下来，不一定跑到你指定的次数。一般设置成5就够了：
 
 ```java
 -optimizationpasses 5

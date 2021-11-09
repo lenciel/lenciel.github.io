@@ -13,7 +13,7 @@ categories:
 
 本次吐槽献给Scrum Master们。毕竟了解了软件社区其实对Agile和Scrum的情绪已经有些像走到结尾的爱情故事，也许可以让大家在工作中不要把自己和大家SM得太惨。加上我们进新公司之后也在推行敏捷流程，不如整理一下本座对这套东西好鬼复杂的情绪...
 
-Agile，中文翻译为“敏捷”，是在90年代逐渐引起广泛关注的一系列新型软件开发方法的总称。其中“敏捷”的语义主要是指应对快速变化的需求。
+Agile，中文翻译为「敏捷」，是在90年代逐渐引起广泛关注的一系列新型软件开发方法的总称。其中「敏捷」的语义主要是指应对快速变化的需求。
 
 敏捷思想发展到顶峰的标志是[Agile Manifesto](http://www.agilemanifesto.org/history.html)的正式定稿。当时大概谁也没有想到，2001年二月这群敏捷方法发起者和实践者在美国犹他州雪鸟滑雪圣地的一次聚会后的产物，能在软件工程和方法论范畴独领风骚这么多年。
 
@@ -41,7 +41,7 @@ Agile，中文翻译为“敏捷”，是在90年代逐渐引起广泛关注的�
 
 ![Vhost threshold](/downloads/images/2015_03/gitlab_diff.png --alt Don't touch me)
 
-所以我会经常在公司里面鼓动大家把输出都落到代码和文档里面。经过一段时间，就会慢慢看到有人在群里面问“那个什么什么是怎么回事”的时候，后面的回复是“你去看看confluence上xxx页面”或者是“这个是jira的xxx问题单讨论的”。
+所以我会经常在公司里面鼓动大家把输出都落到代码和文档里面。经过一段时间，就会慢慢看到有人在群里面问「那个什么什么是怎么回事」的时候，后面的回复是「你去看看confluence上xxx页面」或者是「这个是jira的xxx问题单讨论的」。
 
 ![Vhost threshold](/downloads/images/2015_03/written_words_is_better.png --alt Don't touch me)
 
@@ -63,19 +63,19 @@ Agile，中文翻译为“敏捷”，是在90年代逐渐引起广泛关注的�
 
 ## 流程、工具和个体究竟谁更重要
 
-前面说了技术的革新使“面对面沟通”的重要性变得过时和有害。那么下面这个Agile核心思想呢：
+前面说了技术的革新使「面对面沟通」的重要性变得过时和有害。那么下面这个Agile核心思想呢：
 
 <blockquote>
 <p>个体和个体间的交流比流程和工具更重要</p>
 </blockquote>
 
-我自己对这种“人定胜天”的论调天生有抗拒感。就像当年主席发明这句话是因为大家日子过得足够糟一样，只有你为团队提供的工具足够糟才需要这么去忽悠大家。
+我自己对这种「人定胜天」的论调天生有抗拒感。就像当年主席发明这句话是因为大家日子过得足够糟一样，只有你为团队提供的工具足够糟才需要这么去忽悠大家。
 
 软件开发是一项和工具高度相关的工作。除去你的生产活动的效率很大程度上取决于你对工具的熟悉程度以外，你还需要使用工具参与到流程中：和其他人交流、配环境、提单、解bug、记录工作时间等等，都离不开工具。
 
 无论你的团队好好工作的意愿多么强烈，如果你还在用sametime而不是slack，还在用破破烂烂自己开发的测试用例管理工具而不是rally，你的开发流程就是不如别人顺畅。
 
-因为使用的工具可以“塑造”你的团队沟通的方式（反过来你团队沟通的方式也可以塑造[他们使用工具的方式](http://haacked.com/archive/2013/05/13/applying-conways-law.aspx/)）。
+因为使用的工具可以「塑造」你的团队沟通的方式（反过来你团队沟通的方式也可以塑造[他们使用工具的方式](http://haacked.com/archive/2013/05/13/applying-conways-law.aspx/)）。
 
 这也就是[Marshall McLuhan](http://en.wikipedia.org/wiki/Marshall_McLuhan)的著名论断`The medium is the message` （[Wired](http://www.wired.com)杂志把他视为办刊的精神导师，我觉得搞互联网的人都该看看他的书）:
 
@@ -89,16 +89,16 @@ Agile，中文翻译为“敏捷”，是在90年代逐渐引起广泛关注的�
 
 首先，严格的区分市场销售人员和开发人员本身就是个糟糕的主意。
 
-其次，“每天都在一起”也是奇怪的号召，而在Scrum流程中，这种奇怪的号召被具体化，成了每日站会。我经常在参与站会的时候听到小兄弟们说的其实是“我昨天说我要三天做完的事情，真的还要两天”。作为职业玩家，职业程度很多时候就体现在不需要每天都告诉其他人自己要怎么做。可以想象一下830每天开个站会，然后梅西说，我今天可能需要在训练里面给伊涅斯塔传5个过顶球，你做好胸部停球转身抽射的准备……
+其次，「每天都在一起」也是奇怪的号召，而在Scrum流程中，这种奇怪的号召被具体化，成了每日站会。我经常在参与站会的时候听到小兄弟们说的其实是「我昨天说我要三天做完的事情，真的还要两天」。作为职业玩家，职业程度很多时候就体现在不需要每天都告诉其他人自己要怎么做。可以想象一下830每天开个站会，然后梅西说，我今天可能需要在训练里面给伊涅斯塔传5个过顶球，你做好胸部停球转身抽射的准备……
 
 ## 敏捷文化
 
-我本身是挺讨厌“方法论”者和他们发明的术语的。当然，可能也不是我一个人讨厌。参与了Agile Manifesto制定的Dave Thomas在[Agile Is Dead](http://pragdave.me/blog/2014/03/04/time-to-kill-agile/)里面说过：
+我本身是挺讨厌「方法论」者和他们发明的术语的。当然，可能也不是我一个人讨厌。参与了Agile Manifesto制定的Dave Thomas在[Agile Is Dead](http://pragdave.me/blog/2014/03/04/time-to-kill-agile/)里面说过：
 
 <blockquote>
-<p>I haven’t participated in any Agile events, I haven’t affiliated with the Agile Alliance, and I haven’t done any “agile” consultancy. I didn’t attend the 10th anniversary celebrations.</p>
+<p>I haven’t participated in any Agile events, I haven’t affiliated with the Agile Alliance, and I haven’t done any 「agile」 consultancy. I didn’t attend the 10th anniversary celebrations.</p>
 <p>Why? Because I didn’t think that any of these things were in the spirit of the manifesto we produced...</p>
-<p>The word “agile” has been subverted to the point where it is effectively meaningless, and what passes for an agile community seems to be largely an arena for consultants and vendors to hawk services and products.</p>
+<p>The word 「agile」 has been subverted to the point where it is effectively meaningless, and what passes for an agile community seems to be largely an arena for consultants and vendors to hawk services and products.</p>
 </blockquote>
 
 在我看来，就好比真正明白某个知识的人总是能用大白话把你讲明白一样，在敏捷开发流程里面被某些公司鼓吹的那些活动和术语在我看来都是些没有价值的东西（ThoughtWorks，说你呢！）。
@@ -116,7 +116,7 @@ Agile，中文翻译为“敏捷”，是在90年代逐渐引起广泛关注的�
 然后他还说：
 
 <blockquote>
-<p>In Scrum, it’s also common to have a “sprint commitment” where the team “commits” to a body of work to accomplish in that time frame. The commitment is meant to be a rough estimate for the sake of planning purposes, and if a team doesn’t get that work done in that time, it tries to learn from the estimate and be more realistic in the next sprint. Developers are not supposed to be chastized [sic] for not meeting the sprint commitment — it’s just an extra piece of information to improve upon and to use for future planning. Obviously naming is hugely important here too, because in every other use of the word, a “commitment” is a pledge or a binding agreement, and this misnomer <em>really</em> influences the way people (mis)understand the concept of sprints. Let’s face it: if people see sprints as just more frequent deadlines (including those implementing them), the fault can’t be entirely theirs.</p>
+<p>In Scrum, it’s also common to have a 「sprint commitment」 where the team 「commits」 to a body of work to accomplish in that time frame. The commitment is meant to be a rough estimate for the sake of planning purposes, and if a team doesn’t get that work done in that time, it tries to learn from the estimate and be more realistic in the next sprint. Developers are not supposed to be chastized [sic] for not meeting the sprint commitment — it’s just an extra piece of information to improve upon and to use for future planning. Obviously naming is hugely important here too, because in every other use of the word, a 「commitment」 is a pledge or a binding agreement, and this misnomer <em>really</em> influences the way people (mis)understand the concept of sprints. Let’s face it: if people see sprints as just more frequent deadlines (including those implementing them), the fault can’t be entirely theirs.</p>
 </blockquote>
 
 的确，问工程师要个estimation然后把它当成commitment，这不是耍流氓么。不仅仅是Scrum，大多数的组织里面推行一年半载的敏捷流程，大多数人还是对它究竟每个阶段在干什么迷迷糊糊。即便是靠培训敏捷流程混饭的公司也[承认](http://martinfowler.com/articles/agileFluency.html)要把他们鼓吹的流程落地是非常难的：

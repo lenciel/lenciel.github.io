@@ -12,7 +12,7 @@ categories:
 
 ![Vhost threshold](/downloads/images/2006_02/brokeback_mountain_1.jpg --alt Don't touch me)
 
-其实在夺魁法事后不久，本座就已经有机会观摩《断背山》了（好吧，你们说叫《断臂山》）。但是由于下定决心要先看小说，拖着拖着就回了学校，却一直没有足够长度的安静时间来看这部“获奖影片”。昨天和阿枯在网上整蛊“每个人心中都有一座断背山”的时候，才下定决心要在周末拿下这块心病。
+其实在夺魁法事后不久，本座就已经有机会观摩《断背山》了（好吧，你们说叫《断臂山》）。但是由于下定决心要先看小说，拖着拖着就回了学校，却一直没有足够长度的安静时间来看这部「获奖影片」。昨天和阿枯在网上整蛊「每个人心中都有一座断背山」的时候，才下定决心要在周末拿下这块心病。
 
 搜索到原著之后曾经让本座大惊：原来小说很短。半天不到读完后，感觉什么都没有看到。没有冲突的情节，粗俗的对话和细描的景色，比《读者》上任何一篇煽情故事都来得平淡。因为害怕是自己理解能力低下的原因，又赶紧找来中译本重看，结果发现这种平淡的故事，经过翻译之后就更加平淡，除了原著中毫不避讳的性描写来得更加直白易懂。这难免让本座疑心骤起：这也能拍成二个多小时的电影？
 
@@ -26,7 +26,7 @@ categories:
 
  <img height="145" alt="" src="{{ site.static_base }}/downloads/images/2006_02/brokeback_mountain_4.jpg" width="106" border="0" twffan="done" />        <img height="146" alt="" src="{{ site.static_base }}/downloads/images/2006_02/brokeback_mountain_5.jpg" width="107" border="0" twffan="done" />
 
-不得不提的是Penelope Cruz之后最像吉利（谁是吉利？欢迎去电去函咨询康帅）的女演员Anne Hathaway，在《公主日记》里面给人的印象就是出水芙蓉般的纯洁可人。而本片她出场不过五分钟，一对酥胸就喷涌而出，不说戏中她要问Jack “are we too fast”，即便对戏外的本座，也实在是来得太fast了。故事进行中，Lureen Newsome这个外表冷艳内心无助，对Jack深爱并纵容，痛苦都自己扛的，被她演得非常透彻入骨。
+不得不提的是Penelope Cruz之后最像吉利（谁是吉利？欢迎去电去函咨询康帅）的女演员Anne Hathaway，在《公主日记》里面给人的印象就是出水芙蓉般的纯洁可人。而本片她出场不过五分钟，一对酥胸就喷涌而出，不说戏中她要问Jack 「are we too fast」，即便对戏外的本座，也实在是来得太fast了。故事进行中，Lureen Newsome这个外表冷艳内心无助，对Jack深爱并纵容，痛苦都自己扛的，被她演得非常透彻入骨。
 
 <img height="160" alt="" src="{{ site.static_base }}/downloads/images/2006_02/brokeback_mountain_6.jpg" width="104" border="0" twffan="done" />          <img height="156" alt="" src="{{ site.static_base }}/downloads/images/2006_02/brokeback_mountain_7.jpg" width="104" border="0" twffan="done" />
 
@@ -43,7 +43,7 @@ categories:
 
 而电影中也没有绚丽的特技和奇特的叙事结构，在表面的平庸之下，有着动人的细腻。李安导演一贯的内敛含蓄风格之外，这部片整齐入心的音乐和美轮美奂的画面这些形式的电影语言之下，各个部分的内容又处处相互照应，使得电影也有了一种原著的深意。比如Jack初次见到Ennis，假装刮胡子其实从倒车镜里观察Ennis。而两人因为工作结束不得不分别的时候，Jack在倒车镜中看着Ennis消失在视线。再比如Ennis几次离开Jack后把心中的郁闷发泄为拳上的暴力（先后打过Jack、墙壁、不认识的司机）。
 
-影片中Jack和Ennis每次相约出游的一幕幕情景，实在是本座的最爱。即便是对着山峦溪流的空镜头，也能让人感觉到情意的流动。那种相伴山水隔绝尘世，两心相惜聚散依依的感觉，实在是本座再熟悉不过，几乎就要击掌朗诵：“逝者如斯，不舍昼夜。”两个人最后一次相聚，Jack那一段台词和小说里面的一字不差：
+影片中Jack和Ennis每次相约出游的一幕幕情景，实在是本座的最爱。即便是对着山峦溪流的空镜头，也能让人感觉到情意的流动。那种相伴山水隔绝尘世，两心相惜聚散依依的感觉，实在是本座再熟悉不过，几乎就要击掌朗诵：「逝者如斯，不舍昼夜。」两个人最后一次相聚，Jack那一段台词和小说里面的一字不差：
 
 {% blockquote %}
 Tell you what, we could a had a good life together, a fuckin real good life. You wouldn't do it, Ennis, so what we got now is Brokeback Mountain. Everything built on that. It’s all we got, boy, fuckin all, so I hope you know that if you don't never know the rest. Count the damn few times we been together in twenty years. Measure the fuckin short leash you keep me on, then ask me about Mexico and then tell me you’ll kill me for needin it and not hardly never getting it. You got no fuckin idea how bad it gets. I’m not you. I can’t make it on a couple a high-altitude fucks once or twice a year. You’re too much for me, Ennis, you son of a whoreson bitch. I wish I knew how to quit you.

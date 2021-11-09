@@ -3,7 +3,7 @@ layout: post
 title: "CQRS"
 date: 2017-02-18 02:58:52 +0800
 comments: true
-categories: 
+categories:
 
 - CQRS
 - DDD
@@ -14,9 +14,9 @@ categories:
 
 ## 什么是CQRS
 
-CQRS是Command Query Responsibility Segregation的缩写，翻译过来是“命令查询职责分离”。
+CQRS是Command Query Responsibility Segregation的缩写，翻译过来是「命令查询职责分离」。
 
-它的概念源于Betrand Meyer（Eiffel语言之父，开-闭原则OCP提出者）在《[Object-Oriented Software Construction](https://www.amazon.com/Object-Oriented-Software-Construction-Book-CD-ROM/dp/0136291554)》这本书中提到的“命令查询分离 (Command Query Separation,CQS) ”：把改变对象状态的命令（Command），与获取对象状态的查询（Query）拆分。
+它的概念源于Betrand Meyer（Eiffel语言之父，开-闭原则OCP提出者）在《[Object-Oriented Software Construction](https://www.amazon.com/Object-Oriented-Software-Construction-Book-CD-ROM/dp/0136291554)》这本书中提到的「命令查询分离 (Command Query Separation,CQS) 」：把改变对象状态的命令（Command），与获取对象状态的查询（Query）拆分。
 
 [Greg Young](http://codebetter.com/gregyoung/)在2010年自己的[一篇博客](http://codebetter.com/gregyoung/2010/02/16/cqrs-task-based-uis-event-sourcing-agh/)中对CQS进行了改进和简化，提出了CQRS：最核心的改动是，不仅仅对方法进行拆分，而是从数据模型上进行隔离。
 
@@ -53,11 +53,11 @@ CQRS是Command Query Responsibility Segregation的缩写，翻译过来是“命
 
 ## Reference
 
-- [Introduction to CQRS](http://www.codeproject.com/Articles/555855/Introduction-to-CQRS) 
-- [CQRS](http://martinfowler.com/bliki/CQRS.html) 
-- [CQRS Journey](http://msdn.microsoft.com/en-us/library/jj554200.aspx) 
-- [Command and Query Responsibility Segregation (CQRS) Pattern](http://msdn.microsoft.com/en-us/library/dn568103.aspx) 
-- [Event Sourcing Pattern](http://msdn.microsoft.com/en-us/library/dn589792.aspx) 
+- [Introduction to CQRS](http://www.codeproject.com/Articles/555855/Introduction-to-CQRS)
+- [CQRS](http://martinfowler.com/bliki/CQRS.html)
+- [CQRS Journey](http://msdn.microsoft.com/en-us/library/jj554200.aspx)
+- [Command and Query Responsibility Segregation (CQRS) Pattern](http://msdn.microsoft.com/en-us/library/dn568103.aspx)
+- [Event Sourcing Pattern](http://msdn.microsoft.com/en-us/library/dn589792.aspx)
 - [Eric Evans on Domain-Driven Design](http://www.se-radio.net/2015/05/se-radio-episode-226-eric-evans-on-domain-driven-design-at-10-years/)
 - [The Art of Command Query Separation](https://hackernoon.com/oo-tricks-the-art-of-command-query-separation-9343e50a3de0)
 

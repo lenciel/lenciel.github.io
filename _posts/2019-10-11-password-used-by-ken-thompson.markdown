@@ -15,7 +15,7 @@ categories:
 
 > The DES algorithm itself has a few quirks which make the use of the crypt() interface a very poor choice for anything other than password authentication. If you are planning on using the crypt() interface for a cryptography project, don't do it: get a good book on encryption and one of the widely available DES libraries.
 
-我猜设计者这么实现是有它的“历史原因”的：那个年代大众能够获取的计算能力还非常弱搞不了什么暴力破解，以及OS的安全机制是分层的（比如这个文件本来要root才能打开看）。现在 `crypt` 早就是 obsolete 的了，大家至少都用基于 AES 的 `mcrypt` 或者 `ccrypt` 。
+我猜设计者这么实现是有它的「历史原因」的：那个年代大众能够获取的计算能力还非常弱搞不了什么暴力破解，以及OS的安全机制是分层的（比如这个文件本来要root才能打开看）。现在 `crypt` 早就是 obsolete 的了，大家至少都用基于 AES 的 `mcrypt` 或者 `ccrypt` 。
 
 总之，现在大家的机器这么猛，只需要用 [hashcat](https://hashcat.net/wiki/) 这样的工具，就能很容易看到文件里面大多数人的明文密码了：所以你能想到Brian的密码是 `/.,/.,，` 么。
 

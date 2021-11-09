@@ -10,7 +10,7 @@ categories:
 -  paramiko
 ---
 
-最近在单位写一个自动build的小工具。因为clearcase的`setview`命令实际上是激活一个新的`shell`，所以用简单的“串通”`shell`的脚本很难做到。
+最近在单位写一个自动build的小工具。因为clearcase的`setview`命令实际上是激活一个新的`shell`，所以用简单的「串通」`shell`的脚本很难做到。
 
 因为在邮件组里面看到有同样问题的Matt说用`paramiko`解决了问题，就试了试，过程还颇有点艰辛。
 

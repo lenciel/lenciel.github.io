@@ -91,12 +91,12 @@ categories:
 
 #### **一马新项目**
 
-写软件谋生的好处是不言而喻的，坏处是如果你老是只为了工资奖金写软件，慢慢的你就会感觉到“无趣”。无趣的根源很多，最主要的无非“人家想用xyz，但是只能用zyx”。其实有<a href="https://github.com/" target="_blank">Github</a>和<a href="https://bitbucket.org/" target="_blank">Bitbucket</a>之后，这些都是借口啊，亲。项目内容暂时保密。
+写软件谋生的好处是不言而喻的，坏处是如果你老是只为了工资奖金写软件，慢慢的你就会感觉到「无趣」。无趣的根源很多，最主要的无非「人家想用xyz，但是只能用zyx」。其实有<a href="https://github.com/" target="_blank">Github</a>和<a href="https://bitbucket.org/" target="_blank">Bitbucket</a>之后，这些都是借口啊，亲。项目内容暂时保密。
 
 
 #### **一把新文艺**
 
-还在读研究生的时候(也是J2EE最红火的时候？)，本座发现一件“奇闻“：<a href="http://www.springsource.org/" target="_blank">Spring</a>的作者Rod Johnson说之所以自己能写出拨乱反正的《<a href="http://book.douban.com/subject/1426848/" target="_blank">Expert One-on-one</a>》和<a href="http://www.springsource.org/" target="_blank">Spring</a>，和他学习过的音乐知识是分不开的。Google了一下，原来他除开有计算机学位还是个音乐学博士。
+还在读研究生的时候(也是J2EE最红火的时候？)，本座发现一件「奇闻「：<a href="http://www.springsource.org/" target="_blank">Spring</a>的作者Rod Johnson说之所以自己能写出拨乱反正的《<a href="http://book.douban.com/subject/1426848/" target="_blank">Expert One-on-one</a>》和<a href="http://www.springsource.org/" target="_blank">Spring</a>，和他学习过的音乐知识是分不开的。Google了一下，原来他除开有计算机学位还是个音乐学博士。
 
 之后稍微留心就发现，这是一个普遍的现象。比如那个写微积分教材赚的钱就可以建2400w刀豪宅的音乐家<a href="http://www.thestar.com/news/article/933017--the-house-that-math-built" target="_blank">James Stewart</a>，再比如2011年最被关注的去世者<a href="http://en.wikipedia.org/wiki/Steve_Jobs" target="_blank">Steve Jobs</a>。有点儿文艺细胞，能从人性的角度思考，做出的产品往往比纯粹的工程产品要打动人心。
 

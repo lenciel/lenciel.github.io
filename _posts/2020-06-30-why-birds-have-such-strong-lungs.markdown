@@ -112,7 +112,7 @@ categories:
 ### Reference
 
 - Beerling, D. The Emerald Planet: How Plants Changed Earth’s History Oxford University Press (2007)
-- Krulwich, R. “The Fantastically Strange Origin of Most Coal on Earth,” National Geographic (2016)
+- Krulwich, R. 「The Fantastically Strange Origin of Most Coal on Earth,」 National Geographic (2016)
 - Lane, N. Oxygen: The Molecule That Made the World Oxford University Press (2003)
 - Ward, P.D., Out of Thin Air: Dinosaurs, Birds, and Earth’s Ancient Atmosphere Joseph Henry Press, Washington, D.C. (2006)
 - Ward, P.D. & Kirschvink, J. A New History of Life: The Radical New Discoveries About the Origins and Evolution of Life on Earth Bloomsbury Press, London, United Kingdom (2015)

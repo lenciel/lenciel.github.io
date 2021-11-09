@@ -3,21 +3,21 @@ layout: post
 title: "What I know in 2018, 😳"
 date: 2018-12-28 11:39:21 +0800
 comments: true
-categories: 
+categories:
 ---
 
 你我都知道的旷世奇闻，仍然不在此列。
 
-- **得到**上一个名为“如何使你的声音更具吸引力”的中文播客拥有218,000名付费用户。整个2017年中国付费订阅播客的市场价值为73亿美元，而美国仅为3.14亿美元。[ [Jennifer Bake](https://www.marketplace.org/2018/09/13/world/fomo-china-7-billion-industry) ]
-- 在杭州中恒电气，工人戴着的帽子里有所谓的脑波监控系统。这些数据用于“调整生产节奏和重新设计工作流程”。[ [EET](https://www.eet-china.com/news/201805031450.html) ]
+- **得到**上一个名为「如何使你的声音更具吸引力」的中文播客拥有218,000名付费用户。整个2017年中国付费订阅播客的市场价值为73亿美元，而美国仅为3.14亿美元。[ [Jennifer Bake](https://www.marketplace.org/2018/09/13/world/fomo-china-7-billion-industry) ]
+- 在杭州中恒电气，工人戴着的帽子里有所谓的脑波监控系统。这些数据用于「调整生产节奏和重新设计工作流程」。[ [EET](https://www.eet-china.com/news/201805031450.html) ]
 - 研究表明，中国北方的星巴克里人们一般会把身旁的椅子移开，而在南方互不相识的人会很自在的坐在桌子周围。有理由相信，这归因于祖先的食物生产方式：在北方，主要作物是小麦，由个体农民种植。在南方，农民必须合作才能种植水稻。因此，他们相信，南方人不那么个人主义。[ [Mark Abrahams](https://www.improbable.com/2018/04/26/moving-chairs-in-starbucks-rice-wheat-cultural-differences-in-china/) ]
-- Unicode里包括了一组“幽灵字符”：妛挧暃槞蟐袮閠駲墸壥彁。研究者发现，是当年提交的材料中包括的一张纸质的1978年日本政府标准化字母表发生了折叠和起皱，被扫描时引起了错误。但现在这些字符却永远被锁定在标准中。[ [Paul Mckyan](https://www.dampfkraft.com/by-id/a824aa10/#A-Spectre-is-Haunting-Unicode) ]
+- Unicode里包括了一组「幽灵字符」：妛挧暃槞蟐袮閠駲墸壥彁。研究者发现，是当年提交的材料中包括的一张纸质的1978年日本政府标准化字母表发生了折叠和起皱，被扫描时引起了错误。但现在这些字符却永远被锁定在标准中。[ [Paul Mckyan](https://www.dampfkraft.com/by-id/a824aa10/#A-Spectre-is-Haunting-Unicode) ]
 - Rera是一家津巴布韦哈拉雷的线上家禽养殖场。用户在网上订制所需家禽，农民完成饲养后直接送到用户手里，过程放心并且能节省40％的零售成本。[ [Techmoran](https://techmoran.com/online-poultry-farming-startup-rera-farm-wins-seedstars-harare-comptetition/) ]
 - 差不多20年前，日本火车站开始在站台上安装蓝色LED面板作为自杀预防措施，因为研究显示，蓝光会改善情绪。一项为期十年的跟踪发现，在安装了这些蓝色面板的车站，自杀和自杀未遂的人数下降了84％。[ [Allan Richarz](https://www.citylab.com/transportation/2018/05/the-amazing-psychology-of-japanese-train-stations/560822/) ]
 - Tolaram是一家尼日利亚公司，进口和销售由数万家零售商销售的标价18美分的面条。从1988年创立，经过12年时间，直到2000年才盈利。现在这家公司每年卖出45亿包面条。[ [Doctor Aumblang](https://medium.com/@drola/how-to-make-1bn-from-a-single-product-in-nigeria-fbba8a705c9) ]
-- 1995年以后出生的大学生中有54％选择“网红”作为他们最想要的职业。[ [中关村在线](http://news.zol.com.cn/595/5952531.html) ]
+- 1995年以后出生的大学生中有54％选择「网红」作为他们最想要的职业。[ [中关村在线](http://news.zol.com.cn/595/5952531.html) ]
 - 经历过地震的男人愿意冒更大的风险，进行各种赌博。女人则没有这个现象。[ [Chie Hanaoka](https://www.aeaweb.org/articles?id=10.1257/app.20170048)]
-- 共青团浙江省委成立了“婚恋交友俱乐部”，帮助年轻人找到爱情。已有13,000名年轻人报名参加。[ [戴望云](http://www.sixthtone.com/news/1002782/unlucky-in-love-the-party-is-here-to-help) ]
+- 共青团浙江省委成立了「婚恋交友俱乐部」，帮助年轻人找到爱情。已有13,000名年轻人报名参加。[ [戴望云](http://www.sixthtone.com/news/1002782/unlucky-in-love-the-party-is-here-to-help) ]
 - AgriProtein是一家英国公司，在南非经营着两个苍蝇农场。每个农场有84亿只苍蝇，每天消耗276吨食物垃圾，产蛋3.4亿只。这些蛋（蛆）脱水后被用于生产动物饲料。该公司价值2亿美元，他们计划到2024年在全球开设100家工厂。[ [Andrea Lo](https://edition.cnn.com/2018/09/27/business/agriprotein-fly-farming/index.html) ]
 - 中国人口红利在逐渐消失，而与此同时，在乌干达，有一半人口未满15岁。[ [Tom Jackson](http://disrupt-africa.com/2018/04/why-my-startup-scene-is-better-than-yours-uganda/) ]
 - 目前，卢旺达的首都以外地区35％的血液供应由无人机运输完成。[ [Techmoran](https://techmoran.com/zipline-is-expanding-across-africa-and-is-doubling-down-on-nigeria/) ]
@@ -27,7 +27,7 @@ categories:
 - LOT是一项每年1200美元的订制服装搭配服务，孵化器在深圳。每个月用户收到一个充满科技配件的包裹，里面有风格简单的衣物，手环，唱片，甚至头发漂白剂和纹身枪。[ [Kyle Chayka](https://www.ssense.com/en-us/editorial/fashion/engineering-the-end-of-fashion) ]
 - 20世纪40年代和70年代之间的美国核试验杀死的美国人可能和广岛、长崎造成的死亡人数规模相当。[ [Tim Fernholz](https://qz.com/1163140/us-nuclear-tests-killed-american-civilians-on-a-scale-comparable-to-hiroshima-and-nagasaki/) ]
 - 马达加斯加一种香料豆荚被炒到500美元/公斤，与白银大致相同。产地的农民迅速成为万亿富翁，距离这个地方最近的银行因为过于拥挤发生了踩踏。[ [Annah Zhu](https://www.sapiens.org/culture/madagascar-vanilla-boom/) ]
-- 4月，国立台湾大学的一个团队创建了一个自动Instagram评论生成器，可以查看图像并留下非常人性化的回复。比如机器人在一个姑娘的自拍下回复了评论：“我很喜欢你的鞋！HYPED！“[ [Kuan-Ting Chen](https://dl.acm.org/citation.cfm?doid=3184558.3186354) ]
+- 4月，国立台湾大学的一个团队创建了一个自动Instagram评论生成器，可以查看图像并留下非常人性化的回复。比如机器人在一个姑娘的自拍下回复了评论：「我很喜欢你的鞋！HYPED！「[ [Kuan-Ting Chen](https://dl.acm.org/citation.cfm?doid=3184558.3186354) ]
 - 当人类试图欺骗机器学习系统时，只需要在图片上加一些肉眼几乎不能察觉的变动，现有的机器学习系统就会把一只鸟认成一辆自行车。[ [Tom Brown](https://twitter.com/nottombrown/status/1040286926857629696) ]
 - Times Newer Roman字体和Times New Roman相比没有肉眼可以识别的区别，但实际上每个字符的宽度都要宽一些。一个15页的12pt文档如果使用Times Newer Roman，会包含5800个单词。而相同页数的Times New Roman字体文档需要多10%的字数。[ [Tina Roth Eisenberg](https://www.swiss-miss.com/2018/09/times-newer-roman.html) ]
 - 国外也有类似咪蒙的媒体。CB Insights把他们的EDM邮件标题改得更短更消极充满潮流品牌字眼之后，年收入增长了62.5万美金。[ [Anand Sanwal](https://www.cbinsights.com/research/team-blog/newsletter-headlines/) ]
@@ -35,9 +35,9 @@ categories:
 - 新加坡社会治安情况极好，很多商店甚至不上锁，在2016年创造了连续135天没有任何犯罪行为的纪录。[ [Uptin Saiidi](https://www.cnbc.com/2018/01/16/singapores-crime-rate-is-so-low-that-many-shops-dont-even-lock-up.html) ]
 - 在Netflix上，已经可以根据用户画像对不同作品显示不同的封面。比如同样是《低俗小说》电影，Uma Thurman粉丝会看到封面是Uma，但John Travolta粉丝将会看到John。[ [Ashok Chandrashekar](https://medium.com/netflix-techblog/artwork-personalization-c589f074ad76)]（这也带来了[很多问题](https://twitter.com/slb79/status/1052776984231718912)）。
 - 安慰剂价格越贵，效果越好。[ [Derek Lowe](http://blogs.sciencemag.org/pipeline/archives/2015/01/29/expensive_placebos_work_better) ]
-- 自GDPR于2018年5月推出以来，“今日美国”为欧洲用户提供了一个简化的网站。它包含相同的新闻，布局更简单，没有广告或用户跟踪。加载需要320毫秒，而美国站点需要20秒。[ [John Bergru](https://daringfireball.net/linked/2018/05/27/usa-today-gdpr) ]
+- 自GDPR于2018年5月推出以来，「今日美国」为欧洲用户提供了一个简化的网站。它包含相同的新闻，布局更简单，没有广告或用户跟踪。加载需要320毫秒，而美国站点需要20秒。[ [John Bergru](https://daringfireball.net/linked/2018/05/27/usa-today-gdpr) ]
 - Kojo Yakei是一个日语里的新词，用来指夜间去工厂参观。目前在日本这成为一种新的旅行方式，人们乘船、火车或者大巴，在夜间欣赏灯火通明的锅炉车间等工业建筑。[ [Mike](http://www.unmissablejapan.com/industry/kojo-yakei) ]
-- 在突尼斯，任何想要创办创业公司的人都可以向他们的公司申请一年的“创业假”。然后政府根据他们以前的收入向创业团队支付工资。[ [Daniel Mpala](http://ventureburn.com/2018/05/tunisia-startup-act-20-measures/) ]
+- 在突尼斯，任何想要创办创业公司的人都可以向他们的公司申请一年的「创业假」。然后政府根据他们以前的收入向创业团队支付工资。[ [Daniel Mpala](http://ventureburn.com/2018/05/tunisia-startup-act-20-measures/) ]
 - 2001年，泰国政府成立了Global Thai Restaurant Company Ltd这家国企，计划在全球建立至少3,000家泰国餐馆。此后，全球各地泰国餐厅迅速增多。[ [Myles Karp](https://munchies.vice.com/en_us/article/paxadz/the-surprising-reason-that-there-are-so-many-thai-restaurants-in-america) ]
 - 城市里的公共设施如何进行维护是一个难以解决的问题。在纽约市，大约有1000个人行横道按钮。在2018年，只有100个可用，而在2004年统计的时候，还有750个可用。[ [Jacopo Prisco](https://edition.cnn.com/style/article/placebo-buttons-design/index.html) ]
 

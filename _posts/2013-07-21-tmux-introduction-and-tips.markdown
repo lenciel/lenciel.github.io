@@ -37,7 +37,7 @@ $ tmux -new -s basic
 使用`tmux`一大好处就是我们可以启动`terminal`，运行一个任务在后台，然后`detach`这个`session`。如果在一般的`session`里面工作，一旦我们关闭了窗口，跑在里面的所有程序都会被退出。
 但是如果是使用了`detach`，我们可以再`attach`回去。下面演示一个例子。
 
-在创建的具名`session` “basic”里面运行`top`，然后使用`Ctrl-b + d`来`detach`这个`session`。
+在创建的具名`session` 「basic」里面运行`top`，然后使用`Ctrl-b + d`来`detach`这个`session`。
 
 首先来学习一下`Ctrl+b`这样的`Command Prefix`。因为`tmux`是一个terminal管家，我们需要有一个办法告诉`tmux`我们敲击的是需要`tmux`处理的命令还是传给terminal的。如果定义了`Ctrl-b`为命令前缀，就是说我们一定要先敲这个前缀，然后执行一个命令，比如`d`，表示我们要`detach`。要记住前缀输入之后要松开手，不要在不松手的情况下发命令给`tmux`。
 

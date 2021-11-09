@@ -43,7 +43,7 @@ Javascript毫无疑问早已成为了前端开发人员不可或缺的工具。�
 
 **TL;DR**: _服务器端渲染与SEO无关，它主要的考虑是性能：需要考虑的包括不在服务器渲染的话，请求脚本、页面样式、页面资源和API请求造成的额外的开销，以及考虑在HTTP2.0里加入的`PUSH of resources`_.
 
-首先需要指出，在业界有一种错误的二分法："server-rendered apps" 和 "single-page apps"的对立。如果我们的目标是用户体验和性能的最优化，那么选择其中任何一个而抛弃另一个都是错误的决定。原因其实很明显：整个互联网用于传输页面的介质，有一个理论上可计算的速度局限。关于这点，Stuart Cheshire有个著名的文献 (或者说是吐槽？)，[“It’s the latency, stupid”][14] :
+首先需要指出，在业界有一种错误的二分法："server-rendered apps" 和 "single-page apps"的对立。如果我们的目标是用户体验和性能的最优化，那么选择其中任何一个而抛弃另一个都是错误的决定。原因其实很明显：整个互联网用于传输页面的介质，有一个理论上可计算的速度局限。关于这点，Stuart Cheshire有个著名的文献 (或者说是吐槽？)，[「It’s the latency, stupid」][14] :
 
    [14]: http://rescomp.stanford.edu/~cheshire/rants/Latency.html
 
@@ -72,7 +72,7 @@ So: the hardware of the Internet can currently achieve within a factor of two of
 
 目前大多数的开发者都大方接受了这个额外的 _网络传输过程_ 是因为他们确信这只发生一次：后面反正是有cache的。也就是说，大家形成了这么一个共识，既然整个代码包一旦加载一次，就可以不用再请求其他的脚本和资源就完成对绝大多数的用户交互（包括跳转到应用的其他页面）的处理，那么这个开销就是可以接受的。
 
-但实际上，虽然有cache，脚本解析和执行的时间仍然会带来性能上的下降。[“Is jQuery Too Big For Mobile?”][16] 这篇文章就探讨了即便是加载一个jQuery库，就会花去一些浏览器数百毫秒的时间。
+但实际上，虽然有cache，脚本解析和执行的时间仍然会带来性能上的下降。[「Is jQuery Too Big For Mobile?」][16] 这篇文章就探讨了即便是加载一个jQuery库，就会花去一些浏览器数百毫秒的时间。
 
    [16]: http://modernweb.com/2014/03/10/is-jquery-too-big-for-mobile/
 
@@ -89,24 +89,24 @@ So: the hardware of the Internet can currently achieve within a factor of two of
 
 这对SPA有两个很大的影响：
 
-  1. 文件比较大的脚本，花在下载上的时间比你想象中的要长得多。Google的Ilya Grigorik在他的专著[“High Performance Browser Networking”][17] 里面说过，“4个来回(…)和数百毫秒的延迟都花在从服务器下载64KB的文件到客户端上了”，从前面的图也可以看到，基本是比较高速的网络连接，比如伦敦和纽约之间，一个TCP连接要达到最大速度，也需要花上大概225ms。
+  1. 文件比较大的脚本，花在下载上的时间比你想象中的要长得多。Google的Ilya Grigorik在他的专著[「High Performance Browser Networking」][17] 里面说过，「4个来回(…)和数百毫秒的延迟都花在从服务器下载64KB的文件到客户端上了」，从前面的图也可以看到，基本是比较高速的网络连接，比如伦敦和纽约之间，一个TCP连接要达到最大速度，也需要花上大概225ms。
 
    [17]: http://chimera.labs.oreilly.com/books/1230000000545/ch02.html#thats_four_rou
 
-  2. 因为前面说的延迟对首个页面访问也是有效的，所以你让什么数据最先被传输就显得非常重要了。Paul Irish在他的演讲[“Delivering the Goods”][18]给出的结论是，一个Web应用最开始的 **14kb** 数据是最重要的。
+  2. 因为前面说的延迟对首个页面访问也是有效的，所以你让什么数据最先被传输就显得非常重要了。Paul Irish在他的演讲[「Delivering the Goods」][18]给出的结论是，一个Web应用最开始的 **14kb** 数据是最重要的。
 
    [18]: https://docs.google.com/presentation/d/1MtDBNTH1g7CZzhwlJ1raEJagA8qM3uoV7ta6i66bO2M/present#slide=id.g3eb97ca8f_10
 
 
 在足够短的时间窗内完成内容传输（哪怕只是呈现基本的没有数据的layout）的网站，就是响应良好的。这也是为什么对于很多习惯了在服务器端处理数据的软件开发者觉得Javascript很多时候根本没必要用，或者是在很有限的情况下用用就行了。当这些开发者使用的是配置良好的服务器和数据库，又有CDN来做部署和分发时，他们这种感觉会非常明显。
 
-但是，服务器在辅助和加速页面内容的分发和渲染中应该被怎么使用，也是需要根据每个应用场景仔细分析的，绝对不是“把整个页面交给服务器渲染吧”那么简单的事情。在一些情况下，如果页面上的内容对用户并不是非看不可的，就可以不放在第一个响应中返回，而是让客户端在后面的操作中到服务器去取。
+但是，服务器在辅助和加速页面内容的分发和渲染中应该被怎么使用，也是需要根据每个应用场景仔细分析的，绝对不是「把整个页面交给服务器渲染吧」那么简单的事情。在一些情况下，如果页面上的内容对用户并不是非看不可的，就可以不放在第一个响应中返回，而是让客户端在后面的操作中到服务器去取。
 
-比如，有的应用会先把一个"壳"页面返回给客户端，然后在这个页面上并发的请求多个部分的数据。这样即使在后台连接速度较慢的情况下，仍然能够有较好的响应速度。还有的应用会把 “[浏览器里面的第一个整屏][20]” 显示的页面做预渲染。
+比如，有的应用会先把一个"壳"页面返回给客户端，然后在这个页面上并发的请求多个部分的数据。这样即使在后台连接速度较慢的情况下，仍然能够有较好的响应速度。还有的应用会把 「[浏览器里面的第一个整屏][20]」 显示的页面做预渲染。
 
    [20]: http://www.feedthebot.com/pagespeed/prioritize-visible-content.html
 
-服务器能够根据当前处理的`session`，用户和URL对脚本和样式文件进行分类也是很重要的。举例来说，用来对订单进行分类的脚本，对于`/orders`这个URL显然是重要的，而处理"首选项"的逻辑的脚本就不那么重要。再比如说，我们可以对CSS样式表进行分类，比如区分“结构性的样式”和“皮肤和模板的样式”等。前面这类很可能对Javascript的正确运行是必须的，因此需要 _阻塞_ 的方式加载， 后面这类则可以用异步的方式加载。
+服务器能够根据当前处理的`session`，用户和URL对脚本和样式文件进行分类也是很重要的。举例来说，用来对订单进行分类的脚本，对于`/orders`这个URL显然是重要的，而处理"首选项"的逻辑的脚本就不那么重要。再比如说，我们可以对CSS样式表进行分类，比如区分「结构性的样式」和「皮肤和模板的样式」等。前面这类很可能对Javascript的正确运行是必须的，因此需要 _阻塞_ 的方式加载， 后面这类则可以用异步的方式加载。
 
 到目前为止，在服务器端处理一部分或者所有的页面，仍然是避免过多客户端与服务器的交互的主要手段。[StackOverflow in 4096 bytes][21]很不错地展示了如何降低和服务器的来回交互次数。作为概念验证的SPA，它理论上可以做到在握手后的第一个TCP连接中完成加载！当然，要做到这些，它使用了[SPDY 或者 HTTP/2 server push][22]，因此可以在一个hop里面传输所有客户端可以缓存的代码。
 
@@ -129,7 +129,7 @@ So: the hardware of the Internet can currently achieve within a factor of two of
 
 
 {% blockquote %}
-“If a document has to be pieced together on the fly, it could get arbitrarily complex, and even if that were limited, we’d certainly start experiencing major hits on performance for documents structured in this way. This essentially throws the **single-hop principle of WWW** out the door (well, IMG does that too, but for a very specific reason and in a very limited sense) — are we sure we want to do that?”
+「If a document has to be pieced together on the fly, it could get arbitrarily complex, and even if that were limited, we’d certainly start experiencing major hits on performance for documents structured in this way. This essentially throws the **single-hop principle of WWW** out the door (well, IMG does that too, but for a very specific reason and in a very limited sense) — are we sure we want to do that?」
 {% endblockquote %}
 
 ## 2. 对用户输入立刻响应<a name="act-immediately-on-user-input"></a>
@@ -282,7 +282,7 @@ The basic advice regarding response times has been about the same for thirty yea
 
 即使不考虑表单的提交，而是设计一个仅有超链接的Web应用，也需要考虑让前进/后退导航变得更可用。比如典型的`infinite pagination scenario`，也就是应用应该允许用户在页面上随便跳转，它的实现通常需要使用Javascript监听对链接的点击，然后注入数据或者HTML（还有个可选的步骤是调用`history.pushState`或者是`replaceState`，但不幸的是很多人都不没有使用它们）。
 
-这就是我使用“破坏”来形容它的原因：在Web被设计之初，这种监听对链接的点击并注入数据的情况，并不在设计图景中，而是每个状态的变迁都需要URL的变化来驱动。但虽然这种既有模式被Javascript“破坏”了，另一方面，通过使用Javascript控制history，也出现了_提升_的机会。
+这就是我使用「破坏」来形容它的原因：在Web被设计之初，这种监听对链接的点击并注入数据的情况，并不在设计图景中，而是每个状态的变迁都需要URL的变化来驱动。但虽然这种既有模式被Javascript「破坏」了，另一方面，通过使用Javascript控制history，也出现了_提升_的机会。
 
 一种提升的做法是Daniel Pipius提出的所谓[Fast Back][50]:
 
@@ -357,7 +357,7 @@ The basic advice regarding response times has been about the same for thirty yea
 
 最常见的办法是在数据请求的动作被真正触发之前就进行数据的预获取。比如在用户hover到链接上而不是真正点击链接的时候就开始取数据。
 
-另一个比较复杂的预测用户行为的办法是通过监听用户鼠标的运动，分析它的轨迹来预测它可能会去到的”可以操作元素“，比如是按钮。下面是一个[jQuery的例子][60]:
+另一个比较复杂的预测用户行为的办法是通过监听用户鼠标的运动，分析它的轨迹来预测它可能会去到的」可以操作元素「，比如是按钮。下面是一个[jQuery的例子][60]:
 
    [60]: https://medium.com/@cihadturhan/a-ux-idea-i-know-where-you-are-aiming-3e00d152afb2
 

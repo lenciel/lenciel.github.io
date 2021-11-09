@@ -23,11 +23,11 @@ categories:
 
 于是同学们为了中举，都会忽悠老师说，时尚应该是自信，又或者是绿色，又或者是环保，又或者是本真，于是就显得自己人生观世界观狂成熟狂完满，即使行走在物欲横流的今天，也能百毒不侵了。
 
-只是无论如何，我们总还是有条件不好的孩子。他也许读书就是为了扔掉锄头，能让自己的家族到城市里，过体面的生活，却只好写，“我虽然无法上网，甚至看不到电视。除开读书，还要帮家里干农活，但是我觉得时尚其实是本真。我现在的生活就挺好的，那些人人都追求的东西，房子，金钱，并不适合我的气质”。
+只是无论如何，我们总还是有条件不好的孩子。他也许读书就是为了扔掉锄头，能让自己的家族到城市里，过体面的生活，却只好写，「我虽然无法上网，甚至看不到电视。除开读书，还要帮家里干农活，但是我觉得时尚其实是本真。我现在的生活就挺好的，那些人人都追求的东西，房子，金钱，并不适合我的气质」。
 
 不知道这种话，如果叫命题老师自己去写，他会不会边写边吐。
 
-其实，对本座来说，最近正好有一个有趣的新闻，非常的“时尚”。
+其实，对本座来说，最近正好有一个有趣的新闻，非常的「时尚」。
 
 大家都知道，《Kill Bill》里面的Bill，最近挂了：是真的把自己挂起来了。不过，如果你用不同的关键字去搜索，会得出蛮有趣的结果。
 
@@ -35,13 +35,13 @@ categories:
 >
 > 心地不纯良如本座的时尚品味者：<a href="http://www.google.com/search?hl=en&q=kill+bill+%E4%B8%BB%E8%A7%92+%E8%87%AA%E6%85%B0&sourceid=navclient-ff&rlz=1B3GGGL_zh-CN___CN231&ie=UTF-8" target="_blank">click</a>
 
-嗯哼……其实大家不要觉得从事“手工业”的时候出事有什么奇怪的。本座在以前看<a href="http://en.wikipedia.org/wiki/Chuck_Palahniuk" target="_blank">Chuck</a>大叔[^1] 那篇著名的<a href="http://chuckpalahniuk.net/features/shorts/guts" target="_blank">Guts</a>的时候（已经有人<a href="http://www.verycd.com/groups/@g2386100/683454.topic" target="_blank">翻译</a>，慎入！！）有读到过一段：
+嗯哼……其实大家不要觉得从事「手工业」的时候出事有什么奇怪的。本座在以前看<a href="http://en.wikipedia.org/wiki/Chuck_Palahniuk" target="_blank">Chuck</a>大叔[^1] 那篇著名的<a href="http://chuckpalahniuk.net/features/shorts/guts" target="_blank">Guts</a>的时候（已经有人<a href="http://www.verycd.com/groups/@g2386100/683454.topic" target="_blank">翻译</a>，慎入！！）有读到过一段：
 
 > Looking back, kid-psych experts, school counselors now say that most of the last peak in teen suicide was kids trying to choke while they beat off. Their folks would find them, a towel twisted around the kid&#8217;s neck, the towel tied to the rod in their bedroom closet, the kid dead. Dead sperm everywhere. Of course the folks cleaned up. They put some pants on their kid. They made it look… better. Intentional at least. The regular kind of sad, teen suicide.
 
 嗯哼……所以有的时候时尚人士莫名其妙的自缢，是没有那么悲情的。
 
-这又让本座想起来，世界上有两种动物，因为特别重视配偶闻名。一种就是俺们国鸟丹顶鹤[^2] 。诗经说丫们谈起恋爱“鹤鸣九皋，声闻于天”。而且一方去世，另一方一定会孤单终老（要知道丹顶鹤可以活60岁左右）。
+这又让本座想起来，世界上有两种动物，因为特别重视配偶闻名。一种就是俺们国鸟丹顶鹤[^2] 。诗经说丫们谈起恋爱「鹤鸣九皋，声闻于天」。而且一方去世，另一方一定会孤单终老（要知道丹顶鹤可以活60岁左右）。
 
 甚至有一种颇有争论的说法是，只要双方有一个意外死去，另外一个不久就会把自己的脖子打一个结，跟着死去。
 

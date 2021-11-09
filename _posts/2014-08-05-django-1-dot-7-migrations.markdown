@@ -3,7 +3,7 @@ layout: post
 title: "Data Migration in Django 1.7 (1)"
 date: 2014-08-05 11:12:41 +0800
 comments: true
-categories: 
+categories:
 - django
 - tutorial
 ---
@@ -17,7 +17,7 @@ So...
 Migrations是什么？
 =============
 
-Migrations其实就是一堆帮助你完成数据库变更和数据迁移的命令，使得你可以用“Django”的方式来管理和变更数据库的schema。比如，当你的model改变了，你需要在数据库里面去重命名一列时，你不会想跑到命令行下面去敲SQL吧？特别是，如果你要变更的数据库是线上的，有几百万用户数据，你应该更不愿意搭上这种活了吧？
+Migrations其实就是一堆帮助你完成数据库变更和数据迁移的命令，使得你可以用「Django」的方式来管理和变更数据库的schema。比如，当你的model改变了，你需要在数据库里面去重命名一列时，你不会想跑到命令行下面去敲SQL吧？特别是，如果你要变更的数据库是线上的，有几百万用户数据，你应该更不愿意搭上这种活了吧？
 
 Migrations让事情变得简单可控：
 
@@ -228,7 +228,7 @@ Migration Dependencies
 dependencies = [
    ('main', '__first__'),
 ]
-``` 
+```
 
 如果没有前置条件，这个list可以为空。但大多数时候`dependencies`是指向其他的migration文件。比如：
 

@@ -46,7 +46,7 @@ map $http_accept $webp_suffix {
 
 这里的作用主要是，如果 `$http_accept` （更多信息可以查看 [ngx_http_map_module](http://nginx.org/en/docs/http/ngx_http_map_module.html)）代表的访问者的头里面有 `webp`，那么 `$webp_suffix` 就赋值为 `.webp`，否则就是一个空字符串。
 
-定义空字符串这种方法比较“硬编码”，但是这里不用 `rewrite` 来实现主要是出于性能方面的考虑：nginx的变量是 lazily calculated 的，所以使用这样的方式不会影响其他文件。
+定义空字符串这种方法比较「硬编码」，但是这里不用 `rewrite` 来实现主要是出于性能方面的考虑：nginx的变量是 lazily calculated 的，所以使用这样的方式不会影响其他文件。
 
 #### 根据变量值返回
 

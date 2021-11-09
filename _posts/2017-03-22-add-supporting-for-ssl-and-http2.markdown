@@ -10,7 +10,7 @@ categories:
 
 ---
 
- Google一直在致力于提醒用户[更加安全的上网](https://security.googleblog.com/2016/09/moving-towards-more-secure-web.html)，并从Chrome 56版本开始，把使用HTTP的网站直接[标记为“不安全的”](http://www.zdnet.com/article/chrome-56-google-starts-slapping-not-secure-on-http-payment-and-login-pages/)。随后Firefox等浏览器也宣布加入了类似的功能，来逼迫网站开发者逐步废弃使用HTTP。
+ Google一直在致力于提醒用户[更加安全的上网](https://security.googleblog.com/2016/09/moving-towards-more-secure-web.html)，并从Chrome 56版本开始，把使用HTTP的网站直接[标记为「不安全的」](http://www.zdnet.com/article/chrome-56-google-starts-slapping-not-secure-on-http-payment-and-login-pages/)。随后Firefox等浏览器也宣布加入了类似的功能，来逼迫网站开发者逐步废弃使用HTTP。
 
 在过去，要支持SSL其实还是挺麻烦的，因为首先你需要[一个证书](https://www.digicert.com/ssl-certificate.htm)。这东西申请起来麻烦，但只要给钱就特别好办：为这个，Google年初还以乱发了3万个证书为由宣布[不再信任Symantec签发的证书](https://arstechnica.com/security/2017/03/google-takes-symantec-to-the-woodshed-for-mis-issuing-30000-https-certs/)。
 

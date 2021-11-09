@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "晋级技术专家的清单"
 date: 2020-04-01 10:58:26 +0800
-categories: 
+categories:
 
 - career
 - rants
@@ -134,7 +134,7 @@ categories:
 - [Being Glue](https://noidea.dog/glue) - Tanya Reilly
 - [Computers can be understood](https://blog.nelhage.com/post/computers-can-be-understood/) - Nelson Elhage
 - [Effective Mental Models for Code and Systems](https://medium.com/@copyconstruct/effective-mental-models-for-code-and-systems-7c55918f1b3e) - Cindy Sridharan
-- [“I Wouldn’t Start From Here”. How to Make a Big Technical Change](https://noidea.dog/blog/getting-there-from-here) - Tanya Reilly
+- [「I Wouldn’t Start From Here」. How to Make a Big Technical Change](https://noidea.dog/blog/getting-there-from-here) - Tanya Reilly
 - [Migrations: the sole scalable fix to tech-debt](https://lethain.com/migrations/)
 - [On Mid-Career and Team Dynamics](https://www.ryn.works/blog/on-mid-career-and-team-dynamics) - Ryn Daniels
 - [Reclaim unreasonable software](https://lethain.com/reclaim-unreasonable-software/) - Will Larson

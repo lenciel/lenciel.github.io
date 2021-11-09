@@ -3,7 +3,7 @@ layout: post
 title: "Bounded Context"
 date: 2017-02-21 04:58:52 +0800
 comments: true
-categories: 
+categories:
 
 - Bounded-Context
 - DDD
@@ -22,11 +22,11 @@ DDD社区将Bounded Context定义为：
 
 > 应该显式地定义某个模型所应用的上下文。还应该在团队组织、应用中特定部分的使用以及像代码库和数据库模式等物理表现等方面显式地设定边界。要保持边界中模型的严格一致，而不要受外界问题的影响与干扰。
 
-这段话在说的无非是“边界”，通过为领域模型划定合理的边界，就可以降低设计与开发的复杂度。此外，边界还能够划分知识的层次，例如对外而言，可以只保障暴露在边界外接口的一致性，以及关注它们之间的集成方式。边界之内则自成一体，可以独立演化，甚至可以包容一到多个遗留模块。
+这段话在说的无非是「边界」，通过为领域模型划定合理的边界，就可以降低设计与开发的复杂度。此外，边界还能够划分知识的层次，例如对外而言，可以只保障暴露在边界外接口的一致性，以及关注它们之间的集成方式。边界之内则自成一体，可以独立演化，甚至可以包容一到多个遗留模块。
 
 ## 常见问题
 
-正是因为Bounded Context带来的隔离性，[Juelin Lerman](https://msdn.microsoft.com/en-us/magazine/jj883952.aspx)才认为：“把一个将大量的类放在一个上下文中的独立模型分解为多个较小的模型是有好处的。Bounded Context创建的模型较小，而且内聚性更高，同时维持了模型之间的边界。”
+正是因为Bounded Context带来的隔离性，[Juelin Lerman](https://msdn.microsoft.com/en-us/magazine/jj883952.aspx)才认为：「把一个将大量的类放在一个上下文中的独立模型分解为多个较小的模型是有好处的。Bounded Context创建的模型较小，而且内聚性更高，同时维持了模型之间的边界。」
 
 好处听起来都是好的，但是难免会有下面这些问题：
 
@@ -54,6 +54,6 @@ Vaughn Vernon的[Implementing Domain-Driven Design](http://book.douban.com/subje
 
 1. [BoundedContext by Martin Fowler](https://martinfowler.com/bliki/BoundedContext.html)
 2. [Implementing Domain-Driven Design](https://www.amazon.com/gp/product/0321834577?ie=UTF8&tag=martinfowlerc-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0321834577)
-3. [Shared Data Model using Bounded Context](https://msdn.microsoft.com/en-us/magazine/jj883952.aspx) 
+3. [Shared Data Model using Bounded Context](https://msdn.microsoft.com/en-us/magazine/jj883952.aspx)
 
 

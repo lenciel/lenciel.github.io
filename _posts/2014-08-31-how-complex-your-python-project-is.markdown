@@ -21,14 +21,14 @@ categories:
 
 最开始接触Graphviz是因为[django-extensions](https://github.com/django-extensions/django-extensions)项目用它来画django model的[关系图](https://code.djangoproject.com/wiki/DjangoGraphviz)。我们用它冒充ER图，拿去跟那些喜欢看文档但其实又不专业的官僚客户们交差。
 
-Snakefood更进一步，通过分析你的代码依赖，从而得出你代码的“复杂度”。
+Snakefood更进一步，通过分析你的代码依赖，从而得出你代码的「复杂度」。
 
-“复杂度”其实是用“代码行数”衡量码农工作效力被普遍吐槽之后，大公司发明出来折腾工程师的诸多metrics里面还算有点儿用的一个：至少你可以让要接手的人看看这项目大概是个什么规模，以及，大概要挠破几寸头皮才能看懂。
+「复杂度」其实是用「代码行数」衡量码农工作效力被普遍吐槽之后，大公司发明出来折腾工程师的诸多metrics里面还算有点儿用的一个：至少你可以让要接手的人看看这项目大概是个什么规模，以及，大概要挠破几寸头皮才能看懂。
 
-当然，Snakefood这种基于文件依赖的复杂度分析其实不算特别靠谱，这可不是什么[Cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity)，更像是开飞机的时候边排查“事故征兆”边驾驶的辅助工具。作者自己是这么说的：
+当然，Snakefood这种基于文件依赖的复杂度分析其实不算特别靠谱，这可不是什么[Cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity)，更像是开飞机的时候边排查「事故征兆」边驾驶的辅助工具。作者自己是这么说的：
 
 {% blockquote Martin Blais%}
-Producing pretty graphs is fun, but I found the most leverage of it when I try to make my code simpler, I generate the graph and inspect unexpected dependencies and try to refactor my code to simply the dependency graph as much as possible. 
+Producing pretty graphs is fun, but I found the most leverage of it when I try to make my code simpler, I generate the graph and inspect unexpected dependencies and try to refactor my code to simply the dependency graph as much as possible.
 {% endblockquote %}
 
 下面是本座心目中永远的"优雅Python代码第一名"[Requests](http://docs.python-requests.org/en/latest/)的分析结果：

@@ -51,9 +51,9 @@ Metcalfe says his proudest accomplishment at the company was as head of sales an
 "I have to sit'em down for an hour and say, 'No, I don't have this house because I invented Ethernet. I have this house because I went to Cleveland and Schenectady and places like that. I sold Ethernet for a decade. That's why I have this house. It had nothing to do with that brainstorm in 1973."'
 {% endblockquote %}
 
-从一定程度上这种认识反应了另一种普遍的观点： **执行力，而不是点子，才是创业的关键** 。这种在Hacker News上被[一而再再而三的提及](https://www.google.com.hk/search?q=site%3Anews.ycombinator.com+idea+not+execution&qscrl=1)的观点确实是有道理的：冒出一个“创建社交网络”的点子很简单，但是要把它涉及的各种细节，大到是采用[对称](https://www.facebook.com/)还是[非对称](https://twitter.com/)的社交网络小到“Poke”应该怎么实现，考虑清楚，就不那么容易了。而即使考虑清楚上线后用户也很多，怎么把流行转化成盈利就更加艰难了：看看Second Life或者Digg的下场多么凄惨。
+从一定程度上这种认识反应了另一种普遍的观点： **执行力，而不是点子，才是创业的关键** 。这种在Hacker News上被[一而再再而三的提及](https://www.google.com.hk/search?q=site%3Anews.ycombinator.com+idea+not+execution&qscrl=1)的观点确实是有道理的：冒出一个「创建社交网络」的点子很简单，但是要把它涉及的各种细节，大到是采用[对称](https://www.facebook.com/)还是[非对称](https://twitter.com/)的社交网络小到「Poke」应该怎么实现，考虑清楚，就不那么容易了。而即使考虑清楚上线后用户也很多，怎么把流行转化成盈利就更加艰难了：看看Second Life或者Digg的下场多么凄惨。
 
-所以如果你开始创业，不妨提醒一下自己：点子或者甚至是专利并没必要放在那么至高无上的位置，能work的prototype要重要得多。可能在你游说投资者的时候，专利显得你的技术比较有门槛有防御性。但是一方面，如果你的东西被别人听到或者看过就能很容易的复制，可能也确实说明了产品的技术门槛比较低。另一方面，“我有一个创建养宠物的人的社交网络的点子”和“我开发了一个可以让养宠物的人快速找到信赖的兽医的系统“相比，后者对投资人的说服力要大多了。
+所以如果你开始创业，不妨提醒一下自己：点子或者甚至是专利并没必要放在那么至高无上的位置，能work的prototype要重要得多。可能在你游说投资者的时候，专利显得你的技术比较有门槛有防御性。但是一方面，如果你的东西被别人听到或者看过就能很容易的复制，可能也确实说明了产品的技术门槛比较低。另一方面，「我有一个创建养宠物的人的社交网络的点子」和「我开发了一个可以让养宠物的人快速找到信赖的兽医的系统「相比，后者对投资人的说服力要大多了。
 
 因此创业的时候，你的点子可以大方的拿出来和周围的人讨论，他们会给你一些你意想不到的角度的意见。当然，有一种讨论是例外的，那就是在类似[Hacker News](https://news.ycombinator.com/item?id=3639175)这样的创业社区里面。除非你的开发已经到了适合曝光原型的阶段，一般来说最好不要太早曝光你在做的事情。
 
@@ -78,7 +78,7 @@ In a great market – a market with lots of real potential customers – the mar
 
 ##### **点子迷宫**
 
-一个好的创始人不应该只是有个好点子，他/她应该具备鸟瞰“点子迷宫”的能力。把解决一个需求的各种点子想象成迷宫里面的各条道路，作为消费者很可能只看到了拿出了产品的公司走的那条路。而作为好的创始人需要了解其他的公司是死在什么样的路上以及它们遇到了什么样的无法解决的问题。下图就是一个迷宫的例子：
+一个好的创始人不应该只是有个好点子，他/她应该具备鸟瞰「点子迷宫」的能力。把解决一个需求的各种点子想象成迷宫里面的各条道路，作为消费者很可能只看到了拿出了产品的公司走的那条路。而作为好的创始人需要了解其他的公司是死在什么样的路上以及它们遇到了什么样的无法解决的问题。下图就是一个迷宫的例子：
 
 ![example of idea maze](/downloads/images/2013_07/example_of_idea_maze.png --alt Don't touch me)
 

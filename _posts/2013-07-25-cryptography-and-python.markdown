@@ -51,7 +51,7 @@ categories:
         byte[] plainBytes = (byte[])null;
         Cipher cipher = null;
         byte[] cipherText = (byte[])null;
-        //“算法/模式/填充”
+        //「算法/模式/填充」
         plainBytes = input.getBytes("UTF8");
         cipher = Cipher.getInstance("DESede/ECB/PKCS5Padding");
         SecretKeySpec myKey = new SecretKeySpec(key.getEncoded(), "DESede");
@@ -72,7 +72,7 @@ categories:
 
         Cipher cipher = null;
         byte[] inPut = base64d.decodeBuffer(cipherText);
-        //“算法/模式/填充”
+        //「算法/模式/填充」
         cipher = Cipher.getInstance("DESede/ECB/PKCS5Padding");
         SecretKeySpec myKey = new SecretKeySpec(key.getEncoded(), "DESede");
  //       IvParameterSpec ivspec = new IvParameterSpec(myIV);

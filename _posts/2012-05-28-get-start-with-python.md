@@ -3,12 +3,12 @@ layout: post
 title: "Getting Start With Python"
 date: 2012-05-28 22:15
 comments: true
-categories: 
+categories:
 - python
 - tutorial
 ---
 
-刚刚开始使用Python开发的新手，遇到的第一个瓶颈（常常）就是缺乏对整个Python生态系统的理解。大家总是在网上搜索完成这件事或者那件事的“标准做法”，就像我们使用其他编程语言的时候常常需要掌握的一样。
+刚刚开始使用Python开发的新手，遇到的第一个瓶颈（常常）就是缺乏对整个Python生态系统的理解。大家总是在网上搜索完成这件事或者那件事的「标准做法」，就像我们使用其他编程语言的时候常常需要掌握的一样。
 
 在和几个朋友开始iDVR的开发的时候，我们在内部Wiki上维护过一个Python中常见问题列表。我们的目标是随着项目的不断进步，这个内部的wiki能够变成一个豪华的Q&A索引，但是事实证明项目一忙起来就没有人去写Wiki了。
 
@@ -41,12 +41,12 @@ Python是<a href="http://zh.wikipedia.org/zh-hk/%E8%84%9A%E6%9C%AC%E8%AF%AD%E8%A
 Python安装
 ----------
 
-下载之后的.exe安装文件安装的时候有一个地方需要注意：如果你是在Vista/Win7这样的C盘权限控制异常严格的操作系统，最好用右键“Run as administrator”。这点也适用于你下载到的被其他人编译成exe发布的Python package。嗯，什么是package？
+下载之后的.exe安装文件安装的时候有一个地方需要注意：如果你是在Vista/Win7这样的C盘权限控制异常严格的操作系统，最好用右键「Run as administrator」。这点也适用于你下载到的被其他人编译成exe发布的Python package。嗯，什么是package？
 
 理解Package
 -------------
 
-Python没有一个内置的package管理体系。实际上Python下面一个package是什么也是一个很“不具体”的概念。就像前面提到的，Python下面的代码是以module为单位存在的。每个module既可以是一个只有一个函数的文件，也可以是一个包含了一个或者多个子module的目录。而module和package之间的区别是非常模糊的，每个module都可以被认为是一个package。
+Python没有一个内置的package管理体系。实际上Python下面一个package是什么也是一个很「不具体」的概念。就像前面提到的，Python下面的代码是以module为单位存在的。每个module既可以是一个只有一个函数的文件，也可以是一个包含了一个或者多个子module的目录。而module和package之间的区别是非常模糊的，每个module都可以被认为是一个package。
 
 和所有的编程环境一样，在Python下面有一些函数和类是全局可见的（`str`，`len`，`Exception`等等），而另外一些需要通过`import`语句导入，比如：
 
@@ -91,7 +91,7 @@ Python没有一个内置的package管理体系。实际上Python下面一个pack
 'C:\\Python26\\lib\\site-packages\\wx-2.8-msw-unicode']
 ```
 
-Python在导入的module的时候，是按照这个列表“自顶向下，见好就收”的方式运作的。也就是说如果你正好机器上有两个路径下面安装了同样名称的module，先被搜索到的那个就会被导入。有的时候，你确信自己受到了这种机制的干扰，也可以通过下面的办法来hack回来：
+Python在导入的module的时候，是按照这个列表「自顶向下，见好就收」的方式运作的。也就是说如果你正好机器上有两个路径下面安装了同样名称的module，先被搜索到的那个就会被导入。有的时候，你确信自己受到了这种机制的干扰，也可以通过下面的办法来hack回来：
 
 ``` python
 sys.path.insert(, 'path\\to\\your\\packages')
@@ -155,7 +155,7 @@ pip install pygame==version_number –upgrade
 
 由于Python高度依赖开源团体，很多最新的package都没有在PyPI上面，我们常常需要从代码库直接安装package。在`pip`下面可以直接
 
-``` bash 
+``` bash
 $ pip install git+http://somedomain.com/path/to/git-repo#egg=packagename
 $ pip install hg+http://somedomain.com/path/to/hg-repo#egg=packagename
 $ pip install svn+http://somedomain.com/path/to/svn-repo#egg=packagename
@@ -187,7 +187,7 @@ python setup.py install
 
 ##### **virtualenv**
 
-`virtualenv`无疑是当前Python开发者心中“必知必会”类的工具了。`virtualenv`主要就是提供一个“独立的”Python开发环境。为什么需要“独立”的开发环境？在不知道`virtualenv`之前Python包满坑满谷的本座自然是有很多槽可以吐，不过最好的答案是`virtualenv`的文档里面说的：
+`virtualenv`无疑是当前Python开发者心中「必知必会」类的工具了。`virtualenv`主要就是提供一个「独立的」Python开发环境。为什么需要「独立」的开发环境？在不知道`virtualenv`之前Python包满坑满谷的本座自然是有很多槽可以吐，不过最好的答案是`virtualenv`的文档里面说的：
 
 {% blockquote %}
 The basic problem being addressed is one of dependencies and versions, and indirectly permissions. Imagine you have an application that needs version 1 of LibFoo, but another application requires version 2. How can you use both these applications? If you install everything into /usr/lib/python2.7/site-packages (or whatever your platform’s standard location is), it’s easy to end up in a situation where you unintentionally upgrade an application that shouldn’t be upgraded.
@@ -203,9 +203,9 @@ $ pip install virtualenv
 
 ``` bash
 D:\Lenciel\Temp mkdir my_project_env
- 
+
 D:\Lenciel\Temp\virtualenv --distribute my_project_env
- 
+
   New python executable in my_project_env\Scripts\python.exe
   Installing distribute.................done.
 ```
@@ -234,7 +234,7 @@ $ virtualenv my_project_venv --no-site-packages
 
 ##### **编辑器**
 
-在不同的项目里面本座用过Vim/Sublime text 2/Eclipse+PyDev/PyCharm。现在Vim和PyCharm用得比较多一点，PyDev一直有一些诡异的问题。比如那个“<a href="https://www.google.com.hk/search?num=30&hl=en&newwindow=1&c2coff=1&safe=strict&site=&source=hp&q=Unresolved+import+pydev&btnK=Google+Search&qscrl=1" target="_blank">Unresolved import</a>”从一开始到现在都好像没有被真正解决过。
+在不同的项目里面本座用过Vim/Sublime text 2/Eclipse+PyDev/PyCharm。现在Vim和PyCharm用得比较多一点，PyDev一直有一些诡异的问题。比如那个「<a href="https://www.google.com.hk/search?num=30&hl=en&newwindow=1&c2coff=1&safe=strict&site=&source=hp&q=Unresolved+import+pydev&btnK=Google+Search&qscrl=1" target="_blank">Unresolved import</a>」从一开始到现在都好像没有被真正解决过。
 
 ##### **编码规范**
 
@@ -258,7 +258,7 @@ Python的另外一大财富就是它的开源社区，条件成熟的时候，�
 ``` python
 >>>import this
 The Zen of Python, by Tim Peters
- 
+
 Beautiful is better than ugly.
 Explicit is better than implicit.
 Simple is better than complex.
