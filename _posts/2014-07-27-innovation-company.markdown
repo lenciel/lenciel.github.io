@@ -16,23 +16,23 @@ categories:
 * 腾讯主要是卖游戏的
 * 阿里主要是卖假货的
 
-虽然作为从业人员，一开始的时候本座会对这种状况感觉有些黯然。 但不得不承认，这几个大佬们就算做得不错的了：你总不会希望360、人人这样的公司来做老大吧？
+虽然作为从业人员，一开始的时候本座会对这种状况感觉有些黯然。 但不得不承认，这几个大佬们就算做得不错的了：你总不会希望 360、人人这样的公司来做老大吧？
 
 不过，有一个公司，是无论如何本座都很难去忍受的，那就是最近发布了新一代手机的小米。I don't wanna be an ass hole, so I'll let you decide...
 
-这是当年米3手机宣传册上的图标和苹果的Aperture应用的图标
+这是当年米 3 手机宣传册上的图标和苹果的 Aperture 应用的图标
 
 ![Vhost threshold](/downloads/images/2014_07/xiaoxi_icon_mac_icon.jpg --alt Don't touch me)
 
-这是小米盒子和Apple TV盒子
+这是小米盒子和 Apple TV 盒子
 
 ![Vhost threshold](/downloads/images/2014_07/xiao_tv_mac_tv.jpg --alt Don't touch me)
 
-这是小米零售店和苹果零售店 (除开装潢，小米居然一样有蓝衣genius)
+这是小米零售店和苹果零售店 (除开装潢，小米居然一样有蓝衣 genius)
 
 ![Vhost threshold](/downloads/images/2014_07/xiaomi_mac_shop.jpg --alt Don't touch me)
 
-这是小米的平板系列和苹果的5c系列
+这是小米的平板系列和苹果的 5c 系列
 
 ![Vhost threshold](/downloads/images/2014_07/xiaomi_pad_mac_phone.jpg --alt Don't touch me)
 
@@ -40,7 +40,7 @@ categories:
 
 ![Vhost threshold](/downloads/images/2014_07/xiaomi_router_mac_pad.jpg --alt Don't touch me)
 
-这是最新款小米4手机和苹果5s手机
+这是最新款小米 4 手机和苹果 5s 手机
 
 ![Vhost threshold](/downloads/images/2014_07/xiaomi_mac_new_phone.jpg --alt Don't touch me)
 

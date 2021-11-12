@@ -107,12 +107,12 @@ Martin Fowler 和 Ian Cartwright 把「业务思考力」称为「[The Elephant 
 但是行业里面常见的「架构图」是我特别想吐槽的。各种技术大会上，当 slides 里面出现这些架构图时，观众往往就会开始举起手机拍摄，用「系统架构图」做关键字 google 一下，它们大多数长这样：
 
 ![architecture-diagram-1](/downloads/images/2021_03/architecture-diagram-1.png --alt Don't touch me...)
-图1. 系统架构图
+图 1. 系统架构图
 
 它们的鼻祖，应该是下面这些图：
 
 ![architecture-diagram-2](/downloads/images/2021_03/architecture-diagram-2.png --alt Don't touch me...)
-图2. 美国军方物流系统架构图
+图 2. 美国军方物流系统架构图
 
 这些图最大的问题就是 TMI：Too Much Information。对于看的人来说，它不仅仅是显得宏大而无聊，更重要的麻烦是找不到有效信息的入口。
 

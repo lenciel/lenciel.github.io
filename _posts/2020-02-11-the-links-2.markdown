@@ -9,7 +9,7 @@ categories:
 
 ---
 
-1. [NASA brings voyager 2 back online](https://www.inverse.com/science/nasa-brings-voyager-2-fully-back-online-11.5-billion-miles-from-earth) — 当你要修理的东西在115亿英里外的时候，事情就很具体了。
+1. [NASA brings voyager 2 back online](https://www.inverse.com/science/nasa-brings-voyager-2-fully-back-online-11.5-billion-miles-from-earth) — 当你要修理的东西在 115 亿英里外的时候，事情就很具体了。
 2. [Contextualise](https://github.com/brettkromkamp/contextualise) — 一个构建和管理带上下文信息的树状资源的库，感觉西瓜用户创意作品的资源以这种形式管理更好。
 3. [Meaningful Availability](https://www.usenix.org/system/files/nsdi20spring_hauer_prepub.pdf) — Google 关于 Availability 的一篇论文，提出了一种看起来很靠谱的新指标：windowed user-uptime 。
 4. [Jim Keller: Moore’s Law, Microprocessors, Abstractions, and First Principles](https://lexfridman.com/jim-keller/) — 一个很好的访谈，作为传奇般的工程师，Jim 回答问题有两个显著的特点：首先，几乎不需要时间想；其次，充满了 "I imagine 99% of your thought process is protecting your self-conception, and 98% of that is wrong" 这样的金句。

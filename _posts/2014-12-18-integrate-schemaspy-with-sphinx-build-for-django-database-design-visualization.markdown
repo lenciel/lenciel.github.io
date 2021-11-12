@@ -15,7 +15,7 @@ categories:
 
 在做项目的时候，客户或者合作的部门常常问研发要「数据库设计」。在古代，瀑布式开发的第一个阶段是做架构设计和写文档，所以这样的需求一般都能被「充分满足」。而在我们现在的项目节奏和迭代速度都很快，数据库的设计在项目初期经常也在变化，如何能够比较方便的文档化这些变更？
 
-对开发团队内部来说，我个人觉得Django的South或者是1.7之后加入的[Migration](https://lenciel.com/2014/08/django-1-dot-7-migrations/)里面每次变更生成的migration文件就已经足够开发人员了解底层的设计发生了什么变化。
+对开发团队内部来说，我个人觉得 Django 的 South 或者是 1.7 之后加入的[Migration](https://lenciel.com/2014/08/django-1-dot-7-migrations/)里面每次变更生成的 migration 文件就已经足够开发人员了解底层的设计发生了什么变化。
 
 而对外提供的文档，主要是在更高层级进行设计的沟通，所以之前我们一般是通过[django-extension](https://github.com/django-extensions/django-extensions)里面的`graph_models`命令来生成简单的关系图：
 
@@ -37,10 +37,10 @@ $ ./manage.py graph_models -a -g -o my_project_visualized.png
 
 于是在新的项目里面本座选用了看起来更美好的[schemaSpy](http://schemaspy.sourceforge.net/)，因为：
 
-1. 轻量但支持多种数据库（jdbc），针对Django的test/stage/prod环境都可以使用
-2. [功能非常强大](http://schemaspy.sourceforge.net/sample/)，并且有命令行支持，可以集成到CI
+1. 轻量但支持多种数据库（jdbc），针对 Django 的 test/stage/prod 环境都可以使用
+2. [功能非常强大](http://schemaspy.sourceforge.net/sample/)，并且有命令行支持，可以集成到 CI
 
-不过和大多数开源工具一样，它的文档也是乱糟糟的。以开发环境为例，我们一般使用sqlite作为数据库，要在Mac下面成功运行schemaSpy连接sqlite，你需要：
+不过和大多数开源工具一样，它的文档也是乱糟糟的。以开发环境为例，我们一般使用 sqlite 作为数据库，要在 Mac 下面成功运行 schemaSpy 连接 sqlite，你需要：
 
 1. 下载最新的[SchemaSpy jar包](http://sourceforge.net/projects/schemaspy/files/)
 2. 下载最新的[Xerial Sqlite JDBC jar](https://bitbucket.org/xerial/sqlite-jdbc
@@ -64,24 +64,24 @@ selectTablesSql=.tables
 java -jar schemaSpy_5.0.0.jar -t  sqlite-xerial.properties -db ../src/default.db  -o django-testbird -sso
 ```
 
-会看到有`warning`，但是无需惊慌，我看了一下是schemaSpy的作者没有正确的处理`[]`。
+会看到有`warning`，但是无需惊慌，我看了一下是 schemaSpy 的作者没有正确的处理`[]`。
 
 
 ## 集成到Sphinx
 
-因为我们的项目都使用了Jenkins自动启动Sphinx来生成文档，所以理想的情况当然是：
+因为我们的项目都使用了 Jenkins 自动启动 Sphinx 来生成文档，所以理想的情况当然是：
 
-1. 修改Django下某个app的`models.py`
-2. `make migration`生成migrations文件
-3. 代码提交并push到gitlab
-4. Jenkins调用`django management command`完成表结构的变更
-5. Jenkins自动更新包括数据库设计在内的文档
+1. 修改 Django 下某个 app 的`models.py`
+2. `make migration`生成 migrations 文件
+3. 代码提交并 push 到 gitlab
+4. Jenkins 调用`django management command`完成表结构的变更
+5. Jenkins 自动更新包括数据库设计在内的文档
 
-要实现#5，最简单的办法是在Sphinx文档目录下的`Makefile`里面加一个`target`：
+要实现#5，最简单的办法是在 Sphinx 文档目录下的`Makefile`里面加一个`target`：
 
 ```java
 dbv:
     java -jar schemaSpy_5.0.0.jar -t sqlite-xerial.properties -db ../src/default.db  -o _db_virtualization/django-testproject -sso
 ```
 
-然后在Jenkins调用的脚本里面加上`make dbv`就可以了。
+然后在 Jenkins 调用的脚本里面加上`make dbv`就可以了。

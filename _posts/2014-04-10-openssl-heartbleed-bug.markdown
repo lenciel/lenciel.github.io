@@ -9,15 +9,15 @@ categories:
 - c
 - rants
 ---
-连某宝都中招的[Heartbleed bug](http://heartbleed.com/)究竟是个什么东西？简单地说就是攻击者可以读最多64KB内存的内容。
+连某宝都中招的[Heartbleed bug](http://heartbleed.com/)究竟是个什么东西？简单地说就是攻击者可以读最多 64KB 内存的内容。
 
-读了这64KB能干嘛？用报这个bug的人的话来说：
+读了这 64KB 能干嘛？用报这个 bug 的人的话来说：
 
 {% blockquote %}
 Without using any privileged information or credentials we were able steal from ourselves the secret keys used for our X.509 certificates, user names and passwords, instant messages, emails and business critical documents and communication.
 {% endblockquote %}
 
-那么读取64KB内存和获取这么多关键信息究竟有什么关系呢？
+那么读取 64KB 内存和获取这么多关键信息究竟有什么关系呢？
 
 ## The bug
 先来看看[patch](http://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=96db9023b881d7cd9f379b0c154650d6c108e9a3)里面的`ssl/d1_both.c`:
@@ -32,7 +32,7 @@ dtls1_process_heartbeat(SSL *s)
     unsigned int padding = 16; /* Use minimum padding */
 ```
 
-可以看到，heartbeat里有一个 [SSLv3](http://en.wikipedia.org/wiki/Transport_Layer_Security)  record的指针，这个`record`的代码如下:
+可以看到，heartbeat 里有一个 [SSLv3](http://en.wikipedia.org/wiki/Transport_Layer_Security)  record 的指针，这个`record`的代码如下:
 
 ``` c
 typedef struct ssl3_record_st
@@ -58,7 +58,7 @@ n2s(p, payload);
 pl = p;
 ```
 
-可以看到`SSLv3 record`的第一个byte就是放这个`heartbeat`的`type`。 宏`n2s` 则是从`p`里面取两个byte放到payload里面，被用来作为payload的长度。 **注意这里并没有检查`SSLv3 record` 实际的长度。** 
+可以看到`SSLv3 record`的第一个 byte 就是放这个`heartbeat`的`type`。 宏`n2s` 则是从`p`里面取两个 byte 放到 payload 里面，被用来作为 payload 的长度。 **注意这里并没有检查`SSLv3 record` 实际的长度。** 
 
 接下来在这个函数里面干了下面这些事情：
 
@@ -74,7 +74,7 @@ buffer = OPENSSL_malloc(1 + 2 + payload + padding);
 bp = buffer;
 ```
 
-可以看到，用户要多少程序就分配多少，最多可以分配到`65535+1+2+16`，指针bp被用来操作这块内存。然后：
+可以看到，用户要多少程序就分配多少，最多可以分配到`65535+1+2+16`，指针 bp 被用来操作这块内存。然后：
 
 ``` c
 /* Enter response type, length and copy payload */
@@ -83,25 +83,25 @@ s2n(payload, bp);
 memcpy(bp, pl, payload);
 ```
 
-宏` s2n`把`n2s`做的操作恢复出来：先拿16个bit的值放到2个byte里面，也就是原来请求的payload的长度。然后把`pl`里面放的payload(请求者提交的data)拷贝到新分配的`bp`里面。
+宏` s2n`把`n2s`做的操作恢复出来：先拿 16 个 bit 的值放到 2 个 byte 里面，也就是原来请求的 payload 的长度。然后把`pl`里面放的 payload(请求者提交的 data)拷贝到新分配的`bp`里面。
 
 看起来是很平常的操作，只不过没有认真的检查用户输入而已，但问题也就在这里了。
 
 ## Where is the bug
 
-如果用户并没有正在提交声称的那么多个bytes的payload，那么memcpy就会读到同一个process里面SSLv3 record附近的内存内容。
+如果用户并没有正在提交声称的那么多个 bytes 的 payload，那么 memcpy 就会读到同一个 process 里面 SSLv3 record 附近的内存内容。
 
 这附近有哪些内容呢？
 
-首先要明白在linux上，内存的动态分配主要是通过[sbrk](http://linux.die.net/man/2/sbrk) 或者是 [mmap](http://man7.org/linux/man-pages/man2/mmap.2.html)。如果内存是通过sbrk分配的，它会使用`heap-grows-up`规则，泄露出来的东西不会那么多（但是如果是同时并发请求[还是有东西会漏](http://blog.existentialize.com/diagnosis-of-the-openssl-heartbleed-bug.html#fn:update)）。
+首先要明白在 linux 上，内存的动态分配主要是通过[sbrk](http://linux.die.net/man/2/sbrk) 或者是 [mmap](http://man7.org/linux/man-pages/man2/mmap.2.html)。如果内存是通过 sbrk 分配的，它会使用`heap-grows-up`规则，泄露出来的东西不会那么多（但是如果是同时并发请求[还是有东西会漏](http://blog.existentialize.com/diagnosis-of-the-openssl-heartbleed-bug.html#fn:update)）。
 
-在这里，`pl`因为malloc里面的mmap_threshhold多半是sbrk分配的，但是，那些关键的用户数据，则多半是通过mmap分配内存。于是这些数据就会被攻击者用`pl`拿到。如果再考虑并发请求，就...
+在这里，`pl`因为 malloc 里面的 mmap_threshhold 多半是 sbrk 分配的，但是，那些关键的用户数据，则多半是通过 mmap 分配内存。于是这些数据就会被攻击者用`pl`拿到。如果再考虑并发请求，就...
 
 ## The fix
 
-所以，整个patch里面最主要的fix就是：
-* 检查是否有长度为0的虚假heartbeat
-* 检查record的真实长度
+所以，整个 patch 里面最主要的 fix 就是：
+* 检查是否有长度为 0 的虚假 heartbeat
+* 检查 record 的真实长度
 
 代码如下：
 
@@ -118,10 +118,10 @@ memcpy(bp, pl, payload);
 
 ## So?
 
-这个bug大概算是影响这么剧烈的bug里面最好明白的一个，所以居然我也看明白了。感受：
+这个 bug 大概算是影响这么剧烈的 bug 里面最好明白的一个，所以居然我也看明白了。感受：
 
 * 为了可扩展性引入了复杂度，经常都会带来恶梦
-* 用户的输入，无论如何都不能相信，一定要check
-* C语言的确是大牛小牛都会踩到坑啊
+* 用户的输入，无论如何都不能相信，一定要 check
+* C 语言的确是大牛小牛都会踩到坑啊
 
 

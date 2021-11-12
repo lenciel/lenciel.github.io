@@ -12,14 +12,14 @@ categories:
 
 一般来说，新开张的小团队不会养专职的运维和部署团队。一般服务器开发的项目组会有人兼职做这部分的事情。刚开始的时候这部分的工作量一般也不大，但是随着租用的服务器越来越多，兼职的人就会发现自己是在打上甘岭战役————坡越来越陡。
 
-因此，一个简单而有效的标准流程是非常必要的。ZooM团队的服务器都会配置两个固定的帐号： ``root`` 和 ``deploy`` 。 ``deploy``  这个用户具有 ``sudo`` 的权限。开发人员使用deploy但是不通过用户名密码登录而是用 ``public key`` 。这样一来，只需要保证所有机器的 ``authorized_keys`` 文件同步即可。后面要做的改进是：
+因此，一个简单而有效的标准流程是非常必要的。ZooM 团队的服务器都会配置两个固定的帐号： ``root`` 和 ``deploy`` 。 ``deploy``  这个用户具有 ``sudo`` 的权限。开发人员使用 deploy 但是不通过用户名密码登录而是用 ``public key`` 。这样一来，只需要保证所有机器的 ``authorized_keys`` 文件同步即可。后面要做的改进是：
 
-* 在所有机器禁止通过 root 账号进行ssh
-* 在所有机器上限制可以ssh的IP范围
+* 在所有机器禁止通过 root 账号进行 ssh
+* 在所有机器上限制可以 ssh 的 IP 范围
 
-这样的实施方案对 ``authorized_keys`` 的保密性和正确性要求是很高的，但是在没有专门IT的时候，对我们这样的小团队基本是够用的。下面是详细的步骤：
+这样的实施方案对 ``authorized_keys`` 的保密性和正确性要求是很高的，但是在没有专门 IT 的时候，对我们这样的小团队基本是够用的。下面是详细的步骤：
 
-我们拿到的第一台机器是Ubuntu的，因为 ``Gitlab`` 只有Debian的版本。后面的机器大多会是CentOS，所以使用的命令可能会稍微有调整，但是意思是不变的。
+我们拿到的第一台机器是 Ubuntu 的，因为 ``Gitlab`` 只有 Debian 的版本。后面的机器大多会是 CentOS，所以使用的命令可能会稍微有调整，但是意思是不变的。
 
 更换root密码
 ------------
@@ -45,7 +45,7 @@ apt-get upgrade
 apt-get install fail2ban
 ```
 
-Fail2ban是一个用来监控登录尝试的 ``daemon`` ，可以有效侦测和防止可疑行为的发生。这个工具文档很全，而且出厂配置就很齐全，几乎不需要定制就能投入使用了。
+Fail2ban 是一个用来监控登录尝试的 ``daemon`` ，可以有效侦测和防止可疑行为的发生。这个工具文档很全，而且出厂配置就很齐全，几乎不需要定制就能投入使用了。
 
 添加deploy用户
 -------------
@@ -60,7 +60,7 @@ chmod 700 /home/deploy/.ssh
 配置 ``public key`` 
 --------------------
 
-使用密码的日子已经慢慢过时了，这方面Github很有[贡献](https://help.github.com/categories/56/articles)。只需要：
+使用密码的日子已经慢慢过时了，这方面 Github 很有[贡献](https://help.github.com/categories/56/articles)。只需要：
 
 ```bash
 vim /home/deploy/.ssh/authorized_keys
@@ -73,12 +73,12 @@ chmod 400 /home/deploy/.ssh/authorized_keys
 chown deploy:deploy /home/deploy -R
 ```
 
-当然你也可以使用 ``id_rsa.pub`` 之外的key，然后在本地的 ``~/.ssh/config`` 里面对 ``IdentityFile`` 做指定。具体方式可以查看 ``~/.ssh/config``的说明。
+当然你也可以使用 ``id_rsa.pub`` 之外的 key，然后在本地的 ``~/.ssh/config`` 里面对 ``IdentityFile`` 做指定。具体方式可以查看 ``~/.ssh/config``的说明。
 
 测试deploy用户并赋予 ``Sudo`` 权限
 ----------------------------------
 
-先测试deploy是否能够正常登录，然后使用 ``root`` 账号设置密码：
+先测试 deploy 是否能够正常登录，然后使用 ``root`` 账号设置密码：
 
 ```bash
 passwd deploy
@@ -100,7 +100,7 @@ deploy  ALL=(ALL) ALL
 锁定SSH
 -------
 
-设置ssh，禁止使用密码ssh，禁止使用 ``root`` 账号ssh。
+设置 ssh，禁止使用密码 ssh，禁止使用 ``root`` 账号 ssh。
 
 ```bash
 vim /etc/ssh/sshd_config
@@ -113,12 +113,12 @@ PermitRootLogin no
 PasswordAuthentication no
 ```
 
-如果有需要还可以限定可以ssh的ip地址：
+如果有需要还可以限定可以 ssh 的 ip 地址：
 
 ```bash
 AllowUsers deploy@(your-ip) deploy@(another-ip-if-any)
 ```
-重启ssh：
+重启 ssh：
 
 ```bash
 service ssh restart
@@ -127,7 +127,7 @@ service ssh restart
 设置防火墙
 ----------
 
-Ubuntu提供了 ``ufw``，所以只需要：
+Ubuntu 提供了 ``ufw``，所以只需要：
 
 ```bash
 ufw allow from {your-ip} to any port 22
@@ -173,7 +173,7 @@ Unattended-Upgrade::Allowed-Origins {
 安装Logwatch
 -------------
 
-Logwatch是一个监控你的日志并发送邮件通知的daemon。
+Logwatch 是一个监控你的日志并发送邮件通知的 daemon。
 
 ```bash
 apt-get install logwatch
@@ -189,8 +189,8 @@ vim /etc/cron.daily/00logwatch
 What's Next
 -------------
 
-* 使用Puppet自动化这些配置
-* 在基础的配置上，把一个fresh的机器如果配置成各种形态的（Django/Web/Database/LoadBalance/...)
+* 使用 Puppet 自动化这些配置
+* 在基础的配置上，把一个 fresh 的机器如果配置成各种形态的（Django/Web/Database/LoadBalance/...)
 
 
 

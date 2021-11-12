@@ -10,23 +10,23 @@ categories:
 
 ---
 
- Google一直在致力于提醒用户[更加安全的上网](https://security.googleblog.com/2016/09/moving-towards-more-secure-web.html)，并从Chrome 56版本开始，把使用HTTP的网站直接[标记为「不安全的」](http://www.zdnet.com/article/chrome-56-google-starts-slapping-not-secure-on-http-payment-and-login-pages/)。随后Firefox等浏览器也宣布加入了类似的功能，来逼迫网站开发者逐步废弃使用HTTP。
+ Google 一直在致力于提醒用户[更加安全的上网](https://security.googleblog.com/2016/09/moving-towards-more-secure-web.html)，并从 Chrome 56 版本开始，把使用 HTTP 的网站直接[标记为「不安全的」](http://www.zdnet.com/article/chrome-56-google-starts-slapping-not-secure-on-http-payment-and-login-pages/)。随后 Firefox 等浏览器也宣布加入了类似的功能，来逼迫网站开发者逐步废弃使用 HTTP。
 
-在过去，要支持SSL其实还是挺麻烦的，因为首先你需要[一个证书](https://www.digicert.com/ssl-certificate.htm)。这东西申请起来麻烦，但只要给钱就特别好办：为这个，Google年初还以乱发了3万个证书为由宣布[不再信任Symantec签发的证书](https://arstechnica.com/security/2017/03/google-takes-symantec-to-the-woodshed-for-mis-issuing-30000-https-certs/)。
+在过去，要支持 SSL 其实还是挺麻烦的，因为首先你需要[一个证书](https://www.digicert.com/ssl-certificate.htm)。这东西申请起来麻烦，但只要给钱就特别好办：为这个，Google 年初还以乱发了 3 万个证书为由宣布[不再信任Symantec签发的证书](https://arstechnica.com/security/2017/03/google-takes-symantec-to-the-woodshed-for-mis-issuing-30000-https-certs/)。
 
-这也跟Google等一干巨头背后撑腰的免费证书发放机构[Let's Encrypt](https://letsencrypt.org/)做大了有些关系。从它的官网上的数据可以看到，一年下来，证书发放量相当感人：
+这也跟 Google 等一干巨头背后撑腰的免费证书发放机构[Let's Encrypt](https://letsencrypt.org/)做大了有些关系。从它的官网上的数据可以看到，一年下来，证书发放量相当感人：
 
 ![Vhost threshold](/downloads/images/2017_03/certs_num_by_year.jpg --alt Don't touch me)
 
-但作为一名上年纪的人，本座已经不会再时间紧跟业界潮流：所以Let's Encrypt出来了很久，大概试过之后就一直在等待工具链成熟。这次正好[搬迁到Jekyll](/2017/03/migrating-from-octopress-to-jekyll/)，眼看着围绕着[certbot](https://certbot.eff.org/)构建的生态也非常完善，就做了切换。
+但作为一名上年纪的人，本座已经不会再时间紧跟业界潮流：所以 Let's Encrypt 出来了很久，大概试过之后就一直在等待工具链成熟。这次正好[搬迁到Jekyll](/2017/03/migrating-from-octopress-to-jekyll/)，眼看着围绕着[certbot](https://certbot.eff.org/)构建的生态也非常完善，就做了切换。
 
-把切换到HTTP2也一并做了。
+把切换到 HTTP2 也一并做了。
 
-HTTP2的介绍文章已经[很多了](https://developers.google.com/web/fundamentals/performance/http2/)，毕竟已经占据了[超过8%](https://w3techs.com/technologies/details/ce-http2/all/all)的整体份额，感兴趣的同学可以去看看Ilya Grigorik的相关文章或者[讲座](https://docs.google.com/presentation/d/1r7QXGYOLCh4fcUq0jDdDwKJWNqWK1o4xMtYpKZCJYjM/edit#slide=id.g40fbe7d8c_051)。
+HTTP2 的介绍文章已经[很多了](https://developers.google.com/web/fundamentals/performance/http2/)，毕竟已经占据了[超过8%](https://w3techs.com/technologies/details/ce-http2/all/all)的整体份额，感兴趣的同学可以去看看 Ilya Grigorik 的相关文章或者[讲座](https://docs.google.com/presentation/d/1r7QXGYOLCh4fcUq0jDdDwKJWNqWK1o4xMtYpKZCJYjM/edit#slide=id.g40fbe7d8c_051)。
 
 这里主要讲怎么开启。
 
-因为国内访问github pages随时被墙的原因，这次迁移到纯Jekyll是在CentOS7上用Nginx来做的host。理论上来说，Nginx 1.9.5及其以上版本的开启非常简单：
+因为国内访问 github pages 随时被墙的原因，这次迁移到纯 Jekyll 是在 CentOS7 上用 Nginx 来做的 host。理论上来说，Nginx 1.9.5 及其以上版本的开启非常简单：
 
 ``` bash
 server {
@@ -41,11 +41,11 @@ server {
    ssl_prefer_server_ciphers on;
 ```
 
-注意到第二行里面的`http2`了吗？加上它就可以了。用浏览器看看请求是不是都是走HTTP2了：
+注意到第二行里面的`http2`了吗？加上它就可以了。用浏览器看看请求是不是都是走 HTTP2 了：
 
 ![Vhost threshold](/downloads/images/2017_03/http_orig_requests.jpg --alt Don't touch me)
 
-咦？为什么没有起作用？查了一下，原来除开Nginx版本的要求，对OpenSSL和ALPN的版本[也有要求](https://www.nginx.com/blog/supporting-http2-google-chrome-users/)。看了一下CentOS7通过yum安装的nginx的参数：
+咦？为什么没有起作用？查了一下，原来除开 Nginx 版本的要求，对 OpenSSL 和 ALPN 的版本[也有要求](https://www.nginx.com/blog/supporting-http2-google-chrome-users/)。看了一下 CentOS7 通过 yum 安装的 nginx 的参数：
 
 ``` bash
 $ nginx -V
@@ -55,7 +55,7 @@ built with OpenSSL 1.0.1e-fips 11 Feb 2013
 TLS SNI support enabled
 ```
 
-OpenSSL的版本果然是太低了，只好从源码来编译一个更新的版本：
+OpenSSL 的版本果然是太低了，只好从源码来编译一个更新的版本：
 
 ``` bash
 yum -y groupinstall 'Development Tools'
@@ -97,11 +97,11 @@ built with OpenSSL 1.0.2k  26 Jan 2017
 TLS SNI support enabled
 ```
 
-完成后，重启nginx，再次检查访问的情况：
+完成后，重启 nginx，再次检查访问的情况：
 
 ![Vhost threshold](/downloads/images/2017_03/http2_requests.jpg --alt Don't touch me)
 
-然后从Chrome的`chrome://net-internals/#http2`入口进去，可以看到`lenciel.com`已经在列了：
+然后从 Chrome 的`chrome://net-internals/#http2`入口进去，可以看到`lenciel.com`已经在列了：
 
 ![Vhost threshold](/downloads/images/2017_03/http2_internals.jpg --alt Don't touch me)
 

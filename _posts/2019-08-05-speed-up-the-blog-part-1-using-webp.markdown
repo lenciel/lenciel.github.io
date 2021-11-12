@@ -6,7 +6,7 @@ comments: true
 categories:
 ---
 
-这个 Blog 对本座来说，除开记录胡思乱想，最重要的作用就是保持和前端世界一点同步。最近打算在不使用 CDN 的情况下， [pagespeed](https://developers.google.com/speed/pagespeed/) 跑到100分，所以做一些早就想做但是一直没空的改造，排在最前面的就是使用 WebP 格式放正文图片。
+这个 Blog 对本座来说，除开记录胡思乱想，最重要的作用就是保持和前端世界一点同步。最近打算在不使用 CDN 的情况下， [pagespeed](https://developers.google.com/speed/pagespeed/) 跑到 100 分，所以做一些早就想做但是一直没空的改造，排在最前面的就是使用 WebP 格式放正文图片。
 
 ### 什么是WebP
 
@@ -46,7 +46,7 @@ map $http_accept $webp_suffix {
 
 这里的作用主要是，如果 `$http_accept` （更多信息可以查看 [ngx_http_map_module](http://nginx.org/en/docs/http/ngx_http_map_module.html)）代表的访问者的头里面有 `webp`，那么 `$webp_suffix` 就赋值为 `.webp`，否则就是一个空字符串。
 
-定义空字符串这种方法比较「硬编码」，但是这里不用 `rewrite` 来实现主要是出于性能方面的考虑：nginx的变量是 lazily calculated 的，所以使用这样的方式不会影响其他文件。
+定义空字符串这种方法比较「硬编码」，但是这里不用 `rewrite` 来实现主要是出于性能方面的考虑：nginx 的变量是 lazily calculated 的，所以使用这样的方式不会影响其他文件。
 
 #### 根据变量值返回
 
@@ -66,7 +66,7 @@ map $http_accept $webp_suffix {
 
 - 如果有原请求+".webp"后缀的文件，就使用它返回
 - 如果没有，返回原来请求的文件
-- 如果都没有，返回404
+- 如果都没有，返回 404
 
 更多 try_files 的用法可以看[这里](http://nginx.org/en/docs/http/ngx_http_core_module.html#try_files)。
 

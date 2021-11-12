@@ -10,17 +10,17 @@ categories:
 
 ![Raw git log output](/downloads/images/2013_07/wine.jpeg --alt Don't touch me)
 
-一瓶Lafite Rothschild Bordeaux最少要几千块，一瓶Charles Shaw或者Franzia卖十几块。我们经常可以看到那些红酒的广告宣扬着高档红酒的品质和口感是多么美妙。但其实很多人不知道，按照"酒类经济学家"的说法，葡萄酒的价格和口感之间的关系可能不是那么紧密。他们中不少人甚至声称，葡萄酒的价格根本就是乱来的，而那些号称能被品出来的万千滋味不过是付钱过后脑袋里面的自我安慰。
+一瓶 Lafite Rothschild Bordeaux 最少要几千块，一瓶 Charles Shaw 或者 Franzia 卖十几块。我们经常可以看到那些红酒的广告宣扬着高档红酒的品质和口感是多么美妙。但其实很多人不知道，按照"酒类经济学家"的说法，葡萄酒的价格和口感之间的关系可能不是那么紧密。他们中不少人甚至声称，葡萄酒的价格根本就是乱来的，而那些号称能被品出来的万千滋味不过是付钱过后脑袋里面的自我安慰。
 
-比如，一份2008年发表在《The Journal of Wine Economics》上的[文章](http://www.wine-economics.org/aawe/wp-content/uploads/2012/10/Vol.3-No.1-2008-Evidence-from-a-Large-Sample-of-Blind-Tastings.pdf)说，当消费者不知道自己的酒的价格时，他们对实际上更便宜的酒的口感评价甚至稍稍好过那些更贵的酒。而且不光是一般消费者，即使是那些专家也不会对更贵的酒评价更高：
+比如，一份 2008 年发表在《The Journal of Wine Economics》上的[文章](http://www.wine-economics.org/aawe/wp-content/uploads/2012/10/Vol.3-No.1-2008-Evidence-from-a-Large-Sample-of-Blind-Tastings.pdf)说，当消费者不知道自己的酒的价格时，他们对实际上更便宜的酒的口感评价甚至稍稍好过那些更贵的酒。而且不光是一般消费者，即使是那些专家也不会对更贵的酒评价更高：
 
 {% blockquote %}
 「In sum, we ﬁnd a non-negative relationship between price and overall rating for experts. Due to the poor statistical signiﬁcance of the price coefﬁcient for experts, it remains an open question whether this coefﬁcient is in fact positive.」
 {% endblockquote %}
 
-在[另一项实验](http://www.newyorker.com/online/blogs/frontal-cortex/2012/06/wine-taste.html)中，被试者喝过red wine和white wine之后，对两种酒的评价就分别是一些典型的red wine和white wine的评价。而实际上用于测试的酒都是white wine，所谓的red wine只是加了一些对口感没有影响的食用色素。
+在[另一项实验](http://www.newyorker.com/online/blogs/frontal-cortex/2012/06/wine-taste.html)中，被试者喝过 red wine 和 white wine 之后，对两种酒的评价就分别是一些典型的 red wine 和 white wine 的评价。而实际上用于测试的酒都是 white wine，所谓的 red wine 只是加了一些对口感没有影响的食用色素。
 
-另一类的研究着眼于品酒师Robert M. Parker Jr.发明的风靡全球的100制评分标准的准确度。退休的统计学家Robert Hodgson也是一位业余的酿酒爱好者。他发现同样的酒多次让品酒师打分，分数非常不稳定：
+另一类的研究着眼于品酒师 Robert M. Parker Jr.发明的风靡全球的 100 制评分标准的准确度。退休的统计学家 Robert Hodgson 也是一位业余的酿酒爱好者。他发现同样的酒多次让品酒师打分，分数非常不稳定：
 
 {% blockquote %}
 「The judges’ wine ratings typically varied by ±4 points on a standard ratings scale running from 80 to 100. A wine rated 91 on one tasting would often be rated an 87 or 95 on the next. Some of the judges did much worse, and only about one in 10 regularly rated the same wine within a range of ±2 points.」
@@ -41,7 +41,7 @@ categories:
 
 要试验这点儿你可以试试捏着鼻子吃饭，或者你想想为什么自己上次感冒的时候吃东西不香。和味蕾一样，人的感觉器官特别是嗅觉和视觉会在你对酒的口感做出评价时起到非常巨大的作用，这点对于其他食物和饮料也一样适用。
 
-以颜色为例，类似前面说的在white wine里面加色素可以让品酒师都犯错认为它是red wine一样，New York Times报道过：
+以颜色为例，类似前面说的在 white wine 里面加色素可以让品酒师都犯错认为它是 red wine 一样，New York Times 报道过：
 
 {% blockquote %}
 When tasteless yellow coloring is added to vanilla pudding, consumers say it tastes like banana or lemon pudding. And when mango or lemon flavoring is added to white pudding, most consumers say that it tastes like vanilla pudding. Color creates a psychological expectation for a certain flavor that is often impossible to dislodge, [food chemist] Dr. Shelke said.
@@ -52,7 +52,7 @@ When tasteless yellow coloring is added to vanilla pudding, consumers say it tas
 并非所有的酒都一样
 ================
 
-公认的最好的品酒师，被称为 `Master Sommeliers` ，在全世界只有不到200名。这些人要获得 `Master Sommeliers` 的称号，必须蒙上眼睛鉴别出6种不同葡萄酒的葡萄品种、产地和年份。如果这些人不是酒行业养的神棍，而是真有这样的本领，那么是否意味着不同的酒确实口感是不一样的呢？
+公认的最好的品酒师，被称为 `Master Sommeliers` ，在全世界只有不到 200 名。这些人要获得 `Master Sommeliers` 的称号，必须蒙上眼睛鉴别出 6 种不同葡萄酒的葡萄品种、产地和年份。如果这些人不是酒行业养的神棍，而是真有这样的本领，那么是否意味着不同的酒确实口感是不一样的呢？
 
 《今日心理学》上面[有篇文章](http://www.psychologytoday.com/blog/sensory-superpowers/200908/you-drink-what-you-think)对此做了解答，认为专业品酒师主要靠的是良好的分析能力和大量的练习积累的知识：
 
@@ -62,7 +62,7 @@ Research shows that contrary to common thought, wine experts do not have more se
 What makes [Master Sommelier] Steven Poe an expert is how he brings his formal knowledge of wine production to what he tastes. For example, Poe would be familiar with the flavor outcomes of malolactic fermentation —a process of secondary wine fermentation. In a blind tasting, he might notice one of the flavors associated with the process—a buttery texture, for example—and then attend to the other likely flavor results of malolactic fermentation including hints of yogurt and sauerkraut. This could help Poe narrow down a wine’s region and vintage.
 {% endblockquote %}
 
-换句话说即使是Master Sommelier也有可能把染色的white wine搞成red wine，或者是在盲测的时候觉得一种便宜的酒比贵的酒还好喝。他们像福尔摩斯一样，是根据线索和知识解开口中的酒是什么样的酒的谜题，而不可能像广告里面一口入喉，就击掌高呼：「哇，这酒太好喝了，这一定是xxx年份的xxx。」
+换句话说即使是 Master Sommelier 也有可能把染色的 white wine 搞成 red wine，或者是在盲测的时候觉得一种便宜的酒比贵的酒还好喝。他们像福尔摩斯一样，是根据线索和知识解开口中的酒是什么样的酒的谜题，而不可能像广告里面一口入喉，就击掌高呼：「哇，这酒太好喝了，这一定是 xxx 年份的 xxx。」
 
 So?
 ====

@@ -11,7 +11,7 @@ categories:
 
 很多人问什么是`TL;DR`，其实是`Too long, didn't read`的缩写，一般用来暗示下面是一段摘要，如果你对这长得要死的文章的细节没兴趣，读读它就可以了。
 
-比如我很喜欢的tumblr站[TL;DR WIKIPEDIA](http://tldrwikipedia.tumblr.com/)，其实就是魔鬼辞典好不好。再比如昨天在Reddit上的红贴[圣经故事TLDR版本](http://www.reddit.com/r/Christianity/comments/2mpv2r/the_stories_of_the_bible_in_tldr_form/)，读起来也很好玩：
+比如我很喜欢的 tumblr 站[TL;DR WIKIPEDIA](http://tldrwikipedia.tumblr.com/)，其实就是魔鬼辞典好不好。再比如昨天在 Reddit 上的红贴[圣经故事TLDR版本](http://www.reddit.com/r/Christianity/comments/2mpv2r/the_stories_of_the_bible_in_tldr_form/)，读起来也很好玩：
 
 **创世纪**
 

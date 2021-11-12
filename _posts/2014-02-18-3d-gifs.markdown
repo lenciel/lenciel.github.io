@@ -16,9 +16,9 @@ categories:
     <p>Your browser doesn't support this embedded video.</p>
 </video>
 
-托各种SNS的福，有趣的动态gif在网络上漫山遍野。作为电影爱好者的本座，也是[重度的gif爱好者](https://lenciel.com/blog/categories/fu-guang-lue-ying/)。
+托各种 SNS 的福，有趣的动态 gif 在网络上漫山遍野。作为电影爱好者的本座，也是[重度的gif爱好者](https://lenciel.com/blog/categories/fu-guang-lue-ying/)。
 
-如上图所示，最近动态gif玩法又有创新了：通过「打白条」的方式实现3D效果。主要的思路就是在动态物体处于背景的时候，白条遮挡动态物体。而当动态物体从背景进入前景的时候，动态物体遮挡白条，造成动态物体溢出图片边界范围的错觉。
+如上图所示，最近动态 gif 玩法又有创新了：通过「打白条」的方式实现 3D 效果。主要的思路就是在动态物体处于背景的时候，白条遮挡动态物体。而当动态物体从背景进入前景的时候，动态物体遮挡白条，造成动态物体溢出图片边界范围的错觉。
 
 <video playsInline autoplay loop muted>
     <source src="{{ site.static_base }}/downloads/images/2014_02/3dgifs1.mp4" type="video/mp4">

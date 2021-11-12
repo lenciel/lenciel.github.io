@@ -8,7 +8,7 @@ categories:
 - tips
 ---
 
-升级到最新的osx版本Maverick之后，打开iTerm2就报错：
+升级到最新的 osx 版本 Maverick 之后，打开 iTerm2 就报错：
 
 
 ```bash
@@ -22,7 +22,7 @@ VIRTUALENVWRAPPER_PYTHON=/usr/bin/python and that PATH is
 set properly.
 ```
 
-敲pip之后也报错：
+敲 pip 之后也报错：
 
 
 ```bash
@@ -38,7 +38,7 @@ Traceback (most recent call last):
 pkg_resources.DistributionNotFound: pip==1.3.1
 ```
 
-这坨`pkg_resources.DistributionNotFound`的错正好前两天装CentOS的机器[看到过](http://stackoverflow.com/questions/7446187/no-module-named-pkg-resources)。
+这坨`pkg_resources.DistributionNotFound`的错正好前两天装 CentOS 的机器[看到过](http://stackoverflow.com/questions/7446187/no-module-named-pkg-resources)。
 
 运行下面的命令更新了`setuptools`之后重装了`pip`和`virtualenv`、`virtualenvwrapper`就好了：
 

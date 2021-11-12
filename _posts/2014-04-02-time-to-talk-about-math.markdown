@@ -12,7 +12,7 @@ categories:
 这篇日志主要是想试试:
 
 * 怎么把`d3.js`和`AngularJS`集成到[octopress](https://lenciel.com/2013/03/blog-with-octopress-and-github-pages/)，因为[setosa](http://vudlab.com/bart/)很酷
-* 怎么在某篇日志里面支持specific的js和css
+* 怎么在某篇日志里面支持 specific 的 js 和 css
 
 玩了一下并不是很麻烦，于是这个静态站点可以干的事情就"动态"多了。比如把课本里面的[勾股定理](http://aleph0.clarku.edu/~djoyce/java/elements/bookI/propI47.html)通过画图证明一下(点击黑色背景字母有彩蛋)：
 

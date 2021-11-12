@@ -8,7 +8,7 @@ categories:
 - fun
 ---
 
-之前提过有一些机构[开放](http://www.ppgis.net/imagery.htm)了卫星云图，可以用GIS信息通过接口去获取。从天上看，地球还是挺美的，很多都可以用来做手机的桌面，如果你需要下载无损的版本：[click](http://pan.baidu.com/s/1sjuiOqx)，分享码:`gdyv`：
+之前提过有一些机构[开放](http://www.ppgis.net/imagery.htm)了卫星云图，可以用 GIS 信息通过接口去获取。从天上看，地球还是挺美的，很多都可以用来做手机的桌面，如果你需要下载无损的版本：[click](http://pan.baidu.com/s/1sjuiOqx)，分享码:`gdyv`：
 
 <link rel="stylesheet" type="text/css" href="{{ site.static_base }}/downloads/static/css/elasticstack_slider.css" />
 

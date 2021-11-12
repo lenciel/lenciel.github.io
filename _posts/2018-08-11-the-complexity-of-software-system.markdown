@@ -12,7 +12,7 @@ categories:
 
 人类创造了很多复杂度极高的系统：社会、经济体、软件和网络等等。在处理这些复杂系统方面，科学理论和实践上的进步其实非常小。
 
-查一下ICCS（The International Conference on Complex Systems）的[2018会议](http://www.necsi.edu/events/iccs2018/)你会发现，无论研究对象是什么，大家背后的数学基础或者方法论还是高度趋同的。
+查一下 ICCS（The International Conference on Complex Systems）的[2018会议](http://www.necsi.edu/events/iccs2018/)你会发现，无论研究对象是什么，大家背后的数学基础或者方法论还是高度趋同的。
 
 比如[Natalia Komorova](https://www.math.uci.edu/~komarova/)关于癌症突变的人口动态以及它如何受到维数的影响的研究，跟[Cesar Hidalgo](https://www.media.mit.edu/people/hidalgo/overview/)关于[相关性原理](https://link.springer.com/chapter/10.1007/978-3-319-96661-8_46)和[经济地理学](https://en.wikipedia.org/wiki/Economic_geography)的讲座，思路都是基本一致的。
 

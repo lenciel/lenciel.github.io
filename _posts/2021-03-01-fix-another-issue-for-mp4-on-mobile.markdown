@@ -13,7 +13,7 @@ categories:
 
 昨天因为讨论裸眼 3D 动效的实现，无意中打开一篇[之前的帖子](https://lenciel.com/2014/02/3d-gifs/)，发现所有的视频文件加载都有问题。
 
-这是因为我之前做性能优化的[时候](https://lenciel.com/2020/05/issues-are-fixed-and-gif-is-abandoned/)，把所有的 GIF 文件转成了 MP4 用CDN 部署之后，没有在各种环境下充分测试过。
+这是因为我之前做性能优化的[时候](https://lenciel.com/2020/05/issues-are-fixed-and-gif-is-abandoned/)，把所有的 GIF 文件转成了 MP4 用 CDN 部署之后，没有在各种环境下充分测试过。
 
 大概看了一下，在桌面浏览器上都能正常显示，但是在移动设备上就不行。我用 Safari 的开发者模式调试自己 iPhone 上的网页，可以看到请求这些视频的时候，有一些报错。
 

@@ -8,14 +8,14 @@ categories:
 - tutorial
 ---
 
-在应用开发的过程中，我们会遇到migration主要分为：
+在应用开发的过程中，我们会遇到 migration 主要分为：
 
-1. Schema Migrations：数据库schema的变化，也就是我们前面[讨论的内容](https://lenciel.com/2014/08/django-1-dot-7-migrations/)
+1. Schema Migrations：数据库 schema 的变化，也就是我们前面[讨论的内容](https://lenciel.com/2014/08/django-1-dot-7-migrations/)
 2. Data Migrations：数据的变化，比如需要批量变更数据或者备份在其他地方的历史数据
 
-第二种是没法敲几条命令让Django自动帮你完成其他的事情的，而是需要手动使用`RunPython`，这里具体说一下做法。
+第二种是没法敲几条命令让 Django 自动帮你完成其他的事情的，而是需要手动使用`RunPython`，这里具体说一下做法。
 
-还是以之前的那个项目来作为例子，我们首先创建一个migration file：
+还是以之前的那个项目来作为例子，我们首先创建一个 migration file：
 
 ```bash
 $ python manage.py makemigrations --empty ts_data
@@ -71,6 +71,6 @@ class Migration(migrations.Migration):
     operations = [migrations.RunPython(load_data)]
 ```
 
-如果你觉得：咦，这样导入数据不是有点儿像用`syncdb`然后导入`fixture`么？的确，从效果上它们是一样的，个人觉得，对于测试环境我们可以继续使用fixture来保存mock的测试数据，然后使用`loaddata`命令手动加载测试数据。对生产环境使用migration来导入数据更好，和使用`loaddata`命令来导入fixture相比，它不需要手动操作，并且由于是通过`RunPython`来进行，实际上可以对数据进行各种需要的处理。
+如果你觉得：咦，这样导入数据不是有点儿像用`syncdb`然后导入`fixture`么？的确，从效果上它们是一样的，个人觉得，对于测试环境我们可以继续使用 fixture 来保存 mock 的测试数据，然后使用`loaddata`命令手动加载测试数据。对生产环境使用 migration 来导入数据更好，和使用`loaddata`命令来导入 fixture 相比，它不需要手动操作，并且由于是通过`RunPython`来进行，实际上可以对数据进行各种需要的处理。
 
 

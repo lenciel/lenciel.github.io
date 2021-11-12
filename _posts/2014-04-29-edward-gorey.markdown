@@ -17,7 +17,7 @@ categories:
 当然，这些要拿来做蒙爷的启蒙教育绘本当然是过分「黑暗」了一些。不过从技术上来说，试试怎么把图片叠得好看总是一样的。
 
 
-所以，让我们看看Edward Gorey画的一些知名小说的封面吧（他能一直在作家圈子有帮朋友似乎也是因为画了不少封面）：
+所以，让我们看看 Edward Gorey 画的一些知名小说的封面吧（他能一直在作家圈子有帮朋友似乎也是因为画了不少封面）：
 <link rel="stylesheet" type="text/css" href="{{ site.static_base }}/downloads/static/css/elasticstack_slider.css" />
 
 <div class="slider-container">

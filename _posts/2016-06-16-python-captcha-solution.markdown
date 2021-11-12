@@ -13,16 +13,16 @@ categories:
 
 昨天饭局上聊起来自动化测试或者是别的奇怪事业里经常需要面对的一个问题：验证码识别。
 
-其实验证码的识别，技术上来说可以作为古老的OCR（Optical Character Recognition）问题的一个子集：因为OCR其实就是从图片上把文字认出来嘛。
+其实验证码的识别，技术上来说可以作为古老的 OCR（Optical Character Recognition）问题的一个子集：因为 OCR 其实就是从图片上把文字认出来嘛。
 
-但它的有趣之处在于，验证码，也就是CAPTCHA，本身就是'Completely Automated Public Turing test to tell Computers and Humans Apart'的缩写，也就是说在设计上它的目的就是要：
+但它的有趣之处在于，验证码，也就是 CAPTCHA，本身就是'Completely Automated Public Turing test to tell Computers and Humans Apart'的缩写，也就是说在设计上它的目的就是要：
 
 1. 让人很容易认识出来
 2. 让机器很难认识出来
 
-所以如果你电脑识别出来了验证码，要么就是它特别容易不符合#2的要求，要么就是你实现了很不错的人工智能算法，这篇文章是讲第一种情况。
+所以如果你电脑识别出来了验证码，要么就是它特别容易不符合#2 的要求，要么就是你实现了很不错的人工智能算法，这篇文章是讲第一种情况。
 
-传统的做法来识别OCR，主要需要处理的是下面三个环节：
+传统的做法来识别 OCR，主要需要处理的是下面三个环节：
 
 1. 图片二值化
 2. 字符的分割
@@ -30,13 +30,13 @@ categories:
 
 ### 二值化怎么做
 
-所谓的「二值化」，就是图片上的像素要么灰度是255（白），要么是0（黑）。大致的思路就是把灰度大于或等于阈值的像素判为属于你关注的文字，置成0；其他的像素点灰度置为255。
+所谓的「二值化」，就是图片上的像素要么灰度是 255（白），要么是 0（黑）。大致的思路就是把灰度大于或等于阈值的像素判为属于你关注的文字，置成 0；其他的像素点灰度置为 255。
 
 具体的操作，我一般使用下面几种方式：
 
-1. 如果是特别简单地处理，用PIL库
+1. 如果是特别简单地处理，用 PIL 库
 2. 如果是比较复杂的但是不需要很细致的控制，用[ImageMagick](http://imagemagick.sourceforge.net/)的`convert`命令
-3. 如果是特别复杂，需要反复试验各种算法的，用OpenCV
+3. 如果是特别复杂，需要反复试验各种算法的，用 OpenCV
 
 所以下面这两个验证码，哪个的难度大一些？
 
@@ -52,7 +52,7 @@ categories:
 
 但其实第一张图所有的噪声都是花花绿绿的颜色，而验证码本身是纯粹的黑色，这种图片处理起来是相对容易的。只需要找到验证码像素点的颜色，用这种颜色选取这些像素点，拷贝到一张全白的图片上面即可。
 
-要获取验证码的像素颜色可以[参考这里](http://www.boyter.org/decoding-captchas/)的思路，把图片转成256色的，然后对所有的像素做一个统计然后标出它们在整个图片里面出现的频率。因为觉得原文里面的代码写得比较啰嗦（要学会写lamda啊）就做了一些修改：
+要获取验证码的像素颜色可以[参考这里](http://www.boyter.org/decoding-captchas/)的思路，把图片转成 256 色的，然后对所有的像素做一个统计然后标出它们在整个图片里面出现的频率。因为觉得原文里面的代码写得比较啰嗦（要学会写 lamda 啊）就做了一些修改：
 
 ```python
 import sys
@@ -122,9 +122,9 @@ $ python convert_grayscale.py regcode.png 10
 
 <p><img src="{{ site.static_base }}/downloads/images/2016_06/convert_1.png" title=--alt Don't touch me alt="Vhost threshold" data-pin-nopin="true">&nbsp;&nbsp;&nbsp;&nbsp;<img src="{{ site.static_base }}/downloads/images/2016_06/convert_10.png" title=--alt Don't touch me alt="Vhost threshold" data-pin-nopin="true"></p>
 
-很明显目标像素是1而不是10。
+很明显目标像素是 1 而不是 10。
 
-而J. Snow的这张图，首先验证码本身就是幻彩的而不是均匀一致的颜色，然后噪声又都是用这些幻彩颜色来生成的，所以如果只是简单的对颜色排序，会得到下面的结果：
+而 J. Snow 的这张图，首先验证码本身就是幻彩的而不是均匀一致的颜色，然后噪声又都是用这些幻彩颜色来生成的，所以如果只是简单的对颜色排序，会得到下面的结果：
 
 {% blockquote %}
 [(225, 349), (139, 170), (182, 161), (219, 95), (224, 64), (189, 54), (175, 47), (218, 40), (90, 36), (96, 33)]
@@ -136,7 +136,7 @@ $ python convert_grayscale.py regcode.png 10
 
 这种情况下怎么办？直观观察一下验证码，会发现背景噪声点相比验证码像素点来说很少（这也正常，都是一个颜色如果太多就没法看了）， 很适合先做一些切割，然后进行模糊匹配（因为验证码的像素是幻彩的不是单一的，需要匹配相近像素点），然后再做二值化。
 
-直接用IM的convert来处理比写代码简单：
+直接用 IM 的 convert 来处理比写代码简单：
 
 ``` bash
 $ convert 1.pic.jpg -gravity Center -crop 48x16+0+0  +repage -fuzz 50% -fill white -opaque white -fill black +opaque white resultimage.jpg
@@ -154,7 +154,7 @@ $ convert 1.pic.jpg -gravity Center -crop 48x16+0+0  +repage -fuzz 50% -fill whi
 
 ### 字符的识别
 
-对于这里拿到的验证码而言，因为都是标准字体，可以直接使用OCR的开源工具读取，比如[tesseract](https://github.com/tesseract-ocr/tesseract/wiki)：
+对于这里拿到的验证码而言，因为都是标准字体，可以直接使用 OCR 的开源工具读取，比如[tesseract](https://github.com/tesseract-ocr/tesseract/wiki)：
 
 ``` bash
 $ tesseract resultimage.jpg -psm 7 output && cat output.txt
@@ -171,10 +171,10 @@ YLNU
 
 可能你会觉得围棋电脑都会下了，那么认识验证码为什么还是比较难？
 
-其实[随便搜一下](https://www.google.com.hk/search?safe=off&q=CNN+captcha&oq=CNN+captcha&gs_l=serp.3...1563.1932.0.2169.3.3.0.0.0.0.0.0..0.0....0...1c.1.64.serp..3.0.0.q4EdDQLrqyk)就会发现有很多人在做这方面的实验，主要的思路就是把n个字符组成的验证码当成有n个标签的图片来用CNN来解决。加上最近很多大公司开放了自己的人工智能平台，比如Google的Tensorflow，我们这些没有大量计算资源的普通人也可以用它们实现自己的想法了。
+其实[随便搜一下](https://www.google.com.hk/search?safe=off&q=CNN+captcha&oq=CNN+captcha&gs_l=serp.3...1563.1932.0.2169.3.3.0.0.0.0.0.0..0.0....0...1c.1.64.serp..3.0.0.q4EdDQLrqyk)就会发现有很多人在做这方面的实验，主要的思路就是把 n 个字符组成的验证码当成有 n 个标签的图片来用 CNN 来解决。加上最近很多大公司开放了自己的人工智能平台，比如 Google 的 Tensorflow，我们这些没有大量计算资源的普通人也可以用它们实现自己的想法了。
 
 推荐参考链接：
 
 1. [CNN辨认车牌](https://matthewearl.github.io/2016/05/06/cnn-anpr/)
-2. [CNN验证码识别](http://www.cs.sjsu.edu/faculty/pollett/masters/Semesters/Spring15/geetika/CS298 Slides - PDF)
+2. [CNN 验证码识别](http://www.cs.sjsu.edu/faculty/pollett/masters/Semesters/Spring15/geetika/CS298 Slides - PDF)
 

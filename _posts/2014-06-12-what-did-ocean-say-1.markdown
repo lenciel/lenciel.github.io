@@ -31,7 +31,7 @@ categories:
 
 没有眼泪，没有拥抱，当然也没有挽留。
 
-不久李叠出国，跑到海的那头。收到他邮件落款成了是Wave Li。我问他为什么搞个这么奇怪的英文名，他问我:
+不久李叠出国，跑到海的那头。收到他邮件落款成了是 Wave Li。我问他为什么搞个这么奇怪的英文名，他问我:
 
 "Do you know what does one ocean say to the other ocean?"
 

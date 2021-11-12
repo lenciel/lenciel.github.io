@@ -9,11 +9,11 @@ categories:
 ---
 
 {% picture /downloads/images/2014_09/death_words.jpg --img width="250" height="205" class="left" %}
-上周参加了偶像派她爷爷的90大寿，这周就迎来了她另一位爷爷离世的消息。
+上周参加了偶像派她爷爷的 90 大寿，这周就迎来了她另一位爷爷离世的消息。
 
 这位爷爷是我丈母娘保娘(干妈)的老伴，在一场事后被认为是回光返照的愉快聊天后，他独自在卧室睡去，再也没有醒来。
 
-在睡梦中安静的走掉，再加上93岁的高寿，所以我们当然会互相安慰说，不用太伤心，这是寿终正寝。
+在睡梦中安静的走掉，再加上 93 岁的高寿，所以我们当然会互相安慰说，不用太伤心，这是寿终正寝。
 
 但一讲起还没有走的婆婆，大家又会忍不住担心起来。
 
@@ -67,7 +67,7 @@ categories:
 
 该忘记的忘记，剩下的也糊涂些为好。最好还能幽默一些，强势一些，牙尖嘴利地把自己包裹起来生人勿近。
 
-就好像也在这个月刚刚过世的Joan Rivers说："My sex life is so bad, my G-spot has been declared a historical landmark."
+就好像也在这个月刚刚过世的 Joan Rivers 说："My sex life is so bad, my G-spot has been declared a historical landmark."
 
 反正，这世界聚散有期，又有几个人在意这些牙尖嘴利的人真正的心思呢。
 

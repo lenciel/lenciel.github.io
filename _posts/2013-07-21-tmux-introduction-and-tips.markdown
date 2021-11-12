@@ -14,11 +14,11 @@ categories:
 
 ### **简介**
 
-``tmux`` ,其实就是 ``terminal multiplexer`` 的简称。使用tmux你可以把多个任务同时运行起来，使用不同的 ``tmux`` 窗口来查看它们。你也可以 ``detach`` 一个 ``session``，也就是让一个窗口的活动，比如编译这种耗时你又不希望断开的活动，放到后台去运行。如果你使用过 ``screen`` 对 ``detach`` 一个 ``session`` 应该非常熟悉。其实初用 ``tmux`` 的时候，它很大程度上就像一个 ``GNU-Session`` 外加很多窗口管理的功能。而且由于 ``tmux`` 使用了 ``client-server`` 架构，我们可以在一个总控的地方去操作所有的窗口和pannel，甚至可以在一个窗口里面切换不同的 ``session``。
+``tmux`` ,其实就是 ``terminal multiplexer`` 的简称。使用 tmux 你可以把多个任务同时运行起来，使用不同的 ``tmux`` 窗口来查看它们。你也可以 ``detach`` 一个 ``session``，也就是让一个窗口的活动，比如编译这种耗时你又不希望断开的活动，放到后台去运行。如果你使用过 ``screen`` 对 ``detach`` 一个 ``session`` 应该非常熟悉。其实初用 ``tmux`` 的时候，它很大程度上就像一个 ``GNU-Session`` 外加很多窗口管理的功能。而且由于 ``tmux`` 使用了 ``client-server`` 架构，我们可以在一个总控的地方去操作所有的窗口和 pannel，甚至可以在一个窗口里面切换不同的 ``session``。
 
 #### **tmux的安装**
 
-用你的Linux package manager或者如果你和我一样在OSX可以用`brew`。另外，iTerm2[集成了](http://code.google.com/p/iterm2/wiki/TmuxIntegration)对`tmux`的支持，它也是很多Mac上的[程序员](http://tangledhelix.com/blog/2012/04/28/iterm2-keymaps-for-tmux/)最爱的Terminal。
+用你的 Linux package manager 或者如果你和我一样在 OSX 可以用`brew`。另外，iTerm2[集成了](http://code.google.com/p/iterm2/wiki/TmuxIntegration)对`tmux`的支持，它也是很多 Mac 上的[程序员](http://tangledhelix.com/blog/2012/04/28/iterm2-keymaps-for-tmux/)最爱的 Terminal。
 
 #### **创建一个具名的Session**
 
@@ -39,7 +39,7 @@ $ tmux -new -s basic
 
 在创建的具名`session` 「basic」里面运行`top`，然后使用`Ctrl-b + d`来`detach`这个`session`。
 
-首先来学习一下`Ctrl+b`这样的`Command Prefix`。因为`tmux`是一个terminal管家，我们需要有一个办法告诉`tmux`我们敲击的是需要`tmux`处理的命令还是传给terminal的。如果定义了`Ctrl-b`为命令前缀，就是说我们一定要先敲这个前缀，然后执行一个命令，比如`d`，表示我们要`detach`。要记住前缀输入之后要松开手，不要在不松手的情况下发命令给`tmux`。
+首先来学习一下`Ctrl+b`这样的`Command Prefix`。因为`tmux`是一个 terminal 管家，我们需要有一个办法告诉`tmux`我们敲击的是需要`tmux`处理的命令还是传给 terminal 的。如果定义了`Ctrl-b`为命令前缀，就是说我们一定要先敲这个前缀，然后执行一个命令，比如`d`，表示我们要`detach`。要记住前缀输入之后要松开手，不要在不松手的情况下发命令给`tmux`。
 
 由于这个前缀是可以自定义的，所以后面我们记为`Prefix`而不再用`Ctrl-b`。
 
@@ -64,13 +64,13 @@ $ tmux ls
 basic: 1 windows (created Thu Sep 27 14:32:50 2012) [122x22]
 ```
 
-再次attach的时候可以不带`-t`，因为只有`basic`这个`session`还活着。
+再次 attach 的时候可以不带`-t`，因为只有`basic`这个`session`还活着。
 
 ```bash
 $ tmux attach
 ```
 
-后面我们可以看到在session之间进行切换还有更多更方便的办法。
+后面我们可以看到在 session 之间进行切换还有更多更方便的办法。
 
 #### **窗口**
 
@@ -109,17 +109,17 @@ tmux new -s windows -n shell
 `Prefix+?`
 
 
-二、配置tmux
+二、配置 tmux
 
-首先在系统设置里面把`CapsLock`这枚废材按键map成`ctrl`。然后是把Prefix配置成`ctrl+a`而不是`ctrl+b`，这样主要是为了按起来方便顺手。
+首先在系统设置里面把`CapsLock`这枚废材按键 map 成`ctrl`。然后是把 Prefix 配置成`ctrl+a`而不是`ctrl+b`，这样主要是为了按起来方便顺手。
 
-另外可以让窗口的序列号从1开始分配，这样初始窗口不会是0，那个你需要手伸很远才能按到的键。
+另外可以让窗口的序列号从 1 开始分配，这样初始窗口不会是 0，那个你需要手伸很远才能按到的键。
 
 ```bash
 set -g base-index 1
 ```
 
-同理分栏的序列号也可以从1开始：
+同理分栏的序列号也可以从 1 开始：
 
 ```bash
 setw -g pane-base-index 1

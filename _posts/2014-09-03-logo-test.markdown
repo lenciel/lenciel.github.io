@@ -9,7 +9,7 @@ categories:
 
 ---
 
-其实写点儿代码来画件T-Shirt并不难：
+其实写点儿代码来画件 T-Shirt 并不难：
 
 ``` python
 colors = ximport( "colors" )

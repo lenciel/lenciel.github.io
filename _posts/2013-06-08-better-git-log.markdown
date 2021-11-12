@@ -24,7 +24,7 @@ categories:
 git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 ```
 
-这么长当然是记不住的，可以建shell的alias，也可以添加一个git alias：
+这么长当然是记不住的，可以建 shell 的 alias，也可以添加一个 git alias：
 
 ``` bash
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit

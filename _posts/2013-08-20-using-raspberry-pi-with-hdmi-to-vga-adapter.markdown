@@ -9,7 +9,7 @@ categories:
 - tips
 ---
 
-[Raspberry Pi](http://www.raspberrypi.org/‎)的默认提供了HDMI接口，遇到手边显示器比较老并且电视机也比较老就不好办。
+[Raspberry Pi](http://www.raspberrypi.org/‎)的默认提供了 HDMI 接口，遇到手边显示器比较老并且电视机也比较老就不好办。
 
 如果直接买一根[HDMI转VGA的线](http://item.jd.com/674899.html)，直接连上去很可能是黑屏，这是因为默认的配置文件不支持这种连接方式，需要修改配置文件。
 

@@ -11,9 +11,9 @@ categories:
 
 ---
 
-博格坎普说，我们android项目的build挂了。
+博格坎普说，我们 android 项目的 build 挂了。
 
-去Jenkins看了一下，日志里面的错误是：
+去 Jenkins 看了一下，日志里面的错误是：
 
 ```
 [android] $ /usr/local/share/gradle-1.11/bin/gradle clean build
@@ -33,7 +33,7 @@ A problem occurred configuring project ':app'.
 Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.s
 ```
 
-这其实在天朝是蛮常见的现象，因为`dl-ssl.google.com`被封了，所以你总是会因为下面的错误无法更新Android的SDK：
+这其实在天朝是蛮常见的现象，因为`dl-ssl.google.com`被封了，所以你总是会因为下面的错误无法更新 Android 的 SDK：
 
 ```bash
 Failed connect to dl-ssl.google.com:443;
@@ -42,9 +42,9 @@ Failed connect to dl-ssl.google.com:443;
 Jenkins服务器配置代理
 -------------------------
 
-这里之所以选择[shadowsocks](http://shadowsocks.org/)，是因为可以用自己在[Google的VM](https://developers.google.com/appengine/)上配置的shadowsocks代理服务器（顺便广告一下，Google的VM在做活动，几乎是最高配的机器都不要钱，而且第一跳就在美帝，用来做代理非常爽）。
+这里之所以选择[shadowsocks](http://shadowsocks.org/)，是因为可以用自己在[Google的VM](https://developers.google.com/appengine/)上配置的 shadowsocks 代理服务器（顺便广告一下，Google 的 VM 在做活动，几乎是最高配的机器都不要钱，而且第一跳就在美帝，用来做代理非常爽）。
 
-安装shadowsocks的pythohn client:
+安装 shadowsocks 的 pythohn client:
 
 ```bash
 $ pip install shadowsocks
@@ -65,7 +65,7 @@ Successfully installed shadowsocks
 Cleaning up...
 ```
 
-可以看到安装完之后有两个可执行文件，运行其中的`sslocal`就可以启动shadowsocks的客户端了：
+可以看到安装完之后有两个可执行文件，运行其中的`sslocal`就可以启动 shadowsocks 的客户端了：
 
 ```bash
 root@palm4fun-core-1:~/install# sslocal -h
@@ -116,22 +116,22 @@ shadowsocks 2.1.0
 命令行更新android sdk
 -------------------------
 
-先配置java命令使用的代理，然后
-从命令行更新android sdk。只需要到tools目录下面去跑(`-u`是不显示GUI，`-s`是指定不使用ssl链接)：
+先配置 java 命令使用的代理，然后
+从命令行更新 android sdk。只需要到 tools 目录下面去跑(`-u`是不显示 GUI，`-s`是指定不使用 ssl 链接)：
 
 ```bash
 $ export _JAVA_OPTIONS="-DsocksProxyHost=127.0.0.1"
 $ android update sdk -u -s --all
 ```
 
-注意`socksProxyHost`的默认端口就是1080，如果你使用了其他端口不能只配ip。
+注意`socksProxyHost`的默认端口就是 1080，如果你使用了其他端口不能只配 ip。
 
-另外，`--all`是比较猛烈的选项（人家的硬盘就是大，人家的代理就是快嘛），你可以在命令行里面通过filter来安装你需要的东西。
+另外，`--all`是比较猛烈的选项（人家的硬盘就是大，人家的代理就是快嘛），你可以在命令行里面通过 filter 来安装你需要的东西。
 
 When shit happens
 ----------------------
 
-运行起来之后更新非常慢，可以`android`命令报timeout，而代理那边打出日志：
+运行起来之后更新非常慢，可以`android`命令报 timeout，而代理那边打出日志：
 
 ```bash
 2014-09-02 00:27:53 INFO     starting local at 127.0.0.1:1080
@@ -140,13 +140,13 @@ When shit happens
 2014-09-02 00:28:04 INFO     connecting 74.125.237.1:80
 ```
 
-因为本座平时上网也是在用Google VM上的这个代理，没理由这么慢。所以就怀疑那个74.125.237.1的地址是被谁在`/etc/hosts`里面给配了固定ip。打开一看果然有：
+因为本座平时上网也是在用 Google VM 上的这个代理，没理由这么慢。所以就怀疑那个 74.125.237.1 的地址是被谁在`/etc/hosts`里面给配了固定 ip。打开一看果然有：
 
 ```bash
 dl-ssl.google.com 74.125.237.1
 ```
 
-估计是之前配置的基友搜索到了类似[这样的文章](http://www.programering.com/a/MjM4YTMwATA.html)。这也是为什么我从来不用也不推荐别人用修改hosts文件的方法来翻墙的原因：它们总是在过期。
+估计是之前配置的基友搜索到了类似[这样的文章](http://www.programering.com/a/MjM4YTMwATA.html)。这也是为什么我从来不用也不推荐别人用修改 hosts 文件的方法来翻墙的原因：它们总是在过期。
 
 Last but not the least, Fuck you, GFW.
 

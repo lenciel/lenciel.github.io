@@ -10,9 +10,9 @@ categories:
 
 ---
 
-昔日一统天下的Flash继续[势微](http://www.36kr.com/p/217821.html)，但其实Web上的各种动画效果却越来越多了。今天因为一个产品需求，花了点儿时间看了一下，感觉目前CSS动画和JS动画两大门派势力都不小，之间需要有一个把大家嫁接在一起的东西：不知道[Web Animation](http://w3c.github.io/web-animations/)会不会[有机会](http://updates.html5rocks.com/2014/05/Web-Animations---element-animate-is-now-in-Chrome-36)。
+昔日一统天下的 Flash 继续[势微](http://www.36kr.com/p/217821.html)，但其实 Web 上的各种动画效果却越来越多了。今天因为一个产品需求，花了点儿时间看了一下，感觉目前 CSS 动画和 JS 动画两大门派势力都不小，之间需要有一个把大家嫁接在一起的东西：不知道[Web Animation](http://w3c.github.io/web-animations/)会不会[有机会](http://updates.html5rocks.com/2014/05/Web-Animations---element-animate-is-now-in-Chrome-36)。
 
-纯CSS的动画实作:
+纯 CSS 的动画实作:
 
 <link rel="stylesheet" type="text/css" href="{{ site.static_base }}/downloads/static/css/christmas_animation.css" />
 

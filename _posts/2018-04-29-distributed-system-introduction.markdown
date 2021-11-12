@@ -9,7 +9,7 @@ categories:
 
 ---
 
-基础设施团队在招聘工程师的JD上一般会有下面几项：
+基础设施团队在招聘工程师的 JD 上一般会有下面几项：
 
 - 对于分布式系统关键特征和术语能基本掌握
 - 对于分布式领域常见的算法和理论有基本认知
@@ -19,7 +19,7 @@ categories:
 
 最怕世界突然安静。
 
-年后又招人了，并且要开始做内部培训。这里梳理一下分布式系统的一些基础知识。参考了[aphyr](https://github.com/aphyr)的基础培训课程和Dan Creswell的[分布式系统必读指南](https://dancres.github.io/Pages/)，非常基础，非常必读，no rocket science。
+年后又招人了，并且要开始做内部培训。这里梳理一下分布式系统的一些基础知识。参考了[aphyr](https://github.com/aphyr)的基础培训课程和 Dan Creswell 的[分布式系统必读指南](https://dancres.github.io/Pages/)，非常基础，非常必读，no rocket science。
 
 Let's go。
 
@@ -31,13 +31,13 @@ Lamport, 1987:
 >  you didn't even know existed can render your own computer
 >  unusable.
 
-- 大多数物理服务器都运行着 \*nix 系统，通过TCP或者UDP进行进程间的通信：
+- 大多数物理服务器都运行着 \*nix 系统，通过 TCP 或者 UDP 进行进程间的通信：
   - 可以是云上的虚拟机
   - 也可以是通过[InfiniBand](https://en.wikipedia.org/wiki/InfiniBand)通信的系统
   - 可以是局域网里面，隔着几米的距离
   - 也可以是广域网，隔着几千公里距离
-- 大多数移动App也是一个分布式系统里的一部分
-  - 移动App工作的网络环境比服务器端更加恶劣
+- 大多数移动 App 也是一个分布式系统里的一部分
+  - 移动 App 工作的网络环境比服务器端更加恶劣
   - 其他桌面系统的浏览器以此类推的，也属于分布式系统
   - 所以并不是服务器才属于分布式系统，大部分客户端也是
 - 更一般地来说，分布式系统涵盖：
@@ -46,8 +46,8 @@ Lamport, 1987:
   - 通信还常常「不稳定」
   - 的任何系统
 - 比如:
-  - 飞机上冗余的CPU
-  - ATM机和POS机终端
+  - 飞机上冗余的 CPU
+  - ATM 机和 POS 机终端
   - 空间站
   - 支付系统
   - 技术会议里的参会者
@@ -89,7 +89,7 @@ Lamport, 1987:
 - 节点之间通过**网络**进行交互
   - 人类通过语音相互沟通
   - 粒子通过场相互沟通
-  - 计算机通过IP、UDP、SCTP等相互沟通
+  - 计算机通过 IP、UDP、SCTP 等相互沟通
 - 我们把这些交互建模为节点之间发送的离散的**消息**
 - 消息需要**时间**来传播
   - 这就是分布式系统里面「慢」的那部分
@@ -108,7 +108,7 @@ Lamport, 1987:
 
 ### 1.1.4 同步网络
 
-- 节点执行是按时序来的：每个节点之间距离都是1
+- 节点执行是按时序来的：每个节点之间距离都是 1
 - 消息延迟是有边界的
 - 有一个完美的全局时钟
 - 很容易被证明的一件事情是
@@ -116,7 +116,7 @@ Lamport, 1987:
 
 ### 1.1.5 半同步网络
 
-- 和同步网络类似，但是时钟不是固定距离为1，而是一个范围，比如 [c, 1]
+- 和同步网络类似，但是时钟不是固定距离为 1，而是一个范围，比如 [c, 1]
 
 ### 1.1.6 异步网络
 
@@ -127,9 +127,9 @@ Lamport, 1987:
   - 所以确定性算法（certain algorithm）不一定是有效的
   - 所以确定性算法可能是**无法实现**的
   - "[Efficiency of Semi-Synchronous vs Asynchronous Networks](http://www.cs.ucy.ac.cy/~mavronic/pdf/AM94.pdf)"
-- IP网络肯定是异步的
-  - 但在**实际操作中**并没有发生真正的pathological stuff
-  - 大多数网络都可以在几秒到几周内恢复，不会永远down掉
+- IP 网络肯定是异步的
+  - 但在**实际操作中**并没有发生真正的 pathological stuff
+  - 大多数网络都可以在几秒到几周内恢复，不会永远 down 掉
     - 相反的, 人类的时间维度是从几秒到几周的
     - 因此我们不能假装问题不存在
 
@@ -151,33 +151,33 @@ Lamport, 1987:
 ### 1.3.1 TCP
 
 - TCP**一般就够用了**
-  - 如不确定，先用TCP
+  - 如不确定，先用 TCP
   - 但不完美，虽然可以对它进行加速
   - 但知道怎么做以及什么时候才需要做很关键
-- 虽然单个TCP连接实际上有自带的duplicate和reorder治理
+- 虽然单个 TCP 连接实际上有自带的 duplicate 和 reorder 治理
   - 但很可能会有多个连接打开
-  - 而TCP连接总会失败
+  - 而 TCP 连接总会失败
   - 当这种情况发生时，要不就会丢消息，要不就需要重试
-  - 所以应该在TCP上自定义一个增量的序列号来编码，从而对乱掉的时序进行**重建**
+  - 所以应该在 TCP 上自定义一个增量的序列号来编码，从而对乱掉的时序进行**重建**
 
 ### 1.3.2 UDP
 
-- 和TCP相同的寻址规则，但是没有stream invariants
-- 很多人使用UDP为了「更快的速度」
+- 和 TCP 相同的寻址规则，但是没有 stream invariants
+- 很多人使用 UDP 为了「更快的速度」
   - 不要认为路由器和节点会被丢弃
   - 不要认为包会重传
   - 或者重新排序
   - "But at least it's unbiased right?"
     - 并不是
-  - 这些都造成一些破坏，比如在收集metrics的时候
-  - 要debug也是非常的**困难**
-  - TCP提供了流控，并且把logical messages重新打包成packets
-    - UDP下需要自己来实现流控和背压
+  - 这些都造成一些破坏，比如在收集 metrics 的时候
+  - 要 debug 也是非常的**困难**
+  - TCP 提供了流控，并且把 logical messages 重新打包成 packets
+    - UDP 下需要自己来实现流控和背压
   - 「TLS over UDP」是可以做的，但是开发难度很高
-- UDP在TCP的FSM的overhead成本过于高昂的时，是有用的
+- UDP 在 TCP 的 FSM 的 overhead 成本过于高昂的时，是有用的
   - 内存压力
-  - 大量的生命周期很短的连接和socket的重用
-- 在best-effort delivery已经能够很好地满足系统目标的时候特别好用
+  - 大量的生命周期很短的连接和 socket 的重用
+- 在 best-effort delivery 已经能够很好地满足系统目标的时候特别好用
   - 语音通话：当对方听不清时，用户自己会道歉然后重传
   - 游戏: 延迟和卡顿，但会重新对齐
   - 高层的协议在底层已经乱掉的情况下仍然会继续工作假装什么都没有发生
@@ -190,19 +190,19 @@ Lamport, 1987:
 ### 1.4.1 系统时钟
 
 - 理论上，操作系统的时钟可以给系统产生的事件带来顺序
-  - 然并卵: NTP可能没有你以为的工作那么理想
+  - 然并卵: NTP 可能没有你以为的工作那么理想
   - 然并卵: 在两个节点间的同步完成得并不好
   - 然并卵: 硬件也会有漂移
   - 然并卵: 大数还会带来[问题](http://rachelbythebay.com/w/2017/09/27/2153/)
   - 然并卵: POSIX 时钟从**设计**上就不是单调的
-    - Cloudflare 2017: 因为leap second造成的[问题](https://blog.cloudflare.com/how-and-why-the-leap-second-affected-cloudflare-dns/)
+    - Cloudflare 2017: 因为 leap second 造成的[问题](https://blog.cloudflare.com/how-and-why-the-leap-second-affected-cloudflare-dns/)
     - 其实就是当时 Go 还不提供 `CLOCK_MONOTONIC` 的接口
-    - 在计算出一个负的duration然后把它交给 `rand.int63n()` 后，就驾崩了
-    - 造成了DNS解析失败: 1% 的 HTTP 访问被影响了好几个小时
+    - 在计算出一个负的 duration 然后把它交给 `rand.int63n()` 后，就驾崩了
+    - 造成了 DNS 解析失败: 1% 的 HTTP 访问被影响了好几个小时
   - 然并卵: The timescales you want to measure may not be attainable
   - 然并卵: 线程会睡
   - 然并卵: 运行时会跪
-  - 然并卵: OS会退
+  - 然并卵: OS 会退
   - 然并卵: 硬件会醉
 - 怀疑人生了吧？
 
@@ -211,7 +211,7 @@ Lamport, 1987:
 - Lamport 1977: "[Time, Clocks, and the Ordering of Events in a Distributed System](https://lamport.azurewebsites.net/pubs/time-clocks.pdf)"
   - 每个进程一个逻辑时钟
   - 每次状态迁移的时候单调递增: `t' = t + 1`
-  - 每次消息发送的操作时间戳+1并带上改时间戳
+  - 每次消息发送的操作时间戳+1 并带上改时间戳
   - 每次接收消息的操作：`t' = max(t, t_msg + 1)`
 - 只要对所有的进程进行排序，我们就可以知道消息的顺序
   - 但是这个序列号看起来非常不直观
@@ -221,39 +221,39 @@ Lamport, 1987:
 
 - 把所有进程的时钟放到一个向量里
 - `t_i' = max(t_i, t_msg_i)`
-- 每次处理完内部事件，把向量里自己进程的逻辑时钟加1
+- 每次处理完内部事件，把向量里自己进程的逻辑时钟加 1
 - 向量时钟记录了逻辑时钟没有的因果关系，也就是偏序
   - 两个事件的因果关系为：
-    - A < B 意味着A在B后发生
-    - B < A 意味着B在A后发生
+    - A < B 意味着 A 在 B 后发生
+    - B < A 意味着 B 在 A 后发生
     - 否则两者就是没有因果关系的
-  - 如果所有的 A_i <= B_i，且至少有一个A_i < B_i，那么 A < B
-  - 如果A和B比起来有的分量大，有的分量小，则可能是同时发生
+  - 如果所有的 A_i <= B_i，且至少有一个 A_i < B_i，那么 A < B
+  - 如果 A 和 B 比起来有的分量大，有的分量小，则可能是同时发生
 - 棒棒棒: the past is shared; the present is independent
   - 当下各个节点的状态需要被保留
   - 过去的状态可以被丢弃
-  - 如何对过去的状态做GC
-- 向量空间里面有n个进程
-  - GC的时候需要协调顺序
-  - 或者不做GC，牺牲掉正确性，直接删掉旧的状态
+  - 如何对过去的状态做 GC
+- 向量空间里面有 n 个进程
+  - GC 的时候需要协调顺序
+  - 或者不做 GC，牺牲掉正确性，直接删掉旧的状态
 - 变种：分布式系统中数据一般存在多个副本，多个副本的时钟可能被同时更新，引起副本间数据不一致
   - [Dotted Version Vectors](https://github.com/ricardobcl/Dotted-Version-Vectors)
   - [Interval Tree Clocks](https://github.com/ricardobcl/Interval-Tree-Clocks)
 
 ### 1.4.4 GPS和原子钟
 
-- 比NTP要好很多
+- 比 NTP 要好很多
   - 全局分发，毫秒级精度，统一排序
   - 可以把一个异步的网络提升为半同步的
   - 解锁了很多更有效率的算法
-- 目前只有Google有
+- 目前只有 Google 有
   - Spanner: 全局强一致性的事务
   - 没有公开分享实现方式
 - 比你想象的贵很多
-  - 每个GPS接收器就要好一百多刀
+  - 每个 GPS 接收器就要好一百多刀
   - 原子钟得多少钱？
-  - 需要各种类型的GPS：制造商可能会搞出问题
-  - 但未来的数据中心一定参考Google，通过硬件接口来解决bounded-accuracy time的供给问题
+  - 需要各种类型的 GPS：制造商可能会搞出问题
+  - 但未来的数据中心一定参考 Google，通过硬件接口来解决 bounded-accuracy time 的供给问题
 
 
 ### 1.4.5 小结
@@ -262,7 +262,7 @@ Lamport, 1987:
 
 - 节点之间通过网络进行消息传递
 - 节点本身以及节点间的网络都有可能会崩坏
-- TCP/UDP这样的协议使得跨进程的通信成为可能
+- TCP/UDP 这样的协议使得跨进程的通信成为可能
 - 通过时钟我们可以对事件进行排序
 
 接下来看看分布式系统经常被讨论的一些**上层特性**。
@@ -282,7 +282,7 @@ Lamport, 1987:
 
 - 比较懂分布式的人发明的词。
 - 指对所有活着的节点进行的操作都成功了
-  - 在特定的客户端都访问特定的节点的前提下（所以微信分set做高可用，还有大量别的系统通过session来让特定的客户端「粘住」特定的后端节点）
+  - 在特定的客户端都访问特定的节点的前提下（所以微信分 set 做高可用，还有大量别的系统通过 session 来让特定的客户端「粘住」特定的后端节点）
 
 ### 1.5.3 High availability
 
@@ -294,16 +294,16 @@ Lamport, 1987:
 ### 1.5.4 Majority available
 
 - 当支撑主要功能的节点运行良好时，由它们完成的操作是成功的
-- 意味着有一些功能被降级了，用户可能在UI上根本看不到它们的入口了
+- 意味着有一些功能被降级了，用户可能在 UI 上根本看不到它们的入口了
 
 ### 1.5.5 如何量化可用性
 
 - 业界标准 "uptime" 究竟对不对？
-  - 系统在没有人用的时候一直up着真的好吗？
-  - 高峰期该down的系统坚挺地up着真的好吗？
+  - 系统在没有人用的时候一直 up 着真的好吗？
+  - 高峰期该 down 的系统坚挺地 up 着真的好吗？
   - 能否通过测量某个时间窗口中请求数量？
   - 然后在多个时段对这样的窗口进行采样得到趋势图？
-  - 注意这样来衡量可用性，uptime受时间轴单位的影响很大
+  - 注意这样来衡量可用性，uptime 受时间轴单位的影响很大
 
 ## 1.6 Consistency
 
@@ -334,15 +334,15 @@ Lamport, 1987:
 
 ### 1.6.6 Causal consistency
 
-- 所有的操作可以用一个DAG表示出因果关系
-  - 无法在同一个DAG里面表示的操作就是**concurrent**的
+- 所有的操作可以用一个 DAG 表示出因果关系
+  - 无法在同一个 DAG 里面表示的操作就是**concurrent**的
 - 局限性: 要完成一个操作前，节点上所有的其他操作必须完成
-- 但是concurrent的操作可以自由排序
+- 但是 concurrent 的操作可以自由排序
 
 ### 1.6.7 Sequential consistency
 
-- 又是Lamport提出的：[How to Make a Multiprocessor Computer That Correctly Executes Multiprocess Programs](https://www.microsoft.com/en-us/research/publication/make-multiprocessor-computer-correctly-executes-multiprocess-programs/)
-- 和causal的一致性类似，对操作的顺序有限制
+- 又是 Lamport 提出的：[How to Make a Multiprocessor Computer That Correctly Executes Multiprocess Programs](https://www.microsoft.com/en-us/research/publication/make-multiprocessor-computer-correctly-executes-multiprocess-programs/)
+- 和 causal 的一致性类似，对操作的顺序有限制
 - 所有操作看起来都是原子的
 - 所有进程都遵从一个排序
   - 但仅能保证进程内
@@ -350,20 +350,20 @@ Lamport, 1987:
 
 ### 1.6.8 Linearizability
 
-- 有时候被称为atomic consistency或者strong consistency
+- 有时候被称为 atomic consistency 或者 strong consistency
 - 所有的操作（事务）看起来都是原子的
 - 所有进程都遵从一个排序
 - 所有操作都有触发时间和结束时间来规约
-- 看起来只是在sequential consistency只关心所有进程或者节点的偏序关系基础上, 加上了时间顺序
+- 看起来只是在 sequential consistency 只关心所有进程或者节点的偏序关系基础上, 加上了时间顺序
 - 但实际上非常强大：[Sequential Consistency versus Linearizabiltiy](http://courses.csail.mit.edu/6.852/01/papers/p91-attiya.pdf)
 
 ### 1.6.9 ACID isolation levels
 
-- ANSI SQL标准里定义的ACID隔离等级比较古怪
+- ANSI SQL 标准里定义的 ACID 隔离等级比较古怪
   - 主要是拿现有厂商的实现倒推出来的
   - 标准里很多地方定义模糊
 - [Weak Consistency: A Generalized Theory and Optimistic Implementations for Distributed Transactions](http://www.csd.uoc.gr/~hy460/pdf/adya99weak.pdf)
-  - 每个ANSI SQL的隔离等级都是为了防止出现特定状况设定的，要能对应起来
+  - 每个 ANSI SQL 的隔离等级都是为了防止出现特定状况设定的，要能对应起来
   - Read Uncommitted
     - 防止 *脏写* 的状况发生
       - w1(x) ... w2(x)
@@ -380,7 +380,7 @@ Lamport, 1987:
       - 一旦一个事务读数据，直至这个事务提交之前，这个数据一直不会改变
   - Serializable
     - 防止**幻读**的状况发生
-      - 给定预期P
+      - 给定预期 P
       - r1(P) ... w2(y in P)
       - 一旦一个事务读取满足查询的元素集合，这个集合在事务提交前都不会改变
   - Cursor Stability
@@ -388,7 +388,7 @@ Lamport, 1987:
       - 一个游标指向被事务访问的一个对象
     - 读锁一直保留到游标被移除或提交
       - 在提交时间，游标被升级为写锁
-    - 能阻止lost-update
+    - 能阻止 lost-update
   - Snapshot Isolation
     - 事务总是能读取提交后的数据的一个快照，这些数据可以是在事务开始之前抓取准备好
     - 只有没有任何其他提交的事务被写入到任何我们想写的对象时，新的提交才能发生
@@ -397,15 +397,15 @@ Lamport, 1987:
 ### 1.6.10 这些有什么鸟用?
 
 - 现实世界是不是没有那么「分布式」？
-- 大多数公司用用Read Committed也就够了
+- 大多数公司用用 Read Committed 也就够了
 - 但是网络攻击的人经常就是利用并发访问来找到系统漏洞
-  - Poloniex发生过大量账号被盗事件
+  - Poloniex 发生过大量账号被盗事件
   - [Flexcoin](https://www.reddit.com/r/Bitcoin/comments/1zihb4/flexcoin_is_shutting_down_after_being_hacked/)被攻击得直接关站了
   - [Warszawski & Bailis 2017: Acidrain](http://www.bailis.org/papers/acidrain-sigmod2017.pdf)
 
 ## 1.7 Tradeoffs
 
-- 如果可以的话，我们当然都想要系统同时具备total availability和linearizability
+- 如果可以的话，我们当然都想要系统同时具备 total availability 和 linearizability
 - 但保持一致意味着需要协调状态
   - 如果事件是顺序不敏感的，就不要过分追求
   - 如果事件是顺序敏感的，我们就需要协调状态
@@ -417,20 +417,20 @@ Lamport, 1987:
 
 ### 1.7.1 Availability/Consistency
 
-- CAP讲的就是linearizability或total availability只能要一个
-- 仅仅了解CAP理论还不够
+- CAP 讲的就是 linearizability 或 total availability 只能要一个
+- 仅仅了解 CAP 理论还不够
   - [Highly Available Transactions: Virtues and Limitations](https://dl.acm.org/citation.cfm?id=2732237)
-  - 有些人完全不喜欢sticky available或者totally available
+  - 有些人完全不喜欢 sticky available 或者 totally available
     - Strong serializable
     - Serializable
     - Repeatable Read
     - Cursor Stability
     - Snapshot Isolation
-  - 有些人接受sticky available
+  - 有些人接受 sticky available
     - Causal
     - PRAM
     - Read Your Writes
-  - 有些人接受totally available
+  - 有些人接受 totally available
     - Read Uncommitted
     - Read Committed
     - Monotonic Atomic View
@@ -446,11 +446,11 @@ Lamport, 1987:
   - 例子
     - 搜索引擎一个节点失败后，让一些结果丢失
     - 数据更新反映在一些节点上，而其他节点没有更新
-      - 在分区partition情况下考虑AP
+      - 在分区 partition 情况下考虑 AP
       - 能写一些其他人不能读的数据
     - 流式视频会降级服务，比如降低分辨率以保障更低的延时
   - 取决于负载、硬件、网络拓扑等因素
-  - 最好能够按每个请求为单位对harvest/yield进行调整
+  - 最好能够按每个请求为单位对 harvest/yield 进行调整
 
 ### 1.7.3 组合拳
 
@@ -482,9 +482,9 @@ Lamport, 1987:
   - 什么是所谓的「单调」？
 - 单调就是不会被推翻重来的意思
   - 从已知的局部信息演绎出的结果从来不会因为新信息的引入失效
-  - 无论是关系代数和Datalog没有negation将会是单调的
+  - 无论是关系代数和 Datalog 没有 negation 将会是单调的
 - [Relational transducers for declarative networking](https://arxiv.org/abs/1012.2858)
-  - T理论说明在Datalog中可以不在意网络程度情况下节点处理服务器的协调能只以单调计算
+  - T 理论说明在 Datalog 中可以不在意网络程度情况下节点处理服务器的协调能只以单调计算
     - This is not an easy read
   - 无需协调不意味着不用通信
     - Algo succeeds even in face of arbitrary horizontal partitions
@@ -503,7 +503,7 @@ Lamport, 1987:
 ### 1.8.2 Gossip
 
 - 消息广播系统
-- 在集群管理、服务发现、CDN等方面得到了广泛使用
+- 在集群管理、服务发现、CDN 等方面得到了广泛使用
 - 非常弱的一致性
 - 非常高的可用性
 - 全局广播
@@ -512,8 +512,8 @@ Lamport, 1987:
 - 网格化
   - 传染病模型
   - 与邻居玩击鼓传花
-  - 按max-free-path进行传播
-- 或者是使用spanning tree
+  - 按 max-free-path 进行传播
+- 或者是使用 spanning tree
   - 一个节点连接到其他另外节点
   - 减少多余信息
   - 降低延迟
@@ -522,26 +522,26 @@ Lamport, 1987:
 ### 1.8.3 CRDTs
 
 - 顺序无关的收敛数据类型
-  - 如计数器，set，map等
-- 对dupes/delays/reorders有较好容忍度
+  - 如计数器，set，map 等
+- 对 dupes/delays/reorders 有较好容忍度
 - 不像顺序一致的系统，顺序不依赖「单一来源」
 - 但也不同于最终一致的系统，从来不会丢失信息
   - 除非显式地丢弃信息
 - 在高可用系统中工作良好，比如
-  - Web客户端/手机客户端
+  - Web 客户端/手机客户端
   - Dynamo
   - Gossip
 - "[A comprehensive study of Convergent and Commutative Replicated Data Types](https://hal.inria.fr/inria-00555588/document)"
-  - 假设有一个已经组合的数据类型 x 和merge函数m, 那么就有:
+  - 假设有一个已经组合的数据类型 x 和 merge 函数 m, 那么就有:
     - 可聚合: m(x1, m(x2, x3)) = m(m(x1, x2), x3)
     - 可交换: m(x1, x2) = m(x2, x1)
     - 幂等:  m(x1, x1) = m(x1)
 - 易于构建，易于检验，解决了各种常见的让人头疼的问题
   - 通讯失败？再试一次，反正会聚集收敛
   - 消息乱了次序也没有关系
-  - 两个副本需要同步? 直接merge了事
+  - 两个副本需要同步? 直接 merge 了事
 - 缺点
-  - 有些算法 *依赖* 顺序，不能用CRDTs进行表达
+  - 有些算法 *依赖* 顺序，不能用 CRDTs 进行表达
   - 读操作可能会读到脏数据
   - 空间成本更高
 
@@ -549,7 +549,7 @@ Lamport, 1987:
 
 - [Highly Available Transactions, Virtues and Limitations](https://dl.acm.org/citation.cfm?id=2732237)
   - 任何副本都会保证响应
-  - 低延时 (比串行化协议速度快1-3个数量级)
+  - 低延时 (比串行化协议速度快 1-3 个数量级)
   - Read Committed
   - Monotonic Atomic View
   - Excellent for commutative/monotonic systems
@@ -558,7 +558,7 @@ Lamport, 1987:
   - 对于给定任意有限时滞，可以保证收敛（所谓「最终一致性」）
   - 是地理上广阔分布系统的优秀候选方案
   - 最适合解决需要强事务机制的系统
-  - 也不要忘了: COPS, Swift, Eiger, Calvin等等
+  - 也不要忘了: COPS, Swift, Eiger, Calvin 等等
 
 
 ## 1.9 Consensus躲不开
@@ -568,24 +568,24 @@ Lamport, 1987:
     - Proposers: 提议一个值
     - Acceptors: 通过相互协调，选择一个唯一的值
     - Learners: 读取被选中的值
-  - acceptor的分类
-    - N 总共存在的acceptor
-    - F 可能进入失效状态的正常acceptor
-    - M 失效的acceptor
+  - acceptor 的分类
+    - N 总共存在的 acceptor
+    - F 可能进入失效状态的正常 acceptor
+    - M 失效的 acceptor
   - 三条不变性定律:
     - Nontriviality: 只有被提议的值能被学习
     - Safety: 最多只有一个值能被学习
-    - Liveness: 假设有一个P, 一个L, 和一个N-F的集合（即不包括失效状态的所有acceptor），并且它们都是无故障能彼此通讯的，那么如果P提议了一个值，就一定可以被L学习到。
+    - Liveness: 假设有一个 P, 一个 L, 和一个 N-F 的集合（即不包括失效状态的所有 acceptor），并且它们都是无故障能彼此通讯的，那么如果 P 提议了一个值，就一定可以被 L 学习到。
 
 - 大量的分布式系统其实都等效为共识问题
   - 各种锁
   - 有序日志
   - 可复制状态机
 
-- FLP理论告诉我们在异步网络中实现共识一致性是不可能的
+- FLP 理论告诉我们在异步网络中实现共识一致性是不可能的
   - 只要在特定的时间杀死一个特定进程，就可以破坏任何共识算法
   - 但也不至于有这么糟糕因为现实情况下网络里的节点大都可以完成共识
-  - 并且，FLP是基于确定性的
+  - 并且，FLP 是基于确定性的
     - 真实计算机都**不**是确定性的
     - [Another Advantage of free choice](http://www.cs.cornell.edu/courses/cs5414/2017fa/papers/p27-ben-or.pdf)
       - 证明了如何在非确定性前提下完成共识
@@ -595,23 +595,23 @@ Lamport, 1987:
 
 ### 1.9.1 Paxos
 
-- Paxos是共识算法的金线
+- Paxos 是共识算法的金线
   - [The Part Time Parliament](https://lamport.azurewebsites.net/pubs/lamport-paxos.pdf)
     - 以虚构的希腊民主社会解析来演绎
   - [Paxos Made Simple](https://lamport.azurewebsites.net/pubs/paxos-simple.pdf)
     - 把之前文章里面用希腊语表示的算法专门拿了一章来进行说明
   - [Paxos Made Live](https://static.googleusercontent.com/media/research.google.com/zh-CN//archive/paxos_made_live.pdf)
-    - Google实现自己的锁服务的总结
+    - Google 实现自己的锁服务的总结
   - [Paxos Made Moderately Complex](http://www.cs.cornell.edu/courses/cs7412/2011sp/paxos.pdf)
-    - 一页伪代码大概得用几千行Cpp来实现
-- 在独立proposal基础上实现最终的共识
+    - 一页伪代码大概得用几千行 Cpp 来实现
+- 在独立 proposal 基础上实现最终的共识
 - 一些优化后的变种
   - Multi-Paxos
   - Fast Paxos
   - Generalized Paxos
   - 大多数时候很难一下说清用哪个好，或者用哪些来组合是安全的
   - 每种算法的实现上也有细微的「口味不同」
-  - 所以把Paxos描述成一个算法「系列」而不是一个算法可能合适一些
+  - 所以把 Paxos 描述成一个算法「系列」而不是一个算法可能合适一些
 - 在大量的产品中用到
   - Chubby
   - Cassandra
@@ -624,10 +624,10 @@ Lamport, 1987:
 
 - ZAB：[Zookeeper Atomic Broadcast](https://pdfs.semanticscholar.org/fc11/031895c302dc52404d34de58af1a72f3b817.pdf)
 - 提供顺序一致性 (线性写, 滞后的有序读)
-  - 支撑了ZK客户端需要快速本地读的特性
-  - 但是也有一个SYNC命令用来保持实时更新可知
+  - 支撑了 ZK 客户端需要快速本地读的特性
+  - 但是也有一个 SYNC 命令用来保持实时更新可知
   - (SYNC + op) 组合可以实现线性读
-- 和Paxos一样，majority quorum, 5个或者7个节点
+- 和 Paxos 一样，majority quorum, 5 个或者 7 个节点
 
 ### 1.9.3 Humming Consensus
 
@@ -641,14 +641,14 @@ Lamport, 1987:
 - 事务处理中加入了视图改变算法
 - 大多数节点知道的值能保证活到将来
 - 没有产品化
-- 和Paxos一起对Raft产生了影响
+- 和 Paxos 一起对 Raft 产生了影响
 
 ### 1.9.5 Raft
 
 - [In Search of an Understandable Consensus Algorithm](https://raft.github.io/raft.pdf)
-- Lamport说Paxos很简单但是对大多数人来说并不是那样
+- Lamport 说 Paxos 很简单但是对大多数人来说并不是那样
   - 有没有一个大家都懂的共识算法？
-- Paxos要解决独立决策的问题，但大多数时候我们只要处理好状态机就够了
+- Paxos 要解决独立决策的问题，但大多数时候我们只要处理好状态机就够了
   - 维持一个状态机切换事件副本到日志
 - 同时提供了一个集群类成员身份转换的实现，这是大多数系统的核心问题
 - 能够实现线性化的状态机
@@ -659,12 +659,12 @@ Lamport, 1987:
 ### 1.9.6 小结
 
 - 构建分布式系统的时候，首先考虑它是不是只增加而不推翻事实的系统，不要来就用共识算法
-- 我们可以使用gossip来广播消息到其他进程，使用CRDT来merge节点的更新，使用HAT来处理弱隔离事务
-- 有serializability/linearizability要求的系统需要共识处理，Paxos/ZAB/VR/Raft，选择哪个算法要看实际情况，特别是系统的**规模**，因为这常常和系统里的延迟有关
+- 我们可以使用 gossip 来广播消息到其他进程，使用 CRDT 来 merge 节点的更新，使用 HAT 来处理弱隔离事务
+- 有 serializability/linearizability 要求的系统需要共识处理，Paxos/ZAB/VR/Raft，选择哪个算法要看实际情况，特别是系统的**规模**，因为这常常和系统里的延迟有关
 
 ## 1.10 系统的延迟特性
 
-- 延迟总是存在的：想想Grace Hopper手里那根11.78英寸的电缆
+- 延迟总是存在的：想想 Grace Hopper 手里那根 11.78 英寸的电缆
   - 带宽再怎么加还是有物理上限的
   - 延迟特性是系统设计时最重要的考量指标
      - 能承受多少网络请求其实也是这个起决定性作用
@@ -674,11 +674,11 @@ Lamport, 1987:
 
 ### 1.10.1 多核系统
 
-- 多核系统特别是NUMA架构的，其实工作起来就是个分布式系统
-  - 虽然每个core不会像分布式系统里面的node一样挂掉, 它彼此间的通信速度一般
+- 多核系统特别是 NUMA 架构的，其实工作起来就是个分布式系统
+  - 虽然每个 core 不会像分布式系统里面的 node 一样挂掉, 它彼此间的通信速度一般
   - 比如[Intel QPI](https://www.intel.com/content/www/us/en/io/quickpath-technology/quickpath-technology-general.html)这样的总线性质的同步网络
   - 使用了大量的硬件技术和底层协议，使得内存访问得以协调
-  - [Non-temporal SSE](https://stackoverflow.com/questions/37070/what-is-the-meaning-of-non-temporal-memory-accesses-in-x86) (如MOVNTI)
+  - [Non-temporal SSE](https://stackoverflow.com/questions/37070/what-is-the-meaning-of-non-temporal-memory-accesses-in-x86) (如 MOVNTI)
 - abstraction to distribution
   - MFENCE/SFENCE/LFENCE
     - Introduce a serialization point against load/store instructions
@@ -687,7 +687,7 @@ Lamport, 1987:
   - [CMPXCHG Compare-and-Swap](https://en.wikipedia.org/wiki/Compare-and-swap)
   - [LOCK](https://stackoverflow.com/questions/27837731/is-x86-cmpxchg-atomic)
     - 对整个内存加锁来保障一致性
-- abstraction是有代价的
+- abstraction 是有代价的
   - [hardware lock elision](https://software.intel.com/en-us/node/683688)有一些帮助但是帮助不大
   - [Mechanical Sympathy](https://mechanical-sympathy.blogspot.com/)
   - 尽量不要在多核之间进行协同任务
@@ -697,39 +697,39 @@ Lamport, 1987:
 
 ### 1.10.2 局域网内
 
-- 一般来说我们使用的云服务商提供的服务都类似于服务器就在一个LAN里面
-- 延迟基本上可以控制到100ms以内
+- 一般来说我们使用的云服务商提供的服务都类似于服务器就在一个 LAN 里面
+- 延迟基本上可以控制到 100ms 以内
   - 但是一旦跨区就有可能时延显著增大
   - 时延还会有抖动，要提前准备好应对措施
-- 和磁盘I/O比起来，网络延迟是一种怎样的延迟？
+- 和磁盘 I/O 比起来，网络延迟是一种怎样的延迟？
     - 云服务上的「磁盘」可能是其他的服务器在提供
     - 不是可能是，一定是吧
-    - 就算不是，插在服务器上的物理硬盘也会有时延，不然I/O为什么需要「调度」？
+    - 就算不是，插在服务器上的物理硬盘也会有时延，不然 I/O 为什么需要「调度」？
 - 但是和内存访问相比，网络的时延就相当可观了
   - 如果考虑的是吞吐量？
   - 但是使用分布式还可以是其他原因
-    - 资源的sharding
-    - 问题的isolating
+    - 资源的 sharding
+    - 问题的 isolating
 
 ### 1.10.3 多地多中心
 
 - 做多地多中心的原因有
   - 终端用户感知的时延
-    - 10ms的延迟人类就可以感知，最多可以忍受100ms的延迟
+    - 10ms 的延迟人类就可以感知，最多可以忍受 100ms 的延迟
       - SH-BJ: 50ms
       - SH--CD: 100 ms
       - SH--GY: 200 ms
     - 如何打败光速：就近服务用户
   - 灾难恢复
-- 很多人以为一个round就完成共识
-  - 实际上可能需要是4个
-    - 最坏情况下每次都需要4个如果对Paxos的实现不是很好（比如Cassandra）
-  - 所以如果在数据中心之间搞Paxos，要考虑代价
+- 很多人以为一个 round 就完成共识
+  - 实际上可能需要是 4 个
+    - 最坏情况下每次都需要 4 个如果对 Paxos 的实现不是很好（比如 Cassandra）
+  - 所以如果在数据中心之间搞 Paxos，要考虑代价
   - 跨数据中心的时延是用户可以感知的
     - 缓存
     - 消息队列
     - 一致性不一定要那么强
-    - CRDT来保障本地写
+    - CRDT 来保障本地写
     - Causal consistency/HATs
 - 非要强一致性？
   - 分区也许是个选择
@@ -737,13 +737,13 @@ Lamport, 1987:
     - 当用户跨区时，再在数据中心之间实现跨区访问
   - 当数据有更新时，放到哪个数据中心？
     - 最近的？
-    - Facebook仍然所有的写操作先经过一个作为网关的数据中心
+    - Facebook 仍然所有的写操作先经过一个作为网关的数据中心
   - 当顺序一致是够用的，缓存本地读
     - 多地多中心时怎么做？
 
 ### 1.10.4 小结
 
-这里讨论了三个不同维度的分布式系统：多核系统，在一个LAN里面部署的服务，以及通过专线互联的数个数据中心。如果说有什么可以总结的那就是，能够避免协调和共识就尽量避免，小到在一个CPU的核进行某个计算任务的闭环，大到当业务横跨广阔地域时对用户进行分区来做datacenter-pinned的方案，都是这个标准的体现。
+这里讨论了三个不同维度的分布式系统：多核系统，在一个 LAN 里面部署的服务，以及通过专线互联的数个数据中心。如果说有什么可以总结的那就是，能够避免协调和共识就尽量避免，小到在一个 CPU 的核进行某个计算任务的闭环，大到当业务横跨广阔地域时对用户进行分区来做 datacenter-pinned 的方案，都是这个标准的体现。
 
 
 ## 1.11 常见分布式系统
@@ -760,12 +760,12 @@ Lamport, 1987:
 ### 1.11.2 KV stores
 
 - Riak, Couch, Mongo, Cassandra, RethinkDB, HDFS, ...
-- 1维/2维/3维的key
+- 1 维/2 维/3 维的 key
 - O(1)读
 - 可存储大规模的数据集
-- 可以认为有线性的scalability
+- 可以认为有线性的 scalability
 - 可以认为没有事务机制
-- 通常是linearizable/sequential的
+- 通常是 linearizable/sequential 的
 
 ### 1.11.3 SQL databases
 
@@ -773,8 +773,8 @@ Lamport, 1987:
 - 通过关系代数进行建模
 - 可存储中等规模的数据集
 - 处理事务特别是多条记录的事务
-- 关系的维护和事务的完成需要协调机制，scalability一般
-- 大多数系统提供了主从的failover切换
+- 关系的维护和事务的完成需要协调机制，scalability 一般
+- 大多数系统提供了主从的 failover 切换
 - 读操作的成本很大程度上受索引质量的影响
 - 强一致性为主 (SI, serializable, strict serializable)
 
@@ -782,8 +782,8 @@ Lamport, 1987:
 
 - Elasticsearch, SolrCloud, ...
 - 可存储中等到大型规模的数据集
-- O(1)读, log-ish的搜索
-- scalability很好
+- O(1)读, log-ish 的搜索
+- scalability 很好
 - 弱一致性为主
 
 ### 1.11.5 Coordination services
@@ -791,13 +791,13 @@ Lamport, 1987:
 - Zookeeper, etcd, Consul, ...
 - 可存储较小规模的数据集
 - Useful as a coordination primitive for stateless services
-- 强一致性为主 (sequential或者linearizable)
+- 强一致性为主 (sequential 或者 linearizable)
 
 ### 1.11.6 Streaming systems
 
 - Storm, Spark...
 - 通常是根据自己的需要自建的工具集来实现
-- in-memory的数据卷，规模不会大
+- in-memory 的数据卷，规模不会大
 - 低延迟
 - 高吞吐
 - 弱一致性
@@ -805,11 +805,11 @@ Lamport, 1987:
 ### 1.11.7 Distributed queues
 
 - Kafka, Kestrel, Rabbit, IronMQ, ActiveMQ, HornetQ, Beanstalk, SQS, Celery, ...
-- 多节点上做持久化来确保有redundancy
+- 多节点上做持久化来确保有 redundancy
 - 对于可以分段执行的任务很有用
 - 在无状态的服务之间进行数据传递很有用
 - 唯一不会丢消息的是？Kafka？
-  - 还是SQS?
+  - 还是 SQS?
 - 消息队列并不会改善端到端的时延
   - 有任务立即处理掉总是比丢消息队列要快的
 - 消息队列并不会改善平均吞吐量
@@ -819,20 +819,20 @@ Lamport, 1987:
 - 消息队列即使在用户的操作是异步的时候也不一定能保证事件的顺序
   - 比如网络问题导致事件到达顺序乱了
   - 所以不要依赖消息队列的事件顺序
-- 消息队列提供了at-most-once或者at-least-once的消息投递机制
-  - 任何号称做到了其他feature的消息队列（比如exactly-once）多半揣着别的东西
-  - exactly-once的投递在消息被确认了之后，持久化之前接收者驾崩了会是什么情况？
+- 消息队列提供了 at-most-once 或者 at-least-once 的消息投递机制
+  - 任何号称做到了其他 feature 的消息队列（比如 exactly-once）多半揣着别的东西
+  - exactly-once 的投递在消息被确认了之后，持久化之前接收者驾崩了会是什么情况？
   - 所以保证操作是冥等的很重要
 - 消息队列对改善「尖峰时刻」的吞吐量是很有效的
   - 可以用来削峰
 - 分布式消息队列在不丢数据的前提下还可以改善系统的容错性
-  - 很可能只需要个TCP就够了
-  - 很多人使用消息队列干的事情只是简单的IPC通信，用一个socket的write()就够
-- 当runtime很挫的时候，消息队列可以帮忙
+  - 很可能只需要个 TCP 就够了
+  - 很多人使用消息队列干的事情只是简单的 IPC 通信，用一个 socket 的 write()就够
+- 当 runtime 很挫的时候，消息队列可以帮忙
 
 ### 1.11.8 小结
 
-分布式系统里面有各种各样的结构化的数据存储，它们是系统之间的胶水。KV和关系数据库一般用来存各种记录，KV虽然使用独立的key，用来存关系数据看起来不是那么合适，但是它提供了更好的scalability并且对partial failure有较好的承受力；相比之下，关系数据库提供了更丰富的查询功能和更强的事务机制。流式数据处理系统则主要用来进行低延迟，持续性的数据集的处理，架构上看起来更像是一套framework而不是一个数据存储。消息队列则顾名思义偏重在对**消息**的处理而不是对**变化**的处理。
+分布式系统里面有各种各样的结构化的数据存储，它们是系统之间的胶水。KV 和关系数据库一般用来存各种记录，KV 虽然使用独立的 key，用来存关系数据看起来不是那么合适，但是它提供了更好的 scalability 并且对 partial failure 有较好的承受力；相比之下，关系数据库提供了更丰富的查询功能和更强的事务机制。流式数据处理系统则主要用来进行低延迟，持续性的数据集的处理，架构上看起来更像是一套 framework 而不是一个数据存储。消息队列则顾名思义偏重在对**消息**的处理而不是对**变化**的处理。
 
 
 ## 1.12 A Pattern Language
@@ -853,12 +853,12 @@ Lamport, 1987:
     - 在分布式系统里达到同样的功能要如何实现？
   - 什么样的计算任务需要分布式?
     - "这是大数据"
-      - 现在云服务的机器有几个T的内存？
+      - 现在云服务的机器有几个 T 的内存？
       - 现在云服务的机器有多「快」？
-    - JVM可以处理什么量级的请求？50000每秒？
-    - TCP上的PB呢？10000000每秒？
+    - JVM 可以处理什么量级的请求？50000 每秒？
+    - TCP 上的 PB 呢？10000000 每秒？
   - 是不是一个「可以挂掉」的服务？
-  - 是不是可以做failover？
+  - 是不是可以做 failover？
   - 是不是可以进行一些人工干预?
 
 ### 1.12.2 使用现有的系统
@@ -872,21 +872,21 @@ Lamport, 1987:
 
 - 都决定做了就买那些看起来贵得要死的机器吧
 - 对软硬件的改动都要做足够的测试并且跟踪起来
-  - 有staging环境吗？
+  - 有 staging 环境吗？
 - 硬件的问题总会有，但是通过花钱和找靠谱的人，可以把它发生的概率降到很低，从而使它成为一个「低优先级」的问题
 
 ### 1.12.4 但仍然要接受failure
 
 - 分布式系统两个最大的难题之一就是**partial failure**
 - 多大点儿事，对吧
-  - SLA是？
+  - SLA 是？
   - 可以恢复吗？
   - 需要打电话给用户道歉赔钱吗？
   - 不要以为你是个伟大的程序员，你是提供服务的
 
 ### 1.12.5 备份
 
-- 备份其实就是一个equential的一致性但
+- 备份其实就是一个 equential 的一致性但
   - 只有在正确地备份了之后，才有备份
     - 有些备份程序没有保存状态，造成文件系统或者数据库崩溃
     - 外键失效/文件丢失，多搞过几次恢复你总能遇得上
@@ -899,22 +899,22 @@ Lamport, 1987:
 - 系统一定会挂
 - 如何降低挂的概率？
 - 在多个节点上尽量保持状态和数据的一致
-  - 主备的failover是不够的
+  - 主备的 failover 是不够的
     - 备用系统不一定切得过去：缓存失效，磁盘坏的，软件版本不一致等等问题
     - 几乎没有见过大型生产系统在失效的时候能够切到备用系统
     - 尽量多活
       - 建设起来非常有难度
-  - 有2份备份数据也是不够的
+  - 有 2 份备份数据也是不够的
     - 除非这数据不重要
-    - 所有备份都是3（数据中心，机房，甚至柴油发电机）
-      - 特别重要的做个4/5份也没有什么关系
+    - 所有备份都是 3（数据中心，机房，甚至柴油发电机）
+      - 特别重要的做个 4/5 份也没有什么关系
   - 常见的策略有哪些？
     - Camille Fournier[怎么部署zk](http://www.camilletalk.com/whilefalse/2013/05/zookeeper-and-distributed-operating.html)的？
 - 只要错误是「不互相关联」的，冗余就可以增强系统的可用性
   - 所以下面的问题就算是冗余也解决不了
     - 如果同一个批次上线使用的磁盘集体驾崩了
     - 整个机架因为交换机一起挂了驾崩了
-    - 停电后UPS不工作整个数据中心里的节点一起驾崩了
+    - 停电后 UPS 不工作整个数据中心里的节点一起驾崩了
     - 地震这类天灾
     - 以及，如果在节点上运行的任务就是有问题的，这些节点也会一起驾崩
       - 慢查询
@@ -928,12 +928,12 @@ Lamport, 1987:
 
 - 计算任务太大时做分片
 - 一个节点上可以处理分片后的任务
-  - 别太小: 太分散整体协调的overhead会增大
+  - 别太小: 太分散整体协调的 overhead 会增大
   - 别太大: 在各个节点之间会出现负载不均衡，又得进行调度
-  - 10-100比较好
+  - 10-100 比较好
 - 理想情况：计算任务是均匀的
-  - 但会有hotspots
-  - 但workload会因时而异
+  - 但会有 hotspots
+  - 但 workload 会因时而异
 - 设计时要给出系统上限
     - 一个节点计算任务超过上限了，涌出来的任务会不会把其他的节点一个个淹死
 - 分片如何进行分配？
@@ -943,30 +943,30 @@ Lamport, 1987:
 
 ### 1.12.8 ID
 
-- 你打造的分布式系统里还有东西没有唯一ID吗？
-  - 考虑不同的access模式
+- 你打造的分布式系统里还有东西没有唯一 ID 吗？
+  - 考虑不同的 access 模式
     - Scans
     - Sorts
     - Shards
   - 如何避免协调：全局唯一，但本地生成
     - [Flake ID](http://yellerapp.com/posts/2015-02-09-flake-ids.html)
-  - ID可以map到一个分片吗？
-  - ID里要不要编码用户ID？
+  - ID 可以 map 到一个分片吗？
+  - ID 里要不要编码用户 ID？
 
 ### 1.12.9 不可变值
 
 - 永远不变的数据易于存储
   - 从不需要协调更改
   - 复制和恢复成本低
-- Cassandra, Riak, 任何使用里LSM-tree的DB
-  - 以及像Kafka这样的系统
+- Cassandra, Riak, 任何使用里 LSM-tree 的 DB
+  - 以及像 Kafka 这样的系统
 - 易于验证：要不就是要不就不是
   - 传统的让人头疼的问题都没有了
   - 很容易做缓存
 - 超高的可用性和持久性，可以对写操作的延时做调整和控制
   - 读操作延迟很低：可以从最近的一个副本直接读
   - 这对地理上分布广的系统非常有价值
-- 需要GC
+- 需要 GC
   - 但是有很多成熟的好方案了
 
 ### 1.12.10 可变的标识
@@ -978,25 +978,25 @@ Lamport, 1987:
 - 大多数时候系统里面也没有那么多指针
   - 整个数据库可能就分配一个指针来指向
   - [Datomic](https://www.datomic.com/)
-- 基于标识的强一致性操作能够用不可变的HA高可用存储来实现
-  - 利用CAP中AP存储的优点：低延时和可扩容
+- 基于标识的强一致性操作能够用不可变的 HA 高可用存储来实现
+  - 利用 CAP 中 AP 存储的优点：低延时和可扩容
   - 利用有共识系统提供的基于小数据集的强一致性
   - 写操作可用性受存储的限制
     - 但是如果只需要读操作顺序一致，非常好做缓存
-    - 如果只需要serializability还能做得更便宜
+    - 如果只需要 serializability 还能做得更便宜
   - [Rich Hickey的演讲](https://vimeo.com/45136212)
   - Pat Helland[讲解Salesforce的存储](http://basho.com/posts/business/ricon-west-videos-keynotes/)
 
 ### 1.12.11 无冲突
 
-- 文献里面的Conflict-free/Convergent/Commutative/Confluent是一个意思
+- 文献里面的 Conflict-free/Convergent/Commutative/Confluent 是一个意思
 - 顺序无关的系统总是更好构建和维护的
 - 同时也减少了协调的工作量
 - [CRDTs](https://github.com/mwhittaker/crdts)
 - Immutable Value
 - Streaming:
-  - 先buffer，当知道可以compute+flush的时候再操作
-  - 如果需要，对当前结果可以emit出去并且根据结果进行相应操作（监控体系）
+  - 先 buffer，当知道可以 compute+flush 的时候再操作
+  - 如果需要，对当前结果可以 emit 出去并且根据结果进行相应操作（监控体系）
   - 全量数据拿到后呢？
   - 银行交易系统怎么做的？
 - [Behavior of Database Production Rules](https://theory.stanford.edu/~aiken/publications/papers/sigmod92.pdf)
@@ -1011,7 +1011,7 @@ Lamport, 1987:
   3. 采用[背压](https://github.com/ReactiveX/RxJava/wiki/Backpressure)：也就是告诉客户端缓些来
 - 三种方式都是可以的
   - 但是背压可以大大减少需要重试的请求：根本没有发出来
-- 背压把决定权交给了生产者，很compositional
+- 背压把决定权交给了生产者，很 compositional
   - 流控的设计模式，客户端永远不知道服务器咋了
   - 背压的设计模式，要流控也可以选
   - 如果异步系统最好实现背压机制，用户会少一些机会来羞辱你
@@ -1024,7 +1024,7 @@ Lamport, 1987:
 
 ### 1.12.13 领域模型的服务
 
-- 核心问题是每个domain在逻辑上都是碎片，它们之间如何完成交互
+- 核心问题是每个 domain 在逻辑上都是碎片，它们之间如何完成交互
 - 各个碎片有自己的技术栈，性能表现，存储需求
   - 单体应用很多采用里[多租户](https://en.wikipedia.org/wiki/Multitenancy)方式
     - 正确实现多租户很难
@@ -1043,13 +1043,13 @@ Lamport, 1987:
     - 以名词为核心构建的服务易于保障**datatype invariants**
     - 以动词为核心构建的服务易于保障**transformation invariants**
     - 所以我们经常看到一个用户服务被认证服务调用
-  - 但是具体如何划分边界仍然是很tricky的
+  - 但是具体如何划分边界仍然是很 tricky 的
     - 服务开发和维护的成本不小，能少一个就少一个
     - 以是否构成一个完整的工作单元来衡量
-    - 需要进行不同维度扩展的也分到不同的service为妙
+    - 需要进行不同维度扩展的也分到不同的 service 为妙
     - 依赖项和延时特性比较一致的服务部署到一起
-    - 资源（如CPU或者磁盘）互补的服务部署到一起
-      - 比如: 在进行渲染的节点上使用memcache
+    - 资源（如 CPU 或者磁盘）互补的服务部署到一起
+      - 比如: 在进行渲染的节点上使用 memcache
       - 比如: Google Borg, Mesos, Kubernetes
   - 服务需要有较好的封装和抽象
     - 最好是树状结构不是网状结构
@@ -1060,7 +1060,7 @@ Lamport, 1987:
       - 注意它是在单节点场景下被提出的: 针对分布式环境要小心
       - 事务必须是冥等的
     - [Typhon/Cerberus](http://www.cs.ucsb.edu/~vaibhavarora/Typhon-Ieee-Cloud-2017.pdf)
-      - 多个data store上达到最终一致性的协议
+      - 多个 data store 上达到最终一致性的协议
 
 ### 1.12.14 康威定律
 
@@ -1081,9 +1081,9 @@ Lamport, 1987:
 - 康威定律：组织边界决定了交付物的边界
   - 当类库的用户数较少或者团队的协作比较紧密时，变动较容易
   - 但是当跨多个团队时，各个用户的优先级都不一样，需要进行协调
-  - 而且类库的更新需要用户自己来做（即使用Maven）
-  - 服务可以使得团队间通过定义的API来进行协作，并且给这种协作加上强制约束
-    - 如果是用类库的方式，需要通过很多的代码交叉review以及相应的工具才能有类似效果
+  - 而且类库的更新需要用户自己来做（即使用 Maven）
+  - 服务可以使得团队间通过定义的 API 来进行协作，并且给这种协作加上强制约束
+    - 如果是用类库的方式，需要通过很多的代码交叉 review 以及相应的工具才能有类似效果
 - 服务提供中心化的控制力
   - 性能改进每个人都会立刻感知到
   - 技术选型更加独立可控
@@ -1099,18 +1099,18 @@ Lamport, 1987:
 
 ### 1.12.15 小结
 
-- 如无必要，不要搞分布式，用一个node
-- 如果要搞，弄好SLA，准备好天天下跪
+- 如无必要，不要搞分布式，用一个 node
+- 如果要搞，弄好 SLA，准备好天天下跪
 - 当灾难性的问题发生时，唯一可以依靠的是备份，所以请备份
 - 要提高可靠性，可以增加冗余性
 - 要解决大规模的问题，可以分片
 - 不可变值和可变的标识符结合使用，来构建大型的分布式系统
-- 当系统越来越大时，每个模块必须独立scale，有些库可能升级成服务，要做好与此同时团队进行scale的工作
+- 当系统越来越大时，每个模块必须独立 scale，有些库可能升级成服务，要做好与此同时团队进行 scale 的工作
 
 ## 1.13 生产环境常见问题
 
 - 大量「设计上」想不到的事情会发生
-- 数学证明很重要，但真实系统还得I/O
+- 数学证明很重要，但真实系统还得 I/O
 
 ### 1.13.1 分布式系统是需要企业文化作为支撑的
 
@@ -1127,7 +1127,7 @@ Lamport, 1987:
 
 - 强类型语言可以很好的防止一些逻辑错误
   - 可以减少一些测试的工作量
-- 但是并不能预测和控制运行时的performance
+- 但是并不能预测和控制运行时的 performance
 - 所以需要全面的测试能力和完备的测试集
   - 可以迅速执行完毕的基于用例的测试（example-based testing）
   - 可以在晚上跑的生成式的测试（property-based testing）
@@ -1145,21 +1145,21 @@ Lamport, 1987:
 
 - Jeff Hodges: [The worst bug you'll ever hear is "it's slow"](https://www.somethingsimilar.com/2013/01/14/notes-on-distributed-systems-for-young-bloods/)
   - 总会发生，很难定位
-  - 因为系统是分布式的，需要对各个节点都做profile
-    - 大多数的profiler都不支持这样的用法
+  - 因为系统是分布式的，需要对各个节点都做 profile
+    - 大多数的 profiler 都不支持这样的用法
     - [Dapper](https://research.google.com/pubs/pub36356.html)
     - [Zipkin](https://github.com/openzipkin/zipkin)
     - 其他工具方面的投资
-  - Profiler的功能即使完备，也主要是发现CPU相关的问题
-    - 但是出现「很慢」的情况，多数瓶颈在I/O而不是CPU
+  - Profiler 的功能即使完备，也主要是发现 CPU 相关的问题
+    - 但是出现「很慢」的情况，多数瓶颈在 I/O 而不是 CPU
     - 存储
     - 网络
     - 消息队列
     - GC
-  - 通过应用的metrics来找到问题
-    - 然后深入到进程和OS层面来查看具体原因
+  - 通过应用的 metrics 来找到问题
+    - 然后深入到进程和 OS 层面来查看具体原因
   - 如果在同一个集群下面：
-    - 1/3的节点: 多半是硬件或者配置问题
+    - 1/3 的节点: 多半是硬件或者配置问题
     - 大量的节点: 多半是逻辑问题，要看看分片大小/负载等关键指标
   - 尾延迟问题
     - [Jeff Dean, 2013: The Tail at Scale](https://research.google.com/pubs/pub40801.html)
@@ -1169,16 +1169,16 @@ Lamport, 1987:
 
 - 某种程度上监控就是一个持续的测试过程
   - 监控的性能要求高
-    - 1ms量级的响应速度
+    - 1ms 量级的响应速度
       - TCP incast
-    - 运维处理的响应速度：10秒内？1分钟内？能不能自动化？
+    - 运维处理的响应速度：10 秒内？1 分钟内？能不能自动化？
   - And for capacity planning, hourly/daily seasonality is more useful
   - 按需进行设计
     - 哪些是重要的？
       - 对请求的响应是重要的
-      - 节点的CPU没那么重要
+      - 节点的 CPU 没那么重要
     - 关键指标
-      - Apdex: SLA范围内的成功响应次数
+      - Apdex: SLA 范围内的成功响应次数
       - Latency: 0, 0.5, 0.95, 0.99, 1
         - 百分位，不是平均
         - 也不是百分位的平均
@@ -1188,10 +1188,10 @@ Lamport, 1987:
         - 监控看起来没问题，用户说慢？
   - 普通的监控手段是无效的
     - trace
-    - host机器的cpu/disk等metrics
+    - host 机器的 cpu/disk 等 metrics
     - APM
     - 很可能需要自己开发
-      - 至少是metrics要自己开发
+      - 至少是 metrics 要自己开发
   - 分布式日志基础设施 (Zipkin, Dapper)
     - 需要极大的投入
     - [Mystery Machine](https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-chow.pdf)
@@ -1212,10 +1212,10 @@ Lamport, 1987:
 ### 1.13.6 流量投影
 
 - 压力测试只有当模拟出来的流量和真实的流量特征一致时才有意义
-- 如何从生产环境dump流量？
-  - 招数1: 使用SIGUSR1杀掉进程来dump一个时间段的流量
-  - 招数2: tcpdump/tcpreplay套件
-  - 招数3: 从生产环境直接投影到测试环境
+- 如何从生产环境 dump 流量？
+  - 招数 1: 使用 SIGUSR1 杀掉进程来 dump 一个时间段的流量
+  - 招数 2: tcpdump/tcpreplay 套件
+  - 招数 3: 从生产环境直接投影到测试环境
 - [Envoy](https://github.com/envoyproxy/envoy)有一些相关的功能
 
 ### 1.13.7 版本管理
@@ -1224,7 +1224,7 @@ Lamport, 1987:
   - 意味着没有人真正知道是怎么做，但是做得好的就让你感觉美
   - 比如所有消息都有版本这个标签
   - 兼容好之前版本的逻辑
-  - 通知客户的API版本过老
+  - 通知客户的 API 版本过老
     - 如何进行强制升级？
 
 ### 1.13.8 发布机制
@@ -1245,7 +1245,7 @@ Lamport, 1987:
 ### 1.13.9 功能开关
 
 - 在一次变更之后，所有的更新如何可以比较受控的灰度到用户？
-  - 把功能一个个打开，看看它们对metrics的影响
+  - 把功能一个个打开，看看它们对 metrics 的影响
   - 逐渐把流量一个库一个库的加上去
   - 一旦出现问题可以动态关闭功能开关
 - 当有些服务降级的时候，我们希望对用户而言关键的功能是可用的，所以需要动态关掉一些别的功能的能力
@@ -1260,7 +1260,7 @@ Lamport, 1987:
 - 在生产环境进行错误注入时
   - 及时处理出现的问题，不要把演习搞成事故
   - 对关键路径的依赖进行识别
-    - 关掉哪些通过API对外提供功能的服务要特别小心
+    - 关掉哪些通过 API 对外提供功能的服务要特别小心
   - 需要基础设施特别是监控和告警很健全，可以迅速衡量出影响并应对
   - 控制好影响范围
     - 不要动不动就想把整个数据中心弄没了看看是什么情况
@@ -1283,23 +1283,23 @@ Lamport, 1987:
       - 当背压发生时，应该有告警
   - 注意消息队列的深度
     - 通常看深度就知道是不是应该扩容了
-      - E2E的队列时延应该是小于平均波动
-    - 增加队列的size往往是一个治标不治本的方案
+      - E2E 的队列时延应该是小于平均波动
+    - 增加队列的 size 往往是一个治标不治本的方案
   - 其实是特别复杂的工程难题：
     - Jeff Hodges[在RICON上的讲座](http://www.youtube.com/watch?v=BKqgGpAOv1w)
-    - Zach Tellman的[Everything Will Flow](https://www.youtube.com/watch?v=1bNOO3xxMc0)
+    - Zach Tellman 的[Everything Will Flow](https://www.youtube.com/watch?v=1bNOO3xxMc0)
 
 ### 1.13.12 小结
 
 - 一个分布式系统需要开发、测试和运维工程师通力合作
-- 传统的测试手段，以及现在兴起的formal verification或者property-based的测试，可以对系统的正确性有不错的验证。但是要理解生产环境特别是生产环境的错误，一定要做好生产环境的埋点和端到端监控
+- 传统的测试手段，以及现在兴起的 formal verification 或者 property-based 的测试，可以对系统的正确性有不错的验证。但是要理解生产环境特别是生产环境的错误，一定要做好生产环境的埋点和端到端监控
 - 成熟的分布式系统研发团队会投入很大的成本和精力进行工具打磨：[流量投影](http://blog.christianposta.com/microservices/traffic-shadowing-with-istio-reduce-the-risk-of-code-release/)，增量部署，功能开关化等等。
 
 ## 1.14 延伸阅读材料
 
 - [Mixu的书](http://book.mixu.net/distsys/)
 - [Jeff Hodges围绕产品环境的一些好建议](https://www.somethingsimilar.com/2013/01/14/notes-on-distributed-systems-for-young-bloods/)
-- [The Fallacies of Distributed Computing](http://www.rgoarchitects.com/Files/fallacies.pdf) （实际上the fallacies系列都很棒）
-- Christopher Meiklejohn的[精选论文集](http://christophermeiklejohn.com/distributed/systems/2013/07/12/readings-in-distributed-systems.html)
-- Nancy Lynch的[Distributed Algorithms](https://books.google.com.ph/books/about/Distributed_Algorithms.html?id=2wsrLg-xBGgC&redir_esc=y)
+- [The Fallacies of Distributed Computing](http://www.rgoarchitects.com/Files/fallacies.pdf) （实际上 the fallacies 系列都很棒）
+- Christopher Meiklejohn 的[精选论文集](http://christophermeiklejohn.com/distributed/systems/2013/07/12/readings-in-distributed-systems.html)
+- Nancy Lynch 的[Distributed Algorithms](https://books.google.com.ph/books/about/Distributed_Algorithms.html?id=2wsrLg-xBGgC&redir_esc=y)
 

@@ -18,7 +18,7 @@ categories:
 
 车一开进山区，因为属于汶川大地震里山崩地裂的龙门山山脉，那场灾难留下的痕迹依然随处可见。然而地貌上的变化却并不是爸妈最关注：一路上他们不断提起的是故人的名字，以及自己和他们之间的种种旧事。有的时候我爸会往路边一指说，「那不是黄村吗？以前你妈下乡在那里的时候，我骑车来看过她。」有的时候我妈又会指着另一个地方说，「那个谁谁谁，就是在这里被掉下来的房梁打死了，太可惜了。」
 
-而白水河对于我，因为是十岁之前生活的地方，本来就没有多少刻骨铭心的记忆。加上我和Konthiga读过的小学和学校后面那条曾经清澈而壮阔的白水河，在上次回去的时候就已经面目全非了，于是唯一怀着兴趣的就只剩据说在地震里面一栋都没有倒的蛇纹矿家属区，也就是我们当年长大的地方。坐在我旁边的偶像派，在我们一家人兴致勃勃的指着窗外大呼小叫时，则多少显得有些百无聊赖。
+而白水河对于我，因为是十岁之前生活的地方，本来就没有多少刻骨铭心的记忆。加上我和 Konthiga 读过的小学和学校后面那条曾经清澈而壮阔的白水河，在上次回去的时候就已经面目全非了，于是唯一怀着兴趣的就只剩据说在地震里面一栋都没有倒的蛇纹矿家属区，也就是我们当年长大的地方。坐在我旁边的偶像派，在我们一家人兴致勃勃的指着窗外大呼小叫时，则多少显得有些百无聊赖。
 
 后来事情的发展让人觉得略感尴尬。走到「鬼招手」（银厂沟一个以险峻著称的地段）的时候，前面的山路突然淹没在浓雾之中，我们只好调头，放弃了继续进沟的打算。接下来在大宝镇上兜了两圈，我们才凭借着整条街上几乎是唯一没有被拆除的新华书店，定位到了我们原来的住处：居然已经是一片平地。
 
@@ -29,7 +29,7 @@ categories:
 
 ![long live old times](/downloads/images/2011_11/IMG_0366_1.png --alt Don't touch me)
 
-我还找到了几张Konthiga和我都还挺萌的时候的照片。这个阶段我们的衣服全是老爸用缝纫机做的，看着都是一段段特别的回忆。另外从红领巾出现的频率来看，除了伟大的六一儿童节，我们一直对照相这事情兴趣不大。
+我还找到了几张 Konthiga 和我都还挺萌的时候的照片。这个阶段我们的衣服全是老爸用缝纫机做的，看着都是一段段特别的回忆。另外从红领巾出现的频率来看，除了伟大的六一儿童节，我们一直对照相这事情兴趣不大。
 
 <span style="widows: 2; text-transform: none; text-indent: 0px; letter-spacing: normal; border-collapse: separate; font: medium tahoma; white-space: normal; orphans: 2; color: rgb(0,0,0); word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px"><a href="/downloads/images/2011_11/IMG_0172.jpg"><img style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="IMG_0172" border="0" alt="IMG_0172" src="{{ site.static_base }}/downloads/images/2011_11/IMG_0172.jpg" width="204" height="275" /></a> <a href="/downloads/images/2011_11/IMG_0168.jpg"><img style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="IMG_0168" border="0" alt="IMG_0168" src="{{ site.static_base }}/downloads/images/2011_11/IMG_0168.jpg" width="204" height="285" /></a> <a href="/downloads/images/2011_11/IMG_0200.jpg"><img style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="IMG_0200" border="0" alt="IMG_0200" src="{{ site.static_base }}/downloads/images/2011_11/IMG_0200.jpg" width="204" height="288" /></a> </span>
 
