@@ -14,7 +14,7 @@ categories:
 
 > 这是一个关于技术团队效能管理的[系列](/categories/performance/)的第一篇，主要讲怎么度量，后面还有[怎么提升](/2018/08/how-to-improve-tech-organization-performance/)。
 
-最近在 TGO 做了一次关于绩效管理的分享，[slide](https://github.com/lenciel/talks/blob/master/slides/2018_08_05_how_to_measure_and_improve_team_performance/%E7%A0%94%E5%8F%91%E6%95%88%E7%8E%87%E5%BA%A6%E9%87%8F%E5%92%8C%E6%8F%90%E5%8D%87-v1.pdf)发出去之后，很多朋友希望知道具体讲了啥，就在这里整理一下。
+最近在 ArchSummit 做了一次关于绩效管理的分享（[详情可点击](https://www.infoq.cn/article/wF*ApRZNls8zuwf2fYWT)），[slide](https://github.com/lenciel/talks/blob/master/slides/2018_08_05_how_to_measure_and_improve_team_performance/%E7%A0%94%E5%8F%91%E6%95%88%E7%8E%87%E5%BA%A6%E9%87%8F%E5%92%8C%E6%8F%90%E5%8D%87-v1.pdf)发出去之后，很多朋友希望知道具体讲了啥，就在这里整理一下。
 
 作为技术管理者，我们经常要回答下面这些问题：
 
