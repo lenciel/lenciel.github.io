@@ -11,12 +11,11 @@ footer: true
 
 首先，x2blog导出的是按照月份为单位的日志，如下图所示：
 
-
-![x2w1](/downloads/images/2008_09/x2w1.jpg --alt Don't touch me)
+{% picture /downloads/images/2008_09/x2w1.jpg %}
 
 每个xml文件的格式都是相同的，如下图所示：
 
-![x2w1](/downloads/images/2008_09/x2w2.jpg --alt Don't touch me)
+{% picture /downloads/images/2008_09/x2w2.jpg %}
 
 可以从图里面看到，`Info`节点的title就是blog的名称，而每个Item对应着一篇日志。这里有点诡异的是所有日志的内容都在`Abstract`节点里面，而不是`Content`节点里面，估计是x2blog这个日志程序的bug。
 

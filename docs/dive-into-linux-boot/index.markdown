@@ -18,8 +18,7 @@ footer: true
 
 下图可以给你一个概览（真的是很概&#8230;览）
 
-![Linux启动过程概览](/downloads/images/2008_08/fig1.gif --alt Don't touch me)
-
+{% picture /downloads/images/2008_08/fig1.gif %}
 <a name="fig2">图1. Linux启动过程概览</a>
 
 当系统首次启动或重启时，处理器将执行一段特殊位置上的代码：对于PC机而言，是在主板的flash片子上保存的基本输入输出系统（`BIOS`），对于嵌入式系统，则是由CPU激活一个`reset vector`，启动flash或者ROM里面的一段特定程序。两种类型的过程是相似的，只是对于PC来说，哪些设备将会在启动过程中被使用有相当的灵活性（可以从硬盘、光盘、USB设备等等），因此需要由BIOS来选取设备。这里面的细节后面会讲到。
@@ -57,8 +56,7 @@ Stage 1 boot loader
 
 这时在内存中运行的从MBR搞来的Primary boot loader，包括了程序代码和分区表两个部分，如图2所示。512bytes中的前446bytes用来放loader，其中既有可执行代码也有错误消息文件。接下来的64bytes是四个分区表，每个16bytes。最后是两个bytes的magic number（其实就是0xAA55），主要是用来校验这个MBR是不是有效。
 
-![Linux启动过程概览](/downloads/images/2008_08/fig2.gif --alt Don't touch me)
-
+{% picture /downloads/images/2008_08/fig2.gif %}
 <a name="fig2">图2. MBR的内部结构</a>
 
 Primary boot loader的主要作用无非是把secondary boot loader (stage 2)加载进内存：它会顺序查看各个分区，当找到一个活动的分区时，它会检查一下其他的分区状态是不是都不是活动的。确定只有一个活动的分区后，该分区的boot record就会从设备上拷贝到RAM中执行。
@@ -106,9 +104,8 @@ Kernel
 
 以一个i386的映像为例，这个bzImage被激活后，会从位于`./arch/i386/boot/head.S`中的`start`函数开始执行(图三是基本步骤的流程图)。这个函数进行一些基本的硬件初始化，然后就调用`./arch/i386/boot/compressed/head.S`的`startup_32`函数。此函数配置基本环境，堆栈等，清空`Block Started by Symbol` (BSS)。接着`./arch/i386/boot/compressed/misc.c`中的`decompress_kernel`函数被调用，kernel解压到内存中。`./arch/i386/kernel/head.S`的另一个`startup_32`函数在解压完成之后得到调用。这个函数(也被称为`swapper`或者是`process 0`)完成分页表初始化，内存分页功能就绪。同时CPU类型和可用FPU情况被检测并保存起来，供后续使用。接下来位于`init/main.c`中的`start_kernel`函数被调用，这个函数从本质上可以被看作Linux kernel的main函数。
 
-![启动流程中的函数调用](/downloads/images/2008_08/fig3.gif --alt Don't touch me)
-
-<a name="fig3"><b>Figure 3. Linux kernel i386 启动流程中的函数调用 </b></a>
+{% picture /downloads/images/2008_08/fig3.gif %}
+<a name="fig3"><b>图3. Linux kernel i386 启动流程中的函数调用 </b></a>
 
 
 调用`start_kernel`会激活一系列的初始化函数，进行中断设置，内存设置和RAM初始化等工作。此后，位于`arch/i386/kernel/process.c`文件中的`kernel_thread`被调用，`init`函数随之运行。这是第一个用户空间的进程。最终，idle任务开始运行，调度函数获得控制权(这是在调用``cpu_idle`之后)。
