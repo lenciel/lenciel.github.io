@@ -8,6 +8,9 @@ categories:
 - rants
 - growth
 - thinking
+- management
+- culture
+- organization
 
 ---
 

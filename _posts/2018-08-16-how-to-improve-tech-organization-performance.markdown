@@ -7,6 +7,8 @@ categories:
 
 - management
 - agile
+- culture
+- organization
 - productivity
 - performance
 

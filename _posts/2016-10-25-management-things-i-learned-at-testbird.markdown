@@ -7,6 +7,8 @@ categories:
 
 - startup
 - management
+- culture
+- organization
 
 ---
 

@@ -9,6 +9,8 @@ categories:
 - agile
 - productivity
 - performance
+- culture
+- organization
 
 ---
 
