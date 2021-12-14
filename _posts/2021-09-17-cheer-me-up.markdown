@@ -6,6 +6,8 @@ date: 2021-09-17 21:42:52 +0800
 categories: 
 
 - writing
+- rants
+- 不是凡人
 
 ---
 
