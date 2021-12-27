@@ -127,14 +127,14 @@ categories:
 2. 系统有哪些角色，关键用户路径的流程是什么，有怎样的 SLA/SLI/SLO
 3. 有什么样的假设，有什么样的依赖条件
 4. 如何保障可用性和可靠性的细节
-	a. 包括但不限于流量怎么切分
-	b. 缓存怎么设计
-		i. Application caching
-		ii. Database caching
-		iii. Object caching（KV 存储如 Reids 或 Memchache）
-		iv. …
-	c. 数据怎么放怎么取
-	d. 系统的弹性怎么保障
+	- a. 包括但不限于流量怎么切分
+	- b. 缓存怎么设计
+		- i. Application caching
+		- ii. Database caching
+		- iii. Object caching（KV 存储如 Reids 或 Memchache）
+		- iv. …
+	- c. 数据怎么放怎么取
+	- d. 系统的弹性怎么保障
 5. 系统在安全性等方面的考虑
 6. 有什么外部依赖和风险
 
