@@ -6,6 +6,7 @@ comments: true
 categories:
 
 - memo
+- what-i-know
 
 ---
 

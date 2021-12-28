@@ -7,6 +7,7 @@ categories:
 
 - rants
 - memo
+- what-i-know
 ---
 
 你我都知道的旷世奇闻，仍然不在此列。
