@@ -6,8 +6,7 @@ date: 2020-12-31 20:36:58 +0800
 categories: 
 
 - rants
-- thinking
-- writing
+- year-end-summary
 
 ---
 

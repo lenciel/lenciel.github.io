@@ -6,7 +6,7 @@ comments: true
 categories:
 
 - rants
-- thinking
+- year-end-summary
 
 ---
 
