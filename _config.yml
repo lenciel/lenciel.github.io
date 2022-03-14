@@ -79,6 +79,8 @@ author: "Lenciel"
 url: "https://lenciel.com"
 date_format: "%Y/%m/%d %H:%M"
 subscribe_rss: /feed.xml
+feed:
+  excerpt_only: true
 default_asides: []
 sidebar: collapse
 static_base: "https://cdn.lenciel.com"

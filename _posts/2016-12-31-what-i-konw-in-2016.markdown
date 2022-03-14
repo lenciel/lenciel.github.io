@@ -15,7 +15,7 @@ categories:
 - 仅仅把要求用户输入并确认密码改成输入一次密码，可以提高新增用户注册率 56%。 [[Tom New](http://www.formisimo.com/blog/case-study-small-changes-lead-to-a-55-increase-in-conversions/)]
 - Google 的广告系统会跟踪线下的到店访问。如果你在手机或者电脑上点击了某个广告，并且在数天内去了相关的商店，这次线下的活动会出现在 Adwords 的数据里。据说，跟踪是通过 Google Maps 的数据完成的，而 Google 从 2014 年开始就一直在这么做。[[Matt Lawson](http://searchengineland.com/hood-google-adwords-measures-store-visits-222905)]
 - Call Me Baby 是一个专门为网络诈骗中的电话环节提供服务的呼叫中心。每个英语电话收费 10 美金，德语、法语、意大利语、西班牙语、葡萄牙语和波兰语则收费 12 美金。[[Brian Krebs](http://krebsonsecurity.com/2016/01/a-look-inside-cybercriminal-call-centers/)]
-- 在一个不同性别的人组成的工作团队或者是兴趣小组里面，如果女性成员发表意见的时间是 25%以下，整个组织就会「处于比较调和的状态」。只要她们发言的时间超过 25%，她们就会「主宰所有的对话」。 [[Caitlin Moran](http://www.esquire.co.uk/culture/advice/a9641/things-men-dont-know-about-women-caitlin-moran/)]
+- 作者提到了一个研究说：在一个不同性别的人组成的工作团队或者是兴趣小组里面，如果女性成员发表意见的时间是 25%以下，整个组织就会「处于比较调和的状态」。只要她们发言的时间超过 25%，她们就会「主宰所有的对话」。有这样的错觉多半是因为之前女性发表自己见解的机会和时间，太少了。 [[Caitlin Moran](http://www.esquire.co.uk/culture/advice/a9641/things-men-dont-know-about-women-caitlin-moran/)]
 - 2016 年 7 月份，大约 80 万名志愿者在印度的 Uttar Pradesh（东北与北方邦）种下了 4900 万棵树。 [[Brian Clark Howard](http://news.nationalgeographic.com/2016/07/india-plants-50-million-trees-uttar-pradesh-reforestation/)]
 - OECD（经合发展组织）成员国仍有 40%的成年人（16 岁到 60 岁）不知道如何删除收到的电子邮件。 [[Jakob Nielsen](https://www.nngroup.com/articles/computer-skill-levels/)]
 - 一家日本保险公司推出了「社交网络上被口诛笔伐险」的险种。[[Tyler Cowen](http://marginalrevolution.com/marginalrevolution/2016/11/japan-insurance-markets-everything-moral-hazard-edition.html)]

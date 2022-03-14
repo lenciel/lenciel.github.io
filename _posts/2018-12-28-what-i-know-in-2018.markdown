@@ -25,7 +25,7 @@ categories:
 - AgriProtein 是一家英国公司，在南非经营着两个苍蝇农场。每个农场有 84 亿只苍蝇，每天消耗 276 吨食物垃圾，产蛋 3.4 亿只。这些蛋（蛆）脱水后被用于生产动物饲料。该公司价值 2 亿美元，他们计划到 2024 年在全球开设 100 家工厂。[ [Andrea Lo](https://edition.cnn.com/2018/09/27/business/agriprotein-fly-farming/index.html) ]
 - 中国人口红利在逐渐消失，而与此同时，在乌干达，有一半人口未满 15 岁。[ [Tom Jackson](http://disrupt-africa.com/2018/04/why-my-startup-scene-is-better-than-yours-uganda/) ]
 - 目前，卢旺达的首都以外地区 35％的血液供应由无人机运输完成。[ [Techmoran](https://techmoran.com/zipline-is-expanding-across-africa-and-is-doubling-down-on-nigeria/) ]
-- James Daunt 接管书店连锁店 Waterstones 后，让各个商店经理来决定进哪些书籍以及如何展示它们，因为他认为这些经理比 Amazon 的机器人有文化，懂得如何进行挑选和推荐。七年多来，投资回报率从 20％-25％，降到只有 4％。[ [Robbie Millen](https://www.thetimes.co.uk/article/75634060-f326-11e8-86cb-a1db889448ed) / [Benedict Evans](https://twitter.com/benedictevans/status/1068058444303933440) ]
+- James Daunt 接管书店连锁店 Waterstones 后，让各个商店经理来决定进哪些书籍以及如何展示它们，因为他认为这些经理比 Amazon 的机器人有文化，懂得如何进行挑选和推荐。七年多来，~~投资回报率~~从书店退回出版社的图书[^1]，从 20％-25％，降到只有 4％。[ [Robbie Millen](https://www.thetimes.co.uk/article/75634060-f326-11e8-86cb-a1db889448ed) / [Benedict Evans](https://twitter.com/benedictevans/status/1068058444303933440) ]
 - Billboard 前两百名里，原声吉他伴奏已经是电吉他的两倍。[ [Brandon Gaille](https://brandongaille.com/17-fascinating-guitar-sales-statistics/) ]
 - 有广告商在移动广告中的明亮背景上放置一个棕色像素，让它看起来像灰尘。当用户试图擦掉它时，动作被识别为点击，用户被重定向到商品页。[ [Lauren Johnson](https://www.adweek.com/digital/4-deceptive-mobile-ad-tricks-and-what-marketers-can-learn-from-them/) ]
 - LOT 是一项每年 1200 美元的订制服装搭配服务，孵化器在深圳。每个月用户收到一个充满科技配件的包裹，里面有风格简单的衣物，手环，唱片，甚至头发漂白剂和纹身枪。[ [Kyle Chayka](https://www.ssense.com/en-us/editorial/fashion/engineering-the-end-of-fashion) ]
@@ -46,3 +46,5 @@ categories:
 - 城市里的公共设施如何进行维护是一个难以解决的问题。在纽约市，大约有 1000 个人行横道按钮。在 2018 年，只有 100 个可用，而在 2004 年统计的时候，还有 750 个可用。[ [Jacopo Prisco](https://edition.cnn.com/style/article/placebo-buttons-design/index.html) ]
 
 时光隧道：[2017年](https://lenciel.com/2017/12/what-i-know-in-2017/) / [2016年](https://lenciel.com/2016/12/what-i-konw-in-2016/)
+
+[^1]: 感谢 bmyxb 同学的勘误。
