@@ -8,6 +8,7 @@ categories:
 - writing
 - rants
 
+description: "Why, isn't that enough for a whole lifetime?"
 ---
 
 <audio controls loop preload><source src="{{ site.static_base }}/downloads/audio/peace_piece_storm_version.mp3"></audio>
