@@ -6,6 +6,21 @@ permalink: /archives/
 ---
 
 <div id="blog-archives">
+
+<h2>置顶</h2>
+<article> 
+	<h1><a href="/about/">关于我</a></h1>
+	<time datetime="" pubdate="">
+		<span class="month"></span>
+		<span class="day"></span>
+		<span class="year"></span>
+	</time>
+ <footer>
+		<span class="categories">posted in 
+			<a class="category" href="/categories/rants/">rants</a>, <a class="category" href="/categories/writing/">writing</a>
+		</span>
+	</footer>
+</article>
 {% for post in site.posts %}
 {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
 {% unless year == this_year %}
