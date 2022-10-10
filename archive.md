@@ -11,9 +11,9 @@ permalink: /archives/
 <article> 
 	<h1><a href="/about/">关于我</a></h1>
 	<time datetime="" pubdate="">
-		<span class="month"></span>
-		<span class="day"></span>
-		<span class="year"></span>
+		<span class="month">JUL</span>
+		<span class="day">22</span>
+		<span class="year">2022</span>
 	</time>
  <footer>
 		<span class="categories">posted in 
