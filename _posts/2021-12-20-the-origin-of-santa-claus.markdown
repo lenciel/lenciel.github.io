@@ -7,12 +7,11 @@ categories:
 
 - rabbit-hole
 - culture
+- questions-my-kids-asked
 
 ---
 
 ![santa_claus_01.jpg](/downloads/images/2021_12/santa_claus_01.jpg --alt Don't touch me...)
-
-> 本系列是，Lenciel 掉进[兔子洞](/categories/rabbit-hole/)...
 
 又到了回答「圣诞老人为什么要给我们礼物」，「圣诞老人为什么不开车」，「圣诞老人的家里为什么那么多鹿」的日子了。
 
