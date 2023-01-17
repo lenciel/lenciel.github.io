@@ -1,0 +1,52 @@
+---
+layout: post
+comments: true
+description: "...音乐家让程序员们很头疼。有九个乐队名字都叫做 Emperor。有一个乐队叫做 Eximperituserqethhzebibšiptugakkathšulweliarzaxułum。甚至还有一个叫做 ⣎⡇ꉺლ༽இ•̛)ྀ◞ ༎ຶ ༽ৣৢ؞ৢ؞ؖ ꉺლ 的。最有意思的是法国乐队 Brouillard，这个乐队只有一名成员，叫 Brouillard， 他的每张专辑也都叫 Brouillard，并且专辑里面的基本上每首歌，你应该猜到了，也叫 Brouillard..."
+title: "What I know in 2022, 😳"
+date: 2022-12-27 16:50:46 +0800
+categories:
+
+- memo
+- rants
+- what-i-know
+
+---
+
+> 这个系列，专门记录一些偶然看见，不那么广为人知的奇闻。时光隧道：
+> 
+> [2021年](/2021/12/what-i-know-in-2021/) / [2020年](/2020/12/what-i-know-in-2020/) / [2018年](/2018/12/what-i-know-in-2018/) / [2017年](/2017/12/what-i-know-in-2017/) / [2016年](/2016/12/what-i-konw-in-2016/)
+
+- 音乐家让程序员们很头疼。有九个乐队名字都叫做 *Emperor*。有一个乐队叫做*Eximperituserqethhzebibšiptugakkathšulweliarzaxułum*。甚至还有一个叫做 *⣎⡇ꉺლ༽இ•̛)ྀ◞ ༎ຶ ༽ৣৢ؞ৢ؞ؖ ꉺლ* 的。最有意思的是法国乐队 Brouillard，这个乐队只有一名成员，叫 Brouillard， 他的每张专辑也都叫 Brouillard，并且专辑里面的基本上每首歌，你应该猜到了，也叫 Brouillard。[[Julien Voisin](https://dustri.org/b/horrible-edge-cases-to-consider-when-dealing-with-music.html)]
+- 一名音乐家在一次长达 9 小时的手术中演奏了萨克斯管，以便医生在手术中能够测试并切除他脑部肿瘤的最安全边界。该手术被称为「[清醒开颅手术](https://www.mayoclinic.org/zh-hans/tests-procedures/awake-brain-surgery/about/pac-20384913)」，它往往要求患者在开颅情况下做一些充分调动脑部事情，这样医生就可以在他们手术的同时关注患者的大脑功能。 - \[[Rachael Funnell](https://www.iflscience.com/watch-a-man-play-the-sax-while-surgeons-operate-on-his-brain-65840)\]
+- 10 月 1 日，一家公司在湖北鄂州建的 26 层养猪大楼正式投产。这栋大楼占地 39 万平方米，是目前全国单体面积最大的养猪大楼，总投资 40 亿元，可实现年出栏 120 万头生猪。 - \[[网易新闻](https://www.163.com/dy/article/HK53FFLR0512B07B.html)\]
+- 2022 年 7 月，官方统计 16 岁～24 岁青年失业率达到了 19.9%。 - \[[人民网](http://finance.people.com.cn/n1/2022/0815/c1004-32502731.html)\]
+- [CharaChorder](https://www.charachorder.com/) 提供了一种新型打字设备 CharaChorder One。它的 CEO 在 TikTok 上发布了一系列用这款设备以 500 WPM 的速度打字的视频，著名的打字比赛网站 [MonkeyType](https://monkeytype.com/) 也因此删除了他的排名。 - \[[Matthew Gault](https://www.vice.com/en/article/3abavv/this-keyboard-lets-people-type-so-fast-its-banned-from-typing-competitions#/)\]
+- 浙大一院总部一期，药房已经开始使用自动发药机等先进系统。 - \[[健康界](https://www.cn-healthcare.com/articlewm/20221101/content-1459477.html)\]
+- 中国国家版本馆 7 月 23 日举行落成典礼，中国国家版本馆是国家版本资源总库和中华文化种子基因库，由中央总馆文瀚阁、西安分馆文济阁、杭州分馆文润阁、广州分馆文沁阁组成，历时三年建设，目前均已竣工，开馆后将全面履行国家版本资源保藏和传承的职责。 - \[[新浪新闻](http://www.news.cn/politics/2022-07/24/c_1128859823.htm)\]
+- 今天的英国苏格兰山脉、美国阿巴拉契亚山脉、非洲摩洛哥的小阿特拉斯山脉、格陵兰山脉，曾经是同一条山脉，称为[盘古中央山脉](https://zh.m.wikipedia.org/zh-hans/%E7%9B%A4%E5%8F%A4%E4%B8%AD%E5%A4%AE%E5%B1%B1%E8%84%88)。 - \[[Alex](https://vividmaps.com/central-pangean-mountains/)\]
+- 美国有研究人员发现，姓氏首字母在字母表后半段的华人经济学博士进入中国而不是美国经济系统找工作的可能性比其他人高 20%，他们认为这是因为很多地方按字母顺序排名降低了这些人被认可的感知度。 - ​​​\[[Ethan Mollick](https://twitter.com/emollick)\]
+- Leprino Foods 是世界上最大的[马苏里拉奶酪](https://zh.wikipedia.org/wiki/%E9%A9%AC%E8%8B%8F%E9%87%8C%E6%8B%89%E5%A5%B6%E9%85%AA)公司，也是必胜客、达美乐和棒约翰的奶酪供货商。它是规模效益的典范，年销售额超过 30 亿美元。老板 Leprino 却异常低调：如果你 Google 他的照片，会找到被搜索引擎错误索引的别的亿万富翁的照片。他现在仍然花很多时间在仓库里驾驶叉车，并要求自己的每个员工和自己一样随身携带一张卡片，上面写着：「质量、服务、价格、道德」。 - \[[Chloe Sorvino](https://www.forbes.com/sites/chloesorvino/2017/05/23/james-leprino-exclusive-mozzarella-billionaire-cheese-pizza-hut-dominos-papa-johns/?sh=7e3105104958)\]
+- 一项针对约 2,000 名儿童的研究发现，与从未玩过电子游戏的儿童相比，那些每天玩电子游戏 3 小时或更长时间的儿童在包括冲动控制和工作记忆在内的认知技能测试中表现更好。 - \[[U.S. Department of Health and Human Services](https://nida.nih.gov/news-events/news-releases/2022/10/video-gaming-may-be-associated-with-better-cognitive-performance-in-children)\]
+- 摄影师 Dmitry Kokh 穿越了位于俄罗斯和阿拉斯加之间的楚科奇海——北冰洋的一块边缘海——中的岛屿。他发现大量被人类抛弃的房屋已经被北极熊占领并利用了起来。 - \[[Michael Zhang](https://petapixel.com/2022/01/13/photographer-finds-polar-bears-that-took-over-abandoned-buildings/)\]
+- 在中世纪的出版行业里面，木刻版画作为主要的插图制作形式，已经出现了模块化复用。在一副描绘 Albina 皇后和她的姐妹们的插图中，不但人物是从其他雕刻里挪用和拼凑的，连船只甚至海岸都是如此。 - \[[Anna Dlabacová](https://www.leidenmedievalistsblog.nl/articles/medieval-photoshop)\]
+- Mavis Beacon Teaches Typing 是一款教打字的软件，于 1987 年由 The Software Toolworks 推出，并迅速畅销，于接下来的 11 年内销售了 600 多万份。但实际上 Mavis Beacon 是个虚构的人物，扮演她的模特，海地人 Renee L’Esperance ，是公司合伙人之一，之前从事电视行业的 Les Crane 在路上遇见的。由于这名模特的指甲很长，根本没有办法打字，各种广告素材中甚至没有展示过她的双手。但至今，还是有很多人相信这是一个真人，甚至有纪录片制作人搭建了[一个网站](https://seekingmavisbeacon.com/)，来让大家分享自己相关的记忆。 - \[[Clémence Michallon](https://www.independent.co.uk/news/world/americas/seeking-mavis-beacon-teaches-typing-real-story-b2035096.html)\]
+-  [Frontiers in Aging Neuroscience](https://www.frontiersin.org/articles/10.3389/fnagi.2022.813531/full) 上发表了一篇文章：一名 87 岁的癫痫患者在脑部扫描的过程中意外去世。由于对他脑部的扫描还在持续，仪器罕见地记录下在心脏停止跳动后的 30 秒左右，他的大脑开始重播他的记忆。这一直是文学、诗歌和艺术作品中的一个古老比喻，但现在似乎科学证实了它：当你死后，你的一生确实会在你眼前一闪而过。 - \[[Elaine Velie](https://hyperallergic.com/720694/science-confirms-that-life-flashes-before-the-eyes-upon-death/)\]
+- 伊朗出生的加密货币企业家 Sina Estavi 于 2021 年 3 月以 290 万美元的价格购买了一个 NFT：Twitter 创始人 Jack Dorsey 的第一条推文。4 月份，他在 Twitter 上宣布他希望出售 NFT，并将其收益的 50%（挂牌价 4800 万美元，他认为成交价至少会将超过 2500 万美元）捐给慈善机构。拍卖结束后，总共只有七笔报价，从 0.09 ETH（按当前价格计算为 277 美元）到 0.0019 ETH（近 6 美元）不等。 - \[[Sandali Handagama](https://www.coindesk.com/business/2022/04/13/jack-dorseys-first-tweet-nft-went-on-sale-for-48m-it-ended-with-a-top-bid-of-just-280/)\]
+- 一位艺术史学家发现，自 75 年前首次展出以来，荷兰抽象艺术家 Piet Mondrian 的一幅画作一直倒挂在各个博物馆中，但警告称如果现在将其正面朝上悬挂，它可能会解体。 - \[[卫报](https://www.theguardian.com/artanddesign/2022/oct/28/mondrian-painting-has-been-hanging-upside-down-for-75-years)\]
+- 世界人口的 37%，即 29 亿人，仍然没有使用过互联网。[[ITU](https://www.itu.int/hub/2021/11/facts-and-figures-2021-2-9-billion-people-still-offline/)]
+- Billy Baker 偶然发现，自己的太太 Lori 是世界上最厉害的俄罗斯方块玩家。 - \[[Jay Hulme](https://twitter.com/JayHulmePoet/status/1504552086557634574/)\]
+- 今年 3 月，有人出了 6900 万美元购买了一个 NFT，媒体后来发现，买家是 1988 年出生于贫民窟的印度人 MetaKovan。他从加密货币中累积了巨额财富，外界对他知之甚少。 - \[[Angus Berwick](https://www.reuters.com/investigates/special-report/finance-crypto-sundaresan/)\]
+- 国际强迫症基金会对「囤积家庭杂物」进行了分级，以此作为诊断囤积症的一种方法。3 级是「标准的」，而 7 级是「带来重大的保障问题」。 - \[[Hoarding Center](https://hoardingdisordersuk.org/wp-content/uploads/2014/01/clutter-image-ratings.pdf)\]
+- 2022 年 6 月，中文维基百科编辑者「折毛」承认自己伪造了 200 多篇俄罗斯历史相关条目的行为在知乎被揭露，被视作是开源网络史上最大规模的恶作剧之一。 - \[[杭州网](https://news.hangzhou.com.cn/shxw/content/2022-07/02/content_8296716.htm)\]
+- 在检查了 3597 篇已发表论文共享的遗传数据之后，科学家发现大约有 20% 的数据被 Excel 当成了日期格式，带来了错误（比如 MARCH1 —— Membrane Associated Ring-CH-Type Finger 1 的缩写 —— 会被 Excel 当成三月一号处理）。最终，科学家选择了对大约 27 个人类基因进行了重命名。 - \[[James Vincent](https://www.theverge.com/2020/8/6/21355674/human-genes-rename-microsoft-excel-misreading-dates)\]
+- 中国在 2022 年继续投入「风光大基地」项目，在戈壁沙漠建设 450GW 的风能和太阳能发电站，是英国全国发电量的 6 倍。 - \[[国家发改委](http://mm.chinapower.com.cn/flfd/hyyw/20221202/177790.html)\]
+- 由于使用了激进的图片压缩算法（图像被切成小段，按相似性分组。对于每个组，只保存一个代表性片段），Xerox 所有 WorkCentre 产品线的扫描仪和复印机都存在对数字进行错误替换的 Bug，无论你处理的是报销单还是工程造价表。该漏洞由 David Kriesel 在 2013 年发现，这之前这些设备已经被使用了八年。 - \[[David Kriesel](https://www.dkriesel.com/en/blog/2013/0802_xerox-workcentres_are_switching_written_numbers_when_scanning)\]
+- 日本原子弹爆炸幸存者比普通日本公民平均寿命多五年，且患癌概率更小。 - \[[Shizuyo Sutou](https://genesenvironment.biomedcentral.com/articles/10.1186/s41021-018-0114-3)\]
+- 历经一年多的集中攻关与反复实践，灵隐寺「智慧寺院管理系统」正式上线，系统亮相的同时，一位僧人讲解数字化成果的照片也「疯传」朋友圈。 - \[[36氪](https://mp.weixin.qq.com/s/xeNhTRQIY_EQheJyRVTr6Q)\]
+- 由于天气太热，游客们发现纽约公园里的松鼠开始趴着散热。 - \[[Adela Suliman](https://www.washingtonpost.com/science/2022/08/12/splooting-squirrel-meaning-definition-new-york/) \]
+- 今年重庆出现了「汛期反枯」现象，长江寸滩站和嘉陵江北碚站的水位相比去年同期要低 3 米左右，接近历史同期最低：江底的浅滩都露出来了，千厮门大桥的桥墩下完全没水。 - \[[新华网](http://www.news.cn/local/2022-08/17/c_1128922377.htm)]
+- 积雪落到零度但还未结冰的河道里面，会形成一种雪和水的混合物，称为雪泥（snezhura）。这种景观非常罕见，有一点像木星的大红斑。\[[English Russia](https://englishrussia.com/2022/04/01/rare-natural-phenomenon-observed-in-saint-petersburg/)\]
+- 畜牧业是能量效率很低的产业，100 卡路里的谷物饲料，只能转换成 3 卡路的牛肉。全世界只有 13%的玉米是人类食用的，其他大部分都做成了饲料。此外，畜牧业还会占用大量本来生产人类食物的土地。 - \[[经济学人](https://www.economist.com/graphic-detail/2022/06/23/most-of-the-worlds-grain-is-not-eaten-by-humans)\]
+- 在淘宝上花二三十块，可以买到反击楼上吵闹邻居的「震楼器」。 - \[[淘宝](https://s.taobao.com/search?q=%E9%9C%87%E6%A5%BC%E5%99%A8&type=p&tmhkh5=&from=sea_1_searchbutton&catId=100&spm=a2141.241046-.searchbar.d_2_searchbox)\]
+
+
