@@ -89,11 +89,11 @@ end
 
 desc "preview the dev site in a web browser"
 task :preview do
-  Rake::Task[:backup_site].execute
-  Rake::Task[:copy_resized].execute
+  #Rake::Task[:backup_site].execute
+  #Rake::Task[:copy_resized].execute
   puts "Starting to serve jekyll on http://#{localhost_ip}:#{server_port}"
 
-  jekyllPid = Process.spawn("jekyll serve --incremental --host #{localhost_ip} --port #{server_port}  -w --config _config.yml,_config_dev.yml")
+  jekyllPid = Process.spawn("jekyll serve --host #{localhost_ip} --port #{server_port}  -w -l --config _config.yml,_config_dev.yml")
 
   trap("INT") {
     [jekyllPid].each { |pid| Process.kill(9, pid) rescue Errno::ESRCH }
