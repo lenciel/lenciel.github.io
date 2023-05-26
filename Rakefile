@@ -59,7 +59,7 @@ task :copy_resized do
   puts "## Copying exsiting resized image to _site"
   system "jekyll clean"
   system "mkdir -p #{deploy_dir}"
-  FileUtils.mv Dir.glob("#{back_dir}/resized"), "#{deploy_dir}/"
+  FileUtils.cp_r Dir.glob("#{back_dir}/resized"), "#{deploy_dir}/"
 end
 
 desc "Generate jekyll site for production deployment"
@@ -72,8 +72,7 @@ end
 
 desc "Watch the prod site and regenerate when it changes"
 task :watch do
-  Rake::Task[:backup_site].execute
-  Rake::Task[:copy_resized].execute
+  Rake::Task[:generate].execute
 
   puts "Starting to watch source with Jekyll."
 
@@ -89,8 +88,7 @@ end
 
 desc "preview the dev site in a web browser"
 task :preview do
-  #Rake::Task[:backup_site].execute
-  #Rake::Task[:copy_resized].execute
+  Rake::Task[:generate].execute
   puts "Starting to serve jekyll on http://#{localhost_ip}:#{server_port}"
 
   jekyllPid = Process.spawn("jekyll serve --host #{localhost_ip} --port #{server_port}  -w -l --config _config.yml,_config_dev.yml")
@@ -106,8 +104,7 @@ end
 
 desc "preview the prod site in a web browser"
 task :preview_prod do
-  Rake::Task[:backup_site].execute
-  Rake::Task[:copy_resized].execute
+  Rake::Task[:generate].execute
   puts "Starting to serve jekyll on http://#{localhost_ip}:#{server_port}"
 
   jekyllPid = Process.spawn({"JEKYLL_ENV"=>"production"}, "jekyll serve --watch")
