@@ -50,7 +50,7 @@ Allen Newell 甚至在会议后不久预测，十年内计算机就能下棋超�
 
 其中最著名的，是图灵在 1950 年 10 月发表的论文《[Computing Machinery and Intelligence](https://academic.oup.com/mind/article/LIX/236/433/986238)》[^4]。图灵琢磨这个是因为他在 [Intelligent Machinery](http://people.csail.mit.edu/brooks/idocs/IntelligentMachinery.pdf) 里提出了「discrete controlling machines」[^5]之后，就开始思考如何造出一台在运动和思维上都能全面模仿人的机器[^6]。
 
-今天看这个寥寥数页的提案，仍能感觉各种壮志，但也能看到各种壮志仍然未酬。
+今天看这篇 73 年前的论文，仍能感觉各种壮志，但也能看到各种壮志仍然未酬。
 
 比如图灵认为到了 2000 年，会有像人一样思考的机器[^7]。他甚至给出了这个机器的开发工作量是 36000 个人月——我们现在知道，2000 年又过去了二十多年，花在上面的人月应该是图灵说的几万倍了，我们还没有摸到边。
 
