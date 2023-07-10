@@ -64,7 +64,7 @@ FITURE 内部对 AIGC 的探索也在稳步推进：周博他们用 ChatGPT + St
 
 比如，如果直接用 OpenAI 的闭源模型——无论是 GPT-3.5 还是 GPT-4——你就只能使用它提供的 API 做 [Fine-tuning](https://platform.openai.com/docs/guides/fine-tuning) 或者 [Embedding](https://platform.openai.com/docs/guides/embeddings/what-are-embeddings) 或者是直接 [Prompt Engineering](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api) 。
 
-相对应的，如果你是用 [LLaMA](https://ai.facebook.com/blog/large-language-model-llama-meta-ai/), [Falcon](https://huggingface.co/tiiuae/falcon-40b), [StableLM](https://github.com/Stability-AI/StableLM) 或者 C 哈他 GLM—6B 这样的开源模型，那扩展它们的方式就大不一样了。
+相对应的，如果你是用 [LLaMA](https://ai.facebook.com/blog/large-language-model-llama-meta-ai/), [Falcon](https://huggingface.co/tiiuae/falcon-40b), [StableLM](https://github.com/Stability-AI/StableLM) 或者 [ChatGLM-6B](https://github.com/THUDM/ChatGLM-6B) 这样的开源模型，那扩展它们的方式就大不一样了。
 
 **我自己的建议是，你得花些时间好好试用 OpenAI 的各种服务（ChatGPT 的各个版本）和接口，同时也花些时间手搓一些开源模型，具备手感后，结合下面说的可控性和安全性相关的考量，结合自己的用户需求，最终做出决策**。
 
