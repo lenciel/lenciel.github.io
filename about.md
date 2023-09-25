@@ -7,7 +7,7 @@ comments: true
 ---
 
 {% picture /downloads/images/about/wu_kong.jpg --alt < --img width="155" height="147" class="left" %}
-Lenciel，工程师。从业时间略长：前面一半上班，在做存储最好的公司做过存储，做基站最好的公司做过基站；后面一半创业，弄过小而美的团队，也在[大公司](https://baike.baidu.com/item/%E6%BB%A1%E5%B8%AE%E9%9B%86%E5%9B%A2/24525545?fr=aladdin)管理过千人规模的团队。一般负责研发、产品、运营，[非常反对加班](https://www.sohu.com/a/311607781_256833)，但自己[不怎么睡](/2022/04/how-much-sleep-is-good-enough/)。对物质生活悟性一般，勉强能分清鲍鱼和鲤鱼。对各种产品和技术坚持刨根问底，因此据说敏捷和智力属性还比较高。
+Lenciel，工龄略长。上过七年班，做过[存储](https://www.ibm.com/storage)，做过[基站](https://www.ericsson.com/)，做过[虚拟机](http://www.myriadgroup.com/)；后面一直创业，弄过小而美的团队，也在[大公司](https://baike.baidu.com/item/%E6%BB%A1%E5%B8%AE%E9%9B%86%E5%9B%A2/24525545?fr=aladdin)管理过千人规模的团队。一般负责研发、产品、运营，现在也管理业务。[非常反对加班](https://www.sohu.com/a/311607781_256833)，但自己[不怎么睡](/2022/04/how-much-sleep-is-good-enough/)。对物质生活悟性一般，勉强能分清鲍鱼和鲤鱼，对各种产品和技术坚持刨根问底，因此据说敏捷和智力属性还比较高。加上运气还行，没怎么干砸过。
 
 目前在 [FITURE](https://www.fiture.com/cn/) ，做 COO。
 
