@@ -7,42 +7,42 @@
 
 ## 1. Files excluded from Jekyll builds
 exclude:
-- README.md
-- LICENSE
-- CNAME
-- Gemfile
-- Gemfile.lock
-- jekyll-lenciel-theme.gemspec
-- .jekyll-cache
-- .ruby-version
-- .textlintrc
-- node_modules
-- _temp
-- site_bak
-- _ftp
+  - README.md
+  - LICENSE
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - jekyll-lenciel-theme.gemspec
+  - .jekyll-cache
+  - .ruby-version
+  - .textlintrc
+  - node_modules
+  - _temp
+  - site_bak
+  - _ftp
 
 ## 2. Installed Gems
 plugins:
-- jekyll-sitemap
-- jekyll-paginate
-- jekyll-seo-tag
-- jekyll-feed
-- jekyll_picture_tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll_picture_tag
 
 ## 3. Gem settings
 # jekyll-paginate
-paginate: 2          # Posts per page on the blog index
-paginate_path: "posts/:num"  # Directory base for pagination URLs eg. /posts/2/
+paginate: 2 # Posts per page on the blog index
+paginate_path: "posts/:num" # Directory base for pagination URLs eg. /posts/2/
 # include_code.rb
 code_dir: downloads/code
 # category_generator
 category_dir: categories
-titlecase: true       # Converts page and post titles to titlecase
+titlecase: true # Converts page and post titles to titlecase
 # jekyll_picture_tag
 picture:
   output: "resized"
   cdn_url: "https://cdn.lenciel.com"
-  cdn_environments: ['production']
+  cdn_environments: ["production"]
   suppress_warnings: true
   noscript: true # add a fallback image inside a <noscript> tag.
 
@@ -55,15 +55,13 @@ beian: 沪ICP备19012437-1号
 comment_appId: 7gWogz4Czk9e67kYRYzcEtBY-gzGzoHsz
 comment_appKey: PjJJiU2I8wRBNrbYnCSNXqJK
 
-
 ## 4. Jekyll settings
 sass:
   style: compressed # Style compression
 highlighter: rouge
-recent_posts: 5       # Posts in the sidebar Recent Posts section
-excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
+recent_posts: 5 # Posts in the sidebar Recent Posts section
+excerpt_link: "Read on &rarr;" # "Continue reading" link text at the bottom of excerpted articles
 excerpt_separator: "<!--more-->"
-sidebar: collapse
 theme: jekyll-lenciel-theme
 plugins_dir: ./plugins
 safe: false
@@ -81,6 +79,4 @@ date_format: "%Y/%m/%d %H:%M"
 subscribe_rss: /feed.xml
 feed:
   excerpt_only: true
-default_asides: []
-sidebar: collapse
 static_base: "https://cdn.lenciel.com"
