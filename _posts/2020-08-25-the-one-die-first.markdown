@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "失约"
 date: 2020-08-25 19:07:45 +0800
-categories: 
+categories:
 
 - writing
 

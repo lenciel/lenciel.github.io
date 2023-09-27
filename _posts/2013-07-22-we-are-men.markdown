@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "We Are Men"
 date: 2013-07-22 21:24
 comments: true

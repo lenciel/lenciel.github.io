@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Agile and Scrum, The Love Story"
 date: 2015-03-07 03:05:36 +0800
 comments: true

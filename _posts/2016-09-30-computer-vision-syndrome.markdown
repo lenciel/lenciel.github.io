@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "电脑视觉综合症"
 date: 2016-09-30 13:49:17 +0800
 comments: true

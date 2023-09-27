@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 title: "Ideas Are Easy"
 date: 2013-01-24 23:50
 comments: true
-categories: 
+categories:
 - startup
 - thinking
 - notes

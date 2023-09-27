@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "我只有八点要求"
 date: 2005-12-18 23:26:38 +0800
 comments: true

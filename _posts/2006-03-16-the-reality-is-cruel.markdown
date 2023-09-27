@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "现实种种"
 date: 2006-03-16 09:53
 comments: true

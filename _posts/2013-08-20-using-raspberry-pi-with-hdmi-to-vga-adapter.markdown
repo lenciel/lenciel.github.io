@@ -1,10 +1,11 @@
 ---
 layout: post
+sidenote: false
 title: "Raspberry Pi上使用HDMI转接VGA线"
 date: 2013-08-20 15:19
 comments: true
-categories: 
-- raspberry pi
+categories:
+- raspberry-pi
 - hardware
 - tips
 ---

@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "HTTPS WHAT?"
 date: 2013-09-10 13:28
 comments: true

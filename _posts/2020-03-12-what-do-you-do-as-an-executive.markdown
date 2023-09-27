@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "管理层到底是干嘛的"
 date: 2020-03-12 13:50:46 +0800

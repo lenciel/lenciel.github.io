@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Merry Christmas Css Animation"
 date: 2014-12-16 22:18:49 +0800
 comments: true

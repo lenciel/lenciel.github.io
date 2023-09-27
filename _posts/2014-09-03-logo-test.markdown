@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "T-shirt Testing"
 date: 2014-09-03 01:04:48 +0800
 comments: true

@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Except For Greed and Disgust"
 date: 2013-07-27 23:57
 comments: true

@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Why look so sad"
 date: 2014-04-19 21:54:53 +0800
 comments: true

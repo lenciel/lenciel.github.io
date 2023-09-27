@@ -1,10 +1,11 @@
 ---
 layout: post
+sidenote: false
 comments: true
 description: "最后一篇，聊聊两次现代化一起搞的中国，并不仅仅是出不了 IBM、Oracle、Salesforce 的问题"
 title: "疫情日记（6）"
 date: 2022-04-19 21:03:45 +0800
-categories: 
+categories:
 
 - rants
 - lockdown-diary

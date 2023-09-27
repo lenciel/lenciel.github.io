@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "How I use Evernote"
 date: 2014-12-17 14:27:39 +0800
 comments: true

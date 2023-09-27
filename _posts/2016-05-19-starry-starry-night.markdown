@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Starry Starry Night"
 date: 2016-05-19 13:57:30 +0800
 comments: true

@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "Normal People"
 date: 2021-03-12 11:18:29 +0800
-categories: 
+categories:
 
 - writing
 - thinking
@@ -20,7 +21,7 @@ categories:
 
 当然，这是事后复盘发现的。CEO 汉武帝在上林苑中驰骋射猎时，他并不知道帝国的命运正反映在千里外一团颤动的火焰中。
 
-He is not alone. 
+He is not alone.
 
 于是无数祭司巫师命师国师，试图通过龟壳纹路、茶叶渣分布、花瓣数目、星体运行，来建模万事万物间那千丝万缕的关联，并尝试通过这些看似玄奇其实简陋的模拟，对个人和群体的命运进行难以归因的仿真。
 

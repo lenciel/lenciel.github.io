@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "The myth of productivity"
 date: 2013-05-02 01:11
 comments: true

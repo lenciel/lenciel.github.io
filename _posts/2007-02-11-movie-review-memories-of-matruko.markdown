@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Lenciel看电影 - Memories of Matruko"
 date: 2007-02-11 19:53
 comments: true

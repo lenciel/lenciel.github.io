@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 title: "听起来很假"
 date: 2014-02-12 10:46
 comments: true
-categories: 
+categories:
 - funny
 ---
 
@@ -28,6 +29,5 @@ Reddit 上有一篇关于 [听起来很假的事实](http://www.reddit.com/r/Ask
 * 人类和香蕉有 50%的 DNA 是相同的
 
 {% endblockquote %}
-   
-   [^1]: 还有一个[更老的帖子](http://www.reddit.com/r/AskReddit/comments/1x34t4/whats_the_most_bullshitsoundingbuttrue_fact_you/?limit=500)。 
-  
+
+   [^1]: 还有一个[更老的帖子](http://www.reddit.com/r/AskReddit/comments/1x34t4/whats_the_most_bullshitsoundingbuttrue_fact_you/?limit=500)。

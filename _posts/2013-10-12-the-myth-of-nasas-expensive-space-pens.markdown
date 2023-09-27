@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "NASA造笔的事情也是假的"
 date: 2013-10-12 12:46
 comments: true

@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "编程语言里的类型系统"
 date: 2016-09-21 19:53:18 +0800
 comments: true
@@ -57,13 +58,13 @@ def f(x, y):
 
 下面这个表可以说明常见的一些语言是如何被带入一团迷雾的：
 
-| 语言  | 类型? |隐式转换? | 有类型转换规则? | 内存安全? |
-| ---------- | ------- | --------------------- | --------------- | ------------ |
-| C          | Strong  | Depends               | Weak            | Weak         |
-| Java       | Strong  | Depends               | Strong          | Strong       |
-| Haskell    | Strong  | Strong                | Strong          | Strong       |
-| Python     | Weak    | Depends               | Strong          | Strong       |
-| JavaScript | Weak    | Weak                  | Weak            | Strong       |
+| 语言       | 类型?  | 隐式转换? | 有类型转换规则? | 内存安全? |
+| ---------- | ------ | --------- | --------------- | --------- |
+| C          | Strong | Depends   | Weak            | Weak      |
+| Java       | Strong | Depends   | Strong          | Strong    |
+| Haskell    | Strong | Strong    | Strong          | Strong    |
+| Python     | Weak   | Depends   | Strong          | Strong    |
+| JavaScript | Weak   | Weak      | Weak            | Strong    |
 
 
 由于「强」和「弱」的使用是如此的上下文相关又如此的混乱，所以最好不要使用这些术语，而是描述具体的问题：「JS 在我们把字符串和整型相加的时候会正常返回，而 Python 会报错」比「JS 是弱类型的，而 Python 是强类型的」有意义得多。这样我们在讨论中就不会花时间去纠缠在本来就不是很清晰的术语上了。

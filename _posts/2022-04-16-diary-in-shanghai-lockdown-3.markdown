@@ -1,10 +1,11 @@
 ---
 layout: post
+sidenote: false
 comments: true
 description: "今天想到的，有安全感、治国能力、马列主义"
 title: "疫情日记（3）"
 date: 2022-04-16 09:42:19 +0800
-categories: 
+categories:
 
 - rants
 - lockdown-diary

@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "如何不正确的殴打企鹅"
 date: 2014-08-09 20:32:58 +0800
 comments: true

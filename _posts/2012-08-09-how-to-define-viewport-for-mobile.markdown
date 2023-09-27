@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "How To Define Viewport For Mobile"
 date: 2012-08-09 22:39
 comments: true

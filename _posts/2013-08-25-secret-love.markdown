@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Secret Love"
 date: 2013-08-26 21:59
 comments: true

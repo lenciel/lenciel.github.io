@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Oauth: Introduction and Tips"
 date: 2013-07-22 09:53
 comments: true

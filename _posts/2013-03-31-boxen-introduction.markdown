@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Boxen introduction"
 date: 2013-03-31 08:28
 comments: true

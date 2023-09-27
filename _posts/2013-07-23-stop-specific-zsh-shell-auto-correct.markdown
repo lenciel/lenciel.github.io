@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 title: "关掉Zsh对指定命令的自动纠错"
 date: 2013-07-23 14:47
 comments: true
-categories: 
+categories:
 - tips
 - zsh
 - shell

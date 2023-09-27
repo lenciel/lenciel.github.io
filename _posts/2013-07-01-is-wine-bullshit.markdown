@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Is Wine Bullshit"
 date: 2013-07-01 15:05
 comments: true

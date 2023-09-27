@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "月光光"
 date: 2020-10-22 21:07:13 +0800
-categories: 
+categories:
 
 - thinking
 - life

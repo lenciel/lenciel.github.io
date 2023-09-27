@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Better Dictionary on Mac"
 date: 2014-05-23 14:02:14 +0800
 comments: true

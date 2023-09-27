@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "白噪声"
 date: 2020-02-06 17:00:30 +0800
 comments: true

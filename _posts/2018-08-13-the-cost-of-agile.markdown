@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "敏捷开发的成本"
 date: 2018-08-13 02:17:21 +0800
 comments: true

@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "如何干好架构师(3)"
 date: 2021-03-15 09:27:57 +0800
-categories: 
+categories:
 
 - architect
 - career

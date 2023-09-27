@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "Two Months in Growth"
 date: 2021-06-15 01:55:46 +0800
-categories: 
+categories:
 
 - rants
 - growth

@@ -1,12 +1,13 @@
 ---
 layout: post
+sidenote: false
 comments: true
 description: "我自己对 LLM 的看法是，它仍然类似于 AlphaGo 或深蓝，在一个领域接近甚至说超过了普通人的能力（比如AlphaGo下围棋或者深蓝下国际象棋），但它科学地推理和思考问题的能力，不会去想要不要把地球变成回形针：所以现在的 LLM 不是所谓的 AGI，也没有迹象会成为 AGI。
 
 只不过，它擅长且超越凡人的这个能力——语言能力——和以前机器人掌握的能力有一个本质的区别，就是语言实际上编码了我们头脑中的世界，影响着我们对真实世界，而不是某个棋局或者某张图片，的理解、认知和判断。"
 title: "LLM 调研（1）- 引言"
 date: 2023-05-25 18:41:16 +0800
-categories: 
+categories:
 - AI
 - LLM
 - llm-exploration

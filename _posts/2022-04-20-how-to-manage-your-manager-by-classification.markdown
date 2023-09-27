@@ -1,10 +1,11 @@
 ---
 layout: post
+sidenote: false
 comments: true
 description: "通过对上级简单地做个画像，然后有针对性地采用一些沟通协作的方式方法，来帮助他/她更好地支持你拿到结果，是工作里非常核心的部分。这篇文章主要是讲一下具体怎么做到这点，在小报童里比较受欢迎，就把它免费吧"
 title: "通过画像管理上级"
 date: 2022-04-20 08:12:49 +0800
-categories: 
+categories:
 
 - management
 - career-tip

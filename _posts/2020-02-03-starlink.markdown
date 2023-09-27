@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 title: "值得关注的 Starlink"
 date: 2020-02-03 15:04:35 +0800
 comments: true
-categories: 
+categories:
 
 - tech
 ---

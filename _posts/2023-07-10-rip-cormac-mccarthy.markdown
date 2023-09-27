@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 comments: true
 description: "很黄很暴力的东西不落文字，是有传统的。
 
@@ -12,7 +13,7 @@ description: "很黄很暴力的东西不落文字，是有传统的。
 你大概率没有看过他的小说，但多半看过改编自它们的一些电影，比如被科恩兄弟拍成 cult 经典的《老无所依》，然后脑子里有 Chigurh 这样久久挥之不去的角色"
 title: "世间再无科马克"
 date: 2023-07-10 19:31:49 +0800
-categories: 
+categories:
 
 ---
 

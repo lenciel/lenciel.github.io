@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "如何写好系统架构文档"
 date: 2021-01-26 15:32:50 +0800

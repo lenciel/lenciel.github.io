@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "关于工作与生活"
 date: 2015-10-04 00:06:16 +0800
 comments: true

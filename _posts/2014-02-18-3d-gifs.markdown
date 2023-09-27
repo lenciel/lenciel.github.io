@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "3D动态Gif"
 date: 2014-02-18 12:40
 comments: true

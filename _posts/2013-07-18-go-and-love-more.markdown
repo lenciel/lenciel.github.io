@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Go And Love More"
 date: 2013-07-18 21:14
 comments: true

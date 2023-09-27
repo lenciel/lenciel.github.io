@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "小城事故"
 date: 2006-02-11 00:03:35 +0800
 comments: true

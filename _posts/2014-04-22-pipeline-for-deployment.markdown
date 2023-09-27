@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "构建 CI/CD 系统"
 date: 2014-04-22 02:49:38 +0800
 comments: true

@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "魂飞魄散"
 date: 2008-10-09 03:22
 comments: true

@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "放逐"
 date: 2021-09-17 21:42:52 +0800
-categories: 
+categories:
 
 - writing
 - rants

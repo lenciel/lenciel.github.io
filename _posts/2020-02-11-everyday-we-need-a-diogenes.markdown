@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "被低估的第欧根尼"
 date: 2020-02-11 13:29:17 +0800
 comments: true

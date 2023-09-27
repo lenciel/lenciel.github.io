@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Mac上使用Suite Fusion管理字体"
 date: 2014-07-26 11:36:48 +0800
 comments: true

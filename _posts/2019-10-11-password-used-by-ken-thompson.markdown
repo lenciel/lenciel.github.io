@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "他的密码原来是..."
 date: 2019-10-11 11:29:44 +0800
 comments: true

@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Better Git Log"
 date: 2013-06-08 23:42
 comments: true

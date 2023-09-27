@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "关于中台的一次分享"
 date: 2020-02-29 15:02:09 +0800
 comments: true

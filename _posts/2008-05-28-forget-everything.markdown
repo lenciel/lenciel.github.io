@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "落花流水"
 date: 2008-05-28 12:50
 comments: true

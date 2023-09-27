@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Web应用开发的七项原则"
 date: 2014-11-17 22:30:42 +0800
 comments: true

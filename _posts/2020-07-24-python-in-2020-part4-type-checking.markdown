@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "Python in 2020 (4) - 类型检查"
 date: 2020-07-24 12:06:18 +0800
-categories: 
+categories:
 
 - python
 - notes
@@ -30,7 +31,7 @@ $ poetry add --dev mypy
 ```
 
 在 Nox 里面添加一个 session：
- 
+
  ``` python
 @nox.session(python=["3.8", "3.7"])
 def mypy(session):

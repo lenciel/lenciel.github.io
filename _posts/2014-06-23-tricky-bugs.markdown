@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Tricky Bugs are tricky"
 date: 2014-06-23 13:05:33 +0800
 comments: true

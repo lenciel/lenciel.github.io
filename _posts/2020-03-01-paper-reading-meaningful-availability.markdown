@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "更有意义的可用性"
 date: 2020-03-01 11:26:49 +0800
 comments: true

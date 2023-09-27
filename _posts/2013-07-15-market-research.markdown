@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Market Research, Wireframing and Desgin"
 date: 2013-07-15 15:04
 comments: true

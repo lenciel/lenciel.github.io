@@ -1,10 +1,11 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "卖报了"
 description: "我在少楠 & Lightory 的「小报童」上，开了个付费专栏：「不美好药店」。会把跟工作（主要是研发、产品、运营和营销方面的）相关的见闻和思考，有分类有主题地分享出来。你可以简单理解成，那边是我的手稿库，我会把自己看书看论文，跟行业里自己觉得厉害的人聊天，用 feedly 读自己订阅的 rss 和 newsletter，榨取出来的精华，按周推送给你。而里面的涓滴意念，如果侥幸成河，扩展成了完整的文章，并且也适合公开，就会放到这边。"
 date: 2022-03-14 16:05:57 +0800
-categories: 
+categories:
 
 - newsletter
 - subscription

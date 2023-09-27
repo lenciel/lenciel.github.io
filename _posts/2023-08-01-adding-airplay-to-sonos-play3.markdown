@@ -1,10 +1,11 @@
 ---
 layout: post
+sidenote: false
 comments: true
 description: "摘要"
 title: "给老款 Sonos 加上 AirPlay"
 date: 2023-08-01 07:24:32 +0800
-categories: 
+categories:
 
 - tools-i-use
 - raspberry-pi

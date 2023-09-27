@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "爱情走过峨山路"
 date: 2007-03-26 14:03:43 +0800
 comments: true

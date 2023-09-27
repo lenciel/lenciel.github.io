@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "关于微服务实践的一次分享"
 date: 2017-03-11 14:39:44 +0800
 categories:

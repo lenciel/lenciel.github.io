@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "半年"
 date: 2010-03-09 00:12
 comments: true

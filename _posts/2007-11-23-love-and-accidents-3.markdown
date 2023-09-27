@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "爱情走过浦山路"
 date: 2007-11-23 00:43:05 +0800
 comments: true

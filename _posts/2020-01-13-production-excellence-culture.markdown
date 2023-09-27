@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "生产环境优先"
 date: 2020-01-13 10:04:09 +0800
 comments: true

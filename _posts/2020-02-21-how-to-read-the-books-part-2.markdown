@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "怎样读书(2) "
 date: 2020-02-21 21:41:55 +0800
 comments: true

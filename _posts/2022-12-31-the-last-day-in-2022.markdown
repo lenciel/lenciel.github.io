@@ -1,10 +1,11 @@
 ---
 layout: post
+sidenote: false
 comments: true
 description: "这世上真正的智者，我希望他们能够顺利些。贡献了善意与光热者，我希望他们甜多一些，苦少一些。但此刻，我更想对没扛住生活的所有人，举起手中的酒杯。红尘滚滚，我们却满身软肋，可能永远不能有所透彻，但这也没关系..."
 title: "2022年终总结"
 date: 2022-12-31 13:10:14 +0800
-categories: 
+categories:
 - rants
 - thinking
 - year-end-summary
@@ -46,7 +47,7 @@ categories:
 ![YYDA_2.jpeg](/downloads/images/2022_12/YYDA_2.jpeg --alt Don't touch me...)
 
 ![football_3.jpeg](/downloads/images/2022_12/football_3.jpeg --alt Don't touch me...)
-*注：感谢球队，带残疾人看了很多风景* 
+*注：感谢球队，带残疾人看了很多风景*
 <br/>
 
 这心态上的变化。好像不算消极。因为中国人的「前念不生」，后面总还跟着「后念不灭」[^5]。

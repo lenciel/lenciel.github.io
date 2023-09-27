@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "祝我们好运"
 date: 2011-08-02 21:40
 comments: true

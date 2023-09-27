@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "记一次突然的旅行"
 date: 2016-08-29 03:59:07 +0800
 comments: true

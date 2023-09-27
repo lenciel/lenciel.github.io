@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Integrate schemaSpy with Sphinx build"
 date: 2014-12-18 00:26:32 +0800
 comments: true

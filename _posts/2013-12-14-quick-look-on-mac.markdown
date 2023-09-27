@@ -1,10 +1,11 @@
 ---
 layout: post
+sidenote: false
 title: "Quick Look on Mac"
 date: 2013-12-14 15:34
 comments: true
 categories:
- 
+
 - mac
 - tips
 ---

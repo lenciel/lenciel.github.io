@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 comments: true
 description: "...实际上，LLM 从构建到使用是三个步骤：
 
@@ -11,7 +12,7 @@ description: "...实际上，LLM 从构建到使用是三个步骤：
 title: "LLM 调研（2）- 涌现能力"
 date: 2023-05-26 20:01:16 +0800
 mathjax: true
-categories: 
+categories:
 - AI
 - LLM
 - llm-exploration

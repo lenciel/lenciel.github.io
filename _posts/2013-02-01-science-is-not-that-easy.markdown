@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "走进科学"
 date: 2013-02-01 23:40
 comments: true

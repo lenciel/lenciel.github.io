@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "防止Burnout"
 date: 2012-03-31 21:54:36 +0800
 comments: true

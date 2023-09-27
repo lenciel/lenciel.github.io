@@ -1,10 +1,11 @@
 ---
 layout: post
+sidenote: false
 title: "怎样读书(1) "
 date: 2020-02-21 02:41:55 +0800
 comments: true
 categories:
- 
+
 - books
 - education
 - tips

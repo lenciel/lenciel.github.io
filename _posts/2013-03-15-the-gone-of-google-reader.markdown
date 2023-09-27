@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "The Gone of Google Reader"
 date: 2013-03-15 21:25
 comments: true

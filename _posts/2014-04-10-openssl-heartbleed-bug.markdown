@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 title: "Openssl Heartbleed Bug"
 date: 2014-04-10 11:29:15 +0800
 comments: true
-categories: 
+categories:
 - note
 - linux
 - c
@@ -23,9 +24,9 @@ Without using any privileged information or credentials we were able steal from 
 先来看看[patch](http://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=96db9023b881d7cd9f379b0c154650d6c108e9a3)里面的`ssl/d1_both.c`:
 
 ``` c
-int            
+int
 dtls1_process_heartbeat(SSL *s)
-    {          
+    {
     unsigned char *p = &s->s3->rrec.data[0], *pl;
     unsigned short hbtype;
     unsigned int payload;
@@ -58,7 +59,7 @@ n2s(p, payload);
 pl = p;
 ```
 
-可以看到`SSLv3 record`的第一个 byte 就是放这个`heartbeat`的`type`。 宏`n2s` 则是从`p`里面取两个 byte 放到 payload 里面，被用来作为 payload 的长度。 **注意这里并没有检查`SSLv3 record` 实际的长度。** 
+可以看到`SSLv3 record`的第一个 byte 就是放这个`heartbeat`的`type`。 宏`n2s` 则是从`p`里面取两个 byte 放到 payload 里面，被用来作为 payload 的长度。 **注意这里并没有检查`SSLv3 record` 实际的长度。**
 
 接下来在这个函数里面干了下面这些事情：
 
@@ -105,7 +106,7 @@ memcpy(bp, pl, payload);
 
 代码如下：
 
-``` c    
+``` c
     /* Read type and payload length first */
     if (1 + 2 + 16 > s->s3->rrec.length)
         return 0; /* silently discard */
@@ -114,7 +115,7 @@ memcpy(bp, pl, payload);
     if (1 + 2 + payload + 16 > s->s3->rrec.length)
         return 0; /* silently discard per RFC 6520 sec. 4 */
     pl = p;
-```    
+```
 
 ## So?
 

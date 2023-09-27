@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 title: "the links (2)"
 date: 2020-02-11 16:46:29 +0800
 comments: true
-categories: 
+categories:
 
 - 弹指一挥
 

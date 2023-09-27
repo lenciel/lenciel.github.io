@@ -1,10 +1,11 @@
 ---
 layout: post
+sidenote: false
 comments: true
 description: "摘要"
 title: " AI 会抢人类的饭碗吗？"
 date: 2022-09-16 02:19:08 +0800
-categories: 
+categories:
 
 - questions-my-kids-asked
 - science

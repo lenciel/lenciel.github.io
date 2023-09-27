@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Blog加速：使用WebP图片格式"
 date: 2019-08-05 14:38:29 +0800
 comments: true

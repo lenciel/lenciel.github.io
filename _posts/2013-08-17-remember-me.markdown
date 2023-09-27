@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Remember Me"
 date: 2013-08-17 22:39
 comments: true

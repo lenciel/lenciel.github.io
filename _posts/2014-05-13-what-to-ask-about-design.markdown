@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 title: "如何review产品的UX设计"
 date: 2014-05-12 22:45:33 +0800
 comments: true
-categories: 
+categories:
 - tips
 - design
 - review

@@ -1,10 +1,11 @@
 ---
 layout: post
+sidenote: false
 comments: true
 description: "...为什么他每天需要面对的，处处影响到他生活的人是这样的，而不是那样的。或者说，家里这几个人，到底为什么有这么多的事情值得讨论、争执、坚持、妥协，为之喜悦、哭泣、焦虑、生气，又再谅解..."
 title: "亮仔"
 date: 2022-12-01 16:53:05 +0800
-categories: 
+categories:
 
 - writing
 - rants

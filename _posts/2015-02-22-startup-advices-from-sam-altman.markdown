@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Sam Altman给创业者的建议"
 date: 2015-02-22 22:22:00 +0800
 comments: true

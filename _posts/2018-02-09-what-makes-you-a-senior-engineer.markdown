@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "软件工程师的匠心"
 date: 2018-02-09 17:35:30 +0800
 comments: true

@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Let Me Show You The World"
 date: 2015-02-23 21:08:02 +0800
 comments: true

@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Hurt myself when shoot a goal"
 date: 2013-11-17 22:11
 comments: true

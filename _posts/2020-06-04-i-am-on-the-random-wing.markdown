@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "测不准派"
 date: 2020-06-04 16:27:22 +0800
-categories: 
+categories:
 
 - politics
 - thinking

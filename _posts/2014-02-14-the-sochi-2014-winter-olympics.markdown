@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "The Sochi 2014 Winter Olympics"
 date: 2014-02-14 01:26
 comments: true

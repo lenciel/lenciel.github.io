@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "品味时尚"
 date: 2009-06-09 21:25
 comments: true

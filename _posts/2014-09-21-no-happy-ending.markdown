@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "聚散有期"
 date: 2014-09-22 04:20:15 +0800
 comments: true

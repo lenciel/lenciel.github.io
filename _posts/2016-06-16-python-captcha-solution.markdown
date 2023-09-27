@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "简单验证码的快速识别"
 date: 2016-06-16 18:48:14 +0800
 comments: true

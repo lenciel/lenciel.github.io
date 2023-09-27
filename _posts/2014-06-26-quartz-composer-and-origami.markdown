@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Quartz Composer和Origami试玩"
 date: 2014-06-26 22:57:05 +0800
 comments: true

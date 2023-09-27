@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Making fixture with factory boy and faker"
 date: 2014-12-20 03:14:59 +0800
 comments: true

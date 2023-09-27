@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "马尔克斯的孤独与爱"
 date: 2014-04-18 20:58:42 +0800
 comments: true

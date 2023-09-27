@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Android开发中使用ProGuard"
 date: 2012-02-27 22:46
 comments: true

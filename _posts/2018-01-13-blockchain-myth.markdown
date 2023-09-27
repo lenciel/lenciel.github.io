@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "颠覆者区块链"
 date: 2018-01-13 01:01:15 +0800
 comments: true

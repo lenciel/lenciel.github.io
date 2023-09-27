@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "增加ssl证书和对http2的支持"
 date: 2017-03-22 14:39:44 +0800
 categories:

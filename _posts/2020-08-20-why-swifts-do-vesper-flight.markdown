@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "雨燕为什么做晚祷飞行"
 date: 2020-08-20 05:09:42 +0800

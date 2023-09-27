@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "白日焰火"
 date: 2014-07-29 01:07:51 +0800
 comments: true

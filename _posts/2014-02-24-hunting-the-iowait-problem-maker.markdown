@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "解决iowait过高的告警"
 date: 2014-02-24 09:22
 comments: true

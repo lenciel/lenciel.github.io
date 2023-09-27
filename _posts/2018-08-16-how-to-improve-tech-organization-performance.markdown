@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "技术团队的绩效提升"
 date: 2018-08-16 15:47:41 +0800
 comments: true

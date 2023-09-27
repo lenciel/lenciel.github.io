@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "记一碗滚烫的鸡汤"
 date: 2016-09-08 20:03:03 +0800
 comments: true

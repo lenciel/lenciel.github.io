@@ -1,10 +1,11 @@
 ---
 layout: post
+sidenote: false
 comments: true
 description: "蒙爷的车锈了，问我怎么办。我说，「送去修车的地方看看能不能除锈吧。」他问：「为什么你学了那么多化学，还能背元素周期表，但是不能自己除锈。」 正好最近我看了[一篇文章](https://www.noemamag.com/the-disappearing-art-of-maintenance/)，讲随着生产力的过剩，人类维护和维修设备的技能在快速下降，全靠替换，对自然环境产生了很大的伤害..."
 title: "我们为什么不能自己除锈"
 date: 2022-10-18 20:37:59 +0800
-categories: 
+categories:
 
 - thinking
 - questions-my-kids-asked

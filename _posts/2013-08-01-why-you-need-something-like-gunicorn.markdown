@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "uWSGI, Gunincorn, 啥玩意儿?"
 date: 2013-08-01 14:36
 comments: true

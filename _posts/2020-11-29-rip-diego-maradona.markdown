@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "马拉多纳"
 date: 2020-11-29 10:23:22 +0800

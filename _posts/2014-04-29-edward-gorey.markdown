@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Edward Gorey"
 date: 2014-04-29 13:48:21 +0800
 comments: true

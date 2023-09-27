@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "一天很长，十年很短"
 date: 2016-05-18 20:50:55 +0800
 comments: true

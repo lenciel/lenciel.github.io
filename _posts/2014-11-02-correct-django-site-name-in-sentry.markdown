@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Correct Django Site Name During DB Migration"
 date: 2014-11-02 16:50:40 +0800
 comments: true

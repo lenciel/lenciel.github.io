@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Please Allow Me"
 date: 2014-05-13 22:38:07 +0800
 comments: true

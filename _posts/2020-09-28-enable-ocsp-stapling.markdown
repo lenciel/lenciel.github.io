@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "开启 OCSP Stapling"
 date: 2020-09-28 11:50:55 +0800
-categories: 
+categories:
 
 - admin
 - blog

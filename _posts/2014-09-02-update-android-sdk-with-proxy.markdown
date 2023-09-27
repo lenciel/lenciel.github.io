@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 title: "update android sdk with shadowsocks proxy"
 date: 2014-09-02 02:30:35 +0800
 comments: true
-categories: 
+categories:
 
 - gfw
 - tips

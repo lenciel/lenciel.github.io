@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "Python in 2020 (2) - 测试框架"
 date: 2020-07-24 02:06:18 +0800
-categories: 
+categories:
 
 - python
 - notes
@@ -121,7 +122,7 @@ Package operations: 16 installs, 0 updates, 0 removals
 
   - Installing pyparsing (2.4.7)
   - Installing six (1.15.0)
-  
+
 nox > pytest --cov
 =========================================== test session starts ===========================================
 platform darwin -- Python 3.8.5, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
@@ -190,10 +191,10 @@ class FakeAPI:
     @classmethod
     def create(cls):
         ...
-    
+
     def shutdown(self):
         ...
-        
+
 ```
 
 直接在 fixture 里面使用是不行的：

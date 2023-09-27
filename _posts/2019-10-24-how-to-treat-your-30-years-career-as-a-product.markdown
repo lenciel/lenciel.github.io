@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "1024的礼物"
 date: 2019-10-25 10:19:13 +0800
 comments: true

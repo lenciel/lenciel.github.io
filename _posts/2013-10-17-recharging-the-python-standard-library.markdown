@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 title: "给Python标准库充电"
 date: 2013-10-17 12:27
 comments: true
-categories: 
+categories:
 - python
 - tips
 ---
@@ -20,5 +21,5 @@ Python 的自荐页面[About Python](http://www.python.org/about/)上号称自�
 为了不在每次运行`pip install -r requirements.txt`的时候都下载一堆依赖，你还可以打开 pip 的[download cache](http://lenciel.cn/2013/10/pip-download-cache/)。如果整个公司在做项目的时候都需要经常使用一些包，甚至可以考虑[做一个Pypi](https://github.com/wolever/pip2pi)的库来共享，类似于 Maven 的 Repo。
 
 
-[^1]: [保存时间和时区的最佳实践](http://stackoverflow.com/questions/2532729/daylight-saving-time-and-time-zone-best-practices/3404919#3404919).   
-[^2]: [如何在datetime转换中保存时区信息](http://stackoverflow.com/questions/14762518/python-datetime-strptime-and-strftime-how-to-preserve-the-timezone-informat).    
+[^1]: [保存时间和时区的最佳实践](http://stackoverflow.com/questions/2532729/daylight-saving-time-and-time-zone-best-practices/3404919#3404919).
+[^2]: [如何在datetime转换中保存时区信息](http://stackoverflow.com/questions/14762518/python-datetime-strptime-and-strftime-how-to-preserve-the-timezone-informat).

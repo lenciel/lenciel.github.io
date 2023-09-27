@@ -1,10 +1,11 @@
 ---
 layout: post
+sidenote: false
 comments: true
 description: "Matt 这两天告诉我，既然圆周率是一个无理数，也就是每一位没有什么规律和道理，那人究竟是怎么把它每一位是多少算出来的呢？"
 title: "如何计算圆周率"
 date: 2022-11-16 18:38:05 +0800
-categories: 
+categories:
 - math
 - questions-my-kids-asked
 mathjax: true

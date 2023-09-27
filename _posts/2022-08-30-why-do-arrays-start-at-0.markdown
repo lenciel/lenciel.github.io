@@ -1,10 +1,11 @@
 ---
 layout: post
+sidenote: false
 comments: true
 description: "摘要"
 title: "为什么数组下标从0开始？"
 date: 2022-08-30 11:19:47 +0800
-categories: 
+categories:
 
 - why
 - questions-my-kids-asked
@@ -39,7 +40,7 @@ categories:
 其次，0 开始的数组也不是 BCPL 的发明：LISP 1.5 这些更早的语言都有从 0 开始的数组。
 最后，这个论述方式让我读他有一段话的时候有点懵：
 
-> So if your answer started with “because in C…”, you’ve been repeating a good story you heard one time, without ever asking yourself if it’s true. 
+> So if your answer started with “because in C…”, you’ve been repeating a good story you heard one time, without ever asking yourself if it’s true.
 
 怎么说呢，你看，基本上他整篇文章浓缩一下，就是在说：
 
@@ -60,7 +61,7 @@ categories:
 
 BCPL 的作者自己说过：
 
-> BCPL was essentially designed as typeless language close to machine code. Just as in machine code registers are typically all the same size and contain values that represent almost anything, such as integers, machine addresses, truth values, characters, etc. 
+> BCPL was essentially designed as typeless language close to machine code. Just as in machine code registers are typically all the same size and contain values that represent almost anything, such as integers, machine addresses, truth values, characters, etc.
 
 也就是说，Richards 自己解释了，这样的设计更符合计算机的语义，而不是像 Mike 说的那样，仅仅是为了编译效率。
 

@@ -1,10 +1,11 @@
 ---
 layout: post
+sidenote: false
 comments: true
 description: "假期蒙爷在他的铁人三项营学了句脏话。我对这么早要跟他聊这个还是有点没有准备，只好根据自己的想法发挥了一下。事后看了一下育儿经，觉得自己聊得可能也算没有大问题，就整理了一下，记录下来..."
 title: "我们为什么（不能）说脏话"
 date: 2022-10-10 02:28:38 +0800
-categories: 
+categories:
 
 - questions-my-kids-asked
 - why

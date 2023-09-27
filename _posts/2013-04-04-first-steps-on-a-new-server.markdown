@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 title: "First steps on a new server"
 date: 2013-04-04 08:44
 comments: true
-categories: 
+categories:
 - tips
 - tutorials
 - server
@@ -57,7 +58,7 @@ mkdir /home/deploy/.ssh
 chmod 700 /home/deploy/.ssh
 ```
 
-配置 ``public key`` 
+配置 ``public key``
 --------------------
 
 使用密码的日子已经慢慢过时了，这方面 Github 很有[贡献](https://help.github.com/categories/56/articles)。只需要：
@@ -164,7 +165,7 @@ vim /etc/apt/apt.conf.d/50unattended-upgrades
 修改文件成：
 
 ```bash
-Unattended-Upgrade::Allowed-Origins {        
+Unattended-Upgrade::Allowed-Origins {
     "Ubuntu lucid-security";
     //"Ubuntu lucid-updates"; 只更新安全更新
 };

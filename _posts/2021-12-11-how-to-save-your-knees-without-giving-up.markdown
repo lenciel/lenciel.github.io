@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "如何保护膝盖"
 date: 2021-12-11 10:51:56 +0800
-categories: 
+categories:
 
 - health
 - knees

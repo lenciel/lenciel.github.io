@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "No Clock On My Business"
 date: 2013-10-09 00:37
 comments: true

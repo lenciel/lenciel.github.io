@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "如何做业务战略"
 date: 2020-03-15 02:12:16 +0800
 comments: true

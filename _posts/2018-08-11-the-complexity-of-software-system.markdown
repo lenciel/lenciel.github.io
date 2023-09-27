@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "软件的复杂度"
 date: 2018-08-11 03:47:41 +0800
 comments: true

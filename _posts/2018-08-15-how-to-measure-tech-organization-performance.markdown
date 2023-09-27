@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "技术团队的绩效度量"
 date: 2018-08-15 12:47:41 +0800
 comments: true

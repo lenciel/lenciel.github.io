@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 comments: true
 description: "我读书的时候，国内的人工智能集中在自动化专业。当时我感觉自动化专业主要有三拨人：
 - 搞控制理论的，主要是用数学工具在矩阵推导；
@@ -10,7 +11,7 @@ description: "我读书的时候，国内的人工智能集中在自动化专业
 "
 title: "LLM 调研（3）- 历史"
 date: 2023-06-01 22:11:16 +0800
-categories: 
+categories:
 - AI
 - LLM
 - llm-exploration
@@ -35,7 +36,7 @@ categories:
 
 ### 历史
 
-#### 人工智能（Artificial Intelligence） 
+#### 人工智能（Artificial Intelligence）
 
 我[写过一点](/2016/03/alphago-and-ai/#%E6%99%AE%E9%80%9A%E4%BA%BA%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD)人工智能的历史：这个术语被正式落到纸上，是 1956 年的达特茅斯会议的[提案](http://people.csail.mit.edu/brooks/idocs/DartmouthProposal.pdf)。
 

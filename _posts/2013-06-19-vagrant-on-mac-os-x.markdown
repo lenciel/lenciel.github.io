@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Vagrant for Django I: Basic"
 date: 2013-06-19 15:19
 comments: true

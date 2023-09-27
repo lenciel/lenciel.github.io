@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Still Long Way To Go"
 date: 2014-01-17 01:56
 comments: true

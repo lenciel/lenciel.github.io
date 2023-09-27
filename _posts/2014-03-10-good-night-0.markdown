@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "晚安(一)"
 date: 2014-03-10 04:18
 comments: true

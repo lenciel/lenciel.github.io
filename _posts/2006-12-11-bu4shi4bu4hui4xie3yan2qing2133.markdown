@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: 络绎不绝
 date: 2006-12-11 09:53
 comments: true

@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "面向问题解决的组织管理和文化"
 date: 2021-11-30 11:45:37 +0800
-categories: 
+categories:
 
 - culture
 - organization
@@ -26,7 +27,7 @@ categories:
 想起来这个是今天看了一个 Vivienne Ming 在
 MIT Leadership Center[^3]
  的关于领导力的[演讲](https://www.youtube.com/watch?v=I4SWZb50VYk)，正好公司里面也有一些关于是否应该基于「hierarchy」进行管理的讨论。
- 
+
 其实管理作为一个学科，是一直在演进的。不同的领导力风格，在不同的公司也可能效果不同。但总体上来说，社会大方向仍然是往 Westrum 的模型里最右边的，面向问题解决的组织形态[去发展的](https://hbr.org/2018/03/what-kind-of-leadership-works-best-at-your-company)：
 
 ![westrum_model.png](/downloads/images/2021_11/westrum_model.png --alt Don't touch me...)

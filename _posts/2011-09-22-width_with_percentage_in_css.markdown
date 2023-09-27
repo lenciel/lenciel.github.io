@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "CSS里的width:100%和width:auto"
 date: 2011-09-22 09:53
 comments: true

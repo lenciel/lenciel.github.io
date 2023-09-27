@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "打开pip的download cache"
 date: 2013-10-17 13:25
 comments: true

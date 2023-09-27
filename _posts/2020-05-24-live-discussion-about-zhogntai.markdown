@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "关于中台的一次讨论"
 date: 2020-05-24 12:31:26 +0800

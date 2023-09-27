@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "采用事件驱动实施微服务架构"
 date: 2017-02-12 03:58:52 +0800
 categories:

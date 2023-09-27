@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 title: "Mac上自启动autossh"
 date: 2014-07-11 20:14:20 +0800
 comments: true
-categories: 
+categories:
 - tools-i-use
 - gfw
 - gist

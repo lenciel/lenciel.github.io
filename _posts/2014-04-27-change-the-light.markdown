@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Change The Light"
 date: 2014-04-27 18:31:55 +0800
 comments: true

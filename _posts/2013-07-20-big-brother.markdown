@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "1984"
 date: 2013-07-20 01:11
 comments: true

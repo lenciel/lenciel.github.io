@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "《鸟人》"
 date: 2015-02-25 20:02:27 +0800
 comments: true

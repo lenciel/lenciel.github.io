@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "You mean more to me"
 date: 2014-05-05 23:38:20 +0800
 comments: true

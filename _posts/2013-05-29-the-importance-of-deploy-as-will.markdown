@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "The Importance of Deploy As Will"
 date: 2013-05-29 22:41
 comments: true

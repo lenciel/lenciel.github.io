@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "This isn't happiness"
 date: 2014-05-18 21:29:11 +0800
 comments: true

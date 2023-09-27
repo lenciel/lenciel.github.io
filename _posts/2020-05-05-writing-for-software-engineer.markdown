@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "让团队学会写作"
 date: 2020-05-05 17:54:33 +0800
-categories: 
+categories:
 
 - writing
 - thinking
@@ -27,7 +28,7 @@ categories:
 
 我在前面[推 RFC 流程](/2020/03/rfc-driven-architecture-process/)的时候，已经解释了一下把想法写下来的好处。
 
-这不是什么新概念，安德鲁·格罗夫上个世纪就在《[High Output Management](https://www.amazon.com/High-Output-Management-Andrew-Grove-ebook/dp/B015VACHOK)》一书中反复强调，把事情写下来能促使人变得更加自律，并且因为必须比口头交流更准确更全面，它能使思路更加清晰。 
+这不是什么新概念，安德鲁·格罗夫上个世纪就在《[High Output Management](https://www.amazon.com/High-Output-Management-Andrew-Grove-ebook/dp/B015VACHOK)》一书中反复强调，把事情写下来能促使人变得更加自律，并且因为必须比口头交流更准确更全面，它能使思路更加清晰。
 
 在我们的行业里这种工作方式也非常流行。可能比较极致的是亚马逊的 [six-page memos](https://observer.com/2019/06/amazon-ceo-jeff-bezos-meetings-success-strategy/)，贝佐斯甚至在他们的一封[股东信](https://www.sec.gov/Archives/edgar/data/1018724/000119312518121161/d456916dex991.htm)中谈到了它的威力。
 

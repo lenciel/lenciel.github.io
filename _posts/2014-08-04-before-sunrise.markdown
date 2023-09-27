@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "It's August now, boy..."
 date: 2014-08-04 23:47:03 +0800
 comments: true

@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 comments: true
 description: "更多的公司，应该跟我们一样，只是「利用」这项技术，来给自己的用户创造更多的价值。要达到这个目的，我觉得应该拆成下面几个部分：
 
@@ -13,7 +14,7 @@ description: "更多的公司，应该跟我们一样，只是「利用」这项
 "
 title: "LLM 调研（4）- 开发实践"
 date: 2023-07-03 18:41:16 +0800
-categories: 
+categories:
 - AI
 - LLM
 - llm-exploration
@@ -87,7 +88,7 @@ FITURE 内部对 AIGC 的探索也在稳步推进：周博他们用 ChatGPT + St
 ##### 安全性
 
  LLM 相关的业务是数据密集的，因此它的安全性至少包含：
- 
+
 - 数据如何安全地「获取」、「处理」和「存储」；
 - 如何防止包括 [Prompt Injection](https://arxiv.org/abs/2306.05499) 在内的各种攻击；
 

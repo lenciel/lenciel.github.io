@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "关于在家办公"
 date: 2020-02-03 11:54:34 +0800
 comments: true

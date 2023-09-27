@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "提取微信语音消息"
 date: 2015-12-24 13:05:21 +0800
 comments: true

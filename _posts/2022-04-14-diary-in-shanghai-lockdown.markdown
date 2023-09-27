@@ -1,10 +1,11 @@
 ---
 layout: post
+sidenote: false
 comments: true
 description: "疫情封在家里一个月了，所以我决定这段时间试试写写日记。可能我们确实什么也做不了，但有些东西不应该被轻易忘记。保持愤怒是保持最基本的感知和良知，保持一份记录，也是一种努力。"
 title: "疫情日记（1）"
 date: 2022-04-14 08:39:17 +0800
-categories: 
+categories:
 
 - rants
 - lockdown-diary

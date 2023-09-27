@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Understanding"
 date: 2014-03-09 21:25
 comments: true

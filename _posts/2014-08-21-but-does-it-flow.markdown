@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "偶然事件"
 date: 2014-08-21 03:54:13 +0800
 comments: true

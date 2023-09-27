@@ -1,10 +1,11 @@
 ---
 layout: post
+sidenote: false
 comments: true
 description: "疫情日记第二篇，关于安全感，解法和知识分子"
 title: "疫情日记（2）"
 date: 2022-04-15 10:27:30 +0800
-categories: 
+categories:
 
 - rants
 - lockdown-diary

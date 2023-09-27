@@ -1,10 +1,11 @@
 ---
 layout: post
+sidenote: false
 comments: true
 description: "我们经常需要批量化重命名文件。其实在 zsh 里面内置了一个 zmv 工具，很适合用来干这个事情。本文结合我怎么处理下载回来的电影，讲讲 zmv 怎么使用。"
 title: "用 zmv 批量重命名文件"
 date: 2022-10-08 14:09:59 +0800
-categories: 
+categories:
 
 - cli
 - tools-i-use
@@ -64,7 +65,7 @@ $ zmv -n -W '**/*.JPEG' '**/*.jpeg'
 而如果是生写 bash 你大概需要：
 
 ```bash
-$ for file in **/*.JPEG; do mv $file ${file/.JPEG/.jpeg}; done; 
+$ for file in **/*.JPEG; do mv $file ${file/.JPEG/.jpeg}; done;
 ```
 
 

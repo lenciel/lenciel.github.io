@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "独裁的弱点"
 date: 2022-03-14 13:28:48 +0800
-categories: 
+categories:
 
 - Ukraine
 - Putin

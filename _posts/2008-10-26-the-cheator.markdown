@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "骗子"
 date: 2008-10-26 23:36
 comments: true

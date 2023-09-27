@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Books, by Hey"
 date: 2020-02-13 22:22:04 +0800
 comments: true

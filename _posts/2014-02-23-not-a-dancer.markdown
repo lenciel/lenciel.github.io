@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Not Much of A Dancer"
 date: 2014-02-23 22:06
 comments: true

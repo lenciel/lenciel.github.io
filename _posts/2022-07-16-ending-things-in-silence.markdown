@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 comments: true
 description: "她先起来，抱着我的手臂从我怀里抽去。
 
@@ -15,7 +16,7 @@ Webb 拍的第一批照片发布了，SMACS 0723 八心八箭，船底座星云�
 "
 title: "寂静无声"
 date: 2022-07-16 14:45:20 +0800
-categories: 
+categories:
 
 - writing
 - rants

@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 title: "Fix Python after upgrade to Maverick"
 date: 2013-10-24 22:02
 comments: true
-categories: 
+categories:
 - python
 - tips
 ---

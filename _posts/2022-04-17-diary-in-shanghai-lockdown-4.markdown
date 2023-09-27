@@ -1,10 +1,11 @@
 ---
 layout: post
+sidenote: false
 comments: true
 description: "今天想到的是民族振兴，犹太人，吴越钱氏"
 title: "疫情日记（4）"
 date: 2022-04-17 09:30:04 +0800
-categories: 
+categories:
 
 - rants
 - lockdown-diary

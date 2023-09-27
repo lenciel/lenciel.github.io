@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "我可能要搞个公众号"
 date: 2017-01-07 22:28:40 +0800
 comments: true

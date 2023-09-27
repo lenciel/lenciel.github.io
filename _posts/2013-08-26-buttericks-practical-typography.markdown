@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 title: "Butterick的实用字体设计"
 date: 2013-08-26 11:11
 comments: true
-categories: 
+categories:
 - typography
 - design
 - web

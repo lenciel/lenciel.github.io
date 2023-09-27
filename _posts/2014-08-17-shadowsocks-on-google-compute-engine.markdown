@@ -1,8 +1,9 @@
 ---
 layout: post
+sidenote: false
 title: "Shadowsocks on google compute engine"
 date: 2014-08-17 21:55:44 +0800
 comments: true
-categories: 
+categories:
 - tools-i-use
 ---

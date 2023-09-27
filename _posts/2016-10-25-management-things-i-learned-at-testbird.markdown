@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "在TestBird学到的——关于管理"
 date: 2016-10-26 17:03:21 +0800
 comments: true

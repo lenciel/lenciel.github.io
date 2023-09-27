@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "春天来了"
 date: 2006-03-28 11:52:55 +0800
 comments: true

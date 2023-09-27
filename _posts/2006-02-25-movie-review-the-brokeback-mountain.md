@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Lenciel看电影 - 断背山"
 date: 2006-02-25 19:53
 comments: true

@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Cryptography and Python"
 date: 2013-07-25 15:13
 comments: true

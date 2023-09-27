@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "后患无穷"
 date: 2008-07-13 00:57
 comments: true

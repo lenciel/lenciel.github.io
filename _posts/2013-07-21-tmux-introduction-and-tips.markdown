@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "tmux: Introduction and Tips"
 date: 2013-07-21 14:02
 comments: true

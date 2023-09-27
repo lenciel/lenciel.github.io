@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Doomsday Machines"
 date: 2013-07-23 23:25
 comments: true

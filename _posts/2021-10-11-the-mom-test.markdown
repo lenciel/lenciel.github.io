@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "《The Mom Test》"
 date: 2021-10-10 13:51:54 +0800
-categories: 
+categories:
 
 - book-review
 - product-design

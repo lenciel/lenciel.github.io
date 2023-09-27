@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "从Markdown列表转换成脑图"
 date: 2016-02-25 21:19:33 +0800
 comments: true

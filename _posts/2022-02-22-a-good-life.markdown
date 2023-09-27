@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "美好生活"
 date: 2022-02-22 00:02:02 +0800
-categories: 
+categories:
 
 - writing
 - rants

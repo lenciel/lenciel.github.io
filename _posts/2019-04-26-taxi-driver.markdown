@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "出租车司机"
 date: 2019-04-26 14:57:45 +0800
 comments: true

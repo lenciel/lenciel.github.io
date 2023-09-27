@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Pomodoro Technique"
 date: 2014-04-03 13:44:35 +0800
 comments: true

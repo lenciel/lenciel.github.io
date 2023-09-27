@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "Python in 2020 (1) - 环境搭建"
 date: 2020-07-23 22:25:41 +0800

@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "你戴着眼罩吗？"
 date: 2020-05-18 13:38:45 +0800

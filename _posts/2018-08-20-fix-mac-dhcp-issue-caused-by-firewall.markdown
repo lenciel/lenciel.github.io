@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "修复无法获取IP的MBP"
 date: 2018-08-20 03:47:41 +0800
 comments: true

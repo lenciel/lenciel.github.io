@@ -1,14 +1,15 @@
 ---
 layout: post
+sidenote: false
 title: "the links (1)"
 date: 2020-02-08 17:26:12 +0800
 comments: true
-categories: 
+categories:
 
 - 弹指一挥
 ---
 
-1. [31 Days of API Security Tips](https://github.com/smodnix/31-days-of-API-Security-Tips) — 里面的一些小细节非常有意思，比如你怎么在逆向工程客户端的时候找到合适的版本下手。 
+1. [31 Days of API Security Tips](https://github.com/smodnix/31-days-of-API-Security-Tips) — 里面的一些小细节非常有意思，比如你怎么在逆向工程客户端的时候找到合适的版本下手。
 2. [CS246: Mining Massive Data Sets 246](http://web.stanford.edu/class/cs246/) — 斯坦福大学的数据挖掘课程。
 3. [Assembler](https://jigsaw.google.com/assembler/) — 谷歌的 Jigsaw 小组发布的一款识别图片伪造和篡改的工具。
 4. [ripgrep-all](https://github.com/phiresky/ripgrep-all) — 很不错的命令行工具，支持各种文件格式，甚至包括视频。

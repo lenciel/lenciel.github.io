@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "少儿编程应该教什么?"
 date: 2020-08-04 04:43:46 +0800

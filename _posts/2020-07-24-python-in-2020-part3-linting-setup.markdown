@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "Python in 2020 (3) - 静态扫描"
 date: 2020-07-24 04:06:18 +0800
-categories: 
+categories:
 
 - python
 - notes
@@ -61,9 +62,9 @@ Flake8 主要的威力就是它的[插件体系](https://github.com/DmytroLitvin
 ### 格式化代码：Black
 
 在静态扫描过程中还可以用上的是 [Black](https://github.com/psf/black)， 这个工具的特点就是没有可配置性：事关格式，非黑即白。
- 
+
 在 Nox 里面添加一个 session：
- 
+
  ``` python
  # noxfile.py
 @nox.session(python="3.8")

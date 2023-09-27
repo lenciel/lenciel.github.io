@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "没完没了"
 date: 2009-08-13 03:13
 comments: true

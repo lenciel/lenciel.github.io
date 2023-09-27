@@ -1,10 +1,11 @@
 ---
 layout: post
+sidenote: false
 comments: true
 description: "在我的 M1 上试试 Stable-Diffusion，简单看了一下它有什么羊的问题，后面再写写这些合成技术可能带来的影响吧"
 title: "Stable-Diffusion 试玩"
 date: 2022-09-08 14:07:19 +0800
-categories: 
+categories:
 
 - stable-diffusion
 - TTI

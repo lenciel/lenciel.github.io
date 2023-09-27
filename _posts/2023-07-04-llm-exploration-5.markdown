@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 comments: true
 description: "作为技术决策者，最好的状态还是向 Andrew Ng 学习[^4]。至少，你应该做一些具体的尝试并评估：
 
@@ -15,7 +16,7 @@ description: "作为技术决策者，最好的状态还是向 Andrew Ng 学习[
 如果结合现有的业务类型，上面有一些点的答案是「有可能是」，那么你就得现在开始持续关注了。"
 title: "LLM 调研（5）- 尾声"
 date: 2023-07-04 18:03:01 +0800
-categories: 
+categories:
 - AI
 - LLM
 - llm-exploration

@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 title: "定制机上恢复google原厂应用"
 date: 2013-12-18 22:33
 comments: true
-categories: 
+categories:
 - tips
 - android
 - gapps

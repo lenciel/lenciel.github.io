@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "使用Chrome自定义搜索引擎快速查找资源"
 date: 2016-02-20 11:53:34 +0800
 comments: true

@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Just Pull"
 date: 2008-07-28 12:50
 comments: true

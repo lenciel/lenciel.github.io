@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "移动端 MP4 无法加载"
 date: 2021-03-01 16:30:06 +0800
-categories: 
+categories:
 
 - blog
 - mp4

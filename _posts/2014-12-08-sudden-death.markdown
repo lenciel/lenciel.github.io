@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "突然死亡"
 date: 2014-12-09 04:26:28 +0800
 comments: true

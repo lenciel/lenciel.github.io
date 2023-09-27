@@ -1,10 +1,11 @@
 ---
 layout: post
+sidenote: false
 comments: true
 mathjax: true
 title: "But What Is The Question?"
 date: 2020-05-03 10:44:19 +0800
-categories: 
+categories:
 
 - rants
 - thinking

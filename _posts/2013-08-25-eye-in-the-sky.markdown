@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Eye In The Sky"
 date: 2013-08-25 21:50
 comments: true

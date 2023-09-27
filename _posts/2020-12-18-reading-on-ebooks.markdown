@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "电子书"
 date: 2020-12-18 14:42:29 +0800
-categories: 
+categories:
 
 - readings
 - books

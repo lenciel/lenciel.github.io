@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "漏斗是一个正确的模型吗"
 date: 2021-10-25 01:37:54 +0800
-categories: 
+categories:
 
 - growth
 - notes

@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "林记兔头"
 date: 2019-11-09 18:37:45 +0800
 comments: true

@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "如何带娃"
 date: 2016-09-18 21:30:41 +0800
 comments: true

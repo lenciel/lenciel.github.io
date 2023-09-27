@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "洛带，洛带"
 date: 2010-05-24 12:23
 comments: true

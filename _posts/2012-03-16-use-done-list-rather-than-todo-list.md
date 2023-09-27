@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Use Done List Instead Of To Do List"
 date: 2013-03-15 21:25
 comments: true

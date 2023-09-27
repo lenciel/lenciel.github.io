@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 mathjax: true
 comments: true
 title: "如何做预估"

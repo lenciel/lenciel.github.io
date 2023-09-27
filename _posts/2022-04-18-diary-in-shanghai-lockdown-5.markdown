@@ -1,10 +1,11 @@
 ---
 layout: post
+sidenote: false
 comments: true
 description: "昨天喝了罐可乐。结果糖分并没有像期待的一样，带来升腾而起的快乐，如礼花绽放，让我欲仙欲死。但仍然要努力，要学习王世襄"
 title: "疫情日记（5）"
 date: 2022-04-18 08:27:55 +0800
-categories: 
+categories:
 
 - rants
 - lockdown-diary

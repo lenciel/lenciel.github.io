@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Retina屏幕上的最佳编程字体"
 date: 2014-07-13 18:45:27 +0800
 comments: true

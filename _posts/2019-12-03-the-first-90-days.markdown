@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "the first 90 days"
 date: 2019-12-03 13:47:47 +0800
 comments: true

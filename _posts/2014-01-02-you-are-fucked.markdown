@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "You Are Fucked"
 date: 2010-05-11 21:06
 comments: true

@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "晋级技术专家的清单"
 date: 2020-04-01 10:58:26 +0800

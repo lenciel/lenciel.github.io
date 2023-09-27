@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "免费开源字体Inziu Iosevka推荐"
 date: 2017-04-06 15:11:19 +0800
 comments: true

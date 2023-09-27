@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Use Kaleidoscope as code review tool"
 date: 2013-04-14 20:57
 comments: true

@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Django其实不是MVC"
 date: 2015-03-30 11:36:24 +0800
 comments: true

@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "在TestBird学到的——关于产品"
 date: 2016-10-25 17:20:29 +0800
 comments: true

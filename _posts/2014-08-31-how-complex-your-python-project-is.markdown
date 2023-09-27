@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "How complex your python project is?"
 date: 2014-08-31 21:04:47 +0800
 comments: true

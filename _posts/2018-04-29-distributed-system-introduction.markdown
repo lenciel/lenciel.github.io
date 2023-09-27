@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "分布式系统介绍"
 date: 2018-04-29 00:27:48 +0800
 comments: true

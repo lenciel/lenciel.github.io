@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "请输入密码"
 date: 2014-05-04 09:33:43 +0800
 comments: true

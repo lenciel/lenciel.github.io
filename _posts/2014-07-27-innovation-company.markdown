@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "中国式创新"
 date: 2014-07-27 15:26:01 +0800
 comments: true

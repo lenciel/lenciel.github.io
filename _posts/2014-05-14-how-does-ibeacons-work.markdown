@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "How Does iBeacons Work"
 date: 2014-05-14 15:19:59 +0800
 comments: true

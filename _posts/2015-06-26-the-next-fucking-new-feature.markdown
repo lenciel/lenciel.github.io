@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "好的引导流程胜过10个新功能"
 date: 2015-06-26 13:55:49 +0800
 comments: true

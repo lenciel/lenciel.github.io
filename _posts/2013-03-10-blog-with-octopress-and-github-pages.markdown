@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Blog with Octopress and Github pages"
 date: 2013-03-10 22:15
 comments: true

@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 title: "Mac下后台运行goagent"
 date: 2013-11-14 13:22
 comments: true
-categories: 
+categories:
 - tips
 - goagent
 - gfw

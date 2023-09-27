@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "What I know, in 2016, 😳"
 date: 2016-12-31 22:28:40 +0800
 comments: true

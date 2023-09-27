@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "苏大爷"
 date: 2017-03-10 14:40:45 +0800
 comments: true

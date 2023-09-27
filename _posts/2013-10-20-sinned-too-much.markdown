@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Sinned Too Much"
 date: 2013-10-20 16:49
 comments: true

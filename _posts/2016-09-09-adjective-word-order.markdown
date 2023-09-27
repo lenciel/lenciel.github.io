@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "英文的形容词排序"
 date: 2016-09-09 10:13:32 +0800
 comments: true

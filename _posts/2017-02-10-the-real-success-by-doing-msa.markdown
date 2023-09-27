@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "推行微服务架构的最大收益"
 date: 2017-02-10 17:58:52 +0800
 comments: true

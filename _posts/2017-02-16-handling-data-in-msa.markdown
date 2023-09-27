@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "微服务架构里的数据处理"
 date: 2017-02-16 02:58:52 +0800
 comments: true

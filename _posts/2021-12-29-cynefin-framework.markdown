@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "肯尼芬框架"
 date: 2021-12-29 22:12:51 +0800
-categories: 
+categories:
 
 - career
 - learning

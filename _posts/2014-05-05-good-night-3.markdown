@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "晚安(三)"
 date: 2014-05-05 03:38:34 +0800
 comments: true

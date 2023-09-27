@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "使用 Alfred 完成文本扩展"
 date: 2020-03-18 17:09:19 +0800

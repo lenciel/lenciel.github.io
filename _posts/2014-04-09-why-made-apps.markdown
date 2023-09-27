@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "应用开发能火多久?"
 date: 2014-04-09 15:07:57 +0800
 comments: true

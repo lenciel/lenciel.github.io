@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Disappointment & Confidence"
 date: 2015-02-28 14:02:26 +0800
 comments: true

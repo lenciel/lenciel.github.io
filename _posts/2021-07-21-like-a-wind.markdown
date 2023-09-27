@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "如风"
 date: 2021-07-21 21:08:38 +0800

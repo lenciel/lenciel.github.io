@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "技术团队基层管理怎么做"
 date: 2018-05-01 13:12:25 +0800
 comments: true

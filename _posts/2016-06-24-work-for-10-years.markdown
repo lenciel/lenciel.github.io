@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "记一次快乐的生日"
 date: 2016-06-24 22:12:13 +0800
 comments: true

@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "如何解决苹果的邮件Spam"
 date: 2016-11-30 22:28:40 +0800
 comments: true

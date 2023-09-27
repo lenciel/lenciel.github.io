@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "What I know in 2021, 😳"
 date: 2021-12-27 16:50:46 +0800

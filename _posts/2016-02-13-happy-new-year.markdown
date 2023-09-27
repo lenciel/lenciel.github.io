@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "记一次成功的过年"
 date: 2016-02-13 22:41:48 +0800
 comments: true

@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "TLDR是什么?"
 date: 2014-11-24 10:47:31 +0800
 comments: true

@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "疤"
 date: 2014-09-01 03:38:50 +0800
 comments: true

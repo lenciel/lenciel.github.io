@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Palm4fun Tech Stack Review Part II"
 date: 2015-02-20 14:11:19 +0800
 comments: true

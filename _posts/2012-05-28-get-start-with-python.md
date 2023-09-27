@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Getting Start With Python"
 date: 2012-05-28 22:15
 comments: true

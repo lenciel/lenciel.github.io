@@ -1,10 +1,11 @@
 ---
 layout: post
+sidenote: false
 comments: true
 description: "前段时间，封在家里，和小朋友呆在一起的时间变多了，就越发觉得，人原本喜欢的，还是打猎和采集：四处晃荡，上蹿下跳，玩火玩水，看动物看植物，抓动物采植物。一看到同类，就要嘀咕，抓扯，侵略，或者躲闪"
 title: "今天四十了"
 date: 2022-06-24 12:22:01 +0800
-categories: 
+categories:
 
 - rants
 - thinking

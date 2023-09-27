@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "卑鄙是失败者的通行证"
 date: 2019-06-30 15:51:30 +0800
 comments: true

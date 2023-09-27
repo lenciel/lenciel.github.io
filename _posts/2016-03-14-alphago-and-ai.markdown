@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "人工智能，奇点及其他(一)"
 date: 2016-03-15 02:59:42 +0800
 comments: true

@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "奶哥"
 date: 2021-12-09 03:35:22 +0800
-categories: 
+categories:
 
 - writing
 - rants

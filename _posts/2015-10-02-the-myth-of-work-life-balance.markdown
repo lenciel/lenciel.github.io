@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Work Life Balance的神话"
 date: 2015-10-02 22:35:05 +0800
 comments: true

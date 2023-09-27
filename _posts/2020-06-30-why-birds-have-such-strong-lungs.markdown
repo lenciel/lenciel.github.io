@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "大雁为什么那么能飞？"
 date: 2020-06-30 11:41:52 +0800

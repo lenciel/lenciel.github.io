@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Take it easy and avoid excitement"
 date: 2013-12-15 13:17
 comments: true

@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "使用dnsmasq配置本地开发环境"
 date: 2014-04-25 14:53:37 +0800
 comments: true

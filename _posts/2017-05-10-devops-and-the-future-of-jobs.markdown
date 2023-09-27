@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "DevOps"
 date: 2017-05-10 01:28:52 +0800
 comments: true

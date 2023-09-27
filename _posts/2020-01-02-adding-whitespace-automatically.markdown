@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 title: "用 textlint 自动排版"
 date: 2020-01-02 14:16:59 +0800
 comments: true
-categories: 
+categories:
 
 - tips
 - tools-i-use

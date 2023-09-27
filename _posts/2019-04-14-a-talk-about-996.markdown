@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "996和拼搏精神"
 date: 2019-04-14 23:07:52 +0800
 comments: true

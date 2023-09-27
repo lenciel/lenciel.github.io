@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "改了些错"
 date: 2020-05-20 11:40:58 +0800

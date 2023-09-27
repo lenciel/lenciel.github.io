@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "People Empty Out"
 date: 2014-04-19 17:36:49 +0800
 comments: true

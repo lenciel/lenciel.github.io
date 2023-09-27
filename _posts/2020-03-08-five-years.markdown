@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "五年"
 date: 2020-03-08 03:26:21 +0800
 comments: true

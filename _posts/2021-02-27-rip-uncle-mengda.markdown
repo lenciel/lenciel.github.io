@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "再见，达叔"
 date: 2021-02-27 11:27:14 +0800
-categories: 
+categories:
 
 - memo
 - rip

@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "RIP, Sir Sean Connery"
 date: 2020-10-31 11:00:47 +0800
-categories: 
+categories:
 
 - memo
 - rip

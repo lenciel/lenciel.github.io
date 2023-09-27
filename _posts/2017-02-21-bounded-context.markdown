@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Bounded Context"
 date: 2017-02-21 04:58:52 +0800
 comments: true

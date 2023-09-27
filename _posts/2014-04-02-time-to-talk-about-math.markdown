@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "勾股定理"
 date: 2014-04-02 14:30
 comments: true

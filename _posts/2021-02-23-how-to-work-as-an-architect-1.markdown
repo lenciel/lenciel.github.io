@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "如何干好架构师(1)"
 date: 2021-02-23 10:01:07 +0800
-categories: 
+categories:
 
 - career
 - architect
@@ -59,7 +60,7 @@ categories:
 > The software architecture of a system is the set of structure needed to reason about the system, which comprises software elements, relations among them, and properties of both.
 
  如果你注意到这本书是属于一个叫 SEI Collections 的系列的话，就很容易发现，CMU 的 Software Engineering Institute（SEI）对这些软件工程领域的方法论和术语定义很用心。它们还有一个官方的「数字图书馆」，检索「架构」的定义[可以找到](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=513807)一个和前面的定义非常类似，但是打了 IEEE 龙标的定义：
- 
+
  > Architecture is the fundamental organization of a system embodied in its components, their relationships to each other, and to the environment, and the principles guiding its design and evolution. –IEEE 1471
 
 学界的这些定义，最大的问题是，系统里组件怎么定义，它们之间的关系怎么形成，现实中其实并没有真正「工程化」的方法可以干好[^1]。
@@ -96,7 +97,7 @@ categories:
 
 因此 Martin Fowler 在他那篇《[Who needs an architect](https://martinfowler.com/ieeeSoftware/whoNeedsArchitect.pdf)》里面引用 Ralph Johnson 的话有些嘲讽地说：
 
-> Architecture is the decisions that you wish you could get right early in a project, but that you are not necessarily more likely to get them right than any other. 
+> Architecture is the decisions that you wish you could get right early in a project, but that you are not necessarily more likely to get them right than any other.
 
 ### 问题出在哪里
 

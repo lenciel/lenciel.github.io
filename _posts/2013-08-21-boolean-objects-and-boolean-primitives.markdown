@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 title: "Boolean Objects和Boolean Primitives"
 date: 2013-08-21 11:31
 comments: true
-categories: 
+categories:
 - javascript
 - tip
 - pitfall

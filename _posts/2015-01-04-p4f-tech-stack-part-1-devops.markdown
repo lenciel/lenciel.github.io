@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Goodbye Palm4fun, and the tech stack review Part I"
 date: 2015-01-04 14:44:23 +0800
 comments: true

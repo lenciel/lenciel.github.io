@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "What did the ocean say to the other?"
 date: 2014-06-12 01:45:06 +0800
 comments: true

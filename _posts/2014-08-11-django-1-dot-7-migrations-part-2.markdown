@@ -1,5 +1,6 @@
 ---
 layout: post
+sidenote: false
 title: "Data Migration in Django 1.7 (2)"
 date: 2014-08-11 03:59:47 +0800
 comments: true

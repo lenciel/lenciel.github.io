@@ -3,6 +3,7 @@ title: 老无所依
 date: 2011-11-20 12:50
 comments: true
 layout: post
+sidenote: false
 dsq_thread_id:
   - 848049318
 categories:

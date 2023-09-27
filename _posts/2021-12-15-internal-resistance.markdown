@@ -1,9 +1,10 @@
 ---
 layout: post
+sidenote: false
 comments: true
 title: "也许你不是懒"
 date: 2021-12-16 00:40:12 +0800
-categories: 
+categories:
 
 - resistance
 - mindfulness
