@@ -40,7 +40,7 @@ category_dir: categories
 titlecase: true # Converts page and post titles to titlecase
 # jekyll_picture_tag
 picture:
-  output: "resized"
+  output: "resized_images"
   fast_build: true
   cdn_url: "https://cdn.lenciel.com"
   cdn_environments: ["production"]

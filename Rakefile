@@ -59,7 +59,7 @@ task :copy_resized do
   puts "## Copying exsiting resized image to _site"
   system "jekyll clean"
   system "mkdir -p #{deploy_dir}"
-  FileUtils.cp_r Dir.glob("#{back_dir}/resized"), "#{deploy_dir}/"
+  FileUtils.cp_r Dir.glob("#{back_dir}/resized_images"), "#{deploy_dir}/"
 end
 
 desc "Generate jekyll site for production deployment"
