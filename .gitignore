@@ -14,3 +14,5 @@ _temp
 /_site_bak
 lenciel.com_*.report.html
 /Gemfile.lock
+/lenciel.com.csr
+/lenciel.com.key

@@ -1,0 +1,62 @@
+---
+layout: post
+comments: true
+description: "这个系列，专门记录一些偶然看见，不那么广为人知的奇闻..."
+title: "What I know in 2023, 😳"
+date: 2023-12-20 06:00:46 +0800
+categories:
+
+- memo
+- rants
+- what-i-know
+
+---
+
+> 这个系列，专门记录一些偶然看见，不那么广为人知的奇闻。时光隧道：
+> 
+> [2022年](/2022/12/what-i-know-in-2022/) / [2021年](/2021/12/what-i-know-in-2021/) / [2020年](/2020/12/what-i-know-in-2020/) / [2018年](/2018/12/what-i-know-in-2018/) / [2017年](/2017/12/what-i-know-in-2017/) / [2016年](/2016/12/what-i-konw-in-2016/)
+
+- 根据 Laurence Rees 的新书《大屠杀：新历史》考证，共有估计 1,300,000 至 1,750,000 人被纳粹送往索比堡、贝乌热茨和特雷布林卡的死亡集中营，其中「可能不超过 150 人」最终在战争中幸存下来。150，不是 150,000，而是 150。 - \[[Laurence Rees](https://www.amazon.com/Holocaust-New-History-Laurence-Rees/dp/1610398440){:target="_blank"}\]
+- 2022 年，是人造物体（混凝土、金属、塑料）的重量超过全球生物重量的一年。 - \[[Bruno Venditti](https://www.visualcapitalist.com/visualizing-the-accumulation-of-human-made-mass-on-earth/){:target="_blank"}\]
+- 虽然是「恒星」，实际上太阳也在围绕着「银河中心」旋转，但是速度非常慢：太阳绕银河系旋转一圈需要 2.2 亿年。在太阳和行星存在的 46 亿年里，它们只围绕银河系中心旋转了大约 20 圈。 - \[[ Fraser Cain](https://www.universetoday.com/30710/galaxy-rotation/){:target="_blank"}\]
+- 大西洋里面有一种鱼，叫做 Boops boops。 - \[[维基百科](https://en.wikipedia.org/wiki/Boops_boops){:target="_blank"}\]
+- 土耳其一位农民最近进行了一项实验。在给他的奶牛戴上了模拟在牧场中的 VR 护目镜后，每头奶牛每天的产奶量提高了 2 加仑。 - \[[Irmak Bayrakdar](https://interestingengineering.com/innovation/a-turkish-farmer-tests-out-vr-goggles-on-cows-to-get-more-milk/){:target="_blank"}\]
+- 波比跳确实是波比发明的，他叫 Royal Huddleston Burpee。他发明这套动作主要是想要尽快检测被测对象的身体状况，还专门写文章反对过使用波比跳进行锻炼 - \[[Sally Tamarkin](https://www.huffpost.com/entry/burpee-history_n_5248575){:target="_blank"}\]
+- 美国越来越多的州取消对骑行时佩戴头盔的强制要求：因为研究发现，自行车头盔在高能量冲击或骑车人被机动车碾压时保护头部免受严重伤害的能力非常有限，而且这样反而会让汽车司机更加鲁莽。 - \[[Marion Renault](https://slate.com/technology/2023/01/bike-helmets-cyclist-deaths-do-you-need-to-wear.html){:target="_blank"}\]
+- 熊被称为「bear」其实一开始只是一个避讳的委婉说法。后来用得多了，大家就这么用了，也不知道它最开始叫啥了。 - \[[Alexandra Silver](https://content.time.com/time/arts/article/0,8599,2041313,00.html){:target="_blank"}\]
+- 掷斧头活动目前在美国非常流行：光是 WATL（World Axe Throwing League），每周就组织超过 20,000 名投掷者在 324 个「斧头屋」进行比赛。这项运动的管理机构专注于增加妇女、少数族群和儿童成员。参加世界锦标赛的 477 名参赛者中，约有十分之一是女性，两名参赛者为 14 岁。最年轻的联盟成员 8 岁，最年长的 79 岁。 - \[[the Economist](https://www.economist.com/united-states/2022/12/15/axe-throwing-may-be-the-friendliest-new-sport-in-america?etear=nl_today_10&utm_id=1423759/){:target="_blank"}\]
+- 过去人们一般认为只有脑容量较大的哺乳动物会有玩耍行为。现在科学家们观察到蜜蜂也会在没有回报的情况下，主动玩耍各种颜色的木球。这表明昆虫的思维比我们想象的要复杂得多。 - ​​​\[[Jennifer Ouellette](https://arstechnica.com/science/2022/12/bees-like-to-roll-little-wooden-balls-as-a-form-of-play-study-finds/){:target="_blank"}\]
+- 研究表明，古代社会里，79% 的女性都会从事狩猎活动，无论她们是不是已经成为母亲。超过 70% 的女性狩猎是有计划的，而不是在进行其他活动时机会主义地捕杀动物。这些研究推翻了「男性从事狩猎、女性从事采集」的刻板印象。 - ​​​\[[Public Library of Science](https://phys.org/news/2023-06-shattering-myth-men-hunters-women.html){:target="_blank"}\]
+- 褪黑素被证明可以用于减少植物在冷藏时受到的损害：研究者将褪黑素涂抹到从苹果到菠萝蜜、香蕉、西红柿等数十种水果和蔬菜表面时发现，褪黑激素可将冷藏造成的损伤减少 21% 至 42%。并且，与目前保存食物的一些熏蒸剂和化学品相比，褪黑激素的使用和食用更安全。这个发现之所以重大，是因为每年有三分之一的食物被损失或浪费，其中水果和蔬菜所占比例最大：每年有 31.5% 未被食用就已经坏掉。 - ​​​\[[Emma Bryce](https://www.anthropocenemagazine.org/2023/08/melatonin-a-sleep-aid-is-a-surprising-treatment-for-food-waste/){:target="_blank"}\]
+- 德国研究人员在柳叶刀同行评审期刊《eBioMedicine》上发布了一项研究，证明将所有疫苗接种在一只手臂上的人比将疫苗分散在双臂上的人有更强的免疫反应。研究作者认为，人们对同一手臂的连续注射反应更好的原因是疫苗针对的是相同的淋巴结，使它们更积极地产生免疫细胞来抵抗感染。 - ​​​\[[Adrianna Rodriguez](https://www.usatoday.com/story/news/health/2023/08/17/arm-for-vaccine-shots-matter/70604228007/){:target="_blank"}\]
+- 荷兰有一座大坝，由于它很少在春天打开，洄游的鱼类被困在那里。管理部门想到了一个解决方案：在水下安装摄像机然后把内容链接到一个网站，任何在网站上观看实时镜头的人在发现鱼时可以按下一个按钮，这会通知操作员解锁大坝，让鱼继续上路。- ​​​\[[Visdeurbel](https://visdeurbel.nl/beelden/){:target="_blank"}\]
+- 有新的研究表明，用拇指弹起硬币，看落在正面还是反面，并不是想象中那样是 50/50 的概率，而是更倾向于落在跟抛起时同样的一面。这是因为人类解剖结构决定了，当人类用拇指翻转硬币时，该运动会产生轻微的离轴倾斜。- ​​​\[[Daniel Lawler](https://phys.org/news/2023-10-coin-tosses-slight-bias.html/){:target="_blank"}\]
+- 2023 年 10 月，MASA 花了 18 个小时，完成了对 120 亿英里外的 [Voyager 2](https://bgr.com/tag/voyager-2/) 的软件更新。- ​​​\[[Joshua Hawkins](https://phys.org/news/2023-10-coin-tosses-slight-bias.html/){:target="_blank"}\]
+- 加州的实验电影制片人 Gerry Fialka 在 1995 年发起了一个读书会，阅读乔伊斯的《芬尼根守灵夜》。最初他们计划每个月读两页并讨论，但因为实际读起来后发现太难，改成了每个月读一页并讨论。这个读书会在当地图书馆举行，每次有 10-30 人参与，并最终在 28 年后，于 2023 年 10 月读完了这本书。- ​​​\[[Lois Beckett](https://www.theguardian.com/books/2023/nov/12/california-venice-book-club-finngeans-wake-28-years/){:target="_blank"}\]
+- [Predatoroonops](https://en.wikipedia.org/wiki/Predatoroonops){:target="_blank"} 是巴西的[大西洋森林](https://en.wikipedia.org/wiki/Atlantic_Forest){:target="_blank"}里一种特别的蜘蛛属，由圣保罗的[布坦坦研究所](https://en.wikipedia.org/wiki/Instituto_Butantan){:target="_blank"}经过两年半的研究后于 2012 年发现的。因为研究人员发现蜘蛛的螯肢与铁血战士未戴面具的脸相似，所以该属下面的所有命名都采用了 1987 年电影《铁血战士》中的演员、工作人员或虚构​​元素。比如，Predatoroonops schwarzeneggeri，是用施瓦辛格的名字命名的。- ​​​\[[维基百科](https://en.wikipedia.org/wiki/Predatoroonops){:target="_blank"}\]
+- 认为内存访问是 O(1) 其实是不对的，它更接近于 O(√N) 。 - ​​​\[[Emil Ernerfeldt](https://www.ilikebigbits.com/2014_04_21_myth_of_ram_1.html){:target="_blank"}\]
+- 从 2011 年到 2022 年，尽管流量有所增加，但经过完全认证的空管数量却下降了 9% 以上。全美 99% 的管制中心都人手不足。根据美国联邦航空局 (F.A.A.) 的数据，在过去十年中，管制员的加班时间几乎增加了两倍。造成了越来越多的接近「发生空难」的危险情况、大量的药物滥用和暴力行为。 - ​​​\[[ Emily Steel & Sydney Ember](https://www.nytimes.com/2023/12/02/business/air-traffic-controllers-safety.html){:target="_blank"}\]
+- 瑞士安尼维尔山谷的居民会花一辈子给自己准备在葬礼上使用的轮子形状的奶酪。这种长期放置在地下室，干瘪呈棕色，被螨虫和老鼠咬了几十年，坑坑洼洼，坚硬如石的奶酪轮子，最初是因为当地生产力贫瘠，为了解决参加葬礼的每个人都有东西可吃的问题而制作的。现在吃的东西可以方便的买到后，人们开始收藏祖辈传下来的，有着上百年的历史的奶酪轮子。 - ​​​\[[Molly Mcdonough](https://www.atlasobscura.com/articles/most-unusual-cheese-switzerland){:target="_blank"}\]
+- Dorset 一家拥有 300 辆坦克的坦克博物馆，在网上比 MoMA 还要火爆：Youtube 和 TikTok 上涌入的观看者不仅给它带来了流量，还带来了 200 万英镑真金白银的收入。其中有一项收费项目是，支付 2000 英镑的年费，就可以享受「陆军元帅」称号，并且在每个视频里被标记成「执行制片人」。 - ​​​\[[Alex Marshall](https://www.nytimes.com/2023/09/12/arts/design/tank-museum-youtube.html/){:target="_blank"}\]
+- 上世纪 20 年代的冰箱是致命的：一旦压缩机发生故障，制冷剂就会逸出，让整个家庭在睡梦中患病或死亡。 1926 年，爱因斯坦和他柏林大学的同事，物理学家利奥·西拉德 (Leo Szilard)凭着自己在电磁学和热力学方面的前沿研究，着手解决这个问题，并最终发明了一种泵来取代冰箱的压缩机，且申请了专利。但两人最终没法将这个专利商业化，因为纳粹的迅速崛起，危及了他们的生命。两人在出逃过程中，这个项目被搁置了。 - ​​​\[[Adam Bisno](https://www.invention.si.edu/einstein-szilard-refrigerator){:target="_blank"}\]
+- 1950 年，冰岛研究员 JÓN Eyórsson 在冰岛东南部的 Hrútárjökull 冰川上发现了一群像小沙鼠大小的、毛茸茸的绿色苔藓球。这些长满青苔的球并没有附着在地面上，而且各个面都布满了苔藓：这表明它们必须慢慢转动，以便整个表面都可以在某个时刻得到光照。后来有科学家对这些苔藓球进行了跟踪并于 2010 年开始回收数据，发现它们每天都按照相同的方向以相同的速度移动几乎相同的距离。为什么有这种现象仍然是个迷，有科学家猜测苔藓这样做可以保护下面的冰不被阳光融化，从而淹死自己。 - ​​​\[[Roxanne Hoorn](https://www.atlasobscura.com/articles/herds-of-glacier-mice-baffle-scientists){:target="_blank"}\]
+- FFmpeg 即将推出支持多线程的版本。这个开发了很长时间的 feature 被认为是 FFmpeg 几十年来最复杂最困难的更新，开发者呼吁用户尽快测试并报 bug。 - ​​​\[[Michael Larabel](https://www.phoronix.com/news/FFmpeg-CLI-MT-Merged){:target="_blank"}\]
+- PainStation 是在 Pong 基础上扩展的游戏设备。在玩家使用右手完成经典的弹球游戏过程中，需要将左手放在 PEU（疼痛执行单元）上。PEU 可能的反馈效应包括热脉冲、电击等，并且可以动态增加其强度。玩家可以在游戏中获得并对对方使用类似于「双倍痛苦时间」或者「四倍痛苦强度」等招数。先把手从 PEU 上拿开的玩家输掉比赛。 - ​​​\[[Wikipedia](https://en.wikipedia.org/wiki/PainStation){:target="_blank"}\]
+- 奥地利公司 Turbulence Solutions 声称，它已经在对一种系统进行飞行测试，该系统可以检测并消除空气湍流，将乘客感受到的力减少高达 80%，并将燃油消耗减少高达 10%。它定于 2024 年推出。 - ​​​\[[Loz Blain](https://newatlas.com/aircraft/active-turbulence-cancellation/){:target="_blank"}\]
+- 肯特郡谢佩岛的蓝镇，有一个造船厂的围墙附近生活了 15,000 只野生蝎子。岛上的居民说它们可能是两百年前意大利偷渡者携带的石头上引入的物种，为什么能形成现在的规模是一个迷。但观察蝎子已经逐渐变成了当地学校的一个固定的课外活动。 - ​​​\[[John Nurden](https://www.kentonline.co.uk/sheerness/news/we-track-down-the-uks-biggest-scorpion-colony-250024/){:target="_blank"}\]
+- 穆罕穆德这个名字在英国新生儿中占比一直在攀升，并于 2014 年左右成为了榜首。在接下来的差不多十年时间，它基本上都稳居榜首（只有一年是第二受欢迎的名字），包括刚刚过去的 2023 年。 - ​​​\[[Mem](https://www.middleeastmonitor.com/20231213-muhammad-still-most-popular-boys-name-in-the-uk-for-2023/){:target="_blank"}\]
+- 一组男女模特拍摄一天的成本大概是 3.6w 人民币，而如果使用 AIGC 相关技术则是 15 块钱一张图。有很多人认为，时装模特将是 AI 取代的第一个职业 - ​​​\[[石雨菡](https://m.huxiu.com/article/959530.html){:target="_blank"}\]
+- 2022 年，只有 28 本书在美国销量超过 50 万册。其中 8 本书是浪漫小说家科琳·胡佛 (Colleen Hoover) 的作品。 - ​​​\[[Jason Colvato](https://twitter.com/JasonColavito/status/1620151389363245057){:target="_blank"}\]
+- 在一项突破性的考古发现中，由柏林自由大学考古学家领导的国际团队在西伯利亚偏远地区发现了坚固的史前定居点。他们的研究结果表明，这里的狩猎采集者在 8000 年前就在他们的定居点周围建造了复杂的防御结构。这是迄今为止人类确认的第一个「堡垒」。 - ​​​\[[Japhet Johnstone](https://phys.org/news/2023-12-oldest-fortresses-world.html/){:target="_blank"}\]
+- 在硅肺病例激增得到确认后，澳大利亚决定于 2024 年 7 月开始禁止人造石材加工和买卖。 - ​​​\[[Leonie Thorne & Michael Atkin](https://www.abc.net.au/news/2023-12-13/engineered-stone-ban-discussed-at-ministers-meeting/103224362/){:target="_blank"}\]
+- Alex Churchill 等人提交了一篇论文，证明最流行的万智牌魔法风云会，是图灵完备的。 - ​​​\[[Alex Churchill & Stella Biderman & Austin Herrick](https://arxiv.org/abs/1904.09828/){:target="_blank"}\]
+- Google 使用 [PaLM 2](https://ai.google/discover/palm2/) 与威斯康星大学麦迪逊分校数学教授 Jordan Ellenberg 合作，开发了 FunSearch 来探索数学上一个公开的挑战：[上限集问题（cap set problem）](https://en.wikipedia.org/wiki/Cap_set){:target="_blank"}。FunSearch 生成的解决方案（以程序的形式）在发现了迄今为止最大的上限集，成为 20 年来该问题[最大的突破](https://link.springer.com/article/10.1023/A:1027365901231){:target="_blank"}。 - ​​​\[[Nature 论文](https://www.nature.com/articles/s41586-023-06924-6/){:target="_blank"}\]
+- 波兰火车修理厂 Serwis Pojazdów Szynowych (SPS) 于 2022 年 6 月邀请黑客组织 Dragon Sector 帮忙分析火车软件：因为他们发现火车在修理厂中出现奇怪的故障，怎么都修不好，导致运力不足。Dragon Sector 花了两个月的时间分析后指出，火车制造商 Newag 在软件里面埋了后门：只要 GPS 定位说明 Newag 制造的火车在跟它没有关系的第三方修理厂中进行维修，这辆火车就会被干扰甚至变砖。 - ​​​\[[Ashley Belanger](https://arstechnica.com/tech-policy/2023/12/manufacturer-deliberately-bricked-trains-repaired-by-competitors-hackers-find/)\]
+- 岛屿巨人症（Island gigantism 或 Insular gigantism）是一种生物现象，即大陆上的动物物种来到岛屿后，会变得体型巨大。这是更普遍的「岛屿效应」或「[福斯特法则](https://en.wikipedia.org/wiki/Foster%27s_rule){:target="_blank"}」的一部分，该法则认为，当大陆动物在岛屿上定居时，小型物种往往会进化出较大的身体，而大型物种往往会进化出较小的身体。这种情况甚至在一些植物中也可以观察到：例如毛里求斯的猴面包树，其实它最初是一种葡萄藤。 - ​​​\[[维基百科](https://en.wikipedia.org/wiki/Island_gigantism/){:target="_blank"}\]
+- 研究人员通过对儿童的视网膜照片使用深度学习，可以以 100%的准确率诊断自闭症。 - ​​​\[[Paul McClure](https://newatlas.com/medical/retinal-photograph-ai-deep-learning-algorithm-diagnose-child-autism/){:target="_blank"}\]
+
+
+
+
+
+
