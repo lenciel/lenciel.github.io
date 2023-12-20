@@ -14,7 +14,7 @@ categories:
 
 > 这个系列，专门记录一些偶然看见，不那么广为人知的奇闻。时光隧道：
 > 
-> [2022年](/2022/12/what-i-know-in-2022/) / [2021年](/2021/12/what-i-know-in-2021/) / [2020年](/2020/12/what-i-know-in-2020/) / [2018年](/2018/12/what-i-know-in-2018/) / [2017年](/2017/12/what-i-know-in-2017/) / [2016年](/2016/12/what-i-konw-in-2016/)
+> [2022年](/2022/12/what-i-know-in-2022/){:target="_blank"} / [2021年](/2021/12/what-i-know-in-2021/){:target="_blank"} / [2020年](/2020/12/what-i-know-in-2020/){:target="_blank"} / [2018年](/2018/12/what-i-know-in-2018/){:target="_blank"} / [2017年](/2017/12/what-i-know-in-2017/){:target="_blank"} / [2016年](/2016/12/what-i-konw-in-2016/){:target="_blank"}
 
 - 根据 Laurence Rees 的新书《大屠杀：新历史》考证，共有估计 1,300,000 至 1,750,000 人被纳粹送往索比堡、贝乌热茨和特雷布林卡的死亡集中营，其中「可能不超过 150 人」最终在战争中幸存下来。150，不是 150,000，而是 150。 - \[[Laurence Rees](https://www.amazon.com/Holocaust-New-History-Laurence-Rees/dp/1610398440){:target="_blank"}\]
 - 2022 年，是人造物体（混凝土、金属、塑料）的重量超过全球生物重量的一年。 - \[[Bruno Venditti](https://www.visualcapitalist.com/visualizing-the-accumulation-of-human-made-mass-on-earth/){:target="_blank"}\]
