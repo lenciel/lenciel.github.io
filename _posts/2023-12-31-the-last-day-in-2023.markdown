@@ -37,7 +37,7 @@ categories:
 
 今年还因为负责了游戏业务{% sidenote 'sn-id-3' '我跟老板开玩笑说，在老弟做出了王者荣耀的前提下，我还能做出一个爆款游戏的概率，类似于我们家祖坟连冒两次青烟。但他还是愿意让我去做，谢谢他。' %}，周博送了本《[The Art of Game Design](https://www.amazon.com/Art-Game-Design-Lenses-Third/dp/1138632090)》让我啃。
 
-打开扉页，先注意到作者引用的一首诗{% sidenote 'sn-id-4' '我挺好奇这个完全没有听过的诗人 Maxwell H. Brock 是谁，最后发现他是一部老电影《[A Bucket of Blood](https://www.imdb.com/title/tt0052655/){:target="_blank"}》里的[角色](https://the-dead-meat.fandom.com/wiki/Maxwell_H._Brock){:target="_blank"}。他更长版本的台词可以看[这里](https://www.quotes.net/mquote/964358){:target="_blank"}。' %}：
+打开扉页，先注意到作者引用的一首诗：
 
 > I will talk to you of art,\
 > For there is nothing else to talk about,\
@@ -48,7 +48,7 @@ categories:
 > 
 > ―― Maxwell H. Brock
 
-说的有点像史铁生引用过的一个西方艺术家，大意是：「生活分为两种。悲惨的生活，和非常悲惨的生活。而艺术可以让人们避开后一种。」
+Maxwell{% sidenote 'sn-id-4' '我挺好奇这个完全没有听过的诗人 Maxwell H. Brock 是谁，最后发现他是一部老电影《[A Bucket of Blood](https://www.imdb.com/title/tt0052655/){:target="_blank"}》里的[角色](https://the-dead-meat.fandom.com/wiki/Maxwell_H._Brock){:target="_blank"}。他更长版本的台词可以看[这里](https://www.quotes.net/mquote/964358){:target="_blank"}。' %} 说的意思挺像史铁生引用过的一个西方艺术家，大意是：「生活分为两种。悲惨的生活，和非常悲惨的生活。而艺术可以让人们避开后一种。」
 
 那是在宗教的超越性刚刚被科学消解的年代，人类可以依靠的，还有艺术。进入二十一世纪，艺术显然也没了这功效。迷茫的西方人，有一部分在看星盘或磕药，有一部分在搞科研或做项目{% sidenote 'sn-id-5' '过去看过意大利人 Frederick Campagna 的一本书叫《Technic and Magic》，预言过人类的精神支柱，宗教、艺术、各种主义，都被解构都崩塌了之后，有两种参与世界的方式会受到追捧：技术和巫术。当时觉得不以为然，现在看大模型调参，觉得跟算命比说不清谁更像是在瞎撞运气。' %}，还有一部分在学习东方思想：毕竟这边老早就已经说了，众生皆苦，无可救药，是不是充满了智慧...
 
