@@ -19,6 +19,7 @@ categories:
 
 
 所以，让我们看看 Edward Gorey 画的一些知名小说的封面吧（他能一直在作家圈子有帮朋友似乎也是因为画了不少封面）：
+
 <link rel="stylesheet" type="text/css" href="{{ site.static_base }}/downloads/static/css/elasticstack_slider.css" />
 
 <div class="slider-container">
@@ -31,7 +32,7 @@ categories:
         <li><img src="{{ site.static_base }}/downloads/images/2014_04/edward_gorey/gorey_conrad2.jpg" alt="06"/><h6>Chance</h6></li>
         <li><img src="{{ site.static_base }}/downloads/images/2014_04/edward_gorey/gorey_gogol1.jpg" alt="07"/><h6>喂...最后一张了</h6></li>
     </ul>
-</div><!-- /container -->
+</div>
 
 <script src="{{ site.static_base }}/downloads/static/js/draggabilly.pkgd.min.js"></script>
 <script src="{{ site.static_base }}/downloads/static/js/modernizr.custom.js"></script>

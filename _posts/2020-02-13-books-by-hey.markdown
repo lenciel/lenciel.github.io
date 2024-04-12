@@ -9,6 +9,7 @@ categories:
 - illustrations
 - books
 - resources
+- literary-botanica
 
 ---
 

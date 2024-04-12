@@ -42,7 +42,7 @@ categories:
         <li><img src="{{ site.static_base }}/downloads/images/2015_02/satellite_images/r1400_39_2003.jpg" alt="01"/><h6>Wadi Rum - 约旦</h6></li>
         <li><img src="{{ site.static_base }}/downloads/images/2015_02/satellite_images/r1270_39_2004.jpg" alt="01"/><h6>Laguna Colorada 玻利维亚</h6></li>
     </ul>
-</div><!-- /container -->
+</div>
 
 <script src="{{ site.static_base }}/downloads/static/js/draggabilly.pkgd.min.js"></script>
 <script src="{{ site.static_base }}/downloads/static/js/modernizr.custom.js"></script>
