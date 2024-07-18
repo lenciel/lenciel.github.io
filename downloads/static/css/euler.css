@@ -1,0 +1,18 @@
+div.canvasContainer {
+  margin: 0 auto;
+  position: relative;
+}
+
+div.canvasContainer > canvas {
+  display:block;
+  margin: 1.5em auto;
+  border-radius: 1px;
+  box-shadow: #eaeaea 0 0 0px 3px;
+  width: 100%;
+}
+
+div.sliderContainer, div.ktexContainer {
+  color:rgb(0, 182, 248);
+  display: block;
+  margin: 2em 3em 2.5em 3em;
+}
