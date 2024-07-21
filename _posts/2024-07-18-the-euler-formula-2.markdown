@@ -66,7 +66,7 @@ categories:
 
 > $$x = 10^7(1-10^{-7})^{NapLog(x)}$$
 
-最终他给出的就是一张不满了密密麻麻数字可以正着查也可以反着查的对数表：
+最终他给出的就是一张布满了密密麻麻数字可以正着查也可以反着查的对数表：
 
 {% picture /downloads/images/2024_07/Napier's_Mirici_Logarithmorum_table_for_19_deg.agr.jpg --alt Napier's_Mirici_Logarithmorum_table_for_19_deg.agr.jpg %}\
 <small>图 3. 纳皮尔二十年的心血主要就是这张表</small>
