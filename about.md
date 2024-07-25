@@ -8,7 +8,7 @@ comments: true
 ---
 
 {% picture /downloads/images/about/wu_kong.jpg --alt < --img width="155" height="147" class="left" %}
-Lenciel，工龄略长。上过七年班，做过也许是最好的[存储](https://www.ibm.com/storage)，多半是最好的[基站](https://www.ericsson.com/)，绝对是最好的[虚拟机](http://www.myriadgroup.com/)；后面一直创业，弄过小而美，也在[大公司](https://baike.baidu.com/item/%E6%BB%A1%E5%B8%AE%E9%9B%86%E5%9B%A2/24525545?fr=aladdin)从几十人的研发团队发展到管千把人，最终两百多亿美金上了市。主要做 CTO，琢磨产品和研发，这几年也负责业务。[非常反对加班](https://www.sohu.com/a/311607781_256833)，但自己[不怎么睡](/2022/04/how-much-sleep-is-good-enough/)。对物质生活悟性一般，勉强能分清鲍鱼和鲤鱼，对各种技术和商业上的问题坚持刨根问底，因此据说敏捷和智力属性还比较高。加上运气还行，没怎么干砸过。
+Lenciel，工龄略长。上过七年班，做过也许是最好的[存储](https://www.ibm.com/storage)，多半是最好的[基站](https://www.ericsson.com/)，绝对是最好的[虚拟机](http://www.myriadgroup.com/)；后面一直创业，弄过小而美，也在[大公司](https://baike.baidu.com/item/%E6%BB%A1%E5%B8%AE%E9%9B%86%E5%9B%A2/24525545?fr=aladdin)把产研团队从几十号人发展到千把人，最终跟随公司两百多亿美金上了市。主要做 CTO，琢磨产品和研发，这几年也负责业务。[非常反对加班](https://www.sohu.com/a/311607781_256833)，但自己[不怎么睡](/2022/04/how-much-sleep-is-good-enough/)。对物质生活悟性一般，勉强能分清鲍鱼和鲤鱼，对各种技术和商业上的问题坚持刨根问底，因此据说敏捷和智力属性还比较高。加上运气还行，没怎么干砸过。
 
 目前在 [FITURE](https://www.fiture.com/cn/) ，做 COO。
 
