@@ -8,13 +8,13 @@ comments: true
 ---
 
 {% picture /downloads/images/about/wu_kong.jpg --alt < --img width="155" height="147" class="left" %}
-Lenciel，工龄略长。上过七年班，做过也许是最好的[存储](https://www.ibm.com/storage)，多半是最好的[基站](https://www.ericsson.com/)，绝对是最好的[虚拟机](http://www.myriadgroup.com/)；后面一直创业，弄过小而美，也在[大公司](https://baike.baidu.com/item/%E6%BB%A1%E5%B8%AE%E9%9B%86%E5%9B%A2/24525545?fr=aladdin)把产研团队从几十号人发展到千把人，最终跟随公司两百多亿美金上了市。主要做 CTO，琢磨产品和研发，这几年也负责业务。[非常反对加班](https://www.sohu.com/a/311607781_256833)，但自己[不怎么睡](/2022/04/how-much-sleep-is-good-enough/)。对物质生活悟性一般，勉强能分清鲍鱼和鲤鱼，对各种技术和商业上的问题坚持刨根问底，因此据说敏捷和智力属性还比较高。加上运气还行，没怎么干砸过。
+Lenciel，工龄略长。上过七年班，做过也许是最好的[存储](https://www.ibm.com/storage){:target="_blank"}，多半是最好的[基站](https://www.ericsson.com/){:target="_blank"}，绝对是最好的[虚拟机](http://www.myriadgroup.com/){:target="_blank"}；后面一直创业，弄过小而美，也在[大公司](https://baike.baidu.com/item/%E6%BB%A1%E5%B8%AE%E9%9B%86%E5%9B%A2/24525545?fr=aladdin){:target="_blank"}把产研团队从几十号人发展到千把人，最终跟随公司两百多亿美金上了市。主要做 CTO，琢磨产品和研发，这几年也负责业务。[非常反对加班](https://www.sohu.com/a/311607781_256833){:target="_blank"}，但自己[不怎么睡](/2022/04/how-much-sleep-is-good-enough/){:target="_blank"}。对物质生活悟性一般，勉强能分清鲍鱼和鲤鱼，对各种技术和商业上的问题坚持刨根问底，因此据说敏捷和智力属性还比较高。加上运气还行，没怎么干砸过。
 
-目前在 [FITURE](https://www.fiture.com/cn/) ，做 COO。
+目前在 [FITURE](https://www.fiture.com/cn/){:target="_blank"} ，做 COO。
 
-最大的爱好[是足球](/2017/05/back-to-zju-2/)，从中学到研究生毕业都是校队队员，打过几届飞利浦，运气好的两次还打到全国赛见识了一下。虽然生活在天朝，这项爱好显得不那么讲究，但目前仍每周参与，不离不弃，直到 2019 年被坏人弄断了十字韧带，~~出现了暂停~~现在我又开始踢了！
+最大的爱好[是足球](/2017/05/back-to-zju-2/){:target="_blank"}，从中学到研究生毕业都是校队队员，打过几届飞利浦，运气好的两次还打到全国赛见识了一下。虽然生活在天朝，这项爱好显得不那么讲究，但目前仍每周参与，不离不弃，直到 2019 年被坏人弄断了十字韧带，~~出现了暂停~~现在我又开始踢了！
 
-除此之外，爱音乐，不限风格；[爱读书](/docs/reading-list/)，不限题材；爱电影，不限短长。
+除此之外，爱音乐，不限风格；[爱读书](/docs/reading-list/){:target="_blank"}，不限题材；爱电影，不限短长。
 
 因为一个人感兴趣的事情越多，快乐的机会也越多，受命运摆布的可能性就越小。毕竟当他不能享受一种快乐时，还可以享受另一种。我们人类很容易有内省癖的倾向，眼前无数有趣的事物不去欣赏和研究，无数壮阔的事业不去开创和发展，却把目光投向一无所有的内心。
 
