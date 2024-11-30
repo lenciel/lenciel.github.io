@@ -214,7 +214,7 @@ task :prepare_deploy do
   Rake::Task[:integrate].execute
   Rake::Task[:generate].execute
   Rake::Task[:minify_html].execute
-  rm_rf [Dir.glob("#{deploy_dir}/node_modules"), Dir.glob("#{deploy_dir}/*.md"), Dir.glob("#{deploy_dir}/*.py"), Dir.glob("#{deploy_dir}/*.json"), Dir.glob("#{deploy_dir}/*.sh"), "#{deploy_dir}/plugins", "#{deploy_dir}/Rakefile", "#{deploy_dir}/Makefile", "#{deploy_dir}/gulpfile.js"]
+  rm_rf [Dir.glob("#{deploy_dir}/node_modules"), Dir.glob("#{deploy_dir}/*.md"), Dir.glob("#{deploy_dir}/*.py"), Dir.glob("#{deploy_dir}/*.json"), Dir.glob("#{deploy_dir}/*.sh"), "#{deploy_dir}/plugins", "#{deploy_dir}/Rakefile", "#{deploy_dir}/Makefile",  "#{deploy_dir}/pagefind.yml", "#{deploy_dir}/gulpfile.js"]
 
   puts "\n## Copying #{deploy_dir} to #{ftp_dir}"
   rm_rf Dir.glob("#{ftp_dir}")
@@ -222,6 +222,7 @@ task :prepare_deploy do
   cp_r "#{deploy_dir}/.", ftp_dir
   #rm_rf [Dir.glob("#{ftp_dir}/resized"), Dir.glob("#{ftp_dir}/assets"), Dir.glob("#{ftp_dir}/downloads")]
 
+  Rake::Task[:build_pagefind].execute
   #Rake::Task[:optimize_images].execute
   # Rake::Task[:copydot].invoke(source_dir, deploy_dir)
 end
@@ -368,4 +369,11 @@ desc "Remove Unused CSS"
 task :uncss do
   puts "## Removing Unused CSS"
   system("gulp uncss")
+end
+
+
+desc "Build Pagefind Index"
+task :build_pagefind do
+  puts "## Building Pagefind Index"
+  system("pagefind_extended")
 end

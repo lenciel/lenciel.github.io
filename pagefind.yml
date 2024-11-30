@@ -1,7 +1,6 @@
 force_language: cn
-site: _site
+site: _ftp
 glob: "*[!s]/**/*.{html}"
-output_dir: _pagefind
 exclude_selectors:
   - "#links"
   - "#recent-posts"
