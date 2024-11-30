@@ -81,3 +81,5 @@ subscribe_rss: /feed.xml
 feed:
   excerpt_only: true
 static_base: "https://cdn.lenciel.com"
+simple_search: false
+pagefind_search: true
