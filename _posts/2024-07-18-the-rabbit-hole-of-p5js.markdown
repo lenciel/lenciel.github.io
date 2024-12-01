@@ -6,7 +6,7 @@ title: "添了点儿讲数学的装备"
 date: 2024-07-18 09:56:38 +0800
 categories: 
 - rabbit-hole
-- tool-i-use
+- tools-i-use
 - blog
 - admin
 ---
