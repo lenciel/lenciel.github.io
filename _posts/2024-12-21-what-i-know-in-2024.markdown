@@ -1,0 +1,67 @@
+---
+layout: post
+comments: true
+description: "这个系列，专门记录一些偶然看见，不那么广为人知的奇闻..."
+title: "What I know in 2024, 😳"
+date: 2024-12-21 06:00:46 +0800
+categories:
+
+- memo
+- rants
+- what-i-know
+
+---
+
+> 这个系列，专门记录一些偶然看见，不那么广为人知的奇闻。时光隧道：
+> 
+> [2023年](/2023/12/what-i-know-in-2023/){:target="_blank"} / [2022年](/2022/12/what-i-know-in-2022/){:target="_blank"} / [2021年](/2021/12/what-i-know-in-2021/){:target="_blank"} / [2020年](/2020/12/what-i-know-in-2020/){:target="_blank"} / [2018年](/2018/12/what-i-know-in-2018/){:target="_blank"} / [2017年](/2017/12/what-i-know-in-2017/){:target="_blank"} / [2016年](/2016/12/what-i-konw-in-2016/){:target="_blank"}
+
+- 研究表明，包装随意的礼品带来的满意度更高，特别是在熟人之间送礼。因为漂亮的包装会提高预期，随意的包装会降低预期，从而更加容易获得好感。 - \[[Erick M. Mas](https://theconversation.com/the-science-of-gift-wrapping-explains-why-sloppy-is-better-128506){:target="_blank"}\]
+- 十多年前，一位名叫 Ernesto Gianol 的植物生态学家在树林里散步，发现了藤本植物 Boquila trifoliolata 会模仿其他植物叶子的形状，把自己伪装进其他植物。经过近十年的研究，科学家对于植物究竟是具备某种类似于「眼睛」的视觉能力，还是通过微生物菌落完成了这种复杂的复制，仍然存在分歧。 - \[[Benji Jones](https://www.vox.com/down-to-earth/2022/11/30/23473062/plant-mimicry-boquila-trifoliolata){:target="_blank"}\]
+- 来自荷兰、德国和瑞典的研究小组对数千名儿童进行了几年时间的跟踪，希望搞清楚屏幕时间对儿童发育的影响。这些儿童的屏幕时间主要分配给电视、游戏和社交网络，平均每天大概 2 个小时左右。研究发现，那些花在电子游戏上的时间比较多的人，智商发育较高，并且比所有儿童（包括不怎么使用屏幕的儿童）的平均水平高出了 2.5 分。- \[[David Nield](https://www.sciencealert.com/playing-video-games-has-an-unexpected-effect-on-kids-iq-says-study){:target="_blank"}\]
+- 有人发现车停得较远时，把车钥匙放在头旁边按按钮找车效果最好，放在腿边经常不起作用，于是上网求助。热心网友通过分析和实验，证明了，这是因为人的身体具有相当的导电性，可以通过电容耦合到射频源。于是人身体中的一个或多个腔体（可以是头部也可以是胸腔）会变成无线遥控器射频信号的谐振腔对信号进行放大（就像吉他弦下方的空心区域放大吉他的声音一样）。 - \[[Chris Mueller](https://physics.stackexchange.com/questions/101913/why-does-a-remote-car-key-work-when-held-to-your-head-body/){:target="_blank"}\]
+- 地震时，地底压力会突然释放，可以产生大概 1000 倍的压降。高温且富含矿物质的地下水中的液体会迅速增发并结晶出矿物质——这个被科学家称为「闪蒸（flash vaporization）」的过程，可以直接产生金矿。 - \[[Richard A. Lovett](https://www.nature.com/articles/nature.2013.12615){:target="_blank"}\]
+- 加拿大 Edmonton 的一名轻轨维修工于 1981 年被轻轨公司以年薪 38000 美金雇佣为售票机维修工后，每天都利用磁铁和天线组合的「鱼竿」从这些售票机里面偷走硬币。这种行为整整持续了 13 年，总价值 230 万美金的硬币被偷走，大概是整个轻轨实际售票收入的五分之一。 - \[[tinstaafl](https://www.nofreelunch.co.uk/blog/lrt-coin-scam/){:target="_blank"}\]
+- 科学家在一些树种上观察到了树冠羞避（crown shyness）现象：它们的树冠互不遮挡，形成一系列沟状开口。发生这种情况在同一树种间最为普遍，但是也在不同树种间也有发生。树冠羞避的具体原因存在多种假说，比如抑制虫害、趋同进化或者光感上的相互影响等。 - \[[维基百科](https://zh.wikipedia.org/zh-hans/%E6%A0%91%E5%86%A0%E7%BE%9E%E9%81%BF){:target="_blank"}\]
+- 1917 年一架英国水上飞机在进行演习时，撞上了岸边的无线电台的信号塔。信号塔高约 350 英尺，由格子钢梁组成，水上飞机的发动机被楔入大梁的间隙中，使飞机主体成直角嵌入信号塔并穿出，飞行员昏迷不醒。几个海军预备役军人在信号塔随时可能倒塌的情况下，勇敢地爬到飞机上，将飞行员用绳子固定，直到救援人员前来。 - \[[Brett Holman](https://airminded.org/2024/02/20/a-bad-day-at-the-office/){:target="_blank"}\]
+- 由历史学家和考古学家组成的国际团队在[一本新书](https://www.amazon.co.uk/Bones-contention-industrial-exploitation-modern/dp/9463914374/)中提出了一个研究结果：有大量人类的遗骨，特别是战场上埋在乱葬坑里面的那些，被大规模盗走并作为工业原材料用来生产为化肥和糖。 - \[[Andrew Curry](https://www.science.org/content/article/now-we-know-where-dead-went-did-grave-robbers-plunder-battlefields){:target="_blank"}\]
+- 密歇根大学研究人员对密歇根大学超过 3000 万份评分记录进行的分析发现，姓名字母排序靠后的学生成绩较低。尽管数据来自密歇根大学，但研究人员表示，研究结果可以推广到各个机构和课程。因为问题的根本原因是由学习管理系统的一个常见设计问题，即默认按学生姓名的字母顺序对作业进行排序造成的。 - \[[Jeff Karoub](https://record.umich.edu/articles/study-alphabetical-order-of-surnames-may-affect-grading/){:target="_blank"}\]
+- IBS 的多维碳材料中心主任 Rod RUOFF 领导的研究小组，联合蔚山国家科学技术研究所 (UNIST) 的研究生，在由镓、铁、镍和硅组成的液态金属合金里，用 1 个大气压和 1025°C 的温度，150 分钟内就培育出了钻石。 - \[[Mohammad Qusir Rather](https://charmingscience.com/forget-billions-of-years-researchers-have-grown-diamonds-in-just-150-minutes/){:target="_blank"}\]
+- 由于印度、伊朗和巴基斯坦秃鹫的急剧减少，传统的琐罗亚斯德教埋葬仪式变得越来越不可能进行。 - \[[Sonia Gulzeb](https://www.theguardian.com/world/article/2024/may/04/vulture-shortage-threatens-zoroastrian-burial-rites-india-iran-pakistan/){:target="_blank"}\]
+- 最近的一项研究估计，人类怀孕的过程总共需要 50,000 卡路里的热量。其中胎儿只消耗 4%，另外 96% 是女性自身身体所需的额外燃料。 - \[[Carl Zimmer](https://www.nytimes.com/2024/05/16/science/pregnancy-energy-costs.html){:target="_blank"}\]
+- 《科学》上发表了一个研究成果，称植物的刺有可能来自于一个被科学家称为「LONELY GUY」或「LOG」的单一基因组。研究人员随后利用 [CRISPR](https://cosmosmagazine.com/science/biology/what-is-crispr-and-what-does-it-mean-for-genetics/){:target="_blank"} 培育了几种无刺植物的转基因品种，包括西红柿和玫瑰。这种方法对于玫瑰来说特别有前途，因为对于大多数切花品种来说，劳动密集型的手动去除刺是常见的做法。 - \[[Ellen Phiddian](https://cosmosmagazine.com/nature/plants/thorns-prickles-roses-plants/){:target="_blank"}\]
+- 两百多年前，中国仍然占全世界人口的三分之一。目前，这个数据跌到了五分之一。 - \[[Our World in Data](https://ourworldindata.org/grapher/population?time=1100..latest&country=OWID_WRL%7ECHN){:target="_blank"}\]
+- 20 世纪 90 年代中期，一家果汁公司将 1,000 卡车约 12,000 吨废弃橙皮倾倒在哥斯达黎加的一个贫瘠牧场上，然后没有进行任何管理，这片荒凉的地方就恢复了生机，最终变成了一片繁茂茂盛的森林。 - \[[Peter Dockrill](https://www.sciencealert.com/how-12-000-tonnes-of-dumped-orange-peel-produced-something-nobody-imagined){:target="_blank"}\]
+- 作为人类感知到的颜色里为数不多的非光谱色（不是白色里分出来的颜色），紫色成为皇家专用的颜色主要是因为在古代获取它极其困难：需要打开蜗牛壳，提取产生紫色的粘液，将其在阳光下暴露精确的时间。每制造一盎司染料需要 25 万只蜗牛。 - \[[Evan Andrew](https://www.history.com/news/why-is-purple-considered-the-color-of-royalty){:target="_blank"}\]
+- 美国的一些基督教右翼正在串联，希望废除热力学第二定律。其主席布兰查德称，热力学第二定律是「一个令人深感不安的科学原理，威胁到我们的孩子对上帝的宇宙是一个仁慈和充满爱的地方的理解」，他正在带头发起一场全国性的草根运动，要求从高中物理教科书中删除该定律。该计划已经在堪萨斯州、俄克拉荷马州、密苏里州、田纳西州、佐治亚州和密西西比州的州立法机构中得到了大力支持。「这是美国，」田纳西州加特林堡的酿酒厂经营者、五个孩子的父亲杜安·柯林斯 （Duane Collins） 说，「在这个国家，我们有上帝赋予的权利来改变我们认为不是基督教的法律。我们团结一致，要求废除热力学第二定律，无论如何我们的声音都会被听到。这只是一个显而易见的事实，任何人说什么都无法改变它。」 - \[[the Onion](https://theonion.com/christian-right-lobbies-to-overturn-second-law-of-therm-1819565726/){:target="_blank"}\]
+- 阿森纳主教练阿尔特塔雇佣了一支专业的扒手团队，在一次晚宴上偷走了球员们的手机和钱包，以教导球员们要随时保持警觉，做好应对各种情况的准备。 - \[[James McNicholas](https://www.nytimes.com/athletic/5490775/2024/08/08/mikel-arteta-arsenal-rebuild/){:target="_blank"}\]
+- NASA 发布了一个用于放松的白噪声项目：火箭发动机壁炉。这个壁炉的主角是将阿尔忒弥斯一号火箭发射到月球的 RS-25 发动机。它发出的白噪声以低电平火箭轰鸣声为主，并增加了噼啪作响的柴火声。 - \[[NASA Rocket Engine Fireplace](https://www.youtube.com/watch?v=_cgTVTwu4nw){:target="_blank"}\]
+- 苏格兰的一个环保组织仅用两年时间就将 Perth 北部 90 亩区域内的大黄蜂数量增加了 116 倍。这是让越来越多的建筑区恢复自然环境的环保项目的一部分。 - \[[Katharine Hay](https://www.scotsman.com/hays-way/bumblebee-population-increases-116-times-over-in-remarkable-scotland-project-4882622){:target="_blank"}\]
+- 巴黎圣母院于 12 月 8 日重新向公众开放。尽管大教堂的部分修复工作仍将持续数年，但考虑到世界和法国本身的各种经济和社会层面的不稳定性，在火灾发生后仅仅 5 年就完成修复，仍然被广泛认为是一个奇迹。 - \[[Michael Kimmelman](https://www.nytimes.com/interactive/2024/12/05/arts/design/notre-dame-reopens-paris.html){:target="_blank"}\]
+- 凯瑟琳·拉塞尔（Catherine Russell） 37 年来一直在百老汇上演的谋杀悬疑剧《完美犯罪》（Perfect Crime）中扮演同一角色。现年 69 岁的拉塞尔每天 6 点半起床，凌晨 1 点睡觉，整个职业生涯只错过了四场演出，都是为了参加她兄弟姐妹的婚礼。她在每周日还教授一堂 90 分钟的表演课，使用《老友记》（Friends）和《实习医生格蕾》（Grey's Anatomy）中的场景作为课程。 - \[[Sarah Bahr](https://www.nytimes.com/2024/12/07/nyregion/catherine-russell-perfect-crime.html){:target="_blank"}\]
+- DeepMind 在《Nature》上发表了论文，证明其产品 GenCast 在提前 15 天的天气预报上取得了极大的进步，大大领先于世界上任何现有的对日常天气和致命风暴的最佳机制。 - \[[William J. Broad](https://www.nytimes.com/2024/12/04/science/google-ai-weather-forecast.html){:target="_blank"}\]
+- 美国波特兰机场扩建时采用 350 万块木板建造了屋顶顶棚，这些木板大部分来自距离机场 300 英里内的小供应商甚至是夫妻店。 - \[[Adrian Madlener](https://design-milk.com/portland-airport-grows-with-expansive-mass-timber-roof-canopy/){:target="_blank"}\]
+- 1561 年英国颁布了一项宪章授权剑桥大学逮捕和监禁任何「涉嫌作恶」的女性。在接下来近 350 年里，上万名女性被处以数天甚至数周的监禁，有些女孩儿仅仅是因为天黑后和剑桥的学生在学校附近散了散步。 - \[[Donna Ferguson](https://www.theguardian.com/society/2024/dec/07/cambridge-university-urged-to-apologise-over-jailing-of-thousands-of-evil-women-without-evidence-or-trial/){:target="_blank"}\]
+- 由于疫情期间大量的人脸识别系统都改成了主要使用眼睛和眼周的特征值进行识别，所以通过简单的戴帽子，或者戴上饰品，已经无法避免自己被识别。杜克大学计算机系的教授们认为，今天要避免自己被识别基本上只有一个办法：搞清楚哪里有摄像头，然后绝不出现在它覆盖的区域。 - \[[Kyle Barr](https://gizmodo.com/how-much-do-i-need-to-change-my-face-to-avoid-facial-recognition-2000533755/){:target="_blank"}\]
+- 欧洲航天局（European Space Agency）发射了两颗卫星执行 Proba-3 任务。它们装载了复杂的传感器和测距仪器，彼此能够同步绕地运行，并且按照毫米级精度来编队执行任务，比国际空间站的其他卫星的协同能力高出几个数量级。它们将首先被用来研究日冕：它很容易被太阳本身的眩光所掩盖，需要多个卫星同步从多个方位进行数据采集。 - \[[Stephen Clark](https://arstechnica.com/space/2024/12/two-european-satellites-launch-on-mission-to-blot-out-the-sun-for-science/){:target="_blank"}\]
+- 在过去的 50 年里，疫苗拯救了 1.5 亿儿童，差不多是英国总人口的两倍那么多。 - \[[Hannah Ritchie](https://ourworldindata.org/vaccines-children-saved){:target="_blank"}\]
+- 荷兰人花 24 美元买下曼哈顿岛，根据估算，该岛如今价值大约等于 3 万亿美元。在这 378 年里，每年的复合回报率是 7%。 - \[[Charlie Munger](https://en.wikipedia.org/wiki/Charlie_Munger){:target="_blank"}\]
+- 据 CNBC 报道，近 63% 的 Z 世代居民计划在假期进入实体店购物，而只有一半的人表示会使用零售商的手机程序和网站来购物。大约一半的 Z 世代购物者还选择主动避开亚马逊，而婴儿潮一代的这一比例为 20%，千禧一代的这一比例为 40%。 - \[[Sam Barsanti](https://thehustle.co/news/young-people-are-returning-to-their-rightful-stomping-grounds-the-mall){:target="_blank"}\]
+- Balkonkraftwerk 是一个德语单词，意思是「阳台发电厂」，指人们挂在阳台上以产生额外家庭能源的低成本太阳能电池板。它们占地仅 1.5 平米，需易于安装，并且可以节省一个典型家庭 30% 的电费，目前已经服务了 150 万户德国家庭。- \[[Stephen Burgen](https://www.theguardian.com/environment/2024/dec/18/if-a-million-germans-have-them-there-must-be-something-in-it-how-balcony-solar-is-taking-off){:target="_blank"}\]
+- 在法国北部的一次考古挖掘中，一群学生志愿者在迪耶普附近的一个高卢村庄遗迹中发现了一个两百年前的玻璃瓶，里面装着一张字条。在打开玻璃瓶之后，他们发现，这是一名叫 Féret 的考古学家留下的，目的就是让以后来考古的人知道，自己也在这里干过同样的事情。- \[[Hugh Schofield](https://www.bbc.com/news/articles/c5yj7kg3zd1o){:target="_blank"}\]
+- 今年，研究人员在理解数千个神经元的快速放电（称为「尖锐波波纹」）如何形成记忆方面取得了进展。伦敦大学学院的丹尼尔·本多（Daniel Bendor）研发发现，当我们有某种体验时，神经元会按照一定的顺序放电，就好像它们在敲击「钢琴上的旋律」一样。在休息和睡眠期间，海马体会以更快的速度重播该序列数百或数千次，产生的尖锐波波纹最终被固化为长期记忆。- \[[Hannah Waters](https://www.quantamagazine.org/the-year-in-biology-20241218/){:target="_blank"}\]
+- 印度选手古克什经过 14 轮较量，战胜了中国选手，卫冕棋王丁立人，成为历史上最年轻（18 岁零 195 天）的世界棋王。古克什七岁开始学棋，四年后停止了学业，all in 国际象棋。他的父亲也辞去了工作，与古克什一起旅行参加各种比赛。- \[[LiChess](https://lichess.org/@/Lichess/blog/wcc-2024-round-14-gukesh-becomes-the-youngest-world-champion-in-history/cDggdNZw/){:target="_blank"}\]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
