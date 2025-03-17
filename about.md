@@ -63,7 +63,7 @@ Brevity is for the weak. JUST DO IT!
 
 #### **假装懂点管理**
 
-*   <a href="/2022/04/how-to-manage-=your-manager-by-classification/" target="_blank">通过画像管理你的上级</a>
+*   <a href="/2022/04/how-to-manage-your-manager-by-classification/" target="_blank">通过画像管理你的上级</a>
 *   <a href="/2021/06/what-i-learn-as-a-p5-growth-manager/" target="_blank">Two Months in Growth</a>
 *   <a href="/2021/03/how-to-work-as-an-architect-3/" target="_blank">如何干好架构师(3)</a>
 *   <a href="/2021/03/how-to-work-as-an-architect-2/" target="_blank">如何干好架构师(2)</a>
