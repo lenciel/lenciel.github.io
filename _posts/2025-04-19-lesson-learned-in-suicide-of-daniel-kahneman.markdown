@@ -22,7 +22,7 @@ Kahneman 的回复来得很快。他说，不行啊，我 3 月 27 号就要去�
 
 Kahneman 说只要不讨论他为啥自杀，那就聊聊吧。
 
-在《纽约时报》上读到这个应该是 Kahneman 人生最后一次访谈的[相关报道](https://www.nytimes.com/2025/04/14/opinion/daniel-kahneman-death-suicide.html)时，已经按计划结束了自己的生命{% sidenote 'sn-id-0' '他跟两位教授约定，必须自己死后才能公布这个访谈。' %}。
+在《纽约时报》上读到这个应该是 Kahneman 人生最后一次访谈的[相关报道](https://www.nytimes.com/2025/04/14/opinion/daniel-kahneman-death-suicide.html)时，他已经按计划结束了自己的生命{% sidenote 'sn-id-0' '他跟两位教授约定，必须自己死后才能公布这个访谈。' %}。
 
 这个故事给我的冲击感有几个：
 
