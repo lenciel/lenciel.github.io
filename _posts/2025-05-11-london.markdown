@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-description: "摘要"
+description: "...也许这是因为他和父亲有过漫画《父与子》里那样，仿佛永远不会被庸碌生活夺走的近乎于调皮的脉脉温情，而父母的离异让这一切变成了两面镜子间晃动的烛火..."
 title: "伦敦"
 date: 2025-05-15 15:25:01 +0800
 categories: 
