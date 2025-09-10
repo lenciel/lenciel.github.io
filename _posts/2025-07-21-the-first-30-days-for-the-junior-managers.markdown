@@ -14,9 +14,9 @@ categories:
 
 从个人贡献者（IC）到基层管理者，是很多人职业生涯中最重要但可能也是最困难的一次切换。
 
-不管是经过认真准备（耐心等待时机，学习[管理知识](/docs/reading-list/#%E7%AE%A1%E7%90%86)和技巧），还是突然天降大任，刚刚被任命为管理者，往往踌躇满志之外，还有点儿焦虑甚至 [Impostor Syndrome](https://zh.wikipedia.org/zh-hans/%E5%86%92%E5%90%8D%E9%A0%82%E6%9B%BF%E7%97%87%E5%80%99%E7%BE%A4)。
+不管是经过认真准备（耐心等待时机，学习[管理知识](/docs/reading-list/#%E7%AE%A1%E7%90%86)和技巧），还是突然天降大任，刚刚被任命为管理者，往往踌躇满志之外，还有点儿焦虑甚至 [Impostor Syndrome](https://zh.wikipedia.org/zh-hans/%E5%86%92%E5%90%8D%E9%A0%82%E6%9B%BF%E7%97%87%E5%80%99%E7%BE%A4){:target="_blank"}。
 
-这很正常，之前也聊过一点[相关内容](/2018/05/tips-for-junior-managers/)，本文再介绍一些在[最初几个月](https://lenciel.com/2019/12/the-first-90-days/)基层管理者可以做的自我调整。
+这很正常，之前也聊过一点[相关内容](/2018/05/tips-for-junior-managers/){:target="_blank"}，本文再介绍一些在[最初几个月](https://lenciel.com/2019/12/the-first-90-days/){:target="_blank"}基层管理者可以做的自我调整。
 
 把它当个参考，在工作中大胆尝试即可：因为管理是个实践科学，每个人会有自己的风格和上下文。
 

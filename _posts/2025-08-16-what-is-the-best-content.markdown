@@ -9,7 +9,7 @@ categories:
 - business
 ---
 
-最近连续看了 Quartz 易主后 Zach Seward 无限唏嘘的[分手长文](https://www.zachseward.com/what-was-quartz/)，和 Medium 现任老板 Tony Stubblebine 讲带领公司绝处逢生的[详尽内幕](https://medium.com/the-coach-life/fell-in-a-hole-got-out-381356ec8d7f)。
+最近连续看了 Quartz 易主后 Zach Seward 无限唏嘘的[分手长文](https://www.zachseward.com/what-was-quartz/){:target="_blank"}，和 Medium 现任老板 Tony Stubblebine 讲带领公司绝处逢生的[详尽内幕](https://medium.com/the-coach-life/fell-in-a-hole-got-out-381356ec8d7f){:target="_blank"}。
 
 两人有类似的槽点，却有相反的态度。
 
@@ -35,7 +35,7 @@ Zach 认为自己付出心血的 Quartz 在被收购后，从高质量媒体变�
 
 抛开这是不是个悲哀{% sidenote 'sn-id-1' '按这个路子下去，你们人类会不会从某天开始就不看电影和小说了。' %}不说，从生意角度，这些短平快的直给在用户决策中的占比越来越不可忽视，绝不仅仅是在内容行业。
 
-Bloomberg 最近就有篇分析 Hampton Inn 为何在美国酒店业独领风骚的[好文章](https://www.bloomberg.com/news/features/2025-06-10/why-hampton-inn-is-the-hotel-brand-to-beat)，说早餐可以 DIY 又热又甜的华夫饼，才是它致胜关键，但：
+Bloomberg 最近就有篇分析 Hampton Inn 为何在美国酒店业独领风骚的[好文章](https://www.bloomberg.com/news/features/2025-06-10/why-hampton-inn-is-the-hotel-brand-to-beat){:target="_blank"}，说早餐可以 DIY 又热又甜的华夫饼，才是它致胜关键，但：
 
 > Hamptonality may come and go, but waffles are forever. 
 
