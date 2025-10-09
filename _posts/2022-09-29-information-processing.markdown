@@ -26,9 +26,9 @@ categories:
 
 - 用引号来表示「完全匹配」（默认 Google 会用空格把关键字拆开加权重去找）
 - 用减号去掉信噪比非常低的网站（比如百度百科、知乎、CSDN...）
-- 用「site:」来指定某个网站（比如维基百科）
-- 用「filetype:」来指定文件格式（比如 ppt、pdf 通常是严肃的产物）
-- 用「before:YYYY-MM-DD」或者「after:YYYY-MM-DD」或者 both，来限定时间区域（比如 after:2019 来搜索最近两年的结果）
+- 用`site:`来指定某个网站（比如维基百科）
+- 用`filetype:`来指定文件格式（比如 ppt、pdf 通常是严肃的产物）
+- 用`before:YYYY-MM-DD`或者`after:YYYY-MM-DD`或者 both，来限定时间区域（比如 `after:2019` 来搜索最近两年的结果）
 
 相比之下，星号用来通配等等语法，我用得不那么多。**如果想要探索更多 Google 支持的语法，其实可以看它的**[**文档**](https://support.google.com/websearch/answer/134479?hl=en){:target="_blank"}**。**
 
@@ -61,17 +61,24 @@ RSS 是从 Blog 时代攒过来的。看到觉得有点意思但还没有那么�
 1.  我自己经常也写代码，纯文本的，有版本控制（其实也就有了分布式存储），可以用上 VSCode 支持的各种搜索语法的笔记对我来说是最方便的；
 2.  笔记本身，除开基础的 markdown 语法，只要对图片和双向链接支持得好，对我就足够了：而实际上 foam 提供的远不止这些。
 
-另外，因为我自己用 Alfred 做 launcher，所以我在里面定义了一些快捷模板，来进一步增强。
+另外，因为我自己用 Alfred 做 launcher，所以我在里面定义了一些快捷模板，来进一步增强：
+
+{% picture /downloads/images/2023_05/alfred_snippets.webp --alt alfred_snippets.webp %}\
+<small>图1. Alfred 的 Snippets</small>
 
 所以，典型情况下，我开始一个 foam 里面正式的笔记：
 
-- 先 'zid' 生成一个用 {date:yyyyMMdd}{time:HHmmss} 生成的 14 位的 ID 并复制；
-- 然后 'zk' 会自动生成模板定义的笔记框架，并且把刚才复制的 ID 填进去；
+<video playsInline autoplay loop muted>
+    <source src="{{ site.static_base }}/downloads/video/vs_foam.mp4" type="video/mp4">
+    <p>Your browser doesn't support this embedded video.</p>
+</video>
+
+- 先 `zid` 生成一个用 `{date:yyyyMMdd}{time:HHmmss}` 生成的 14 位的 ID 并复制；
+- 然后 `zk` 会自动生成模板定义的笔记框架，并且把刚才复制的 ID 填进去；
 - 笔记主体完成后：
     - metadata 里面的 tag 用来做分类
     - Links 里面是跟这个比较关联的笔记的入口
-- 那个14位的 ID 因为开头是年月日，比较好在我做关联的时候用「 \[\[ 」来唤起
-    
+- 那个 14 位的 `ID` 因为开头是年月日，比较好在我做关联的时候用「 \[\[ 」来唤起
 
 **3）检索**
 
