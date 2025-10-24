@@ -10,6 +10,7 @@ categories:
 - tools-i-use
 - RSI
 - ergonomics
+- 1KB
 ---
 
 今天是 1024，按传统我该跟大家[交流点儿经验](/2019/10/how-to-treat-your-30-years-career-as-a-product/){:target="_blank"}当作礼物。这次就聊聊我用的键盘吧：毕竟程序员和其他很多工种比，大量使用键盘是个突出的特点。
