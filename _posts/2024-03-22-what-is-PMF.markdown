@@ -45,7 +45,7 @@ YC 统计，有一半左右的公司会倒在这个阶段（剩下的一般会�
 
 当然，如果是成熟点儿的创业者，肯定是两个步骤[综合考虑](/2013/07/market-research/){:target="_blank"}的。
 
-另外一个有点意思的事情是，最近两年，好像有挺多的人出来抨击精益创业（[1](https://rbefored.com/the-lean-startup-is-outdated-drop-everything-that-comes-from-it-9bebdd328bfd?gi=05158ec9970a){:target="_blank"}、[2](https://fullstackresearcher.substack.com/p/the-lean-startup-is-a-terrible-book){:target="_blank"}、[3](https://medium.com/swlh/its-time-to-stop-following-the-lean-startup-movement-f9300e5c7d5e)）{:target="_blank"}。我自己觉得，除开有一些人有前面我说的对 MVP 的误会之外，还有一个很重要的原因是软件的开发和部署成本大幅度降低，让 MVP 变得没有门槛很低了。
+另外一个有点意思的事情是，最近两年，好像有挺多的人出来抨击精益创业（[1](https://rbefored.com/the-lean-startup-is-outdated-drop-everything-that-comes-from-it-9bebdd328bfd?gi=05158ec9970a){:target="_blank"}、[2](https://fullstackresearcher.substack.com/p/the-lean-startup-is-a-terrible-book){:target="_blank"}、[3](https://medium.com/swlh/its-time-to-stop-following-the-lean-startup-movement-f9300e5c7d5e){:target="_blank"}）。我自己觉得，除开有一些人有前面我说的对 MVP 的误会之外，还有一个很重要的原因是软件的开发和部署成本大幅度降低，让 MVP 变得没有门槛很低了。
 
 也就是说，十年前，MVP 往往是上线的第一个版本，然后根据用户的反馈，再慢慢进行迭代，因为软件开发和部署的成本那么低。
 
