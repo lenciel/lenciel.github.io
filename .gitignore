@@ -3,3 +3,9 @@ _site
 _stash
 .*-cache
 .jekyll-metadata
+/_ftp
+/_site_bak
+/node_modules
+/lenciel.com.csr
+/lenciel.com.key
+/lenciel.crt
