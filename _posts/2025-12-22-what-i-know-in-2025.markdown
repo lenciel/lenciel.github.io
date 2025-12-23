@@ -1,0 +1,65 @@
+---
+layout: post
+comments: true
+description: "这个系列，专门记录一些偶然看见，不那么广为人知的奇闻..."
+title: "What I know in 2025, 😳"
+date: 2025-12-22 11:00:46 +0800
+categories:
+
+- memo
+- rants
+- what-i-know
+
+---
+
+> 这个系列，专门记录一些偶然看见，不那么广为人知的奇闻。时光隧道：
+> 
+> [2024年](/2024/12/what-i-know-in-2024/){:target="_blank"} / [2023年](/2023/12/what-i-know-in-2023/){:target="_blank"} / [2022年](/2022/12/what-i-know-in-2022/){:target="_blank"} / [2021年](/2021/12/what-i-know-in-2021/){:target="_blank"} / [2020年](/2020/12/what-i-know-in-2020/){:target="_blank"} / [2018年](/2018/12/what-i-know-in-2018/){:target="_blank"} / [2017年](/2017/12/what-i-know-in-2017/){:target="_blank"} / [2016年](/2016/12/what-i-konw-in-2016/){:target="_blank"}
+
+- 全球农场中的 51%的动物是虾。 - \[[Andrés Jiménez Zorrilla](https://asteriskmag.com/issues/09/yes-shrimp-matter){:target="_blank"}\]
+- 苏尼·威廉姆斯（Suni Williams）和布奇·威尔莫尔（Butch Wilmore）于 2024 年 6 月前往太空执行为期八天的任务。但由于运载他们的波音星际飞船（Boeing Starliner）出现故障，他们一直被困在国际空间站，将最少滞留到 2025 年的 3 月。 - \[[Le Monde with AFP](https://www.lemonde.fr/en/united-states/article/2024/12/18/nasa-astronauts-already-stuck-in-the-iss-for-six-months-have-to-stay-until-at-least-end-of-march_6736210_133.html?ref=labnotes.org){:target="_blank"}\]
+- 谢菲尔德大学和巴基斯坦 COMSATS 大学的科学家在研究如何治愈小伤口时，注意到将脱氧核糖核酸的脱氧核糖做成凝胶涂在伤口周围后，皮毛生长速度比其他部位的要快很多。随后科学家们进行了一系列跟踪实验，确信自己偶然发现了一种治疗 40% 人类都有的遗传性脱发的新疗法。 - \[[Carly Cassella](https://www.sciencealert.com/surprise-hair-loss-breakthrough-a-sugar-gel-triggers-robust-regrowth){:target="_blank"}\]
+- 与我们想象中的相反，研究发现，沃尔玛对其所在社区产生的负面影响很大。当沃尔玛进驻城镇时，它利用低价来削弱竞争对手，成为特定地区的主导者，迫使当地的夫妻杂货店和区域连锁店破产。而曾经向这些商店供货的当地农民、面包师和制造商也会逐渐被沃尔玛的国内和国际供应商所取代。最终，带来失业率平均增加 3% ，贫困人口增加 8%。 - \[[Carl Godfrey](https://www.theatlantic.com/ideas/archive/2024/12/walmart-prices-poverty-economy/681122/){:target="_blank"}\]
+- 世界上价值最高的沉船，是 1708 年 6 月沉没的圣荷西号。这艘 64 门炮、三桅的西班牙旗舰携带了多达 200 吨的宝藏，包括黄金、白银和未切割的宝石，按今天的标准估计其现代价值高达 170 亿美元。在 6 月 8 日，这艘帆船在西班牙王位继承战争期间不幸遭遇了一支由五艘英国战舰组成的编队。目前这艘船打捞的权限是哥伦比亚和西班牙政府之间持续激烈争论的核心。 - \[[Andrew Paul](https://www.popsci.com/science/worlds-richest-shipwreck-coins/){:target="_blank"}\]
+- 日经新闻发现，8 个国家的多篇学术论文，包含隐藏的词，要求 AI 工具给予论文好评。它们的 PDF 文件里面，有隐藏的小字或白色文本，人类不容易看见，但是 AI 能读到。这背后是现在 AI 往往用来筛选论文，或者总结论文内容，这些提示就是针对这种情况下的「注入攻击」。 - \[[新浪财经](https://finance.sina.com.cn/tech/roll/2025-07-02/doc-infeasqe5673868.shtml/){:target="_blank"}\]
+- 杜克大学进化生物学和全球健康教授赫尔曼·庞策（Herman Pontzer）表示，他和一个国际合作团队发现，不同生活方式的人，每天总卡路里消耗实际上非常相似。他们比较了来自 34 个不同国家和文化的人们的每日总卡路里消耗，这些参与者的背景从低肥胖率的狩猎采集者和农业人口，到在欧洲和美国等地从事更久坐工作的肥胖率普遍较高的人群。令人惊讶的是，如果里面的部分人每天在体育活动和锻炼上消耗更多的能量，过一段时间后，他们的身体会调整，减少在其他任务上消耗的能量。这一发现提供了有力证据，饮食——而非缺乏锻炼——是我们现代世界体重增加和肥胖的主要驱动因素。 - \[[Maria Godoy](https://www.npr.org/2025/07/24/nx-s1-5477662/diet-exercise-obesity-nutrition/){:target="_blank"}\]
+- NBA 球员雷吉·米勒退役后参加了山地车运动。他组建了自己的「BOOMBABY」车队，刻苦训练，在 60 岁高龄仍然在 82 名专业选手中排名 15。 - \[[Kevin Baxter](https://www.latimes.com/sports/story/2025-09-12/reggie-miller-mountain-biking-ucla-pacers/){:target="_blank"}\]
+- 每 40000 只蜗牛中就有一只其壳的螺旋在左侧，这使得它们非常酷，但也注定了它过着禁欲和不育的生活：蜗牛是雌雄同体的，它们的生殖器位于头部两侧，意味着右旋蜗牛和左旋蜗牛之间的交配是不可能的。只有找到另一只超级稀有的蜗牛时，它才能完成繁殖。 - \[[Catherine Woulfe](https://www.nzgeo.com/stories/lets-find-a-mate-for-ned/){:target="_blank"}\]
+- 逐渐有约会软件用户上报自己被聊天对象使用 ChatGPT 等工具伪装出来的机智博学欺骗，在见面发生关系之后发现对方其实并不是聊天中表现出来的样子，他们称这种受骗是「Chatfished」。 - \[[Alexandra Jones](https://www.theguardian.com/lifeandstyle/2025/oct/12/chatgpt-ed-into-bed-chatfishing-on-dating-apps/){:target="_blank"}\]
+- 1977 年 9 月 5 日，美国发射宇宙飞船「旅行者 1 号」。它是目前飞行距离最远的飞行器，已经飞离了太阳系。根据计算，2026 年 11 月 13 日，它将距离地球「1 光日」（光在一天内传播的距离），成为首个达到这个距离的人造飞行器。届时，旅行者 1 号将距离地球 259 亿公里，这段距离光只需要 1 天，它耗时近 50 年。在当前位置，地球的指令到达它需要 23 小时 29 分 27 秒，过了 1 光日，就要第二天才能收到。 - \[[James Felton](https://www.iflscience.com/on-november-13-2026-voyager-will-reach-one-full-light-day-away-from-earth-81432){:target="_blank"}\]
+- 去年，互联网上机器人流量第一次超过了人类流量。根据一份报告，自动化系统在 2024 年占所有网络流量的 51%，而且 AI 生成的文章数量也在 2024 年底首次超过了人类撰写的文章。 - \[[Jason Nelson](https://decrypt.co/348837/dead-internet-theory-gains-traction-ai-content-surges-online){:target="_blank"}\]
+- 根据观测数据，随着全球变暖，大西洋环流正在减弱。这个环流是一条巨大的传送带，将温暖的海水从赤道向北输送，为大西洋北部带来温暖的气候。一旦这个洋流消失，冰岛的气温将大幅下降，最坏的情况下可能会被冰川包围，真的变成「冰的岛」，也就没法住人了。 - \[[August M](https://www.dagens.com/news/iceland-declares-ocean-current-instability-a-national-security-risk){:target="_blank"}\]
+- 一克硅胶的表面积和两个篮球场差不多大。 - \[[Spencer Wright](https://www.scopeofwork.net/silica-gel/){:target="_blank"}\]
+- 英国第一起因为 AI 创作的「大桥因地震受损」图片造成的火车停运在发生后，引起了社会各界对今后这类事件如何避免的普遍担心。 - \[[Zoe Toase](https://www.bbc.com/news/articles/cwygqqll9k2o){:target="_blank"}\]
+- 1895 年，东京从德国的 AEG 公司购买了发电机组，频率为 50 赫兹。一年后，大阪从通用电气公司购买了发电机组，频率为 60 赫兹。130 年后，这个国家仍然分为两个电网，分别以不同的频率运行。 - \[[Alice Gordenker](https://www.japantimes.co.jp/news/2011/07/19/reference/japans-incompatible-power-grids/){:target="_blank"}\]
+- 蒸汽机是在 1700 年发明的。随后的 200 年里，蒸汽机经历了稳步改进，每十年性能提升 20%。在最初的 120 年里，马根本没有任何察觉。然后，在 1930 年至 1950 年间，美国的马数量减少了 90%。人们从 1985 年开始跟踪计算机象棋。而在接下来的 40 年里，计算机象棋每年会提高 50 分的等级分。这意味着到 2000 年，一名人类特级大师在与计算机对弈时可以赢得 90%的比赛。但十年后，同样的人类特级大师在与计算机对弈时会输掉 90% 的比赛。 - \[[Andy Jones](https://andyljones.com/posts/horses.html/){:target="_blank"}\]
+- 总部位于旧金山的 Marathon Fusion 初创公司专注于使用核聚变来发电，该公司声称同样的过程可以用来将汞转化为黄金：汞-197 是一种不稳定的同位素，然后在大约 64 小时内衰变成金属唯一的稳定同位素——金-197。但有个问题是，由于反应过程可能会导致同时生成不稳定的金同位素，这种办法得到的金可能需要储存 14 到 18 年才能被完全认定为安全。 - \[[Tom Wilson](https://www.ft.com/content/06f91e0d-3007-40bd-b785-86fef4890809/){:target="_blank"}\]
+- Terry Ball 通过帮助那些办公楼没有租出去的业主避税，获利数百万英镑，并最终被英国政府查获。他的手法是在这些办公楼里放置装有蜗牛和生菜的塑料桶，使得这些办公楼法律上被定义为农场，从而根据英国法律免税。 - \[[Jim Waterson](https://www.londoncentric.media/p/terry-ball-the-snail-farmer-his-mafia){:target="_blank"}\]
+- 由于今年 10 月 1 日，OpenAI 公司同时与三星和 SK 海力士签署了协议，买断了全球 40%的内存供应，引起了其他厂商的恐慌，现在的内存价格是上半年的三倍。 - \[[Moore's Law Is Dead](https://www.mooreslawisdead.com/post/sam-altman-s-dirty-dram-deal){:target="_blank"}\]
+- 总部位于新加坡的人工智能初创公司 Manus 在成立仅八个月后，ARR 就达到了 1 亿美元，使其成为世界上实现这一里程碑速度最快的公司。自发布 Manus 1.5 版本以来，Manus 的月环比增长率一直保持在 20%以上。 - \[[Investing.com](https://in.investing.com/news/company-news/manus-ai-startup-hits-100m-in-arr-fastest-to-reach-milestone-93CH-5157774){:target="_blank"}\]
+- 上海规模最大、科技含量最高的数智草莓植物工厂目前已正式亮相并投产，工厂位于“草莓之乡”青浦区白鹤镇，占地面积 11 亩。该工厂集成垂直立体种植、智能光照调控、精准水肥管理等技术，使得草莓在整个生长周期内能够稳定生产，可实现 365 天不间断生产，年总产量可达 45-50 吨，年亩产量和产值分别达到传统地栽模式的 10 倍和 30 倍以上。 - \[[李佳蔚](https://m.thepaper.cn/newsDetail_forward_32128100){:target="_blank"}\]
+-  苹果公司设计主管 Alan Dye 最新辞职加入 Meta 公司，不少人在网络上表示，两家公司的平均智商都提高了。 - \[[John Gruber](https://daringfireball.net/2025/12/bad_dye_job){:target="_blank"}\]
+-  凭借《草原烈火：劳拉的美国梦》荣获 2018 年普利策传记奖的作家 Caroline Fraser 推出了新作——《[Murderland: Crime and Bloodlust in the Time of Serial Killers](https://www.amazon.com/Murderland-Crime-Bloodlust-Serial-Killers/dp/0593657225){:target="_blank"}》。这本书主要探讨了长期环境污染，特别是铅中毒，如何导致大量年轻人的前额叶发育出现问题，从而成为了连环杀手。 - \[[渣渣郡](https://www.163.com/dy/article/K4L44ITU051188EA.html){:target="_blank"}\]
+-  艺术家 Miya Ando 在《A Dictionary of 2,000 Japanese Rain Words》中收录了 2000 个和雨有关的日语词汇，并为里面的 100 多个配了插图。比如 Shinotsukuame，表示雨势猛烈如同新宿竹林的大雨，比如 Kōu，表示在你等待的时候恰好降临的雨。 - \[[Miya Ando](https://thereader.mitpress.mit.edu/20-japanese-words-for-rain/){:target="_blank"}\]
+-  当一只猩猩往自己耳朵里面插入草根后，通过十来年时间，这个行为变成了整个种群里很多猩猩都会效仿的「时尚行为」。科学家认为这说明了社会心理学中的很多东西在动物中也成立，比如将鲑鱼戴在头上的虎鲸也会被同类模仿。 - \[[Sheena Goodyear](https://www.cbc.ca/radio/asithappens/chimpanzee-grass-butt-1.7583207/){:target="_blank"}\]
+-  科学家一直认为帕金森病与基因相关，如今有新观点认为其可能与水有关，因为美国毒理学家 De Miranda 经过多年研究研究发现，多达 90%的病例是由环境中的化学物质特别是四氯乙烯等引起的。 - \[[David Ferry](https://www.wired.com/story/scientists-thought-parkinsons-was-in-our-genes-it-might-be-in-the-water/){:target="_blank"}\]
+-  美国国务卿 Marco Rubio 下令停止国务院官方使用非衬线字体 Calibri ，回归 14 号的 Times New Roman 衬线字体。Calibri 字体于 2023 年拜登时代被官方采用，因为它「柔和现代，字形更简洁，间距更宽，字母更容易辨认，因此通常被认为更便于阅读障碍人士使用」。Marco Rubio 认为衬线字体「带有传统、正式和仪式的意味」，并补充说，白宫、最高法院和其他州和联邦政府机构都使用衬线字体，空军一号的侧面也使用了衬线字体。 - \[[Michael Crowley & Hamed Aleaziz](https://www.nytimes.com/2025/12/09/us/politics/rubio-state-department-font.html){:target="_blank"}\]
+-  去年，英国作家协会的一项调查发现，20%的虚构作家和 25%的非虚构作家使用人工智能生成其部分作品。在《Business Insider》、《Wired》等严肃媒体上，人们发现了一些充斥着奇怪虚假内容的文章，这些文章被认为是人工智能生成的，但可能还有成百上千篇类似的文章只是没有被读者发现。 - \[[Sam Kriss](https://www.nytimes.com/2025/12/03/magazine/chatbot-writing-style.html){:target="_blank"}\]
+-  由于过拟合现象的存在，一些词语在人工智能写作某些话题的时候特别容易出现。比如「delve（深入探究）」——尤其是其词形变化「delves」——是一个极端的例子。2022 年，该词在 PubMed 收录的每 1 万篇摘要中大约出现一次。到 2024 年，其使用率飙升了 2700%。 - \[[Sam Kriss](https://www.nytimes.com/2025/12/03/magazine/chatbot-writing-style.html){:target="_blank"}\]
+-  牛津词典的 2025 年度词汇是 [rage bait](https://corp.oup.com/news/the-oxford-word-of-the-year-2025-is-rage-bait/){:target="_blank"}，剑桥词典选择了 [parasocial](https://www.cambridge.org/news-and-insights/parasocial-is-cambridge-dictionary-word-of-the-year-2025){:target="_blank"}，柯林斯词典选择了[vibe coding](https://blog.collinsdictionary.com/language-lovers/collins-word-of-the-year-2025-ai-meets-authenticity-as-society-shifts/){:target="_blank"}，韦氏词典选择了 [slop](https://www.merriam-webster.com/wordplay/word-of-the-year){:target="_blank"}，[James Asher](https://open.substack.com/users/299456377-james-asher){:target="_blank"} 则选择了 swazticar 和 Mar-a-Lago face 等。 - \[[Lenciel](https：//lenciel.com){:target="_blank"}\]
+-  日本神户大学的生物学家杉浦真司发现日本本土池塘蛙不怕可以蛰死体型大过自己几倍的老鼠甚至人类的杀人蜂的毒刺。尽管嘴巴、舌头甚至眼睛都被反复蜇伤，青蛙们依然津津有味地吞食着大黄蜂。这是两栖动物拥有铁胃的一个新例子：之前人们发现两种美洲蟾蜍能够吞食绒蚁——这种昆虫因其厚实的骨骼和剧毒的蜇刺而令大多数动物避之不及。另一组研究人员发现，一种南美蟾蜍——黄蟾蜍（Rhinella icterica）——能够捕食巴西黄蝎，并且不受这种蛛形纲动物剧毒的影响。 - \[[Jack Tamisiea](https://www.nytimes.com/2025/12/04/science/frog-eating-murder-hornet.html){:target="_blank"}\]
+-  2024 年地震学家发布了一篇论文，论证因为气候变化造成格陵兰岛的山体滑坡，引发了高达 200 米的海啸，海啸每 90 秒在峡湾中来回翻腾，像跳动的心脏一样撞击着峡湾的岩壁，造成了全球可以观测到的，持续了 9 天的地震波。 - \[[Kristian Svennevig](https://www.science.org/doi/10.1126/science.adm9247){:target="_blank"}\]
+-  神经科学研究表明，随着年龄增长，大脑会经历一个称为「突触修剪」的过程。非必要的神经通路会被修剪掉。这造成很多人上了年纪之后变得「无法再忍」。 - \[[Kristian Svennevig](https://www.science.org/doi/10.1126/science.adm9247){:target="_blank"}\]
+-  《塞尔达传说：旷野之息》作为人类历史上最被好评的游戏之一，好到什么程度呢？ 一些人他们从来不玩电子游戏，却为了玩这款游戏专门买了一台游戏机，并且在通关之后把所有设备又再卖掉。 - \[[Kristian Svennevig](https://www.science.org/doi/10.1126/science.adm9247){:target="_blank"}\]
+- 日本女子偶像团体 KATACOTO*BANK 的成员东条百百花（Tojo Momoka），因为在社交媒体上发布了过和男友一起出去庆祝生日的照片，被公司处罚，并要求以后和该男生保持一定距离，并且在处罚生效的一年内，每天晚上睡前都要发一张晚安照，证明自己是一个人睡的。 - \[[英国那些事儿](https://k.sina.cn/article_2549228714_97f224aa01901947y.html/){:target="_blank"}\]
+-  一名欧洲人对《世界幸福报告》刨根问底之后认为它是个骗局：因为它的结论并非通过某种复杂的指标组合来衡量人们的幸福程度，而仅仅是汇总了每个国家相对较小的样本人群对 [Cantril Ladder](https://www.nature.com/articles/s41598-024-52939-y){:target="_blank"} 这一个问题的答案。这份由联合国可持续发展解决方案网络和牛津大学福祉研究中心联合发布的报告，自 2012 年发布以来，其基本信息始终未变。世界上最幸福的国家总是位于斯堪的纳维亚半岛；今年，芬兰之后依次是丹麦、冰岛和瑞典。 - \[[Yascha Mounk](https://yaschamounk.substack.com/p/the-world-happiness-report-is-a-sham){:target="_blank"}\]
+-  一群装扮成圣诞老人和他的精灵的窃贼从蒙特利尔一家杂货店拿走了价值 3000 美元的商品。 - \[[Annabelle Olivier](https://www.cbc.ca/news/canada/montreal/santa-claus-montreal-police-grocery-store-theft-9.7020673){:target="_blank"}\]
+-  很多图书馆工作人员告诉记者，这两年出现的一个情况让他们不堪重负： AI 告诉人们图书馆有某本书，但他们前往借阅的时候发现没有，于是认为是图书管理员把这些书藏起来了。 - \[[ Matt Novak](https://gizmodo.com/librarians-arent-hiding-secret-books-from-you-that-only-ai-knows-about-2000698176){:target="_blank"}\]
+
+
+
+
+
+
+
+
