@@ -11,9 +11,9 @@ categories:
 - octopress
 ---
 
-离开 Wordpress[改用Octopress](https://lenciel.com/2013/03/blog-with-octopress-and-github-pages/)写 blog 已经好些年了，本座甚至还写了一个自己的[Octopress模板](https://github.com/lenciel/octopress-theme-lenciel)。之所以要迁移主要是 Octopress 作为以 Jekyll 为基础的一套脚手架，自 2011 年发布以后进展非常缓慢，和 Jekyll 的快速更新很难对齐。
+离开 Wordpress[改用Octopress](https://lenciel.com/2013/03/blog-with-octopress-and-github-pages/){:target="_blank"}写 blog 已经好些年了，本座甚至还写了一个自己的[Octopress模板](https://github.com/lenciel/octopress-theme-lenciel){:target="_blank"}。之所以要迁移主要是 Octopress 作为以 Jekyll 为基础的一套脚手架，自 2011 年发布以后进展非常缓慢，和 Jekyll 的快速更新很难对齐。
 
-在近期跳票多次的[Octopress3](http://octopress.org/2015/01/15/octopress-3.0-is-coming/)终于发布了之后，看了一下没有什么值得迁移的新功能。所以不管是从功能、性能还是开发活跃度上，继续跟 Octopress 都不太明智，就决定转用纯 Jekyll。
+在近期跳票多次的[Octopress3](http://octopress.org/2015/01/15/octopress-3.0-is-coming/){:target="_blank"}终于发布了之后，看了一下没有什么值得迁移的新功能。所以不管是从功能、性能还是开发活跃度上，继续跟 Octopress 都不太明智，就决定转用纯 Jekyll。
 
 迁移过程还算比较平滑，主要是：
 
@@ -41,7 +41,7 @@ $ jekyll new my-site && cd my-site
 实际过程里面本座的做法大概是一半一半。比如像插入 gist，blockquote 这些现在默认也支持得挺好的功能插件，就去掉了它们，然后通过正则表达式对`_posts`目录下的文章进行全局替换。
 
 
-而有些个人觉得 Octopress 确实解决得不错的功能，就按照[新版Jekyll插件](https://jekyllrb.com/docs/plugins/)的语法进行了迁移，这部分包括对日期的处理，图片的插入等等。
+而有些个人觉得 Octopress 确实解决得不错的功能，就按照[新版Jekyll插件](https://jekyllrb.com/docs/plugins/){:target="_blank"}的语法进行了迁移，这部分包括对日期的处理，图片的插入等等。
 
 这些大体修改完毕，然后安装相应的依赖（可以对比新旧的 Gemfile，只需要安装自己的插件用到的依赖），这部分改动就大概完成了。
 
@@ -49,11 +49,11 @@ $ jekyll new my-site && cd my-site
 
 因为 Jekyll 自己的模板是基于 gem-based 的，也就是说你首先得新建一个 gem-based 的项目：
 
-1. 注册[rubygems](https://rubygems.org)的账号
+1. 注册[rubygems](https://rubygems.org){:target="_blank"}的账号
 2. 新建项目，并按照 gem 的方式组织代码并发布模板
 3. 在 Blog 项目的`_config.yml`里面引用这个模板
 
-最终的工作就是我又多了一个 gem-based 的[Jekyll模板项目](https://github.com/lenciel/jekyll-lenciel-theme)。
+最终的工作就是我又多了一个 gem-based 的[Jekyll模板项目](https://github.com/lenciel/jekyll-lenciel-theme){:target="_blank"}。
 
 这部分要特别注意的就是 Jekyll 的模板项目默认能够发布的目录（也就是包含在 gemfile 里面，能够被你的 Blog 项目在安装路径找到的目录）非常有限：
 

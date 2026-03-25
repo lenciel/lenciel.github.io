@@ -18,18 +18,18 @@ categories:
 
 ## 简介
 
-最近两年做工具都在逼自己用刚学不久的 Go 和 Rust ，对 Python/Django 有些疏远了。最近想做一个 OKR 管理和对齐的工具，想着 Python 2 总算[正式退役](https://www.python.org/doc/sunset-python-2/)了， virtualenv 也改名 venv [成了标配](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/#:~:text=venv%20is%20included%20in%20the,and%20requires%20no%20additional%20installation.&text=virtualenv%20is%20used%20to%20manage,can%20install%20virtualenv%20using%20pip)，不如宠幸一把试试感觉。
+最近两年做工具都在逼自己用刚学不久的 Go 和 Rust ，对 Python/Django 有些疏远了。最近想做一个 OKR 管理和对齐的工具，想着 Python 2 总算[正式退役](https://www.python.org/doc/sunset-python-2/){:target="_blank"}了， virtualenv 也改名 venv [成了标配](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/#:~:text=venv%20is%20included%20in%20the,and%20requires%20no%20additional%20installation.&text=virtualenv%20is%20used%20to%20manage,can%20install%20virtualenv%20using%20pip){:target="_blank"}，不如宠幸一把试试感觉。
 
 结果光是包和依赖管理，就有 pip-tools/pyenv/Anaconda/pipenv/poetry/pipx/…，WTF，贵圈是被前端社区统治了吗…
 
-![python_environment.png](/downloads/images/2020_07/python_environment.png --alt Don't touch me)
+![python_environment.png](/downloads/images/2020_07/python_environment.png --alt Don't touch me){:target="_blank"}
 
 大概看了一下各路的妖魔鬼怪，我觉得可以选一套自己还比较满意的工具链记录和分享一下。分为下面几个部分：
 
-1. [环境搭建](/2020/07/python-in-2020-part1-env-setup/)
-2. [测试框架](/2020/07/python-in-2020-part2-testing-framework/)
-3. [静态检查](/2020/07/python-in-2020-part3-linting-setup/)
-4. [类型检查](/2020/07/python-in-2020-part4-type-checking/)
+1. [环境搭建](/2020/07/python-in-2020-part1-env-setup/){:target="_blank"}
+2. [测试框架](/2020/07/python-in-2020-part2-testing-framework/){:target="_blank"}
+3. [静态检查](/2020/07/python-in-2020-part3-linting-setup/){:target="_blank"}
+4. [类型检查](/2020/07/python-in-2020-part4-type-checking/){:target="_blank"}
 
 ## 环境搭建
 
@@ -45,11 +45,11 @@ categories:
 
 #### 选择的原因
 
-[pyenv](https://github.com/pyenv/pyenv) 应该主要是借鉴了 [nodenv](https://github.com/nodenv/nodenv)，让你：
+[pyenv](https://github.com/pyenv/pyenv){:target="_blank"} 应该主要是借鉴了 [nodenv](https://github.com/nodenv/nodenv){:target="_blank"}，让你：
 
 - 可以安装多个 Python 版本然后根据需要在全局或者为每个项目配置
-- 可以和 [tox](https://pypi.org/project/tox/) 结合测试你的应用在不同 Python 版本下的运行情况
-- 可以结合 [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv) 对虚拟环境进行管理（我没有用，因为 Poetry 自带的对 venv 功能的封装足够用了）
+- 可以和 [tox](https://pypi.org/project/tox/){:target="_blank"} 结合测试你的应用在不同 Python 版本下的运行情况
+- 可以结合 [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv){:target="_blank"} 对虚拟环境进行管理（我没有用，因为 Poetry 自带的对 venv 功能的封装足够用了）
 
 #### 安装
 
@@ -84,14 +84,14 @@ $ pyenv versions
 $ pyenv global 3.8.1
 ```
 
-然后可以选择安装 [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv)，但是我打算用 poetry 来创建和激活虚拟环境，所以就没有安装。
+然后可以选择安装 [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv){:target="_blank"}，但是我打算用 poetry 来创建和激活虚拟环境，所以就没有安装。
 
 
 ### 2. Poetry
 
 #### 选择的原因
 
-[Poetry](https://python-poetry.org/) 使用了类似于前端生态里的 yarn 或者 bundler 的架构来做三件事情：
+[Poetry](https://python-poetry.org/){:target="_blank"} 使用了类似于前端生态里的 yarn 或者 bundler 的架构来做三件事情：
 
 - 管理依赖
 - 打包应用
@@ -141,7 +141,7 @@ requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
 ```
 
-然后你就可以用 [TOML](https://github.com/toml-lang/toml) 语法来编辑这个文件了。
+然后你就可以用 [TOML](https://github.com/toml-lang/toml){:target="_blank"} 语法来编辑这个文件了。
 
 #### 创建虚拟环境
 
@@ -200,7 +200,7 @@ Package operations: 4 installs, 0 updates, 0 removals
 - 安装好后依赖的详细信息会被注册到 `poetry.lock` 文件
 - 依赖的版本信息会被注册到 `pyproject.toml`
 
-如果你熟悉前端的工具链这个就很像对 gem 的管理。包括 `pyproject.toml` 的依赖[版本描述](https://python-poetry.org/docs/versions/)语法，比如 `^1.3.0` 表示不低于 1.3.0 的版本。而 `poetry.lock` 文件里的版本则是具体被安装的版本，它可以用来保持整个团队的版本一致性，以及生产环境和开发环境的[版本一致性](https://12factor.net/dev-prod-parity)。
+如果你熟悉前端的工具链这个就很像对 gem 的管理。包括 `pyproject.toml` 的依赖[版本描述](https://python-poetry.org/docs/versions/){:target="_blank"}语法，比如 `^1.3.0` 表示不低于 1.3.0 的版本。而 `poetry.lock` 文件里的版本则是具体被安装的版本，它可以用来保持整个团队的版本一致性，以及生产环境和开发环境的[版本一致性](https://12factor.net/dev-prod-parity){:target="_blank"}。
 
 当需要更新某个依赖的时候，你即可以用 `update` 命令，也可以用类似 `poetry add django^3.0.1` 来指定更新到具体的版本。
 
@@ -323,4 +323,4 @@ fi
 [[ -n $ZSH_POETRY_AUTO_ACTIVATE ]] && _zp_check_poetry_venv
 ```
 
-环境搭建就是这样，[接下来](/2020/07/python-in-2020-part2-testing-framework/)是测试框架的选择和配置。
+环境搭建就是这样，[接下来](/2020/07/python-in-2020-part2-testing-framework/){:target="_blank"}是测试框架的选择和配置。

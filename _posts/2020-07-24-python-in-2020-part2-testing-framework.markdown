@@ -18,7 +18,7 @@ categories:
 
 ### 单元测试：pytest
 
-虽然 Python 自带了 [unittest](https://docs.python.org/3/library/unittest.html) 框架，但是 [pytest](https://docs.pytest.org/en/latest/) 基本上是事实标准。
+虽然 Python 自带了 [unittest](https://docs.python.org/3/library/unittest.html){:target="_blank"} 框架，但是 [pytest](https://docs.pytest.org/en/latest/){:target="_blank"} 基本上是事实标准。
 
 使用 Poetry 来安装 pytest：
 
@@ -34,7 +34,7 @@ $ poetry run pytest
 
 ### 单元测试覆盖率：Coverage.py
 
-在进行单元测试的时候，经常需要统计覆盖率，在 Python 开发中通常使用 [Coverage.py](https://coverage.readthedocs.io/) 。当选择了 pytest 作为测试框架的时候，可以安装 [pytest-cov](https://pytest-cov.readthedocs.io/en/latest/) 这个插件，它的底层就是 Coverage.py：
+在进行单元测试的时候，经常需要统计覆盖率，在 Python 开发中通常使用 [Coverage.py](https://coverage.readthedocs.io/){:target="_blank"} 。当选择了 pytest 作为测试框架的时候，可以安装 [pytest-cov](https://pytest-cov.readthedocs.io/en/latest/){:target="_blank"} 这个插件，它的底层就是 Coverage.py：
 
 ```
 $ poetry add --dev coverage -E toml pytest-cov
@@ -80,7 +80,7 @@ fail_under = 90
 
 ### 测试自动化：Nox
 
-[Nox](https://nox.thea.codes/) 应该可以算是 [tox](https://tox.readthedocs.io/) 的后继，它很好的处理了各种依赖，可以在隔离的环境里完成各种任务。
+[Nox](https://nox.thea.codes/){:target="_blank"} 应该可以算是 [tox](https://tox.readthedocs.io/){:target="_blank"} 的后继，它很好的处理了各种依赖，可以在隔离的环境里完成各种任务。
 
 使用 pipx 来安装 Nox：
 
@@ -148,13 +148,13 @@ $ nox -r
 
 比如你的单元测试需要访问一些 API，那么如果是直接通过 requests 之类的包去访问这些 API，那么这些 API 自己的稳定性，网络等各种因素可能都会导致你的单元测试失败或者是运行时间很长。这个时候就需要打桩。
 
-Python 自带的 [unittest.mock](https://docs.python.org/3/library/unittest.mock.html) 同样不灵，使用 pytest 的时候一般会用 [pytest-mock](https://github.com/pytest-dev/pytest-mock) 这个插件：
+Python 自带的 [unittest.mock](https://docs.python.org/3/library/unittest.mock.html){:target="_blank"} 同样不灵，使用 pytest 的时候一般会用 [pytest-mock](https://github.com/pytest-dev/pytest-mock){:target="_blank"} 这个插件：
 
 ```
 $ poetry add --dev pytest-mock
 ```
 
-这个插件其实主要是提供一个叫 `mocker` 的 [fixture](https://docs.pytest.org/en/latest/fixture.html)，来作为整个 mocking 库的 wrapper。比如，我们刚才举的访问 API 的例子，可以写一个 如下的 fixture：
+这个插件其实主要是提供一个叫 `mocker` 的 [fixture](https://docs.pytest.org/en/latest/fixture.html){:target="_blank"}，来作为整个 mocking 库的 wrapper。比如，我们刚才举的访问 API 的例子，可以写一个 如下的 fixture：
 
 ```python
 # tests/test_req.py
@@ -173,15 +173,15 @@ def test_main_succeeds(runner, mock_requests_get):
     ...
 ```
 
-更详细的 pytest-mock 的用法可以看看文档。但核心需要理解的，就是通过打桩，可以让所有的依赖变得稳定、可控并且可重入，这正好服务于我们对于优质的单元测试的要求：[快速、隔离、可重入](http://agileinaflash.blogspot.com/2009/02/first.html)。
+更详细的 pytest-mock 的用法可以看看文档。但核心需要理解的，就是通过打桩，可以让所有的依赖变得稳定、可控并且可重入，这正好服务于我们对于优质的单元测试的要求：[快速、隔离、可重入](http://agileinaflash.blogspot.com/2009/02/first.html){:target="_blank"}。
 
 ### 数据生成：fakes/factory_boy
 
-mock 并不是 [doubles](https://blog.pragmatists.com/test-doubles-fakes-mocks-and-stubs-1a7491dfa3da) 的唯一方法。当然，很多人会弄不清 fakes, mocks 和 stubs 的区别。
+mock 并不是 [doubles](https://blog.pragmatists.com/test-doubles-fakes-mocks-and-stubs-1a7491dfa3da){:target="_blank"} 的唯一方法。当然，很多人会弄不清 fakes, mocks 和 stubs 的区别。
 
 当你的测试需要理解一个数据库的时候，对每个输入输出打桩不太现实，你可能更需要一个内存里的数据库，来「假装」真正的数据库。
 
-对于简单的场景可以直接自己实现，对于复杂的场景可以考虑类似 [factory_boy](https://factoryboy.readthedocs.io/en/latest/) 这样的工具。但具体怎么实现不是这里的重点，我们假设通过 fake 的方法来实现了一个 API ：
+对于简单的场景可以直接自己实现，对于复杂的场景可以考虑类似 [factory_boy](https://factoryboy.readthedocs.io/en/latest/){:target="_blank"} 这样的工具。但具体怎么实现不是这里的重点，我们假设通过 fake 的方法来实现了一个 API ：
 
 ```python
 
@@ -205,7 +205,7 @@ def fake_api():
     return FakeAPI.create()
 ```
 
-因为这个 API 在被 create 了之后，没有很好的地方可以 shutdown。这种情况下，你可以把它实现为一个 [generator](https://docs.python.org/3/tutorial/classes.html#generators)，并且通过 scope 的声明，让这个 fixture 对整个 session 可见：
+因为这个 API 在被 create 了之后，没有很好的地方可以 shutdown。这种情况下，你可以把它实现为一个 [generator](https://docs.python.org/3/tutorial/classes.html#generators){:target="_blank"}，并且通过 scope 的声明，让这个 fixture 对整个 session 可见：
 
 ```python
 @pytest.fixture
@@ -217,7 +217,7 @@ def fake_api():
 
 ### 端到端测试：pytest
 
-pytest 并不仅仅是用来做单元测试的，可以通过扩展它的 [markers](https://docs.pytest.org/en/latest/example/markers.html) 来进行端到端的测试。
+pytest 并不仅仅是用来做单元测试的，可以通过扩展它的 [markers](https://docs.pytest.org/en/latest/example/markers.html){:target="_blank"} 来进行端到端的测试。
 
 ```python
 # tests/test_console.py
@@ -255,4 +255,4 @@ def tests(session):
 $ nox -rs tests-3.8 -- -m e2e
 ```
 
-测试框架大概就是这些，接下里说一下[静态扫描](/2020/07/python-in-2020-part3-linting-setup/)。
+测试框架大概就是这些，接下里说一下[静态扫描](/2020/07/python-in-2020-part3-linting-setup/){:target="_blank"}。

@@ -18,9 +18,9 @@ categories:
 
 ## 记住前 90 天你还在面试
 
-入职后的 90 天很关键，好像是[一个常识](https://www.jianshu.com/p/769661c7aa20)。
+入职后的 90 天很关键，好像是[一个常识](https://www.jianshu.com/p/769661c7aa20){:target="_blank"}。
 
-甚至德布劳内和大卫·席尔瓦都[知道这点](https://www.hays.cn/press-releases/HAYS_1905278)。
+甚至德布劳内和大卫·席尔瓦都[知道这点](https://www.hays.cn/press-releases/HAYS_1905278){:target="_blank"}。
 
 我对那些文章里面的拆解到天的计划和目标不是那么在意。
 

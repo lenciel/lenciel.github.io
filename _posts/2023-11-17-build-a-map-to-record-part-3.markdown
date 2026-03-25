@@ -13,7 +13,7 @@ categories:
 
 ---
 
-> 周末了，接着[上一篇](/2023/11/build-a-map-to-record-part-2/)，继续画地图...
+> 周末了，接着[上一篇](/2023/11/build-a-map-to-record-part-2/){:target="_blank"}，继续画地图...
 
 剩下的主要是一些偏标记的工作，基本上都是把某个经纬度转换到坐标，然后绘制相应的文字或者图例，但里面也有一些可以讨巧的地方。
 
@@ -26,7 +26,7 @@ categories:
 
 查看下载的区域信息的 GeoJSON，可以看到每个 feature 下面的 `properties` 数组里， `name` 字段就是此区域的地名。那么，在图上的什么位置来画这个地名呢？
 
-有两种方案，一个是通过每个 feature 下面的 `coordinates` 数组里的经纬度数据，算一个区域内合适显示的点，然后用投影函数得到坐标值，类似[这里的方法](https://stackoverflow.com/questions/37778561/inexplicable-inability-to-render-city-name-labels-on-a-d3-js-map-out-of-scope-n)。
+有两种方案，一个是通过每个 feature 下面的 `coordinates` 数组里的经纬度数据，算一个区域内合适显示的点，然后用投影函数得到坐标值，类似[这里的方法](https://stackoverflow.com/questions/37778561/inexplicable-inability-to-render-city-name-labels-on-a-d3-js-map-out-of-scope-n){:target="_blank"}。
 
 还有一个办法是使用 D3 提供的求质心的函数：
 
@@ -70,7 +70,7 @@ drawLabels(geoData[0], {
 
 #### 水体名称
 
-OSM 的标准下，有各种水体，包括河流和湖泊{% sidenote 'sn-id-1' '可以查看这个 [Wiki](https://wiki.openstreetmap.org/wiki/Map_features) 来获取查询 OSM 数据的具体键值。' %}。用跟前面类似的处理方式绘制，会得到下面的图片：
+OSM 的标准下，有各种水体，包括河流和湖泊{% sidenote 'sn-id-1' '可以查看这个 [Wiki](https://wiki.openstreetmap.org/wiki/Map_features){:target="_blank"} 来获取查询 OSM 数据的具体键值。' %}。用跟前面类似的处理方式绘制，会得到下面的图片：
 
  {% picture /downloads/images/2023_11/how_to_map_10.png --alt how_to_map_10.png %}
 
@@ -80,7 +80,7 @@ OSM 的标准下，有各种水体，包括河流和湖泊{% sidenote 'sn-id-1' 
 
 后面这个好办，新定义一个参数传 filter 进去过滤就行。
 
-前面这个，可以先把传入的 FeatureCollection 以每个 feature 的名称 groupBy{% sidenote 'sn-id-2' ' [Object.groupBy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/groupBy) 新加入标准不久。' %} :
+前面这个，可以先把传入的 FeatureCollection 以每个 feature 的名称 groupBy{% sidenote 'sn-id-2' ' [Object.groupBy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/groupBy){:target="_blank"} 新加入标准不久。' %} :
 
 ```javascript
 
@@ -187,10 +187,10 @@ drawLabels(geoData[2], {
 这里每个 feature 的声明是这样来定义的：
 - properties 数组
 	- name 就是想要显示的名称；
-	- 另一个字段是跟据 [OSM features 标准](https://wiki.openstreetmap.org/wiki/Map_features)，声明为 `tourism` 这个 key 下面的某个分类，比如 attraction 表示景点，hotel 表示酒店等等；
+	- 另一个字段是跟据 [OSM features 标准](https://wiki.openstreetmap.org/wiki/Map_features){:target="_blank"}，声明为 `tourism` 这个 key 下面的某个分类，比如 attraction 表示景点，hotel 表示酒店等等；
 - geometry 数组
 	- type 是点(Point);
-	- 经纬度通过通过[这个网页](https://api.map.baidu.com/lbsapi/getpoint/index.html)反查;
+	- 经纬度通过通过[这个网页](https://api.map.baidu.com/lbsapi/getpoint/index.html){:target="_blank"}反查;
 
 准备好数据之后把它交给 D3 绘制出来即可。
 
@@ -210,7 +210,7 @@ drawLabels(geoData[2], {
 
 比如比例尺，指南针，这些的 SVG 绘制比较简单。
 
-稍微有一点复杂的是国旗，但好在，已经有很多[现成的实现](https://github.com/chirsz-ever/cn-flag)了，基本上只需要调位置和大小。
+稍微有一点复杂的是国旗，但好在，已经有很多[现成的实现](https://github.com/chirsz-ever/cn-flag){:target="_blank"}了，基本上只需要调位置和大小。
 
 最后稍微调整一下颜色，得到最终的地图：
 

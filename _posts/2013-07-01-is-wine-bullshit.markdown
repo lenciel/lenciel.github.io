@@ -9,17 +9,17 @@ categories:
 - knowledge
 ---
 
-![Raw git log output](/downloads/images/2013_07/wine.jpeg --alt Don't touch me)
+![Raw git log output](/downloads/images/2013_07/wine.jpeg --alt Don't touch me){:target="_blank"}
 
 一瓶 Lafite Rothschild Bordeaux 最少要几千块，一瓶 Charles Shaw 或者 Franzia 卖十几块。我们经常可以看到那些红酒的广告宣扬着高档红酒的品质和口感是多么美妙。但其实很多人不知道，按照"酒类经济学家"的说法，葡萄酒的价格和口感之间的关系可能不是那么紧密。他们中不少人甚至声称，葡萄酒的价格根本就是乱来的，而那些号称能被品出来的万千滋味不过是付钱过后脑袋里面的自我安慰。
 
-比如，一份 2008 年发表在《The Journal of Wine Economics》上的[文章](http://www.wine-economics.org/aawe/wp-content/uploads/2012/10/Vol.3-No.1-2008-Evidence-from-a-Large-Sample-of-Blind-Tastings.pdf)说，当消费者不知道自己的酒的价格时，他们对实际上更便宜的酒的口感评价甚至稍稍好过那些更贵的酒。而且不光是一般消费者，即使是那些专家也不会对更贵的酒评价更高：
+比如，一份 2008 年发表在《The Journal of Wine Economics》上的[文章](http://www.wine-economics.org/aawe/wp-content/uploads/2012/10/Vol.3-No.1-2008-Evidence-from-a-Large-Sample-of-Blind-Tastings.pdf){:target="_blank"}说，当消费者不知道自己的酒的价格时，他们对实际上更便宜的酒的口感评价甚至稍稍好过那些更贵的酒。而且不光是一般消费者，即使是那些专家也不会对更贵的酒评价更高：
 
 {% blockquote %}
 「In sum, we ﬁnd a non-negative relationship between price and overall rating for experts. Due to the poor statistical signiﬁcance of the price coefﬁcient for experts, it remains an open question whether this coefﬁcient is in fact positive.」
 {% endblockquote %}
 
-在[另一项实验](http://www.newyorker.com/online/blogs/frontal-cortex/2012/06/wine-taste.html)中，被试者喝过 red wine 和 white wine 之后，对两种酒的评价就分别是一些典型的 red wine 和 white wine 的评价。而实际上用于测试的酒都是 white wine，所谓的 red wine 只是加了一些对口感没有影响的食用色素。
+在[另一项实验](http://www.newyorker.com/online/blogs/frontal-cortex/2012/06/wine-taste.html){:target="_blank"}中，被试者喝过 red wine 和 white wine 之后，对两种酒的评价就分别是一些典型的 red wine 和 white wine 的评价。而实际上用于测试的酒都是 white wine，所谓的 red wine 只是加了一些对口感没有影响的食用色素。
 
 另一类的研究着眼于品酒师 Robert M. Parker Jr.发明的风靡全球的 100 制评分标准的准确度。退休的统计学家 Robert Hodgson 也是一位业余的酿酒爱好者。他发现同样的酒多次让品酒师打分，分数非常不稳定：
 
@@ -31,7 +31,7 @@ categories:
 
 酿酒工业的巨头们也出来承认：酒定价的主要影响因素不是宣传中的那些有关酒的口感等品质相关的要点，而是产量、品牌、大量中间环节的成本以及人们对浪漫或华贵生活的期许。但酒商们仍然坚持，即便是这些因素造成了有的酒很昂贵，但是卖得贵的酒通常也确实是口感上佳的酒。问题是和批评者相比，他们拿不出任何有效的数据说明这点。
 
-于是有些媒体就出现了「[品红酒就是扯淡](http://io9.com/wine-tasting-is-bullshit-heres-why-496098276)」这样的文章。
+于是有些媒体就出现了「[品红酒就是扯淡](http://io9.com/wine-tasting-is-bullshit-heres-why-496098276){:target="_blank"}」这样的文章。
 
 但这么说公平吗？
 
@@ -48,14 +48,14 @@ categories:
 When tasteless yellow coloring is added to vanilla pudding, consumers say it tastes like banana or lemon pudding. And when mango or lemon flavoring is added to white pudding, most consumers say that it tastes like vanilla pudding. Color creates a psychological expectation for a certain flavor that is often impossible to dislodge, [food chemist] Dr. Shelke said.
 {% endblockquote %}
 
-味蕾之外的其他感觉影响口感的例子还有很多。比如环境，[研究表明](http://www.amsciepub.com/doi/abs/10.2466/01.PR0.111.4.228-232)人们在柔光的环境下就餐觉得更舒服。比如预期，我们过往的[经验](http://www.huffingtonpost.com/Menuism/does-the-way-we-see-food-affect-taste_b_1872204.html)，食物的[品牌](http://www.jstor.org/discover/10.2307/3152198?uid=3739560&uid=2&uid=4&uid=3739256&sid=21102447342477)，[包装](http://www.griffithhack.com.au/mediacentre-Canafoodsbrandaffectyourperceptionsoftaste)和[价格](http://www.psychologytoday.com/blog/evolved-primate/201002/does-price-tag-have-taste)都会影响我们对它的口感。
+味蕾之外的其他感觉影响口感的例子还有很多。比如环境，[研究表明](http://www.amsciepub.com/doi/abs/10.2466/01.PR0.111.4.228-232){:target="_blank"}人们在柔光的环境下就餐觉得更舒服。比如预期，我们过往的[经验](http://www.huffingtonpost.com/Menuism/does-the-way-we-see-food-affect-taste_b_1872204.html){:target="_blank"}，食物的[品牌](http://www.jstor.org/discover/10.2307/3152198?uid=3739560&uid=2&uid=4&uid=3739256&sid=21102447342477){:target="_blank"}，[包装](http://www.griffithhack.com.au/mediacentre-Canafoodsbrandaffectyourperceptionsoftaste){:target="_blank"}和[价格](http://www.psychologytoday.com/blog/evolved-primate/201002/does-price-tag-have-taste){:target="_blank"}都会影响我们对它的口感。
 
 并非所有的酒都一样
 ================
 
 公认的最好的品酒师，被称为 `Master Sommeliers` ，在全世界只有不到 200 名。这些人要获得 `Master Sommeliers` 的称号，必须蒙上眼睛鉴别出 6 种不同葡萄酒的葡萄品种、产地和年份。如果这些人不是酒行业养的神棍，而是真有这样的本领，那么是否意味着不同的酒确实口感是不一样的呢？
 
-《今日心理学》上面[有篇文章](http://www.psychologytoday.com/blog/sensory-superpowers/200908/you-drink-what-you-think)对此做了解答，认为专业品酒师主要靠的是良好的分析能力和大量的练习积累的知识：
+《今日心理学》上面[有篇文章](http://www.psychologytoday.com/blog/sensory-superpowers/200908/you-drink-what-you-think){:target="_blank"}对此做了解答，认为专业品酒师主要靠的是良好的分析能力和大量的练习积累的知识：
 
 {% blockquote %}
 Research shows that contrary to common thought, wine experts do not have more sensitive palates, per se. They don’t, for example, have lower thresholds for detecting a wine’s tannin and alcohol content. Experts are also no better than novices at tasting whether two wines are the same or different.

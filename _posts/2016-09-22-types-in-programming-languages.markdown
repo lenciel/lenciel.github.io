@@ -12,9 +12,9 @@ categories:
 
 ---
 
-这两天看了「[FP in Scala](http://www.amazon.com/Functional-Programming-Scala-Paul-Chiusano/dp/1617290653)」的作者 Paul Chiusano 关于静态类型语言的优点的一篇[blog](https://pchiusano.github.io/2016-09-15/static-vs-dynamic.html)。刚好最近在看很多 Scala 写的代码，仔细一想，好像大多数语言都在尝试把类型系统加强（不仅仅是 Scala、Swift、Rust 这些当红的，连[Ceylon](https://ceylon-lang.org/) 这样的语言也越来越火了）。
+这两天看了「[FP in Scala](http://www.amazon.com/Functional-Programming-Scala-Paul-Chiusano/dp/1617290653){:target="_blank"}」的作者 Paul Chiusano 关于静态类型语言的优点的一篇[blog](https://pchiusano.github.io/2016-09-15/static-vs-dynamic.html){:target="_blank"}。刚好最近在看很多 Scala 写的代码，仔细一想，好像大多数语言都在尝试把类型系统加强（不仅仅是 Scala、Swift、Rust 这些当红的，连[Ceylon](https://ceylon-lang.org/){:target="_blank"} 这样的语言也越来越火了）。
 
-所以也结合之前看过的一些文章([1](https://github.com/tel/old-blog/blob/master/_posts/2014-07-08-all_you_wanted_to_know_about_types_but_were_afraid_to_ask.md), [2](https://github.com/tel/old-blog/blob/master/_posts/2014-08-08-six_points_about_type_safety.md), [3](https://danluu.com/empirical-pl/), [4](https://gist.github.com/garybernhardt/122909856b570c5c457a6cd674795a9c))，对类型系统打个总结。
+所以也结合之前看过的一些文章([1](https://github.com/tel/old-blog/blob/master/_posts/2014-07-08-all_you_wanted_to_know_about_types_but_were_afraid_to_ask.md){:target="_blank"}, [2](https://github.com/tel/old-blog/blob/master/_posts/2014-08-08-six_points_about_type_safety.md){:target="_blank"}, [3](https://danluu.com/empirical-pl/){:target="_blank"}, [4](https://gist.github.com/garybernhardt/122909856b570c5c457a6cd674795a9c){:target="_blank"})，对类型系统打个总结。
 
 ### 类型
 
@@ -69,7 +69,7 @@ def f(x, y):
 
 由于「强」和「弱」的使用是如此的上下文相关又如此的混乱，所以最好不要使用这些术语，而是描述具体的问题：「JS 在我们把字符串和整型相加的时候会正常返回，而 Python 会报错」比「JS 是弱类型的，而 Python 是强类型的」有意义得多。这样我们在讨论中就不会花时间去纠缠在本来就不是很清晰的术语上了。
 
-就像 Chris Smith [写过的那样](https://cdsmith.wordpress.com/2011/01/09/an-old-article-i-wrote/):
+就像 Chris Smith [写过的那样](https://cdsmith.wordpress.com/2011/01/09/an-old-article-i-wrote/){:target="_blank"}:
 
 {% blockquote %}
 Strong typing: A type system that I like and feel comfortable with
@@ -96,7 +96,7 @@ Weak typing: A type system that worries me, or makes me feel uncomfortable
 
 静态类型语言的推崇者指出，如果没有一个严格的类型系统，那么一个微小的类型错误就可能导致生产环境崩掉。这当然是真的，所有使用过动态类型语言的同学肯定都遇见过。
 
-动态语言的推崇者认为，动态语言写起来要容易一些。视你写的代码究竟用来干嘛而言，这可能是对的，也可能是错的。Rich Hickey 关于「easy」有个[很经典的讲座](https://www.infoq.com/presentations/Simple-Made-Easy)，特别清楚的阐明了「easy」和「simple」的关系，以及你为什么要小心「easy」。不同的动态语言的设计者，对类型系统的考虑也就视他们想开放多少控制权给开发者自己控制，实现得非常不同。
+动态语言的推崇者认为，动态语言写起来要容易一些。视你写的代码究竟用来干嘛而言，这可能是对的，也可能是错的。Rich Hickey 关于「easy」有个[很经典的讲座](https://www.infoq.com/presentations/Simple-Made-Easy){:target="_blank"}，特别清楚的阐明了「easy」和「simple」的关系，以及你为什么要小心「easy」。不同的动态语言的设计者，对类型系统的考虑也就视他们想开放多少控制权给开发者自己控制，实现得非常不同。
 
 比如，Javascript 的策略是尽量继续执行，即使`"a"+1`这样的语句明显不是很合理了，它也会返回`a1`。Python 则倾向于尽可能的报错。所以虽然都是动态语言，设计上的思路是非常不同的。
 

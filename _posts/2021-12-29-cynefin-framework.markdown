@@ -19,7 +19,7 @@ categories:
 - TOC
 {:toc}
 
-[上一篇](/2021/12/internal-resistance/)主要说，现实世界就有不确定性，无论是人类进化过程里形成的天然的对不确定性的抵抗，还是你的原生家庭成长经历带来的后天经验，还是你所处的组织和内部外部环境，都有可能让你产生「内生的抵抗力」，对一切带来变化的决定或者行动都比较拖延。
+[上一篇](/2021/12/internal-resistance/){:target="_blank"}主要说，现实世界就有不确定性，无论是人类进化过程里形成的天然的对不确定性的抵抗，还是你的原生家庭成长经历带来的后天经验，还是你所处的组织和内部外部环境，都有可能让你产生「内生的抵抗力」，对一切带来变化的决定或者行动都比较拖延。
 
 有朋友留言说，你开了个头，没有然后。
 
@@ -35,7 +35,7 @@ categories:
 
 它是威尔士学者，知识管理大师 Dave Snowden 在 1999 年供职 IBM 时提出的。网上可以找到一些它的图片：
 
-![cynefin_framework.jpeg](/downloads/images/2021_12/cynefin_framework_1.jpeg --alt Don't touch me...)
+![cynefin_framework.jpeg](/downloads/images/2021_12/cynefin_framework_1.jpeg --alt Don't touch me...){:target="_blank"}
 
 乍一看可能不太好理解，我把它代入一个现实生活里的角色，来解释一下。
 
@@ -56,7 +56,7 @@ categories:
 
 其实肯尼芬框架的下半部分，就对应着两种极端的状态。
 
-![cynefin_framework_2.jpeg](/downloads/images/2021_12/cynefin_framework_2.jpeg --alt Don't touch me...)
+![cynefin_framework_2.jpeg](/downloads/images/2021_12/cynefin_framework_2.jpeg --alt Don't touch me...){:target="_blank"}
 
 Chaotic 意味着，整个系统的状态极度混乱，很可能你根本没有办法通过你的能量让它走向有序。
 
@@ -74,7 +74,7 @@ Obvious [^2]意味着，整个系统已经程序化，管理和执行都可以�
 
 首先要理解的是，作为一个管理者，你面对的系统不会只有一种状态。
 
-《哈佛商业评论》讲解肯尼芬框架的[那篇文章](https://hbr.org/2007/11/a-leaders-framework-for-decision-making)里，举的例子就是 1993 年芝加哥枪击案后，作为行政主管和警察部门的发言人，副局长 Walter Gasior 同时面对着四种状态的系统。
+《哈佛商业评论》讲解肯尼芬框架的[那篇文章](https://hbr.org/2007/11/a-leaders-framework-for-decision-making){:target="_blank"}里，举的例子就是 1993 年芝加哥枪击案后，作为行政主管和警察部门的发言人，副局长 Walter Gasior 同时面对着四种状态的系统。
 
 其次，只要是有点儿追求的人，是不愿意处于下面那两个状态的。因为不管是已经流水线了，还是极度的混乱无序，都有点浪费时间。
 
@@ -112,7 +112,7 @@ Obvious [^2]意味着，整个系统已经程序化，管理和执行都可以�
 
 成人发展理论有不同的派别，灵修的，冥想的，信仰的，各家各派都有自己的取向。
 
-作为工科生，我比较认可的是师承哈佛大学专门研究自我发展（[ego development](https://www.sciencedirect.com/topics/psychology/ego-development)）的老师 [Jane Loevinger](https://en.wikipedia.org/wiki/Jane_Loevinger) 的 [Bill Torbert](http://www.williamrtorbert.com/) 和 [Susanne Cook-Greuter](https://instituteofcoaching.org/author/cook-greuter-susanne) 的分支，因为这几位在研究上最为实证取向。
+作为工科生，我比较认可的是师承哈佛大学专门研究自我发展（[ego development](https://www.sciencedirect.com/topics/psychology/ego-development){:target="_blank"}）的老师 [Jane Loevinger](https://en.wikipedia.org/wiki/Jane_Loevinger){:target="_blank"} 的 [Bill Torbert](http://www.williamrtorbert.com/){:target="_blank"} 和 [Susanne Cook-Greuter](https://instituteofcoaching.org/author/cook-greuter-susanne){:target="_blank"} 的分支，因为这几位在研究上最为实证取向。
 
 这部分，留到下次吧。
 

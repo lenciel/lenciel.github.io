@@ -21,7 +21,7 @@ categories:
 ---
 
  <br/>
-[前面说了](/2020/02/how-to-read-the-books-part-1/)，有的书增长智慧，有的书提升技能。
+[前面说了](/2020/02/how-to-read-the-books-part-1/){:target="_blank"}，有的书增长智慧，有的书提升技能。
 
 它们挺好区别，但用个表来对比会更加清楚：
 
@@ -33,7 +33,7 @@ categories:
 | 看懂之后也难以实践 | 看懂之后就很好实践 |
 
 <br/>
-因为适用范围更广，读起来的舒适度更高，并且[仍然代表了](https://lenciel.com/#%E6%95%99%E8%82%B2%E4%BD%93%E5%88%B6)主流价值观等原因，「增长智慧」的书籍统治了非虚构类图书的畅销书单。
+因为适用范围更广，读起来的舒适度更高，并且[仍然代表了](https://lenciel.com/#%E6%95%99%E8%82%B2%E4%BD%93%E5%88%B6){:target="_blank"}主流价值观等原因，「增长智慧」的书籍统治了非虚构类图书的畅销书单。
 
 但这些畅销书和它们的读者也有自己的尴尬。
 
@@ -77,7 +77,7 @@ categories:
 
 而作品越多名声越大越畅销的人，陷入这种可能的机会则大大增加：从于丹到格拉德威尔[^1]，当人类面对的问题前所未有的困难和具体，掌握的技能前所未有的复杂和深入，那些「智者」提供的通用的、一刀切的建议，操作起来往往是困难的。
 
-但是如果你认可「技能」和「智慧」[就是两个东西](/2020/02/how-to-read-the-books-part-2/)，后者就是提高你解决大部分问题的平均水平的品质的集合，包括：自律、反思、同理心、经验见识等等。
+但是如果你认可「技能」和「智慧」[就是两个东西](/2020/02/how-to-read-the-books-part-2/){:target="_blank"}，后者就是提高你解决大部分问题的平均水平的品质的集合，包括：自律、反思、同理心、经验见识等等。
 
 那你是不是需要这些呢？它们在书里面是不是存在呢？
 
@@ -95,9 +95,9 @@ categories:
 
 #### 假大空的自我修炼类
 
-无论你做不做管理，大概都听过 GE 的前 CEO [杰克·韦尔奇](https://wiki.mbalib.com/wiki/%E6%9D%B0%E5%85%8B%C2%B7%E9%9F%A6%E5%B0%94%E5%A5%87)。
+无论你做不做管理，大概都听过 GE 的前 CEO [杰克·韦尔奇](https://wiki.mbalib.com/wiki/%E6%9D%B0%E5%85%8B%C2%B7%E9%9F%A6%E5%B0%94%E5%A5%87){:target="_blank"}。
 
-他最著名的书是《[赢](https://book.douban.com/subject/1313124/)》，里面最著名的话是「reaching for the impossible」。
+他最著名的书是《[赢](https://book.douban.com/subject/1313124/){:target="_blank"}》，里面最著名的话是「reaching for the impossible」。
 
 非常自驱，但又非常空洞：如果你具体看看怎么「完成不可能的目标」，就会发现他把各种观点 —— 包括「懂得坚持」和「懂得放弃」这样互相冲突的观点 —— 都铺陈了一遍[^2]。
 
@@ -109,15 +109,15 @@ categories:
 
 它们宣称把一切「消极」的思想都赶出体外，积极地、专注地追求单一的目标，就能够得到心里想要的结果：无论是你卧床不起了想着健康，还是你经商受挫了想着致富。
 
-昨天看《[布鲁克林秘案](https://movie.douban.com/subject/1469353/)》，达福对着诺顿大喊：「你丫看点爱默生好吧」，让我想起来《[好策略，坏策略](http://goodbadstrategy.com/about-the-book/)》里提到的「[New Thought](https://en.wikipedia.org/wiki/New_Thought)」这个流派。
+昨天看《[布鲁克林秘案](https://movie.douban.com/subject/1469353/){:target="_blank"}》，达福对着诺顿大喊：「你丫看点爱默生好吧」，让我想起来《[好策略，坏策略](http://goodbadstrategy.com/about-the-book/){:target="_blank"}》里提到的「[New Thought](https://en.wikipedia.org/wiki/New_Thought){:target="_blank"}」这个流派。
 
-19 世纪初，爱默生提出了「[超验主义](https://zh.wikipedia.org/wiki/%E6%8B%89%E5%B0%94%E5%A4%AB%C2%B7%E6%B2%83%E5%B0%94%E5%A4%9A%C2%B7%E7%88%B1%E9%BB%98%E7%94%9F)」，强调人人都可以和上帝直接交流，且人人都有神性。
+19 世纪初，爱默生提出了「[超验主义](https://zh.wikipedia.org/wiki/%E6%8B%89%E5%B0%94%E5%A4%AB%C2%B7%E6%B2%83%E5%B0%94%E5%A4%9A%C2%B7%E7%88%B1%E9%BB%98%E7%94%9F){:target="_blank"}」，强调人人都可以和上帝直接交流，且人人都有神性。
 
 在这之前，无论中西方，能够与神对话，是少数统治阶级和神职人员的特权。
 
 林肯说他是「美国孔子」，「美国文明之父」。
 
-接下来就有了[基督教科学派](https://zh.wikipedia.org/wiki/%E5%9F%BA%E7%9D%A3%E7%A7%91%E5%AD%B8%E6%95%99%E6%9C%83)，认为一切物质皆虚幻，物质的问题都可以通过灵修来解决：心系成功就会带来成功，唯恐失败则会招致失败。
+接下来就有了[基督教科学派](https://zh.wikipedia.org/wiki/%E5%9F%BA%E7%9D%A3%E7%A7%91%E5%AD%B8%E6%95%99%E6%9C%83){:target="_blank"}，认为一切物质皆虚幻，物质的问题都可以通过灵修来解决：心系成功就会带来成功，唯恐失败则会招致失败。
 
 到了 19 世纪末，在加州混喜剧圈的淘金者普伦蒂斯· 马尔福德写下了《Thoughts are Things》，认为思想会吸引其他的不可见元素，通过自我实现，形成具体的可见的物质。喜悦和愉快的思想吸引好的元素，产出好的物质；担忧和恐惧则带来厄运。
 
@@ -125,15 +125,15 @@ categories:
 
 沿着这条线你去看那些精神励练或者灵修冥想类的书就可以找到清晰的脉络：
 
--  1910 年 Wallace Wattles 的《[致富的科学](https://book.douban.com/subject/4010180//)》
--  1919 年附近 Ernest Holmes 的[那一堆](https://search.douban.com/book/subject_search?search_text=Ernest+Holmes&cat=1001)
-- 1937 年 Napoleon Hill 的《[思考致富](https://book.douban.com/subject/1021977/)》
-- 1952 年 Norman Vincent Peale 的《[积极思考就是力量](https://book.douban.com/subject/1393651/)》
-- 1962 年 Catherine Ponder 的[那一堆](https://search.douban.com/book/subject_search?search_text=Catherine+Ponder&cat=1001&start=15)
-- 1990 年 PeterM.Senge 的《[第五项修炼](https://book.douban.com/subject/1045862/)》
-- 1991 年 Anthony Robbins 的《[唤醒心中的巨人](https://book.douban.com/subject/6110455/)》
-- 1995 年 Deepak Chopra 的《[成功的七大精神法则](https://book.douban.com/subject/1082832/)》
-- 2007 年 Rhonda Byrne 的《[秘密](https://book.douban.com/subject/3266968/)》
+-  1910 年 Wallace Wattles 的《[致富的科学](https://book.douban.com/subject/4010180//){:target="_blank"}》
+-  1919 年附近 Ernest Holmes 的[那一堆](https://search.douban.com/book/subject_search?search_text=Ernest+Holmes&cat=1001){:target="_blank"}
+- 1937 年 Napoleon Hill 的《[思考致富](https://book.douban.com/subject/1021977/){:target="_blank"}》
+- 1952 年 Norman Vincent Peale 的《[积极思考就是力量](https://book.douban.com/subject/1393651/){:target="_blank"}》
+- 1962 年 Catherine Ponder 的[那一堆](https://search.douban.com/book/subject_search?search_text=Catherine+Ponder&cat=1001&start=15){:target="_blank"}
+- 1990 年 PeterM.Senge 的《[第五项修炼](https://book.douban.com/subject/1045862/){:target="_blank"}》
+- 1991 年 Anthony Robbins 的《[唤醒心中的巨人](https://book.douban.com/subject/6110455/){:target="_blank"}》
+- 1995 年 Deepak Chopra 的《[成功的七大精神法则](https://book.douban.com/subject/1082832/){:target="_blank"}》
+- 2007 年 Rhonda Byrne 的《[秘密](https://book.douban.com/subject/3266968/){:target="_blank"}》
 
 这些作者每个人都号称自己发现了秘诀，但你仔细一看就知道他们是一个门派的（比如 Byrne 就明确说 Chopra 是自己的偶像）。
 
@@ -141,7 +141,7 @@ categories:
 
 我反对读这类书更重要的原因是，它们不但没用而且可能是有害的：
 
-1. **成功的因素往往是复杂的**：认为全神贯注积极正向就能赢，只是抓住了人的一种心理，就是认为追求单一化的目标就会带来诱人的回报，自己遇到的问题只是因为「杂念太多太贪心」。一个反驳的例子是德法历史上的「[儿童十字军](https://www.bilibili.com/read/cv2627216/)」，他们带着无比的正念上路，大部分人死在路上，侥幸活着到达目的地的，男孩被殴打，女孩被强暴。
+1. **成功的因素往往是复杂的**：认为全神贯注积极正向就能赢，只是抓住了人的一种心理，就是认为追求单一化的目标就会带来诱人的回报，自己遇到的问题只是因为「杂念太多太贪心」。一个反驳的例子是德法历史上的「[儿童十字军](https://www.bilibili.com/read/cv2627216/){:target="_blank"}」，他们带着无比的正念上路，大部分人死在路上，侥幸活着到达目的地的，男孩被殴打，女孩被强暴。
 2. **成功的复杂因素里积极心态起到的作用非常有限**：如果你和我一样觉得苹果一开始的成功主要是因为沃大叔脑子里面早就构思好了个人电脑如何制造并且等来了周边硬件的成熟，而不是乔帮主进行了什么冥想，那这个不用解释。
 3. **坚定地追求单一目标的风险是巨大的**：目标坚定并且一心想着成功，不会自动带来成功。但是失败了之后，打击是巨大的。我对各种具体的反思是欢迎的，对各种面向内心的自省是高度怀疑的。当然，大胆追求，深刻体验确实是强者游戏。
 4. **一切可能性都应该去面对和处理**：特别是坏的可能。如果你让我选宇宙飞船，我肯定选「考虑过 2 万种错误场景如何处理」的那艘，而不选「心若在梦就在，may the force be with you」那首。如果你让我选合作伙伴，我也宁愿选择一个可以去考虑和应对不利情况的人。
@@ -154,7 +154,7 @@ categories:
 
 我甚至觉得，古今中外的智慧就那么些[^4]：面对事情的一些经验，和经验里面折射出的胆量、韧性、反思、正直、无私等品质的力量。
 
-所以如果你看到有人说病是吃出来的而且还能[吃回去](https://book.douban.com/subject/4139324/)，或者看到我们的前嫂子[^5]搞了个 [Goop](https://goop.com/) 宣传售卖各种心法秘籍，包括取法天朝宫廷可以[塞在下体的玉石](https://www.huffpost.com/entry/jade-eggs-vagina-goop_n_588641dbe4b096b4a2335935)，转身就跑是对的。
+所以如果你看到有人说病是吃出来的而且还能[吃回去](https://book.douban.com/subject/4139324/){:target="_blank"}，或者看到我们的前嫂子[^5]搞了个 [Goop](https://goop.com/){:target="_blank"} 宣传售卖各种心法秘籍，包括取法天朝宫廷可以[塞在下体的玉石](https://www.huffpost.com/entry/jade-eggs-vagina-goop_n_588641dbe4b096b4a2335935){:target="_blank"}，转身就跑是对的。
 
 但是有些作者在传授武功秘籍的时候可没有这么好察觉。
 
@@ -190,7 +190,7 @@ categories:
 
 如果你期待读几本书就能够获得智慧，对自己和对书的要求可能都太高了。**「阅读—思考—实践」是掌握所有东西的唯一途径，智慧也不例外。**
 
-我的这类书籍的列表[正在构造](/docs/reading-list/)中。
+我的这类书籍的列表[正在构造](/docs/reading-list/){:target="_blank"}中。
 
 ### 「值得」和「不值得」之间
 
@@ -200,7 +200,7 @@ categories:
 
 我不会花时间去读《明朝那些事儿》，因为它最好的情况下也就是让我再感受一下《水浒》《三国演义》里那些人性的光辉和挣扎，不太符合我的那三个标准。
 
-但可能你[很有时间](https://www.gatesnotes.com/Books)，那么只要你不把阅读本身当成重点，而是伴随着思考和实践，读大部分这类「值得」与「不值得」之间的书应该都是无害的。
+但可能你[很有时间](https://www.gatesnotes.com/Books){:target="_blank"}，那么只要你不把阅读本身当成重点，而是伴随着思考和实践，读大部分这类「值得」与「不值得」之间的书应该都是无害的。
 
 可是，这些时间，为什么不用来创造点什么呢？
 

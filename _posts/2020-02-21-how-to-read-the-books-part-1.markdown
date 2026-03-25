@@ -21,7 +21,7 @@ categories:
 
 我不是要讨论读某一本书的办法。
 
-这事儿有很多人干了[很多遍](https://search.jd.com/Search?keyword=%E5%A6%82%E4%BD%95%E8%AF%BB%E4%B8%80%E6%9C%AC%E4%B9%A6&enc=utf-8&suggest=1.def.0.V17--12s0,20s0,38s0,97s0&wq=%E5%A6%82%E4%BD%95%E8%AF%BB)了。
+这事儿有很多人干了[很多遍](https://search.jd.com/Search?keyword=%E5%A6%82%E4%BD%95%E8%AF%BB%E4%B8%80%E6%9C%AC%E4%B9%A6&enc=utf-8&suggest=1.def.0.V17--12s0,20s0,38s0,97s0&wq=%E5%A6%82%E4%BD%95%E8%AF%BB){:target="_blank"}了。
 
 老实说，干得一般，但我也没有比他们更好的办法。
 
@@ -96,7 +96,7 @@ categories:
 
 很单纯很可爱，但也骄傲，自私，怯弱，残忍。
 
-[Jean Piaget](https://en.wikipedia.org/wiki/Jean_Piaget) 说过，儿童由于和成年人的相处中长期处于「弱势」（经常被打骂的儿童更是如此），心理多少都是有一些「变态」的。
+[Jean Piaget](https://en.wikipedia.org/wiki/Jean_Piaget){:target="_blank"} 说过，儿童由于和成年人的相处中长期处于「弱势」（经常被打骂的儿童更是如此），心理多少都是有一些「变态」的。
 
 想必任何一个诚实的人都会同意这句话。
 
@@ -106,7 +106,7 @@ categories:
 
 难怪有些教育者认为如果把一堆青少年扔到岛上散养，《大逃杀》的场面就肯定会出现。
 
-他们的解决办法之一，是把《[蝇王](https://book.douban.com/subject/1872158/)》搞成中学生必选读物[^2]。
+他们的解决办法之一，是把《[蝇王](https://book.douban.com/subject/1872158/){:target="_blank"}》搞成中学生必选读物[^2]。
 
 必选读物，那些精选出来的文史类作品，早点儿读完它们，让你看到人性的丰富。
 
@@ -138,7 +138,7 @@ categories:
 
 戏剧在莎士比亚的年代到达了顶峰。
 
-我很喜欢的插画，你只要看过 Gustave Doré的[作品](https://item.jd.com/42344951716.html) ，或者 [Alphonse de Neuville](https://en.wikipedia.org/wiki/Alphonse-Marie-Adolphe_de_Neuville) 给凡尔纳画的[那些插图](https://item.jd.com/12551690.html)，就知道巅峰期也早过了。
+我很喜欢的插画，你只要看过 Gustave Doré的[作品](https://item.jd.com/42344951716.html){:target="_blank"} ，或者 [Alphonse de Neuville](https://en.wikipedia.org/wiki/Alphonse-Marie-Adolphe_de_Neuville){:target="_blank"} 给凡尔纳画的[那些插图](https://item.jd.com/12551690.html){:target="_blank"}，就知道巅峰期也早过了。
 
 读得越多，你就越会发现，限制这些古人获得更大成就的，往往不仅仅是生产力，而是观念。
 
@@ -206,7 +206,7 @@ categories:
 
 在这个人类面临的问题纷繁复杂，信息都是又别人 push 给你的年代，你获得好处会是非常广泛的。
 
-包括分清楚「[智慧和技能](/2020/02/how-to-read-the-books-part-2/)」，并且决定你想拥有哪一个。
+包括分清楚「[智慧和技能](/2020/02/how-to-read-the-books-part-2/){:target="_blank"}」，并且决定你想拥有哪一个。
 
 [^1]: 很多人青春期之后的大量的阅读只是在找材料维护自己的观念而已。所以在人生后期很难学习那些可以让自己过得更好的新技能或者新事物，被普遍解释成大脑的可塑性变差。我觉得一个可能更大的障碍来自于人自己引以为傲的那些观念。
 [^2]: 相比之下我们的必读书籍是什么就很值得思考了。

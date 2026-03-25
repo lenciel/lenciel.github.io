@@ -12,7 +12,7 @@ categories:
 
 ---
 
-> 本系列是，[疫情日记](/categories/lockdown-diary/)...
+> 本系列是，[疫情日记](/categories/lockdown-diary/){:target="_blank"}...
 
 早上起来，天又放晴了。
 
@@ -32,7 +32,7 @@ categories:
 
 管理任何规模的组织，营造安全感都很重要。
 
-Google 的 [Aristotle 项目](https://rework.withgoogle.com/print/guides/5721312655835136/)，找了很久影响组织效能的最关键要素，后来发现团队成员的学历、智商、经验等等，都不如安全感来得重要。
+Google 的 [Aristotle 项目](https://rework.withgoogle.com/print/guides/5721312655835136/){:target="_blank"}，找了很久影响组织效能的最关键要素，后来发现团队成员的学历、智商、经验等等，都不如安全感来得重要。
 
 建设安全感，核心是坦诚和能力。
 
@@ -42,9 +42,9 @@ Google 的 [Aristotle 项目](https://rework.withgoogle.com/print/guides/5721312
 
 政府需要什么样的能力，让老百姓有安全感，这轮不到我研究。
 
-只是在想，可能很多人不知道，从日本传过来的，不只是[昨天说的](/2022/04/diary-in-shanghai-lockdown-2/)「知识分子」四个字。
+只是在想，可能很多人不知道，从日本传过来的，不只是[昨天说的](/2022/04/diary-in-shanghai-lockdown-2/){:target="_blank"}「知识分子」四个字。
 
-「经济」「共和」，「立场」「方针」，「观点」「战略」，「历史」「政治」「物理」「化学」...[好几千个](https://www.docin.com/p-1068449502.html)。
+「经济」「共和」，「立场」「方针」，「观点」「战略」，「历史」「政治」「物理」「化学」...[好几千个](https://www.docin.com/p-1068449502.html){:target="_blank"}。
 
 十月革命一声炮响，马列主义，其实也是先到日本，再二传进中国。
 
@@ -76,7 +76,7 @@ When You Have a Hammer, Everything Looks Like a Nail.
 
 今天回看，问题是什么？
 
-最近看过一本叫《[第一等人](https://book.douban.com/subject/30419911/)》的书，我想，问题在没了文化。
+最近看过一本叫《[第一等人](https://book.douban.com/subject/30419911/){:target="_blank"}》的书，我想，问题在没了文化。
 
 中国解放前有两千多年，文化的传承，一直是靠地主阶层以家庭为单位进行的。而且这些地主成为地主，多半还是通过兢兢业业几代人的经营与管理，并不是很多地方说的，靠巧取豪夺。
 

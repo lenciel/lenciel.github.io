@@ -12,7 +12,7 @@ categories:
 
 ---
 
-> 本系列是，[疫情日记](/categories/lockdown-diary/)...
+> 本系列是，[疫情日记](/categories/lockdown-diary/){:target="_blank"}...
 
 出了一小会儿太阳，天就阴了。
 
@@ -76,7 +76,7 @@ categories:
 
 同样是我很喜欢的作家。
 
-他有篇文章，就叫《[个人尊严](https://www.vrrw.net/hstj/18329.html)》[^1]。
+他有篇文章，就叫《[个人尊严](https://www.vrrw.net/hstj/18329.html){:target="_blank"}》[^1]。
 
 他说，「在国外时看到，人们对时事做出价值评判时，总是从两个独立的方面来进行：一个方面是国家或者社会的尊严，这像是时事的经线;另一个方面是个人的尊严，这像是时事的纬线。回到国内，一条纬线就像是没有，连尊严这个字眼也感到陌生了。」
 

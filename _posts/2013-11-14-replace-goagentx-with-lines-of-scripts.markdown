@@ -11,7 +11,7 @@ categories:
 ---
 
 
-几年过去了，[Goagent](https://code.google.com/p/goagent/)是本座翻墙唯一的选择。在 Mac 上使用它最开始我用了[GoAgentX](https://github.com/ohdarling/GoAgentX)，但使用了一段时间之后发现几个不太满意的地方：
+几年过去了，[Goagent](https://code.google.com/p/goagent/){:target="_blank"}是本座翻墙唯一的选择。在 Mac 上使用它最开始我用了[GoAgentX](https://github.com/ohdarling/GoAgentX){:target="_blank"}，但使用了一段时间之后发现几个不太满意的地方：
 
 * 不是简单给 GoAgent 做了个界面，而是集成了多个翻墙工具，选项挺多挺乱的（可能对其他用户是一个好事）
 * 每次 GoAgent 更新之后，GoAgentX 更新的时间都比较滞后
@@ -19,7 +19,7 @@ categories:
 
 但其实用 GoAgent 我们需要的无非是`python proxy.py`，有很多办法让它运行起来。本座比较喜欢的是用 tmux 把这个任务跑在一个 detach 了的 session，如果连接有问题再 attach 上去看看是什么问题。具体流程如下：
 
-先装[tmuxinator](https://github.com/aziz/tmuxinator)，看名字不知道是不是受了 ubuntu 下面 terminator 的启发。然后新建一个项目用来跑 goagent:
+先装[tmuxinator](https://github.com/aziz/tmuxinator){:target="_blank"}，看名字不知道是不是受了 ubuntu 下面 terminator 的启发。然后新建一个项目用来跑 goagent:
 
 ```bash
 $ mux new goagent

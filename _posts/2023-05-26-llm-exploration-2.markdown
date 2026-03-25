@@ -18,9 +18,9 @@ categories:
 - llm-exploration
 ---
 
-> 本系列是，[LLM 调研](/categories/llm-exploration/)：说一下我对它的看法，以及它能做什么不能做什么...
+> 本系列是，[LLM 调研](/categories/llm-exploration/){:target="_blank"}：说一下我对它的看法，以及它能做什么不能做什么...
 
-广泛流传的 [LLM Survey](https://github.com/RUCAIBox/LLMSurvey) 中说，和前几代语言模型[^1]相比，LLM 主要的特点就是「表现出一些令人惊讶的涌现能力」。并且，「为什么涌现能力会出现在 LLM 中，仍然是个谜」。
+广泛流传的 [LLM Survey](https://github.com/RUCAIBox/LLMSurvey){:target="_blank"} 中说，和前几代语言模型[^1]相比，LLM 主要的特点就是「表现出一些令人惊讶的涌现能力」。并且，「为什么涌现能力会出现在 LLM 中，仍然是个谜」。
 
 这篇就来说说我理解的「涌现能力」。
 
@@ -31,13 +31,13 @@ categories:
 
 ### 什么是「涌现能力」
 
-正式提出「涌现能力」的论文《[Emergent Abilities of Large Language Models](https://arxiv.org/abs/2206.07682)》里，对它的定义其实蛮宽泛的，即「**小模型中不存在但在大模型中出现的能力**」。然后它进一步介绍了一个特征，就是当模型规模达到一定水平时，指标会显著提高并超过随机水平，即「一些能力开始涌现」。最后，因为找不到别的原因，文章把这种现象跟物理学中的「相变」做了关联。
+正式提出「涌现能力」的论文《[Emergent Abilities of Large Language Models](https://arxiv.org/abs/2206.07682){:target="_blank"}》里，对它的定义其实蛮宽泛的，即「**小模型中不存在但在大模型中出现的能力**」。然后它进一步介绍了一个特征，就是当模型规模达到一定水平时，指标会显著提高并超过随机水平，即「一些能力开始涌现」。最后，因为找不到别的原因，文章把这种现象跟物理学中的「相变」做了关联。
 
-后续有很多论文去讨论各种各样细分的「涌现能力」，比如[上下文学习](https://arxiv.org/abs/2005.14165)，[指令遵循](https://arxiv.org/abs/2109.01652)，[逐步推理](https://arxiv.org/abs/2201.11903)等等。
+后续有很多论文去讨论各种各样细分的「涌现能力」，比如[上下文学习](https://arxiv.org/abs/2005.14165){:target="_blank"}，[指令遵循](https://arxiv.org/abs/2109.01652){:target="_blank"}，[逐步推理](https://arxiv.org/abs/2201.11903){:target="_blank"}等等。
 
-OpenAI 的员工 Jason Wei 还有[一篇博客](https://www.jasonwei.net/blog/emergence)，记录了多达 137 种的 LLM 的涌现能力。
+OpenAI 的员工 Jason Wei 还有[一篇博客](https://www.jasonwei.net/blog/emergence){:target="_blank"}，记录了多达 137 种的 LLM 的涌现能力。
 
-因为这些涌现能力的不可解释和不可预测性，才有了后来的 1000 多名科技领袖带头签署的[公开信](https://futureoflife.org/open-letter/pause-giant-ai-experiments/)，来制止「the dangerous race to ever-larger unpredictable black-box models with **emergent capabilities**」。
+因为这些涌现能力的不可解释和不可预测性，才有了后来的 1000 多名科技领袖带头签署的[公开信](https://futureoflife.org/open-letter/pause-giant-ai-experiments/){:target="_blank"}，来制止「the dangerous race to ever-larger unpredictable black-box models with **emergent capabilities**」。
 
 ### 为什么它可能是个「误会」？
 
@@ -45,7 +45,7 @@ OpenAI 的员工 Jason Wei 还有[一篇博客](https://www.jasonwei.net/blog/em
 
 首先，这一系列论文的论证过程，并不包含足够多的数据和模型细节，只是通过一些指标随着模型大小到了一定规模后出现的急剧提升，来得出了「涌现能力出现」的结论[^2]。
 
-然后，做过指标的我们都明白，数据拐弯拐得有多剧烈，跟指标选取是有很大关系的。斯坦福的 Schaeffer 牵头的团队，通过改变指标，让大部分指标随模型规模变化的曲线变得线性平滑。在他们随后[发布的论文](https://arxiv.org/abs/2304.15004)里，他们对一些不平滑的指标也做了解释。比如「exact string match」这种指标，用来考验小模型显然是没啥道理的。
+然后，做过指标的我们都明白，数据拐弯拐得有多剧烈，跟指标选取是有很大关系的。斯坦福的 Schaeffer 牵头的团队，通过改变指标，让大部分指标随模型规模变化的曲线变得线性平滑。在他们随后[发布的论文](https://arxiv.org/abs/2304.15004){:target="_blank"}里，他们对一些不平滑的指标也做了解释。比如「exact string match」这种指标，用来考验小模型显然是没啥道理的。
 
 最后，如果用同样的指标体系去考核图像处理，机器视觉等领域的一些模型，其实也会看到类似的剧烈拐弯的曲线。换句话说，如果模型规模上去，指标剧烈提升，就代表模型有了「涌现能力」，那其他模型早就有了。
 
@@ -75,7 +75,7 @@ LLM 为什么做不到？
 
 这就是「语言」的特殊性。
 
-LLM 本身的目的，或者说，无论大小，所有的语言模型的目的，其实都是为了最大化与自然语言之间的相似度：这件事情在数学上是[可以度量的](https://en.wikipedia.org/wiki/Maximum_likelihood_estimation)。
+LLM 本身的目的，或者说，无论大小，所有的语言模型的目的，其实都是为了最大化与自然语言之间的相似度：这件事情在数学上是[可以度量的](https://en.wikipedia.org/wiki/Maximum_likelihood_estimation){:target="_blank"}。
 
 LLM 中使用的一个损失函数是交叉熵损失（Cross-entropy loss），来衡量模型预测概率分布与真实概率分布之间的差异：
 
@@ -83,13 +83,13 @@ $$
 H(p, q) = -\sum_{x} p(x) \log q(x)
 $$
 
-这让我想到了[香农熵](https://cs.stanford.edu/people/eroberts/courses/soco/projects/1999-00/information-theory/entropy_of_english_9.html)：
+这让我想到了[香农熵](https://cs.stanford.edu/people/eroberts/courses/soco/projects/1999-00/information-theory/entropy_of_english_9.html){:target="_blank"}：
 
 $$
 H(p) = - \sum_{i=1}^{n} p_i \log (p_i)
 $$
 
-香农在这里表达的一个重要思想，是语言是[冗余](https://cs.stanford.edu/people/eroberts/courses/soco/projects/1999-00/information-theory/redundancy_5.html)[^4]的，并且这个冗余是可以算的。我有一次在群里面跟朋友们开玩笑说：
+香农在这里表达的一个重要思想，是语言是[冗余](https://cs.stanford.edu/people/eroberts/courses/soco/projects/1999-00/information-theory/redundancy_5.html){:target="_blank"}[^4]的，并且这个冗余是可以算的。我有一次在群里面跟朋友们开玩笑说：
 
 > 研表究明，酸唧唧的野 enter[^5] 会成造说话的时候序顺乱混，但并不定一影阅响读。因为看吃野 enter 的人说话还能完看的，也都不是常正人，脑子全是都乱的…
 
@@ -113,7 +113,7 @@ $$
 
 比如中国人看到耍小聪明的人，有时候会讽刺说：「高，高，实在是高」，这里没有一个「高」字是可以随便去掉的。
 
-再比如我们读文学作品。以刘震云很风格化的《[故乡面和花朵](https://book.douban.com/subject/1042830/)》为例，卷一有一段：
+再比如我们读文学作品。以刘震云很风格化的《[故乡面和花朵](https://book.douban.com/subject/1042830/){:target="_blank"}》为例，卷一有一段：
 
 > 近来一切都好吧？家里也好吧？你爹好吧？甥媳妇、重外甥和重外甥女都还好吧？
 
@@ -122,12 +122,12 @@ $$
 因为每个字都有「意义」[^10]。
 
 [^1]: 语言模型经历了四个阶段：SLM->NLM->PLM->LLM。
-[^2]: 因为看不到背后的细节，有部分科学家批评说，这些论文跟一篇博客的[区别并不大](https://numbersallthewaydown.com/2023/04/06/gpt-4-technical-report-a-blog-post-masquerading-as-scientific-literature/)。
+[^2]: 因为看不到背后的细节，有部分科学家批评说，这些论文跟一篇博客的[区别并不大](https://numbersallthewaydown.com/2023/04/06/gpt-4-technical-report-a-blog-post-masquerading-as-scientific-literature/){:target="_blank"}。
 [^3]: 稍微受过训练的人都知道「相关性」和「因果性」的巨大区别。所以大量 AI 能力用于医疗诊断后，人类医生仍然被要求保持独立的推理、假设检验和决策，而把 AI 的输出作为一个参考输入。
 [^4]: 这里的冗余是信息论层面的，它其实衡量的是一门语言里的字母、符号在语言里面使用的效率。统计和计算这个有很多实际应用。比如 ASCII 为每个字符保留 8 个 bit，但是一些计算表明英语的熵是每个字母一个 bit。这是 Huffman 压缩和 Lempel-Ziv 压缩等等算法的基础。
-[^5]: 这里的「enter」是指「[四川樱桃](https://baike.baidu.com/item/%E5%9B%9B%E5%B7%9D%E6%A8%B1%E6%A1%83/8867475)」。
+[^5]: 这里的「enter」是指「[四川樱桃](https://baike.baidu.com/item/%E5%9B%9B%E5%B7%9D%E6%A8%B1%E6%A1%83/8867475){:target="_blank"}」。
 [^6]: 在 gcc 编译器的参数中，`-O`表示优化级别，比如`-O0`表示不进行任何优化，`-Ofast`表示基本上最激进的优化。
-[^7]: 所以我觉得 Ted Jiang 的这篇文章仍然是对 LLM [最好的类比](https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web)。
+[^7]: 所以我觉得 Ted Jiang 的这篇文章仍然是对 LLM [最好的类比](https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web){:target="_blank"}。
 [^8]: 当然对整本书都有意见的人也很多，因为这本书写得太个性化了。
 [^9]: 实际上绘画、电影等等可能在干类似的事情，所以我们会说我们看懂了画家的「绘画语言」，或者导演的「电影语言」。
-[^10]: 当然「意义」是不是不可量化不可计算，这个问题也有人有别的看法。博尔赫斯有个收在《[小径分岔的花园](https://book.douban.com/subject/25796120/)》里的短篇叫《<吉诃徳>的作者皮埃尔·梅纳尔》，讨论过一个蛮有趣的场景。提出「柯氏复杂性」的柯尔莫哥洛夫，也曾经想从符号学和控制论的角度去量化计算文字背后的文化和意义。他的结论是，「在这个方向上取得真正的进展，需要更多搞控制理论的家伙也喜欢上文学并且好好研究它们」。
+[^10]: 当然「意义」是不是不可量化不可计算，这个问题也有人有别的看法。博尔赫斯有个收在《[小径分岔的花园](https://book.douban.com/subject/25796120/){:target="_blank"}》里的短篇叫《<吉诃徳>的作者皮埃尔·梅纳尔》，讨论过一个蛮有趣的场景。提出「柯氏复杂性」的柯尔莫哥洛夫，也曾经想从符号学和控制论的角度去量化计算文字背后的文化和意义。他的结论是，「在这个方向上取得真正的进展，需要更多搞控制理论的家伙也喜欢上文学并且好好研究它们」。

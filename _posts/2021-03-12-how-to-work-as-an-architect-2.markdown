@@ -12,11 +12,11 @@ categories:
 
 ---
 
-这是本系列的第二篇，在[前面的一篇](https://lenciel.com/2021/02/how-to-work-as-an-architect-1/)里说了，什么是架构师：它是团队中负责推动所有涉众进行沟通和讨论，形成对系统要素的决策，并将这些团队的「共同理解」记录、维护和不断迭代的一个角色，它不是一个「岗位」或者「职称」。
+这是本系列的第二篇，在[前面的一篇](https://lenciel.com/2021/02/how-to-work-as-an-architect-1/){:target="_blank"}里说了，什么是架构师：它是团队中负责推动所有涉众进行沟通和讨论，形成对系统要素的决策，并将这些团队的「共同理解」记录、维护和不断迭代的一个角色，它不是一个「岗位」或者「职称」。
 
 接下来基于这个定义，我来说说怎么做好这个角色。
 
-因为架构师的主要工作是跟各个[不同层次的涉众](https://lenciel.com/2021/02/how-to-work-as-an-architect-1/#%E9%82%A3%E7%A9%B6%E7%AB%9F%E4%BB%80%E4%B9%88%E6%98%AF%E6%9E%B6%E6%9E%84)进行沟通和讨论，所以，我把它分为三方面的工作内容，这些工作内容都需要相应的能力支撑：
+因为架构师的主要工作是跟各个[不同层次的涉众](https://lenciel.com/2021/02/how-to-work-as-an-architect-1/#%E9%82%A3%E7%A9%B6%E7%AB%9F%E4%BB%80%E4%B9%88%E6%98%AF%E6%9E%B6%E6%9E%84){:target="_blank"}进行沟通和讨论，所以，我把它分为三方面的工作内容，这些工作内容都需要相应的能力支撑：
 
 |      | 工作内容 | 基础能力                                   | 时间分配 |
 | :--- | :------- | :----------------------------------------- | :------- |
@@ -42,15 +42,15 @@ categories:
 
 但没有威权，可以有权威。换句话说，架构师必须通过影响力来工作。怎么形成影响力呢？
 
-1933 年，[Draper Kauffman](https://en.wikipedia.org/wiki/Draper_Kauffman) 被海军拒绝，理由是他的视力不好。十年后，他训练了一支特种部队，成为[海豹突击队](https://en.wikipedia.org/wiki/United_States_Navy_SEALs)的前身。
+1933 年，[Draper Kauffman](https://en.wikipedia.org/wiki/Draper_Kauffman){:target="_blank"} 被海军拒绝，理由是他的视力不好。十年后，他训练了一支特种部队，成为[海豹突击队](https://en.wikipedia.org/wiki/United_States_Navy_SEALs){:target="_blank"}的前身。
 
 这支特种部队的训练，包含一个极为艰苦被称为「过滤器」的第一周，用 Kauffman 的话说，「Hell Week separated the men from the boys」。
 
-在《[the Culture Code](https://www.amazon.com/Culture-Code-Secrets-Highly-Successful/dp/0804176981/ref=sr_1_1?dchild=1&keywords=The+Culture+Code&qid=1615539572&sr=8-1)》这本书里面，有一段关于这一周的描述：
+在《[the Culture Code](https://www.amazon.com/Culture-Code-Secrets-Highly-Successful/dp/0804176981/ref=sr_1_1?dchild=1&keywords=The+Culture+Code&qid=1615539572&sr=8-1){:target="_blank"}》这本书里面，有一段关于这一周的描述：
 
 > "We were testing Kauffman all along," wrote Dan Dillon, a member of the first demolition class, "but my respect for him deepened because a lot of the officers will tell you what to do, but they won't do it themselves. This man asks for suggestions. If they're good, he uses them. And he participates in everything. The dirtiest, rottenest jobs that we tackle, he is in there doing as well as the rest of us. How could you not respect him?"
 
-负责推动决策的领导者，只有跳进肮脏的战壕，和大家一起把手弄脏，大家才会关心和尊重他/她的决策。没有人看得上「[宇航员架构师](https://www.joelonsoftware.com/2001/04/21/dont-let-architecture-astronauts-scare-you/)」，但作为架构师会花很多时间在沟通上，所以参与编码工作需要考虑方式方法：
+负责推动决策的领导者，只有跳进肮脏的战壕，和大家一起把手弄脏，大家才会关心和尊重他/她的决策。没有人看得上「[宇航员架构师](https://www.joelonsoftware.com/2001/04/21/dont-let-architecture-astronauts-scare-you/){:target="_blank"}」，但作为架构师会花很多时间在沟通上，所以参与编码工作需要考虑方式方法：
 
 - 交付值得信赖的脚手架工程，在里面证明自己是值得信赖的同行，并且了解并落地了最佳实践；
 - 参与代码审核、bug fix、构建发布等工作，展示自己的技术判断力和对什么是好的代码实现的标准；
@@ -58,7 +58,7 @@ categories:
 
 ## 架构师必须有业务思考力
 
-Martin Fowler 和 Ian Cartwright 把「业务思考力」称为「[The Elephant in the Architecture](https://martinfowler.com/articles/value-architectural-attribute.html)」，这显然是搭桥了「The Elephant in the Zoom」这个隐喻：它非常重要却又被大家故意避而不谈。
+Martin Fowler 和 Ian Cartwright 把「业务思考力」称为「[The Elephant in the Architecture](https://martinfowler.com/articles/value-architectural-attribute.html){:target="_blank"}」，这显然是搭桥了「The Elephant in the Zoom」这个隐喻：它非常重要却又被大家故意避而不谈。
 
 这篇文章已经讲得足够好了，我自己一点额外的体会是，大家可能并不是避而不谈，而是有业务思考力确实挺难的。
 
@@ -75,7 +75,7 @@ Martin Fowler 和 Ian Cartwright 把「业务思考力」称为「[The Elephant 
 
 如果说让我选「The Elephant in the Architecture」，我会选文档写作：一个其实很重要，但市面上最被忽视的技能。
 
-大体上如何写好一个架构文档我已经[说过了](/2021/01/how-to-write-system-design-docs/)，行业里面还有一些其他的教程可以[参考](https://www.writethedocs.org/guide/index.html)。
+大体上如何写好一个架构文档我已经[说过了](/2021/01/how-to-write-system-design-docs/){:target="_blank"}，行业里面还有一些其他的教程可以[参考](https://www.writethedocs.org/guide/index.html){:target="_blank"}。
 
 但写好架构文档，最难的地方是什么地方应该聚焦细节，什么地方应该拉远抽象。所以这里稍微补充三个技巧。
 
@@ -89,7 +89,7 @@ Martin Fowler 和 Ian Cartwright 把「业务思考力」称为「[The Elephant 
 
 一份好的架构文档，应该是具体的，充满上下文和细节的。如果你发现自己大量使用类似于「中台」、「微服务化」、「赋能」等等大词的时候，就应该警惕自己是不是在编写一个糟糕的架构文档。
 
-在《[Made to Stick](https://www.amazon.com/Made-Stick-Ideas-Survive-Others/dp/1400064287)》这本书里面， Heath 讲了很多让信息更容易被理解和记住的办法，虽然这些办法是针对车间里的生产制造的工人和那些设计蓝图的人之间的冲突设计的，但是架构师和其他工程师之间也是类似的问题：
+在《[Made to Stick](https://www.amazon.com/Made-Stick-Ideas-Survive-Others/dp/1400064287){:target="_blank"}》这本书里面， Heath 讲了很多让信息更容易被理解和记住的办法，虽然这些办法是针对车间里的生产制造的工人和那些设计蓝图的人之间的冲突设计的，但是架构师和其他工程师之间也是类似的问题：
 
 > The manufacturing people were thinking, Why don't you just come down to the factory floor and show me where the part should go? And the engineering people were thinking, What do I need to do to make the drawings better?
 > As Bechky notes, the physical machine was the most effective and relevant domain of communication. Everyone understands the machines fluently. Therefore problems should be solved at the level of the machine.
@@ -107,12 +107,12 @@ Martin Fowler 和 Ian Cartwright 把「业务思考力」称为「[The Elephant 
 
 但是行业里面常见的「架构图」是我特别想吐槽的。各种技术大会上，当 slides 里面出现这些架构图时，观众往往就会开始举起手机拍摄，用「系统架构图」做关键字 google 一下，它们大多数长这样：
 
-![architecture-diagram-1](/downloads/images/2021_03/architecture-diagram-1.png --alt Don't touch me...)
+![architecture-diagram-1](/downloads/images/2021_03/architecture-diagram-1.png --alt Don't touch me...){:target="_blank"}
 图 1. 系统架构图
 
 它们的鼻祖，应该是下面这些图：
 
-![architecture-diagram-2](/downloads/images/2021_03/architecture-diagram-2.png --alt Don't touch me...)
+![architecture-diagram-2](/downloads/images/2021_03/architecture-diagram-2.png --alt Don't touch me...){:target="_blank"}
 图 2. 美国军方物流系统架构图
 
 这些图最大的问题就是 TMI：Too Much Information。对于看的人来说，它不仅仅是显得宏大而无聊，更重要的麻烦是找不到有效信息的入口。

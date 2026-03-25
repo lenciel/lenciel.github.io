@@ -15,18 +15,18 @@ categories:
 * 没有被墙但很糟的；
 * 很不错但被墙了的；
 
-所以虽然知道[Github](http://github.com)可以免费 host 任何静态页面很久了，眼看着[Octopress](http://octopress.org/)也日益成熟，但一直都下定决心去试：谁知道哪天 Github 又被墙了呢？
+所以虽然知道[Github](http://github.com){:target="_blank"}可以免费 host 任何静态页面很久了，眼看着[Octopress](http://octopress.org/){:target="_blank"}也日益成熟，但一直都下定决心去试：谁知道哪天 Github 又被墙了呢？
 
-不过，在最近自己的职业生涯发生了不小的变化，在可预见的未来，肯定要做很多跟 code 有关的笔记。[现在的blog](https://lenciel.com)系统是 wordpress，虽然非常好用，但是比起 markdown 来说，写起 code 来速度就差太多了。所以今天下定决心试了一把 Octopress+Github Pages，效果非常满意，特别记录一下过程，像大家做个推荐。
+不过，在最近自己的职业生涯发生了不小的变化，在可预见的未来，肯定要做很多跟 code 有关的笔记。[现在的blog](https://lenciel.com){:target="_blank"}系统是 wordpress，虽然非常好用，但是比起 markdown 来说，写起 code 来速度就差太多了。所以今天下定决心试了一把 Octopress+Github Pages，效果非常满意，特别记录一下过程，像大家做个推荐。
 
 Jekyll&Octopress
 ----------------
 
-[Octopress](http://octopress.org/)是在[Jekyll](https://github.com/mojombo/jekyll)基础上进行的开发。[Jekyll](https://github.com/mojombo/jekyll)作为 Ruby 开发的静态页面 blog 系统，吸引本座的地方在于：
+[Octopress](http://octopress.org/){:target="_blank"}是在[Jekyll](https://github.com/mojombo/jekyll){:target="_blank"}基础上进行的开发。[Jekyll](https://github.com/mojombo/jekyll){:target="_blank"}作为 Ruby 开发的静态页面 blog 系统，吸引本座的地方在于：
 
 * **静态页面**：由于 Jekyll 生成的都是静态页面，意味着这些页面可以在任何地方被 host，比如 Github Pages，Google Drive 甚至是 Dropbox 都可以作为选择（当然它们也基本是被墙的）。
 * **Markdown**：Jekyll 的日志因为是用 Markdown 写的，相比传统的 Blog 系统如 Wordpress 而言，一方面在写的时候可以用你顺手的编辑器，另一方面储存和版本管理也方便得多。
-* **代码插入方便美观**：Octopress 对日志中嵌入代码提供了[各种方便](http://octopress.org/docs/blogging/code/)。
+* **代码插入方便美观**：Octopress 对日志中嵌入代码提供了[各种方便](http://octopress.org/docs/blogging/code/){:target="_blank"}。
 
 Mac下的安装设置过程
 -----------------
@@ -92,7 +92,7 @@ gem install bundler
 rbenv rehash
 ```
 
-然后部署到刚才申请的 repo 上面去。虽然[Github Pages](http://pages.github.com/)自己有个废柴说明页面，但是看完之后一般你是不知道如何算是部署成功的。好在 Octopress 已经内建了交互式的配置和部署的命令：
+然后部署到刚才申请的 repo 上面去。虽然[Github Pages](http://pages.github.com/){:target="_blank"}自己有个废柴说明页面，但是看完之后一般你是不知道如何算是部署成功的。好在 Octopress 已经内建了交互式的配置和部署的命令：
 
 ``` ruby
 rake setup_github_pages
@@ -144,9 +144,9 @@ subl 是本座在 mac 上使用的编辑器`Sublime Text 2`的命令行命令，
 
 ####Markdown Editing####
 
-[Markdown Editing](http://ttscoff.github.com/MarkdownEditing/)对语法高亮，粘贴超链接，样式化，加 footnote 等都做了很好的支持：
+[Markdown Editing](http://ttscoff.github.com/MarkdownEditing/){:target="_blank"}对语法高亮，粘贴超链接，样式化，加 footnote 等都做了很好的支持：
 
-![Sublime with Markdown Editing](/downloads/images/2013_03/sublime_with_markdown_editing.png --alt Don't touch me)
+![Sublime with Markdown Editing](/downloads/images/2013_03/sublime_with_markdown_editing.png --alt Don't touch me){:target="_blank"}
 
 ####OmniMarkupPreview####
 
@@ -154,9 +154,9 @@ OmniMarkupPreview 支持`Cmd+Alt+O`在你指定的浏览器里面预览并且动
 
 ###更多###
 
-* [Octopress官方文档](http://octopress.org/docs/)
-* [Markdown语法ref](http://daringfireball.net/projects/markdown/)
-* [如何使用repo里面的图片](https://github.com/imathis/octopress/issues/701#issuecomment-7664070)
+* [Octopress官方文档](http://octopress.org/docs/){:target="_blank"}
+* [Markdown语法ref](http://daringfireball.net/projects/markdown/){:target="_blank"}
+* [如何使用repo里面的图片](https://github.com/imathis/octopress/issues/701#issuecomment-7664070){:target="_blank"}
 
 
 

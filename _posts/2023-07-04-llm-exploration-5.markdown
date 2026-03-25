@@ -22,7 +22,7 @@ categories:
 - llm-exploration
 ---
 
-> 本系列是，[LLM 调研](/categories/llm-exploration/)...说一下它能做什么不能做什么，能做的部分怎么做比较好。
+> 本系列是，[LLM 调研](/categories/llm-exploration/){:target="_blank"}...说一下它能做什么不能做什么，能做的部分怎么做比较好。
 
 <h3>目录</h3>
 
@@ -33,9 +33,9 @@ categories:
 
 LLM 的热潮过去了半年多，它究竟是「鹦鹉学舌」还是具备「智能」，甚至具备可以发展为「AGI」的智能，这一本质上的分歧还没有收敛的趋势。
 
-IEEE Spectrum 为此专门搞了个[计分卡](https://spectrum.ieee.org/artificial-general-intelligence)，把 AI 领域的 22 位杰出领袖的意见做了一个整理：可以看到，**以 Rodney Brooks、Yann Lecun 为代表的大部分人，还是觉得哪怕 GPT-4 也没有任何发展为 AGI 的可能。少数派主要是忧心忡忡的 Hinton 和 Sam Altman。**
+IEEE Spectrum 为此专门搞了个[计分卡](https://spectrum.ieee.org/artificial-general-intelligence){:target="_blank"}，把 AI 领域的 22 位杰出领袖的意见做了一个整理：可以看到，**以 Rodney Brooks、Yann Lecun 为代表的大部分人，还是觉得哪怕 GPT-4 也没有任何发展为 AGI 的可能。少数派主要是忧心忡忡的 Hinton 和 Sam Altman。**
 
-从我前面的文章大家应该知道，我肯定是站 Rodney Brooks 这一派的。不过，我认为目前最好的分析不是 AI 圈子给出的，而是伟大的[^0] Noam Chomsky [给出的](https://www.commondreams.org/opinion/noam-chomsky-on-chatgpt)。
+从我前面的文章大家应该知道，我肯定是站 Rodney Brooks 这一派的。不过，我认为目前最好的分析不是 AI 圈子给出的，而是伟大的[^0] Noam Chomsky [给出的](https://www.commondreams.org/opinion/noam-chomsky-on-chatgpt){:target="_blank"}。
 
 为什么那么多优秀的专家学者站在另一边？我还是觉得这跟神经网络起起伏伏 90 年，一开始就用了类似于「智能」、「神经」、「学习」、「推理」这样的词[^1]有关。加上 LLM 让 NTP 的效果如此好，很容易让人有模型掌握了语言甚至整个世界底层运行机制，并「涌现」各种能力的错觉。
 
@@ -45,7 +45,7 @@ LLM 体现的「智能」和人类的「智能」究竟有何不同，可以再�
 
 人类的智能有两个显著特点，即「抽象」和「泛化」能力[^2]。
 
-GPT-3 的训练使用了数千亿个 token，与此相对，普通儿童听到的所有单词，不排重还[不到一个亿](https://theconversation.com/it-takes-a-lot-of-energy-for-machines-to-learn-heres-why-ai-is-so-power-hungry-151825)。
+GPT-3 的训练使用了数千亿个 token，与此相对，普通儿童听到的所有单词，不排重还[不到一个亿](https://theconversation.com/it-takes-a-lot-of-energy-for-machines-to-learn-heres-why-ai-is-so-power-hungry-151825){:target="_blank"}。
 
 人类不需要那么大的数据量做训练，因为人擅长各种层次的抽象，并能够把抽象出来的认知泛化。
 
@@ -57,7 +57,7 @@ GPT-3 的训练使用了数千亿个 token，与此相对，普通儿童听到�
 
 有人会说，神经网络也是使用数学函数对数据集进行的压缩和编码，不也是「抽象」吗？这里有一个显著区别是，描述客观世界的「数学模型」，通常是可解释可推理的，有一套严密的因果关系。而神经网络的「模型」，通常是几十亿甚至几百亿的参数，在训练中海量的数据集为什么形成这些参数的权重和取值，没有人知道。
 
-并且，用数学模型描述，符合「因果」的世界，老早也已经[被推翻了](https://www.hawking.org.uk/in-words/lectures/does-god-play-dice)。宇宙并不按照包括爱因斯坦在内的很多人类认为的那样运行，而是混沌的[^3]。
+并且，用数学模型描述，符合「因果」的世界，老早也已经[被推翻了](https://www.hawking.org.uk/in-words/lectures/does-god-play-dice){:target="_blank"}。宇宙并不按照包括爱因斯坦在内的很多人类认为的那样运行，而是混沌的[^3]。
 
 这就是关于「智能」的现状：往内看，人为什么具备这样的学习和思考的能力，并且功耗如此低，还没有一套理论去解释；往外看，世界拥有高度不确定性，也没有一套理论可以去建立因果关系。
 
@@ -76,10 +76,10 @@ GPT-3 的训练使用了数千亿个 token，与此相对，普通儿童听到�
 	- 搜索和推荐：更准更高转化率；
 	- 效率提升：信息的记录、聚合和归纳；
 
-如果结合现有的业务类型，上面有一些点的答案是「有可能是」，那么你就得现在投入其中，并持续关注了：因为在暴力美学到顶之后，一定会有各路人马开始优化 LLM 从[训练](https://arxiv.org/abs/2306.11987)到工程的各个方面。大量今天 LLM 做不了，或者做起来太贵的事情，明天可能就变得可行了。
+如果结合现有的业务类型，上面有一些点的答案是「有可能是」，那么你就得现在投入其中，并持续关注了：因为在暴力美学到顶之后，一定会有各路人马开始优化 LLM 从[训练](https://arxiv.org/abs/2306.11987){:target="_blank"}到工程的各个方面。大量今天 LLM 做不了，或者做起来太贵的事情，明天可能就变得可行了。
 
 [^0]: 我感觉只能这么称呼他，因为他的成就是在太丰富了。维基百科对他的说法是：「美国语言学家、哲学家、认识科学家、史学家、社会批判家和政治活动家，有时被誉为现代语言学之父。是分析哲学领域的重要人物、认知科学领域的创始人...」
-[^1]: 所以 Ted Chiang [吐槽说](https://www.ft.com/content/c1f6d948-3dde-405f-924c-09cc0dcf8c84)，当年「人工智能（artificial intelligence）」这个词就选错了，应该叫「应用统计学（applied statistics）」。
+[^1]: 所以 Ted Chiang [吐槽说](https://www.ft.com/content/c1f6d948-3dde-405f-924c-09cc0dcf8c84){:target="_blank"}，当年「人工智能（artificial intelligence）」这个词就选错了，应该叫「应用统计学（applied statistics）」。
 [^2]: 所以卡尔·萨根说：「科学不仅仅是知识体系；它还是一种思维方式」。
-[^3]: 「[测不准原理](https://zh.wikipedia.org/zh-cn/%E4%B8%8D%E7%A1%AE%E5%AE%9A%E6%80%A7%E5%8E%9F%E7%90%86)」意味着空间的每个区域都充满微小的虚拟黑洞，粒子和信息会落入这些黑洞并丢失。虽然这些虚拟黑洞非常小，比原子核小一千亿亿倍，因此信息丢失的速度非常低，让包括经典力学在内的科学定律看起来是确定正确的，但实际上，宇宙充满了不可预测性。
-[^4]: 他在各个地方都讲，这东西离「智能」还有十万八千里。但同时，也积极地[推出相关教程](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)，还呼吁让所有的小朋友都掌握相关能力。
+[^3]: 「[测不准原理](https://zh.wikipedia.org/zh-cn/%E4%B8%8D%E7%A1%AE%E5%AE%9A%E6%80%A7%E5%8E%9F%E7%90%86){:target="_blank"}」意味着空间的每个区域都充满微小的虚拟黑洞，粒子和信息会落入这些黑洞并丢失。虽然这些虚拟黑洞非常小，比原子核小一千亿亿倍，因此信息丢失的速度非常低，让包括经典力学在内的科学定律看起来是确定正确的，但实际上，宇宙充满了不可预测性。
+[^4]: 他在各个地方都讲，这东西离「智能」还有十万八千里。但同时，也积极地[推出相关教程](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/){:target="_blank"}，还呼吁让所有的小朋友都掌握相关能力。

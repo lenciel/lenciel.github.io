@@ -44,7 +44,7 @@ categories:
 
 > 我听人讲过，这个世界有种鸟是没有脚的，它只可以一直飞啊飞，飞到累的时候就在风里睡觉……这种鸟一生只可以落地一次，那就是它死的时候。
 
-如果你去搜索「无脚鸟」，大概率会进入「[极乐鸟](https://zh.wikipedia.org/zh-hans/%E6%9E%81%E4%B9%90%E9%B8%9F)」的词条：这种生活在热带森林中的鸟被带回欧洲的时候，商人除去了它们的脚以方便做标本，结果欧洲人误以为这种鸟没长脚于是给它们起名「Paradisaea apoda」：apoda 就是[无足目](https://zh.wikipedia.org/zh-hans/%E6%97%A0%E8%B6%B3%E7%9B%AE)。
+如果你去搜索「无脚鸟」，大概率会进入「[极乐鸟](https://zh.wikipedia.org/zh-hans/%E6%9E%81%E4%B9%90%E9%B8%9F){:target="_blank"}」的词条：这种生活在热带森林中的鸟被带回欧洲的时候，商人除去了它们的脚以方便做标本，结果欧洲人误以为这种鸟没长脚于是给它们起名「Paradisaea apoda」：apoda 就是[无足目](https://zh.wikipedia.org/zh-hans/%E6%97%A0%E8%B6%B3%E7%9B%AE){:target="_blank"}。
 
 极乐鸟很好看，但是很笨重，不太能飞。
 
@@ -54,7 +54,7 @@ categories:
 
 其实 apoda 源于希腊语 ápous ，没有脚的意思。这世界上还有一种动物，科和属也都来自于这个词，那就是雨燕[^1]。
 
-的确，你平时很难看到燕子落地，所以常常有人说，燕子是[不落地](https://www.zhihu.com/question/58332879)的。
+的确，你平时很难看到燕子落地，所以常常有人说，燕子是[不落地](https://www.zhihu.com/question/58332879){:target="_blank"}的。
 
 但雨燕在这方面特别厉害：出生后的雏鸟，只要学会飞行，便不会再回到原来的巢穴，而是飞个不停。通过捆绑传感器，科学家发现很多雨燕可以连续飞行十个月以上：边吃边飞，边睡边飞，边交配边飞，停下来的时候，只有去窝里喂喂刚出生的孩子。
 
@@ -66,7 +66,7 @@ categories:
 
 稍微深挖一下，我就感觉，这动物是不是外星生物。不是那种深海里捕获的鱼给人的那种它好像明显不属于我们这个世界的感觉。而是这种体重百十来克，结构简单明了，毛色平淡无奇的东西，有太多不可思议的地方。
 
-它们是世界上[速度最快的鸟](http://www.ywcy.net/cjwt/283.html)。
+它们是世界上[速度最快的鸟](http://www.ywcy.net/cjwt/283.html){:target="_blank"}。
 
 它们仿佛对人类的护照制度开启嘲讽一般，片刻不停地横跨大陆迁徙。
 
@@ -80,13 +80,13 @@ categories:
 
 很多年以来，晚祷飞行一直被认为是雨燕想要飞到更高的高空中进入睡眠状态。
 
-即便是到今天科学家已经发现并非如此，大量的科普文章仍然是[这么说的](https://zhuanlan.zhihu.com/p/116070587)。
+即便是到今天科学家已经发现并非如此，大量的科普文章仍然是[这么说的](https://zhuanlan.zhihu.com/p/116070587){:target="_blank"}。
 
 ### 为什么做晚祷飞行
 
-1979 年夏天，一位名叫 [Luit Buurma](https://www.researchgate.net/scientific-contributions/36064886-Luit-Buurma) 的生态学家和飞机撞击科学专家开始在荷兰进行雷达观测，来确保飞行安全。
+1979 年夏天，一位名叫 [Luit Buurma](https://www.researchgate.net/scientific-contributions/36064886-Luit-Buurma){:target="_blank"} 的生态学家和飞机撞击科学专家开始在荷兰进行雷达观测，来确保飞行安全。
 
-他很快发现，[Ijsselmeer](https://en.wikipedia.org/wiki/IJsselmeer) 广阔的水域上空，有来自阿姆斯特丹和周边地区的成群结队的雨燕。Buurma 使用一个特殊的数据处理器，连接到 [Friesland](https://en.wikipedia.org/wiki/Friesland) 北部的一个大型军用防空雷达，以便更仔细地研究它们的行动。
+他很快发现，[Ijsselmeer](https://en.wikipedia.org/wiki/IJsselmeer){:target="_blank"} 广阔的水域上空，有来自阿姆斯特丹和周边地区的成群结队的雨燕。Buurma 使用一个特殊的数据处理器，连接到 [Friesland](https://en.wikipedia.org/wiki/Friesland){:target="_blank"} 北部的一个大型军用防空雷达，以便更仔细地研究它们的行动。
 
 他发现，雨燕并没有睡觉。并且在高空活动几个小时后，它们还会再次回到水面上觅食。
 
@@ -102,7 +102,7 @@ categories:
 
 星星、风、偏振光、磁力线、百里之外遥远的云堆、翅膀划过的清澈冷空气，以及在它们之下静谧的充满人类痕迹的，正在步入黑暗或者迎来黎明的自然世界。它们身上没有连接着北斗或者 GPS 的手机，却如此安静、精确、完美地定位了自己。
 
-行为生态学家 [Cecilia Nilsson](https://scholar.google.com/citations?user=A-9PdlkAAAAJ&hl=en) 和她的团队发现雨燕平时并不特别抱团，但做「晚祷飞行」的时候特别集中。它们每天晚上像羊群一样上升，然后逐渐下降，而到了早晨，它们再来一次，然后回到地面解散。
+行为生态学家 [Cecilia Nilsson](https://scholar.google.com/citations?user=A-9PdlkAAAAJ&hl=en){:target="_blank"} 和她的团队发现雨燕平时并不特别抱团，但做「晚祷飞行」的时候特别集中。它们每天晚上像羊群一样上升，然后逐渐下降，而到了早晨，它们再来一次，然后回到地面解散。
 
 原来，为了做出正确的决定，它们使用了某种共识算法[^4]，以便做出最佳的导航决策。这点很值得人类学习：无论自以为多么睿智，人都很容易陷入到认知的局限中。如果和周围的人广泛而深入地交换信息，下一步做什么的决定就一定会得到改善。雨燕所做的就是和其他雨燕交换它们看到了什么，然后，事情可能就变得简单了: 只需要跟随共识后的大部队。
 

@@ -10,7 +10,7 @@ categories:
 - rants
 ---
 
-接着[前面](/2025/06/the-cycle-of-replacing-developers-1/)，这篇主要打算聊聊技术管理者应该怎么看待这个问题。
+接着[前面](/2025/06/the-cycle-of-replacing-developers-1/){:target="_blank"}，这篇主要打算聊聊技术管理者应该怎么看待这个问题。
 
 为什么不聊程序员应该怎么看待这个问题？
 
@@ -26,7 +26,7 @@ Because they don't have the luxury of saying no...
 
 大多数员工没有办法说「不」：他们的工作受绩效评估、迭代周期或我们这些管理者决策的影响，他们并不仅仅在技术原则上讨论是否使用 AI，他们在努力弄清楚如何保住工作。
 
-如果我们不是真的站在他们的角度去使用和评估，仅仅用 AI 影响创造力或者初级程序员成长作为理由，草率地说「不」，那么这既不是勇气也不是智慧，而是一种傲慢{% sidenote 'sn-id-1' '代表这种态度的典型做法是用一种类比来抽象的分析，比如 AI [就像化纤](https://culture.ghost.io/genai-is-our-polyester/)终究会被有品味的人类抛弃，或者 AI [就像可卡因](https://makemeacto.substack.com/p/is-genai-digital-cocaine)终究会被证明是有毒的。' %}。
+如果我们不是真的站在他们的角度去使用和评估，仅仅用 AI 影响创造力或者初级程序员成长作为理由，草率地说「不」，那么这既不是勇气也不是智慧，而是一种傲慢{% sidenote 'sn-id-1' '代表这种态度的典型做法是用一种类比来抽象的分析，比如 AI [就像化纤](https://culture.ghost.io/genai-is-our-polyester/){:target="_blank"}终究会被有品味的人类抛弃，或者 AI [就像可卡因](https://makemeacto.substack.com/p/is-genai-digital-cocaine){:target="_blank"}终究会被证明是有毒的。' %}。
 
 **真正威胁创造力或者工匠精神的不是 LLM 或者历史上任何一个技术，而是一个奖励速度而非深度，追求规模而非成长，引入自动化但不提升工作意义只想着降成本的职场。**
 
@@ -36,9 +36,9 @@ Because they don't have the luxury of saying no...
 
 目前对 AI 辅助编程有一左一右的两个态度{% sidenote 'sn-id-2' '并且它跟之前技术圈子里那种我觉得 rust 你觉得 go 更好完全不一样，各自的看法往往非常的绝对和极端。' %}。
 
-近期支持一方最火的帖子应该是 Thomas Ptacek 的[这篇](https://fly.io/blog/youre-all-nuts/)，而反方最打到痛点的是苹果发表的[这篇论文](https://ml-site.cdn-apple.com/papers/the-illusion-of-thinking.pdf){% sidenote 'sn-id-3' '其实是之前的相关研究的[一个延续](https://garymarcus.substack.com/p/llms-dont-do-formal-reasoning-and)，所以这是不是石头姐觉得 Apple 在 AI 时代完全落后了的原因之一呢？' %}。
+近期支持一方最火的帖子应该是 Thomas Ptacek 的[这篇](https://fly.io/blog/youre-all-nuts/){:target="_blank"}，而反方最打到痛点的是苹果发表的[这篇论文](https://ml-site.cdn-apple.com/papers/the-illusion-of-thinking.pdf){% sidenote 'sn-id-3' '其实是之前的相关研究的[一个延续](https://garymarcus.substack.com/p/llms-dont-do-formal-reasoning-and){:target="_blank"}，所以这是不是石头姐觉得 Apple 在 AI 时代完全落后了的原因之一呢？' %}。
 
-熟悉我的人可能知道，我[一直看空](https://lenciel.com/2024/01/ai-the-past-the-current-the-future/)所谓的 AGI，更不用说 LLM 会带领我们去到 AGI：因为神经网络在它们接触到的训练数据分布内泛化，但往往在该分布之外泛化就会失效，从未解决。
+熟悉我的人可能知道，我[一直看空](https://lenciel.com/2024/01/ai-the-past-the-current-the-future/){:target="_blank"}所谓的 AGI，更不用说 LLM 会带领我们去到 AGI：因为神经网络在它们接触到的训练数据分布内泛化，但往往在该分布之外泛化就会失效，从未解决。
 
 不用着急劝我，这反而对我采用 LLM 干活是一个积极的事情。
 
@@ -63,7 +63,7 @@ Because they don't have the luxury of saying no...
 
 - 现在各种 LLM 有什么特点，擅长什么，不擅长什么？
 - 如果需要写需求文档，使用哪个 LLM？为什么？如果需要编码，使用哪个 LLM？为什么？
-- 有没有自己的[提示词库](https://addyo.substack.com/p/the-prompt-engineering-playbook-for)？Cursor [配置文件](https://gist.github.com/boxabirds/4a8a8a16b1f8431fd64a790209452380)？
+- 有没有自己的[提示词库](https://addyo.substack.com/p/the-prompt-engineering-playbook-for){:target="_blank"}？Cursor [配置文件](https://gist.github.com/boxabirds/4a8a8a16b1f8431fd64a790209452380){:target="_blank"}？
 - 展示实际使用 AI 辅助生成代码的过程：是否理解生成的代码？能解释吗？能评价吗？品味如何？
 - 知不知道 MCP，有没有自己构建过 agent，尝试什么方法进行知识管理？
 

@@ -20,9 +20,9 @@ categories:
 
 但我每次要去看电影的时候，无论电脑还是投影仪，就经常陷入下图所示的「我究竟下了些什么」的迷茫中：
 
-![finder_sample.jpg](/downloads/images/2022_10/finder_sample.jpg --alt Don't touch me...)
+![finder_sample.jpg](/downloads/images/2022_10/finder_sample.jpg --alt Don't touch me...){:target="_blank"}
 
-因为[我用 zsh](/2013/07/stop-specific-zsh-shell-auto-correct/)，所以就拿它自带的 zmv 来解决这个问题。
+因为[我用 zsh](/2013/07/stop-specific-zsh-shell-auto-correct/){:target="_blank"}，所以就拿它自带的 zmv 来解决这个问题。
 
 ### 加载zmv
 
@@ -39,7 +39,7 @@ zmv () {
 }
 ```
 
-这里的 `undefined` 看起来可能有点吓人，但其实在 zsh 的 [autoloading functions](https://zsh.sourceforge.io/Doc/Release/Functions.html#Autoloading-Functions) 里这是很常见的 annotation。
+这里的 `undefined` 看起来可能有点吓人，但其实在 zsh 的 [autoloading functions](https://zsh.sourceforge.io/Doc/Release/Functions.html#Autoloading-Functions){:target="_blank"} 里这是很常见的 annotation。
 
 如果你想让它常驻可以：
 
@@ -77,12 +77,12 @@ $ for file in **/*.JPEG; do mv $file ${file/.JPEG/.jpeg}; done;
 $ zmv -n '*' '$f[9,-1]'
 ```
 
-但实际上，zmv 真正强大在于它支持匹配和分组：需要注意的是，虽然声明 group 也是用括号，但它用的不是正则而是[glob](https://en.wikipedia.org/wiki/Glob_(programming))。
+但实际上，zmv 真正强大在于它支持匹配和分组：需要注意的是，虽然声明 group 也是用括号，但它用的不是正则而是[glob](https://en.wikipedia.org/wiki/Glob_(programming){:target="_blank"})。
 
 比如你想去掉文件里面所有的`[]`起来的前缀，可以写成：
 
 ```bash
-$ zmv -n '\[*\](*).(mkv|mp4)' '$1.$2'
+$ zmv -n '\[*\](*){:target="_blank"}.(mkv|mp4)' '$1.$2'
 
 mv -- '[电影天堂www.dytt89.com]灰影人-2022_蓝光中英双字.mp4' 灰影人-2022_蓝光中英双字.mp4
 mv -- '[电影天堂www.dytt89.com]狩猎-2022_BD韩语中字.mp4' 狩猎-2022_BD韩语中字.mp4
@@ -90,7 +90,7 @@ mv -- '[电影天堂www.dytt89.com]狩猎-2022_BD韩语中字.mp4' 狩猎-2022_B
 
 这里的意思是，用`[]`扩起来的任何字符后面跟的如果是`.mkv`或者`.mp4`后缀，则把文件名作为第一个分组，把后缀作为第二个分组，用 `$1.$2` 引用这两个分组来生成修改后的文件名。
 
-更多 zmv 的用法可以看它的[文档](https://github.com/zsh-users/zsh/blob/master/Functions/Misc/zmv)。
+更多 zmv 的用法可以看它的[文档](https://github.com/zsh-users/zsh/blob/master/Functions/Misc/zmv){:target="_blank"}。
 
 [^1]: 一个 raspberry pi 挂载个 NFS 的硬盘，上面再跑个 transmission，把管理页面暴露到指定的端口。这样给它种子或者磁力链，它自己下载了，家里的电脑和投影仪都可以访问。
 [^2]: 这里的 `-n` 参数是 dry-run 的意思，通常情况下你应该先用这个参数看看它会把名字改成什么样，再真正运行命令。

@@ -17,8 +17,8 @@ categories:
 
 但其实做题的时候，硬背这些用处不大：一般读起来顺口的就是对的，所谓「语感」。
 
-今天才知道，原来对于真正的英语国家的人，他们也是凭感觉在说的。《剑桥词典》是[这样说的](http://dictionary.cambridge.org/us/grammar/british-grammar/adjectives-order)。
-Mark Forsyth 在[The Elements of Eloquence](https://www.amazon.com/exec/obidos/ASIN/1848316216/ref=nosim/0sil8)里面却讲了另外一个顺序。
+今天才知道，原来对于真正的英语国家的人，他们也是凭感觉在说的。《剑桥词典》是[这样说的](http://dictionary.cambridge.org/us/grammar/british-grammar/adjectives-order){:target="_blank"}。
+Mark Forsyth 在[The Elements of Eloquence](https://www.amazon.com/exec/obidos/ASIN/1848316216/ref=nosim/0sil8){:target="_blank"}里面却讲了另外一个顺序。
 
 他说《魔戒》作者托尔金在 7 岁就写了自己人生第一个故事《a green great dragon》（绿色大龙），拿给他妈妈看。妈妈告诉他说：「绝不可以说 green great drgon，只能说 great green dragon（大的绿龙）。」
 
@@ -32,13 +32,13 @@ Mark Forsyth 在[The Elements of Eloquence](https://www.amazon.com/exec/obidos/A
 
 但很快就有人向作者质疑，比如虽然「lovely little boy」是对的而「little lovely boy」是错的，但「big bad wolf」却是对的而「bad big wolf」是错的。比如虽然「big old oak」一般是对的， 但 Yosemite 国家公园里面可就有一条路就叫「the Old Big Oak Flat Road」。
 
-一路搜索很快就被导到 Language Log 的[这篇文章](http://languagelog.ldc.upenn.edu/nll/?p=27890)，它列了好几个有趣的 paper：
+一路搜索很快就被导到 Language Log 的[这篇文章](http://languagelog.ldc.upenn.edu/nll/?p=27890){:target="_blank"}，它列了好几个有趣的 paper：
 
-Richard Sproat 和 Chi-lin Shih 合作的「[The Cross-Linguistic Distribution of Adjective Ordering Restrictions](http://link.springer.com/chapter/10.1007/978-94-011-3818-5_30)」
+Richard Sproat 和 Chi-lin Shih 合作的「[The Cross-Linguistic Distribution of Adjective Ordering Restrictions](http://link.springer.com/chapter/10.1007/978-94-011-3818-5_30){:target="_blank"}」
 
-Alexandra Teodorescu 写的「[Adjective Ordering Restrictions Revisited](http://www.lingref.com/cpp/wccfl/25/paper1473.pdf)」
+Alexandra Teodorescu 写的「[Adjective Ordering Restrictions Revisited](http://www.lingref.com/cpp/wccfl/25/paper1473.pdf){:target="_blank"}」
 
-Stefanie Wulff 写的「[A multifactorial corpus analysis of adjective order in English](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.90.2790&rep=rep1&type=pdf)」
+Stefanie Wulff 写的「[A multifactorial corpus analysis of adjective order in English](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.90.2790&rep=rep1&type=pdf){:target="_blank"}」
 
 其中燕姿（燕姿是叫 Stefanie 么）的结论特别有意思：
 
@@ -49,7 +49,7 @@ This paper is concerned with the question of which factors govern prenominal adj
 
 也就是说，在分析了大量的文本之后发现，两个相邻形容词符合固定排序（可以被算法命中）的概率只有 73.5%：考虑到两个东西的顺序，随便定一个去猜也是 50%的命中率，这基本上就说明没有什么固定的顺序嘛。
 
-那为什么有些形容词的组合确实是固定的顺序呢？比如"bigger and better"，比如"back and forth"。Copper 和 Ross 写的"[World Order](http://www-personal.umich.edu/~jlawler/haj/worldorder.pdf)"里面说：
+那为什么有些形容词的组合确实是固定的顺序呢？比如"bigger and better"，比如"back and forth"。Copper 和 Ross 写的"[World Order](http://www-personal.umich.edu/~jlawler/haj/worldorder.pdf){:target="_blank"}"里面说：
 
 
 {% blockquote %}

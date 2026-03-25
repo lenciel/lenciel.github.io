@@ -26,7 +26,7 @@ categories:
 
 #### HTTP服务器
 
-如果网站是 HTML/CSS/JS（不包括 node.js 这种[SSJS](http://en.wikipedia.org/wiki/Comparison_of_server-side_JavaScript_solutions)）组成的，那么这是一个静态的网站。
+如果网站是 HTML/CSS/JS（不包括 node.js 这种[SSJS](http://en.wikipedia.org/wiki/Comparison_of_server-side_JavaScript_solutions){:target="_blank"}）组成的，那么这是一个静态的网站。
 
 用户访问这个网站的时候，HTTP 请求被浏览器发送，经过 DNS 等被送到网站的服务器。服务器处理 HTTP 请求，将浏览器能够处理的响应返回给用户的浏览器。所以这个场景下的服务器一般被称为 HTTP 服务器，常见的有 Apache 的 httpd 和 Nginx。
 
@@ -34,7 +34,7 @@ categories:
 
 如果你的网站是动态的，比如是用 Django 写的。
 
-那么客户端上来的请求要能够被 Djano 的 Application 处理。WSGI 就是这样的[一个协议](http://en.wikipedia.org/wiki/Web_Server_Gateway_Interface)：它是一个 Python 程序和用户请求之间的接口。WSGI 服务器的作用就是接受并分析用户的请求，调用相应的 python 对象完成对请求的处理，然后返回相应的结果。
+那么客户端上来的请求要能够被 Djano 的 Application 处理。WSGI 就是这样的[一个协议](http://en.wikipedia.org/wiki/Web_Server_Gateway_Interface){:target="_blank"}：它是一个 Python 程序和用户请求之间的接口。WSGI 服务器的作用就是接受并分析用户的请求，调用相应的 python 对象完成对请求的处理，然后返回相应的结果。
 
 WSGI 服务器的选择很多，包括 uWSGI 和 gunicorn。它们都可以处理所有的请求，包括确实应该由 python 对象处理的，也包括不该 python 对象处理的，比如静态的图像，css，js 等文件。所以理论上你可以把整个动态网站都用 WSGI 服务器承载起来，也就是整个应用完全跑在 Application 服务器上。
 
@@ -77,13 +77,13 @@ Z 的网络管理员封了 X
 
 继续我们前面的例子，很快你会发现 uWSGI 等应用服务器处理静态文件的请求的 performance 很废材，于是开始寻找直接用 nginx 来处理静态内容的办法。那么你就需要区分哪些请求是请求的静态页面，哪些是请求的动态内容。
 
-然后你就会发现，原来 nginx 不止是一个 HTTP 服务器，它还是一个[反向代理服务器](http://en.wikipedia.org/wiki/Reverse_proxy)：它可以把请求重定向到 uWSGI 或者任何别的服务器，然后把下游服务器的响应集成再返回给用户。于是你就可以配置对静态内容的请求直接在 nginx 完成，而动态内容的请求发送给 uWSGI 服务器。
+然后你就会发现，原来 nginx 不止是一个 HTTP 服务器，它还是一个[反向代理服务器](http://en.wikipedia.org/wiki/Reverse_proxy){:target="_blank"}：它可以把请求重定向到 uWSGI 或者任何别的服务器，然后把下游服务器的响应集成再返回给用户。于是你就可以配置对静态内容的请求直接在 nginx 完成，而动态内容的请求发送给 uWSGI 服务器。
 
 #### 负载均衡服务器
 
 在我自己的心中，负责均衡服务器不过是反向代理的一种（你看 CDN 我也觉得是反向代理的一种），但是很多地方这种服务器是被拿出来专门讨论的。
 
-随着你的网站访问量不断增大，你用一个 nginx 集中所有的请求再分发就显得性能不够了。这个时候你可以配置专门用于进行请求分发处理的负载均衡服务器，比如[HAProxy](http://haproxy.1wt.eu/)，而负载均衡服务器背后是集群。
+随着你的网站访问量不断增大，你用一个 nginx 集中所有的请求再分发就显得性能不够了。这个时候你可以配置专门用于进行请求分发处理的负载均衡服务器，比如[HAProxy](http://haproxy.1wt.eu/){:target="_blank"}，而负载均衡服务器背后是集群。
 
 #### 缓存服务器
 
@@ -109,33 +109,33 @@ Gunicorn（从 Ruby 下面的 Unicorn 得到的启发）应运而生：依赖 Ng
 
 #### 正向代理服务器软件
 
-- [cgi-proxy](http://www.jmarshall.com/tools/cgiproxy/)
-- [phproxy](http://sourceforge.net/projects/poxy) (中断了)
-- [glype](http://www.glype.com/)
-- [Internet censorship wiki: List of Web Proxies](http://en.cship.org/wiki/Category%3aWebproxy)
+- [cgi-proxy](http://www.jmarshall.com/tools/cgiproxy/){:target="_blank"}
+- [phproxy](http://sourceforge.net/projects/poxy){:target="_blank"} (中断了)
+- [glype](http://www.glype.com/){:target="_blank"}
+- [Internet censorship wiki: List of Web Proxies](http://en.cship.org/wiki/Category%3aWebproxy){:target="_blank"}
 
 #### 反向代理服务器软件
 
-- [apache mod_proxy](http://wiki.apache.org/cocoon/ApacheModProxy)
-- [squid](http://www.squid-cache.org/)
-- [HAProxy](http://nginx.net/)
-- [perlbal](http://www.danga.com/perlbal/)
-- [portfusion](http://portfusion.sf.net/)
-- [pound](http://www.apsis.ch/pound/)
+- [apache mod_proxy](http://wiki.apache.org/cocoon/ApacheModProxy){:target="_blank"}
+- [squid](http://www.squid-cache.org/){:target="_blank"}
+- [HAProxy](http://nginx.net/){:target="_blank"}
+- [perlbal](http://www.danga.com/perlbal/){:target="_blank"}
+- [portfusion](http://portfusion.sf.net/){:target="_blank"}
+- [pound](http://www.apsis.ch/pound/){:target="_blank"}
 
 #### TCP上的反向代理服务器软件
 
-- [balance](http://www.inlab.de/balance.html)
-- [delegate](http://www.delegate.org/delegate/nvproxy/)
-- [pen](http://siag.nu/pen/)
-- [portfusion](http://portfusion.sf.net/)
-- [pure load balancer](http://web.archive.org/web/20080113185334/http://plb.sunsite.dk/index.html)
-- [python director](http://pythondirector.sourceforge.net/)
+- [balance](http://www.inlab.de/balance.html){:target="_blank"}
+- [delegate](http://www.delegate.org/delegate/nvproxy/){:target="_blank"}
+- [pen](http://siag.nu/pen/){:target="_blank"}
+- [portfusion](http://portfusion.sf.net/){:target="_blank"}
+- [pure load balancer](http://web.archive.org/web/20080113185334/http://plb.sunsite.dk/index.html){:target="_blank"}
+- [python director](http://pythondirector.sourceforge.net/){:target="_blank"}
 
 #### 其他
 
-- [Wikipedia - Content Delivery Network](http://en.wikipedia.org/wiki/Content_Delivery_Network)
-- [Wikipedia - Category:Reverse_proxy](http://en.wikipedia.org/wiki/Category%3aReverse_proxy)
-- [Wikipedia - Load Balancing](http://en.wikipedia.org/wiki/Load_balancing_%28computing%29)
-- [Wikipedia - Scalability](http://en.wikipedia.org/wiki/Scalability)
+- [Wikipedia - Content Delivery Network](http://en.wikipedia.org/wiki/Content_Delivery_Network){:target="_blank"}
+- [Wikipedia - Category:Reverse_proxy](http://en.wikipedia.org/wiki/Category%3aReverse_proxy){:target="_blank"}
+- [Wikipedia - Load Balancing](http://en.wikipedia.org/wiki/Load_balancing_%28computing%29){:target="_blank"}
+- [Wikipedia - Scalability](http://en.wikipedia.org/wiki/Scalability){:target="_blank"}
 

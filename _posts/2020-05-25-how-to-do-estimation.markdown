@@ -24,7 +24,7 @@ categories:
 
 过去（现在好像不太让这么问了）你去一些像 Google 这样的公司面试，会被问一些看起来很无厘头的问题，比如「一辆校车内可以容纳多少个高尔夫球? 」
 
-这类问题其实有个门类叫「[费米问题](https://en.wikipedia.org/wiki/Fermi_problem)」：
+这类问题其实有个门类叫「[费米问题](https://en.wikipedia.org/wiki/Fermi_problem){:target="_blank"}」：
 
 > In physics or engineering education, a Fermi problem, Fermi quiz, Fermi question, Fermi estimate, or order estimation is an estimation problem designed to teach dimensional analysis, approximation, and such a problem is usually a back-of-the-envelope calculation.
 
@@ -48,9 +48,9 @@ categories:
 
 其实就是熟悉那些数字。
 
-Jeff Dean 说，[数字](https://colin-scott.github.io/personal_website/research/interactive_latency.html)很重要。
+Jeff Dean 说，[数字](https://colin-scott.github.io/personal_website/research/interactive_latency.html){:target="_blank"}很重要。
 
-好的架构师应该对系统的数字特别[敏感](https://learnk8s.io/allocatable-resources)。
+好的架构师应该对系统的数字特别[敏感](https://learnk8s.io/allocatable-resources){:target="_blank"}。
 
 好的技术管理者不但应该熟悉架构师脑子里面的这些数字，还要熟悉一些管理上的数字。
 
@@ -60,7 +60,7 @@ Jeff Dean 说，[数字](https://colin-scott.github.io/personal_website/research
 
 ### Little’s Law
 
-之前我介绍过，这个跟队列有关的[数学理论](https://en.wikipedia.org/wiki/Little%27s_law)。
+之前我介绍过，这个跟队列有关的[数学理论](https://en.wikipedia.org/wiki/Little%27s_law){:target="_blank"}。
 
 $$L = \lambda * W$$
 
@@ -94,9 +94,9 @@ $$\frac{0.08M*120Mbps}{1000 Mbps} = 9.6K$$
 
 ## 其他
 
-前面提到的这几个近似法则不是全部，还有一些比如 [72 法则](https://web.stanford.edu/class/ee204/TheRuleof72.html)对你估算随着业务发展资源怎么准备也很有用。
+前面提到的这几个近似法则不是全部，还有一些比如 [72 法则](https://web.stanford.edu/class/ee204/TheRuleof72.html){:target="_blank"}对你估算随着业务发展资源怎么准备也很有用。
 
-对于「费米问题」更深的讨论，则可以看[这里](https://amstat.tandfonline.com/doi/abs/10.1080/10618600.2015.1029577)。
+对于「费米问题」更深的讨论，则可以看[这里](https://amstat.tandfonline.com/doi/abs/10.1080/10618600.2015.1029577){:target="_blank"}。
 
 但我主要想说的是：
 

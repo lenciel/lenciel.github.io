@@ -13,7 +13,7 @@ categories:
 
 从 10 月的某一天开始，我发现我的日历每天都充满了外部邀请：
 
-![image holder](/downloads/images/2016_11/mac_spam_01.jpg --alt Don't touch me)
+![image holder](/downloads/images/2016_11/mac_spam_01.jpg --alt Don't touch me){:target="_blank"}
 
 很显然，天朝的某些人拿到了一个超大的邮件地址列表，然后在发送事件邀请：Mac 会把这种邀请显示在日历上面，然后显示一个通知。
 
@@ -27,15 +27,15 @@ categories:
 
 ###  处理方法
 
-在 stackexchange 上有个关于如何处理的[讨论](http://apple.stackexchange.com/questions/258424/spam-icloud-calendar-invitation/)，因为这个网站会闪断并且进去看的里面是怎么说中国人的也很刺激，所以我就稍微演示一下：
+在 stackexchange 上有个关于如何处理的[讨论](http://apple.stackexchange.com/questions/258424/spam-icloud-calendar-invitation/){:target="_blank"}，因为这个网站会闪断并且进去看的里面是怎么说中国人的也很刺激，所以我就稍微演示一下：
 
-首先登录[icloud网站](https://www.icloud.com)，然后进入 calendar，点击`Edit`然后新建一个日历，比如`Spam`：
+首先登录[icloud网站](https://www.icloud.com){:target="_blank"}，然后进入 calendar，点击`Edit`然后新建一个日历，比如`Spam`：
 
-![image holder](/downloads/images/2016_11/mac_spam_02.jpg --alt Don't touch me)
+![image holder](/downloads/images/2016_11/mac_spam_02.jpg --alt Don't touch me){:target="_blank"}
 
 然后点击某个你想删除的邀请，把它归档到这个新建的日历里面，要点右上角进入这个操作的入口：
 
-![image holder](/downloads/images/2016_11/mac_spam_03.jpg --alt Don't touch me)
+![image holder](/downloads/images/2016_11/mac_spam_03.jpg --alt Don't touch me){:target="_blank"}
 
 最后，删除这个新建的日历，这个系列的邀请就被清理干净了。
 
@@ -43,8 +43,8 @@ categories:
 
 但是这样能清静多久完全取决于你在攻击者心中的权重，如果来一串邀请就这么操作一遍，心情也是很差的，所以你可以直接把所有的邀请都设置成通过邮件来通知：
 
-![image holder](/downloads/images/2016_11/mac_spam_04.jpg --alt Don't touch me)
+![image holder](/downloads/images/2016_11/mac_spam_04.jpg --alt Don't touch me){:target="_blank"}
 
-![image holder](/downloads/images/2016_11/mac_spam_05.jpg --alt Don't touch me)
+![image holder](/downloads/images/2016_11/mac_spam_05.jpg --alt Don't touch me){:target="_blank"}
 
-![image holder](/downloads/images/2016_11/mac_spam_06.jpg --alt Don't touch me)
+![image holder](/downloads/images/2016_11/mac_spam_06.jpg --alt Don't touch me){:target="_blank"}

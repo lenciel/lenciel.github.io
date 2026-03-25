@@ -11,10 +11,10 @@ categories:
 
 ---
 
-![take a break](/downloads/images/2012_03/take_a_break.jpg --alt Don't touch me)
+![take a break](/downloads/images/2012_03/take_a_break.jpg --alt Don't touch me){:target="_blank"}
 
 
-Google 的美女副总[Marissa Mayer](https://plus.google.com/118207880179234484610/posts)最近做了[一个演讲](https://www.youtube.com/watch?v=EHhvIsfsSew)，里面提到了如何避免自己的团队出现"Burnout"。
+Google 的美女副总[Marissa Mayer](https://plus.google.com/118207880179234484610/posts){:target="_blank"}最近做了[一个演讲](https://www.youtube.com/watch?v=EHhvIsfsSew){:target="_blank"}，里面提到了如何避免自己的团队出现"Burnout"。
 
 所谓的 Burnout 就是长期高压工作后人会进入的幽怨倦怠的状态。当工程师需要因为工作而做出牺牲的时候——比如，不能去陪父母过生日，取消和女朋友的约会，错过小孩的演出——总是会在心中产生幽怨的。
 

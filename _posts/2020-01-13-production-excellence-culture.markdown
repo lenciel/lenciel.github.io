@@ -61,7 +61,7 @@ categories:
 
 但最重要的是，我见过两种架构师，一种是只能在自己的机器上写代码最多画画组件交互图的，一种是知道一个业务系统跑什么硬件用什么操作系统能够扛多少请求需要多少带宽的，后面那种我认为才是合格的架构师。
 
-关于这部分的内容有很多细节这里不展开，比如生产环境的[告警应该怎么配置](https://www.youtube.com/watch?v=MT4jbUzEVL0)，通知到哪些人；如何[减少告警疲劳](https://vimeo.com/274820572)以避免事故被漏掉；比如怎样通过 SLO 驱动来创建 [Production Excellence](https://www.youtube.com/watch?v=MT4jbUzEVL0) 的文化等等。
+关于这部分的内容有很多细节这里不展开，比如生产环境的[告警应该怎么配置](https://www.youtube.com/watch?v=MT4jbUzEVL0){:target="_blank"}，通知到哪些人；如何[减少告警疲劳](https://vimeo.com/274820572){:target="_blank"}以避免事故被漏掉；比如怎样通过 SLO 驱动来创建 [Production Excellence](https://www.youtube.com/watch?v=MT4jbUzEVL0){:target="_blank"} 的文化等等。
 
 ### 多听用户的声音
 
@@ -79,7 +79,7 @@ categories:
 
 ### 无聊的技术往往是好的技术
 
-[和 Dan McKinley 一样](https://mcfunley.com/choose-boring-technology)，我也通常**首选无聊的技术**。
+[和 Dan McKinley 一样](https://mcfunley.com/choose-boring-technology){:target="_blank"}，我也通常**首选无聊的技术**。
 
 系统本质上是不可预测的，特别是我们目前构建的各种分布式系统。如果你和我一样看过 Scala 编写的系统崩了之后乱七八糟的堆栈，你就会同意还是应该使用有更好工具链的 Java 。
 
@@ -113,7 +113,7 @@ categories:
 
 频繁部署意味着每个变更的范围更小，通常它们都更快也更安全。
 
-部署不够「简单」的时候，我们会规定一些上线的时段，比如「周五不做部署」。要把这种情况当成需要解决的问题而不是「最佳实践」。部署是[公司的心跳](https://www.heavybit.com/library/podcasts/o11ycast/ep-12-speed-of-deployment-with-rich-archbold-of-intercom/)，我们不应该规定心脏什么时候可以跳。
+部署不够「简单」的时候，我们会规定一些上线的时段，比如「周五不做部署」。要把这种情况当成需要解决的问题而不是「最佳实践」。部署是[公司的心跳](https://www.heavybit.com/library/podcasts/o11ycast/ep-12-speed-of-deployment-with-rich-archbold-of-intercom/){:target="_blank"}，我们不应该规定心脏什么时候可以跳。
 
 唯一的例外是假期的封版，这也是因为在线教育这类业务，确实会有假期的流量峰值出现，这种时候让所有人加班并不现实，所以可以运行一个稳定的版本不做任何变更。如果业务类型是假期流量较少的，那么也就没有必要封版。
 
@@ -129,7 +129,7 @@ categories:
 
 那么 QA 应该负责什么呢？我认为以后的 QA 团队的发展方向将会是：
 
-1. 在生产环境中进行「[持续测试](https://en.wikipedia.org/wiki/Continuous_testing)」，而不是在虚拟的 QA 环境中运行手动和自动测试用例。
+1. 在生产环境中进行「[持续测试](https://en.wikipedia.org/wiki/Continuous_testing){:target="_blank"}」，而不是在虚拟的 QA 环境中运行手动和自动测试用例。
 2. 在生产环境中进行探索测试、混沌测试。
 3. 和基础设施团队合作，致力于 CI / CD 的建设。
 
@@ -141,7 +141,7 @@ categories:
 
 **正确的做法是接受分布式系统的复杂度，并专注于怎么应对故障**。
 
-这意味着我们整个团队要一起努力不断改进的事件响应流程，做好 RCA ，以及[事故分析](https://www.learningfromincidents.io/)。这是一个巨大的领域，具有许多有价值的工具和资源，可在发生（或不发生）故障时最大程度地提高投资回报率。
+这意味着我们整个团队要一起努力不断改进的事件响应流程，做好 RCA ，以及[事故分析](https://www.learningfromincidents.io/){:target="_blank"}。这是一个巨大的领域，具有许多有价值的工具和资源，可在发生（或不发生）故障时最大程度地提高投资回报率。
 
 ### 先搞好生产环境
 

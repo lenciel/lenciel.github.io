@@ -11,7 +11,7 @@ categories:
 - why
 ---
 
-> 这个系列，是[答小朋友问](/categories/questions-my-kids-asked/)...
+> 这个系列，是[答小朋友问](/categories/questions-my-kids-asked/){:target="_blank"}...
 
 
 <h3>目录</h3>
@@ -19,7 +19,7 @@ categories:
 - TOC
 {:toc}
 
-国庆期间，蒙爷自己申请，参加了 [SETC](https://www.instagram.com/setchina/)  一个四天的铁人三项封闭营。
+国庆期间，蒙爷自己申请，参加了 [SETC](https://www.instagram.com/setchina/){:target="_blank"}  一个四天的铁人三项封闭营。
 
 这是他第一次离家独立生活，比我早。
 
@@ -51,10 +51,10 @@ categories:
 
 人类文明发展至今，不但消灭不了脏话，好像还越来越随便[^0]。
 
-之前看到过列宾为「[扎波罗热哥萨克致土耳其苏丹的回信](https://zh.wikipedia.org/zh-cn/%E6%89%8E%E6%B3%A2%E7%BD%97%E7%83%AD%E5%93%A5%E8%90%A8%E5%85%8B%E8%87%B4%E5%9C%9F%E8%80%B3%E5%85%B6%E8%8B%8F%E4%B8%B9%E7%9A%84%E5%9B%9E%E4%BF%A1)
-」创作的[两个版本](http://bubelo.in.ua/essay/cossacks/)的油画[^1]——我尤其喜欢它的第二版，可以看到大家骂得多么尽兴和开怀：
+之前看到过列宾为「[扎波罗热哥萨克致土耳其苏丹的回信](https://zh.wikipedia.org/zh-cn/%E6%89%8E%E6%B3%A2%E7%BD%97%E7%83%AD%E5%93%A5%E8%90%A8%E5%85%8B%E8%87%B4%E5%9C%9F%E8%80%B3%E5%85%B6%E8%8B%8F%E4%B8%B9%E7%9A%84%E5%9B%9E%E4%BF%A1){:target="_blank"}
+」创作的[两个版本](http://bubelo.in.ua/essay/cossacks/){:target="_blank"}的油画[^1]——我尤其喜欢它的第二版，可以看到大家骂得多么尽兴和开怀：
 
-![Repin_Reply_of_the_Zaporozhian_Cossacks.jpg](/downloads/images/2022_10/Repin_Reply_of_the_Zaporozhian_Cossacks.jpg --alt Don't touch me...)
+![Repin_Reply_of_the_Zaporozhian_Cossacks.jpg](/downloads/images/2022_10/Repin_Reply_of_the_Zaporozhian_Cossacks.jpg --alt Don't touch me...){:target="_blank"}
 
 鲁迅写过一篇《论「他妈的」》，有他一贯的嬉笑怒骂[^2]，结尾说：
 
@@ -65,7 +65,7 @@ categories:
 所以，脏话绝不是简单地用过激的语言侮辱和攻击对方。神经科学家、心理学家、社会学家以及历史学家有过很多断断续续、深深浅浅的研究，主线可以分成下面三个阶段：
 
 1. **认为脏话是负面的**：无论是作为伤害他人的武器，还是用于表达人自身的愤懑不平、亲友间的同仇敌忾，或是某种意义上的幽默，人们认为它都会带来负面的心理暗示；
-2. **认为脏话是复杂的**：通过对 [Phineas Gage 的案例](https://en.wikipedia.org/wiki/Phineas_Gage)[^4]，[John H. Jackson的笔记](https://en.wikipedia.org/wiki/John_Hughlings_Jackson)[^5] 等一系列的研究，人们发现对脏话的控制和使用，其实是脑部很多部位综合参与的：既有逻辑，也有情绪。
+2. **认为脏话是复杂的**：通过对 [Phineas Gage 的案例](https://en.wikipedia.org/wiki/Phineas_Gage){:target="_blank"}[^4]，[John H. Jackson的笔记](https://en.wikipedia.org/wiki/John_Hughlings_Jackson){:target="_blank"}[^5] 等一系列的研究，人们发现对脏话的控制和使用，其实是脑部很多部位综合参与的：既有逻辑，也有情绪。
 3. **对脏话进行分类，认为有些脏话是有积极作用的**：现在大体上，科学界把脏话分成了指向性（propositional swearing）和非指向性（non-propositional swearing）。「指向性」的脏话主要由大脑左半球进行酝酿，其构词、声韵、语义都出自有意的考量；「非指向性」的脏话则多源于大脑的情绪区域，是应激状态下不经意的流露和爆发。其中，「非指向性」的脏话，有释放痛感，降低恐惧等一系列积极作用。
 
 看起来，似乎是个去污名化的过程[^6]。
@@ -98,7 +98,7 @@ categories:
 
 你洗杯子手滑了，骂一句，属于这类。
 
-[Richard Stephens](https://www.keele.ac.uk/psychology/people/richardstephens/) 教授[^8]设计过一个很有名的冰水实验：让被试者每个人把手浸入冰水中，直到耐受极限。还得要浸两回，一回要边骂边浸，一回不许骂。
+[Richard Stephens](https://www.keele.ac.uk/psychology/people/richardstephens/){:target="_blank"} 教授[^8]设计过一个很有名的冰水实验：让被试者每个人把手浸入冰水中，直到耐受极限。还得要浸两回，一回要边骂边浸，一回不许骂。
 
 他发现，大声骂娘可以比默不作声，平均多坚持一半左右的时间。
 
@@ -158,13 +158,13 @@ categories:
 - [14] M. J. Bernstein and H. M. Claypool, social exclusion and Pain sensitivity: Why exclusion sometimes Hurts and sometimes Numbs. Personality and Social Psychology Bulletin 38 (2012), 185–196. doi:10.1177/0146167211422449.
 - [15] L. lombardo, Hurt Feelings and Four letter Words: the effects of Verbal swearing on social Pain. Honours thesis, school of Psychology,the University of Queensland, 2012.
 
-[^0]: 不但消灭不了，研究得还越来越开放了：Netflix 去年就煞有介事地找我们的烂片之王录了部《[脏话史](https://movie.douban.com/subject/35283009/)》。
+[^0]: 不但消灭不了，研究得还越来越开放了：Netflix 去年就煞有介事地找我们的烂片之王录了部《[脏话史](https://movie.douban.com/subject/35283009/){:target="_blank"}》。
 [^1]: 这封信其实是位于乌克兰的哥萨克首领对奥斯曼帝国的劝降书的回复，因为内容过于劲爆，这里就不一一摘录了。但沙俄帝国亚历山大三世花费了 35000 卢布才购得了这幅在当时最贵的画作，足以说明其受欢迎程度：再看看今天俄罗斯和乌克兰的关系，多少有点让人唏嘘。
 [^2]: 先生在这篇文章其实是讨论阶级的，希望底层人民正面刚，不用附庸风雅，但也不要在私底下骂骂咧咧。
-[^3]: 研究者之一的 Emma Byrne 有一本书叫《[Swearing Is Good for You: The Amazing Science of Bad Language](https://www.amazon.com/Swearing-Good-You-Amazing-Language/dp/1324000287/)》，很值得一读。
-[^4]: 这兄弟 25 岁时在美国佛蒙特州铁路工地工作时发生意外，被铁棍穿透头颅（是真的「穿透」了：从下巴斜着进入，从眉骨上方出去），还吐了大概一茶缸子脑组织，却依然存活了几十年：但受伤后性格大变，从一个翩翩君子变得粗鲁无礼，经常暴跳如雷。[针对他的持续研究](https://www.medtion.com/info/21631.jspx)让科学家逐渐搞清楚了前额叶的作用。
+[^3]: 研究者之一的 Emma Byrne 有一本书叫《[Swearing Is Good for You: The Amazing Science of Bad Language](https://www.amazon.com/Swearing-Good-You-Amazing-Language/dp/1324000287/){:target="_blank"}》，很值得一读。
+[^4]: 这兄弟 25 岁时在美国佛蒙特州铁路工地工作时发生意外，被铁棍穿透头颅（是真的「穿透」了：从下巴斜着进入，从眉骨上方出去），还吐了大概一茶缸子脑组织，却依然存活了几十年：但受伤后性格大变，从一个翩翩君子变得粗鲁无礼，经常暴跳如雷。[针对他的持续研究](https://www.medtion.com/info/21631.jspx){:target="_blank"}让科学家逐渐搞清楚了前额叶的作用。
 [^5]: 这位是维多利亚时代的科学家，也是神经科学的学科奠基人之一。他是第一位记录脑部受损的患者可能脏话连篇的学者。此后直到 1999 年，两位美国加州的神经科学家 Diana Van Lancker 和 Jeffrey Cummings 才对这个研究进行一点儿推进：他们发现很多失语症患者，骂起脏话来流利自如。
 [^6]: 甚至有一些研究证实，同事之间互用脏字、粗口的团队往往比不用或少用脏字、粗口的团队工作更高效、关系更紧密、业绩更显著。
-[^7]: 2016 年出版的《[What the F](https://www.amazon.com/What-Swearing-Reveals-Language-Ourselves/dp/0465060919)》里，Benjamin K. Bergen 还提出了所谓的四大分类（Holy Fucking Shit Nigger），即各语言中最常见的脏话指代对象，基本可以归入宗教、性行为、排泄物和种族歧视中的一类。但实际上，各个国家实在是千差万别。比方说在德国，将人叫作「蠢牛」或者「昏猪」，是要被[罚几百到几千欧元](https://www.express.de/ratgeber/recht/beleidigung-beschimpft-strafe-schimpfwort-teuer-anzeige-strafbar-61435?cb=1665392930577)的。而在荷兰，则习惯将疾病划入「不可说」之列：[有过案例](https://uitspraken.rechtspraak.nl/#zoekverfijn/ljn=d2881)，因为指着警察咒人患癌不治（Kankerlijer），就被判入狱两年的。
-[^8]: 这位教授设计了很多跟脏话有关的实验，还出了本书：《[Black Sheep: The Hidden Benefits of Being Bad](https://www.amazon.com/Black-Sheep-Hidden-Benefits-Being/dp/1473610818)》
-[^9]: [Sarah Seymour-Smith](https://www.ntu.ac.uk/staff-profiles/social-sciences/sarah-seymour-smith) 有一项针对患癌者的研究，发现爱叨叨两句的睾丸癌病人（当然是男性），心理状态要更好。但 [Megan Robbins](https://scholar.google.com/citations?user=3DtMRCcAAAAJ&hl=en) 等人调查了乳腺癌及其他慢性疾病的女性患者，发现平常说脏话的女患者，却比嘴巴管得更严的人抑郁程度更深，且较少得到亲友的关怀。
+[^7]: 2016 年出版的《[What the F](https://www.amazon.com/What-Swearing-Reveals-Language-Ourselves/dp/0465060919){:target="_blank"}》里，Benjamin K. Bergen 还提出了所谓的四大分类（Holy Fucking Shit Nigger），即各语言中最常见的脏话指代对象，基本可以归入宗教、性行为、排泄物和种族歧视中的一类。但实际上，各个国家实在是千差万别。比方说在德国，将人叫作「蠢牛」或者「昏猪」，是要被[罚几百到几千欧元](https://www.express.de/ratgeber/recht/beleidigung-beschimpft-strafe-schimpfwort-teuer-anzeige-strafbar-61435?cb=1665392930577){:target="_blank"}的。而在荷兰，则习惯将疾病划入「不可说」之列：[有过案例](https://uitspraken.rechtspraak.nl/#zoekverfijn/ljn=d2881){:target="_blank"}，因为指着警察咒人患癌不治（Kankerlijer），就被判入狱两年的。
+[^8]: 这位教授设计了很多跟脏话有关的实验，还出了本书：《[Black Sheep: The Hidden Benefits of Being Bad](https://www.amazon.com/Black-Sheep-Hidden-Benefits-Being/dp/1473610818){:target="_blank"}》
+[^9]: [Sarah Seymour-Smith](https://www.ntu.ac.uk/staff-profiles/social-sciences/sarah-seymour-smith){:target="_blank"} 有一项针对患癌者的研究，发现爱叨叨两句的睾丸癌病人（当然是男性），心理状态要更好。但 [Megan Robbins](https://scholar.google.com/citations?user=3DtMRCcAAAAJ&hl=en){:target="_blank"} 等人调查了乳腺癌及其他慢性疾病的女性患者，发现平常说脏话的女患者，却比嘴巴管得更严的人抑郁程度更深，且较少得到亲友的关怀。

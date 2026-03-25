@@ -8,7 +8,7 @@ categories:
 - writing
 ---
 
-![Vhost threshold](/downloads/images/2007_11/eshan_road.jpeg --alt Don't touch me)
+![Vhost threshold](/downloads/images/2007_11/eshan_road.jpeg --alt Don't touch me){:target="_blank"}
 
 从公司出来，已经是晚上八点。虽然还要赶着去见 Frank，Carmen 还是先找了个面馆吃了点东西，再慢慢走去公车站等车。面前有几辆空载的出租车跑过，她也懒得伸手去拦。
 

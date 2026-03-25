@@ -54,7 +54,7 @@ KK 的这本书叫做《[Excellent Advice for Living: Wisdom I Wish I'd Known Ea
 
 怎么说呢，很适合放一本在手边，没事儿的时候翻一翻，三省吾身：
 
-> 还是给一个[分享链接](https://www.aliyundrive.com/s/aG8m726m2pK)
+> 还是给一个[分享链接](https://www.aliyundrive.com/s/aG8m726m2pK){:target="_blank"}
 > 
 > 提取码: te72
 

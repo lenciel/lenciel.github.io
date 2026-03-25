@@ -16,7 +16,7 @@ categories:
 
 今年挺难[^1]。
 
-之前没想过，[四十岁](https://lenciel.com/2022/06/happy-40th/)迎来这样的一年。
+之前没想过，[四十岁](https://lenciel.com/2022/06/happy-40th/){:target="_blank"}迎来这样的一年。
 
 我好些朋友，年纪比我大。
 
@@ -42,11 +42,11 @@ categories:
 
 现代社会，移动互联，学啥都快，不用再跟夫子一样去周游去体验[^4]。一起踢球的兄弟们，一起奋斗的同事们，都让我看到了很多，也学到了很多。结合自己的起落，不难发现，世间万事，如沙如尘，握得越紧，撒落越多。手松一点，劲虚一点，反而可能掬水月在手。
 
-![YYDA_1.jpeg](/downloads/images/2022_12/YYDA_1.jpeg --alt Don't touch me...)
+![YYDA_1.jpeg](/downloads/images/2022_12/YYDA_1.jpeg --alt Don't touch me...){:target="_blank"}
 
-![YYDA_2.jpeg](/downloads/images/2022_12/YYDA_2.jpeg --alt Don't touch me...)
+![YYDA_2.jpeg](/downloads/images/2022_12/YYDA_2.jpeg --alt Don't touch me...){:target="_blank"}
 
-![football_3.jpeg](/downloads/images/2022_12/football_3.jpeg --alt Don't touch me...)
+![football_3.jpeg](/downloads/images/2022_12/football_3.jpeg --alt Don't touch me...){:target="_blank"}
 *注：感谢球队，带残疾人看了很多风景*
 <br/>
 
@@ -104,7 +104,7 @@ categories:
 [^3]: 子曰：「不知命，无以为君子也；不知礼，无以立也；不知言，无以知人也。」
 [^4]: 有了视频网站之后，职业运动的成才期比之前都大大提前了。篮球和足球场上很多未成年选手已经可以在顶级联赛打主力。
 [^5]: 「前念不生即心，后念不灭即佛，成一切相即心，离一切相即佛。」
-[^6]: 疫情期间[记了一笔](/categories/lockdown-diary/)，因为有些事情，不该被忘记。
+[^6]: 疫情期间[记了一笔](/categories/lockdown-diary/){:target="_blank"}，因为有些事情，不该被忘记。
 [^7]: 我小学在山里，中学在一个城市，大学在一个城市，读研在一个城市，工作后在上海和成都换来换去，成都，是我呆过最久的城市，也是亲戚朋友最多的地方。
 [^8]: 我认为世界上从来只有局部最优，对「求全」的妇人之仁，总是嗤之以鼻。但现在，我觉得妇人之仁好歹是真情实感。大部分时候，那些宣扬和要求百分之百纯而又纯的事物的人，他们自己从未相信过自己嘴上说的那种东西，他们自己就更不是。他们只是一群虚伪的鬼怪。
 [^9]: 视频里的原文是：「人不是活一辈子，不是活几年几月几天，而是活几个瞬间。致敬每一个扛住了生活的平凡人」。

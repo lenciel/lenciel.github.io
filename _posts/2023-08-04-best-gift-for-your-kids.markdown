@@ -27,7 +27,7 @@ categories:
 
 你能给大一点的小孩儿最好的礼物，是让他们去跟同龄人「玩」。
 
-作为儿童心理学的权威，Peter Gray 差不多十年前就到 TED [去说](https://www.youtube.com/watch?v=Bg-GEzM7iTk&t=28s)，现在有大量的青少年身心发育出现问题，都跟「玩」得不够有关系[^0]。
+作为儿童心理学的权威，Peter Gray 差不多十年前就到 TED [去说](https://www.youtube.com/watch?v=Bg-GEzM7iTk&t=28s){:target="_blank"}，现在有大量的青少年身心发育出现问题，都跟「玩」得不够有关系[^0]。
 
 这里的「玩」加上引号，是因为它更像我们小时候的「瞎玩」，跟今天小朋友们的玩[^1]有两个明显不同：
 
@@ -55,7 +55,7 @@ categories:
 
 这些本领，更容易在非正式的游戏中去滋养，而不是在规则明确的残酷竞争中去获得。
 
-拉远一点看，现实生活显然跟非正式的游戏更接近。不需要[詹姆斯·卡斯](https://book.douban.com/subject/25742296/)或者[南京某市民](https://www.youtube.com/watch?v=Cyq0F0vsZkM)提醒，你也会发现：
+拉远一点看，现实生活显然跟非正式的游戏更接近。不需要[詹姆斯·卡斯](https://book.douban.com/subject/25742296/){:target="_blank"}或者[南京某市民](https://www.youtube.com/watch?v=Cyq0F0vsZkM){:target="_blank"}提醒，你也会发现：
 
 - 它的规则是不明确的，必须去感受和制定一套属于自己的玩法；
 - 它没有最终的赢家或输家，每个人都走向死亡；
@@ -63,9 +63,9 @@ categories:
 
 So, just let them play...
 
-[^0]: 你可能会认为问题出在屏幕和社交媒体上。Peter Gray 接下来十年的研究一直围绕这个话题，甚至搞了[一个网站](https://letgrow.org/)，专门用来呼吁和帮助人们理解，把孩子关起来是罪魁祸首，需要把孩子的快乐还给孩子。
+[^0]: 你可能会认为问题出在屏幕和社交媒体上。Peter Gray 接下来十年的研究一直围绕这个话题，甚至搞了[一个网站](https://letgrow.org/){:target="_blank"}，专门用来呼吁和帮助人们理解，把孩子关起来是罪魁祸首，需要把孩子的快乐还给孩子。
 [^1]: 不知道你注意到没有，现在不太容易在公共场合看到一堆堆的小朋友们在「玩」。他们往往是上着轮滑课、游园课、舞蹈课、足球课、网球课，甚至干脆是在比赛。更糟糕的是，他们的父母往往陪在身边，随时准备保护或者修理他们，以及保护或者修理他们的玩伴。
 [^2]: 赫尔巴特强调成人主导和课堂教学，让小孩儿通过「学习」更快更好地变成大人要求的样子；杜威强调儿童中心和活动体验，让小孩儿在生活中探索从而找到自己要成为什么样子。
-[^3]: 已经有很多专家学者在进行这方面的研究和呼吁，比如 Jon Haidt 的《[焦虑的一代](https://www.amazon.com/Anxious-Generation-Rewiring-Childhood-Epidemic/dp/0593655036)》，比如 Pew 研究中心老早的[提醒](https://www.pewresearch.org/internet/2018/11/28/teens-and-their-experiences-on-social-media/)，美国儿童心理学会的[研究](https://childmind.org/article/how-using-social-media-affects-teenagers/)等等。我觉得小朋友学会用电子产品是必须的，打打单机版的游戏也没啥，但社交网络真的是不要碰。
+[^3]: 已经有很多专家学者在进行这方面的研究和呼吁，比如 Jon Haidt 的《[焦虑的一代](https://www.amazon.com/Anxious-Generation-Rewiring-Childhood-Epidemic/dp/0593655036){:target="_blank"}》，比如 Pew 研究中心老早的[提醒](https://www.pewresearch.org/internet/2018/11/28/teens-and-their-experiences-on-social-media/){:target="_blank"}，美国儿童心理学会的[研究](https://childmind.org/article/how-using-social-media-affects-teenagers/){:target="_blank"}等等。我觉得小朋友学会用电子产品是必须的，打打单机版的游戏也没啥，但社交网络真的是不要碰。
 [^4]: 一个现实困难是，即使你是这样的家长，你的孩子也很难随意找到一群这样的玩伴。所以可行的办法是有意识地去结交一些这方面认知接近的家庭，大家经常在一起活动。
 [^5]: 心理学上的一个概念，与外部控制源（External Locus of Control）相对，也就是说一个人相信他们自己的行为和行动可以影响他们生活中的结果，所以他们更倾向于花时间努力使事情发生，而不是坐等事情发生。

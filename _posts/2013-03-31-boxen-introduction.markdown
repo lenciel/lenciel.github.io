@@ -10,18 +10,18 @@ categories:
 - tutorial
 ---
 
-如果列举开发人员在工作中最讨厌的部分，估计搭建开发环境得票率肯定可以排进前三。年初 Github 开源了自己内部的 Privision 框架[Boxen](http://boxen.github.com/)，趁着新笔记本需要起轿，尝试了一把。
+如果列举开发人员在工作中最讨厌的部分，估计搭建开发环境得票率肯定可以排进前三。年初 Github 开源了自己内部的 Privision 框架[Boxen](http://boxen.github.com/){:target="_blank"}，趁着新笔记本需要起轿，尝试了一把。
 
 Boxen框架简介
 ----------------
 
-Boxen 基于大红大紫的[Puppet](https://puppetlabs.com/)，但和后者目前主要侧重于服务器的 Privision 不同，Boxen 更主要是用于组织内工作人员使用的机器的配置和管理流程标准化。
+Boxen 基于大红大紫的[Puppet](https://puppetlabs.com/){:target="_blank"}，但和后者目前主要侧重于服务器的 Privision 不同，Boxen 更主要是用于组织内工作人员使用的机器的配置和管理流程标准化。
 
 配置流程标准化比较好理解：拿到一台机器，敲一个命令就把所有需要的软件装上并且把环境配置好。按 Boxen 主页上的说法，Github 新员工入职后领到电脑后，用 Boxen 配置环境到开始写代码只需要 30 分钟。
 
 管理流程标准化听起来比较抽象，你可以想象这么一个场景：如果公司里面所有的机器都是是用 Boxen 来配置的。当发现 Chrome 浏览器的 Java 插件会导致安全问题的时候，IT 部门可以 push 一个禁用 Chrome 里 Java 插件的 change 到 boxen repo。所有的员工只需要和 repo 做一次 sync，自己的 Chrome 里的 Java 插件就被禁用了。这显然比传统的发邮件要求大家去禁用 Chrome 浏览器 Java 插件简单有效。
 
-简单地概括 Boxen 的思路，就是像对待产品一样对待开发环境。使用包括版本控制，持续集成这些手段，在团队中维护一个开发环境的仓库。如果你想更深入地了解 Boxen 的设计哲学，可以看看这个 slide：[BOXEN by Will Farrington](https://speakerdeck.com/wfarr/boxen)。
+简单地概括 Boxen 的思路，就是像对待产品一样对待开发环境。使用包括版本控制，持续集成这些手段，在团队中维护一个开发环境的仓库。如果你想更深入地了解 Boxen 的设计哲学，可以看看这个 slide：[BOXEN by Will Farrington](https://speakerdeck.com/wfarr/boxen){:target="_blank"}。
 
 使用Boxen
 ---------
@@ -32,7 +32,7 @@ Boxen 基于大红大紫的[Puppet](https://puppetlabs.com/)，但和后者目�
 * 如果不是一台新机器，请先备份，然后：
 
     - 卸载 Homebrew
-    - 删除所有的 ``dotfiles`` 和 ``vimfiles`` ，比如[Oh my zsh](https://github.com/robbyrussell/oh-my-zsh)或者[spf13 vim](https://github.com/spf13/spf13-vim)等
+    - 删除所有的 ``dotfiles`` 和 ``vimfiles`` ，比如[Oh my zsh](https://github.com/robbyrussell/oh-my-zsh){:target="_blank"}或者[spf13 vim](https://github.com/spf13/spf13-vim){:target="_blank"}等
     - 删除 ``.rbenv`` 或者 ``.rvm`` 文件夹
     - ``chsh -s /bin/bash`` 把 SHELL 改回 ``bash``
 
@@ -44,17 +44,17 @@ Boxen 基于大红大紫的[Puppet](https://puppetlabs.com/)，但和后者目�
 * 启动 Xcode，在 Preferences 里面选择下载
 * 安装"Command Line Tools"
 
-![Xcode Command Line Tools](/downloads/images/2013_03/xcode_clt.png --alt Don't touch me)
+![Xcode Command Line Tools](/downloads/images/2013_03/xcode_clt.png --alt Don't touch me){:target="_blank"}
 
 ###打开 FireVault2###
 
 Boxen 默认会希望硬盘信息是被加密的：
 
-![Turn on FireVault2](/downloads/images/2013_03/turn_on_fire_vault.png --alt Don't touch me)
+![Turn on FireVault2](/downloads/images/2013_03/turn_on_fire_vault.png --alt Don't touch me){:target="_blank"}
 
 ###Fork our-boxen###
 
-[our-boxen](https://github.com/boxen/our-boxen)是 Boxen 提供的基线 repo，也是整个 Boxen 框架里面文档最全的一个 repo。
+[our-boxen](https://github.com/boxen/our-boxen){:target="_blank"}是 Boxen 提供的基线 repo，也是整个 Boxen 框架里面文档最全的一个 repo。
 
 首先按照 repo 说明中的方式来 clone 和配置本地 repo：
 
@@ -94,7 +94,7 @@ Warning: Could not retrieve fact fqdn
 Warning: Host is missing hostname and/or domain: suttlemac
 ```
 
-然后伴随着 ``https://rubygems.org`` 失败。这些主要是因为 GFW，你可以使用镜像，比如淘宝的。具体方式可以[查看这里](http://ruby.taobao.org/)。
+然后伴随着 ``https://rubygems.org`` 失败。这些主要是因为 GFW，你可以使用镜像，比如淘宝的。具体方式可以[查看这里](http://ruby.taobao.org/){:target="_blank"}。
 
 注意你还应该把下面的脚本加到 ``~/.bashrc`` 或者 ``~/.zshrc`` :
 
@@ -107,7 +107,7 @@ Warning: Host is missing hostname and/or domain: suttlemac
 自定义你的box
 ------------
 
-默认安装的内容当然不一定对你的口味，如果你用过 Puppet 那么自定义 Boxen 的 box 是非常简单的。不过埋头开干之前还是可以 check 一下是不是已经[有人做好了](https://github.com/boxen)。这些做好的 repo 可以直接通过修改配置文件是用，因为 Boxen 对 librarian-puppet 做了 wrapper，对 fetch 各种 module 也做了 wrapper。
+默认安装的内容当然不一定对你的口味，如果你用过 Puppet 那么自定义 Boxen 的 box 是非常简单的。不过埋头开干之前还是可以 check 一下是不是已经[有人做好了](https://github.com/boxen){:target="_blank"}。这些做好的 repo 可以直接通过修改配置文件是用，因为 Boxen 对 librarian-puppet 做了 wrapper，对 fetch 各种 module 也做了 wrapper。
 
 比如我们要安装 Chrome 和 Skype，打开 ``/opt/boxen/repo/Puppetfile`` 并添加两行：
 
@@ -130,11 +130,11 @@ def github(name, version, options = nil)
 end
 ```
 
-因此[puppet-skype](https://github.com/boxen/puppet-skype)对应的就是 ``skype`` 。
+因此[puppet-skype](https://github.com/boxen/puppet-skype){:target="_blank"}对应的就是 ``skype`` 。
 
-而 ``version`` 则是对应具体 repo 的 tag，比如[puppet-skype](https://github.com/boxen/puppet-skype)对应的[tag](https://github.com/boxen/puppet-skype/tags)有：
+而 ``version`` 则是对应具体 repo 的 tag，比如[puppet-skype](https://github.com/boxen/puppet-skype){:target="_blank"}对应的[tag](https://github.com/boxen/puppet-skype/tags){:target="_blank"}有：
 
-![Version and tags](/downloads/images/2013_03/version_tag.png --alt Don't touch me)
+![Version and tags](/downloads/images/2013_03/version_tag.png --alt Don't touch me){:target="_blank"}
 
 如果你的 repo 不是在 github 也很简单，只需要指定 repo 的位置即可。比如如果你自己的 Skype 是放在 Bitbucket 上的:
 

@@ -10,11 +10,11 @@ categories:
 - tips
 ---
 
-Python 的标准库实在是[不够用](https://lenciel.com/2013/10/recharging-the-python-standard-library/)，所以一个很常见的情况是我们需要在每个项目使用的`virtualenv`里面都安装一些常用的库。
+Python 的标准库实在是[不够用](https://lenciel.com/2013/10/recharging-the-python-standard-library/){:target="_blank"}，所以一个很常见的情况是我们需要在每个项目使用的`virtualenv`里面都安装一些常用的库。
 
 为了加速安装的过程，有两个小窍门。
 
-一个是使用国内的源，比如[v2ex](http://www.v2ex.com/)提供的。只需要新建或者编辑`~/.pip/pip.conf`，加入一行：
+一个是使用国内的源，比如[v2ex](http://www.v2ex.com/){:target="_blank"}提供的。只需要新建或者编辑`~/.pip/pip.conf`，加入一行：
 
 ```
 [global]

@@ -11,16 +11,16 @@ categories:
 
 ---
 
-这个 Blog 的[模板](https://github.com/lenciel/jekyll-lenciel-theme)是我自己写的。
+这个 Blog 的[模板](https://github.com/lenciel/jekyll-lenciel-theme){:target="_blank"}是我自己写的。
 
-上一次比较大的[改写](/2017/03/migrating-from-octopress-to-jekyll/)是从扔掉 Octopress 。
+上一次比较大的[改写](/2017/03/migrating-from-octopress-to-jekyll/){:target="_blank"}是从扔掉 Octopress 。
 
-单单是因为要写点东西当然犯不着这么折腾。这么做，主要是尝试跟上永远停不下来的前端[^0]。最近看了一下 [Gatsby](https://www.gatsbyjs.org/)，觉得非常值得一试。但在这之前，决定先升级到 [Jekyll 4](https://jekyllrb.com/news/2019/08/20/jekyll-4-0-0-released/) ，顺便做了一些性能优化[^1]：
+单单是因为要写点东西当然犯不着这么折腾。这么做，主要是尝试跟上永远停不下来的前端[^0]。最近看了一下 [Gatsby](https://www.gatsbyjs.org/){:target="_blank"}，觉得非常值得一试。但在这之前，决定先升级到 [Jekyll 4](https://jekyllrb.com/news/2019/08/20/jekyll-4-0-0-released/){:target="_blank"} ，顺便做了一些性能优化[^1]：
 
 ### 字体
 
 - 去掉了需要用户下载的自定义字体 PT Sans，优先使用用户平台上最优的黑体[^2]。
-- 整体字体使用自适应计算大小，加上一些局部字体大小的调整。朋友你不来[和我一起玩](https://github.com/lenciel/jekyll-lenciel-theme/blob/master/sass/custom/_resfont.scss)怎么可能相信人类可以写出下面这样的 CSS 属性：
+- 整体字体使用自适应计算大小，加上一些局部字体大小的调整。朋友你不来[和我一起玩](https://github.com/lenciel/jekyll-lenciel-theme/blob/master/sass/custom/_resfont.scss){:target="_blank"}怎么可能相信人类可以写出下面这样的 CSS 属性：
 
 ```CSS
 font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
@@ -28,11 +28,11 @@ font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size
 
 ### 图片
 
-- 使用了 [jekyll_picture_tag](https://github.com/rbuchberger/jekyll_picture_tag) 来完成自适应图片的生成（相比之下 [jekyll-responsive-image](https://github.com/wildlyinaccurate/jekyll-responsive-image) 的自定义功能很弱，不能和我自己写的插件很好的合作）。
+- 使用了 [jekyll_picture_tag](https://github.com/rbuchberger/jekyll_picture_tag){:target="_blank"} 来完成自适应图片的生成（相比之下 [jekyll-responsive-image](https://github.com/wildlyinaccurate/jekyll-responsive-image){:target="_blank"} 的自定义功能很弱，不能和我自己写的插件很好的合作）。
 - 使用七牛的免费 CDN 作为图床[^3]。
 - 写了一个小的 mixin 来让 `serve` 命令方便的自动选择是用七牛的图片还是本地图片。
 - 写了一个 python 脚本来进行本地增量的静态文件上传。
-- 支持了 [lazyLoad](https://github.com/verlok/lazyload)。
+- 支持了 [lazyLoad](https://github.com/verlok/lazyload){:target="_blank"}。
 
 ### CSS
 

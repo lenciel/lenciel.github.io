@@ -11,7 +11,7 @@ categories:
 - CI
 ---
 
-对软件公司，特别是互联网软件公司来说，发布流程是企业的[核心竞争力](https://lenciel.com/2013/05/the-importance-of-deploy-as-will/)。
+对软件公司，特别是互联网软件公司来说，发布流程是企业的[核心竞争力](https://lenciel.com/2013/05/the-importance-of-deploy-as-will/){:target="_blank"}。
 
 那么什么是一个好的发布流程呢？Github（别忘了它本身也是一家软件公司）的 CTO 在介绍[Boxen
 ](https://lenciel.com/2013/03/boxen-introduction/)的时候说过，他们公司新员工从拿电脑到可以开始编码只要 30 分钟，这给混过几家 10w+员工公司的我带来的震撼特别强烈。
@@ -29,12 +29,12 @@ categories:
 先 check 一下东西齐不齐活:
 
   1. 代码 repo 是放在哪里： ([git][1], [hg][2], …),
-  2. hook 到 repo 的一套有 review 功能的管理系统: ([ReviewBoard](http://www.reviewboard.org), [Gitlab][13], [gerrit][3], [bitbucket][4], [github][5], …),
+  2. hook 到 repo 的一套有 review 功能的管理系统: ([ReviewBoard](http://www.reviewboard.org){:target="_blank"}, [Gitlab][13], [gerrit][3], [bitbucket][4], [github][5], …),
   3. hook 到 repo 的一套 CI 管理系统:  ([Jenkins][6], [Travis CI][7], …),
   4. 自动部署代码到服务器的系统 ([Puppet][14], [chef][8], [clusto][9], …).
 
 
-![Deployment Phases](/downloads/images/2014_04/deployment_phases.png --alt Don't touch me)
+![Deployment Phases](/downloads/images/2014_04/deployment_phases.png --alt Don't touch me){:target="_blank"}
 
 你选择的工具当然对后面的流程有很大的影响。我们公司是采用`git`+`Gitlab`+`Reviewboard`+`Jenkins`+`fabric`来做部署。在搭建这套东西之前我也试过很多其他的东西，有的东西我放弃了是因为太复杂不够轻量(比如 Puppet)，有的东西我放弃了是因为，长得太丑(比如 Gerrit)。
 
@@ -43,7 +43,7 @@ categories:
 假设你今天入职，写了段代码，从你的视角看到的 deployment 流程:
 
   1. 提交到本地 repo。
-  2. 运行[RBTools](http://www.reviewboard.org/docs/rbtools/dev/)生成一个 Reviewboard 的`review request`
+  2. 运行[RBTools](http://www.reviewboard.org/docs/rbtools/dev/){:target="_blank"}生成一个 Reviewboard 的`review request`
   3. 代码通过了 review 拿到提交许可后，把代码 merge 然后 push 到 Gitlab 上的`alpha`分支
   4. Jenkins 拿到 change 后做自动测试，然后部署到 test 服务器，发邮件通知 QA
   5. QA 或者是开发者自己玩一下 test 服务器，发现没有问题，手动运行 Jenkins 脚本。脚本会对代码打 tag，并部署改动到 staging 服务器，发邮件通知 QA 和 PO

@@ -61,7 +61,7 @@ chmod 700 /home/deploy/.ssh
 配置 ``public key``
 --------------------
 
-使用密码的日子已经慢慢过时了，这方面 Github 很有[贡献](https://help.github.com/categories/56/articles)。只需要：
+使用密码的日子已经慢慢过时了，这方面 Github 很有[贡献](https://help.github.com/categories/56/articles){:target="_blank"}。只需要：
 
 ```bash
 vim /home/deploy/.ssh/authorized_keys

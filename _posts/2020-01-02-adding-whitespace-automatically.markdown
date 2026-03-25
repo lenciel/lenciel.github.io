@@ -12,7 +12,7 @@ categories:
 
 作为一名工程师，平时写的大部分文档都会有中英文的混排。
 
-中文文档的排版本来就有很多的[讲究](https://github.com/mzlogin/chinese-copywriting-guidelines)。
+中文文档的排版本来就有很多的[讲究](https://github.com/mzlogin/chinese-copywriting-guidelines){:target="_blank"}。
 
 当中英文混排的时候，一个主要却挺有门槛的讲究是要用空格对中英文进行隔断。
 
@@ -24,7 +24,7 @@ categories:
 
 >我们接下来会使用SLI/SLO进行关键路径的指标梳理。
 
-很多人会嫌这样的要求太龟毛，但 [pangu.js](https://github.com/vinta/pangu.js) 的作者 vinta 有句话说得好：
+很多人会嫌这样的要求太龟毛，但 [pangu.js](https://github.com/vinta/pangu.js){:target="_blank"} 的作者 vinta 有句话说得好：
 
 >「有研究顯示，打字的時候不喜歡在中文和英文之間加空格的人，感情路都走得很辛苦，有七成的比例會在 34 歲的時候跟自己不愛的人結婚，而其餘三成的人最後只能把遺產留給自己的貓。畢竟愛情跟書寫都需要適時地留白。」
 
@@ -40,7 +40,7 @@ categories:
 
 最近吐槽这个问题的时候稍微研究了一下，发现有个日本友人写了一个 npm 包叫 textlint。
 
-安装之后，你就可以安装并配置一系列的[规则包](https://github.com/textlint/textlint/wiki/Collection-of-textlint-rule)。
+安装之后，你就可以安装并配置一系列的[规则包](https://github.com/textlint/textlint/wiki/Collection-of-textlint-rule){:target="_blank"}。
 
 目前主要的规则包都是日语和英文的，非常复杂，简单用用可以先从下面的入手：
 

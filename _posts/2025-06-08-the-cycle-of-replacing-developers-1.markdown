@@ -14,7 +14,7 @@ categories:
 
 这是一个我这两年被反复问过的问题：在美帝的设计师朋友问过我，是不是现在有个点子就能用 AI 写代码创业；在基金里的同学问过我，是不是 Cursor 这类产品产出会超过程序员；当然，最多的还是类似于董事会上这种场景，公司究竟能不能通过这些技术，替代那些昂贵的程序员。
 
-受限于讨论这个问题的时间、场合和提问人的知识背景，我应该给了虽然意思相对统一，但都不太完整的答案。而且，三年前系统对[类似问题](/2022/09/what-could-happen-after-ism/)的观点现在确实有更新，所以不如再整理一次。
+受限于讨论这个问题的时间、场合和提问人的知识背景，我应该给了虽然意思相对统一，但都不太完整的答案。而且，三年前系统对[类似问题](/2022/09/what-could-happen-after-ism/){:target="_blank"}的观点现在确实有更新，所以不如再整理一次。
 
 
 <h3>目录</h3>
@@ -43,7 +43,7 @@ categories:
 
 不同层级的工程师花在非编码工作的时间是不同的。但即便是最基层的自称「码农」的工程师，编码在整个工作中的占比不会超过 50%。还会有大量的时间用于沟通评审（需求、测试用例、交互设计）、文档写作、环境配置等工作（摸鱼这些非工作的我就不提了）。
 
-这些工作需要很多上下文对齐，就像 Mozilla 的 Senior Staff [Chelsea Troy](https://chelseatroy.com/about/) 在一个反驳[这篇](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4945566)号称 AI 对编程提效 26%的论文时[说的那样](https://www.youtube.com/watch?v=bg4z70cOOF4)：
+这些工作需要很多上下文对齐，就像 Mozilla 的 Senior Staff [Chelsea Troy](https://chelseatroy.com/about/){:target="_blank"} 在一个反驳[这篇](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4945566){:target="_blank"}号称 AI 对编程提效 26%的论文时[说的那样](https://www.youtube.com/watch?v=bg4z70cOOF4){:target="_blank"}：
 
 > Large language models have not wholesale wiped out programming jobs so much as they have called us to a more advanced, more contextually aware, and more communally oriented skill set that we frankly were already being called to anyway…. On relatively simple problems, we can get away with outsourcing some of our judgment. As the problems become more complicated, we can’t.
 
@@ -79,9 +79,9 @@ categories:
 
 代码是资产还是负债？
 
-差不多十年前，Kellan 在那篇可能是历史上关于「技术债」最精彩的[文章](https://kellanem.com/notes/towards-an-understanding-of-technical-debt)中指出，它既不是资产也不是债务，而是 liability：一个项目里的每一行代码，无论来自人还是 AI，都只代表了对待解决问题当前的最佳理解，都需要被测试、维护、确保安全。
+差不多十年前，Kellan 在那篇可能是历史上关于「技术债」最精彩的[文章](https://kellanem.com/notes/towards-an-understanding-of-technical-debt){:target="_blank"}中指出，它既不是资产也不是债务，而是 liability：一个项目里的每一行代码，无论来自人还是 AI，都只代表了对待解决问题当前的最佳理解，都需要被测试、维护、确保安全。
 
-并且如果你同意我[说的](/2021/02/how-to-work-as-an-architect-1/#%E9%97%AE%E9%A2%98%E5%87%BA%E5%9C%A8%E5%93%AA%E9%87%8C)：
+并且如果你同意我[说的](/2021/02/how-to-work-as-an-architect-1/#%E9%97%AE%E9%A2%98%E5%87%BA%E5%9C%A8%E5%93%AA%E9%87%8C){:target="_blank"}：
 
 > 要把软件开发看成一个对需要解决的问题和解决的技术进行学习的过程，把架构和代码都当成这个过程的副产品
 
@@ -103,7 +103,7 @@ categories:
 
 ###### 可能会带来更多的「程序员」
 
-最后，你读到这里可能会认为我很反对 AI 辅助编程（或者，我认为更合适的名称应该是 AI 辅助代码/文档/测试用例...生成），那请你相信我[前面的结论](/2025/06/the-cycle-of-replacing-developers/#%E5%85%88%E8%AF%B4%E7%BB%93%E8%AE%BA)。
+最后，你读到这里可能会认为我很反对 AI 辅助编程（或者，我认为更合适的名称应该是 AI 辅助代码/文档/测试用例...生成），那请你相信我[前面的结论](/2025/06/the-cycle-of-replacing-developers/#%E5%85%88%E8%AF%B4%E7%BB%93%E8%AE%BA){:target="_blank"}。
 
 只是，我不认为会替代程序员，而是更多的人，可能成为「程序员」。
 

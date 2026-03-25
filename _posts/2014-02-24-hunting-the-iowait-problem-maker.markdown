@@ -14,9 +14,9 @@ categories:
 
 ---
 
-![warning letter](/downloads/images/2014_02/warning_letter.png --alt Don't touch me)
+![warning letter](/downloads/images/2014_02/warning_letter.png --alt Don't touch me){:target="_blank"}
 
-从 Nagios 切到[Zabbix](https://www.zabbix.com)之后，经常大清早被 iowait 过高的告警邮件叫醒。因为这套 Zabbix 监控是本座搭的，所以解决这个问题就只有本座来了.....哎，不知道是不是把首席运营官给宠坏了。
+从 Nagios 切到[Zabbix](https://www.zabbix.com){:target="_blank"}之后，经常大清早被 iowait 过高的告警邮件叫醒。因为这套 Zabbix 监控是本座搭的，所以解决这个问题就只有本座来了.....哎，不知道是不是把首席运营官给宠坏了。
 
 iowait的定义和计算方式
 --------------------
@@ -136,7 +136,7 @@ iowait的意义
 
 然后在又一个这样的 6 点半：
 
-![warning letter](/downloads/images/2014_02/zabbix_cpu_util.png --alt Don't touch me)
+![warning letter](/downloads/images/2014_02/zabbix_cpu_util.png --alt Don't touch me){:target="_blank"}
 
 去日志里面查看：
 

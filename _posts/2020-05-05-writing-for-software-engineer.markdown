@@ -26,11 +26,11 @@ categories:
 
 ### 强化思考过程
 
-我在前面[推 RFC 流程](/2020/03/rfc-driven-architecture-process/)的时候，已经解释了一下把想法写下来的好处。
+我在前面[推 RFC 流程](/2020/03/rfc-driven-architecture-process/){:target="_blank"}的时候，已经解释了一下把想法写下来的好处。
 
-这不是什么新概念，安德鲁·格罗夫上个世纪就在《[High Output Management](https://www.amazon.com/High-Output-Management-Andrew-Grove-ebook/dp/B015VACHOK)》一书中反复强调，把事情写下来能促使人变得更加自律，并且因为必须比口头交流更准确更全面，它能使思路更加清晰。
+这不是什么新概念，安德鲁·格罗夫上个世纪就在《[High Output Management](https://www.amazon.com/High-Output-Management-Andrew-Grove-ebook/dp/B015VACHOK){:target="_blank"}》一书中反复强调，把事情写下来能促使人变得更加自律，并且因为必须比口头交流更准确更全面，它能使思路更加清晰。
 
-在我们的行业里这种工作方式也非常流行。可能比较极致的是亚马逊的 [six-page memos](https://observer.com/2019/06/amazon-ceo-jeff-bezos-meetings-success-strategy/)，贝佐斯甚至在他们的一封[股东信](https://www.sec.gov/Archives/edgar/data/1018724/000119312518121161/d456916dex991.htm)中谈到了它的威力。
+在我们的行业里这种工作方式也非常流行。可能比较极致的是亚马逊的 [six-page memos](https://observer.com/2019/06/amazon-ceo-jeff-bezos-meetings-success-strategy/){:target="_blank"}，贝佐斯甚至在他们的一封[股东信](https://www.sec.gov/Archives/edgar/data/1018724/000119312518121161/d456916dex991.htm){:target="_blank"}中谈到了它的威力。
 
 ### 异步的交流模式
 
@@ -48,13 +48,13 @@ categories:
 
 ### 培训大家的写作能力
 
-不是每个人都有写作技巧，改善它可能需要很长时间：应该[进行培训](https://developers.google.com/tech-writing)，[组织学习](https://philipkiely.com/wfsd/)，创造安全的环境，鼓励更多的写作，让团队敢于去写去分享。
+不是每个人都有写作技巧，改善它可能需要很长时间：应该[进行培训](https://developers.google.com/tech-writing){:target="_blank"}，[组织学习](https://philipkiely.com/wfsd/){:target="_blank"}，创造安全的环境，鼓励更多的写作，让团队敢于去写去分享。
 
 但在每篇内部文档里反复强调，这只是一个「草稿」，任何人都可以提出意见甚至动手修改，并且随着时间的推移它本来就需要被更新。
 
 在公司里面我们不能直接去要求高的写作标准：尽早分享想法、进行迭代和合作才是至关重要的。
 
-如果说「草稿」一定要有什么要求的话，我觉得可以要求必须简明清晰：不完美，甚至是拼写错误，都没有问题，但是必须写得[简明而清晰](https://www.amazon.com/Writing-Well-30th-Anniversary-Nonfiction-ebook/dp/B0090RVGW0/)。
+如果说「草稿」一定要有什么要求的话，我觉得可以要求必须简明清晰：不完美，甚至是拼写错误，都没有问题，但是必须写得[简明而清晰](https://www.amazon.com/Writing-Well-30th-Anniversary-Nonfiction-ebook/dp/B0090RVGW0/){:target="_blank"}。
 
 ### 注意结合同步的沟通方式
 

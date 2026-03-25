@@ -12,7 +12,7 @@ categories:
 
 ---
 
-![calm_down.jpeg](/downloads/images/2021_12/calm_down.jpeg --alt Don't touch me...)
+![calm_down.jpeg](/downloads/images/2021_12/calm_down.jpeg --alt Don't touch me...){:target="_blank"}
 
 又到了年底。
 
@@ -72,7 +72,7 @@ categories:
 
 这样偏「道德审判」的想法我们先不说有没有道理，首先它就没有用：你越这么想越不会去做它。
 
-当然，我[一直就觉得](/about/)，内省是特别无聊的做法。
+当然，我[一直就觉得](/about/){:target="_blank"}，内省是特别无聊的做法。
 
 正确的认知应该是：**你感受到了「内生的抵抗力」。它是人成长中需要面对的一个方面，并且它也是可以被管理的。**
 
@@ -90,7 +90,7 @@ categories:
 
 可以说，人在面对复杂局面的时候，如何做决策，它既是科学，也是艺术；既有技巧，也是修行。
 
-我自己比较喜欢的框架是 [Cynefin Framework](https://hbr.org/2007/11/a-leaders-framework-for-decision-making)，下一篇就写它吧。
+我自己比较喜欢的框架是 [Cynefin Framework](https://hbr.org/2007/11/a-leaders-framework-for-decision-making){:target="_blank"}，下一篇就写它吧。
 
 但总得来说，当你面对一个重要的事情要推进或者决定的时候，「内生的抵抗力」出来拖住你，你要认可和接纳自己的这部分。
 

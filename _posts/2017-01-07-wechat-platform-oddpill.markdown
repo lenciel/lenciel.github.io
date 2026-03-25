@@ -10,7 +10,7 @@ categories:
 - 公众号
 ---
 
-![Nonverbal Space by Shin Noguchi](downloads/images/2017_01/flower_in_wall.png --alt Don't touch me)
+![Nonverbal Space by Shin Noguchi](downloads/images/2017_01/flower_in_wall.png --alt Don't touch me){:target="_blank"}
 
 这当然是个错误。
 
@@ -20,7 +20,7 @@ categories:
 
 在没有互联网之前，孤立的信息也是有价值的：能够读到的书，能够听到的曲，就是高价值的，一般老百姓无福消受。
 
-比如贵妃约明皇吃个饭，傻等了半天结果听说皇上早去了西宫，一举喝大伤伤心心起个四平调，唱得再凄美，唱完就消失在空气里了。而梅兰芳的《贵妃醉酒》就已经可以被灌进唱片，但唱片仍然不便宜。到了[李玉刚的《新贵妃醉酒》](https://v.qq.com/x/cover/5igaqzujk528vyf/9dHuyHuhx9O.html)呢？你随便搜一下就听到了。
+比如贵妃约明皇吃个饭，傻等了半天结果听说皇上早去了西宫，一举喝大伤伤心心起个四平调，唱得再凄美，唱完就消失在空气里了。而梅兰芳的《贵妃醉酒》就已经可以被灌进唱片，但唱片仍然不便宜。到了[李玉刚的《新贵妃醉酒》](https://v.qq.com/x/cover/5igaqzujk528vyf/9dHuyHuhx9O.html){:target="_blank"}呢？你随便搜一下就听到了。
 
 所以互联网时代，孤立的信息失去了价值：能背得四书五经，记下元素周期表不再有用，真正有意义的变成了我们在信息之间添加的「链接」。
 
@@ -49,9 +49,9 @@ Harold Innis 在《The Bias of Communication》里用许多历史证据说明了
 何况，开公众号是个错误也挺好。随着年纪的增长，我越来越喜欢错误。《西部世界》里面有段让我觉得很有趣的台词：
 
 > Bernard Lowe: 是您加的代码，福特先生，那些「白日梦」，里面有一些……
-> Robert Ford: 「错误」。你不愿意说出来的就是这个词。这没有必要。你自己就是亿万个错误的结果。这个星球上的一切有知觉生命都是用「错误」这唯一的工具演化出来的……但我们现在已经摆脱了演化的枷锁不是吗？任何疾病都可以治好，最弱的人也能生存，或许有朝一日我们还能把[Lazarus](https://zh.wikipedia.org/wiki/%E6%8B%89%E6%92%92%E8%B7%AF)从洞穴里召唤出来，到时连起死回生都不是问题。你知道那意味着什么？意味着我们完了，意味着我们目前已经做到了尽头。
+> Robert Ford: 「错误」。你不愿意说出来的就是这个词。这没有必要。你自己就是亿万个错误的结果。这个星球上的一切有知觉生命都是用「错误」这唯一的工具演化出来的……但我们现在已经摆脱了演化的枷锁不是吗？任何疾病都可以治好，最弱的人也能生存，或许有朝一日我们还能把[Lazarus](https://zh.wikipedia.org/wiki/%E6%8B%89%E6%92%92%E8%B7%AF){:target="_blank"}从洞穴里召唤出来，到时连起死回生都不是问题。你知道那意味着什么？意味着我们完了，意味着我们目前已经做到了尽头。
 
-这让我想起了 Nelson 和他的「世外桃源计划」。Seymour Papert 的那本先知般的[《Mindstorms》](http://www.amazon.com/Mindstorms-Children-Computers-Powerful-Ideas/dp/0465046746)里面也说过：
+这让我想起了 Nelson 和他的「世外桃源计划」。Seymour Papert 的那本先知般的[《Mindstorms》](http://www.amazon.com/Mindstorms-Children-Computers-Powerful-Ideas/dp/0465046746){:target="_blank"}里面也说过：
 
 > 许多儿童学习受阻，是因为在他们的学习模式里，对与错总是泾渭分明。但在编程时你几乎不可能第一次就做对。成为编程高手的过程就是学会熟练地找出并修复Bug的过程。在编程时我们要问的不是对或错，而是错误能否被修正。如果这种对待智识产品的方法被普及到更大的文化范畴，成为人们对待知识的态度的一部分，或许我们就都不会那么怕错了。
 

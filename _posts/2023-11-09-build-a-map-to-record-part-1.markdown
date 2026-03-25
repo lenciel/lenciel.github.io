@@ -12,9 +12,9 @@ categories:
 
 ---
 
-> 这是「[兔子洞](/categories/rabbit-hole/)」 系列之，如何画地图的第一部分...
+> 这是「[兔子洞](/categories/rabbit-hole/){:target="_blank"}」 系列之，如何画地图的第一部分...
 
-前几天瞎逛，看到个北欧的公司 [Fjelltopp](https://en.fjelltopp.com/)，它的[海报作品](https://en.fjelltopp.com/collections/altitud)很有设计感：
+前几天瞎逛，看到个北欧的公司 [Fjelltopp](https://en.fjelltopp.com/){:target="_blank"}，它的[海报作品](https://en.fjelltopp.com/collections/altitud){:target="_blank"}很有设计感：
 
 {% picture /downloads/images/2023_11/fjelltopp_poster_1.jpg --alt fjelltopp_poster_1 %}
 
@@ -26,7 +26,7 @@ categories:
 
 当我看到它网站上的口号时{% sidenote 'sn-id-1' '人家的口号是：「Find your favorite mountain and bring the serenity of the mountains home with you.」' %}，就想：「木里周围海拔差也很大，说不定，我也可以画出一些挺好看的地图...」。
 
-事后发现，这个[兔子洞](/categories/rabbit-hole/)还真是够深的。
+事后发现，这个[兔子洞](/categories/rabbit-hole/){:target="_blank"}还真是够深的。
 
 <h3>目录</h3>
 
@@ -35,9 +35,9 @@ categories:
 
 ### Toolchain
 
-一些 all-in-one 的 GIS 软件，比如 [QGIS](https://www.qgis.org/)，显然是能拿来做地图的。但是如果对里面大量的要素（包括比例、中心位置、不同元素的颜色、湖泊和边界有没有阴影等等）都希望自己可控，使用一个陌生而复杂的软件就很容易让人感觉无从下手。
+一些 all-in-one 的 GIS 软件，比如 [QGIS](https://www.qgis.org/){:target="_blank"}，显然是能拿来做地图的。但是如果对里面大量的要素（包括比例、中心位置、不同元素的颜色、湖泊和边界有没有阴影等等）都希望自己可控，使用一个陌生而复杂的软件就很容易让人感觉无从下手。
 
-因此我决定用 [D3](https://d3js.org/) ：虽然少了很多脚手架，但是好处是可以在 SVG 或者 Canvas 上一点点把地图画出来，整个过程完全是通过代码就可以控制的。
+因此我决定用 [D3](https://d3js.org/){:target="_blank"} ：虽然少了很多脚手架，但是好处是可以在 SVG 或者 Canvas 上一点点把地图画出来，整个过程完全是通过代码就可以控制的。
 
 至于具体是 SVG 还是 Canvas，在这个场景里面偏个人喜好。比如我就很喜欢 Canvas 里可以用类似于`context.shadowBlur` 和 `context.shadowColor` 这样的声明直接控制阴影宽度和大小，但我很不喜欢 Canvas 里做各种切割和覆盖的时候要自己去控制 `save` 和 `restore` 的顺序。
 
@@ -102,11 +102,11 @@ D3 的 geo 模块是专门处理相关功能的模块，使用之前需要搞清
 
 #### Data
 
-D3 原生支持的数据格式是 [GeoJSON](https://en.wikipedia.org/wiki/GeoJSON)。如果下载的是 TopoJSON{% sidenote 'sn-id-2' '可以理解为加入了拓扑信息的 GeoJSON 的扩展。' %}，D3 提供了一些[帮助函数](https://observablehq.com/@didoesdigital/about-map-data-geojson-and-topojson-with-d3)。
+D3 原生支持的数据格式是 [GeoJSON](https://en.wikipedia.org/wiki/GeoJSON){:target="_blank"}。如果下载的是 TopoJSON{% sidenote 'sn-id-2' '可以理解为加入了拓扑信息的 GeoJSON 的扩展。' %}，D3 提供了一些[帮助函数](https://observablehq.com/@didoesdigital/about-map-data-geojson-and-topojson-with-d3){:target="_blank"}。
 
-另外，无论 GeoJSON 还是 TopoJSON，对它们的切割和合并最好不要直接编辑文件，尽量使用 GDAL{% sidenote 'sn-id-2' '这是一个 [OSGEO](https://www.osgeo.org/) 基金会的开源项目，提供了很多操作数据的函数。' %}这样的包，里面已经处理了各种 edge case。
+另外，无论 GeoJSON 还是 TopoJSON，对它们的切割和合并最好不要直接编辑文件，尽量使用 GDAL{% sidenote 'sn-id-2' '这是一个 [OSGEO](https://www.osgeo.org/){:target="_blank"} 基金会的开源项目，提供了很多操作数据的函数。' %}这样的包，里面已经处理了各种 edge case。
 
-这里，我先在 [OSM](https://www.openstreetmap.org/) 上下载了三个区域的 GeoJSON 数据。
+这里，我先在 [OSM](https://www.openstreetmap.org/){:target="_blank"} 上下载了三个区域的 GeoJSON 数据。
 
 每个 GeoJSON 里面的原子数据集是一个个的 feature，每个 feature 主要是两部分数据：
 
@@ -130,7 +130,7 @@ Promise.all(promises).then(function (values) {
 });
 ```
 
-另外，虽然你可以单独加载和绘制每个区域，用 [GDAL](https://www.gdal.org/) 里面提供的 `ogrmerge.py` 合并这几个城市的数据会更好：
+另外，虽然你可以单独加载和绘制每个区域，用 [GDAL](https://www.gdal.org/){:target="_blank"} 里面提供的 `ogrmerge.py` 合并这几个城市的数据会更好：
 
 ```bash
 
@@ -145,13 +145,13 @@ Promise.all(promises).then(function (values) {
 
 问题是，人类已经发明了很多办法来干这个事情，光是 D3 支持的就有三大类总共十来种：
 
-- [方位角投影](https://d3js.org/d3-geo/azimuthal)
-- [圆锥投影](https://d3js.org/d3-geo/conic)
-- [圆柱投影](https://d3js.org/d3-geo/cylindrical)
+- [方位角投影](https://d3js.org/d3-geo/azimuthal){:target="_blank"}
+- [圆锥投影](https://d3js.org/d3-geo/conic){:target="_blank"}
+- [圆柱投影](https://d3js.org/d3-geo/cylindrical){:target="_blank"}
 
 不存在完美的投影函数，因为在形状、面积、距离和/或方向这些要素里，每种算法都是对某个或某些属性精确度的选择和权衡的结果。在实际的选择中，除开去对应自己的需要，还得注意两个地方。
 
-首先是适配数据本身的投影格式。比如打开我们下载的 GeoJSON 文件，可以看到它里面有一个[WSG84](https://en.wikipedia.org/wiki/Web_Mercator_projection#:~:text=Web%20Mercator%2C%20Google%20Web%20Mercator,Maps%20adopted%20it%20in%202005)的声明，这其实就对应了 `geoMercator` 的投影。如果你想要使用其他投影方式来展示这份数据，需要先通过工具改变它的投影（后面会说到）。
+首先是适配数据本身的投影格式。比如打开我们下载的 GeoJSON 文件，可以看到它里面有一个[WSG84](https://en.wikipedia.org/wiki/Web_Mercator_projection#:~:text=Web%20Mercator%2C%20Google%20Web%20Mercator,Maps%20adopted%20it%20in%202005){:target="_blank"}的声明，这其实就对应了 `geoMercator` 的投影。如果你想要使用其他投影方式来展示这份数据，需要先通过工具改变它的投影（后面会说到）。
 
 然后就是这个投影函数的一些可调参数，一般用来指定数据投影的范围等等。
 
@@ -273,7 +273,7 @@ function drawMap(
 
 ### 绘制水域和道路
 
-OSM 或者国内的一些公开数据集里有到区县一级的[道路和水系水域](https://www.poi86.com/poi/amap/city/513400.html)，下载之后可以直接使用。颜色上，蓝色表示水系水域，白色表示道路：
+OSM 或者国内的一些公开数据集里有到区县一级的[道路和水系水域](https://www.poi86.com/poi/amap/city/513400.html){:target="_blank"}，下载之后可以直接使用。颜色上，蓝色表示水系水域，白色表示道路：
 
 {% picture /downloads/images/2023_11/how_to_map_3.png --alt how_to_map_3 %}
 
@@ -519,4 +519,4 @@ function formatDigtalToDMS(x) {
 - 实际的自驾轨迹；
 - 关键景点的标记；
 
-限于篇幅，放到[下篇](/2023/11/build-a-map-to-record-part-2/)来记录。
+限于篇幅，放到[下篇](/2023/11/build-a-map-to-record-part-2/){:target="_blank"}来记录。

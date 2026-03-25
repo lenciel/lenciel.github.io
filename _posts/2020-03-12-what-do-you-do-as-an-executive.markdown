@@ -26,7 +26,7 @@ categories:
 
 这么抱怨显然是有些道理的，每个公司都有一堆高管，CXO、VP、合伙人…他们中很多人可能都没有给自己下属很明确的方向和目标作为他们的输入。
 
-搞明白他们到底是干嘛的，不比搞明白 [uWSGI 是干嘛](https://lenciel.com/2013/08/why-you-need-something-like-gunicorn/)的容易。
+搞明白他们到底是干嘛的，不比搞明白 [uWSGI 是干嘛](https://lenciel.com/2013/08/why-you-need-something-like-gunicorn/){:target="_blank"}的容易。
 
 回顾过去的工作经历，我想我的结论是：
 
@@ -55,7 +55,7 @@ categories:
 
 对我来说，如果你和自己的团队开会，不管是重构系统、迁移数据、组件设计还是需求讨论，除开你发起的向下的管理会议，大部分时间你都是上下文最少的那个人，可能你就在大公司了。
 
-一开始你对于自己要做决定肯定会感到有点慌张，那么我推荐 Andy Grove 的《[High Output Management](https://book.douban.com/subject/1957941/)》。
+一开始你对于自己要做决定肯定会感到有点慌张，那么我推荐 Andy Grove 的《[High Output Management](https://book.douban.com/subject/1957941/){:target="_blank"}》。
 
 这本书里可以学到的东西很多，但最值得一提的是，它在上个世纪 80 年代就回答了**大公司里高管做什么**这个问题：
 
@@ -94,7 +94,7 @@ categories:
 
 这类管理者做完决策多半会强迫下面的人执行。
 
-在刚刚从技术 leader 担任基层管理者的时候，很多人是这样的状态，因为他们做管理很多时候靠的是能力比其他人更强（但其实我从来[不觉得做管理是晋升](https://lenciel.com/2018/05/tips-for-junior-managers/#%E7%AE%A1%E7%90%86%E4%B8%8D%E6%98%AF%E6%99%8B%E5%8D%87)）。
+在刚刚从技术 leader 担任基层管理者的时候，很多人是这样的状态，因为他们做管理很多时候靠的是能力比其他人更强（但其实我从来[不觉得做管理是晋升](https://lenciel.com/2018/05/tips-for-junior-managers/#%E7%AE%A1%E7%90%86%E4%B8%8D%E6%98%AF%E6%99%8B%E5%8D%87){:target="_blank"}）。
 
 这种管理风格下，最好的结果，就是他们做决定的正确性很高，于是没有出大的问题。
 
@@ -168,9 +168,9 @@ categories:
 
 然而，如果你不能进行战略层面的思考，那么在长期的产品愿景制定上就会遇到大麻烦。
 
-很可能你运作的产品只是一个「 [feature factory](https://cutle.fish/blog/12-signs-youre-working-in-a-feature-factory/) 」
+很可能你运作的产品只是一个「 [feature factory](https://cutle.fish/blog/12-signs-youre-working-in-a-feature-factory/){:target="_blank"} 」
 
-战略思考力按照我对[智慧和技巧](https://lenciel.com/2020/02/how-to-read-the-books-part-2/)的划分，属于智慧，读一本书就够了：《[好战略，坏战略](http://goodbadstrategy.com/)》。
+战略思考力按照我对[智慧和技巧](https://lenciel.com/2020/02/how-to-read-the-books-part-2/){:target="_blank"}的划分，属于智慧，读一本书就够了：《[好战略，坏战略](http://goodbadstrategy.com/){:target="_blank"}》。
 
 和其他跟智慧有关的东西一样，它的道理不复杂，靠的是实践、磨砺和不断的反思。
 
@@ -262,7 +262,7 @@ categories:
 
 因此这带来了大家对价值观和战略变化的普遍恐惧。
 
-我认为阿里等公司带了一个很好的头：公开宣布说，[它们更新了](https://36kr.com/p/5244962)。
+我认为阿里等公司带了一个很好的头：公开宣布说，[它们更新了](https://36kr.com/p/5244962){:target="_blank"}。
 
 我希望更多的创业公司管理团队能够公开聊这部分话题：「我们的旧战略行不通，因为我们的价值主张行不通。用户不觉得我们有价值。所以这是我们新的价值观和新的战略。推行它们会很痛，有一些人会失望会离开，但是我们必须这么做。」
 

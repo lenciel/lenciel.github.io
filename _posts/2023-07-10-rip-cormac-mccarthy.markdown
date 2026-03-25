@@ -17,33 +17,33 @@ categories:
 
 ---
 
-今天早班机，看到群里贴了首所谓「贾浅浅」的《[清晨](https://www.douyin.com/zhuanti/7242077867406952487)》。
+今天早班机，看到群里贴了首所谓「贾浅浅」的《[清晨](https://www.douyin.com/zhuanti/7242077867406952487){:target="_blank"}》。
 
 没有查，就觉得是伪造的：因为黄是黄，但味道不太对。
 
 倒不是说作家写性爱，就写得有多好[^1]，而是那东西一看就不是专业作家的话语体系。
 
-于是想起了科马克·麦卡锡（Cormac McCarthy）。顺手一查，居然在上个月过世了，而豆瓣上《[天下骏马](https://book.douban.com/subject/35178386/)》的页面却还没更新忌日：果然是冷门巨匠。
+于是想起了科马克·麦卡锡（Cormac McCarthy）。顺手一查，居然在上个月过世了，而豆瓣上《[天下骏马](https://book.douban.com/subject/35178386/){:target="_blank"}》的页面却还没更新忌日：果然是冷门巨匠。
 
 很黄很暴力的东西不落文字，是有传统的。
 
 从古希腊戏剧开始，这类情节就有统一的处理方式，叫「ob skena」，翻译成英文是「off stage」，也就是「不上台面」。因此，索福克勒斯写俄狄浦斯搞瞎自己，是通过一位使者报告给观众的。
 
-这传统形成后，在古今中外坚持得很好。虽然外有但丁、纳博科夫、亨利·米勒、D.H.劳伦斯，内有南陵笑笑生、李渔等一众反叛者，不断突破表达的底线，但时至今日，即便是昆汀这样的导演在《落水狗》里安排 Mr Blonde [割人耳朵](https://www.youtube.com/watch?v=uJfORxWsZUY)，也还是会乖乖把镜头拉远[^2]——「ob skena」。
+这传统形成后，在古今中外坚持得很好。虽然外有但丁、纳博科夫、亨利·米勒、D.H.劳伦斯，内有南陵笑笑生、李渔等一众反叛者，不断突破表达的底线，但时至今日，即便是昆汀这样的导演在《落水狗》里安排 Mr Blonde [割人耳朵](https://www.youtube.com/watch?v=uJfORxWsZUY){:target="_blank"}，也还是会乖乖把镜头拉远[^2]——「ob skena」。
 
 然后让我们来到科马克。
 
-你大概率没有看过他的小说，但多半看过改编自它们的一些电影，比如被科恩兄弟拍成 cult 经典的《[老无所依](https://movie.douban.com/subject/1857099/)》，然后脑子里有 Chigurh 这样久久挥之不去的角色：
+你大概率没有看过他的小说，但多半看过改编自它们的一些电影，比如被科恩兄弟拍成 cult 经典的《[老无所依](https://movie.douban.com/subject/1857099/){:target="_blank"}》，然后脑子里有 Chigurh 这样久久挥之不去的角色：
 
-![no_country_for_old_man.webp](/downloads/images/2023_07/no_country_for_old_man.webp --alt Don't touch me...)
+![no_country_for_old_man.webp](/downloads/images/2023_07/no_country_for_old_man.webp --alt Don't touch me...){:target="_blank"}
 
 这就是科马克，特别是早期科马克的底色：冷漠、黑暗、暴力、情色，残酷无情。
 
 并且，残酷无情得毫无歉意，以至于许多读者会觉得他令人不安。
 
-以他最被推崇的一部作品，《[血色子午线](https://en.wikipedia.org/wiki/Blood_Meridian)》为例。
+以他最被推崇的一部作品，《[血色子午线](https://en.wikipedia.org/wiki/Blood_Meridian){:target="_blank"}》为例。
 
-这部在《纽约时报》发起的世纪最伟大美国小说投票中名列第二，被挑剔的[哈罗德·布鲁姆](https://baike.baidu.com/item/%E5%93%88%E7%BD%97%E5%BE%B7%C2%B7%E5%B8%83%E9%B2%81%E5%A7%86/3219214)评价为「自福克纳的《我弥留之际》之后最伟大的小说」，在 Amazon 上满坑满谷的[一星差评](https://biblioklept.org/2023/06/15/selections-from-one-star-amazon-reviews-of-cormac-mccarthys-blood-meridian-2/)[^3]。其中被认可得最多的一条是：
+这部在《纽约时报》发起的世纪最伟大美国小说投票中名列第二，被挑剔的[哈罗德·布鲁姆](https://baike.baidu.com/item/%E5%93%88%E7%BD%97%E5%BE%B7%C2%B7%E5%B8%83%E9%B2%81%E5%A7%86/3219214){:target="_blank"}评价为「自福克纳的《我弥留之际》之后最伟大的小说」，在 Amazon 上满坑满谷的[一星差评](https://biblioklept.org/2023/06/15/selections-from-one-star-amazon-reviews-of-cormac-mccarthys-blood-meridian-2/){:target="_blank"}[^3]。其中被认可得最多的一条是：
 
 > the unrelenting amount of violence and cruelty in Blood Meridian strikes me as having crossed the line to pornography...
 
@@ -51,13 +51,13 @@ categories:
 
 而要我说，科马克作为一名职业作家，运气好得不得了。
 
-首先，他在生涯早期（七十年代到九十年代），拥有兰登书屋的编辑厄斯金（[Albert Erskine](https://www.deseret.com/1993/2/5/19030433/random-editor-albert-erskine-dies-at-age-81)）的支持。
+首先，他在生涯早期（七十年代到九十年代），拥有兰登书屋的编辑厄斯金（[Albert Erskine](https://www.deseret.com/1993/2/5/19030433/random-editor-albert-erskine-dies-at-age-81){:target="_blank"}）的支持。
 
 这正好是出版业集团化之前，编辑在图书特别是小说出版上仍然享有绝对的影响力和话语权。并且，风格类似福克纳的科马克遇到的正好是做过福克纳的厄斯金。因此，他以绝对差的商业表现得以持续出书，还获得了一些奖金来维持自己的写作生涯。
 
-然后，以 1992 年的《[天下骏马](https://book.douban.com/subject/35178386/)》为界——这是科马克第一个有可以被正面宣传的主角的故事，也最终被[拍成电影](https://movie.douban.com/subject/1292858/)，并由马特·达蒙、佩内洛普·克鲁兹等大牌明星共同演绎——科马克开始收获大量的曝光和奖项，包括《[长路](https://zh.wikipedia.org/zh-hans/%E8%B7%AF_(%E5%B0%8F%E8%AA%AA))》拿到的普利策奖，他自己拿到索尔·贝娄文学终生成就奖，以及《老无所依》拿到四座奥斯卡金像奖。
+然后，以 1992 年的《[天下骏马](https://book.douban.com/subject/35178386/){:target="_blank"}》为界——这是科马克第一个有可以被正面宣传的主角的故事，也最终被[拍成电影](https://movie.douban.com/subject/1292858/){:target="_blank"}，并由马特·达蒙、佩内洛普·克鲁兹等大牌明星共同演绎——科马克开始收获大量的曝光和奖项，包括《[长路](https://zh.wikipedia.org/zh-hans/%E8%B7%AF_(%E5%B0%8F%E8%AA%AA){:target="_blank"})》拿到的普利策奖，他自己拿到索尔·贝娄文学终生成就奖，以及《老无所依》拿到四座奥斯卡金像奖。
 
-这背后，其实是踩到了商业化的风口：厄斯金退休后，兰登书屋器重编辑追求文学性的掌门人罗伯特·伯恩斯坦（Robert Bernstein）也被职业经理人阿尔贝托（Alberto Vitale）替代。科马克一度举步维艰，并最终通过新的经纪人阿曼达·厄本（[Amanda Urban](https://en.wikipedia.org/wiki/Amanda_Urban)）签约了新的出版社：[克诺普夫出版社](https://knopfdoubleday.com/imprint/knopf/)。
+这背后，其实是踩到了商业化的风口：厄斯金退休后，兰登书屋器重编辑追求文学性的掌门人罗伯特·伯恩斯坦（Robert Bernstein）也被职业经理人阿尔贝托（Alberto Vitale）替代。科马克一度举步维艰，并最终通过新的经纪人阿曼达·厄本（[Amanda Urban](https://en.wikipedia.org/wiki/Amanda_Urban){:target="_blank"}）签约了新的出版社：[克诺普夫出版社](https://knopfdoubleday.com/imprint/knopf/){:target="_blank"}。
 
 新出版社指派了一个营销团队（包括专职的 PR、设计、肖像摄影师），来包装和推广科马克。同样的商业化在整个行业都如火如荼：比如他的第一份手稿寄过去时，只有十来个人的兰登书屋，这时已经有几千名员工[^8]。
 
@@ -82,10 +82,10 @@ categories:
 RIP。
 
 [^1]: 国内大部分作家，包括贾浅浅她爹，写得都不好，只不过胆子比其他人大一点。
-[^2]: 然而[这个场景](https://www.youtube.com/watch?v=uJfORxWsZUY)还是争议很大，被很多国家的发行版本剪掉了。
+[^2]: 然而[这个场景](https://www.youtube.com/watch?v=uJfORxWsZUY){:target="_blank"}还是争议很大，被很多国家的发行版本剪掉了。
 [^3]: 哈罗德·布鲁姆本人也承认，他在前两次尝试阅读这本书时都没能读完，因为这个故事「太可怕了」。
 [^4]: 但千万不要去读翻译过来的中文版。
-[^5]: 好像英文里面有一个与之对应的说法，叫做「[Namby Pamby](https://en.wikipedia.org/wiki/Namby-pamby)」。
+[^5]: 好像英文里面有一个与之对应的说法，叫做「[Namby Pamby](https://en.wikipedia.org/wiki/Namby-pamby){:target="_blank"}」。
 [^6]: 世界被人类以丑陋的方式推向了崩溃边缘。同时，又塞满了过于俊美的甜美偶像，和《哈利波特》般低幼化的成人读物。科马克最后一本书《Stella Maris》里有一段话是对此最好的回应：「There was an ill-contained horror beneath the surface of the world and there always had been. That at the core of reality lies a deep and eternal demonium. All religions understand this. And it wasn’t going away. And that to imagine the grim eruptions of this century were in any way singular or exhaustive was simply a folly.」
 [^7]: 《Blood Merdian》也只售出 1,883 册，所以现在绝版书卖到了一万美金。1989 年，科马克甚至在给朋友的信中写道：「我做了 28 年的全职专业作家，但从未收到过版税支票。我敢打赌，这已经是一个纪录了。」
 [^8]: 整个出版业的集团化，后来愈演愈烈：兰登与企鹅出版社 2013 年合并，成为全球最大的出版商。2020年，企鹅兰登书屋中标收购美国第三大出版商，被司法部以反垄断为由阻止。

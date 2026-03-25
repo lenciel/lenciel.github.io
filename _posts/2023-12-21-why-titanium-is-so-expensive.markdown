@@ -12,7 +12,7 @@ categories:
 
 ---
 
-> 这个系列，是[答小朋友问](/categories/questions-my-kids-asked/)...
+> 这个系列，是[答小朋友问](/categories/questions-my-kids-asked/){:target="_blank"}...
 
 作为一名铁人三项特别是自行车项目爱好者，蒙爷对装备慢慢有了点研究。前几天他问我，「钛是地壳中含量第九丰富的元素。其总质量是碳的 30 倍，铜的 100 倍。为什么钛做的各种东西都那么贵呢？」
 

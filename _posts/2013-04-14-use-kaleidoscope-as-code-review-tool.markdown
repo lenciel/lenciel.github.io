@@ -9,7 +9,7 @@ categories:
 - tips
 ---
 
-个人觉得 Mac 上最好用的文件/文件夹比较工具应该就是 Kaleidoscope 了。在它的[新版本](http://kaleidoscopeapp.com/beta)中新增了 ``KSReview`` 功能，比较有用。
+个人觉得 Mac 上最好用的文件/文件夹比较工具应该就是 Kaleidoscope 了。在它的[新版本](http://kaleidoscopeapp.com/beta){:target="_blank"}中新增了 ``KSReview`` 功能，比较有用。
 
 举个常见的场景：如果 ``master`` 分支下有两个人 lenciel 和 ming 在做事。如果 ming 的事情先做完，代码上了 master 分支。这个时候 lenciel 做 diff 的时候，因为主分支的文件已经发生过变化，那么我们 diff 的结果哪些是自己的开发分支与主分支的差异哪些是 ming 引入的，就要靠「人工智能」来肉身体察了。
 

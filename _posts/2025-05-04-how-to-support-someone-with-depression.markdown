@@ -11,7 +11,7 @@ categories:
 
 随着中国人对心理疾病的重视程度逐渐提高，抑郁症被摆上桌面一段时间了。但是现实生活中，由于缺乏相关知识和指导，抑郁症患者的身边人往往难以对他们形成支持，反而常常让他们陷入更深的痛苦和自责。
 
-考虑到它其实是[最常见](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)00355-1/fulltext)的心理健康疾病之一，很可能我们大多数人都会在某个时刻，以患者或支持者的身份，与抑郁症产生联系。本指南主要基于[这篇文章](https://psyche.co/guides/how-to-support-someone-with-depression-so-they-dont-feel-alone)整理，希望更多的抑郁症患者被好好对待。
+考虑到它其实是[最常见](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25){:target="_blank"}00355-1/fulltext)的心理健康疾病之一，很可能我们大多数人都会在某个时刻，以患者或支持者的身份，与抑郁症产生联系。本指南主要基于[这篇文章](https://psyche.co/guides/how-to-support-someone-with-depression-so-they-dont-feel-alone){:target="_blank"}整理，希望更多的抑郁症患者被好好对待。
 
 <h3>目录</h3>
 
@@ -80,7 +80,7 @@ categories:
 
 有时，抑郁症可能只是一次性发作，患者在康复后不会再经历类似的症状。**有时，抑郁症也可能是复发性的，即抑郁期（持续数周或数月）和康复期（持续数周、数月或数年）交替出现。**
 
-无论何种形式，抑郁症都会给患者及其亲人带来极大的挑战。因为几十年来，主流的基于抑郁症患者大脑缺乏足够的神经递质血清素这一理念的治疗方案，随着研究的深入现在有[较大争议](https://www.quantamagazine.org/the-cause-of-depression-is-probably-not-what-you-think-20230126/)，而一些新兴的治疗方法如[氯胺酮](https://www.nature.com/articles/s41398-024-03033-4)还没有被广泛接受。
+无论何种形式，抑郁症都会给患者及其亲人带来极大的挑战。因为几十年来，主流的基于抑郁症患者大脑缺乏足够的神经递质血清素这一理念的治疗方案，随着研究的深入现在有[较大争议](https://www.quantamagazine.org/the-cause-of-depression-is-probably-not-what-you-think-20230126/){:target="_blank"}，而一些新兴的治疗方法如[氯胺酮](https://www.nature.com/articles/s41398-024-03033-4){:target="_blank"}还没有被广泛接受。
 
 #### 4. 为什么支持很重要 
 
@@ -212,7 +212,7 @@ categories:
 
 **关键是从小事开始，确保任务是可行的，并与其他亲友共同协商，看看什么样的安排对他们最合适**。
  
-这种方法基于心理治疗中的行为激活疗法（Behavioral Activation, BA），即通过有计划的活动安排来缓解抑郁。[研究表明](https://psyche.co/guides/how-to-engage-with-life-when-you-feel-down)，参与活动（哪怕是温和的活动）比不活动更有助于改善情绪。
+这种方法基于心理治疗中的行为激活疗法（Behavioral Activation, BA），即通过有计划的活动安排来缓解抑郁。[研究表明](https://psyche.co/guides/how-to-engage-with-life-when-you-feel-down){:target="_blank"}，参与活动（哪怕是温和的活动）比不活动更有助于改善情绪。
 
 通常来说，以下几类活动是最有帮助的：
 

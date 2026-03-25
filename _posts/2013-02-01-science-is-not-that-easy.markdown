@@ -11,7 +11,7 @@ categories:
 ---
 
 
-![Black and White](/downloads/images/2013_02/black_and_white.jpg --alt Don't touch me)
+![Black and White](/downloads/images/2013_02/black_and_white.jpg --alt Don't touch me){:target="_blank"}
 
 最近波音 787 曝出锂电池起火燃烧的[问题][1]。全世界人民，特别是中国人民纷纷摇头叹息：以精密和严谨著称的日本人，现在终归是堕落了。奇怪的是，如果你想稍微深入一点儿去搜索日本制造的锂电池究竟出了什么问题，答案就欠奉了。于是本座花了点儿时间试图去把这事情弄明白。
 

@@ -16,7 +16,7 @@ categories:
 
 一天一餐，拒绝锦衣玉食，还要抽时间冥想。
 
-国内这么干的往往是遵循了某些儒释道的修行法门，国外特别是欧美国家的则往往落脚到斯多葛主义{% sidenote 'sn-id-1' '还没翻车如 Tim Ferris [总这么说](https://tim.blog/2018/06/10/how-to-succeed-in-high-stress-situations/)，已经翻车的如 Elizabeth Holmes 也总这么说。硅谷不但有热门博客组织 [Daily Stoic](https://dailystoic.com/)，甚至有个[西塞罗学院](https://ciceroinstitute.org/)。' %}。
+国内这么干的往往是遵循了某些儒释道的修行法门，国外特别是欧美国家的则往往落脚到斯多葛主义{% sidenote 'sn-id-1' '还没翻车如 Tim Ferris [总这么说](https://tim.blog/2018/06/10/how-to-succeed-in-high-stress-situations/){:target="_blank"}，已经翻车的如 Elizabeth Holmes 也总这么说。硅谷不但有热门博客组织 [Daily Stoic](https://dailystoic.com/){:target="_blank"}，甚至有个[西塞罗学院](https://ciceroinstitute.org/){:target="_blank"}。' %}。
 
 无论是璀璨华夏，还是希腊罗马，这个的普遍存在很好地说明了，历史不会重复，但会押韵。并且，考虑到斯多葛主义跟佛教的深厚关系{% sidenote 'sn-id-2' '目前公认是芝诺创建了斯多葛学派，但它有更早的希腊根源，比如柏拉图的学生，苏格拉底的同辈安提西尼推动的犬儒主义。在亚历山大大帝战争期间，它又跟印度传来的佛教思想发生了很多融合。John Sellars 有本《The Routledge Handbook of the Stoic Tradition》，详细讲了这段历史。' %}，这简直是东西文明为数不多的共振。
 
@@ -40,8 +40,8 @@ categories:
 
 可能只有一半。
 
-我最近看到[一个键盘](https://www.norbauer.co/pages/the-seneca)项目，用了斯多葛主义代表人物之一[塞内卡](https://zh.wikipedia.org/zh-hans/%E5%A1%9E%E5%85%A7%E5%8D%A1)的名字命名。并且项目主页上专门设了一章{% sidenote 'sn-id-3' '...There is a certain element of Stoic amor fati in the Seneca as well. As Nassim Taleb, greatest expositor of Seneca, puts it, a Stoic is a Buddhist with attitude, one who says fuck you to fate...' %}来解释为什么起这名字，特别是为什么塞内卡并不会反对你买一把差不多三万块钱的键盘来享受享受。
+我最近看到[一个键盘](https://www.norbauer.co/pages/the-seneca){:target="_blank"}项目，用了斯多葛主义代表人物之一[塞内卡](https://zh.wikipedia.org/zh-hans/%E5%A1%9E%E5%85%A7%E5%8D%A1){:target="_blank"}的名字命名。并且项目主页上专门设了一章{% sidenote 'sn-id-3' '...There is a certain element of Stoic amor fati in the Seneca as well. As Nassim Taleb, greatest expositor of Seneca, puts it, a Stoic is a Buddhist with attitude, one who says fuck you to fate...' %}来解释为什么起这名字，特别是为什么塞内卡并不会反对你买一把差不多三万块钱的键盘来享受享受。
 
-这大概是权贵特别是今天的技术权贵喜欢斯多葛主义的另一半原因的完美注脚：它认为一切都是最好的安排，算是唯一一种不鼓励他们放弃财富或权力的哲学主张{% sidenote 'sn-id-4' '也因此，包括塞内卡在内的很多斯多葛主义者都被批过很虚伪。跟他们比，伊壁鸠鲁说，幸福的生活是离开权力甚至离开城市，住到乡下，一边吃着简单的饭菜，一边和好朋友交谈。[犬儒主义](/2020/02/everyday-we-need-a-diogenes/)提倡更极端的做法，不但要放弃个人财产，还要干脆像条流浪的狗一样生活。传统佛教，我们中国的儒释道，要放弃的东西，也比斯多葛主义讲的多很多。' %}。
+这大概是权贵特别是今天的技术权贵喜欢斯多葛主义的另一半原因的完美注脚：它认为一切都是最好的安排，算是唯一一种不鼓励他们放弃财富或权力的哲学主张{% sidenote 'sn-id-4' '也因此，包括塞内卡在内的很多斯多葛主义者都被批过很虚伪。跟他们比，伊壁鸠鲁说，幸福的生活是离开权力甚至离开城市，住到乡下，一边吃着简单的饭菜，一边和好朋友交谈。[犬儒主义](/2020/02/everyday-we-need-a-diogenes/){:target="_blank"}提倡更极端的做法，不但要放弃个人财产，还要干脆像条流浪的狗一样生活。传统佛教，我们中国的儒释道，要放弃的东西，也比斯多葛主义讲的多很多。' %}。
 
 权贵当然可以接受一切都是理所当然，但普罗大众的生活中还有很多糟糕之处。如果只是去适应它们，接受它们，生活就会越来越没有希望。斯多葛主义生活在几千年前，这么去想也算历史局限性。往下继续学，你就会看到，还是有**培根和伏尔泰**这样的人，告诉全世界，只要群体觉醒加上科学方法，无论铁幕多么厚重，我们仍然可以做出很多改变。

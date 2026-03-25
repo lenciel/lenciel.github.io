@@ -10,7 +10,7 @@ categories:
 - tools-i-use
 ---
 
-Mac 上很贴心的提供了词典，并且还绑定了快捷键：在任何页面按下"Ctrl+Cmd+D"，就会有词义解释的界面弹出。不过内置的`New Oxford American Dictionary`比较的弱，给人的感觉词条的水准就像《新华字典》一样单薄，所以换成了编了好几十年又修订了好几十年的[韦氏词典](http://zh.wikipedia.org/wiki/%E9%9F%A6%E6%B0%8F%E8%AF%8D%E5%85%B8)，两者的差距还是明显的。
+Mac 上很贴心的提供了词典，并且还绑定了快捷键：在任何页面按下"Ctrl+Cmd+D"，就会有词义解释的界面弹出。不过内置的`New Oxford American Dictionary`比较的弱，给人的感觉词条的水准就像《新华字典》一样单薄，所以换成了编了好几十年又修订了好几十年的[韦氏词典](http://zh.wikipedia.org/wiki/%E9%9F%A6%E6%B0%8F%E8%AF%8D%E5%85%B8){:target="_blank"}，两者的差距还是明显的。
 
 这是自带词典对 pathos 的解释：
 
@@ -30,8 +30,8 @@ pathos /ˈpāˌTHäs/, n.
 
 安装的方法也挺简单：
 
-* 如果下载的是[这样](http://pan.baidu.com/s/1o6z67dK#dir/path=%2Fdictionary)的`dictionary`文件，直接拷贝到`~/Library/Dictionaries`
-* 如果是[这样](http://pan.baidu.com/s/1i35ik7N)的 raw 文件，需要运行 DictUnifier 应用编译
+* 如果下载的是[这样](http://pan.baidu.com/s/1o6z67dK#dir/path=%2Fdictionary){:target="_blank"}的`dictionary`文件，直接拷贝到`~/Library/Dictionaries`
+* 如果是[这样](http://pan.baidu.com/s/1i35ik7N){:target="_blank"}的 raw 文件，需要运行 DictUnifier 应用编译
 
 安装完毕运行`Dictionary`应用，勾选你期望出现的字典和顺序即可，我启用了《朗道英汉词典》、《韦氏词典》和《维基百科》:
 
@@ -39,6 +39,6 @@ pathos /ˈpāˌTHäs/, n.
 
 另外，词典的样式其实是用 css 定义的，就在每个字典文件的 Contetns 目录，比如：`~/Library/Dictionaries/dictd_www.dict.org_web1913.dictionary/Contents/DefaultStyle.css`。如果你不满意字典出来的样子，可以自定义格式。
 
-最后，这些词典其实都是 linux 上著名的国产软件[stardict](http://en.wikipedia.org/wiki/StarDict)的文件格式（写到这里，又想起 stardict 的作者[胡正](http://www.huzheng.org/aboutme.php)），所以要在[手机上使用](https://itunes.apple.com/us/app/dictionary-universal/id312088272?mt=8)也是很容易的事情。
+最后，这些词典其实都是 linux 上著名的国产软件[stardict](http://en.wikipedia.org/wiki/StarDict){:target="_blank"}的文件格式（写到这里，又想起 stardict 的作者[胡正](http://www.huzheng.org/aboutme.php){:target="_blank"}），所以要在[手机上使用](https://itunes.apple.com/us/app/dictionary-universal/id312088272?mt=8){:target="_blank"}也是很容易的事情。
 
 

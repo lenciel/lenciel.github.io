@@ -11,9 +11,9 @@ categories:
 
 ---
 
-![work life balance](/downloads/images/2015_10/dilbert_work_life_balance.png --alt Don't touch me)
+![work life balance](/downloads/images/2015_10/dilbert_work_life_balance.png --alt Don't touch me){:target="_blank"}
 
-前面说了，[Work Life Balance的神话其实并不靠谱](http://lenciel.cn/2015/10/the-myth-of-work-life-balance/)。
+前面说了，[Work Life Balance的神话其实并不靠谱](http://lenciel.cn/2015/10/the-myth-of-work-life-balance/){:target="_blank"}。
 
 毫不奇怪，在本座自己发觉这点之前，我的家人们早就发现了这点。所以当柳青患癌这样的消息一出来，总会有人跟我说，「你看看，难道你觉得她这样值吗？」
 
@@ -41,7 +41,7 @@ categories:
 
 很多心灵鸡汤会把这些误读为」你一定要找到自己感兴趣的事情」，这其实很容易让人跳进火坑。从接触到感兴趣并不难，比如踢球，比如唱歌，比如写作，比如编程，很多人接触了会觉得很有兴趣。然而从爱好变成职业，就需要反复枯燥的练习并且和其他人进行竞争。如果你为一件自己仅仅是感兴趣的事情就调转了职业方向，很多时候都会感到后悔莫及。
 
-要坚持下来真正熬出头，需要极度勤奋和高度专注，即便你的目标不是变成顶尖高手（那么大概不需要[10000小时](http://baike.baidu.com/view/3244949.htm)），过程也会非常苦。
+要坚持下来真正熬出头，需要极度勤奋和高度专注，即便你的目标不是变成顶尖高手（那么大概不需要[10000小时](http://baike.baidu.com/view/3244949.htm){:target="_blank"}），过程也会非常苦。
 
 但熬过就是另一番天地。
 
@@ -60,7 +60,7 @@ categories:
 
 在我看来 996 上班制度或者规定每周上班 80 个小时就是鼓励蛮干。
 
-看看阿里的人[自己怎么说996](http://www.zhihu.com/question/23272060)你就知道，如果你鼓励的是蛮干，那总是蛮干都得不到：很多人只是敷衍而已。
+看看阿里的人[自己怎么说996](http://www.zhihu.com/question/23272060){:target="_blank"}你就知道，如果你鼓励的是蛮干，那总是蛮干都得不到：很多人只是敷衍而已。
 
 这件事情曾经给了我很大的困扰。
 
@@ -100,7 +100,7 @@ categories:
 
 {% picture /downloads/images/2015_10/no_one_wants_more_work.png --img width="420" height="294" class="left" %}
 
-拿我个人来说，很长一段时间以来都很忙，每周工作时间常常超过 80 个小时。虽然也知道[人生是玩5个球](http://blog.sina.com.cn/s/blog_5d7e3c150100h2c8.html)之类的道理，但却并不觉得自己的选择有什么问题：目前确实有那么多事情需要处理，自己又很愿意花时间去处理它们。
+拿我个人来说，很长一段时间以来都很忙，每周工作时间常常超过 80 个小时。虽然也知道[人生是玩5个球](http://blog.sina.com.cn/s/blog_5d7e3c150100h2c8.html){:target="_blank"}之类的道理，但却并不觉得自己的选择有什么问题：目前确实有那么多事情需要处理，自己又很愿意花时间去处理它们。
 
 旁边这张图是表达，有很多道理我是知道的。只不过认定了工作和生活没法兼得，所以我准备串行处理：工作的时候疯狂工作，生活的时候好好生活。这样我既不会遗憾该勤奋的时候不够勤奋，也不会觉得什么像样的生活都没有过过。
 

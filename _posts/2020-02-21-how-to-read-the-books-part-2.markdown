@@ -19,7 +19,7 @@ categories:
 
 ## 智慧和技能
 
-[前面我们](/2020/02/how-to-read-the-books-part-1/)说了读书给你更好的观念、智慧和技能，以及什么是我觉得更好的观念。
+[前面我们](/2020/02/how-to-read-the-books-part-1/){:target="_blank"}说了读书给你更好的观念、智慧和技能，以及什么是我觉得更好的观念。
 
 我们接着说智慧和技能。
 
@@ -38,11 +38,11 @@ categories:
 
 你很难知道他到底运用的智慧还是技能，因为它们都可以用来决定「面对问题的时候，接下来做什么」。
 
-我觉得它们的关系，可以用 [Weierstrass 椭圆函数图](http://mathworld.wolfram.com/WeierstrassEllipticFunction.html)来说清楚：
+我觉得它们的关系，可以用 [Weierstrass 椭圆函数图](http://mathworld.wolfram.com/WeierstrassEllipticFunction.html){:target="_blank"}来说清楚：
 
-![image holder](/downloads/images/2020_02/weierstrass.jpg --alt Don't touch me)
+![image holder](/downloads/images/2020_02/weierstrass.jpg --alt Don't touch me){:target="_blank"}
 
-如果你觉得搞得太高深了，可以想象一笼[烧卖](https://www.haodou.com/recipe/276541)。
+如果你觉得搞得太高深了，可以想象一笼[烧卖](https://www.haodou.com/recipe/276541){:target="_blank"}。
 
 曲线的基座（连成片的烧卖底），它的面积代表你的**智慧**：越是连绵不绝，意味着你针对各种问题，处理起来的水平都不错。
 
@@ -84,7 +84,7 @@ categories:
 
 一旦问题域不断变大，追求基座面积大和追求塔尖高显然会变成两个不能同时追求的目标。
 
-因为你最多比普通人厉害 10 倍，但人类面对的问题在指数级增长。有很多学科，曾经是一些学者零碎时间的消遣，现在是成千上万人的事业，图谱大到让人[望而生畏](https://www.quantamagazine.org/the-map-of-mathematics-20200213/)。
+因为你最多比普通人厉害 10 倍，但人类面对的问题在指数级增长。有很多学科，曾经是一些学者零碎时间的消遣，现在是成千上万人的事业，图谱大到让人[望而生畏](https://www.quantamagazine.org/the-map-of-mathematics-20200213/){:target="_blank"}。
 
 那你应该怎么选呢？
 
@@ -134,7 +134,7 @@ categories:
 
 那么如何才能培养出某个领域内卓越的技能呢？
 
-纽约客采访张益唐的[报道](https://www.newyorker.com/magazine/2015/02/02/pursuit-beauty)我印象很深，他被问到「数学家需要什么样的素质」时的回答是：
+纽约客采访张益唐的[报道](https://www.newyorker.com/magazine/2015/02/02/pursuit-beauty){:target="_blank"}我印象很深，他被问到「数学家需要什么样的素质」时的回答是：
 
 > 「**专注**，而且，永远不要放弃你的**个性**。也许你面对的东西非常复杂，需要很长时间，但你应该能依据**直觉**挑出重要的部分。」
 
@@ -224,7 +224,7 @@ categories:
 
 你看过几个漫威里面屌炸天的英雄因为他们的技能被学校老师表扬？
 
-但我还是觉得，既然我们读书就是为了有前面提到的那些[正确观念](/2020-02-21-how-to-read-the-books-part-1/)，教学双方都应该努力试试。
+但我还是觉得，既然我们读书就是为了有前面提到的那些[正确观念](/2020-02-21-how-to-read-the-books-part-1/){:target="_blank"}，教学双方都应该努力试试。
 
 因为随着知识越来越专业化，工具越来越现代化，数据和信息越来越容易获取，会有越来越多的人开始做创造类的工作。
 
@@ -234,13 +234,13 @@ categories:
 
 如果你还是很犹豫，那么我来给你兜个底。
 
-我会在[第三部分](/2020/02/how-to-read-the-books-part-3/)告诉你，[图书分类](https://book.jd.com/booksort.html)里那些教你「智慧」的书，读完哪些，就基本够应付其他人类了：
+我会在[第三部分](/2020/02/how-to-read-the-books-part-3/){:target="_blank"}告诉你，[图书分类](https://book.jd.com/booksort.html){:target="_blank"}里那些教你「智慧」的书，读完哪些，就基本够应付其他人类了：
 
-![image holder](/downloads/images/2020_02/book_categories.jpg --alt Don't touch me)
+![image holder](/downloads/images/2020_02/book_categories.jpg --alt Don't touch me){:target="_blank"}
 
 [^1]: 这里不是用「知识」对着「智慧」是因为有很多知识是属于「记忆性质」的东西.就像爱因斯坦说过的一样，不要把时间花在记住任何可以查到的东西上面，在互联网时代尤其如此，我们需要的是「技能」。
 
-[^2]: 我一直认为哲学家们巨大的分歧是被夸大了的。哲学家的核心逻辑就是知道什么是正确的选择，并总是与偏见和欲望斗争，去遵循正确的选择。大家的争议无非是在什么是「正确」的上面[存在一些异议](https://lenciel.com/2020/02/everyday-we-need-a-diogenes/)。
+[^2]: 我一直认为哲学家们巨大的分歧是被夸大了的。哲学家的核心逻辑就是知道什么是正确的选择，并总是与偏见和欲望斗争，去遵循正确的选择。大家的争议无非是在什么是「正确」的上面[存在一些异议](https://lenciel.com/2020/02/everyday-we-need-a-diogenes/){:target="_blank"}。
 
 [^3]: 有很多人停止技能上的突破仅仅是因为观念的束缚。就像足球场上，之前守门员被认为就是不参与倒脚的，只要没有被进球就被认为是完美的门将。但一旦有一个队的守门员稍微懂了一点传控，大家就发现这是巨大的优势，然后大家纷纷效仿，于是现在脚法不行的门将基本就找不到工作了。
 

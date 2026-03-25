@@ -12,10 +12,10 @@ categories:
 - AI
 ---
 
-前不久[玩了一下](/2022/09/first-glance-of-stable-diffusion/) Stable-Diffusion，也让蒙爷搓了几张：
+前不久[玩了一下](/2022/09/first-glance-of-stable-diffusion/){:target="_blank"} Stable-Diffusion，也让蒙爷搓了几张：
 
-![sd-work-9](/downloads/images/2022_09/sd-work-9.png --alt Don't touch me...)
-![sd-work-10](/downloads/images/2022_09/sd-work-10.png --alt Don't touch me...)
+![sd-work-9](/downloads/images/2022_09/sd-work-9.png --alt Don't touch me...){:target="_blank"}
+![sd-work-10](/downloads/images/2022_09/sd-work-10.png --alt Don't touch me...){:target="_blank"}
 
 `prompt` 如下：
 
@@ -29,7 +29,7 @@ categories:
 
 看来，天还是没有白聊。
 
-但 AI 会抢人类的饭碗吗？作为一个[中老年 AI 不从业者](/2016/03/alphago-and-ai/)，我觉得是，「Yes and No」。
+但 AI 会抢人类的饭碗吗？作为一个[中老年 AI 不从业者](/2016/03/alphago-and-ai/){:target="_blank"}，我觉得是，「Yes and No」。
 
 ### 短期内确实会
 
@@ -93,5 +93,5 @@ categories:
 [^2]: 这是所有内容平台都花大力气做工具的原因，比如抖音会把剪映做得很好。
 [^3]: 给新闻配插画的，写简单财经体育报导的，做租房等标准合同的...
 [^4]: 现在每个大公司都自己搞芯片，也是为了不被卡脖子。
-[^5]: 有个专门的网站，叫做「[悲观者档案](https://pessimistsarchive.org/)」，记录某项发明出现时，反对者的声音：比如自行车出现的时候，[有人甚至担心](https://pessimistsarchive.org/list/bicycle)它会摧毁地方经济，并且让妇女道德堕落。
+[^5]: 有个专门的网站，叫做「[悲观者档案](https://pessimistsarchive.org/){:target="_blank"}」，记录某项发明出现时，反对者的声音：比如自行车出现的时候，[有人甚至担心](https://pessimistsarchive.org/list/bicycle){:target="_blank"}它会摧毁地方经济，并且让妇女道德堕落。
 [^6]: 当然，就跟每次门槛消失的副作用一样，我们肯定会看到大量垃圾内容被生产出来。

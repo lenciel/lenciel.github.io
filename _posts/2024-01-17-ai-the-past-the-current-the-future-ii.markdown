@@ -12,7 +12,7 @@ categories:
 
 ---
 
-> 第一部分[传送门](/2024/01/ai-the-past-the-current-the-future/)
+> 第一部分[传送门](/2024/01/ai-the-past-the-current-the-future/){:target="_blank"}
 
 ### 人工智能的问题
 

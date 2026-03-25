@@ -11,7 +11,7 @@ categories:
 - programming 
 ---
 
-又到 [1024](/categories/1kb/) 。
+又到 [1024](/categories/1kb/){:target="_blank"} 。
 
 必须承认，我对程序员的世界越来越陌生了。
 
@@ -49,7 +49,7 @@ categories:
 
 我更喜欢 [Andrej Karpathy](https://www.youtube.com/watch?v=lXUZvyajciY){:target="_blank"} 这挂的，功底深厚，思路清晰，最重要的是，哪怕对不同意他或者他不同意的观点，仍然能够给出详细的，技术上的[思考和响应](https://karpathy.bearblog.dev/animals-vs-ghosts/){:target="_blank"}。
 
-我始终认为，LLM 很快会到顶{% sidenote 'sn-id-5' '因为我们的心智绝不仅仅是「学习」或者「训练」的产物：小鹿生下来很快就会奔跑，靓仔到了十几岁看到某个特点的姑娘就会心动，这些过程都不需要大量的采样、打标、训练，而只是「发育」和「成熟」。' %} 。但哪怕你不同意 AI [只是个工具](/2025/06/the-cycle-of-replacing-developers-1/)，也应该从从概率论开始，从明斯基的论文开始，从 [The Bitter Lesson](http://www.incompleteideas.net/IncIdeas/BitterLesson.html){:target="_blank"} 这类资料开始，深入学习，少听噪声（道听），也少制造一点噪声（途说）。
+我始终认为，LLM 很快会到顶{% sidenote 'sn-id-5' '因为我们的心智绝不仅仅是「学习」或者「训练」的产物：小鹿生下来很快就会奔跑，靓仔到了十几岁看到某个特点的姑娘就会心动，这些过程都不需要大量的采样、打标、训练，而只是「发育」和「成熟」。' %} 。但哪怕你不同意 AI [只是个工具](/2025/06/the-cycle-of-replacing-developers-1/){:target="_blank"}，也应该从从概率论开始，从明斯基的论文开始，从 [The Bitter Lesson](http://www.incompleteideas.net/IncIdeas/BitterLesson.html){:target="_blank"} 这类资料开始，深入学习，少听噪声（道听），也少制造一点噪声（途说）。
 
 或者，如果你不知道能够创造出什么价值，就别参与。
 

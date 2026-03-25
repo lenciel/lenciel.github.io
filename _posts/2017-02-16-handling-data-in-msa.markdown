@@ -12,7 +12,7 @@ categories:
 - architecture
 ---
 
-之前说过，实践微服务架构的[最大收益](https://lenciel.com/2017/02/the-real-success-by-doing-msa/)在于对团队的改造：我们希望构建起彼此独立，以不同技术栈和不同速度进行工作，在需求变更时能够快速响应和更新而不会相互影响，具备良好自治性的团队。根据康威定律，如果我们的组织结构进化成这样，我们的软件才可以变得符合「微服务架构」。
+之前说过，实践微服务架构的[最大收益](https://lenciel.com/2017/02/the-real-success-by-doing-msa/){:target="_blank"}在于对团队的改造：我们希望构建起彼此独立，以不同技术栈和不同速度进行工作，在需求变更时能够快速响应和更新而不会相互影响，具备良好自治性的团队。根据康威定律，如果我们的组织结构进化成这样，我们的软件才可以变得符合「微服务架构」。
 
 要达到这种自治性，就需要「解耦」：这个词 90%念叨它的人都不知道怎么做，有一些所谓的微服务架构实践指南上甚至有「每个微服务应该有自己的数据库，两个微服务之间不能共享数据库」这样的硬性条款。乍听起来这很棒，因为你不会遇到不同的服务读写模型不同带来的各种竞争，也不会遇到不同业务需要的数据模型不同带来的冲突等等。
 
@@ -45,7 +45,7 @@ categories:
 
 ## 边界
 
-什么时候需要划分边界？在[DDD协会](http://dddcommunity.org/)发布的材料里面建议，围绕[Entities、Value Objects和Aggregates](http://dddcommunity.org/resources/ddd_terms/)来进行领域建模，从而确定一个[有边界的上下文](https://martinfowler.com/bliki/BoundedContext.html)。
+什么时候需要划分边界？在[DDD协会](http://dddcommunity.org/){:target="_blank"}发布的材料里面建议，围绕[Entities、Value Objects和Aggregates](http://dddcommunity.org/resources/ddd_terms/){:target="_blank"}来进行领域建模，从而确定一个[有边界的上下文](https://martinfowler.com/bliki/BoundedContext.html){:target="_blank"}。
 
 换句话说，我们定义和优化领域模型的过程里面，就会形成一个定义这个领域的上下文的边界。这一个个边界清晰的领域可以以微服务架构里面的一个个服务来实现，边界里面的一个个组成部分又可以细化成独立的领域，再进行边界的划分和实现。
 
@@ -117,15 +117,15 @@ categories:
 
 当这样的需求发生时，如何在不同的 Aggregates 甚至不同的上下文边界保持数据的一致性？
 
-考虑这些问题时我们首先要考虑分布式系统的特性：[没有什么是可以预期的](http://queue.acm.org/detail.cfm?id=2953944)。无论是系统里面的某个部分出问题还是网络出问题都是非常常见的。正确的做法是直面这些挑战，让你的数据模型可以在它依赖的其他部分，别的边界里包含的系统出问题的时，继续工作，并稍后修复并保证一致性。
+考虑这些问题时我们首先要考虑分布式系统的特性：[没有什么是可以预期的](http://queue.acm.org/detail.cfm?id=2953944){:target="_blank"}。无论是系统里面的某个部分出问题还是网络出问题都是非常常见的。正确的做法是直面这些挑战，让你的数据模型可以在它依赖的其他部分，别的边界里包含的系统出问题的时，继续工作，并稍后修复并保证一致性。
 
-在之前提到过，微服务架构里面，自治的重要性：这其实并不是一个有弹性的软件系统的需求，[任何有弹性的系统都这样](https://lenciel.com/2017/02/why-event-driven-when-doing-msa/)。
+在之前提到过，微服务架构里面，自治的重要性：这其实并不是一个有弹性的软件系统的需求，[任何有弹性的系统都这样](https://lenciel.com/2017/02/why-event-driven-when-doing-msa/){:target="_blank"}。
 
 所以，在事务边界和上下文边界之间，通过事件通信，来进行同步和一致性的保证。「事件」可以被看成是系统的某个局部在某个确定的时间点的快照被拍下来之后发给其他的节点。各个节点都可以监听自己感兴趣的事件，保存其中的数据，根据其中的数据做响应。
 
 继续前面的例子。当预约发生后，其中某个司机和货主最终谈成了并形成担保交易，如何把这个交易落盘？这里面有一些技术细节在于，我们如何保证对数据库的写操作和往消息队列里面发消息是原子的？在这些消息被处理的时候，如果又有预约发生呢？
 
-理想情况下，Aggregates 会直接使用命令和[域事件](http://martinfowler.com/eaaDev/DomainEvent.html)：每个操作被实现成命令，每个返回被实现成一个事件。这样我们就可以更清楚地把上下文边界内部使用的事件和跨域使用的事件分开。我们既可以使用一个[event store](https://geteventstore.com/)，它既有数据库的功能也有 pub-sub 的消息队列的功能，也可以使用 ACID 数据库并把数据库的变更都通过类似[Debezium](http://debezium.io/)复制到持久化的日志服务如 Kafka 里面，然后处理事件。无论是使用哪种方法，核心在于我们希望使用产生于某个时间点的 immutable 的事件来进行通信。
+理想情况下，Aggregates 会直接使用命令和[域事件](http://martinfowler.com/eaaDev/DomainEvent.html){:target="_blank"}：每个操作被实现成命令，每个返回被实现成一个事件。这样我们就可以更清楚地把上下文边界内部使用的事件和跨域使用的事件分开。我们既可以使用一个[event store](https://geteventstore.com/){:target="_blank"}，它既有数据库的功能也有 pub-sub 的消息队列的功能，也可以使用 ACID 数据库并把数据库的变更都通过类似[Debezium](http://debezium.io/){:target="_blank"}复制到持久化的日志服务如 Kafka 里面，然后处理事件。无论是使用哪种方法，核心在于我们希望使用产生于某个时间点的 immutable 的事件来进行通信。
 
 这样做有很多的好处：
 
@@ -162,7 +162,7 @@ categories:
 - 你可以在数据库的版本或者 schema 变更时，重放过去发生过的所有事件来进行验证
 - 你可以切换到全新的技术栈，然后重放过去发生过的所有事件来进行验证
 
-更多关于这方面的内容可以看看 Martin Kleppmann 的[「Turning the database inside-out with Apache Samza」](http://www.confluent.io/blog/turning-the-database-inside-out-with-apache-samza/)。
+更多关于这方面的内容可以看看 Martin Kleppmann 的[「Turning the database inside-out with Apache Samza」](http://www.confluent.io/blog/turning-the-database-inside-out-with-apache-samza/){:target="_blank"}。
 
 ## 总结
 

@@ -106,5 +106,5 @@ categories:
 
 但总体上来说，「健康」似乎是一个 paradigms 范畴的东西，涉及个人旨趣。就跟有人选择吃得「规律」而有人选择「断食」一样，如果你选择每天 10 点半就熄灯上床，挺好的，跟那些觉得生活才刚刚开始的人互相理解一下就好......
 
-[^1]: 科学研究里，对睡眠唯一比较确切的结论就是过度睡眠会[加重抑郁](https://pubmed.ncbi.nlm.nih.gov/1541764/)。短期的睡眠剥夺也[确实被](https://academic.oup.com/sleep/article/42/Supplement_1/A356/5451256?login=false)用来治疗抑郁症。
-[^2]: 人好像有一个β1肾上腺素能受体[基因的单点突变](https://www.cell.com/neuron/fulltext/S0896-6273\(19\)30652-X)会导致睡眠时间比较少，换句话说，有些人生来就可以睡很少。
+[^1]: 科学研究里，对睡眠唯一比较确切的结论就是过度睡眠会[加重抑郁](https://pubmed.ncbi.nlm.nih.gov/1541764/){:target="_blank"}。短期的睡眠剥夺也[确实被](https://academic.oup.com/sleep/article/42/Supplement_1/A356/5451256?login=false){:target="_blank"}用来治疗抑郁症。
+[^2]: 人好像有一个β1肾上腺素能受体[基因的单点突变](https://www.cell.com/neuron/fulltext/S0896-6273\(19\){:target="_blank"}30652-X)会导致睡眠时间比较少，换句话说，有些人生来就可以睡很少。

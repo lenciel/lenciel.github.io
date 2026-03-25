@@ -18,7 +18,7 @@ categories:
 - TOC
 {:toc}
 
-在老早之前，我就对敏捷产生了一些[怀疑](https://lenciel.com/2015/03/agile-and-scrum/)甚至是[质疑](https://lenciel.com/2018/08/the-cost-of-agile/)。
+在老早之前，我就对敏捷产生了一些[怀疑](https://lenciel.com/2015/03/agile-and-scrum/){:target="_blank"}甚至是[质疑](https://lenciel.com/2018/08/the-cost-of-agile/){:target="_blank"}。
 
 在我心中，它甚至不如我们读大学的时候流行过一下的 XP（Extreme Programming ）： XP 更多还是强调技术上的最佳实践，比如代码审核，CI/CD 。实践 XP 虽然也需要各方面的努力，但总体来说是比较「科学」的：输入、方式方法和输出都相对清晰。
 
@@ -26,7 +26,7 @@ categories:
 
 于是难免乱七八糟。
 
-有类似感觉的人应该是[很多的](https://medium.com/@cliffberg/agile-is-broken-b448328f168c)，当年 17 罗汉里的 Ron Jeffries 也说：[搞什么敏捷别搞了](https://ronjeffries.com/articles/018-01ff/abandon-1/#fn:agile)。
+有类似感觉的人应该是[很多的](https://medium.com/@cliffberg/agile-is-broken-b448328f168c){:target="_blank"}，当年 17 罗汉里的 Ron Jeffries 也说：[搞什么敏捷别搞了](https://ronjeffries.com/articles/018-01ff/abandon-1/#fn:agile){:target="_blank"}。
 
 最近有几个朋友抱怨在大厂里搞研发不带劲儿甚至有人就出来创业了，正好我在公司里又拉通管产研了，开跨职能的会略多，好像我突然想通了一件事：敏捷搞飞了的公司，核心问题可能出在程序员的自主权丧失上。
 
@@ -44,11 +44,11 @@ categories:
 
 自从互联网出现，软件就不再是几个 Geek 在车库里较劲改变世界的行业了。
 
-软件的部署成本变得越来越低，[复杂度](/2018/08/the-complexity-of-software-system/)却指数级增长。
+软件的部署成本变得越来越低，[复杂度](/2018/08/the-complexity-of-software-system/){:target="_blank"}却指数级增长。
 
 市场的变化越来越快，竞争对手按月甚至按周而不是按年跟你打仗。
 
-所以从 XP 的阶段开始，就有一个叫「[On Site Customer](http://www.extremeprogramming.org/rules/customer.html)」的概念，强调在整个软件的构建过程中，最好有一个用户就在现场，能够随时面对面进行沟通。
+所以从 XP 的阶段开始，就有一个叫「[On Site Customer](http://www.extremeprogramming.org/rules/customer.html){:target="_blank"}」的概念，强调在整个软件的构建过程中，最好有一个用户就在现场，能够随时面对面进行沟通。
 
 这个美好的愿望最终还是失败了。站在今天来看里面的原因，我觉得软件系统的价值有三段：
 
@@ -117,7 +117,7 @@ categories:
 
 区别可能是，这副眼罩是纯金的。
 
-![dev_donkey.jpg](/downloads/images/2020_05/dev_donkey.jpg --alt Don't touch me)
+![dev_donkey.jpg](/downloads/images/2020_05/dev_donkey.jpg --alt Don't touch me){:target="_blank"}
 
 ### 我们能改变什么？
 
@@ -135,11 +135,11 @@ categories:
 
 作为一个组织，我们在西瓜尝试一些不同的东西。
 
-第一步，我们去除对研发「资源化」。我们从讨论人效、研发员工数量、燃尽图、截止日期和 backlog，到讨论 SLI、SLO、WIP、lead time，通过对研发团队的时间进行保护而不是进行榨取，通过让他们更加直接的感受和参与到用户体验的构建，来提升大家的[绩效](/2018/08/how-to-improve-tech-organization-performance/)和工作体验。
+第一步，我们去除对研发「资源化」。我们从讨论人效、研发员工数量、燃尽图、截止日期和 backlog，到讨论 SLI、SLO、WIP、lead time，通过对研发团队的时间进行保护而不是进行榨取，通过让他们更加直接的感受和参与到用户体验的构建，来提升大家的[绩效](/2018/08/how-to-improve-tech-organization-performance/){:target="_blank"}和工作体验。
 
 第二步，我们对产品考核「结果」。当产品是否成功是通过完成 backlog 来衡量的时候，能够获取资源完成尽量多任务的产品经理就混得最好。但 backlog 本质上只是给研发团队的输入，我们不能只看重输入：我们关注产品特性的**设计承诺**和**上线结果**。
 
-第三步，我们训练整个组织从用户价值去思考的能力。从核心团队，到一级部门二级部门负责人，我们使用[北极星](/2020/03/how-to-write-business-strategy/)、共创会、OKR 等构建了一套围绕用户价值，从识别洞见，到形成战略，到制定目标并跟进的工作方法。
+第三步，我们训练整个组织从用户价值去思考的能力。从核心团队，到一级部门二级部门负责人，我们使用[北极星](/2020/03/how-to-write-business-strategy/){:target="_blank"}、共创会、OKR 等构建了一套围绕用户价值，从识别洞见，到形成战略，到制定目标并跟进的工作方法。
 
 这个过程非常的困难，甚至很多时候是痛苦的：虽然这个世界上看过「第一性原理」，说过「用户价值第一」的人如此多，但是能够去思考和实践的人太少了。
 

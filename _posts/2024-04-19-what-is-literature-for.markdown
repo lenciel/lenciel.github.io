@@ -27,7 +27,7 @@ categories:
 
 首先也是最根本的原因，是科技改变了人类的精神生活。随便谁都能聊两句宇宙起源的今天，价值空前多元，意义土崩瓦解，不仅「上帝死了」，包括宗教、艺术在内的所有人类曾经觉得有超越感的事物，都被理性主义搞残了。承载着对人性的关怀和探索之重任的文学，随着大势所趋，也在生活中变得可有可无——诺奖[给了歌手](https://zh.wikipedia.org/zh-hans/%E9%B2%8D%E5%8B%83%C2%B7%E8%BF%AA%E4%BC%A6){:target="_blank"}{% sidenote 'sn-id-1' ' 虽然鲍勃·迪伦是一位我很喜欢的歌手，他的民谣歌词也确实很有文学性。' %}被看成是个标志。
 
-其次，科技也改变了人类的现实生活。由算法精心准备的海量信息，将用户的时间切成碎片。世界各地的教育机构都发现，孩子们阅读长文本的能力正在[逐步](https://www.edweek.org/teaching-learning/what-teachers-can-do-to-help-struggling-readers-who-feel-ashamed/2022/01)[退化](https://www.sciencenorway.no/digital-teknologi-education-psychology/has-digitisation-destroyed-our-ability-to-read-long-and-complicated-texts/2199244)。
+其次，科技也改变了人类的现实生活。由算法精心准备的海量信息，将用户的时间切成碎片。世界各地的教育机构都发现，孩子们阅读长文本的能力正在[逐步](https://www.edweek.org/teaching-learning/what-teachers-can-do-to-help-struggling-readers-who-feel-ashamed/2022/01){:target="_blank"}[退化](https://www.sciencenorway.no/digital-teknologi-education-psychology/has-digitisation-destroyed-our-ability-to-read-long-and-complicated-texts/2199244){:target="_blank"}。
 
 但我想，这或许正好说明文学将迎来它的机会。因为我们中国有句话，叫物极必反。焦虑不安地面对着个人发展、家庭生活、经济危机甚至是战争迷雾的现代人，或许很快就会意识到，对意义的抛弃只会让自己变得更加无依无靠。而人类历史上创造的包括文学在内的所有不可替代的东西，那些使得我们之所以成为人的根本，大都无法单纯用理性去梳理和框定。
 
@@ -49,7 +49,7 @@ categories:
 
 这肯定不是终点。很快你就会发现，好的文学作品，并不刻意制造戏剧性{% sidenote 'sn-id-2' '也就是说，它们不专门为了让你感到恐怖、神奇、伤感或兴奋，来搭建故事。汪曾祺、阿城这些中文圈子的顶尖高手，故事总是很淡，很多留白。米兰·昆德拉也说，《唐·吉诃德》好就好在，那种「人在无限大的土地之上一种幸福而无所事事的冒险旅行」的特质。' %}。
 
-但不用急，记得我们说过的「[先打猎](/2024/03/why-cwx-do-not-fit-matt/)」吗？现在读得浅一点，杂一点有什么呢？有兴趣，愿意读，就很好了。
+但不用急，记得我们说过的「[先打猎](/2024/03/why-cwx-do-not-fit-matt/){:target="_blank"}」吗？现在读得浅一点，杂一点有什么呢？有兴趣，愿意读，就很好了。
 
 Quantity has a quality all its own。
 
@@ -95,6 +95,6 @@ Quantity has a quality all its own。
 
 各种学科，包括如经济、法律、新闻、哲学这样的人文学科，都在追求统一的认知和理论{% sidenote 'sn-id-5' '当然，不同文化统一的方向和主题可能不一样。比如我们讲究天人合一，西方天是天人是人，人和天有时候互相闹闹脾气。' %}，只有文学、电影、游戏、绘画等为数不多的艺术领域，评价标准中仍以创造性和独特性作为重点。
 
-所以我[说过](/2024/03/why-cwx-do-not-fit-matt/#%E9%83%A8%E8%90%BD)，弄明白爱读谁的诗，或者爱看谁的书，就加入了属于自己的部落。
+所以我[说过](/2024/03/why-cwx-do-not-fit-matt/#%E9%83%A8%E8%90%BD){:target="_blank"}，弄明白爱读谁的诗，或者爱看谁的书，就加入了属于自己的部落。
 
 文学，它提供了让你保持思考的独立性的最坚实的堡垒。

@@ -39,7 +39,7 @@ Traceback (most recent call last):
 pkg_resources.DistributionNotFound: pip==1.3.1
 ```
 
-这坨`pkg_resources.DistributionNotFound`的错正好前两天装 CentOS 的机器[看到过](http://stackoverflow.com/questions/7446187/no-module-named-pkg-resources)。
+这坨`pkg_resources.DistributionNotFound`的错正好前两天装 CentOS 的机器[看到过](http://stackoverflow.com/questions/7446187/no-module-named-pkg-resources){:target="_blank"}。
 
 运行下面的命令更新了`setuptools`之后重装了`pip`和`virtualenv`、`virtualenvwrapper`就好了：
 

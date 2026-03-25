@@ -10,7 +10,7 @@ categories:
 ---
 
 
-![Bukowski](/downloads/images/2014_04/bukowski.jpg --alt Don't touch me)
+![Bukowski](/downloads/images/2014_04/bukowski.jpg --alt Don't touch me){:target="_blank"}
 
 1969 年，出版商[John Martin][1]给了[Charles Bukowski][2]一个月薪 100 刀的 offer（当时的 100 刀大概是现在的 500 刀左右吧）： 只要他愿意从他当时上班的邮局辞职成为一名全职的作家。时年 49 岁的 Bukowski 接受了这份 offer，并在 1971 年出版了他的首部小说[《Post Office》][3]。小说由 Martin 的[Black Sparrow出版社][4]出版，名字算是用来表示跟自己过去的邮局里的职业生涯一刀两断。
 

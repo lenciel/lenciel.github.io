@@ -24,9 +24,9 @@ categories:
 
 立马把有线连上试了一下，排除是 wifi 的问题。结果一样：
 
-![Vhost threshold](/downloads/images/2018_08/oops_self_assigned_ip.jpg --alt Don't touch me)
+![Vhost threshold](/downloads/images/2018_08/oops_self_assigned_ip.jpg --alt Don't touch me){:target="_blank"}
 
-当时其他设备都跑得很欢畅，路由器也设置了正确的 DHCP 方式，所以是本机的问题无疑了。Google 了一下，发现官网有一个[十页的帖子](https://discussions.apple.com/message/10753369#10753369)，充满了血泪，但是没有解决方案。
+当时其他设备都跑得很欢畅，路由器也设置了正确的 DHCP 方式，所以是本机的问题无疑了。Google 了一下，发现官网有一个[十页的帖子](https://discussions.apple.com/message/10753369#10753369){:target="_blank"}，充满了血泪，但是没有解决方案。
 
 然后发现还有很多别的帖子里有各种招数，比如更新 DHCP Lease 的，把网卡删了加上的，把上网的 profile 删了重加的，清空 NVRAM/SMC 的，重装系统的...
 
@@ -49,17 +49,17 @@ $ sudo tcpdump -i en0
 11:11:31.367397 IP 169.254.175.53.mdns > 224.0.0.251.mdns: 0 [18q] PTR (QM)? _raop._tcp.local. PTR (QM)? _airplay._tcp.local. PTR (QM)? _airport._tcp.local. PTR (QM)? _uscans._tcp.local. PTR (QM)? _ipp._tcp.local. PTR (QM)? _uscan._tcp.local. PTR (QM)? _ippusb._tcp.local. PTR (QM)? _scanner._tcp.local. PTR (QM)? _ipps._tcp.local. PTR (QM)? _printer._tcp.local. PTR (QM)? _pdl-datastream._tcp.local. PTR (QM)? _ptp._tcp.local. PTR (QM)? _companion-link._tcp.local. PTR (QM)? _afpovertcp._tcp.local. PTR (QM)? _smb._tcp.local. PTR (QM)? _rfb._tcp.local. PTR (QM)? _adisk._tcp.local. PTR (QM)? _sleep-proxy._udp.local. (290)
 ```
 
-可以看到路由器分配了 IP 给机器，甚至还有[mDNS](https://en.wikipedia.org/wiki/Multicast_DNS)的查询发出，然后就没有反应了。
+可以看到路由器分配了 IP 给机器，甚至还有[mDNS](https://en.wikipedia.org/wiki/Multicast_DNS){:target="_blank"}的查询发出，然后就没有反应了。
 
-查了一下苹果分配给 OS[预装应用的端口](https://support.apple.com/en-us/HT202944)，找到 DHCP 的端口是 68 和 69，mDNS 的端口是 5353，check 了一下，端口都在工作。
+查了一下苹果分配给 OS[预装应用的端口](https://support.apple.com/en-us/HT202944){:target="_blank"}，找到 DHCP 的端口是 68 和 69，mDNS 的端口是 5353，check 了一下，端口都在工作。
 
 于是怀疑是防火墙的问题，关闭防火墙之后果然就好了。但是关着防火墙裸奔也不太好，于是本座把防火墙的配置文件`/Library/Preferences/com.apple.alf.plist`直接删了重启，这样会让防火墙恢复到原始配置。
 
 重新开机怪事来了，弹了 8 个窗问我要不要放行，都是 configd、netbiosd、mDNSResponder 这类的，不知道 MBP 的同学是不是这个版本搞出 bug 了，这些系统应用需要手动放行。试了一下，放行前果然 DHCP 不能（估计是 configd 和 mDNSResponder），放行后就可以。
 
-值得吐槽的是 Mac[推出SIP](https://support.apple.com/en-us/HT204899)之后，找个问题麻烦到不行。比如防火墙，默认是没有日志的 ，就算你敲[一堆命令](https://discussions.apple.com/thread/7849608)下去，拿到的也是个空文件。而它的配置界面上，又很大方的把绝大多数系统应用的设置隐藏了（默认勾选了通通放行），同时又很鬼畜地显示着里面的一两个（比如 netbiosd 和 rapportd）：
+值得吐槽的是 Mac[推出SIP](https://support.apple.com/en-us/HT204899){:target="_blank"}之后，找个问题麻烦到不行。比如防火墙，默认是没有日志的 ，就算你敲[一堆命令](https://discussions.apple.com/thread/7849608){:target="_blank"}下去，拿到的也是个空文件。而它的配置界面上，又很大方的把绝大多数系统应用的设置隐藏了（默认勾选了通通放行），同时又很鬼畜地显示着里面的一两个（比如 netbiosd 和 rapportd）：
 
-![Vhost threshold](/downloads/images/2018_08/mac_firewall_1.jpg --alt Don't touch me)
+![Vhost threshold](/downloads/images/2018_08/mac_firewall_1.jpg --alt Don't touch me){:target="_blank"}
 
 最后，我饶有兴致地查了一下防火墙突然抽风的原因，苹果的说法是：
 

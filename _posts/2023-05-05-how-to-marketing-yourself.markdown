@@ -11,7 +11,7 @@ categories:
 - tips
 ---
 
-在另一篇有点碎碎念的[小报](/2023/05/what-do-i-did-in-the-vacation/)里，提到假期跟几个朋友的「详谈」。
+在另一篇有点碎碎念的[小报](/2023/05/what-do-i-did-in-the-vacation/){:target="_blank"}里，提到假期跟几个朋友的「详谈」。
 
 其中有一场就在我家里。
 

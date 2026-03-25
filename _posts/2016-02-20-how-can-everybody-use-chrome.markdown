@@ -50,7 +50,7 @@ Chrome 里面你可以这样使用的搜索引擎数量其实是远超你想象�
 
 在地址栏里面敲入`chrome://settings/`，然后进入搜索引擎的配置你就可以看到它们：
 
-![Vhost threshold](/downloads/images/2016_02/manage_search_engine.png --alt Don't touch me)
+![Vhost threshold](/downloads/images/2016_02/manage_search_engine.png --alt Don't touch me){:target="_blank"}
 
 
 ### 创建使用自定义搜索引擎
@@ -59,11 +59,11 @@ Chrome 里面你可以这样使用的搜索引擎数量其实是远超你想象�
 
 比如在百度盘里面搜索某个文件。
 
-再比如在[Quora](http://quora.com/)或者[知乎](http://zhihu.com)里面搜索包含某个关键字的问答。
+再比如在[Quora](http://quora.com/){:target="_blank"}或者[知乎](http://zhihu.com){:target="_blank"}里面搜索包含某个关键字的问答。
 
 这个时候你只需要在搜索引擎列表的末尾添加一个自定义项：
 
-![Vhost threshold](/downloads/images/2016_02/custom_search_engine.png --alt Don't touch me)
+![Vhost threshold](/downloads/images/2016_02/custom_search_engine.png --alt Don't touch me){:target="_blank"}
 
 比如我们添加一个`Keyword`是`panb`的搜索引擎，它的 URL 是：
 
@@ -71,7 +71,7 @@ Chrome 里面你可以这样使用的搜索引擎数量其实是远超你想象�
 https://www.google.com.hk/search?q=%s+site%3Apan.baidu.com
 ```
 
-注意 URL 这个参数需要做[urlencode](https://docs.oracle.com/javase/7/docs/api/java/net/URLEncoder.html)，所以空格变成了`+`，`site:pan.baidu.com`变成了`site%3Apan.baidu.com`。
+注意 URL 这个参数需要做[urlencode](https://docs.oracle.com/javase/7/docs/api/java/net/URLEncoder.html){:target="_blank"}，所以空格变成了`+`，`site:pan.baidu.com`变成了`site%3Apan.baidu.com`。
 
 如果你不知道`urlencode`怎么做，可以先到 Google 上完成一次目标搜索，然后从地址栏上面复制下来。
 

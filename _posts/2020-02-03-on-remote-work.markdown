@@ -12,7 +12,7 @@ categories:
 
 ---
 
-因为疫情，很多公司都选择远程办公，网上也有了很多不错的指南，比如东旭的[这篇](https://zhuanlan.zhihu.com/p/104184804)。
+因为疫情，很多公司都选择远程办公，网上也有了很多不错的指南，比如东旭的[这篇](https://zhuanlan.zhihu.com/p/104184804){:target="_blank"}。
 
 其实大部分在外企工作过的人都有远程办公的经历。
 
@@ -22,9 +22,9 @@ categories:
 
 这个我挺熟。
 
-当年汶川地震，我就回成都[ WFH ](https://www.glassdoor.com/Benefits/IBM-Work-From-Home-US-BNFT152_E354_N1.htm)了两个月左右。
+当年汶川地震，我就回成都[ WFH ](https://www.glassdoor.com/Benefits/IBM-Work-From-Home-US-BNFT152_E354_N1.htm){:target="_blank"}了两个月左右。
 
-在刚创业的时候，我们也因为很喜欢 Basecamp 的文化 （「[Remote](https://www.amazon.com/dp/B00C0ALZ0W/)」 和 「[Rework](https://www.amazon.com/Rework-Jason-Fried-ebook/dp/B002MUAJ2A/)」对我影响挺大），跑过类似的政策。
+在刚创业的时候，我们也因为很喜欢 Basecamp 的文化 （「[Remote](https://www.amazon.com/dp/B00C0ALZ0W/){:target="_blank"}」 和 「[Rework](https://www.amazon.com/Rework-Jason-Fried-ebook/dp/B002MUAJ2A/){:target="_blank"}」对我影响挺大），跑过类似的政策。
 
 更不用说，我现在大块点的工作，基本都是所有人睡下之后在家里完成的。
 
@@ -46,7 +46,7 @@ categories:
 
 因此，无论团队是不是有人在家办公，衡量团队效能的标准应该是一致的。
 
-如果你的团队目标管理是透明的（比如大家公开自己的 OKR ），你的团队效能指标是[靠谱的](https://lenciel.com/2018/08/how-to-measure-tech-organization-performance/)，就始终用它们，无论团队是否远程。
+如果你的团队目标管理是透明的（比如大家公开自己的 OKR ），你的团队效能指标是[靠谱的](https://lenciel.com/2018/08/how-to-measure-tech-organization-performance/){:target="_blank"}，就始终用它们，无论团队是否远程。
 
 如果你之前没有这些指标（于是它们也很难短期内被纳入你所在公司的效能体系），那么感受一下：
 
@@ -86,9 +86,9 @@ categories:
 
 如果你是新员工，这对你挑战更大。
 
-虽然我[说过](https://lenciel.com/2019/12/the-first-90-days/)，新员工最大的福利就是可以随便问。
+虽然我[说过](https://lenciel.com/2019/12/the-first-90-days/){:target="_blank"}，新员工最大的福利就是可以随便问。
 
-虽然实践表明公开问比私聊要[更加好](https://www.culturefoundry.com/cultivate/digital-agency-life/why-public-slack-chats-are-better-than-direct-messages/)。
+虽然实践表明公开问比私聊要[更加好](https://www.culturefoundry.com/cultivate/digital-agency-life/why-public-slack-chats-are-better-than-direct-messages/){:target="_blank"}。
 
 但还是有很多人觉得，私下问要舒服多了。
 
@@ -96,7 +96,7 @@ categories:
 
 否则你就还没有准备好远程办公。
 
-- **找到模式**：每个人效率高的时间不一样，甚至需要的[背景声](https://noize.ml/)也不一样，多尝试，找出适合自己的，不断重复它，形成模式。
+- **找到模式**：每个人效率高的时间不一样，甚至需要的[背景声](https://noize.ml/){:target="_blank"}也不一样，多尝试，找出适合自己的，不断重复它，形成模式。
 - **清晰沟通**：和管理层沟通好自己的目标和计划，和家人沟通好自己的安排和需要，这是给自己争取时间节约精力的最好办法。
 - **设置界限**：如果你有家人或者宠物，或者你不能抵挡厨房里的吃的喝的，请为这些干扰源设置界限。
 - **保持健康**：创建一个符合人体工程学的工作区，哪怕多花点钱。进行有规律的体育锻炼，哪怕不能出门。

@@ -10,7 +10,7 @@ categories:
 - AI
 ---
 
-[前面说过](/2023/02/is-chatgpt-breaking/) ChatGPT（基于 GPT-3） 不是颠覆性创新，然后，这不是 GPT-4 又满坑满谷了吗...
+[前面说过](/2023/02/is-chatgpt-breaking/){:target="_blank"} ChatGPT（基于 GPT-3） 不是颠覆性创新，然后，这不是 GPT-4 又满坑满谷了吗...
 
 我看到国内有自媒体抄国外媒体的标题说，往 Office 里面集成 GPT-4 是微软的「iPhone 时刻」。
 

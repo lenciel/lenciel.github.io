@@ -9,8 +9,8 @@ categories:
 - tools-i-use
 ---
 
-之前[曾经推荐过M+系列字体](https://lenciel.com/2014/07/font-for-programming)，自己用的也一直是它。最近看到一个不错的字体项目[Iosevka](https://github.com/be5invis/Iosevka)。
+之前[曾经推荐过M+系列字体](https://lenciel.com/2014/07/font-for-programming){:target="_blank"}，自己用的也一直是它。最近看到一个不错的字体项目[Iosevka](https://github.com/be5invis/Iosevka){:target="_blank"}。
 
-它的一个分支 Inziu Iosevka 集成了[Iosevka](http://be5invis.github.io/Iosevka/)，[M+](https://mplus-fonts.osdn.jp/)和[Source Han Sans](https://github.com/adobe-fonts/source-han-sans)。并且，因为是做了[hinter优化](https://github.com/caryll/ideohint)的字体，可以在各种尺寸的屏幕和分辨率设置下，更加清晰的显示中文。
+它的一个分支 Inziu Iosevka 集成了[Iosevka](http://be5invis.github.io/Iosevka/){:target="_blank"}，[M+](https://mplus-fonts.osdn.jp/){:target="_blank"}和[Source Han Sans](https://github.com/adobe-fonts/source-han-sans){:target="_blank"}。并且，因为是做了[hinter优化](https://github.com/caryll/ideohint){:target="_blank"}的字体，可以在各种尺寸的屏幕和分辨率设置下，更加清晰的显示中文。
 
-下载地址: [click](https://github.com/be5invis/Iosevka/releases)
+下载地址: [click](https://github.com/be5invis/Iosevka/releases){:target="_blank"}

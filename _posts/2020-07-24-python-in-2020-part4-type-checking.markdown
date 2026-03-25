@@ -11,11 +11,11 @@ categories:
 
 ---
 
-编程语音的[类型系统](/2016/09/types-in-programming-languages/)其实是非常重要的。
+编程语音的[类型系统](/2016/09/types-in-programming-languages/){:target="_blank"}其实是非常重要的。
 
-但作为一种弱类型语言，Python 的类型检查是非常困难的。但自从 3.5 版本加入了 [type annotation](https://docs.python.org/3/library/typing.html)，很多工具变得强大了起来。
+但作为一种弱类型语言，Python 的类型检查是非常困难的。但自从 3.5 版本加入了 [type annotation](https://docs.python.org/3/library/typing.html){:target="_blank"}，很多工具变得强大了起来。
 
-目前，[mypy](http://mypy-lang.org/) 是这个领域最值得关注的。几个大厂也各自有自己的实现[^1]，有些 IDE 比如 PyCharm 还自带一个类型检查工具，但这里主要说一下 mypy 的使用。
+目前，[mypy](http://mypy-lang.org/){:target="_blank"} 是这个领域最值得关注的。几个大厂也各自有自己的实现[^1]，有些 IDE 比如 PyCharm 还自带一个类型检查工具，但这里主要说一下 mypy 的使用。
 
 <h3>目录</h3>
 
@@ -66,7 +66,7 @@ ignore_missing_imports = True
 def get_page(): ...
 ```
 
-我们想要给它声明一个类型，但它不是 Python 自带的 str/list/dict 等类型可以覆盖的，所以我们可以声明为一个使用 [dataclasses](https://docs.python.org/3/library/dataclasses.html) 定义的 Page：
+我们想要给它声明一个类型，但它不是 Python 自带的 str/list/dict 等类型可以覆盖的，所以我们可以声明为一个使用 [dataclasses](https://docs.python.org/3/library/dataclasses.html){:target="_blank"} 定义的 Page：
 
 ```python
 from dataclasses import dataclass
@@ -80,7 +80,7 @@ class Page:
 def get_page() -> Page: ...
 ```
 
-那么，在测试的时候如何进行 Page 的构造呢？可以使用 [marshallow](https://marshmallow.readthedocs.io/en/stable/) 和 [dessert](https://desert.readthedocs.io/) 。前者是一个数据序列化/反序列化的工具，后者则是以 marshallow 打底使用 dataclass 的 annotation 生成序列化 schema 的工具。
+那么，在测试的时候如何进行 Page 的构造呢？可以使用 [marshallow](https://marshmallow.readthedocs.io/en/stable/){:target="_blank"} 和 [dessert](https://desert.readthedocs.io/){:target="_blank"} 。前者是一个数据序列化/反序列化的工具，后者则是以 marshallow 打底使用 dataclass 的 annotation 生成序列化 schema 的工具。
 
 安装：
 

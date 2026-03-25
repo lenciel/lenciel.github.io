@@ -10,7 +10,7 @@ categories:
 - rip
 ---
 
-![sean_connery.jpeg](/downloads/images/2020_10/sean_connery.jpeg --alt Don't touch me...)
+![sean_connery.jpeg](/downloads/images/2020_10/sean_connery.jpeg --alt Don't touch me...){:target="_blank"}
 
 爱丁堡城门口，有个早点摊儿。老板 90 多了，自己不下厨，总混在食客里跟人聊天。我感觉他挺爱吹牛的，有次我说，梦见自己跟长泽雅美上了炕，他说你那算啥，我还睡过凯瑟琳泽塔琼斯。
 

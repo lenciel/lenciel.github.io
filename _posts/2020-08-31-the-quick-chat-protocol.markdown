@@ -13,7 +13,7 @@ categories:
 
 ---
 
-之前说过，远程办公[不容易](/2020/02/on-remote-work/)。今天偶然看到 [Thomas A. Limoncelli](https://en.wikipedia.org/wiki/Tom_Limoncelli) 总结的疫情期间 Stack Overflow 在远程情况下保持效率的[几个技巧](https://queue.acm.org/detail.cfm?id=3417752)：
+之前说过，远程办公[不容易](/2020/02/on-remote-work/){:target="_blank"}。今天偶然看到 [Thomas A. Limoncelli](https://en.wikipedia.org/wiki/Tom_Limoncelli){:target="_blank"} 总结的疫情期间 Stack Overflow 在远程情况下保持效率的[几个技巧](https://queue.acm.org/detail.cfm?id=3417752){:target="_blank"}：
 
 - If Anyone is Remote, We're All Remote
 - Accurate Chat Status

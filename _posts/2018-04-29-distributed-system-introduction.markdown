@@ -25,7 +25,7 @@ categories:
 
 最怕世界突然安静。
 
-年后又招人了，并且要开始做内部培训。这里梳理一下分布式系统的一些基础知识。参考了[aphyr](https://github.com/aphyr)的基础培训课程和 Dan Creswell 的[分布式系统必读指南](https://dancres.github.io/Pages/)，非常基础，非常必读，no rocket science。
+年后又招人了，并且要开始做内部培训。这里梳理一下分布式系统的一些基础知识。参考了[aphyr](https://github.com/aphyr){:target="_blank"}的基础培训课程和 Dan Creswell 的[分布式系统必读指南](https://dancres.github.io/Pages/){:target="_blank"}，非常基础，非常必读，no rocket science。
 
 Let's go。
 
@@ -39,7 +39,7 @@ Lamport, 1987:
 
 - 大多数物理服务器都运行着 \*nix 系统，通过 TCP 或者 UDP 进行进程间的通信：
   - 可以是云上的虚拟机
-  - 也可以是通过[InfiniBand](https://en.wikipedia.org/wiki/InfiniBand)通信的系统
+  - 也可以是通过[InfiniBand](https://en.wikipedia.org/wiki/InfiniBand){:target="_blank"}通信的系统
   - 可以是局域网里面，隔着几米的距离
   - 也可以是广域网，隔着几千公里距离
 - 大多数移动 App 也是一个分布式系统里的一部分
@@ -132,7 +132,7 @@ Lamport, 1987:
 - 比半同步或者同步网络要脆弱
   - 所以确定性算法（certain algorithm）不一定是有效的
   - 所以确定性算法可能是**无法实现**的
-  - "[Efficiency of Semi-Synchronous vs Asynchronous Networks](http://www.cs.ucy.ac.cy/~mavronic/pdf/AM94.pdf)"
+  - "[Efficiency of Semi-Synchronous vs Asynchronous Networks](http://www.cs.ucy.ac.cy/~mavronic/pdf/AM94.pdf){:target="_blank"}"
 - IP 网络肯定是异步的
   - 但在**实际操作中**并没有发生真正的 pathological stuff
   - 大多数网络都可以在几秒到几周内恢复，不会永远 down 掉
@@ -147,7 +147,7 @@ Lamport, 1987:
   - Drop
   - Reorder
 - 丢包和时延是难以分辨的
-- [拜占庭将军问题](https://en.wikipedia.org/wiki/Byzantine_fault_tolerance)
+- [拜占庭将军问题](https://en.wikipedia.org/wiki/Byzantine_fault_tolerance){:target="_blank"}
   - 包括对内容重写
   - 在真实网络里面大都不会发生
     - 我只是说大都...
@@ -199,9 +199,9 @@ Lamport, 1987:
   - 然并卵: NTP 可能没有你以为的工作那么理想
   - 然并卵: 在两个节点间的同步完成得并不好
   - 然并卵: 硬件也会有漂移
-  - 然并卵: 大数还会带来[问题](http://rachelbythebay.com/w/2017/09/27/2153/)
+  - 然并卵: 大数还会带来[问题](http://rachelbythebay.com/w/2017/09/27/2153/){:target="_blank"}
   - 然并卵: POSIX 时钟从**设计**上就不是单调的
-    - Cloudflare 2017: 因为 leap second 造成的[问题](https://blog.cloudflare.com/how-and-why-the-leap-second-affected-cloudflare-dns/)
+    - Cloudflare 2017: 因为 leap second 造成的[问题](https://blog.cloudflare.com/how-and-why-the-leap-second-affected-cloudflare-dns/){:target="_blank"}
     - 其实就是当时 Go 还不提供 `CLOCK_MONOTONIC` 的接口
     - 在计算出一个负的 duration 然后把它交给 `rand.int63n()` 后，就驾崩了
     - 造成了 DNS 解析失败: 1% 的 HTTP 访问被影响了好几个小时
@@ -214,7 +214,7 @@ Lamport, 1987:
 
 ### 1.4.2 Lamport时钟
 
-- Lamport 1977: "[Time, Clocks, and the Ordering of Events in a Distributed System](https://lamport.azurewebsites.net/pubs/time-clocks.pdf)"
+- Lamport 1977: "[Time, Clocks, and the Ordering of Events in a Distributed System](https://lamport.azurewebsites.net/pubs/time-clocks.pdf){:target="_blank"}"
   - 每个进程一个逻辑时钟
   - 每次状态迁移的时候单调递增: `t' = t + 1`
   - 每次消息发送的操作时间戳+1 并带上改时间戳
@@ -243,8 +243,8 @@ Lamport, 1987:
   - GC 的时候需要协调顺序
   - 或者不做 GC，牺牲掉正确性，直接删掉旧的状态
 - 变种：分布式系统中数据一般存在多个副本，多个副本的时钟可能被同时更新，引起副本间数据不一致
-  - [Dotted Version Vectors](https://github.com/ricardobcl/Dotted-Version-Vectors)
-  - [Interval Tree Clocks](https://github.com/ricardobcl/Interval-Tree-Clocks)
+  - [Dotted Version Vectors](https://github.com/ricardobcl/Dotted-Version-Vectors){:target="_blank"}
+  - [Interval Tree Clocks](https://github.com/ricardobcl/Interval-Tree-Clocks){:target="_blank"}
 
 ### 1.4.4 GPS和原子钟
 
@@ -347,7 +347,7 @@ Lamport, 1987:
 
 ### 1.6.7 Sequential consistency
 
-- 又是 Lamport 提出的：[How to Make a Multiprocessor Computer That Correctly Executes Multiprocess Programs](https://www.microsoft.com/en-us/research/publication/make-multiprocessor-computer-correctly-executes-multiprocess-programs/)
+- 又是 Lamport 提出的：[How to Make a Multiprocessor Computer That Correctly Executes Multiprocess Programs](https://www.microsoft.com/en-us/research/publication/make-multiprocessor-computer-correctly-executes-multiprocess-programs/){:target="_blank"}
 - 和 causal 的一致性类似，对操作的顺序有限制
 - 所有操作看起来都是原子的
 - 所有进程都遵从一个排序
@@ -361,14 +361,14 @@ Lamport, 1987:
 - 所有进程都遵从一个排序
 - 所有操作都有触发时间和结束时间来规约
 - 看起来只是在 sequential consistency 只关心所有进程或者节点的偏序关系基础上, 加上了时间顺序
-- 但实际上非常强大：[Sequential Consistency versus Linearizabiltiy](http://courses.csail.mit.edu/6.852/01/papers/p91-attiya.pdf)
+- 但实际上非常强大：[Sequential Consistency versus Linearizabiltiy](http://courses.csail.mit.edu/6.852/01/papers/p91-attiya.pdf){:target="_blank"}
 
 ### 1.6.9 ACID isolation levels
 
 - ANSI SQL 标准里定义的 ACID 隔离等级比较古怪
   - 主要是拿现有厂商的实现倒推出来的
   - 标准里很多地方定义模糊
-- [Weak Consistency: A Generalized Theory and Optimistic Implementations for Distributed Transactions](http://www.csd.uoc.gr/~hy460/pdf/adya99weak.pdf)
+- [Weak Consistency: A Generalized Theory and Optimistic Implementations for Distributed Transactions](http://www.csd.uoc.gr/~hy460/pdf/adya99weak.pdf){:target="_blank"}
   - 每个 ANSI SQL 的隔离等级都是为了防止出现特定状况设定的，要能对应起来
   - Read Uncommitted
     - 防止 *脏写* 的状况发生
@@ -406,8 +406,8 @@ Lamport, 1987:
 - 大多数公司用用 Read Committed 也就够了
 - 但是网络攻击的人经常就是利用并发访问来找到系统漏洞
   - Poloniex 发生过大量账号被盗事件
-  - [Flexcoin](https://www.reddit.com/r/Bitcoin/comments/1zihb4/flexcoin_is_shutting_down_after_being_hacked/)被攻击得直接关站了
-  - [Warszawski & Bailis 2017: Acidrain](http://www.bailis.org/papers/acidrain-sigmod2017.pdf)
+  - [Flexcoin](https://www.reddit.com/r/Bitcoin/comments/1zihb4/flexcoin_is_shutting_down_after_being_hacked/){:target="_blank"}被攻击得直接关站了
+  - [Warszawski & Bailis 2017: Acidrain](http://www.bailis.org/papers/acidrain-sigmod2017.pdf){:target="_blank"}
 
 ## 1.7 Tradeoffs
 
@@ -425,7 +425,7 @@ Lamport, 1987:
 
 - CAP 讲的就是 linearizability 或 total availability 只能要一个
 - 仅仅了解 CAP 理论还不够
-  - [Highly Available Transactions: Virtues and Limitations](https://dl.acm.org/citation.cfm?id=2732237)
+  - [Highly Available Transactions: Virtues and Limitations](https://dl.acm.org/citation.cfm?id=2732237){:target="_blank"}
   - 有些人完全不喜欢 sticky available 或者 totally available
     - Strong serializable
     - Serializable
@@ -446,7 +446,7 @@ Lamport, 1987:
 
 ### 1.7.2 Harvest/Yield
 
-- [Harvest, Yield, and Scalable Tolerant Systems](https://pdfs.semanticscholar.org/5015/8bc1a8a67295ab7bce0550886a9859000dc2.pdf)
+- [Harvest, Yield, and Scalable Tolerant Systems](https://pdfs.semanticscholar.org/5015/8bc1a8a67295ab7bce0550886a9859000dc2.pdf){:target="_blank"}
   - Yield: 完成一个请求的可能性
   - Harvest: 代表不完整的响应数据
   - 例子
@@ -464,7 +464,7 @@ Lamport, 1987:
   - 架构上，系统的不同部分通常有不同的需求
   - 选择满足需要的一致性要求最低的模型即可
     - 但是要考虑清楚临界点的情况
-    - [Probabilistically Bounded Staleness in Dynamo Quorums](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2012/EECS-2012-4.pdf)
+    - [Probabilistically Bounded Staleness in Dynamo Quorums](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2012/EECS-2012-4.pdf){:target="_blank"}
 - 并不是所有的数据都用一个方案去处理
   - 「大数据」反而优先级较低
   - 「小」数据常常更加关键
@@ -482,14 +482,14 @@ Lamport, 1987:
 
 ### 1.8.1 CALM conjecture
 
-- [CALM: consistency as logical monotonicity](http://bloom-lang.net/calm/)
-  - [能够有最终一致性的系统一定是逻辑单调的，否则就必须使用诸如两段提交或者Paxos等方法进行协调](https://databeta.wordpress.com/2010/10/28/the-calm-conjecture-reasoning-about-consistency/)
+- [CALM: consistency as logical monotonicity](http://bloom-lang.net/calm/){:target="_blank"}
+  - [能够有最终一致性的系统一定是逻辑单调的，否则就必须使用诸如两段提交或者Paxos等方法进行协调](https://databeta.wordpress.com/2010/10/28/the-calm-conjecture-reasoning-about-consistency/){:target="_blank"}
   - 什么是所谓的「协调」？
   - 什么是所谓的「单调」？
 - 单调就是不会被推翻重来的意思
   - 从已知的局部信息演绎出的结果从来不会因为新信息的引入失效
   - 无论是关系代数和 Datalog 没有 negation 将会是单调的
-- [Relational transducers for declarative networking](https://arxiv.org/abs/1012.2858)
+- [Relational transducers for declarative networking](https://arxiv.org/abs/1012.2858){:target="_blank"}
   - T 理论说明在 Datalog 中可以不在意网络程度情况下节点处理服务器的协调能只以单调计算
     - This is not an easy read
   - 无需协调不意味着不用通信
@@ -500,7 +500,7 @@ Lamport, 1987:
   - 有没有特别的事实可以作为「上封条」的事实，一旦出现，就意味着整个事实链条完整了
   - 这种「单调」的算法通常来说要好实现得多
   - Likely tradeoff: incomplete reads
-- [Bloom语言](http://bloom-lang.net/)
+- [Bloom语言](http://bloom-lang.net/){:target="_blank"}
   - 非序列化的编程语言
   - 自带流程分析
   - 能够看出哪里需要进行「协调」
@@ -523,7 +523,7 @@ Lamport, 1987:
   - 一个节点连接到其他另外节点
   - 减少多余信息
   - 降低延迟
-  - [Plumtree](http://homepages.gsd.inesc-id.pt/~jleitao/pdf/srds07-leitao.pdf)
+  - [Plumtree](http://homepages.gsd.inesc-id.pt/~jleitao/pdf/srds07-leitao.pdf){:target="_blank"}
 
 ### 1.8.3 CRDTs
 
@@ -537,7 +537,7 @@ Lamport, 1987:
   - Web 客户端/手机客户端
   - Dynamo
   - Gossip
-- "[A comprehensive study of Convergent and Commutative Replicated Data Types](https://hal.inria.fr/inria-00555588/document)"
+- "[A comprehensive study of Convergent and Commutative Replicated Data Types](https://hal.inria.fr/inria-00555588/document){:target="_blank"}"
   - 假设有一个已经组合的数据类型 x 和 merge 函数 m, 那么就有:
     - 可聚合: m(x1, m(x2, x3)) = m(m(x1, x2), x3)
     - 可交换: m(x1, x2) = m(x2, x1)
@@ -553,7 +553,7 @@ Lamport, 1987:
 
 ### 1.8.4 HATs
 
-- [Highly Available Transactions, Virtues and Limitations](https://dl.acm.org/citation.cfm?id=2732237)
+- [Highly Available Transactions, Virtues and Limitations](https://dl.acm.org/citation.cfm?id=2732237){:target="_blank"}
   - 任何副本都会保证响应
   - 低延时 (比串行化协议速度快 1-3 个数量级)
   - Read Committed
@@ -593,22 +593,22 @@ Lamport, 1987:
   - 但也不至于有这么糟糕因为现实情况下网络里的节点大都可以完成共识
   - 并且，FLP 是基于确定性的
     - 真实计算机都**不**是确定性的
-    - [Another Advantage of free choice](http://www.cs.cornell.edu/courses/cs5414/2017fa/papers/p27-ben-or.pdf)
+    - [Another Advantage of free choice](http://www.cs.cornell.edu/courses/cs5414/2017fa/papers/p27-ben-or.pdf){:target="_blank"}
       - 证明了如何在非确定性前提下完成共识
 
-- [Tight Bounds for Asynchronous Consensus](http://ckeren.net.technion.ac.il/files/2016/02/AC07.pdf)
+- [Tight Bounds for Asynchronous Consensus](http://ckeren.net.technion.ac.il/files/2016/02/AC07.pdf){:target="_blank"}
   - 异步共识的严格边界要求
 
 ### 1.9.1 Paxos
 
 - Paxos 是共识算法的金线
-  - [The Part Time Parliament](https://lamport.azurewebsites.net/pubs/lamport-paxos.pdf)
+  - [The Part Time Parliament](https://lamport.azurewebsites.net/pubs/lamport-paxos.pdf){:target="_blank"}
     - 以虚构的希腊民主社会解析来演绎
-  - [Paxos Made Simple](https://lamport.azurewebsites.net/pubs/paxos-simple.pdf)
+  - [Paxos Made Simple](https://lamport.azurewebsites.net/pubs/paxos-simple.pdf){:target="_blank"}
     - 把之前文章里面用希腊语表示的算法专门拿了一章来进行说明
-  - [Paxos Made Live](https://static.googleusercontent.com/media/research.google.com/zh-CN//archive/paxos_made_live.pdf)
+  - [Paxos Made Live](https://static.googleusercontent.com/media/research.google.com/zh-CN//archive/paxos_made_live.pdf){:target="_blank"}
     - Google 实现自己的锁服务的总结
-  - [Paxos Made Moderately Complex](http://www.cs.cornell.edu/courses/cs7412/2011sp/paxos.pdf)
+  - [Paxos Made Moderately Complex](http://www.cs.cornell.edu/courses/cs7412/2011sp/paxos.pdf){:target="_blank"}
     - 一页伪代码大概得用几千行 Cpp 来实现
 - 在独立 proposal 基础上实现最终的共识
 - 一些优化后的变种
@@ -624,11 +624,11 @@ Lamport, 1987:
   - Riak
   - FoundationDB
   - WANdisco SVN servers
-- 新研究成果: [Flexible Paxos: Quorum intersection revisited](https://arxiv.org/abs/1608.06696)
+- 新研究成果: [Flexible Paxos: Quorum intersection revisited](https://arxiv.org/abs/1608.06696){:target="_blank"}
 
 ### 1.9.2 ZAB
 
-- ZAB：[Zookeeper Atomic Broadcast](https://pdfs.semanticscholar.org/fc11/031895c302dc52404d34de58af1a72f3b817.pdf)
+- ZAB：[Zookeeper Atomic Broadcast](https://pdfs.semanticscholar.org/fc11/031895c302dc52404d34de58af1a72f3b817.pdf){:target="_blank"}
 - 提供顺序一致性 (线性写, 滞后的有序读)
   - 支撑了 ZK 客户端需要快速本地读的特性
   - 但是也有一个 SYNC 命令用来保持实时更新可知
@@ -637,9 +637,9 @@ Lamport, 1987:
 
 ### 1.9.3 Humming Consensus
 
-- [比较新](https://github.com/slfritchie/humming-consensus)
-- 看起来略像[CORFU](http://www.cs.yale.edu/homes/mahesh/papers/corfumain-final.pdf)
-- 以及[chain replication](http://dsrg.pdos.csail.mit.edu/2013/08/08/chain-replication/)
+- [比较新](https://github.com/slfritchie/humming-consensus){:target="_blank"}
+- 看起来略像[CORFU](http://www.cs.yale.edu/homes/mahesh/papers/corfumain-final.pdf){:target="_blank"}
+- 以及[chain replication](http://dsrg.pdos.csail.mit.edu/2013/08/08/chain-replication/){:target="_blank"}
 
 ### 1.9.4 Viewstamped Replication
 
@@ -651,7 +651,7 @@ Lamport, 1987:
 
 ### 1.9.5 Raft
 
-- [In Search of an Understandable Consensus Algorithm](https://raft.github.io/raft.pdf)
+- [In Search of an Understandable Consensus Algorithm](https://raft.github.io/raft.pdf){:target="_blank"}
 - Lamport 说 Paxos 很简单但是对大多数人来说并不是那样
   - 有没有一个大家都懂的共识算法？
 - Paxos 要解决独立决策的问题，但大多数时候我们只要处理好状态机就够了
@@ -682,24 +682,24 @@ Lamport, 1987:
 
 - 多核系统特别是 NUMA 架构的，其实工作起来就是个分布式系统
   - 虽然每个 core 不会像分布式系统里面的 node 一样挂掉, 它彼此间的通信速度一般
-  - 比如[Intel QPI](https://www.intel.com/content/www/us/en/io/quickpath-technology/quickpath-technology-general.html)这样的总线性质的同步网络
+  - 比如[Intel QPI](https://www.intel.com/content/www/us/en/io/quickpath-technology/quickpath-technology-general.html){:target="_blank"}这样的总线性质的同步网络
   - 使用了大量的硬件技术和底层协议，使得内存访问得以协调
-  - [Non-temporal SSE](https://stackoverflow.com/questions/37070/what-is-the-meaning-of-non-temporal-memory-accesses-in-x86) (如 MOVNTI)
+  - [Non-temporal SSE](https://stackoverflow.com/questions/37070/what-is-the-meaning-of-non-temporal-memory-accesses-in-x86){:target="_blank"} (如 MOVNTI)
 - abstraction to distribution
   - MFENCE/SFENCE/LFENCE
     - Introduce a serialization point against load/store instructions
     - 典型的延迟特性是: ~100 cycles / ~30 ns
       - 强依赖硬件/缓存/系统指令集
-  - [CMPXCHG Compare-and-Swap](https://en.wikipedia.org/wiki/Compare-and-swap)
-  - [LOCK](https://stackoverflow.com/questions/27837731/is-x86-cmpxchg-atomic)
+  - [CMPXCHG Compare-and-Swap](https://en.wikipedia.org/wiki/Compare-and-swap){:target="_blank"}
+  - [LOCK](https://stackoverflow.com/questions/27837731/is-x86-cmpxchg-atomic){:target="_blank"}
     - 对整个内存加锁来保障一致性
 - abstraction 是有代价的
-  - [hardware lock elision](https://software.intel.com/en-us/node/683688)有一些帮助但是帮助不大
-  - [Mechanical Sympathy](https://mechanical-sympathy.blogspot.com/)
+  - [hardware lock elision](https://software.intel.com/en-us/node/683688){:target="_blank"}有一些帮助但是帮助不大
+  - [Mechanical Sympathy](https://mechanical-sympathy.blogspot.com/){:target="_blank"}
   - 尽量不要在多核之间进行协同任务
   - 进程或者线程的上下文切换成本可能会比较高
-  - [processor affinity](https://en.wikipedia.org/wiki/Processor_affinity)
-  - [High Performance Transaction Processing on Non-Uniform Hardware Topologies](https://infoscience.epfl.ch/record/219117/files/EPFL_TH7023.pdf)
+  - [processor affinity](https://en.wikipedia.org/wiki/Processor_affinity){:target="_blank"}
+  - [High Performance Transaction Processing on Non-Uniform Hardware Topologies](https://infoscience.epfl.ch/record/219117/files/EPFL_TH7023.pdf){:target="_blank"}
 
 ### 1.10.2 局域网内
 
@@ -915,7 +915,7 @@ Lamport, 1987:
     - 所有备份都是 3（数据中心，机房，甚至柴油发电机）
       - 特别重要的做个 4/5 份也没有什么关系
   - 常见的策略有哪些？
-    - Camille Fournier[怎么部署zk](http://www.camilletalk.com/whilefalse/2013/05/zookeeper-and-distributed-operating.html)的？
+    - Camille Fournier[怎么部署zk](http://www.camilletalk.com/whilefalse/2013/05/zookeeper-and-distributed-operating.html){:target="_blank"}的？
 - 只要错误是「不互相关联」的，冗余就可以增强系统的可用性
   - 所以下面的问题就算是冗余也解决不了
     - 如果同一个批次上线使用的磁盘集体驾崩了
@@ -924,11 +924,11 @@ Lamport, 1987:
     - 地震这类天灾
     - 以及，如果在节点上运行的任务就是有问题的，这些节点也会一起驾崩
       - 慢查询
-      - [list keys](https://stackoverflow.com/questions/41101124/list-all-keys-from-a-riak-kv-using-the-java-client)
-      - [Cassandra doomstones](http://thelastpickle.com/blog/2016/07/27/about-deletes-and-tombstones.html)
+      - [list keys](https://stackoverflow.com/questions/41101124/list-all-keys-from-a-riak-kv-using-the-java-client){:target="_blank"}
+      - [Cassandra doomstones](http://thelastpickle.com/blog/2016/07/27/about-deletes-and-tombstones.html){:target="_blank"}
     - 级联失效/雪崩
-      - [Thundering-herd](https://en.wikipedia.org/wiki/Thundering_herd_problem)
-      - [TCP incast](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.211.6055&rep=rep1&type=pdf)
+      - [Thundering-herd](https://en.wikipedia.org/wiki/Thundering_herd_problem){:target="_blank"}
+      - [TCP incast](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.211.6055&rep=rep1&type=pdf){:target="_blank"}
 
 ### 1.12.7 分片
 
@@ -945,7 +945,7 @@ Lamport, 1987:
 - 分片如何进行分配？
   - 数据库内建的功能
   - ZK/Etcd
-  - [Boundary's Ordasity](https://github.com/boundary/ordasity)
+  - [Boundary's Ordasity](https://github.com/boundary/ordasity){:target="_blank"}
 
 ### 1.12.8 ID
 
@@ -955,7 +955,7 @@ Lamport, 1987:
     - Sorts
     - Shards
   - 如何避免协调：全局唯一，但本地生成
-    - [Flake ID](http://yellerapp.com/posts/2015-02-09-flake-ids.html)
+    - [Flake ID](http://yellerapp.com/posts/2015-02-09-flake-ids.html){:target="_blank"}
   - ID 可以 map 到一个分片吗？
   - ID 里要不要编码用户 ID？
 
@@ -983,29 +983,29 @@ Lamport, 1987:
   - 对于共识服务或关系数据库是好的数据结构
 - 大多数时候系统里面也没有那么多指针
   - 整个数据库可能就分配一个指针来指向
-  - [Datomic](https://www.datomic.com/)
+  - [Datomic](https://www.datomic.com/){:target="_blank"}
 - 基于标识的强一致性操作能够用不可变的 HA 高可用存储来实现
   - 利用 CAP 中 AP 存储的优点：低延时和可扩容
   - 利用有共识系统提供的基于小数据集的强一致性
   - 写操作可用性受存储的限制
     - 但是如果只需要读操作顺序一致，非常好做缓存
     - 如果只需要 serializability 还能做得更便宜
-  - [Rich Hickey的演讲](https://vimeo.com/45136212)
-  - Pat Helland[讲解Salesforce的存储](http://basho.com/posts/business/ricon-west-videos-keynotes/)
+  - [Rich Hickey的演讲](https://vimeo.com/45136212){:target="_blank"}
+  - Pat Helland[讲解Salesforce的存储](http://basho.com/posts/business/ricon-west-videos-keynotes/){:target="_blank"}
 
 ### 1.12.11 无冲突
 
 - 文献里面的 Conflict-free/Convergent/Commutative/Confluent 是一个意思
 - 顺序无关的系统总是更好构建和维护的
 - 同时也减少了协调的工作量
-- [CRDTs](https://github.com/mwhittaker/crdts)
+- [CRDTs](https://github.com/mwhittaker/crdts){:target="_blank"}
 - Immutable Value
 - Streaming:
   - 先 buffer，当知道可以 compute+flush 的时候再操作
   - 如果需要，对当前结果可以 emit 出去并且根据结果进行相应操作（监控体系）
   - 全量数据拿到后呢？
   - 银行交易系统怎么做的？
-- [Behavior of Database Production Rules](https://theory.stanford.edu/~aiken/publications/papers/sigmod92.pdf)
+- [Behavior of Database Production Rules](https://theory.stanford.edu/~aiken/publications/papers/sigmod92.pdf){:target="_blank"}
 
 ### 1.12.12 背压与流控
 
@@ -1014,7 +1014,7 @@ Lamport, 1987:
 - 当负载无法被消化的时候怎么处理？
   1. 对请求进行分片，或者丢了不处理
   2. Reject，并且告知客户端系统在「维护」
-  3. 采用[背压](https://github.com/ReactiveX/RxJava/wiki/Backpressure)：也就是告诉客户端缓些来
+  3. 采用[背压](https://github.com/ReactiveX/RxJava/wiki/Backpressure){:target="_blank"}：也就是告诉客户端缓些来
 - 三种方式都是可以的
   - 但是背压可以大大减少需要重试的请求：根本没有发出来
 - 背压把决定权交给了生产者，很 compositional
@@ -1026,13 +1026,13 @@ Lamport, 1987:
   - bounded use
   - Bounded queues
   - Bounded concurrency
-- "[Everything Will Flow](https://www.youtube.com/watch?v=1bNOO3xxMc0)"
+- "[Everything Will Flow](https://www.youtube.com/watch?v=1bNOO3xxMc0){:target="_blank"}"
 
 ### 1.12.13 领域模型的服务
 
 - 核心问题是每个 domain 在逻辑上都是碎片，它们之间如何完成交互
 - 各个碎片有自己的技术栈，性能表现，存储需求
-  - 单体应用很多采用里[多租户](https://en.wikipedia.org/wiki/Multitenancy)方式
+  - 单体应用很多采用里[多租户](https://en.wikipedia.org/wiki/Multitenancy){:target="_blank"}方式
     - 正确实现多租户很难
     - 拆成多个逻辑服务
 - 如何拆分
@@ -1065,14 +1065,14 @@ Lamport, 1987:
     - Sagas
       - 注意它是在单节点场景下被提出的: 针对分布式环境要小心
       - 事务必须是冥等的
-    - [Typhon/Cerberus](http://www.cs.ucsb.edu/~vaibhavarora/Typhon-Ieee-Cloud-2017.pdf)
+    - [Typhon/Cerberus](http://www.cs.ucsb.edu/~vaibhavarora/Typhon-Ieee-Cloud-2017.pdf){:target="_blank"}
       - 多个 data store 上达到最终一致性的协议
 
 ### 1.12.14 康威定律
 
 - 产品化的软件系统本质上是一个社会化的产物
 - 一个团队来主导一个服务的开发
-  - "[The Tyranny of Structurelessness](http://www.jofreeman.com/joreen/tyranny.htm)"
+  - "[The Tyranny of Structurelessness](http://www.jofreeman.com/joreen/tyranny.htm){:target="_blank"}"
     - 权利与责任应该明确
     - 成员要进行任务的轮换
       - 增强彼此间的信息分享
@@ -1080,7 +1080,7 @@ Lamport, 1987:
       - 软件研发的上下文切换成本很高
 - 随着团队的不断壮大，它承担的任务和团队成员的思维会固化
   - 团队开发的服务和它们的边界也会固化
-  - [Tushman & Romanelli, 1985: Organizational Evolution](https://books.google.com.ph/books?hl=zh-CN&lr=&id=JZ0rkeNvVkcC&oi=fnd&pg=PA174&dq=Tushman+%26+Romanelli,+1985:+Organizational+Evolution&ots=nQlfMeWNHk&sig=N7Vu6fccsCA6vgCy1PGQEQFKY9I&redir_esc=y#v=onepage&q=Tushman%20%26%20Romanelli%2C%201985%3A%20Organizational%20Evolution&f=false)
+  - [Tushman & Romanelli, 1985: Organizational Evolution](https://books.google.com.ph/books?hl=zh-CN&lr=&id=JZ0rkeNvVkcC&oi=fnd&pg=PA174&dq=Tushman+%26+Romanelli,+1985:+Organizational+Evolution&ots=nQlfMeWNHk&sig=N7Vu6fccsCA6vgCy1PGQEQFKY9I&redir_esc=y#v=onepage&q=Tushman%20%26%20Romanelli%2C%201985%3A%20Organizational%20Evolution&f=false){:target="_blank"}
 - 服务还是类库？
   - 不要轻易做服务，一开始先考虑类库
   - 边界良好划分的类库很容易就可以在需要的时候升级成一个服务
@@ -1138,23 +1138,23 @@ Lamport, 1987:
   - 可以迅速执行完毕的基于用例的测试（example-based testing）
   - 可以在晚上跑的生成式的测试（property-based testing）
   - 可以模拟整个集群的行为进行测试
-  - 可以模拟网络交互进行[concurrent interleaving](https://ieeexplore.ieee.org/document/1202441/)的控制
+  - 可以模拟网络交互进行[concurrent interleaving](https://ieeexplore.ieee.org/document/1202441/){:target="_blank"}的控制
   - 可以自动化注入一些硬件方面的失效情况
 - 测试分布式系统比测试一个本地的，单体的应用要难得多
   - 各种没想过/没听过的失效情况
   - 巨大的状态空间组合
   - 在大/中/小各个时间/空间/并发维度思考问题的能力
-  - [Formal Verification](https://courses.cs.ttu.ee/pages/Formal_methods_in_model-based_testing_and_verification)
-  - [Deterministic Simulation](https://www.youtube.com/watch?v=4fFDFbi3toc)
+  - [Formal Verification](https://courses.cs.ttu.ee/pages/Formal_methods_in_model-based_testing_and_verification){:target="_blank"}
+  - [Deterministic Simulation](https://www.youtube.com/watch?v=4fFDFbi3toc){:target="_blank"}
 
 ### 1.13.3 When "It's Slow"
 
-- Jeff Hodges: [The worst bug you'll ever hear is "it's slow"](https://www.somethingsimilar.com/2013/01/14/notes-on-distributed-systems-for-young-bloods/)
+- Jeff Hodges: [The worst bug you'll ever hear is "it's slow"](https://www.somethingsimilar.com/2013/01/14/notes-on-distributed-systems-for-young-bloods/){:target="_blank"}
   - 总会发生，很难定位
   - 因为系统是分布式的，需要对各个节点都做 profile
     - 大多数的 profiler 都不支持这样的用法
-    - [Dapper](https://research.google.com/pubs/pub36356.html)
-    - [Zipkin](https://github.com/openzipkin/zipkin)
+    - [Dapper](https://research.google.com/pubs/pub36356.html){:target="_blank"}
+    - [Zipkin](https://github.com/openzipkin/zipkin){:target="_blank"}
     - 其他工具方面的投资
   - Profiler 的功能即使完备，也主要是发现 CPU 相关的问题
     - 但是出现「很慢」的情况，多数瓶颈在 I/O 而不是 CPU
@@ -1168,8 +1168,8 @@ Lamport, 1987:
     - 1/3 的节点: 多半是硬件或者配置问题
     - 大量的节点: 多半是逻辑问题，要看看分片大小/负载等关键指标
   - 尾延迟问题
-    - [Jeff Dean, 2013: The Tail at Scale](https://research.google.com/pubs/pub40801.html)
-    - 可以考虑[speculative parallelism](https://en.wikipedia.org/wiki/Speculative_multithreading)
+    - [Jeff Dean, 2013: The Tail at Scale](https://research.google.com/pubs/pub40801.html){:target="_blank"}
+    - 可以考虑[speculative parallelism](https://en.wikipedia.org/wiki/Speculative_multithreading){:target="_blank"}
 
 ### 1.13.4 监控系统
 
@@ -1200,7 +1200,7 @@ Lamport, 1987:
       - 至少是 metrics 要自己开发
   - 分布式日志基础设施 (Zipkin, Dapper)
     - 需要极大的投入
-    - [Mystery Machine](https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-chow.pdf)
+    - [Mystery Machine](https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-chow.pdf){:target="_blank"}
       - 通过日志自动关联事件
       - 找出关键路径
       - 对性能进行更好的预估和建模
@@ -1222,7 +1222,7 @@ Lamport, 1987:
   - 招数 1: 使用 SIGUSR1 杀掉进程来 dump 一个时间段的流量
   - 招数 2: tcpdump/tcpreplay 套件
   - 招数 3: 从生产环境直接投影到测试环境
-- [Envoy](https://github.com/envoyproxy/envoy)有一些相关的功能
+- [Envoy](https://github.com/envoyproxy/envoy){:target="_blank"}有一些相关的功能
 
 ### 1.13.7 版本管理
 
@@ -1259,7 +1259,7 @@ Lamport, 1987:
 - 进行功能开关设定的服务要足够健壮
   - 必须依赖足够少
     - 特别是要和主库解耦
-  - 当这个服务失效时，如何做到[fail safe](http://www.codingthearchitecture.com/2010/03/23/fail_safe.html)
+  - 当这个服务失效时，如何做到[fail safe](http://www.codingthearchitecture.com/2010/03/23/fail_safe.html){:target="_blank"}
 
 ### 1.13.10 混沌测试
 
@@ -1292,20 +1292,20 @@ Lamport, 1987:
       - E2E 的队列时延应该是小于平均波动
     - 增加队列的 size 往往是一个治标不治本的方案
   - 其实是特别复杂的工程难题：
-    - Jeff Hodges[在RICON上的讲座](http://www.youtube.com/watch?v=BKqgGpAOv1w)
-    - Zach Tellman 的[Everything Will Flow](https://www.youtube.com/watch?v=1bNOO3xxMc0)
+    - Jeff Hodges[在RICON上的讲座](http://www.youtube.com/watch?v=BKqgGpAOv1w){:target="_blank"}
+    - Zach Tellman 的[Everything Will Flow](https://www.youtube.com/watch?v=1bNOO3xxMc0){:target="_blank"}
 
 ### 1.13.12 小结
 
 - 一个分布式系统需要开发、测试和运维工程师通力合作
 - 传统的测试手段，以及现在兴起的 formal verification 或者 property-based 的测试，可以对系统的正确性有不错的验证。但是要理解生产环境特别是生产环境的错误，一定要做好生产环境的埋点和端到端监控
-- 成熟的分布式系统研发团队会投入很大的成本和精力进行工具打磨：[流量投影](http://blog.christianposta.com/microservices/traffic-shadowing-with-istio-reduce-the-risk-of-code-release/)，增量部署，功能开关化等等。
+- 成熟的分布式系统研发团队会投入很大的成本和精力进行工具打磨：[流量投影](http://blog.christianposta.com/microservices/traffic-shadowing-with-istio-reduce-the-risk-of-code-release/){:target="_blank"}，增量部署，功能开关化等等。
 
 ## 1.14 延伸阅读材料
 
-- [Mixu的书](http://book.mixu.net/distsys/)
-- [Jeff Hodges围绕产品环境的一些好建议](https://www.somethingsimilar.com/2013/01/14/notes-on-distributed-systems-for-young-bloods/)
-- [The Fallacies of Distributed Computing](http://www.rgoarchitects.com/Files/fallacies.pdf) （实际上 the fallacies 系列都很棒）
-- Christopher Meiklejohn 的[精选论文集](http://christophermeiklejohn.com/distributed/systems/2013/07/12/readings-in-distributed-systems.html)
-- Nancy Lynch 的[Distributed Algorithms](https://books.google.com.ph/books/about/Distributed_Algorithms.html?id=2wsrLg-xBGgC&redir_esc=y)
+- [Mixu的书](http://book.mixu.net/distsys/){:target="_blank"}
+- [Jeff Hodges围绕产品环境的一些好建议](https://www.somethingsimilar.com/2013/01/14/notes-on-distributed-systems-for-young-bloods/){:target="_blank"}
+- [The Fallacies of Distributed Computing](http://www.rgoarchitects.com/Files/fallacies.pdf){:target="_blank"} （实际上 the fallacies 系列都很棒）
+- Christopher Meiklejohn 的[精选论文集](http://christophermeiklejohn.com/distributed/systems/2013/07/12/readings-in-distributed-systems.html){:target="_blank"}
+- Nancy Lynch 的[Distributed Algorithms](https://books.google.com.ph/books/about/Distributed_Algorithms.html?id=2wsrLg-xBGgC&redir_esc=y){:target="_blank"}
 

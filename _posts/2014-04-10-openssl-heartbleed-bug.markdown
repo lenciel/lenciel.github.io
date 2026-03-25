@@ -10,7 +10,7 @@ categories:
 - c
 - rants
 ---
-连某宝都中招的[Heartbleed bug](http://heartbleed.com/)究竟是个什么东西？简单地说就是攻击者可以读最多 64KB 内存的内容。
+连某宝都中招的[Heartbleed bug](http://heartbleed.com/){:target="_blank"}究竟是个什么东西？简单地说就是攻击者可以读最多 64KB 内存的内容。
 
 读了这 64KB 能干嘛？用报这个 bug 的人的话来说：
 
@@ -21,7 +21,7 @@ Without using any privileged information or credentials we were able steal from 
 那么读取 64KB 内存和获取这么多关键信息究竟有什么关系呢？
 
 ## The bug
-先来看看[patch](http://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=96db9023b881d7cd9f379b0c154650d6c108e9a3)里面的`ssl/d1_both.c`:
+先来看看[patch](http://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=96db9023b881d7cd9f379b0c154650d6c108e9a3){:target="_blank"}里面的`ssl/d1_both.c`:
 
 ``` c
 int
@@ -33,7 +33,7 @@ dtls1_process_heartbeat(SSL *s)
     unsigned int padding = 16; /* Use minimum padding */
 ```
 
-可以看到，heartbeat 里有一个 [SSLv3](http://en.wikipedia.org/wiki/Transport_Layer_Security)  record 的指针，这个`record`的代码如下:
+可以看到，heartbeat 里有一个 [SSLv3](http://en.wikipedia.org/wiki/Transport_Layer_Security){:target="_blank"}  record 的指针，这个`record`的代码如下:
 
 ``` c
 typedef struct ssl3_record_st
@@ -94,7 +94,7 @@ memcpy(bp, pl, payload);
 
 这附近有哪些内容呢？
 
-首先要明白在 linux 上，内存的动态分配主要是通过[sbrk](http://linux.die.net/man/2/sbrk) 或者是 [mmap](http://man7.org/linux/man-pages/man2/mmap.2.html)。如果内存是通过 sbrk 分配的，它会使用`heap-grows-up`规则，泄露出来的东西不会那么多（但是如果是同时并发请求[还是有东西会漏](http://blog.existentialize.com/diagnosis-of-the-openssl-heartbleed-bug.html#fn:update)）。
+首先要明白在 linux 上，内存的动态分配主要是通过[sbrk](http://linux.die.net/man/2/sbrk){:target="_blank"} 或者是 [mmap](http://man7.org/linux/man-pages/man2/mmap.2.html){:target="_blank"}。如果内存是通过 sbrk 分配的，它会使用`heap-grows-up`规则，泄露出来的东西不会那么多（但是如果是同时并发请求[还是有东西会漏](http://blog.existentialize.com/diagnosis-of-the-openssl-heartbleed-bug.html#fn:update){:target="_blank"}）。
 
 在这里，`pl`因为 malloc 里面的 mmap_threshhold 多半是 sbrk 分配的，但是，那些关键的用户数据，则多半是通过 mmap 分配内存。于是这些数据就会被攻击者用`pl`拿到。如果再考虑并发请求，就...
 

@@ -15,17 +15,17 @@ categories:
 * 每个项目需要修改 hosts 文件
 * 需要 root 权限才能修改这个文件
 
-这里记一下如何用[dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html)把所有`dev`结尾的域名都指向`127.0.0.1`。
+这里记一下如何用[dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html){:target="_blank"}把所有`dev`结尾的域名都指向`127.0.0.1`。
 
 #### 安装dnsmasq
 
-在 Mac 下安装什么东西本座都用[homebrew](http://brew.sh/)，先更新 brew:
+在 Mac 下安装什么东西本座都用[homebrew](http://brew.sh/){:target="_blank"}，先更新 brew:
 
 ```bash
     $ brew up
 ```
 
-然后安装 dnsmasq。注意安装命令的输出，结尾是有配置的简单说明的。因为我用了[boxen](https://lenciel.com/2013/03/boxen-introduction/)所以路径不一定对每个人都适用，以你自己的输出为准：
+然后安装 dnsmasq。注意安装命令的输出，结尾是有配置的简单说明的。因为我用了[boxen](https://lenciel.com/2013/03/boxen-introduction/){:target="_blank"}所以路径不一定对每个人都适用，以你自己的输出为准：
 
 ```bash
     $ brew install dnsmasq

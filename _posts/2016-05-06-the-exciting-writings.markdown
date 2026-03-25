@@ -12,7 +12,7 @@ categories:
 ---
 
 
-![Vhost threshold](/downloads/images/2016_05/jpm.jpg --alt Don't touch me)
+![Vhost threshold](/downloads/images/2016_05/jpm.jpg --alt Don't touch me){:target="_blank"}
 
 昨天立夏，闷热异常，晚上终于来了几声雷，却是雷声大雨点小。
 
@@ -30,9 +30,9 @@ categories:
 
 一颗赛艇的内容，还是跟鬼没有关系的书里面多一些。
 
-而作为一名还算看过些书的同学，本座得说，大概是因为古往今来大多数中国人这方面比较压抑，写作水平整体偏低（这方面不压抑的都不会沦为作家吧）。表现在白描太多，暗示太少，偶尔臆想一下，鲁莽粗俗，一点儿幽默感都没有。相比之下，大概神仙们就比较乱来，西方文学作品里咸湿的地方一直相当咸湿（有人专门研究莎士比亚的这方面还写了《[Filthy Shakespeare](https://www.amazon.com/Filthy-Shakespeare-Shakespeares-Outrageous-Sexual-ebook/dp/B002XW28D0?ie=UTF8&btkr=1&ref_=dp-kindle-redirect)》），不说男女之情，连同性的爱情也写得相当感人。当然，你只要看过电影《莎翁情史》（这部电影给本座的另外一个感受就是 Gwyneth Paltrow 确实不是 Chris Martin 能 hold 住的）就会明白这主要还是日子过得不一样。
+而作为一名还算看过些书的同学，本座得说，大概是因为古往今来大多数中国人这方面比较压抑，写作水平整体偏低（这方面不压抑的都不会沦为作家吧）。表现在白描太多，暗示太少，偶尔臆想一下，鲁莽粗俗，一点儿幽默感都没有。相比之下，大概神仙们就比较乱来，西方文学作品里咸湿的地方一直相当咸湿（有人专门研究莎士比亚的这方面还写了《[Filthy Shakespeare](https://www.amazon.com/Filthy-Shakespeare-Shakespeares-Outrageous-Sexual-ebook/dp/B002XW28D0?ie=UTF8&btkr=1&ref_=dp-kindle-redirect){:target="_blank"}》），不说男女之情，连同性的爱情也写得相当感人。当然，你只要看过电影《莎翁情史》（这部电影给本座的另外一个感受就是 Gwyneth Paltrow 确实不是 Chris Martin 能 hold 住的）就会明白这主要还是日子过得不一样。
 
-比如说到这方面绕不过去的《金瓶梅》，连太祖这样的「仙人洞，在险峰」路数的选手都批评作者[对女性角色缺乏善意](http://history.sohu.com/20150911/n420836423.shtml)。但是你要明白，《金瓶梅》就算非常不错的水准了，太祖可是翻来覆去地看，如果有豆瓣，书评至少提交五次。而不幸出生在南京传教士家庭的《金瓶梅》英译版作者芮效卫一翻就是 40 年，按[介绍里面](http://news.inewsweek.cn/detail-634.html)说，从 17 岁拿起《金瓶梅》就再也没放下：如果是在国外，大概并不需要放不下它吧。
+比如说到这方面绕不过去的《金瓶梅》，连太祖这样的「仙人洞，在险峰」路数的选手都批评作者[对女性角色缺乏善意](http://history.sohu.com/20150911/n420836423.shtml){:target="_blank"}。但是你要明白，《金瓶梅》就算非常不错的水准了，太祖可是翻来覆去地看，如果有豆瓣，书评至少提交五次。而不幸出生在南京传教士家庭的《金瓶梅》英译版作者芮效卫一翻就是 40 年，按[介绍里面](http://news.inewsweek.cn/detail-634.html){:target="_blank"}说，从 17 岁拿起《金瓶梅》就再也没放下：如果是在国外，大概并不需要放不下它吧。
 
 再比如说到这方面绕不过去的贾平凹老师，一部小说至少十来句「下面湿了」，湿是湿了，还不如树新风足球队「最近下面有点儿咸你要不要吃」好玩。
 

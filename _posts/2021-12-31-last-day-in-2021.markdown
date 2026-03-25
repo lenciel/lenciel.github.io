@@ -20,9 +20,9 @@ categories:
 
 不仅仅是加入新公司那种换工作。
 
-而是整个工作内容都变了：多年以来，我的工作以产研为主。现在，变成了[增长](/2021/06/what-i-learn-as-a-p5-growth-manager/)或者说商业化。
+而是整个工作内容都变了：多年以来，我的工作以产研为主。现在，变成了[增长](/2021/06/what-i-learn-as-a-p5-growth-manager/){:target="_blank"}或者说商业化。
 
-可以说，如果我把自己[当成一个产品](/2019/10/how-to-treat-your-30-years-career-as-a-product/)的话，原来那个运营了十来年的产品被我下架了：所有的积累，经验、网络、团队以及那一点点声望，都烟消云散。
+可以说，如果我把自己[当成一个产品](/2019/10/how-to-treat-your-30-years-career-as-a-product/){:target="_blank"}的话，原来那个运营了十来年的产品被我下架了：所有的积累，经验、网络、团队以及那一点点声望，都烟消云散。
 
 再比如我换了一个城市生活。
 
@@ -34,9 +34,9 @@ categories:
 
 其实跟我自己的世界观有关系。
 
-在[第一次](/2017/12/last-day-in-2017/)写[年终总结](/categories/year-end-summary/)的时候，我就说，「时间本是虚妄。加上人为的度量，各种诞辰忌日，deadline，就都有了年月日，才压得大家喘不过气」。
+在[第一次](/2017/12/last-day-in-2017/){:target="_blank"}写[年终总结](/categories/year-end-summary/){:target="_blank"}的时候，我就说，「时间本是虚妄。加上人为的度量，各种诞辰忌日，deadline，就都有了年月日，才压得大家喘不过气」。
 
-的确，就像 [Carlo Rovelli](http://www.cpt.univ-mrs.fr/~rovelli/) 在《[时间的秩序](https://book.douban.com/subject/33424487/)》里说的那样：「时间」和「物体」都是人类创造出来的概念。实际上并没有「时间」，也没有「物体」，有的只是「事件」。
+的确，就像 [Carlo Rovelli](http://www.cpt.univ-mrs.fr/~rovelli/){:target="_blank"} 在《[时间的秩序](https://book.douban.com/subject/33424487/){:target="_blank"}》里说的那样：「时间」和「物体」都是人类创造出来的概念。实际上并没有「时间」，也没有「物体」，有的只是「事件」。
 
 但要用这样的想法去生活，是不容易的。
 
@@ -48,7 +48,7 @@ categories:
 
 如果你说，你已经做到在任何时候看到它都不纠结。那，你接不接受自己只是一连串的「事件」？
 
-我们开始思考这些年轻时自己觉得很鸡汤的问题[^2]，是因为面对这个不确定性极高的世界，年纪越大，越感到自己的[渺小和无力](/categories/mindfulness/)[^3]。
+我们开始思考这些年轻时自己觉得很鸡汤的问题[^2]，是因为面对这个不确定性极高的世界，年纪越大，越感到自己的[渺小和无力](/categories/mindfulness/){:target="_blank"}[^3]。
 
 本质上，人类无论内观还是外照，对于自己，对于复杂甚至混沌的世界，都还知之甚少[^4]。
 
@@ -86,6 +86,6 @@ categories:
 [^2]: 一个悲催的事实是人无法同时拥有青春和对青春的感受，就像疫情之前你以为在家办公是世界上最妙的事情一样。
 [^3]: 祝福西安，祝福人类，也祝福满帮顺利拆回港股，恢复市值，😓。
 [^4]: 我当年之所以不愿意跟着钱老师继续读博搞控制，很大程度上就是因为大量类似于白噪声的假设，在现实生活中都并不存在。而这些简化的假设，让控制学变成了数学的演算。
-[^5]: 世界上大概不会有多少人知道，还有一群最聪慧的头脑，在[圣塔菲研究所](https://www.santafe.edu/)致力于研究复杂系统，并且有了一些进展：搞这一脉的科学家今年终于[第一次获得](https://www.santafe.edu/news-center/news/sfi-applauds-first-nobel-prize-complex-systems-research)了诺贝尔奖。[Complexity](https://www.amazon.com/Complexity-Emerging-Science-Order-Chaos-ebook/dp/B07WVV5J2R) 这本书讲得令人热血澎湃，可以作为一个入门。
-[^6]: 感谢 E. T. Jaynes 的《[Probability Theory: The Logic of Science](https://www.amazon.com/Probability-Theory-Science-T-Jaynes/dp/0521592712)》
+[^5]: 世界上大概不会有多少人知道，还有一群最聪慧的头脑，在[圣塔菲研究所](https://www.santafe.edu/){:target="_blank"}致力于研究复杂系统，并且有了一些进展：搞这一脉的科学家今年终于[第一次获得](https://www.santafe.edu/news-center/news/sfi-applauds-first-nobel-prize-complex-systems-research){:target="_blank"}了诺贝尔奖。[Complexity](https://www.amazon.com/Complexity-Emerging-Science-Order-Chaos-ebook/dp/B07WVV5J2R){:target="_blank"} 这本书讲得令人热血澎湃，可以作为一个入门。
+[^6]: 感谢 E. T. Jaynes 的《[Probability Theory: The Logic of Science](https://www.amazon.com/Probability-Theory-Science-T-Jaynes/dp/0521592712){:target="_blank"}》
 [^7]: 就像做 FITURE 之后，我会更加留意到，公园里有很多人在用抱树、拍腿、晃头进行锻炼一样。

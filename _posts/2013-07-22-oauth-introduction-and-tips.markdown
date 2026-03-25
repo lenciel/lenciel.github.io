@@ -58,7 +58,7 @@ categories:
 
 #### Signature Base String
 
-签名的基本组成有：request 的 `Method`，request 的 `URL` (如果是 `OAuth Echo`则是 `credentials uri`) 和 request 的 `Query String`。没有加密前它看起来会是下面这样 (例子来自 [twitter](https://dev.twitter.com/docs/auth/creating-signature)):
+签名的基本组成有：request 的 `Method`，request 的 `URL` (如果是 `OAuth Echo`则是 `credentials uri`) 和 request 的 `Query String`。没有加密前它看起来会是下面这样 (例子来自 [twitter](https://dev.twitter.com/docs/auth/creating-signature){:target="_blank"}):
 
 ```
 POST&https%3A%2F%2Fapi.twitter.com%2F1%2Fstatuses%2Fupdate.json&include_entities%3Dtrue%26oauth_consumer_key%3Dxvz1evFS4wEEPTGEFPHBog%26oauth_nonce%3DkYjzVBB8Y0ZFabxSWbWovY3uYSQ2pTgmZeNu2VS4cg%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1318622958%26oauth_token%3D370773112-GmHxMAgYyLbNEtIKZeRNFsMKPR9EyMZeS9weJAEb%26oauth_version%3D1.0%26status%3DHello%2520Ladies%2520%252B%2520Gentlemen%252C%2520a%2520signed%2520OAuth%2520request%2521
@@ -74,7 +74,7 @@ kAcSOqF21Fu85e7zjz7ZN2U4ZRhfV3WpwPAoE3Z7kBw&LswwdoUaIvS8ltyTt5jkRh4J50vUPVVHtR2Y
 
 ***
 
-**Note:** 如果是使用 RSA 或者 xAuth， `signing key` 可能只有 `Consumer Secret` 部分外加一个可以省略的 `&` 。 更多相关信息可以从 mashape-oauth/lib/oauth.js 的 [233](https://github.com/Mashape/mashape-oauth/blob/master/lib/oauth.js#L233)行和 [238](https://github.com/Mashape/mashape-oauth/blob/master/lib/oauth.js#L238)行了解。
+**Note:** 如果是使用 RSA 或者 xAuth， `signing key` 可能只有 `Consumer Secret` 部分外加一个可以省略的 `&` 。 更多相关信息可以从 mashape-oauth/lib/oauth.js 的 [233](https://github.com/Mashape/mashape-oauth/blob/master/lib/oauth.js#L233){:target="_blank"}行和 [238](https://github.com/Mashape/mashape-oauth/blob/master/lib/oauth.js#L238){:target="_blank"}行了解。
 
 ***
 
@@ -102,12 +102,12 @@ tnnArxj06cWHq44gCs1OSKk/jLY=
 
 然后在服务端，会用 key 来验证编码后的 `oauth_signature` 字段。
 
-**Note:** mashape-oauth/tests/oauth.js 的第[74](https://github.com/Mashape/mashape-oauth/blob/master/tests/oauth.js#L74)行说明了如何使用生成的`private key`来对`signature base`进行编码。
+**Note:** mashape-oauth/tests/oauth.js 的第[74](https://github.com/Mashape/mashape-oauth/blob/master/tests/oauth.js#L74){:target="_blank"}行说明了如何使用生成的`private key`来对`signature base`进行编码。
 
 
 #### OAuth请求头
 
-OAuth 请求头包括了`oauth_signature` 和 `oauth_signature_method` 等参数及值。这些`oauth_*` 参数一般会用名字和其他[复杂的规则](https://github.com/Mashape/mashape-oauth/blob/master/lib/oauth.js#L111)排序，相互之间用 `,` 或者是空格分隔。下面是一个取得 Twitter 的 Request Token 的例子:
+OAuth 请求头包括了`oauth_signature` 和 `oauth_signature_method` 等参数及值。这些`oauth_*` 参数一般会用名字和其他[复杂的规则](https://github.com/Mashape/mashape-oauth/blob/master/lib/oauth.js#L111){:target="_blank"}排序，相互之间用 `,` 或者是空格分隔。下面是一个取得 Twitter 的 Request Token 的例子:
 
 ```http
 POST /oauth/request_token HTTP/1.1
@@ -416,40 +416,40 @@ var OAuth = require('mashape-oauth').OAuth,
 
 ## References
 
-1. [Authorizing with OAuth](http://www.flickr.com/services/api/auth.oauth.html) - Flickr Documentation
-2. [OAuth on Bitbucket](https://confluence.atlassian.com/display/BITBUCKET/OAuth+on+Bitbucket) - Bitbucket Documentation
-3. [OAuth Documentation](https://dev.twitter.com/docs/auth/oauth) - Twitter Documentation
-4. [OAuth Extended Flows](http://2.bp.blogspot.com/-Va1Rp3-r898/TZiVh9xEJDI/AAAAAAAAAMw/8ImBIW_dXuY/s1600/OAuth-legs.png)
-5. [2-Legged OAuth](https://code.google.com/p/oauth-php/wiki/ConsumerHowTo#Two-legged_OAuth) - OAuth-PHP
-6. [OAuth for Consumer Requests](http://oauth.googlecode.com/svn/spec/ext/consumer_request/1.0/drafts/2/spec.html)
-7. [OAuth Example](http://term.ie/oauth/example/) - term.ie
-8. [OAuth 1.0 Guide](http://hueniverse.com/oauth/guide/) - Heuniverse
-9. [OAuth 1.0a Diagram](http://oauth.net/core/diagram.png)
-10. [OAuth Wiki](http://wiki.oauth.net)
-11. [2-Legged OAuth 1.0 & 2.0](http://architects.dzone.com/articles/2-legged-oauth-oauth-10-and-20) - DZone
-12. [OAuth](https://developers.google.com/accounts/docs/OAuth) & [OAuth2](https://developers.google.com/accounts/docs/OAuth2) - Google Documentation
-13. [What is 2-legged OAuth?](http://blog.nerdbank.net/2011/06/what-is-2-legged-oauth.html) - Nerdbank
-14. [List of Service Providers](http://en.wikipedia.org/wiki/OAuth#List_of_OAuth_service_providers) - Wikipedia
-15. [OAuth Echo](http://developers.mobypicture.com/documentation/authentication/oauth-echo/) - mobypicture
-16. [OAuth Echo](https://dev.twitter.com/docs/auth/oauth/oauth-echo) - Twitter
-17. [Advanced API](http://developer.vimeo.com/apis/advanced) - Vimeo Developer();
-18. [About xAuth](https://dev.twitter.com/docs/oauth/xauth) - Twitter xAuth Documentation
-19. [Implementing Sign-in](https://dev.twitter.com/docs/auth/implementing-sign-twitter) - Twitter Sign-in Documentation
-20. [RFC6749](http://tools.ietf.org/html/rfc6749) - IETF
-21. [Web Application Flow](http://developer.github.com/v3/oauth/) - Github OAuth2
-22. [OAuth2 Quickstart](http://www.salesforce.com/us/developer/docs/api_rest/Content/quickstart_oauth.htm) - Salesforce
-23. [Authentication Mechanisms](https://developers.geoloqi.com/api/authentication) - Geoloqi
-24. [Understanding Web Server OAuth Flow](http://www.salesforce.com/us/developer/docs/api_rest/Content/intro_understanding_web_server_oauth_flow.htm) - Salesforce
-25. [CSRF & OAuth2](http://blog.springsource.org/2011/11/30/10317/) - Springsource
-26. [OAuth v2-31](https://tools.ietf.org/html/draft-ietf-oauth-v2-31) - IETF
-27. [Resource Owner Flow](http://techblog.hybris.com/2012/06/11/oauth2-resource-owner-password-flow/) - Hybris
+1. [Authorizing with OAuth](http://www.flickr.com/services/api/auth.oauth.html){:target="_blank"} - Flickr Documentation
+2. [OAuth on Bitbucket](https://confluence.atlassian.com/display/BITBUCKET/OAuth+on+Bitbucket){:target="_blank"} - Bitbucket Documentation
+3. [OAuth Documentation](https://dev.twitter.com/docs/auth/oauth){:target="_blank"} - Twitter Documentation
+4. [OAuth Extended Flows](http://2.bp.blogspot.com/-Va1Rp3-r898/TZiVh9xEJDI/AAAAAAAAAMw/8ImBIW_dXuY/s1600/OAuth-legs.png){:target="_blank"}
+5. [2-Legged OAuth](https://code.google.com/p/oauth-php/wiki/ConsumerHowTo#Two-legged_OAuth){:target="_blank"} - OAuth-PHP
+6. [OAuth for Consumer Requests](http://oauth.googlecode.com/svn/spec/ext/consumer_request/1.0/drafts/2/spec.html){:target="_blank"}
+7. [OAuth Example](http://term.ie/oauth/example/){:target="_blank"} - term.ie
+8. [OAuth 1.0 Guide](http://hueniverse.com/oauth/guide/){:target="_blank"} - Heuniverse
+9. [OAuth 1.0a Diagram](http://oauth.net/core/diagram.png){:target="_blank"}
+10. [OAuth Wiki](http://wiki.oauth.net){:target="_blank"}
+11. [2-Legged OAuth 1.0 & 2.0](http://architects.dzone.com/articles/2-legged-oauth-oauth-10-and-20){:target="_blank"} - DZone
+12. [OAuth](https://developers.google.com/accounts/docs/OAuth){:target="_blank"} & [OAuth2](https://developers.google.com/accounts/docs/OAuth2){:target="_blank"} - Google Documentation
+13. [What is 2-legged OAuth?](http://blog.nerdbank.net/2011/06/what-is-2-legged-oauth.html){:target="_blank"} - Nerdbank
+14. [List of Service Providers](http://en.wikipedia.org/wiki/OAuth#List_of_OAuth_service_providers){:target="_blank"} - Wikipedia
+15. [OAuth Echo](http://developers.mobypicture.com/documentation/authentication/oauth-echo/){:target="_blank"} - mobypicture
+16. [OAuth Echo](https://dev.twitter.com/docs/auth/oauth/oauth-echo){:target="_blank"} - Twitter
+17. [Advanced API](http://developer.vimeo.com/apis/advanced){:target="_blank"} - Vimeo Developer();
+18. [About xAuth](https://dev.twitter.com/docs/oauth/xauth){:target="_blank"} - Twitter xAuth Documentation
+19. [Implementing Sign-in](https://dev.twitter.com/docs/auth/implementing-sign-twitter){:target="_blank"} - Twitter Sign-in Documentation
+20. [RFC6749](http://tools.ietf.org/html/rfc6749){:target="_blank"} - IETF
+21. [Web Application Flow](http://developer.github.com/v3/oauth/){:target="_blank"} - Github OAuth2
+22. [OAuth2 Quickstart](http://www.salesforce.com/us/developer/docs/api_rest/Content/quickstart_oauth.htm){:target="_blank"} - Salesforce
+23. [Authentication Mechanisms](https://developers.geoloqi.com/api/authentication){:target="_blank"} - Geoloqi
+24. [Understanding Web Server OAuth Flow](http://www.salesforce.com/us/developer/docs/api_rest/Content/intro_understanding_web_server_oauth_flow.htm){:target="_blank"} - Salesforce
+25. [CSRF & OAuth2](http://blog.springsource.org/2011/11/30/10317/){:target="_blank"} - Springsource
+26. [OAuth v2-31](https://tools.ietf.org/html/draft-ietf-oauth-v2-31){:target="_blank"} - IETF
+27. [Resource Owner Flow](http://techblog.hybris.com/2012/06/11/oauth2-resource-owner-password-flow/){:target="_blank"} - Hybris
 
-[^1]: [Implementing sign twitter](https://dev.twitter.com/docs/auth/implementing-sign-twitter).
-[^2]: [Oauth request url](https://developers.google.com/google-apps/gmail/oauth_protocol#oauth_request_url).
-[^3]: [Vimeo API Advanced](http://developer.vimeo.com/apis/advanced)
-[^4]: [IETF OATUH V2 Section 4.4](https://tools.ietf.org/html/draft-ietf-oauth-v2-31#section-4.4).
-[^5]: [IETF OATUH V2 Section 4.1.1](http://tools.ietf.org/html/draft-ietf-oauth-v2-31#section-4.1.1).
-[^6]: [CROSS SITE REQUEST FORGERY AND OAUTH2](http://blog.springsource.org/2011/11/30/10317/).
-[^7]: [RFC6749](http://tools.ietf.org/html/rfc6749#section-4.1.3).
-[^8]: [Hash based message authentication code](http://en.wikipedia.org/wiki/Hash-based_message_authentication_code).
-[^9]: [RSA Algorithm](http://en.wikipedia.org/wiki/RSA_(algorithm\)).
+[^1]: [Implementing sign twitter](https://dev.twitter.com/docs/auth/implementing-sign-twitter){:target="_blank"}.
+[^2]: [Oauth request url](https://developers.google.com/google-apps/gmail/oauth_protocol#oauth_request_url){:target="_blank"}.
+[^3]: [Vimeo API Advanced](http://developer.vimeo.com/apis/advanced){:target="_blank"}
+[^4]: [IETF OATUH V2 Section 4.4](https://tools.ietf.org/html/draft-ietf-oauth-v2-31#section-4.4){:target="_blank"}.
+[^5]: [IETF OATUH V2 Section 4.1.1](http://tools.ietf.org/html/draft-ietf-oauth-v2-31#section-4.1.1){:target="_blank"}.
+[^6]: [CROSS SITE REQUEST FORGERY AND OAUTH2](http://blog.springsource.org/2011/11/30/10317/){:target="_blank"}.
+[^7]: [RFC6749](http://tools.ietf.org/html/rfc6749#section-4.1.3){:target="_blank"}.
+[^8]: [Hash based message authentication code](http://en.wikipedia.org/wiki/Hash-based_message_authentication_code){:target="_blank"}.
+[^9]: [RSA Algorithm](http://en.wikipedia.org/wiki/RSA_(algorithm\){:target="_blank"}).

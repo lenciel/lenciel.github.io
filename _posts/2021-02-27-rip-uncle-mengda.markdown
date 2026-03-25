@@ -11,7 +11,7 @@ categories:
 
 ---
 
-![wumengda.png](/downloads/images/2021_02/wumengda.png --alt Don't touch me...)
+![wumengda.png](/downloads/images/2021_02/wumengda.png --alt Don't touch me...){:target="_blank"}
 
 常温常压下，人们看重的是花。
 

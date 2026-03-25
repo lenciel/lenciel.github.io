@@ -22,7 +22,7 @@ categories:
 
 从我过往的经验来看，这样的岗位或者职级设置通常带来的问题比收益多。
 
-就连这个流量很小的 blog，也可以[在评论里](/2020/05/how-to-do-estimation/)里看到一些对架构师的吐槽。
+就连这个流量很小的 blog，也可以[在评论里](/2020/05/how-to-do-estimation/){:target="_blank"}里看到一些对架构师的吐槽。
 
 本系列面向所有「架构师」或者希望成为「架构师」的同学，聊聊怎样干好这个似乎是「码农」的进阶，却又不太容易讨巧的角色。
 
@@ -50,16 +50,16 @@ categories:
 - 系统由哪些要素构成
 - 这些构成要素之间的关系
 
-比如你搜索「Software Architecture」，排名靠前的[维基百科的解释](https://en.wikipedia.org/w/index.php?title=Software_architecture&oldid=900802586)如下：
+比如你搜索「Software Architecture」，排名靠前的[维基百科的解释](https://en.wikipedia.org/w/index.php?title=Software_architecture&oldid=900802586){:target="_blank"}如下：
 
 > Software architecture refers to the fundamental structures of a software system and the discipline of creating such structures and systems. Each structure comprises software elements, relations among them, and properties of both elements and relations.
 
-这很明显是从《[Documenting Software Architectures: Views and Beyond](https://www.amazon.com/Documenting-Software-Architectures-Views-Beyond/dp/0321552687)》
-里面摘抄的。这本书不那么好读，它的两位作者在另一本从名字看就好读多了的《[Software Architecture in Practice](https://www.amazon.com/Software-Architecture-Practice-3rd-Engineering/dp/0321815734)》里有一个类似的定义：
+这很明显是从《[Documenting Software Architectures: Views and Beyond](https://www.amazon.com/Documenting-Software-Architectures-Views-Beyond/dp/0321552687){:target="_blank"}》
+里面摘抄的。这本书不那么好读，它的两位作者在另一本从名字看就好读多了的《[Software Architecture in Practice](https://www.amazon.com/Software-Architecture-Practice-3rd-Engineering/dp/0321815734){:target="_blank"}》里有一个类似的定义：
 
 > The software architecture of a system is the set of structure needed to reason about the system, which comprises software elements, relations among them, and properties of both.
 
- 如果你注意到这本书是属于一个叫 SEI Collections 的系列的话，就很容易发现，CMU 的 Software Engineering Institute（SEI）对这些软件工程领域的方法论和术语定义很用心。它们还有一个官方的「数字图书馆」，检索「架构」的定义[可以找到](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=513807)一个和前面的定义非常类似，但是打了 IEEE 龙标的定义：
+ 如果你注意到这本书是属于一个叫 SEI Collections 的系列的话，就很容易发现，CMU 的 Software Engineering Institute（SEI）对这些软件工程领域的方法论和术语定义很用心。它们还有一个官方的「数字图书馆」，检索「架构」的定义[可以找到](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=513807){:target="_blank"}一个和前面的定义非常类似，但是打了 IEEE 龙标的定义：
 
  > Architecture is the fundamental organization of a system embodied in its components, their relationships to each other, and to the environment, and the principles guiding its design and evolution. –IEEE 1471
 
@@ -73,7 +73,7 @@ categories:
 
 > An architecture is the set of significant decisions about the organization of a software system, the selection of structural elements and their interfaces by which the system is composed, together with their behavior as specified in the collaborations among those elements, the composition of these elements into progressively larger subsystems, and the architectural style that guides this organization -- these elements and their interfaces, their collaborations, and their composition.
 
-再比如 Jan Bosch 和 Anton Jansen 在[那篇著名的论文](https://ieeexplore.ieee.org/abstract/document/1620096/)里说的：
+再比如 Jan Bosch 和 Anton Jansen 在[那篇著名的论文](https://ieeexplore.ieee.org/abstract/document/1620096/){:target="_blank"}里说的：
 
 > We do not view a software architecture as a set of components and connectors, but rather as the composition of a set of architectural design decisions.
 
@@ -95,7 +95,7 @@ categories:
 
 更重要的是，很多不真正理解问题域也不参与编码的人，以「架构师」的特权进行各种各样的「决策」，迷恋「UML」或者「Design Pattern」这样的方法论，导致大量的资源浪费甚至是项目失败。
 
-因此 Martin Fowler 在他那篇《[Who needs an architect](https://martinfowler.com/ieeeSoftware/whoNeedsArchitect.pdf)》里面引用 Ralph Johnson 的话有些嘲讽地说：
+因此 Martin Fowler 在他那篇《[Who needs an architect](https://martinfowler.com/ieeeSoftware/whoNeedsArchitect.pdf){:target="_blank"}》里面引用 Ralph Johnson 的话有些嘲讽地说：
 
 > Architecture is the decisions that you wish you could get right early in a project, but that you are not necessarily more likely to get them right than any other.
 

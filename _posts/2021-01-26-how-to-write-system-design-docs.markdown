@@ -50,7 +50,7 @@ categories:
 
 #### 1.1 目的
 
-系统的目的主要通过「[用户故事](https://zh.wikipedia.org/zh-hans/%E7%94%A8%E6%88%B7%E6%95%85%E4%BA%8B)」来表达。书写用户故事是产品经理的基本功，但同时，也是所有进行系统设计和分析的人的基本功。
+系统的目的主要通过「[用户故事](https://zh.wikipedia.org/zh-hans/%E7%94%A8%E6%88%B7%E6%95%85%E4%BA%8B){:target="_blank"}」来表达。书写用户故事是产品经理的基本功，但同时，也是所有进行系统设计和分析的人的基本功。
 
 用户故事的结构是三部分：
 
@@ -83,7 +83,7 @@ categories:
 
 一般来说，在早期最主要需要梳理的约束条件，一般是跟流量/数据相关的，比如系统承接的 rps/bps，数据一致性要求的等等，这些会决定系统设计的时候，对可靠性、可扩展性、弹性等系统特性的决定。
 
-在我很喜欢的《[Designing Data-Intensive Applications](https://www.amazon.com/dp/B06XPJML5D/)》里，它提到的应用系统主要追求的三个方面就直接没有「可用性」，而是：
+在我很喜欢的《[Designing Data-Intensive Applications](https://www.amazon.com/dp/B06XPJML5D/){:target="_blank"}》里，它提到的应用系统主要追求的三个方面就直接没有「可用性」，而是：
 
 - Reliability
 - Scalability

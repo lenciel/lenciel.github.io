@@ -43,7 +43,7 @@ Failed connect to dl-ssl.google.com:443;
 Jenkins服务器配置代理
 -------------------------
 
-这里之所以选择[shadowsocks](http://shadowsocks.org/)，是因为可以用自己在[Google的VM](https://developers.google.com/appengine/)上配置的 shadowsocks 代理服务器（顺便广告一下，Google 的 VM 在做活动，几乎是最高配的机器都不要钱，而且第一跳就在美帝，用来做代理非常爽）。
+这里之所以选择[shadowsocks](http://shadowsocks.org/){:target="_blank"}，是因为可以用自己在[Google的VM](https://developers.google.com/appengine/){:target="_blank"}上配置的 shadowsocks 代理服务器（顺便广告一下，Google 的 VM 在做活动，几乎是最高配的机器都不要钱，而且第一跳就在美帝，用来做代理非常爽）。
 
 安装 shadowsocks 的 pythohn client:
 
@@ -147,7 +147,7 @@ When shit happens
 dl-ssl.google.com 74.125.237.1
 ```
 
-估计是之前配置的基友搜索到了类似[这样的文章](http://www.programering.com/a/MjM4YTMwATA.html)。这也是为什么我从来不用也不推荐别人用修改 hosts 文件的方法来翻墙的原因：它们总是在过期。
+估计是之前配置的基友搜索到了类似[这样的文章](http://www.programering.com/a/MjM4YTMwATA.html){:target="_blank"}。这也是为什么我从来不用也不推荐别人用修改 hosts 文件的方法来翻墙的原因：它们总是在过期。
 
 Last but not the least, Fuck you, GFW.
 

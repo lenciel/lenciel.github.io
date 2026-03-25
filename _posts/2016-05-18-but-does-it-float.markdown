@@ -12,11 +12,11 @@ categories:
 ---
 
 
-![Vhost threshold](/downloads/images/2016_05/ppl_5.jpg --alt Don't touch me)
+![Vhost threshold](/downloads/images/2016_05/ppl_5.jpg --alt Don't touch me){:target="_blank"}
 
 夏天来了。
 
-经常让我读他的文章忍不住点头称是的 Sam，在他的[36条人生建议](http://36kr.com/p/532396.html)里面略无厘头的插了一句：「夏天是最棒的」。
+经常让我读他的文章忍不住点头称是的 Sam，在他的[36条人生建议](http://36kr.com/p/532396.html){:target="_blank"}里面略无厘头的插了一句：「夏天是最棒的」。
 
 和他结尾的那句「The days are long but the decades are short」一样，充满了玄机。
 

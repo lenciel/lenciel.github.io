@@ -135,7 +135,7 @@ d = base64.b64encode(k.encrypt(input_str))
 print d
 ```
 
-当然，要明白这些算法究竟怎么回事才叫认真负责的态度：下面这些内容主要来自[这篇文章](http://www.laurentluce.com/posts/python-and-cryptography-with-pycrypto/)
+当然，要明白这些算法究竟怎么回事才叫认真负责的态度：下面这些内容主要来自[这篇文章](http://www.laurentluce.com/posts/python-and-cryptography-with-pycrypto/){:target="_blank"}
 
 ## **Hash**
 
@@ -145,7 +145,7 @@ hash 就是给输入的字符串生成一个固定长度的字符串（被称为
 - 任意两个不同的字符串不会生成相同的 hash 值
 - 如果输入字符串没有变生成的 hash 值应该不会变
 
-![hash](/downloads/images/2013_07/hash.png --alt Don't touch me)
+![hash](/downloads/images/2013_07/hash.png --alt Don't touch me){:target="_blank"}
 
 hash 函数可以被用来计算 checksum，也可以用来进行数字签名和认证。
 
@@ -153,7 +153,7 @@ hash 函数可以被用来计算 checksum，也可以用来进行数字签名和
 
 1991 年面世的一种 hash 算法，生成的字符串长度为 128bit。
 
-它的算法详情可以看[这里](http://tools.ietf.org/html/rfc1321)，简单说如下：
+它的算法详情可以看[这里](http://tools.ietf.org/html/rfc1321){:target="_blank"}，简单说如下：
 
 - 首先需要对字符串进行扩展，使其位长对 512 求余的结果等于 448。因此，位长（Bits Length）将被扩展至 N*512+448，N 为一个非负整数，N 可以是零。填充的方法一般是在信息的后面填充一个 1 和无数个 0，直到满足上面的条件时才停止用 0 对信息的填充。
 - 然后，在这个结果后面附加一个以 64 位二进制表示的填充前信息长度。经过这两步的处理，现在的位长是 `N*512+448+64 = (N+1）*512`，即长度恰好是 512 的整数倍。
@@ -188,7 +188,7 @@ def get_file_checksum(filename):
 DES 是分块加密的一种，其处理对象的大小是 8 个 bytes。DES 最简单的模式是所谓的`ECB( electronic code book)模式`，也就是每个 block 都是独立加密，最后组成整个加密后的文本。
 
 
-![ecb](/downloads/images/2013_07/block_cipher_ebc.png --alt Don't touch me)
+![ecb](/downloads/images/2013_07/block_cipher_ebc.png --alt Don't touch me){:target="_blank"}
 
 使用 pycrpto 对文本使用`DES/ECB`加密很简单。假设 key 是`10234567`，而我们要加密的文本是`abcdefgh`，那么：
 
@@ -205,7 +205,7 @@ DES 是分块加密的一种，其处理对象的大小是 8 个 bytes。DES 最
 
 比`ECB`更健壮的是`CFB (Cipher feedback)`模式，也就是先组合前面加密的文本和待加密的文本，然后进行加密。
 
-![cfb](/downloads/images/2013_07/block_cipher_cfb.png --alt Don't touch me)
+![cfb](/downloads/images/2013_07/block_cipher_cfb.png --alt Don't touch me){:target="_blank"}
 
 下面的例子说明了算法的工作流程：待加密的是`abcdefghijklmnop`，两倍 8bytes。首先生成一个随机的字符串作为初始的`iv`来生成两个`DES`对象，一个用来加密一个用来解密。之所以需要这两个对象，是因为`feedback`值会随着 block 被加密后变化。
 
@@ -303,7 +303,7 @@ to_enc.dec: this content needs to be encrypted.
 
 上面提到的加密算法的一大问题是双方都需要知道 key。而`public-key算法`提供了两个 key，一个用来加密，一个用来解密。
 
-![ecb](/downloads/images/2013_07/public_private_key.png --alt Don't touch me)
+![ecb](/downloads/images/2013_07/public_private_key.png --alt Don't touch me){:target="_blank"}
 
 ### **public/private key**
 

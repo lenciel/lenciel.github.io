@@ -9,7 +9,7 @@ categories:
 - writing
 ---
 
-![Vhost threshold](/downloads/images/2016_09/the_player_choose_to_die.jpg --alt Don't touch me)
+![Vhost threshold](/downloads/images/2016_09/the_player_choose_to_die.jpg --alt Don't touch me){:target="_blank"}
 
 费福尔特，37 岁的比利时名将，上届伦敦残奥会 T52 级女子轮椅短跑 100 米冠军和 200 米的亚军，一边积极备战即将到来的奥运会，一边在准备葬礼：她宣布在比赛后会安乐死结束自己的生命。
 
@@ -29,7 +29,7 @@ categories:
 
 大到各种制度法规道德戒律，小到那些我们觉得是鸡汤的文章、书籍、视频，都潜移默化地影响着你，说服了你，按照它们推崇的规矩去思考和生活。
 
-你如果看了[足够多的遗言](http://www.goodbyewarden.com/)，会发现很少会有人为那些做过的事后悔。在生命的尽头，大家都为自己没有去做的事后悔。
+你如果看了[足够多的遗言](http://www.goodbyewarden.com/){:target="_blank"}，会发现很少会有人为那些做过的事后悔。在生命的尽头，大家都为自己没有去做的事后悔。
 
 因为我们循规蹈矩惯了，就会意识不到现在正在做的事情，对于整个生命是否有意义的重要性。
 

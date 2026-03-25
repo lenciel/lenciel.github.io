@@ -12,7 +12,7 @@ categories:
 
 ---
 
-> 本系列是，[疫情日记](/categories/lockdown-diary/)...
+> 本系列是，[疫情日记](/categories/lockdown-diary/){:target="_blank"}...
 
 天还晴着。
 

@@ -11,7 +11,7 @@ categories:
 ---
 
 
-![Vhost threshold](/downloads/images/2016_06/birthday-0x32.jpg --alt Don't touch me)
+![Vhost threshold](/downloads/images/2016_06/birthday-0x32.jpg --alt Don't touch me){:target="_blank"}
 
 今天收到很多「生日快乐」的祝福。
 
@@ -37,7 +37,7 @@ categories:
 
 在编程这个行当里面，大家好像都觉得到年纪了就不该「亲自上阵」了。说白了，就算打算一辈子做技术的人，也是把「做更好的 Engineer」当成目标的多，把「做更好的 Programmer 当成目标」的很少。
 
-这大概是 Thorstein Veblen 在[《有闲阶级论》](https://book.douban.com/subject/6428903/)里面讲的那个道理：脱离与谋生直接相关的工作，成为掌握着世界的主动权，控制着别人的节奏和命运，指挥别人去从事具体生产工作的「有闲阶级」，是从狩猎时代开始，人类社会普遍的奋斗目标。
+这大概是 Thorstein Veblen 在[《有闲阶级论》](https://book.douban.com/subject/6428903/){:target="_blank"}里面讲的那个道理：脱离与谋生直接相关的工作，成为掌握着世界的主动权，控制着别人的节奏和命运，指挥别人去从事具体生产工作的「有闲阶级」，是从狩猎时代开始，人类社会普遍的奋斗目标。
 
 用他的原话说，很多时候我们追逐的往往不是 utility（功用）而是 prestige（声望），这是一种心理上根深蒂固的需求：人类解决欲望的方式，就是不断地从各个层面满足它，而不是克服它。
 
@@ -49,7 +49,7 @@ categories:
 
 于是有的人用闲适对抗命运，有的人用忙碌对抗命运。
 
-我很喜欢的[Knuth](https://en.wikipedia.org/wiki/Donald_Knuth)大叔是站在活到老写到老这边的，他说过：
+我很喜欢的[Knuth](https://en.wikipedia.org/wiki/Donald_Knuth){:target="_blank"}大叔是站在活到老写到老这边的，他说过：
 
 {% blockquote %}
 People who discover the power and beauty of high-level, abstract ideas often make the mistake of believing that concrete ideas at lower levels are relatively worthless and might as well be forgotten. (…) on the contrary, the best computer scientists are thoroughly grounded in basic concepts of how computers actually work, and indeed that the essence of computer science is an ability to understand many levels of abstraction simultaneously.

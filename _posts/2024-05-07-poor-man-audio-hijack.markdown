@@ -14,7 +14,7 @@ categories:
 
 最近参加一个技术会议，我请大家举手简单统计了一下参会者在 ChatGPT、Kimi 等产品上的活跃度，发现每天都用的人大大减少了。
 
-这跟我[两年前](/2022/09/what-could-happen-after-ism/)的判断差不多： LLM 对搜索会有很大的冲击（因为用户脑子里有关键词，好写 prompt），但大部分时候，聊天仍然是个非常糟糕的用户界面（问什么怎么问，压力都在用户这边）。
+这跟我[两年前](/2022/09/what-could-happen-after-ism/){:target="_blank"}的判断差不多： LLM 对搜索会有很大的冲击（因为用户脑子里有关键词，好写 prompt），但大部分时候，聊天仍然是个非常糟糕的用户界面（问什么怎么问，压力都在用户这边）。
 
 如果让我总结使用 LLM 频度最高的场景，是嵌在飞书里的那些跟开会相关的功能：自动字幕，自动转文本，自动给总结等等。
 
@@ -31,12 +31,12 @@ categories:
 - 有没有办法很容易的提取音轨或者转发音频流
 - 有没有办法在本地对音轨或者音频流使用 LLM 进行处理
 
-如果是有钱人，我会推荐 [Rogue Amoeba](https://rogueamoeba.com/) 家的 Loopback 和 Audio Hijack。 Loopback 可以通过创建虚拟声卡对音频进行各种的控制和转发解决第一步。而 Audio Hijack 的新版本里内置了一个 [transcribe](https://rogueamoeba.com/support/manuals/audiohijack/?page=transcribe) 模块解决第二步{% sidenote 'sn-id-0' '实际上背后也是 OpenAI 的 Whisper ，精确版对应 large-v2 的模型。' %}：
+如果是有钱人，我会推荐 [Rogue Amoeba](https://rogueamoeba.com/){:target="_blank"} 家的 Loopback 和 Audio Hijack。 Loopback 可以通过创建虚拟声卡对音频进行各种的控制和转发解决第一步。而 Audio Hijack 的新版本里内置了一个 [transcribe](https://rogueamoeba.com/support/manuals/audiohijack/?page=transcribe){:target="_blank"} 模块解决第二步{% sidenote 'sn-id-0' '实际上背后也是 OpenAI 的 Whisper ，精确版对应 large-v2 的模型。' %}：
 
 {% picture /downloads/images/2024_05/advancedblocks-transcribe-frommic.png --alt advancedblocks-transcribe-frommic.png %}\
 <small>图1. 从输入设备对音频流进行录制和转写</small>
 
-如果稍微愿意动动手，我会推荐 [ffmpeg](https://ffmpeg.org/) +[VB-Cable](https://vb-audio.com/Cable/index.htm) 解决第一个问题，[whisper-cpp](https://github.com/ggerganov/whisper.cpp) 解决第二步：因为它们免费，并且开源，完全可控。
+如果稍微愿意动动手，我会推荐 [ffmpeg](https://ffmpeg.org/){:target="_blank"} +[VB-Cable](https://vb-audio.com/Cable/index.htm){:target="_blank"} 解决第一个问题，[whisper-cpp](https://github.com/ggerganov/whisper.cpp){:target="_blank"} 解决第二步：因为它们免费，并且开源，完全可控。
 
 下面的步骤针对 Mac，但 Widnes 上相同的思路应该也是工作的。
 
@@ -71,7 +71,7 @@ VB-Cable 是一个安装文件，装好了之后可以看到在音频配置里�
 
 虽然 Homebrew 提供了 formula 但是我选择了 clone 项目来编译。因为有一些平台相关的优化我不知道 Homebrew 的版本是怎么处理的。
 
-比如，把 Apple Neural Engine (ANE) 用起来 whisper-cpp 能够快最少三倍，但是它需要做一些设置{% sidenote 'sn-id-1' '更多关于 whisper-cpp 对 Core ML 的支持，可以看[这里](https://github.com/ggerganov/whisper.cpp/pull/566)。' %}：
+比如，把 Apple Neural Engine (ANE) 用起来 whisper-cpp 能够快最少三倍，但是它需要做一些设置{% sidenote 'sn-id-1' '更多关于 whisper-cpp 对 Core ML 的支持，可以看[这里](https://github.com/ggerganov/whisper.cpp/pull/566){:target="_blank"}。' %}：
 
 ```bash
 pip install ane_transformers

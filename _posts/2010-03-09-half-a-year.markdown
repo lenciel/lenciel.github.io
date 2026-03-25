@@ -10,7 +10,7 @@ categories:
 ---
 
 
-![My Idol](/downloads/images/2010_03/my_idol.png --alt Don't touch me)
+![My Idol](/downloads/images/2010_03/my_idol.png --alt Don't touch me){:target="_blank"}
 
 偶像派，
 

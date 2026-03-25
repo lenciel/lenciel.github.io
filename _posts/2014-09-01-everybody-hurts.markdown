@@ -11,7 +11,7 @@ categories:
 
 ---
 
-![careful to choose](/downloads/images/2014_09/choose_who_to_let_in.jpg --alt Be careful to choose...)
+![careful to choose](/downloads/images/2014_09/choose_who_to_let_in.jpg --alt Be careful to choose...){:target="_blank"}
 
 一个朋友最近跟我说，想去把伤口结痂留下的疤痕用液氮处理一下。
 
@@ -41,7 +41,7 @@ categories:
 
 而偏偏也是他们选择了自戕，仿佛在提醒大家：你看，就算知道有这么多人这样活着，我也不知道如何是好。
 
-我想他们不是没有放胆让那些温暖的人走进自己内心，也感受过幸福和快乐。但要习得[孤独与爱](https://lenciel.com/2014/04/rip-marquez/)的要义实在是太难。更何况，抑郁并不仅仅是心理上的问题而已。
+我想他们不是没有放胆让那些温暖的人走进自己内心，也感受过幸福和快乐。但要习得[孤独与爱](https://lenciel.com/2014/04/rip-marquez/){:target="_blank"}的要义实在是太难。更何况，抑郁并不仅仅是心理上的问题而已。
 
 最后，摘一段献给孙仲旭老师，Wish you rest in peace：
 

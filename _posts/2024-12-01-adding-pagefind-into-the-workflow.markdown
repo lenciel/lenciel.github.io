@@ -14,7 +14,7 @@ categories:
 
 本站一直有个小秘密，就是右上角的那个搜索框其实是假的：无论你搜什么，我都会带你去看那个卖萌的 [404 页面](/404){:target="_blank"}。
 
-这是因为前面[有说过](/2023/09/support-side-note/){:target="_blank"}，为了保持一点前端开发的体感，本站从一开张，不管是 Jekyll 模板（[它](https://github.com/lenciel/jekyll-lenciel-theme)居然得到了我持续地更新）还是编译部署脚本（[它](https://github.com/lenciel/lenciel.github.io/blob/source/Rakefile)也已经是个颇为壮观的 Rakefile 了）都是手搓的。而当时尝试了一下 Lunr 等方案后，感觉把任何支持中文分词的本地搜索整合进这套工作流实在是太麻烦，于是铤而走险，行骗至今。
+这是因为前面[有说过](/2023/09/support-side-note/){:target="_blank"}，为了保持一点前端开发的体感，本站从一开张，不管是 Jekyll 模板（[它](https://github.com/lenciel/jekyll-lenciel-theme){:target="_blank"}居然得到了我持续地更新）还是编译部署脚本（[它](https://github.com/lenciel/lenciel.github.io/blob/source/Rakefile){:target="_blank"}也已经是个颇为壮观的 Rakefile 了）都是手搓的。而当时尝试了一下 Lunr 等方案后，感觉把任何支持中文分词的本地搜索整合进这套工作流实在是太麻烦，于是铤而走险，行骗至今。
 
 随着文章数量的增加（更可能是记忆力衰退），本座常常需要借助 Google 的索引来找到某个我「好像写过的东西」。加上最近看到 [pagefind](https://pagefind.app/){:target="_blank"} 似乎颇为可用{% sidenote 'sn-id-1' '因为我发现 xkcd 使用了它作为搜索的[解决方案](https://xkcd.pagefind.app/){:target="_blank"}。' %}，这个周末就尝试了一下。
 

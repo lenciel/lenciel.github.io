@@ -18,7 +18,7 @@ categories:
 
 ---
 
-治哥在群里分享了[一个视频](https://www.sohu.com/a/710768108_100114195)，让我想起来之前看的[《万神殿》第二季](https://movie.douban.com/subject/36067160/)。
+治哥在群里分享了[一个视频](https://www.sohu.com/a/710768108_100114195){:target="_blank"}，让我想起来之前看的[《万神殿》第二季](https://movie.douban.com/subject/36067160/){:target="_blank"}。
 
 这部剧讲的核心话题都是被反复讨论过的：
 

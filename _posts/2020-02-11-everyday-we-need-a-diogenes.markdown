@@ -11,9 +11,9 @@ categories:
 - writing
 ---
 
-![image holder](/downloads/images/2020_02/diogenes.jpg --alt Don't touch me)
+![image holder](/downloads/images/2020_02/diogenes.jpg --alt Don't touch me){:target="_blank"}
 
-今天公司群里出现了一点小插曲，于是我们聊到了远程办公沟通工作时，最好[不要开玩笑](https://lenciel.com/2020/02/on-remote-work/)。
+今天公司群里出现了一点小插曲，于是我们聊到了远程办公沟通工作时，最好[不要开玩笑](https://lenciel.com/2020/02/on-remote-work/){:target="_blank"}。
 
 特别是讽刺的玩笑，哪怕是自嘲。
 
@@ -25,9 +25,9 @@ categories:
 
 突然想到了第欧根尼。
 
-公元前 323 年，[亚历山大大帝](https://zh.wikipedia.org/wiki/%E4%BA%9A%E5%8E%86%E5%B1%B1%E5%A4%A7%E5%A4%A7%E5%B8%9D)在巴比伦英年早逝，年仅三十三岁。
+公元前 323 年，[亚历山大大帝](https://zh.wikipedia.org/wiki/%E4%BA%9A%E5%8E%86%E5%B1%B1%E5%A4%A7%E5%A4%A7%E5%B8%9D){:target="_blank"}在巴比伦英年早逝，年仅三十三岁。
 
-同一天，[第欧根尼](https://en.wikipedia.org/wiki/Diogenes)据说是践行犬儒派「自己决定死亡的时间和地点」的教义，在科林斯用斗篷裹紧自己窒息而亡，享年九十岁。
+同一天，[第欧根尼](https://en.wikipedia.org/wiki/Diogenes){:target="_blank"}据说是践行犬儒派「自己决定死亡的时间和地点」的教义，在科林斯用斗篷裹紧自己窒息而亡，享年九十岁。
 
 一个以神话人物阿喀琉斯为偶像，年纪轻轻就打下整个波斯，入侵了印度和阿拉伯，光是以自己名字命名的城市，就留下了 20 几个。
 
@@ -49,7 +49,7 @@ categories:
 
 亚历山大为什么这样想呢？
 
-我觉得 Tim Kreider 的那篇「[Power? No, Thanks, I’m Good](https://www.nytimes.com/2019/05/21/opinion/power-is-overrated.html)」里说的靠谱：
+我觉得 Tim Kreider 的那篇「[Power? No, Thanks, I’m Good](https://www.nytimes.com/2019/05/21/opinion/power-is-overrated.html){:target="_blank"}」里说的靠谱：
 
 > 对有些人，能够想说就说，想做就做，比有权有势的日子过得舒坦得多。
 
@@ -57,7 +57,7 @@ categories:
 
 我自己喜欢第欧根尼，因为他就像个单口相声演员。
 
-在另一个 Diogenes [拉尔修](https://en.wikipedia.org/wiki/Diogenes_La%C3%ABrtius)的《[名哲言行录](https://book.douban.com/subject/4303815/)》里，第欧根尼的部分就像是一个笑话集锦：
+在另一个 Diogenes [拉尔修](https://en.wikipedia.org/wiki/Diogenes_La%C3%ABrtius){:target="_blank"}的《[名哲言行录](https://book.douban.com/subject/4303815/){:target="_blank"}》里，第欧根尼的部分就像是一个笑话集锦：
 
 > 看到一些美女在橄榄树上吊着锻炼身体，他说: 「如果每棵树都结出这样的果实就好了。」
 
@@ -75,9 +75,9 @@ categories:
 
 他还大白天打着灯笼到处晃悠，说自己在「寻找诚实的人」。
 
-所以在 1983 年出版的「[Artforum](https://www.artforum.com/print/198303/diogenes-of-sinope-ca-410-ca-320-b-c-selected-performance-pieces-35513)」杂志上，[Thomas McEvilley](https://www.nytimes.com/2013/03/31/arts/thomas-mcevilley-critic-and-scholar-of-non-western-art-dies-at-73.html) 称第欧根尼是「许多行为艺术的伟大原型」 ，并将一部分第欧根尼的故事改编成行为艺术作品，或称「行为哲学」 ，收录在「[第欧根尼: 缺乏](https://www.johnsonrarebooks.com/pages/books/65768/thomas-mcevilley/diogenes-defictions)」中。
+所以在 1983 年出版的「[Artforum](https://www.artforum.com/print/198303/diogenes-of-sinope-ca-410-ca-320-b-c-selected-performance-pieces-35513){:target="_blank"}」杂志上，[Thomas McEvilley](https://www.nytimes.com/2013/03/31/arts/thomas-mcevilley-critic-and-scholar-of-non-western-art-dies-at-73.html){:target="_blank"} 称第欧根尼是「许多行为艺术的伟大原型」 ，并将一部分第欧根尼的故事改编成行为艺术作品，或称「行为哲学」 ，收录在「[第欧根尼: 缺乏](https://www.johnsonrarebooks.com/pages/books/65768/thomas-mcevilley/diogenes-defictions){:target="_blank"}」中。
 
-![image holder](/downloads/images/2020_02/diogenes_book.jpg --alt Don't touch me)
+![image holder](/downloads/images/2020_02/diogenes_book.jpg --alt Don't touch me){:target="_blank"}
 
 后来搞行为艺术的人也挺多。比如把自己关在瓦尔登湖边的小木屋，也很行为艺术。
 
@@ -87,7 +87,7 @@ categories:
 
 所以后世对第欧根尼，我觉得有点低估了。
 
-我第一次听到他的名字，是福尔摩斯他哥在伦敦搞的那个气氛诡异的[第欧根尼俱乐部](https://baike.baidu.com/item/%E7%AC%AC%E6%AC%A7%E6%A0%B9%E5%B0%BC%E4%BF%B1%E4%B9%90%E9%83%A8)。
+我第一次听到他的名字，是福尔摩斯他哥在伦敦搞的那个气氛诡异的[第欧根尼俱乐部](https://baike.baidu.com/item/%E7%AC%AC%E6%AC%A7%E6%A0%B9%E5%B0%BC%E4%BF%B1%E4%B9%90%E9%83%A8){:target="_blank"}。
 
 这过分强调了他离群索居的一面。
 
@@ -107,4 +107,4 @@ categories:
 
 普通人的幻灭和放弃，也不妨觉得很可喜。
 
-因为，无论是不断挑战自己，还是接受自己的样子，只要是带着[爱和同理心](https://www.bilibili.com/video/av87986476?from=search&seid=17832531757443251919)去感受，去生活，都挺好的。
+因为，无论是不断挑战自己，还是接受自己的样子，只要是带着[爱和同理心](https://www.bilibili.com/video/av87986476?from=search&seid=17832531757443251919){:target="_blank"}去感受，去生活，都挺好的。

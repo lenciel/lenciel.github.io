@@ -10,7 +10,7 @@ categories:
 - rants
 ---
 
-> 接着[上篇聊](/2024/11/maybe-it-is-a-chance-wto-build-software-industry/)，我认为中美关系的变化究竟给我们技术行业带来什么变化...
+> 接着[上篇聊](/2024/11/maybe-it-is-a-chance-wto-build-software-industry/){:target="_blank"}，我认为中美关系的变化究竟给我们技术行业带来什么变化...
 
 川普上台肯定会干一堆我们不喜欢的事情，包括关税加码，进一步限售和制裁，本土制造业回流，但会带来什么实质性变化？
 

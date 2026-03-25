@@ -22,7 +22,7 @@ categories:
 
 大多数专业的 Web 开发者都清楚，block-level 的元素(如 div, p, ul 等)和 inline 的元素两者的区别就在于默认情况下，block 元素的宽度就会取填满父容器的宽度(减去自己的 margin 或者父容器的 padding)。
 
-![block element is not needed](/downloads/images/2011_09/blockelementnoneed.jpg --alt Don't touch me)
+![block element is not needed](/downloads/images/2011_09/blockelementnoneed.jpg --alt Don't touch me){:target="_blank"}
 
 这知识虽然初级，理解这点对我们明白百分比的实际作用很有帮助。
 
@@ -31,7 +31,7 @@ categories:
 
 如果你在 CSS 中给一个元素 x%的宽度，其实就是定义：「把这个元素所占的区域扩成它父容器的绝对宽度的 x%，当然，必须它父容器有一个绝对宽度啊，亲。」比如你的元素放在一个 400px 宽度的容器里面，然后它的宽度定成了 100%，那么它在保证自己被渲染成 400px 宽度之后，还是会遵守自己被定义 margin/padding/border 的设置，所以最好出来的效果很可能就是下图那悲催样：
 
-![just pull](/downloads/images/2011_09/childequal.jpg --alt Don't touch me)
+![just pull](/downloads/images/2011_09/childequal.jpg --alt Don't touch me){:target="_blank"}
 
 Height(在所有的浏览器)也一样
 -------------------------

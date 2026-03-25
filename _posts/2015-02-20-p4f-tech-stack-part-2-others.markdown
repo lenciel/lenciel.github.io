@@ -11,7 +11,7 @@ categories:
 - tech-stack
 ---
 
-距离[上篇](https://lenciel.com/2015/01/p4f-tech-stack-part-1-devops/)略久，主要最近很忙。
+距离[上篇](https://lenciel.com/2015/01/p4f-tech-stack-part-1-devops/){:target="_blank"}略久，主要最近很忙。
 
 ## Application & Data
 
@@ -19,7 +19,7 @@ categories:
 
 ### Application Hosting
 
-![stack_devops_1](/downloads/images/2015_01/p4f_stack_app_data_1.png --alt Don't touch me)
+![stack_devops_1](/downloads/images/2015_01/p4f_stack_app_data_1.png --alt Don't touch me){:target="_blank"}
 
 我们在选择云的时候，也有试用过「久负盛名」的几家大的。
 
@@ -35,7 +35,7 @@ categories:
 
 ### Languages & Frameworks
 
-![stack_devops_1](/downloads/images/2015_01/p4f_stack_app_data_2.png --alt Don't touch me)
+![stack_devops_1](/downloads/images/2015_01/p4f_stack_app_data_2.png --alt Don't touch me){:target="_blank"}
 
 这张图再画长一倍也不一定能画完，因为这部分特别是 Web 前端技术的变动实在是太大了。感觉 JavaScript 社区换框架、方法论、编译工具甚至是 VM 就像足球运动员换袜子一样勤。
 
@@ -54,37 +54,37 @@ categories:
 
 ### Assets & Media
 
-![stack_devops_1](/downloads/images/2015_01/p4f_stack_app_data_3.png --alt Don't touch me)
+![stack_devops_1](/downloads/images/2015_01/p4f_stack_app_data_3.png --alt Don't touch me){:target="_blank"}
 
 这方面没什么好说的，一开始我们用的就是 UCloud 自带的服务。后面为 Testbird 开发项目的时候接触到了七牛云。不得不吐槽一下七牛云还处于快速增长期，不论是提供的服务的稳定性，还是文档更新的及时性，都还有很多值得提高的地方。
 
 ### Data Storage
 
-![stack_app_data_4](/downloads/images/2015_01/p4f_stack_app_data_4.png --alt Don't touch me)
+![stack_app_data_4](/downloads/images/2015_01/p4f_stack_app_data_4.png --alt Don't touch me){:target="_blank"}
 
 数据库我们一般本地开发用 SQLite，stage 和 prod 服务器用 MySQL。之所以没有选择 Postgresql 是因为它那些很不错的功能我们在项目里面还没有需要，所以就偷懒选择了自己更熟悉的系统。
 
 ### Libraries
 
-![stack_app_data_5](/downloads/images/2015_01/p4f_stack_app_data_5.png --alt Don't touch me)
+![stack_app_data_5](/downloads/images/2015_01/p4f_stack_app_data_5.png --alt Don't touch me){:target="_blank"}
 
 这张图也是很难画完整的，因为它一直在变。不过我们基本上用 ACE 封装了一套自己的 UI 框架，对提高开发效率还是非常有用的。
 
 ## Utilities
 
-![stack_utilities](/downloads/images/2015_01/p4f_stack_utilities.png --alt Don't touch me)
+![stack_utilities](/downloads/images/2015_01/p4f_stack_utilities.png --alt Don't touch me){:target="_blank"}
 
 都是些中规中矩的选择，因为好的服务都在国内被封堵得比较彻底，不是吗？
 
 比如统计，百度做得和 Google 还差几个数量级（你见过实时统计有百度那么不实时的么？），但是在国内因为墙的关系常常还是只能用。
 
-再比如 SMS 网关，国外有大量的类似[Twilio](https://www.twilio.com/sms/toll-free)的优质服务，价格便宜，接口良好，但是...我们都用亿美。
+再比如 SMS 网关，国外有大量的类似[Twilio](https://www.twilio.com/sms/toll-free){:target="_blank"}的优质服务，价格便宜，接口良好，但是...我们都用亿美。
 
 值得一提的是推送消息服务，因为被百度坑过，我们一开始用了我浙大著名创业公司「个推」，结果质量低得还比较离谱。最后好死不死又换到了百度 Push：原因还是因为 Google 原生的 Push 被墙。
 
 ## Business Tools
 
-![stack_devops_1](/downloads/images/2015_01/p4f_stack_business_tools.png --alt Don't touch me)
+![stack_devops_1](/downloads/images/2015_01/p4f_stack_business_tools.png --alt Don't touch me){:target="_blank"}
 
 其实 Trello 和 Slack 这样的工具用好一个就足以撑起一家中等规模的公司了。可惜因为经常被墙，很多不能自己翻墙的同事或者客户用起来倍感艰辛。
 

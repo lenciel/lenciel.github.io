@@ -10,7 +10,7 @@ categories:
 
 SNS 的有趣之处就在于，经常你会看到一些话，让你对着屏幕点头不已。比如下面这句：
 
-![Vhost threshold](/downloads/images/2015_06/the_next_new_feature.png --alt Don't touch me)
+![Vhost threshold](/downloads/images/2015_06/the_next_new_feature.png --alt Don't touch me){:target="_blank"}
 
 Joshua Porter 的这段话看起来是吐槽，但又实实在在的发生在参与创业大潮的你我身边。在 2000 年互联网泡沫破灭之前，那些最终幻灭的高科技公司的发展轨迹无非是：
 
@@ -36,7 +36,7 @@ Joshua Porter 的这段话看起来是吐槽，但又实实在在的发生在参
 
 Hmmm...所以也难免有人会说这其实没有什么不同嘛：
 
-![Vhost threshold](/downloads/images/2015_06/chuangyeban.png --alt Don't touch me)
+![Vhost threshold](/downloads/images/2015_06/chuangyeban.png --alt Don't touch me){:target="_blank"}
 
 然而无论预警者的声音再大声，作为创业者这种"启动-失败-再启动"的反复试错的精神都已经成为了我们的信条。的确，就跟你打开一张刮刮乐发现没奖时一样，如果我们做出来的项目没有人用，那么再来一次无疑是最轻松最诱人的选择。
 
@@ -47,7 +47,7 @@ Hmmm...所以也难免有人会说这其实没有什么不同嘛：
 
 下面这个曲线是从业者们最不愿意面对的曲线，展示了从流量导入到一个月后可怜的留存数据：
 
-![Vhost threshold](/downloads/images/2015_06/the_tragic_curve.png --alt Don't touch me)
+![Vhost threshold](/downloads/images/2015_06/the_tragic_curve.png --alt Don't touch me){:target="_blank"}
 
 * 1000 个 UV 访问
 * 200 个用户注册(20%)
@@ -58,7 +58,7 @@ Hmmm...所以也难免有人会说这其实没有什么不同嘛：
 
 也就是说 30 天后，日活用户大概是 2%左右：而且你还不要觉得这数据很惨。如果去搜集真实产品的数据来看，除开 IM 类产品，大多数的产品甚至完不成这样的数据。
 
-所以，做互联网产品首先要接受一个现实：你多半比拿破仑派去[入侵俄罗斯](http://www.douban.com/note/207589154/)的大军要[崩得更快](https://en.wikipedia.org/wiki/Grande_Arm%C3%A9e#1810.E2.80.931812)
+所以，做互联网产品首先要接受一个现实：你多半比拿破仑派去[入侵俄罗斯](http://www.douban.com/note/207589154/){:target="_blank"}的大军要[崩得更快](https://en.wikipedia.org/wiki/Grande_Arm%C3%A9e#1810.E2.80.931812){:target="_blank"}
 
 加新功能？
 =============
@@ -81,7 +81,7 @@ Hmmm...所以也难免有人会说这其实没有什么不同嘛：
 
 决定好要挑？那就先去全面深入地了解你面对的问题域和你的用户的所思所想，搜集那些真正能够带来转化率的功能，然后：
 
-1. 做那些能够影响最多人的功能：成功的产品会把最多的时间花在那些非用户或者是随便来玩玩的用户使用的功能上，比如[Slack的引导流程](https://www.useronboard.com/how-slack-onboards-new-users/)，比如[Medium的访客评论](http://blog.leadpages.net/landing-page-trends/)。
+1. 做那些能够影响最多人的功能：成功的产品会把最多的时间花在那些非用户或者是随便来玩玩的用户使用的功能上，比如[Slack的引导流程](https://www.useronboard.com/how-slack-onboards-new-users/){:target="_blank"}，比如[Medium的访客评论](http://blog.leadpages.net/landing-page-trends/){:target="_blank"}。
 2. 做那些能够带来转化的功能：特别是在精力和人力有限的时候，做影响曲线前半段走势的功能：注册、登录、引导等等，特别是首次登录后的引导。不同的产品类型，需要引导的方向是不一样的。测试平台上，你要引导用户顺畅的完成一次测试；SNS 你要引导用户添加好友，完成第一次对话或者分享；云服务，你要引导用户完成机器创建、带宽选择、域名解析等等动作，让他可以使用你的服务。根据你的业务，给用户一个舒适度极高的引导流程，带来的转化率的提升是非常高的。
 
 然后？

@@ -17,7 +17,7 @@ categories:
 
 其实，以「年」计算的时间，对成年人来说通常都是在不知不觉中，一晃而过的。
 
-反倒是一天，往往[很漫长](https://lenciel.com/2016/05/but-does-it-float/)。
+反倒是一天，往往[很漫长](https://lenciel.com/2016/05/but-does-it-float/){:target="_blank"}。
 
 再说，在这史蒂芬金编剧周星驰导演的一年里，很多人没有扛过去[^1][^2][^3]。
 
@@ -31,7 +31,7 @@ categories:
 
 但即使你像我一样，不装头条的产品[^4]，不逛购物网站，不玩游戏，也扛不住疫情后，远程办公在线开会，各种通知提醒在各种工具里飞来飞去。
 
-[Aldous Huxley](https://en.wikipedia.org/wiki/Aldous_Huxley) 在他的乌托邦小说《[岛](https://book.douban.com/subject/30174065/)》里，描绘了一种名为「Mynahs」的鸟，它们周期性地飞来飞去，嘴里叨叨着「注意注意」，来帮助做白日梦的居民回到他们自己的现实生活中。
+[Aldous Huxley](https://en.wikipedia.org/wiki/Aldous_Huxley){:target="_blank"} 在他的乌托邦小说《[岛](https://book.douban.com/subject/30174065/){:target="_blank"}》里，描绘了一种名为「Mynahs」的鸟，它们周期性地飞来飞去，嘴里叨叨着「注意注意」，来帮助做白日梦的居民回到他们自己的现实生活中。
 
 我们今天的问题是大家哪怕想要集中注意力，社会制度和结构也释放了太多「Mynahs」，迫使我们频繁快速地切换上下文，以至于没有人可以集中注意力。
 
@@ -41,7 +41,7 @@ categories:
 
 一开始，我很羡慕那些可以把日程表维护得规规整整并且严格执行的人，认真研究和使用了很多时间管理的方法，发现对我来说都不太有用。
 
-这可能有点像刚开始创业时，我[总是想](https://lenciel.com/2015/10/the-myth-of-work-life-balance/) 工作生活怎么平衡，也研究了各种方式方法，然后[放弃了](https://lenciel.com/2015/10/the-solution-of-work-life-balance/)。
+这可能有点像刚开始创业时，我[总是想](https://lenciel.com/2015/10/the-myth-of-work-life-balance/){:target="_blank"} 工作生活怎么平衡，也研究了各种方式方法，然后[放弃了](https://lenciel.com/2015/10/the-solution-of-work-life-balance/){:target="_blank"}。
 
 一路下来，我形成了一个观念：你如果在找「平衡」，这个多了，那个就少了，心理上就很容易进入博弈。
 
@@ -61,7 +61,7 @@ categories:
 
 人应该去打开自己觉得装着宝藏的门，然后对自己说，「好的，我满足了」，而不应该通过强迫自己选择一个选项来「集中」注意力。
 
-我怀疑这是为什么国外老师或者学生有「[gap year](https://en.wikipedia.org/wiki/Gap_year#:~:text=A%20gap%20year%2C%20also%20known,some%20type%20of%20regular%20work)」，Google 早期有 20%的自由时间的原因。
+我怀疑这是为什么国外老师或者学生有「[gap year](https://en.wikipedia.org/wiki/Gap_year#:~:text=A%20gap%20year%2C%20also%20known,some%20type%20of%20regular%20work){:target="_blank"}」，Google 早期有 20%的自由时间的原因。
 
 如果你写程序的时候想着《红楼梦》，可能是因为你内心真的想要探索一下《红楼梦》。
 
@@ -84,8 +84,8 @@ categories:
 你能做的就是不要让这些东西，打扰「真的」你。
 
 [^0]: 不过我一直是《红楼梦》接受障碍症患者。读起来觉得没《查泰莱夫人的情人》透彻清楚，也没《金瓶梅》坦荡爽利。
-[^1]: [纪念马拉多纳](https://lenciel.com/2020/11/rip-diego-maradona/)
-[^2]: [纪念肖恩康纳利](https://lenciel.com/2020/10/rip-sir-thomas-sean-connery/)
-[^3]: [纪念胡萌](https://lenciel.com/2020/03/hu-meng/)
+[^1]: [纪念马拉多纳](https://lenciel.com/2020/11/rip-diego-maradona/){:target="_blank"}
+[^2]: [纪念肖恩康纳利](https://lenciel.com/2020/10/rip-sir-thomas-sean-connery/){:target="_blank"}
+[^3]: [纪念胡萌](https://lenciel.com/2020/03/hu-meng/){:target="_blank"}
 [^4]: 但是我今天装上了飞书…
 [^5]: 所以我至今没有办法接受强制加班，因为这影响我全身心投入工作，不是美好的生活。

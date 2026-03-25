@@ -33,7 +33,7 @@ categories:
 
 ### 什么是技术债
 
-「技术债」这个术语由敏捷大佬 [Ward Cunningham](https://en.wikipedia.org/wiki/Ward_Cunningham) 在 1992 年提出，在 1999 年被 Martin Fowler 用[四象限](https://martinfowler.com/bliki/TechnicalDebtQuadrant.html)分类后在技术圈迅速变成通识，现在已经有人可以对它做全生命周期的[建模](https://robbyonrails.com/articles/2025/09/20/seven-stages-of-tech-stack-adoption/)。
+「技术债」这个术语由敏捷大佬 [Ward Cunningham](https://en.wikipedia.org/wiki/Ward_Cunningham){:target="_blank"} 在 1992 年提出，在 1999 年被 Martin Fowler 用[四象限](https://martinfowler.com/bliki/TechnicalDebtQuadrant.html){:target="_blank"}分类后在技术圈迅速变成通识，现在已经有人可以对它做全生命周期的[建模](https://robbyonrails.com/articles/2025/09/20/seven-stages-of-tech-stack-adoption/){:target="_blank"}。
 
 就我个人而言，所有这些类比都有过度抽象的嫌疑。在具体工作中，我们把包括但不限于代码质量（可理解性、效率、可维护性等）到架构质量（领域模型、核心抽象、应用边界、接口质量等）到基础设施质量（稳定性、弹性、可用性、可靠性等，以及是否采用或者停用某些技术、框架、设施）的所有非产品功能的开发需求，都归入「技术债」，好像是表达有天我们应该「偿还」它。
 
@@ -67,7 +67,7 @@ categories:
 
 大部分人厌恶复杂度，因为教育阶段训练我们用简单的线性思维来思考问题。
 
-但公司管理团队大部分经过人生历练和[有效学习](/2021/12/cynefin-framework/)之后，对复杂度会有理解和预期。
+但公司管理团队大部分经过人生历练和[有效学习](/2021/12/cynefin-framework/){:target="_blank"}之后，对复杂度会有理解和预期。
 
 做技术管理，在这里遇到困难的同学很多：因为大量都不是技术上的工作而是「人」上的工作。很多同学往往意识不到，让自己的团队「被认为」在正确和高效的工作，和他们「实际上」在正确和高效的工作，是同样重要的。
 

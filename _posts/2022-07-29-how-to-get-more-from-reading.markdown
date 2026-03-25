@@ -23,7 +23,7 @@ categories:
 
 如果读书吸收到的知识如此少，人们每年花在读书上的那成百上千小时，是不是性价比太低了呢？
 
-这里讲讲我自己的看法{% sidenote 'sn-id-1' '关于读书我有过比较[系统的输出](/2020/02/how-to-read-the-books-part-1/)自己的看法。' %}。
+这里讲讲我自己的看法{% sidenote 'sn-id-1' '关于读书我有过比较[系统的输出](/2020/02/how-to-read-the-books-part-1/){:target="_blank"}自己的看法。' %}。
 
 **II）Why**
 

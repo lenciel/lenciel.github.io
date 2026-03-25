@@ -12,7 +12,7 @@ categories:
 
 ---
 
-我们在 Django 项目的开发和测试过程中经常需要 mock 一些数据作为[fixture](https://docs.djangoproject.com/en/1.7/howto/initial-data/)，比较常见的做法是：
+我们在 Django 项目的开发和测试过程中经常需要 mock 一些数据作为[fixture](https://docs.djangoproject.com/en/1.7/howto/initial-data/){:target="_blank"}，比较常见的做法是：
 
 1. 进行一些操作创建测试数据
 2. 使用`dumpdata`命令导出 json 格式的数据
@@ -20,15 +20,15 @@ categories:
 
 这样对于大多数场景也算够用了，但是你总会遇到某一天客户走来说：「我想看看那个报表生成出来啥样，能不能创建两千条记录？」
 
-这种时候你大概你第一反应是把之前那个 json 搞来 copy-paste 出两千份数据。但很快你就会意识到那是不行的：要构建一个对象，你常常需要先构建它外键的对象，而实际上线的项目它的数据库结构是非常复杂的（数据库结构图的生成见[这里](https://lenciel.com/2014/12/integrate-schemaspy-with-sphinx-build-for-django-database-design-visualization/)），所以构建两千条记录的工作量会远远超过你的想象：
+这种时候你大概你第一反应是把之前那个 json 搞来 copy-paste 出两千份数据。但很快你就会意识到那是不行的：要构建一个对象，你常常需要先构建它外键的对象，而实际上线的项目它的数据库结构是非常复杂的（数据库结构图的生成见[这里](https://lenciel.com/2014/12/integrate-schemaspy-with-sphinx-build-for-django-database-design-visualization/){:target="_blank"}），所以构建两千条记录的工作量会远远超过你的想象：
 
-![schemaSpy](/downloads/images/2014_12/database_design_visualization.png --alt schemaSpy)
+![schemaSpy](/downloads/images/2014_12/database_design_visualization.png --alt schemaSpy){:target="_blank"}
 
-最近本座试用了[factory boy](https://github.com/rbarrois/factory_boy/)和[faker](https://github.com/joke2k/faker)的组合，感觉还比较好用。
+最近本座试用了[factory boy](https://github.com/rbarrois/factory_boy/){:target="_blank"}和[faker](https://github.com/joke2k/faker){:target="_blank"}的组合，感觉还比较好用。
 
 ## Factory Boy
 
-最开始找这类批量生成测试数据的库，主要考察的是[Model Mommy](https://github.com/vandersonmota/model_mommy)和[Factory Boy](https://github.com/rbarrois/factory_boy/)。看了一下文档感觉两者的差别并不算很大，但是[Factory Girl](http://movie.douban.com/subject/1898357/)里面的[Sienna Miller](http://movie.douban.com/celebrity/1003485/)实在是让人过目不忘所以有什么好犹豫的呢？
+最开始找这类批量生成测试数据的库，主要考察的是[Model Mommy](https://github.com/vandersonmota/model_mommy){:target="_blank"}和[Factory Boy](https://github.com/rbarrois/factory_boy/){:target="_blank"}。看了一下文档感觉两者的差别并不算很大，但是[Factory Girl](http://movie.douban.com/subject/1898357/){:target="_blank"}里面的[Sienna Miller](http://movie.douban.com/celebrity/1003485/){:target="_blank"}实在是让人过目不忘所以有什么好犹豫的呢？
 
 Factories 的文档上说明了基本的用法，需要注意的主要是如何生成有一定依赖关系的一组测试对象。
 
@@ -63,7 +63,7 @@ birthday = FuzzyNaiveDateTime(dt.datetime(1992, 1, 1), dt.datetime(1996, 1, 1))
 
 ```
 
-当然，有的字段，比如姓名、地址这类通过顺序或者是随机的从某个设定的集合抽取效果都不够理想，后面会看到怎么用[faker](https://github.com/joke2k/faker)来构造它们。
+当然，有的字段，比如姓名、地址这类通过顺序或者是随机的从某个设定的集合抽取效果都不够理想，后面会看到怎么用[faker](https://github.com/joke2k/faker){:target="_blank"}来构造它们。
 
 ### 关联对象生成
 
@@ -148,7 +148,7 @@ class TesterTaskFactory(DjangoModelFactory):
 
 ## faker
 
-有很多字段，比如姓名、地址这些，纯粹用 Fuzz 的办法很难做到「贴近真实」。[faker](https://github.com/joke2k/faker)就是用来解决这类字段的。
+有很多字段，比如姓名、地址这些，纯粹用 Fuzz 的办法很难做到「贴近真实」。[faker](https://github.com/joke2k/faker){:target="_blank"}就是用来解决这类字段的。
 
 ``` python
 
@@ -186,7 +186,7 @@ name = lazy_attribute(lambda x: faker.name())
 
 ## 生成fixture
 
-因为[factory boy](https://github.com/rbarrois/factory_boy/)和[faker](https://github.com/joke2k/faker)主要的作用是在测试里面去 mock 数据，所以要用它们生成 fixture 不是那么容易。这是因为 Django 的整个设计上就很注意避免你把测试的数据写到生产的数据库，所以测试都会在一个在`Setup`阶段被创建，在`TearDown`阶段被删除的临时数据库里面进行（我看了一下，在开发版本的 Django 上已经加了一个`--keepdb`的参数使得你可以[保留你用来运行测试的数据库了](https://docs.djangoproject.com/en/dev/ref/django-admin/#django-admin-option---keepdb)）。
+因为[factory boy](https://github.com/rbarrois/factory_boy/){:target="_blank"}和[faker](https://github.com/joke2k/faker){:target="_blank"}主要的作用是在测试里面去 mock 数据，所以要用它们生成 fixture 不是那么容易。这是因为 Django 的整个设计上就很注意避免你把测试的数据写到生产的数据库，所以测试都会在一个在`Setup`阶段被创建，在`TearDown`阶段被删除的临时数据库里面进行（我看了一下，在开发版本的 Django 上已经加了一个`--keepdb`的参数使得你可以[保留你用来运行测试的数据库了](https://docs.djangoproject.com/en/dev/ref/django-admin/#django-admin-option---keepdb){:target="_blank"}）。
 
 所以我们可以在一个测试的`Setup`阶段把数据生成后，直接调用`dumpdata`命令来把数据`dump`出去：
 

@@ -12,17 +12,17 @@ categories:
 
 ---
 
-昨天因为讨论裸眼 3D 动效的实现，无意中打开一篇[之前的帖子](https://lenciel.com/2014/02/3d-gifs/)，发现所有的视频文件加载都有问题。
+昨天因为讨论裸眼 3D 动效的实现，无意中打开一篇[之前的帖子](https://lenciel.com/2014/02/3d-gifs/){:target="_blank"}，发现所有的视频文件加载都有问题。
 
-这是因为我之前做性能优化的[时候](https://lenciel.com/2020/05/issues-are-fixed-and-gif-is-abandoned/)，把所有的 GIF 文件转成了 MP4 用 CDN 部署之后，没有在各种环境下充分测试过。
+这是因为我之前做性能优化的[时候](https://lenciel.com/2020/05/issues-are-fixed-and-gif-is-abandoned/){:target="_blank"}，把所有的 GIF 文件转成了 MP4 用 CDN 部署之后，没有在各种环境下充分测试过。
 
 大概看了一下，在桌面浏览器上都能正常显示，但是在移动设备上就不行。我用 Safari 的开发者模式调试自己 iPhone 上的网页，可以看到请求这些视频的时候，有一些报错。
 
-一开始以为是七牛云对[ 「Range」 的处理出了问题](https://stackoverflow.com/questions/32996396/safari-9-0-can-not-play-mp4-video-on-the-storage-server)，但是我用 curl 查看服务器的返回都是对的。
+一开始以为是七牛云对[ 「Range」 的处理出了问题](https://stackoverflow.com/questions/32996396/safari-9-0-can-not-play-mp4-video-on-the-storage-server){:target="_blank"}，但是我用 curl 查看服务器的返回都是对的。
 
 在 Mac 上用 Safari 直接打开页面，也确实能够访问。
 
-那么，就只剩下视频编码的问题了。我查了一下苹果的[文档](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/StreamingMediaGuide/FrequentlyAskedQuestions/FrequentlyAskedQuestions.html)，原来确认被支持的 H.264 Profile 只有：
+那么，就只剩下视频编码的问题了。我查了一下苹果的[文档](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/StreamingMediaGuide/FrequentlyAskedQuestions/FrequentlyAskedQuestions.html){:target="_blank"}，原来确认被支持的 H.264 Profile 只有：
 
 > H.264 Baseline Level 3.0, Baseline Level 3.1, Main Level 3.1, and High Profile Level 4.1.
 

@@ -11,17 +11,17 @@ categories:
 - jellybean
 ---
 
-最近因为移动的手机丢了，正好宽带升级到 100M 送了两个电信的卡没地方用，入了一个 Rick 推荐的电信移动双卡双待的机器：[中兴N986](http://item.jd.com/824702.html)。
+最近因为移动的手机丢了，正好宽带升级到 100M 送了两个电信的卡没地方用，入了一个 Rick 推荐的电信移动双卡双待的机器：[中兴N986](http://item.jd.com/824702.html){:target="_blank"}。
 
 机器用来当小三机已经是非常不错了，唯一让本座纠结的就是电信的合约机老是喜欢把 google 账号干掉，而小弟的所有联系人又都在 google（虽然现在看起来这么做可能也未必妥当）。
 
-据 Rick 大大说，之前是可以用小米的[谷歌应用下载器](http://app.xiaomi.com/detail/36925)来直接把 Google 的一干应用装回来。但是好像因为[Google不太愿意](http://www.zhihu.com/question/21103129)自己的应用被未授权的雷总装来装去，这个应用已经没有更新了：青漾系统是 4.2.1，下载回来的 apk 直接`adb install`会因为 android 版本不 match 报错。
+据 Rick 大大说，之前是可以用小米的[谷歌应用下载器](http://app.xiaomi.com/detail/36925){:target="_blank"}来直接把 Google 的一干应用装回来。但是好像因为[Google不太愿意](http://www.zhihu.com/question/21103129){:target="_blank"}自己的应用被未授权的雷总装来装去，这个应用已经没有更新了：青漾系统是 4.2.1，下载回来的 apk 直接`adb install`会因为 android 版本不 match 报错。
 
-于是只好去搜了[4.2.1的stock gapps包](http://www.teamandroid.com/gapps/)回来自己撸 - [百度盘分享了一份](http://pan.baidu.com/s/1iPXn)。
+于是只好去搜了[4.2.1的stock gapps包](http://www.teamandroid.com/gapps/){:target="_blank"}回来自己撸 - [百度盘分享了一份](http://pan.baidu.com/s/1iPXn){:target="_blank"}。
 
 首先要 root 机器，然后把`/system/app`路径 mount 成 rw 的。
 
-root 就是刷 recovery 然后替换一些文件，当然大天朝有不少神器做得非常不错，比如[刷机大师](http://www.mgyun.com/)这种软件，感觉会摧毁电脑城刷机青年的就业机会。而修改目录权限这种事情，如果你对命令行不熟，好像有很多流行的文件夹管理应用可以用来更改目录的权限。
+root 就是刷 recovery 然后替换一些文件，当然大天朝有不少神器做得非常不错，比如[刷机大师](http://www.mgyun.com/){:target="_blank"}这种软件，感觉会摧毁电脑城刷机青年的就业机会。而修改目录权限这种事情，如果你对命令行不熟，好像有很多流行的文件夹管理应用可以用来更改目录的权限。
 
 然后，直接把下载回来的 gapps.zip 解压，进入`system/app`路径，将自己需要的 apk 往`/system/app`路径 push 就行了。
 

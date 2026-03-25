@@ -12,7 +12,7 @@ categories:
 -  django
 ---
 
-Vagrant[最近支持了VMWare](http://www.vagrantup.com/vmware)，但是要钱的东西我们玩不起。本系列主要分享一下 Vagrant+VirtualBox 搭配起来如何使用。
+Vagrant[最近支持了VMWare](http://www.vagrantup.com/vmware){:target="_blank"}，但是要钱的东西我们玩不起。本系列主要分享一下 Vagrant+VirtualBox 搭配起来如何使用。
 
 安装VirtualBox
 ---------------

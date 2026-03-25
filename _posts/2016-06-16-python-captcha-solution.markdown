@@ -36,23 +36,23 @@ categories:
 具体的操作，我一般使用下面几种方式：
 
 1. 如果是特别简单地处理，用 PIL 库
-2. 如果是比较复杂的但是不需要很细致的控制，用[ImageMagick](http://imagemagick.sourceforge.net/)的`convert`命令
+2. 如果是比较复杂的但是不需要很细致的控制，用[ImageMagick](http://imagemagick.sourceforge.net/){:target="_blank"}的`convert`命令
 3. 如果是特别复杂，需要反复试验各种算法的，用 OpenCV
 
 所以下面这两个验证码，哪个的难度大一些？
 
-![Don't touch me](/downloads/images/2016_06/orig_code.png --alt Don't touch me...)
+![Don't touch me](/downloads/images/2016_06/orig_code.png --alt Don't touch me...){:target="_blank"}
 <p style="font-size: 0.8em;">图1. 微林的验证码</p>
 
 
-![Don't touch me](/downloads/images/2016_06/orig_code_2.jpg --alt Don't touch me...)
+![Don't touch me](/downloads/images/2016_06/orig_code_2.jpg --alt Don't touch me...){:target="_blank"}
 <p style="font-size: 0.8em;">图2. 饭局后J.Snow提供的验证码</p>
 
 如果你脑子里面没有二值化的概念大概会觉得第一个难度大一些，因为以人眼的视线去考虑，好像第一张要「难分辨」一些。
 
 但其实第一张图所有的噪声都是花花绿绿的颜色，而验证码本身是纯粹的黑色，这种图片处理起来是相对容易的。只需要找到验证码像素点的颜色，用这种颜色选取这些像素点，拷贝到一张全白的图片上面即可。
 
-要获取验证码的像素颜色可以[参考这里](http://www.boyter.org/decoding-captchas/)的思路，把图片转成 256 色的，然后对所有的像素做一个统计然后标出它们在整个图片里面出现的频率。因为觉得原文里面的代码写得比较啰嗦（要学会写 lamda 啊）就做了一些修改：
+要获取验证码的像素颜色可以[参考这里](http://www.boyter.org/decoding-captchas/){:target="_blank"}的思路，把图片转成 256 色的，然后对所有的像素做一个统计然后标出它们在整个图片里面出现的频率。因为觉得原文里面的代码写得比较啰嗦（要学会写 lamda 啊）就做了一些修改：
 
 ```python
 import sys
@@ -120,8 +120,8 @@ $ python convert_grayscale.py regcode.png 10
 
 结果如下：
 
-![Don't touch me](/downloads/images/2016_06/convert_1.png --alt Don't touch me...)
-![Don't touch me](/downloads/images/2016_06/convert_10.png --alt Don't touch me...)
+![Don't touch me](/downloads/images/2016_06/convert_1.png --alt Don't touch me...){:target="_blank"}
+![Don't touch me](/downloads/images/2016_06/convert_10.png --alt Don't touch me...){:target="_blank"}
 
 很明显目标像素是 1 而不是 10。
 
@@ -133,10 +133,10 @@ $ python convert_grayscale.py regcode.png 10
 
 然后我们对排名靠前的像素进行提取会得到下面的结果：
 
-![Don't touch me](/downloads/images/2016_06/convert_225.png --alt Don't touch me...)
-![Don't touch me](/downloads/images/2016_06/convert_139.png --alt Don't touch me...)
-![Don't touch me](/downloads/images/2016_06/convert_182.png --alt Don't touch me...)
-![Don't touch me](/downloads/images/2016_06/convert_219.png --alt Don't touch me...)
+![Don't touch me](/downloads/images/2016_06/convert_225.png --alt Don't touch me...){:target="_blank"}
+![Don't touch me](/downloads/images/2016_06/convert_139.png --alt Don't touch me...){:target="_blank"}
+![Don't touch me](/downloads/images/2016_06/convert_182.png --alt Don't touch me...){:target="_blank"}
+![Don't touch me](/downloads/images/2016_06/convert_219.png --alt Don't touch me...){:target="_blank"}
 
 这种情况下怎么办？直观观察一下验证码，会发现背景噪声点相比验证码像素点来说很少（这也正常，都是一个颜色如果太多就没法看了）， 很适合先做一些切割，然后进行模糊匹配（因为验证码的像素是幻彩的不是单一的，需要匹配相近像素点），然后再做二值化。
 
@@ -148,8 +148,8 @@ $ convert 1.pic.jpg -gravity Center -crop 48x16+0+0  +repage -fuzz 50% -fill whi
 
 效果如下：
 
-![Don't touch me](/downloads/images/2016_06/orig_code_2.jpg --alt Don't touch me...)
-![Don't touch me](/downloads/images/2016_06/convert_im.jpg --alt Don't touch me...)
+![Don't touch me](/downloads/images/2016_06/orig_code_2.jpg --alt Don't touch me...){:target="_blank"}
+![Don't touch me](/downloads/images/2016_06/convert_im.jpg --alt Don't touch me...){:target="_blank"}
 
 ### 字符怎么分割
 
@@ -159,7 +159,7 @@ $ convert 1.pic.jpg -gravity Center -crop 48x16+0+0  +repage -fuzz 50% -fill whi
 
 ### 字符的识别
 
-对于这里拿到的验证码而言，因为都是标准字体，可以直接使用 OCR 的开源工具读取，比如[tesseract](https://github.com/tesseract-ocr/tesseract/wiki)：
+对于这里拿到的验证码而言，因为都是标准字体，可以直接使用 OCR 的开源工具读取，比如[tesseract](https://github.com/tesseract-ocr/tesseract/wiki){:target="_blank"}：
 
 ``` bash
 $ tesseract resultimage.jpg -psm 7 output && cat output.txt
@@ -176,10 +176,10 @@ YLNU
 
 可能你会觉得围棋电脑都会下了，那么认识验证码为什么还是比较难？
 
-其实[随便搜一下](https://www.google.com.hk/search?safe=off&q=CNN+captcha&oq=CNN+captcha&gs_l=serp.3...1563.1932.0.2169.3.3.0.0.0.0.0.0..0.0....0...1c.1.64.serp..3.0.0.q4EdDQLrqyk)就会发现有很多人在做这方面的实验，主要的思路就是把 n 个字符组成的验证码当成有 n 个标签的图片来用 CNN 来解决。加上最近很多大公司开放了自己的人工智能平台，比如 Google 的 Tensorflow，我们这些没有大量计算资源的普通人也可以用它们实现自己的想法了。
+其实[随便搜一下](https://www.google.com.hk/search?safe=off&q=CNN+captcha&oq=CNN+captcha&gs_l=serp.3...1563.1932.0.2169.3.3.0.0.0.0.0.0..0.0....0...1c.1.64.serp..3.0.0.q4EdDQLrqyk){:target="_blank"}就会发现有很多人在做这方面的实验，主要的思路就是把 n 个字符组成的验证码当成有 n 个标签的图片来用 CNN 来解决。加上最近很多大公司开放了自己的人工智能平台，比如 Google 的 Tensorflow，我们这些没有大量计算资源的普通人也可以用它们实现自己的想法了。
 
 推荐参考链接：
 
-1. [CNN辨认车牌](https://matthewearl.github.io/2016/05/06/cnn-anpr/)
-2. [CNN 验证码识别](http://www.cs.sjsu.edu/faculty/pollett/masters/Semesters/Spring15/geetika/CS298 Slides - PDF)
+1. [CNN辨认车牌](https://matthewearl.github.io/2016/05/06/cnn-anpr/){:target="_blank"}
+2. [CNN 验证码识别](http://www.cs.sjsu.edu/faculty/pollett/masters/Semesters/Spring15/geetika/CS298 Slides - PDF){:target="_blank"}
 

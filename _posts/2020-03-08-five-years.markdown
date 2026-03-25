@@ -10,7 +10,7 @@ categories:
 
 ---
 
-![image holder](/downloads/images/2020_03/the_lovers_rockwell.jpeg --alt Don’t touch me)
+![image holder](/downloads/images/2020_03/the_lovers_rockwell.jpeg --alt Don’t touch me){:target="_blank"}
 
 <center><h3>1</h3></center>
 

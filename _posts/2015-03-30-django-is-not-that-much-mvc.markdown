@@ -12,9 +12,9 @@ categories:
 ---
 
 
-![Vhost threshold](/downloads/images/2015_03/mvc.jpg --alt Don't touch me)
+![Vhost threshold](/downloads/images/2015_03/mvc.jpg --alt Don't touch me){:target="_blank"}
 
-很多时候[Django](https://www.djangoproject.com/)都被称为是一个 MVC 框架 — `Model-View-Controller`。这样说的人要么就是已经熟悉过其他的 MVC 框架，所以看到 Django 有自己的 Template 系统和`views.py`来放各种逻辑代码，就想当然的认为 Django 也是；要么就是其实没有真正实践过 Django，从各种其他的错误文档里面看到或者是听说的。
+很多时候[Django](https://www.djangoproject.com/){:target="_blank"}都被称为是一个 MVC 框架 — `Model-View-Controller`。这样说的人要么就是已经熟悉过其他的 MVC 框架，所以看到 Django 有自己的 Template 系统和`views.py`来放各种逻辑代码，就想当然的认为 Django 也是；要么就是其实没有真正实践过 Django，从各种其他的错误文档里面看到或者是听说的。
 
 MVC 框架，是针对`状态`的。为了明白这个，我们假设你是在编辑一个图片：
 
@@ -45,7 +45,7 @@ Django 的`Model-View-Template`有很大的不同。
 
 说 Django 和老派的 Web 应用类似，是指一旦数据变更（比如一次 SQL 的 INSERT 或者是 UPDATE），你需要返回一个 redirect 再做一次 GET："有数据的状态变化了，让我们重头再来一次"。
 
-这也是为什么[Django的ORM里面是没有一个"identity mapper"的](https://code.djangoproject.com/ticket/17)。`Model`处理状态变化的办法就是完全的无视它：当你觉得数据改变了时，直接重新获取一次数据重建页面。
+这也是为什么[Django的ORM里面是没有一个"identity mapper"的](https://code.djangoproject.com/ticket/17){:target="_blank"}。`Model`处理状态变化的办法就是完全的无视它：当你觉得数据改变了时，直接重新获取一次数据重建页面。
 
 这和大多数经典的 MVC 框架（比如 AngularJS）是和这完全相反的套路：在设计上做了很多事情来避免"从头再来"，而是通过建立 MVC 之间的消息机制，来通知各方的状态变化，做到同步。
 
@@ -57,7 +57,7 @@ MVC 还有一部分是关于如何分隔代码。如果你把 MVC 当成："把�
 
 其次，Django 的框架，它的 app 里面文件的组织和使用，和很多别的 MVC 框架也是不同的。
 
-最近有个特别火的日志是 Hynek Schlawack 的[Know Your Models](https://hynek.me/articles/know-your-models/)。它是基于经典的 MVC 框架来假设，实际上 Django 并不是适用于这套假设的。
+最近有个特别火的日志是 Hynek Schlawack 的[Know Your Models](https://hynek.me/articles/know-your-models/){:target="_blank"}。它是基于经典的 MVC 框架来假设，实际上 Django 并不是适用于这套假设的。
 
 比如他觉得应该有`pure`的 models，从而把 M、V、C 分离开做到可以独立进行处理。
 

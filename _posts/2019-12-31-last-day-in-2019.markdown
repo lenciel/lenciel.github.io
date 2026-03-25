@@ -11,13 +11,13 @@ categories:
 
 ---
 
-![Hosue M.D.](/downloads/images/2019_12/house.jpg --alt Don't touch me)
+![Hosue M.D.](/downloads/images/2019_12/house.jpg --alt Don't touch me){:target="_blank"}
 
-今天看到 8tracks 的[关门声明](https://blog.8tracks.com/2019/12/26/to-everything-there-is-a-season/)。
+今天看到 8tracks 的[关门声明](https://blog.8tracks.com/2019/12/26/to-everything-there-is-a-season/){:target="_blank"}。
 
 内容很值得每个创业者看看，当然，祝你们永远用不上。
 
-但抄经得来的标题也真是触目惊心：「[to everything there is a season](http://www.transcripture.com/english-chinese-ecclesiastes-3.html)」。
+但抄经得来的标题也真是触目惊心：「[to everything there is a season](http://www.transcripture.com/english-chinese-ecclesiastes-3.html){:target="_blank"}」。
 
 凡事皆有期，万物皆有时。
 
@@ -35,7 +35,7 @@ categories:
 
 「因为我想多买几套房，不是公寓，是花园老洋房」，这是活泼脸的普通玩笑。
 
-其实是喜欢《[House M.D.](https://movie.douban.com/subject/1442129/)》里面的 House 医生。
+其实是喜欢《[House M.D.](https://movie.douban.com/subject/1442129/){:target="_blank"}》里面的 House 医生。
 
 在我心中，刻薄人排行榜，莎翁、简·奥斯汀和钱钟书长期排名前三。
 

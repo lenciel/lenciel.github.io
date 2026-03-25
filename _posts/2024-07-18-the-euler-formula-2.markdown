@@ -11,7 +11,7 @@ categories:
 - data-visualization
 ---
 
-[上次](/2024/07/the-euler-formula/)我们主要说了数系的基本概念，以及 $$e$$ 怎么被雅各布·伯努利在研究复利的过程中发现，又由欧拉在后续的研究中正式命名。
+[上次](/2024/07/the-euler-formula/){:target="_blank"}我们主要说了数系的基本概念，以及 $$e$$ 怎么被雅各布·伯努利在研究复利的过程中发现，又由欧拉在后续的研究中正式命名。
 
 继续讲它跟三角函数、复平面的关系之前，有个不能绕过去的问题：大人们介绍 $$e$$ 的时候总说它是自然常数，因为是自然对数的底。但发现它的过程里为啥没有出现对数呢？而且，这么个无限不循环的数，又自然在哪里呢？
 
@@ -34,7 +34,7 @@ categories:
 
 对数大家公认是[约翰.纳皮尔](https://zh.wikipedia.org/zh-hans/%E7%B4%84%E7%BF%B0%C2%B7%E7%B4%8D%E7%9A%AE%E7%88%BE){:target="_blank"}发明的，比指数来得早一百多年，目的是为了简化计算。
 
-人类像今天一样计算设备触手可及的历史并不长：你爷爷年轻的时候在地质队还得用计算尺，[好的计算器](/2019/01/hp-35/)卖得很贵。
+人类像今天一样计算设备触手可及的历史并不长：你爷爷年轻的时候在地质队还得用计算尺，[好的计算器](/2019/01/hp-35/){:target="_blank"}卖得很贵。
 
 所以几百年前，有些如天文学家、航海家的职业，每天手搓 25325233*1.3235456 这样的计算很多次，非常崩溃。这时候已经有人（比如开普勒的老师[第谷·布拉厄](https://zh.wikipedia.org/zh-cn/%E7%AC%AC%E8%B0%B7%C2%B7%E5%B8%83%E6%8B%89%E8%B5%AB){:target="_blank"}{% sidenote 'sn-id-1' '这兄弟据说是《哈姆雷特》的原型，八卦很多，有兴趣你可以[看看](https://www.sohu.com/a/503505380_574714){:target="_blank"}。' %}）用一些公式把乘除法变成加减法然后直接查三角函数表来简化计算：
 
@@ -107,7 +107,7 @@ categories:
 
 他独立于纳皮尔发表了另一张对数表，两者实际上的区别是底数上的区别：纳皮尔使用了$$\textstyle (1-10^{-7})^{10^7}$$，而他使用了$$\textstyle (1+10^{-4})^{10^4}$$。
 
-同时，英国数学家[亨利·布里格斯](https://en.wikipedia.org/wiki/Henry_Briggs_(mathematician)){:target="blank"}在纳皮尔的书出版了两年后，到爱丁堡拜访了他，然后于次年提出了一些改进意见，包括以 10 为底的对数的使用，也就是今天我们常说的标准对数$$\textstyle \log_{10}(x)$$ 或者记作 $$\textstyle \lg(x) $$。
+同时，英国数学家[亨利·布里格斯](https://en.wikipedia.org/wiki/Henry_Briggs_(mathematician){:target="_blank"}){:target="blank"}在纳皮尔的书出版了两年后，到爱丁堡拜访了他，然后于次年提出了一些改进意见，包括以 10 为底的对数的使用，也就是今天我们常说的标准对数$$\textstyle \log_{10}(x)$$ 或者记作 $$\textstyle \lg(x) $$。
 
 1624 年，亨利·布里格斯出版了对开本《[Arithmetica Logarithmica](https://archive.org/details/arithmeticalogar00brig){:target="_blank"}》，其中包含三万个自然数的对数，精确到小数点后 14 位（$$\textstyle [1, 20000]$$ 和 $$\textstyle [90001, 100000]$$）。
 

@@ -12,7 +12,7 @@ categories:
 
 ---
 
-> 接着[上一篇](/2023/11/build-a-map-to-record-part-1/)，继续画地图...
+> 接着[上一篇](/2023/11/build-a-map-to-record-part-1/){:target="_blank"}，继续画地图...
 
 感觉上要把剩下的东西弄出来不是那么麻烦，但其实从这里开始，就没有太多 D3 自己原生支持的东西可以用，真的变成自己生成数据然后去「画」了。
 
@@ -29,7 +29,7 @@ categories:
 
 国内免费的等高线数据（DEM 数据）比较难找。
 
-实际上，注册一个 NASA 的账号，就可以到 [earthdata](https://search.earthdata.nasa.gov/) 上面去下载 [ASTER GDEM](https://asterweb.jpl.nasa.gov/gdem.asp) 数据{% sidenote 'sn-id-1' '这是日本和美国在 2019 年联合发布的一个数据集。' %}：
+实际上，注册一个 NASA 的账号，就可以到 [earthdata](https://search.earthdata.nasa.gov/){:target="_blank"} 上面去下载 [ASTER GDEM](https://asterweb.jpl.nasa.gov/gdem.asp){:target="_blank"} 数据{% sidenote 'sn-id-1' '这是日本和美国在 2019 年联合发布的一个数据集。' %}：
 
 {% picture /downloads/images/2023_11/search_earthdata_nasa.png --alt search_earthdata_nasa %}
 
@@ -43,7 +43,7 @@ gdal_merge.py refs/contour/*.tif -o refs/contour/new.tif
 0...10...20...30...40...50...60...70...80...90...100 - done.
 ```
 
-可以先到[这个网站](https://app.geotiff.io/load)去检查一下合并后的 TIF 文件是不是包含了所有感兴趣的区域的 DEM 数据：
+可以先到[这个网站](https://app.geotiff.io/load){:target="_blank"}去检查一下合并后的 TIF 文件是不是包含了所有感兴趣的区域的 DEM 数据：
 
 {% picture /downloads/images/2023_11/validation_new_projected_tif.png --alt validation_new_projected_tif %}
 
@@ -87,7 +87,7 @@ WGS84 是「World Geodetic System 1984」的缩写，它可能会带来最多的
 - **一个椭球体**：由于地球不是完美的球形，地图需要创建一个近似地球曲率的椭球模型。各种系统根据该椭球体的形状而有所不同——赤道处的半径和两极处的平坦度是两个主要差异。所以如果上下文是关于这个的，那么 WGS84 可以简单理解为一个特定形状的椭球体。
 - **一个水平基准**：水平基准用来描述如何用坐标系的两根轴来定义经纬度。通常会把赤道作为零线来描述南北（纬度），把格林威治子午线作为零线来描述东西（经度）。所以 WGS84 还可以指特定形状椭球体以及它上面锚定的锚点系统。
 - **一个垂直基准**：地球上的点相对于 WGS84 定义的椭球体还会有高度上的起伏。因此 WGS84 还定义了一个用来计算这个高度差的参考水平面，这个就是垂直基准。比如有时候在无人机上拍照，会有一个 WGS84 海拔高度，这其实就是用这个基准计算的。
-- **一个坐标系**：最后，我们看到的 WGS84 也可能是在说一个完整的「[地理坐标系](https://support.virtual-surveyor.com/support/solutions/articles/1000261350)」。一个地理坐标系由「水平基准+零线+角度单位」构成，并且在 EPSG{% sidenote 'sn-id-2' 'EPSG 是欧洲石油测量组织（European Petroleum Survey Group），专门维护了一个庞大的数据库，让每个坐标系、椭球体和单位都被分配唯一的编号，便于使用和转换。' %} 系统里面还有一个唯一的码号：4326。人们经常说 GPS 导航是基于 WGS84 的，说的其实就是 EPSG:4326。
+- **一个坐标系**：最后，我们看到的 WGS84 也可能是在说一个完整的「[地理坐标系](https://support.virtual-surveyor.com/support/solutions/articles/1000261350){:target="_blank"}」。一个地理坐标系由「水平基准+零线+角度单位」构成，并且在 EPSG{% sidenote 'sn-id-2' 'EPSG 是欧洲石油测量组织（European Petroleum Survey Group），专门维护了一个庞大的数据库，让每个坐标系、椭球体和单位都被分配唯一的编号，便于使用和转换。' %} 系统里面还有一个唯一的码号：4326。人们经常说 GPS 导航是基于 WGS84 的，说的其实就是 EPSG:4326。
 
 再看看 `gdalsrsinfo` 命令的完整输出，会发现它很显然是一个坐标系的定义：
 
@@ -136,7 +136,7 @@ GEOGCRS["WGS 84",
 
 但就像前面说的，WGS84 表示的东西可能在这两个体系里来回跳。比如 EPSG:4326 是一个 WGS84 定义的 CRS，它由 WGS84 Geodetic Datum（EPSG:6326）和 椭球体坐标系统（EPSG:6422）组成，后面两者都是 SRS 体系的。
 
-CRS:84，实际上跟 EPSG:4326 是[对齐的](http://mapserver.org/ogc/wms_server.html#coordinate-systems-and-axis-orientation)。
+CRS:84，实际上跟 EPSG:4326 是[对齐的](http://mapserver.org/ogc/wms_server.html#coordinate-systems-and-axis-orientation){:target="_blank"}。
 
 另外，对于不同的 geodetic CRS，例如 OSGB 1936 (EPSG:4277)，使用相同的投影参数，是可以得到一个有效的坐标的。但这类 CRS 大部分会被赋予较高的 EPSG 编号，因为它们经常是为了特殊用途临时的 ad-hoc，并未被 EPSG 正式采用。比如前面画地图用的投影方法，是 Google 的 Web Mercator，一开始就编号为 `EPSG:900913`，直到它被采用为 `EPSG:3857`{% sidenote 'sn-id-3' '目前除开 Google 地图， CARTO、Mapbox、Bing Maps、OpenStreetMap 和 Esri 等等都是用这个标准。要处理小范围的数据并且保留要素的形状，EPSG:3857 一般都是正确的选择。' %}。
 
@@ -193,7 +193,7 @@ gdal_contour -a elev -3d -i 150.0 -f "GeoJSON" refs/contour/ls_cutout.tif  refs/
 
 <small>图 4. 凉山州原始等高线</small>
 
-把凉山、丽江和攀枝花的等高线都用这个办法生成之后，可以在  [Mapshaper](https://mapshaper.org/) 上进行拼接并简化{% sidenote 'sn-id-5' '如果只是拼接命令行就够了。这里核心是要用 Mapshaper 提供的「simplify」功能，把等高线的数据做一些简化，不然得到的地图上就密密麻麻全是等高线了。' %}：
+把凉山、丽江和攀枝花的等高线都用这个办法生成之后，可以在  [Mapshaper](https://mapshaper.org/){:target="_blank"} 上进行拼接并简化{% sidenote 'sn-id-5' '如果只是拼接命令行就够了。这里核心是要用 Mapshaper 提供的「simplify」功能，把等高线的数据做一些简化，不然得到的地图上就密密麻麻全是等高线了。' %}：
 
 {% picture /downloads/images/2023_11/merged_dem.png --alt merge_dem_geojson %}
 
@@ -201,7 +201,7 @@ gdal_contour -a elev -3d -i 150.0 -f "GeoJSON" refs/contour/ls_cutout.tif  refs/
 
 ### 绘制等高线
 
-有了等高线的 GeoJSON 数据，可以做各种样式的绘制。甚至我觉得用 blender 渲染成 Fjelltopp 的那种 [3D 海报](https://en.fjelltopp.com/collections/norska-fjall/products/geiranger-poster-no-2-elevation)都是可以的：
+有了等高线的 GeoJSON 数据，可以做各种样式的绘制。甚至我觉得用 blender 渲染成 Fjelltopp 的那种 [3D 海报](https://en.fjelltopp.com/collections/norska-fjall/products/geiranger-poster-no-2-elevation){:target="_blank"}都是可以的：
 
 {% picture /downloads/images/2023_11/fjelltopp_poster_3.png --alt fjelltopp_poster_3 %}
 

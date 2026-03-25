@@ -11,9 +11,9 @@ categories:
 
 ---
 
-静态扫描其实会干很多事情：代码格式的纠错，静态分析等等。它会被很多人忽视，但其实无论是对提高个体的代码质量，还是提高整个团队的沟通质量，静态扫描都非常重要，我写 markdown [都会用](https://lenciel.com/2020/01/adding-whitespace-automatically/)静态扫描工具。
+静态扫描其实会干很多事情：代码格式的纠错，静态分析等等。它会被很多人忽视，但其实无论是对提高个体的代码质量，还是提高整个团队的沟通质量，静态扫描都非常重要，我写 markdown [都会用](https://lenciel.com/2020/01/adding-whitespace-automatically/){:target="_blank"}静态扫描工具。
 
-Python 静态扫描一般是通过 [pylint](https://www.pylint.org/) 配合一些聚合器比如 [flake8](http://flake8.pycqa.org/)，[pylarma](https://github.com/klen/pylama) 或者 [prospector](https://prospector.readthedocs.io/) 来完成的。这里主要讲 flake8 的使用。
+Python 静态扫描一般是通过 [pylint](https://www.pylint.org/){:target="_blank"} 配合一些聚合器比如 [flake8](http://flake8.pycqa.org/){:target="_blank"}，[pylarma](https://github.com/klen/pylama){:target="_blank"} 或者 [prospector](https://prospector.readthedocs.io/){:target="_blank"} 来完成的。这里主要讲 flake8 的使用。
 
 <h3>目录</h3>
 
@@ -38,9 +38,9 @@ def lint(session):
 
 可以看到，我们对代码目录、测试目录和 noxfile.py 进行静态扫描。Flake8 底层使用很多的工具完成整个扫描后，会汇总成一个报告：
 
-- `F`的是 [pyflakes](https://github.com/PyCQA/pyflakes) 扫描出来的 error。
-- `W` 和 `E` 是 [pycodestyle](https://github.com/pycqa/pycodestyle) 扫描出来的违反了 [PEP8](http://www.python.org/dev/peps/pep-0008/) 的 warning 和 error。
-- `C` 的是根据配置的复杂度检查开关使用 [mccabe](https://github.com/PyCQA/mccabe) 检查出来的 violation。
+- `F`的是 [pyflakes](https://github.com/PyCQA/pyflakes){:target="_blank"} 扫描出来的 error。
+- `W` 和 `E` 是 [pycodestyle](https://github.com/pycqa/pycodestyle){:target="_blank"} 扫描出来的违反了 [PEP8](http://www.python.org/dev/peps/pep-0008/){:target="_blank"} 的 warning 和 error。
+- `C` 的是根据配置的复杂度检查开关使用 [mccabe](https://github.com/PyCQA/mccabe){:target="_blank"} 检查出来的 violation。
 
 为了控制这个报告的内容可以自行编辑 `.flake8` 配置文件，比如：
 
@@ -57,11 +57,11 @@ max-complexity = 10
 $ nox -rs lint
 ```
 
-Flake8 主要的威力就是它的[插件体系](https://github.com/DmytroLitvinov/awesome-flake8-extensions)，可以花一些时间熟悉并学会配置它们。
+Flake8 主要的威力就是它的[插件体系](https://github.com/DmytroLitvinov/awesome-flake8-extensions){:target="_blank"}，可以花一些时间熟悉并学会配置它们。
 
 ### 格式化代码：Black
 
-在静态扫描过程中还可以用上的是 [Black](https://github.com/psf/black)， 这个工具的特点就是没有可配置性：事关格式，非黑即白。
+在静态扫描过程中还可以用上的是 [Black](https://github.com/psf/black){:target="_blank"}， 这个工具的特点就是没有可配置性：事关格式，非黑即白。
 
 在 Nox 里面添加一个 session：
 
@@ -86,7 +86,7 @@ All done! ✨ 🍰 ✨
 nox > Session black was successful.
 ```
 
-另外，如果想要知道 Black 究竟会怎么改代码的格式，可以使用 [flake8-black](https://github.com/peterjc/flake8-black) 插件来提前检测：
+另外，如果想要知道 Black 究竟会怎么改代码的格式，可以使用 [flake8-black](https://github.com/peterjc/flake8-black){:target="_blank"} 插件来提前检测：
 
 
 ```python
@@ -110,7 +110,7 @@ max-line-length = 88
 
 ### 检查包的引用：flake8-import-order
 
-在 PEP8 里面明确规定了包应该按照系统自带、第三方和本地包三个优先级来引用。这个可以通过 [flake8-import-order](https://github.com/PyCQA/flake8-import-order) 来检查。
+在 PEP8 里面明确规定了包应该按照系统自带、第三方和本地包三个优先级来引用。这个可以通过 [flake8-import-order](https://github.com/PyCQA/flake8-import-order){:target="_blank"} 来检查。
 
 在 Flake8  插件声明里面再增加一个插件：
 
@@ -141,7 +141,7 @@ import-order-style = google
 
 ### 其他 Flake8 插件
 
-上面这些只是 Flake8 插件生态中的一部分。值得尝试的还有安全方面的：[Safety](https://github.com/pyupio/safety)，[flake8-bandit](https://github.com/tylerwince/flake8-bandit)，代码逻辑方面的[flake8-bugbear](https://github.com/PyCQA/flake8-bugbear)等等。
+上面这些只是 Flake8 插件生态中的一部分。值得尝试的还有安全方面的：[Safety](https://github.com/pyupio/safety){:target="_blank"}，[flake8-bandit](https://github.com/tylerwince/flake8-bandit){:target="_blank"}，代码逻辑方面的[flake8-bugbear](https://github.com/PyCQA/flake8-bugbear){:target="_blank"}等等。
 
 ### 结合Poetry
 
@@ -176,7 +176,7 @@ session.run("flake8", "install", external=True)
 
 这样一个很明显的问题就是在静态扫描的 session 里面将会引入大量我们不想要的东西，比如包依赖关系，比如一些根本不需要的包（比如测试相关的）。
 
-如果通过 `session.install` 安装一个包，但是又用 Poetry 来统一管理它们？可以借助 pip 的 [requirements.txt](https://pip.pypa.io/en/stable/user_guide/#constraints-files) 文件配合 poetry 的 [export](https://python-poetry.org/docs/cli/#export) 命令来完成：
+如果通过 `session.install` 安装一个包，但是又用 Poetry 来统一管理它们？可以借助 pip 的 [requirements.txt](https://pip.pypa.io/en/stable/user_guide/#constraints-files){:target="_blank"} 文件配合 poetry 的 [export](https://python-poetry.org/docs/cli/#export){:target="_blank"} 命令来完成：
 
 ```python
 # noxfile.py
@@ -252,7 +252,7 @@ def tests(session):
 
 配置了静态扫描，什么时间运行它们？
 
-公司的 CI/CD 服务器通常会干这件事情，但是当你把代码提交上去才看到这些信息然后进行修改肯定是太晚了。比较好的时间利用 Git 的提供的 [hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)。
+公司的 CI/CD 服务器通常会干这件事情，但是当你把代码提交上去才看到这些信息然后进行修改肯定是太晚了。比较好的时间利用 Git 的提供的 [hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks){:target="_blank"}。
 
 使用 pipx 安装 pre-commit：
 
@@ -260,7 +260,7 @@ def tests(session):
 $ pipx install pre-commit
 ```
 
-然后在你的 repo 的根目录编辑 `.pre-commit-config.yaml` 配置文件。需要注意的是，因为你是先在本地环境运行扫描，所以需要使用[本地的 hook](https://github.com/pre-commit/pre-commit-hooks)：
+然后在你的 repo 的根目录编辑 `.pre-commit-config.yaml` 配置文件。需要注意的是，因为你是先在本地环境运行扫描，所以需要使用[本地的 hook](https://github.com/pre-commit/pre-commit-hooks){:target="_blank"}：
 
 ```
 # .pre-commit-config.yaml

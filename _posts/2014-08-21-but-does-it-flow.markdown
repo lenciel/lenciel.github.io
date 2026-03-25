@@ -10,7 +10,7 @@ categories:
 - 从你的全世界错过
 ---
 
-![Vhost threshold](/downloads/images/2014_08/just_let_it_go.jpg --alt Don't touch me)
+![Vhost threshold](/downloads/images/2014_08/just_let_it_go.jpg --alt Don't touch me){:target="_blank"}
 
 葛明走了之后，我们去火葬场送他。
 

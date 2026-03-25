@@ -18,9 +18,9 @@ categories:
 - TOC
 {:toc}
 
-我在 [少楠](https://www.notion.so/Plidezus-ff9bdac2b40e4ad2be23192a8c43f5fd) & [Lightory](https://lightory.notion.site/) 的「小报童」[^1]上，开了个付费专栏：「[不美好药店](https://xiaobot.net/p/lenciel)」。
+我在 [少楠](https://www.notion.so/Plidezus-ff9bdac2b40e4ad2be23192a8c43f5fd){:target="_blank"} & [Lightory](https://lightory.notion.site/){:target="_blank"} 的「小报童」[^1]上，开了个付费专栏：「[不美好药店](https://xiaobot.net/p/lenciel){:target="_blank"}」。
 
-[熟悉](https://mp.weixin.qq.com/s/-eQ_9wUW-l3VeRXwvHTQdQ)的朋友应该知道为什么它叫这个名字，但付费专栏，是要让订阅的人掏钱的，还是认真地讲一下。
+[熟悉](https://mp.weixin.qq.com/s/-eQ_9wUW-l3VeRXwvHTQdQ){:target="_blank"}的朋友应该知道为什么它叫这个名字，但付费专栏，是要让订阅的人掏钱的，还是认真地讲一下。
 
 ## What？
 
@@ -43,19 +43,19 @@ categories:
 
 ### 内容
 
-我经常被人问，你平时是怎么搜集和整理那么多信息的。其实我没有「那么多」的信息。互联网[发展到今天](/2020/08/the-important-thing-is-why/#%E8%81%94%E7%BD%91%E7%9A%84%E8%AE%A1%E7%AE%97%E8%AE%BE%E5%A4%87%E6%98%AF%E6%80%8E%E6%A0%B7%E7%9A%84%E5%AA%92%E4%BB%8B)，信息的制作和传播变得如此容易，我能做的更多是控制自己接触的信息的质和量。
+我经常被人问，你平时是怎么搜集和整理那么多信息的。其实我没有「那么多」的信息。互联网[发展到今天](/2020/08/the-important-thing-is-why/#%E8%81%94%E7%BD%91%E7%9A%84%E8%AE%A1%E7%AE%97%E8%AE%BE%E5%A4%87%E6%98%AF%E6%80%8E%E6%A0%B7%E7%9A%84%E5%AA%92%E4%BB%8B){:target="_blank"}，信息的制作和传播变得如此容易，我能做的更多是控制自己接触的信息的质和量。
 
-所以我的信息来源其实比较「古典」：我[看很多书](/2020/02/how-to-read-the-books-part-2/)，跟行业里自己觉得厉害的人聊天，用 feedly 读自己订阅的 rss 和 newsletter，拒绝任何形式的机器推送（头条、抖音、快手或者说一切的信息流软件我都没有安装过）。
+所以我的信息来源其实比较「古典」：我[看很多书](/2020/02/how-to-read-the-books-part-2/){:target="_blank"}，跟行业里自己觉得厉害的人聊天，用 feedly 读自己订阅的 rss 和 newsletter，拒绝任何形式的机器推送（头条、抖音、快手或者说一切的信息流软件我都没有安装过）。
 
-药店里的内容，主要会是日常工作中偏手稿的东西，或者说叫 raw data。它们中的一部分也许有天会变成我的工作里的文档，或者 blog 里的文章。但让自己更系统地把它们写下来分享出来，可能是蛮有趣也蛮有用的（后面 [Why 还会说](/2022/03/start-a-newsletter/#why)）。
+药店里的内容，主要会是日常工作中偏手稿的东西，或者说叫 raw data。它们中的一部分也许有天会变成我的工作里的文档，或者 blog 里的文章。但让自己更系统地把它们写下来分享出来，可能是蛮有趣也蛮有用的（后面 [Why 还会说](/2022/03/start-a-newsletter/#why){:target="_blank"}）。
 
 下面是一些 samples：
 
-![yd_sample_1.png](/downloads/images/2022_03/yd_sample_1.png --alt Don't touch me...)
+![yd_sample_1.png](/downloads/images/2022_03/yd_sample_1.png --alt Don't touch me...){:target="_blank"}
 
-![yd_sample_2.png](/downloads/images/2022_03/yd_sample_2.png --alt Don't touch me...)
+![yd_sample_2.png](/downloads/images/2022_03/yd_sample_2.png --alt Don't touch me...){:target="_blank"}
 
-![yd_sample_3.png](/downloads/images/2022_03/yd_sample_3.png --alt Don't touch me...)
+![yd_sample_3.png](/downloads/images/2022_03/yd_sample_3.png --alt Don't touch me...){:target="_blank"}
 
 但，小报童说自己要做「21 世纪的达芬奇手稿库」[^4]，我想说，我不是达芬奇。
 
@@ -63,7 +63,7 @@ categories:
 
 ## Who
 
-我是 Lenciel，大部分人不知道怎么读。 06 年毕业之后，我上过几年班，在做存储最好的公司做过存储，做基站最好的公司做过基站。13 年开始创业，快十年了。出道即 CTO，其实懂的很有限。但运气不错，干过的项目大部分都还在，也有[上市的](https://baike.baidu.com/item/%E6%BB%A1%E5%B8%AE%E9%9B%86%E5%9B%A2/24525545?fr=aladdin)。过程中，逐渐开始管理几百上千号各种职能同学组成的大规模跨多地的团队，也开始负责一些业务，后来还短暂干过 CEO。因为说话做事儿比较靠谱，在圈子里还有点朋友，做过[鲲鹏会](https://tgo.infoq.cn/)分舵舵主，也是 [iTechClub](http://itechclub.cn/) 西南区负责人。最近在 [FITURE](https://www.fiture.com/) ，做 COO。
+我是 Lenciel，大部分人不知道怎么读。 06 年毕业之后，我上过几年班，在做存储最好的公司做过存储，做基站最好的公司做过基站。13 年开始创业，快十年了。出道即 CTO，其实懂的很有限。但运气不错，干过的项目大部分都还在，也有[上市的](https://baike.baidu.com/item/%E6%BB%A1%E5%B8%AE%E9%9B%86%E5%9B%A2/24525545?fr=aladdin){:target="_blank"}。过程中，逐渐开始管理几百上千号各种职能同学组成的大规模跨多地的团队，也开始负责一些业务，后来还短暂干过 CEO。因为说话做事儿比较靠谱，在圈子里还有点朋友，做过[鲲鹏会](https://tgo.infoq.cn/){:target="_blank"}分舵舵主，也是 [iTechClub](http://itechclub.cn/){:target="_blank"} 西南区负责人。最近在 [FITURE](https://www.fiture.com/){:target="_blank"} ，做 COO。
 
 也写 blog（此刻你正在看），因为自己掏钱，觉得怎么（不）高兴就写什么。但也有几百号人订阅着，如果你不想付费订阅，可以试试先看这个。
 
@@ -80,11 +80,11 @@ categories:
 
 ### 如何订阅？
 
-![yd_poster_2.jpeg](/downloads/images/2022_03/yd_poster_2.jpeg --alt Don't touch me...)
+![yd_poster_2.jpeg](/downloads/images/2022_03/yd_poster_2.jpeg --alt Don't touch me...){:target="_blank"}
 
 微信扫码打开，下滑到底部点击订阅。
 
-订阅后，可以看看[使用指南](https://help.xiaobot.net/reader.html)。
+订阅后，可以看看[使用指南](https://help.xiaobot.net/reader.html){:target="_blank"}。
 
 简单来说，默认每周五汇总，通过公众号投递一次：
 
@@ -95,7 +95,7 @@ categories:
 
 多余的话。
 
-去年，张一鸣对互联网黑话[开炮](https://www.sohu.com/a/460507510_651065)。
+去年，张一鸣对互联网黑话[开炮](https://www.sohu.com/a/460507510_651065){:target="_blank"}。
 
 很多人都在跟进。或是批判，或是调侃。
 
@@ -113,7 +113,7 @@ categories:
 
 不是咸湿，而是双手会被细节打湿。
 
-举个例子，在最近的中概股起起伏伏中，你会在各种各样的平台上频繁看到「[悲观者正确，乐观者赚钱](https://xueqiu.com/1814561925/138694002)」这样一句话。
+举个例子，在最近的中概股起起伏伏中，你会在各种各样的平台上频繁看到「[悲观者正确，乐观者赚钱](https://xueqiu.com/1814561925/138694002){:target="_blank"}」这样一句话。
 
 这是过度简化的典范[^5] ：
 

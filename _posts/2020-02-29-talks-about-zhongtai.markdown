@@ -133,7 +133,7 @@ supercell 是一家人数只有不到百人，却连续推出了《部落战争�
 
 再比如营销活动，各个业务都要做。我们就可以抽象出一个从设计，上线，到数据收集全生命周期管理的活动平台，提供给各个业务使用。但是各个业务具体的活动逻辑要做到很好的封装，就需要建立元数据中心、规则中心、活动界面自动生成、活动数据自动埋点等等。
 
-![image holder](/downloads/images/2020_02/tech_share_01.jpg --alt Don't touch me)
+![image holder](/downloads/images/2020_02/tech_share_01.jpg --alt Don't touch me){:target="_blank"}
 `图1 子系统到平台化的架构升级`
 
 平台化的核心收益其实就是降本增效：
@@ -155,7 +155,7 @@ supercell 是一家人数只有不到百人，却连续推出了《部落战争�
 
 所以，就会出现类似下图的问题：当公司的保险业务负责人想要进行某个新功能的开发时，经过反复沟通，发现自己的团队承担的部分可以在两天之类完成开发，但是依赖的团队对这相关功能的排期可能排到了两三周后面。
 
-![image holder](/downloads/images/2020_02/tech_share_02.jpg --alt Don't touch me)
+![image holder](/downloads/images/2020_02/tech_share_02.jpg --alt Don't touch me){:target="_blank"}
 `图2 业务平台带来的「各家自扫门前雪」`
 
 最后也是最大的问题是，**领域的平台化解决了领域层内部的问题，但业务的执行都是跨领域的**。涉及用户、商品、交易、营销、支付、服务等等环节，横跨多个系统。如何把多个平台的数据集成到一起并加工分析而产生新的支持到业务的价值，变得非常困难。从当时的实际情况看，按照平台化的架构方式，基本上是没有办法做数据驱动运营的。
@@ -205,7 +205,7 @@ supercell 是一家人数只有不到百人，却连续推出了《部落战争�
 
 ### 别人做了什么？
 
-![image holder](/downloads/images/2020_02/tech_share_03.jpg --alt Don't touch me)
+![image holder](/downloads/images/2020_02/tech_share_03.jpg --alt Don't touch me){:target="_blank"}
 `图3 阿里中台架构图 - 摘自钟华云栖大会分享」`
 
 核心三大部分：
@@ -224,14 +224,14 @@ supercell 是一家人数只有不到百人，却连续推出了《部落战争�
 - 基础设施
 - 企业效能和运维保障体系
 
-![image holder](/downloads/images/2020_02/tech_share_04.jpg --alt Don't touch me)
+![image holder](/downloads/images/2020_02/tech_share_04.jpg --alt Don't touch me){:target="_blank"}
 `图4 整体系统架构：前台/中台/后台`
 
 这套架构的核心目的，是在更快更好的支撑公司进行业务创新的同时，赋予业务真正的数据驱动运营的能力，从而在提升组织效率的同时，为发挥大数据的威力奠定基础。
 
 #### 基础设施
 
-![image holder](/downloads/images/2020_02/tech_share_05.jpg --alt Don't touch me)
+![image holder](/downloads/images/2020_02/tech_share_05.jpg --alt Don't touch me){:target="_blank"}
 `图5 货车帮面向云原生的基础设施`
 
 包括云原生平台 Newton 在内的基础设施的设计和开发，以及统一规划和提供的企业效能和运维保障能力，过去已经有过不少分享，这里就不再赘述。
@@ -252,7 +252,7 @@ supercell 是一家人数只有不到百人，却连续推出了《部落战争�
 
 再比如，以订单的创建过程为例，我们传统的做法。需要梳理从能力规范、运行机制到配置管理和执行系统以及运营服务团队构成的整套标准，才能真正为各业务方提供快速、低成本的创新能力。
 
-![image holder](/downloads/images/2020_02/tech_share_06.png --alt Don't touch me)
+![image holder](/downloads/images/2020_02/tech_share_06.png --alt Don't touch me){:target="_blank"}
 `图6 通过业务中台，为各个前台业务提供统一的订单处理能力`
 
 最终，业务中台将通过各种层面的产品和服务来落地：
@@ -272,7 +272,7 @@ supercell 是一家人数只有不到百人，却连续推出了《部落战争�
 - 数据资产：全域的数据治理，包括建模，数仓，数据集市等。
 - 数据服务：包括对外和对内以产品，接口或者中间件形式提供的各种数据服务。
 
-![image holder](/downloads/images/2020_02/tech_share_07.jpg --alt Don't touch me)
+![image holder](/downloads/images/2020_02/tech_share_07.jpg --alt Don't touch me){:target="_blank"}
 `图7 数据中台实现真正的数据统一、实时、在线`
 
 因此，数据中台将通过下面这些产品落地：

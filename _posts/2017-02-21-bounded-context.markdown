@@ -27,7 +27,7 @@ DDD 社区将 Bounded Context 定义为：
 
 ## 常见问题
 
-正是因为 Bounded Context 带来的隔离性，[Juelin Lerman](https://msdn.microsoft.com/en-us/magazine/jj883952.aspx)才认为：「把一个将大量的类放在一个上下文中的独立模型分解为多个较小的模型是有好处的。Bounded Context 创建的模型较小，而且内聚性更高，同时维持了模型之间的边界。」
+正是因为 Bounded Context 带来的隔离性，[Juelin Lerman](https://msdn.microsoft.com/en-us/magazine/jj883952.aspx){:target="_blank"}才认为：「把一个将大量的类放在一个上下文中的独立模型分解为多个较小的模型是有好处的。Bounded Context 创建的模型较小，而且内聚性更高，同时维持了模型之间的边界。」
 
 好处听起来都是好的，但是难免会有下面这些问题：
 
@@ -36,9 +36,9 @@ Bounded Context 是否具有层次？
 Bounded Context 划分的边界是逻辑的，还是物理的？
 Bounded Context 之间的通信方式？
 
-也难怪在文章《[DDD: The Bounded Context Explained](http://www.sapiensworks.com/blog/post/2012/04/17/DDD-The-Bounded-Context-Explained.aspx)》中 Mike 要说，Bounded Context 是 DDD 中最难解释的原则，但或许也是最重要的原则。可以说，没有 BC，就不能做 DDD。在了解 Aggregate Root、Aggregate、Entity 等概念之前，需要先了解 BC。
+也难怪在文章《[DDD: The Bounded Context Explained](http://www.sapiensworks.com/blog/post/2012/04/17/DDD-The-Bounded-Context-Explained.aspx){:target="_blank"}》中 Mike 要说，Bounded Context 是 DDD 中最难解释的原则，但或许也是最重要的原则。可以说，没有 BC，就不能做 DDD。在了解 Aggregate Root、Aggregate、Entity 等概念之前，需要先了解 BC。
 
-Vaughn Vernon 的[Implementing Domain-Driven Design](http://book.douban.com/subject/25844633/)解释如下：
+Vaughn Vernon 的[Implementing Domain-Driven Design](http://book.douban.com/subject/25844633/){:target="_blank"}解释如下：
 
 > Bounded Context是一个显式的边界，领域模型便存在于这个边界之内。领域模型把通用语言表达成软件模型。创建边界的原因在于，每一个模型概念，包括它的属性和操作，在边界之内都具有特殊的含义。
 
@@ -53,8 +53,8 @@ Vaughn Vernon 的[Implementing Domain-Driven Design](http://book.douban.com/subj
 
 ## Reference
 
-1. [BoundedContext by Martin Fowler](https://martinfowler.com/bliki/BoundedContext.html)
-2. [Implementing Domain-Driven Design](https://www.amazon.com/gp/product/0321834577?ie=UTF8&tag=martinfowlerc-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0321834577)
-3. [Shared Data Model using Bounded Context](https://msdn.microsoft.com/en-us/magazine/jj883952.aspx)
+1. [BoundedContext by Martin Fowler](https://martinfowler.com/bliki/BoundedContext.html){:target="_blank"}
+2. [Implementing Domain-Driven Design](https://www.amazon.com/gp/product/0321834577?ie=UTF8&tag=martinfowlerc-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0321834577){:target="_blank"}
+3. [Shared Data Model using Bounded Context](https://msdn.microsoft.com/en-us/magazine/jj883952.aspx){:target="_blank"}
 
 

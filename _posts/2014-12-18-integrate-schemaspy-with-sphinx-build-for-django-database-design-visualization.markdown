@@ -12,13 +12,13 @@ categories:
 ---
 
 
-![schemaSpy](/downloads/images/2014_12/schemaSpy.png --alt schemaSpy)
+![schemaSpy](/downloads/images/2014_12/schemaSpy.png --alt schemaSpy){:target="_blank"}
 
 在做项目的时候，客户或者合作的部门常常问研发要「数据库设计」。在古代，瀑布式开发的第一个阶段是做架构设计和写文档，所以这样的需求一般都能被「充分满足」。而在我们现在的项目节奏和迭代速度都很快，数据库的设计在项目初期经常也在变化，如何能够比较方便的文档化这些变更？
 
-对开发团队内部来说，我个人觉得 Django 的 South 或者是 1.7 之后加入的[Migration](https://lenciel.com/2014/08/django-1-dot-7-migrations/)里面每次变更生成的 migration 文件就已经足够开发人员了解底层的设计发生了什么变化。
+对开发团队内部来说，我个人觉得 Django 的 South 或者是 1.7 之后加入的[Migration](https://lenciel.com/2014/08/django-1-dot-7-migrations/){:target="_blank"}里面每次变更生成的 migration 文件就已经足够开发人员了解底层的设计发生了什么变化。
 
-而对外提供的文档，主要是在更高层级进行设计的沟通，所以之前我们一般是通过[django-extension](https://github.com/django-extensions/django-extensions)里面的`graph_models`命令来生成简单的关系图：
+而对外提供的文档，主要是在更高层级进行设计的沟通，所以之前我们一般是通过[django-extension](https://github.com/django-extensions/django-extensions){:target="_blank"}里面的`graph_models`命令来生成简单的关系图：
 
 ``` bash
 # Create a PNG image file called my_project_visualized.png with application grouping
@@ -29,21 +29,21 @@ $ ./manage.py graph_models -a -g -o my_project_visualized.png
 
 <img src="{{ site.static_base }}/downloads/images/2014_12/django_extension.svg" title="django-extension-sample" alt="django-extension-sample"/>
 
-这里的图是通过[graphviz](http://www.graphviz.org/)来完成的，可以看到一般的了解也足够了，但是缺点主要是：
+这里的图是通过[graphviz](http://www.graphviz.org/){:target="_blank"}来完成的，可以看到一般的了解也足够了，但是缺点主要是：
 
 1. 生成的关系图比较简陋
 2. 由于是图片，一旦表比较多浏览起来并不是那么灵活
 
 ## 使用schemaSpy
 
-于是在新的项目里面本座选用了看起来更美好的[schemaSpy](http://schemaspy.sourceforge.net/)，因为：
+于是在新的项目里面本座选用了看起来更美好的[schemaSpy](http://schemaspy.sourceforge.net/){:target="_blank"}，因为：
 
 1. 轻量但支持多种数据库（jdbc），针对 Django 的 test/stage/prod 环境都可以使用
-2. [功能非常强大](http://schemaspy.sourceforge.net/sample/)，并且有命令行支持，可以集成到 CI
+2. [功能非常强大](http://schemaspy.sourceforge.net/sample/){:target="_blank"}，并且有命令行支持，可以集成到 CI
 
 不过和大多数开源工具一样，它的文档也是乱糟糟的。以开发环境为例，我们一般使用 sqlite 作为数据库，要在 Mac 下面成功运行 schemaSpy 连接 sqlite，你需要：
 
-1. 下载最新的[SchemaSpy jar包](http://sourceforge.net/projects/schemaspy/files/)
+1. 下载最新的[SchemaSpy jar包](http://sourceforge.net/projects/schemaspy/files/){:target="_blank"}
 2. 下载最新的[Xerial Sqlite JDBC jar](https://bitbucket.org/xerial/sqlite-jdbc
 )包`sqlite-xerial.jar`
 3. 创建一个`sqlite-xerial.properties`文件，内容如下：

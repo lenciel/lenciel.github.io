@@ -13,11 +13,11 @@ categories:
 
 Why？
 
-第一次看到 uv 的时候，难免觉得是不是什么东西人类都打算用 Rust 再来一遍。直到过去一年从 [Simon Willisom](https://simonwillison.net/) 开始，看到很多人都切了（比如[这里](https://bluesock.org/~willkg/blog/dev/switch_pyenv_to_uv.html)，[这里](https://valatka.dev/2025/01/12/on-killer-uv-feature.html)，和[这里](https://www.bitecode.dev/p/why-not-tell-people-to-simply-use)），所以最近几个月的 Python 项目都在试用。
+第一次看到 uv 的时候，难免觉得是不是什么东西人类都打算用 Rust 再来一遍。直到过去一年从 [Simon Willisom](https://simonwillison.net/){:target="_blank"} 开始，看到很多人都切了（比如[这里](https://bluesock.org/~willkg/blog/dev/switch_pyenv_to_uv.html){:target="_blank"}，[这里](https://valatka.dev/2025/01/12/on-killer-uv-feature.html){:target="_blank"}，和[这里](https://www.bitecode.dev/p/why-not-tell-people-to-simply-use){:target="_blank"}），所以最近几个月的 Python 项目都在试用。
 
 首先，确实能打。
 
-这篇文章的标题就很能说明问题：pyenv/poetry/pipx 是[我过去五年](/2020/07/python-in-2020-part1-env-setup/)挺稳定的工具链，但 uv 一个人干三个人的活，并且，还干得又快又好。
+这篇文章的标题就很能说明问题：pyenv/poetry/pipx 是[我过去五年](/2020/07/python-in-2020-part1-env-setup/){:target="_blank"}挺稳定的工具链，但 uv 一个人干三个人的活，并且，还干得又快又好。
 
 比如之前我要启动一个使用 Python 的 3.12 版本，有 requests 包作为依赖的项目简单爬虫程序 crawler.py，需要：
 
@@ -50,7 +50,7 @@ uv 解决的核心思路是让简单的事情保持应有的简单（比如安�
 - 包括 Pypy、No-GIL 和 TCO 版本
 - 没有 shim，没有预编译，使用默认值
 
-而且看起来，Astral 已经在这个项目上做了足够的投入{% sidenote 'sn-id-1' '他们好像收购了这个项目的前身，[python-build-standalone](https://github.com/astral-sh/python-build-standalone)。' %}，并打算持续下去。
+而且看起来，Astral 已经在这个项目上做了足够的投入{% sidenote 'sn-id-1' '他们好像收购了这个项目的前身，[python-build-standalone](https://github.com/astral-sh/python-build-standalone){:target="_blank"}。' %}，并打算持续下去。
 
 最后，uv 还提供了简单的方式来迁移使用 poetry 管理的项目。只需要：
 

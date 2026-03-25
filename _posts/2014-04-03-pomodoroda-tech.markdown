@@ -11,11 +11,11 @@ categories:
 ---
 
 
-![Pomodoro Technique](/downloads/images/2014_04/pomodoro_tech.jpg --alt Don't touch me)
+![Pomodoro Technique](/downloads/images/2014_04/pomodoro_tech.jpg --alt Don't touch me){:target="_blank"}
 
-时间管理对每个人都是非常重要的，相关的理论和工具都有很多。本座试过很轻量的[todolist.vim](https://github.com/vim-scripts/todolist.vim)，也试过很大气的[OmniFocus](https://www.omnigroup.com/omnifocus)，但可能因为自己比较爱随意乱来的性格，这些工具最终都被本座慢慢荒弃。
+时间管理对每个人都是非常重要的，相关的理论和工具都有很多。本座试过很轻量的[todolist.vim](https://github.com/vim-scripts/todolist.vim){:target="_blank"}，也试过很大气的[OmniFocus](https://www.omnigroup.com/omnifocus){:target="_blank"}，但可能因为自己比较爱随意乱来的性格，这些工具最终都被本座慢慢荒弃。
 
-倒是从 E 公司就一直用到现在的[Pomodoro Technique](http://pomodorotechnique.com)[^1]，因为规则简单上手迅捷疗效明显，最终成为了日常生活的一部分。
+倒是从 E 公司就一直用到现在的[Pomodoro Technique](http://pomodorotechnique.com){:target="_blank"}[^1]，因为规则简单上手迅捷疗效明显，最终成为了日常生活的一部分。
 
 起
 -----
@@ -65,7 +65,7 @@ Francesco Cirillo 在 1992 年正式提出了`Pomodoro Technique`，命名似乎
 
 如果任务无趣时，拖延的时间会增加。比如做项目做到最后的收尾工作之类时，常常非常无趣。分解它们，让你知道你多快就能完成它，可以激励自己。
 
-别人催你完成你不想完成的事情时，你多半也做不好。"have-to"和"want-to"之间的矛盾简直就是[the-terrible-two](http://en.wikipedia.org/wiki/Terrible_twosX)终生梦魇版。通过使用番茄大法，你每天确信自己能够完成的事情能够做到心中有数。
+别人催你完成你不想完成的事情时，你多半也做不好。"have-to"和"want-to"之间的矛盾简直就是[the-terrible-two](http://en.wikipedia.org/wiki/Terrible_twosX){:target="_blank"}终生梦魇版。通过使用番茄大法，你每天确信自己能够完成的事情能够做到心中有数。
 
 
 
@@ -85,7 +85,7 @@ Francesco Cirillo 在 1992 年正式提出了`Pomodoro Technique`，命名似乎
 转
 -----
 
-Pomodoro 说到底是一种轻量的[GTD](http://zh.wikipedia.org/wiki/GTD)规则。
+Pomodoro 说到底是一种轻量的[GTD](http://zh.wikipedia.org/wiki/GTD){:target="_blank"}规则。
 
 如果是工作内容高度碎片化的人，比如高管，其实是没法做到动不动就入定 30 分钟不理人间事的。
 
@@ -106,9 +106,9 @@ Pomodoro 说到底是一种轻量的[GTD](http://zh.wikipedia.org/wiki/GTD)规�
 
 如果觉得 10 分钟自己能轻松搞定，就可以慢慢延长这个时间了。有不少软件可以帮助你自由的定时和统计：
 
-* [iOS应用](https://fnd.io/#/search?mediaType=all&term=Pomodoro)
-* [Mac应用](http://www.publicspace.net/Vitamin-R/index.html)
-* [Windows应用](http://www.focusboosterapp.com/)
+* [iOS应用](https://fnd.io/#/search?mediaType=all&term=Pomodoro){:target="_blank"}
+* [Mac应用](http://www.publicspace.net/Vitamin-R/index.html){:target="_blank"}
+* [Windows应用](http://www.focusboosterapp.com/){:target="_blank"}
 
 各种浏览器插件那就不说了满坑满谷都是。
 

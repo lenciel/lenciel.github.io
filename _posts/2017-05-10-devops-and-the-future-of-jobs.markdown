@@ -24,13 +24,13 @@ categories:
 
 很多公司的 DevOps 落地就像我们提到的这位 Manager，拉一堆人画一个圈，你们来做 DevOps，好像就完成了。
 
-从业多年的你已经有经验，所有没法被很好地翻译成中文的术语，都要小心。比如[Bounded Context](/2017/02/bounded-context/)，比如 DevOps。
+从业多年的你已经有经验，所有没法被很好地翻译成中文的术语，都要小心。比如[Bounded Context](/2017/02/bounded-context/){:target="_blank"}，比如 DevOps。
 
 所以你去查，DevOps 是什么？
 
 网上有张流传甚广的图：
 
-![Vhost threshold](/downloads/images/2017_05/devops.png --alt Don't touch me)
+![Vhost threshold](/downloads/images/2017_05/devops.png --alt Don't touch me){:target="_blank"}
 
 这张看起来颇有道理的图其实什么也没有说：测试、开发和运维这三种角色的工作，究竟有什么交集，可以被称为 DevOps 呢？
 
@@ -52,12 +52,12 @@ DevOps 从 2009 年被提出，算是顺势：敏捷流程在大量的公司落�
 但因为下面几个因素，造成运维这个环节不得不做出相应的改变：
 
 1. 云相关的技术日益成熟之后，过去 Ops 团队需要负责的很多工作都交给了云服务提供商或者内部的基础设施团队
-2. 随着分布式系统的日益普遍，微服务架构等各种把业务系统打散拆小搞自治的实践逐渐[成为主流](/2017/02/the-real-success-by-doing-msa/)，越来越多的团队[要求开发的人必须具备运维](https://speakerdeck.com/charity/keep-calm-and-carry-on-scaling-your-org-with-microservices)的技能
+2. 随着分布式系统的日益普遍，微服务架构等各种把业务系统打散拆小搞自治的实践逐渐[成为主流](/2017/02/the-real-success-by-doing-msa/){:target="_blank"}，越来越多的团队[要求开发的人必须具备运维](https://speakerdeck.com/charity/keep-calm-and-carry-on-scaling-your-org-with-microservices){:target="_blank"}的技能
 3. 随着容器等技术的成熟，镜像逐步替代软件包，成为了交付的主体：和软件包不同，它集成度更高（对外暴露的只是 ip+端口），包含了配置信息，部署更加方便。随着「基础设施代码化」等工作落地，本地的开发环境和线上环境的差异也更小了，降低了部署工作的门槛
 
 但面对业务运维日新月异的要求，运维工程师（大多数背景是系统管理员）的技能和视野往往是不够的。于是一种折衷的方案：把部署和运维软件的职责从运维团队开放给别的部门，权力下放的同时责任也共同承担，于是 DevOps 运动就出现了。
 
-到 2012 年左右 John Wills 开始卖[《Cookbook of DevOps》这本书](http://itrevolution.com/the-convergence-of-devops/)时，就已经说，DevOps 这词包括了：
+到 2012 年左右 John Wills 开始卖[《Cookbook of DevOps》这本书](http://itrevolution.com/the-convergence-of-devops/){:target="_blank"}时，就已经说，DevOps 这词包括了：
 
 - The Agile Infrastructure Thread
 - The Velocity Thread
@@ -65,7 +65,7 @@ DevOps 从 2009 年被提出，算是顺势：敏捷流程在大量的公司落�
 
 所以 DevOps 不是职称或者工种，也不特指某个具体内容的工作。
 
-Wikipedia 说它是[文化](https://zh.wikipedia.org/wiki/DevOps)，Amazon 说它是[文化](https://aws.amazon.com/cn/devops/what-is-devops/)，Thoughtworks 也说它是[文化](https://martinfowler.com/bliki/DevOpsCulture.html)。
+Wikipedia 说它是[文化](https://zh.wikipedia.org/wiki/DevOps){:target="_blank"}，Amazon 说它是[文化](https://aws.amazon.com/cn/devops/what-is-devops/){:target="_blank"}，Thoughtworks 也说它是[文化](https://martinfowler.com/bliki/DevOpsCulture.html){:target="_blank"}。
 
 文化是需要土壤的，软件团队的文化，生长的土壤主要指：
 
@@ -77,7 +77,7 @@ Wikipedia 说它是[文化](https://zh.wikipedia.org/wiki/DevOps)，Amazon 说�
 
 这也是 DevOps 被很多人反对的原因。
 
-Jeff Knupp 觉得这就是在「[残杀Developer](https://jeffknupp.com/blog/2014/04/15/how-devops-is-killing-the-developer/)」，Twitter 的基础架构工程师 Cindy Sridharan 也发文[抨击过](https://medium.com/@cindysridharan/what-is-devops-5b0181fdb953)把它当成一个工种或者工作内容。
+Jeff Knupp 觉得这就是在「[残杀Developer](https://jeffknupp.com/blog/2014/04/15/how-devops-is-killing-the-developer/){:target="_blank"}」，Twitter 的基础架构工程师 Cindy Sridharan 也发文[抨击过](https://medium.com/@cindysridharan/what-is-devops-5b0181fdb953){:target="_blank"}把它当成一个工种或者工作内容。
 
 所以，因为这些历史原因，即便是你跟头脑很清晰，认识很正确的人讨论 DevOps，也需要问一下他/她的重点是指下面三方面的哪个方面：
 
@@ -88,7 +88,7 @@ Jeff Knupp 觉得这就是在「[残杀Developer](https://jeffknupp.com/blog/201
 
 ## 工种的未来
 
-其实在我眼里，DevOps 的出现很早。Google 在 2003 年建 SRE 团队的时候，Ben Treynor 就说（我觉得 Ben 关于 SRE 的每句话都值得[认真去看](https://landing.google.com/sre/interview/ben-treynor.html)），这个部门的定义是：
+其实在我眼里，DevOps 的出现很早。Google 在 2003 年建 SRE 团队的时候，Ben Treynor 就说（我觉得 Ben 关于 SRE 的每句话都值得[认真去看](https://landing.google.com/sre/interview/ben-treynor.html){:target="_blank"}），这个部门的定义是：
 
 > "what happens when a software engineer is tasked with what used to be called operations."
 
@@ -116,7 +116,7 @@ Amazon 能够搞出 AWS，跟他们内部推崇人人都可以独立地完成编
 
 ### 开发
 
-我很喜欢的 Esty 的 CTO，[John Allspaw](https://twitter.com/allspaw)在[一个采访](https://thenewstack.io/etsy-cto-qa-need-software-engineers-not-developers/)里面说过，我们不要开发（Developer），我们只要软件工程师（Software Engineer）。
+我很喜欢的 Esty 的 CTO，[John Allspaw](https://twitter.com/allspaw){:target="_blank"}在[一个采访](https://thenewstack.io/etsy-cto-qa-need-software-engineers-not-developers/){:target="_blank"}里面说过，我们不要开发（Developer），我们只要软件工程师（Software Engineer）。
 
 这一句话，就可以抵一万句了。
 

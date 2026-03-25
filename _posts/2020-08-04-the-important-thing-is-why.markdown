@@ -34,7 +34,7 @@ categories:
 
 我挺喜欢读书和学习。
 
-所以我对下一代应该怎么读书怎么学习，有相当[复杂的态度](https://lenciel.com/2020/02/how-to-read-the-books-part-2/)。
+所以我对下一代应该怎么读书怎么学习，有相当[复杂的态度](https://lenciel.com/2020/02/how-to-read-the-books-part-2/){:target="_blank"}。
 
 想要知道点儿什么然后改变点儿什么，大概是我到西瓜工作的核心原因。
 
@@ -46,7 +46,7 @@ categories:
 
 那么教育公司，应该解决什么问题？
 
-著名计算机学者，图灵奖得主理查德·汉明[说过](http://www.amazon.com/dp/9056995006)：
+著名计算机学者，图灵奖得主理查德·汉明[说过](http://www.amazon.com/dp/9056995006){:target="_blank"}：
 
 > Education is what, when, and why to do things. Training is how to do it.
 
@@ -90,9 +90,9 @@ categories:
 
 工具不带来思维能力，甚至限制思维能力，但计算设备不是工具是什么？
 
-Alan Kay 在《[The early history of Smalltalk](https://dl.acm.org/citation.cfm?id=1057828)》里记录过 1967 年 Marvin Minsky 的一个演讲：
+Alan Kay 在《[The early history of Smalltalk](https://dl.acm.org/citation.cfm?id=1057828){:target="_blank"}》里记录过 1967 年 Marvin Minsky 的一个演讲：
 
-> 他对传统的教育方法进行了猛烈的抨击，从他那里我第一次听到了 [Piaget](https://en.wikipedia.org/wiki/Jean_Piaget) 和 [Papert](https://en.wikipedia.org/wiki/Seymour_Papert) 的思想。Marvin 的演讲是关于我们如何思考复杂的情况，以及为什么学校真的不是学习这些技能的好地方。很明显，教育和学习必须根据 20 世纪的认知心理学以及优秀思想家的真实想法来重新思考。计算机作为一个新的表示系统，将对处理复杂性，特别是复杂的系统，提供新的和有用的隐喻[^3]。
+> 他对传统的教育方法进行了猛烈的抨击，从他那里我第一次听到了 [Piaget](https://en.wikipedia.org/wiki/Jean_Piaget){:target="_blank"} 和 [Papert](https://en.wikipedia.org/wiki/Seymour_Papert){:target="_blank"} 的思想。Marvin 的演讲是关于我们如何思考复杂的情况，以及为什么学校真的不是学习这些技能的好地方。很明显，教育和学习必须根据 20 世纪的认知心理学以及优秀思想家的真实想法来重新思考。计算机作为一个新的表示系统，将对处理复杂性，特别是复杂的系统，提供新的和有用的隐喻[^3]。
 
 看来人工智能之父在半个多世纪之前就觉得学校无可救药，而计算机可以提供理解复杂系统的「新的和有用的隐喻」。
 
@@ -106,9 +106,9 @@ Alan Kay 在《[The early history of Smalltalk](https://dl.acm.org/citation.cfm?
 
 > 世间万物都是隐喻。
 
-当时我觉得，咦，村上你也读[侯世达](https://en.wikipedia.org/wiki/Douglas_Hofstadter)吗[^4]？
+当时我觉得，咦，村上你也读[侯世达](https://en.wikipedia.org/wiki/Douglas_Hofstadter){:target="_blank"}吗[^4]？
 
-其实很多人都说过类似的话。比如去年过世的 [Jonathan Miller](https://en.wikipedia.org/wiki/Jonathan_Miller) ：
+其实很多人都说过类似的话。比如去年过世的 [Jonathan Miller](https://en.wikipedia.org/wiki/Jonathan_Miller){:target="_blank"} ：
 
 > 自人类诞生以来，每个人都能感觉到胸部有规律的砰砰声，很多人都看过血管被切断时喷涌而出的血液。但只有在水泵发明后，通过把心脏想象成一个水泵，人们才理解了心脏的功能和血液循环。
 
@@ -116,7 +116,7 @@ Alan Kay 在《[The early history of Smalltalk](https://dl.acm.org/citation.cfm?
 
 是媒介。
 
-[Eric Havelock](https://en.wikipedia.org/wiki/Eric_A._Havelock) 在《[童年的消逝](https://book.douban.com/subject/1005325/)》里分析过希腊字母对人类文明的影响。在他看来，这种媒介引发了口头交流时代没有的革命：柏拉图、亚里士多德和其他古希腊人在他们的邻居们的书写系统还只是用来记录国王的生活、谷物的生产、天文的现象时，通过掌握流畅的读写能力，来进行现代化的思考。在过去的 30 年里，许多学者跟随他的足迹，成功地论证了被称为「希腊奇迹」——如此突然地诞生了民主、逻辑、哲学、历史、戏剧、反省等等——在很大程度上可以归功于字母这个新媒介的发展和传播。
+[Eric Havelock](https://en.wikipedia.org/wiki/Eric_A._Havelock){:target="_blank"} 在《[童年的消逝](https://book.douban.com/subject/1005325/){:target="_blank"}》里分析过希腊字母对人类文明的影响。在他看来，这种媒介引发了口头交流时代没有的革命：柏拉图、亚里士多德和其他古希腊人在他们的邻居们的书写系统还只是用来记录国王的生活、谷物的生产、天文的现象时，通过掌握流畅的读写能力，来进行现代化的思考。在过去的 30 年里，许多学者跟随他的足迹，成功地论证了被称为「希腊奇迹」——如此突然地诞生了民主、逻辑、哲学、历史、戏剧、反省等等——在很大程度上可以归功于字母这个新媒介的发展和传播。
 
 希腊奇迹，不仅仅是古希腊产生了新的书写和阅读工具，更重要的是，产生了哲学的、科学的、历史的、法律的和道德的，基于新的媒介的新的思维方式。
 
@@ -134,13 +134,13 @@ Alan Kay 在《[The early history of Smalltalk](https://dl.acm.org/citation.cfm?
 
 每一种媒介，看起来给我们携带的是无差别的信息：从书籍到电报，从电报到电视，从电视到网络。但每一种媒介，都会潜移默化地改变人们的思维方式：我们如何使用我们的身体，我们如何理解这个世界，我们如何构建我们的观念。
 
-这就是 [Marshall McLuhan](https://en.wikipedia.org/wiki/Marshall_McLuhan) 说的「[媒介即信息](https://zh.wikipedia.org/wiki/%E5%AA%92%E4%BB%8B%E5%8D%B3%E6%98%AF%E8%A8%8A%E6%81%AF)」的实质。
+这就是 [Marshall McLuhan](https://en.wikipedia.org/wiki/Marshall_McLuhan){:target="_blank"} 说的「[媒介即信息](https://zh.wikipedia.org/wiki/%E5%AA%92%E4%BB%8B%E5%8D%B3%E6%98%AF%E8%A8%8A%E6%81%AF){:target="_blank"}」的实质。
 
 那么，计算设备究竟是怎样的一种媒介呢？
 
 #### 不容乐观的现状
 
-关于联网计算设备这个新媒介对人类的影响，各种批判已经[太多了](https://www.inc.com/jason-aten/the-internet-is-broken-tim-berners-lee-man-who-invented-world-wide-web-thinks-he-has-a-plan-to-fix-it.html)。
+关于联网计算设备这个新媒介对人类的影响，各种批判已经[太多了](https://www.inc.com/jason-aten/the-internet-is-broken-tim-berners-lee-man-who-invented-world-wide-web-thinks-he-has-a-plan-to-fix-it.html){:target="_blank"}。
 
 每个人，应该都能感到它对人类思维方式的改变。
 
@@ -188,7 +188,7 @@ Alan Kay 在《[The early history of Smalltalk](https://dl.acm.org/citation.cfm?
 
 所以，困难不在于让孩子们喜欢我们做的课程，或者学会编程。孩子喜欢任何课程，因为他们喜欢做事情，即使他们不知道自己到底在做什么。当我们给他一个计算设备，他会尤其喜欢，因为反馈太快了，他可以跳过做其他事情需要的大量基本动作的枯燥练习。如果光是学这样一个技能，完全可以等高中大学开始，我在读研究生的时候才开始正儿八经地编写商业化的程序。
 
-困难的是要确定在一个小朋友具体处于什么发展水平上，然后根据他的水平，提供什么样的内容，渗透什么样的想法，渗透到什么程度。尽管已经有了几个世纪的经验，我们可以看到在阅读、写作、数学等等领域，这个困难[仍然存在](https://www.apmreports.org/episode/2019/08/22/whats-wrong-how-schools-teach-reading)：什么时候，以什么样的顺序和深度，以及什么形式，来传授伟大的思维方式？
+困难的是要确定在一个小朋友具体处于什么发展水平上，然后根据他的水平，提供什么样的内容，渗透什么样的想法，渗透到什么程度。尽管已经有了几个世纪的经验，我们可以看到在阅读、写作、数学等等领域，这个困难[仍然存在](https://www.apmreports.org/episode/2019/08/22/whats-wrong-how-schools-teach-reading){:target="_blank"}：什么时候，以什么样的顺序和深度，以及什么形式，来传授伟大的思维方式？
 
 什么叫做掌握了这种新的媒介，形成了计算思维？可能当他们听到新冠这样的瘟疫，能立即知道这种灾难的指数特征以及早期行动的重要性。然后他们可以来到计算设备前，流畅地建立一个疾病的模拟系统，并用它来跟接下来真实世界里发生的数据进行比较，从而理解事情发展的趋势，就叫形成了计算思维。
 
@@ -200,7 +200,7 @@ Alan Kay 在《[The early history of Smalltalk](https://dl.acm.org/citation.cfm?
 
 我希望我们的小朋友能「code to learn」，而不是「learn to code」。
 
-[^0]: 一开始我其实觉得「计算思维」的提法是不对的，后来我想明白了，我只是觉得周以真的「[计算思维](https://en.wikipedia.org/wiki/Computational_thinking)」的提法是不完整的。
+[^0]: 一开始我其实觉得「计算思维」的提法是不对的，后来我想明白了，我只是觉得周以真的「[计算思维](https://en.wikipedia.org/wiki/Computational_thinking){:target="_blank"}」的提法是不完整的。
 
 [^1]: 如果非要我评价，我想起歌德说：「探索中的同行者，应该学会分享发现的喜悦，而不是徒劳地宣称自己比别人干得更好」。但人类，即使是优秀的人类，也很容易被自己局限，情绪、认知、格局。所以，牛顿曾经劝大家，直接站到巨人的肩膀上去，就看得更远。但在互联网或者广义地说，在整个技术产业里，现实情况是大家常常站在，或者说是踩在彼此的脚背上。认真地研究，开放地分享，不断地进取，可能是更好的态度。
 
@@ -208,7 +208,7 @@ Alan Kay 在《[The early history of Smalltalk](https://dl.acm.org/citation.cfm?
 
 [^3]: Alan Kay 去听 Minsky 讲 Papert 和 Piaget 对自己的影响，这件事情本身可能就说明了为什么现有的计算机科学的理论都是在上个世纪 60 年代左右奠定的，后续更多只是工程上的优化：因为当时没有人是「计算机科学家」。 每个参与其中的人都带着许多其他的知识和兴趣参与其中，他们有研究认知的，有研究物理的，有研究数学的，然后他们试图搞明白「计算机是什么」，他们用大量其他领域的东西来进行类比。而一旦进入工程领域，就很难有范式上的创新。因为工程就是关于优化的，如果没有牢牢地锚定在所处的上下文中，就谈不上如何优化。
 
-[^4]: 侯世达有本书叫《[表象与本质 : 类比，思考之源和思维之火](https://book.douban.com/subject/30383926/)》，他还有篇文章，名字就叫 [Analogy as the Core of Cognition](http://prelectur.stanford.edu/lecturers/hofstadter/analogy.html)。他的书读起来很有意思，有空可以专门写一下。
+[^4]: 侯世达有本书叫《[表象与本质 : 类比，思考之源和思维之火](https://book.douban.com/subject/30383926/){:target="_blank"}》，他还有篇文章，名字就叫 [Analogy as the Core of Cognition](http://prelectur.stanford.edu/lecturers/hofstadter/analogy.html){:target="_blank"}。他的书读起来很有意思，有空可以专门写一下。
 
-[^5]: 浙江今年满分作文[引起的争议](https://edu.sina.com.cn/gaokao/2020-08-05/doc-iivhuipn6936250.shtml)说明了，文字和句法只是形式，文章里面的思想才是关键。但思想只能通过思想产生，好的思想产生更好的思想。如果我们在一个不允许思想产生的环境里强调文字，我们就会得到这样的满分作文。这不是孩子的问题，这也不是老师的问题，这是体制的问题。在我看来合格的语文教育就是让学生可以随便找一个《人民日报》的社论，然后写出一篇观点清晰的文章对它进行批评或者辩护。
+[^5]: 浙江今年满分作文[引起的争议](https://edu.sina.com.cn/gaokao/2020-08-05/doc-iivhuipn6936250.shtml){:target="_blank"}说明了，文字和句法只是形式，文章里面的思想才是关键。但思想只能通过思想产生，好的思想产生更好的思想。如果我们在一个不允许思想产生的环境里强调文字，我们就会得到这样的满分作文。这不是孩子的问题，这也不是老师的问题，这是体制的问题。在我看来合格的语文教育就是让学生可以随便找一个《人民日报》的社论，然后写出一篇观点清晰的文章对它进行批评或者辩护。
 

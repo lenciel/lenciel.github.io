@@ -32,13 +32,13 @@ Javascript 毫无疑问早已成为了前端开发人员不可或缺的工具。
 
 下面就是我试着回答这些问题做的一些分析。我的分析是通过用户体验(UX)层面，特别是如何最小化用户拿到他们感兴趣的 _数据_ 的时间，作为切入点，来验证对 Javascript 的 _各种_ 使用方式。我会从网络通信的基础入手，一直说到对未来趋势的预测。
 
-  1. [Server渲染页面仍然是必须的](#server-rendered-pages-are-not-optional)
-  2. [对用户输入立刻响应](#act-immediately-on-user-input)
-  3. [数据变更时的应对](#react-to-data-changes)
-  4. [控制与服务器的数据交互](#control-the-data-exchange-with-the-server)
-  5. [不要破坏history，增强它](#dont-break-history-enhance-it)
-  6. [推送代码更新](#push-code-updates)
-  7. [行为预测](#predict-behavior)
+  1. [Server渲染页面仍然是必须的](#server-rendered-pages-are-not-optional){:target="_blank"}
+  2. [对用户输入立刻响应](#act-immediately-on-user-input){:target="_blank"}
+  3. [数据变更时的应对](#react-to-data-changes){:target="_blank"}
+  4. [控制与服务器的数据交互](#control-the-data-exchange-with-the-server){:target="_blank"}
+  5. [不要破坏history，增强它](#dont-break-history-enhance-it){:target="_blank"}
+  6. [推送代码更新](#push-code-updates){:target="_blank"}
+  7. [行为预测](#predict-behavior){:target="_blank"}
 
 ## 1. Server渲染页面仍然是必须的<a name="server-rendered-pages-are-not-optional"></a>
 
@@ -68,7 +68,7 @@ So: the hardware of the Internet can currently achieve within a factor of two of
 考虑下面的这个场景：用户在浏览器上访问`http://app.com/orders/`，如果这是一个传统的网页，那么在后台处理这个请求的时，就会带回重要的 _信息_ ，用来完成页面的显示：比如，从数据库里面查询出订单，然后把它们的数据放在请求的返回里面。但如果这是一个 SPA，那么第一次可能会立刻返回一个包含`<script>`标签的空页面，然后再跑一趟才能拿回用来渲染页面的内容和数据。
 
 
-![SPA code breakdown](/downloads/images/2014_11/spa_code_breakdown.png --alt SPA code breakdown)
+![SPA code breakdown](/downloads/images/2014_11/spa_code_breakdown.png --alt SPA code breakdown){:target="_blank"}
 图 1. 服务器端发送的 SPA 的每个页面组成结构分析
 
 目前大多数的开发者都大方接受了这个额外的 _网络传输过程_ 是因为他们确信这只发生一次：后面反正是有 cache 的。也就是说，大家形成了这么一个共识，既然整个代码包一旦加载一次，就可以不用再请求其他的脚本和资源就完成对绝大多数的用户交互（包括跳转到应用的其他页面）的处理，那么这个开销就是可以接受的。
@@ -85,7 +85,7 @@ So: the hardware of the Internet can currently achieve within a factor of two of
 
 其次，TCP 协议里面有一个流控机制，被称为 `slow start`，也就是在连接建立过程中逐渐增加传输的分段(`segments`)大小，入下图所示：
 
-![TCP segments chart](/downloads/images/2014_11/tcp_segments_chart.png --alt TCP segments chart)
+![TCP segments chart](/downloads/images/2014_11/tcp_segments_chart.png --alt TCP segments chart){:target="_blank"}
 图 2. 服务器端在 TCP 连接的不同阶段能够发送的分段大小(KB)
 
 这对 SPA 有两个很大的影响：
@@ -114,7 +114,7 @@ So: the hardware of the Internet can currently achieve within a factor of two of
    [21]: http://danlec.com/blog/stackoverflow-in-4096-bytes
    [22]: http://www.chromium.org/spdy/link-headers-and-server-hint
 
-![StackOverflow clone in 4096 bytes](/downloads/images/2014_11/st4k.png --alt StackOverflow clone in 4096 bytes)
+![StackOverflow clone in 4096 bytes](/downloads/images/2014_11/st4k.png --alt StackOverflow clone in 4096 bytes){:target="_blank"}
 
 图 3. 使用了内链 CSS 和 JS 技术的`Stackoverflow in 4096 bytes`
 
@@ -176,7 +176,7 @@ Take a look at Google Suggest. Watch the way the suggested terms update as you t
 
 另一个例子是 iOS。在很早期的版本，iPhone 就要求开发者提供一个`default.png`图片，用来在应用被加载完成之前显示给用户:
 
-![iPhone default](/downloads/images/2014_11/iphone_default_png.png --alt iPhone default)
+![iPhone default](/downloads/images/2014_11/iphone_default_png.png --alt iPhone default){:target="_blank"}
 
 图 5. iPhone OS 强制在应用加载前显示一个 default.png
 
@@ -239,7 +239,7 @@ The basic advice regarding response times has been about the same for thirty yea
 
 一旦你的用户习惯了你的应用的数据是自动更新的，那么你就要考虑一个新的需求：**状态一致性**。当客户端收到一个原子的数据更新时，必须考虑即便在断网很长时间之后，也能够正确的完成更新。比如，你的笔记本突然没电了，几天后再打开，应用的数据是不是还正确？
 
-![twitter 数据一致性](/downloads/images/2014_11/twitter_data_reconciliation.png --alt twitter 数据一致性)
+![twitter 数据一致性](/downloads/images/2014_11/twitter_data_reconciliation.png --alt twitter 数据一致性){:target="_blank"}
 
 图 9. 长时间断线后重连的情况下 twitter 的页面
 
@@ -257,7 +257,7 @@ The basic advice regarding response times has been about the same for thirty yea
 
 这个模型以其简洁性显得很具吸引力，但是我们今天要明白服务器和客户端之间的数据交互，学习曲线就陡多了。最大的问题在第二点，如果不能在不刷新页面的情况下提交数据，毫无疑问是一个性能上的弱点。更重要的是，它会使得回退键不可用：
 
-![Possibly the most annoying artifact of the old web](/downloads/images/2014_11/annoy_artifact.png --alt Annoy Artifac)
+![Possibly the most annoying artifact of the old web](/downloads/images/2014_11/annoy_artifact.png --alt Annoy Artifac){:target="_blank"}
 
 图 10. 老一代网页上最让人讨厌的东西
 
@@ -271,7 +271,7 @@ The basic advice regarding response times has been about the same for thirty yea
 
 还要注意使用这种模式时，要屏蔽用户中断数据流的操作。这种操作有两种，第一种也是最明显的一种是用户尝试关闭当前页面，这种情况可以通过`beforeunload`这个`handler`来处理。
 
-![The beforeunload browser warning](/downloads/images/2014_11/before_unload_warning.png --alt Before unload warning)
+![The beforeunload browser warning](/downloads/images/2014_11/before_unload_warning.png --alt Before unload warning){:target="_blank"}
 
 图 11. 页面关闭之前弹出警告
 

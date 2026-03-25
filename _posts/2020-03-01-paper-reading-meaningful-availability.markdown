@@ -11,7 +11,7 @@ categories:
 - metrics
 ---
 
-最近 Google 发了一篇论文：《[更有意义的可用性](https://www.usenix.org/system/files/nsdi20spring_hauer_prepub.pdf)》。
+最近 Google 发了一篇论文：《[更有意义的可用性](https://www.usenix.org/system/files/nsdi20spring_hauer_prepub.pdf){:target="_blank"}》。
 
 技术管理圈子里有句玩笑话，「只要选对了指标，就没有搞不垮的团队」。
 
@@ -19,7 +19,7 @@ categories:
 
 同时也非常困难。
 
-我在两三年前开始使用发布频率、lead time、MTTR、回滚率等四个指标来[考核团队绩效](https://lenciel.com/2018/08/how-to-measure-tech-organization-performance/)，并且把发布频率当成北极星指标。
+我在两三年前开始使用发布频率、lead time、MTTR、回滚率等四个指标来[考核团队绩效](https://lenciel.com/2018/08/how-to-measure-tech-organization-performance/){:target="_blank"}，并且把发布频率当成北极星指标。
 
 这四个指标里，发布频率和 lead time 主要表征效率，而 MTTR 和回滚率则主要表征可用性和质量。
 
@@ -43,16 +43,16 @@ categories:
 <br/>
 在国内技术圈你还经常可以看到或者听到「高可用」这个词。
 
-从[畅销书的名字](https://search.jd.com/Search?keyword=%E9%AB%98%E5%8F%AF%E7%94%A8&enc=utf-8)就能看出来「可用」是多么重要。
+从[畅销书的名字](https://search.jd.com/Search?keyword=%E9%AB%98%E5%8F%AF%E7%94%A8&enc=utf-8){:target="_blank"}就能看出来「可用」是多么重要。
 
-但实际上，「可用性」只是软件系统的核心设计指标「[RAMS](https://en.wikipedia.org/wiki/RAMS)」里面的一个：
+但实际上，「可用性」只是软件系统的核心设计指标「[RAMS](https://en.wikipedia.org/wiki/RAMS){:target="_blank"}」里面的一个：
 
 - Reliability
 - Availability
 - Maintainability
 - Safety
 
-甚至在我很喜欢的《[Designing Data-Intensive Applications](https://www.amazon.com/dp/B06XPJML5D/)》里，它提到的应用系统主要追求的三个方面就直接没有「可用性」，而是：
+甚至在我很喜欢的《[Designing Data-Intensive Applications](https://www.amazon.com/dp/B06XPJML5D/){:target="_blank"}》里，它提到的应用系统主要追求的三个方面就直接没有「可用性」，而是：
 
 - Reliability
 - Scalability
@@ -128,7 +128,7 @@ Google 在论文里面提出的计算方法是：
 
 另外，还有一个概念是「截止期」（cutoff time）：用户平均请求时间间隔的 99 分位。如果一个用户发送了一个请求，然后在截止期内没有再发送请求，则既不计入 uptime 也不计入 downtime，而是计入 inactive time：
 
-![image holder](/downloads/images/2020_02/meaningful_availability_fig_5.jpeg --alt Don't touch me)
+![image holder](/downloads/images/2020_02/meaningful_availability_fig_5.jpeg --alt Don't touch me){:target="_blank"}
 
 这个指标显然是 meaningful 并且 proportional 的，那么它是 actionable 的吗？
 
@@ -142,7 +142,7 @@ Google 在论文里面提出的计算方法是：
 
 我们来看论文里面的例子：
 
-![image holder](/downloads/images/2020_02/meaningful_availability_fig_9.jpeg --alt Don't touch me)
+![image holder](/downloads/images/2020_02/meaningful_availability_fig_9.jpeg --alt Don't touch me){:target="_blank"}
 
 和别的可用性指标的图表不同，这里的信息变得非常丰富:
 
@@ -152,13 +152,13 @@ Google 在论文里面提出的计算方法是：
 
 曲线的拐点还告诉我们应该对什么大小的窗口感兴趣，技术团队应该怎样去解决：
 
-![image holder](/downloads/images/2020_02/meaningful_availability_fig_10.jpeg --alt Don't touch me)
+![image holder](/downloads/images/2020_02/meaningful_availability_fig_10.jpeg --alt Don't touch me){:target="_blank"}
 
 然后，在文章的 5.2 节，提出了一个简化的计算方式：保持窗口大小线性倍增(例如 2 的幂)来采样。
 
 最后，在文章的第 6 节，以实例说明了所有讨论过的基于时间和基于计数的指标的可用性指标的限制，并给出了 计算窗口化的 user uptime 的实际例子：
 
-![image holder](/downloads/images/2020_02/meaningful_availability_fig_20.jpeg --alt Don't touch me)
+![image holder](/downloads/images/2020_02/meaningful_availability_fig_20.jpeg --alt Don't touch me){:target="_blank"}
 
 可以看到 Hangouts 的可用性受到了一个 4 小时事件的影响(曲线拐点) ，而 Drive 没有明显的拐点。这表明 Google 云盘的系统不是单一的宕机引起的可用性差，而是频繁的短故障：这往往意味着如果不解决系统层面的问题，故障时间根本降不下来。
 
@@ -168,4 +168,4 @@ Google 在论文里面提出的计算方法是：
 
 所以我们也试试吧。
 
-[^1]: [American Society for Quality](https://asq.org/quality-resources/quality-glossary/r) 2011 年版本
+[^1]: [American Society for Quality](https://asq.org/quality-resources/quality-glossary/r){:target="_blank"} 2011 年版本

@@ -9,7 +9,7 @@ categories:
 ---
 
 
-Reddit 上有一篇关于 [听起来很假的事实](http://www.reddit.com/r/AskReddit/comments/1sdw81/what_is_a_true_fact_that_sound_completely/) 的讨论贴[^1]，不知道是不是真的:
+Reddit 上有一篇关于 [听起来很假的事实](http://www.reddit.com/r/AskReddit/comments/1sdw81/what_is_a_true_fact_that_sound_completely/){:target="_blank"} 的讨论贴[^1]，不知道是不是真的:
 
 
 {% blockquote %}
@@ -30,4 +30,4 @@ Reddit 上有一篇关于 [听起来很假的事实](http://www.reddit.com/r/Ask
 
 {% endblockquote %}
 
-   [^1]: 还有一个[更老的帖子](http://www.reddit.com/r/AskReddit/comments/1x34t4/whats_the_most_bullshitsoundingbuttrue_fact_you/?limit=500)。
+   [^1]: 还有一个[更老的帖子](http://www.reddit.com/r/AskReddit/comments/1x34t4/whats_the_most_bullshitsoundingbuttrue_fact_you/?limit=500){:target="_blank"}。

@@ -15,7 +15,7 @@ categories: rants software-engineering
 
 假期我和一个老一辈无产阶级革命家聊起了这个问题：每次一个项目出现这样那样的情况，不能按时交付，我们都反思、开会、总结，希望下一个项目能吸取所有的经验，不再犯同样的错误。为什么最后的结果还是一样？
 
-他推荐了 Daniel Kahneman 的[Thinking, Fast and Slow](http://vdisk.weibo.com/s/8nUJx)。这是一本心理学著作，探讨了人类认知的很多方面，其中有不少观点挺值得软件开发从业人员思考的，特别是想不明白为什么我们做的 estimation 永远不准的软件从业人员。
+他推荐了 Daniel Kahneman 的[Thinking, Fast and Slow](http://vdisk.weibo.com/s/8nUJx){:target="_blank"}。这是一本心理学著作，探讨了人类认知的很多方面，其中有不少观点挺值得软件开发从业人员思考的，特别是想不明白为什么我们做的 estimation 永远不准的软件从业人员。
 
 原因一：开发软件面向的问题域在你深入之前是不完全可知的
 ---------------------------------------------
@@ -44,7 +44,7 @@ categories: rants software-engineering
 系统I/系统II以及我们是如何做预估的
 -----------------------------
 
-在[Thinking, Fast and Slow](http://vdisk.weibo.com/s/8nUJx)里面 Kahneman 的解释了人类其实有两套决策系统：系统 II 负责谨慎、理性、分析性的思考；系统 I 复杂快速、基于模式、基于直觉的思考。
+在[Thinking, Fast and Slow](http://vdisk.weibo.com/s/8nUJx){:target="_blank"}里面 Kahneman 的解释了人类其实有两套决策系统：系统 II 负责谨慎、理性、分析性的思考；系统 I 复杂快速、基于模式、基于直觉的思考。
 
 重要的是，在进化的过程中，一个主要变化就是系统 II 慢慢少被使用了：耗时长的系统，仅仅在极其少的必须的情况下被唤醒。但是这里有个显而易见的矛盾是，如果没有经过思考，你怎么知道应该使用系统 I 还是系统 II 呢？
 
@@ -84,9 +84,9 @@ Kahneman 和其他一些专家通过研究，得出了什么时候做预测是�
 * 人的生活还有各种不确定性，如生病、怀孕、过劳、休假、结婚、家长会、禽流感等等；
 * 你的系统会有一些非常难以找到 root cause 的 bug 需要花你估计的十倍以上的时间才能根除
 * 你的客户会给你各种乱七八糟的输入并且提出各种来时已晚的需求
-* [一周工作的超过40个小时之后的部分已经被认为是无效的](https://medium.com/r/?url=http%3A%2F%2Fwww.inc.com%2Fjessica-stillman%2Fwhy-working-more-than-40-hours-a-week-is-useless.html)
-* [工作被打断后需要15到20分钟才能恢复](https://medium.com/r/?url=http%3A%2F%2Flifehacker.com%2F246988%2Fmultitasking-makes-you-less-productive-%2B-take-ten)
-* [人们上班的时候花了非常多的时间干和工作无关的事情](https://medium.com/r/?url=http%3A%2F%2Fwww.kens5.com%2Fnews%2FStudy-Average-worker-spends-60-percent-of-time-cyberloafing-190195401.html)
+* [一周工作的超过40个小时之后的部分已经被认为是无效的](https://medium.com/r/?url=http%3A%2F%2Fwww.inc.com%2Fjessica-stillman%2Fwhy-working-more-than-40-hours-a-week-is-useless.html){:target="_blank"}
+* [工作被打断后需要15到20分钟才能恢复](https://medium.com/r/?url=http%3A%2F%2Flifehacker.com%2F246988%2Fmultitasking-makes-you-less-productive-%2B-take-ten){:target="_blank"}
+* [人们上班的时候花了非常多的时间干和工作无关的事情](https://medium.com/r/?url=http%3A%2F%2Fwww.kens5.com%2Fnews%2FStudy-Average-worker-spends-60-percent-of-time-cyberloafing-190195401.html){:target="_blank"}
 
 接受现实，摒弃对效率神话的膜拜，用心思考在有限的时间内如何最大化的输出对用户有价值的东西，比任何流程、方法论、工具都要重要。这一方面在团队内部倡导了一种科学并且诚实的做事方式，一方面会让你更能分清工作任务和资源的优先级。它最大的好处是让你专心地根据实际的优先级做出判断，把精力放到最关键的事情上去。
 

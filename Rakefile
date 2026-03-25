@@ -62,8 +62,24 @@ task :copy_resized do
   FileUtils.cp_r Dir.glob("#{back_dir}/resized_images"), "#{deploy_dir}/"
 end
 
+task :blank_target do
+  puts "add blank target for posts in _posts dir"
+  
+  files = Dir.glob("_posts/*.markdown")
+  files.each do |markdown_file|
+    system(
+      "sed",
+      "-i", "",
+      "-E",
+      "s/(\\[[^]]+\\]\\([^)]+\\))($|[^{])/\\1{:target=\"_blank\"}\\2/g",
+      markdown_file 
+    )
+  end
+end
+
 desc "Generate jekyll site for production deployment"
 task :generate do
+  Rake::Task[:blank_target].execute
   Rake::Task[:backup_site].execute
   Rake::Task[:copy_resized].execute
   puts "## Generating Site with Jekyll"

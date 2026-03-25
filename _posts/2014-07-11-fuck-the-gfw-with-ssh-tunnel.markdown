@@ -10,4 +10,4 @@ categories:
 - gist
 ---
 
-If you know what it is then you know what [it is](https://gist.github.com/lenciel/d353a04a3a7bc0278ec6). Let's fuck the GFW.
+If you know what it is then you know what [it is](https://gist.github.com/lenciel/d353a04a3a7bc0278ec6){:target="_blank"}. Let's fuck the GFW.

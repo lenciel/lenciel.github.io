@@ -21,9 +21,9 @@ categories:
 
 如果用劣质搜索引擎，你会看到一堆下面这样的原因。
 
-但实际上，不是[这个原因](https://cloud.tencent.com/developer/article/1359222)，也不是[这个原因](https://mendylee.gitbooks.io/geeker-study-courses/content/zhuan-ye-ji-chu-pian/li-lun-xue-ke/shu-ju-jie-gou-yu-suan-fa/shu-zu-ff1a-wei-shi-yao-shu-zu-de-xia-biao-cong-0-kai-shi-bian-hao-ff1f.html)，更不是[这个原因](https://segmentfault.com/a/1190000020843066)。
+但实际上，不是[这个原因](https://cloud.tencent.com/developer/article/1359222){:target="_blank"}，也不是[这个原因](https://mendylee.gitbooks.io/geeker-study-courses/content/zhuan-ye-ji-chu-pian/li-lun-xue-ke/shu-ju-jie-gou-yu-suan-fa/shu-zu-ff1a-wei-shi-yao-shu-zu-de-xia-biao-cong-0-kai-shi-bian-hao-ff1f.html){:target="_blank"}，更不是[这个原因](https://segmentfault.com/a/1190000020843066){:target="_blank"}。
 
-如果搜索手法稍微上档次一点，你可能会看到类似于[这篇文章](http://cenalulu.github.io/linux/why-array-start-from-zero/)的观点：其实是讲解了 Mike Hoye ——用文章里的话来说——[追根刨地的科学精神][^0](http://exple.tive.org/blarg/2013/10/22/citation-needed/)找到的答案。
+如果搜索手法稍微上档次一点，你可能会看到类似于[这篇文章](http://cenalulu.github.io/linux/why-array-start-from-zero/){:target="_blank"}的观点：其实是讲解了 Mike Hoye ——用文章里的话来说——[追根刨地的科学精神][^0](http://exple.tive.org/blarg/2013/10/22/citation-needed/){:target="_blank"}找到的答案。
 
 但是我读了 Mike Hoye 这篇文章，是花了挺大功夫考据，但他的论证过程基本上是：
 
@@ -65,11 +65,11 @@ BCPL 的作者自己说过：
 
 也就是说，Richards 自己解释了，这样的设计更符合计算机的语义，而不是像 Mike 说的那样，仅仅是为了编译效率。
 
-其实在更早的时间，1982 年，Dijkstra 就已经[写文章批判](https://www.cs.utexas.edu/users/EWD/transcriptions/EWD08xx/EWD831.html)了 ALGOL 60(他自己的宝贝)和 Pascal 使用 1 或者任意范围是错误的。
+其实在更早的时间，1982 年，Dijkstra 就已经[写文章批判](https://www.cs.utexas.edu/users/EWD/transcriptions/EWD08xx/EWD831.html){:target="_blank"}了 ALGOL 60(他自己的宝贝)和 Pascal 使用 1 或者任意范围是错误的。
 
 然后，可以看到也是在 C 语言之前， EBDIC 和 ASCII 等都已经是从 0 开始标记的。
 
-再比如同一时期 APL 虽然同时支持 0 或者 1，但 [Kenneth Iverson](https://en.wikipedia.org/wiki/Kenneth_E._Iverson) 在他的《A Programming Language》[^2]里面举例时基本上都是 0 开始。
+再比如同一时期 APL 虽然同时支持 0 或者 1，但 [Kenneth Iverson](https://en.wikipedia.org/wiki/Kenneth_E._Iverson){:target="_blank"} 在他的《A Programming Language》[^2]里面举例时基本上都是 0 开始。
 
 所以，可以看到，随着计算机承担的工作越来越多越来越复杂，大家开始逐渐往最符合机器语义的标准在聚拢：这也使得协作更加简单(你不需要知道引入的库的格式)。
 
@@ -77,4 +77,4 @@ BCPL 的作者自己说过：
 
 [^0]: 实际上，科学的精神不应该仅仅是竭尽全力找支撑自己论点的论据，还要尽可能站在反方试试自己能不能驳倒自己的论点。
 [^1]: 但因为不是硬性的标准，所以还是有例外，比如 TLA+ 就仍然是从 1 开始的。
-[^2]: [《A Programming Language》](https://www.amazon.com/Programming-Language-Kenneth-Iverson/dp/0471430145#:~:text=Iverson%2C%20explores%20how%20programming%20language,explicit%20and%20concise%20programming%20languages)是本好书。
+[^2]: [《A Programming Language》](https://www.amazon.com/Programming-Language-Kenneth-Iverson/dp/0471430145#:~:text=Iverson%2C%20explores%20how%20programming%20language,explicit%20and%20concise%20programming%20languages){:target="_blank"}是本好书。

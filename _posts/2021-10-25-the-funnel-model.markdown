@@ -13,7 +13,7 @@ categories:
 
 ---
 
-最近跟 Arthur 聊起来「[漏斗](https://www.google.com.hk/search?q=%E9%94%80%E5%94%AE%E6%BC%8F%E6%96%97&tbm=isch&ved=2ahUKEwjUnbiB8-bzAhVSzIsBHQc9BsoQ2-cCegQIABAA&oq=%E9%94%80%E5%94%AE%E6%BC%8F%E6%96%97&gs_lcp=CgNpbWcQAzIFCAAQgARQ2RlY_h5gmCFoAHAAeACAAbsBiAH_CpIBAzEuOZgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=RlZ3YdTiAdKYr7wPh_qY0Aw&bih=943&biw=1480)」，他说，很多时候，funnel 不是个正确的模型，loop 可能才是。
+最近跟 Arthur 聊起来「[漏斗](https://www.google.com.hk/search?q=%E9%94%80%E5%94%AE%E6%BC%8F%E6%96%97&tbm=isch&ved=2ahUKEwjUnbiB8-bzAhVSzIsBHQc9BsoQ2-cCegQIABAA&oq=%E9%94%80%E5%94%AE%E6%BC%8F%E6%96%97&gs_lcp=CgNpbWcQAzIFCAAQgARQ2RlY_h5gmCFoAHAAeACAAbsBiAH_CpIBAzEuOZgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=RlZ3YdTiAdKYr7wPh_qY0Aw&bih=943&biw=1480){:target="_blank"}」，他说，很多时候，funnel 不是个正确的模型，loop 可能才是。
 
 我说，漏斗本来就是销售「漏斗这个营销模型」的销售话术。
 
@@ -33,7 +33,7 @@ Arthur 说，这什么鬼？
 
 到了 1942 年，William Townsend 出版了一本讲债券销售的书叫做《Bond Salesmanship》，第一次在 AIDA 的基础上加入了漏斗的比喻：
 
-![steps-of-sale.png](/downloads/images/2021_10/steps-of-sale.png --alt Don't touch me...)
+![steps-of-sale.png](/downloads/images/2021_10/steps-of-sale.png --alt Don't touch me...){:target="_blank"}
 
 你可以看到，在书里面，强调的是在一次单一的接触中，按照几个阶段把单一的潜在用户「漏」下去。而到了今天，漏斗上的各个阶段通常是在更长的时间尺度上，跨多个平台，针对各种不同受众的。换句话说，现在整个「漏斗」的关注点，已经不是关于把某个人在用户旅程转化掉了，而是怎么把大量的潜在用户扔进去，然后有一个不错的产出。
 
@@ -41,11 +41,11 @@ Arthur 说，这什么鬼？
 
 虽然「漏斗」模型的起源可以追溯到很久远的年代，它真正的爆发不过十来年。
 
-[Les Binet](https://twitter.com/binetles) 认为，在 20 世纪 90 年代中期一次大众汽车的战略演示中，人们第一次比较正式的接触到了这个模型。
+[Les Binet](https://twitter.com/binetles){:target="_blank"} 认为，在 20 世纪 90 年代中期一次大众汽车的战略演示中，人们第一次比较正式的接触到了这个模型。
 
 这之后，随着广告平台的不断推出和成熟，「漏斗模型」就变得逐渐流行起来：
 
-![trsearch.png](/downloads/images/2021_10/trsearch.png --alt Don't touch me...)
+![trsearch.png](/downloads/images/2021_10/trsearch.png --alt Don't touch me...){:target="_blank"}
 
 一个模型，在被发明后的一百多年里，大部分时间都很沉寂。
 
@@ -67,20 +67,20 @@ Arthur 说，这什么鬼？
 
 但这个问题可以通过添加两个阶段[^1]和一个回到早期阶段的循环来修复。比如下图所示的麦肯锡的忠诚度循环：
 
-![loyaltyloop.png](/downloads/images/2021_10/loyaltyloop.png --alt Don't touch me...)
+![loyaltyloop.png](/downloads/images/2021_10/loyaltyloop.png --alt Don't touch me...){:target="_blank"}
 
 但现实生活不是这样的[^2]，人们决定要不要买东西，不会也不该有一个这样地狱般无限轮回的心路历程。
 
 除开现实世界没有「连续」之外，对「漏斗」的一个常见的挑战是现实世界没有那么线性。人们往往非常随机地碰到不同的触点，然后在他们自己都没法预测的，非常个性化的用户旅程中，形成转化。
 
 
-关于这点，我很喜欢 [Doug Garnett](https://douggarnett.com/)对用户旅程的可视化：
+关于这点，我很喜欢 [Doug Garnett](https://douggarnett.com/){:target="_blank"}对用户旅程的可视化：
 
-![doug-garnett.png](/downloads/images/2021_10/doug-garnett.png --alt Don't touch me...)
+![doug-garnett.png](/downloads/images/2021_10/doug-garnett.png --alt Don't touch me...){:target="_blank"}
 
-这种非线性在 James Hankins 最近的[六边形模型](https://www.marketingweek.com/forget-funnels-new-model-path-to-purchase/)中也有提及。这个理论认为用户旅程既不是线性的「漏斗」，也不是一个环。它认为每个品牌和个人差异都很多，人们一开始是被动地、潜意识地吸收品牌的东西，然后在某个触点触发之后，开始一个比较线性的分阶段的转化过程。
+这种非线性在 James Hankins 最近的[六边形模型](https://www.marketingweek.com/forget-funnels-new-model-path-to-purchase/){:target="_blank"}中也有提及。这个理论认为用户旅程既不是线性的「漏斗」，也不是一个环。它认为每个品牌和个人差异都很多，人们一开始是被动地、潜意识地吸收品牌的东西，然后在某个触点触发之后，开始一个比较线性的分阶段的转化过程。
 
-![hexagon.jpg](/downloads/images/2021_10/hexagon.jpg --alt Don't touch me...)
+![hexagon.jpg](/downloads/images/2021_10/hexagon.jpg --alt Don't touch me...){:target="_blank"}
 
 换句话说，它认为营销是非常个性化的。需要根据品牌自己的核心价值主张来自己定义核心的用户旅程。在这段核心的旅程中，需要把沟通的角色，信息的渠道和传递的内容定义好。
 
@@ -96,7 +96,7 @@ Arthur 说，这什么鬼？
 
 因此，研究和建立用户旅程，在过程中建立心理可用性和创建品牌联想[^4]，然后通过各种触点触发那些更接近购买的联想，比漏斗要接近现实世界的运作方式。
 
-这里特别要提一下「心理可用性」（Mental Availability） 这个概念。这是一个在最近几年的市场营销学里面[特别核心的概念](https://byronsharp.wordpress.com/2014/09/29/what-causes-the-double-jeopardy-law/)：基本上，它认为让用户知道（awareness）是不够的，让用户在关键决策时刻能够想起你的品牌才是决定性的。
+这里特别要提一下「心理可用性」（Mental Availability） 这个概念。这是一个在最近几年的市场营销学里面[特别核心的概念](https://byronsharp.wordpress.com/2014/09/29/what-causes-the-double-jeopardy-law/){:target="_blank"}：基本上，它认为让用户知道（awareness）是不够的，让用户在关键决策时刻能够想起你的品牌才是决定性的。
 
 这是我比较看重「无提示第一提及率」的原因。
 
@@ -114,10 +114,10 @@ Arthur 说，这什么鬼？
 
 ## TODO
 
-统计学上有一句名言，是「[All models are wrong，but some are useful](https://en.wikipedia.org/wiki/All_models_are_wrong)」。我觉得，再干一段时间增长，希望我自己可以拿出一个更好的 model，这里，立个 flag 吧。
+统计学上有一句名言，是「[All models are wrong，but some are useful](https://en.wikipedia.org/wiki/All_models_are_wrong){:target="_blank"}」。我觉得，再干一段时间增长，希望我自己可以拿出一个更好的 model，这里，立个 flag 吧。
 
 [^1]: 例如 Loyalty 和 Advocacy。
 [^2]: 看到这个环的时候我最先想到的是《绝命毒师》里小粉被那个帮他戒毒的人说，他「Kafkaesque」了。
 [^3]: 假设你看过 Daniel Kahneman 的《思考，快与慢》，如果没有，就去看看。
-[^4]: 这部分理念，我感觉讲得最好的是 [Byron Sharp](https://www.marketingscience.info/staff/byronsharp/)的那些论著。
+[^4]: 这部分理念，我感觉讲得最好的是 [Byron Sharp](https://www.marketingscience.info/staff/byronsharp/){:target="_blank"}的那些论著。
 [^5]: 有一些公司是按照所谓「upper funnel」和「lower funnel」去划分 branding 和 performance 的。

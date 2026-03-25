@@ -12,13 +12,13 @@ categories:
 
 ---
 
-关于组织的管理和文化我写过[挺多的](/categories/culture/)。
+关于组织的管理和文化我写过[挺多的](/categories/culture/){:target="_blank"}。
 
 公司比较小的时候，基本上创始团队的行为模式就是组织的文化。但是当公司慢慢变大的过程中，组织文化是需要刻意培养的。
 
-我应该算国内比较早关注到 Google 进行的组织[相关的研究](https://www.nytimes.com/2016/02/28/magazine/what-google-learned-from-its-quest-to-build-the-perfect-team.html)，然后把 DORA 指标引入到 产研团队管理里，并数字化和工具化的（那时候它们还没有被命名成 DORA 指标）。
+我应该算国内比较早关注到 Google 进行的组织[相关的研究](https://www.nytimes.com/2016/02/28/magazine/what-google-learned-from-its-quest-to-build-the-perfect-team.html){:target="_blank"}，然后把 DORA 指标引入到 产研团队管理里，并数字化和工具化的（那时候它们还没有被命名成 DORA 指标）。
 
-18 年在 ArchiSummit [分享](/2018/08/how-to-measure-tech-organization-performance/)这些指标体系和我们自建的工具时，同行们普遍还觉得比较新鲜[^1]。
+18 年在 ArchiSummit [分享](/2018/08/how-to-measure-tech-organization-performance/){:target="_blank"}这些指标体系和我们自建的工具时，同行们普遍还觉得比较新鲜[^1]。
 
 几年下来，这些指标和工具，还在不断迭代优化。但据我的观察， Google 的 DORA 项目里一些关于组织管理和文化的相对不变的东西[^2]，却被很多团队忽视了。
 
@@ -26,15 +26,15 @@ categories:
 
 想起来这个是今天看了一个 Vivienne Ming 在
 MIT Leadership Center[^3]
- 的关于领导力的[演讲](https://www.youtube.com/watch?v=I4SWZb50VYk)，正好公司里面也有一些关于是否应该基于「hierarchy」进行管理的讨论。
+ 的关于领导力的[演讲](https://www.youtube.com/watch?v=I4SWZb50VYk){:target="_blank"}，正好公司里面也有一些关于是否应该基于「hierarchy」进行管理的讨论。
 
-其实管理作为一个学科，是一直在演进的。不同的领导力风格，在不同的公司也可能效果不同。但总体上来说，社会大方向仍然是往 Westrum 的模型里最右边的，面向问题解决的组织形态[去发展的](https://hbr.org/2018/03/what-kind-of-leadership-works-best-at-your-company)：
+其实管理作为一个学科，是一直在演进的。不同的领导力风格，在不同的公司也可能效果不同。但总体上来说，社会大方向仍然是往 Westrum 的模型里最右边的，面向问题解决的组织形态[去发展的](https://hbr.org/2018/03/what-kind-of-leadership-works-best-at-your-company){:target="_blank"}：
 
-![westrum_model.png](/downloads/images/2021_11/westrum_model.png --alt Don't touch me...)
+![westrum_model.png](/downloads/images/2021_11/westrum_model.png --alt Don't touch me...){:target="_blank"}
 
 为什么？聊起来的时候很多管理者觉得是因为现在 90 后、00 后出来上班了。我觉得年轻一代自我意识的觉醒只是影响因素，更本质的原因有两个，一个是协作过载，一个是信息过载。
 
-协作过载（Collaborative Overload）是 HBR 在 2016 年做的一个调查之后[提出的](https://hbr.org/2016/01/collaborative-overload)，核心结论就是过去的 20 年内，管理者和员工用于协作活动的时间比过去激增了 50% 以上。
+协作过载（Collaborative Overload）是 HBR 在 2016 年做的一个调查之后[提出的](https://hbr.org/2016/01/collaborative-overload){:target="_blank"}，核心结论就是过去的 20 年内，管理者和员工用于协作活动的时间比过去激增了 50% 以上。
 
 信息过载就不用解释了，我经常说移动互联网普及之后，一个人的智商主要体现在信息筛选的效率和质量。
 
@@ -51,5 +51,5 @@ MIT Leadership Center[^3]
 这些说起来都不难，但其实很难的：我看到的很多管理者，着迷于道，连自己的团队要解决的是什么问题都没有真正搞明白，那肯定也搭不出对应的团队。所以，要做一个靠谱的负责人，不妨先爱上一个问题，然后解决它吧。
 
 [^1]: 我印象中当时还在七牛管工程效率的李倩问我的问题，已经让我感觉到她可能不太满足于只服务一个研发团队了，果然没多久就听说她创立了 KodeRover。
-[^2]: 现在这些文档甚至有[中文版](https://cloud.google.com/architecture/devops/devops-culture-westrum-organizational-culture)了：我一直觉得里面关于 Westrum 组织文化理论的引入，关于学习文化和变革型领导力的打造，是值得每个管理者认真学习的。
+[^2]: 现在这些文档甚至有[中文版](https://cloud.google.com/architecture/devops/devops-culture-westrum-organizational-culture){:target="_blank"}了：我一直觉得里面关于 Westrum 组织文化理论的引入，关于学习文化和变革型领导力的打造，是值得每个管理者认真学习的。
 [^3]: MIT 领导力中心的教员主任在网站上介绍时说，那些推动有影响力的改变发生的人看起来越来越不像是传统领导力描述的模型，而且似乎也不打算像那些模型。于是他们小心翼翼地把这称之为「问题导向型领导」，并开始进行大量的采访、案例研究和文献综述，并把这些都纳入了领导力研究项目。

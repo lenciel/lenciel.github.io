@@ -15,9 +15,9 @@ categories:
 
 ---
 
-> 这是一个关于技术团队效能管理的[系列](/categories/performance/)的第一篇，主要讲怎么度量，后面还有[怎么提升](/2018/08/how-to-improve-tech-organization-performance/)。
+> 这是一个关于技术团队效能管理的[系列](/categories/performance/){:target="_blank"}的第一篇，主要讲怎么度量，后面还有[怎么提升](/2018/08/how-to-improve-tech-organization-performance/){:target="_blank"}。
 
-最近在 ArchSummit 做了一次关于绩效管理的分享（[详情可点击](https://www.infoq.cn/article/wF*ApRZNls8zuwf2fYWT)），[slide](https://github.com/lenciel/talks/blob/master/slides/2018_08_05_how_to_measure_and_improve_team_performance/%E7%A0%94%E5%8F%91%E6%95%88%E7%8E%87%E5%BA%A6%E9%87%8F%E5%92%8C%E6%8F%90%E5%8D%87-v1.pdf)发出去之后，很多朋友希望知道具体讲了啥，就在这里整理一下。
+最近在 ArchSummit 做了一次关于绩效管理的分享（[详情可点击](https://www.infoq.cn/article/wF*ApRZNls8zuwf2fYWT){:target="_blank"}），[slide](https://github.com/lenciel/talks/blob/master/slides/2018_08_05_how_to_measure_and_improve_team_performance/%E7%A0%94%E5%8F%91%E6%95%88%E7%8E%87%E5%BA%A6%E9%87%8F%E5%92%8C%E6%8F%90%E5%8D%87-v1.pdf){:target="_blank"}发出去之后，很多朋友希望知道具体讲了啥，就在这里整理一下。
 
 作为技术管理者，我们经常要回答下面这些问题：
 
@@ -40,9 +40,9 @@ categories:
 
 其次，虽然在软件工程的早期，这个行业被类比成建筑行业：我们的架构师跟建筑师一样叫做 Architect，瀑布开发流程也明显有很多建筑体系的影子，甚至今天我们还自嘲是搬砖的。但实际上同一个建筑设计图，拿给两个合格的建筑施工队，工期和交付的产出应该都是基本一致的。而同样的需求，两个不同的技术团队不管是工期还是产出物，甚至可以说没有一行代码是一样的。
 
-再次，整个技术工作对工作量的估计和任务的拆解是非常主观的。特别是进入敏捷时代了之后，研发的各个阶段工作并不是顺序发生的。很多时候测试还在进行这个迭代的测试，产品已经在整理下一个迭代的需求了，要把一个周期内的工作量度量清楚，更加困难。并且敏捷流程本身其实也是[有代价](/2018/08/the-cost-of-agile)的。
+再次，整个技术工作对工作量的估计和任务的拆解是非常主观的。特别是进入敏捷时代了之后，研发的各个阶段工作并不是顺序发生的。很多时候测试还在进行这个迭代的测试，产品已经在整理下一个迭代的需求了，要把一个周期内的工作量度量清楚，更加困难。并且敏捷流程本身其实也是[有代价](/2018/08/the-cost-of-agile){:target="_blank"}的。
 
-最后，核心的问题在于，软件本身的[复杂度](/2018/08/the-complexity-of-software-system/)，造成了它的工作量本身就很难被评估。
+最后，核心的问题在于，软件本身的[复杂度](/2018/08/the-complexity-of-software-system/){:target="_blank"}，造成了它的工作量本身就很难被评估。
 
 ### 旧手段的问题
 

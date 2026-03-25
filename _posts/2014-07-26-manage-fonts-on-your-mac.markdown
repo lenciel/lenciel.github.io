@@ -9,7 +9,7 @@ categories:
 - font
 ---
 
-对于从事设计工作的人员，难免要和字体打交道：因为[设计主要就是Typography的设计](https://lenciel.com/2013/08/buttericks-practical-typography/)，而 Typography 的基础就是字体。
+对于从事设计工作的人员，难免要和字体打交道：因为[设计主要就是Typography的设计](https://lenciel.com/2013/08/buttericks-practical-typography/){:target="_blank"}，而 Typography 的基础就是字体。
 
 随着完成的项目越来越多，机器上的字体也就慢慢多起来，如何快速的找到自己想要的字体变成了问题。特别是大多数设计软件里，字体选择的界面都是一个下拉框：如果你有几百个字体加载到系统，几乎每次选择字体都是一场灾难。
 
@@ -45,7 +45,7 @@ Suite Fusion 提供了一个可以自己定义路径的 Font Vault。然后你�
 
 整理字体的界面可以参考下面的截图：
 
-![suite fusion 5](/downloads/images/2014_07/suite_fusion_5.png --alt Don't touch me)
+![suite fusion 5](/downloads/images/2014_07/suite_fusion_5.png --alt Don't touch me){:target="_blank"}
 
 建立的这些字体库可以根据你打开的文档类型来进行激活和去激活。并且 Suite Fusion 提供了很多常见设计软件（比如 Photoshop、Sketch 等）的插件，让你直接在这些软件里面操作字体库。
 

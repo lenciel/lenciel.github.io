@@ -11,7 +11,7 @@ categories:
 - distributed-system
 ---
 
-最近在 EGO 里做了一次关于微服务架构的分享，[keynote](https://github.com/lenciel/talks/tree/master/slides/2017_03_19_ego_msa_in_practice)写好了，思路在这里梳理一下。
+最近在 EGO 里做了一次关于微服务架构的分享，[keynote](https://github.com/lenciel/talks/tree/master/slides/2017_03_19_ego_msa_in_practice){:target="_blank"}写好了，思路在这里梳理一下。
 
 ## 不讲干货
 
@@ -39,7 +39,7 @@ categories:
 
 ## MSA是什么？
 
-微服务架构（Microservice Architecture，简称 MSA）的思想其实不是 Martin Fowler 提出的，而是存在已久。只不过 Martin Fowler 和 James Lewis 在那篇[广为传颂的文章](https://martinfowler.com/articles/microservices.html)里给它下了个简明扼要的的定义：
+微服务架构（Microservice Architecture，简称 MSA）的思想其实不是 Martin Fowler 提出的，而是存在已久。只不过 Martin Fowler 和 James Lewis 在那篇[广为传颂的文章](https://martinfowler.com/articles/microservices.html){:target="_blank"}里给它下了个简明扼要的的定义：
 
 > In short, the microservice architectural style is an approach to developing a single application as a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API. These services are built around business capabilities and independently deployable by fully automated deployment machinery. There is a bare minimum of centralized management of these services, which may be written in different programming languages and use different data storage technologies.
 
@@ -56,14 +56,14 @@ categories:
 
 ### 是风格不是教条
 
-每个公司进行架构改造，都是[业务特点](/2017/02/handling-data-in-msa/)、[团队情况](/2017/02/the-real-success-by-doing-msa/)和技术栈等多方面因素综合决定的系统工程。微服务架构是一种「风格」，而不是可以按图索骥的「教条」。
+每个公司进行架构改造，都是[业务特点](/2017/02/handling-data-in-msa/){:target="_blank"}、[团队情况](/2017/02/the-real-success-by-doing-msa/){:target="_blank"}和技术栈等多方面因素综合决定的系统工程。微服务架构是一种「风格」，而不是可以按图索骥的「教条」。
 
 
 ### 不是什么新科技
 
 MSA 里面提到的很多想法，追究起来都源远流长。「micro-web-service」的提法 2005 年就有，「microservice」这个叫法，也早在 2011 年威尼斯的软件会议里面就开始被使用了。
 
-整个思路的形成和演进里面，「[Unix-like](https://en.wikipedia.org/wiki/Pipeline_(Unix)」或者是「Unix Way」被反复提及。James Lewis 第一个比较正式的关于微服务架构的演讲就叫「Microservices - Java, the Unix Way」。
+整个思路的形成和演进里面，「[Unix-like](https://en.wikipedia.org/wiki/Pipeline_(Unix){:target="_blank"}」或者是「Unix Way」被反复提及。James Lewis 第一个比较正式的关于微服务架构的演讲就叫「Microservices - Java, the Unix Way」。
 
 这是因为 Unix 的很多设计哲学，比如「small is beautiful」或者「make each program do one thing well」，都深深的影响着微服务架构的设计思想。
 
@@ -94,11 +94,11 @@ Nike，Twitter，Netflix，以及从来不说自己在做微服务架构，但�
 
 毕竟，我们不是所有人都在构建 Twitter 那样复杂的系统。
 
-![Vhost threshold](/downloads/images/2017_03/twitter_services_deps.jpg --alt Don't touch me)
+![Vhost threshold](/downloads/images/2017_03/twitter_services_deps.jpg --alt Don't touch me){:target="_blank"}
 
 *fig1.1 Twitter的服务间依赖图*
 
-有很多有趣的答案，但我们不妨看看图灵奖得主，分布式系统的先驱[Leslie Lamport](https://en.wikipedia.org/wiki/Leslie_Lamport)是怎么说的：
+有很多有趣的答案，但我们不妨看看图灵奖得主，分布式系统的先驱[Leslie Lamport](https://en.wikipedia.org/wiki/Leslie_Lamport){:target="_blank"}是怎么说的：
 
 > A distributed system is one in which the failure of a computer you didn't know existed can render your own computer unusable.
 
@@ -135,9 +135,9 @@ Nike，Twitter，Netflix，以及从来不说自己在做微服务架构，但�
 
 Grace Hopper（第一个编译器的作者），喜欢给自己每个学生发一条 11.8 英寸的电线：这是电一纳秒能够跑的距离，他想提醒学生脑子里面要有时延。
 
-Jeff Dean 在斯坦福的那个[著名的讲座](https://static.googleusercontent.com/media/research.google.com/zh-CN//people/jeff/stanford-295-talk.pdf)里面提出了每个程序员都应该知道的[一些时延数据](https://www.quora.com/What-are-the-numbers-that-every-computer-engineer-should-know-according-to-Jeff-Dean)。
+Jeff Dean 在斯坦福的那个[著名的讲座](https://static.googleusercontent.com/media/research.google.com/zh-CN//people/jeff/stanford-295-talk.pdf){:target="_blank"}里面提出了每个程序员都应该知道的[一些时延数据](https://www.quora.com/What-are-the-numbers-that-every-computer-engineer-should-know-according-to-Jeff-Dean){:target="_blank"}。
 
-[There is no Now](http://queue.acm.org/detail.cfm?id=2745385)...
+[There is no Now](http://queue.acm.org/detail.cfm?id=2745385){:target="_blank"}...
 
 
 #### 局部失效
@@ -147,7 +147,7 @@ Jeff Dean 在斯坦福的那个[著名的讲座](https://static.googleuserconten
 - 如何处理局部失效：节点失效、网络分区失效、拜占庭失效等情况下，系统的执行和操作不应受到失效的影响；
 - 失效了如何保持一致:系统中相关数据间的逻辑关系应当是正确和完整的；
 
-在 1985 年的时候，Fischer, Lynch 和 Patterson 就提出了分布式系统最重要的理论之一：[FLP不可能性](http://the-paper-trail.org/blog/a-brief-tour-of-flp-impossibility/)，毁灭了构建分布式超级计算机系统的幻想：
+在 1985 年的时候，Fischer, Lynch 和 Patterson 就提出了分布式系统最重要的理论之一：[FLP不可能性](http://the-paper-trail.org/blog/a-brief-tour-of-flp-impossibility/){:target="_blank"}，毁灭了构建分布式超级计算机系统的幻想：
 
 > 在假设网络可靠、计算节点只会因崩溃而失效的最小化异步模型系统中，仍然不存在一个可以解决一致性问题的确定性算法。
 
@@ -194,7 +194,7 @@ Jeff Dean 在斯坦福的那个[著名的讲座](https://static.googleuserconten
 * 哪些需要纳入微服务化的计划？
 * 如何去在内部销售基础设施？
 
-[康威定律](https://en.wikipedia.org/wiki/Conway%27s_law)的内容，值得每个架构师和技术管理者[学习](http://www.infoq.com/cn/articles/every-architect-should-study-conway-law)。
+[康威定律](https://en.wikipedia.org/wiki/Conway%27s_law){:target="_blank"}的内容，值得每个架构师和技术管理者[学习](http://www.infoq.com/cn/articles/every-architect-should-study-conway-law){:target="_blank"}。
 
 ### 流程
 
@@ -204,7 +204,7 @@ MSA 技术层面上每一目的的达成，几乎都是多组件、多层级、�
 
 #### 测试
 
-[The Hard Thing About Hard Things](http://www.audible.com/pd/Business/The-Hard-Thing-About-Hard-Things-Audiobook/B00I0AJC2Y?mkwid=DSAINTTitle_dc&pcrid=158258695668&pmt=b&pkw=&source_code=GO1GBSH07271690CB&cvosrc=ppc%20dynamic%20search.google.634950925&cvo_crid=158258695668&cvo_pid=33581432409&gclid=CjwKEAjw3KDIBRCz0KvZlJ7k4TgSJABDqOK7txc86bRc4oHeRJ69icgVvd0fOpt4CaUEUoaA9nLLRBoCGNnw_wcB)大家都可以去看看，非常有意思。
+[The Hard Thing About Hard Things](http://www.audible.com/pd/Business/The-Hard-Thing-About-Hard-Things-Audiobook/B00I0AJC2Y?mkwid=DSAINTTitle_dc&pcrid=158258695668&pmt=b&pkw=&source_code=GO1GBSH07271690CB&cvosrc=ppc%20dynamic%20search.google.634950925&cvo_crid=158258695668&cvo_pid=33581432409&gclid=CjwKEAjw3KDIBRCz0KvZlJ7k4TgSJABDqOK7txc86bRc4oHeRJ69icgVvd0fOpt4CaUEUoaA9nLLRBoCGNnw_wcB){:target="_blank"}大家都可以去看看，非常有意思。
 
 分布式系统的两大难题带来的是复杂度和状态空间的指数级增加。
 
@@ -214,15 +214,15 @@ MSA 技术层面上每一目的的达成，几乎都是多组件、多层级、�
 
 传统的测试方法肯定是不行的。
 
-因此，如何进行「契约测试」是测试技术发展的一个新动向，Lamport 本人就贡献了[TLA+](http://lamport.azurewebsites.net/tla/tla.html)来进行分布式系统的[形式化的验证](https://en.wikipedia.org/wiki/Formal_verification)。
+因此，如何进行「契约测试」是测试技术发展的一个新动向，Lamport 本人就贡献了[TLA+](http://lamport.azurewebsites.net/tla/tla.html){:target="_blank"}来进行分布式系统的[形式化的验证](https://en.wikipedia.org/wiki/Formal_verification){:target="_blank"}。
 
-如何这样的投入对于团队太奢侈了怎么办？感觉可以看看[这篇论文](https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-yuan.pdf)，里面有很多数据非常有趣，看完之后对测试设计帮助很大：
+如何这样的投入对于团队太奢侈了怎么办？感觉可以看看[这篇论文](https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-yuan.pdf){:target="_blank"}，里面有很多数据非常有趣，看完之后对测试设计帮助很大：
 
 > Three nodes or less can reproduce 98% of failures.
 > 35% of catastrophic failures are caused by very basic things.
 > Testing error handling code could have prevented 58% of catastrophic failures.
 
-另外，除开常规的测试手段，分布式系统大量的使用 Fault Injection 或者 Game Days 这种方式来进行测试。比如 Netflix 就公布了自己的[Simian Army](https://github.com/Netflix/SimianArmy)工具，[Riemann](http://riemann.io/)的作者 Aphyr 还用 Clojure 写了个工具叫[Jepsen](https://github.com/jepsen-io/jepsen)。
+另外，除开常规的测试手段，分布式系统大量的使用 Fault Injection 或者 Game Days 这种方式来进行测试。比如 Netflix 就公布了自己的[Simian Army](https://github.com/Netflix/SimianArmy){:target="_blank"}工具，[Riemann](http://riemann.io/){:target="_blank"}的作者 Aphyr 还用 Clojure 写了个工具叫[Jepsen](https://github.com/jepsen-io/jepsen){:target="_blank"}。
 
 Game Days 主要指通过演习来让 Partial Failure 确实发生。比较著名的有 Google 的 Wheel of Misfortune，再比如 Stripe 在自己的 Redis 主节点上来了一发`kill -9`之后发现了 Redis 的一个 bug，于是把这样的乱来变成了内部传统。
 

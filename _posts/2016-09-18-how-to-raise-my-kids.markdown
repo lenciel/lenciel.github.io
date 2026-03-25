@@ -13,7 +13,7 @@ categories:
 
 是一个全世界人民，特别是苦逼的中间阶层人民，亘古不变的热闹话题。
 
-昨天，远在 LA 的陈明同学分享了一个关于[如何带娃的TED讲座](http://www.ted.com/talks/julie_lythcott_haims_how_to_raise_successful_kids_without_over_parenting?utm_source=newsletter_weekly_2016-09-17&utm_campaign=newsletter_weekly&utm_medium=email&utm_content=talk_of_the_week_button&from=timeline&isappinstalled=0#t-318006)。
+昨天，远在 LA 的陈明同学分享了一个关于[如何带娃的TED讲座](http://www.ted.com/talks/julie_lythcott_haims_how_to_raise_successful_kids_without_over_parenting?utm_source=newsletter_weekly_2016-09-17&utm_campaign=newsletter_weekly&utm_medium=email&utm_content=talk_of_the_week_button&from=timeline&isappinstalled=0#t-318006){:target="_blank"}。
 
 讲座里面酷似乌比·戈德堡的阿姨把那种生活在完成家长制定的无穷无尽的计划中的小孩，叫做 checklist children。她认为这些家长进行的是过度抚养（不知道这么翻译 over-parenting 是不是正确），并对有此遭遇的小孩致以了深切的同情：因为总是被安排，没有自己成长的空间，这些小朋友们感受不到父母对自己的爱，从而也就没有办法正确地认识自己和爱自己，于是更加没有办法好好对待别人和爱别人。
 
@@ -31,7 +31,7 @@ categories:
 
 本着治病救人要连根拔起的精神，不如本座来给大家开一铺权威猛药。
 
-上周在 nature 网站上，我看到了[一篇文章](http://www.nature.com/news/how-to-raise-a-genius-lessons-from-a-45-year-study-of-super-smart-children-1.20537)，讲述一个长达 45 年的天才少年跟踪计划[SMPY](https://my.vanderbilt.edu/smpy)，以及这个计划得出的结论。
+上周在 nature 网站上，我看到了[一篇文章](http://www.nature.com/news/how-to-raise-a-genius-lessons-from-a-45-year-study-of-super-smart-children-1.20537){:target="_blank"}，讲述一个长达 45 年的天才少年跟踪计划[SMPY](https://my.vanderbilt.edu/smpy){:target="_blank"}，以及这个计划得出的结论。
 
 这个计划的创办其实也挺偶然的：1968 年的一个夏日，Julian Stanley 接手了计算机系的一名神童 Joseph Bates。这个来自美国巴尔的摩的学生在数学等方面遥遥领先于同龄人，于是他的父母送他到 Johns Hopkins University 学习大学计算机课程。结果他的水平超越了班上绝大多数成年人，在成为了他们的 Fortran 语言助教之后，表示课程有些无聊。
 
@@ -39,7 +39,7 @@ categories:
 
 测试的结果是，Bates 的 SAT 得分远超 Johns Hopkins University 的录取门槛。这一方面让 Bates 得以在 13 岁作为本科生正式进入这所大学；同时，他也成为了 Stanley 的「数学早慧少年研究」(Study of Mathematically Precocious Youth, SMPY）的「student zero」（跟 EVA 一样，都有零号机啊有没有）。
 
-Stanley 开启这项研究，很大程度上是因为心理学领域最著名的纵向调查之一——Lewis Terman 的「[天才遗传学研究](http://www.nature.com/news/long-term-research-slow-science-1.12623)」（从 1921 年开始，Terman 基于 IQ 测试得分选择了一批青少年受试者，然后追踪并为他们的事业提供鼓励）仅产生了为数不多的德高望重的科学家。而年少时因 IQ 得分过低而被淘汰的候选者里面，却涌现了包括晶体管的共同发明者、诺奖得主 William Shockley，物理学家、诺奖得主 Luis Alvarez 这样的选手。
+Stanley 开启这项研究，很大程度上是因为心理学领域最著名的纵向调查之一——Lewis Terman 的「[天才遗传学研究](http://www.nature.com/news/long-term-research-slow-science-1.12623){:target="_blank"}」（从 1921 年开始，Terman 基于 IQ 测试得分选择了一批青少年受试者，然后追踪并为他们的事业提供鼓励）仅产生了为数不多的德高望重的科学家。而年少时因 IQ 得分过低而被淘汰的候选者里面，却涌现了包括晶体管的共同发明者、诺奖得主 William Shockley，物理学家、诺奖得主 Luis Alvarez 这样的选手。
 
 Stanley 于是想找出更加科学的筛选和培养方式，用他的话说就是：「no more dry bones methodology」（拒绝血统论？呵呵...）。
 

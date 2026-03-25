@@ -11,7 +11,7 @@ categories:
 - tutorials
 ---
 
-![tmux screenshot 1](/downloads/images/2013_07/tmux_tips_1.png --alt Don't touch me)
+![tmux screenshot 1](/downloads/images/2013_07/tmux_tips_1.png --alt Don't touch me){:target="_blank"}
 
 ### **简介**
 
@@ -19,7 +19,7 @@ categories:
 
 #### **tmux的安装**
 
-用你的 Linux package manager 或者如果你和我一样在 OSX 可以用`brew`。另外，iTerm2[集成了](http://code.google.com/p/iterm2/wiki/TmuxIntegration)对`tmux`的支持，它也是很多 Mac 上的[程序员](http://tangledhelix.com/blog/2012/04/28/iterm2-keymaps-for-tmux/)最爱的 Terminal。
+用你的 Linux package manager 或者如果你和我一样在 OSX 可以用`brew`。另外，iTerm2[集成了](http://code.google.com/p/iterm2/wiki/TmuxIntegration){:target="_blank"}对`tmux`的支持，它也是很多 Mac 上的[程序员](http://tangledhelix.com/blog/2012/04/28/iterm2-keymaps-for-tmux/){:target="_blank"}最爱的 Terminal。
 
 #### **创建一个具名的Session**
 
@@ -132,7 +132,7 @@ setw -g pane-base-index 1
 set -sg escape-time 1
 ```
 
-完整的配置文件在[这里](https://github.com/lenciel/oh-my-zsh/blob/master/dot_files/tmux.conf)：
+完整的配置文件在[这里](https://github.com/lenciel/oh-my-zsh/blob/master/dot_files/tmux.conf){:target="_blank"}：
 
 {% highlight bash %}
 # zsh is kinda tight

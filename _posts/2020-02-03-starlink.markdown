@@ -11,9 +11,9 @@ categories:
 
 几天之前，SpaceX 的 Falcon 9 火箭离开卡纳维拉尔角，向近地轨道（LEO）发射了 60 颗小型 Starlink 卫星。
 
-我身边有很多人知道 Musk 在搞 Tesla 的同时还搞了 SpaceX ，但很多人并不知道，SpaceX 有一家名为 [Starlink](https://www.youtube.com/watch?v=giQ8xEWjnBs) 的子公司。
+我身边有很多人知道 Musk 在搞 Tesla 的同时还搞了 SpaceX ，但很多人并不知道，SpaceX 有一家名为 [Starlink](https://www.youtube.com/watch?v=giQ8xEWjnBs){:target="_blank"} 的子公司。
 
-这个公司干的事情有一点点像当年把摩托拖垮的[铱星计划](https://zh.wikipedia.org/wiki/%E9%93%B1%E5%8D%AB%E6%98%9F)，希望通过大量的卫星来对全球覆盖并提供无线互联网访问和专线通信服务。
+这个公司干的事情有一点点像当年把摩托拖垮的[铱星计划](https://zh.wikipedia.org/wiki/%E9%93%B1%E5%8D%AB%E6%98%9F){:target="_blank"}，希望通过大量的卫星来对全球覆盖并提供无线互联网访问和专线通信服务。
 
 先讲一点背景。
 

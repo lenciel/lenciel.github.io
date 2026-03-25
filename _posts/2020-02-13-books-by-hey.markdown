@@ -23,7 +23,7 @@ categories:
 
 各种文学作品，在你~~以为你~~了解了世界和自己是如何运作的知识后，不去虚构的世界放飞一下，实在是太可怜了。
 
-但神经学专家奥利弗 · 萨克斯 ([Oliver Sacks](https://www.oliversacks.com/)) 说，看小说没有疗效：
+但神经学专家奥利弗 · 萨克斯 ([Oliver Sacks](https://www.oliversacks.com/){:target="_blank"}) 说，看小说没有疗效：
 
 > 在40年的医疗实践中，我发现只有两种非药物治疗对慢性神经疾病患者至关重要: 音乐和植物。
 
@@ -43,11 +43,11 @@ categories:
 
 后来我才知道，达尔文的祖父伊拉斯谟斯 · 达尔文 (Erasmus Darwin) 开创了一个流派叫『literary botanica』，在有点枯燥的植物学里混入大量充满人性的文学描述和绘画，来产生与人类心理上的共鸣。
 
-最近生物多样性遗产图书馆（[BHL](https://www.biodiversitylibrary.org/)）开放了超过 15 万件藏品（Google 贡献很大）的数字化版权，里面有大量这个流派的著作。
+最近生物多样性遗产图书馆（[BHL](https://www.biodiversitylibrary.org/){:target="_blank"}）开放了超过 15 万件藏品（Google 贡献很大）的数字化版权，里面有大量这个流派的著作。
 
-所以我们可以直接查看到很多过去要花钱才能[捧回家](https://society6.com/product/rusty-leaved-rhododendron-from-the-moral-of-flowers-1833-by-rebecca-hey_print?curator=brainpicker)的好资源了。
+所以我们可以直接查看到很多过去要花钱才能[捧回家](https://society6.com/product/rusty-leaved-rhododendron-from-the-moral-of-flowers-1833-by-rebecca-hey_print?curator=brainpicker){:target="_blank"}的好资源了。
 
-不仅仅是植物，比如和达尔文合作过的 [John Gould](https://en.wikipedia.org/wiki/John_Gould) ，他专门搞动物的，特别是鸟类，[每本书](https://www.biodiversitylibrary.org/search?searchTerm=John+Gould&stype=F#/titles)都极其精美，试举一例（请用手指或鼠标滑动图片翻页）：
+不仅仅是植物，比如和达尔文合作过的 [John Gould](https://en.wikipedia.org/wiki/John_Gould){:target="_blank"} ，他专门搞动物的，特别是鸟类，[每本书](https://www.biodiversitylibrary.org/search?searchTerm=John+Gould&stype=F#/titles){:target="_blank"}都极其精美，试举一例（请用手指或鼠标滑动图片翻页）：
 
 <link rel="stylesheet" type="text/css" href="{{ site.static_base }}/downloads/static/css/elasticstack_slider.css" />
 
@@ -69,7 +69,7 @@ categories:
     </ul>
 </div>
 
-植物系列里面，我觉得最有意思的是 Rebecca Hey 的  [The Moral of Flowers](https://www.worldcat.org/title/moral-of-flowers-illustrated-by-coloured-engravings-by-rebecca-hey-second-edition/oclc/560194060&referer=brief_results)。
+植物系列里面，我觉得最有意思的是 Rebecca Hey 的  [The Moral of Flowers](https://www.worldcat.org/title/moral-of-flowers-illustrated-by-coloured-engravings-by-rebecca-hey-second-edition/oclc/560194060&referer=brief_results){:target="_blank"}。
 
 这本插图百科全书，由 Hey 从著名文学作品里面精选出来关于每一朵花的引语，然后由伦敦园艺学会前制图员和雕刻师 William Clark 配图。
 
@@ -77,11 +77,11 @@ categories:
 
 比如这种被中国叫做蜀羊泉的植物，它的英文名叫 bittersweet ，这个喜忧参半的名字本身就很有味道：
 
-![image holder](/downloads/images/2020_02/moralofflowers_rebeccahey_bittersweet.jpg --alt Don't touch me)
+![image holder](/downloads/images/2020_02/moralofflowers_rebeccahey_bittersweet.jpg --alt Don't touch me){:target="_blank"}
 
 她还根据自己的理解，给这些花配了质量很高的小诗。
 
-![image holder](/downloads/images/2020_02/moralofflowers_rebeccahey_frontispiece.jpg --alt Don't touch me)
+![image holder](/downloads/images/2020_02/moralofflowers_rebeccahey_frontispiece.jpg --alt Don't touch me){:target="_blank"}
 
 > Flowers of the field, how meet ye seem,
 >
@@ -97,9 +97,9 @@ categories:
 
 这本书最有趣的地方是，它出人意料的成功 —— 在一个几乎没有女性作家出版任何书籍的时代。于是，靠着这份成功，原本生活平淡的 Hey 得以系统的学习绘画，追求另一个看起来不可能实现的梦想。
 
-但她最终做到了：15 年后，她初版了[非常精美的树木百科全书](https://www.worldcat.org/title/sylvan-musings-or-the-spirit-of-the-woods/oclc/940516225&referer=brief_results)， 里面全部用的是自己原创的插画。
+但她最终做到了：15 年后，她初版了[非常精美的树木百科全书](https://www.worldcat.org/title/sylvan-musings-or-the-spirit-of-the-woods/oclc/940516225&referer=brief_results){:target="_blank"}， 里面全部用的是自己原创的插画。
 
-所以，当阅读 Hey 书里这些植物，包括后来的莎拉 · 斯通 (Sarah Stone) 描绘的那些现已濒危或者灭绝的[奇异动物](https://www.worldcat.org/title/sarah-stone-natural-curiosities-from-the-new-worlds/oclc/807086495&referer=brief_results)的时候，我既能感受到自然万物在各种恶劣的条件下，仍然美丽生长的坚韧，更会感受到那融入一笔一画间，作者自己的那份坚韧。
+所以，当阅读 Hey 书里这些植物，包括后来的莎拉 · 斯通 (Sarah Stone) 描绘的那些现已濒危或者灭绝的[奇异动物](https://www.worldcat.org/title/sarah-stone-natural-curiosities-from-the-new-worlds/oclc/807086495&referer=brief_results){:target="_blank"}的时候，我既能感受到自然万物在各种恶劣的条件下，仍然美丽生长的坚韧，更会感受到那融入一笔一画间，作者自己的那份坚韧。
 
 这应该就是大自然教给我们的最宝贵的东西。
 

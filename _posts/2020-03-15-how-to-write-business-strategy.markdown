@@ -28,7 +28,7 @@ categories:
 
 产品团队特别一点，有些「产品驱动」的公司，产品战略本身就是业务战略。
 
-Will Larson 有篇长文讨论了担任[工程团队高管角色的前九十天](https://lethain.com/first-ninety-days-cto-vpe/)。
+Will Larson 有篇长文讨论了担任[工程团队高管角色的前九十天](https://lethain.com/first-ninety-days-cto-vpe/){:target="_blank"}。
 
 其中，**了解现有的战略**是他的一个关键的里程碑。
 
@@ -37,16 +37,16 @@ Will Larson 有篇长文讨论了担任[工程团队高管角色的前九十天]
 - 大部分工程团队，没有现成的战略可以了解，得现做。
 - 很多公司，连业务战略也没有，得一起共创。
 
-这两点都不是吐槽，我[从心里相信](/2020/03/what-do-you-do-as-an-executive/)：
+这两点都不是吐槽，我[从心里相信](/2020/03/what-do-you-do-as-an-executive/){:target="_blank"}：
 
 - 好的战略是共创出来的。
 - 再好的战略，最多一年就得调整。
 
 但做好战略确实很难，特别是业务战略：
 
-首先，战略的抽象层次比较高。在很多人的概念里面，[使命](/2020/03/how-to-write-business-strategy/#%E4%BD%BF%E5%91%BDmission)、[愿景](/2020/03/how-to-write-business-strategy/#%E6%84%BF%E6%99%AFvision)和[文化](/2020/03/how-to-write-business-strategy/#%E6%96%87%E5%8C%96culture)[价值观](/2020/03/how-to-write-business-strategy/#%E4%BB%B7%E5%80%BC%E8%A7%82value)过了，就到战略了。
+首先，战略的抽象层次比较高。在很多人的概念里面，[使命](/2020/03/how-to-write-business-strategy/#%E4%BD%BF%E5%91%BDmission){:target="_blank"}、[愿景](/2020/03/how-to-write-business-strategy/#%E6%84%BF%E6%99%AFvision){:target="_blank"}和[文化](/2020/03/how-to-write-business-strategy/#%E6%96%87%E5%8C%96culture){:target="_blank"}[价值观](/2020/03/how-to-write-business-strategy/#%E4%BB%B7%E5%80%BC%E8%A7%82value){:target="_blank"}过了，就到战略了。
 
-![image holder](/downloads/images/2020_03/strategy_01.png --alt Don’t touch me)
+![image holder](/downloads/images/2020_03/strategy_01.png --alt Don’t touch me){:target="_blank"}
 
 更重要的是，每个公司里面会有三种语言: **客户的语言**(需求、体验、满足) 、**产品的语言**(特性、功能、发布) 和**业务的语言**(收入、增长、复购、续购)。三者没有连接起来，就没有战略，但能把三者连接起来的，又只有战略：这很容易让人陷入没有黄金就炼不出黄金的困局。
 
@@ -72,7 +72,7 @@ Will Larson 有篇长文讨论了担任[工程团队高管角色的前九十天]
 
 ### 愿景（Vision）
 
-- 解释：**组织期望有什么样的未来**，和[使命](/2020/03/how-to-write-business-strategy/#%E4%BD%BF%E5%91%BDmission)比，强调可衡量与可实现。
+- 解释：**组织期望有什么样的未来**，和[使命](/2020/03/how-to-write-business-strategy/#%E4%BD%BF%E5%91%BDmission){:target="_blank"}比，强调可衡量与可实现。
 - Owner：CEO、Board。
 - 周期：不太变化。
 
@@ -84,13 +84,13 @@ Will Larson 有篇长文讨论了担任[工程团队高管角色的前九十天]
 
 ### 价值观（Value）
 
-- 解释：[文化](/2020/03/how-to-write-business-strategy/#%E6%96%87%E5%8C%96culture)的一个主要构成部分。但注意**价值观专门聚焦在「做什么对用户和我们有价值」的主张，可以用来指导组织日常决策的原则**，而不是道德层面的（这类放价值观里总感觉这个公司出过什么问题，如果实在是需要的话我觉得可以像 LinkedIn 一样把它们放文化里面）。
+- 解释：[文化](/2020/03/how-to-write-business-strategy/#%E6%96%87%E5%8C%96culture){:target="_blank"}的一个主要构成部分。但注意**价值观专门聚焦在「做什么对用户和我们有价值」的主张，可以用来指导组织日常决策的原则**，而不是道德层面的（这类放价值观里总感觉这个公司出过什么问题，如果实在是需要的话我觉得可以像 LinkedIn 一样把它们放文化里面）。
 - Owner：共创（P9 及以上）。
 - 周期：比较长，年为单位，业务稳定后可能数年不变。
 
 ### 成果（Result）
 
-- 解释：**站在商业价值的角度可衡量的进展**。成果是不完全组织可控的，因为世界是变化的（用户的行为、环境、健康、期望、能力等等都会变），但需要有中长期成果的[规划](/2020/03/how-to-write-business-strategy/#%E8%A7%84%E5%88%92plan)。
+- 解释：**站在商业价值的角度可衡量的进展**。成果是不完全组织可控的，因为世界是变化的（用户的行为、环境、健康、期望、能力等等都会变），但需要有中长期成果的[规划](/2020/03/how-to-write-business-strategy/#%E8%A7%84%E5%88%92plan){:target="_blank"}。
 - Owner：共创（P9 及以上）。
 - 周期：比较长，年为单位。
 
@@ -102,7 +102,7 @@ Will Larson 有篇长文讨论了担任[工程团队高管角色的前九十天]
 
 ### 北极星指标（North Star Metrics）
 
-- 解释：一个**基于价值主张的**，**定义了产品[方向](/2020/03/how-to-write-business-strategy/#%E6%96%B9%E5%90%91goal)与业务[结果](/2020/03/how-to-write-business-strategy/#%E6%88%90%E6%9E%9Cresult)关系的**、**唯一的**、**引领性的**指标。
+- 解释：一个**基于价值主张的**，**定义了产品[方向](/2020/03/how-to-write-business-strategy/#%E6%96%B9%E5%90%91goal){:target="_blank"}与业务[结果](/2020/03/how-to-write-business-strategy/#%E6%88%90%E6%9E%9Cresult){:target="_blank"}关系的**、**唯一的**、**引领性的**指标。
 - Owner：共创（P9 及以上）。
 - 周期：比较长，年或半年为单位。
 
@@ -114,15 +114,15 @@ Will Larson 有篇长文讨论了担任[工程团队高管角色的前九十天]
 
 ### 战略（Strategy）
 
-- 解释：一般的战略是由现实(例如市场力量、物理定律、数据)而不是假设推演出的，最大可能确保[使命](/2020/03/how-to-write-business-strategy/#%E4%BD%BF%E5%91%BDmission)、[愿景](/2020/03/how-to-write-business-strategy/#%E6%84%BF%E6%99%AFvision)和[文化](/2020/03/how-to-write-business-strategy/#%E6%96%87%E5%8C%96culture)[价值观]实现的一套原则和决定。
-	- 普通的战略通常会包括几个确定的[方向](/2020/03/how-to-write-business-strategy/#%E6%96%B9%E5%90%91goal)和希望达成的[结果](/2020/03/how-to-write-business-strategy/#%E6%88%90%E6%9E%9Cresult)。
-	- 好的战略应该是由[北极星指标](/2020/03/how-to-write-business-strategy/#%E5%8C%97%E6%9E%81%E6%98%9F%E6%8C%87%E6%A0%87north-star-metrics)的函数公式（变量是 3-5 个[输入要素](/2020/03/how-to-write-business-strategy/#%E8%BE%93%E5%85%A5%E8%A6%81%E7%B4%A0key-input)）以及调整这些要素的[战术](/2020/03/how-to-write-business-strategy/#%E6%88%98%E6%9C%AFtactics)[规划](/2020/03/how-to-write-business-strategy/#%E8%A7%84%E5%88%92plan)。
+- 解释：一般的战略是由现实(例如市场力量、物理定律、数据)而不是假设推演出的，最大可能确保[使命](/2020/03/how-to-write-business-strategy/#%E4%BD%BF%E5%91%BDmission){:target="_blank"}、[愿景](/2020/03/how-to-write-business-strategy/#%E6%84%BF%E6%99%AFvision){:target="_blank"}和[文化](/2020/03/how-to-write-business-strategy/#%E6%96%87%E5%8C%96culture){:target="_blank"}[价值观]实现的一套原则和决定。
+	- 普通的战略通常会包括几个确定的[方向](/2020/03/how-to-write-business-strategy/#%E6%96%B9%E5%90%91goal){:target="_blank"}和希望达成的[结果](/2020/03/how-to-write-business-strategy/#%E6%88%90%E6%9E%9Cresult){:target="_blank"}。
+	- 好的战略应该是由[北极星指标](/2020/03/how-to-write-business-strategy/#%E5%8C%97%E6%9E%81%E6%98%9F%E6%8C%87%E6%A0%87north-star-metrics){:target="_blank"}的函数公式（变量是 3-5 个[输入要素](/2020/03/how-to-write-business-strategy/#%E8%BE%93%E5%85%A5%E8%A6%81%E7%B4%A0key-input){:target="_blank"}）以及调整这些要素的[战术](/2020/03/how-to-write-business-strategy/#%E6%88%98%E6%9C%AFtactics){:target="_blank"}[规划](/2020/03/how-to-write-business-strategy/#%E8%A7%84%E5%88%92plan){:target="_blank"}。
 - Owner：共创（P9 及以上）。
 - 周期：不太长，半年为单位。
 
 ### 战术（Tactics）
 
-- 解释：实现[战略](/2020/03/how-to-write-business-strategy/#%E6%88%98%E7%95%A5strategy)的细节。由具体可衡量的[目标](/2020/03/how-to-write-business-strategy/#%E7%9B%AE%E6%A0%87objective)与实现它们的具体[行动步骤](/2020/03/how-to-write-business-strategy/#%E8%A1%8C%E5%8A%A8%E6%AD%A5%E9%AA%A4action-step)构成。
+- 解释：实现[战略](/2020/03/how-to-write-business-strategy/#%E6%88%98%E7%95%A5strategy){:target="_blank"}的细节。由具体可衡量的[目标](/2020/03/how-to-write-business-strategy/#%E7%9B%AE%E6%A0%87objective){:target="_blank"}与实现它们的具体[行动步骤](/2020/03/how-to-write-business-strategy/#%E8%A1%8C%E5%8A%A8%E6%AD%A5%E9%AA%A4action-step){:target="_blank"}构成。
 - Owner：业务/部门内部共创。
 - 周期：短，季度为单位。
 
@@ -134,37 +134,37 @@ Will Larson 有篇长文讨论了担任[工程团队高管角色的前九十天]
 
 ### 优先级（Priority）
 
-- 解释：帮助组织实现[目标](/2020/03/how-to-write-business-strategy/#%E7%9B%AE%E6%A0%87objective)的[战术](/2020/03/how-to-write-business-strategy/#%E6%88%98%E6%9C%AFtactics)按照优先级排列的列表。这意味着首先级列表上都是具体可执行可执行的事项，其次它可以回答如果只做一件重要的事情，做什么。
+- 解释：帮助组织实现[目标](/2020/03/how-to-write-business-strategy/#%E7%9B%AE%E6%A0%87objective){:target="_blank"}的[战术](/2020/03/how-to-write-business-strategy/#%E6%88%98%E6%9C%AFtactics){:target="_blank"}按照优先级排列的列表。这意味着首先级列表上都是具体可执行可执行的事项，其次它可以回答如果只做一件重要的事情，做什么。
 - Owner：业务/部门内部共创。
 - 周期：很短，按需变更。
 
 ### 行动步骤（Action Step）
 
-- 解释：为实现组织[目标](/2020/03/how-to-write-business-strategy/#%E7%9B%AE%E6%A0%87objective)制定的详细的活动步骤。
+- 解释：为实现组织[目标](/2020/03/how-to-write-business-strategy/#%E7%9B%AE%E6%A0%87objective){:target="_blank"}制定的详细的活动步骤。
 - Owner：业务/部门内部共创。
 - 周期：很短，按需变更。
 
 ### 动作（Action）
 
-- 解释：按照[优先级](/2020/03/how-to-write-business-strategy/#%E4%BC%98%E5%85%88%E7%BA%A7priority)和[行动步骤](/2020/03/how-to-write-business-strategy/#%E8%A1%8C%E5%8A%A8%E6%AD%A5%E9%AA%A4action-step)进行的，为[目标](/2020/03/how-to-write-business-strategy/#%E7%9B%AE%E6%A0%87objective)服务的工作，包括研究、原型、设计、编码、测试、上线、运营等等。
+- 解释：按照[优先级](/2020/03/how-to-write-business-strategy/#%E4%BC%98%E5%85%88%E7%BA%A7priority){:target="_blank"}和[行动步骤](/2020/03/how-to-write-business-strategy/#%E8%A1%8C%E5%8A%A8%E6%AD%A5%E9%AA%A4action-step){:target="_blank"}进行的，为[目标](/2020/03/how-to-write-business-strategy/#%E7%9B%AE%E6%A0%87objective){:target="_blank"}服务的工作，包括研究、原型、设计、编码、测试、上线、运营等等。
 - Owner：业务/部门内部共创。
 - 周期：很短，按需变更。
 
 ### 预算（Budget）
 
-- 解释：实施[规划](/2020/03/how-to-write-business-strategy/#%E8%A7%84%E5%88%92plan)所需的资源在财务上的体现。
+- 解释：实施[规划](/2020/03/how-to-write-business-strategy/#%E8%A7%84%E5%88%92plan){:target="_blank"}所需的资源在财务上的体现。
 - Owner：业务/部门内部共创。
 - 周期：很短，按需变更。
 
 ### 规划（Plan）
 
-- 解释：有效的规划必须包括明确的范畴（是[方向](/2020/03/how-to-write-business-strategy/#%E6%96%B9%E5%90%91goal)、[战略](/2020/03/how-to-write-business-strategy/#%E6%88%98%E7%95%A5strategy)还是[战术](/2020/03/how-to-write-business-strategy/#%E6%88%98%E6%9C%AFtactics)规划）、目的（是服务什么怎么衡量）、完成日期、衡量标准和责任人，如果是[战术](/2020/03/how-to-write-business-strategy/#%E6%88%98%E6%9C%AFtactics)还要包括人力和财务[预算](/2020/03/how-to-write-business-strategy/#%E9%A2%84%E7%AE%97budget)。
+- 解释：有效的规划必须包括明确的范畴（是[方向](/2020/03/how-to-write-business-strategy/#%E6%96%B9%E5%90%91goal){:target="_blank"}、[战略](/2020/03/how-to-write-business-strategy/#%E6%88%98%E7%95%A5strategy){:target="_blank"}还是[战术](/2020/03/how-to-write-business-strategy/#%E6%88%98%E6%9C%AFtactics){:target="_blank"}规划）、目的（是服务什么怎么衡量）、完成日期、衡量标准和责任人，如果是[战术](/2020/03/how-to-write-business-strategy/#%E6%88%98%E6%9C%AFtactics){:target="_blank"}还要包括人力和财务[预算](/2020/03/how-to-write-business-strategy/#%E9%A2%84%E7%AE%97budget){:target="_blank"}。
 - Owner：业务/部门内部共创。
 - 周期：很短，按需变更。
 
 ### 评估（Appraisal）
 
-监测各种[规划](/2020/03/how-to-write-business-strategy/#%E8%A7%84%E5%88%92plan)执行的进展情况的过程，还包括了根据经验或已改变的条件修改相应的规划或者调整[目标](/2020/03/how-to-write-business-strategy/#%E7%9B%AE%E6%A0%87objective)、[战术](/2020/03/how-to-write-business-strategy/#%E6%88%98%E6%9C%AFtactics)、[战略](/2020/03/how-to-write-business-strategy/#%E6%88%98%E7%95%A5strategy)、甚至[价值](/2020/03/how-to-write-business-strategy/#%E4%BB%B7%E5%80%BC%E8%A7%82value)。
+监测各种[规划](/2020/03/how-to-write-business-strategy/#%E8%A7%84%E5%88%92plan){:target="_blank"}执行的进展情况的过程，还包括了根据经验或已改变的条件修改相应的规划或者调整[目标](/2020/03/how-to-write-business-strategy/#%E7%9B%AE%E6%A0%87objective){:target="_blank"}、[战术](/2020/03/how-to-write-business-strategy/#%E6%88%98%E6%9C%AFtactics){:target="_blank"}、[战略](/2020/03/how-to-write-business-strategy/#%E6%88%98%E7%95%A5strategy){:target="_blank"}、甚至[价值](/2020/03/how-to-write-business-strategy/#%E4%BB%B7%E5%80%BC%E8%A7%82value){:target="_blank"}。
 
 ### 用户（User）
 
@@ -186,7 +186,7 @@ Will Larson 有篇长文讨论了担任[工程团队高管角色的前九十天]
 
 我看过、听过、亲身经历过很多战略讨论会，见过各种方法论，各种公式，各种分析思路。
 
-我最喜欢爱说土话的彭蕾的[方法论](https://www.lieyunwang.com/archives/248827)，她说：
+我最喜欢爱说土话的彭蕾的[方法论](https://www.lieyunwang.com/archives/248827){:target="_blank"}，她说：
 
 > 战略 = 客户价值 = 利益成长体验
 
@@ -202,7 +202,7 @@ Will Larson 有篇长文讨论了担任[工程团队高管角色的前九十天]
 	- **满足感**是核心，用户通过你的产品和服务，被满足了什么？还能被满足什么？用户光是获取了没有用，得留存。
 	- **体验**是放大器，做得好可以让满足感成倍提升，做得差可以让满足感成倍下降：好的产品和服务，体验上是不是符合用户预期，是超出预期的。
 
-一个确定行业下，有着自己的[使命](/2020/03/how-to-write-business-strategy/#%E4%BD%BF%E5%91%BDmission)、[愿景](/2020/03/how-to-write-business-strategy/#%E6%84%BF%E6%99%AFvision)和[文化](/2020/03/how-to-write-business-strategy/#%E6%96%87%E5%8C%96culture)的公司，要确定[价值](/2020/03/how-to-write-business-strategy/#%E4%BB%B7%E5%80%BC%E8%A7%82value)主张，究竟怎么做？
+一个确定行业下，有着自己的[使命](/2020/03/how-to-write-business-strategy/#%E4%BD%BF%E5%91%BDmission){:target="_blank"}、[愿景](/2020/03/how-to-write-business-strategy/#%E6%84%BF%E6%99%AFvision){:target="_blank"}和[文化](/2020/03/how-to-write-business-strategy/#%E6%96%87%E5%8C%96culture){:target="_blank"}的公司，要确定[价值](/2020/03/how-to-write-business-strategy/#%E4%BB%B7%E5%80%BC%E8%A7%82value){:target="_blank"}主张，究竟怎么做？
 
 ### 如何确定价值主张
 
@@ -210,7 +210,7 @@ Will Larson 有篇长文讨论了担任[工程团队高管角色的前九十天]
 
 愿景的抽象有很多理论和书籍可以参考。
 
-我自己常用的模板是 Geoffrey Moore 在《[Crossing the Chasm](https://book.douban.com/subject/1431653/)》里讲的:
+我自己常用的模板是 Geoffrey Moore 在《[Crossing the Chasm](https://book.douban.com/subject/1431653/){:target="_blank"}》里讲的:
 
 > For [target customer] who [need or opportunity], the [product] is a [product category] that [key benefit]. Unlike [competitive alternative], our product [statement of primary differentiation].
 
@@ -247,13 +247,13 @@ Will Larson 有篇长文讨论了担任[工程团队高管角色的前九十天]
 
 ##### 坑2：满脑子可测可控和数据驱动
 
-一定的确定性是从使命愿景到价值主张以及后面的北极星指标和战略必须要的。但是注意不要过早地关注如何确定和控制那些具体的指标，先找到有前途的价值并消解一些不确定性比寻找确定性重要的多。正如道 Douglas Hubbard 的[书里写的那样](https://www.amazon.com/How-Measure-Anything-Intangibles-Business-ebook/dp/B00INUYS2U): 「当你有很多不确定性时，大量的数据来告诉你的往往是没用的信息。当你有了一些确定性，数据分析才有价值」。
+一定的确定性是从使命愿景到价值主张以及后面的北极星指标和战略必须要的。但是注意不要过早地关注如何确定和控制那些具体的指标，先找到有前途的价值并消解一些不确定性比寻找确定性重要的多。正如道 Douglas Hubbard 的[书里写的那样](https://www.amazon.com/How-Measure-Anything-Intangibles-Business-ebook/dp/B00INUYS2U){:target="_blank"}: 「当你有很多不确定性时，大量的数据来告诉你的往往是没用的信息。当你有了一些确定性，数据分析才有价值」。
 
 ### 北极星指标和输入要素
 
 #### 北极星指标
 
-当你有了价值主张，为什么不能直接开始写战略而是需要确定[北极星指标](/2020/03/how-to-write-business-strategy/#北极星指标north-star-metrics)和它的 3-5 个[输入要素](/2020/03/how-to-write-business-strategy/#输入要素key-input)？
+当你有了价值主张，为什么不能直接开始写战略而是需要确定[北极星指标](/2020/03/how-to-write-business-strategy/#北极星指标north-star-metrics){:target="_blank"}和它的 3-5 个[输入要素](/2020/03/how-to-write-business-strategy/#输入要素key-input){:target="_blank"}？
 
 我觉得北极星指标的确定，价值在于两方面：
 
@@ -287,7 +287,7 @@ Will Larson 有篇长文讨论了担任[工程团队高管角色的前九十天]
 
 #### 输入要素
 
-[输入要素](/2020/03/how-to-write-business-strategy/#输入要素key-input)和[北极星指标](/2020/03/how-to-write-business-strategy/#北极星指标north-star-metrics)同样重要。
+[输入要素](/2020/03/how-to-write-business-strategy/#输入要素key-input){:target="_blank"}和[北极星指标](/2020/03/how-to-write-business-strategy/#北极星指标north-star-metrics){:target="_blank"}同样重要。
 
 一个好的北极星指标输入要素是一个团队可以去解决问题来直接影响的要素。找出这些问题，努力解决掉它们，然后看看北极星指标是如何变化的，这比试图直接拿北极星开刀容易得多。
 
@@ -308,21 +308,21 @@ Will Larson 有篇长文讨论了担任[工程团队高管角色的前九十天]
 
 对我来说，有了北极星指标和它的输入要素之后，战略/战术规划的做法有两种。
 
-如果是有甲方规范的，以解决方案的形成和实施为中心的项目（如果你正在做，我同情你），战略先行：基于当前的约束条件和输入条件，对什么时间做哪些对输入要素起作用的[动作](/2020/03/how-to-write-business-strategy/#%E5%8A%A8%E4%BD%9Caction)，是核心。
+如果是有甲方规范的，以解决方案的形成和实施为中心的项目（如果你正在做，我同情你），战略先行：基于当前的约束条件和输入条件，对什么时间做哪些对输入要素起作用的[动作](/2020/03/how-to-write-business-strategy/#%E5%8A%A8%E4%BD%9Caction){:target="_blank"}，是核心。
 
 如果不是这类型的项目，则可能战略和战术计划会变成基于当前的资源进行的一个投注表：
 
-1. 把所有打算做的[动作](/2020/03/how-to-write-business-strategy/#%E5%8A%A8%E4%BD%9Caction)根据它和[输入要素](/2020/03/how-to-write-business-strategy/#输入要素key-input)的关系确定目的、步骤和优先级。
+1. 把所有打算做的[动作](/2020/03/how-to-write-business-strategy/#%E5%8A%A8%E4%BD%9Caction){:target="_blank"}根据它和[输入要素](/2020/03/how-to-write-business-strategy/#输入要素key-input){:target="_blank"}的关系确定目的、步骤和优先级。
 2. 根据对北极星的影响大小，资源耗费情况等，排一个赌注相对分散可控的规划，实施这些动作，监控对北极星指标的影响并调整。
 
-![image holder](/downloads/images/2020_03/strategy_02.png --alt Don’t touch me)
+![image holder](/downloads/images/2020_03/strategy_02.png --alt Don’t touch me){:target="_blank"}
 
 当然，每个团队到这里都可以根据自己的组织架构、流程规范、绩效管理等方面的实际情况，形成一套自己的拆解。比如 Optimizely 觉得自己的战略就在一面墙上：
 
-![image holder](/downloads/images/2020_03/strategy_03.jpeg --alt Don’t touch me)
+![image holder](/downloads/images/2020_03/strategy_03.jpeg --alt Don’t touch me){:target="_blank"}
 
 但无论如何，有了这个，工程团队的战略规划应该是好写一些了，我们有空再说它怎么写。
 
 [^0]: 有很多巨头都是盯着这些自嗨的指标被找对了北极星指标的小对手干掉的：比如 Myspace 输给 Facebook。
 [^1]: 彭蕾当年定这个指标的时候，大概 62%，她的要求之高，一开始所有的产研估计都觉得是「不懂技术的老板」开玩笑。但是当全公司的力量都集中打这一个点，通过商务、产品、技术、服务等各个环节的加持，很快就 90%以上了。
-[^2]: 没有错，当年 Netflix 只是搞 DVD 租赁的。公司的价值主张和战略，真的[变得很快的](/2020/03/what-do-you-do-as-an-executive/#小公司的战略变动更剧烈)，这也是不要从上往下做战略而是大家一起共创的原因。
+[^2]: 没有错，当年 Netflix 只是搞 DVD 租赁的。公司的价值主张和战略，真的[变得很快的](/2020/03/what-do-you-do-as-an-executive/#小公司的战略变动更剧烈){:target="_blank"}，这也是不要从上往下做战略而是大家一起共创的原因。

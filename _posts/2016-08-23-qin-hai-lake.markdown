@@ -11,7 +11,7 @@ categories:
 
 ---
 
-![Vhost threshold](/downloads/images/2016_08/qin_hai_lake.jpg --alt Don't touch me)
+![Vhost threshold](/downloads/images/2016_08/qin_hai_lake.jpg --alt Don't touch me){:target="_blank"}
 
 七夕刚过的周末，飞到了西宁。出机场天色虽晚，但干燥凉爽，让人忘了一个小时前的闷热不堪。
 
@@ -43,7 +43,7 @@ categories:
 
 ![](/downloads/images/2016_08/day2_qilian_1.jpg --alt Don't touch me)
 
-到了下午，总算是来到了祁连山下，所谓的「东方瑞士小镇」卓尔山。却是非常不巧，[景区大巴出了事情景区封闭](http://baike.baidu.com/item/8%C2%B79%E5%8D%93%E5%B0%94%E5%B1%B1%E6%99%AF%E5%8C%BA%E8%A7%82%E5%85%89%E8%BD%A6%E4%BE%A7%E7%BF%BB%E4%BA%8B%E6%95%85)。问酒店老板，原来是景区为了创收，把大门从山上移到山脚，让所有人都必须坐摆渡车上山（这也是国内景区的设计模式）。结果车没有年检，司机驾照只能开小车，上班前还喝了酒，就成了索命阎王。
+到了下午，总算是来到了祁连山下，所谓的「东方瑞士小镇」卓尔山。却是非常不巧，[景区大巴出了事情景区封闭](http://baike.baidu.com/item/8%C2%B79%E5%8D%93%E5%B0%94%E5%B1%B1%E6%99%AF%E5%8C%BA%E8%A7%82%E5%85%89%E8%BD%A6%E4%BE%A7%E7%BF%BB%E4%BA%8B%E6%95%85){:target="_blank"}。问酒店老板，原来是景区为了创收，把大门从山上移到山脚，让所有人都必须坐摆渡车上山（这也是国内景区的设计模式）。结果车没有年检，司机驾照只能开小车，上班前还喝了酒，就成了索命阎王。
 
 最近的下一站也还有还几百公里，只好住下，走到景区后面的田里面，搓一把青稞吃了，感谢卓尔山不收之恩。
 

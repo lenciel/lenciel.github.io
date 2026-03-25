@@ -11,7 +11,7 @@ categories:
 
 ---
 
-Rob Fitzpatrick 的[这本书](https://www.amazon.com/Mom-Test-customers-business-everyone/dp/1492180742)的全名很长：The Mom Test, How to Talk to Customers & learn if your business is a good idea when everybody is lying to you...
+Rob Fitzpatrick 的[这本书](https://www.amazon.com/Mom-Test-customers-business-everyone/dp/1492180742){:target="_blank"}的全名很长：The Mom Test, How to Talk to Customers & learn if your business is a good idea when everybody is lying to you...
 
 这个标题背后的意思是：如果你跟用户聊天，得有一些技巧以及对自己的约束，不然你很可能就会「被哄骗」。这样的哄骗未必是用户有什么不好的目的，本质上，它和你有一个点子去问自己的妈妈棒不棒一样：哄骗几乎是无可避免的。
 
@@ -111,7 +111,7 @@ Rob Fitzpatrick 的[这本书](https://www.amazon.com/Mom-Test-customers-busines
 
 ### Ideas
 
-[Ideas Are Easy](https://lenciel.com/2013/01/ideas-are-easy/)。
+[Ideas Are Easy](https://lenciel.com/2013/01/ideas-are-easy/){:target="_blank"}。
 
 书里说：
 

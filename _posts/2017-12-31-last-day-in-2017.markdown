@@ -11,7 +11,7 @@ categories:
 
 ---
 
-![call me by your name](/downloads/images/2017_12/call_me_by_your_name.jpg --alt Don't touch me)
+![call me by your name](/downloads/images/2017_12/call_me_by_your_name.jpg --alt Don't touch me){:target="_blank"}
 
 今天是本周的最后一天，也是今年的最后一天。
 

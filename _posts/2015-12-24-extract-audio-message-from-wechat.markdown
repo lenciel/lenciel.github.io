@@ -30,7 +30,7 @@ Why not?
     python wechat2mp3.py 待转换音频所在文件夹
 ```
 
-如果你是其他系统，确认你装好了 ffmpeg 之后，需要[自己编译SILK解码库](https://github.com/gaozehua/SILKCodec)。
+如果你是其他系统，确认你装好了 ffmpeg 之后，需要[自己编译SILK解码库](https://github.com/gaozehua/SILKCodec){:target="_blank"}。
 
 ### Seriously Why?
 
@@ -52,19 +52,19 @@ Why not?
 
 使用 iTunes 创建一个不加密的备份，然后连接 iExplorer，会看到打开 iTunes 备份的选项：
 
-![Vhost threshold](/downloads/images/2015_12/extract_wechat_1.png --alt Don't touch me)
+![Vhost threshold](/downloads/images/2015_12/extract_wechat_1.png --alt Don't touch me){:target="_blank"}
 
 打开后在`App`文件夹下面导出微信文件夹：
 
-![Vhost threshold](/downloads/images/2015_12/extract_wechat_2.png --alt Don't touch me)
+![Vhost threshold](/downloads/images/2015_12/extract_wechat_2.png --alt Don't touch me){:target="_blank"}
 
 在导出的文件夹下面有个 Audio 目录，你可以根据语音消息的数量大概确认需要导出的目录（目录是个 hash），然后到`DB/MM.sqlite`下面去打开`Chat_[hash]`这个表里面，看看消息来确认：
 
-![Vhost threshold](/downloads/images/2015_12/extract_wechat_3.png --alt Don't touch me)
+![Vhost threshold](/downloads/images/2015_12/extract_wechat_3.png --alt Don't touch me){:target="_blank"}
 
-二进制查看其中的任意一个文件，可以看到是[SILK](https://en.wikipedia.org/wiki/SILK)编码的（skype 早期版本包括 lync 都是使用的这种编码方式）：
+二进制查看其中的任意一个文件，可以看到是[SILK](https://en.wikipedia.org/wiki/SILK){:target="_blank"}编码的（skype 早期版本包括 lync 都是使用的这种编码方式）：
 
-![Vhost threshold](/downloads/images/2015_12/extract_wechat_4.png --alt Don't touch me)
+![Vhost threshold](/downloads/images/2015_12/extract_wechat_4.png --alt Don't touch me){:target="_blank"}
 
-接下来你只需要按照[repo](https://github.com/lenciel/wechat2mp3)里面的指导(愿主保佑你是用 Mac 因为那最简单)来进行文件转换就可以了。
+接下来你只需要按照[repo](https://github.com/lenciel/wechat2mp3){:target="_blank"}里面的指导(愿主保佑你是用 Mac 因为那最简单)来进行文件转换就可以了。
 

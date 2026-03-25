@@ -35,7 +35,7 @@ categories:
 
 > The reason that most of us are unhappy most of the time is that we set our goals-not for the person we're going to be when we reach them-we set our goals for the person we are when we set them.
 
-今年还因为负责了游戏业务{% sidenote 'sn-id-3' '我跟老板开玩笑说，在老弟做出了王者荣耀的前提下，我还能做出一个爆款游戏的概率，类似于我们家祖坟连冒两次青烟。但他还是愿意让我去做，谢谢他。' %}，周博送了本《[The Art of Game Design](https://www.amazon.com/Art-Game-Design-Lenses-Third/dp/1138632090)》让我啃。
+今年还因为负责了游戏业务{% sidenote 'sn-id-3' '我跟老板开玩笑说，在老弟做出了王者荣耀的前提下，我还能做出一个爆款游戏的概率，类似于我们家祖坟连冒两次青烟。但他还是愿意让我去做，谢谢他。' %}，周博送了本《[The Art of Game Design](https://www.amazon.com/Art-Game-Design-Lenses-Third/dp/1138632090){:target="_blank"}》让我啃。
 
 打开扉页，先注意到作者引用的一首诗：
 
@@ -64,7 +64,7 @@ Maxwell{% sidenote 'sn-id-4' '我挺好奇这个完全没有听过的诗人 Maxw
 
 还有一部分同学，自洽地卧倒或者龟息了{% sidenote 'sn-id-7' '「躺平」这个词含义太复杂，而且多少污名化了。想不明白先别动手，先胜后战，应该是负责业务的人，负责资源调配的人追求的目标，是美德。' %}。
 
-我们看看杜甫，或许能得到点儿启发{% sidenote 'sn-id-8' '2019 年我说要[多学杜甫](/2019/12/last-day-in-2019/){:target="_blank"}之后，好像真学得很认真。今年终于敢看陈贻焮那本《[杜甫评传](https://book.douban.com/subject/35501310/)》了，写得真用力。我甚至有点怀疑，现在还有没有国人会花这样的力气去研究一个诗人，然后写一本这样的书。' %}。
+我们看看杜甫，或许能得到点儿启发{% sidenote 'sn-id-8' '2019 年我说要[多学杜甫](/2019/12/last-day-in-2019/){:target="_blank"}之后，好像真学得很认真。今年终于敢看陈贻焮那本《[杜甫评传](https://book.douban.com/subject/35501310/){:target="_blank"}》了，写得真用力。我甚至有点怀疑，现在还有没有国人会花这样的力气去研究一个诗人，然后写一本这样的书。' %}。
 
 他在唐玄宗即位那年出生，年轻的时候正是唐朝兴盛之时，踌躇满志，壮游四海。到四十几岁遇到唐朝的拐点，安史之乱，从陇南到成都，《同谷七歌》写得有点如泣如诉，但《万丈潭》仍然大气磅礴、运转自如。到第二次回成都，是他五十出头退出严武的幕府，很快开始了「飘飘何所似，天地一沙鸥」的日子：草堂待了不久，离开成都去夔州。夔州待了不久，出了三峡去岳阳。不到一年，死在船上了。
 

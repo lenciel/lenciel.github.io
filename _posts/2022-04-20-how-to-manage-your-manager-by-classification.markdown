@@ -23,7 +23,7 @@ categories:
 
 通过对上级简单地做个画像，然后有针对性地采用一些沟通协作的方式方法，来帮助他/她更好地支持你拿到结果，是工作里非常核心的部分。
 
-这篇文章主要是讲一下具体怎么做到这点。在[小报童里](https://xiaobot.net/p/lenciel)比较受欢迎，就把它免费吧。
+这篇文章主要是讲一下具体怎么做到这点。在[小报童里](https://xiaobot.net/p/lenciel){:target="_blank"}比较受欢迎，就把它免费吧。
 
 ## Why
 
@@ -171,4 +171,4 @@ categories:
 
 - 如果对方有自己满意的 sample，要一份
 
-**如果你想要看到更多此类内容，你可以试试[订阅「不美好药店」](https://lenciel.com/2022/03/start-a-newsletter/#%E5%A6%82%E4%BD%95%E8%AE%A2%E9%98%85)。**
+**如果你想要看到更多此类内容，你可以试试[订阅「不美好药店」](https://lenciel.com/2022/03/start-a-newsletter/#%E5%A6%82%E4%BD%95%E8%AE%A2%E9%98%85){:target="_blank"}。**

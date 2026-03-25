@@ -12,9 +12,9 @@ categories:
 
 ---
 
-> 本系列是，本座一支无用笔，记下几个[非凡人](/categories/bu-shi-fan-ren/)
+> 本系列是，本座一支无用笔，记下几个[非凡人](/categories/bu-shi-fan-ren/){:target="_blank"}
 
-奶哥和[苏东坡](/2021/09/cheer-me-up/)都出生在眉山。
+奶哥和[苏东坡](/2021/09/cheer-me-up/){:target="_blank"}都出生在眉山。
 
 现在眉山叫「东坡故里」，不叫「奶哥故里」，说明奶哥是个普通人。
 

@@ -2,7 +2,7 @@
 layout: post
 sidenote: false
 comments: true
-description: "蒙爷的车锈了，问我怎么办。我说，「送去修车的地方看看能不能除锈吧。」他问：「为什么你学了那么多化学，还能背元素周期表，但是不能自己除锈。」 正好最近我看了[一篇文章](https://www.noemamag.com/the-disappearing-art-of-maintenance/)，讲随着生产力的过剩，人类维护和维修设备的技能在快速下降，全靠替换，对自然环境产生了很大的伤害..."
+description: "蒙爷的车锈了，问我怎么办。我说，「送去修车的地方看看能不能除锈吧。」他问：「为什么你学了那么多化学，还能背元素周期表，但是不能自己除锈。」 正好最近我看了一篇文章，讲随着生产力的过剩，人类维护和维修设备的技能在快速下降，全靠替换，对自然环境产生了很大的伤害..."
 title: "我们为什么不能自己除锈"
 date: 2022-10-18 20:37:59 +0800
 categories:
@@ -12,7 +12,7 @@ categories:
 - why
 ---
 
-> 这个系列，是[答小朋友问](/categories/questions-my-kids-asked/)...
+> 这个系列，是[答小朋友问](/categories/questions-my-kids-asked/){:target="_blank"}...
 
 
 <h3>目录</h3>
@@ -26,7 +26,7 @@ categories:
 
 他就问，「为什么你学了那么多化学，还能背元素周期表，但不能自己除锈？」
 
-正好最近我看了[一篇文章](https://www.noemamag.com/the-disappearing-art-of-maintenance/)，就敷衍他说：「现在生产力的过剩，大部分场景，大家都选择换新而不是利旧，可能修起来比换新的，成本还低，所以人维护和维修的技能就是在快速下降。」
+正好最近我看了[一篇文章](https://www.noemamag.com/the-disappearing-art-of-maintenance/){:target="_blank"}，就敷衍他说：「现在生产力的过剩，大部分场景，大家都选择换新而不是利旧，可能修起来比换新的，成本还低，所以人维护和维修的技能就是在快速下降。」
 
 但修东西好处很多：保护环境、节约成本，还可以带来极大的满足感。
 
@@ -36,7 +36,7 @@ categories:
 
 我自己感觉，日常用品，我们修理得越来越少，肯定有生产力发达带来的变化。
 
-很多手工制品，就会像[印加绳桥一样](https://zh.wikipedia.org/wiki/%E7%A7%98%E9%B2%81%E8%8D%89%E7%BB%B3%E6%A1%A5)消失，无论人们多么惋惜。
+很多手工制品，就会像[印加绳桥一样](https://zh.wikipedia.org/wiki/%E7%A7%98%E9%B2%81%E8%8D%89%E7%BB%B3%E6%A1%A5){:target="_blank"}消失，无论人们多么惋惜。
 
 同时，电子产品对机械产品的替代，也是个原因。
 
@@ -46,7 +46,7 @@ categories:
 
 这里面有消费品公司的原因[^2]。
 
-比如我的 AirPods Pro，就是出了名的[没法修的东西](https://zh.ifixit.com/News/66194/apples-new-airpods-are-telling-users-to-replace-the-batteries-already-too-bad-thats-impossible)。
+比如我的 AirPods Pro，就是出了名的[没法修的东西](https://zh.ifixit.com/News/66194/apples-new-airpods-are-telling-users-to-replace-the-batteries-already-too-bad-thats-impossible){:target="_blank"}。
 
 但也有摩尔定律[^3]的原因：电子产品的升级换代很快，而且下一代成本未必比上一代高，所以很多时候，你修还不如换[^4]。
 
@@ -80,17 +80,17 @@ categories:
 
 如果想要世界变得好一点，最好的办法是什么呢？
 
-我觉得最好的办法是[努力工作](https://xiaobot.net/post/a9ad6151-879d-49cd-868e-ac3d08eb2139)。
+我觉得最好的办法是[努力工作](https://xiaobot.net/post/a9ad6151-879d-49cd-868e-ac3d08eb2139){:target="_blank"}。
 
 人类很久没有实质上的技术进步了。
 
 创新，特别是能源、材料等领域的创新，会比一辈子不用塑料袋，重要得多。
 
-另外，努力工作赚到钱了，你可以拿出一部分，给类似于 [Clean Air Task Force](https://www.catf.us/))  这样的机构捐款。基本上你每捐出一美金，它们可以减少接近一吨的排放：比你吃一辈子素，要有用得多。
+另外，努力工作赚到钱了，你可以拿出一部分，给类似于 [Clean Air Task Force](https://www.catf.us/){:target="_blank"})  这样的机构捐款。基本上你每捐出一美金，它们可以减少接近一吨的排放：比你吃一辈子素，要有用得多。
 
 [^1]: 应该是封控的时候被狂喷消毒液搞坏的。
-[^2]: 所以欧美这几年通过立法来保护消费者对电子产品的「[维修权](https://www.ccpit.org/france/a/20220427/202204276jjp.html)」。
+[^2]: 所以欧美这几年通过立法来保护消费者对电子产品的「[维修权](https://www.ccpit.org/france/a/20220427/202204276jjp.html){:target="_blank"}」。
 [^3]: 当然，现在摩尔定律已经有点失效了。
-[^4]: 然后旧的东西我们常常也舍不得扔掉，这居然产生了一个行业：[拆卸装裱的职业](https://mp.weixin.qq.com/s/FkdCNUCKUj1_xGEiO9CooQ)。
-[^5]: 给自行车[车架除锈](https://zh.wikihow.com/%E6%B8%85%E9%99%A4%E8%87%AA%E8%A1%8C%E8%BD%A6%E4%B8%8A%E7%9A%84%E9%94%88%E8%BF%B9)和[链条除锈](https://zh.wikihow.com/%E7%BB%99%E8%87%AA%E8%A1%8C%E8%BD%A6%E9%93%BE%E6%9D%A1%E9%99%A4%E9%94%88)，看起来比较治愈，所以我准备试试。
+[^4]: 然后旧的东西我们常常也舍不得扔掉，这居然产生了一个行业：[拆卸装裱的职业](https://mp.weixin.qq.com/s/FkdCNUCKUj1_xGEiO9CooQ){:target="_blank"}。
+[^5]: 给自行车[车架除锈](https://zh.wikihow.com/%E6%B8%85%E9%99%A4%E8%87%AA%E8%A1%8C%E8%BD%A6%E4%B8%8A%E7%9A%84%E9%94%88%E8%BF%B9){:target="_blank"}和[链条除锈](https://zh.wikihow.com/%E7%BB%99%E8%87%AA%E8%A1%8C%E8%BD%A6%E9%93%BE%E6%9D%A1%E9%99%A4%E9%94%88){:target="_blank"}，看起来比较治愈，所以我准备试试。
 

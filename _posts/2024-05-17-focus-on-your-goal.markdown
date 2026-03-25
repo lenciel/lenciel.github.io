@@ -12,7 +12,7 @@ categories:
 - tips
 ---
 
-上周我们说，[少吃萝卜](/2024/05/do-not-be-fooled-by-carrots/)。
+上周我们说，[少吃萝卜](/2024/05/do-not-be-fooled-by-carrots/){:target="_blank"}。
 
 这周对个下联，多抓羚羊。
 

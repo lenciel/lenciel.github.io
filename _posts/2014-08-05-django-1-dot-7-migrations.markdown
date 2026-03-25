@@ -111,7 +111,7 @@ Running migrations:
 
 如果你运行上面的命令遇到错误，就需要运行 `./manage.py migrate --fake <appname>` 做一个 fake 的 migration。
 
-如果你不想丢掉过去的 South 维护的历史记录，可以同时使用 South 和 Django Migrations：升级 South 到 1.0，然后[参考这篇文章的做法](http://www.aeracode.org/2014/7/1/end-era/)。
+如果你不想丢掉过去的 South 维护的历史记录，可以同时使用 South 和 Django Migrations：升级 South 到 1.0，然后[参考这篇文章的做法](http://www.aeracode.org/2014/7/1/end-era/){:target="_blank"}。
 
 South和Django Migrations比较
 =====================

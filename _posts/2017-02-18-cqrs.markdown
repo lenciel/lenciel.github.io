@@ -17,9 +17,9 @@ categories:
 
 CQRS 是 Command Query Responsibility Segregation 的缩写，翻译过来是「命令查询职责分离」。
 
-它的概念源于 Betrand Meyer（Eiffel 语言之父，开-闭原则 OCP 提出者）在《[Object-Oriented Software Construction](https://www.amazon.com/Object-Oriented-Software-Construction-Book-CD-ROM/dp/0136291554)》这本书中提到的「命令查询分离 (Command Query Separation,CQS) 」：把改变对象状态的命令（Command），与获取对象状态的查询（Query）拆分。
+它的概念源于 Betrand Meyer（Eiffel 语言之父，开-闭原则 OCP 提出者）在《[Object-Oriented Software Construction](https://www.amazon.com/Object-Oriented-Software-Construction-Book-CD-ROM/dp/0136291554){:target="_blank"}》这本书中提到的「命令查询分离 (Command Query Separation,CQS) 」：把改变对象状态的命令（Command），与获取对象状态的查询（Query）拆分。
 
-[Greg Young](http://codebetter.com/gregyoung/)在 2010 年自己的[一篇博客](http://codebetter.com/gregyoung/2010/02/16/cqrs-task-based-uis-event-sourcing-agh/)中对 CQS 进行了改进和简化，提出了 CQRS：最核心的改动是，不仅仅对方法进行拆分，而是从数据模型上进行隔离。
+[Greg Young](http://codebetter.com/gregyoung/){:target="_blank"}在 2010 年自己的[一篇博客](http://codebetter.com/gregyoung/2010/02/16/cqrs-task-based-uis-event-sourcing-agh/){:target="_blank"}中对 CQS 进行了改进和简化，提出了 CQRS：最核心的改动是，不仅仅对方法进行拆分，而是从数据模型上进行隔离。
 
 ## 实施方式
 
@@ -31,7 +31,7 @@ CQRS 是 Command Query Responsibility Segregation 的缩写，翻译过来是「
 
 在实践上，因为两个数据模型分开了，存储也可以分开，所以可以使用主从数据库。主数据库处理 CUD，从库处理 R，从库的的结构可以和主库的结构完全一样，也可以不一样，从库主要用来进行只读的查询操作。
 
-在数量上从库的个数也可以根据查询的规模进行扩展，在业务逻辑上，也可以根据专题从主库中划分出不同的从库。从库也可以实现成[ReportingDatabase](https://martinfowler.com/bliki/ReportingDatabase.html)，根据查询的业务需求，从主库中抽取一些必要的数据生成一系列查询报表来存储。
+在数量上从库的个数也可以根据查询的规模进行扩展，在业务逻辑上，也可以根据专题从主库中划分出不同的从库。从库也可以实现成[ReportingDatabase](https://martinfowler.com/bliki/ReportingDatabase.html){:target="_blank"}，根据查询的业务需求，从主库中抽取一些必要的数据生成一系列查询报表来存储。
 
 ## 适用场景
 
@@ -54,12 +54,12 @@ CQRS 是 Command Query Responsibility Segregation 的缩写，翻译过来是「
 
 ## Reference
 
-- [Introduction to CQRS](http://www.codeproject.com/Articles/555855/Introduction-to-CQRS)
-- [CQRS](http://martinfowler.com/bliki/CQRS.html)
-- [CQRS Journey](http://msdn.microsoft.com/en-us/library/jj554200.aspx)
-- [Command and Query Responsibility Segregation (CQRS) Pattern](http://msdn.microsoft.com/en-us/library/dn568103.aspx)
-- [Event Sourcing Pattern](http://msdn.microsoft.com/en-us/library/dn589792.aspx)
-- [Eric Evans on Domain-Driven Design](http://www.se-radio.net/2015/05/se-radio-episode-226-eric-evans-on-domain-driven-design-at-10-years/)
-- [The Art of Command Query Separation](https://hackernoon.com/oo-tricks-the-art-of-command-query-separation-9343e50a3de0)
+- [Introduction to CQRS](http://www.codeproject.com/Articles/555855/Introduction-to-CQRS){:target="_blank"}
+- [CQRS](http://martinfowler.com/bliki/CQRS.html){:target="_blank"}
+- [CQRS Journey](http://msdn.microsoft.com/en-us/library/jj554200.aspx){:target="_blank"}
+- [Command and Query Responsibility Segregation (CQRS) Pattern](http://msdn.microsoft.com/en-us/library/dn568103.aspx){:target="_blank"}
+- [Event Sourcing Pattern](http://msdn.microsoft.com/en-us/library/dn589792.aspx){:target="_blank"}
+- [Eric Evans on Domain-Driven Design](http://www.se-radio.net/2015/05/se-radio-episode-226-eric-evans-on-domain-driven-design-at-10-years/){:target="_blank"}
+- [The Art of Command Query Separation](https://hackernoon.com/oo-tricks-the-art-of-command-query-separation-9343e50a3de0){:target="_blank"}
 
 

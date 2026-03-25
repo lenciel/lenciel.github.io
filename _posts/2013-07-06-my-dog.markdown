@@ -11,7 +11,7 @@ categories:
 
 今年 2 月 4 号，花卷被偶像派接到了我们家，处于眼睛基本刚刚能睁开的状态。
 
-![花卷来我家](/downloads/images/2013_07/huajuan_in_hands.jpg --alt Don't touch me)
+![花卷来我家](/downloads/images/2013_07/huajuan_in_hands.jpg --alt Don't touch me){:target="_blank"}
 
 来家里一个月左右，花卷被养得脑满肠肥，开始四处找东西咬着玩。我们给它备了一些狗玩具，但它玩玩就腻，反而对拖鞋、鞋带这些东西非常有兴趣。
 
@@ -21,7 +21,7 @@ categories:
 
 中午偶像派和我去参加她最好的姐妹的婚礼，花卷还是留给偶像派父母照看。本来是期待很久的一场婚礼，因为这个不幸的意外，没等待开始吃饭心神不宁的我们就匆匆忙忙地撤了。还好新娘是个通情达理的好姑娘，还安慰了偶像派几句。
 
-从婚礼现场回来我们就开始一边找兽医的电话一边上网求助。很快微博，QQ，[知乎](http://www.zhihu.com/question/20854890)等各路好友们的答案就回来了。基本上统计了一下，以催吐的建议居多。
+从婚礼现场回来我们就开始一边找兽医的电话一边上网求助。很快微博，QQ，[知乎](http://www.zhihu.com/question/20854890){:target="_blank"}等各路好友们的答案就回来了。基本上统计了一下，以催吐的建议居多。
 
 立马上网搜素那些催吐的办法，发现 youtube 上正经的兽医除开双氧水催吐之外，就没有传别的教程。双氧水不是家里常备的，就算买回来要把浓度调合也缺工具，所以还是决定送宠物医院催吐。
 
@@ -31,7 +31,7 @@ categories:
 
 到了医院照 X 光，解开了它为什么能吞下那么长一根胶管的谜：原来那根它「不可能咬断」的胶管被它咬成了很多截，一截截的吞了进去。从 X 光来看，满满当当的塞满了它的胃。
 
-![花卷的 X 光片局部](/downloads/images/2013_07/x_ray_of_huajuan.png --alt Don't touch me)
+![花卷的 X 光片局部](/downloads/images/2013_07/x_ray_of_huajuan.png --alt Don't touch me){:target="_blank"}
 
 这个时候他们的主治医师出来说，因为管子的直径超过了肠子直径不少，所以是不可能进入肠道排出去的 。这样堵在胃里，肯定会有问题，只能马上开刀。
 
@@ -81,8 +81,8 @@ categories:
 
 不久花卷就排完了所有的胶管：之所以敢说所有是因为一截截的本座都洗干净拼起来了。
 
-![花卷认罪伏法图](/downloads/images/2013_07/the_pipe.png --alt Don't touch me)
+![花卷认罪伏法图](/downloads/images/2013_07/the_pipe.png --alt Don't touch me){:target="_blank"}
 
 事后我们制造了「死罪可免，活罪难逃」的气氛希望这位同学吸取教训。当然，虽然认罪伏法的时候花卷看起来态度尚好，但劫后余生的它最终还是在我们的纵容下过起了更加飞扬跋扈的生活。
 
-![花卷认罪伏法图](/downloads/images/2013_07/huanjuan_after_accident.jpg --alt Don't touch me)
+![花卷认罪伏法图](/downloads/images/2013_07/huanjuan_after_accident.jpg --alt Don't touch me){:target="_blank"}

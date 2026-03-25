@@ -12,11 +12,11 @@ categories:
 ---
 
 
-其实之前也分享了一些[自己使用的工具](https://lenciel.com/blog/categories/tools-i-use/)，只是更偏重研发。今天跟另外一个也用 Evernote 的同事交流了一下我怎么用 Evernote，效果还可以，干脆在年关将至的时候分享一下自己日常使用的一些软件。
+其实之前也分享了一些[自己使用的工具](https://lenciel.com/blog/categories/tools-i-use/){:target="_blank"}，只是更偏重研发。今天跟另外一个也用 Evernote 的同事交流了一下我怎么用 Evernote，效果还可以，干脆在年关将至的时候分享一下自己日常使用的一些软件。
 
 从 Evernote 开始。
 
-进入互联网时代，特别是移动互联网时代之后，获取各种信息变得越来越便捷了，如何管理这些纷繁的信息也自热而然成为一个需求。大多数像我一样的老人，一开始是用[dig](https://digg.com/)和[delicious](https://delicious.com/)这样基于书签的工具。因为在有 google 和云笔记本这种东西之前，大家都是靠装满了各种书签的"收藏夹"过活（年轻人是不能理解重装机器没有备份收藏夹的伤痛的）。
+进入互联网时代，特别是移动互联网时代之后，获取各种信息变得越来越便捷了，如何管理这些纷繁的信息也自热而然成为一个需求。大多数像我一样的老人，一开始是用[dig](https://digg.com/){:target="_blank"}和[delicious](https://delicious.com/){:target="_blank"}这样基于书签的工具。因为在有 google 和云笔记本这种东西之前，大家都是靠装满了各种书签的"收藏夹"过活（年轻人是不能理解重装机器没有备份收藏夹的伤痛的）。
 
 但是这样的系统坏处就是它是"lazy-loading"的，你每次需要的时候，需要打开网页（如果你还能想起叫啥并且它们还健在的话）去找原来看到的信息，所以更适合用来做 reference 的整理。对于你真正希望梳理成自己知识的东西，更好的选择当然是使用所谓的 PIM(Personal Information Management)软件。
 
@@ -27,7 +27,7 @@ categories:
 * 跨平台跨设备云同步
 * 颜色还真水嫩啊
 
-但时间久了，Evernote 里面的东西也多了起来。每次要找点儿什么基本上都是靠全文搜索，一直到我读到 Michael Hyatt 的[这篇文章](http://michaelhyatt.com/evernote-tags.html)。
+但时间久了，Evernote 里面的东西也多了起来。每次要找点儿什么基本上都是靠全文搜索，一直到我读到 Michael Hyatt 的[这篇文章](http://michaelhyatt.com/evernote-tags.html){:target="_blank"}。
 
 简单来说，大多数人用 Evernote 都是以"笔记本(Notebook)"为容器来整理 Note 的。Michael 的意思是 Notebook 和 Tag 比有这么几个弱点：
 
@@ -47,11 +47,11 @@ categories:
 
 注意，收录的时候我都习惯用下面的选项，去掉所有的样式：
 
-![Evernote Clipper](/downloads/images/2014_12/evernote_chrome_clipper.png --alt Evernote Clipper)
+![Evernote Clipper](/downloads/images/2014_12/evernote_chrome_clipper.png --alt Evernote Clipper){:target="_blank"}
 
 最后，在整理 Inbox 的时候，对每篇文章做一些修修剪剪，给 Note 加上合适的 Tag，然后放到`Archive`。可以看到，因为 tag 可以嵌套和展开，要找到自己感兴趣的文章变得容易很多：
 
-![Evernote Clipper](/downloads/images/2014_12/evernote_nested_tags.png --alt Evernote Clipper)
+![Evernote Clipper](/downloads/images/2014_12/evernote_nested_tags.png --alt Evernote Clipper){:target="_blank"}
 
 
 

@@ -11,7 +11,7 @@ categories:
 - rants
 ---
 
-之前 TGO 这边联系能不能到杭州参加个圆桌，后面说变成了分享。分享啥呢？这半年实在是忙，没准备出台。正犯愁的时候，[996.icu](https://996.icu/#/zh_CN)引起了各种讨论，我想，不如来聊聊这个吧。
+之前 TGO 这边联系能不能到杭州参加个圆桌，后面说变成了分享。分享啥呢？这半年实在是忙，没准备出台。正犯愁的时候，[996.icu](https://996.icu/#/zh_CN){:target="_blank"}引起了各种讨论，我想，不如来聊聊这个吧。
 
 我第一次创业的时候，公司不但不打卡，还有不受限制的带薪年假：如果你觉得累了，想去休假两个星期缓缓，就去吧。实际上，我自己是没有太多时间睡觉的：不但后端前端运维都得干，还得拉网线刷路由跑业务陪客户签合同盯回款。
 
@@ -21,13 +21,13 @@ categories:
 
 从朋友圈看，他应该一直在冲浪。
 
-我羡慕他，所以[很认真地](/2015/10/the-solution-of-work-life-balance/)研究过[work life balance](/2015/10/the-myth-of-work-life-balance/)。
+我羡慕他，所以[很认真地](/2015/10/the-solution-of-work-life-balance/){:target="_blank"}研究过[work life balance](/2015/10/the-myth-of-work-life-balance/){:target="_blank"}。
 
 趁这次机会，把之前的和最近想到的，都捋捋分享给大家。
 
 ## 问题很严重
 
-这个 20 万+的 repo 说明 996 的问题还是很严重的，连[BDFL](https://www.zhihu.com/question/20972009)也出来发声觉得我们这么弄不太有人性。
+这个 20 万+的 repo 说明 996 的问题还是很严重的，连[BDFL](https://www.zhihu.com/question/20972009){:target="_blank"}也出来发声觉得我们这么弄不太有人性。
 
 但国内比较挺员工的，一般是不在大公司任职的闲云野鹤。绝大多数公司的技术管理者好像都选择了沉默。我理解这是一个不太好表态的话题，向着公司吧，员工觉得你丫一将功成万骨枯；向着员工吧，老板没准儿觉得你的技术团队还不够拼呢。
 
@@ -49,9 +49,9 @@ categories:
 
 ### 这不是一个现在才有的问题
 
-1928 年冬天，凯恩斯发表了一篇文章，题为《我们后代的经济前景》([Economic Possibilities for Our Grandchildren](https://link.springer.com/chapter/10.1007/978-1-349-59072-8_25))。文中凯恩斯预测到 2028 年，因为生产力不断发展，人类每周只需要上 15 小时班。
+1928 年冬天，凯恩斯发表了一篇文章，题为《我们后代的经济前景》([Economic Possibilities for Our Grandchildren](https://link.springer.com/chapter/10.1007/978-1-349-59072-8_25){:target="_blank"})。文中凯恩斯预测到 2028 年，因为生产力不断发展，人类每周只需要上 15 小时班。
 
-罗素不但在《[幸福之路](https://book.douban.com/subject/1033248/)》里说，「一个人觉得自己工作重要是精神失常的前兆」，他甚至在 1930 年专门写了一篇《[闲暇颂](https://www.douban.com/group/topic/10108285/)》（其实应该翻译成《慵懒颂》）。
+罗素不但在《[幸福之路](https://book.douban.com/subject/1033248/){:target="_blank"}》里说，「一个人觉得自己工作重要是精神失常的前兆」，他甚至在 1930 年专门写了一篇《[闲暇颂](https://www.douban.com/group/topic/10108285/){:target="_blank"}》（其实应该翻译成《慵懒颂》）。
 
 这两位都觉得，当时的文化痴迷于将工作本身视为崇高追求，而不是将其视为一个完整生活的一部分，对文明的发展大大有害。
 
@@ -65,19 +65,19 @@ categories:
 
 ### 这不是一个中国才有的问题
 
-不管是[Amazon的高压管理制度](http://www.nytimes.com/2015/08/16/technology/inside-amazon-wrestling-big-ideas-in-a-bruising-workplace.html)，还是每天睡 4 个小时每周至少一个通宵产假休 11 天的梅姐（Quora 上有人认真的研究[有没有可能按照她每周130小时](https://www.quora.com/How-did-CEO-Marissa-Mayer-pull-all-nighters-and-130-hour-work-weeks-while-at-Google)的工作时长来生活），还是 Musk 在 twitter 上教育大家 40 个小时一周的工作[无法改变世界](https://new.qq.com/cmsn/20181127/20181127003252.html)，还是最近引起一些讨论的 wework 的饮料桶：
+不管是[Amazon的高压管理制度](http://www.nytimes.com/2015/08/16/technology/inside-amazon-wrestling-big-ideas-in-a-bruising-workplace.html){:target="_blank"}，还是每天睡 4 个小时每周至少一个通宵产假休 11 天的梅姐（Quora 上有人认真的研究[有没有可能按照她每周130小时](https://www.quora.com/How-did-CEO-Marissa-Mayer-pull-all-nighters-and-130-hour-work-weeks-while-at-Google){:target="_blank"}的工作时长来生活），还是 Musk 在 twitter 上教育大家 40 个小时一周的工作[无法改变世界](https://new.qq.com/cmsn/20181127/20181127003252.html){:target="_blank"}，还是最近引起一些讨论的 wework 的饮料桶：
 
-![Vhost threshold](/downloads/images/2019_04/wework.jpg --alt Don't touch me)
+![Vhost threshold](/downloads/images/2019_04/wework.jpg --alt Don't touch me){:target="_blank"}
 
 很显然，全世界都有一些很拼很疯狂的人，为了自己的事业非常投入。
 
 但对于这样的文化，国外的反思好像比我们的深刻。
 
-程序员，作家，赛车手，Ruby on Rails 的作者 DHH 在他的新书（他的每本书我都很喜欢，Basecamp 这个产品我也很喜欢）《[It Doesn't Have to Be Crazy at Work](https://www.amazon.com/Doesnt-Have-Be-Crazy-Work/dp/0062874780)》里这么说：
+程序员，作家，赛车手，Ruby on Rails 的作者 DHH 在他的新书（他的每本书我都很喜欢，Basecamp 这个产品我也很喜欢）《[It Doesn't Have to Be Crazy at Work](https://www.amazon.com/Doesnt-Have-Be-Crazy-Work/dp/0062874780){:target="_blank"}》里这么说：
 
 「绝大多数疯狂工作的人并不是做实际工作的人。他们是经理，金融家和公司所有者」。
 
-英国的社会学家 David Graeber 在《[Bullshit Jobs](https://www.amazon.com/dp/B075RWG7YM/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1)》里面说：
+英国的社会学家 David Graeber 在《[Bullshit Jobs](https://www.amazon.com/dp/B075RWG7YM/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1){:target="_blank"}》里面说：
 
 「有偿就业，作为就业条件的一部分，员工把大部分时间都花在了他们不喜欢并且不是特别擅长的任务上，还不得不假装不是这样的。中层管理人员里这种类型的受害者最多：因为现代企业管理的主要手段是建立可量化的方法来评估绩效，这迫使中层管理者花费大量时间来评估和证明他们做了什么，而实际做事的时间越来越少。」
 
@@ -93,7 +93,7 @@ HBO 在拍《硅谷》的时候甚至专门恶搞了一下「使这个世界变�
 
 我的理解是，因为软件的复杂度，我们很多时候不知道怎么度量和改进软件团队的效率和质量，就只能以加班来博取管理层的信任：兄弟们都拼了。**好的技术管理者最主要的衡量标准是看他能不能构建一支有效率的技术团队**，其他的单向的技术能力与之相比，不是那么的重要。
 
-[如何正确的度量](/2018/08/how-to-measure-tech-organization-performance/)和[如何正确的改进](/2018/08/how-to-improve-tech-organization-performance/)我之前都分享过，这里就不再深入。
+[如何正确的度量](/2018/08/how-to-measure-tech-organization-performance/){:target="_blank"}和[如何正确的改进](/2018/08/how-to-improve-tech-organization-performance/){:target="_blank"}我之前都分享过，这里就不再深入。
 
 #### 为什么是中国
 
@@ -111,7 +111,7 @@ HBO 在拍《硅谷》的时候甚至专门恶搞了一下「使这个世界变�
 
 一个人如果觉得他累了，或者他有名利之外别的追求，我们要能够接受和尊重。不能把年轻人当成燃料，要当成产品去打磨。如果光讲拼搏，我们有过比 996 更狂热的时期，不是吗？
 
-![Vhost threshold](/downloads/images/2019_04/old_posters.jpg --alt Don't touch me)
+![Vhost threshold](/downloads/images/2019_04/old_posters.jpg --alt Don't touch me){:target="_blank"}
 
 但是，我也得说，把事情做到极致的人，大多数都有这份拼劲。究竟该怎么活，自己真正享受什么，喜欢什么，很多时候不是通过循规蹈矩的生活就能弄明白的，总得为什么东西拼过。
 

@@ -40,15 +40,15 @@ categories:
 
 ## 工作成了主义，却并不稳固
 
-去年和互联网行业里的其他人[讨论 996 的时候](https://lenciel.com/2019/04/a-talk-about-996/)，我发现，原来有一个词叫做「[工作主义](https://www.theatlantic.com/ideas/archive/2019/02/religion-workism-making-americans-miserable/583441/)」。
+去年和互联网行业里的其他人[讨论 996 的时候](https://lenciel.com/2019/04/a-talk-about-996/){:target="_blank"}，我发现，原来有一个词叫做「[工作主义](https://www.theatlantic.com/ideas/archive/2019/02/religion-workism-making-americans-miserable/583441/){:target="_blank"}」。
 
-简单来说，人类并没有像凯恩斯在《[我们后代的经济前景](https://link.springer.com/chapter/10.1007/978-1-349-59072-8_25)》里描绘的那样，每周工作两天休息五天；也没有像 Eric Barnouw 预测的[那样](https://timesmachine.nytimes.com/timesmachine/1957/09/22/issue.html?action=click&contentCollection=Archives&module=ArticleEndCTA&region=ArchiveBody&pgtype=article)，随着工作时间越来越少，一个人的身份将由他/她的嗜好、作品等东西来定义。
+简单来说，人类并没有像凯恩斯在《[我们后代的经济前景](https://link.springer.com/chapter/10.1007/978-1-349-59072-8_25){:target="_blank"}》里描绘的那样，每周工作两天休息五天；也没有像 Eric Barnouw 预测的[那样](https://timesmachine.nytimes.com/timesmachine/1957/09/22/issue.html?action=click&contentCollection=Archives&module=ArticleEndCTA&region=ArchiveBody&pgtype=article){:target="_blank"}，随着工作时间越来越少，一个人的身份将由他/她的嗜好、作品等东西来定义。
 
 相反，工作从 job 发展到 career 发展到 calling，新一代的年轻人从小就被教育，要找到自己的梦想并把它变成自己的事业：如果你还没有在工作中找到这种使命感，就继续努力工作直到你找到它。
 
 最终，对于穷人和中产阶级来说，辛勤工作仍然是维生所必须的；而对于精英，工作则变成了一种宗教：「比你优秀的人比你还努力」，拼命工作，前面等着的是身份、地位和同类组成的门槛挺高的社群。
 
-这种把工作从一种物质生产的手段，升级为身份认同感生产（identity production）的手段，最初是在富裕阶层产生的。如 Robert Frank[说的](https://blogs.wsj.com/wealth/2007/03/21/the-workaholic-rich/)，「在工作中积累财富这一创造性的过程，是有钱人觉得最好玩的事物」。但是现在，根据 Pew Research 的研究报告，在「作为一个成年人什么是重要的」的选项中，95%的青少年选择「有一份他们享受的工作或者事业」，远超过「帮助其他需要帮助的人」（81%）或者「结婚」（47%）。
+这种把工作从一种物质生产的手段，升级为身份认同感生产（identity production）的手段，最初是在富裕阶层产生的。如 Robert Frank[说的](https://blogs.wsj.com/wealth/2007/03/21/the-workaholic-rich/){:target="_blank"}，「在工作中积累财富这一创造性的过程，是有钱人觉得最好玩的事物」。但是现在，根据 Pew Research 的研究报告，在「作为一个成年人什么是重要的」的选项中，95%的青少年选择「有一份他们享受的工作或者事业」，远超过「帮助其他需要帮助的人」（81%）或者「结婚」（47%）。
 
 这就是所谓的「工作主义」。
 
@@ -60,13 +60,13 @@ categories:
 
 ## 提高生产力是答案吗？
 
- 前几天 Marc Andreessen 写了一篇 [It’s Time to Build](https://stratechery.com/2020/how-tech-can-build/)，是讲疫情和生产力的，火了。
+ 前几天 Marc Andreessen 写了一篇 [It’s Time to Build](https://stratechery.com/2020/how-tech-can-build/){:target="_blank"}，是讲疫情和生产力的，火了。
 
 他的主题思想是，在这场疫情里面大部分的人类都只会空谈：拿西方政府来说，几乎一致的轨迹就是先表达对中国的支持，然后各种讨论原因和应对，但没有任何有实质意义的行动，直到为时已晚。
 
 他认为，全力发展生产力特别是技术生产力，是人类能够把握自身命运，解决类似新冠这样的全球性危机的唯一办法。
 
-批判他的人很多，以至于很多科技界的话题领袖都出来[打圆场](https://medium.com/@m2jr/how-to-build-a-breakthrough-3071b6415b06)，比如 Ben Thompson [就说](https://stratechery.com/2020/how-tech-can-build/)：
+批判他的人很多，以至于很多科技界的话题领袖都出来[打圆场](https://medium.com/@m2jr/how-to-build-a-breakthrough-3071b6415b06){:target="_blank"}，比如 Ben Thompson [就说](https://stratechery.com/2020/how-tech-can-build/){:target="_blank"}：
 
 > I do believe that *It’s Time to Build* stands alone: the point is not the details, or the author, but the sentiment. The changes that are necessary in America must go beyond one venture capitalist, or even the entire tech industry. The idea that too much regulation has made tech the only place where innovation is possible is one that must be grappled with, and fixed.
 
@@ -74,9 +74,9 @@ Marc Andreessen 是谁？他构建了 Mosaic，这是第一个支持图形的网
 
 或者换个说法，你现在可以在网上读这篇文章，不管用的是 Chrome 还是微信内置浏览器，得感谢他。
 
-他提出了「[软件正在吞噬整个世界](https://www.wsj.com/articles/SB10001424053111903480904576512250915629460)」。
+他提出了「[软件正在吞噬整个世界](https://www.wsj.com/articles/SB10001424053111903480904576512250915629460){:target="_blank"}」。
 
-他和 [Ben Horowitz](https://en.wikipedia.org/wiki/Ben_Horowitz) 是著名风投 Andreessen Horowitz， 也就是 a16z 的创始人。
+他和 [Ben Horowitz](https://en.wikipedia.org/wiki/Ben_Horowitz){:target="_blank"} 是著名风投 Andreessen Horowitz， 也就是 a16z 的创始人。
 
 他和他的拥趸大都是我佩服的人，聪明，坚韧，充满激情，是真正干过企业的投资人，相信产品技术赋予生产力和社会关系的变革可以改变一切。
 
@@ -84,7 +84,7 @@ Marc Andreessen 是谁？他构建了 Mosaic，这是第一个支持图形的网
 
 「如何在疫情封锁的情况下，保持生产力？」
 
-工具、指南、经验分享，人们不断分享着如何在充满了家人和猫狗，炸鸡和啤酒的环境里，保持工作效率按时完成工作的秘诀，我自己也[写了一篇](/2020/02/on-remote-work/)。
+工具、指南、经验分享，人们不断分享着如何在充满了家人和猫狗，炸鸡和啤酒的环境里，保持工作效率按时完成工作的秘诀，我自己也[写了一篇](/2020/02/on-remote-work/){:target="_blank"}。
 
 但大部分的人仍然感觉远程办公只不过带来了文山会海，花了大量的时间，却没什么生产力。
 
@@ -92,7 +92,7 @@ Marc Andreessen 是谁？他构建了 Mosaic，这是第一个支持图形的网
 
 ## 问题是什么？
 
-把控制论[带到建筑界](https://scielo.conicyt.cl/scielo.php?script=sci_arttext&pid=S0717-69962015000200007&lng=en&nrm=iso&tlng=en)的 [Cedric Price](https://en.wikipedia.org/wiki/Cedric_Price) 说：
+把控制论[带到建筑界](https://scielo.conicyt.cl/scielo.php?script=sci_arttext&pid=S0717-69962015000200007&lng=en&nrm=iso&tlng=en){:target="_blank"}的 [Cedric Price](https://en.wikipedia.org/wiki/Cedric_Price){:target="_blank"} 说：
 
 > Technology is the answer, but what was the question?
 
@@ -114,7 +114,7 @@ Marc Andreessen 所说的那种吞噬整个世界的软件生产力的确可以�
 
 ### 重新定义商业的模式
 
-在《[Catch-22](https://movie.douban.com/subject/27200836/)》里，一家企业用股票代替了战机里配置的降落伞，逻辑是「你上一次真正使用降落伞是什么时候？难道你不愿意用财富增长来代替吗？」。
+在《[Catch-22](https://movie.douban.com/subject/27200836/){:target="_blank"}》里，一家企业用股票代替了战机里配置的降落伞，逻辑是「你上一次真正使用降落伞是什么时候？难道你不愿意用财富增长来代替吗？」。
 
 然后这架战机就被击落了。
 
@@ -128,15 +128,15 @@ Marc Andreessen 所说的那种吞噬整个世界的软件生产力的确可以�
 
 十四世纪的大瘟疫破坏了欧洲的封建制度：人们看着成堆的尸体，想知道有什么罪过可能与这种惩罚成正比，他们开始对上帝失去信心，于是教会失去了组织和左右日常生活的力量。
 
-在现代经济的道德标准中，懒惰成了[七宗罪](https://zh.wikipedia.org/zh/%E4%B8%83%E5%AE%97%E7%BD%AA)里唯一成立的罪状。但现在，我们有一个机会来重新思考我们应该如何看待生活的方方面面。
+在现代经济的道德标准中，懒惰成了[七宗罪](https://zh.wikipedia.org/zh/%E4%B8%83%E5%AE%97%E7%BD%AA){:target="_blank"}里唯一成立的罪状。但现在，我们有一个机会来重新思考我们应该如何看待生活的方方面面。
 
-我关注这部分要[稍微早一些](https://lenciel.com/2015/10/the-myth-of-work-life-balance/)。
+我关注这部分要[稍微早一些](https://lenciel.com/2015/10/the-myth-of-work-life-balance/){:target="_blank"}。
 
-几年前我发现[Arthur C. Brooks](https://www.hks.harvard.edu/faculty/arthur-brooks)在哈佛商学院教授「幸福」相关的课程时，还非常惊讶：这玩意儿能教吗？《红字》的作者 Nathaniel Hawthorne 不是说，幸福就像一只蝴蝶，当你追逐它的时候，它总是飞来飞去；如果你安静地坐下来，它反而可能会落在你身上…
+几年前我发现[Arthur C. Brooks](https://www.hks.harvard.edu/faculty/arthur-brooks){:target="_blank"}在哈佛商学院教授「幸福」相关的课程时，还非常惊讶：这玩意儿能教吗？《红字》的作者 Nathaniel Hawthorne 不是说，幸福就像一只蝴蝶，当你追逐它的时候，它总是飞来飞去；如果你安静地坐下来，它反而可能会落在你身上…
 
-后来稍微研究了一下我就发现，虽然幸福一直是宗教、哲学和艺术探讨的命题，但是科学最近 30 年在这个领域也建树颇丰。哈佛的那门课程里面充满了「情绪与肢体系统」、「身体语言的神经生物学」、「身体语言的神经生物学」和「催产素与爱」这样基于科学论证的内容。耶鲁也有[类似的课程](https://www.theatlantic.com/family/archive/2019/06/yale-happiness-class/592477/)。
+后来稍微研究了一下我就发现，虽然幸福一直是宗教、哲学和艺术探讨的命题，但是科学最近 30 年在这个领域也建树颇丰。哈佛的那门课程里面充满了「情绪与肢体系统」、「身体语言的神经生物学」、「身体语言的神经生物学」和「催产素与爱」这样基于科学论证的内容。耶鲁也有[类似的课程](https://www.theatlantic.com/family/archive/2019/06/yale-happiness-class/592477/){:target="_blank"}。
 
-诺贝尔奖获得者，普林斯顿的 Daniel Kahneman 和 Angus Deaton 针对这个领域进行了大量探索。世界上最杰出的社会心理学家之一 Martin Seligman 也有一个[相关的课程](https://www.sas.upenn.edu/lps/graduate/mapp)。
+诺贝尔奖获得者，普林斯顿的 Daniel Kahneman 和 Angus Deaton 针对这个领域进行了大量探索。世界上最杰出的社会心理学家之一 Martin Seligman 也有一个[相关的课程](https://www.sas.upenn.edu/lps/graduate/mapp){:target="_blank"}。
 
 浏览这些内容之后，可以得到下面几个公式：
 

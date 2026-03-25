@@ -8,9 +8,9 @@ categories:
 - just-4-fun
 ---
 
-今天在微信朋友圈里面看了 20 来条这游戏的成绩分享，还有的群开始讨论心得。打开链接一看，原来是当年那个小范围流行了一下的[Penguin Ball](https://www.google.com/search?q=Penguin+Ball&oq=Penguin+Ball&aqs=chrome..69i57j69i60.972j0j4&sourceid=chrome&es_sm=91&ie=UTF-8)嘛（我记得后来有些人开始玩那个[血腥版](http://www.bloody-penguin.com/)，正常人就慢慢不玩这游戏了）。
+今天在微信朋友圈里面看了 20 来条这游戏的成绩分享，还有的群开始讨论心得。打开链接一看，原来是当年那个小范围流行了一下的[Penguin Ball](https://www.google.com/search?q=Penguin+Ball&oq=Penguin+Ball&aqs=chrome..69i57j69i60.972j0j4&sourceid=chrome&es_sm=91&ie=UTF-8){:target="_blank"}嘛（我记得后来有些人开始玩那个[血腥版](http://www.bloody-penguin.com/){:target="_blank"}，正常人就慢慢不玩这游戏了）。
 
-不过，链接指向的那山寨游戏虽然没有再用 flash，但是对手势事件的处理有问题（他们还是挺[大方的](http://game.2sky.cn/js/52/index.js)），所以确实还蛮难的：我打了五六次，最好成绩 6000 多一点。
+不过，链接指向的那山寨游戏虽然没有再用 flash，但是对手势事件的处理有问题（他们还是挺[大方的](http://game.2sky.cn/js/52/index.js){:target="_blank"}），所以确实还蛮难的：我打了五六次，最好成绩 6000 多一点。
 
 然后，那个页面除开嵌入了一个「教你如何调情」的广告之外，一直在不停的要你分享，分享，分享......
 
@@ -27,7 +27,7 @@ categories:
 
 分享出来的链接，以这个「打企鹅」的游戏为例，是长成下面这样子的一条链接消息：
 
-![Wechat Message](/downloads/images/2014_08/wechat_share_msg.jpg --alt Don't touch me)
+![Wechat Message](/downloads/images/2014_08/wechat_share_msg.jpg --alt Don't touch me){:target="_blank"}
 
 所以，要伪装一个「打企鹅」的高分数链接就只需要找到 title image 的 url 和链接指向的 url（因为标题和描述照着编就是了）。
 
