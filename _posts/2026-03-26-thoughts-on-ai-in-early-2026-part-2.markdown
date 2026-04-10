@@ -77,7 +77,7 @@ Sussman 在传世经典《[SICP](https://dspace.mit.edu/handle/1721.1/6941){:tar
 
 NVIDIA 把自己的[新产品](https://www.nvidia.com/en-us/data-center/grace-hopper-superchip/){:target="_blank"}用 [Grace Hopper](https://en.wikipedia.org/wiki/Grace_Hopper){:target="_blank"} 命名是有很深寓意的：作为人类第一个编译器的作者，她当时的目标就是从自然语言生成机器码。
 
-我们看代码的时候，其实得做方面的检查：一部分跟编译器类似，看编码本身是否存在问题；一部分是从产品文档、接口规范等等需求角度，看是否相应功能得到了正确实现。
+我们看代码的时候，其实得做两个方面的检查：一部分跟编译器类似，看编码本身是否存在问题；一部分是从产品文档、接口规范等等需求角度，看是否相应功能得到了正确实现。
 
 后面这部分本来就是自然语言的。而整个行业花了几十年时间推出的各种编程语言，我和大部分程序员掌握的手艺中很大的一部分，主要是前面这部分：但它确实只是个中间产物。
 
@@ -87,7 +87,9 @@ NVIDIA 把自己的[新产品](https://www.nvidia.com/en-us/data-center/grace-ho
 
 Brain Fry 的抱怨火热了几天之后，Mario Zechner 的《[Slowing the fuck down](https://mariozechner.at/posts/2026-03-25-thoughts-on-slowing-the-fuck-down/){:target="_blank"}》又成了热帖。
 
-其实，为了一碟醋每天狂包饺子的是也不在少数，但也有很多公司在项目里取得了实实在在的进展。
+确实，目前使用 AI 的很多人，说他们是为了一碟醋每天狂包饺子并不为过。
+
+但也有很多公司在项目里取得了实实在在的进展。
 
 我想，这里面最核心的区别在于，使用 AI 的团队有多理解问题。
 
