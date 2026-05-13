@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-ruby "2.7.3"
+ruby "3.2.5"
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
 # file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
@@ -31,3 +31,7 @@ group :jekyll_plugins do
    gem 'parallel'
    gem 'ruby-progressbar'
 end
+
+gem "webrick", "~> 1.9"
+
+gem "faraday-retry", "~> 2.4"
