@@ -1,0 +1,65 @@
+---
+layout: post
+comments: true
+description: "...Fragments 0x0001: AI 应用的财务模型 / 《数学六大核心概念》..."
+title: "Fragments 0x0001"
+date: 2026-09-01 20:10:31 +0800
+categories: 
+
+- useless-songs
+- wxmp
+wx: true
+
+---
+
+#### AI 应用的财务模型
+
+今天看到篇《晚点》的[报道](https://mp.weixin.qq.com/s/EANN8gVcsrRm4opUU3X58Q){:target="_blank"}讨论 AI 应用的收入问题。里面说到 AI 应用的财务模型：
+
+> 毛利差距也大。美国老牌风险投资机构 Bessemer 曾研究过 20 家高速增长的 AI 公司，发现很多在商业化第一年就接近或达到 1 亿美元 ARR，但平均毛利只有约 25%；传统云软件成熟期的毛利通常在 70% 左右。
+>
+> ...
+>
+> 这样的先例很多。据 The Information 报道，Perplexity 2024 年对外公布的毛利率约 60%，但那是因为公司把约 3300 万美元、主要花在免费和试用用户身上的计算与网络成本计入了研发费用；若计入营业成本，毛利率是负数。
+>
+> Cursor 也类似：其内部财务资料显示，截至 2026 年 1 月的季度毛利率为 -23%；把免费用户的推理成本也算进去，约为 -31%。
+>
+> 吴显昆怀疑，这样的环境下，资源有限的创业公司还有没有必要继续玩这个游戏。他看到办公类 Agent 产品，增长期毛利极端的低到 -200%，有的 -40%，好一点的 0% 到 10%。Kuse 因为一直盯着商业模型，才勉强做到毛利为正。
+>
+>他认同 Fireworks CEO Lin Qiao 对初创公司处境的概括——“scaling to bankruptcy”：越增长，离死亡越近。
+
+这让我想起来年初在跟的一个项目 CEO 抱怨自己的 AI 应用在用户量上去之后，token 成本也上去了，有时候感觉宁愿少来一点用户我们的一些讨论：
+
+{% picture /downloads/images/2026_09/ai-business-model-clip-1.png%}\
+<small>图 1. 今年春天的一次讨论 </small>
+
+不管是创业还是投资，都要记得 token 成本是随用户数线性的（和之前几乎没有边际成本的软件完全不同）。如果应用的价值还不愿意让用户付超出 token 成本的费用，那最好别做/别投。
+
+#### 《数学六大核心概念》
+
+活着的数学家里最强（这是 Big Think 频道的标题）也是用 AI 用得很深的陶哲轩今年会出一本科普读物《数学六大核心概念》，涵盖数（Numbers）、代数（Algebra）、几何（Geometry）、概率（Probability）、分析（Analysis）、动力学（Dynamics）。
+
+我今天看了他在 Big Think 上的[宣传视频](https://www.youtube.com/watch?v=OOMx2BHHWtE){:target="_blank"}（国内已经[有人转了](https://www.bilibili.com/video/BV1LR4k6SE6m/){:target="_blank"}），关于数学的部分真的是娓娓道来，特别是做研究的一些实践与感想，对认真干任何事情的人都普遍适用。
+
+我觉得最有意思的是关于他自己使用 AI 的一些感受和想法。
+
+他说：
+
+> It's like having someone who knows a lot and is slightly drunk and is throwing out ideas, but with enough guidance, you can actually extract useful output.
+
+同时他觉得关于 AI 的讨论常常陷入简单任务和困难任务的一维划分。但实际情况是，AI 和人类的能力是互补的，人类擅长深度，AI 擅长广度，大家的差异不是能力而是维度。
+
+这和之前 Davide Piffer 的思路非常吻合：
+
+> AI Isn’t Outthinking Mathematicians. It’s Out-Remembering Them.
+
+同时他指出了 AI 的几大不足，我想大部分深入使用 AI 干一些复杂工程的人都会有一些共鸣。
+
+比如实际 ROI。陶哲轩说跑 First Proof （由 11 位数学家设计的还未公开的题目集，专门用来做 AI 数学能力的基准测试）模型厂商只聊解出来了多少题，没公示 token 成本。
+
+这跟我们有一些管理人员很久不写代码用 AI 整了一个看得过去的落地页就兴奋得睡不着觉一样，不算账的时候总是容易开心一点。
+
+再比如，解决复杂问题的过程，什么地方难什么地方精彩，上手干的人有很深的感受，所以从做事到最后产出论文都有自己的节奏。
+
+但用 AI 就像坐直升飞机往终点直飞，忽略地面实际地形，也没有哪里难哪里容易的概念，所以某些简单的部分可以搞得很复杂，某些该深入解释的地方却一笔带过。
+
