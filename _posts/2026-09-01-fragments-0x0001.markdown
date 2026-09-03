@@ -8,7 +8,6 @@ categories:
 
 - useless-songs
 - wxmp
-wx: true
 
 ---
 
