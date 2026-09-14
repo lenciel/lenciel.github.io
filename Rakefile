@@ -231,6 +231,9 @@ task :prepare_deploy do
   Rake::Task[:minify_html].execute
   rm_rf [Dir.glob("#{deploy_dir}/node_modules"), Dir.glob("#{deploy_dir}/*.md"), Dir.glob("#{deploy_dir}/*.py"), Dir.glob("#{deploy_dir}/*.json"), Dir.glob("#{deploy_dir}/*.sh"), "#{deploy_dir}/plugins", "#{deploy_dir}/Rakefile", "#{deploy_dir}/Makefile",  "#{deploy_dir}/pagefind.yml", "#{deploy_dir}/gulpfile.js"]
 
+  puts "\n## Removing dot files (#{deploy_dir})"
+  system("find", "#{deploy_dir}", "-name", ".DS_Store", "-o", "-name", "._*", "-print", "-delete")
+
   puts "\n## Copying #{deploy_dir} to #{ftp_dir}"
   rm_rf Dir.glob("#{ftp_dir}")
   mkdir ftp_dir
