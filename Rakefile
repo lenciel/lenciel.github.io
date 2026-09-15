@@ -63,7 +63,7 @@ end
 
 task :blank_target do
   puts "add blank target for posts in _posts dir"
-  
+
   files = Dir.glob("_posts/*.markdown")
   files.each do |markdown_file|
     system(
@@ -71,7 +71,7 @@ task :blank_target do
       "-i", "",
       "-E",
       "s/(\\[[^]]+\\]\\([^)]+\\))($|[^{])/\\1{:target=\"_blank\"}\\2/g",
-      markdown_file 
+      markdown_file
     )
   end
 end
@@ -232,7 +232,7 @@ task :prepare_deploy do
   rm_rf [Dir.glob("#{deploy_dir}/node_modules"), Dir.glob("#{deploy_dir}/*.md"), Dir.glob("#{deploy_dir}/*.py"), Dir.glob("#{deploy_dir}/*.json"), Dir.glob("#{deploy_dir}/*.sh"), "#{deploy_dir}/plugins", "#{deploy_dir}/Rakefile", "#{deploy_dir}/Makefile",  "#{deploy_dir}/pagefind.yml", "#{deploy_dir}/gulpfile.js"]
 
   puts "\n## Removing dot files (#{deploy_dir})"
-  system("find", "#{deploy_dir}", "-name", ".DS_Store", "-o", "-name", "._*", "-print", "-delete")
+  system("find #{deploy_dir} -name .DS_Store -print -delete")
 
   puts "\n## Copying #{deploy_dir} to #{ftp_dir}"
   rm_rf Dir.glob("#{ftp_dir}")
