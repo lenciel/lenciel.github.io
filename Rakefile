@@ -322,34 +322,32 @@ task :list do
   puts "(type rake -T for more detail)\n\n"
 end
 
-# usage rake new_fr
-desc "Begin a new Fragments 0x post in #{posts_dir}"
-task :new_fr do
-  mkdir_p "#{posts_dir}"
-  # Find the highest numbered Fragments 0x post (filename: 2026-09-15-fragments-0x0006.markdown)
-  existing = Dir.glob("#{posts_dir}/*").map do |f|
-    if m = File.basename(f).match(/fragments-0x(\d+)/i)
-      m[1].to_i
-    end
-  end.compact
-  next_num = existing.empty? ? 1 : (existing.max + 1)
-  num_str = format('%04d', next_num)
-  filename = "#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-fragments-0x#{num_str}.#{new_post_ext}"
-  if File.exist?(filename)
-    abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
-  end
-  puts "Creating new post: #{filename}"
-  open(filename, 'w') do |post|
-    post.puts "---"
-    post.puts "layout: post"
-    post.puts "comments: true"
-    post.puts "description: '摘要'"
-    post.puts "title: 'Fragments 0x#{num_str}'"
-    post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}"
-    post.puts "categories: [useless-songs, wxmp]"
-    post.puts "---"
-  end
-end
+ # usage rake new_fr
+ desc "Begin a new Fragments 0x post in #{posts_dir}"
+ task :new_fr do
+   mkdir_p "#{posts_dir}"
+   # Find the highest numbered Fragments 0x post (filename: 2026-09-15-fragments-0x0006.markdown)
+   existing = Dir.glob("#{posts_dir}/*").map do |f|
+     File.basename(f).match(/fragments-0x([0-9a-fA-F]+)/i)&.[](1)
+   end.compact
+   next_num = existing.empty? ? 1 : (existing.map { |s| s.to_i(16) }.max + 1)
+   num_str = format('0x%04x', next_num)
+   filename = "#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-fragments-#{num_str}.#{new_post_ext}"
+   if File.exist?(filename)
+     abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
+   end
+   puts "Creating new post: #{filename}"
+   open(filename, 'w') do |post|
+     post.puts "---"
+     post.puts "layout: post"
+     post.puts "comments: true"
+     post.puts "description: '摘要'"
+     post.puts "title: 'Fragments #{num_str}'"
+     post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}"
+     post.puts "categories: [useless-songs, wxmp]"
+     post.puts "---"
+   end
+ end
 
 desc "Combine and minify js"
 task :minify_js do
