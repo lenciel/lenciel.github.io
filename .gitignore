@@ -5,6 +5,7 @@ _site
 /_posts/media
 .MWebMetaData
 _temp
+/.oss-upload.json
 /node_modules
 .textlintrc
 /downloads/code/upload_dir.py

@@ -4,6 +4,13 @@ require "colorize"
 require "htmlcompressor"
 require "parallel"
 require "ruby-progressbar"
+require "base64"
+require "digest"
+require "json"
+require "net/http"
+require "openssl"
+require "time"
+require "yaml"
 
 ## -- Rsync Deploy config -- ##
 # Be sure your public key is listed in your server's ~/.ssh/authorized_keys file
@@ -241,6 +248,12 @@ task :prepare_deploy do
   #rm_rf [Dir.glob("#{ftp_dir}/resized"), Dir.glob("#{ftp_dir}/assets"), Dir.glob("#{ftp_dir}/downloads")]
 
   Rake::Task[:build_pagefind].execute
+
+  if oss_configured?
+    Rake::Task[:upload_oss].execute
+  else
+    puts "\n## Skipping Aliyun OSS upload (set OSS_ACCESS_KEY_ID / OSS_ACCESS_KEY_SECRET to enable)"
+  end
   #Rake::Task[:optimize_images].execute
   # Rake::Task[:copydot].invoke(source_dir, deploy_dir)
 end
@@ -421,4 +434,299 @@ desc "Build Pagefind Index"
 task :build_pagefind do
   puts "## Building Pagefind Index"
   system("pagefind_extended")
+end
+
+#######################
+# Aliyun OSS upload   #
+#######################
+
+# Uploaded with the same relative key they have in the deploy folder, so the URLs
+# the site emits (static_base/downloads/..., static_base/resized_images/...) resolve.
+OSS_UPLOAD_DIRS = %w[downloads resized_images]
+OSS_MANIFEST_FILE = ENV["OSS_MANIFEST"].to_s.strip.empty? ? ".oss-upload.json" : ENV["OSS_MANIFEST"].to_s.strip
+OSS_CONTENT_TYPES = {
+  ".avif" => "image/avif",
+  ".css" => "text/css",
+  ".eot" => "application/vnd.ms-fontobject",
+  ".gif" => "image/gif",
+  ".html" => "text/html; charset=utf-8",
+  ".ico" => "image/x-icon",
+  ".jpeg" => "image/jpeg",
+  ".jpg" => "image/jpeg",
+  ".js" => "application/javascript",
+  ".json" => "application/json",
+  ".m4a" => "audio/mp4",
+  ".map" => "application/json",
+  ".md" => "text/plain; charset=utf-8",
+  ".mov" => "video/quicktime",
+  ".mp3" => "audio/mpeg",
+  ".mp4" => "video/mp4",
+  ".ogg" => "audio/ogg",
+  ".otf" => "font/otf",
+  ".pdf" => "application/pdf",
+  ".png" => "image/png",
+  ".py" => "text/plain; charset=utf-8",
+  ".sh" => "application/x-sh",
+  ".svg" => "image/svg+xml",
+  ".ttf" => "font/ttf",
+  ".txt" => "text/plain; charset=utf-8",
+  ".wav" => "audio/wav",
+  ".webm" => "video/webm",
+  ".webp" => "image/webp",
+  ".woff" => "font/woff",
+  ".woff2" => "font/woff2",
+  ".zip" => "application/zip",
+}.freeze
+OSS_DEFAULT_CONTENT_TYPE = "application/octet-stream"
+
+def oss_configured?
+  !ENV["OSS_ACCESS_KEY_ID"].to_s.strip.empty? && !ENV["OSS_ACCESS_KEY_SECRET"].to_s.strip.empty?
+end
+
+# OSS_ENDPOINT takes a host or a URL; a http:// endpoint keeps the connection
+# unencrypted so a local server can stand in for OSS. OSS_REGION is the shortcut
+# for oss-<region>.aliyuncs.com.
+def oss_endpoint
+  raw = ENV["OSS_ENDPOINT"].to_s.strip
+  if raw.empty?
+    region = ENV["OSS_REGION"].to_s.strip
+    raw = "oss-#{region}.aliyuncs.com" unless region.empty?
+  end
+  return nil if raw.empty?
+
+  uri = URI.parse(raw.include?("//") ? raw : "https://#{raw}")
+  # Bucket-in-host style needs a DNS name; IPs and localhost fall back to path style.
+  { :host => uri.host, :port => uri.port, :secure => uri.scheme != "http", :path_style => uri.host == "localhost" || uri.host.match?(/\A(?:\d{1,3}\.){3}\d{1,3}\z/) }
+end
+
+# OSS_BUCKETS is a "dir=bucket[:key prefix]" list; the prefix defaults to the
+# directory name so keys match the site URLs. OSS_BUCKET sends everything to one
+# bucket when OSS_BUCKETS is unset.
+def oss_targets
+  raw = ENV["OSS_BUCKETS"].to_s.strip
+  entries = raw.empty? ? OSS_UPLOAD_DIRS.map { |dir| "#{dir}=#{ENV["OSS_BUCKET"].to_s.strip}" } : raw.split(",")
+  entries.map do |entry|
+    dir, target = entry.split("=", 2).map { |part| part.to_s.strip }
+    bucket, prefix = target.to_s.split(":", 2).map { |part| part.to_s.strip }
+    { :dir => dir.to_s, :bucket => bucket.to_s, :prefix => (prefix.nil? ? dir : prefix).to_s }
+  end
+end
+
+# Only used for the summary output; falls back to the domain the site itself links to.
+def oss_domain
+  domain = ENV["OSS_DOMAIN"].to_s.strip
+  return domain unless domain.empty?
+
+  config = begin
+    YAML.safe_load_file("_config.yml")
+  rescue StandardError
+    nil
+  end
+  config.is_a?(Hash) ? config["static_base"].to_s : ""
+end
+
+def read_oss_manifest
+  return {} unless File.exist?(OSS_MANIFEST_FILE)
+
+  manifest = JSON.parse(File.read(OSS_MANIFEST_FILE))
+  manifest.is_a?(Hash) ? manifest : {}
+rescue JSON::ParserError => error
+  abort("oss upload aborted: #{OSS_MANIFEST_FILE} is not valid JSON (#{error.message}); delete it to upload everything again")
+end
+
+# PUT and HEAD address the same object, so the bucket-in-host vs path-style choice
+# and key escaping must stay in lockstep for the signature to match the request.
+def oss_request_target(endpoint, bucket, key)
+  escaped = key.split("/").map { |segment| URI::DEFAULT_PARSER.escape(segment) }.join("/")
+  if endpoint[:path_style]
+    [endpoint[:host], "/#{bucket}/#{escaped}"]
+  else
+    ["#{bucket}.#{endpoint[:host]}", "/#{escaped}"]
+  end
+end
+
+def oss_connection(host, endpoint)
+  http = Net::HTTP.new(host, endpoint[:port])
+  http.use_ssl = endpoint[:secure]
+  http.open_timeout = 30
+  http.read_timeout = 900
+  http.write_timeout = 900
+  http
+end
+
+# PUT one object with the OSS v1 signature, so no SDK or CLI is needed.
+# Returns nil on success and an error string otherwise.
+def oss_put(endpoint, bucket, key, path, mime)
+  date = Time.now.httpdate
+  # OSS v1 signature, as in aliyun-oss-ruby-sdk `Util.get_signature`: no Content-MD5
+  # and no x-oss-* headers are sent, so both fields are empty and add no separator.
+  to_sign = "PUT\n\n#{mime}\n#{date}\n/#{bucket}/#{key}"
+  signature = Base64.strict_encode64(
+    OpenSSL::HMAC.digest("sha1", ENV["OSS_ACCESS_KEY_SECRET"].to_s.strip, to_sign),
+  )
+  host, request_path = oss_request_target(endpoint, bucket, key)
+
+  File.open(path, "rb") do |file|
+    http = oss_connection(host, endpoint)
+    request = Net::HTTP::Put.new(request_path)
+    request["Date"] = date
+    request["Content-Type"] = mime
+    request["Content-Length"] = file.size.to_s
+    request["Authorization"] = "OSS #{ENV["OSS_ACCESS_KEY_ID"].to_s.strip}:#{signature}"
+    request.body_stream = file
+    response = http.request(request)
+    return nil if response.code.to_i == 200
+
+    "HTTP #{response.code} #{response.body.to_s.strip[0, 200]}"
+  end
+rescue StandardError => error
+  "#{error.class}: #{error.message}"
+end
+
+# HEAD one object to see whether it is already on OSS. Returns { :size, :etag } when
+# the object exists, :missing when it does not, or an error string (e.g. when the
+# credentials may only write).
+def oss_head(endpoint, bucket, key)
+  date = Time.now.httpdate
+  # Same v1 signature as PUT; HEAD sends no Content-Type and no Content-MD5.
+  signature = Base64.strict_encode64(
+    OpenSSL::HMAC.digest("sha1", ENV["OSS_ACCESS_KEY_SECRET"].to_s.strip, "HEAD\n\n\n#{date}\n/#{bucket}/#{key}"),
+  )
+  host, request_path = oss_request_target(endpoint, bucket, key)
+
+  http = oss_connection(host, endpoint)
+  http.read_timeout = 60
+  request = Net::HTTP::Head.new(request_path)
+  request["Date"] = date
+  request["Authorization"] = "OSS #{ENV["OSS_ACCESS_KEY_ID"].to_s.strip}:#{signature}"
+  response = http.request(request)
+
+  return { :size => response["Content-Length"].to_i, :etag => response["ETag"].to_s.delete(%q{"}) } if response.code.to_i == 200
+  return :missing if response.code.to_i == 404
+
+  "HTTP #{response.code}"
+rescue StandardError => error
+  "#{error.class}: #{error.message}"
+end
+
+desc "Upload files added to #{OSS_UPLOAD_DIRS.join('/')} in the deploy folder to Aliyun OSS (config via OSS_* env vars)"
+task :upload_oss, :dir do |t, args|
+  args.with_defaults(:dir => ftp_dir)
+
+  abort("oss upload aborted: set OSS_ACCESS_KEY_ID and OSS_ACCESS_KEY_SECRET") unless oss_configured?
+
+  endpoint = oss_endpoint
+  abort("oss upload aborted: set OSS_ENDPOINT (e.g. oss-cn-shanghai.aliyuncs.com) or OSS_REGION") if endpoint.nil?
+
+  targets = oss_targets
+  if targets.empty? || targets.any? { |target| target[:dir].empty? || target[:bucket].empty? }
+    abort("oss upload aborted: set OSS_BUCKETS (dir=bucket[:prefix], e.g. downloads=my-bucket,resized_images=my-bucket) or OSS_BUCKET")
+  end
+
+  root = args.dir.to_s.sub(%r{/\z}, "")
+  abort("oss upload aborted: #{root} not found, run rake prepare_deploy first") unless File.directory?(root)
+
+  puts "\n## Uploading to Aliyun OSS"
+  puts "## Endpoint: #{endpoint[:host]}:#{endpoint[:port]} (#{endpoint[:secure] ? "https" : "http"})"
+  targets.each { |target| puts "## #{target[:dir]} -> oss://#{target[:bucket]}/#{target[:prefix]}" }
+
+  manifest = read_oss_manifest
+  force = ENV["OSS_FORCE"] == "1"
+  pending = []
+  skipped = 0
+
+  targets.each do |target|
+    dir_path = File.join(root, target[:dir])
+    unless File.directory?(dir_path)
+      puts "## Skipping #{target[:dir]} (not in #{root})"
+      next
+    end
+
+    Dir.glob("#{dir_path}/**/*").each do |path|
+      next unless File.file?(path)
+
+      rel = path.sub(%r{\A#{Regexp.escape(root)}/}, "")
+      suffix = path.sub(%r{\A#{Regexp.escape(dir_path)}/?}, "")
+      key = target[:prefix].empty? ? suffix : "#{target[:prefix]}/#{suffix}"
+      size = File.size(path)
+      digest = Digest::SHA256.file(path).hexdigest
+      recorded = manifest[rel]
+      # A record only counts for the same bucket/key; otherwise (e.g. the bucket
+      # changed) the file is re-checked against OSS.
+      if !force && recorded.is_a?(Hash) && recorded["bucket"] == target[:bucket] && recorded["key"] == key &&
+         recorded["size"] == size && recorded["sha256"] == digest
+        skipped += 1
+        next
+      end
+
+      pending << {
+        :rel => rel,
+        :path => path,
+        :key => key,
+        :bucket => target[:bucket],
+        :size => size,
+        :sha256 => digest,
+        :md5 => Digest::MD5.file(path).hexdigest,
+        :mime => OSS_CONTENT_TYPES[File.extname(path).downcase] || OSS_DEFAULT_CONTENT_TYPE,
+      }
+    end
+  end
+
+  if pending.empty?
+    puts "## Nothing to upload (#{skipped} files unchanged)"
+  else
+    megabytes = pending.sum { |item| item[:size] } / 1024 / 1024
+    puts "## Uploading #{pending.size} files (#{megabytes} MB), #{skipped} unchanged"
+    progressbar = ProgressBar.create(:title => "Uploading",
+                                     :starting_at => 0,
+                                     :total => pending.size,
+                                     :format => '%t, %a |%b%i| %p%')
+
+    # OSS_VERIFY=0 skips the HEAD probe and uploads every candidate as before.
+    probing = { :enabled => ENV["OSS_VERIFY"] != "0" }
+    results = Parallel.map(pending, :in_threads => n_cores) do |item|
+      present = false
+      if probing[:enabled]
+        remote = oss_head(endpoint, item[:bucket], item[:key])
+        if remote.is_a?(Hash)
+          # The ETag of a single-part upload is the object's MD5; anything else
+          # (multipart, encrypted) only allows a size comparison.
+          present = remote[:etag].match?(/\A[0-9a-f]{32}\z/i) ? remote[:etag].casecmp?(item[:md5]) : remote[:size] == item[:size]
+        elsif remote != :missing
+          # The credentials cannot read the bucket (write-only policy): stop
+          # probing and upload as before.
+          probing[:enabled] = false
+        end
+      end
+
+      error = present ? nil : oss_put(endpoint, item[:bucket], item[:key], item[:path], item[:mime])
+      progressbar.increment
+      [item, error, present]
+    end
+
+    failures = results.reject { |(_, error, _)| error.nil? }
+    uploaded = results.count { |(_, error, present)| error.nil? && !present }
+    on_oss = results.count { |(_, _, present)| present }
+    results.each do |(item, error, _)|
+      next unless error.nil?
+
+      manifest[item[:rel]] = {
+        "bucket" => item[:bucket],
+        "key" => item[:key],
+        "size" => item[:size],
+        "sha256" => item[:sha256],
+      }
+    end
+    File.write(OSS_MANIFEST_FILE, "#{JSON.pretty_generate(manifest.sort.to_h)}\n")
+
+    domain = oss_domain.sub(%r{/\z}, "")
+    puts "## Uploaded #{uploaded} files to #{pending.map { |item| item[:bucket] }.uniq.join(", ")}" \
+         "#{on_oss.zero? ? "" : ", #{on_oss} already on OSS"}"
+    puts "## Example URL: #{domain.empty? ? pending.first[:key] : "#{domain}/#{pending.first[:key]}"}"
+
+    unless failures.empty?
+      failures.each { |(item, error)| puts "## FAILED #{item[:rel]}: #{error}" }
+      abort("oss upload aborted: #{failures.size} of #{pending.size} files failed, rerun rake upload_oss to retry")
+    end
+  end
 end
