@@ -554,6 +554,24 @@ def oss_connection(host, endpoint)
   http
 end
 
+# Display-only URL for a stored object: the CDN domain when known, else the OSS one.
+# Escaped per path segment so the printed URL is directly usable.
+def oss_url(domain, bucket, key)
+  escaped = key.split("/").map { |segment| URI::DEFAULT_PARSER.escape(segment) }.join("/")
+  domain.empty? ? "oss://#{bucket}/#{escaped}" : "#{domain}/#{escaped}"
+end
+
+def human_size(bytes)
+  units = %w[B KB MB GB TB]
+  index = 0
+  size = bytes.to_f
+  while size >= 1024 && index < units.size - 1
+    size /= 1024
+    index += 1
+  end
+  format(index.zero? ? "%d %s" : "%.1f %s", size, units[index])
+end
+
 # PUT one object with the OSS v1 signature, so no SDK or CLI is needed.
 # Returns nil on success and an error string otherwise.
 def oss_put(endpoint, bucket, key, path, mime)
@@ -675,12 +693,15 @@ task :upload_oss, :dir do |t, args|
   if pending.empty?
     puts "## Nothing to upload (#{skipped} files unchanged)"
   else
-    megabytes = pending.sum { |item| item[:size] } / 1024 / 1024
-    puts "## Uploading #{pending.size} files (#{megabytes} MB), #{skipped} unchanged"
+    domain = oss_domain.sub(%r{/\z}, "")
+    puts "## Uploading #{pending.size} files (#{human_size(pending.sum { |item| item[:size] })}) to #{targets.map { |target| target[:bucket] }.uniq.join(", ")}, #{skipped} unchanged"
     progressbar = ProgressBar.create(:title => "Uploading",
                                      :starting_at => 0,
                                      :total => pending.size,
                                      :format => '%t, %a |%b%i| %p%')
+    # Reporting a file and advancing the bar both redraw the bar's line, so they
+    # share one lock and the logged lines stay whole.
+    reporter = Mutex.new
 
     # OSS_VERIFY=0 skips the HEAD probe and uploads every candidate as before.
     probing = { :enabled => ENV["OSS_VERIFY"] != "0" }
@@ -700,7 +721,10 @@ task :upload_oss, :dir do |t, args|
       end
 
       error = present ? nil : oss_put(endpoint, item[:bucket], item[:key], item[:path], item[:mime])
-      progressbar.increment
+      reporter.synchronize do
+        progressbar.log("## + #{item[:rel]} (#{human_size(item[:size])}) #{oss_url(domain, item[:bucket], item[:key])}") if error.nil? && !present
+        progressbar.increment
+      end
       [item, error, present]
     end
 
@@ -719,10 +743,9 @@ task :upload_oss, :dir do |t, args|
     end
     File.write(OSS_MANIFEST_FILE, "#{JSON.pretty_generate(manifest.sort.to_h)}\n")
 
-    domain = oss_domain.sub(%r{/\z}, "")
     puts "## Uploaded #{uploaded} files to #{pending.map { |item| item[:bucket] }.uniq.join(", ")}" \
          "#{on_oss.zero? ? "" : ", #{on_oss} already on OSS"}"
-    puts "## Example URL: #{domain.empty? ? pending.first[:key] : "#{domain}/#{pending.first[:key]}"}"
+    puts "## Example URL: #{oss_url(domain, pending.first[:bucket], pending.first[:key])}"
 
     unless failures.empty?
       failures.each { |(item, error)| puts "## FAILED #{item[:rel]}: #{error}" }
