@@ -358,7 +358,9 @@ end
      File.basename(f).match(/fragments-0x([0-9a-fA-F]+)/i)&.[](1)
    end.compact
    next_num = existing.empty? ? 1 : (existing.map { |s| s.to_i(16) }.max + 1)
-   num_str = format('0x%04x', next_num)
+   # 文件名全小写（2026-10-02-fragments-0x000f.markdown），标题里的十六进制大写（Fragments 0x000F）。
+   hex = format('%04x', next_num)
+   num_str = "0x#{hex}"
    filename = "#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-fragments-#{num_str}.#{new_post_ext}"
    if File.exist?(filename)
      abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
@@ -369,7 +371,7 @@ end
      post.puts "layout: post"
      post.puts "comments: true"
      post.puts "description: '摘要'"
-     post.puts "title: 'Fragments #{num_str}'"
+     post.puts "title: 'Fragments 0x#{hex.upcase}'"
      post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}"
      post.puts "categories: [useless-songs, wxmp]"
      post.puts "---"
