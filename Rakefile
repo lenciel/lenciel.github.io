@@ -249,10 +249,24 @@ task :prepare_deploy do
 
   Rake::Task[:build_pagefind].execute
 
+  # 同 wxmp:upload，目录显式传入：rake 12 会把第一次 with_defaults 的结果缓存到共享的
+  # EMPTY_TASK_ARGS 上，先跑的 minify_html 会把 :dir 泄漏过来（拿到 _site 而不是 _ftp）。
   if oss_configured?
-    Rake::Task[:upload_oss].execute
+    Rake::Task[:upload_oss].invoke(ftp_dir)
   else
     puts "\n## Skipping Aliyun OSS upload (set OSS_ACCESS_KEY_ID / OSS_ACCESS_KEY_SECRET to enable)"
+  end
+
+  # 文章里的图要能贴进公众号，就得是素材库里的永久素材，所以部署默认走 material；
+  # 显式设了 WXMP_MODE 就听显式的（比如想顺手刷一遍图床）。
+  # 目录必须显式传：rake 12 会把第一次 with_defaults 的结果缓存在共享的 EMPTY_TASK_ARGS
+  # 上，于是 prepare_deploy 里先跑的 minify_html/upload_oss 会把 :dir 泄漏给它（实测），
+  # 而这个任务的默认值正是源码根目录。execute 不包 TaskArguments，所以用 invoke。
+  if wxmp_configured?
+    ENV["WXMP_MODE"] = "material" if ENV["WXMP_MODE"].to_s.strip.empty?
+    Rake::Task["wxmp:upload"].invoke(source_dir)
+  else
+    puts "\n## Skipping WeChat 素材 upload (set WXMP_APPID / WXMP_APPSECRET to enable)"
   end
   #Rake::Task[:optimize_images].execute
   # Rake::Task[:copydot].invoke(source_dir, deploy_dir)
@@ -750,6 +764,299 @@ task :upload_oss, :dir do |t, args|
     unless failures.empty?
       failures.each { |(item, error)| puts "## FAILED #{item[:rel]}: #{error}" }
       abort("oss upload aborted: #{failures.size} of #{pending.size} files failed, rerun rake upload_oss to retry")
+    end
+  end
+end
+
+#########################
+# WeChat MP image host  #
+#########################
+
+# 公众号 articles filter external image links, so every image used in 发表内容 has
+# to be pushed to WeChat first. Either way WeChat hands out a fresh URL on every
+# call — the same bytes uploaded twice yield two URLs — and offers no way to list
+# what was uploaded, so the manifest, not the CDN, is what keeps reruns from
+# re-uploading the same file. That is also why it is tracked in git.
+WXMP_UPLOAD_DIRS = %w[downloads]
+WXMP_MANIFEST_FILE = ENV["WXMP_MANIFEST"].to_s.strip.empty? ? ".wxmp-upload.json" : ENV["WXMP_MANIFEST"].to_s.strip
+WXMP_API = "https://api.weixin.qq.com"
+# uploadimg (the default) is the 图床 for 发表内容正文: it costs no quota and its
+# URLs work anywhere. material uploads 永久素材 instead — visible in 公众号后台的
+# 素材管理 and usable as thumb_media_id — but it eats the 100000-image quota, and
+# WeChat blocks material URLs outside 腾讯系域名. Records are mode-tagged, so
+# switching modes re-uploads what the other mode never uploaded.
+WXMP_ENDPOINTS = {
+  "uploadimg" => "/cgi-bin/media/uploadimg",
+  "material" => "/cgi-bin/material/add_material",
+}.freeze
+WXMP_DEFAULT_MODE = "uploadimg"
+# Keyed by the sniffed format, and covers what uploadimg will take: it documents
+# jpg/png, accepts gif in practice, and rejects webp (40005) — which is exactly
+# what jekyll_picture_tag writes. `.jpg` is only here so that a .jpg file holding
+# real jpeg bytes is not reported as a mismatch.
+WXMP_IMAGE_TYPES = {
+  ".gif" => "image/gif",
+  ".jpeg" => "image/jpeg",
+  ".jpg" => "image/jpeg",
+  ".png" => "image/png",
+}.freeze
+# A token lives 7200s, so a run that outlives one is retried with a fresh token
+# instead of dying halfway through.
+WXMP_TOKEN_ERRORS = [40001, 40014, 42001].freeze
+WXMP_TOKEN_LOCK = Mutex.new
+# Every interface has a per-day call quota (见「接口调用额度说明」), and it is per
+# endpoint: uploadimg was down to 45009 while add_material still answered. Once it
+# is gone the rest of the queue is doomed, so the run stops and says so.
+WXMP_QUOTA_ERROR = 45009
+WXMP_QUOTA_MESSAGE = "45009 今日接口配额已用完".freeze
+
+def wxmp_configured?
+  !ENV["WXMP_APPID"].to_s.strip.empty? && !ENV["WXMP_APPSECRET"].to_s.strip.empty?
+end
+
+def read_wxmp_manifest
+  return {} unless File.exist?(WXMP_MANIFEST_FILE)
+
+  manifest = JSON.parse(File.read(WXMP_MANIFEST_FILE))
+  manifest.is_a?(Hash) ? manifest : {}
+rescue JSON::ParserError => error
+  abort("wxmp upload aborted: #{WXMP_MANIFEST_FILE} is not valid JSON (#{error.message}); delete it to upload everything again")
+end
+
+# POST/GET one API call and always answer with a Hash: WeChat reports failures as
+# errcode/errmsg either in the body or as a bare HTTP status.
+def wxmp_call(uri, request)
+  http = Net::HTTP.new(uri.host, uri.port)
+  http.use_ssl = uri.scheme == "https"
+  http.open_timeout = 30
+  http.read_timeout = 120
+  http.write_timeout = 300
+  response = http.request(request)
+  body = response.body.to_s
+  parsed = begin
+    JSON.parse(body)
+  rescue JSON::ParserError
+    nil
+  end
+  return parsed if parsed.is_a?(Hash)
+
+  { "errcode" => response.code.to_i, "errmsg" => "HTTP #{response.code} #{body.strip[0, 200]}" }
+rescue StandardError => error
+  { "errcode" => -1, "errmsg" => "#{error.class}: #{error.message}" }
+end
+
+def wxmp_fetch_token
+  query = URI.encode_www_form(:grant_type => "client_credential",
+                              :appid => ENV["WXMP_APPID"].to_s.strip,
+                              :secret => ENV["WXMP_APPSECRET"].to_s.strip)
+  uri = URI("#{WXMP_API}/cgi-bin/token?#{query}")
+  result = wxmp_call(uri, Net::HTTP::Get.new(uri))
+  token = result["access_token"].to_s
+  return token unless token.empty?
+
+  abort("wxmp upload aborted: cannot get access_token (#{result["errcode"]} #{result["errmsg"]}); " \
+        "check WXMP_APPID/WXMP_APPSECRET and that this machine's IP is in the 公众号 IP 白名单")
+end
+
+def wxmp_token(refresh = false)
+  WXMP_TOKEN_LOCK.synchronize do
+    @wxmp_token = nil if refresh
+    @wxmp_token ||= wxmp_fetch_token
+  end
+end
+
+# WeChat sniffs the bytes, not the extension: the repo holds webp saved as .png,
+# which uploadimg rejects with 40137. So the magic bytes decide both what gets
+# uploaded and what Content-Type the part carries.
+def wxmp_image_type(path)
+  return nil if File.size(path).zero?
+
+  header = File.binread(path, 12)
+  return ".png" if header[0, 8] == "\x89PNG\r\n\x1A\n".b
+  return ".jpeg" if header[0, 3] == "\xFF\xD8\xFF".b
+  return ".gif" if header[0, 6] == "GIF87a".b || header[0, 6] == "GIF89a".b
+  return ".webp" if header[0, 4] == "RIFF".b && header[8, 4] == "WEBP".b
+
+  nil
+end
+
+# The file part is identical for both endpoints; only the query differs.
+def wxmp_upload_uri(mode)
+  query = { :access_token => wxmp_token }
+  query[:type] = "image" if mode == "material"
+  URI("#{WXMP_API}#{WXMP_ENDPOINTS[mode]}?#{URI.encode_www_form(query)}")
+end
+
+# POST one image as multipart/form-data and answer with WeChat's parsed reply.
+# Images are read into memory, which is fine at these sizes.
+def wxmp_upload_image(path, mime, mode)
+  boundary = "----lenciel#{Digest::MD5.hexdigest("#{path}#{Time.now.to_f}")}"
+  body = +""
+  body << "--#{boundary}\r\n"
+  body << %(Content-Disposition: form-data; name="media"; filename="#{File.basename(path)}"\r\n)
+  body << "Content-Type: #{mime}\r\n\r\n"
+  body << File.binread(path)
+  body << "\r\n--#{boundary}--\r\n"
+
+  uri = wxmp_upload_uri(mode)
+  request = Net::HTTP::Post.new(uri)
+  request["Content-Type"] = "multipart/form-data; boundary=#{boundary}"
+  request.body = body
+  wxmp_call(uri, request)
+end
+
+# Returns [ { "url" => ..., "media_id" => ... }, nil ] — media_id stays empty for
+# uploadimg. An expired token is the one failure worth retrying: fetch a new one
+# and upload again.
+def wxmp_host_image(path, mime, mode)
+  result = wxmp_upload_image(path, mime, mode)
+  if WXMP_TOKEN_ERRORS.include?(result["errcode"])
+    wxmp_token(true)
+    result = wxmp_upload_image(path, mime, mode)
+  end
+
+  record = { "url" => result["url"].to_s, "media_id" => result["media_id"].to_s }
+  hosted = mode == "material" ? record["media_id"] : record["url"]
+  hosted.empty? ? [nil, "errcode #{result["errcode"]}: #{result["errmsg"]}"] : [record, nil]
+end
+
+def wxmp_label(record)
+  record["url"].empty? ? record["media_id"] : record["url"]
+end
+
+# A record only counts for the same mode and the same bytes; the identifier that
+# mode returns is what has to be there. Entries written before the mode existed
+# are uploadimg ones.
+def wxmp_recorded?(recorded, mode, size, digest)
+  return false unless recorded.is_a?(Hash)
+  return false unless recorded["size"] == size && recorded["sha256"] == digest
+  return false unless (recorded["mode"].to_s.empty? ? WXMP_DEFAULT_MODE : recorded["mode"]) == mode
+
+  mode == "material" ? !recorded["media_id"].to_s.empty? : recorded["url"].to_s.start_with?("http")
+end
+
+namespace :wxmp do
+  desc "Upload images newly added under downloads to WeChat (WXMP_MODE=#{WXMP_ENDPOINTS.keys.join("|")}, config via WXMP_APPID / WXMP_APPSECRET)"
+  task :upload, :dir do |t, args|
+    args.with_defaults(:dir => source_dir)
+
+    root = args.dir.to_s.sub(%r{/\z}, "")
+    abort("wxmp upload aborted: #{root} not found") unless File.directory?(root)
+
+    mode = ENV["WXMP_MODE"].to_s.strip
+    mode = WXMP_DEFAULT_MODE if mode.empty?
+    abort("wxmp upload aborted: WXMP_MODE must be one of #{WXMP_ENDPOINTS.keys.join(", ")} (got #{mode})") unless WXMP_ENDPOINTS.key?(mode)
+
+    puts "\n## Uploading to WeChat as #{mode == "material" ? "永久素材 (素材管理里可见, 占配额)" : "发表内容图片 (不占配额)"}"
+    puts "## Root: #{root} (#{WXMP_UPLOAD_DIRS.join(", ")})"
+
+    manifest = read_wxmp_manifest
+    force = ENV["WXMP_FORCE"] == "1"
+    pending = []
+    unchanged = 0
+    unsupported = Hash.new(0)
+    mismatched = []
+
+    WXMP_UPLOAD_DIRS.each do |dir|
+      dir_path = File.join(root, dir)
+      unless File.directory?(dir_path)
+        puts "## Skipping #{dir} (not in #{root})"
+        next
+      end
+
+      Dir.glob("#{dir_path}/**/*").each do |path|
+        next unless File.file?(path)
+
+        rel = path.sub(%r{\A#{Regexp.escape(root)}/}, "")
+        ext = File.extname(path).downcase
+        kind = wxmp_image_type(path)
+        mime = kind.nil? ? nil : WXMP_IMAGE_TYPES[kind]
+        mismatched << rel if WXMP_IMAGE_TYPES[ext] != mime
+        if mime.nil?
+          # Files WeChat cannot host at all; grouped by what they really are when
+          # the bytes say so, otherwise by extension (.mp4, .css, ...).
+          unsupported[kind || ext] += 1
+          next
+        end
+
+        size = File.size(path)
+        digest = Digest::SHA256.file(path).hexdigest
+        if !force && wxmp_recorded?(manifest[rel], mode, size, digest)
+          unchanged += 1
+          next
+        end
+
+        pending << { :rel => rel, :path => path, :size => size, :sha256 => digest, :mime => mime }
+      end
+    end
+
+    groups = unsupported.sort_by { |ext, count| [-count, ext] }.map { |ext, count| "#{ext.empty? ? "(no extension)" : ext} x#{count}" }
+    puts "## Skipping #{unsupported.values.sum} files WeChat cannot host (jpg/png/gif only): #{groups.join(", ")}" unless groups.empty?
+
+    unless mismatched.empty?
+      extra = mismatched.size > 5 ? ", ... (+#{mismatched.size - 5} more)" : ""
+      puts "## #{mismatched.size} files whose extension does not match their content (WeChat goes by content): #{mismatched.first(5).join(", ")}#{extra}"
+    end
+
+    if pending.empty?
+      puts "## Nothing to upload (#{unchanged} images unchanged)"
+    else
+      abort("wxmp upload aborted: set WXMP_APPID and WXMP_APPSECRET") unless wxmp_configured?
+
+      puts "## Uploading #{pending.size} image#{pending.size == 1 ? "" : "s"} (#{human_size(pending.sum { |item| item[:size] })}) as #{mode}, #{unchanged} unchanged"
+      progressbar = ProgressBar.create(:title => "Uploading",
+                                       :starting_at => 0,
+                                       :total => pending.size,
+                                       :format => '%t, %a |%b%i| %p%')
+      # Reporting a file and advancing the bar both redraw the bar's line, so they
+      # share one lock and the logged lines stay whole.
+      reporter = Mutex.new
+
+      # Once the endpoint's daily quota is gone every further call is refused, so
+      # the first 45009 stops the queue instead of firing the rest into the wall.
+      quota = { :exhausted => false }
+      results = Parallel.map(pending, :in_threads => n_cores) do |item|
+        record = nil
+        error = quota[:exhausted] ? WXMP_QUOTA_MESSAGE : nil
+        if error.nil?
+          record, error = wxmp_host_image(item[:path], item[:mime], mode)
+          if error&.include?("errcode #{WXMP_QUOTA_ERROR}")
+            quota[:exhausted] = true
+            record = nil
+            error = WXMP_QUOTA_MESSAGE
+          end
+        end
+        reporter.synchronize do
+          progressbar.log("## + #{item[:rel]} #{wxmp_label(record)}") if error.nil?
+          progressbar.increment
+        end
+        [item, record, error]
+      end
+
+      skipped = results.count { |(_, _, error)| error == WXMP_QUOTA_MESSAGE }
+      failures = results.reject { |(_, _, error)| error.nil? || error == WXMP_QUOTA_MESSAGE }
+      results.each do |(item, record, error)|
+        next unless error.nil?
+
+        entry = { "mode" => mode, "url" => record["url"], "size" => item[:size], "sha256" => item[:sha256] }
+        entry["media_id"] = record["media_id"] unless record["media_id"].empty?
+        manifest[item[:rel]] = entry
+      end
+      File.write(WXMP_MANIFEST_FILE, "#{JSON.pretty_generate(manifest.sort.to_h)}\n")
+
+      uploaded = results.size - failures.size - skipped
+      puts "## Uploaded #{uploaded} image#{uploaded == 1 ? "" : "s"} as #{mode}#{skipped.zero? ? "" : ", #{skipped} not attempted (配额用完)"}"
+      sample = results.find { |(_, _, error)| error.nil? }
+      puts "## Example #{mode == "material" ? "media_id/URL" : "URL"}: #{wxmp_label(sample[1])}" if sample
+
+      failures.each { |(item, _, error)| puts "## FAILED #{item[:rel]}: #{error}" }
+
+      if skipped.positive?
+        abort("wxmp upload aborted: #{mode} 接口今日配额已用完 (45009)，#{skipped} 张没传；" \
+              "额度可以在公众号后台开发者中心查看并清零(每月 10 次)，或等第二天直接 rerun rake wxmp:upload 续传")
+      elsif failures.any?
+        abort("wxmp upload aborted: #{failures.size} of #{pending.size} images failed, rerun rake wxmp:upload to retry")
+      end
     end
   end
 end
