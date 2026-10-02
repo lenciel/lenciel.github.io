@@ -262,12 +262,13 @@ task :prepare_deploy do
   # 目录必须显式传：rake 12 会把第一次 with_defaults 的结果缓存在共享的 EMPTY_TASK_ARGS
   # 上，于是 prepare_deploy 里先跑的 minify_html/upload_oss 会把 :dir 泄漏给它（实测），
   # 而这个任务的默认值正是源码根目录。execute 不包 TaskArguments，所以用 invoke。
-  if wxmp_configured?
-    ENV["WXMP_MODE"] = "material" if ENV["WXMP_MODE"].to_s.strip.empty?
-    Rake::Task["wxmp:upload"].invoke(source_dir)
-  else
-    puts "\n## Skipping WeChat 素材 upload (set WXMP_APPID / WXMP_APPSECRET to enable)"
-  end
+  #if wxmp_configured?
+  #  ENV["WXMP_MODE"] = "material" if ENV["WXMP_MODE"].to_s.strip.empty?
+  #  Rake::Task["wxmp:upload"].invoke(source_dir)
+  #else
+  #  puts "\n## Skipping WeChat 素材 upload (set WXMP_APPID / WXMP_APPSECRET to enable)"
+  #end
+
   #Rake::Task[:optimize_images].execute
   # Rake::Task[:copydot].invoke(source_dir, deploy_dir)
 end
