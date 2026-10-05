@@ -1,0 +1,65 @@
+---
+layout: post
+comments: true
+description: '...一切都在屏幕上滑动点选代表高级，人均 300 以上的餐厅没有 iPad 都不好意思让你点菜，才过去多久？人就是这样的容易腻烦...'
+title: 'Fragments 0x0010'
+date: 2026-10-04 14:05:32 +0800
+categories: [useless-songs, wxmp]
+---
+
+{% picture /downloads/images/2026_10/Arnold_Blanch_Four_Ships_1951.jpg --alt Arnold_Blanch_Four_Ships_1951.jpg %}\
+<small>图 1. Arnold Blanch - Four Ships（1951）</small>
+
+
+### 一些言论
+
+去 GLTC 吹水想好了大概内容还没想好题目，就打开 RSS 看看大家在说啥。
+
+应该是目前在前沿模型的试用和评价上独步武林的[Simon Willison](https://simonwillison.net/2026/Sep/24/harder/){:target="_blank"}说：
+
+> 我花在与编码代理共事的时间越多，就越确信它们让软件工程变得更加困难。
+
+同样是听了 DHH 演讲的 Jared Norman[认为](https://jardo.dev/hardly-promethean){:target="_blank"}他今年搞出来的玩意儿暴露了 LLM 的缺陷：
+
+> LLMs 非常擅长创造已经存在的东西。Luu 承认这一点；早期的模型过度拟合到了喜剧的程度...在 LLMs 出现之前，实现一个想法需要付出更多的努力。但你首先需要一个火花，现在也需要。
+
+Jeremy Osborn 在 《ACM 通讯》上[撰文](https://cacm.acm.org/opinion/ai-didnt-make-programming-easier-it-just-made-it-differently-difficult/){:target="_blank"}《AI 没让编程变得容易，只是难点跟过去不同》：
+
+> 随着外部记忆的丰富和代码生成的廉价化，程序员的价值正转向解释、结构化推理和判断。软件开发的未来将属于那些能够在大规模范围内清晰思考、在快速变化中保持持久的心智模型，并将机器生成的输出融入人类指导意图的人。
+
+我赶紧看了一下 A 社，这怕不是大家都要反水？还好，招股书已经发了，2 万亿市值，啧啧，好好上吧。
+
+过程中想好了演讲的题目，《This Too Shall Pass》。
+
+这本来是[波斯的阿塔尔](https://en.wikipedia.org/wiki/Attar_of_Nishapur "Attar of Nishapur"){:target="_blank"}的 12 世纪创作的故事：一位国王要求智者们创造一枚戒指，能让他在悲伤时感到快乐。智者们经过深思，将一枚刻有波斯文「此亦将逝」的戒指送给了他。
+
+1852 年英国诗人[爱德华·菲茨杰拉尔德](https://en.wikipedia.org/wiki/Edward_FitzGerald_\(poet\){:target="_blank"} "Edward FitzGerald (poet)")改编了这个故事，后来被林肯引用，让它成为更家喻户晓的版本：苏丹请所罗门王给个神谕，无论好日子还是坏日子，这个神谕得永远是奏效的。所罗门回答说，「This too shall pass（一切终将过去）」。
+
+无论今天你是 AGI/ASI 降临派，为 AI 的进展心旷神怡；还是你有点焦虑甚至有点痛苦，担心 AI 会抢走饭碗甚至消灭人类，我自己的感觉是，别慌，它们都会过去。
+
+### Kindle 额外卖按钮
+
+Amazon 宣布 Kindle 出了毫无新意的新一代。但有点好玩的是，你可以为它选购一个物理的翻页键，只需要 35 美金：
+
+{% picture /downloads/images/2026_10/p-1-91616814-new-kindle-buttons.webp --alt p-1-91616814-new-kindle-buttons.webp %}\
+<small>图 2. 35 美金一个翻页器</small>
+
+我看到的第一反应是，就算有些朋友一辈子玩不了韩国财阀的遥控器，要买一个来和自己的 Kindle 玩，这也有点贵了。
+
+但讲道理，物理按钮就是香，比如我手里的老款 Kindle，最满意的就是看书翻过去那一下。
+
+突然想起来，去年 Jony Ive 及其 LoveFrom 团队耗时五年打磨的法拉利新车 [Luce](https://www.msn.com/en-us/news/other/the-new-ferrari-luce-features-an-apple-carplay-ultra-like-design/ar-AA2d4dEq){:target="_blank"}，在设计语言上也是强调摒弃了当下电动车「堆砌大屏」的潮流，转而强调机械按钮带来的操作仪式感。
+
+{% picture /downloads/images/2026_10/ferrari0.jpeg --alt ferrari0.jpeg %}\
+<small>图 3. 一个小的 OLED 随方向转动</small>
+
+{% picture /downloads/images/2026_10/ferrari1.jpeg --alt ferrari1.jpeg %}\
+<small>图 4. 中控的实体按键、旋钮与拨杆</small>
+
+{% picture /downloads/images/2026_10/ferrari2.png --alt ferrari2.png %}
+{% picture /downloads/images/2026_10/ferrari3.jpeg --alt ferrari3.jpeg %}\
+<small>图 5. 点火启动的仪式感</small>
+
+一切都在屏幕上滑动点选代表高级，人均 300 以上的餐厅没有 iPad 都不好意思让你点菜，才过去多久？
+
+人就是这样的容易腻烦。
