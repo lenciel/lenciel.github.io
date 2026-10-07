@@ -4073,6 +4073,13 @@
     "sha256": "7ca0b392bf4105f61d49f036ee1fdd0e07d97c212c9cdc927f484849d112d7e1",
     "media_id": "32UljMYChYTgroNl6NKar5t_p5ppIWUDUhn1Zs4v8CPGwkENSxXVqdz9UQyQtYGJ"
   },
+  "downloads/images/2026_10/diantang.png": {
+    "mode": "material",
+    "url": "http://mmbiz.qpic.cn/sz_mmbiz_png/stib2Gc1RfBALVTVcfibEwaRj6LzgtJGSbGrXPjhRhDU1axyDfgCMjCjR3KsQYLTD1c4L43hibkOft83qoyXRNQJv0H2iaicjUYia0Dsw8HHibicB3Y/0?wx_fmt=png",
+    "size": 1098545,
+    "sha256": "87958c42711540a4e2f83cd074e6790b6b234857632c4010bd9b0fb8a3b930f5",
+    "media_id": "32UljMYChYTgroNl6NKarw5WKSIp4dj59Nm7i7FSAIr6eE9Vil_T-yhJucy0u11W"
+  },
   "downloads/images/2026_10/ferrari0.jpeg": {
     "mode": "material",
     "url": "http://mmbiz.qpic.cn/mmbiz_jpg/stib2Gc1RfBBrCicRneGbOfRKDbcWwxy16Bx9icjSiagb6XqjPrkVthzxptYlicdGtfibB8ZdBnNiaPFV2aqNPMMSZsVfjkELtdz5zYJiaJuc2AHzic8/0?wx_fmt=jpeg",
@@ -4101,6 +4108,48 @@
     "sha256": "de780eedb3894d7c29799de574434c4f68f788c8be6aa6324d158c450b87e532",
     "media_id": "32UljMYChYTgroNl6NKar3yGWTyUKQGp5hJgQCxMoVrvBXjtA79phfP2yST5Ro2J"
   },
+  "downloads/images/2026_10/jiarong.jpeg": {
+    "mode": "material",
+    "url": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/stib2Gc1RfBBVpGuHP5jYWbqFmIDlDq6oRX1FC81gEBuUkxzPNnbhCzO1XKlNPesB7Wvo6xMnpRDCKicpB1kxPCateFZSKWXBK3Xa8eibzuMNM/0?wx_fmt=jpeg",
+    "size": 512429,
+    "sha256": "ae03419f62cdb7eb8e2dedfba9455874ef1742730558d881f9596b1220958c87",
+    "media_id": "32UljMYChYTgroNl6NKar5F22d3NaNI97cezXQ5vtoQYdOvGfRM5AtkI04Cntiyt"
+  },
+  "downloads/images/2026_10/jiarong2.jpeg": {
+    "mode": "material",
+    "url": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/stib2Gc1RfBBZAJPC5bLtvFl8hefDQjgM41XaaBjWFiafxMssRXEhv4kToKJibibtqYTIuOYlKZp9qEXRf4ygWb6I1dg2S7vTxgibHYcGTIawY4Y/0?wx_fmt=jpeg",
+    "size": 389957,
+    "sha256": "393aa3ea130e71a5ea80ceca90f187f9535e0eda8a6222ab4e285e2aff061b91",
+    "media_id": "32UljMYChYTgroNl6NKar0bbf4oJ3tdVbnRToS9vcnza8dLnTdtcWDN-RNz9BYVD"
+  },
+  "downloads/images/2026_10/jiarong3.jpeg": {
+    "mode": "material",
+    "url": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/stib2Gc1RfBCWRcPAToHiaSMaHBQMZ9HBVSXGO7GicnicoB2MM2hrytJEQFjbDH1bLGduFK1X6YodqNC6yycibJo3USlPy2t9p17lxTkHAGBztTY/0?wx_fmt=jpeg",
+    "size": 576373,
+    "sha256": "fee0f46df34f995f5b9b5379e07129c8cf7a97fcc6b695f90264a3f481bff660",
+    "media_id": "32UljMYChYTgroNl6NKar3fJ-7mAaBU3-WsPFw1IgCQ8BS4PsVUkye63W2FnN_ZI"
+  },
+  "downloads/images/2026_10/malcom_1.jpg": {
+    "mode": "material",
+    "url": "http://mmbiz.qpic.cn/mmbiz_jpg/stib2Gc1RfBDD2x3OR1Hqa5vpSibicdHoZRSxWfeicL2WOA9ibiboqqGKBjXgJG0g30fU6KaYM7Ut9nOHMTL2xbD2nIKosEQ5VmTduDdP7z8MHfhc/0?wx_fmt=jpeg",
+    "size": 44433,
+    "sha256": "2d682f290bfa7d0c3331d6d39582bcb907f5481bfc3cfb3fb8719c26cca61dd4",
+    "media_id": "32UljMYChYTgroNl6NKar7zKL4gYdGGyMp4gyOWDUaX7sAHTMcueLyvR2ubiZa-1"
+  },
+  "downloads/images/2026_10/malcom_2.jpeg": {
+    "mode": "material",
+    "url": "http://mmbiz.qpic.cn/mmbiz_jpg/stib2Gc1RfBBbibIahibwsmzkzN2GKFSgxJa2UibFjFBJ2vFptNXXFQLu1EkT5Mx6PlvID8MJmPlaCJSEI4r5ADtibqgjz5cgMHCHwvUW98eBIoI/0?wx_fmt=jpeg",
+    "size": 198330,
+    "sha256": "4e4d92554cff722f2e69c52ee31ae98f93703060c3b9ade06f844ae86cdc19b0",
+    "media_id": "32UljMYChYTgroNl6NKar-QGt32CUtFBnHyitLINtef29NZlCXLYk8r01tV3AmAa"
+  },
+  "downloads/images/2026_10/malcom_3.png": {
+    "mode": "material",
+    "url": "http://mmbiz.qpic.cn/mmbiz_jpg/stib2Gc1RfBCG8hhiaRzApl0wyNRL8GVbQCsykecpIrjUnWvicfg1zdphAYfpDnX8TibJcBLB7YgeeAvhzD5l59gypXTJIDRe0xNdbL1iamUylibo/0?wx_fmt=jpeg",
+    "size": 509588,
+    "sha256": "fcb0bc4be24736f4df5e45bf033d598bb009f5169ce27481eadd33079a5d5eab",
+    "media_id": "32UljMYChYTgroNl6NKar_AQRqPy6TUTST4iH43r6sRMkjYUh89ZueooPPdvhKEt"
+  },
   "downloads/images/2026_10/p-1-91616814-new-kindle-buttons.webp": {
     "mode": "material",
     "url": "http://mmbiz.qpic.cn/mmbiz_png/stib2Gc1RfBClMHou40SdribfJZdAIy4gon8BZTubTW0yBft5YKCI8gmia3yyPudUSH5C8m5RGAZLSsAibw5RqlmhD2Rtq8B0eeDSl2uFJq1fmE/0?wx_fmt=png",
@@ -4128,6 +4177,48 @@
     "size": 115734,
     "sha256": "70bb040827552d7dcd120f0383bde945ef2e54fef902583e07cca2fc2fde6f4b",
     "media_id": "32UljMYChYTgroNl6NKarwXBe-3FSXk0opPLhufNceQyTTu45w4qxhRsd7JzzvlM"
+  },
+  "downloads/images/2026_10/zkj1.jpeg": {
+    "mode": "material",
+    "url": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/stib2Gc1RfBCGMYCvEuGXyt0z8OqrgTX1zbzd5VpG8gPjZNic3ArS51bbQtPTvhg2vGxRSdyZMDjJ9eFkfrDwbphoNW6q7Z5ibMiaAXrdXKrA2E/0?wx_fmt=jpeg",
+    "size": 392484,
+    "sha256": "f065a94947bff0662d65efab71e4d7ea6cb1d2a24416bc46de74c6a1ee8d8dd9",
+    "media_id": "32UljMYChYTgroNl6NKar5bG6NYZiAQw16xHMcBf62pAA_dYdg5tJb8kQDVNUHR_"
+  },
+  "downloads/images/2026_10/zkj2.jpeg": {
+    "mode": "material",
+    "url": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/stib2Gc1RfBDtS5MoWz3oSgDCUy0mLC3Tk32Lwp9MxZzO3znYp1ib2WFnEf9xmHGOKrmyoIBKKyDQ2ZJ1T87mZ36psXwibaae50HPBP2N3B9XQ/0?wx_fmt=jpeg",
+    "size": 278024,
+    "sha256": "46a0167683e7e040c94a5343fb7d644fee26eee715043a2e93a1ec8b82321be4",
+    "media_id": "32UljMYChYTgroNl6NKar-whf-emlgP-e_D_Q8roUfSRIWzPeH2QIhSxtEIMU9Pg"
+  },
+  "downloads/images/2026_10/zkj3.png": {
+    "mode": "material",
+    "url": "http://mmbiz.qpic.cn/sz_mmbiz_png/stib2Gc1RfBA2auY3a2SCagM1XIMTctJuccZa9ahXx4VJpiawaVZOXqd8oTzRG1Q4D72k2zw6HOoLHUBZ583bOCI1HjMPQWCg4Fw6ibLwokcpI/0?wx_fmt=png",
+    "size": 1780767,
+    "sha256": "4264d48b99c0d26c52afce0836b9949777308f244557d90a63bf5990ff19eb04",
+    "media_id": "32UljMYChYTgroNl6NKaryqBMx2Es80BaAo0AcNG4Aekp_p0BPImDQ4Twm-EkF-A"
+  },
+  "downloads/images/2026_10/zkj4.png": {
+    "mode": "material",
+    "url": "http://mmbiz.qpic.cn/mmbiz_png/stib2Gc1RfBDBDumSc5daCxArR0M3eMuGNtsQANXDSfcAAo9UzeRwmpxnaicOKDKN3dEtSqicEtqjPc3ZHyrKiaicXTiaCDhOQqjbQWpgN6eiaoTN8/0?wx_fmt=png",
+    "size": 1426282,
+    "sha256": "da5683ee52cd82e0ab7df4687c461cdbeab9ac6a49332a47c48980c82d83f62d",
+    "media_id": "32UljMYChYTgroNl6NKar29rWNSrqxCp6LpKFm3S07veFK43A8DbazWYDSc__Wo2"
+  },
+  "downloads/images/2026_10/zkj5.png": {
+    "mode": "material",
+    "url": "http://mmbiz.qpic.cn/sz_mmbiz_png/stib2Gc1RfBDOolPj5QiaMTwPbzNqt1Tfe94x03FH33KCTGWXPxjLGxbPvkcxTMhH0BnQGiaicacnaa6lF5uCmWicjEO0SeFhE0B1tNSBIDLcicy8/0?wx_fmt=png",
+    "size": 1165678,
+    "sha256": "afc28933922bc12c353512ae6c6fad5ce8a368f901309bd0f24f6e79be73bc63",
+    "media_id": "32UljMYChYTgroNl6NKar_CxQqDElhjYp8fERcsbs4J1_at9h2icxzthvJo6y39B"
+  },
+  "downloads/images/2026_10/zkj6.png": {
+    "mode": "material",
+    "url": "http://mmbiz.qpic.cn/sz_mmbiz_png/stib2Gc1RfBDyte1CaQwNzia24A9FHR8x6yA5Mkl0Nj10CLOb2OHk5jlibsSY7ccmRzOgcHPHOmZvdCtKkmygovdbUaFvglNrCjFFsXYIfP9FQ/0?wx_fmt=png",
+    "size": 1181321,
+    "sha256": "ff4f01f7e4baf34602a538b30d36cf1731207c87c15b7c3396f97afdb62abf5b",
+    "media_id": "32UljMYChYTgroNl6NKarwIYA3-ub2H8pJxQLg_NuUq8yOZG3uKOmfq1dJj9seig"
   },
   "downloads/images/about/delicious.png": {
     "mode": "material",
