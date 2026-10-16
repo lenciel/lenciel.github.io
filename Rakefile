@@ -5,6 +5,7 @@ require "htmlcompressor"
 require "parallel"
 require "ruby-progressbar"
 require "base64"
+require "date"
 require "digest"
 require "json"
 require "net/http"
@@ -350,6 +351,23 @@ task :list do
   puts "(type rake -T for more detail)\n\n"
 end
 
+# lunar-fortune-teller：给 Fragments 文章取未来几天的宜忌（默认从明天起三天）。
+# 每天单独调一次，各自随机一副皮；seed 会打在 stderr，想复现就用 --seed。
+LUNAR_TELLER = ENV["LUNAR_TELLER"] ||
+               "/Users/lenciel/Projects/tools/lunar-fortune-teller/.venv/bin/lunar-teller"
+
+def lunar_fortunes(start_date, days = 3)
+  unless File.executable?(LUNAR_TELLER)
+    abort("rake aborted! 找不到 lunar-teller：#{LUNAR_TELLER}（可用 LUNAR_TELLER 环境变量指定）")
+  end
+  (0...days).map do |i|
+    date = (start_date + i).strftime("%Y-%m-%d")
+    text = IO.popen([LUNAR_TELLER, "--date", date], &:read)
+    abort("rake aborted! lunar-teller --date #{date} 执行失败") unless $?.success?
+    text.strip
+  end.join("\n\n")
+end
+
  # usage rake new_fr
  desc "Begin a new Fragments 0x post in #{posts_dir}"
  task :new_fr do
@@ -367,6 +385,8 @@ end
      abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
    end
    puts "Creating new post: #{filename}"
+   # 未来三天的宜忌，写在正文最前面
+   fortunes = lunar_fortunes(Date.today + 1)
    open(filename, 'w') do |post|
      post.puts "---"
      post.puts "layout: post"
@@ -376,6 +396,10 @@ end
      post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}"
      post.puts "categories: [useless-songs, wxmp]"
      post.puts "---"
+     post.puts
+     post.puts "### 码农历"
+     post.puts
+     post.puts fortunes
    end
  end
 
