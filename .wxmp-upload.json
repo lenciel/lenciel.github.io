@@ -4080,6 +4080,20 @@
     "sha256": "e30de19c3699f0b87de03cb4041c2fad8304b12d78d5d70a4ecd1690170e2189",
     "media_id": "32UljMYChYTgroNl6NKar1eppWyeqgUoT-vejHX3XAnT__1OX6loO8Do08uy6oVZ"
   },
+  "downloads/images/2026_10/Arthur_B._Davies_Day_of_Good_Fortune_c._1914.jpg": {
+    "mode": "material",
+    "url": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/stib2Gc1RfBClANEU3DV3xyWU8Xwx2IicRG17acAJQIG0gLVQDDic2KNwLDdXGCLfS6WglfazzfAzicG1LCVedgz3YHEsvm5ibGsRLkG7t7CEoBE/0?wx_fmt=jpeg",
+    "size": 817550,
+    "sha256": "eeb321d8874bde5c4a406f67d3510e9913678ad89ac68e55853e7ce84609df73",
+    "media_id": "32UljMYChYTgroNl6NKar3ZUfYDKaejoOQrewnyP6f668Jt6PLvMsrazYF20k6bl"
+  },
+  "downloads/images/2026_10/Audrey_Buller_Tragedy_1936.jpg": {
+    "mode": "material",
+    "url": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/stib2Gc1RfBDicibev5VQfw0es0icwEwk8FXN27Y0XPLP48pdUnwANic47f48fqu8icAedABjNia2C3gy9XmxQhUUy5893UXhrxdDibKHKceXr6sWV8/0?wx_fmt=jpeg",
+    "size": 158914,
+    "sha256": "e69f3cccb51889f0efc240c0cbf5ba8187ea363d09cdc1df1acf00bd7e5972a4",
+    "media_id": "32UljMYChYTgroNl6NKar8pEzPVNzuGQrLIO70QMDK91iYTVU0ZIxBkBaGBaNkER"
+  },
   "downloads/images/2026_10/Joseph_Hirsch_Interior_with_Figures_1962.jpg": {
     "mode": "material",
     "url": "http://mmbiz.qpic.cn/mmbiz_jpg/stib2Gc1RfBBQ6yIBxFBO77fKGiam47ic49xD5kBdZMuicSV4K5lzAQJy8cgcRu91YYLQScGSPBOfeZQ9n8oBRnPpdnZGHQz8IaEeFG235FTfhA/0?wx_fmt=jpeg",
@@ -4150,6 +4164,13 @@
     "sha256": "9b9cf6cd7e9eebf5e6e1ddd9bdec632b3885ab33d61c6157754ce2c8938fa542",
     "media_id": "32UljMYChYTgroNl6NKar2eCOhbeNUBFiknFvIeZc88fGWzPLAwODEfg05eKKbnZ"
   },
+  "downloads/images/2026_10/gtlc2026.png": {
+    "mode": "material",
+    "url": "http://mmbiz.qpic.cn/mmbiz_png/stib2Gc1RfBCSd81ibYpRsAUzlibgV4iae0RXVsV0neA3fsKXp2HvrpJn6FNSCujAUTNj81a3E2Vw2THlPo3jFew0Zdc6BFuG0ficHZNxuzqdRic4/0?wx_fmt=png",
+    "size": 1381841,
+    "sha256": "2e7d2948b1453f24c2d4957d168a31ab9117af91f855d7ea74fcf66859932eca",
+    "media_id": "32UljMYChYTgroNl6NKar8VyBJ4sKLYQ5nyfeEgZd-vdL7y5HTLsSV06ki5K7Hf5"
+  },
   "downloads/images/2026_10/jiarong.jpeg": {
     "mode": "material",
     "url": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/stib2Gc1RfBBVpGuHP5jYWbqFmIDlDq6oRX1FC81gEBuUkxzPNnbhCzO1XKlNPesB7Wvo6xMnpRDCKicpB1kxPCateFZSKWXBK3Xa8eibzuMNM/0?wx_fmt=jpeg",
@@ -4170,6 +4191,34 @@
     "size": 576373,
     "sha256": "fee0f46df34f995f5b9b5379e07129c8cf7a97fcc6b695f90264a3f481bff660",
     "media_id": "32UljMYChYTgroNl6NKar3fJ-7mAaBU3-WsPFw1IgCQ8BS4PsVUkye63W2FnN_ZI"
+  },
+  "downloads/images/2026_10/lego-botanical-01.webp": {
+    "mode": "material",
+    "url": "http://mmbiz.qpic.cn/sz_mmbiz_png/stib2Gc1RfBCtbJX8heKW3Bia17747rcHnHGXicYyJ3ZJU4NcUoYhiaicHQMiaglwo4Q8Tp3Je8LP6sF1iblzgVwkhsAQDJBx1AlYpibZFRIB4iaOn40/0?wx_fmt=png",
+    "size": 203650,
+    "sha256": "7d47058949c315845d1f19a21e6a20ced8e5dc46563775645f0b147cc11cc41d",
+    "media_id": "32UljMYChYTgroNl6NKar_xGmcOBCViR7WBlh7nxi2WBVEk3_YJOJlxiH1ILcD_S"
+  },
+  "downloads/images/2026_10/lego-botanical-02.webp": {
+    "mode": "material",
+    "url": "http://mmbiz.qpic.cn/mmbiz_png/stib2Gc1RfBAWBqykxZ87G4TyajERRA1zib8CDOCcfPKYYQYLRwibNiakxmZ6BqlENTibmvwqHAGSAglVHjUklLpIk3dHSrvIUGLkiaBPXRNFfjhg/0?wx_fmt=png",
+    "size": 197778,
+    "sha256": "d504ad0e283f6a1bc4df61853aabb32387b807e086ee98b221a1f03281b80917",
+    "media_id": "32UljMYChYTgroNl6NKar-OiHkX9ggWpffKa1-P8N5NcwTxtCaNSt5MpF1ly2FmT"
+  },
+  "downloads/images/2026_10/lego-botanical-03.webp": {
+    "mode": "material",
+    "url": "http://mmbiz.qpic.cn/mmbiz_png/stib2Gc1RfBA5icIsNqzZc8hIqHW6ic9n5EdCT4HianTGvicAgqkBsCI6hGjdahRGTsMJDGH2dAVE4sdIrkNb6JKxe5DdEvuY2iaNyh4eJTxze9Ps/0?wx_fmt=png",
+    "size": 161736,
+    "sha256": "bce59d0cf09bfd095188d9ab177fa799164ab0cdcac3a127f2050794cf87017e",
+    "media_id": "32UljMYChYTgroNl6NKarxVQTc5XIFXUDCvVplWJrCvEEeqRnh47V1Qlz2xXsr4o"
+  },
+  "downloads/images/2026_10/lego-botanical-04.webp": {
+    "mode": "material",
+    "url": "http://mmbiz.qpic.cn/mmbiz_png/stib2Gc1RfBDHGXhsdmYgtcMgJibk30mGvVXxFJPMFc7HDDOc2NABVhvUFhTQ8Bdg7nt1MB1hOEVPqvSvwomNbibt7YvC1N7lA2KibWGxlAgg2c/0?wx_fmt=png",
+    "size": 432804,
+    "sha256": "b58298c207168e7fe895c9c7e3e8845e1a84aa9ee5e2b9f9b71e9a93c10f7d60",
+    "media_id": "32UljMYChYTgroNl6NKar_4ZQNp-4fR8sXV9ys1KONI7Dky_JSUgeGp8vkQyMpp4"
   },
   "downloads/images/2026_10/malcom_1.jpg": {
     "mode": "material",
