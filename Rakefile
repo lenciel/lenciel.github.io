@@ -399,7 +399,9 @@ end
      post.puts
      post.puts "### 码农历"
      post.puts
+     post.puts "```"
      post.puts fortunes
+     post.puts "```"
    end
  end
 
