@@ -35,7 +35,7 @@ categories: [useless-songs, wxmp]
 
 ### A 社的爽文
 
-快要上市的 A 社最近发了不少爽文，比如 16 号的这篇《[A 社在招聘上发生了什么变化](https://www.anthropic.com/research/employment-at-anthropic)》。
+快要上市的 A 社最近发了不少爽文，比如 16 号的这篇《[A 社在招聘上发生了什么变化](https://www.anthropic.com/research/employment-at-anthropic){:target="_blank"}》。
 
 先说里面中规中矩很 A 社的结论。
 
