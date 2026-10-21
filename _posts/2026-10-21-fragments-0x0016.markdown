@@ -35,11 +35,11 @@ categories: [useless-songs, wxmp]
 
 对外的交互，则非常困难，可能谁都做不好。
 
-首先不说东西两边怎么通航，毕竟美帝现在的做法是不让你们用我的，也[不让我们用你的](https://cybersecuritynews.com/u-s-government-bans-deepseek-ai/)。
+首先不说东西两边怎么通航，毕竟美帝现在的做法是不让你们用我的，也[不让我们用你的](https://cybersecuritynews.com/u-s-government-bans-deepseek-ai/){:target="_blank"}。
 
 只看各自的小圈儿内。我们这边，「万物互联」的物联网大潮大家已经见识过了：每个参与者都想去别人地里种庄稼甚至收庄稼，但又把自己的院子锁得严严实实。
 
-国外，Muse 这类应用也遭遇[拿不到权限](https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web)的问题。
+国外，Muse 这类应用也遭遇[拿不到权限](https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web){:target="_blank"}的问题。
 
 因为这不是技术上开个接口的事儿，而是商业上就有 bug。比如微信，理论上里面那么多小程序，要做个助理帮着买个票下个单打个车都很容易。
 
@@ -51,7 +51,7 @@ categories: [useless-songs, wxmp]
 
 ### 该关门的不止商学院
 
-[Chris Marquis](https://chrismarquis.com/)在 NYT 上发了篇[文章](https://www.nytimes.com/2026/10/18/opinion/business-school-mba-harvard-cornell-cambridge.html)说，商学院都该关门了{% sidenote 'sn-id-2' '他自己曾在哈佛商学院任教 10 年、康奈尔 6.5 年，也是《掠夺者：商业如何私有化利润并社会化成本》的作者。' %}。
+[Chris Marquis](https://chrismarquis.com/){:target="_blank"}在 NYT 上发了篇[文章](https://www.nytimes.com/2026/10/18/opinion/business-school-mba-harvard-cornell-cambridge.html){:target="_blank"}说，商学院都该关门了{% sidenote 'sn-id-2' '他自己曾在哈佛商学院任教 10 年、康奈尔 6.5 年，也是《掠夺者：商业如何私有化利润并社会化成本》的作者。' %}。
 
 他拿了沃顿商学院著名校友 Trump 举例，说商学院把「最高优先级追求利润」制度化，并培养出设计、捍卫这套结构的未来领导者，让人变成了高效运转的逐利机器，并拿诺贝尔经济学奖得主 **Daron Acemoglu** 及同事的研究数据证明，任命拥有商学院背景的经理人主导公司和国家后，销售额、投资、就业都没有增长更快。只是财富从从工人向股东和高管更大比例的转移了。
 
@@ -78,7 +78,7 @@ Chris Marquis 后面的吐槽完全是现身说法，大概因为人在剑桥，
 
 商学院好歹还有帮人聚在一起讨论怎么挣钱。现在很多人只愿意在手机上黄赌毒或者刷刷剧。
 
-所以赫拉利最近出来说，你们人类[只剩五年](https://www.sohu.com/a/1090352430_358836)了，倒是和我前两天说根本不需要 AGI/ASI，人自己就可以把自己玩儿完有类似的意思。
+所以赫拉利最近出来说，你们人类[只剩五年](https://www.sohu.com/a/1090352430_358836){:target="_blank"}了，倒是和我前两天说根本不需要 AGI/ASI，人自己就可以把自己玩儿完有类似的意思。
 
 搞具身智能的人应该都知道「具身」这个有点拗口的词来自对 allopoietic 和 autopoietic 的区分。
 
@@ -94,5 +94,5 @@ Chris Marquis 后面的吐槽完全是现身说法，大概因为人在剑桥，
 
 如果我们不能保留这些形成能力的身体行为，去思考、去执行、去摩擦、去尝试，我们是不是逐渐失去了作为生命体的目的？
 
-所以，不如商学院别关了，改个名字叫动物学院，都教教 Melanie Challenger 的那本《[How to Be Animal](https://canongate.co.uk/books/2587-how-to-be-animal-a-new-history-of-what-it-means-to-be-human/)》吧。
+所以，不如商学院别关了，改个名字叫动物学院，都教教 Melanie Challenger 的那本《[How to Be Animal](https://canongate.co.uk/books/2587-how-to-be-animal-a-new-history-of-what-it-means-to-be-human/){:target="_blank"}》吧。
 
