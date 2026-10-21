@@ -4101,6 +4101,13 @@
     "sha256": "7ca0b392bf4105f61d49f036ee1fdd0e07d97c212c9cdc927f484849d112d7e1",
     "media_id": "32UljMYChYTgroNl6NKar5t_p5ppIWUDUhn1Zs4v8CPGwkENSxXVqdz9UQyQtYGJ"
   },
+  "downloads/images/2026_10/Maurice_Prendergast_The_Promenade_1913.jpg": {
+    "mode": "material",
+    "url": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/stib2Gc1RfBD9zoMZwjPKd2frNQ9JqdotoYRianp6zxzSQy7tOSYdibapvwz0IUH2qCYfNpsLHWpbJO4cg5ict45h6H0AgXbjwp0duqvAciceRrw/0?wx_fmt=jpeg",
+    "size": 2400724,
+    "sha256": "77ac79be2ede6d1aaaa8cc9da31dd9ce71f0a56b783293981d51f49c6e91730b",
+    "media_id": "32UljMYChYTgroNl6NKar9wzMuXjLrG0GorZlO2HgOUft4Nu0EnJ1oEhs2VHtczV"
+  },
   "downloads/images/2026_10/Stanton_Macdonald-Wright_Oriental_-_Synchromy_in_Blue-Green_1918.jpg": {
     "mode": "material",
     "url": "http://mmbiz.qpic.cn/mmbiz_jpg/stib2Gc1RfBDk7EpWh446PDIcsYKetysfb9zJv3OPJBic6fmFowaibVfJbmTSEicoffK13cwZ8vjKx5ILrkrYrXFdwq6kO5zxibYl5zFcCRmGGgA/0?wx_fmt=jpeg",
@@ -4317,6 +4324,13 @@
     "size": 1233434,
     "sha256": "8e355b78c472db2246aa6d6950161016748bb0ac19a754a373ab024e3c2e9b8e",
     "media_id": "32UljMYChYTgroNl6NKarwBYyhupgEfb4VO9OG8Vub9-6cC-JpTbvCj-spSTNs0a"
+  },
+  "downloads/images/2026_10/shutdown-business-shcool.png": {
+    "mode": "material",
+    "url": "http://mmbiz.qpic.cn/mmbiz_png/stib2Gc1RfBAw5zENnjViaoOtKTNBQVW0sHC1GWxmZdETJrkhWryzaE2YiaACorZiaZ6hVCiamWGEQZC2dd5VANIy1xR24Ij1xCuK4zwFkbGtFvc/0?wx_fmt=png",
+    "size": 238742,
+    "sha256": "48e8a6143f4c26e178229bb0b621318cb5f46ae9d81f905b134da8721799bd91",
+    "media_id": "32UljMYChYTgroNl6NKar5r_WY6eQJc2egO672l7FsYSx2MGQv46rcQhXY2eRyFa"
   },
   "downloads/images/2026_10/us_economic_1.png": {
     "mode": "material",
