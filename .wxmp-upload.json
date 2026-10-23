@@ -4094,6 +4094,13 @@
     "sha256": "e69f3cccb51889f0efc240c0cbf5ba8187ea363d09cdc1df1acf00bd7e5972a4",
     "media_id": "32UljMYChYTgroNl6NKar8pEzPVNzuGQrLIO70QMDK91iYTVU0ZIxBkBaGBaNkER"
   },
+  "downloads/images/2026_10/John_Marin_Wave_on_Rock_1937.jpg": {
+    "mode": "material",
+    "url": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/stib2Gc1RfBCQlv3S4aBwdFfnbtmgaRlHwqP2IjA3CrTlrUUH8BTVHmvpzIyd5TJ3ag87jIicCJYW0eIH3dH7IQ9n500dPX69TRSlmqFWPgws/0?wx_fmt=jpeg",
+    "size": 1012422,
+    "sha256": "d7881eb6a52190fd71796777d0b142deff37e42a6666ab443de4bd4a05883065",
+    "media_id": "32UljMYChYTgroNl6NKar-aTD1bEZE8GGiq3HB73M8Lot-EGWs-lqE3xruGmUspF"
+  },
   "downloads/images/2026_10/Joseph_Hirsch_Interior_with_Figures_1962.jpg": {
     "mode": "material",
     "url": "http://mmbiz.qpic.cn/mmbiz_jpg/stib2Gc1RfBBQ6yIBxFBO77fKGiam47ic49xD5kBdZMuicSV4K5lzAQJy8cgcRu91YYLQScGSPBOfeZQ9n8oBRnPpdnZGHQz8IaEeFG235FTfhA/0?wx_fmt=jpeg",
@@ -4261,6 +4268,27 @@
     "size": 432804,
     "sha256": "b58298c207168e7fe895c9c7e3e8845e1a84aa9ee5e2b9f9b71e9a93c10f7d60",
     "media_id": "32UljMYChYTgroNl6NKar_4ZQNp-4fR8sXV9ys1KONI7Dky_JSUgeGp8vkQyMpp4"
+  },
+  "downloads/images/2026_10/light_vela_1.png": {
+    "mode": "material",
+    "url": "http://mmbiz.qpic.cn/mmbiz_png/stib2Gc1RfBA07bbQMjn6kFib0uq84trrJXjYicsBNfp76kpwibHjncgrywWzbp8c6On8Gtc5OGhYrD8quLEMJys3TrTb7LHgt5dNmKMf4wZmYM/0?wx_fmt=png",
+    "size": 216029,
+    "sha256": "d2b5e9420c4211fb408972e0555e0e4b9f3cebc0236b83ab93ab089ac0592e31",
+    "media_id": "32UljMYChYTgroNl6NKar0AqMEk-C0-7kUjKfHQXLZufWgUUo-hmaIJnJf_1Fuxh"
+  },
+  "downloads/images/2026_10/light_vela_2.png": {
+    "mode": "material",
+    "url": "http://mmbiz.qpic.cn/mmbiz_png/stib2Gc1RfBBY6zab8rkJ97JwybyHFxic5P7ibLcEmlYP7ryicLDAGhtdvbJy8nicpibyFGsjibeib7MPA2s1mgia1D2s2DuBEp0lGwt8uuM9T2Wjmy4/0?wx_fmt=png",
+    "size": 277516,
+    "sha256": "d4dcf563122a5a071b108d5a472f680d485e2298758965ac271d73c297f604a6",
+    "media_id": "32UljMYChYTgroNl6NKar2oIj5I0GIj9OUuVU7QwpoaYNkeeREyDQbWFVgguRlHL"
+  },
+  "downloads/images/2026_10/light_vela_3.png": {
+    "mode": "material",
+    "url": "http://mmbiz.qpic.cn/mmbiz_png/stib2Gc1RfBDG77bfMzcibI2SlGeYtDbic5DW5opKZup2sT0llic9Hth9RHTLnTISe9089cS1V5c6M4NWYWatDpv3mK828zwc3r0F9kMmU26Je8/0?wx_fmt=png",
+    "size": 215629,
+    "sha256": "2e9bd0a6a919f5b29e1f1656d8b96cfebd23be0223bded2468805aed582c3978",
+    "media_id": "32UljMYChYTgroNl6NKar9UFxdgiz6KNKCVuFCTvbg2SM2_FWKPTRRU_V6BfmcSm"
   },
   "downloads/images/2026_10/malcom_1.jpg": {
     "mode": "material",

@@ -32,8 +32,9 @@ page_dir        = "docs"      # page directory
 blog_index_dir  = './'        # directory for your blog's index page
 deploy_dir      = "_site"     # Github repo lenciel.github.io master branch or static site hosting folder)
 stash_dir       = "_stash"    # directory to stash posts for speedy generation
-back_dir       = "_site_bak"    # directory to stash posts for speedy generation
-ftp_dir       = "_ftp"    # directory to stash posts for speedy generation
+ftp_dir       = "_ftp"    # the deploy folder; 上一版线上快照
+ftp_new_dir   = "_ftp.new"  # 部署时先整份写这里，pagefind 也建在这上面，成功了才换名成 ftp_dir
+back_dir      = "_site_bak"    # 每次部署前把当前 ftp_dir 备一份，出错了用它回滚
 posts_dir       = "_posts"    # directory for blog files
 new_post_ext    = "markdown"  # default new post file extension when using the new_post task
 new_page_ext    = "markdown"  # default new page file extension when using the new_page task
@@ -54,19 +55,17 @@ end
 # Working with Jekyll #
 #######################
 
-desc "Backup exsiting _site to site_old"
+desc "Back up the current deploy snapshot (#{ftp_dir}) to #{back_dir}"
 task :backup_site do
-  puts "## Backing up _site to site_old"
-  rm_rf Dir.glob("#{back_dir}")
-  cp_r "#{ftp_dir}", back_dir
-end
-
-desc "Copy exsiting resized image to _site"
-task :copy_resized do
-  puts "## Copying exsiting resized image to _site"
-  system "jekyll clean"
-  system "mkdir -p #{deploy_dir}"
-  FileUtils.cp_r Dir.glob("#{back_dir}/resized_images"), "#{deploy_dir}/"
+  # 部署前先留一份「当前线上版本」的全量快照：后面任何一步失败（构建、pagefind、
+  # 上传）都能用 `rake rollback` 回到它，或者直接从这里重新发布。
+  if Dir.exist?(ftp_dir) && !Dir.empty?(ftp_dir)
+    rm_rf back_dir
+    cp_r ftp_dir, back_dir
+    puts "## Backed up #{ftp_dir} to #{back_dir}"
+  else
+    puts "## #{ftp_dir} 为空，没有可备份的上一版"
+  end
 end
 
 task :blank_target do
@@ -87,10 +86,15 @@ end
 desc "Generate jekyll site for production deployment"
 task :generate do
   Rake::Task[:blank_target].execute
-  Rake::Task[:backup_site].execute
-  Rake::Task[:copy_resized].execute
   puts "## Generating Site with Jekyll"
-  system "JEKYLL_ENV=production jekyll build --incremental"
+  # 这里不要 `jekyll clean`。生成的图片（_site/resized_images）就是这个构建的产物，
+  # clean 会连它们一起删掉，于是每张图的每个尺寸都得用 vips 重新压一遍；picture_tag 自己
+  # 会把 resized_images 写进 keep_files，Jekyll 的 Cleaner 每轮构建也会清掉废弃文件，
+  # 所以「先清空再恢复」是多余的（顺带还会丢掉 .jekyll-metadata，让 --incremental 失效）。
+  # system 不会因为命令失败而中断，构建失败必须在这里停住：继续走下去会把半成品
+  # 拷进 #{ftp_dir} 当线上版本。停下的话 #{ftp_dir} 还是上一版（#{back_dir} 里也有副本）。
+  system("JEKYLL_ENV=production jekyll build --incremental") ||
+    abort("rake aborted: jekyll build 失败，#{ftp_dir} 仍是上一版（备份在 #{back_dir}）")
 end
 
 desc "Watch the prod site and regenerate when it changes"
@@ -235,6 +239,8 @@ end
 desc "Default deploy task"
 task :prepare_deploy do
   Rake::Task[:integrate].execute
+  # 先备份上一版，再做任何会改文件的事；后面任何一步失败都能 `rake rollback` 回来。
+  Rake::Task[:backup_site].execute
   Rake::Task[:generate].execute
   Rake::Task[:minify_html].execute
   rm_rf [Dir.glob("#{deploy_dir}/node_modules"), Dir.glob("#{deploy_dir}/*.md"), Dir.glob("#{deploy_dir}/*.py"), Dir.glob("#{deploy_dir}/*.json"), Dir.glob("#{deploy_dir}/*.sh"), "#{deploy_dir}/plugins", "#{deploy_dir}/Rakefile", "#{deploy_dir}/Makefile",  "#{deploy_dir}/pagefind.yml", "#{deploy_dir}/gulpfile.js"]
@@ -242,13 +248,18 @@ task :prepare_deploy do
   puts "\n## Removing dot files (#{deploy_dir})"
   system("find #{deploy_dir} -name .DS_Store -print -delete")
 
-  puts "\n## Copying #{deploy_dir} to #{ftp_dir}"
-  rm_rf Dir.glob("#{ftp_dir}")
-  mkdir ftp_dir
-  cp_r "#{deploy_dir}/.", ftp_dir
-  #rm_rf [Dir.glob("#{ftp_dir}/resized"), Dir.glob("#{ftp_dir}/assets"), Dir.glob("#{ftp_dir}/downloads")]
+  # 先把新版本整份写进 #{ftp_new_dir}，pagefind 索引也建在它上面，全都成功了才换名。
+  # 中途出错时 #{ftp_dir} 还是上一版（不会出现半份快照），出错了也能从 #{back_dir} 恢复。
+  puts "\n## Copying #{deploy_dir} to #{ftp_new_dir}"
+  rm_rf ftp_new_dir
+  cp_r "#{deploy_dir}/.", ftp_new_dir
 
-  Rake::Task[:build_pagefind].execute
+  Rake::Task[:build_pagefind].invoke(ftp_new_dir)
+
+  puts "\n## Swapping #{ftp_new_dir} into #{ftp_dir}"
+  rm_rf ftp_dir
+  mv ftp_new_dir, ftp_dir
+  puts "## #{ftp_dir} 已更新为本次构建（上一版在 #{back_dir}）"
 
   # 同 wxmp:upload，目录显式传入：rake 12 会把第一次 with_defaults 的结果缓存到共享的
   # EMPTY_TASK_ARGS 上，先跑的 minify_html 会把 :dir 泄漏过来（拿到 _site 而不是 _ftp）。
@@ -272,6 +283,18 @@ task :prepare_deploy do
 
   #Rake::Task[:optimize_images].execute
   # Rake::Task[:copydot].invoke(source_dir, deploy_dir)
+end
+
+desc "Restore #{deploy_dir} and #{ftp_dir} from the #{back_dir} snapshot"
+task :rollback do
+  abort("rake aborted: #{back_dir} 里没有备份，无法回滚") unless Dir.exist?(back_dir) && !Dir.empty?(back_dir)
+
+  rm_rf deploy_dir
+  cp_r back_dir, deploy_dir
+  rm_rf ftp_dir
+  cp_r back_dir, ftp_dir
+  puts "## 已把 #{deploy_dir} 和 #{ftp_dir} 恢复成 #{back_dir}（= 这次部署前的线上版本）"
+  puts "## 重新上线：图片 `rake upload_oss`，页面按平时的方式发布（Makefile 的 update_blog）"
 end
 
 desc "Generate website and deploy"
@@ -474,9 +497,12 @@ end
 
 
 desc "Build Pagefind Index"
-task :build_pagefind do
+task :build_pagefind, :dir do |t, args|
+  args.with_defaults(:dir => ftp_dir)
   puts "## Building Pagefind Index"
-  system("pagefind_extended")
+  # pagefind.yml 里的 site 是 _ftp；部署时传 _ftp.new，索引建好了才换名，
+  # 其余配置（glob、exclude_selectors…）照旧从 pagefind.yml 读。
+  system("pagefind_extended --site #{args.dir}") || abort("rake aborted: pagefind 失败")
 end
 
 #######################
