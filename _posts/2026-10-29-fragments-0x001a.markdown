@@ -25,7 +25,7 @@ categories: [useless-songs, wxmp]
 
 ### 膝盖
 
-这两天走路的时候，常常感觉右边半月板要冒出来，正好看到讲 Howard Luks 的[文章](https://www.washingtonpost.com/wellness/2026/10/13/heres-what-knee-arthritis-expert-does-every-day-protect-his-knees/)，说保护膝盖的秘诀就是好好练它用它。
+这两天走路的时候，常常感觉右边半月板要冒出来，正好看到讲 Howard Luks 的[文章](https://www.washingtonpost.com/wellness/2026/10/13/heres-what-knee-arthritis-expert-does-every-day-protect-his-knees/){:target="_blank"}，说保护膝盖的秘诀就是好好练它用它。
 
 我虽然很爱运动{% sidenote 'sn-id-0' ' 但好像只是爱踢球而已，其他项目只是想看别人动。' %}，但身体其实有不少小毛病，比如最近两年腰经常出问题。
 

@@ -1,0 +1,67 @@
+---
+layout: post
+comments: true
+description: '...特别是如果刚刚上完大家都懂的旱厕，然后就进去瞻仰那些几十米高，用黄金珠宝各式奇珍装饰的大佛，总会觉得，应有的尺度好像丢失了。和站在莲宝叶则的石头山下，感受自然的巍峨同时让人想要委身其下进入它怀抱之中不同，这些人为的堆砌和集中，让我无法心生敬重，只觉得疏离甚至有些压迫...'
+title: 'Fragments 0x001B'
+date: 2026-10-31 10:17:55 +0800
+categories: [useless-songs, wxmp]
+---
+
+{% picture /downloads/images/2026_10/Karl_Free_Epiphany_1932.jpg --alt Karl_Free_Epiphany_1932.jpg %}\
+<small>Karl Free - Epiphany (1932)</small>
+
+### 码农历
+
+```
+丙午年戊戌月己卯日，九月廿三。
+兔日冲(癸酉)鸡，岁煞西。
+
+宜修脚，宜补刀，宜拒绝加班，宜接受减产，
+宜夸大其词，宜卖弄风骚，宜损坏劳动工具。
+
+忌内耗，忌融资，忌拉黑旧爱，忌勾搭新欢，
+忌提升高度，忌降低预期，忌维护基础设施。
+```
+
+### 失去尺度的世界
+
+某安[被黑客洗劫](https://www.bbc.com/zhongwen/articles/cw0k023x733lo/simp){:target="_blank"}了 63 亿美元，虽然联合其他机构一起冻结了其中的 30 亿，仍然创造了历史同类案件的资损纪录。
+
+但让我惊讶的是，公司第一时间就出来说，哎呀这把没有搞好，但大家别慌，我们全额赔。
+
+网上有[不少](https://www.panewslab.com/zh/articles/01a18b3b-9417-766f-a825-a36da480f88f){:target="_blank"}帮着[算账](https://x.com/zhuanbidao/status/2116090120537247795){:target="_blank"}的文章，普遍结论是半年左右的利润差不多能承担这 30 亿美元的损失。
+
+难怪前段时间出来拍打孙哥的赵总搞这么个交易所就成了华人首富：这不是交易所这是印钞机{% sidenote 'sn-id-0' '这个公司的特色就是营销很强，技术投入不足。所以甚至可以说，是个很好的印钞机，反而不算是个合格的交易所，包括安全在内的技术做得太差了。' %}。
+
+正好前两天看到，Meta 在新墨西州输了个 250 亿美元的[官司](https://www.theverge.com/policy/1019604/new-mexico-meta-cambridge-analytica-kids-safety-settlement){:target="_blank"}。事情的背景是 2018 年英国咨询公司 [Cambridge Analytica ](https://en.wikipedia.org/wiki/Cambridge_Analytica){:target="_blank"}在未经用户知情同意的情况下，收集了数百万当时还叫 Facebook 的 Meta 用户的个人数据，用于定向投放政治广告。
+
+当时这个[丑闻](https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal){:target="_blank"}闹很大，因为号称英国人民就是这么被影响了理智脱欧的{% sidenote 'sn-id-1' '但差不多十年之后，美国的一个州因此要罚 Meta 250 亿，不知道会不会让其他州觉得今年夏天一起跟 Meta 就另一个事情 170 亿和解掉太便宜了。' %}。
+
+过去如果公司被这么告，早倒闭了。但我也帮 Meta 算笔账，它 Q2 财报上写着，「今年因为在 AI 上的巨额投入，首次利润增长的斜率往下，只有惨不忍睹的 158 亿美元净利」。
+
+就算要付这笔罚款，不到六个月的利润就够了。
+
+看这些数字的感觉，和靠近川藏线上昌列寺、各莫寺那些宏伟主殿时的感觉是类似的。
+
+{% picture /downloads/images/2026_10/gemo.jpg --alt gemo.jpg %}\
+<small>图 1. 阿坝各莫寺的台阶</small>
+
+我不是信徒，会觉得不管是建筑的形制，装饰的繁复，用料的奢华，好像都有点过分。
+
+特别是如果刚刚上完大家都懂的旱厕，然后就进去瞻仰那些几十米高，用黄金珠宝各式奇珍装饰的大佛，总会觉得，应有的尺度好像丢失了。
+
+和站在莲宝叶则的石头山下，感受自然的巍峨同时让人想要委身其下进入它怀抱之中不同，这些人为的堆砌和集中，让我无法心生敬重，只觉得疏离甚至有些压迫。
+
+这念头大概不只是我有。Stack Overflow 的联创 Jeff Atwood 最近写了篇文章《[把苦难当成特性](https://blog.codinghorror.com/suffering-as-a-feature/){:target="_blank"}》，展示美国社会财富的集中和尺度的失衡{% sidenote 'sn-id-2' ' 把苦难当成磨练心智的「系统特性」，看来是全世界都很通行的方法。' %}。
+
+文章搭配的[网站](https://dreamagainusa.org/){:target="_blank"}把美国从赤贫到富人的资产放在了一张折线图里面：要从底部往上进入塔尖的富人区，需要鼠标滑动十来分钟。
+
+而筑底的穷人，Jeff 笔下那不该被遗忘的 3600 万穷人，只需要 1770 亿 就能让他们脱贫：
+
+{% picture /downloads/images/2026_10/pz-card-billionaires-could-eliminate-all-poverty.png --alt pz-card-billionaires-could-eliminate-all-poverty.png %}\
+<small>图 2. 美国全民脱贫需要 1770 亿</small>
+
+这点钱，差不多赵首富一个人出就够了。
+
+
+
