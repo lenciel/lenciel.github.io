@@ -31,6 +31,7 @@ source_dir      = "./"        # source root directory
 page_dir        = "docs"      # page directory
 blog_index_dir  = './'        # directory for your blog's index page
 deploy_dir      = "_site"     # Github repo lenciel.github.io master branch or static site hosting folder)
+preview_dir     = "_site_preview"  # 预览构建目录，避免 `jekyll serve` 用 http://0.0.0.0:4003 覆盖 _site
 stash_dir       = "_stash"    # directory to stash posts for speedy generation
 ftp_dir       = "_ftp"    # the deploy folder; 上一版线上快照
 ftp_new_dir   = "_ftp.new"  # 部署时先整份写这里，pagefind 也建在这上面，成功了才换名成 ftp_dir
@@ -90,10 +91,14 @@ task :generate do
   # 这里不要 `jekyll clean`。生成的图片（_site/resized_images）就是这个构建的产物，
   # clean 会连它们一起删掉，于是每张图的每个尺寸都得用 vips 重新压一遍；picture_tag 自己
   # 会把 resized_images 写进 keep_files，Jekyll 的 Cleaner 每轮构建也会清掉废弃文件，
-  # 所以「先清空再恢复」是多余的（顺带还会丢掉 .jekyll-metadata，让 --incremental 失效）。
+  # 所以「先清空再恢复」是多余的。
+  # 也不要 `--incremental`：增量构建只按 .jekyll-metadata 判断要不要重渲染，像 feed.xml、
+  # canonical/og:url 这些用 site.url 生成的东西，源文件没变就不会被重写，于是上一次预览
+  # 留下的 http://0.0.0.0:4003 会被原样发布出去。全量构建在这台机器上只要几秒
+  # （图片已经在 _site 里，不会重新压）。
   # system 不会因为命令失败而中断，构建失败必须在这里停住：继续走下去会把半成品
   # 拷进 #{ftp_dir} 当线上版本。停下的话 #{ftp_dir} 还是上一版（#{back_dir} 里也有副本）。
-  system("JEKYLL_ENV=production jekyll build --incremental") ||
+  system("JEKYLL_ENV=production jekyll build") ||
     abort("rake aborted: jekyll build 失败，#{ftp_dir} 仍是上一版（备份在 #{back_dir}）")
 end
 
@@ -115,10 +120,20 @@ end
 
 desc "preview the dev site in a web browser"
 task :preview do
-  Rake::Task[:generate].execute
+  Rake::Task[:blank_target].execute
+
+  # 预览构建到单独的目录。`jekyll serve` 在 development 环境会把 site.url 改写成
+  # http://host:port（jekyll/commands/serve.rb），如果直接写进 _site，feed.xml、
+  # canonical、og:url 全是 http://0.0.0.0:4003；之后再发布 _site 就会把这种地址带上线。
+  mkdir_p preview_dir
+  # 复用已经生成好的各尺寸图片，否则预览目录第一次构建要把几千张图重新压一遍。
+  if Dir.exist?("#{deploy_dir}/resized_images") && !Dir.exist?("#{preview_dir}/resized_images")
+    cp_r "#{deploy_dir}/resized_images", preview_dir
+  end
+
   puts "Starting to serve jekyll on http://#{localhost_ip}:#{server_port}"
 
-  jekyllPid = Process.spawn("jekyll serve --host #{localhost_ip} --port #{server_port}  -w -l --config _config.yml,_config_dev.yml")
+  jekyllPid = Process.spawn("jekyll serve --host #{localhost_ip} --port #{server_port} --destination #{preview_dir} -w -l --config _config.yml,_config_dev.yml")
 
   trap("INT") {
     [jekyllPid].each { |pid| Process.kill(9, pid) rescue Errno::ESRCH }

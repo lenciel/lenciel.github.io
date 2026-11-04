@@ -1,5 +1,6 @@
 .DS_Store
 _site
+_site_preview
 .*-cache
 .jekyll-metadata
 /_posts/media

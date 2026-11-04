@@ -1,0 +1,246 @@
+---
+layout: post
+comments: true
+description: '...历史上有的是莎士比亚、荷马、曹雪芹那样书写充满成长与疗愈、爱与伤害、破坏与慰藉的宏大文字的巨匠，但这些看起来只是消遣的文字，就像冯梦龙整理的《山歌》一样宝贵，虽俚甚矣，独非郑、卫之遗欤...'
+title: 'Fragments 0x001D'
+date: 2026-11-04 00:49:51 +0800
+categories: [useless-songs, wxmp]
+---
+
+{% picture /downloads/images/2026_11/Adolf_Schreyer_Arabs_on_the_March_1856.png --alt Adolf_Schreyer_Arabs_on_the_March_1856.png %}\
+<small>Adolf Schreyer - Arabs on the March (1856)</small>
+
+### 码农历
+
+```
+丙午年戊戌月癸未日，九月廿七。
+羊日冲(丁丑)牛，岁煞西。
+
+宜走穴，宜跑腿，宜出国旅行，宜跨省抓捕，
+宜勾引同桌，宜铲除异己，宜乘坐专车出行。
+
+忌抢亲，忌偷情，忌切换账号，忌更改密码，
+忌偷偷想念，忌滔滔不绝，忌出租闲置房产。
+```
+
+### 文字游戏(2)
+
+#### 托马斯·厄克哈特
+
+我不懂法语，所以托马斯·厄克哈特才是那个直接让我感受文字游戏乐趣的人。
+
+他 1611 年出生在苏格兰北部，距离拉伯雷去世差不多六十年，不算太久。
+
+厄克哈特这个家族，是苏格兰最古老的贵族。托马斯从小在 [Cromarty 城堡](https://en.wikipedia.org/wiki/Cromarty_Castle){:target="_blank"}生活，仆从众多，锦衣玉食。
+
+{% picture /downloads/images/2026_11/cromarty_castle.jpg --alt cromarty_castle.jpg %}\
+<small>图 1. Cromarty 城堡实景</small>
+
+但就跟拉伯雷身处十六世纪初的法国一样，小托马斯身处十七世纪初的英伦半岛，也正好赶上风起云涌的大变革。
+
+一方面，他接受拉丁语、希腊语、法语和西班牙语的辅导，钻研光学、三角学、自然哲学、色彩理论、圆的平方化以及纳皮尔对数，相当新潮。
+
+另一方面，他潜心学习家族谱系和贵族技艺，包括如何击剑，如何拉弓，如何在马背上挥舞长矛，立誓捍卫原本威严却日渐衰微的家族、王权和苏格兰，十分保守。
+
+**家族乃至整个苏格兰一天天日薄西山的大趋势，加上他这种守旧好新虎鹤双形自相矛盾的练法，注定了他高开低走，走火入魔的一生**。
+
+##### 不长不短的好景
+
+1622 年，十一岁的托马斯就进入国王学院成了名大学生{% sidenote 'sn-id-1' '这在当时倒似乎是常态。托马斯·霍布斯 13 岁上大学，弗朗西斯·培根 12 岁，约翰·多恩 11 岁。大概那时候研究科学还没有那么多需要事先打下的基础。' %}。
+
+1632 年，二十来岁的托马斯来到欧洲内陆。他衣着考究，交游广泛。在结识各国王室成员，参观艺术杰作的同时，也和所有对他的祖国苏格兰稍有不敬的人展开决斗。
+
+剩下的时间，他在法国、意大利、西班牙各种地方淘书，并将它们作为战利品弄回家乡的城堡中。
+
+**动如脱毛兔，静如处子牛**。
+
+当然，不管走到哪里，他七岁那年就打响的「[三十年战争](https://zh.wikipedia.org/zh-cn/%E4%B8%89%E5%8D%81%E5%B9%B4%E6%88%B0%E7%88%AD){:target="_blank"}」的阴霾都挥之不去：毕竟这是人类历史上作战区域最大，死伤最惨烈的宗教战争{% sidenote 'sn-id-2' '共造成 450 万至 800 万士兵与平民死亡，德意志地区人口仅剩原先的一半。' %}。
+
+今天像我这样时空上都相去甚远的人读那段历史，看到的是法国的崛起，西班牙的衰落等等。
+
+**托马斯的感受应该要细密也本地化得多，毕竟苏格兰人可能没太多时间管别人的问题**。
+
+大家都知道，苏格兰人和英格兰人不对付，和爱尔兰人不对付，和威尔士人不对付，和日尔曼人不对付。
+
+但不少苏格兰人其实和别的苏格兰人也不太对付。
+
+托马斯就是这款。
+
+在三十年战争中，苏格兰绝大多数地方都誓死抵抗伦敦对宗教的变革，偏偏他所在的苏格兰北部那一小块儿，却誓死效忠当时的英国国王查理一世。
+
+1639 年，二十八岁的托马斯血气方刚，粪土当年万户侯，一扭头回家乡参战保皇去了。关于他战斗经历的描写都很晦涩，估计打仗的能力是相当不行。
+
+**但我们人类常温常压下，打仗和行赏都是只相关不因果的**。在一场两边加起来只有三人伤亡，跟他没多少关系的战斗后，他被封为骑士。
+
+拿到头衔后，他彻底投戎从笔，回到家乡，埋头写作。1640 年，他在 13 周内写了 1100 条警句，想要出版。但评论家们一致认为这些句子「既没有警句的简短，也没有警句的意味」。
+
+{% picture /downloads/images/2026_11/Thomas_Urquhart_by_George_Glover1641.jpg --alt Thomas_Urquhart_by_George_Glover1641 %}\
+<small>图 2. 刚刚成为骑士的托马斯投戎从笔</small>
+
+他还来不及思考改进的法子，父亲就去世了。1642 年，31 岁的托马斯成了族长，继承了五个幼年兄弟，两个待嫁妹妹，和 13000 镑（相当于今天差不多 3000 万人民币）的债务。
+
+债主将所有值钱的东西搜刮一空，包括他费尽心思一本本收集来的稀有书籍，特别是那些关于数学和炼金术的深奥论文，以及罗马作家的拉丁文全集。
+
+在去世前，托马斯常常愤恨地宣称，失去这些藏书让他没能完成自己真正想实现的抱负。但当时，被债务压得喘不过气的托马斯，拼命想的是如何赚钱还债。
+
+回顾一下我们之前说的，印刷和出版业在十六世纪开始成熟，很多贵族都靠写畅销书维持奢华生活：我想这也是托马斯去编写那本警句集的初衷。
+
+**这种没有太多生产上的成本，只需要头脑和笔就可以尝试的「创业」，贯穿托马斯的余生**。
+
+##### 写书赚钱的尝试
+
+他在 1645 年弄了本《[Trissotetras](https://www.bobforrestweb.co.uk/Barren_Tracts/pages/17_The_Trissotetras.htm){:target="_blank"}》，目标是简化三角函数的计算。
+
+{% picture /downloads/images/2026_11/Trissotetras.jpg --alt Trissotetras.jpg %}\
+<small>图 3. 《Trissotetras》宛如天书</small>
+
+我[之前](https://lenciel.com/2024/07/the-euler-formula-2/){:target="_blank"}写欧拉恒等式的时候说过纳皮尔的故事：在没有计算器的时代，有大量的数学家/业余数学家会把一些复杂计算的结果印成书，让其他人可以直接查结果无需再算。
+
+纳皮尔大概在 1594 年了解到第谷的算法，手搓二十年后，于 1614 年 6 月出版了对数表，让七位甚至八位小数的乘法和除法都变成了加法和减法，非常畅销。
+
+苏格兰前辈的这番伟业应该给了托马斯不小启发。但老老实实记录计算结果的书已经印完了，他只好发明了一套新的术语体系，通过把「数学关系编码到词语的结构中，让一切变得更简单、更快捷，七周即可完成原本需要一年的数学学习」。
+
+**可以说，认真玩文字的托马斯，从这时候上线了**。
+
+但托马斯的这本书并没有让他发家致富，因为他更简单更快捷的术语长下面这样：
+
+「proturgetick / quadrobiquadrrcquation / sindiforall / cathctobasall / amfractuosities / loxogonosphericall...」
+
+所以学三角函数就可以被「简化」为：
+
+> Cathctobasall is said of the concordances of loxogonosphericall moods, in the datas of the perpendicular and the base, for finding out of the maine qusesitum.
+
+历史上只有少数几位数学家曾试图认真理解《Trissotetras》，他们的结论是，从这本书前言不搭后语的程度来看，托马斯应该自己也没有掌握那些术语。
+
+**没有引发数学革命，也没有变得更富有，托马斯并不气馁且相当上头**：人类刚刚可以出书的时候写书，可能跟现在用 vibe coding 写码一样，很容易觉得实在是太有意思了。
+
+他自己把前面的失败总结为，一种新的数学语言只会吸引少数科学家和数学家，如果能创造一种全新的可以用于所有事物，全世界通用的语言，就会大获成功。
+
+接下来的七年时间，他致力于创造这种据说有 12 种词类，10 种时态，每个词至少有 10 个同义词，11 种性，7 种语态，以及 4 种数的形式（单数、双数、复数和 redual {% sidenote 'sn-id-3' '如果你不知道这是啥，我也不知道，没人知道，因为托马斯从来没有在任何地方解释过，所以我没有翻译。' %}）的世界语。
+
+具体到每个词，他的总体设计理念是，词语的意义将被同时编码在它们的声音和拼写中。
+
+如果只是有这个目标，应该比较好办。因为他举例说要让「马」和「驴」看起来比较相近：**巧了，中文已经做到了，你们看这两个字多么相近**。
+
+但他还有很多小目标：
+
+- 每个词的每个字母都将暗含某种编码上的意义。比如，每个星星的名称里将包含它的星等、经度和纬度。对数的数学原理也将被编码到这种语言的数字中；
+- 每个词都有一个正向意义和一个反向意义，使其成为一种理想的用于字谜的语言；
+- 每种其他语言的每个单词都将在这个语言中有对应的等价词。这个等价词不仅会保留原意，还会保留音节数和押韵，从而使诗歌的完美翻译成为可能；
+
+他最终列出了 63 个设计目标。
+
+读到这里，千万不要认为，托马斯这是在开玩笑。**他很穷，着急还债。他很认真，行文中没有一丝后来的幽默感。而且，没有人用七年时间，讲有 63 个设计目标的笑话**。
+
+但很可惜，我们今天没法知道最终他搞了个啥东西出来。
+
+##### 带笔从戎到被俘
+
+1649 年，38 岁的托马斯听说查理一世被清教徒以叛国罪处决，再次冲向战场。
+
+**但他并不是投笔从戎，而是全世界史无前例地带笔从戎：七年心血，大概三千页的手稿被他带在身边，白天行军，晚上写作**。
+
+他这次加入的是支有一万六千人的庞大部队，绝非小打小闹。因此他一路想象着在伟大胜利后，如何向满怀感激的人民展示他的「世界语」。
+
+结果这支队伍还没打到伦敦，在[伍斯特](https://zh.wikipedia.org/wiki/%E4%BC%8D%E6%96%AF%E7%89%B9){:target="_blank"}就被克伦威尔阻击了。战斗的结果相当一边倒，克伦威尔损失了 700 人左右，就把保皇党人彻底击溃：3000 人阵亡，另外 10000 人被俘。
+
+{% picture /downloads/images/2026_11/Worcester.png --alt Worcester.png %}\
+<small>图 4. 伍斯特战役</small>
+
+托马斯的手稿在他被俘后，被用来包裹各种战利品，虽然事后一小部分被送回他手中，但都是从排水沟里或是在胜利后醉酒斗殴中死去的士兵尸体下捡到的，上面沾满了雨水、泥土和鲜血。
+
+大部分手稿就这样永远遗失了。
+
+**被关押起来的托马斯甚至没怎么吐槽，而是一如既往地试图通过写作摆脱困境**。
+
+1652 年，他编写了自己的家谱，《Pantochronachanon》。托马斯在书中追溯了自己的祖先，一直追溯到亚当和夏娃。他虚构了一位先人，在所多玛和蛾摩拉被毁灭时在亚伯拉罕家中出现，还有另外一位先人，则娶了在芦苇丛中发现摩西的那个埃及人。
+
+就这样，从上帝造人开始，托马斯把古代和中世纪的著名人物，和自己那些虚构的祖先交织在一起，直到故事最终落到了他自己身上。
+
+后面有分析者认为，这本按照现在的定义，更像同人小说的家谱，是他希望让看守们知道他的血统有多么高贵并赶紧释放他。
+
+同时，他还写了份关于世界语的「提案」：我们今天之所以还知道他关于「世界语」的一些想法和设计目标，就是因为这类提案保存了下来。
+
+在提案的结尾，倒是不用分析者事后分析，托马斯非常明确地指出，如果不释放他，「将阻止他完成这项伟大的、改变世界的通用语言」。
+
+**读到这里，千万不要认为，托马斯这是在开玩笑**。他身陷囚笼，瞎编乱造是可能掉脑袋的。他没有参考书目没有维基百科，能写出这些显然是因为脑子里面确实有这么多东西和主张。
+
+##### 翻译巨作的时光
+
+最终克伦威尔还是赦免了托马斯，允许他回到城堡中。
+
+债务的利息还在滚动，家谱、世界语也没有带来任何收入，托马斯开始编写一生中最后的主要作品：翻译的拉伯雷的那五部书。
+
+此时，拉伯雷逝世已经快一百年了，在英文世界里，只有一些涉猎广泛的人，如莎士比亚或者培根提起过他。
+
+他们提起他，主要是为了展示自己的学识。因为如前所述，拉伯雷的特点不是情节而是游戏：里面的人物可以迅速地从一个话题跳到另一个话题，讽刺天主教会，模仿中世纪学者，或长时间地大谈包含下三路的各类话题。有人支持葡萄酒，有人反对婚姻，有人反对法律，有人反对宗教。
+
+文字本身就跳跃，加上用典又广又深，此前曾有人尝试进行英语翻译，但都以半途而废告终。
+
+**托马斯，我之所以花了那么多时间陈述他的生平，就是想大家和我一样，认可他是为干这事儿而生的**。
+
+他的优点，就是玩味词语的癖好，广博的学识，和百折不挠笔耕不辍的生产力。
+
+他的缺点，就是没啥逻辑也没啥智慧，原创的那些点子都实在是太糟糕了。
+
+翻译拉伯雷，可以完美发挥他的优点，同时避开缺点：不需要原创的想法，只需要好好玩文字。
+
+如果打开这本书，不用指望它有什么特别的价值或者意义。我说了，它是本打发时间的，让人可以体会到英文文字游戏魅力的书。
+
+托马斯动笔的时候，正式的词典和同义词词典还没有出现{% sidenote 'sn-id-4' '托马斯大量借鉴了 1611 年出版的兰德尔·科特格雷夫的 1000 页英法双语词典。' %}，牛顿还把时间平均分配在物理学和炼金术。他在翻译中应该是充满爱意地创造了一堆诸如 flimflam（废话）、plasmator（创造者）、onocrotary（鹈鹕）、whirlingfriskorum（某种旋转舞蹈？）、以及 bumfodder/arsewisps/wipe-breeches（都是厕纸的意思）这样的词。
+
+拉伯雷的原文中还充满了各种长长的列表：食物、植物、动物、酒类、武器、城市、语言、科学术语、医学术语、古典世界中的名称。 **托马斯带着一种学霸做卷子的快乐，将列表中的每个词视为一种挑战，希望在翻译时展示英语具备更大的灵活性和热情**：如果拉伯雷列举了四种葡萄酒，托马斯就会列出七种。
+
+举个例子，文中 Lerne 地区的烘焙师对高康大牧羊人的嘲讽，托马斯火力全开的翻译为：「prattling gabblers, lickorous gluttons, freckled bittors, mangy rascals, shite-a-bed scoundrels, drunken roysters, sly knaves, drowsy loiterers, slapsauce fellows, slabberdegullion druggels, lubberly louts, cozening foxes, ruffian rogues, paltry customers, sycophant-varlets, drawlatch hoydens, flouting milksops, jeering companions, staring clowns, forlorn snakes, ninny lobcocks, scurvy sneaksbies, fondling fops, base loons, saucy coxcombs, idle lusks, scoffing braggarts, noddy meacocks, blockish grutnols, doddipol-joltheads, jobbernol goosecaps, foolish loggerheads, flutch calf-lollies, grouthead gnat-snappers, lob-dotterels, gaping changelings, codshead loobies, woodcock slangams, ninny-hammer flycatchers, noddypeak simpletons, turdy gut, shitten shepherds, and other suchlike defamatory epithets...」
+
+当然，如果这就是托马斯做的全部工作，那他也更像是个大功率的人肉 LLM，我也不可能这么喜欢他的文字。
+
+**他真正厉害之处还在于翻译过程中，保留了拉伯雷原文中句子段落那种节奏感**。
+
+下面是他翻译的，Pantagruel 希望用来自乌托邦的男女去殖民刚刚征服下来的领地 Dipsody 的那段文字：
+
+「You understand well enough, nor is it needful further to explain it to you, that the Utopian men had so rank and fruitful genitories, and that the Utopian women carried matrixes so ample, so gluttonous, so tenaciously retentive, and so architectonically cellulated3, that at the end of every ninth month seven children at the least, what male what female, were brought forth by every married woman, in imitation of the people of Israel in Egypt, if Anthony (Nicholas) de Lyra be to be trusted.」
+
+整个长句，形容词渐强，到「architectonically cellulated」达到高潮。然后又慢慢展开，最后以一个俏皮的圣经引用和一个展示了神秘学知识的荒谬句子轻轻落下。我很难相信拉伯雷的法语原文能比这更好。
+
+对比一下 1893 年剑桥的 W. F. 史密斯和托马斯的译本，这种感觉会更加明显。比如故事中引入修士 John 的那段文字，托马斯的翻译是：
+
+> There was then in the abbey a claustral monk called Friar John of the Funnels, young, gallant, frisk, lusty, nimble, quick, active, bold, adventurous, resolute, tall,  lean, wide-mouthed, long-nosed, a rare mumbler of matins, unbridler of masses, and runner-over of vigils; and to conclude summarily in a word, a right monk, if ever there were any, since the monking world monked a monkery.
+
+而史密斯的翻译是：
+
+> In the abbey  at that time was a  cloistered monk named Friar John of theTrencherites, young, gallant, frisky, lusty, very handy, bold, adventurous, resolute, tall, lean, with a rare gaping mouth and a mighty prominent nose, a fine mumbler of matins, unbridler of masses, and a scourer of vigils; to say everything summarily, a very monk, if ever there was one, since the monking world monked a monkery. d Elizabethan in spirit and manner,  if not precisely in date.
+
+把两段文字朗读一遍，就会同意，托马斯的版本保留甚至增强了拉伯雷在文字上的游戏，充满活力。
+
+托马斯于 1653 年完成了前两本书的翻译，同时还发布了一份关于他通用语言的第二份宣传稿。**所有这些写作上的尝试，在商业上都失败了：我想大家应该已经习惯了不会再觉得意外**。
+
+接下来一段时间，托马斯流亡到欧洲大陆，在那里完成了第三本书的翻译草稿，但从未出版。
+
+关于他生命的最后传说称，得知查理二世于 1660 年恢复王位的消息，他仰天长笑，在笑声中阖然离世。
+
+去世后，他的家族庄园仍被债主控制，他未完成翻译手稿也被遗忘。我们今天之所以知道它，是因为一名叫 [Peter Motteux](https://en.wikipedia.org/wiki/Peter_Anthony_Motteux){:target="_blank"} 的法国难民于 1694 年完成了拉伯雷后两本书，然后加上托马斯译的三本，出版了一个完整的合集。这部书在英语世界中广泛传播，带给了拉伯雷后世巨大的声望，也成为《格列佛游记》、《芬尼根的守灵夜》等名著的灵感。
+
+我想，我自己也是写 high 了，应该没有多少人会读到这里。强行结个尾，我想说，喜欢拉伯雷的故事和托马斯·厄克哈特的翻译，归根结底，是他们展示了语言的那部分最接地气，充满消遣的乐趣。
+
+历史上有的是莎士比亚、荷马、曹雪芹那样书写充满成长与疗愈、爱与伤害、破坏与慰藉的宏大文字的巨匠，**但这些看起来只是消遣的文字，就像冯梦龙整理的《山歌》一样宝贵，虽俚甚矣，独非郑、卫之遗欤**？
+
+托马斯最近一次在我的视线里被提起，是有人用 Claude 的 Fable 5.1 模型，[破解了](https://linlog.top/article/1465){:target="_blank"}他 1653 年那本「世界语」提案里，留下几百年无人攻破的谜语。
+
+{% picture /downloads/images/2026_11/Logopandecteision.png --alt Logopandecteision.png %}\
+<small>图 5. 《Logopandecteision》</small>
+
+之所以难以破解，是因为密钥虽然就在书里，要找到它，得在读这本拉丁文-英文的小众混合读物过程中，注意到作者对 32 的执念，注意到小诗里面的特殊文字，注意到恳求文正好 32 段。
+
+{% picture /downloads/images/2026_11/passkey_and_text.jpeg --alt passkey_and_text.jpeg %}\
+<small>图 6. 答案就在书里</small>
+
+**文字游戏，没有能力上的问题，都是注意力的问题**。
+
+Attention is all you need。
+
+这段数字破解出来原来是：
+
+「上帝保佑国王查理二世，使他成为这片土地的最高统治者」。
+
+居然有一些浪漫。
